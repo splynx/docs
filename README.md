@@ -13,13 +13,13 @@ Languages files should be placed in self directories.
 
 #### Page title
 
-Each page should be begin from page title.
+Each page should be begin from the page title.
 
 ```
 Page Title
 ==========
 ```
-This title will be show in header of documentation panel.
+This title will be show in the header of the documentation panel.
 
 ![Page title example](./images/page_title.png)
 

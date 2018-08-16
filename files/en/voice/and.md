@@ -1,4 +1,0 @@
-AND
-===
-
-MD file

@@ -12,6 +12,8 @@ Better Markdown Parser in PHP
 [Tests](http://parsedown.org/tests/) |
 [Documentation](https://github.com/erusev/parsedown/wiki/)
 
+![DMarkdown preferences panel](./cap/cap_img1.png?w=432&h=400)
+
 ### Features
 
 * One File

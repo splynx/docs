@@ -2,6 +2,8 @@ You can use phone patterns for match phone numbers group.
 Patterns are created with using special symbols.
 Example pattern for Angola phone numbers: `244{.}`.
 
+---
+
 #### Special symbols:
 
 | Symbol      | Description                                                                       |
@@ -14,7 +16,7 @@ Example pattern for Angola phone numbers: `244{.}`.
 | `{100-300}` | Number between 100 and 300. You can use any numbers instead of 100 and 300.       |
 | `{123|456}` | One of "123" or "456". You can use any string pattern instead of "123" and "456". |
 
-
+---
 
 #### Examples:
 

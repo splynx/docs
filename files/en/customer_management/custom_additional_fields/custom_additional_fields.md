@@ -11,7 +11,7 @@ Select the module where you'd like to add an additional field and click on *Add 
 
 
 A window will pop up and it will be possible to create an additional field.  
-In this example, it shows a *some_additional_field* additional field for the Customers module.
+In this example, it shows a `some_additional_field` additional field for the Customers module.
 ![Add additional field](add_additional_field.png)
 
 * **Required** - impossible to save without filling in this field.

@@ -46,7 +46,7 @@ Here customer can also create and submit a new ticket by clicking on Create tick
 * **About** - Splynx contact information
 * **Logout** - Logout from customer's account
 
-**Customer portal can be configured** according your and your company needs. To configure Customer portal click on *Config → Main → Portal*. The main sections to configure here will be:
+**Customer portal can be configured** according your and your company needs. To configure Customer portal click on `Config → Main → Portal`. The main sections to configure here will be:
 
 1. Main
 2. Menu

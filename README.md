@@ -77,5 +77,5 @@ You can use:
 [Add location](javascript:open_dialog_new('administration/locations--add'))
 
 // Open help dialog
-[Help me](javascript:open_help_dialog('index.md'))
+[Please help me](javascript:open_help_dialog('index.md'))
 ```

@@ -22,4 +22,4 @@ Configuration of Hotspot for prepaid cards you can find in [Radius hotspot confi
 
 The video tutorial below shows configuration of prepaid vouchers in Splynx:
 
-<iframe frameborder=0 height=270 width=350 src="https://www.youtube.com/embed/JlkTFukRFu0?wmode=opaque">Video on youtube</iframe>
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/JlkTFukRFu0?wmode=opaque">Video on youtube</iframe>

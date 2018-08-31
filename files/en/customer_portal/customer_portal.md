@@ -6,7 +6,7 @@ Customer portal provides each customer a private access to his Account containin
 A Side panel of customer's account in portal can display following Modules:
 
 * **Dashboard** - can display general information about  customer current balance, unpaid invoices or proforma invoices, new messages, new tickets and latest news.
-![Dashboard](dashboard.png)
+![Dashboard](./dashboard.png)
 
 
 * **Statistics** - shows statistic of the services customer is using. In the top-right corner of the screen customer can choose type of the service to be displayed in statistics and period of time.

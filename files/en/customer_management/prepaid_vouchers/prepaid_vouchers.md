@@ -17,7 +17,7 @@ Each voucher has its own statistics, charge of usage and detailed information:
 
 ![Edit card](edit_card.png)
 
-Configuration of Hotspot for prepaid cards you can find in [Radius hotspot configuration page](../../networking/authentication_of_users/mikrotik_hotspot_radius.md)
+Configuration of Hotspot for prepaid cards you can find in [Radius hotspot configuration page](../../networking/authentication_users/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
 
 
 The video tutorial below shows configuration of prepaid vouchers in Splynx:

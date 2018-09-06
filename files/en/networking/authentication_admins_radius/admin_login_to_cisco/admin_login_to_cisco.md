@@ -20,32 +20,26 @@ Also we need to add router to Splynx and choose NAS type = Cisco and setup the s
 
 Now we need to configure Cisco device to accept radius authentication and privilege levels:
 
-`aaa new-model`
+```
+aaa new-model
+aaa authentication login SPLYNX group radius local
+aaa authorization exec SPLYNX group radius local
 
-`aaa authentication login SPLYNX group radius local`
+radius-server attribute 6 on-for-login-auth
+radius-server host 10.0.1.16 auth-port 1812 acct-port 1813
+radius-server key 123456
 
-`aaa authorization exec SPLYNX group radius local`
-
-`radius-server attribute 6 on-for-login-auth`
-
-`radius-server host 10.0.1.16 auth-port 1812`
- `acct-port 1813`
-
-`radius-server key 123456`
-
-`line vty 0 4`
-
-`authorization exec SPLYNX`
-
-`login authentication SPLYNX`
-
-`transport input ssh`
+line vty 0 4
+authorization exec SPLYNX
+login authentication SPLYNX
+transport input ssh
 
 for SSH configuration please run these commands:
-`cisco(config)# ip domain name splynx.test`
-`cisco(config)# crypto key generate rsa   || (chose at lease 1024 bit key)`
-`cisco(config)# ip ssh version 2`
 
+cisco(config)# ip domain name splynx.test
+cisco(config)# crypto key generate rsa   || (chose at lease 1024 bit key)
+cisco(config)# ip ssh version 2
+```
 
 When commands entered to Cisco and Splynx are configured, admin is able to login to the Cisco router via SSH:
 

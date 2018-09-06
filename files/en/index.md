@@ -6,7 +6,7 @@ Table of contents
 * [Hardware requirements](getting_started_guide/hardware_requirements/hardware_requirements.md)
 * [Install Splynx ISP Framework](getting_started_guide/install_splynx/install_splynx.md)
 * [Dashboard](getting_started_guide/dashboard/dashboard.md)
- 
+* [Create swap file](getting_started_guide/create_swap_file/create_swap_file.md)
 
 ##### Configuring Tariff Plans
 * [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)

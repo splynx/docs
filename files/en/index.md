@@ -24,6 +24,7 @@ Table of contents
 * [Custom additional fields](customer_management/custom_additional_fields/custom_additional_fields.md)
 * [Search](customer_management/search/search.md)
 * [Configuration of the Table, List](customer_management/configuration_of_the_table/configuration_of_the_table.md)
+* [Customer information](customer_management/customer_information/customer_information.md)
 * [Customer services](customer_management/customer_services/customer_services.md)
 * [Customer billing](customer_management/customer_billing/customer_billing.md)
 * [Customer statistics](customer_management/customer_statistics/customer_statistics.md)

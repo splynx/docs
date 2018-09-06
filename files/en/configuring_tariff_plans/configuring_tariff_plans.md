@@ -7,12 +7,12 @@ _Internet plans_ are also limiting the speed accordingly to plan settings. _Voic
 
 [→ Internet plans](internet_plans/internet_plans.md)
 
-[→ Burst configuration](/display/SPL/Burst+speed+concept)
+[→ Burst configuration](burst_speed_concept/burst_speed_concept.md)
 
-[→ Fair user policy settings](/display/SPL/Fair+User+Policy)
+[→ Fair user policy settings](fair_user_policy/fair_user_policy.md)
 
-[→ Voice plans](/display/SPL/Voice+plans)
+[→ Voice plans](voice_plans/voice_plans.md)
 
-[→ Custom plans](/display/SPL/Custom+plans)
+[→ Custom plans](custom_plans/custom_plans.md)
 
-[→ Capped plans and Top-Ups](/display/SPL/Capped+plans+and+Top-Ups)
+[→ Capped plans and Top-Ups](capped_plans/capped_plans.md)

@@ -36,9 +36,9 @@ There is a **Side Menu** at the left side of the page with following modules:
 
 [Support](../../support_tickets_messages/index.md) - It shows the support aspect of the system
 
-[Administration](/display/SPL/Administration) - It shows the administration aspect of the system
+[Administration](../../administration/index.md) - It shows the administration aspect of the system
 
-[Config](/display/SPL/Configuration) - It shows the configuration aspect of the system
+[Config](../../config/index.md) - It shows the configuration aspect of the system
 
 My profile - It shows the current profile on the system
 

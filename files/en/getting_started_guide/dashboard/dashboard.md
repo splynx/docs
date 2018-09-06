@@ -38,7 +38,7 @@ There is a **Side Menu** at the left side of the page with following modules:
 
 [Administration](../../administration/index.md) - It shows the administration aspect of the system
 
-[Config](../../config/index.md) - It shows the configuration aspect of the system
+[Config](../../configuration/index.md) - It shows the configuration aspect of the system
 
 My profile - It shows the current profile on the system
 

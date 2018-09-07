@@ -100,7 +100,8 @@ Table of contents
 * [News](support_tickets_messages/news/news.md)
 
 
-##### [Voice](./voice/voice.md)
+##### [Voice](voice/voice.md)
+
 * [Rates](voice/rates/rates.md)
 * [Voice Categories](voice/voice_categories/voice_categories.md)
 * [Prefixes](voice/prefixes/prefixes.md)

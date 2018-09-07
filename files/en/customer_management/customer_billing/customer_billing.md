@@ -97,7 +97,7 @@ There is also an option to choose columns, which will be displayed in the transa
 
 ![Columns](columns.png)
 
-To know more about transactions, please, visit transactions manual page - [Transactions](../../finance/transactions/transactions.md).
+To know more about transactions, please, visit transactions manual page - [Transactions](finance/transactions/transactions.md).
 
 
 ## Invoices
@@ -106,7 +106,7 @@ Every customer's invoice is shown in this table. It contains invoice number, dat
 
 ![Invoices](invoices.png)
 
-Detailed explanation of Invoicing you can find here -  [Invoices](../../finance/invoices/invoices.md)
+Detailed explanation of Invoicing you can find here -  [Invoices](finance/invoices/invoices.md)
 
 
 ## Payments
@@ -114,7 +114,7 @@ Detailed explanation of Invoicing you can find here -  [Invoices](../../finance/
 Payment table contains all payments, related to the customer with the date of payment, payment type, amount, invoice number and comment on the payment. The same as with transactions and invoices there is an option to print out, copy or save customer's payments in CSV or PDF files and sort columns by drag&droping fields.
 
 ![Payments](payments.png)
-More information about Payments you can find here -  [Payments](../../finance/payments/payments.md)
+More information about Payments you can find here -  [Payments](finance/payments/payments.md)
 
 
 ## Proforma invoices
@@ -123,4 +123,4 @@ All Proforma invoices related to the customer will be shown in this table contai
 There is the same option to print out, copy or save customer's pro forma invoices in CSV or PDF files and sort columns by drag&drop fields.
 
 ![Proforma](proforma.png)
-Detailed information about Proforma invoices and its creation you can find here - [Proforma invoices](../../finance/proforma_invoices/proforma_invoices.md)
+Detailed information about Proforma invoices and its creation you can find here - [Proforma invoices](finance/proforma_invoices/proforma_invoices.md)

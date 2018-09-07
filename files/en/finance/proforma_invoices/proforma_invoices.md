@@ -20,7 +20,7 @@ By clicking on a period you can set it up manually, so you can select the option
 It is possible to operate with every proforma invoice with icons ![Icons](invoices_icons.png) in the column Operations.
 
 * To be able **to view** the proforma invoice in PDF with icon ![View icon](view_invoice.png), it is necessary to configure an invoice template first in `Config → System → Templates` and define template values in `Config → Finance → Template Values`.
-More information about Invoice's template configuration you can find here - [Templates](../../configuration/system/templates/templates.md), [Invoices](../invoices/invoices.md).
+More information about Invoice's template configuration you can find here - [Templates](configuration/system/templates/templates.md), [Invoices](invoices/invoices.md).
 
 * You can also **set up proforma invoices global settings** for all customers in `Config → Finance → Settings`.
 
@@ -32,7 +32,7 @@ More information about Invoice's template configuration you can find here - [Tem
 ![Edit](edit_proforma_invoice.png)
 
 
-It is possible **to send** the proforma invoice via email with ![Send](send_invoiceviamail.png) (if the email server is [configured](../../configuration/main_configuration/email_config/email_config.md)).
+It is possible **to send** the proforma invoice via email with ![Send](send_invoiceviamail.png) (if the email server is [configured](configuration/main_configuration/email_config/email_config.md)).
 You can write a message body or choose it from templates and load it.
 
 ![Load template](load_template.png)

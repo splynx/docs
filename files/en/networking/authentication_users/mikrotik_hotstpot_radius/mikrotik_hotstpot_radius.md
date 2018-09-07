@@ -83,11 +83,11 @@ Setting the MAC address of client to his internet service
 
 #### Blocking of hostpot users
 
-If client has a static/permanent IP address assigned to the service, than blocking is made via putting IP address to the address list and further redirect. In case of dynamic IP address, the hotspot IP of client is mapped to one of IPs from the blocking range of Splynx. To get more information about blocking customers, please, read our tutorial page - [blocking customers in Splynx](../../blocking_customers/blocking_customers.md)
+If client has a static/permanent IP address assigned to the service, than blocking is made via putting IP address to the address list and further redirect. In case of dynamic IP address, the hotspot IP of client is mapped to one of IPs from the blocking range of Splynx. To get more information about blocking customers, please, read our tutorial page - [blocking customers in Splynx](blocking_customers/blocking_customers.md)
 
 
 #### Setting different values to Radius attributes
 
 In `Config → Networking → Radius` is field available for setting additional attributes.
 
-To understand the usage of Radius attributes customization, please, follow the guide - [Radius server customization](../../radius_customization/radius_customization.md)
+To understand the usage of Radius attributes customization, please, follow the guide - [Radius server customization](radius_customization/radius_customization.md)

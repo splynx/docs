@@ -62,7 +62,7 @@ There are **global billing settings** for all customers in `Config → Finance �
 * **Minimal balance** - minimal balance for the customer
 * **Work with** - it can be with the Deposit or the Balance
 
-More information about Invoices global configuration can be found here - [Finance configuration](../finance.md).
+More information about Invoices global configuration can be found here - [Finance configuration](finance.md).
 
 
 In Invoices Settings is also possible **to set an invoice issuing automatically** and to define the invoice number pattern.
@@ -84,7 +84,7 @@ To edit an invoice with ![Edit icon](editinvoice.png) icon, click on the tab `Bi
 ![Edit invoice](edit_invoice.png)
 
 
-It is also possible to send the invoice via email with ![Send invoice](send_invoiceviamail.png) icon (if the email server is [configured](../../configuration/main_configuration/email_config/email_config.md)) in `Billing → Invoices`.
+It is also possible to send the invoice via email with ![Send invoice](send_invoiceviamail.png) icon (if the email server is [configured](configuration/main_configuration/email_config/email_config.md)) in `Billing → Invoices`.
 You can write a message body or choose it from templates and load it.
 
 ![Send file](send_file.png)

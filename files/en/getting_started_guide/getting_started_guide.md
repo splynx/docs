@@ -5,10 +5,10 @@ To get started with Splynx you should install the system in Debian or Ubuntu lin
 
 Please follow these links to get license, install the software and make first steps with it:
 
-[→ Splynx license](./splynx_license/splynx_license.md)
+[→ Splynx license](getting_started_guide/splynx_license/splynx_license.md)
 
-[→ Hardware requirements](./hardware_requirements/hardware_requirements.md)
+[→ Hardware requirements](getting_started_guide/hardware_requirements/hardware_requirements.md)
 
-[→ Install Splynx ISP Framework](./install_splynx/install_splynx.md)
+[→ Install Splynx ISP Framework](getting_started_guide/install_splynx/install_splynx.md)
 
-[→ Dashboard](./dashboard/dashboard.md)
+[→ Dashboard](getting_started_guide/dashboard/dashboard.md)

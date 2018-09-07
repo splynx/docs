@@ -1,14 +1,14 @@
 Table of contents
 =================
 
-##### Getting Started With SPLYNX
+##### [Getting Started With SPLYNX](./getting_started_guide/getting_started_guide.md)
 * [Splynx license](getting_started_guide/splynx_license/splynx_license.md)
 * [Hardware requirements](getting_started_guide/hardware_requirements/hardware_requirements.md)
 * [Install Splynx ISP Framework](getting_started_guide/install_splynx/install_splynx.md)
 * [Dashboard](getting_started_guide/dashboard/dashboard.md)
- 
+* [Create swap file](getting_started_guide/create_swap_file/create_swap_file.md)
 
-##### Configuring Tariff Plans
+##### [Configuring Tariff Plans](./configuring_tariff_plans/configuring_tariff_plans.md)
 * [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)
 * [Burst speed concept](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
 * [Fair User Policy](configuring_tariff_plans/fair_user_policy/fair_user_policy.md)
@@ -19,11 +19,12 @@ Table of contents
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
  
 
-##### Customer Management
+##### [Customer Management](./customer_management/customer_management.md)
 * [Adding new customer](customer_management/add_new_customer/add_new_customer.md)
 * [Custom additional fields](customer_management/custom_additional_fields/custom_additional_fields.md)
 * [Search](customer_management/search/search.md)
 * [Configuration of the Table, List](customer_management/configuration_of_the_table/configuration_of_the_table.md)
+* [Customer information](customer_management/customer_information/customer_information.md)
 * [Customer services](customer_management/customer_services/customer_services.md)
 * [Customer billing](customer_management/customer_billing/customer_billing.md)
 * [Customer statistics](customer_management/customer_statistics/customer_statistics.md)
@@ -36,7 +37,7 @@ Table of contents
 * [Customer Portal](customer_portal/customer_portal.md)
  
 
-##### Finance
+##### [Finance](./finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
 * [Transactions](finance/transactions/transactions.md)
 * [Invoices](finance/invoices/invoices.md)
@@ -51,7 +52,7 @@ Table of contents
 * [Inventory](inventory/inventory.md)
 
 
-##### Networking
+##### [Networking](./networking/networking.md)
 * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
     * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
@@ -92,7 +93,7 @@ Table of contents
 * [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)
 
 
-##### Support, Tickets and Messages
+##### [Support, Tickets and Messages](./support_tickets_messages/support_tickets_messages.md)
 * [Email messages](support_tickets_messages/email_messages/email_messages.md)
 * [SMS messages](support_tickets_messages/sms_messages/sms_messages.md)
 * [Tickets](support_tickets_messages/tickets/tickets.md)
@@ -100,6 +101,7 @@ Table of contents
 
 
 ##### [Voice](voice/voice.md)
+
 * [Rates](voice/rates/rates.md)
 * [Voice Categories](voice/voice_categories/voice_categories.md)
 * [Prefixes](voice/prefixes/prefixes.md)
@@ -107,7 +109,7 @@ Table of contents
 * [Processing](voice/processing/processing.md)
 
 
-##### Administration
+##### [Administration](./administration/administration.md)
 * [Main](administration/main.md)
     * [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md)
         * [Default roles in details](administration/main/admins_and_permissions/default_roles/default_roles.md)
@@ -124,7 +126,7 @@ Table of contents
     * [Pending statuses/plans](administration/logs/pending_statuses_plans/pending_statuses_plans.md)
 
 
-##### Configuration
+##### [Configuration](./configuration/configuration.md)
 * [System](configuration/system/system.md)
     * [Additional fields](configuration/system/additional_fields/additional_fields.md)
     * [Custom translations](configuration/system/custom_translations/custom_translations.md)
@@ -192,7 +194,7 @@ Table of contents
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
 
 
-##### Payment systems
+##### [Payment systems](./payment_systems/payment_systems.md)
 * [Authorize.net](payment_systems/authorize/authorize.md)
 * [Braintree payments](payment_systems/braintree/braintree.md)
 * [Gocardless.com](payment_systems/gocardless/gocardless.md)

@@ -29,7 +29,7 @@ IP address will be added to Mikrotik address list:
 
 * **SpLBL_blocked** - if customer's status is **Blocked**.
 * **SpLBL_new** - if customer's status is **New**.
-* **SpLBL_active** - if customer's status is **Active**, but service is blocked due to [FUP](../bandwidth_management/fup/fup.md) blocking rule or [CAP](,,.bandwidth_management/capped_plans/capped_plans.md) blocking rule.
+* **SpLBL_active** - if customer's status is **Active**, but service is blocked due to [FUP](networking/bandwidth_management/fup/fup.md) blocking rule or [CAP](networking/bandwidth_management/capped_plans/capped_plans.md) blocking rule.
 
 #### Settings
 * **Enable API** = on
@@ -39,27 +39,23 @@ IP address will be added to Mikrotik address list:
 ---
 #### Blocking rules examples
 
+```
+/ip firewall filter add chain=forward src-address-list=SpLBL_blocked action=drop comment="Splynx default blocking rule"
+/ip firewall filter add chain=forward src-address-list=SpLBL_new action=drop comment="Splynx default blocking rule"
+/ip firewall filter add chain=forward src-address-list=SpLBL_active action=drop comment="Splynx default blocking rule"
 
-`/ip firewall filter add chain=forward src-address-list=SpLBL_blocked action=drop comment="Splynx default blocking rule"``
+/ip firewall filter add chain=forward dst-address-list=SpLBL_blocked action=drop comment="Splynx default blocking rule"
+/ip firewall filter add chain=forward dst-address-list=SpLBL_new action=drop comment="Splynx default blocking rule"
+/ip firewall filter add chain=forward dst-address-list=SpLBL_active action=drop comment="Splynx default blocking rule"
+```
 
-``/ip firewall filter add chain=forward src-address-list=SpLBL_new action=drop comment="Splynx default blocking rule"``
-
-``/ip firewall filter add chain=forward src-address-list=SpLBL_active action=drop comment="Splynx default blocking rule"``
-
-``/ip firewall filter add chain=forward dst-address-list=SpLBL_blocked action=drop comment="Splynx default blocking rule"``
-
-``/ip firewall filter add chain=forward dst-address-list=SpLBL_new action=drop comment="Splynx default blocking rule"``
-
-``/ip firewall filter add chain=forward dst-address-list=SpLBL_active action=drop comment="Splynx default blocking rule"``
-
-
-## Raadius CoA blocking
+## Radius CoA blocking
 
 #### Action
 Radius server (Splynx) will send blocking attribute(s) to the Router via Change Of Authorization (CoA) Radius packet.
 
 #### Settings
-* **Customer Block* = COA Block attribute.
+* **Customer Block** = COA Block attribute.
 * **CoA Block attributes** = your attributes.
   By default, this field contains "Mikrotik-Address-List = Reject_1".
 * **CoA Restore attributes** = your attributes.
@@ -73,8 +69,9 @@ Radius server (Splynx) will send blocking attribute(s) to the Router via Change 
 
 
 #### Blocking rules examples
-``/ip firewall filter add chain=forward src-address-list=Reject_1 action=drop comment="Splynx default blocking rule"``
-
+```
+/ip firewall filter add chain=forward src-address-list=Reject_1 action=drop comment="Splynx default blocking rule"
+```
 
 ## 3. Radius session disconnection
 
@@ -90,15 +87,14 @@ Disconnection of the session.
 ![CoA block attributes](coa_block_attr1.png)
 
 #### Blocking rules examples
-``/ip firewall filter add chain=forward src-address-list=Reject_0 action=drop comment="Splynx default blocking rule"``
 
-``/ip firewall filter add chain=forward src-address-list=Reject_1 action=drop comment="Splynx default blocking rule"``
-
-``/ip firewall filter add chain=forward src-address-list=Reject_2 action=drop comment="Splynx default blocking rule"``
-
-``/ip firewall filter add chain=forward src-address-list=Reject_3 action=drop comment="Splynx default blocking rule"``
-
-``/ip firewall filter add chain=forward src-address-list=Reject_4 action=drop comment="Splynx default blocking rule"``
+```
+/ip firewall filter add chain=forward src-address-list=Reject_0 action=drop comment="Splynx default blocking rule"
+/ip firewall filter add chain=forward src-address-list=Reject_1 action=drop comment="Splynx default blocking rule"
+/ip firewall filter add chain=forward src-address-list=Reject_2 action=drop comment="Splynx default blocking rule"
+/ip firewall filter add chain=forward src-address-list=Reject_3 action=drop comment="Splynx default blocking rule"
+/ip firewall filter add chain=forward src-address-list=Reject_4 action=drop comment="Splynx default blocking rule"
+```
 
 
 ## Reject IP addresses
@@ -142,38 +138,29 @@ Example of how this page can be customized:
 
 If you use Mikrotik routers, these are 2 firewall rules to redirect all TCP traffic to the blocking webpage and to cut all other traffic, like Peer-to-peer connections (redirect them to router itself):
 
-
-`/ip firewall nat add action=dst-nat chain=dstnat protocol=tcp src-address-list=Reject_1 to-addresses=10.0.1.158 to-ports=8101`
-
-`/ip firewall nat add action=redirect chain=dstnat src-address-list=Reject_1`
-
+```
+/ip firewall nat add action=dst-nat chain=dstnat protocol=tcp src-address-list=Reject_1 to-addresses=10.0.1.158 to-ports=8101
+/ip firewall nat add action=redirect chain=dstnat src-address-list=Reject_1
+```
 
 There is another approach how to redirect customer; you can use Mikrotik Proxy server to redirect all HTTP traffic to Splynx customer's portal:
 
 IP 10.0.1.16 is the router's WAN IP address.
-`/ip proxy`
+```
+/ip proxy
+set enabled=yes
+/ip proxy access
+add action=allow disabled=no dst-host=10.0.1.6 dst-port=80
+add action=deny disabled=no dst-port=80 redirect-to=10.0.1.16/portal/
+add action=deny
 
-`set enabled=yes`
-
-/ip proxy access`
-
-`add action=allow disabled=no dst-host=10.0.1.6 dst-port=80`
-
-`add action=deny disabled=no dst-port=80 redirect-to=10.0.1.16/portal/`
-
-`add action=deny`
-
-`/ip firewall filter`
-
-`add action=drop chain=forward comment="Block All" disabled=yes log-prefix="" src-address-list=Reject_1`
-
-`add action=accept chain=block comment="Users need DNS to work" dst-port=53 protocol=udp`
-
-`add action=accept chain=block comment="Make port 80 to work" dst-port=80 protocol=tcp`
-
-`add action=drop chain=block comment="Block everything else for blocked users"`
-
-`add action=jump chain=forward comment="Redirect blocked users to the block chain" jump-target=disconnected src-address-list=Reject_1`
+/ip firewall filter
+add action=drop chain=forward comment="Block All" disabled=yes log-prefix="" src-address-list=Reject_1
+add action=accept chain=block comment="Users need DNS to work" dst-port=53 protocol=udp
+add action=accept chain=block comment="Make port 80 to work" dst-port=80 protocol=tcp
+add action=drop chain=block comment="Block everything else for blocked users"
+add action=jump chain=forward comment="Redirect blocked users to the block chain" jump-target=disconnected src-address-list=Reject_1
+```
 
 All methods of Splynx user blocking you can find on our video tutorials:
 

@@ -57,4 +57,4 @@ Here customer can also create and submit a new ticket by clicking on Create tick
 7. Finance
 8. Additional attributes in profile.
 
-Detailed information about configuring Customer Portal can be found here - Portal. [Portal](../configuration/prefixes.md)
+Detailed information about configuring Customer Portal can be found here - Portal. [Portal](configuration/configuration.md)

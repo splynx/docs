@@ -15,7 +15,7 @@ When you click on icon ![Download icon](download_icon.png) in Operations column 
 History Preview could be a useful feature for the **mass billing**, when you need to double-check customer's services and prices for a group of customers before issuing invoices for them. It is possible to do by creating proforma invoices for customers, who is due to pay, and checking them in a history preview.
 
 
-How to create Proforma invoices (automatic and manual creation) were mentioned  in [Proforma invoices](../proforma_invoices/proforma_invoices.md). After proforma invoices (for a particular day) will be created you can check the full list of them in `Finance → Proforma Invoices`.
+How to create Proforma invoices (automatic and manual creation) were mentioned  in [Proforma invoices](finance/proforma_invoices/proforma_invoices.md). After proforma invoices (for a particular day) will be created you can check the full list of them in `Finance → Proforma Invoices`.
 
 ![List](list.png)
 

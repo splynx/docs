@@ -26,19 +26,19 @@ At the top of the live dashboard will be displayed the number of customers onlin
 
 There is a **Side Menu** at the left side of the page with following modules:
 
-[Tariffs](../../configuring_tariff_plans/configuring_tariff_plans.md) - It shows the tariffs aspect of the system
+[Tariffs](configuring_tariff_plans/configuring_tariff_plans.md) - It shows the tariffs aspect of the system
 
-[Customers](../../customer_management/customer_management.md) - It shows the customers aspect of the system
+[Customers](customer_management/customer_management.md) - It shows the customers aspect of the system
 
-[Finance](../../finance/finance.md) - It shows the financial aspect of the system
+[Finance](finance/finance.md) - It shows the financial aspect of the system
 
-[Networking](../../networking/networking.md) - It shows the networking aspect of the system
+[Networking](networking/networking.md) - It shows the networking aspect of the system
 
-[Support](../../support_tickets_messages/support_tickets_messages.md) - It shows the support aspect of the system
+[Support](support_tickets_messages/support_tickets_messages.md) - It shows the support aspect of the system
 
-[Administration](../../administration/administration.md) - It shows the administration aspect of the system
+[Administration](administration/administration.md) - It shows the administration aspect of the system
 
-[Config](../../configuration/configuration.md) - It shows the configuration aspect of the system
+[Config](configuration/configuration.md) - It shows the configuration aspect of the system
 
 My profile - It shows the current profile on the system
 

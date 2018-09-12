@@ -8,21 +8,21 @@ Dashboard is the main control panel in Splynx which will help you to check finan
 
 At the top of the live dashboard will be displayed the number of customers online, number of new customers, new and open tickets and number of devices down. It is possible to view them in details in a list.
 
-![Screenshot](Screenshot at May 12 16-54-11.png)
+![Screenshot](Screenshot_at_May_12_16-54-11.png)
 
-![Screenshot](Screenshot at May 12 16-53-21.png)
+![Screenshot](Screenshot_at_May_12_16-53-21.png)
 
 **Live dashboard** is divided into 4 main parts:
 
-![ ](Screenshot at May 12 16-55-54.png)_System status_ - with the information free memory, last DB backup, last remote backup, etc.
+![ ](Screenshot_at_May_12_16-55-54.png)_System status_ - with the information free memory, last DB backup, last remote backup, etc.
 
-![ ](Screenshot at May 12 16-57-33.png) _Customers_ - with the latest statistics about new, active, blocked customers, etc.
+![ ](Screenshot_at_May_12_16-57-33.png) _Customers_ - with the latest statistics about new, active, blocked customers, etc.
 
-![ ](Screenshot at May 12 16-56-17.png)_Networking_ - with the information about number of routers, IPv4 networks, Monitoring, etc.
+![ ](Screenshot_at_May_12_16-56-17.png)_Networking_ - with the information about number of routers, IPv4 networks, Monitoring, etc.
 
-![ ](Screenshot at May 12 16-56-28.png)_Finance_ - with the statistics of unpaid/ paid, debit transactions and payments for the current and last months.
+![ ](Screenshot_at_May_12_16-56-28.png)_Finance_ - with the statistics of unpaid/ paid, debit transactions and payments for the current and last months.
 
-![Screenshot](Screenshot at May 12 17-09-39.png)
+![Screenshot](Screenshot_at_May_12_17-09-39.png)
 
 There is a **Side Menu** at the left side of the page with following modules:
 

@@ -5,7 +5,7 @@ Cashdesk is a Splynx module for processing payments. Administrator can create us
 
 The first step for Cashdesk activation is installation. It’s performed by two following commands in Linux CLI where Splynx is installed:
 
-```
+```bash
 apt-get update  
 apt-get install splynx-cashdesk
 ```

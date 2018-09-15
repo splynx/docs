@@ -68,7 +68,7 @@ Below are examples of default accounting of tariff & online time rules:
 * Traffic consumption of your customers will be accounted from 08:00 to 02:00
 * Online time consumption of your customers will be accounted from 10:00 to 02:00
 
-![Screenshot%202017-07-28%20at%2004.24.03%20PM.png](Screenshot%202017-07-28%20at%2004.24.03%20PM.png)
+![Screenshot_2017-07-28_at_04.24.03_PM.png](Screenshot_2017-07-28_at_04.24.03_PM.png)
 
 _Overriding accounting configuration per rule:_
 
@@ -95,20 +95,20 @@ _<u>Examples of accounting of traffic & online time rules are shown below</u>_:
 * Traffic consumption of your customers will be accounted from 08:00 to 02:00
 * Online time consumption of your customers will be accounted from 10:00 to 02:00
 
-![Screenshot%202017-07-28%20at%2004.26.23%20PM.png](Screenshot%202017-07-28%20at%2004.26.23%20PM.png)
+![Screenshot_2017-07-28_at_04.26.23_PM.png](Screenshot_2017-07-28_at_04.26.23_PM.png)
 
 Here are some previews explaining logic of work:
 
-![Screenshot%202017-07-28%20at%2004.27.07%20PM.png](Screenshot%202017-07-28%20at%2004.27.07%20PM.png)
+![Screenshot_2017-07-28_at_04.27.07_PM.png](Screenshot_2017-07-28_at_04.27.07_PM.png)
 
 <u>Rule #1</u>: Override accounting is enabled, accounting of traffic is enabled, accounting of online time is enabled
 
-![Screenshot%202017-07-28%20at%2004.26.53%20PM.png](Screenshot%202017-07-28%20at%2004.26.53%20PM.png)
+![Screenshot_2017-07-28_at_04.26.53_PM.png](Screenshot_2017-07-28_at_04.26.53_PM.png)
 
 <u>Rule #2</u>: Override accounting is disabled
 
-![Screenshot%202017-07-28%20at%2004.27.33%20PM.png](Screenshot%202017-07-28%20at%2004.27.33%20PM.png)
+![Screenshot_2017-07-28_at_04.27.33_PM.png](Screenshot_2017-07-28_at_04.27.33_PM.png)
 
 <u>Rule #3</u>: Override accounting is enabled, accounting of traffic is enabled, accounting of online time is enabled:
 
-![Screenshot%202017-07-28%20at%2004.27.47%20PM.png](Screenshot%202017-07-28%20at%2004.27.47%20PM.png)
+![Screenshot_2017-07-28_at_04.27.47_PM.png](Screenshot_2017-07-28_at_04.27.47_PM.png)

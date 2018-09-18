@@ -15,4 +15,4 @@ _Internet plans_ are also limiting the speed accordingly to plan settings. _Voic
 
 [→ Custom plans](configuring_tariff_plans/custom_plans/custom_plans.md)
 
-[→ Capped plans and Top-Ups](configuring_tariff_plans/display current-configurationcapped_plans/capped_plans.md)
+[→ Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)

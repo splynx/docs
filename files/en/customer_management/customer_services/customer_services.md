@@ -32,6 +32,9 @@ A window will pop up and it will be possible to select the service.
 
 ***Tariffs options***
 * **Router** - we can select the router
+      
+   ![Warning](warning.png) This field is required when Mikrotik API are used.
+  
 
 * **Login** - the login
 

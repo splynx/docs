@@ -15,10 +15,10 @@ In order not to transfer your data over the Internet, the package uses openvpn t
 The advantage of this approach is that you do not need to share the server, you can limit ssh or web access at your discretion. For maintenance, it's enough to allow traffic inside our tunnel.
 
 
-Installation can be performed in 2 ways:
+## Installation can be performed in 2 ways:
 
 
-## Web-based installation
+### Web-based installation
 
 Open `Config -> Add-ons`
 ![Config - > Add-ons](config.png)
@@ -37,7 +37,7 @@ Check
 
 
 
-## Installation using the command line
+### Installation using the command line
 
 To install, run
 ```

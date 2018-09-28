@@ -51,7 +51,7 @@ PING 172.29.64.1 (172.29.64.1) 56(84) bytes of data.
 64 bytes from 172.29.64.1: icmp_seq=1 ttl=64 time=49.0 ms                                                
 64 bytes from 172.29.64.1: icmp_seq=2 ttl=64 time=49.2 ms                                                
 ^C                                                    ```
-
+```
                                                  
 ---
 > ***Please don't remove these users, and don't close SSH and WEB TCP ports in firewall on OpenVPN interface.***

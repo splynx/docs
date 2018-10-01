@@ -21,15 +21,6 @@ If for some reason the plugin is inadmissible for you, but there is a need for b
 
 2. Allow access to your server via ssh from host `backup.splynx.com`
 
-3. Create a unix user so that we can connect.
-
-  You can use this command for it:
-  ```
-  useradd -m -p YOUR_PASSWORD USER_NAME
-  ```
-4.
-Send an e-mail to support@splynx.com, which states that you want to connect the online backup service, as well as the data for the ssh connection `LOGIN:PASSWORD@PUBLIC_IP:PORT`
-
-Also, instead of a password, you can send a private key
+3. Send an e-mail to support@splynx.com, which states that you want to connect the online backup service, as well as the data for the ssh connection `PUBLIC_IP:PORT`
 
 >In this case, the backup will be performed via rsync

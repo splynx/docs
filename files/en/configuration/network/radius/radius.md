@@ -45,7 +45,9 @@ A new configuration box will appear:
 * **FUP CoA Restore attributes** -
 * **Use reject IP [0-4]** - Enable to use the IP's 0-4 explained in first step.
 * **Reject [0-4] Attribute** -
-* **Error session time limit** - limitation of the session time (in seconds) in case of an authorization error (for blocked customers).
+* **Error session time limit** - limitation of the session time (in seconds) in case of an authorization error, forcing users to reconnect after a time out (for customers that do not have any active services).
+This is necessary in order that after activation, the customer received his address from splynx, without manual reconnection on his part.
+
 * **Use admin login** - Enable, allows to log on router with administrator credentials
 * **Attribute for Read Group** -
 * **Attribute for Write Group** -

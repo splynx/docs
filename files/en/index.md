@@ -164,6 +164,7 @@ Table of contents
     * [IP Host categories](configuration/network/ip_host_categories/ip_host_categories.md)
     * [Monitoring config](configuration/network/monitoring_config/monitoring_config.md)
     * [Network Weathermap Editor](configuration/network/network_weathermap_editor/network_weathermap_editor.md)
+    * [Radius Extended](configuration/network/radius_extended/radius_extended.md)
 * [Voice processing](configuration/voice/voice.md)
     * [CDR Import](configuration/voice/cdr_import/cdr_import.md)
     * [CDR History](configuration/voice/cdr_history/cdr_history.md)

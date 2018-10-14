@@ -10,7 +10,7 @@ There are 3 types of blocking scenarios:
 
 This method is useful if you do not use Radius authorization. Splynx uses Mikrotik API to operate a router.
 
-### 1.1 Credentials
+### 1.1 API blocking via Credentials
 
 #### Action
 
@@ -22,7 +22,7 @@ Customer's credentials will be removed from the router. (Hotspot users, PPP secr
 ![The checkbox disabled customers to address-list](cust2addrlist.png)
 
 
-### 1.2 Address lists
+### 1.2 API blocking via Address lists
 
 #### Action
 IP address will be added to Mikrotik address list:

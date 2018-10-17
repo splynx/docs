@@ -17,7 +17,7 @@ A window will pop up and it will be possible to select the service.
 * **Tariff** - the tariff (`Internet`, `Voice`, `Custom`)
 * **Description** - a description of the tariff
 * **Quantity** - the quantity
-* **Unit** - number of unit
+* **Unit** - a unit of measurement is a definite magnitude of a quantity (is using for invoices - for example: m., ft, ...)
 * **Price** - the price
 * **Start date** - when the service will start
 * **End date** - when the service will end

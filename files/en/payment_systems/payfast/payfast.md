@@ -73,4 +73,4 @@ Now customers will see another button to pay as on the screenshot:
 
 To refill balance customers can use the link - “*http://yoursplynxurl/payfast-rb*”, where they have to enter registration details for the first time:
 
-![Add payfast account rb](add_payfast_account.png
+![Add payfast account rb](add_payfast_account.png)

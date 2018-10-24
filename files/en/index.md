@@ -193,6 +193,7 @@ Table of contents
 * [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
+* [Speedtest](addons_modules/speedtest/speedtest.md)
 
 
 ##### [Payment systems](./payment_systems/payment_systems.md)

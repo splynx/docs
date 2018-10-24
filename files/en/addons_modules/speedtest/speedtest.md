@@ -63,4 +63,4 @@ Speed Test progress bar:
 
 After customer have made Speed test, admin can see it in the Networking → SpeedTest result, and he can print copy or save it in few formats such as Excel, CSV, PDF:
 
-![Speedtest result](speedtest_result.png)
+![Speedtest results](speedtest_results.png)

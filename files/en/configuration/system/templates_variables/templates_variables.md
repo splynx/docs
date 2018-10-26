@@ -709,7 +709,7 @@ office@superisp.com
 ####Here you can find example of Document - Contract:
 <details>
 <summary>Template of a Contract</summary>
-<p markdown="1">
+<div markdown="1">
 
 ```bash     
      <!DOCTYPE html>
@@ -1053,5 +1053,5 @@ office@superisp.com
      </body>
      </html>
      ```
-</p>
+</div>
 </details>

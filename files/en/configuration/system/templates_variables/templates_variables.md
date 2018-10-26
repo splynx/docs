@@ -7,7 +7,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{{ dump(loader.values) }}</summary>
 <p markdown="1">
-#### result will be array of company fields:
+
+##### result will be array of company fields:
       
      object(models\common\finance\TemplateValues)#226 (30) {
      ["id"]=> string(2) "13"
@@ -50,7 +51,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{{ dump(customer) }}</summary>
 <p markdown="1">
-#### result will be array of customer fields:
+
+##### result will be array of customer fields:
       
      array(38) {
      ["id"]=> string(1) "4"
@@ -101,7 +103,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{{ dump(loader.info) }}</summary>
 <p markdown="1">
-#### result will be array of customer's information fields:
+
+##### result will be array of customer's information fields:
       
      object(models\common\customers\CustomerInfo)#226 (12) {
      ["customer_id"]=> string(1) "4"
@@ -126,7 +129,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{{ dump(loader.getServicesByTypeAndStatus('internet', 'active')) }}</summary>
 <p markdown="1">
-#### result will be array of service fields:
+
+##### result will be array of service fields:
       
      array(1) {
      [0]=> object(models\common\customers\ServicesInternet)#235 (47) {
@@ -183,7 +187,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{% set bundles = loader.getBundles() %} {{ dump(bundles) }}</summary>
 <p markdown="1">
-#### result will be array of all Bundles fields:
+
+##### result will be array of all Bundles fields:
       
       
      array(2) {
@@ -270,7 +275,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{% set servisesBundle = loader.getServicesBundle() %} {{ dump(servisesBundle) }}</summary>
 <p markdown="1">
-#### result will be array of the Bundle and all Services fields:
+
+##### result will be array of the Bundle and all Services fields:
       
      array(1) {
       [4]=> object(models\common\customers\services\ServicesBundle)#407 (35) {
@@ -319,7 +325,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{{ dump(loader.billing) }}</summary>
 <p markdown="1">
-#### result will be array of billing fields:
+
+##### result will be array of billing fields:
       
      object(models\common\customers\CustomerBilling)#226 (36) {
      ["customer_id"]=> string(1) "4"
@@ -367,7 +374,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{{ dump(loader.partner) }}</summary>
 <p markdown="1">
-#### result will be array of partner fields:
+
+##### result will be array of partner fields:
       
      object(models\admin\administration\Partners)#226 (11) {
      ["id"]=> string(2) "13"
@@ -394,7 +402,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>Collapse title</summary>
 <p markdown="1">
-#### result will be array of transactions fields:
+
+##### result will be array of transactions fields:
       
      array(3) {
      [158]=> object(models\common\finance\Transactions)#226 (32) {
@@ -446,7 +455,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{{ dump(loader.invoices) }}</summary>
 <p markdown="1">
-#### result will be array of invoices variables fields:
+
+##### result will be array of invoices variables fields:
       
      array(1) { [685]=> object(models\common\finance\Invoices)#226 (29) {
      ["id"]=> string(4) "685"
@@ -485,7 +495,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{% for invoice in loader.getInvoices() %} ...</summary>
 <p markdown="1">
-#### {% for invoice in loader.getInvoices() %}
+
+##### {% for invoice in loader.getInvoices() %}
      Invoice {{ invoice.number}} items:
      {{ dump(invoice.items) }}
      {% endfor %}
@@ -551,7 +562,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{{ dump(loader.requests) }}</summary>
 <p markdown="1">
-#### result will be array of pro-forma fields:
+
+##### result will be array of pro-forma fields:
       
      array(1) {
      [2]=> object(models\common\finance\Requests)#226 (23) {
@@ -589,7 +601,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>{{ dump(loader.payments) }}</summary>
 <p markdown="1">
-#### result will be array of payment fields:
+
+##### result will be array of payment fields:
       
      array(1) {
      [366]=> object(models\common\finance\Payments)#226 (28) {
@@ -632,7 +645,8 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>Invoices: {{ dump(loader.getAttac ...</summary>
 <p markdown="1">
-#### Invoices:
+
+##### Invoices:
      {{ dump(loader.getAttachedInvoices) }}
      Pro-formas:
      {{ dump(loader.getAttachedRequests) }}
@@ -696,6 +710,7 @@ office@superisp.com
 <details>
 <summary>Template of a Contract</summary>
 <p markdown="1">
+
 ```bash     
      <!DOCTYPE html>
      <html lang="en">

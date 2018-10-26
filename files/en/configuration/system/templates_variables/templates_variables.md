@@ -46,6 +46,8 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
+
+
 **Customer's information:**
 <details>
 <summary>{{ dump(customer) }}</summary>
@@ -97,6 +99,8 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
+
+
 **General information:**
 <details>
 <summary>{{ dump(loader.info) }}</summary>
@@ -121,6 +125,8 @@ There is the list of all variables which are using in templates. So you can use 
      }
 </p>
 </details>
+
+
 
 **Get all Internet services that are Active:**
 <details>
@@ -178,6 +184,8 @@ There is the list of all variables which are using in templates. So you can use 
      }
 </p>
 </details>
+
+
 
 **Bundles:**
 <details>
@@ -266,6 +274,8 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
+
+
 **Services from Bundles:**
 <details>
 <summary>{% set servisesBundle = loader.getServicesBundle() %} {{ dump(servisesBundle) }}</summary>
@@ -315,6 +325,8 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
+
+
 **Billing information:**
 <details>
 <summary>{{ dump(loader.billing) }}</summary>
@@ -363,6 +375,8 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
+
+
 **Partner:**
 <details>
 <summary>{{ dump(loader.partner) }}</summary>
@@ -389,6 +403,8 @@ There is the list of all variables which are using in templates. So you can use 
      ["_isAdditionalAttributesLoaded":protected]=> bool(true) }
 </p>
 </details>
+
+
 
 **Transactions:**
 <details>
@@ -442,6 +458,8 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
+
+
 **Invoices variables:**
 <details>
 <summary>{{ dump(loader.invoices) }}</summary>
@@ -480,6 +498,8 @@ There is the list of all variables which are using in templates. So you can use 
      }
 </p>
 </details>
+
+
 
 **Invoice items:**
 <details>
@@ -547,6 +567,8 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
+
+
 **Pro-formas:**
 <details>
 <summary>{{ dump(loader.requests) }}</summary>
@@ -584,6 +606,8 @@ There is the list of all variables which are using in templates. So you can use 
      }
 </p>
 </details>
+
+
 
 **Payments:**
 <details>
@@ -628,6 +652,8 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
+
+
 **Attached documents:**
 <details>
 <summary>Invoices: {{ dump(loader.getAttac ...</summary>
@@ -649,6 +675,8 @@ There is the list of all variables which are using in templates. So you can use 
      }
 </p>
 </details>
+
+
 
 
 And now, you can see **examples** how to use variables in templates:
@@ -689,6 +717,8 @@ Our phone numbers in case you have not saved them yet,
  
 office@superisp.com
 ```
+
+
 
 Here you can find example of Document - Contract:
 <details>

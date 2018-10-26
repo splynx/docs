@@ -1,7 +1,7 @@
 SagePay Direct debit
 ====================
 
-**SagePay Direct debit is a Splynx add-on. It used to customers be able to pay their invoices by **https://sagepay.co.za/**
+**SagePay Direct debit is a Splynx add-on. It used to customers be able to pay their invoices by https://sagepay.co.za/**
 
 Install the add-on with commands:
 
@@ -15,46 +15,45 @@ apt install splynx-sagepay-direct-debit
 **Config → Integrations → Add-ons:**
 
 ![1.png](1.png)
-****
 
-****
+![2.png](2.png)
+
 
 **After that you need to registrate on **[*https://sagepay.co.za/*](https://sagepay.co.za/)** .**
 
-**After installation and registration you have to configure params:**
+After installation and registration you have to configure params:
 
 Config → Integrations → Modules list:
+![3.png](3.png)
 
-****
+![11.png](11.png)
 
-****
 
-****Serv******ice key- this key need onl******y when customers use their own credit cards to pay.****
+****Servicice key - this key need only when customers use their own credit cards to pay.****
 
-****
 
-**You can also set fee for customers and **Set admins roles to access from admin panel:**
+You can also set fee for customers and Set admins roles to access from admin panel:
 
-****
+![3.png](3.png)
 
-****
+![5.png](5.png)
 
-**After **installation** SegaPay Direct Debit, customers will see new pay window on their Dashboard and new pay button on their invoices.**
+After installation SegaPay Direct Debit, customers will see new pay window on their Dashboard and new pay button on their invoices.
 
-****
+![6.png](6.png)
 
-****
+![7.png](7.png)
 
-**You can also charge all customers using one button! Go to ***Finance → Invoices***, set period and click "Charge" as on the screenshot: **
+You can also charge all customers using one button! Go to: Finance → Invoices, set period and click "Charge" as on the screenshot:
 
-****
+![8.png](8.png)
 
-****
+![9.png](9.png)
 
-****
 
-**A**fter that **splynx will **create and **send **debit **batch file with payment details to the **[*https://sagepay.co.za/*](https://sagepay.co.za/)** after what **SegaPay procces this file. (The Statement API runs everyday at 00h15 and cheks all transactions for the previous day) **
 
-**Then you need to send the request once per day** to SagePay by ****cron**** and sage pay will return you payment status **or you can** view Payments status **forcibly** by “Sage Pay check payments” in the finance menu:**
+After that splynx will create and send debit batch file with payment details to the [*https://sagepay.co.za/*](https://sagepay.co.za/) after what SegaPay procces this file. (The Statement API runs everyday at 00h15 and cheks all transactions for the previous day)
 
-****
+Then you need to send the request once per day to SagePay by ****cron**** and sage pay will return you payment status or you can view Payments status forcibly by “Sage Pay check payments” in the finance menu:**
+
+![12.jpg](12.jpg)

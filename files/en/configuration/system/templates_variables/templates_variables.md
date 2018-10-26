@@ -3,7 +3,7 @@ Variables for templates
 
 There is the list of all variables which are using in templates. So you can use them in your custom templates.
 
-**Basic system values:**
+####Basic system values:
 <details>
 <summary>{{ dump(loader.values) }}</summary>
 <p markdown="1">
@@ -46,9 +46,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Customer's information:**
+####Customer's information:
 <details>
 <summary>{{ dump(customer) }}</summary>
 <p markdown="1">
@@ -99,9 +97,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**General information:**
+####General information:
 <details>
 <summary>{{ dump(loader.info) }}</summary>
 <p markdown="1">
@@ -126,9 +122,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Get all Internet services that are Active:**
+####Get all Internet services that are Active:
 <details>
 <summary>{{ dump(loader.getServicesByTypeAndStatus('internet', 'active')) }}</summary>
 <p markdown="1">
@@ -185,9 +179,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Bundles:**
+####Bundles:
 <details>
 <summary>{% set bundles = loader.getBundles() %} {{ dump(bundles) }}</summary>
 <p markdown="1">
@@ -274,9 +266,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Services from Bundles:**
+####Services from Bundles:
 <details>
 <summary>{% set servisesBundle = loader.getServicesBundle() %} {{ dump(servisesBundle) }}</summary>
 <p markdown="1">
@@ -325,9 +315,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Billing information:**
+####Billing information:
 <details>
 <summary>{{ dump(loader.billing) }}</summary>
 <p markdown="1">
@@ -375,9 +363,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Partner:**
+####Partner:
 <details>
 <summary>{{ dump(loader.partner) }}</summary>
 <p markdown="1">
@@ -404,9 +390,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Transactions:**
+####Transactions:
 <details>
 <summary>Collapse title</summary>
 <p markdown="1">
@@ -458,9 +442,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Invoices variables:**
+####Invoices variables:
 <details>
 <summary>{{ dump(loader.invoices) }}</summary>
 <p markdown="1">
@@ -499,9 +481,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Invoice items:**
+####Invoice items:
 <details>
 <summary>{% for invoice in loader.getInvoices() %} ...</summary>
 <p markdown="1">
@@ -567,9 +547,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Pro-formas:**
+####Pro-formas:
 <details>
 <summary>{{ dump(loader.requests) }}</summary>
 <p markdown="1">
@@ -607,9 +585,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Payments:**
+####Payments:
 <details>
 <summary>{{ dump(loader.payments) }}</summary>
 <p markdown="1">
@@ -652,9 +628,7 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-
-**Attached documents:**
+####Attached documents:
 <details>
 <summary>Invoices: {{ dump(loader.getAttac ...</summary>
 <p markdown="1">
@@ -718,13 +692,12 @@ Our phone numbers in case you have not saved them yet,
 office@superisp.com
 ```
 
-
-
-Here you can find example of Document - Contract:
+####Here you can find example of Document - Contract:
 <details>
 <summary>Template of a Contract</summary>
 <p markdown="1">
-#### <!DOCTYPE html>
+```bash     
+     <!DOCTYPE html>
      <html lang="en">
      <head>
      <meta charset="UTF-8">
@@ -1064,5 +1037,6 @@ Here you can find example of Document - Contract:
      </div>
      </body>
      </html>
+     ```
 </p>
 </details>

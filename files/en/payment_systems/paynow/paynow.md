@@ -9,6 +9,15 @@ To install Paynow Zimbabwe add-on, use following commands:
 apt-get update
 apt-get install splynx-paynow
 ```
+**or you can install it from Web UI:**
+
+*Config → Integrations → Add-ons:*
+
+![(image)](00.png)
+
+![(image)](000.png)
+
+![(image)](1.png)
 
 ## Paynow account
 
@@ -85,5 +94,14 @@ By using **Entry points**, you can enable add-on features. You allow:
 
 * **Transaction fee category** - id number of transaction category from **Config** / **Finance** / **Transaction categories**
 
-* **Additional info pattern for Paynow** - the value will be shown at the Paynow payment page. Look at the screenshot:  
-  ![(image)](paynow-payment.png)
+* **Additional info pattern for Paynow** - the value will be shown at the Paynow payment page.
+
+After that customer will see a new button and will be able to pay invoice by paynow:
+
+![(image)](10.png)
+
+![(image)](11.png)
+
+customer will be redirect to paynow payment page, there he will need to approve his payment:
+
+  ![(image)](12.png)

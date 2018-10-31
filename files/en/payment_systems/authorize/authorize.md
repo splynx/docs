@@ -10,8 +10,19 @@ To install Authorize.net add-on use next commands:
 apt-get update
 apt-get install splynx-authorizenet
 ```
+or you can install it from Web UI:
+*Config -> Integrations -> Modules list*:
 
+![1.png](1.png)
+
+![2.png](2.png)
+
+![3.png](3.png)
 After installation, you have to configure add-on under _Config / Integrations / Modules list / Splynx AuthorizeNet Recurring Billing Add-On / ![edit](image2018-8-22_11-18-23.png)._ Look at the screenshot:
+
+![4.png](4.png)
+
+![5.png](5.png)
 
 ![image2018-8-22_11-15-13.png](image2018-8-22_11-15-13.png)
 

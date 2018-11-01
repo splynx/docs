@@ -44,6 +44,15 @@ After installation SegaPay Direct Debit, customers will see new pay window on th
 
 ![7.png](7.png)
 
+After pressing those buttons customers will see payment window where they have to set their Credit card or Bank account depending on how they want to pay their invoices:
+
+![20.png](20.png)
+
+or they can set their credit card or bank account in *finance -> credit card* to use it all the time when they will make payments:
+
+![21.png](21.png)
+
+
 You can also charge all customers using one button! Go to: Finance → Invoices, set period and click "Charge" as on the screenshot:
 
 ![8.png](8.png)

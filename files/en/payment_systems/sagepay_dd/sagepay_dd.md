@@ -63,6 +63,6 @@ You can also charge all customers using one button! Go to: Finance → Invoices,
 
 After that splynx will create and send debit batch file with payment details to the [*https://sagepay.co.za/*](https://sagepay.co.za/) after what SegaPay procces this file. (The Statement API runs everyday at 00h15 and cheks all transactions for the previous day)
 
-Then you need to send the request once per day to SagePay by ****cron**** and sage pay will return you payment status or you can view Payments status forcibly by “Sage Pay check payments” in the finance menu:**
+Then you need to send the request once per day to SagePay by ****cron**** and sage pay will return you payment status or you can view Payments status by *“Sage Pay check payments”* in the *finance* menu:
 
 ![12.jpg](12.jpg)

@@ -38,7 +38,7 @@ and new icon in Invoices as on a screenshot:
 
 ![(image)](8.2.png)
 
-when customer will press pay button he will see new window:
+When customer will press pay button he will see new window:
 
 ![(image)](8.3.png)
 
@@ -46,11 +46,11 @@ Then you will be redirected to Bitpay-page:
 
 ![(image)](8.4.png)
 
-than customer must choose currency:
+Then customer must choose currency:
 
 ![(image)](8.5.png)
 
-then customer have to confirm payment:
+Then customer have to confirm payment:
 
 ![(image)](8.6.png)
 

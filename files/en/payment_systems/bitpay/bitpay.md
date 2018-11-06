@@ -1,6 +1,6 @@
 **Bitpay is a Splynx add-on. It allows to refill balance and pay invoices via Bitpay payment gateway - https://bitpay.com.**
 
-To install splynx-bitpay add-on, use following commands:
+To install splynx-bitpay add-on, use the following commands:
 
 apt-get update
 
@@ -13,7 +13,7 @@ Config → Integrations → Add-ons:
 ![(image)](1.png)
 
 ![(image)](2.png)
-after installation you have to Enter your splynx url on the *config -> integrations -> modules list:*
+after the installation you have to Enter your splynx url on the *config -> integrations -> modules list:*
 
 ![(image)](3.png)
 

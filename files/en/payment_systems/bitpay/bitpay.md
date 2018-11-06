@@ -50,11 +50,11 @@ Then customer must choose currency:
 
 ![(image)](8.5.png)
 
-Then customer have to confirm payment:
+Then customer has to confirm a payment:
 
 ![(image)](8.6.png)
 
-If your payment was successful, the status of invoice will  be "Paid":
+If payment was successful, the status of invoice will  be "Paid":
 
 ![(image)](10.1.png)
 

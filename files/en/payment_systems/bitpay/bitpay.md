@@ -42,7 +42,7 @@ When customer will press pay button he will see new window:
 
 ![(image)](8.3.png)
 
-Then you will be redirected to Bitpay-page:
+After that he will be redirected to Bitpay-page:
 
 ![(image)](8.4.png)
 

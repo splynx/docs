@@ -66,8 +66,8 @@ One
 
 ![Enable widget](widget1.png)
 
----
-Another
+
+Another (only for customers with *type of billing -> Prepaid (Daily)* )
 ![Enable widget](widget2_enable.png)
 
 ![Enable widget](widget2.png)

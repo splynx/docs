@@ -6,10 +6,9 @@
 
 To install *ssh-term* add-on use next commands:
 
-apt-get update
+`apt-get update`
 
-apt-get install splynx-ssh-term
-
+`apt-get install splynx-ssh-term`
 
 or you can install it from Web UI:
 

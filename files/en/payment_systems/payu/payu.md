@@ -9,6 +9,15 @@ To install Payu Africa addon use following commands:
 apt-get update
 apt-get install splynx-payu-africa
 ```
+or you can install it from Web UI:
+
+*Config -> Params -> Add-ons:*
+
+![(image)](11.png)
+
+![(image)](12.png)
+
+![(image)](13.png)
 
 You need a PayU account to start the integration. Registration page - [https://www.payu.co.za/enquiry-form](https://www.payu.co.za/enquiry-form)
 

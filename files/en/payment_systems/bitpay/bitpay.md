@@ -2,10 +2,10 @@
 
 To install splynx-bitpay add-on, use the following commands:
 
+```
 apt-get update
-
 apt-get install splynx-bitpay
-
+```
 or you can install it from Web UI:
 
 Config → Integrations → Add-ons:

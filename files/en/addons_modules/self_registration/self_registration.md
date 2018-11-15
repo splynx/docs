@@ -11,6 +11,15 @@ If you want to use this add-on with social platforms - it is necessary to have A
 sudo apt update
 sudo apt install splynx-social-registration
 ```
+or you can install it from Web UI:
+
+*Config -> Integrations -> Add-ons:*
+
+![1.png](1.png)
+
+![2.png](2.png)
+
+![3.png](3.png)
 
 Login to the Splynx-portal via social networks appears on the portal page.
 
@@ -85,7 +94,7 @@ Information about social-network is stored in _Customer / Information / Addition
 You need a Google API Console project to integrate Google Sign-In into your Splynx-site. To create a Google API Console project and client ID, follow these steps:
 
 * Go to the Google API Console ([https://console.developers.google.com/projectselector/apis/library](https://console.developers.google.com/projectselector/apis/library))
-* Select an existing project, or create a new one 
+* Select an existing project, or create a new one
     ![4.png](4.png)
 
 * In the sidebar under **APIs & Services**, select **Credentials**, then select the **OAuth consent screen** tab  
@@ -121,7 +130,7 @@ Reference: [Google documentation](https://developers.google.com/identity/sign-in
 
 ### **Facebook API**
 
-To integrate Facebook Login into your Splynx-site, you must have a Facebook API. 
+To integrate Facebook Login into your Splynx-site, you must have a Facebook API.
 **Notice:** Splynx-site must use HTTPS. It is required by Facebook.
 
 * Go to developers portal [https://developers.facebook.com/apps](https://developers.facebook.com/apps)
@@ -133,7 +142,7 @@ To integrate Facebook Login into your Splynx-site, you must have a Facebook API.
 
 * Do not use **Quickstart**, use **Settings**
     ![selfreg_fb-use-settings.png](selfreg_fb-use-settings.png)
-    
+
 * Enter **Valid Oauth redirect URIs**:
     1) `https://splynx.youdomain.com/register/site/auth?authclient=facebook`
     2) `https://splynx.youdomain.com/register/login/auth?authclient=facebook`

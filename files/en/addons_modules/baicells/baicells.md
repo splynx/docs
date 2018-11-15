@@ -17,6 +17,15 @@ To install "Baicells LTE" add-on please enter the command:
 apt-get update
 apt-get install splynx-baicells-lte
 ```
+or you can install it from Web UI:
+
+Config -> Integrations -> Add-ons:
+
+![1.png](1.png)
+
+![2.png](2.png)
+
+![3.png](3.png)
 
 After installation in menu _Networking_ you will see new icons: _LTE systems_ and _LTE Configs_. First of all, you should create a new LTE system:
 

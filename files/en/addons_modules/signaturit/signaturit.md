@@ -8,8 +8,19 @@ Signaturit is a Splynx add-on which allows you to complete any signing processes
 1. To install "Splynx-Signaturit" add-on please enter the command:
 
 ```bash
+sudo apt update
 sudo apt install splynx-signaturit
 ```
+or oyu can install it from Web UI:
+
+*Config -> Integrations -> Add-ons:*
+
+![1.png](1.png)
+
+![2.png](2.png)
+
+![3.png](3.png)
+
 
 2. To configure add-on "Splynx-Signaturit" you should get "Access token" from [http://app.signaturit.com](http://app.signaturit.com/):
 

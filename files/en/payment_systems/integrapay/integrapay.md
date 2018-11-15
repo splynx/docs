@@ -5,13 +5,13 @@
 
 To install Splynx-Integrapay add-on, use following commands:
 
-`apt-get update`
-
-`apt-get install splynx-integrapay`
-
+```
+apt-get update
+apt-get install splynx-integrapay
+```
 or you can install it from Web UI:
 
-Config → Integrations → Add-ons:
+*Config → Integrations → Add-ons:*
 
 ![(image)](0.png)
 

@@ -9,6 +9,15 @@ The first step for Cashdesk activation is installation. It’s performed by two 
 apt-get update  
 apt-get install splynx-cashdesk
 ```
+or you can install it from Web UI:
+
+*Config -> Integrations -> Add-ons:*
+
+![01.png](01.png)
+
+![02.png](02.png)
+
+![03.png](03.png)
 
 All configs you can find in Config / Modules / List:
 

@@ -4,9 +4,10 @@ Gocardless.com is a Splynx add-on. It uses to synchronize customers, invoices an
 
 **To install Gocardless.com add-on, use following commands:**
 
+```
 apt-get update
-
 apt-get install splynx-gocardless-rb
+```
 
 **or you can install it from Web UI:**
 

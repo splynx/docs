@@ -24,8 +24,9 @@ A window will pop up and it will be possible to select the service.
 * **Discount** - it is possible to set a discount with the percentage, start and end dates of the discount
 * **Status** - the options are `Active`, `Disabled`, `Stopped`, `Pending`, `Archived`.
   * **Active** - Usual status for work.
-  * **Disabled** - Service with data end reached.
-  * **Stopped** - Used for set customer to status Inactive, when customer will be activated , it will be automaticly changed to Active.
+  * **Disabled** - Service with data end reached. We suppose that customer will not longer use the service.
+  * **Stopped** - Used to temporary disable the service. Will be set automatically if customer status is changed to Inactive, when customer will be activated, service status will be automatically changed to Active.
+
   * **Pending** - Waiting when will be activated.
   * **Archived** - Only for future information.
 

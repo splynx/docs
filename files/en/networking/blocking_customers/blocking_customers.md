@@ -112,7 +112,7 @@ Example of how this page can be customized:
 
 
 # Effective blocking
-Often, providers simply block customers by simply dropping all packets from the customers in the router's firewall.
+Often, providers just block customers by simply dropping all packets from the customers in the router's firewall.
 In addition to the fact that it is difficult for the customer to understand, the network is broken or blocked, customer's devices also in this case start to work less responsively, since different software can constantly try to connect to the internet.
 
 ### What can be done for effective blocking?

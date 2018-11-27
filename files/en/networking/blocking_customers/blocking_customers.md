@@ -1,110 +1,67 @@
 Blocking customers in Splynx
 ==========
 
+Splynx blocks non-paying customers automatically. Administrator can block the customer manually as well. When customer's status is changed to **Blocked** or **Inactive**, Splynx sends a command to the router to block him. By default, Splynx does not cut the service, but places the IP address of the end user into the address-list or gives him the IP address from the special IP pool for blocked customers. You just need to create the necessary firewall rules that block or redirect defaulters to a special page.
 
-Splynx blocks non-paying customers automatically. Administrator can block the customer manually as well. When customer's status is changed to **Blocked** or **Inactive**, Splynx sends a command to the router to block him. By default, Splynx does not cut the service, but places the IP address of the end user into the address-list or gives him the IP address from the special IP pool for blocked customers. The administrator can create firewall rules that will block or redirect non-payers to a special page.
 
-There are 3 types of blocking scenarios:
-
-## 1. Mikrotik API blocking
-
+# Mikrotik API
 This method is useful if you do not use Radius authorization. Splynx uses Mikrotik API to operate a router.
 
-### 1.1 API blocking via Credentials
+Pay attention to the option ***Disabled customers to Address-List***.
+It changes the blocking behavior.
+![](c2al.png)
 
-#### Action
+When the option is **disabled** ![](disabled.png) credentials of blocked customers are removed from the router (hotspot users, PPP secrets, firewall ruless and DHCP leases).
 
-Customer's credentials will be removed from the router. (Hotspot users, PPP secrets, firewall rules)
+When this option is **enabled** ![](enabled.png) blocked customers are added to one of address list:
+* **SpLBL_blocked** - for customers whose status is ***Blocked***.
+* **SpLBL_new** - for customers whose status is ***New***.
+* **SpLBL_active** - for customers status is ***Active***, but service is blocked due to [FUP](networking/bandwidth_management/fup/fup.md) or [CAP](networking/bandwidth_management/capped_plans/capped_plans.md) blocking rule.
 
-#### Settings
-* **Enable API** = on
-* **Disabled customers to Address-List** = off
-![The checkbox disabled customers to address-list](cust2addrlist.png)
+![Screenshot AddressList](mk_al.png)
 
-
-### 1.2 API blocking via Address lists
-
-#### Action
-IP address will be added to Mikrotik address list:
-
-* **SpLBL_blocked** - if customer's status is **Blocked**.
-* **SpLBL_new** - if customer's status is **New**.
-* **SpLBL_active** - if customer's status is **Active**, but service is blocked due to [FUP](networking/bandwidth_management/fup/fup.md) blocking rule or [CAP](networking/bandwidth_management/capped_plans/capped_plans.md) blocking rule.
-
-#### Settings
-* **Enable API** = on
-* **Disabled customers to Address-List** = off
-![The checkbox disabled customers to address-list](cust2addrlist1.png)
 
 ---
-#### Blocking rules examples
+# Radius
+Radius also provides the ability to block users in several ways.
 
-```
-/ip firewall filter add chain=forward src-address-list=SpLBL_blocked action=drop comment="Splynx default blocking rule"
-/ip firewall filter add chain=forward src-address-list=SpLBL_new action=drop comment="Splynx default blocking rule"
-/ip firewall filter add chain=forward src-address-list=SpLBL_active action=drop comment="Splynx default blocking rule"
-
-/ip firewall filter add chain=forward dst-address-list=SpLBL_blocked action=drop comment="Splynx default blocking rule"
-/ip firewall filter add chain=forward dst-address-list=SpLBL_new action=drop comment="Splynx default blocking rule"
-/ip firewall filter add chain=forward dst-address-list=SpLBL_active action=drop comment="Splynx default blocking rule"
-```
-
-## Radius CoA blocking
-
-#### Action
-Radius server (Splynx) will send blocking attribute(s) to the Router via Change Of Authorization (CoA) Radius packet.
-
-#### Settings
-* **Customer Block** = COA Block attribute.
-* **CoA Block attributes** = your attributes.
-  By default, this field contains "Mikrotik-Address-List = Reject_1".
-* **CoA Restore attributes** = your attributes.
-
-  ![Warning icon](warning.png) If you put IP address to the Address-List in the previous field (**CoA Block attributes**), here you should put IP address into another Address-List.
-  Otherwise, IP address will remain in the previous Address-List and session will be still blocked.
-* **FUP Block** = COA Block attribute.
-* **FUP CoA Block attributes** = your attributes.
-* **FUP CoA Restore attributes** = your attributes.
-![CoA block attributes](coa_block_attr.png)
+![](mkrad_settings.png)
+>Settings from the screenshots below you can find by opening `Config / Networking / Radius` -> NAS config / NAS Type = Mikrotik -> click on load button.
 
 
-#### Blocking rules examples
-```
-/ip firewall filter add chain=forward src-address-list=Reject_1 action=drop comment="Splynx default blocking rule"
-```
+## Change of Authorization (CoA) packet
+###### (customer's session does not break)
+To use CoA select **COA Block attribute** for the **Customer Block** field.
 
-## 3. Radius session disconnection
-
-The difference between Radius CoA block and session blocking is that with CoA, session is not disconnected, while with session blocking, session is disconnected and User has to reconnect his device.
-
-#### Action
-Disconnection of the session.
-
-#### Settings
-* **Customer Block** = Block.
-* **FUP Block** = Block.
-
-![CoA block attributes](coa_block_attr1.png)
-
-#### Blocking rules examples
-
-```
-/ip firewall filter add chain=forward src-address-list=Reject_0 action=drop comment="Splynx default blocking rule"
-/ip firewall filter add chain=forward src-address-list=Reject_1 action=drop comment="Splynx default blocking rule"
-/ip firewall filter add chain=forward src-address-list=Reject_2 action=drop comment="Splynx default blocking rule"
-/ip firewall filter add chain=forward src-address-list=Reject_3 action=drop comment="Splynx default blocking rule"
-/ip firewall filter add chain=forward src-address-list=Reject_4 action=drop comment="Splynx default blocking rule"
-```
+![](coa_block.png)
 
 
-## Reject IP addresses
+When a customer becomes blocked, the splynx sends a CoA packet to the router with attributes specified in the **CoA Block attributes** field.
+
+![](coa.png)
+
+
+The same attributes for [FUP](networking/bandwidth_management/fup/fup.md):
+
+![](fup_coa.png)
+
+
+By default, The field **CoA Block attributes** contains the attribute **Mikrotik-Address-List = Reject_1**. Having received such an attribute, the router adds the customer's IP to the **Reject_1** list.
+The session is not interrupted, which allows, if necessary, open access to local resources without changing the customer's IP address.
+
+> ![](warning.png) If you put IP address to the Address-List via **CoA Block attributes**, you also should put IP address into another Address-List via **CoA Restore attributes**. Otherwise, IP address will remain in the previous Address-List and session will be still blocked.
+
+> ![](warning.png) Turn on the **Radius incoming** on the mikrotik to process the CoA packets.
+![](radius_incoming.png)
+
+
+## Reject IP pools
+###### customers get ip from reject ip pool
 
 By default, Radius allows connection (sends Radius-Accept) even if there is an authorization error. In the case of authorization errors, Radius will assign IP address from reject address pools (lists). By default, these pools are 10.250.25x.0/24. Pools can be configured on the page `Config -> Networking -> Radius`, as shown on the screenshot below:
 
+![](reject_pool.png)
 
-![Reject ip list](reject_ip.png)
-
-Due to specific authorization errors, customer's device will receive IP address from the specific reject pool:
 
 * **Reject IP 0** - when User is not found (in fact, this Customer does not exist).
 * **Reject IP 1** - when User is blocked, not active or not in system (when customer's status is not active).
@@ -112,23 +69,38 @@ Due to specific authorization errors, customer's device will receive IP address 
 * **Reject IP 3** - when User has wrong MAC address (if enabled) or other error.
 * **Reject IP 4** - when User has entered wrong password.
 
-Also, rejected IP address will be added to Mikrotik Address-List with name Reject_x. Names of the Address-Lists are configurable on `Config -> Networking -> Radius`
+<br>
+For using Reject pools:
+* Set the value **Block** for the **Customer Block** field.
+  ![](block.png)
 
-![Use reject ip](use_reject_ip.png)
+* Enable the **Use reject IP**, as shown in the screenshot below.
 
-![icon](lightbulb_on.png) If you want to prohibit connections (send the Radius-Reject packets) in case of authorization errors, just disable **Use reject IP x**
+  ![](rejectpool_names.png)
+
+ >![](lightbulb_on.png) In addition, you can change the attribute for each reject pool.
 
 
-## Special blocking pages
+## Drop customer's session
+###### interrupts customer session and prohibits further connection
+* Set the value **Block** for the **Customer Block** field.
+  ![](block.png)
+
+* Disable the **Use reject IP** as shown in the screenshot below.
+
+![](rejectpool_disable.png)
+
+
+----
+# Special blocking pages
 
 Splynx has 4 default blocking pages under:
-http://yoursplynxurl:8101,
-http://yoursplynxurl:8102,
-http://yoursplynxurl:8103,
-http://yoursplynxurl:8104
+* http://your.splynx.url:8101
+* http://your.splynx.url:8102
+* http://your.splynx.url:8103
+* http://your.splynx.url:8104
 
-These are simple HTML files, which you can change via command line inside your Splynx installation (via SSH). In the folder ``/var/www/splynx/web/errors/`` there are folders 1,2,3,4 that are corresponding to ports 8101, 8102, 8103 and 8104
-
+These are simple HTML files, which you can change via command line inside your Splynx installation (via SSH). In the folder ``/var/www/splynx/web/errors/`` there are folders 1,2,3,4 that are corresponding to ports 8101, 8102, 8103 and 8104.
 
 Example of default blocking page is shown below:
 ![102](102.png)
@@ -136,45 +108,128 @@ Example of default blocking page is shown below:
 Example of how this page can be customized:
 ![102 new version](102_new.png)
 
-If you use Mikrotik routers, these are 2 firewall rules to redirect all TCP traffic to the blocking webpage and to cut all other traffic, like Peer-to-peer connections (redirect them to router itself):
+
+
+# Effective blocking
+Often, providers simply block customers by simply dropping all packets from the customers in the router's firewall.
+In addition to the fact that it is difficult for the customer to understand, the network is broken or blocked, customer's devices also in this case start to work less responsively, since different software can constantly try to connect to the internet.
+
+### What can be done for effective blocking?
+
+
+#### Provide access to the customer portal for blocked clients.
+* If the provider, when customers contacting technical support, sends debtors to the portal, over time, some customers will become accustomed to entering the portal if there are problems with the network.
+This fact can also serve as an additional tool for quick network diagnostics. In the future, this may reduce the number of calls to technical support.
+* A person who has learned that he is blocked for non-payment, after payment will be able to independently track the flow of money to the account.
+
+#### All HTTP traffic of blocked customers should be redirected to the customer's portal or stub page.
+* When blocked customer try to open any web page using the HTTP protocol, he will see a portal or a stub page that says what could be the problem (no money, wrong password, etc.).
+* Most modern OS has mechanism for detecting state of internet.
+The OS checks the network access when connected, if the system detects a stub page, it notifies the user about it by opening the stub page in a separate window/frame, displaying a notification in the notification panel, etc.
+
+For example, Ubuntu
+
+  ![](ubuntu_hotspot.png) ![](ubuntu_hotspot_8102.png)
+
+
+#### DNS
+When the dns service does not work, the customer's computer spends about 10 seconds on each dns request until it realizes that the Internet does not work.
+```
+time host wikipedia.org
+;; connection timed out; no servers could be reached
+real	0m10,031s
+```
+Some software is constantly trying to connect, often at this point the program interface may freeze.
+
+A good solution is to set up your own caching dns server, the traffic to which for users will not limit.
+This is generally a good way to increase web responsiveness for all customers at minimal cost.
+
+If you use external DNS servers, you can limit the amount of traffic for them.
+Having adding a burst at the beginning is useful during system boot.
+
+
+#### For all other traffic, we will respond that the network is blocked.
+###### by sending ICMP packet type 3 code 9. *"3/9 Communication with Destination Network is Administratively Prohibited".*
+
+This solution will remove all other delays, since the program sending the request will immediately be refused, instead of waiting for an answer for a while, and then trying again.
+
+Below 2 screenshots, with an attempt to open the website, they display the time after which the browser showed that the website is not available.
+
+***7ms*** *(icmp3/9)* **vs** ***91645ms*** *(drop rule)*
+
+###### DROP
+![](stat_drop_rule.png)
+
+###### ICMP 3/9
+![](stat_reject_rule.png)
+
+## Practice
+###### An example of setting up all of the above on mikrotik.
+
+This is a universal example that covers all types of locks, if you are sure that you do not need any of them, you can skip the relevant rules.
+
+
+### WebProxy settings
+
+**192.168.208.239** is the ip of my splynx server. Don't forget to change it to your ip.
 
 ```
-/ip firewall nat add action=dst-nat chain=dstnat protocol=tcp src-address-list=Reject_1 to-addresses=10.0.1.158 to-ports=8101
-/ip firewall nat add action=redirect chain=dstnat src-address-list=Reject_1
+/ip proxy> set enabled=yes port=8080,8101,8102,8103,8104
+/ip proxy access add dst-address=192.168.208.239 dst-port=80 action=allow
+/ip proxy access add src-address=!192.168.208.239 dst-port=80 local-port=8080 action=deny redirect-to="192.168.208.239/portal"
+/ip proxy access add src-address=!192.168.208.239 dst-port=80 local-port=8101 action=deny redirect-to="192.168.208.239:8101"
+/ip proxy access add src-address=!192.168.208.239 dst-port=80 local-port=8102 action=deny redirect-to="192.168.208.239:8102"
+/ip proxy access add src-address=!192.168.208.239 dst-port=80 local-port=8103 action=deny redirect-to="192.168.208.239:8103"
+/ip proxy access add src-address=!192.168.208.239 dst-port=80 local-port=8104 action=deny redirect-to="192.168.208.239:8104"
+/ip proxy access add dst-port="" action=deny
+
 ```
 
-There is another approach how to redirect customer; you can use Mikrotik Proxy server to redirect all HTTP traffic to Splynx customer's portal:
+![Winbox WebProxy](webproxy.png)
 
-IP 10.0.1.16 is the router's WAN IP address.
+![Winbox WebProxy Access](webproxy_access.png)
+
+
+### Firewall settings
+#### NAT
+All these rules redirect HTTP traffic to the appropriate stub pages.
+If you want in some cases to redirect the customer to the customer's portal, use to-ports=8080 for the necessary rules.
+
 ```
-/ip proxy
-set enabled=yes
-/ip proxy access
-add action=allow disabled=no dst-host=10.0.1.6 dst-port=80
-add action=deny disabled=no dst-port=80 redirect-to=10.0.1.16/portal/
-add action=deny
+# For mikrotik API
+/ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8102  src-address-list=SpLBL_blocked comment="Blocked -> 8102"
+/ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8101  src-address-list=SpLBL_new comment="new -> 8101"
+/ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8102  src-address-list=SpLBL_active comment="FUP or CAP -> 8102"
 
-/ip firewall filter
-add action=drop chain=forward comment="Block All" disabled=yes log-prefix="" src-address-list=Reject_1
-add action=accept chain=block comment="Users need DNS to work" dst-port=53 protocol=udp
-add action=accept chain=block comment="Make port 80 to work" dst-port=80 protocol=tcp
-add action=drop chain=block comment="Block everything else for blocked users"
-add action=jump chain=forward comment="Redirect blocked users to the block chain" jump-target=disconnected src-address-list=Reject_1
+# If you're using radius
+/ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8101  src-address-list=Reject_0 comment="user not found"
+/ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8101  src-address-list=Reject_1 comment="blocked, not active or not in system"
+/ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8102  src-address-list=Reject_2 comment="negative balance or FUP/CAP"
+/ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8104  src-address-list=Reject_3 comment="wrong MAC"
+/ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8103  src-address-list=Reject_4 comment="wrong password"
 ```
 
-All methods of Splynx user blocking you can find on our video tutorials:
-
-#### Mikrotik API blocking of non payers
-<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/chq1Dy664vo?wmode=opaque">Video on youtube</iframe>
+![](dstnat.png)
 
 
-#### Radius COA blocking of non payers
-<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/Css9qRRZVBE?wmode=opaque">Video on youtube</iframe>
 
+#### Filter rules
+If there are any resources that you want to keep available for blocked customers, add them to the address list with the name "white-resource"
+```
+/ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=SpLBL_blocked
+/ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=SpLBL_new
+/ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=SpLBL_active
 
-#### Radius code disconnect (session reset)
-<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/7VfzZEiht5M?wmode=opaque">Video on youtube</iframe>
+/ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=Reject_0
+/ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=Reject_1
+/ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=Reject_2
+/ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=Reject_3
+/ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=Reject_4
 
+/ip firewall filter add chain=Blocked action=accept protocol=udp dst-port=53 dst-limit=2,0,src-address/1m40s
+/ip firewall filter add chain=Blocked action=accept protocol=tcp dst-address=192.168.208.239 dst-port=80,8101,8102,8103,8104
+/ip firewall filter add chain=Blocked action=reject reject-with=icmp-admin-prohibited dst-limit=10,0,src-address/1m40s
+/ip firewall filter add chain=Blocked action=drop
+```
 
-#### Radius reject IP pool assignment
-<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/tlxLktyNNWQ?wmode=opaque">Video on youtube</iframe>
+![](filter.png)

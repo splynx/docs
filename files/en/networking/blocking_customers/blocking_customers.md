@@ -71,6 +71,7 @@ By default, Radius allows connection (sends Radius-Accept) even if there is an a
 
 <br>
 For using Reject pools:
+
 * Set the value **Block** for the **Customer Block** field.
   ![](block.png)
 

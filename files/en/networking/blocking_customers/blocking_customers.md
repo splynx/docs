@@ -11,7 +11,7 @@ Pay attention to the option ***Disabled customers to Address-List***.
 It changes the blocking behavior.
 ![](c2al.png)
 
-When the option is **disabled** ![](disabled.png) credentials of blocked customers are removed from the router (hotspot users, PPP secrets, firewall ruless and DHCP leases).
+When the option is **disabled** ![](disabled.png) credentials of blocked customers are removed from the router (hotspot users, PPP secrets, firewall rules and DHCP leases).
 
 When this option is **enabled** ![](enabled.png) blocked customers are added to one of address list:
 * **SpLBL_blocked** - for customers whose status is ***Blocked***.
@@ -58,7 +58,7 @@ The session is not interrupted, which allows, if necessary, open access to local
 ## Reject IP pools
 ###### customers get ip from reject ip pool
 
-By default, Radius allows connection (sends Radius-Accept) even if there is an authorization error. In the case of authorization errors, Radius will assign IP address from reject address pools (lists). By default, these pools are 10.250.25x.0/24. Pools can be configured on the page `Config -> Networking -> Radius`, as shown on the screenshot below:
+By default, Radius allows connection (sends Radius-Accept) even if there is an authorization error. In the case of authorization errors, Radius will assign IP address from reject address pools (lists). By default, these pools are 10.250.x.0/20. Pools can be configured on the page `Config -> Networking -> Radius`, as shown on the screenshot below:
 
 ![](reject_pool.png)
 
@@ -117,12 +117,12 @@ In addition to the fact that it is difficult for the customer to understand, the
 ### What can be done for effective blocking?
 
 
-#### Provide access to the customer portal for blocked clients.
+#### Provide access to the customer portal for blocked clients
 * If the provider, when customers contacting technical support, sends debtors to the portal, over time, some customers will become accustomed to entering the portal if there are problems with the network.
 This fact can also serve as an additional tool for quick network diagnostics. In the future, this may reduce the number of calls to technical support.
-* A person who has learned that he is blocked for non-payment, after payment will be able to independently track the flow of money to the account.
+* A person who found out that he is blocked for non-payment, after payment will be able to independently track the flow of money to the account.
 
-#### All HTTP traffic of blocked customers should be redirected to the customer's portal or stub page.
+#### All HTTP traffic of blocked customers should be redirected to the customer's portal or stub page
 * When blocked customer try to open any web page using the HTTP protocol, he will see a portal or a stub page that says what could be the problem (no money, wrong password, etc.).
 * Most modern OS has mechanism for detecting state of internet.
 The OS checks the network access when connected, if the system detects a stub page, it notifies the user about it by opening the stub page in a separate window/frame, displaying a notification in the notification panel, etc.
@@ -148,7 +148,7 @@ If you use external DNS servers, you can limit the amount of traffic for them.
 Having adding a burst at the beginning is useful during system boot.
 
 
-#### For all other traffic, we will respond that the network is blocked.
+#### For all other traffic, we will respond that the network is blocked
 ###### by sending ICMP packet type 3 code 9. *"3/9 Communication with Destination Network is Administratively Prohibited".*
 
 This solution will remove all other delays, since the program sending the request will immediately be refused, instead of waiting for an answer for a while, and then trying again.
@@ -163,6 +163,8 @@ Below 2 screenshots, with an attempt to open the website, they display the time 
 ###### ICMP 3/9
 ![](stat_reject_rule.png)
 
+
+
 ## Practice
 ###### An example of setting up all of the above on mikrotik.
 
@@ -170,7 +172,7 @@ This is a universal example that covers all types of locks, if you are sure that
 
 
 ### WebProxy settings
-
+###### proxy is used to correctly redirect the user to the portal or page stub
 **192.168.208.239** is the ip of my splynx server. Don't forget to change it to your ip.
 
 ```
@@ -193,7 +195,7 @@ This is a universal example that covers all types of locks, if you are sure that
 ### Firewall settings
 #### NAT
 All these rules redirect HTTP traffic to the appropriate stub pages.
-If you want in some cases to redirect the customer to the customer's portal, use to-ports=8080 for the necessary rules.
+If you want in some cases to redirect the customer to the customer's portal, use **to-ports=8080** for the necessary rules.
 
 ```
 # For mikrotik API

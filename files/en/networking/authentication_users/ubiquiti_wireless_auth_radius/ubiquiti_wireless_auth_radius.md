@@ -1,7 +1,7 @@
 Ubiquiti: Wireless auth, Radius
 ==========
 
-Ubiquiti access points have the ability to authenticate radius via Radius server. This means the admin doesn’t have to maintain local passwords for wireless authentication, each CPE/radio can have its own account in the Splynx ISP Framework and our Radius server will authenticate UBNT CPEs.
+Ubiquiti access points have the ability to authenticate CPEs via Radius server. This means the admin doesn’t have to maintain local passwords for wireless authentication, each CPE/radio can have its own account in the Splynx ISP Framework and our Radius server will authenticate UBNT CPEs.
 
 Usually ISP already has a PPPoE or similar authentication mechanism which is why wireless Radius authentication is added in Splynx to existing customers as one new (empty) service.
 

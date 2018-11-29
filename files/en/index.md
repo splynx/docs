@@ -89,6 +89,7 @@ Table of contents
 * [Weathermaps](networking/weathermaps/weathermaps.md)
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 * [Radius server customization](networking/radius_customization/radius_customization.md)
+* [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 * [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)
 
@@ -193,6 +194,7 @@ Table of contents
 * [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
+* [Speedtest](addons_modules/speedtest/speedtest.md)
 
 
 ##### [Payment systems](./payment_systems/payment_systems.md)

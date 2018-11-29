@@ -11,6 +11,14 @@ To install "Safaricom M-PESA" add-on please enter these commands:
 sudo apt-get update
 sudo apt-get install splynx-safaricom-mpesa
 ```
+or you can install it from Web UI:
+
+*Config -> Integrations -> Add-ons*:
+
+![(image)](1.png)
+
+![(image)](2.png)
+
 
 ## Configuration
 

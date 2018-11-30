@@ -1,7 +1,7 @@
 iCharge
 ==================
 
-**iCharge** is a Splynx add-on. It uses to synchronize customers, invoices and payments with payment software - https://xilo.com Customers using iCharge can pay your invoices through their credit cards.
+**iCharge** is a Splynx add-on. It allows to refill balance and pay invoices via Xilo payment gateway - https://xilo.com.**
 
 Add-on can work with different credit cards, if cards are saved, then addon allows to charge all customers using *Direct debit order*.
 
@@ -29,11 +29,11 @@ After installation you have to configure addon:
 
 ![4.png](4.png)
 
-Set those parameters from your https://xilo.com account:
+Set those parameters from your https://xilo.com account and set here your server IP address (IP address from where Xilo will take requests):
 
 ![6.png](6.png)
 
-![5.png](5.png)
+![5.1.png](5.1.png)
 
 After that, customers can pay their invoices by using iCharge system. They will see a new button *"Pay by iCharge"* as on the screenshot:
 

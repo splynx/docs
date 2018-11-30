@@ -39,11 +39,29 @@ After that, customers can pay their invoices by using iCharge system. They will 
 
 ![7.png](7.png)
 
+also you can turn on entry point in *config -> integrations -> modules list -> Splynx iCharge Add-on* as on the screenshot:
+
+![18.png](18.png)
+
+![15.png](15.png)
+
+after that customer will be able to pay his invoice from dashboard:
+
+![16.png](16.png)
 
 To refill balance customers can use the link - *“http://yoursplynxurl/icharge/”*:
 
 ![10.png](10.png)
 
+or you can turn on entry point in *config -> integrations -> modules list -> Splynx iCharge Add-on* as on the screenshot:
+
+![18.png](18.png)
+
+![17.png](17.png)
+
+after that customer will be able to refill his balance from dashboard:
+
+![19.png](19.png)
 
 Customers can save pay-card details for the next payments in "Financ" menu:
 

@@ -30,9 +30,9 @@ After installation you have to configure params in *config -> Integrations -> Mo
 
 ![(image)](5.1.png)
 
-Public and secret keys can be taken from *Paystack dashboard:*
+Public and secret keys can be taken from *Paystack account:*
 
-![(image)](6.png)
+![(image)](14.png)
 
 Now customers can pay their invoices using Paystack system in *Finance / Invoices:*
 

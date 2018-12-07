@@ -48,7 +48,7 @@ dhcp_leases['comment'] = 'SpLUser_{customer_id}-{service_id}';
 dhcp_leases['server'] = '{customer_additional_route}';
 ```
 
-### Standart rules
+### Default rules
 
 #### dhcp_leases
 ```

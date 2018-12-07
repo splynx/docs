@@ -9,7 +9,15 @@ To install google maps add-on please enter the command:
 apt-get update
 apt-get install splynx-google-maps
 ```
+or you can install it from Web UI:
 
+*Config -> Integrations -> Add-ons:*
+
+![0.png](0.png)
+
+![1.png](1.png)
+
+![2.png](2.png)
 After installation, you have to configure add-on under _Config / Integrations / Modules List_
 
 ![Modules_list.png](Modules_list.png)

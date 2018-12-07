@@ -17,21 +17,25 @@ A window will pop up and it will be possible to select the service.
 * **Tariff** - the tariff (`Internet`, `Voice`, `Custom`)
 * **Description** - a description of the tariff
 * **Quantity** - the quantity
-* **Unit** - number of unit
+* **Unit** - a unit of measurement is a definite magnitude of a quantity (is using for invoices - for example: m., ft, ...)
 * **Price** - the price
 * **Start date** - when the service will start
 * **End date** - when the service will end
 * **Discount** - it is possible to set a discount with the percentage, start and end dates of the discount
 * **Status** - the options are `Active`, `Disabled`, `Stopped`, `Pending`, `Archived`.
   * **Active** - Usual status for work.
-  * **Disabled** - Service with data end reached.
-  * **Stopped** - Used for set customer to status Inactive, when customer will be activated , it will be automaticly changed to Active.
+  * **Disabled** - Service with data end reached. We suppose that customer will not longer use the service.
+  * **Stopped** - Used to temporary disable the service. Will be set automatically if customer status is changed to Inactive, when customer will be activated, service status will be automatically changed to Active.
+
   * **Pending** - Waiting when will be activated.
   * **Archived** - Only for future information.
 
 
 ***Tariffs options***
 * **Router** - we can select the router
+      
+   ![Warning](warning.png) This field is required when Mikrotik API are used.
+  
 
 * **Login** - the login
 

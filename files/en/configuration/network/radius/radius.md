@@ -26,10 +26,11 @@ A new configuration box will appear:
 ![NAS configuration](nasconfiguration2.png)
 ![NAS configuration](nasconfiguration3.png)
 
-* **Allow no deposit** - Allow ballance with minus.
+* **Prevent duplicate session** - If a customer is online and try to connect, send disconnect package to online session.
+* **Allow with no account balance** - Allow ballance with minus.
 * **Allow without IP/MAC** - If disabled, IP/MAC will be checked during authorization. If enabled, authorization will be allowed with any IP/MAC.
-* **Inverse rate limit** - Change rate limit of upload by upload and vice versa.
-* **Inverse accounting** -
+* **Inverse rate limit** - Change rate limit of upload by download and vice versa.
+* **Inverse accounting** - Change accounting of upload by download and vice versa.
 * **Accounting interval** (in sec) - Set time to update accounting.
 * **Customer attributes field** -
 * **Plan attributes field** -

@@ -3,6 +3,8 @@ SagePay Direct debit
 
 **SagePay Direct debit is a Splynx add-on. It used to customers be able to pay their invoices by https://sagepay.co.za/**
 
+*SagePay Direct debit also allows to charge all customers by using *Direct debit order*...
+
 Install the add-on with commands:
 
 ```bash

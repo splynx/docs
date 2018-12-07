@@ -31,15 +31,17 @@ After add-on installation you have to configure it under _Config / Integrations 
 
 ![(image)](Settings.png)
 
-![(image)](Settings2.png)
+![(image)](20.png)
 
 * **Splynx URL** – URL of your server
-* **Is Production** – Yes
 * **Soap Username**, **Soap password**, **Safekey** – values from PayU’s Merchant Portal (look at the previous step)
 
 Now customers can pay via PayU portal in _Finance / Invoices_
 
-![(image)](Invoices_list_(customers_portal).png)
+![(image)](21.png)
+
+![(image)](22.png)
+
 ![(image)](Paying_window.png)
 ![(image)](Payment_Success.png)
 

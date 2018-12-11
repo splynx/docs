@@ -43,7 +43,7 @@ After that customer have configured his Bank account or credit card he can pay i
 
 ![(image)](6.png)
 
-Also customers can to add their balance by *Financ → Pay via IntegraPay direct debit*:
+Also customers can to add their balance by *Finance → Pay via IntegraPay direct debit*:
 
 ![(image)](9.png)
 

@@ -24,7 +24,7 @@ Then first step - you should to register in http://www.transbank.cl. After that,
 
 ![(image)](5.png)
 
-Then go to Config/Integrations/WebPay Certificates and generate self-signed certificate
+Then go to *Config/Integrations/WebPay Certificates* and generate self-signed certificate
 
 ![(image)](6.png)
 

@@ -23,7 +23,7 @@ Then first step - you should to register in https://www.integrapay.com.au/. Afte
 
 ![(image)](3.png)
 
-![(image)](4.1.png)
+![(image)](4.2.png)
 
 After registration IntegraPay will sand you email with your credentials, where  _**Bussines ID** it's your **Username** and  **Api User Key** it's your **password**_ :
 

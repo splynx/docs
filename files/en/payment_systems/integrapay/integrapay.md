@@ -47,9 +47,9 @@ After that customer have configured his Bank account or credit card he can pay i
 
 ![(image)](6.png)
 
-Also customers can to add their balance by *Finance → Pay via IntegraPay direct debit*:
+Also customers can to refill their balance by *Finance → Pay via IntegraPay direct debit*:
 
-![(image)](9.png)
+![(image)](9.1.png)
 
 Besides, you can charge all customers, using one button! Go to *Finance → Invoices*, set the period and click "Charge" as at the screenshot:
 

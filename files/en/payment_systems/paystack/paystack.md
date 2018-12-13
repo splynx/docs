@@ -1,7 +1,9 @@
 Paystack
 =========
 
-Paystack is a Splynx add-on. It's used to synchronize customers, invoices and payments with Paystack payment gateway - https://paystack.com/.
+Paystack is a Splynx add-on. It allows to pay invoices via payment gateway - https://paystack.com/.
+
+Add-on can work with different credit cards and bank accounts, if cards or bank accounts are saved, then addon allows to charge all customers using *Direct debit order*.
 
 To install Paystack add-on use following commands:
 

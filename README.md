@@ -51,3 +51,31 @@ Relative path (recommended):
 ```
 ./images/my_image.png
 ```
+
+#### Links
+You can use:
+
+* Absolute links. This links will be open in new tab.
+
+```
+[Google](https://google.com)
+```
+
+* Relative links to other docs pages.
+
+```
+[Invoices](finance/invoices/invoices.md)
+```
+
+* Javascript functions
+
+```
+// Switch Splynx page
+[Open config](javascript:switch_page('/admin/config'))
+
+// Open dialog
+[Add location](javascript:open_dialog_new('administration/locations--add'))
+
+// Open help dialog
+[Please help me](javascript:open_help_dialog('index.md'))
+```

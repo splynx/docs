@@ -5,6 +5,8 @@ Splynx software can be connected to different Payment Gateways. Subscribers then
 
 Below is a list of supported and integrated Payment Gateways. By clicking on Payment Gateway link, you will be redirected to documentation page describing how to install and use Gateway with Splynx.
 
+[→ TBK-WebPay](./TBK-WebPay/TBK-WebPay.md)
+
 [→ Authorize.net](./authorize/authorize.md)
 
 [→ Bitpay, bitcoin payments](./bitpay/bitpay.md)
@@ -25,11 +27,17 @@ Below is a list of supported and integrated Payment Gateways. By clicking on Pay
 
 [→ Stripe](./stripe/stripe.md)
 
+[→ iCharge (Xilo payments)](./iCharge/iCharge.md)
+
 [→ IPpay](./ippay/ippay.md)
+
+[→ Integrapay](./integrapay/integrapay.md)
 
 [→ Pesapal](./pesapal/pesapal.md)
 
 [→ Paystack](./paystack/paystack.md)
+
+[→ PayU Africa](./payu/payu.md)
 
 [→ Wepay (recurring billing) payments](./wepay/wepay.md)
 

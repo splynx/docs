@@ -198,9 +198,11 @@ Table of contents
 
 
 ##### [Payment systems](./payment_systems/payment_systems.md)
+* [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
 * [Authorize.net](payment_systems/authorize/authorize.md)
 * [Braintree payments](payment_systems/braintree/braintree.md)
 * [Gocardless.com](payment_systems/gocardless/gocardless.md)
+* [iCharge (Xilo payments)](payment_systems/iCharge/iCharge.md)
 * [Paypal payments](payment_systems/paypal/paypal.md)
 * [Paypal RB (Recurring Billing) payments](payment_systems/paypal_rb/paypal_rb.md)
 * [Payfast.co.za payments](payment_systems/payfast/payfast.md)
@@ -208,6 +210,7 @@ Table of contents
 * [Bitpay bitcoin payments](payment_systems/bitpay/bitpay.md)
 * [Stripe online payments](payment_systems/stripe/stripe.md)
 * [IPpay by Convergence](payment_systems/ippay/ippay.md)
+* [Integrapay](payment_systems/integrapay/integrapay.md)
 * [Pesapal](payment_systems/pesapal/pesapal.md)
 * [Paystack](payment_systems/paystack/paystack.md)
 * [Wepay (recurring billing) payments](payment_systems/wepay/wepay.md)

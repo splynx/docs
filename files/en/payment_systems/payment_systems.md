@@ -39,8 +39,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on Pay
 
 [→ PayU Africa](./payu/payu.md)
 
-[→ Wepay (recurring billing) payments](./wepay/wepay.md)
-
 [→ SagePay Pay now](./sagepay_pay_now/sagepay_pay_now.md)
 
 [→ SagePay Direct Debit](./sagepay_dd/sagepay_dd.md)  

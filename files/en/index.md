@@ -17,7 +17,7 @@ Table of contents
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
 * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
- 
+
 
 ##### [Customer Management](./customer_management/customer_management.md)
 * [Adding new customer](customer_management/add_new_customer/add_new_customer.md)
@@ -31,11 +31,11 @@ Table of contents
 * [Customer documents](customer_management/customer_documents/customer_documents.md)
 * [CPE management](customer_management/cpe_management/cpe_management.md)
 * [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
- 
+
 
 ##### Customer Portal
 * [Customer Portal](customer_portal/customer_portal.md)
- 
+
 
 ##### [Finance](./finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
@@ -213,7 +213,6 @@ Table of contents
 * [Integrapay](payment_systems/integrapay/integrapay.md)
 * [Pesapal](payment_systems/pesapal/pesapal.md)
 * [Paystack](payment_systems/paystack/paystack.md)
-* [Wepay (recurring billing) payments](payment_systems/wepay/wepay.md)
 * [SagePay Pay now](payment_systems/sagepay_pay_now/sagepay_pay_now.md)
 * [SagePay Direct Debit](payment_systems/sagepay_dd/sagepay_dd.md)
 * [Moneris](payment_systems/moneris/moneris.md)

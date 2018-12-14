@@ -10,35 +10,34 @@ Install Splynx ISP Framework
 Enter as root:
 
 Ubuntu:
-
-`sudo su`
-
+```bash
+sudo su
+```
 Debian:
-
-`su`
-
+```bash
+su
+```
 Timezone configuration:
-
-`dpkg-reconfigure tzdata`
-
+```bash
+dpkg-reconfigure tzdata
+```
 Update CA certificates for HTTPS:
 
-`apt-get install ca-certificates`
-
-`update-ca-certificates`
-
+```bash
+apt-get install ca-certificates
+update-ca-certificates
+```
 Install:
-
-`wget -qO- https://deb.splynx.com/setup | bash -`
-
-`apt-get install splynx`
-
+```bash
+wget -qO- https://deb.splynx.com/setup | bash -
+apt-get install splynx
+```
 Update:
-
-`apt-get update`
-
-`apt-get dist-upgrade`
-
+```bash
+apt-get update
+apt-get dist-upgrade
+```
 If you make error when enter license code, or mysql root password you can reenter it with:
-
-`dpkg-reconfigure splynx`
+```bash
+dpkg-reconfigure splynx
+```

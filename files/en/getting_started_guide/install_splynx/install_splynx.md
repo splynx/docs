@@ -1,9 +1,13 @@
 Install Splynx ISP Framework
 ============================
 
-For the installation, please use a clear Debian or Ubuntu server.
+**Base requirements:**
 
-Log in as root:
+**_Clear_ Debian or Ubuntu server.**
+
+**Supported OS: Debian 8, 9 (without GUI) or Ubuntu 16.04 (server)**
+
+Enter as root:
 
 Ubuntu:
 
@@ -13,30 +17,28 @@ Debian:
 
 `su`
 
-Insert Timezone configuration:
+Timezone configuration:
 
 `dpkg-reconfigure tzdata`
 
 Update CA certificates for HTTPS:
 
 `apt-get install ca-certificates`
+
 `update-ca-certificates`
 
-Install Splynx:
+Install:
 
 `wget -qO- https://deb.splynx.com/setup | bash -`
+
 `apt-get install splynx`
 
-or update it:
+Update:
 
 `apt-get update`
-`apt-get install splynx`
 
-If you make a mistake when you enter the license code, or the mysql root password you can use:
+`apt-get dist-upgrade`
+
+If you make error when enter license code, or mysql root password you can reenter it with:
 
 `dpkg-reconfigure splynx`
-
-The installation procedure has been tested on:
-
-* Debian 7, 8
-* Ubuntu 14.04, 15.04, 15.10, 16.04, 16.10

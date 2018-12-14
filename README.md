@@ -79,3 +79,4 @@ You can use:
 // Open help dialog
 [Please help me](javascript:open_help_dialog('index.md'))
 ```
+<!--- Version 14 dec 2018 -->

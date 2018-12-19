@@ -32,9 +32,9 @@ choose partner to configure:
 
 ![1.png](7.png)
 
-set your params:
+set partner params:
 
-![1.png](8.1.png)
+![1.png](8.2.png)
 
 **ProgressivoInvio** - No particular criteria is established; the mode of valorization of the field, foreseen to contain an identifier alphanumeric of the transmitted file, is delegated to the user's evaluation according to requirement, but in compliance with the established characteristics from the XSD scheme.
 

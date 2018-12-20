@@ -195,7 +195,7 @@ Table of contents
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
-
+* [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
 
 ##### [Payment systems](./payment_systems/payment_systems.md)
 * [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)

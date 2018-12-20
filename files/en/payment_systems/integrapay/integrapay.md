@@ -23,11 +23,11 @@ Then first step - you should to register in https://www.integrapay.com.au/. Afte
 
 ![(image)](3.png)
 
-![(image)](4.2.png)
+![(image)](14.png)
 
 After registration IntegraPay will sand you email with your credentials, where  _**Bussines ID** it's your **Username** and  **Api User Key** it's your **password**_ :
 
-![(image)](12.png)
+![(image)](13.png)
 
 Also in this repository you can set "Service fee" for and "fee vat" customers:
 

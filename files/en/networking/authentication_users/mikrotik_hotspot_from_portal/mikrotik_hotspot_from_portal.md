@@ -1,0 +1,87 @@
+Mikrotik Hotspot Login from Splynx portal
+==========================================
+
+This Splynx feature allows you set fully automatic customers registration  and internet usage via Mikrotik Hotspot. Automatic registration can be done with [Splynx self-registration add-on](addons_modules/self_registration/self_registration.md). Customers can pay for the internet by using one of [payment systems](payment_systems/payment_systems.md). And then customers can login to Mikrotik Hotspot using Splynx portal. No admin intervention is required to register customers and to let them use internet (activate customers, etc.).
+
+### Splynx settings
+
+This feature is built-in in Splynx starting from version 2.3
+It can be configured under _Config / Main / Portal_:
+![picture1.png](picture1.png)
+
+* **Enable hotspot** - Enable or disable this feature.
+* **Hotspot hostname** - Should be the same as in Mikrotik settings. In Hotspot Server Profile (*DNS Name*):
+    ![picture2](picture2.png)
+* **Login**:
+  * **Automatic, after login to portal** - customer will be logged in automatically just after entering to Splynx portal.
+  * **Click to login button** - Hotspot login button will appear on the Splynx portal page. Customer will be logged in after he press this button.
+  ![picture3](picture3.png)
+  * **Disabled** - Hotspot login button will appear on the Splynx portal page. Customer won't be logged in after he press this button.
+* **Hotspot status page**
+  * **Enabled** - show Mikrotik Hotspot status after successful login:
+  ![picture4](picture4.png)
+  * **Disabled** - show "Hotspot connected..." after successful login:
+  ![picture5](picture5.png)
+
+### Mikrotik settings
+
+We use custom Hotspot HTML pages. You can download them here - [splynx-hotspot.zip](splynx-hotspot.zip)
+
+1. Extract the archive.
+2. Replace http://example.com to your own Splynx URL in all HTML files. In Linux you can do it using `sed`. In the folder with HTML files, where zip archive was extracted, run in the terminal:
+    ```bash
+    sed -i s%http://example.com%http://yoursplynxurl%g *
+    ```
+    \* replace **yoursplynxurl** with the actual domain name or IP.
+3. Copy modified files into Mikrotik. To copy, you can use FTP, SSH, Drag and Drop, etc.
+4. In Hotspot Server Profile set *HTML Directory override* to the directory just copied:
+   ![picture6](picture6.png)
+5. In Hotspot Server Profile set *Login By* to **HTTP CHAP**:
+   ![picture8](picture8.png)
+6. If you want to use RADIUS authorization, enable **Use RADIUS**. And add RADIUS entry:
+   ![picture9](picture9.png)
+   ![picture10](picture10.png)
+7. Add IP address of the Splynx server to the *Walled Garden IP List* to give access to the Splynx portal for unauthorized customers:
+   ![picture7](picture7.png)
+
+### Example #1. RADIUS authorization
+Suppose we have clean Splynx. Follow these steps:
+
+1. [Create customer](customer_management/add_new_customer/add_new_customer.md), make him active (status=active):
+    ![picture11](picture11.png)
+    ![picture12](picture12.png)
+2. Create [internet plan](configuring_tariff_plans/internet_plans/internet_plans.md):
+    ![picture13](picture13.png)
+    ![picture14](picture14.png)
+3. Create [internet service](customer_management/customer_services/customer_services.md) for the customer:
+    ![picture15](picture15.png)
+    ![picture16](picture16.png)
+4. Add your router (NAS) into [Splynx routers](networking/routers_settings/routers_settings.md). **Authorization/Accounting** - **Hotspot (Radius) / Radius accounting**:
+    ![picture17](picture17.png)
+5. After you add router in Splynx, RADIUS secret will be generated. Create RADIUS record in Mikrotik settings with this RADIUS secret:
+    ![picture18](picture18.png)
+    ![picture19](picture19.png)
+6. Create Mikrotik Hotspot server:
+    ![picture20](picture20.png)
+    ![picture21](picture21.png)
+    ![picture22](picture22.png)
+    ![picture23](picture23.png)
+    ![picture24](picture24.png)
+    ![picture25](picture25.png)
+    ![picture26](picture26.png)
+    ![picture27](picture27.png)
+7. In Hotspot Server Profile set *Login By* to **HTTP Chap** and enable **Use RADIUS**:
+    ![picture8](picture8.png)
+    ![picture9](picture9.png)
+8. Download [this archive](splynx-hotspot.zip), extract it.
+9. Replace "example.com" to your Splynx URL (domain name or IP) in all HTML files:
+    ![picture28](picture28.png)
+10. Copy these files into Mikrotik and set in Hotspot Server Profile *HTML Directory override* to the directory "splynx-hotspot":
+    ![picture29](picture29.png)
+    ![picture6](picture6.png)
+11. Add Splynx server IP into Walled Garden IP list:
+    ![picture30](picture30.png)
+12. Enable Hotspot ogin via Splynx Portal in Splynx under **Config / Main / Portal**:
+    ![picture31](picture31.png)
+
+

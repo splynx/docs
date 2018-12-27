@@ -70,7 +70,9 @@ Suppose we have clean Splynx. Follow these steps:
 5. After you add router in Splynx, RADIUS secret will be generated. Create RADIUS record in Mikrotik settings with this RADIUS secret:
     ![picture18](picture18.png)
     ![picture19](picture19.png)
-6. Create Mikrotik Hotspot server:
+6. Disable **Use reject IP 0..4** under _Config / Networking / Radius_:
+    ![picture46](picture46.png)
+7. Create Mikrotik Hotspot server:
     ![picture20](picture20.png)
     ![picture21](picture21.png)
     ![picture22](picture22.png)
@@ -79,18 +81,18 @@ Suppose we have clean Splynx. Follow these steps:
     ![picture25](picture25.png)
     ![picture26](picture26.png)
     ![picture27](picture27.png)
-7. In Hotspot Server Profile set *Login By* to **HTTP Chap** and enable **Use RADIUS**:
+8. In Hotspot Server Profile set *Login By* to **HTTP Chap** and enable **Use RADIUS**:
     ![picture8](picture8.png)
     ![picture9](picture9.png)
-8. Download [this archive](splynx-hotspot.zip), extract it.
-9. Replace "example.com" to your Splynx URL (domain name or IP) in all HTML files:
+9.  Download [this archive](splynx-hotspot.zip), extract it.
+10. Replace "example.com" to your Splynx URL (domain name or IP) in all HTML files:
     ![picture28](picture28.png)
-10. Copy these files into Mikrotik and set in Hotspot Server Profile *HTML Directory override* to the directory "splynx-hotspot":
+11. Copy these files into Mikrotik and set in Hotspot Server Profile *HTML Directory override* to the directory "splynx-hotspot":
     ![picture29](picture29.png)
     ![picture6](picture6.png)
-11. Add Splynx server IP into Walled Garden IP list:
+12. Add Splynx server IP into Walled Garden IP list:
     ![picture30](picture30.png)
-12. Enable Hotspot login via Splynx Portal under **Config / Main / Portal**:
+13. Enable Hotspot login via Splynx Portal under **Config / Main / Portal**:
     ![picture31](picture31.png)
 
 
@@ -153,8 +155,9 @@ Suppose we have clean Splynx. Follow these steps:
 
 
 ### How it works (scheme)
-* The customer is trying to access internet (HTTP site).
+
+* The customer is trying to access web page (HTTP site).
 * Router (NAS) redirects the customer to Mikrotik Hotspot IP (to router IP).
-* Mikrotik Hotspot redirects the customer to Splynx portal (Splynx URL).
+* Mikrotik Hotspot redirects the customer to Splynx portal (to Splynx URL).
 * The customer authenticates on the portal and logs in into Mikrotik Hotspot on the Splynx portal.
 * Customer can browse internet.

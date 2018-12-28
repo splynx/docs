@@ -23,6 +23,8 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 [→ Mikrotik: Hotstpot with Radius](networking/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
 
+[→ Mikrotik: Hotstpot Login from Splynx portal](networking/mikrotik_hotspot_from_portal/mikrotik_hotspot_from_portal.md)
+
 [→ Mikrotik: Static IP addressing with API authentication/accounting](networking/mikrotik_static/mikrotik_static.md)
 
 [→ Mikrotik: Local auth with Mikrotik API](networking/mikrotik_local_auth_api/mikrotik_local_auth_api.md)

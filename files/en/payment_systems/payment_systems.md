@@ -13,40 +13,40 @@ Below is a list of supported and integrated Payment Gateways. By clicking on Pay
 
 [→ Braintree payments](braintree/braintree.md)
 
-[→ Gocardless.com](gocardless/gocardless.md)
+[→ Gocardless.com](payment_systems/gocardless/gocardless.md)
 
-[→ Paypal payments](paypal/paypal.md)
+[→ Paypal payments](payment_systems/paypal/paypal.md)
 
-[→ Paypal rb (recurring billing) payments](paypal_rb/paypal_rb.md)
+[→ Paypal rb (recurring billing) payments](payment_systems/paypal_rb/paypal_rb.md)
 
-[→ Payfast.co.za payments](payfast/payfast.md)
+[→ Payfast.co.za payments](payment_systems/payfast/payfast.md)
 
-[→ SEPA debit orders](sepa/sepa.md)
+[→ SEPA debit orders](payment_systems/sepa/sepa.md)
 
 [comment]: # (→ SEPA debit order in Spanish)
 
-[→ Stripe](stripe/stripe.md)
+[→ Stripe](payment_systems/stripe/stripe.md)
 
-[→ iCharge (Xilo payments)](iCharge/iCharge.md)
+[→ iCharge (Xilo payments)](payment_systems/iCharge/iCharge.md)
 
-[→ IPpay](ippay/ippay.md)
+[→ IPpay](payment_systems/ippay/ippay.md)
 
-[→ Integrapay](integrapay/integrapay.md)
+[→ Integrapay](payment_systems/integrapay/integrapay.md)
 
-[→ Pesapal](pesapal/pesapal.md)
+[→ Pesapal](payment_systems/pesapal/pesapal.md)
 
-[→ Paystack](paystack/paystack.md)
+[→ Paystack](payment_systems/paystack/paystack.md)
 
-[→ PayU Africa](payu/payu.md)
+[→ PayU Africa](payment_systems/payu/payu.md)
 
-[→ SagePay Pay now](sagepay_pay_now/sagepay_pay_now.md)
+[→ SagePay Pay now](payment_systems/sagepay_pay_now/sagepay_pay_now.md)
 
-[→ SagePay Direct Debit](sagepay_dd/sagepay_dd.md)  
+[→ SagePay Direct Debit](payment_systems/sagepay_dd/sagepay_dd.md)  
 
-[→ Moneris (recurring billing) payments](moneris/moneris.md)
+[→ Moneris (recurring billing) payments](payment_systems/moneris/moneris.md)
 
 [comment]: # (→ Mercadopago)
 
-[→ Paynow](paynow/paynow.md)
+[→ Paynow](payment_systems/paynow/paynow.md)
 
-[→ Safaricom M-PESA](mpesa/mpesa.md)
+[→ Safaricom M-PESA](payment_systems/mpesa/mpesa.md)

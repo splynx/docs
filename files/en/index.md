@@ -46,7 +46,7 @@ Table of contents
 * [History & Preview](finance/history_and_preview/history_and_preview.md)
 * [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
 * [Refill cards](finance/refill_cards/refill_cards.md)
-
+* [Change service in the charged period](finance/Change service in the charged period/Change service.md)
 
 ##### Inventory
 * [Inventory](inventory/inventory.md)
@@ -194,6 +194,8 @@ Table of contents
 * [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
+* [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
+* [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
 * [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
 

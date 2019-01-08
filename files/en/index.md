@@ -46,7 +46,7 @@ Table of contents
 * [History & Preview](finance/history_and_preview/history_and_preview.md)
 * [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
 * [Refill cards](finance/refill_cards/refill_cards.md)
-* [Change service](finance/сhange_service/сhange_service.md)
+* [Change service](finance/сhange_service/change_service.md)
 
 ##### Inventory
 * [Inventory](inventory/inventory.md)

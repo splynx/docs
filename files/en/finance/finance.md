@@ -23,4 +23,4 @@ Please, follow the links below to find tutorial page about each feature of Finan
 
 [→ Refill cards](finance/refill_cards/refill_cards.md)
 
-[→ Change service in the charged period](finance/Change_service_in_the_charged_period/Change_service.md)
+[→ Change service](finance/сhange_service/сhange_service.md)

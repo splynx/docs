@@ -46,7 +46,7 @@ Table of contents
 * [History & Preview](finance/history_and_preview/history_and_preview.md)
 * [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
 * [Refill cards](finance/refill_cards/refill_cards.md)
-* [Change service in the charged period](finance/Change service in the charged period/Change service.md)
+* [Change service in the charged period](finance/Change_service_in_the_charged_period/Change_service.md)
 
 ##### Inventory
 * [Inventory](inventory/inventory.md)
@@ -198,6 +198,9 @@ Table of contents
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
 * [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
+
+##### [Online backups](./online_backups/online_backups.md)
+* [Online backups](online_backups/online_backups.md)
 
 ##### [Payment systems](./payment_systems/payment_systems.md)
 * [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)

@@ -199,6 +199,9 @@ Table of contents
 * [Speedtest](addons_modules/speedtest/speedtest.md)
 * [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
 
+##### [Online backups](./online_backups/online_backups.md)
+* [Online backups](online_backups/online_backups.md)
+
 ##### [Payment systems](./payment_systems/payment_systems.md)
 * [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
 * [Authorize.net](payment_systems/authorize/authorize.md)

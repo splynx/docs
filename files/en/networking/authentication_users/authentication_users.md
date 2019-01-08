@@ -19,9 +19,11 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 [→ Mikrotik: DHCP using Radius](networking/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
 
-[→ Mikrotik: PPPoE and other PPP tunnels using Radius](networking/mikrotik pppoe_radius/mikrotik_pppoe_radius.md)
+[→ Mikrotik: PPPoE and other PPP tunnels using Radius](networking/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
 
 [→ Mikrotik: Hotstpot with Radius](networking/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
+
+[→ Mikrotik: Hotstpot Login from Splynx portal](networking/mikrotik_hotspot_from_portal/mikrotik_hotspot_from_portal.md)
 
 [→ Mikrotik: Static IP addressing with API authentication/accounting](networking/mikrotik_static/mikrotik_static.md)
 

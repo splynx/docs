@@ -58,6 +58,7 @@ Once that config is completed, we can find the and assign the ONT to the custome
 
 
 First select the OLT where the customer is connected.
+
 ![](5.png)
 
 

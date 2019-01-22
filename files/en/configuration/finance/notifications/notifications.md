@@ -92,3 +92,24 @@ This is an example of active customer's notification in Customer portal after he
 * **Customer portal**: customer can check his current deposit and how many days he can pay for services:
 
   ![Customer portal](customer_portal.png)
+
+#### Ignore notifications
+
+If you need that some customers to receive notifications, and other don't receive it then you have to choose a template what will be use in notifications and set "*=== IGNORE NOTIFICATION ===*" condition in it.
+For example as on the screenshot:
+
+![1.png](1.png)
+
+![2.png](2.png)
+
+![3.png](3.png)
+
+Now all customers except customers whos *billing type == prepaid*, after creating invoice,  Proforma invoices and Payments will get a notification with text: "example *customers login*"
+
+![4.png](4.png)
+
+Notification will not be sent to customers with *billing type == prepaid*
+
+
+See variables for templates on:
+https://docs.splynx.com/configuration/system/templates_variables

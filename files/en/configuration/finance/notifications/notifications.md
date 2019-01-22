@@ -111,5 +111,5 @@ Now all customers except customers whos *billing type - is not prepaid*, after c
 Notification will not be sent to customers with *billing type == prepaid*
 
 
-See variables for templates on:
+**See variables for templates on:**
 https://docs.splynx.com/configuration/system/templates_variables

@@ -104,7 +104,7 @@ For example as on the screenshot:
 
 ![3.png](3.png)
 
-Now all customers except customers whos *billing type != prepaid*, after creating invoice,  Proforma invoices and Payments will get a notification with text: "example *customers login*"
+Now all customers except customers whos *billing type - is not prepaid*, after creating invoice,  Proforma invoices and Payments will get a notification with text: "example *customers login*"
 
 ![4.png](4.png)
 

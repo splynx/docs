@@ -667,15 +667,19 @@ There is the list of all variables which are using in templates. So you can use 
 
 ####Ignore Notification
 <details>
-<summary>=== IGNORE NOTIFICATION ===</summary>
+<summary>Ignore Notification</summary>
 <p markdown="1">
 
-##### Ignore Notification:
+##### Example:
+     {% if customer.billing_type == 'prepaid' %}
      === IGNORE NOTIFICATION ===
+     {% else %}
+     example  {{ customer.login }}
+     {% endif %}
 
 
 
-if the template result == "=== IGNORE NOTIFICATION ===" the notification will not be sent
+if the template result is "=== IGNORE NOTIFICATION ===" the notification will not be sent
 
 </p>
 </details>

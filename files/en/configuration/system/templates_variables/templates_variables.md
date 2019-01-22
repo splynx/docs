@@ -681,6 +681,7 @@ if the template result == "=== IGNORE NOTIFICATION ===" the notification will no
 </details>
 
 
+
 And now, you can see **examples** how to use variables in templates:
 ```
 Hello!

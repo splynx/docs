@@ -8,7 +8,7 @@ In Internet provider’s network, Juniper is mainly used as a BRAS equipment (br
 We have deployed Splynx in different networks running on Juniper MX80, MX104 and MX960 routers. JunOS versions from 14 to 18.
 The configuration below should work on any MX router and is based on a combination of Dynamic profiles and Policy names.
 
-###1. RADIUS SERVER definition
+### 1. RADIUS SERVER definition
 In the first step we should define the Access and describe Radius configuration. Radius server IP is 192.168.1.5 and Juniper router IPs is 192.168.1.6.
 
 ```
@@ -52,7 +52,7 @@ The next line in configuration should be setting the access profile Splynx to Ju
 access-profile Splynx;
 ```
 
-###2. DYNAMIC PROFILES
+### 2. DYNAMIC PROFILES
 The next step is to define Dynamic profiles. This configuration can be a bit tricky and complex. Depends on how complex is your overall setup, how VLANs are organized, if there are Port Aggregations or PPPoE services are running directly on Gigabit and 10G Ethernet interfaces. The example below shows the PPPoE profile that is ready for dynamic VLANs that are running on Aggregated interface ae0.
 
 ```
@@ -129,7 +129,7 @@ active;
 }
 ```
 
-###3. SPEED LIMITATIONS
+### 3. SPEED LIMITATIONS
 The last step in configuration is to define the Firewall filter and policers to control subscriber’s bandwidth.
 Here is the example of filter and policer for 10 Mbps plan :
 
@@ -153,7 +153,7 @@ then discard;
 }
 ```
 
-4. JUNIPER RADIUS ATTRIBUTES
+### 4. JUNIPER RADIUS ATTRIBUTES
 The attributes that are used to set the Filter name in Radius Access accept are :
 
 ```

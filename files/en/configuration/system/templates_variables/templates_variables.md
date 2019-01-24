@@ -9,7 +9,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of company fields:
-      
+
      object(models\common\finance\TemplateValues)#226 (30) {
      ["id"]=> string(2) "13"
      ["invoice_template_id"]=> string(1) "5"
@@ -53,7 +53,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of customer fields:
-      
+
      array(38) {
      ["id"]=> string(1) "4"
      ["billing_type"]=> string(7) "prepaid"
@@ -105,7 +105,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of customer's information fields:
-      
+
      object(models\common\customers\CustomerInfo)#226 (12) {
      ["customer_id"]=> string(1) "4"
      ["birthday"]=> string(0) ""
@@ -131,7 +131,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of service fields:
-      
+
      array(1) {
      [0]=> object(models\common\customers\ServicesInternet)#235 (47) {
      ["type"]=> string(8) "internet"
@@ -189,8 +189,8 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of all Bundles fields:
-      
-      
+
+
      array(2) {
       [1]=> object(models\admin\tariffs\Bundle)#117 (34) {
          ["id"]=> string(1) "1"
@@ -277,7 +277,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of the Bundle and all Services fields:
-      
+
      array(1) {
       [4]=> object(models\common\customers\services\ServicesBundle)#407 (35) {
       ["parent_id"]=> string(1) "0"
@@ -327,7 +327,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of billing fields:
-      
+
      object(models\common\customers\CustomerBilling)#226 (36) {
      ["customer_id"]=> string(1) "4"
      ["enabled"]=> string(1) "1"
@@ -376,7 +376,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of partner fields:
-      
+
      object(models\admin\administration\Partners)#226 (11) {
      ["id"]=> string(2) "13"
      ["name"]=> string(14) "Partner West"
@@ -404,7 +404,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of transactions fields:
-      
+
      array(3) {
      [158]=> object(models\common\finance\Transactions)#226 (32) {
              ["id"]=> string(4) "158"
@@ -457,7 +457,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of invoices variables fields:
-      
+
      array(1) { [685]=> object(models\common\finance\Invoices)#226 (29) {
      ["id"]=> string(4) "685"
      ["customer_id"]=> string(1) "4"
@@ -501,11 +501,11 @@ There is the list of all variables which are using in templates. So you can use 
      {{ dump(invoice.items) }}
      {% endfor %}
      {{ dump(loader.invoices) }}
-      
-      
-      
+
+
+
      result will be array of tariff field and invoices fields:
-      
+
      Invoice 201713000183 items:
      array(1) {
      [0]=> array(12) {
@@ -564,7 +564,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of pro-forma fields:
-      
+
      array(1) {
      [2]=> object(models\common\finance\Requests)#226 (23) {
              ["id"]=> string(1) "2"
@@ -603,7 +603,7 @@ There is the list of all variables which are using in templates. So you can use 
 <p markdown="1">
 
 ##### result will be array of payment fields:
-      
+
      array(1) {
      [366]=> object(models\common\finance\Payments)#226 (28) {
              ["id"]=> string(3) "366"
@@ -652,25 +652,44 @@ There is the list of all variables which are using in templates. So you can use 
      {{ dump(loader.getAttachedRequests) }}
      Payment receipts:
      {{ dump(loader.getAttachedReceipts) }}
-      
-      
-      
-      
+
+
+
+
      result will be array of attached documents fields:
-      
+
      array(1) {
-      
+
      }
 </p>
 </details>
 
+
+####Ignore Notification
+<details>
+<summary>Ignore Notification</summary>
+<p markdown="1">
+
+##### Example:
+     {% if customer.billing_type == 'prepaid' %}
+     === IGNORE NOTIFICATION ===
+     {% else %}
+     example  {{ customer.login }}
+     {% endif %}
+
+
+
+if the template result is "=== IGNORE NOTIFICATION ===" the notification will not be sent
+
+</p>
+</details>
 
 
 
 And now, you can see **examples** how to use variables in templates:
 ```
 Hello!
- 
+
 This is example template. We use Twig as template engine!
 You can use some variables in templates.
 For example to get customer name use {{ customer.name }},
@@ -679,7 +698,7 @@ customer login - {{ customer.login }}.
 
 ```
 {% set billing_custom = loader.billing %}
- 
+
 Hello {{ customer.name}},
 your deposit is {{ billing_custom.deposit }} EUR,
 we strongly recommended to refill it.
@@ -694,15 +713,15 @@ There is no fixed length contract and you will be billed 1 month in advance.
 Your customer reference number is {{ loader.customer.id }}
 The e-mail address to where your invoices will be sent is : {{ loader.customer.email }}
 Your Wifi password is: {{ loader.customer.additionalAttributes.wifi_pass }}
- 
- 
+
+
 To download your invoices, view payments, create support tickets, see your usage statistics, use our customer self service portal my.splynx.com using username {{ loader.customer.login }} and {{ loader.customer.password }} as your password.
- 
+
 Our phone numbers in case you have not saved them yet,
- 
+
 1234567890
 1234567890
- 
+
 office@superisp.com
 ```
 
@@ -724,19 +743,19 @@ office@superisp.com
      border: 1px solid black;
      word-wrap: break-word;
      }
-     
+
      table {
      border-collapse: collapse;
      table-layout: fixed;
      font-family: Arial, Verdana, sans-serif;
      font-size: 10px;
      }
-     
+
      .fs {
      font-family: Arial, Verdana, sans-serif;
      font-size: 10px;
      }
-     
+
      body {
      margin: 10px;
      padding: 10px;
@@ -745,7 +764,7 @@ office@superisp.com
      </head>
      <body>
      <div style="text-align: center" class="fs"><h4>SUBSCRIBER CONTRACT AGREEMENT No. {{ customer.id }} </h4>
-     entered into between 
+     entered into between
      </div>
      <br>
      <div>
@@ -796,7 +815,7 @@ office@superisp.com
      <td bgcolor="#e0e0e0"><b>Connection Address</b></td>
      <td colspan="3"> {{ loader.customer.street_1 }}{% if loader.customer.additionalAttributes.street_2 is not empty %}, {{ loader.customer.additionalAttributes.street_2 }}{% endif %}, {{ customer.city}}{% if loader.customer.zip_code is not empty %}, {{ loader.customer.zip_code }}{% endif %}</td>
      </tr>
-     
+
      <tr>
      <td bgcolor="#e0e0e0"><b>Email</b><br>Invoices and receipts will be sent to this address</td>
      <td colspan="3">{{ loader.customer.email }}</td>
@@ -856,9 +875,9 @@ office@superisp.com
      (together the <b>"Parties"</b>. A reference to <b>"Party"</b> shall be a reference to one of them as so determined
      by the context.)<br>For the period and services selected below
      </div>
-     
-     
-     
+
+
+
      <div class="fs">
      <h4><b><br>
      {% set active_services = loader.getServicesByTypeAndStatus('internet', 'active') %}
@@ -870,7 +889,7 @@ office@superisp.com
      {% endfor %}
      {% set active_voice = loader.getServicesByTypeAndStatus('voice', 'active') %}
      {% for voice in active_voice %}
-     {% if voice is not empty %} 
+     {% if voice is not empty %}
      Service: {{ voice.type }}<br>
      Tarriff: {{ voice.description }}<br>
      Monthly price: {{ voice.unit_price }}<br>
@@ -887,9 +906,9 @@ office@superisp.com
      <div style="text-align: right">Page 1 of 8</div>
      </div>
      <div style="page-break-before: always;"></div>
-     
+
      <div style="text-align: justify"><h4>TERMS AND CONDITIONS FOR â€˜BEST FIBREâ€™ SERVICES</h4>
-     This Subscriber Agreement (â€œAgreementâ€) is made by and between Subscriber and JS BEST ISP Limited. (â€œBEST ISPâ€), forÂ the provision and use of â€˜BRDY Fibreâ€™ Internet access (the â€œServiceâ€). 
+     This Subscriber Agreement (â€œAgreementâ€) is made by and between Subscriber and JS BEST ISP Limited. (â€œBEST ISPâ€), forÂ the provision and use of â€˜BRDY Fibreâ€™ Internet access (the â€œServiceâ€).
      Now therefore, in consideration of theÂ mutual promises and covenants herein contained, the adequacy of which is hereby acknowledged, and intendingÂ to be legally bound, Subscriber and BEST ISP hereby agree as follows:
      <h4>1. AGREEMENT.</h4>Subscriber agrees to be bound by this Agreement and to use the Service in compliance with the terms of thisÂ Agreement and with BEST ISPâ€™s Acceptable Usage Policy and any modifications made to same from time to time.
      <h4>2. THE SUBSCRIBER.</h4>The Subscriber is at least 18 years of age, is legally able to enter into contracts and is responsible for this SubscriberÂ account. The Subscriber shall pay all fees, taxes, charges and other expenses incurred in connection with theÂ account.
@@ -900,10 +919,10 @@ office@superisp.com
      <br>
      (c) The Â Subscriber acknowledges and agrees that from time to time BEST ISP may be required to temporarily suspendÂ the Service to subscriber to verify compliance with applicable licenses, authorizations, and compliance with theÂ technical and operating parameters of the network. Under such circumstances BEST ISP will use all reasonableÂ efforts to minimize disruption to the Service including making reasonable efforts that any such suspension takeÂ place out of normal business hours.
      <br>
-     (d)Â The Subscriber accepts that BEST ISP may change or withdraw any element of the Service from time to time andÂ will use all reasonable efforts to notify Subscriber of any necessary change in the Services. 
+     (d)Â The Subscriber accepts that BEST ISP may change or withdraw any element of the Service from time to time andÂ will use all reasonable efforts to notify Subscriber of any necessary change in the Services.
      <br>
      (e) The SubscriberÂ acknowledges that the Service is an â€œalways openâ€ connection to the internet while the equipment is powered onÂ and that it is Subscriberâ€™s SOLE RESPONSIBILITY to install, configure and maintain suitable security measuresÂ to protect The Subscriberâ€™s computer and equipment from unauthorised or malicious access from the internet. AnyÂ advice or equipment provided by BEST ISP is provided â€˜as isâ€™ and BEST ISP accepts no responsibility or liability forÂ the security of Subscriberâ€™s systems.
-     
+
      <div style="position: fixed; bottom: 0; width: 100%;" class="fs">
      <div style="text-align: right"></div>
      <hr style="width: 100%"/>
@@ -963,8 +982,8 @@ office@superisp.com
      <br>(a)Â The Subscriber will receive a username, password, account reference, and various other account details.Â The Subscriber is solely responsible for use of the Service and for ensuring their information is kept confidential.Â The Subscriber must notify BEST ISP immediately upon discovering any unauthorized use of their account.
      <br>(b) The Â Subscriber acknowledges that usernames, passwords and IP addresses may change or be changed fromÂ time to time, and specifically that fixed IP addresses are not guaranteed except in the case of custom servicesÂ where this specifically comprises part of the service contract.
      <br>
-     <h4>9. FAIR ACCESS POLICY.</h4><br> 
-     To ensure equal Internet access for all subscribers, BEST ISP operates a fair access policy. Fair accessÂ establishes an equitable balance in Internet access across high speed Internet services for all subscribers. ToÂ ensure this equity, certain types of traffic such as email and browsing may be prioritized over other traffic.Â BEST ISP provides the Service on a â€œbest effortâ€ basis and does not guarantee upload or download speeds.Â 
+     <h4>9. FAIR ACCESS POLICY.</h4><br>
+     To ensure equal Internet access for all subscribers, BEST ISP operates a fair access policy. Fair accessÂ establishes an equitable balance in Internet access across high speed Internet services for all subscribers. ToÂ ensure this equity, certain types of traffic such as email and browsing may be prioritized over other traffic.Â BEST ISP provides the Service on a â€œbest effortâ€ basis and does not guarantee upload or download speeds.Â
      <br>
      <h4>10. CUSTOMER COMPLAINT POLICY.</h4><br>
      Should you be dissatisfied for any reason with the service provided by BEST ISP, a formal complaint process isÂ provided to ensure that your issue is addressed as quickly as possible and at the highest level necessary. This isÂ outlined as follows:
@@ -979,7 +998,7 @@ office@superisp.com
      <br>
      (e)Â RESOLUTION: The staff member receiving your call will either resolve your complaint or transfer yourÂ complaint to a more appropriate person to endeavour to resolve your complaint to your satisfaction. WhereÂ possible, our staff will resolve your concern at the first point of contact.
      <br>
-     (f)Â ESCALATION: If you are not satisfied with the resolution, or if you feel that you have not received a fairÂ hearing, your complaint can be escalated to a manager on your request. He or she will review yourÂ complaint and resolutions offered and discuss the complaint with you. 
+     (f)Â ESCALATION: If you are not satisfied with the resolution, or if you feel that you have not received a fairÂ hearing, your complaint can be escalated to a manager on your request. He or she will review yourÂ complaint and resolutions offered and discuss the complaint with you.
      <br>
      <div style="position: fixed; bottom: 0; width: 100%;" class="fs">
      <div style="text-align: right"></div>

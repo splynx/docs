@@ -5,13 +5,13 @@ Splynx software can be connected to different Payment Gateways. Subscribers then
 
 Below is a list of supported and integrated Payment Gateways. By clicking on Payment Gateway link, you will be redirected to documentation page describing how to install and use Gateway with Splynx.
 
-[→ TBK-WebPay](TBK-WebPay/TBK-WebPay.md)
+[→ TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
 
-[→ Authorize.net](authorize/authorize.md)
+[→ Authorize.net](payment_systems/authorize/authorize.md)
 
-[→ Bitpay, bitcoin payments](bitpay/bitpay.md)
+[→ Bitpay, bitcoin payments](payment_systems/bitpay/bitpay.md)
 
-[→ Braintree payments](braintree/braintree.md)
+[→ Braintree payments](payment_systems/braintree/braintree.md)
 
 [→ Gocardless.com](payment_systems/gocardless/gocardless.md)
 

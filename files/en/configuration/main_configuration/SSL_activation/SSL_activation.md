@@ -15,7 +15,7 @@ Now you have to choose if encrypt automatically generated free SSL Certificates 
 ![2.png](2.png)
 
 If you choose _"Let's encrypt (automatic generated free SSL Certificates)"_ press _"Validate config"_ and when it will finish validation and press _"Enable SSL Config"_
-![3.png](3.png)
+![3.1.png](3.1.png)
 
 ![4.png](4.png)
 
@@ -26,4 +26,4 @@ If you choose _"Own SSL certificate"_, you have to set manualy your *SSL Key* an
 
 If you want to return to "http", press _"Disable SSL config"_ button and clear "Cache" in your browser:
 
-![7.png](7.png)
+![7.1.png](7.1.png)

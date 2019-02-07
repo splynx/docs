@@ -64,7 +64,7 @@ Config → Integrations → Add-ons:
 Now you need to go to your account on the https://www.payfast.co.za/ and turn on *"Sabscription state"* and *"Ad hoc payments state":*
 ![3.png](3.png)
 
-As in previous add-on, after installation you have to configure param in Config → Integrations → Modules list. Look at the screenshot:
+Now, as in previous add-on, after installation you have to configure param in Config → Integrations → Modules list. Look at the screenshot:
 
 ![Integrations addons PF rb 2](params_rb.png)
 

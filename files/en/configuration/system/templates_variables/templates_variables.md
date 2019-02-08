@@ -400,7 +400,7 @@ There is the list of all variables which are using in templates. So you can use 
 
 ####Transactions:
 <details>
-<summary>Collapse title</summary>
+<summary>{{ dump(loader.transactions) }}</summary>
 <p markdown="1">
 
 ##### result will be array of transactions fields:

@@ -24,3 +24,5 @@ Please, follow the links below to find tutorial page about every single part of 
 [Cards](configuration/main_configuration/cards/cards.md)
 
 [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
+
+[SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)

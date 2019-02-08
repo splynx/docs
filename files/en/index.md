@@ -145,6 +145,7 @@ Table of contents
     * [Portal](configuration/main_configuration/portal/portal.md)
     * [Cards](configuration/main_configuration/cards/cards.md)
     * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
+    * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
 * [Finance configuration](configuration/finance/finance.md)
     * [Automation](configuration/finance/automation/automation.md)
     * [Finance settings](configuration/finance/finance_settings/finance_settings.md)

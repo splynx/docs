@@ -1,7 +1,7 @@
-Xero accounting (Add-on is outdated and didn't support)
+Xero accounting (Add-on is outdated and not supporting)
 =============================================
 
-**(Add-on is outdated and didn't support)**
+**(Add-on is outdated and not supporting)**
 
 Splynx is able to sync Customers, Invoices and Payments with Xero accounting software - https://www.xero.com
 

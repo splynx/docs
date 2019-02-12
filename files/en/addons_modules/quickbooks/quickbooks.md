@@ -1,7 +1,7 @@
-Quickbooks accounting (Add-on is outdated and didn't support)
+Quickbooks accounting (Add-on is outdated and not supporting)
 ==========================================
 
-**(Add-on is outdated and didn't support)**
+**(Add-on is outdated and not supporting)**
 
 The installation of Add-on is performed with two commands:
 ```

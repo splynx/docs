@@ -17,8 +17,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on Pay
 
 [→ Paypal payments](payment_systems/paypal/paypal.md)
 
-[→ Paypal rb (recurring billing) payments](payment_systems/paypal_rb/paypal_rb.md)
-
 [→ Payfast.co.za payments](payment_systems/payfast/payfast.md)
 
 [→ SEPA debit orders](payment_systems/sepa/sepa.md)

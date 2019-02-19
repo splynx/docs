@@ -47,7 +47,15 @@ To prevent this situation, router based contention can be used. In Splynx each r
 
 ![Router](6.png)
 
+### Shaping type
 
+For plan based contention, please set Shaping type to *Simple queue (with Tree)*:
+![image](7.png)
+
+For router based contention, please set Shaping type to *Simple queue*:
+![image](8.png)
+
+### Video tutorial
 You can find on a short video tutorial how to configure Splynx and Plan based contention:
 
 <iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/e2aOsfdBTYA?wmode=opaque">Video on youtube</iframe>

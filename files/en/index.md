@@ -210,7 +210,6 @@ Table of contents
 * [Gocardless.com](payment_systems/gocardless/gocardless.md)
 * [iCharge (Xilo payments)](payment_systems/iCharge/iCharge.md)
 * [Paypal payments](payment_systems/paypal/paypal.md)
-* [Paypal RB (Recurring Billing) payments](payment_systems/paypal_rb/paypal_rb.md)
 * [Payfast.co.za payments](payment_systems/payfast/payfast.md)
 * [SEPA debit orders](payment_systems/sepa/sepa.md)
 * [Bitpay bitcoin payments](payment_systems/bitpay/bitpay.md)

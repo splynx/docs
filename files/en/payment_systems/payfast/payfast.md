@@ -1,14 +1,14 @@
 Payfast.co.za payments
 ======================
 
-Payfast is a Splynx add-on. It uses to synchronize customers, invoices and payments with Payfast accounting software - [https://www.payfast.co.za](https://www.payfast.co.za).
+Payfast is a Splynx add-on. It allows to refill balance and pay invoices via PayFast payment gateway - [https://www.payfast.co.za](https://www.payfast.co.za).
 
-We developed two different add-ons for using this payment system: *splynx-payfast* and *splynx-payfast-rb*. First add-on - *splynx-payfast* is using for payments which proceed only in PayFast system. Second add-on can work with different credit-cards using PayFast.
+We developed two different add-ons for using this payment system: *splynx-payfast* and *splynx-payfast-rb*. First add-on - *splynx-payfast* is using for payments which proceed only in PayFast system. Second add-on can work with different credit-cards using PayFast and allows to charge all customers by using *Direct debit order*.
 
 **WARNING!** PayFast makes use of ports 80, 8080, 8081 and 443 only. So Splynx_url have to be on the same ports!
 
-####splynx-payfast 
-
+splynx-payfast
+--------------
 To install *splynx-payfast* add-on, use next commands:
 
 ```bash
@@ -47,7 +47,8 @@ After that you will press button “pay” you will be redirect to the [https://
 ![Complete payment](complete_payment.png)
 
 
-####splynx-payfast-rb 
+splynx-payfast-rb
+-----------------
 
 And now it is time of splynx-payfast-rb. To install *splynx-payfast-rb* add-on, use next commands:
 
@@ -61,7 +62,10 @@ Config → Integrations → Add-ons:
 
 ![Integrations addons PF rb](addons_list_rb.png)
 
-As in previous add-on, after installation you have to configure param in Config → Integrations → Modules list. Look at the screenshot:
+Now you need to go to your account on the https://www.payfast.co.za/ and turn on *"Sabscription state"* and *"Ad hoc payments state":*
+![3.1.png](3.1.png)
+
+Now, as in previous add-on, after installation you have to configure param in Config → Integrations → Modules list. Look at the screenshot:
 
 ![Integrations addons PF rb 2](params_rb.png)
 
@@ -74,3 +78,9 @@ Now customers will see another button to pay as on the screenshot:
 To refill balance customers can use the link - “*http://yoursplynxurl/payfast-rb*”, where they have to enter registration details for the first time:
 
 ![Add payfast account rb](add_payfast_account.png)
+
+You can also charge all customers using one button! Go to: Finance → Invoices, set period and click "Charge" as on the screenshot:
+
+![charge](1.1.png)
+
+![charge](2.png)

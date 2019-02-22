@@ -23,7 +23,11 @@ Then first step - you should to register in https://www.integrapay.com.au/. Afte
 
 ![(image)](3.png)
 
-![(image)](4.png)
+![(image)](14.png)
+
+After registration IntegraPay will sand you email with your credentials, where  _**Bussines ID** it's your **Username** and  **Api User Key** it's your **password**_ :
+
+![(image)](13.png)
 
 Also in this repository you can set "Service fee" for and "fee vat" customers:
 
@@ -43,9 +47,9 @@ After that customer have configured his Bank account or credit card he can pay i
 
 ![(image)](6.png)
 
-Also customers can to add their balance by *Financ → Pay via IntegraPay direct debit*:
+Also customers can to refill their balance by *Finance → Pay via IntegraPay direct debit*:
 
-![(image)](9.png)
+![(image)](9.1.png)
 
 Besides, you can charge all customers, using one button! Go to *Finance → Invoices*, set the period and click "Charge" as at the screenshot:
 

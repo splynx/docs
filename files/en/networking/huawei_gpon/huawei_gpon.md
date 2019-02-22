@@ -10,6 +10,16 @@ apt update
 apt install splynx-huawei-olt
 ```
 
+or oyu can install it from Web UI:
+
+*Config -> Integrations -> Add-ons:*
+
+![Info](20.png)
+
+![Info](21.png)
+
+![Info](22.png)
+
 To add an OLT, go to Networking → Huawei GPON, it needs IP, ssh port, and login/pass. Also it's so important to set correctly the UPLINK BOARD and the UPLINK INTERFACE.
 
 ![](gpon.png)
@@ -48,21 +58,26 @@ Once that config is completed, we can find the and assign the ONT to the custome
 
 
 First select the OLT where the customer is connected.
+
 ![](5.png)
 
 
 The click, on autofind to discover the diferent ONT from the OLT, it will display the availanle customer units with detalied information, so we can select the correct one.
 
 ![](6.png)
+
 ![](7.png)
+
 ![](8.png)
 
 
 Then ONT will be added and we can check the status or delete it.
 
 ![](9.png)
-![](10.png)
-![](11.png)
+
+![](23.png)
+
+![](24.png)
 
 
 This guide is also explained in the following video, step by step.

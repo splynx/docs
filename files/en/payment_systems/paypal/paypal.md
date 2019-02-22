@@ -71,3 +71,7 @@ Another (only for customers with *type of billing -> Prepaid (Daily)* )
 ![Enable widget](widget2_enable.png)
 
 ![Enable widget](widget2.png)
+
+You can allow customers with billing type *Prepaid (Monthly)* use last widget. To do this, code should be modified. Replace `if customer.billing_type == 'prepaid'` to `if customer.billing_type == 'prepaid_monthly' or customer.billing_type == 'prepaid'`:
+
+![Enable widget](widget2-custom.png)

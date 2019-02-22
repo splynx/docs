@@ -5,42 +5,46 @@ Splynx software can be connected to different Payment Gateways. Subscribers then
 
 Below is a list of supported and integrated Payment Gateways. By clicking on Payment Gateway link, you will be redirected to documentation page describing how to install and use Gateway with Splynx.
 
-[→ Authorize.net](./authorize/authorize.md)
+[→ TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
 
-[→ Bitpay, bitcoin payments](./bitpay/bitpay.md)
+[→ Authorize.net](payment_systems/authorize/authorize.md)
 
-[→ Braintree payments](./braintree/braintree.md)
+[→ Bitpay, bitcoin payments](payment_systems/bitpay/bitpay.md)
 
-[→ Gocardless.com](./gocardless/gocardless.md)
+[→ Braintree payments](payment_systems/braintree/braintree.md)
 
-[→ Paypal payments](./paypal/paypal.md)
+[→ Gocardless.com](payment_systems/gocardless/gocardless.md)
 
-[→ Paypal rb (recurring billing) payments](./paypal_rb/paypal_rb.md)
+[→ Paypal payments](payment_systems/paypal/paypal.md)
 
-[→ Payfast.co.za payments](./payfast/payfast.md)
+[→ Payfast.co.za payments](payment_systems/payfast/payfast.md)
 
-[→ SEPA debit orders](./sepa/sepa.md)
+[→ SEPA debit orders](payment_systems/sepa/sepa.md)
 
 [comment]: # (→ SEPA debit order in Spanish)
 
-[→ Stripe](./stripe/stripe.md)
+[→ Stripe](payment_systems/stripe/stripe.md)
 
-[→ IPpay](./ippay/ippay.md)
+[→ iCharge (Xilo payments)](payment_systems/iCharge/iCharge.md)
 
-[→ Pesapal](./pesapal/pesapal.md)
+[→ IPpay](payment_systems/ippay/ippay.md)
 
-[→ Paystack](./paystack/paystack.md)
+[→ Integrapay](payment_systems/integrapay/integrapay.md)
 
-[→ Wepay (recurring billing) payments](./wepay/wepay.md)
+[→ Pesapal](payment_systems/pesapal/pesapal.md)
 
-[→ SagePay Pay now](./sagepay_pay_now/sagepay_pay_now.md)
+[→ Paystack](payment_systems/paystack/paystack.md)
 
-[→ SagePay Direct Debit](./sagepay_dd/sagepay_dd.md)  
+[→ PayU Africa](payment_systems/payu/payu.md)
 
-[→ Moneris (recurring billing) payments](./moneris/moneris.md)
+[→ SagePay Pay now](payment_systems/sagepay_pay_now/sagepay_pay_now.md)
+
+[→ SagePay Direct Debit](payment_systems/sagepay_dd/sagepay_dd.md)  
+
+[→ Moneris (recurring billing) payments](payment_systems/moneris/moneris.md)
 
 [comment]: # (→ Mercadopago)
 
-[→ Paynow](./paynow/paynow.md)
+[→ Paynow](payment_systems/paynow/paynow.md)
 
-[→ Safaricom M-PESA](./mpesa/mpesa.md)
+[→ Safaricom M-PESA](payment_systems/mpesa/mpesa.md)

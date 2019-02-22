@@ -17,7 +17,7 @@ Table of contents
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
 * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
- 
+
 
 ##### [Customer Management](./customer_management/customer_management.md)
 * [Adding new customer](customer_management/add_new_customer/add_new_customer.md)
@@ -31,11 +31,11 @@ Table of contents
 * [Customer documents](customer_management/customer_documents/customer_documents.md)
 * [CPE management](customer_management/cpe_management/cpe_management.md)
 * [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
- 
+
 
 ##### Customer Portal
 * [Customer Portal](customer_portal/customer_portal.md)
- 
+
 
 ##### [Finance](./finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
@@ -46,7 +46,7 @@ Table of contents
 * [History & Preview](finance/history_and_preview/history_and_preview.md)
 * [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
 * [Refill cards](finance/refill_cards/refill_cards.md)
-
+* [Change service](finance/change_service/change_service.md)
 
 ##### Inventory
 * [Inventory](inventory/inventory.md)
@@ -145,6 +145,7 @@ Table of contents
     * [Portal](configuration/main_configuration/portal/portal.md)
     * [Cards](configuration/main_configuration/cards/cards.md)
     * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
+    * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
 * [Finance configuration](configuration/finance/finance.md)
     * [Automation](configuration/finance/automation/automation.md)
     * [Finance settings](configuration/finance/finance_settings/finance_settings.md)
@@ -194,23 +195,29 @@ Table of contents
 * [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
+* [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
+* [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
+* [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
 
+##### [Online backups](./online_backups/online_backups.md)
+* [Online backups](online_backups/online_backups.md)
 
 ##### [Payment systems](./payment_systems/payment_systems.md)
+* [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
 * [Authorize.net](payment_systems/authorize/authorize.md)
 * [Braintree payments](payment_systems/braintree/braintree.md)
 * [Gocardless.com](payment_systems/gocardless/gocardless.md)
+* [iCharge (Xilo payments)](payment_systems/iCharge/iCharge.md)
 * [Paypal payments](payment_systems/paypal/paypal.md)
-* [Paypal RB (Recurring Billing) payments](payment_systems/paypal_rb/paypal_rb.md)
 * [Payfast.co.za payments](payment_systems/payfast/payfast.md)
 * [SEPA debit orders](payment_systems/sepa/sepa.md)
 * [Bitpay bitcoin payments](payment_systems/bitpay/bitpay.md)
 * [Stripe online payments](payment_systems/stripe/stripe.md)
 * [IPpay by Convergence](payment_systems/ippay/ippay.md)
+* [Integrapay](payment_systems/integrapay/integrapay.md)
 * [Pesapal](payment_systems/pesapal/pesapal.md)
 * [Paystack](payment_systems/paystack/paystack.md)
-* [Wepay (recurring billing) payments](payment_systems/wepay/wepay.md)
 * [SagePay Pay now](payment_systems/sagepay_pay_now/sagepay_pay_now.md)
 * [SagePay Direct Debit](payment_systems/sagepay_dd/sagepay_dd.md)
 * [Moneris](payment_systems/moneris/moneris.md)

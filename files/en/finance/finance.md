@@ -22,3 +22,5 @@ Please, follow the links below to find tutorial page about each feature of Finan
 [→ Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
 
 [→ Refill cards](finance/refill_cards/refill_cards.md)
+
+[→ Change service](finance/change_service/change_service.md)

@@ -113,7 +113,7 @@ Table of contents
 
 
 ##### [Administration](./administration/administration.md)
-* [Main](administration/main.md)
+* [Main](administration/main/main.md)
     * [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md)
         * [Default roles in details](administration/main/admins_and_permissions/default_roles/default_roles.md)
     * [Partners](administration/main/partners/partners.md)
@@ -182,7 +182,7 @@ Table of contents
     * [Import](configuration/tools/import/import.md)
     * [Export](configuration/tools/export/export.md)
     * [Activate services](configuration/tools/activate_services/activate_services.md)
-    * [Invoices cache](configuration/tools/.md)
+    * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
     * [Adminer](configuration/tools/adminer/adminer.md)
 
 

@@ -8,3 +8,5 @@ Tools
 [→ Export](configuration/tools/export//export.md)
 
 [→ Import](configuration/tools/import/import.md)
+
+[→ Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)

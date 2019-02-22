@@ -186,7 +186,7 @@ Table of contents
     * [Adminer](configuration/tools/adminer/adminer.md)
 
 
-##### Add-ons, Modules
+##### [Add-ons, Modules](addons_modules/addons_modules.md)
 * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)
 * [Google maps add-on](addons_modules/google_maps/google_maps.md)
 * [Quickbooks accounting](addons_modules/quickbooks/quickbooks.md)

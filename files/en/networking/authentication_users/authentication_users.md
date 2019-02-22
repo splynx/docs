@@ -40,3 +40,5 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 [→ Juniper: PPPoE with Radius server](networking/authentication_users/juniper_pppoe_radius/juniper_pppoe_radius.md)
 
 [→ Accel-ppp : PPTP/L2TP/PPPoE/IPoE server for Linux](networking/authentication_users/linux_accel/linux_accel.md)
+
+[→ DHCP Option 82](networking/authentication_users/dhcp_option_82/dhcp_option_82.md)

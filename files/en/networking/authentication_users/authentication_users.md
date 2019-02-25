@@ -5,7 +5,7 @@ Splynx supports different ways of  customers' central authentication in the netw
 
 * **PPPoE** - easy to maintain and implement. Customer on CPE device setups username and password and all networking settings CPE receives from PPPoE NAS (Network Access Server). Also provides encryption if needed and accounting for getting statistics of usage. Had issues with MTU in past, but in last years these issues were fixed by main vendors.
 
-* **IPoE (or DHCP)** - DHCP is based on MAC address of client. Also can be linked to port of switch were customer is connected ((DHCP option 82)[networking/authentication_users/dhcp_option_82/dhcp_option_82.md]). In several vendors don't provide accounting capability (Mikrotik routers)
+* **IPoE (or DHCP)** - DHCP is based on MAC address of client. Also can be linked to port of switch were customer is connected ([DHCP option 82](networking/authentication_users/dhcp_option_82/dhcp_option_82.md)). In several vendors don't provide accounting capability (Mikrotik routers)
 
 * **Wireless Authentication** - when ISP has a wireless network, he needs to maintain access of CPE devices to his Access Points. For this purpose several wireless authentication methods are used, such as a password inside TDMA protocols or wireless access-lists
 

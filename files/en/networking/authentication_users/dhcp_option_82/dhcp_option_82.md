@@ -12,7 +12,7 @@ In many cases it can be changed to custom string:
 
 * For Cisco it’s command `ip dhcp snooping information option format remote-id ASW1`, where `ASW1` is a custom name/string.
 
-* For Mikrotik DHCP relay, it can be changed in relay configuration, field **Relay Info Remote ID**:
+* For Mikrotik DHCP relay, it can be changed in relay configuration, field **Relay Info Remote ID**.
 ![image](pic1.png)
 
 **Agent-Circuit-Id** says where customer sits.

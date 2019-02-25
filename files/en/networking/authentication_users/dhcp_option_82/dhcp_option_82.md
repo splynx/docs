@@ -12,7 +12,8 @@ In many cases it can be changed to custom string:
 
 * For Cisco it’s command `ip dhcp snooping information option format remote-id ASW1`, where `ASW1` is a custom name/string.
 
-* For Mikrotik DHCP relay, it can be changed in relay configuration, field **Relay Info Remote ID**.
+* For Mikrotik DHCP relay, it can be changed in relay configuration, field **Relay Info Remote ID**:
+
 ![image](pic1.png)
 
 **Agent-Circuit-Id** says where customer sits.
@@ -36,12 +37,15 @@ This is string "My Mikrotik eth 0/2" converted from ASCII to HEX. Where:
 By default Splynx supports only Agent Circuit ID. However you can also add Agent Remote ID support.
 
 To use Agent Circuit ID, enter its value in internet service field **Port ID**:
+
 ![image](pic2.png)
+
 ![(warn)](warning.png) You should use HEX value in this field. Example: `0x001122334455`.
 
 ### How to add Agent Remote ID support
 
 To add support of Agent Remote ID, add additional field for internet services. Field name must be `agent_remote_id`:
+
 ![image](pic3.png)
 ![image](pic4.png)
 
@@ -51,7 +55,9 @@ To add support of Agent Remote ID, add additional field for internet services. F
 **Default value** - you can enter `*` here. If you do so, this value (`*`) will be used for all current and new services. `*` means that DCHP request can contain any Agent Remote ID. This is useful when you for example add support of Agent Remote ID (additional field for services), but don't want to use Agent Remote ID for some services.
 
 After additional field is added it appears in internet service configuration:
+
 ![image](pic5.png)
+
 You should use HEX value in this field. Example: `0xaabbccddeeff`. Also you can use `*` (asterisk) here. `*` means that DCHP request can contain any Agent Remote ID.
 
 ![(note)](info.png) Please note, if you leave this field blank, this means that Agent Remote ID option in DHCP request should be exactly empty.
@@ -87,6 +93,7 @@ raddebug | grep Agent
 ### Splynx Radius debug
 
 Also you can enable Splynx Radius debug messages. It can be done under *Config / Networking / Radius extended*:
+
 ![image](pic6.png)
 
 These settings will be applied in a few minutes or you can restart Radius to apply new settings immediately. To restart Radius use the button at the bottom of the same page.

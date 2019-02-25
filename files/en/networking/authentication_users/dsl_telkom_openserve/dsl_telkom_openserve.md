@@ -11,7 +11,7 @@ South African provider Telkom allows smaller ISPs to resell his services. The se
 2. Then add all proxies as Routers to Splynx software, please specify NAS type = DSL_Telkom (configured in previous step). Also define the Radius secret that is used for proxy server and Radius server communication.
 
 
-3. Next step is to add to `/var/www/splynx/config/radius.php` following lines :
+3. Next step is to edit Radius extended settings under *Config / Networking / Radius extended*:
 
 ![(picture)](pic1.png)
 

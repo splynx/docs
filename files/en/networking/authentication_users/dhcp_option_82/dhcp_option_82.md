@@ -47,6 +47,7 @@ To use Agent Circuit ID, enter its value in internet service field **Port ID**:
 To add support of Agent Remote ID, add additional field for internet services. Field name must be `agent_remote_id`:
 
 ![image](pic3.png)
+
 ![image](pic4.png)
 
 **Field name** - exactly `agent_remote_id`.

@@ -53,7 +53,6 @@ Table of contents
 
 
 ##### [Networking](networking/networking.md)
-* [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
     * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
     * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
@@ -86,14 +85,15 @@ Table of contents
     * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
     * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
     * [Other routers](networking/routers_settings/other/other.md)
+* [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
+* [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 * [IP address management](networking/ip_address_management/ip_address_management.md)
 * [Monitoring](networking/monitoring/monitoring.md)
 * [Weathermaps](networking/weathermaps/weathermaps.md)
-* [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
+* [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)
 * [Radius server customization](networking/radius_customization/radius_customization.md)
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
-* [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
-* [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)
+* [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
 
 ##### [Support, Tickets and Messages](support_tickets_messages/support_tickets_messages.md)

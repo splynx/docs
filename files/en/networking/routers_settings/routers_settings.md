@@ -17,11 +17,11 @@ Networking / Routers - is the place where you can add and configure your network
 **Authorization/Accounting** - different types of Authorization/Accounting.
 
 *   **None / None** - useful for different not standard scenarios.
-*   **None / API accounting** - useful for different not standard scenarios. In addition to previous, Mikrotik API accounting can be used.
+*   **None / API accounting** - useful for different not standard scenarios. In addition to previous, Mikrotik API accounting will be used.
 *   **Firewall IP-MAC filter / API accounting** - Mikrotik API will be used to push firewall filter rules into router. This is useful for Static IP addresses. When customer sets his/her IP address on the equipment manually.
 *   **DHCP (Radius) / API accounting** - DHCP server on the router will use Radius authorization. Accounting will be made with Mikrotik API.
 *   **DHCP (Leases) / API accounting** - Mikrotik API will be used to push DHCP leases into router. Accounting will be made with Mikrotik API.
-    ![(warning)](warning.png) Do not forget to set MAC addresses for internet services. 
+    ![(warning)](warning.png) Do not forget to set MAC addresses for Splynx internet services. 
 *   **PPP (Radius) / Radius accounting** - PPPoE / PPTP / OpenVPN (VPN) server will use Radius authorization. Radius accounting will be used. Customer creates VPN connection on the PC with login and password. Then he/she connects to VPN server, for example - Mikrotik router. VPN server sends RADIUS-request with customer’s credentials to RADIUS server (Splynx server) and RADIUS server answers to router with RADIUS-Accept (allow customer connection) or RADIUS-Reject (prohibit customer connection).
 If Splynx server is not reachable - this is serious problem. Splynx server should be always online. Otherwise customers can’t establish VPN connection.
 *   **PPP (Secrets) / API accounting** - Mikrotik API will be used to push PPP secrets into router. Accounting will be made with Mikrotik API. Splynx server is not used for Authorization (directly). Splynx server copies PPP credentials (logins/passwords) to the router from time to time.
@@ -39,8 +39,10 @@ RADIUS ACCOUNTING - Router sends accounting statistic every **n** seconds to Spl
 
 **GPS** - you can put a point on the map (where router is located). This field is available only when Google Maps add-on is installed.  
 **Radius secret** - Radius secret.  
-**NAS IP** - the real IP source address for radius packets. **It does not matter if router is behind NAT or not.** It's recommended than in Radius settings in Mikrotik router Src. address = NAS IP in Splynx.  
+**NAS IP** - the real IP source address for radius packets. **It does not matter if router is behind NAT or not.** It's recommended than in Radius settings in Mikrotik router Src. address = NAS IP in Splynx.
+
 ![(image)](image2018-10-2_13-26-18.png)
+
 **Pools** - if selected, use only selected pools for this router. If you want to use all available pools - do not select any.
 
 * * *

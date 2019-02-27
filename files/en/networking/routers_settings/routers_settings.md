@@ -35,9 +35,8 @@ It is not required that Splynx server should be always reachable for the router.
 
 ![(info)](info.png) If API Authorization is used - Mikrotik API should be enabled and configured on the _Mikrotik_ tab and in Router settings.
 
-#### Accounting
-API ACCOUNTING - Splynx server from time to time (every 5 minutes) enters to Mikrotik device (via Mikrotik API) and gets statistic.
-RADIUS ACCOUNTING - Router sends accounting statistic every **n** seconds to Splynx server using RADIUS accounting packets. **n** is configurable value. It can be configured per NAS type under *Config / Networking / Radius / NAS Type/ Load / Accounting interval (in sec)*.
+**API ACCOUNTING** - Splynx server from time to time (every 5 minutes) enters to Mikrotik device (via Mikrotik API) and gets statistic.
+**RADIUS ACCOUNTING** - Router sends accounting statistic every **n** seconds to Splynx server using RADIUS accounting packets. **n** is configurable value. It can be configured per NAS type under *Config / Networking / Radius / NAS Type/ Load / Accounting interval (in sec)*.
 
 **GPS** - you can put a point on the map (where router is located). This field is available only when Google Maps add-on is installed.  
 **Radius secret** - Radius secret.  

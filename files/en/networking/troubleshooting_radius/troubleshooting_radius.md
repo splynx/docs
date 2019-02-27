@@ -84,14 +84,16 @@ If all these steps were made and Mikrotik router still shows Radius timeout in l
 
 ### Troubleshooting
 
-First of all, check the file in Splynx logs called radius/short. It can be found in section `Splynx -> Administration -> Logs -> Files`. If this file is empty, Radius server should be set to debug mode.
+First of all, check the file in Splynx logs called `radius/short.log`. It can be found in section `Splynx -> Administration -> Logs -> Files`. If this file is empty or gives not enough information, Radius server should be set to debug mode.
 
 Splynx Radius server consist of 2 daemons – splynx_radd and freeradius. Both of them have different debugging and show different information. Let’s start with splynx_radd debugging:
 
-To enable debug mode of Splynx, connect via SSH to Splynx server and change the configuration file : `/var/www/splynx/config/radius.php`
-[debug] section enable should be changed to – “true”
+To enable debug mode of splynx_radd, go to *Config / Networking / Radius extended* and enable debug into file:
 
-To restart Radius server, enter command in SSH :
+![(image)](splynx_radd_debug.png)
+
+Then wait few minutes until new settings will be applied. Or you can apply new settings immediately if you restart Radius server.
+To restart Radius server use a button at the bottom of the same page (*Config / Networking / Radius extended*), or enter command in SSH:
 ```
 service splynx_radd restart
 ```
@@ -105,10 +107,9 @@ tail -f /var/www/splynx/logs/radius/debug.log
 
 If splynx_radd debug doesn’t show us anything, we can try to run freeradius daemon in debug mode and see if any packets are received by Radius server.
 
-Run CLI commands :
+Run CLI commands:
 ```
-service freeradius stop
-freeradius -Xxxx
+service freeradius stop; freeradius -Xxxx
 ```
 and check the CLI console output.
 

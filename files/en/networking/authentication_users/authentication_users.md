@@ -5,7 +5,7 @@ Splynx supports different ways of  customers' central authentication in the netw
 
 * **PPPoE** - easy to maintain and implement. Customer on CPE device setups username and password and all networking settings CPE receives from PPPoE NAS (Network Access Server). Also provides encryption if needed and accounting for getting statistics of usage. Had issues with MTU in past, but in last years these issues were fixed by main vendors.
 
-* **IPoE (or DHCP)** - DHCP is based on MAC address of client. Also can be linked to port of switch were customer is connected (DHCP option 82). In several vendors don't provide accounting capability (Mikrotik routers)
+* **IPoE (or DHCP)** - DHCP is based on MAC address of client. Also can be linked to port of switch were customer is connected ([DHCP option 82](networking/authentication_users/dhcp_option_82/dhcp_option_82.md)). In several vendors don't provide accounting capability (Mikrotik routers)
 
 * **Wireless Authentication** - when ISP has a wireless network, he needs to maintain access of CPE devices to his Access Points. For this purpose several wireless authentication methods are used, such as a password inside TDMA protocols or wireless access-lists
 
@@ -21,11 +21,11 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 [→ Mikrotik: PPPoE and other PPP tunnels using Radius](networking/authentication_users/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
 
-[→ Mikrotik: Hotstpot with Radius](networking/authentication_users/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
+[→ Mikrotik: Hotspot with Radius](networking/authentication_users/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
 
-[→ Mikrotik: Hotstpot Login from Splynx portal](networking/authentication_users/mikrotik_hotspot_from_portal/mikrotik_hotspot_from_portal.md)
+[→ Mikrotik: Hotspot Login from Splynx portal](networking/authentication_users/mikrotik_hotspot_from_portal/mikrotik_hotspot_from_portal.md)
 
-[→ Mikrotik: Static IP addressing with API authentication/accounting](networking/authentication_users/mikrotik_static/mikrotik_static.md)
+[→ Mikrotik: Static IP addressing with API authentication/accounting](networking/authentication_users/mikrotik_static_api/mikrotik_static_api.md)
 
 [→ Mikrotik: Local auth with Mikrotik API](networking/authentication_users/mikrotik_local_auth_api/mikrotik_local_auth_api.md)
 

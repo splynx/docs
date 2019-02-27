@@ -24,7 +24,7 @@ When both things are enabled, it's useful to create a special admin account for 
 Below are described all types of API authentication and how Splynx covers it with Mikrotik RouterOS:
 
 
-#### Mikrotik PPP Secrets via API
+### Mikrotik PPP Secrets via API
 
 First of all, select PPP secrets as type of authentication in Spynx router settings:
 
@@ -40,7 +40,7 @@ After saving, Splynx will connect to router and create entries in `PPP → Secre
 ![Secret API](secrets_api.png)
 
 
-#### Mikrotik DHCP Leases via API
+### Mikrotik DHCP Leases via API
 
 Please choose DHCP leases as type of authentication in Spynx router settings.
 
@@ -50,7 +50,7 @@ In internet service of customer should be selected a router where Splynx will pu
 
 ![Edit service](edit_service1.png)
 
-When we save the service information, Splynx connects to the router and setup static `DHCP Leases on IP → DHCP Server → Leases`
+When we save the service information, Splynx connects to the router and adds static DHCP Leases in *IP → DHCP Server → Leases*
 
 ![Leases](leases.png)
 
@@ -58,7 +58,7 @@ In settings of DHCP server you can set an option, that all non authenticated cus
 
 
 
-#### Mikrotik Hotspot users via API
+### Mikrotik Hotspot users via API
 
 Select Hotspot as type of authentication in Spynx router settings:
 

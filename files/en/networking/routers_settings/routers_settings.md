@@ -30,7 +30,9 @@ It is not required that Splynx server should be always reachable for the router.
 *   **Hotspot (Radius) / Radius accounting** - Mikrotik Hotspot server will use Radius authorization. Radius accounting will be used.
 
 ![(info)](info.png) Even if Authorization = None or API authorization is used - Radius authorization and Radius accounting will work.
+
 ![(info)](info.png) If API Authorization is used - do not forget to choose specific router in internet service settings (with router = None this will not work). Also it is required to choose specific IP address.
+
 ![(info)](info.png) If API Authorization is used - Mikrotik API should be enabled and configured on the _Mikrotik_ tab and in Router settings.
 
 #### Accounting

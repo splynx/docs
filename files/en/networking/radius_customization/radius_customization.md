@@ -152,7 +152,7 @@ Result: Mikrotik-Rate-Limit = 10 (assume that tx_rate_limit=10000)
 Example: Mikrotik-Rate-Limit = {{ rx_rate_limit }}/{{ tx_rate_limit }} {{ rx_burst_rate }}/{{ tx_burst_rate }} {{ rx_burst_threshold }}/{{ tx_burst_threshold }} {{ burst_time }}/{{ burst_time }} {{ mikrotik_priority }} {{ rx_rate_min }}/{{ tx_rate_min }}
 Result: Mikrotik-Rate-Limit = 5000/90000 20000/360000 1400/25200 93/93 8 6350/114300
 
-* Twig filters*
+* Twig filters\*
 Example: Mikrotik-Address-List = {{ tariff.title | upper }}
 Result: Mikrotik-Address-List = TARIFF (assume that tariff.title = 'tariff')
 \* in addition to [default Twig filters](https://twig.symfony.com/doc/2.x/filters/index.html) one more filter can be used - dec2hex (dec2hex(4))

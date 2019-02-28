@@ -106,8 +106,8 @@ Meanings:
 * **Log in** - Splynx server received Radius Accounting Start packet from Router.
 * **Log off** - Splynx server received Radius Accounting Stop packet from Router.
 * **Reject** - Splynx server received Radius Access Request packet from Router and Radius Access Reject was sent back. Customer was not authenticated.
-* **Reject (Attribute accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx service. Customer was authenticated on the router with session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x`.
-* **Reject (ATTR + IP accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx Reject pool (*Config / Networking / Radius / Reject IP x*). Customer was authenticated on the router with session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x`.
+* **Reject (Attribute accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx service. Customer was authenticated on the router with session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x` on the router.
+* **Reject (ATTR + IP accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx Reject pool (*Config / Networking / Radius / Reject IP x*). Customer was authenticated on the router with session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x` on the router.
 * **\[card\] Accept** - The same as **Accept** but for Prepaid vouchers.
 * **\[card\] Log in** - The same as **Log in** but for Prepaid vouchers.
 * **\[card\] Log off** - The same as **Log out** but for Prepaid vouchers.

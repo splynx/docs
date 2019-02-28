@@ -113,9 +113,11 @@ Meanings:
 * **\[card\] Log off** - The same as **Log out** but for Prepaid vouchers.
 * **Reject card** - The same as **Reject** but for Prepaid vouchers.
 
-In case of authentication errors or logging off the reason can be shown.
+In case of authentication errors or logging off, the reason can be shown.
 
-If this file is empty or gives not enough information, Radius server should be set to debug mode.
+---
+
+If `radius/short.log` is empty or gives not enough information, Radius server should be set to debug mode.
 
 Splynx Radius server consist of 2 daemons – splynx_radd and freeradius. Both of them have different debugging and show different information. Let’s start with splynx_radd debugging:
 

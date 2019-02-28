@@ -84,7 +84,37 @@ If all these steps were made and Mikrotik router still shows Radius timeout in l
 
 ### Troubleshooting
 
-First of all, check the file in Splynx logs called `radius/short.log`. It can be found in section `Splynx -> Administration -> Logs -> Files`. If this file is empty or gives not enough information, Radius server should be set to debug mode.
+First of all, check the file in Splynx logs called `radius/short.log`. It can be found in `/var/www/splynx/logs/radius` or in web interface section `Splynx -> Administration -> Logs -> Files`.
+
+In this file you can find records like these:
+```
+28/02 14:54:16:7361 - [Login               ] - [10.2.32.109    ] - Accept
+28/02 14:54:23:3637 - [C38F676DB15B        ] - [10.2.36.0      ] - Log in
+28/02 14:54:18:6727 - [C38F676DB15B        ] - [10.2.33.190    ] - Log off -  (NAS-Error)
+28/02 14:54:19:3702 - [26117AB65E2B        ] - [10.2.36.0      ] - Log off -  (Session-Timeout)
+28/02 14:54:22:7030 - [-Unknown-           ] - [10.250.74.24   ] - Reject (ATTR + IP accept) - [26117AB65E2B] -> [service1] Customer not found
+28/02 14:54:23:2525 - [26117AB65E2B        ] - [10.2.33.190    ] - Reject (Attribute accept) - [FCACAF943B30] -> [service1] Customer is not active
+28/02 14:54:14:2384 - [user                ] - [10.2.36.247    ] - Reject - [B4FBE4ACFCC2] -> [service1] Customer is already online
+28/02 14:54:21:2743 - [265798031           ] - [               ] - [card] Accept
+28/02 14:54:21:5017 - [265798031           ] - [10.5.28.211    ] - [card] Log in
+28/02 15:10:35:6518 - [voucher-login       ] - [10.1.0.202     ] - [card] Log off -  (User-Request)
+28/02 15:11:05:2315 - [serieALRClM4sj      ] - [               ] - Reject card - [4FFE0CD555D3] -> [hap-liter] Password is incorrect
+```
+Meanings:
+* **Accept** - Splynx server received Radius Access Request packet from Router and Radius Access Accept was sent back. Customer was authenticated.
+\* Please note, if MS-CHAP is used for authentication we can see `Accept` here even if password is incorrect.
+* **Log in** - Splynx server received Radius Accounting Start packet from Router.
+* **Log off** - Splynx server has received Radius Accounting Stop packet from Router.
+* **Reject** - Splynx server received Radius Access Request packet from Router and Radius Access Reject was sent back. Customer was not authenticated.
+* **Reject (Attribute accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx service. Customer was authenticated on the router with session limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x`.
+* **Reject (ATTR + IP accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx Reject pool (*Config / Networking / Radius / Reject IP x*). Customer was authenticated on the router with session limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x`.
+* **\[card\] Accept** - The same as **Accept** but for Prepaid vouchers.
+* **\[card\] Log in** - The same as **Log in** but for Prepaid vouchers.
+* **\[card\] Log off** - The same as **Log out** but for Prepaid vouchers.
+* **Reject card** - The same as **Reject** but for Prepaid vouchers.
+In case of authentication errors or logging off the reason can be shown.
+
+If this file is empty or gives not enough information, Radius server should be set to debug mode.
 
 Splynx Radius server consist of 2 daemons – splynx_radd and freeradius. Both of them have different debugging and show different information. Let’s start with splynx_radd debugging:
 

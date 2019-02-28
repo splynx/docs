@@ -102,16 +102,17 @@ In this file you can find records like these:
 ```
 Meanings:
 * **Accept** - Splynx server received Radius Access Request packet from Router and Radius Access Accept was sent back. Customer was authenticated.
-\* Please note, if MS-CHAP is used for authentication we can see `Accept` here even if password is incorrect.
+\* Please note, if MS-CHAP is used for authentication, we can see `Accept` here even if password is incorrect.
 * **Log in** - Splynx server received Radius Accounting Start packet from Router.
-* **Log off** - Splynx server has received Radius Accounting Stop packet from Router.
+* **Log off** - Splynx server received Radius Accounting Stop packet from Router.
 * **Reject** - Splynx server received Radius Access Request packet from Router and Radius Access Reject was sent back. Customer was not authenticated.
-* **Reject (Attribute accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx service. Customer was authenticated on the router with session limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x`.
-* **Reject (ATTR + IP accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx Reject pool (*Config / Networking / Radius / Reject IP x*). Customer was authenticated on the router with session limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x`.
+* **Reject (Attribute accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx service. Customer was authenticated on the router with session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x`.
+* **Reject (ATTR + IP accept)** - Splynx server sent Radius Access Accept packet to Router with IP address from Splynx Reject pool (*Config / Networking / Radius / Reject IP x*). Customer was authenticated on the router with session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into Address list `Reject_x`.
 * **\[card\] Accept** - The same as **Accept** but for Prepaid vouchers.
 * **\[card\] Log in** - The same as **Log in** but for Prepaid vouchers.
 * **\[card\] Log off** - The same as **Log out** but for Prepaid vouchers.
 * **Reject card** - The same as **Reject** but for Prepaid vouchers.
+
 In case of authentication errors or logging off the reason can be shown.
 
 If this file is empty or gives not enough information, Radius server should be set to debug mode.

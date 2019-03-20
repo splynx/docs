@@ -8,7 +8,7 @@ When you are migrating to Splynx, Import of customer database is probably needed
 ![](2.png)
 
 How to import Customer Database is also shown in our  video tutorial:  
-[https://www.youtube.com/watch?v=pJJHfAv8bPo?wmode=opaque](https://www.youtube.com/watch?v=pJJHfAv8bPo?wmode=opaque)
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/pJJHfAv8bPo?wmode=opaque">Video on youtube</iframe>
 
 For the mass activation of customer services after the Import, please follow the guide:  
-[https://www.youtube.com/watch?v=9bQL6EyV230](https://www.youtube.com/watch?v=9bQL6EyV230)
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/9bQL6EyV230?wmode=opaque">Video on youtube</iframe>

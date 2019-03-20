@@ -5,21 +5,21 @@ We have introduced new settings on the tariff config, which allows to add includ
 
 On Tariffs Plans → Voice, click on the symbol ![ViewIcon1](./icon1.png) pricing to configure settings.
 
-![Configure tariff](./configure_tariff.png?w=300)
+![Configure tariff](./configure_tariff.png)
 
 It has 2 windows Groups and Preview.
 
-![Groups and Preview](./groups_preview.png?w=300)
+![Groups and Preview](./groups_preview.png)
 
 On the window Groups, we have 3 boxes. In the first one we have to set the Rate table and the Buy price increase in %.
 
-![Rate](./rate.png?w=300)
+![Rate](./rate.png)
 
 On second one, we can add the included pricing.
 
-![Included pricing](./included_pricing.png?w=300)
+![Included pricing](./included_pricing.png)
 
-![Create pricing](./create_pricing.png?w=300)
+![Create pricing](./create_pricing.png)
 
 * **Type** - Type of the pricing, could be Call, SMS or Data.
 
@@ -41,9 +41,9 @@ On second one, we can add the included pricing.
 
 And on the last one we can configure pricing groups. For example if we want to manage any category in different way or if we want to add something specific.
 
-![Add pricing group](./add_pricing_group.png?w=300)
+![Add pricing group](./add_pricing_group.png)
 
-![Create group](./create_group.png?w=300)
+![Create group](./create_group.png)
 
 * **Title**  - Title of the Group pricing.
 
@@ -70,6 +70,6 @@ And on the last one we can configure pricing groups. For example if we want to m
 
 We can set an example of comsuption to test if our setting and config are working well.
 
-![Preview Tool](./preview_tool.png?w=300)
+![Preview Tool](./preview_tool.png)
 
 The preview is showing that is included only 6000sec(100min), and as we have set 7000sec, the other 1000 seconds will be charged in base to the table, so total price is 1'17, that correspond to out config in the Rate table selected.

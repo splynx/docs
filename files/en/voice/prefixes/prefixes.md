@@ -5,11 +5,11 @@ We add prefixes to splynx for identify the calls when the CDR is imported. We co
 
 In Voice → Prefixes, click on add.
 
-![Add prefixes](./add_prefixes.png?w=300)
+![Add prefixes](./add_prefixes.png)
 
 Complete the fields.
 
-![Create prefixes](./create_prefixes.png?w=300)
+![Create prefixes](./create_prefixes.png)
 
 * **Prefix** - Add the prefix using the following patterns
 
@@ -53,4 +53,4 @@ Example pattern for Angola phone numbers: `244{.}`.
 
 
 Other way is to use the import tool.
-![Import tool](./import.png?w=300)
+![Import tool](./import.png)

@@ -5,28 +5,28 @@ In the Rates tables, we associate prices with prefixes and categories. It's divi
 
 In Voice → Rates → Customers/Providers click on add.
 
-![Add rates](./add_rates.png?w=300)
+![Add rates](./add_rates.png)
 
-![Add rate table](./add_rate_table.png?w=300)
+![Add rate table](./add_rate_table.png)
 
 Once is created, click on the symbol ![ViewIcon1](./icon1.png) to config the rates.
 
-![Rates config](./rates_config.png?w=300)
+![Rates config](./rates_config.png)
 
 We can add them manually or importing, and is also possible to update them in mass.
 
-![Rates add, import, update](./rates_add_import_update.png?w=300)
+![Rates add, import, update](./rates_add_import_update.png)
 
 Add customer's rate
 
-![Customer's rate](./customers_rate.png?w=300)
+![Customer's rate](./customers_rate.png)
 
 * **Category** - Category associate to this prefix.
 
 
 * **Prefix** - Prefix for configure price, you can follow this steps to type it:
 
-![Phone patterns](./patterns.png?w=300)
+![Phone patterns](./patterns.png)
 
 * **Price** - Price per minute.
 
@@ -42,11 +42,11 @@ Add customer's rate
 
 We can also import from a .csv file.
 
-![Import csv](./import_csv.png?w=300)
+![Import csv](./import_csv.png)
 
 And make mass update.
 
-![Update rates](./update_rates.png?w=300)
+![Update rates](./update_rates.png)
 
 * **IDs for update** - All IDs we want to update.
 

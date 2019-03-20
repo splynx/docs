@@ -83,4 +83,4 @@ To sync Invoices and Payment on the fly we need to enable WebHooks inside Splynx
 
 Video:
 
-https://www.youtube.com/embed/7WQFOq5ZyfU#action=share
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/7WQFOq5ZyfU?wmode=opaque">Video on youtube</iframe>

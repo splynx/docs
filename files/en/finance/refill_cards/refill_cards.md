@@ -20,17 +20,17 @@ Enable Refill cards under `Config → Integrations → Main modules`
 * As soon as cards will be generated a window will pop up with a table of refill cards series.
   ![Series](series.png)
 
-  In Actions column will be options ![Icons](icons.png) for editing, viewing the list of Refill cards' series, exporting them and deleting. To edit refill cards serie click on ![Edit](edit_icon.png) and window will appear enabling you to make changes.
+  In Actions column will be options <icon class="image-icon">![Icons](icons.png)</icon> for editing, viewing the list of Refill cards' series, exporting them and deleting. To edit refill cards serie click on <icon class="image-icon">![Edit](edit_icon.png)</icon> and window will appear enabling you to make changes.
 
   ![Edit series](edit_series.png)
 
 
-*  By clicking on icon ![View](view_icon.png) or on card serie in the Serie Column a table of all cards created under this serie will appear with their full codes.
+*  By clicking on icon <icon class="image-icon">![View](view_icon.png)</icon> or on card serie in the Serie Column a table of all cards created under this serie will appear with their full codes.
 
   ![View series](view_series.png)
 
 ---
-Here you can redeem customers' card to top up their balance by clicking on ![Export](export_icon.png).
+Here you can redeem customers' card to top up their balance by clicking on <icon class="image-icon">![Export](export_icon.png)</icon>.
 
 ![Redeem](redeem_card.png)
 

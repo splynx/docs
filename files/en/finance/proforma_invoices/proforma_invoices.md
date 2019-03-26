@@ -17,9 +17,9 @@ All issued Proforma invoices can be found in `Finance → Proforma Invoices`.  I
 By clicking on a period you can set it up manually, so you can select the option to show all proforma invoices for today, yesterday, last or 30 days, this or last month or just choose a custom range and click on *Apply*.
 ![Period](period.png)
 
-It is possible to operate with every proforma invoice with icons ![Icons](invoices_icons.png) in the column Operations.
+It is possible to operate with every proforma invoice with icons <icon class="image-icon">![Icons](invoices_icons.png)</icon> in the column *Operations*.
 
-* To be able **to view** the proforma invoice in PDF with icon ![View icon](view_invoice.png), it is necessary to configure an invoice template first in `Config → System → Templates` and define template values in `Config → Finance → Template Values`.
+* To be able **to view** the proforma invoice in PDF with icon <icon class="image-icon">![View icon](view_invoice.png)</icon>, it is necessary to configure an invoice template first in `Config → System → Templates` and define template values in `Config → Finance → Template Values`.
 More information about Invoice's template configuration you can find here - [Templates](configuration/system/templates/templates.md), [Invoices](invoices/invoices.md).
 
 * You can also **set up proforma invoices global settings** for all customers in `Config → Finance → Settings`.
@@ -27,12 +27,12 @@ More information about Invoice's template configuration you can find here - [Tem
 ![Proforma invoice settings](proforma_invoice_settings.png)
 
 
-**To edit** the proforma invoice with ![Edit invoice](edit_invoice.png) , click on the tab `Billing → Proforma Invoices`.
+**To edit** the proforma invoice with <icon class="image-icon">![Edit invoice](edit_invoice.png)</icon> , click on the tab `Billing → Proforma Invoices`.
 
 ![Edit](edit_proforma_invoice.png)
 
 
-It is possible **to send** the proforma invoice via email with ![Send](send_invoiceviamail.png) (if the email server is [configured](configuration/main_configuration/email_config/email_config.md)).
+It is possible **to send** the proforma invoice via email with <icon class="image-icon">![Send](send_invoiceviamail.png)</icon> (if the email server is [configured](configuration/main_configuration/email_config/email_config.md)).
 You can write a message body or choose it from templates and load it.
 
 ![Load template](load_template.png)

@@ -27,7 +27,7 @@ Config -> Integrations -> Add-ons:
 
 ![3.png](3.png)
 
-After installation in menu _Networking_ you will see new icons: _LTE systems_ and _LTE Configs_. First of all, you should create a new LTE system:
+After installation in menu *Networking* you will see new icons: *LTE systems* and *LTE Configs*. First of all, you should create a new LTE system:
 
 ![Selection_035.jpg](Selection_035.jpg)
 

@@ -11,9 +11,9 @@ Pay attention to the option ***Disabled customers to Address-List***.
 It changes the blocking behavior.
 ![](c2al.png)
 
-When the option is **disabled** ![](disabled.png) credentials of blocked customers are removed from the router (hotspot users, PPP secrets, firewall rules and DHCP leases).
+When the option is **disabled** <icon class="image-icon">![](disabled.png)</icon> credentials of blocked customers are removed from the router (hotspot users, PPP secrets, firewall rules and DHCP leases).
 
-When this option is **enabled** ![](enabled.png) blocked customers are added to one of address list:
+When this option is **enabled** <icon class="image-icon">![](enabled.png)</icon> blocked customers are added to one of address list:
 * **SpLBL_blocked** - for customers whose status is ***Blocked***.
 * **SpLBL_new** - for customers whose status is ***New***.
 * **SpLBL_active** - for customers status is ***Active***, but service is blocked due to [FUP](networking/bandwidth_management/fup/fup.md) or [CAP](networking/bandwidth_management/capped_plans/capped_plans.md) blocking rule.
@@ -49,9 +49,9 @@ The same attributes for [FUP](networking/bandwidth_management/fup/fup.md):
 By default, The field **CoA Block attributes** contains the attribute **Mikrotik-Address-List = Reject_1**. Having received such an attribute, the router adds the customer's IP to the **Reject_1** list.
 The session is not interrupted, which allows, if necessary, open access to local resources without changing the customer's IP address.
 
-> ![](warning.png) If you put IP address to the Address-List via **CoA Block attributes**, you also should put IP address into another Address-List via **CoA Restore attributes**. Otherwise, IP address will remain in the previous Address-List and session will be still blocked.
+> <icon class="image-icon">![](warning.png)</icon> If you put IP address to the Address-List via **CoA Block attributes**, you also should put IP address into another Address-List via **CoA Restore attributes**. Otherwise, IP address will remain in the previous Address-List and session will be still blocked.
 
-> ![](warning.png) Turn on the **Radius incoming** on the mikrotik to process the CoA packets.
+> <icon class="image-icon">![](warning.png)</icon> Turn on the **Radius incoming** on the mikrotik to process the CoA packets.
 ![](radius_incoming.png)
 
 
@@ -79,7 +79,7 @@ For using Reject pools:
 
   ![](rejectpool_names.png)
 
- >![](lightbulb_on.png) In addition, you can change the attribute for each reject pool.
+ ><icon class="image-icon">![](lightbulb_on.png)</icon> In addition, you can change the attribute for each reject pool.
 
 
 ## Drop customer's session

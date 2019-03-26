@@ -11,7 +11,7 @@ Splynx FUP mode allows:
 * Permamently block customer until he pays for additional data
 * Change the speed of customer based on day of the week and time of the day  
 
-There is an arrow icon in Splynx Internet plan settings which is used to define Fair user policies - ![FUP_icon.png](FUP_icon.png)
+There is an arrow icon in Splynx Internet plan settings which is used to define Fair user policies - <icon class="image-icon">![FUP_icon.png](FUP_icon.png)</icon>
 
 ![FUP_1.png](FUP_1.png)
 

@@ -25,7 +25,7 @@ Open `Config -> Add-ons`
 ![Config - > Add-ons](config.png)
 
 
-Click the install button ![](install_icon.png) for  splynx-remote-support
+Click the *install* button <icon class="image-icon">![](install_icon.png)</icon> for  splynx-remote-support
 
 ![](web1.png)
 

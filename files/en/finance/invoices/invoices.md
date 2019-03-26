@@ -26,8 +26,8 @@ In export you can choose the period of time and the export type (PDF, CSV, exter
 
 ![Invoices Details](export_details.png)
 
-* It is possible **to operate on every invoice** with the icons ![Invoices icons](invoices_icons.png) in the column Operations.
-* **To view an invoice** with ![View icon](view_invoice.png), it is necessary to configure an invoice template first in `Config →System→Templates` and define an invoice template in `Config → Finance →  Template Values`.
+* It is possible **to operate on every invoice** with the icons <icon class="image-icon">![Invoices icons](invoices_icons.png)</icon> in the column Operations.
+* **To view an invoice** with <icon class="image-icon">![View icon](view_invoice.png)</icon>, it is necessary to configure an invoice template first in `Config →System→Templates` and define an invoice template in `Config → Finance →  Template Values`.
 
 ![Template values](template_values.png)
 
@@ -79,12 +79,12 @@ Another way to **create Invoice** is by clicking on *Add Invoice* in `Billing �
 
 ![Create invoice](create_invoice.png)
 
-To edit an invoice with ![Edit icon](editinvoice.png) icon, click on the tab `Billing → Invoices`.
+To edit an invoice with <icon class="image-icon">![Edit icon](editinvoice.png)</icon> icon, click on the tab `Billing → Invoices`.
 
 ![Edit invoice](edit_invoice.png)
 
 
-It is also possible to send the invoice via email with ![Send invoice](send_invoiceviamail.png) icon (if the email server is [configured](configuration/main_configuration/email_config/email_config.md)) in `Billing → Invoices`.
+It is also possible to send the invoice via email with <icon class="image-icon">![Send invoice](send_invoiceviamail.png)</icon> icon (if the email server is [configured](configuration/main_configuration/email_config/email_config.md)) in `Billing → Invoices`.
 You can write a message body or choose it from templates and load it.
 
 ![Send file](send_file.png)

@@ -21,29 +21,29 @@ Transactions table in _Finance Module_ displays all type of transactions related
 * There is a table called "_Totals_" below which shows `type of transaction` (Debit / Credit), `number of transactions` in each type and `total amount of money`.
 
   ![Transactions](./transactions.png?w=300)
-  
-* In fact you can set a filter to view particular transactions, for example, by partner, by transaction's category or its type or period. 
+
+* In fact you can set a filter to view particular transactions, for example, by partner, by transaction's category or its type or period.
 
   ![Filters](./filters.png?w=300)
-  
+
 * There is an option to print out, copy or save in CSV or PDF files transactions, chosen by you.
-  
+
   ![Buttons](./print.png?w=300)
-  
+
 * You can also choose columns which will be displayed in the transactions table by sorting show/hide columns.
 
   ![Columns](./columns.png?w=300)
-  
+
 * **To correct customer's balance** is possible to create a new transaction and add invoice from transaction. You can find that option in _Customer → View Customer → Billing → Transactions_.
-  
+
   ![Add transaction](./add_transaction.png?w=300)
-  
+
   When you click on _Add transaction_ a pop-up window will appear with different options of new transaction you can choose: `Type (Debit/ Credit)`, `Description`, `Quantity`, `Unit`, `Price`, `VAT`, `Total amount`, `Category` (service, discount, payment, correction for customer's balance, Braintree fee etc.), `Date`, `Comment` on the transaction and `Period`.
 
   ![Add transaction form](./create_transaction_form.png?w=300)
 
 * After the new transaction's created it is also possible **to generate an invoice manually** by clicking on _Add Invoice from transaction_ in the Transactions tab. The window will pop-up where you can fill in following fields: `Description`, `Price`, `Period`, `Note` for the customer or `Memo` for you (if necessary).
-  
+
   ![Create invoice](./create_invoice.png?w=300)
-  
-* Once transaction is created it is possible to edit or delete it ![Buttons](./small_buttons.png) . Please note, if you've added an Invoice from transaction there is no longer a possibility to edit that transaction, but invoice only.   
+
+* Once transaction is created it is possible to edit or delete it <icon class="image-icon">![Buttons](./small_buttons.png)</icon> . Please note, if you've added an Invoice from transaction there is no longer a possibility to edit that transaction, but invoice only.   

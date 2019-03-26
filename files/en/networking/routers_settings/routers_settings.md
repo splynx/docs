@@ -3,7 +3,7 @@ Routers settings
 
 Networking / Routers - is the place where you can add and configure your network routers (Network Access Servers).
 
-![(warning)](warning.png) Please note, if new router is added or configuration is changed - it may take up to 5 minutes to change and apply new freeradius configuration.
+<icon class="image-icon">![(warning)](warning.png)</icon> Please note, if new router is added or configuration is changed - it may take up to 5 minutes to change and apply new freeradius configuration.
 
 ![(image)](image2018-10-2_11-28-30.png)
 
@@ -20,15 +20,15 @@ Networking / Routers - is the place where you can add and configure your network
 *   **None / API accounting** - useful for different not standard scenarios. In addition to previous, Mikrotik API accounting can be used.
 *   **Firewall IP-MAC filter / API accounting** - Mikrotik API will be used to push firewall filter rules into router. This is useful for Static IP addresses.
 *   **DHCP (Radius) / API accounting** - DHCP server on the router will use Radius authorization. Accounting will be made with Mikrotik API.
-*   **DHCP (Leases) / API accounting** - Mikrotik API will be used to push DHCP leases into router. ![(warning)](warning.png) Do not forget to set MAC addresses for internet services. Accounting will be made with Mikrotik API.
+*   **DHCP (Leases) / API accounting** - Mikrotik API will be used to push DHCP leases into router. <icon class="image-icon">![(warning)](warning.png)</icon> Do not forget to set MAC addresses for internet services. Accounting will be made with Mikrotik API.
 *   **PPP (Radius) / Radius accounting** - PPPoE / PPTP / OpenVPN server will use Radius authorization. Radius accounting will be used.
 *   **PPP (Secrets) / API accounting** - Mikrotik API will be used to push PPP secrets into router. Accounting will be made with Mikrotik API.
 *   **Hotspot (Users) / API accounting** - Mikrotik API will be used to push Hotspot users into router. Accounting will be made with Mikrotik API.
 *   **Hotspot (Radius) / Radius accounting** - Mikrotik Hotspot server will use Radius authorization. Radius accounting will be used.
 
-![(info)](info.png) Even if Authorization = None or API authorization is used - Radius authorization and Radius accounting will work.  
-![(info)](info.png) If API Authorization is used - do not forget to choose specific router in internet service settings (with router = None this will not work).  
-![(info)](info.png) If API Authorization is used - Mikrotik API should be enabled and configured on the _Mikrotik_ tab and in Router settings.
+<icon class="image-icon">![(info)](info.png)</icon> Even if Authorization = None or API authorization is used - Radius authorization and Radius accounting will work.  
+<icon class="image-icon">![(info)](info.png)</icon> If API Authorization is used - do not forget to choose specific router in internet service settings (with router = None this will not work).  
+<icon class="image-icon">![(info)](info.png)</icon> If API Authorization is used - Mikrotik API should be enabled and configured on the _Mikrotik_ tab and in Router settings.
 
 **GPS** - you can put a point on the map (where router is located). This field is available only when Google Maps add-on is installed.  
 **Radius secret** - Radius secret.  
@@ -40,12 +40,12 @@ Networking / Routers - is the place where you can add and configure your network
 
 Splynx supports different router models from different producers. Below are configuration tutorials for vendors that are used most often:
 
-[Cisco routers](/networking/routers_settings/cisco/cisco.md)
+* [Cisco routers](/networking/routers_settings/cisco/cisco.md)
 
-[Juniper routers](/networking/routers_settings/juniper/juniper.md)
+* [Juniper routers](/networking/routers_settings/juniper/juniper.md)
 
-[Mikrotik routers](/networking/routers_settings/mikrotik/mikrotik.md)
+* [Mikrotik routers](/networking/routers_settings/mikrotik/mikrotik.md)
 
-[Ubiquiti Edge routers](/networking/routers_settings/ubiquiti/ubiquiti.md)
+* [Ubiquiti Edge routers](/networking/routers_settings/ubiquiti/ubiquiti.md)
 
-[Other](/networking/routers_settings/other/other.md)
+* [Other](/networking/routers_settings/other/other.md)

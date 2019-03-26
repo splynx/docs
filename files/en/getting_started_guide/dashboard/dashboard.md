@@ -14,13 +14,13 @@ At the top of the live dashboard will be displayed the number of customers onlin
 
 **Live dashboard** is divided into 4 main parts:
 
-![ ](Screenshot_at_May_12_16-55-54.png)_System status_ - with the information free memory, last DB backup, last remote backup, etc.
+_System status_ <icon class="image-icon">![ ](Screenshot_at_May_12_16-55-54.png)</icon> - with the information free memory, last DB backup, last remote backup, etc.
 
-![ ](Screenshot_at_May_12_16-57-33.png) _Customers_ - with the latest statistics about new, active, blocked customers, etc.
+_Customers_ <icon class="image-icon">![ ](Screenshot_at_May_12_16-57-33.png)</icon> - with the latest statistics about new, active, blocked customers, etc.
 
-![ ](Screenshot_at_May_12_16-56-17.png)_Networking_ - with the information about number of routers, IPv4 networks, Monitoring, etc.
+_Networking_ <icon class="image-icon">![ ](Screenshot_at_May_12_16-56-17.png)</icon> - with the information about number of routers, IPv4 networks, Monitoring, etc.
 
-![ ](Screenshot_at_May_12_16-56-28.png)_Finance_ - with the statistics of unpaid/ paid, debit transactions and payments for the current and last months.
+_Finance_ <icon class="image-icon">![ ](Screenshot_at_May_12_16-56-28.png)</icon> - with the statistics of unpaid/ paid, debit transactions and payments for the current and last months.
 
 ![Screenshot](Screenshot_at_May_12_17-09-39.png)
 
@@ -32,7 +32,7 @@ There is a **Side Menu** at the left side of the page with following modules:
 
 [Finance](finance/finance.md) - It shows the financial aspect of the system
 
-[Networking](networking/networking.mdisplay current-configurationd) - It shows the networking aspect of the system
+[Networking](networking/networking.md) - It shows the networking aspect of the system
 
 [Support](support_tickets_messages/support_tickets_messages.md) - It shows the support aspect of the system
 

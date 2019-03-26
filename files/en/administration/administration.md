@@ -3,9 +3,9 @@ Administration
 
 Administration settings are divided into _3 main sections_ with its subcategories: _Splynx_, _Logs_ and _Information_. Please, follow the links below to find tutorial page about first two parts of Administration:
 
-1. SPLYNX
+1. MAIN
    * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
-        * [Default roles in detail](administration/main/admins_and_permissions/admins_and_permissions/default_roles/default_roles.md)
+   * [Default roles in detail](administration/main/admins_and_permissions/admins_and_permissions/default_roles/default_roles.md)
    * [Partners](administration/main/partners/partners.md)
    * [Locations](administration/main/locations/locations.md)
 

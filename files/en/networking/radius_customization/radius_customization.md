@@ -36,12 +36,12 @@ Variable | Value | Comment
 {{ tariff.mikrotik_priority }} {{ mikrotik_priority }}	| 1 - if tariff.priority is 'high', 5 - if tariff.priority is 'normal', 8 - if tariff.priority is 'low'	| Two variables have the same value
 {{ tariff.price }} |	Tariff price |
 {{ tariff.priority }} {{ priority }}	| Priority. Can be 'low', 'normal' or 'high' | Two variables have the same value
-{{ tariff.speed_download }}	| Download speed. In kbit/s | ![](info.png) FUP rules are not applied. Not recommended to use
+{{ tariff.speed_download }}	| Download speed. In kbit/s | <icon class="image-icon">![](info.png)</icon> FUP rules are not applied. Not recommended to use
 {{ tariff.speed_limit_at }}	| Guaranteed speed limit at. In %	|
-{{ tariff.speed_upload }}	| Upload speed. In kbit/s	| ![](info.png) FUP rules are not applied. Not recommended to use
+{{ tariff.speed_upload }}	| Upload speed. In kbit/s	| <icon class="image-icon">![](info.png)</icon> FUP rules are not applied. Not recommended to use
 {{ tariff.tariffs_for_change }}	| ID numbers of Tariff plans, to which you can change	| Comma separated
 {{ tariff.vat_percent }}	| VAT percent |
-{{ tariff.with_vat }}	| 0 - VAT is not included in the price,  1 - VAT is included in the price" |
+{{ tariff.with_vat }}	| 0 - VAT is not included in the price,  1 - VAT is included in the price" | 
 
 
 ### Service
@@ -59,7 +59,7 @@ Variable | Value | Comment
 {{ service.description }}	| Description |
 {{ service.quantity }} | Quantity |
 {{ service.unit }} | Unit |
-{{ service.unit_price }} | Service price | ![](warning.png) It can differ from the tariff.price
+{{ service.unit_price }} | Service price | <icon class="image-icon">![](warning.png)</icon> It can differ from the tariff.price
 {{ service.start_date }} | Start date (yyyy-mm-dd) |
 {{ service.end_date }} |	End date (yyyy-mm-dd)	|
 {{ service.discount }} | 0 - Discount disabled, 1 - Discount enabled |
@@ -68,7 +68,7 @@ Variable | Value | Comment
 {{ service.discount_end_date }}	| Discount end date (yyyy-mm-dd) |
 {{ service.discount_text }} | Discount text |
 {{ service.login }}	| Login	|
-{{ service.password }} | Empty string |	![](info.png) Always is empty string for security reasons
+{{ service.password }} | Empty string |	<icon class="image-icon">![](info.png)</icon> Always is empty string for security reasons
 {{ service.mac }}	| MAC |
 {{ service.port_id }}	| Port ID |
 {{ service.router_id }}	| ID number or Router |
@@ -90,8 +90,8 @@ Variable | Value | Comment
 {{ customer.location_id }} | ID number of [Location](administration/main/localtions/locations.md) |
 {{ customer.added_by }}	| Login of [Admin](administration/main/admins_and_permissions/admin_and_permissions.md) who added this customer |
 {{ customer.added_by_id }} | ID number of Admin who added this customer |
-{{ customer.login }}	| Login to customers' portal |	![](info.png) This is not service.login
-{{ customer.password }}	| Password to customers' portal | ![](info.png) This is not service.password
+{{ customer.login }}	| Login to customers' portal |	<icon class="image-icon">![](info.png)</icon> This is not service.login
+{{ customer.password }}	| Password to customers' portal | <icon class="image-icon">![](info.png)</icon> This is not service.password
 {{ customer.category }}	| Category 'person' or 'company'
 {{ customer.name }}	| Full name
 {{ customer.phone }} | Phone number
@@ -132,7 +132,7 @@ There are also 3 arrays of additional fields.
 
 Can be used by typing {{ array_name.field_name }}
 
-![](warning.png) Additional field has its **name** and **title** in Splynx. We use **name** (not **title**)
+<icon class="image-icon">![](warning.png)</icon> Additional field has its **name** and **title** in Splynx. We use **name** (not **title**)
 
 For example, we can create additional field for customer, called 'my_field'. Then we can use its value by typing {{ customer_attributes.my_field }}
 
@@ -197,7 +197,7 @@ Then, we assign the value of additional field to RADIUS attribute:
 ![IPv6](IPv6_3.png)
 
 
-![](lightbulb_on.png) It's possible even to check if the parameter exists - send it in Radius reply. If field in Splynx is empty, don't send it in Radius reply:
+<icon class="image-icon">![](lightbulb_on.png)</icon> It's possible even to check if the parameter exists - send it in Radius reply. If field in Splynx is empty, don't send it in Radius reply:
 
 ![IPv6](IPv6_4.png)
 
@@ -252,7 +252,7 @@ This example shows how to assign any IP address to customer's device. You do not
 Framed-IP-Address = {{ service_attributes.ip }}
 ```
 ![Attributes](attrs.png)
-![](info.png) Where "**ip**" - is the name of additional field, that we have added on the first step.
+<icon class="image-icon">![](info.png)</icon> Where "**ip**" - is the name of additional field, that we have added on the first step.
 
 
 3. Save changes and Restart Radius to apply changes.
@@ -273,7 +273,7 @@ Client:
 ![PPP client](ppp_client.png)
 
 
-![](lightbulb_on.png) In this case, custom IP address overrides IP address that is chosen in Splynx.
+<icon class="image-icon">![](lightbulb_on.png)</icon> In this case, custom IP address overrides IP address that is chosen in Splynx.
 If custom IP address is not entered, IP address will be 0.0.0.0 !
 If you want to override IP address only if custom IP address is entered (is not empty), add this lines to **Rate-Limit attributes**:
 ```

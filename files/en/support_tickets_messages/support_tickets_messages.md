@@ -5,10 +5,10 @@ Splynx is able to send different types of messages to customers. Email messages 
 
 Description of each section you can find at following links:
 
-[→ Email messages](support_tickets_messages/email_messages/email_messages.md)
+* [ Email messages](support_tickets_messages/email_messages/email_messages.md)
 
-[→ SMS messages](support_tickets_messages/sms_messages/sms_messages.md)
+* [ SMS messages](support_tickets_messages/sms_messages/sms_messages.md)
 
-[→ Tickets](support_tickets_messages/tickets/tickets.md)
+* [ Tickets](support_tickets_messages/tickets/tickets.md)
 
-[→ News](support_tickets_messages/news/news.md)
+* [ News](support_tickets_messages/news/news.md)

@@ -32,7 +32,7 @@ IPv4 - IP you want to be associated with the customer
 
 ![Create service](create_service.png)
 
-![](warning_icon.png) Mikrotik even with AAA enable, doesn't send DHCP statistic. In order to get statistic, you should enable an API on Splynx Radius server.
+<icon class="image-icon">![](warning_icon.png)</icon> Mikrotik even with AAA enable, doesn't send DHCP statistic. In order to get statistic, you should enable an API on Splynx Radius server.
 
 Click on `Networking →  List`, and select the router where you have configured your dhcp service. Click on the tab Mikrotik, put Enable Api on and insert a login and password of an administrator (be sure that the administrator is created in the router also).
 
@@ -63,7 +63,7 @@ The user will be blocked and his internet traffic will be redirect to a Reject I
 
 
 #### Associate a dynamic IP to a client.
-![](warning_icon.png)This setup is not recommended to use.
+<icon class="image-icon">![](warning_icon.png)</icon>This setup is not recommended to use.
 
 To configure the Splynx Radius Server with the DHCP service, you should have DHCP server configured on the interface of your router. Select your DHCP server and make sure you have the option *"Use RADIUS"* flagged. In Address pool you have to select *"Static only"* (DHCP is going to get IP from the Splynx RADIUS server).
 ![DHCP](dhcp_conf.png)

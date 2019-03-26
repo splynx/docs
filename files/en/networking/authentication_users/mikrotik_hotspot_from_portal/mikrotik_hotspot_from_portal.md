@@ -44,7 +44,7 @@ We use custom Hotspot HTML pages. You can download them here - [splynx-hotspot.z
 7. Add IP address of the Splynx server to the *Walled Garden IP List* to give access to the Splynx portal for unauthorized customers:
    ![picture7](picture7.png)
 
-![Warning. ](warning.png) Please note:
+<icon class="image-icon">![Warning. ](warning.png)</icon> Please note:
 
 * First Active internet service will be used for login via Mikrotik Hotspot.
 * The customer will be redirected to Splynx portal only if he is trying to connect to HTTP web-page (not to HTTPS).

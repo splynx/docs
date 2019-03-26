@@ -14,7 +14,7 @@ The support is divided into four areas:
 
   ![](window_format.png)
 
-* **Send emails** - It is possible to send an email notification every time when the ticket is updated by turning this option on ![](modal_on.png)
+* **Send emails** - It is possible to send an email notification every time when the ticket is updated by turning this option on <icon class="image-icon">![](modal_on.png)</icon>
 * **Copy email** -  you can use an additional email in Copy email if you want to add a Carbon Copy.
 * **Send notifications to admin panel** (if it's online) - if option is enabled, notifications will be send to admin panel.
 
@@ -31,7 +31,7 @@ A window will pop up where you will write a Title of the new status. For every s
 
 ![Create status](create_status.png)
 
-You can edit or delete existing statuses be clicking on ![](edit_icon.png) and ![](del_icon.png) option in the "Actions" column of the table.
+You can edit or delete existing statuses be clicking on icons <icon class="image-icon">![](edit_icon.png)</icon> and <icon class="image-icon">![](del_icon.png)</icon> option in the "Actions" column of the table.
 
 ![Edit status](edit_status.png)
 

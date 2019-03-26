@@ -99,17 +99,17 @@ For each type of service you can select fields to display:
 ----
 ##### Some fields need to be explained more detailed:
 
-* **Password changed** - enabled option will let customer change password for his service. Customer will be able to change password by clicking on icon ![](key_icon.png) in *Actions section* of the table in Services.
+* **Password changed** - enabled option will let customer change password for his service. Customer will be able to change password by clicking on icon <icon class="image-icon">![](key_icon.png)</icon> in *Actions section* of the table in Services.
 
   ![](psw_change.png)
 
 
-* **Change plan** - enabled option will let customer to apply for a plan changing via Customer portal by sending a request to technical support. When option is enabled customer will see an icon ![](change_plan.png) in Actions in Services. By clicking on that icon a window "Change plan" will appear where customer will choose an option *Manual change request*.
+* **Change plan** - enabled option will let customer to apply for a plan changing via Customer portal by sending a request to technical support. When option is enabled customer will see an icon <icon class="image-icon">![](change_plan.png)</icon> in Actions in Services. By clicking on that icon a window "Change plan" will appear where customer will choose an option *Manual change request*.
 
 ![](change_plan1.png)
 
 
-The window "Create ticket" will appear where customer will choose Priority of the ticket (Minor, Major, Critical) and write a short message. Customer can also upload a file by clicking on icon Upload ![Upload](upload.png) below the text message.
+The window "Create ticket" will appear where customer will choose Priority of the ticket (Minor, Major, Critical) and write a short message. Customer can also upload a file by clicking on Upload icon <icon class="image-icon">![Upload](upload.png)</icon> below the text message.
 
 ![](create_ticket.png)
 

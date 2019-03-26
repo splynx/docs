@@ -1,10 +1,10 @@
 Tools
 =====
 
-[→ Activate services](configuration/tools/activate_services/activate_services.md)
+* [ Activate services](configuration/tools/activate_services/activate_services.md)
 
-[→ Adminer](configuration/tools/adminer/adminer.md)
+* [ Adminer](configuration/tools/adminer/adminer.md)
 
-[→ Export](configuration/tools/export//export.md)
+* [ Export](configuration/tools/export//export.md)
 
-[→ Import](configuration/tools/import/import.md)
+* [ Import](configuration/tools/import/import.md)

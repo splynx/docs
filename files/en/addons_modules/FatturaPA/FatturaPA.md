@@ -21,7 +21,7 @@ or oyu can install it from Web UI:
 
 ![1.png](4.png)
 
-After installation, you have to configure add-on under _Config / Integrations / Modules list / splynx_fatturapa / ![edit](2.png)._
+After installation, you have to configure add-on under *Config / Integrations / Modules list / splynx_fatturapa* <icon class="image-icon">![edit](2.png)</icon>.
 Look at the screenshot:
 
 ![1.png](5.png)
@@ -120,7 +120,7 @@ Now, when you Installed and configured _splynx-fatturapa_ you can go to the _Adm
 
 ![1.png](12.png)
 
-Click the following button ![1.png](16.png) and set filter to export. Then click "Export" button.
+Click the following button <icon class="image-icon">![1.png](16.png)</icon> and set filter to export. Then click "Export" button.
 
 ![1.png](13.png)
 
@@ -130,7 +130,7 @@ If everything went well,  you will see the new record in the Fatturapa table wit
 
 ![1.png](15.png)
 
-In case of an error you will see a new record in the table with an exclamation mark in the "Actions" column. Click the following button ![1.png](17.png) to see invoices that were not exported with a description why
+In case of an error you will see a new record in the table with an exclamation mark in the "Actions" column. Click the following button <icon class="image-icon">![1.png](17.png)</icon> to see invoices that were not exported with a description why
 
 ![1.png](18.png)
 

@@ -151,7 +151,10 @@ Operator
 
 This is another M-PESA portal, where your app is hosted. It can be found on [https://org.ke.m-pesa.com](https://org.ke.m-pesa.com)
 
-You can't access this portal without certificate - [https://www.youtube.com/watch?v=wQyBkJDsmuw](https://www.youtube.com/watch?v=wQyBkJDsmuw)
+You can't access this portal without certificate.
+
+Video tutorial:  
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/wQyBkJDsmuw?wmode=opaque">Video on youtube</iframe>
 
 ### Requests to M-PESA support team
 

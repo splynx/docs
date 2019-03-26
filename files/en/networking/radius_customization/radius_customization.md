@@ -126,9 +126,12 @@ Variable | Value
 
 ### Additional attributes
 
-There are also 3 arrays of additional fields.
+There are also 4 arrays of additional fields:
 
-**{{ customer_attributes }}, {{ service_attributes }}, {{ tariff_attributes }}**
+1. **{{ customer_attributes }}** - additional attributes of the customer.
+2. **{{ service_attributes }}** - additional attributes of the internet service.
+3. **{{ tariff_attributes }}** - additional attributes of the internet plan.
+4. **{{ card_attributes }}** - additional attributes of the prepaid voucher.
 
 Can be used by typing {{ array_name.field_name }}
 
@@ -149,10 +152,10 @@ Result: Mikrotik-Rate-Limit = 10 (assume that tx_rate_limit=10000)
 Example: Mikrotik-Rate-Limit = {{ rx_rate_limit }}/{{ tx_rate_limit }} {{ rx_burst_rate }}/{{ tx_burst_rate }} {{ rx_burst_threshold }}/{{ tx_burst_threshold }} {{ burst_time }}/{{ burst_time }} {{ mikrotik_priority }} {{ rx_rate_min }}/{{ tx_rate_min }}
 Result: Mikrotik-Rate-Limit = 5000/90000 20000/360000 1400/25200 93/93 8 6350/114300
 
-* Twig filters*
+* Twig filters\*
 Example: Mikrotik-Address-List = {{ tariff.title | upper }}
 Result: Mikrotik-Address-List = TARIFF (assume that tariff.title = 'tariff')
-* in addition to [default Twig filters](https://twig.symfony.com/doc/2.x/filters/index.html) one more filter can be used - dec2hex (dec2hex(4))
+\* in addition to [default Twig filters](https://twig.symfony.com/doc/2.x/filters/index.html) one more filter can be used - dec2hex (dec2hex(4))
 
 * Conditions
 Example:

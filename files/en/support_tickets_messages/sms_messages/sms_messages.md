@@ -73,35 +73,44 @@ To create an SMS click on Create in Support → Messages. The window will pop-up
 * **Attach financial documents** - Invoices, Proforma Invoices and Payments from Splynx.
 
 It is not necessary to fill in all fields to send SMS to the customer. The easiest way is to enter customer's ID, choose option Send to, Subject and write a SMS message. You can choose a body message from templates or write a particular text. You can also write your own message and save it as a new template by clicking on Save as new.
+<<<<<<< HEAD
 
 ![Main window](./main_window.png?w=300)
+=======
+ 
+![Main window](./main_window.png)
+>>>>>>> 3e28cdfb12e007abd7211a2a0ff4f31be12f3edf
 
 You can check your SMS message before sending by clicking on Preview option at the bottom of the page.
 
-![Preview](./preview.png?w=300)
+![Preview](./preview.png)
 
 When you click on Send tab, the window will appear with the confirmation details of the recipient.
 
-![Send message](./send_message.png?w=300)
+![Send message](./send_message.png)
 
 If you click on Send as test  the window will pop-up, where customer's Phone number have to be entered.
 
-![Pop-up](./pop_up.png?w=300)
+![Pop-up](./pop_up.png)
 
 There is an option of SMS mass sending, for example, you can choose particular recipients by Partner or Location.
 
-![Mass sending](./mass_sending.png?w=300)
+![Mass sending](./mass_sending.png)
 
 All SMS and emails have been sent will be possible to check in Support → Messages → History. You can sort them by their status (Any, New, Processing, Sent, Cancelled, Removed, Sent with error) or period of time (Today, yesterday, Last 7 days, This month, Last month, Custom Range).
 
-![History](./history.png?w=300)
+![History](./history.png)
 
 By clicking on actions <icon class="image-icon">![ViewIcon2](./icon2.png)</icon> you'll be able to see customers' list (in case of SMS mass sending it will be a full list with customers' names), view SMS message and delete it. 
 
-![Customer's list](./customers_list.png?w=300)
+![Customer's list](./customers_list.png)
 
-![View message](./view_message.png?w=300)
+![View message](./view_message.png)
 
 It is also possible to check recipients list by their IDs and Phone numbers in Administration → Logs → SMS, where you can set a particular period, type of SMS or status (New, Sending, Sent, Error, Expired).
 
+<<<<<<< HEAD
 ![Recipients](./recipients.png?w=300)
+=======
+![Recipients](./recipients.png)
+>>>>>>> 3e28cdfb12e007abd7211a2a0ff4f31be12f3edf

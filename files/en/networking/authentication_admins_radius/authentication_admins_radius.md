@@ -7,8 +7,8 @@ With Splynx you can setup that when administrator accesses equipment, his creden
 
 Below are tutorials of how to configure admin Login using Radius Splynx server on different platforms:
 
-* [ Mikrotik: Radius admin login to Mikrotik routers](networking/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
+* [ Mikrotik: Radius admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
 
-* [ Cisco: AAA for login on Cisco equipment](networking/admin_login_to_cisco/admin_login_to_cisco.md)
+* [ Cisco: AAA for login on Cisco equipment](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
 
-* [ Juniper: Junos admin login using Radius protocol](networking/admin_login_to_juniper/admin_login_to_juniper.md)
+* [ Juniper: Junos admin login using Radius protocol](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)

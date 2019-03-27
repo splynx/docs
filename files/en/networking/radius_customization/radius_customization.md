@@ -16,32 +16,32 @@ Most of these values can be changed at the Tariff plans menu in Splynx
 [Internet plans description](configuring_tariff_plans/internet_plans/internet_plans.md)
 
 
-Variable | Value | Comment
--------- | ----- | -------
-{{ rx_burst_rate }}	| rx_rate_limit * (100 + tariff.burst_limit) / 100	| FUP rule is applied (if it is active)
-{{ rx_burst_threshold }}	| rx_rate_limit * tariff.burst_threshold / 100	| FUP rule is applied (if it is active)
-{{ rx_rate_limit }}	| Download speed. In bit/s	| FUP rule is applied (if it is active)
-{{ rx_rate_min }}	| rx_rate_limit * tariff.speed_limit_at / 100	| FUP rule is applied (if it is active)
-{{ tariff.service_name }}	| Service name |
-{{ tariff.title }}	| Title |
-{{ tx_burst_rate }}	| tx_rate_limit * (100 + tariff.burst_limit) / 100	| FUP rule is applied (if it is active)
-{{ tx_burst_threshold }} | tx_rate_limit * tariff.burst_threshold / 100	| FUP rule is applied (if it is active)
-{{ tx_rate_limit }}	| Upload speed. In bit/s |	FUP rule is applied (if it is active)
-{{ tx_rate_min }}	| tx_rate_limit * tariff.speed_limit_at / 100	| FUP rule is applied (if it is active)
-{{ tariff.aggregation }}	| Aggregation |
-{{ tariff.burst_limit }}	| Burst limit. In % |
-{{ tariff.burst_threshold }}	| Burst threshold. In % |
-{{ tariff.burst_time }} {{ burst_time }}	| Burst time. In sec |	Two variables have the same value
-{{ tariff.id }} {{ tariff_id }}	| ID number of Tariff plan | Two variables have the same value
-{{ tariff.mikrotik_priority }} {{ mikrotik_priority }}	| 1 - if tariff.priority is 'high', 5 - if tariff.priority is 'normal', 8 - if tariff.priority is 'low'	| Two variables have the same value
-{{ tariff.price }} |	Tariff price |
-{{ tariff.priority }} {{ priority }}	| Priority. Can be 'low', 'normal' or 'high' | Two variables have the same value
-{{ tariff.speed_download }}	| Download speed. In kbit/s | <icon class="image-icon">![](info.png)</icon> FUP rules are not applied. Not recommended to use
-{{ tariff.speed_limit_at }}	| Guaranteed speed limit at. In %	|
-{{ tariff.speed_upload }}	| Upload speed. In kbit/s	| <icon class="image-icon">![](info.png)</icon> FUP rules are not applied. Not recommended to use
-{{ tariff.tariffs_for_change }}	| ID numbers of Tariff plans, to which you can change	| Comma separated
-{{ tariff.vat_percent }}	| VAT percent |
-{{ tariff.with_vat }}	| 0 - VAT is not included in the price,  1 - VAT is included in the price" | 
+Variable | Value | Comment |
+-------- | ----- | ------- |
+{{ rx_burst_rate }}	| rx_rate_limit * (100 + tariff.burst_limit) / 100	| FUP rule is applied (if it is active) |
+{{ rx_burst_threshold }}	| rx_rate_limit * tariff.burst_threshold / 100	| FUP rule is applied (if it is active) |
+{{ rx_rate_limit }}	| Download speed. In bit/s	| FUP rule is applied (if it is active) |
+{{ rx_rate_min }}	| rx_rate_limit * tariff.speed_limit_at / 100	| FUP rule is applied (if it is active) |
+{{ tariff.service_name }}	| Service name | |
+{{ tariff.title }}	| Title | |
+{{ tx_burst_rate }}	| tx_rate_limit * (100 + tariff.burst_limit) / 100	| FUP rule is applied (if it is active) |
+{{ tx_burst_threshold }} | tx_rate_limit * tariff.burst_threshold / 100	| FUP rule is applied (if it is active) |
+{{ tx_rate_limit }}	| Upload speed. In bit/s |	FUP rule is applied (if it is active) |
+{{ tx_rate_min }}	| tx_rate_limit * tariff.speed_limit_at / 100	| FUP rule is applied (if it is active) |
+{{ tariff.aggregation }}	| Aggregation | |
+{{ tariff.burst_limit }}	| Burst limit. In % | |
+{{ tariff.burst_threshold }}	| Burst threshold. In % | |
+{{ tariff.burst_time }} {{ burst_time }}	| Burst time. In sec |	Two variables have the same value |
+{{ tariff.id }} {{ tariff_id }}	| ID number of Tariff plan | Two variables have the same value |
+{{ tariff.mikrotik_priority }} {{ mikrotik_priority }}	| 1 - if tariff.priority is 'high', 5 - if tariff.priority is 'normal', 8 - if tariff.priority is 'low'	| Two variables have the same value |
+{{ tariff.price }} |	Tariff price | |
+{{ tariff.priority }} {{ priority }}	| Priority. Can be 'low', 'normal' or 'high' | Two variables have the same value |
+{{ tariff.speed_download }}	| Download speed. In kbit/s | <icon class="image-icon">![](info.png)</icon> FUP rules are not applied. Not recommended to use |
+{{ tariff.speed_limit_at }}	| Guaranteed speed limit at. In %	| |
+{{ tariff.speed_upload }}	| Upload speed. In kbit/s	| <icon class="image-icon">![](info.png)</icon> FUP rules are not applied. Not recommended to use |
+{{ tariff.tariffs_for_change }}	| ID numbers of Tariff plans, to which you can change	| Comma separated |
+{{ tariff.vat_percent }}	| VAT percent | |
+{{ tariff.with_vat }}	| 0 - VAT is not included in the price,  1 - VAT is included in the price" | |
 
 
 ### Service
@@ -50,55 +50,55 @@ Most of these values can be changed at the `Customers/ List/customer/Services`
 
 [Customer services description](customer_management/customer_services/customer_services.md)
 
-Variable | Value | Comment
--------- | ----- | -------
-{{ service.id }} | ID number of service |
-{{ service.customer_id }}	| ID number of customer |
-{{ service.tariff_id }}	| ID number of Tariff plan |	The same value as tariff.id and tariff_id (See tariff section)
-{{ service.bundle_service_id }}	| ID number of Bundle service	|
-{{ service.description }}	| Description |
-{{ service.quantity }} | Quantity |
-{{ service.unit }} | Unit |
-{{ service.unit_price }} | Service price | <icon class="image-icon">![](warning.png)</icon> It can differ from the tariff.price
-{{ service.start_date }} | Start date (yyyy-mm-dd) |
-{{ service.end_date }} |	End date (yyyy-mm-dd)	|
-{{ service.discount }} | 0 - Discount disabled, 1 - Discount enabled |
-{{ service.discount_percent }} | Discount percent |
-{{ service.discount_start_date }}	| Discount start date (yyyy-mm-dd)	|
-{{ service.discount_end_date }}	| Discount end date (yyyy-mm-dd) |
-{{ service.discount_text }} | Discount text |
-{{ service.login }}	| Login	|
-{{ service.password }} | Empty string |	<icon class="image-icon">![](info.png)</icon> Always is empty string for security reasons
-{{ service.mac }}	| MAC |
-{{ service.port_id }}	| Port ID |
-{{ service.router_id }}	| ID number or Router |
-{{ service.sector_id }}	| ID number of Router's sector |
-{{ service.taking_ipv4 }}	| 0 - if [Taking IPv4](customer_management/customer_services/customer_services.md) is 'None', 1 - if Taking IPv4 is 'Permanent IP', 2 - if Taking IPv4 is 'Dynamic IP' |
-{{ service.ipv4_pool_id }} | ID number of [IPv4 Network](https://splynx.com/wiki/?wikipage=Networking/IPv4_networks). Can be used when Taking IPv4 = 'Dynamic IP': 0 - if Taking IPv4 is 'None' or 'Permanent IP' |
-{{ service.ipv4 }} | IP address. Can be used when Taking IPv4 = 'Permanent IP'. Empty string - if Taking IPv4 is 'None' or 'Dynamic IP' |
-{{ service.ipv4_route }} | Additional network |
+Variable | Value | Comment |
+-------- | ----- | ------- |
+{{ service.id }} | ID number of service | |
+{{ service.customer_id }}	| ID number of customer | |
+{{ service.tariff_id }}	| ID number of Tariff plan |	The same value as tariff.id and tariff_id (See tariff section) |
+{{ service.bundle_service_id }}	| ID number of Bundle service	| |
+{{ service.description }}	| Description | |
+{{ service.quantity }} | Quantity | |
+{{ service.unit }} | Unit | |
+{{ service.unit_price }} | Service price | <icon class="image-icon">![](warning.png)</icon> It can differ from the tariff.price |
+{{ service.start_date }} | Start date (yyyy-mm-dd) | |
+{{ service.end_date }} |	End date (yyyy-mm-dd)	| |
+{{ service.discount }} | 0 - Discount disabled, 1 - Discount enabled | |
+{{ service.discount_percent }} | Discount percent | |
+{{ service.discount_start_date }}	| Discount start date (yyyy-mm-dd)	| |
+{{ service.discount_end_date }}	| Discount end date (yyyy-mm-dd) | |
+{{ service.discount_text }} | Discount text | |
+{{ service.login }}	| Login	| |
+{{ service.password }} | Empty string |	<icon class="image-icon">![](info.png)</icon> Always is empty string for security reasons |
+{{ service.mac }}	| MAC | |
+{{ service.port_id }}	| Port ID | |
+{{ service.router_id }}	| ID number or Router | |
+{{ service.sector_id }}	| ID number of Router's sector | |
+{{ service.taking_ipv4 }}	| 0 - if [Taking IPv4](customer_management/customer_services/customer_services.md) is 'None', 1 - if Taking IPv4 is 'Permanent IP', 2 - if Taking IPv4 is 'Dynamic IP' | |
+{{ service.ipv4_pool_id }} | ID number of [IPv4 Network](https://splynx.com/wiki/?wikipage=Networking/IPv4_networks). Can be used when Taking IPv4 = 'Dynamic IP': 0 - if Taking IPv4 is 'None' or 'Permanent IP' | |
+{{ service.ipv4 }} | IP address. Can be used when Taking IPv4 = 'Permanent IP'. Empty string - if Taking IPv4 is 'None' or 'Dynamic IP' | |
+{{ service.ipv4_route }} | Additional network | |
 
 
 ### Customer
 [Customer information description](customer_management/customer_information/customer_information.md)
 
-Variable | Value | Comment
--------- | ----- | -------
-{{ customer.id }}	| ID number of customer |
-{{ customer.billing_type }}	| Billing type 'prepaid' or 'prepaid_monthly' or 'recurring'	|
-{{ customer.partner_id }}	| ID number of [Partner](administration/main/partners/partners.md) |
-{{ customer.location_id }} | ID number of [Location](administration/main/localtions/locations.md) |
-{{ customer.added_by }}	| Login of [Admin](administration/main/admins_and_permissions/admin_and_permissions.md) who added this customer |
+Variable | Value | Comment |
+-------- | ----- | ------- |
+{{ customer.id }}	| ID number of customer | |
+{{ customer.billing_type }}	| Billing type 'prepaid' or 'prepaid_monthly' or 'recurring'	| |
+{{ customer.partner_id }}	| ID number of [Partner](administration/main/partners/partners.md) | |
+{{ customer.location_id }} | ID number of [Location](administration/main/localtions/locations.md) | |
+{{ customer.added_by }}	| Login of [Admin](administration/main/admins_and_permissions/admin_and_permissions.md) who added this customer | |
 {{ customer.added_by_id }} | ID number of Admin who added this customer |
-{{ customer.login }}	| Login to customers' portal |	<icon class="image-icon">![](info.png)</icon> This is not service.login
-{{ customer.password }}	| Password to customers' portal | <icon class="image-icon">![](info.png)</icon> This is not service.password
-{{ customer.category }}	| Category 'person' or 'company'
-{{ customer.name }}	| Full name
-{{ customer.phone }} | Phone number
-{{ customer.street_1 }}	| Street
-{{ customer.zip_code }}	| ZIP
-{{ customer.city }}	| City
-{{ customer.date_add }}	| Date added (yyyy-mm-dd)
+{{ customer.login }}	| Login to customers' portal |	<icon class="image-icon">![](info.png)</icon> This is not service.login |
+{{ customer.password }}	| Password to customers' portal | <icon class="image-icon">![](info.png)</icon> This is not service.password |
+{{ customer.category }}	| Category 'person' or 'company' |
+{{ customer.name }}	| Full name |
+{{ customer.phone }} | Phone number |
+{{ customer.street_1 }}	| Street |
+{{ customer.zip_code }}	| ZIP |
+{{ customer.city }}	| City |
+{{ customer.date_add }}	| Date added (yyyy-mm-dd) |
 
 
 ### FUP (Fair user policy)
@@ -107,21 +107,21 @@ Most of these values can be changed at the **Tariff plans** menu in Splynx
 
 [FUP description](networking/bandwidth_management/fup/fup.md)
 
-Variable | Value | Comment
--------- | ----- | -------
-{{ fup_compiled.service_id }}	| ID number of service	| The same value as service.id (See service section)
-{{ fup_compiled.traffic_accounting }}	| 0 - if traffic accounting disabled, 1 - if traffic accounting enabled
-{{ fup_compiled.time_accounting }}	| 0 - if time accounting disabled, 1 - if time accounting enabled
-{{ fup_compiled.is_hard }}	| 1 - if the amount of traffic used this month exceeds the Monthly limit, 0 - otherwise
+Variable | Value | Comment |
+-------- | ----- | ------- |
+{{ fup_compiled.service_id }}	| ID number of service	| The same value as service.id (See service section) |
+{{ fup_compiled.traffic_accounting }}	| 0 - if traffic accounting disabled, 1 - if traffic accounting enabled |
+{{ fup_compiled.time_accounting }}	| 0 - if time accounting disabled, 1 - if time accounting enabled |
+{{ fup_compiled.is_hard }}	| 1 - if the amount of traffic used this month exceeds the Monthly limit, 0 - otherwise |
 
 
 #### FUP rule
 These values are empty if no FUP rule is applied
 
-Variable | Value
--------- | -----
-{{ rule_name }}	| Name of FUP rule applied 'EMPTY' if CAP rule applied
-{{ rule.percent }} | Speed decrease percent
+Variable | Value |
+-------- | ----- |
+{{ rule_name }}	| Name of FUP rule applied 'EMPTY' if CAP rule applied |
+{{ rule.percent }} | Speed decrease percent |
 
 
 ### Additional attributes

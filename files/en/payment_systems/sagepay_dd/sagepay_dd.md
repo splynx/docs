@@ -27,7 +27,7 @@ apt install splynx-sagepay-direct-debit
 
 ![11.png](14.png)
 
-![11.png](15.png)
+![11.png](22.png)
 
 After installation and registration you have to configure params:
 

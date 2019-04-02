@@ -36,8 +36,4 @@ It's also possible to export the same data that we introduce to splynx to a new 
 
 In the history, we can check the register of CDR imported, dowload them or delete in case that something was wrong or missed. If delete the CDR the information impoted will be also deleted.
 
-<<<<<<< HEAD
-![History](./history.png?w=300)
-=======
 ![History](./history.png)
->>>>>>> 3e28cdfb12e007abd7211a2a0ff4f31be12f3edf

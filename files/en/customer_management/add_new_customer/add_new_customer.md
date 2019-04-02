@@ -5,7 +5,7 @@ To add a customer, click on the _Customers Menu → + Add_. The window will pop 
 
 ![Add customer](./add_customer.png)
 
-* `Login and Password` - it is possibile generate a new login and password or add it manually. The button <icon class="image-icon">![Generate button](./button_generate.png)</icon> is used for generation of new login and password.
+* `Login and Password` - it is possible to generate a new login and password or add it manually. The button <icon class="image-icon">![Generate button](./button_generate.png)</icon> is used for generation of new login and password.
 * `Type of billing` - if customer is fully prepaid or we will charge him monthly (recurring charge).
 * `Full name` - full name of the customer
 * `Email` - email of the customer

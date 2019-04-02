@@ -59,13 +59,8 @@ Table of contents
     * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)
 * [Authentication of users](networking/authentication_users/authentication_users.md)
     * [Mikrotik: DHCP with Radius](networking/authentication_users/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
-<<<<<<< HEAD
-    * [Mikrotik: Hotstpot, Radius](networking/authentication_users/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
-    * [ Mikrotik: Hotspot Login from Splynx portal](networking/authentication_users/mikrotik_hotspot_from_portal/mikrotik_hotspot_from_portal.md)
-=======
     * [Mikrotik: Hotspot, Radius](networking/authentication_users/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
     * [Mikrotik: Hotspot Login from Splynx portal](networking/authentication_users/mikrotik_hotspot_from_portal/mikrotik_hotspot_from_portal.md)
->>>>>>> 3e28cdfb12e007abd7211a2a0ff4f31be12f3edf
     * [Mikrotik: PPPoE, Radius](networking/authentication_users/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
     * [Mikrotik: OpenVPN, Radius](networking/authentication_users/mikrotik_openvpn_radius/mikrotik_openvpn_radius.md)
     * [Mikrotik: Static IPs with API](networking/authentication_users/mikrotik_static_api/mikrotik_static_api.md)

@@ -8,7 +8,7 @@ In Splynx core we have a powerful Radius server which provides different types o
 
 Here you can define voucher prices, download and upload speed, and traffic limit. Once vouchers are generated, you can edit and customize each one, and set up the contact details of customers using the cards.
 
-![Information](information.png) After the vouchers are generated, you do not need to activate them in Splynx (do not need to change **Status** to *Active*). They are ready to use.
+<icon class="image-icon">![Information](information.png)</icon> After the vouchers are generated, you do not need to activate them in Splynx (do not need to change **Status** to *Active*). They are ready to use.
 
 ![Series view](series_view.png)
 

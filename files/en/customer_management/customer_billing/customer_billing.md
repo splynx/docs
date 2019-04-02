@@ -55,7 +55,7 @@ Please note, that if you are charging customer **manually**, the new invoice wil
 ![Billing settings](global_billing_settings.png)
 
 
-It is possible **to set a discount for the customer** before you charge him. You can choose that option in Customer's services: select the service where you'd like to make a discount, and click on Edit icon ![Edit button](edit_button.png). The window will appear where  it will be possible to enable Discount and set up Discount percent, Discount start and end date, and Discount message. After discount is set up it will appear in ![Charge button](charge_button.png) window and final price will be automatically counted.
+It is possible **to set a discount for the customer** before you charge him. You can choose that option in Customer's services: select the service where you'd like to make a discount, and click on Edit icon <icon class="image-icon">![Edit button](edit_button.png)</icon>. The window will appear where  it will be possible to enable Discount and set up Discount percent, Discount start and end date, and Discount message. After discount is set up it will appear in <icon class="image-icon">![Charge button](charge_button.png)</icon> window and final price will be automatically counted.
 
 
 ![Discount](edit_service.png)

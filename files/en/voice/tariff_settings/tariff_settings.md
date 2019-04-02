@@ -3,7 +3,7 @@ Tariff Settings
 
 We have introduced new settings on the tariff config, which allows to add included pricing and group pricing to the tariff, and also a preview tool for test. You also have to choose on which rate table will be based that tariff and in case we are managing buy prices(prices from our providers) we can add an increase percentage to define the final sell price.
 
-On Tariffs Plans → Voice, click on the symbol ![ViewIcon1](./icon1.png) pricing to configure settings.
+On Tariffs Plans → Voice, click on the symbol <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> pricing to configure settings.
 
 ![Configure tariff](./configure_tariff.png)
 
@@ -64,7 +64,7 @@ And on the last one we can configure pricing groups. For example if we want to m
 
 
 * **Value** -  + % to buy, + % to sell → increase percentaje of price. Establish, Tarification Step, First tarification → Price.
-              
+
 
 ####Preview Tool
 

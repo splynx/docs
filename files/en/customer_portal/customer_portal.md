@@ -17,12 +17,12 @@ A Side panel of customer's account in portal can display following Modules:
 ![Services](services.png)
 
 
-* **Finance** - displays financial information such as Transactions, Proforma Invoices, Invoices and Payments. Here customer can view or download them by clicking on *View icon* ![ViewIcon](view_icon.png) or *Download icon* ![DownloadIcon](download_icon.png) in Operations column.
+* **Finance** - displays financial information such as Transactions, Proforma Invoices, Invoices and Payments. Here customer can view or download them by clicking on *View* icon <icon class="image-icon">![ViewIcon](view_icon.png)</icon> or *Download* icon <icon class="image-icon">![DownloadIcon](download_icon.png)</icon> in Operations column.
 ![Payments](payments.png)
 
 
 * **Messages** - shows all messages has been sent to a customer to Customer portal.
-By clicking on View icon ![ViewIcon1](view_icon1.png) in Actions column customer can read the message.
+By clicking on *View* icon <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> in Actions column customer can read the message.
 ![Messages](messages.png)
 
 
@@ -30,13 +30,13 @@ By clicking on View icon ![ViewIcon1](view_icon1.png) in Actions column customer
 ![News](news.png)
 
 
-* **Tickets** - shows all tickets submitted for technical support. By clicking on View icon ![ViewIcon1](view_icon1.png) in Actions column customer can read the ticket.
+* **Tickets** - shows all tickets submitted for technical support. By clicking on *View* icon <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> in Actions column customer can read the ticket.
 ![Tickets](tickets.png)
 Here customer can also create and submit a new ticket by clicking on Create ticket icon in the top-right corner of the screen. The window "Create ticket" will appear where customer will write Subject of the ticket, choose Priority, write a message and upload any files if needed.
 ![CreateTicket](create_ticket.png)
 
 
-* **Documents** - contains any documents which can be important for a customer, such as Agreements, Additional Agreements, manually made Invoices, Certificates etc. Customer can view and download them from here by clicking on Download icon ![DownloadIcon](download_icon.png) in Actions column of the table.
+* **Documents** - contains any documents which can be important for a customer, such as Agreements, Additional Agreements, manually made Invoices, Certificates etc. Customer can view and download them from here by clicking on *Download* icon <icon class="image-icon">![DownloadIcon](download_icon.png)</icon> in Actions column of the table.
 ![Documens](documents.png)
 
 

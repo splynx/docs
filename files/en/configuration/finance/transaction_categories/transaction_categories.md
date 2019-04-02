@@ -17,7 +17,7 @@ You can add a new Transaction category manually by clicking on Add icon at the t
 
 ![List](list.png)
 
-You can also correct the name of the Transaction category or delete it by clicking on ![](edit_icon.png)  or ![](delete_icon.png) icons in Actions column of the table:
+You can also correct the name of the Transaction category or delete it by clicking on icon <icon class="image-icon">![](edit_icon.png)</icon>  or <icon class="image-icon">![](delete_icon.png)</icon> in Actions column of the table:
 
 ![Edit](edit.png)
 

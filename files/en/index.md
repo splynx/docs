@@ -115,7 +115,7 @@ Table of contents
 ##### [Administration](administration/administration.md)
 * [Main](administration/main/main.md)
     * [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md)
-        * [Default roles in details](administration/main/admins_and_permissions/default_roles/default_roles.md)
+    * [Default roles in details](administration/main/admins_and_permissions/default_roles/default_roles.md)
     * [Partners](administration/main/partners/partners.md)
     * [Locations](administration/main/locations/locations.md)
 * [Logs](administration/logs/logs.md)

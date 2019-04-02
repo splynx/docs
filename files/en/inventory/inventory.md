@@ -81,7 +81,7 @@ Press «Add invoice» and fill invoice fields.
 
 
 ---
-If you press «Add» invoice – the new window will appear. There you can add barcodes of the items. (You can edit barcodes later by pressing ![Barcode](barcode_icon.png) )
+If you press «Add» invoice – the new window will appear. There you can add barcodes of the items. (You can edit barcodes later by pressing <icon class="image-icon">![Barcode](barcode_icon.png)</icon> )
 ![Add barcode](add_barcode.png)
 
 After creating invoice – items of selected products will be added to the system. They will have status **In stock**
@@ -100,7 +100,7 @@ After creating invoice – items of selected products will be added to the syste
 
   If you add some photo it will override a «global» photo of a product (if product has it).
 
-  If you want manage some item (items) – you have check it ![Checkbox](checkbox_icon.png) and press one of the buttons: ![Buttons](buttons.png)
+  If you want manage some item (items) – you have check it <icon class="image-icon">![Checkbox](checkbox_icon.png)</icon> and press one of the buttons: <icon class="image-icon">![Buttons](buttons.png)</icon>
 
 
 * **Internal usage** – the item is used by your organization
@@ -136,7 +136,7 @@ Before you can rent some item to the customer – you must create a custom servi
   You can select status (In stock, Returned ) and mark item (New, Broken)
 
   All possible statuses of item: `In stock, Internal usage, Sold, Rent, Returned`
-  You can see every item’s history. To do this press history button ![History](history_icon.png).
+  You can see every item’s history. To do this press history button <icon class="image-icon">![History](history_icon.png)</icon>.
 
 
 ## Customers

@@ -24,9 +24,9 @@ A Create plan window will pop up and it will be possible to create a plan.
 * VAT Included - select it on or off
 * VAT - you can decide the percentage of the VAT
 
-It is possible to edit or to delete the tariff with the icons ![edit.png](edit.png) or ![delete.png](delete.png)in the column Actions.
+It is possible to edit or to delete the tariff with the icons <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon> in the column Actions.
 
-There are two symbols ![symbolsbottomleft.png](symbolsbottomleft.png) on the bottom left of the table. The first one on the left ![esportaformati.png](esportaformati.png) is used to copy, print the table and to export it in different formats: Excel, CSV, PDF. The second ![modifytheview.png](modifytheview.png) is used to modify the view of the table.
+There are two symbols <icon class="image-icon">![symbolsbottomleft.png](symbolsbottomleft.png)</icon> on the bottom left of the table. The first one on the left <icon class="image-icon">![esportaformati.png](esportaformati.png)</icon> is used to copy, print the table and to export it in different formats: Excel, CSV, PDF. The second <icon class="image-icon">![modifytheview.png](modifytheview.png)</icon> is used to modify the view of the table.
 
 After the creation of Voice plan, it is possible to associate the service to a customer. Click on _Customer → List_, select the customer, click on the tab _Services_ and on the +.
 

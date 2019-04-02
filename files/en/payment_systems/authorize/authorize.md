@@ -18,7 +18,7 @@ or you can install it from Web UI:
 ![2.png](2.png)
 
 ![3.png](3.png)
-After installation, you have to configure add-on under _Config / Integrations / Modules list / Splynx AuthorizeNet Recurring Billing Add-On / ![edit](image2018-8-22_11-18-23.png)._ Look at the screenshot:
+After installation, you have to configure add-on under _Config / Integrations / Modules list / Splynx AuthorizeNet Recurring Billing Add-On /_  <icon class="image-icon">![edit](image2018-8-22_11-18-23.png)</icon>. Look at the screenshot:
 
 ![4.png](4.png)
 

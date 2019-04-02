@@ -6,7 +6,7 @@ To send messages via BulkSMS service (bulksms.com, bulksms.co.za), configure val
 URL:
 [https://bulksms.2way.co.za/eapi/submission/send_sms/2/2.0](https://bulksms.2way.co.za/eapi/submission/send_sms/2/2.0)
 
-POST: 
+POST:
 username=&password=&message=%MESSAGE%&msisdn=%TO%&concat_text_sms_max_parts=4
 
 and you will get a successful response:
@@ -40,7 +40,7 @@ To create an SMS click on Create in Support → Messages. The window will pop-up
 * **Date added** - date customer was added
 
 
-* **Category** -  could be Private person or Company 
+* **Category** -  could be Private person or Company
 
 
 * **Partner** - partner, service provider of the customer
@@ -49,10 +49,10 @@ To create an SMS click on Create in Support → Messages. The window will pop-up
 * **Location** - location of the customer
 
 
-* **Tariff plans** - all available tariff plans from Internet, Voice, Custom services 
+* **Tariff plans** - all available tariff plans from Internet, Voice, Custom services
 
 
-* **Service** - Internet service, Voice service and Custom service 
+* **Service** - Internet service, Voice service and Custom service
 
 
 * **Send to** - the options are: Email, Customer portal, Customer portal &  Email, SMS
@@ -64,13 +64,13 @@ To create an SMS click on Create in Support → Messages. The window will pop-up
 * **Message** - Body of the message
 
 
-* **Templates** - Templates of Customer portal and Mail  templates can be used. 
+* **Templates** - Templates of Customer portal and Mail  templates can be used.
 
 
-* **Attachments** - individual attachments 
+* **Attachments** - individual attachments
 
 
-* **Attach financial documents** - Invoices, Proforma Invoices and Payments from Splynx. 
+* **Attach financial documents** - Invoices, Proforma Invoices and Payments from Splynx.
 
 It is not necessary to fill in all fields to send SMS to the customer. The easiest way is to enter customer's ID, choose option Send to, Subject and write a SMS message. You can choose a body message from templates or write a particular text. You can also write your own message and save it as a new template by clicking on Save as new.
  
@@ -80,23 +80,23 @@ You can check your SMS message before sending by clicking on Preview option at t
 
 ![Preview](./preview.png)
 
-When you click on Send tab, the window will appear with the confirmation details of the recipient. 
+When you click on Send tab, the window will appear with the confirmation details of the recipient.
 
 ![Send message](./send_message.png)
 
-If you click on Send as test  the window will pop-up, where customer's Phone number have to be entered. 
+If you click on Send as test  the window will pop-up, where customer's Phone number have to be entered.
 
 ![Pop-up](./pop_up.png)
 
-There is an option of SMS mass sending, for example, you can choose particular recipients by Partner or Location. 
+There is an option of SMS mass sending, for example, you can choose particular recipients by Partner or Location.
 
 ![Mass sending](./mass_sending.png)
 
-All SMS and emails have been sent will be possible to check in Support → Messages → History. You can sort them by their status (Any, New, Processing, Sent, Cancelled, Removed, Sent with error) or period of time (Today, yesterday, Last 7 days, This month, Last month, Custom Range). 
+All SMS and emails have been sent will be possible to check in Support → Messages → History. You can sort them by their status (Any, New, Processing, Sent, Cancelled, Removed, Sent with error) or period of time (Today, yesterday, Last 7 days, This month, Last month, Custom Range).
 
 ![History](./history.png)
 
-By clicking on actions ![ViewIcon2](./icon2.png) you'll be able to see customers' list (in case of SMS mass sending it will be a full list with customers' names), view SMS message and delete it. 
+By clicking on actions <icon class="image-icon">![ViewIcon2](./icon2.png)</icon> you'll be able to see customers' list (in case of SMS mass sending it will be a full list with customers' names), view SMS message and delete it. 
 
 ![Customer's list](./customers_list.png)
 

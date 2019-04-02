@@ -38,7 +38,7 @@ The other way is to add it manually and set all information.
 ![Create AP](create_ap.png)
 
 
-Another feature is managing of CPE status, it shows information about API status, board name, version CPU, last status, and also you can check interfaces by clicking on  ![Status](status_button.png).
+Another feature is managing of CPE status, it shows information about API status, board name, version CPU, last status, and also you can check interfaces by clicking on  <icon class="image-icon">![Status](status_button.png)</icon>.
 
 ![Status](cpe_status.png)
 

@@ -52,11 +52,14 @@ Table of contents
 * [Inventory](inventory/inventory.md)
 
 ##### [Networking](networking/networking.md)
-* [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)  
-    * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)  
-    * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)  
-    * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)  
+* [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
+
+    * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
+    * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
+    * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)
+
 * [Authentication of users](networking/authentication_users/authentication_users.md)
+
     * [Mikrotik: DHCP with Radius](networking/authentication_users/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
     * [Mikrotik: Hotspot, Radius](networking/authentication_users/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
     * [Mikrotik: Hotspot Login from Splynx portal](networking/authentication_users/mikrotik_hotspot_from_portal/mikrotik_hotspot_from_portal.md)
@@ -72,18 +75,24 @@ Table of contents
     * [Linux: Accel-ppp server](networking/authentication_users/linux_accel/linux_accel.md)
     * [DSL Telkom (Openserve) authentication](networking/authentication_users/dsl_telkom_openserve/dsl_telkom_openserve.md)
     * [DHCP Option 82](networking/authentication_users/dhcp_option_82/dhcp_option_82.md)
+
 * [Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
+
     * [Capped plans and top up](networking/bandwidth_management/capped_plans/capped_plans.md)
     * [Contentions](networking/bandwidth_management/contentions/contentions.md)
     * [Fair user policy - FUP](networking/bandwidth_management/fup/fup.md)
     * [Mikrotik queue speed limits](networking/bandwidth_management/queue_speed_limits/queue_speed_limits.md)
     * [Radius based speed limits](networking/bandwidth_management/radius_speed_limits/radius_speed_limits.md)
+
 * [Routers settings](networking/routers_settings/routers_settings.md)
+
     * [Cisco routers](networking/routers_settings/cisco/cisco.md)
     * [Juniper routers](networking/routers_settings/juniper/juniper.md)
     * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
     * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
     * [Other routers](networking/routers_settings/other/other.md)
+
+
 * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 * [IP address management](networking/ip_address_management/ip_address_management.md)
@@ -113,11 +122,14 @@ Table of contents
 
 ##### [Administration](administration/administration.md)
 * [Main](administration/main/main.md)
+
     * [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md)
     * [Default roles in details](administration/main/admins_and_permissions/default_roles/default_roles.md)
     * [Partners](administration/main/partners/partners.md)
     * [Locations](administration/main/locations/locations.md)
+
 * [Logs](administration/logs/logs.md)
+
     * [Operations](administration/logs/operations/operations.md)
     * [Files](administration/logs/files/files.md)
     * [Email](administration/logs/email/email.md)
@@ -130,12 +142,15 @@ Table of contents
 
 ##### [Configuration](configuration/configuration.md)
 * [System](configuration/system/system.md)
+
     * [Additional fields](configuration/system/additional_fields/additional_fields.md)
     * [Custom translations](configuration/system/custom_translations/custom_translations.md)
     * [File manager](configuration/system/file_manager/file_manager.md)
     * [Templates](configuration/system/templates/templates.md)
     * [Variables for templates](configuration/system/templates_variables/templates_variables.md)
+
 * [Main configuration](configuration/main_configuration/main_configuration.md)
+
     * [Preferences](configuration/main_configuration/preferences/preferences.md)
     * [Localization](configuration/main_configuration/localization/localization.md)
     * [Customers](configuration/main_configuration/customers/customers.md)
@@ -147,7 +162,9 @@ Table of contents
     * [Cards](configuration/main_configuration/cards/cards.md)
     * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
     * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
+
 * [Finance configuration](configuration/finance/finance.md)
+
     * [Automation](configuration/finance/automation/automation.md)
     * [Finance settings](configuration/finance/finance_settings/finance_settings.md)
     * [Pairing](configuration/finance/pairing/pairing.md)
@@ -156,7 +173,9 @@ Table of contents
     * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
     * [Reminders](configuration/finance/reminders/reminders.md)
     * [Template values](configuration/finance/template_values/template_values.md)
+
 * [Network configuration](configuration/network/network.md)
+
     * [Radius](configuration/network/radius/radius.md)
     * [MikroTik API](configuration/network/mikrotik_api/mikrotik_api.md)
     * [IPv4](configuration/network/ipv4/ipv4.md)
@@ -168,16 +187,22 @@ Table of contents
     * [Monitoring config](configuration/network/monitoring_config/monitoring_config.md)
     * [Network Weathermap Editor](configuration/network/network_weathermap_editor/network_weathermap_editor.md)
     * [Radius Extended](configuration/network/radius_extended/radius_extended.md)
+
 * [Voice processing](configuration/voice/voice.md)
+
     * [CDR Import](configuration/voice/cdr_import/cdr_import.md)
     * [CDR History](configuration/voice/cdr_history/cdr_history.md)
     * [Categories](configuration/voice/categories/categories.md)
+
 * [Integrations](configuration/integrations/integrations.md)
+
     * [Main modules](configuration/integrations/main_modules/main_modules.md)
     * [Install module](configuration/integrations/install_modules/install_modules.md)
     * [Modules list](configuration/integrations/modules_list/modules_list.md)
     * [Hooks](configuration/integrations/hooks/hooks.md)
+
 * [Tools](configuration/tools/tools.md)
+
     * [Import](configuration/tools/import/import.md)
     * [Export](configuration/tools/export/export.md)
     * [Activate services](configuration/tools/activate_services/activate_services.md)

@@ -104,8 +104,4 @@ By clicking on actions <icon class="image-icon">![ViewIcon2](./icon2.png)</icon>
 
 It is also possible to check all recipients list by their IDs and Email addresses in Administration → Logs → Email, where you can set a particular period, type of email message or status.
 
-<<<<<<< HEAD
-![Recipients](./recipients.png?w=300)
-=======
 ![Recipients](./recipients.png)
->>>>>>> 3e28cdfb12e007abd7211a2a0ff4f31be12f3edf

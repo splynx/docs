@@ -31,7 +31,7 @@ To define the pattern, click on _Config → Main→ Customers_. This is a way to
 
 ![Character generator](./charactergenerator.png)
 
-It is possible to personalise customer's parameters with the function _Additional field_ in _Config → System → Additional fields_.
+It is possible to personalize customer's parameters with the function _Additional field_ in _Config → System → Additional fields_.
 
 When you create the additional field for a customer, select Add to get the parameter in the customer's profile by default.
 

@@ -61,4 +61,4 @@ Parameter|Value
 Please note:  
 1. You should allow less secure apps to use your Google account (https://support.google.com/accounts/answer/6010255)
 2. Google limits number of letters per day (https://support.google.com/a/answer/166852?hl=en)
-3. Sometimes Google do not allow to send letters due to security reasons. In this case you should enter into account via browser and confirm that it was you (trying to send email recently)
+3. Sometimes Google does not allow to send letters due to security reasons. In this case you should enter into account via browser and confirm that it was you (trying to send email recently)

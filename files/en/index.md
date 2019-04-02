@@ -48,16 +48,12 @@ Table of contents
 ##### Inventory
 * [Inventory](inventory/inventory.md)
 
-
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
-
     * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
     * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
     * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)
-
 * [Authentication of users](networking/authentication_users/authentication_users.md)
-
     * [Mikrotik: DHCP with Radius](networking/authentication_users/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
     * [Mikrotik: Hotspot, Radius](networking/authentication_users/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
     * [Mikrotik: Hotspot Login from Splynx portal](networking/authentication_users/mikrotik_hotspot_from_portal/mikrotik_hotspot_from_portal.md)
@@ -73,23 +69,18 @@ Table of contents
     * [Linux: Accel-ppp server](networking/authentication_users/linux_accel/linux_accel.md)
     * [DSL Telkom (Openserve) authentication](networking/authentication_users/dsl_telkom_openserve/dsl_telkom_openserve.md)
     * [DHCP Option 82](networking/authentication_users/dhcp_option_82/dhcp_option_82.md)
-
 * [Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
-
     * [Capped plans and top up](networking/bandwidth_management/capped_plans/capped_plans.md)
     * [Contentions](networking/bandwidth_management/contentions/contentions.md)
     * [Fair user policy - FUP](networking/bandwidth_management/fup/fup.md)
     * [Mikrotik queue speed limits](networking/bandwidth_management/queue_speed_limits/queue_speed_limits.md)
     * [Radius based speed limits](networking/bandwidth_management/radius_speed_limits/radius_speed_limits.md)
-
 * [Routers settings](networking/routers_settings/routers_settings.md)
-
     * [Cisco routers](networking/routers_settings/cisco/cisco.md)
     * [Juniper routers](networking/routers_settings/juniper/juniper.md)
     * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
     * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
     * [Other routers](networking/routers_settings/other/other.md)
-
 * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 * [IP address management](networking/ip_address_management/ip_address_management.md)
@@ -99,7 +90,6 @@ Table of contents
 * [Radius server customization](networking/radius_customization/radius_customization.md)
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
-
 
 ##### [Support, Tickets and Messages](support_tickets_messages/support_tickets_messages.md)
 * [Email messages](support_tickets_messages/email_messages/email_messages.md)

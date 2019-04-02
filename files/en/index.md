@@ -48,6 +48,7 @@ Table of contents
 ##### Inventory
 * [Inventory](inventory/inventory.md)
 
+
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)  
 
@@ -98,6 +99,7 @@ Table of contents
 * [Radius server customization](networking/radius_customization/radius_customization.md)
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
+
 
 ##### [Support, Tickets and Messages](support_tickets_messages/support_tickets_messages.md)
 * [Email messages](support_tickets_messages/email_messages/email_messages.md)

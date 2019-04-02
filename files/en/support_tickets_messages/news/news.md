@@ -39,8 +39,4 @@ Customers will be able to see the news on Customers Portal on their *Dashboard*.
 
 It is important to enable option *Show portal news* in *Config → Portal → Dashboard* in Splynx, so customers will be able to see the news.
 
-<<<<<<< HEAD
-![Turn on news](./turn_on_news.png?w=300)
-=======
 ![Turn on news](./turn_on_news.png)
->>>>>>> 3e28cdfb12e007abd7211a2a0ff4f31be12f3edf

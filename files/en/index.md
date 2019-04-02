@@ -18,7 +18,6 @@ Table of contents
 * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
 
-
 ##### [Customer Management](customer_management/customer_management.md)
 * [Adding new customer](customer_management/add_new_customer/add_new_customer.md)
 * [Custom additional fields](customer_management/custom_additional_fields/custom_additional_fields.md)
@@ -32,10 +31,8 @@ Table of contents
 * [CPE management](customer_management/cpe_management/cpe_management.md)
 * [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
 
-
 ##### Customer Portal
 * [Customer Portal](customer_portal/customer_portal.md)
-
 
 ##### [Finance](finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
@@ -52,11 +49,11 @@ Table of contents
 * [Inventory](inventory/inventory.md)
 
 ##### [Networking](networking/networking.md)
-* [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
+* [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)  
 
-    * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
-    * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
-    * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)
+    * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)  
+    * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)  
+    * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)  
 
 * [Authentication of users](networking/authentication_users/authentication_users.md)
 
@@ -92,7 +89,6 @@ Table of contents
     * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
     * [Other routers](networking/routers_settings/other/other.md)
 
-
 * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 * [IP address management](networking/ip_address_management/ip_address_management.md)
@@ -103,13 +99,11 @@ Table of contents
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
-
 ##### [Support, Tickets and Messages](support_tickets_messages/support_tickets_messages.md)
 * [Email messages](support_tickets_messages/email_messages/email_messages.md)
 * [SMS messages](support_tickets_messages/sms_messages/sms_messages.md)
 * [Tickets](support_tickets_messages/tickets/tickets.md)
 * [News](support_tickets_messages/news/news.md)
-
 
 ##### [Voice](voice/voice.md)
 
@@ -118,7 +112,6 @@ Table of contents
 * [Prefixes](voice/prefixes/prefixes.md)
 * [Tariff Settings](voice/tariff_settings/tariff_settings.md)
 * [Processing](voice/processing/processing.md)
-
 
 ##### [Administration](administration/administration.md)
 * [Main](administration/main/main.md)
@@ -138,7 +131,6 @@ Table of contents
     * [API](administration/logs/api/api.md)
     * [Changes of statuses/plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
     * [Pending statuses/plans](administration/logs/pending_statuses_plans/pending_statuses_plans.md)
-
 
 ##### [Configuration](configuration/configuration.md)
 * [System](configuration/system/system.md)
@@ -208,7 +200,6 @@ Table of contents
     * [Activate services](configuration/tools/activate_services/activate_services.md)
     * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
     * [Adminer](configuration/tools/adminer/adminer.md)
-
 
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)
 * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)

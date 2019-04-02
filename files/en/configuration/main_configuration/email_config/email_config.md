@@ -36,7 +36,7 @@ You should set the mail parameters:
 * **Path** - Path to sendmail
 * **Params** - Params for sendmail
 
-#### Test
+### Test
 * **Email**  - Enter email for testing if necessary.
 
 ![Email config menu](email_config.png)

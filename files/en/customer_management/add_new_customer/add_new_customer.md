@@ -27,7 +27,7 @@ Login and password are created based on pattern.
 
 To define the pattern, click on _Config → Main→ Customers_. This is a way to define symbols for generation of login and password.
 
-![Customers config](./config_main_customer.png)
+![Customers configuration](./config_main_customer.png)
 
 ![Character generator](./charactergenerator.png)
 
@@ -35,8 +35,4 @@ It is possible to personalise customer's parameters with the function _Additiona
 
 When you create the additional field for a customer, select Add to get the parameter in the customer's profile by default.
 
-<<<<<<< HEAD
-![Create additional field](./Create_additional_field.png?w=300)
-=======
 ![Create additional field](./Create_additional_field.png)
->>>>>>> 3e28cdfb12e007abd7211a2a0ff4f31be12f3edf

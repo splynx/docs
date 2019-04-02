@@ -73,13 +73,8 @@ To create an SMS click on Create in Support → Messages. The window will pop-up
 * **Attach financial documents** - Invoices, Proforma Invoices and Payments from Splynx.
 
 It is not necessary to fill in all fields to send SMS to the customer. The easiest way is to enter customer's ID, choose option Send to, Subject and write a SMS message. You can choose a body message from templates or write a particular text. You can also write your own message and save it as a new template by clicking on Save as new.
-<<<<<<< HEAD
-
-![Main window](./main_window.png?w=300)
-=======
  
 ![Main window](./main_window.png)
->>>>>>> 3e28cdfb12e007abd7211a2a0ff4f31be12f3edf
 
 You can check your SMS message before sending by clicking on Preview option at the bottom of the page.
 
@@ -109,8 +104,4 @@ By clicking on actions <icon class="image-icon">![ViewIcon2](./icon2.png)</icon>
 
 It is also possible to check recipients list by their IDs and Phone numbers in Administration → Logs → SMS, where you can set a particular period, type of SMS or status (New, Sending, Sent, Error, Expired).
 
-<<<<<<< HEAD
-![Recipients](./recipients.png?w=300)
-=======
 ![Recipients](./recipients.png)
->>>>>>> 3e28cdfb12e007abd7211a2a0ff4f31be12f3edf

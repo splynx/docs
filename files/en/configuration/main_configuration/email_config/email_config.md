@@ -15,11 +15,10 @@ You should set the mail parameters:
 * **Enable mail sending** - select on when is desirable to send email from pool
 * **Send to** - If value is set all (!) emails will be send to this address
 * **Copy email** - If value is set copy of all emails will be send to this address(s). You can use many addresses separated by comma
-* **Days to expire** - how many days the server will try to send the email
-
+* **Days to expire** - how many days the server will try to send the email  
 
 ### Transport
-* **Transport type** - select sending protocol
+* **Transport type** - select sending protocol  
 
 ### SMTP config
 * **Host** - SMTP server name
@@ -30,20 +29,19 @@ You should set the mail parameters:
 * **Username** - your username
 * **Password** - your password
 * **Header key** - custom header key
-* **Header value** - custom header value
+* **Header value** - custom header value  
 
 ### Sendmail config
 * **Path** - Path to sendmail
-* **Params** - Params for sendmail
+* **Params** - Params for sendmail  
 
-#### Test
+### Test
 * **Email**  - Enter email for testing if necessary.
 
 ![Email config menu](email_config.png)
 ![Email config menu](email_config1.png)
 
-
-We strongly advice to use an Email Delivery Service such as https://www.sparkpost.com/
+We strongly advice to use an Email Delivery Service such as https://www.sparkpost.com/  
 
 ### Google mail Example
 To use your Google mail account for email sending fill these fields:

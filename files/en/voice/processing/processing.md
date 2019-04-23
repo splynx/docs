@@ -1,7 +1,7 @@
 Processing
 ==========
 
-Now the Voice CDR processing is managed here. We cand import a CDR for charge the customer and print in his invoice the register of calls.
+Now the Voice CDR processing is managed here. We can import a CDR for charge the customer and print in his invoice the register of calls.
 
 Behind the processing menu there are 3 other pages, Import CDR, Export CDR and History CDR.
 

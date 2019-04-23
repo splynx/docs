@@ -56,6 +56,7 @@ Here you can set:
 |516891[F2]-\d{6}|  Will match only first one                                      |
 
 ---
+
 ####Some of special characters:
 
 Quantifiers:* + ? and {}
@@ -71,7 +72,7 @@ Quantifiers:* + ? and {}
 |a(bc)*                  | Matches a string that has a followed by zero or more copies of the sequence bc |
 |a(bc){2,5}              | Matches a string that has a followed by 2 up to 5 copies of the sequence bc    |
 
- OR operator:| or []
+OR operator:| or []
 
 |Operator | Description                                                              |
 |---------|--------------------------------------------------------------------------|

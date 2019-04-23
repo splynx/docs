@@ -1,7 +1,7 @@
 Auto processing
 ==========
 
-Now (from splynx 2.3) the Voice auto CDR processing is managed here. We can import a CDR's to charge the customer and print the register of calls in his invoice.
+The Voice auto CDR processing is managed here. We can import a CDR's to charge the customer and print the register of calls in his invoice.
 
 The process is similar to Voice/Processing/CDR import, but here we can import many CDR's together.
 

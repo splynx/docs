@@ -33,7 +33,7 @@ After installation you need to generate Google API Key - [https://console.cloud.
 
 ![fcc Google get key 8](fcc_google_key_8.png)
 
-Then you have to copy Google API Key in to the “Config → Module Lists → Splynx FCC → Edit”:
+Then you have to copy Google API Key in to the *Config → Module Lists → Splynx FCC → Edit:*
 
 ![Edit module list](edit_module_list.png)
 

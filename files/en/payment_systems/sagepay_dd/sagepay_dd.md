@@ -27,7 +27,9 @@ apt install splynx-sagepay-direct-debit
 
 ![11.png](14.png)
 
-![11.png](15.png)
+While you are configuring your "Sagepay" account you should to paste your Splynx URL (https://your_domain_name/sagepay/result) to the *Payment notifications* as on the screenshot:
+
+![11.png](22.png)
 
 After installation and registration you have to configure params:
 

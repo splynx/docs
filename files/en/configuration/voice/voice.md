@@ -6,8 +6,8 @@ Voice processing allows administrator to upload different CDR files for Voip, Mo
 Please follow the documentation sections to know more:
 
 
-[→ CDR Import](configuration/voice/cdr_import/cdr_import.md)
+* [ CDR Import](configuration/voice/cdr_import/cdr_import.md)
 
-[→ CDR History](configuration/voice/cdr_history/cdr_history.md)
+* [ CDR History](configuration/voice/cdr_history/cdr_history.md)
 
-[→ Categories](configuration/voice/categories/categories.md)
+* [ Categories](configuration/voice/categories/categories.md)

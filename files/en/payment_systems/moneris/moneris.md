@@ -18,22 +18,22 @@ apt-get install splynx-moneris
 
 ### Installation via web-interface
 
-![(info)](information.png) This installation method is available only for Splynx versions ≥ 2.1.
+ Info: <icon class="image-icon">![(info)](information.png) This installation method is available only for Splynx versions ≥ 2.1.
 
 * Open _Config / Integrations / Add-ons_  
   ![(image)](image2018-8-21_9-43-43.png)
 * Click _Update (apt)_, then _Refresh_, then install.  
   ![(image)](image2018-8-21_9-47-57.png)
 
-## Configuration
+### Configuration
 
-After installation, add-on should be configured. Open _Config / Integrations / Modules list_, click ![edit](image2018-8-21_9-56-59.png)
+After installation, add-on should be configured. Open _Config / Integrations / Modules list_, click <icon class="image-icon">![edit](image2018-8-21_9-56-59.png)</icon>
 
 ![(image)](1.png)
 
 ![(image)](2.png)
 
-### Settings
+###Settings
 
 ![(image)](image2018-8-21_10-49-8.png)
 
@@ -55,8 +55,8 @@ After installation, add-on should be configured. Open _Config / Integrations / M
 ![(image)](image2018-8-21_11-20-24.png)
 
 **Transaction fee category** - [transaction category](configuration/finance/transaction_categories/transaction_categories.md) of the _Additional service fee_.
-![(warning)](warning.png) It is used only for [proforma invoices](finance/proforma_invoices/proforma_invoices.md). For [invoices](finance/invoices/invoices.md) _Additional service fee_ category is always _Service._
-![](/download/attachments/10321979/image2018-8-21_11-24-30.png?version=1&modificationDate=1534839871000&api=v2 "Splynx > Moneris > image2018-8-21_11-24-30.png")
+<icon class="image-icon">![(warning)](warning.png)</icon> It is used only for [proforma invoices](finance/proforma_invoices/proforma_invoices.md). For [invoices](finance/invoices/invoices.md) _Additional service fee_ category is always _Service._
+![](image2018-8-21_11-24-30.png)
 
 ![(image)](image2018-8-21_11-29-22.png)
 

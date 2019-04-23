@@ -9,7 +9,7 @@ In Voice → Rates → Customers/Providers click on add.
 
 ![Add rate table](./add_rate_table.png)
 
-Once is created, click on the symbol ![ViewIcon1](./icon1.png) to config the rates.
+Once is created, click on the symbol <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> to config the rates.
 
 ![Rates config](./rates_config.png)
 

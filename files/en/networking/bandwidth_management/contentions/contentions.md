@@ -6,7 +6,7 @@ Splynx provides the feature of contention or aggregation. This feature is used w
 
 Splynx operates with two types of contention: Per Plan based and Per Router contention.
 
-![Warning](warning.png) To use this feature, Mikrotik API should be enabled in router settings.
+<icon class="image-icon">![Warning](warning.png)</icon> To use this feature, Mikrotik API should be enabled in router settings.
 
 ### Plan based contention.
 Let’s take a look on example.

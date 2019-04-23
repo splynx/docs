@@ -29,14 +29,14 @@ The message will appear that payments **paired successfully**. Then, in Bank Sta
 ![History](history.png)
 
 
-It is possible to see processed payments from particular bank statement more detailed. If you click on View option ![View](list_icon.png) in Actions  or on a title of each file in Title column, the window will pop-up with description of every status of processed payment.
+It is possible to see processed payments from particular bank statement more detailed. If you click on View option <icon class="image-icon">![View](list_icon.png)</icon> in Actions  or on a title of each file in Title column, the window will pop-up with description of every status of processed payment.
 
-Payments with Error or Ignored status can be checked and **paired manually** by clicking on  icon ![Paired](paired_icon.png) in Actions. Payments will be in Ignored status when they've been already paid, but you can always double check them and manually pair.
+Payments with Error or Ignored status can be checked and **paired manually** by clicking on  icon <icon class="image-icon">![Paired](paired_icon.png)</icon> in Actions. Payments will be in Ignored status when they've been already paid, but you can always double check them and manually pair.
 
 ![View history](view_history.png)
 
 
-When you click on Manual pair icon ![Paired](paired_icon.png), a new window will pop-up, where you can search for a customer by entering his ID, Login, Contact details, Partner, Status, etc. in Customer section of the table.
+When you click on Manual pair icon <icon class="image-icon">![Paired](paired_icon.png)</icon>, a new window will pop-up, where you can search for a customer by entering his ID, Login, Contact details, Partner, Status, etc. in Customer section of the table.
 
 ![Manual pair](manual_pair.png)
 
@@ -46,7 +46,7 @@ You can also search by entering Invoice number or Proforma Invoice number in Inv
 ![Manual pair](manual_pair1.png)
 
 
-When you find a customer who's payment needs to be paired, click on Manual pair icon ![Paired](paired_icon.png) in Pair column of the table. The window will pop-up where you will confirm the paring.
+When you find a customer who's payment needs to be paired, click on *Manual pair* icon <icon class="image-icon">![Paired](paired_icon.png)</icon> in Pair column of the table. The window will pop-up where you will confirm the paring.
 
 ![Pair](confirmation.png)
 

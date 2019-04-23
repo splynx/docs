@@ -98,7 +98,7 @@ Next switch to the splynx and fill in the required fields:
 * **Payload** - [{"phone_number": "%TO%", "message": "%MESSAGE%", "device_id" : *<use_your_device_ID>*}]
 * **Method** - POST
 * **Content type** - json
-* **Enable SMS sending** - ![Enable](enable.png)
+* **Enable SMS sending** - <icon class="image-icon">![Enable](enable.png)</icon>
 * **Successful response** - OK
 * **Custom header/Name** - Authorization
 * **Custom header/Value** - *<paste_your_api_token>*

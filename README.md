@@ -23,7 +23,13 @@ This title will be show in the header of the documentation panel.
 
 ![Page title example](./images/page_title.png)
 
-#### Image size
+#### Image
+
+```
+![Image alt](http://site.com/images/img.png)
+```
+
+#### Image with size
 
 For set image size you can use url parameters.
 
@@ -50,6 +56,11 @@ Relative path (recommended):
 
 ```
 ./images/my_image.png
+```
+#### Icon
+
+```
+<icon class="image-icon">![Image alt](image.png)</icon>
 ```
 
 #### Links
@@ -79,4 +90,10 @@ You can use:
 // Open help dialog
 [Please help me](javascript:open_help_dialog('index.md'))
 ```
-<!--- Version 14 dec 2018 -->
+
+#### Youtube video
+```
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/wQyBkJDsmuw?wmode=opaque">Video on youtube</iframe>
+```
+
+<!--- Version 20 mar 2019 -->

@@ -18,7 +18,6 @@ Table of contents
 * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
 
-
 ##### [Customer Management](customer_management/customer_management.md)
 * [Adding new customer](customer_management/add_new_customer/add_new_customer.md)
 * [Custom additional fields](customer_management/custom_additional_fields/custom_additional_fields.md)
@@ -32,10 +31,8 @@ Table of contents
 * [CPE management](customer_management/cpe_management/cpe_management.md)
 * [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
 
-
 ##### Customer Portal
 * [Customer Portal](customer_portal/customer_portal.md)
-
 
 ##### [Finance](finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
@@ -51,12 +48,13 @@ Table of contents
 ##### Inventory
 * [Inventory](inventory/inventory.md)
 
-
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
+
     * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
     * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
     * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)
+
 * [Authentication of users](networking/authentication_users/authentication_users.md)
     * [Mikrotik: DHCP with Radius](networking/authentication_users/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
     * [Mikrotik: Hotspot, Radius](networking/authentication_users/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md)
@@ -95,13 +93,11 @@ Table of contents
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
-
 ##### [Support, Tickets and Messages](support_tickets_messages/support_tickets_messages.md)
 * [Email messages](support_tickets_messages/email_messages/email_messages.md)
 * [SMS messages](support_tickets_messages/sms_messages/sms_messages.md)
 * [Tickets](support_tickets_messages/tickets/tickets.md)
 * [News](support_tickets_messages/news/news.md)
-
 
 ##### [Voice](voice/voice.md)
 
@@ -110,15 +106,18 @@ Table of contents
 * [Prefixes](voice/prefixes/prefixes.md)
 * [Tariff Settings](voice/tariff_settings/tariff_settings.md)
 * [Processing](voice/processing/processing.md)
-
+* [auto_cdr_processing](voice/auto_cdr_processing/auto_cdr_processing.md)
 
 ##### [Administration](administration/administration.md)
 * [Main](administration/main/main.md)
+
     * [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md)
-        * [Default roles in details](administration/main/admins_and_permissions/default_roles/default_roles.md)
+    * [Default roles in details](administration/main/admins_and_permissions/default_roles/default_roles.md)
     * [Partners](administration/main/partners/partners.md)
     * [Locations](administration/main/locations/locations.md)
+
 * [Logs](administration/logs/logs.md)
+
     * [Operations](administration/logs/operations/operations.md)
     * [Files](administration/logs/files/files.md)
     * [Email](administration/logs/email/email.md)
@@ -128,15 +127,17 @@ Table of contents
     * [Changes of statuses/plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
     * [Pending statuses/plans](administration/logs/pending_statuses_plans/pending_statuses_plans.md)
 
-
 ##### [Configuration](configuration/configuration.md)
 * [System](configuration/system/system.md)
+
     * [Additional fields](configuration/system/additional_fields/additional_fields.md)
     * [Custom translations](configuration/system/custom_translations/custom_translations.md)
     * [File manager](configuration/system/file_manager/file_manager.md)
     * [Templates](configuration/system/templates/templates.md)
     * [Variables for templates](configuration/system/templates_variables/templates_variables.md)
+
 * [Main configuration](configuration/main_configuration/main_configuration.md)
+
     * [Preferences](configuration/main_configuration/preferences/preferences.md)
     * [Localization](configuration/main_configuration/localization/localization.md)
     * [Customers](configuration/main_configuration/customers/customers.md)
@@ -148,7 +149,9 @@ Table of contents
     * [Cards](configuration/main_configuration/cards/cards.md)
     * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
     * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
+
 * [Finance configuration](configuration/finance/finance.md)
+
     * [Automation](configuration/finance/automation/automation.md)
     * [Finance settings](configuration/finance/finance_settings/finance_settings.md)
     * [Pairing](configuration/finance/pairing/pairing.md)
@@ -157,7 +160,9 @@ Table of contents
     * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
     * [Reminders](configuration/finance/reminders/reminders.md)
     * [Template values](configuration/finance/template_values/template_values.md)
+
 * [Network configuration](configuration/network/network.md)
+
     * [Radius](configuration/network/radius/radius.md)
     * [MikroTik API](configuration/network/mikrotik_api/mikrotik_api.md)
     * [IPv4](configuration/network/ipv4/ipv4.md)
@@ -169,22 +174,27 @@ Table of contents
     * [Monitoring config](configuration/network/monitoring_config/monitoring_config.md)
     * [Network Weathermap Editor](configuration/network/network_weathermap_editor/network_weathermap_editor.md)
     * [Radius Extended](configuration/network/radius_extended/radius_extended.md)
+
 * [Voice processing](configuration/voice/voice.md)
+
     * [CDR Import](configuration/voice/cdr_import/cdr_import.md)
     * [CDR History](configuration/voice/cdr_history/cdr_history.md)
     * [Categories](configuration/voice/categories/categories.md)
+
 * [Integrations](configuration/integrations/integrations.md)
+
     * [Main modules](configuration/integrations/main_modules/main_modules.md)
     * [Install module](configuration/integrations/install_modules/install_modules.md)
     * [Modules list](configuration/integrations/modules_list/modules_list.md)
     * [Hooks](configuration/integrations/hooks/hooks.md)
+
 * [Tools](configuration/tools/tools.md)
+
     * [Import](configuration/tools/import/import.md)
     * [Export](configuration/tools/export/export.md)
     * [Activate services](configuration/tools/activate_services/activate_services.md)
     * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
     * [Adminer](configuration/tools/adminer/adminer.md)
-
 
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)
 * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)

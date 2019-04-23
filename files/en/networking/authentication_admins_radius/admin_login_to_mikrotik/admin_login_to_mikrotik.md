@@ -10,6 +10,7 @@ To configure the Radius Server, click on `Config → Networking → Radius` and 
 ![Load](load.png)
 
 Turn the mode Use admin login on:
+
 ![Radius](radius2.png)
 
 Select the router you want to configure with Radius. Click on `Networking → List`, select the router and write down the Radius secret password that is going to be used in the router Radius configuration.
@@ -32,7 +33,7 @@ In Splynx, click on `Administration → Administrators`, click on Add and fill u
 
 It is possible to chose **the role of the administrator:** Administrator, Customer Creator, Financial Manager, Manager, Super Administrator. In Router access (radius) the default permission are: read, write, full.
 
-It is possible to edit, change the permissions or delete the administrator with ![Icons](conf_administrator.png).
+It is possible to edit, change the permissions or delete the administrator with <icon class="image-icon">![Icons](conf_administrator.png)</icon>.
 
 Now, if you try to connect the new Administrator to the winbox-router, you will see the new user created with the Radius server in User list.
 
@@ -43,11 +44,11 @@ It is possible to see all operations of each Administrator. Click on `Administra
 ![Logs](logs_operations.png)
 
 
-If you click on ![](operation_details.png), you will see a pop up window with the operation in details.
+If you click on <icon class="image-icon">![](operation_details.png)</icon>, you will see a pop up window with the operation in details.
 ![Operation details](operation_details2.png)
 
 
-If you need a short log of the Radius login, click on `Administration → Logs → Operation` and click on the icon ![Operation details](logs_files_actions.png)
+If you need a short log of the Radius login, click on `Administration → Logs → Operation` and click on the icon <icon class="image-icon">![Operation details](logs_files_actions.png)</icon>
 
 ![Logs](logs_operations.png)
 ![Radius shortlog](radius_shortlog.png)

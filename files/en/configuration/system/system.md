@@ -5,12 +5,12 @@ In System configuration of Splynx you can add and set Additional Fields paramete
 
 Please, follow the links below to find tutorial page about each part of System Configuration:
 
-[→ Additional fields](configuration/system/additional_fields/additional_fields.md)
+* [ Additional fields](configuration/system/additional_fields/additional_fields.md)
 
-[→ Custom translations](configuration/system/custom_translations/custom_translations.md)
+* [ Custom translations](configuration/system/custom_translations/custom_translations.md)
 
-[→ File manager](configuration/system/file_manager/file_manager.md)
+* [ File manager](configuration/system/file_manager/file_manager.md)
 
-[→ Templates](configuration/system/templates/templates.md)
+* [ Templates](configuration/system/templates/templates.md)
 
-[→ Variables for templates](configuration/system/templates_variables/templates_variables.md)
+* [ Variables for templates](configuration/system/templates_variables/templates_variables.md)

@@ -33,26 +33,26 @@ A window will pop up and it will be possible to select the service.
 
 ***Tariffs options***
 * **Router** - we can select the router
-      
-   ![Warning](warning.png) This field is required when Mikrotik API are used.
-  
+
+   <icon class="image-icon">![Warning](warning.png)</icon> This field is required when Mikrotik API are used.
+
 
 * **Login** - the login
 
 * **Password** - the password
 
-  ![Warning](warning.png) If you create a service with an empty password, the password will be really empty but during authorization customer's password will be used.
+  <icon class="image-icon">![Warning](warning.png)</icon> If you create a service with an empty password, the password will be really empty but during authorization customer's password will be used.
 
 * **Tacking IPv4** - the options are None, Permanent IP, Dynamic IP
 
 * **Mac(s)** - MAC address(es). Separated by comma.
 
-  ![Information](information.png) Only the first MAC address will be used if **Authorization/Accounting** for the router is **Hotspot (Users) / API Accounting** or **PPP (Secrets) / API Accounting**
+  <icon class="image-icon">![Information](information.png)</icon> Only the first MAC address will be used if **Authorization/Accounting** for the router is **Hotspot (Users) / API Accounting** or **PPP (Secrets) / API Accounting**
 
 * **Port ID** - the port ID
 
 
-You can edit **tariff/service**, check its statistic, see the graph of services or delete them by these actions ![Services actions](services_actions.png)
+You can edit **tariff/service**, check its statistic, see the graph of services or delete them by these actions <icon class="image-icon">![Services actions](services_actions.png)</icon>
 
 
 ![Actions table](actions_table.png)

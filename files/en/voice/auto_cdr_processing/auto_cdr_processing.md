@@ -36,6 +36,8 @@ Here you can set:
   * File name pattern - Regex for filtering file names (uses pcre syntax):
     Will process all files that have pattern entrances in filename.
 
+---
+
 #### Examples:
 
     AB-CDR-20190201013000-1-0025B516891F-125464.csv
@@ -52,6 +54,8 @@ Here you can set:
     |516891[A-Z]     | Will match first two files with matches 516891F, 516891C        |
     |516891[F2]      |Will match first and third files with matches 516891F, 5168912   |
     |516891[F2]-\d{6}|  Will match only first one                                      |
+
+---
 
 **Some of special characters:**
 

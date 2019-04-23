@@ -9,3 +9,4 @@ The new Voice Module is designed for customize the CDR processing according to y
 * [Tariff Settings](voice/tariff_settings/tariff_settings.md)
 * [Processing](voice/processing/processing.md)
 * [Auto CDR Processing](voice/auto_cdr_processing/auto_cdr_processing.md)
+    * [Examples](voice/auto_cdr_processing/examples/examples.md)

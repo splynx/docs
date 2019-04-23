@@ -36,8 +36,6 @@ Here you can set:
   * File name pattern - Regex for filtering file names (uses pcre syntax):
     Will process all files that have pattern entrances in filename.
 
----
-
 #### Examples:
 
     AB-CDR-20190201013000-1-0025B516891F-125464.csv
@@ -46,49 +44,45 @@ Here you can set:
 
     BC-CDR-20180201013000-3-0025B5168912-12546.csv
 
-|Pattern         | Description                                                     |
-|----------------|-----------------------------------------------------------------|
-|AB              | Will filter file names that have 'AB' symbols                   |
-|CDR             | Will match all 3 files                                          |
-|2019            | Will match first two files which contain '2019' in their names  |
-|516891[A-Z]     | Will match first two files with matches 516891F, 516891C        |
-|516891[F2]      |Will match first and third files with matches 516891F, 5168912   |
-|516891[F2]-\d{6}|  Will match only first one                                      |
+    |Pattern         | Description                                                     |
+    |----------------|-----------------------------------------------------------------|
+    |AB              | Will filter file names that have 'AB' symbols                   |
+    |CDR             | Will match all 3 files                                          |
+    |2019            | Will match first two files which contain '2019' in their names  |
+    |516891[A-Z]     | Will match first two files with matches 516891F, 516891C        |
+    |516891[F2]      |Will match first and third files with matches 516891F, 5168912   |
+    |516891[F2]-\d{6}|  Will match only first one                                      |
 
----
-
-####Some of special characters:
+**Some of special characters:**
 
 Quantifiers:* + ? and {}
 
-|Quantifier              | Description                                                                    |
-|------------------------|--------------------------------------------------------------------------------|
-|abc*                    | Matches a string that has ab followed by zero or more c                        |
-|abc+                    | Matches a string that has ab followed by one or more c                         |
-|abc?                    | Matches a string that has ab followed by zero or one c                         |
-|abc{2}                  | Matches a string that has ab followed by 2 c                                   |
-|abc{2,}                 | Matches a string that has ab followed by 2 or more c                           |
-|abc{2,5}                | Matches a string that has ab followed by 2 up to 5 c                           |
-|a(bc)*                  | Matches a string that has a followed by zero or more copies of the sequence bc |
-|a(bc){2,5}              | Matches a string that has a followed by 2 up to 5 copies of the sequence bc    |
+    |Quantifier              | Description                                                                    |
+    |------------------------|--------------------------------------------------------------------------------|
+    |abc*                    | Matches a string that has ab followed by zero or more c                        |
+    |abc+                    | Matches a string that has ab followed by one or more c                         |
+    |abc?                    | Matches a string that has ab followed by zero or one c                         |
+    |abc{2}                  | Matches a string that has ab followed by 2 c                                   |
+    |abc{2,}                 | Matches a string that has ab followed by 2 or more c                           |
+    |abc{2,5}                | Matches a string that has ab followed by 2 up to 5 c                           |
+    |a(bc)*                  | Matches a string that has a followed by zero or more copies of the sequence bc |
+    |a(bc){2,5}              | Matches a string that has a followed by 2 up to 5 copies of the sequence bc    |
 
-OR operator:| or []
+ OR operator:| or []
 
-|Operator | Description                                                              |
-|---------|--------------------------------------------------------------------------|
-|a(b|c)   | Matches a string that has a followed by b or c                           |
-|a[bc]    | Same as previous                                                         |
+    |Operator | Description                                                              |
+    |---------|--------------------------------------------------------------------------|
+    |a(b|c)   | Matches a string that has a followed by b or c                           |
+    |a[bc]    | Same as previous                                                         |
 
 Character classes:
 
-| Class | Description                                                                |
-|-------|----------------------------------------------------------------------------|
-| \d    | Matches a single character that is a digit                                 |
-| \w    | Matches a word character (alphanumeric character plus underscore)          |
-| \s    | Matches a whitespace character (includes tabs and line breaks)             |
-| .     | Matches any character                                                      |
-
----
+    | Class | Description                                                                |
+    |-------|----------------------------------------------------------------------------|
+    | \d    | Matches a single character that is a digit                                 |
+    | \w    | Matches a word character (alphanumeric character plus underscore)          |
+    | \s    | Matches a whitespace character (includes tabs and line breaks)             |
+    | .     | Matches any character                                                      |
 
   * First row contains column names - turn it on if first row in your CDR's contain columns names
 

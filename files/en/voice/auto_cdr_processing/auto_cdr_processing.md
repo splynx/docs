@@ -57,7 +57,7 @@ Here you can set:
 
 ---
 
-####Some of special characters:
+**Some of special characters:**
 
 Quantifiers:* + ? and {}
 

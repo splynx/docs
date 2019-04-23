@@ -88,6 +88,8 @@ Character classes:
 | \s    | Matches a whitespace character (includes tabs and line breaks)             |
 | .     | Matches any character                                                      |
 
+---
+
   * First row contains column names - turn it on if first row in your CDR's contain columns names
 
   * Delimiter - select delimeter from drop menu

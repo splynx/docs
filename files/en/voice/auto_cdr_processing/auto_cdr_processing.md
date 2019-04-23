@@ -25,7 +25,7 @@ Here you need to set:
 
     * FTP - if you select "FTP" then you will need to set the same parameters as for "SFTP" but without RSA key
 
-    * Local - if you select "Local" than you will need to set only Title and Folder path
+    * Local - if you select "Local" then you will need to set only Title and Folder path
 
   * Folder path - set your path to folder
 

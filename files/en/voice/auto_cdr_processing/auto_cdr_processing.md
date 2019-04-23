@@ -5,7 +5,7 @@ Now (in splynx 2.3) the Voice auto CDR processing is managed here. We can import
 
 It's like Voice / Processing / CDR import, but here we can import many CDR's together.
 
-To import CDR's you need to go to the Config / Voice / Import data sourc and configure "Import data source"
+To import CDR's you need to go to the source and configure "Import data source"
 
 ![Import](1.png)
 

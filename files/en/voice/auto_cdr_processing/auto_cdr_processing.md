@@ -9,13 +9,23 @@ To import CDR's you need to go to the source and configure "Import data source"
 
 ![Import](1.png)
 
+![Import](9.png)
+
 ![Import](2.png)
+
+![Import](8.png)
 
 Here you need to set:
 
   * Title - any name.
 
   * Data source type - select type from drop menu.
+
+    * SFTP - if you select "SFTP" than you will need to enter RSA private key
+
+    * FTP - if you select "FTP" than you will need to set all that what in "SFTP" but without RSA key
+
+    * Local - if you select "Local" than you will need to set only Title and Folder path
 
   * Folder path - set your path to folder
 
@@ -36,8 +46,6 @@ Here you can set:
   * File name pattern - Regex for filtering file names (uses pcre syntax):
     Will process all files that have pattern entrances in filename.
 
----
-
 #### Examples:
 
     AB-CDR-20190201013000-1-0025B516891F-125464.csv
@@ -54,8 +62,6 @@ Here you can set:
 |516891[A-Z]     | Will match first two files with matches 516891F, 516891C        |
 |516891[F2]      |Will match first and third files with matches 516891F, 5168912   |
 |516891[F2]-\d{6}|  Will match only first one                                      |
-
----
 
 **Some of special characters:**
 
@@ -87,8 +93,6 @@ Character classes:
 | \w    | Matches a word character (alphanumeric character plus underscore)          |
 | \s    | Matches a whitespace character (includes tabs and line breaks)             |
 | .     | Matches any character                                                      |
-
----
 
   * First row contains column names - turn it on if first row in your CDR's contain columns names
 

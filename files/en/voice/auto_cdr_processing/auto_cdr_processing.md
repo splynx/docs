@@ -1,9 +1,9 @@
 Auto processing
 ==========
 
-Now (from splynx 2.3) the Voice auto CDR processing is managed here. We can import a CDR's for charge the customer and print in his invoice the register of calls.
+Now (from splynx 2.3) the Voice auto CDR processing is managed here. We can import a CDR's to charge the customer and print the register of calls in his invoice.
 
-It's like Voice / Processing / CDR import, but here we can import many CDR's together.
+The process is similar to Voice/Processing/CDR import, but here we can import many CDR's together.
 
 To import CDR's you need to go to the source and configure "Import data source"
 
@@ -19,17 +19,17 @@ Here you need to set:
 
   * Title - any name.
 
-  * Data source type - select type from drop menu.
+  * Data source type - select type from drop-down menu.
 
-    * SFTP - if you select "SFTP" than you will need to enter RSA private key
+    * SFTP - if you select "SFTP" then you will need to enter RSA private key
 
-    * FTP - if you select "FTP" than you will need to set all that what in "SFTP" but without RSA key
+    * FTP - if you select "FTP" then you will need to set the same parameters as for "SFTP" but without RSA key
 
     * Local - if you select "Local" than you will need to set only Title and Folder path
 
   * Folder path - set your path to folder
 
-  * Host - set yor host IP address
+  * Host - set your host IP address
 
 Now you need to go to the Config / Voice / Auto CDR processing and create Import data source
 
@@ -41,10 +41,10 @@ Here you can set:
 
   * Title - any name.
 
-  * Import data source - select data source from drop menu
+  * Import data source - select data source from the drop-down menu
 
   * File name pattern - Regex for filtering file names (uses pcre syntax):
-    Will process all files that have pattern entrances in filename.
+    Will process all the files that have pattern entrances in a file name.
 
 #### Examples:
 
@@ -54,14 +54,14 @@ Here you can set:
 
     BC-CDR-20180201013000-3-0025B5168912-12546.csv
 
-|Pattern         | Description                                                     |
-|----------------|-----------------------------------------------------------------|
-|AB              | Will filter file names that have 'AB' symbols                   |
-|CDR             | Will match all 3 files                                          |
-|2019            | Will match first two files which contain '2019' in their names  |
-|516891[A-Z]     | Will match first two files with matches 516891F, 516891C        |
-|516891[F2]      |Will match first and third files with matches 516891F, 5168912   |
-|516891[F2]-\d{6}|  Will match only first one                                      |
+|Pattern         | Description                                                           |
+|----------------|-----------------------------------------------------------------------|
+|AB              | Will filter the file names that have 'AB' symbols                     |
+|CDR             | Will match all 3 files                                                |
+|2019            | Will match the first two files which contain '2019' in their names    |
+|516891[A-Z]     | Will match the first two files with matches 516891F, 516891C          |
+|516891[F2]      | Will match the first and the third files with matches 516891F, 5168912|
+|516891[F2]-\d{6}|  Will match only the first one                                        |
 
 **Some of special characters:**
 
@@ -94,24 +94,24 @@ Character classes:
 | \s    | Matches a whitespace character (includes tabs and line breaks)             |
 | .     | Matches any character                                                      |
 
-  * First row contains column names - turn it on if first row in your CDR's contain columns names
+  * First row contains column names - turn it on if the first row in your CDR's contains columns names
 
-  * Delimiter - select delimeter from drop menu
+  * Delimiter - select a delimeter from drop-down menu
 
-  * Type - select from drop menu type of data what you would import
+  * Type - select from drop-down menu type of data what you would import
 
   * Data unit - (If type = Mixed or Data) select from drop menu
 
-  * Voice provider - select provider from drop menu (if you have it)
+  * Voice provider - select a provider from the drop-down menu (if you have it)
 
-  * Import handler - select your handler from drop menu
+  * Import handler - select your handler from the drop-down menu
 
-  * Launch time interval - haw often auto processing will running
+  * Launch time interval - How often an auto processing will be running
 
-  * Enable - if it would be turned of than auto processing will run every Launch time interval
+  * Enable - In case it is on, an auto processing will be running every 'Launch time' interval.
 
-After that Auto CDR processing is aded? you can run it manually, go to the Config / Voice / Auto CDR processing and press "Run import" button.
-If something was wrong? you can see it in Auto CDR processing history, for this press "History" button, and you will see errors, here you can also Reprocess errors:
+After that Auto CDR processing is added, you can run it manually, go to the Config / Voice / Auto CDR processing and press "Run import" button.
+In case something is wrong, you can see it in Auto CDR processing history, for this press "History" button, and you will see errors, here you can also Reprocess the errors:
 
 ![Import](5.png)
 

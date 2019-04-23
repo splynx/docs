@@ -106,7 +106,7 @@ Table of contents
 * [Prefixes](voice/prefixes/prefixes.md)
 * [Tariff Settings](voice/tariff_settings/tariff_settings.md)
 * [Processing](voice/processing/processing.md)
-* [auto_cdr_processing](voice/auto_cdr_processing/auto_cdr_processing.md)
+* [Auto CDR Processing](voice/auto_cdr_processing/auto_cdr_processing.md)
 
 ##### [Administration](administration/administration.md)
 * [Main](administration/main/main.md)

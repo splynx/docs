@@ -1,7 +1,7 @@
 Auto processing
 ==========
 
-Now (from splynx 2.3) the Voice auto CDR processing is managed here. We can import a CDR's to charge the customer and print the register of calls in his invoice.
+The Voice auto CDR processing is managed here. We can import a CDR's to charge the customer and print the register of calls in his invoice.
 
 The process is similar to Voice/Processing/CDR import, but here we can import many CDR's together.
 
@@ -25,7 +25,7 @@ Here you need to set:
 
     * FTP - if you select "FTP" then you will need to set the same parameters as for "SFTP" but without RSA key
 
-    * Local - if you select "Local" than you will need to set only Title and Folder path
+    * Local - if you select "Local" then you will need to set only Title and Folder path
 
   * Folder path - set your path to folder
 

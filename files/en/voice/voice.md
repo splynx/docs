@@ -6,6 +6,7 @@ The new Voice Module is designed for customize the CDR processing according to y
 * [Rates](voice/rates/rates.md)
 * [Voice Categories](voice/voice_categories/voice_categories.md)
 * [Prefixes](voice/prefixes/prefixes.md)
+  * [Examples](voice/prefixes/examples/examples.md)
 * [Tariff Settings](voice/tariff_settings/tariff_settings.md)
 * [Processing](voice/processing/processing.md)
 * [Auto CDR Processing](voice/auto_cdr_processing/auto_cdr_processing.md)

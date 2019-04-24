@@ -11,7 +11,7 @@ Complete the fields.
 
 ![Create prefixes](./create_prefixes.png)
 
-* **Prefix** - Add the prefix using the patterns from "Examples"..
+* **Prefix** - Add the prefix using the patterns from "Examples".
 
   You can use phone patterns for match phone numbers group.
   Patterns are created with using special symbols. [Examples.](voice/prefixes/examples/examples.md)

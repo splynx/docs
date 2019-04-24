@@ -13,8 +13,8 @@ Complete the fields.
 
 * **Prefix** - Add the prefix using the following patterns
 
-You can use phone patterns for match phone numbers group.
-Patterns are created with using special symbols. [Examples.](voice/prefixes/examples/examples.md)
+  You can use phone patterns for match phone numbers group.
+  Patterns are created with using special symbols. [Examples.](voice/prefixes/examples/examples.md)
 
 * **Destination** - Field for identify which type of destination is that prefix, like international, fixed, mobile...etc.
 

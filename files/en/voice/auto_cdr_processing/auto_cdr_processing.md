@@ -44,10 +44,7 @@ Here you can set:
   * Import data source - select data source from the drop-down menu
 
   * File name pattern - Regex for filtering file names (uses pcre syntax):
-    Will process all the files that have pattern entrances in a file name.
-
-[Examples](voice/auto_cdr_processing/examples/examples.md)
-
+    Will process all the files that have pattern entrances in a file name. [Examples](voice/auto_cdr_processing/examples/examples.md).
 
   * First row contains column names - turn it on if the first row in your CDR's contains columns names
 

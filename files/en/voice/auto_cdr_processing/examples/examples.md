@@ -34,7 +34,7 @@ OR operator:| or []
 
 |Operator | Description                                                              |
 |---------|--------------------------------------------------------------------------|
-|a(b&#124;c)   | Matches a string that has a followed by b or c                           |
+|a(b&#124;c)   | Matches a string that has a followed by b or c                      |
 |a[bc]    | Same as previous                                                         |
 
 Character classes:

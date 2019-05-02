@@ -19,7 +19,7 @@ The following network management topics are described below:
 
 * [ Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
 
-* [ Routers settings](networking/router_settings/router_settings.md)
+* [ Routers settings](networking/routers_settings/routers_settings.md)
 
 * [ IP address management](networking/ip_address_maanagement/ip_address_maanagement.md)
 
@@ -31,8 +31,8 @@ The following network management topics are described below:
 
 * [ PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 
-* [Huawei gpon](networking/huawei_gpon/huawei_gpon.md)
+* [ Huawei gpon](networking/huawei_gpon/huawei_gpon.md)
 
-* [Radius proxy accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
+* [ Radius proxy accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 
-* [Radius customization](networking/radius_customization/radius_customization.md)
+* [ Radius customization](networking/radius_customization/radius_customization.md)

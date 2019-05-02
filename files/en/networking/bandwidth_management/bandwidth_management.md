@@ -5,7 +5,7 @@ Splynx has a powerful bandwidth management engine. Software can set the speed li
 
 * [ Capped plans and top up](networking/bandwidth_management/capped_plans/capped_plans.md)
 
-* [ Contention mananagement in Splynx](networking/bandwidth_management/contensions/contensions.md)
+* [ Contentions](networking/bandwidth_management/contentions/contentions.md)
 
 * [ Fair user policing](networking/bandwidth_management/fup/fup.md)
 

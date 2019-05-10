@@ -236,7 +236,7 @@ Table of contents
 * [PayU Africa](payment_systems/payu/payu.md)
 * [Paynow Zimbabwe](payment_systems/paynow/paynow.md)
 * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
-
+* [Payment-express](payment_systems/payment_express/payment_express.md)
 
 ##### Splynx High Availability setup
 * [Splynx High Availability setup](splynx_high_availability/splynx_high_availability.md)

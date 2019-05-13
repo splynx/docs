@@ -25,7 +25,7 @@ It can be configured under _Config / Main / Portal_:
 
 ### Mikrotik settings
 
-We use custom Hotspot HTML pages. You can download them here - [splynx-hotspot.zip](splynx-hotspot.zip)
+We use custom Hotspot HTML pages. You can download them here - [splynx-hotspot.zip](networking/authentication_users/mikrotik_hotspot_from_portal/splynx-hotspot.zip)
 
 1. Extract the archive.
 2. Replace http://example.com to your own Splynx URL in all HTML files. In Linux you can do it using `sed`. In the folder with HTML files, where zip archive was extracted, run in the terminal:

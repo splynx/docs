@@ -41,7 +41,7 @@ Customers can save pay-card details for the next payments in "Financ" menu:
 
 ![(image)](8.png)
 
-or he can add it, from payment window as on the screenshot:
+or he can add it, from payment window while paying invoices as on the screenshot:
 
 ![(image)](13.png)
 

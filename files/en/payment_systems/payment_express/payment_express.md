@@ -59,7 +59,7 @@ After that customers with billing type "Prepaid daily" will be able to refill ba
 
 ![(image)](11.png)
 
-Customers with other billing type canrefill balance by using the link - “http://yoursplynxurl/paymentexpress/"
+Customers with other billing type can refill balance by using the link - “http://yoursplynxurl/paymentexpress/"
 
 ![(image)](12.png)
 

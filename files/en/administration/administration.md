@@ -5,7 +5,7 @@ Administration settings are divided into _3 main sections_ with its subcategorie
 
 1. MAIN
    * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
-   * [Default roles in detail](administration/main/admins_and_permissions/admins_and_permissions/default_roles/default_roles.md)
+   * [Default roles in detail](administration/main/admins_and_permissions/default_roles/default_roles.md)
    * [Partners](administration/main/partners/partners.md)
    * [Locations](administration/main/locations/locations.md)
 

@@ -63,7 +63,7 @@ The user will be blocked and his internet traffic will be redirect to a Reject I
 
 
 #### Associate a dynamic IP to a client.
-<icon class="image-icon">![](warning_icon.png)</icon>This setup is not recommended to use.
+<icon class="image-icon">![](warning_icon.png)</icon> This setup is not recommended to use.
 
 To configure the Splynx Radius Server with the DHCP service, you should have DHCP server configured on the interface of your router. Select your DHCP server and make sure you have the option *"Use RADIUS"* flagged. In Address pool you have to select *"Static only"* (DHCP is going to get IP from the Splynx RADIUS server).
 ![DHCP](dhcp_conf.png)
@@ -93,17 +93,12 @@ IPv4 pool - the IP pool you want to be associate with the customer
 ![IP from pool](ip4pool.png)
 
 
-It is possible to get statistic from the DHCP dynamic assignment. Open your ssh client and connect to Splynx Radius Server, go to `/var/www/splynx/config`.
+It is possible to get statistic from the DHCP dynamic assignment. Open _Config / Networking / Radius extended_ and enable **DHCP (Add customer to online after login)**.  
 
-![SSH radius](ssh_radius.png)
+![Add customer to online after login](add_customer_to_online_after_login.png)
 
 
-Edit radius.php and set add_to_online value equal to true. Restart the Radius Daemon with
-```
-service splynx_radd restart.
-```
-
-![Radius PHP](radius_php.png)
+Restart the Radius Daemon with **Restart radius** button at the bottom.
 
 
 When customer has a dynamic IP, the API blocking will not work and you need to use a hack. Just go to the DCHP server parameters in your Mikrotik router and set *Lease Time* 1 day.

@@ -109,3 +109,15 @@ When customer has a dynamic IP, the API blocking will not work and you need to u
 In Splynx, click on ``Config → Networking → Radius`` and click on *Load*. In Rate-Limit attributes, add the string "Session-Timeout = 86400" (seconds in 24 hr).
 
 ![Seesion Timeout](session_timeout.png)
+
+
+#### Troubleshooting
+
+**Additional network issue**  
+If you set additional network(s) in Splynx internet service, network routes will be send to router (NAS) during authorization. Router will send all traffic with destination=additional network to the customer device.
+It can happen that these routes will also appear on the customer's device. To fix the situation set _use-framed-as-classless_ to _no_ in DHCP server settings.
+
+Example:  
+```
+ /ip dhcp-server set use-framed-as-classless=no [find name=dhcp1]
+```

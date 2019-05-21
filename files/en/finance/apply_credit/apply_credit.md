@@ -1,4 +1,4 @@
-How to apply Credit on future invoices
+How to apply Credit to future invoices
 ====================================
 
 Sometimes your customer has a positive account balance, it is not enough for the next payment, but he wants to use it to reduce the invoice amount.

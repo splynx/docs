@@ -25,4 +25,4 @@ Please, follow the links below to find tutorial page about each feature of Finan
 
 * [ Change service](finance/change_service/change_service.md)
 
-* [ Apply credit](finance/apply_credit/apply_credit_on_future_invoices.md)
+* [ Apply credit](finance/apply_credit/apply_credit.md)

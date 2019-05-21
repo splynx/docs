@@ -44,6 +44,7 @@ Table of contents
 * [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
 * [Refill cards](finance/refill_cards/refill_cards.md)
 * [Change service](finance/change_service/change_service.md)
+* [Apply credit](finance/apply_credit/apply_credit_on_future_invoices.md)
 
 ##### Inventory
 * [Inventory](inventory/inventory.md)

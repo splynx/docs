@@ -79,6 +79,6 @@ By clicking on a `Type` option on the top right corner and you can check all tem
 ![Creating template](create_template.png)
 
 
-You can also edit existing template or delete it by clicking on options ![Edit](edit_button.png) and ![Delete](delete_button.png) in Operations column of the table.
+You can also edit existing template or delete it by clicking on options <icon class="image-icon">![Edit](edit_button.png)</icon> and <icon class="image-icon">![Delete](delete_button.png)</icon> in Operations column of the table.
 
 ![Editing template](editing_template.png)

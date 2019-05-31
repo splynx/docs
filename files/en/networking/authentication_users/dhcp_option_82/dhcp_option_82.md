@@ -79,7 +79,7 @@ nano /etc/freeradius/sites-enabled/control-socket
 ```
 3. Reload freeradius service to apply changes:
 ```bash
-systemctl reload freeradius
+systemctl restart freeradius
 ```
 
 Then you can run `raddebug` in terminal to see freeradius debug messages:

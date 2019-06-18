@@ -9,9 +9,6 @@ To add CPE choose the Customer who owns this equipment and set IP and Login/Pass
 
 ![Customer](select_customer.png)
 
-![CPE](cpe_tab.png)
-
-
 If all data is correct, you will see the signal of CPE.
 
 ![Signal strength](signal_strength.png)
@@ -45,7 +42,7 @@ Another feature is managing of CPE status, it shows information about API status
 
 It's posible to see information about rates, data trasmited/recieved, erros and status.
 
-![WLAN1](wlan1.png)
+![ETH1](eth1.png)
 
 
 Finally, you can enable DHCP server from CPE and set interface, network, pool and other features.

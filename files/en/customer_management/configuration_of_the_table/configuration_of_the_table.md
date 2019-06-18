@@ -7,6 +7,10 @@ Click on <icon class="image-icon">![...](change_column_sorting.png)</icon> below
 
 ![Table view](table_view.png)
 
+![Select customers](customer_multi_choice.png)
+
+Also you can choose few customers and make some changes for them(change status, location, partner, type etc.) or send message for selected customers.
+
 ![Show column](show_column.png)
 
 

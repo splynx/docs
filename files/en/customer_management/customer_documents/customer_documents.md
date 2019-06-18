@@ -19,9 +19,7 @@ A soon as file will be uploaded it will also appear in a list of Documents.
 
 ![Document title](document_title.png)
 
-In Operations column of the table will be additional options of using this file, such as `Edit` <icon class="image-icon">![Edit](edit_button.png)</icon> , `View` <icon class="image-icon">![View](view_button.png)</icon> , `Download` <icon class="image-icon">![Download](download_button.png)</icon> , `Send to a customer` <icon class="image-icon">![Send to a customer](send_button.png)</icon>  and `Delete` <icon class="image-icon">![Delete](delete_button.png)</icon>.
-
-![Buttons list](buttons_list.png)
+In Operations column of the table will be additional options of using this file, such as `Edit` , `View` , `Download` , `Send to a customer` and `Delete` <icon class="image-icon">![Delete](view_add_delete_edit_download_button.png)</icon>.
 
 Once file had been uploaded it will also appear in Customer portal if option `Visible by customer` was turned on. Customer will find it in Documents section.
 
@@ -41,12 +39,6 @@ Another way to have files in Documents section is by generating them. To generat
 There are to options to generate the body of the document:
 
 * It is possible to simply type it in the text area window and then click on `Generate` or `Save as a new` template (option above the text area).
-
-  ![Generate document](generate_document0.png)
-
-  There are here text formatting and editing tools, where you can not only choose a size of the letters, font or colour of the text but also insert the image or URL link, or print the document. You can also see the Preview of the document before generating by clicking on a `Preview option` on the left side of the text area.
-
-  ![Preview document](preview_document_button.png)
 
   As soon as document will be generated it will appear in the list of documents in a table.
 
@@ -69,7 +61,7 @@ Before using Templates it is necessary **to configure** them first  in `Config â
 
 ![Template icon](template_menu_icon.png)
 
-By clicking on a `Type` option on the top right corner and you can check all templates you've already have in each category such as `Customer portal`, `Invoice PDF`, `Mail`, `SMS`, `Documents`, `Cards`, `Payment calendars`.
+By clicking on a `Type` option on the top right corner and you can check all templates you've already have in each category such as `Customer portal`, `Invoice PDF`, `Mail`, `SMS`, `Documents`, `Cards`, `Payment calendars` etc.
 
 ![Template's types](template_types.png)
 

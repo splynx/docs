@@ -11,17 +11,15 @@ To add a customer, click on the _Customers Menu → + Add_. The window will pop 
 * `Email` - email of the customer
 * `Phone Number` - phone number of the customer
 * `Category` - if customer is a private person or a company
-* `Birthday` - birthday of the customer
+* `Date of birth` - birthday of the customer
 * `Passport` - passport of the customer
 * `Partner` - partner of the customer
 * `Location` - location of the customer
-* `Date add` - the date when the customer has been added
+* `Date added` - the date when the customer has been added
 * `Street` - Street of the customer
 * `ZIP code` - ZIP code of the customer
 * `City` - city of the customer
-* `Contract ID` - contract ID of the customer
-* `Custom Status` - the options are: customer, deactivated, new
-* `VAT ID` - the vat ID
+* `Geo Data` - physical coordinates of the customer
 
 Login and password are created based on pattern.
 

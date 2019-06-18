@@ -18,6 +18,7 @@ Customer information is divided into _Main information_ and _Additional informat
 * Street - Street of the customer
 * ZIP code - ZIP code of the customer
 * City - city of the customer
-* Date Add - when the customer has been added
+* Geo data - physical coordinates of the customer
+* Date Added - when the customer has been added
 
 It is possible to create additional field with the function [Additional fields](customer_management/custom_additional_fields/custom_additional_fields.md).

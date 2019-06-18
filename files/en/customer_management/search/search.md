@@ -21,11 +21,11 @@ Here you will be able to use different parameters for the search, such as:
 * **Type of billing** - it can be Recurring Payments, Prepaid, Select all (to select all options).
 * **Email** - email of the customer.
 * **Phone Number** - phone number of the customer.
-* **Date add** - the date when the customer has been added into database.
+* **Date added** - the date when the customer has been added into database.
 * **Category** - the options are: Private person,  Company, Select all (to select all options).
 * **Partner** - one of the partners created or all of them.
 * **Location** - location of the customer.
-* **Tariff** - the tariff created
+* **Tariff plans** - the tariff created
 * **Service** - the options are: Internet, Voice, Custom.
 
 
@@ -34,7 +34,7 @@ To get a more customizable search, you can click on `My Profile Menu → Custome
 ![Customer search fields](customer_search_fields.png)
 
 
-To search a card click on the Customers `Menu → Cards →  Search`. It is possible to do a search in the Prepaid cards database with that option.
+To search a vouchers click on the Customers `Menu → Vouchers →  Search`. It is possible to do a search in the Prepaid vouchers database with that option.
 
 ![Card search](card_search.png)
 
@@ -42,15 +42,15 @@ To search a card click on the Customers `Menu → Cards →  Search`. It is poss
 Different parameters for searching here can be used, such as:
 
 * **ID** - ID of the customer
-* **Serie** - the card's serie
-* **Prefix** - the card's prefix
+* **Serie** - the voucher's serie
+* **Prefix** - the voucher's prefix
 * **Status** -  the options are: New, Active, Expired, Used, Disabled, Online, Select all
 * **Full name** - name of the owner
 * **Phone** - phone number of the owner
 * **Email** - email of the owner
 * **Seller name** - name of the seller
 * **Partner** - name of the partner
-* **Location** - location where the customer's card is based
+* **Location** - location where the customer's voucher is based
 
 ## Search inside a table
 

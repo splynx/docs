@@ -11,7 +11,7 @@ A Side panel of customer's account in portal can display following Modules:
 
 * **Statistics** - shows statistic of the services customer is using. In the top-right corner of the screen customer can choose type of the service to be displayed in statistics and period of time.
 ![Statistics](statistics.png)
-
+![Statistics_voice](voice_statistics.png)
 
 * **Services** - show all customer's services such as Internet, Voice or Custom services.
 ![Services](services.png)
@@ -54,7 +54,10 @@ Here customer can also create and submit a new ticket by clicking on Create tick
 4. Profile
 5. Statistics
 6. Services
-7. Finance
-8. Additional attributes in profile.
-
+7. TOP-UP settings
+8. Manual TOP-UP
+9. Finance
+10. Logout timeout
+11. Hotspot
+12. Additional attributes in profile.
 Detailed information about configuring Customer Portal can be found here - Portal. [Portal](configuration/configuration.md)

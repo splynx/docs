@@ -40,8 +40,8 @@ In **Actions section** you can see the type of customer's payment account with h
 ![Actions](actions.png)
 
 
-It is possible **to charge the customer manually** with the action `To charge`.
-Select date and period of charging, click on `Preview` to see services description and click on `To charge`.
+It is possible **to charge the customer manually** with the action `Charge & Invoice`.
+Select date and period of charging, click on `Preview` to see services description and click on `Charge & Invoice`.
 
 The system will automatically charge the customer, and it will be shown as a new transaction in the transaction's table.
 
@@ -69,6 +69,9 @@ In *Actions section* you can also generate a *Payment calendar* for the customer
 
 ![Payment calendar](payment_calendar.png)
 
+By default payment calendar generating is disabled. To enable it you need to activate switcher in `Config -> Finance -> Settings`.
+
+![Enable payment calendar](enable_payment_calendar.png)
 
 In **Proforma Invoice settings** is possible to enable Auto proforma invoices creation for the current or next month with choosing a prepay type (up to 12 months).
 

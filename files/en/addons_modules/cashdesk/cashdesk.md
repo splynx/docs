@@ -46,7 +46,7 @@ Later, you can increase or decrease the amount of the deposit
 
 ![6.jpg](6.png)
 
-After clicking the [history] button you can view the history of the deposit changes
+After clicking the [Deposit History] button you can view the history of the deposit changes
 
 ![7.jpg](7.png)
 
@@ -70,7 +70,7 @@ After:
 
 ![12.jpg](12.png)
 
-When the payment has been added, it appears in Splynx as a new transaction and also as a payment with comment, entered in Cashdesk.
+When the payment has been added, it appears in Splynx as a new transaction and a payment and also as a invoice .
 
 ![13.jpg](13.png)
 

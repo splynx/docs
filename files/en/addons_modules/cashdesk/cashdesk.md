@@ -32,6 +32,7 @@ To create a cashdesk user it’s needed to create an administrator and enabled C
 ![1.jpg](1.png)
 
 Add access privileges for cashdesk-module to the superadministrator - enable CashDesk in superadministrator account.
+![Super_admin](super_admin.png)
 
 When the Cashdesk is installed, it’s available on "http://yoursplynxurl/cashdesk".
 

@@ -3,6 +3,10 @@ Google maps add-on
 
 Google maps is a Splynx add-on. It's used to help you understand where are your customers, routers, monitoring devices located
 
+From Splynx version 2.3 we are using built in maps(OpenStreetMaps. GoogleMaps, BingMaps). You can configure it on _"Config / Main / Preferences / Mappings"_ . For using Google Maps you just need to set up Google Maps API Key and save config.
+
+![config_preferences_mappings.png](config_preferences_mappings.png)
+
 To install google maps add-on please enter the command:
 
 ```bash
@@ -56,22 +60,28 @@ You can edit coordinate pointers of routers and monitoring devices in the same w
 
 ![gm_monitoring_device.png](gm_monitoring_device.png)
 
+![router_view.png](router_view.png)
+
 ### How to create Google Maps API key
 
 Open [https://developers.google.com/maps/documentation/embed/get-api-key?pli=1#detailed-guide](https://developers.google.com/maps/documentation/embed/get-api-key?pli=1#detailed-guide)
 
-![Selection_191.png](Selection_191.png)
+![get_key1.png](get_key1.png)
 ---
-![Selection_182.png](Selection_182.png)
+![get_key2.png](get_key2.png)
 ---
-![Selection_183.png](Selection_183.png)
+![get_key3.png](get_key3.png)
 ---
-![Selection_184.png](Selection_184.png)
+![get_key4.png](get_key4.png)
 ---
-![Selection_185.png](Selection_185.png)
+![get_key5.png](get_key5.png)
 ---
-![Selection_186.png](Selection_186.png)
----  
-![Selection_189.png](Selection_189.png)
+![get_key6.png](get_key6.png)
 ---
-![Selection_190.png](Selection_190.png)
+![get_key7.png](get_key7.png)
+---
+![get_key8.png](get_key8.png)
+
+![get_key9.png](get_key9.png)
+---
+![get_key10.png](get_key10.png)

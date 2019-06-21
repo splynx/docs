@@ -37,10 +37,11 @@ If you do not have Google API key, then go to Google API portal ([https://develo
 To see map - go to _"Customers / Maps"_
 
 ![gm_general_map.png](gm_general_map.png)
+* **NOTE** you can see "For development purposes only" signatures on map view because of our key what we used(it's only for development purposes).
 
 Here you can see coordinate pointers of your customers, routers, monitoring devices. You can apply filters to see only what you need. Customer pointers have different colors. It depends of the customer status (new, active, online, blocked, inactive). You can click on the pointer to see an additional information. Router and monitoring device **can have only one** coordinate pointer. But customer **can have several pointers**.
 
-To edit customer coordinate pointers - open information tab of the customer, press "View/Set"
+To edit customer coordinate pointers - open information tab of the customer, press "View/Set" on Additional Information section, field "GPS".
 
 ![gm_customer.png](gm_customer.png)
 

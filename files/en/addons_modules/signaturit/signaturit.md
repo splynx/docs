@@ -30,11 +30,11 @@ or oyu can install it from Web UI:
 
 _Config -> System -> Signaturit Config_
 
-![image2017-8-18_12-18-9.png](image2017-8-18_12-18-9.png)
+![config-signaturit.png](config-signaturit.png)
 
 4. To be able to send document to the customer you should generate templates from SignaturIt (1) or Splynx (3) or upload them (2) from computer:
 
-![image2017-8-18_12-18-46.png](image2017-8-18_12-18-46.png)
+![customer_documents.png](customer_documents.png)
 
 4.1. **To generate document from SignaturIt-template** you have to prepare its template in _SignaturIt-templates_:
 
@@ -42,11 +42,11 @@ _Config -> System -> Signaturit Config_
 
 And add at least one field in _Config → SignaturIt Config → Template_:
 
-![image2017-8-18_12-19-40.png](image2017-8-18_12-19-40.png)
+![edit_template.png](edit_template.png)
 
 Then you can send it:
 
-![image2017-8-18_12-19-57.png](image2017-8-18_12-19-57.png)
+![customer_generate_document.png](customer_generate_document.png)
 
 Your signature:
 
@@ -54,7 +54,7 @@ Your signature:
 
 4.2. **To upload the document from PC** click on "_Upload_" icon and in a window poped-up choose the file you'd like to be uploaded:
 
-![image2017-8-18_12-20-58.png](image2017-8-18_12-20-58.png)
+![upload_doc.png](upload_doc.png)
 
 Then click on icon "_Send to signature_" and _“Send”_.
 

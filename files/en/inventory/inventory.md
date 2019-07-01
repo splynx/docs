@@ -24,6 +24,7 @@ For example: «TP-Link TL-WR841N» with serial number 00-11-22-33. You can manag
 ## Vendors
 
 In menu – `Inventory/Supply/Vendors`
+
 ![Vendors](vendors.png)
 
 You can create new vendor via button «Add vendor»
@@ -63,6 +64,7 @@ Only field **«Name»** is required.
 ## Supplier invoices
 
 `Inventory/Supply/Supplier Invoices`
+
 ![Supplier invoices](supplier_invoices.png)
 
 
@@ -97,15 +99,17 @@ After creating invoice – items of selected products will be added to the syste
 
   ![Items](items.png)
 
-  To add a new item just press the button "Add" and select the needed option for one or multiple items.
-  ![Add Items](add_items.png)
-  ![Add items box](add_items_box.png)
-
   You can edit some additional information or edit existing here. Press edit button for this.
 
   ![Edit item](edit_item.png)
 
   If you add some photo for the item, it will override a «global» photo of a product (if product has it).
+
+  To add a new item just press the button "Add" and select the needed option for one or multiple items.
+  ![Add Items](add_items.png)
+
+  ![Add items box](add_items_box.png)
+
 
   If you want to manage some item(s) – you have to check it <icon class="image-icon">![Checkbox](checkbox_icon.png)</icon> and press the **"Actions"** button <icon class="image-icon">![Action button](action_button.png)</icon> to select one of the desired options.
   ![Manage items](manage_items.png)
@@ -123,9 +127,11 @@ After creating invoice – items of selected products will be added to the syste
 
 * **Rent** – rent the item to the customer
 Before you can rent some item to the customer – you must create a custom service for this! (`Tariff plans/Custom/Add plan`)
+
 ![Create plan](create_plan.png)
 
   Then to rent some item – go to the items, check it, press «Rent» in the section "Actions" <icon class="image-icon">![Action button](action_button.png)</icon>
+
   ![Rent service](items_rent_1.png)
   ![Create service](items_rent_2.png)
 
@@ -153,9 +159,11 @@ Before you can rent some item to the customer – you must create a custom servi
 ## Customers
 
 When you rent or sell your products to customers you can see it in customer info
+
 ![Customer](customer.png)
 
 If you rent some item – customer can see it at the portal (in the section "Services")
+
 ![Custom service](custom_service.png)
 
 Also, you can see the video description of Inventory feature in use:

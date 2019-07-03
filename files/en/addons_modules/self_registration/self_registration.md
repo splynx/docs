@@ -34,7 +34,7 @@ You need to enable **Entry points status for portal** in **Main information** se
 
 You may enable or disable **Entry Points**. There are two entry points in configuration.
 
-![Edit_entrypoint.png](Edit_etrypoint.png)
+![Edit_entry.png](Edit_entry.png)
 
 The first one provides ability to sign-in to Splynx-portal using social networks.
 

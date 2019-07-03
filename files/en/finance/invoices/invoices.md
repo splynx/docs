@@ -81,8 +81,6 @@ Another way to **create Invoices** is to use  on *Add One-Time invoice* or *Add 
 
 To edit an invoice with <icon class="image-icon">![Edit icon](editinvoice.png)</icon> icon, click on the tab `Billing → Invoices`.
 
-![Edit invoice](edit_invoice.png)
-
 
 It is also possible to send the invoice via email with <icon class="image-icon">![Send invoice](send_invoiceviamail.png)</icon> icon (if the email server is [configured](configuration/main_configuration/email_config/email_config.md)) in `Billing → Invoices`.
 You can write a message body or choose it from templates and load it.

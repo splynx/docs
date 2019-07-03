@@ -19,8 +19,8 @@ The dashboard also includes the following mini reports:
 
 In particular, it shows the current month and last month statistics.
 
-![Finance dashboard](finance_dashboard_1.png)
-![Finance dashboard](finance_dashboard_2.png)
+![Finance dashboard](finance_dashboard_1.jpg)
+![Finance dashboard](finance_dashboard_2.jpgg)
 
 
 ## Recurring billing engine

@@ -15,36 +15,36 @@ A window will pop up and it will be possible to select the service.
 
 
 * **Plan** - the tariff (`Internet`, `Voice`, `Custom`)
-* **Description** - a description of the tariff
-* **Quantity** - the quantity
-* **Unit** - a unit of measurement is a definite magnitude of a quantity (is using for invoices - for example: m., ft, ...)
-* **Price** - the price
+* **Description** - a description of the tariff (optional)
+* **Quantity** - the quantity of the service
+* **Unit** - a unit of measurement is a definite magnitude of a quantity (if using for invoices - for example: m, ft, etc.)
+* **Price** - the price (custom price can be used that differs from service price)
 * **Pay period** - pay period for this service
 * **Start date** - when the service will start
 * **End date** - when the service will end
 * **Discount** - it is possible to set a discount with the percentage, start and end dates of the discount
 * **Status** - the options are `Active`, `Disabled`, `Stopped`, `Pending`, `Archived`.
-  * **Active** - Usual status for work.
-  * **Disabled** - Service with data end reached. We suppose that customer will not longer use the service.
+  * **Active** - Status that client needs to be on to function.
+  * **Disabled** - Status when data cap has been reached. Can also be used when assuming that customer will no longer use the service.
   * **Stopped** - Used to temporary disable the service. Will be set automatically if customer status is changed to Inactive, when customer will be activated, service status will be automatically changed to Active.
 
-  * **Pending** - Waiting when will be activated.
-  * **Archived** - Only for future information.
+  * **Pending** - Status while we wait for another service to activate.
+  * **Archived** - Archived for future information.
 
 
-***Tariffs options***
-* **Router** - we can select the router
+***Tariff options***
+* **Router** - The router that API will use to connect to (for all API functions - Shaping, contention, address lists)
 
-   <icon class="image-icon">![Warning](warning.png)</icon> This field is required when Mikrotik API are used.
+  <icon class="image-icon">![Warning](warning.png)</icon> This is only required when using API authentication methods in [Networking settings](networking\routers_settings\routers_settings.md)
 
 
-* **Login** - the login. Login must be unique in active services
+* **Login** - the login used in services such as PPPoE or Hotspot. Login must be unique in active services.
 
-* **Password** - the password
+* **Password** - the password used in services
 
-  <icon class="image-icon">![Warning](warning.png)</icon> If you create a service with an empty password, the password will be really empty but during authorization customer's password will be used.
+  <icon class="image-icon">![Warning](warning.png)</icon> If you don't create a password the password from the Main Information page will be used.
 
-* **Taking IPv4** - the options are None, Permanent IP, Dynamic IP
+* **IPv4 Assignment Method** - the options are None (Router will assign), Permanent IP, Dynamic IP. (Make sure the IP's network is the same type of assignment when creating it in IPv4 manager)
 
 * **Mac(s)** - MAC address(es). Separated by comma.
 
@@ -53,7 +53,6 @@ A window will pop up and it will be possible to select the service.
 * **Port ID** - the port ID
 
 
-You can edit **tariff/service**, check its statistic, see the graph of services or delete them by these actions <icon class="image-icon">![Services actions](services_actions.png)</icon>
-
+You can **edit** a service, **schedule a future change**, **change** the plan, view the **graph** for the service, apply **additional discounts**, **delete** or **geolocate** the service by these actions. <icon class="image-icon">![Services actions](services_actions.png)</icon>
 
 ![Actions table](actions_table.png)

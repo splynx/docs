@@ -82,13 +82,13 @@ Prepaid billing is used when ISP charges customer in advance and provide him acc
 
 The next step is to choose *Payment method*,  such as Cash, Bank Transfer, Credit Card, PayPal, Refill Card, BrainTree and others.
 
-![Payment method](payment_method_prepaid.png)
+![Payment method](payment_method_2.png)
 
 
 Then we define what is the value of customer’s balance when Splynx will block his access to internet.
 By default it is set to “0”, but it can be changed in configuration of each customer inside of the field “Minimal balance”.
 
-![Minimal balance](minimal_balance_2.png)
+![Minimal balance](minimal_balance_prepaid.png)
 
 Starting from Splynx v.2.3 it is possible to charge customers **daily, monthly or by any custom period (like one week)**  with the custom prepaid plans.
 

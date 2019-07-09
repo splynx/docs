@@ -12,7 +12,7 @@ username=&password=&message=%MESSAGE%&msisdn=%TO%&concat_text_sms_max_parts=4
 and you will get a successful response:
 0|IN_PROGRESS|
 
-It is necessary to configure SMS first in `Config → Main Configuration` → SMS before sending SMS to the customer. More information about SMS configuration you can find on our tutorial page - [SMS config](configuration/main_configuration/sms_config/sms_config.md).
+It is necessary to configure SMS first in `Config → Main Configuration → SMS` before sending SMS to the customer. More information about SMS configuration you can find on our tutorial page - [SMS config](configuration/main_configuration/sms_config/sms_config.md).
 
 To create SMS click on **Create** in `Support → Messages`. The window will pop-up with the following fields:  
 

@@ -1,11 +1,11 @@
 Tickets
 =======
 
-**ADMINISTRATORS**
-
 Splynx is a complete solution that allows ISPs to manage a lot of business processes in one place instead of switching across different platforms. We brought our ticketing system to the next level in the v.2.3.  
 
 Ticketing platform is tailored to telecoms-specific needs, this means that you can do much more than just replying to the emails. Assign the tickets to the right person,  prioritize the work and schedule the tasks for the technicians and much more.
+
+**ADMINISTRATORS**
 
 **Dashboard**
 

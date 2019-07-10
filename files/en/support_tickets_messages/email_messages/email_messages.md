@@ -1,11 +1,11 @@
 Email messages
 ==============
 
-Messages' option in Support → Messages allows you to send an email to the customer directly from Splynx using different templates and attaching financial or other documents.
+Messages' option in `Support → Messages` allows you to send an email to the customer directly from Splynx using different templates and attaching financial or other documents.
 
 ![Main window](./main_window.png)
 
-It is necessary to configure email first in Config → Main Configuration → Mail before sending email to the customer. More information about email configuration is here - [Email config](configuration/main_configuration/email_config/email_config.md).
+It is necessary to configure email first in `Config → Main Configuration → Mail` before sending email to the customer. More information about email configuration is here - [Email config](configuration/main_configuration/email_config/email_config.md).
 
 **To create an email** click on Create in Support → Messages. The window will pop-up with the following fields:  
 
@@ -94,7 +94,7 @@ By clicking on *View* <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> 
 
 ![View message](./view_message.png)
 
-All emails have been sent will be possible to check in Support → Messages → History. You can sort them by their status (Any, New, Processing, Sent, Cancelled, Removed, Sent with error) or period of time (Today, Yesterday, Last 7 days, This month, Last month, Custom Range).
+It is possible to track all emails that were sent in `Support → Messages → History`. You can sort them by their status (Any, New, Processing, Sent, Cancelled, Removed, Sent with error) or period of time (Today, Yesterday, Last 7 days, This month, Last month, Custom Range).
 
 ![History](./history.png)
 
@@ -102,6 +102,6 @@ By clicking on actions <icon class="image-icon">![ViewIcon2](./icon2.png)</icon>
 
 ![Customer's list](./customers_list.png)
 
-It is also possible to check all recipients list by their IDs and Email addresses in Administration → Logs → Email, where you can set a particular period, type of email message or status.
+It is also possible to check all recipients list by their IDs and Email addresses in `Administration → Logs → Email`, where you can set a particular period, type of email message or status.
 
 ![Recipients](./recipients.png)

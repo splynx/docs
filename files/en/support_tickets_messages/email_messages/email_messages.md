@@ -70,7 +70,7 @@ It is not necessary to fill in all fields to send an email to the customer. The 
 
 ![New email](./new_email.png)
 
-You can check your message before sending by clicking on Preview option at the bottom of the page.
+You can check your message before sending it by clicking on Preview option at the bottom of the page.
 
 ![Preview](./preview.png)
 

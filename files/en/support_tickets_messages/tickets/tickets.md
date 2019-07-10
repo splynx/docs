@@ -1,8 +1,7 @@
 Tickets
 =======
 
-Administrators
----
+**ADMINISTRATORS**
 
 Splynx is a complete solution that allows ISPs to manage a lot of business processes in one place instead of switching across different platforms. We brought our ticketing system to the next level in the v.2.3.  
 
@@ -80,8 +79,7 @@ Once the ticket has been resolved, you can change the status on *closed* and clo
 
 ------
 
-Customers
----
+**CUSTOMERS**
 
 Your customer can create a ticket in three ways:
 

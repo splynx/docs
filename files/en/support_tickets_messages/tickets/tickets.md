@@ -1,13 +1,14 @@
 Tickets
 =======
 
-####Administrators
+Administrators
+---
 
 Splynx is a complete solution that allows ISPs to manage a lot of business processes in one place instead of switching across different platforms. We brought our ticketing system to the next level in the v.2.3.  
 
 Ticketing platform is tailored to telecoms-specific needs, this means that you can do much more than just replying to the emails. Assign the tickets to the right person,  prioritize the work and schedule the tasks for the technicians and much more.
 
-#Dashboard
+**Dashboard**
 
 ![Dashboard](dashboard.png)
 
@@ -25,7 +26,7 @@ The administrator creates the tickets in 2 ways:
 
 ![Create_ticket](admin_create_2.png)
 
-After this you will be redirected to the 'Create ticket' window where the following options are available:
+After this you will be redirected to the *'Create ticket'* window where the following options are available:
 
 ![New ticket](create_ticket.png)
 
@@ -42,7 +43,7 @@ It is possible to add a canned response to the message body to optimize the prod
 
 ![Canned response](canned_response.png)
 
-New canned responses can be added by clicking Add response button
+New canned responses can be added by clicking **Add response** button
 
 ![Canned response](canned_add_1.png)
 
@@ -79,7 +80,8 @@ Once the ticket has been resolved, you can change the status on *closed* and clo
 
 ------
 
-####Customers
+Customers
+---
 
 Your customer can create a ticket in three ways:
 

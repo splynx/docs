@@ -31,7 +31,7 @@ Config → Integrations → Add-ons:
 
 ![4.png](4.png)
 
-![5.png](5.png)
+![install.png](install.png)
 
 #### Activate developer’s tool in your PayPal account.
 Get the access to your business PayPal account on website https://developer.paypal.com
@@ -50,28 +50,37 @@ When you got the ClientID and Secret, you can put it to Splynx server and connec
 #### Configure Splynx to work with your PayPal account.
 
 You should go to `Config/Modules/List` and click edit Splynx PayPal addon:
-![Edit addon](8.jpg)
+![Edit.png](edit_module.png)
 
 where you can find Common settings and Partners settings:
 
-![Common settings](9.png)
+![Common settings](settings1.png)
+![Common settings](settings2.png)
 
 for each partner you can use own settings!
 
 ---
 #### Also on this page you can enable widgets for the customer portal.
+Press "Entry points" button:
+![Common settings](entry_points.png)
 
-One
-![Enable widget](widget1_enable.png)
+First widget(Point) configuration:
+![Enable widget](edit_entry1.png)
 
-![Enable widget](widget1.png)
+Point 1 on customer portal page:
+![Common settings](portal_entry1.png)
 
+Second widget(Point) configuration:
+![Enable widget](edit_entry2.png)
 
-Another (only for customers with *type of billing -> Prepaid (Daily)* )
-![Enable widget](widget2_enable.png)
+Point 2 on customer portal page:
+![Common settings](portal_entry2.png)
 
-![Enable widget](widget2.png)
+##### NOTE: Point 2 will be visible only for customers with *type of billing -> Prepaid (Daily)*
+
+Pay invoices with PayPal:
+On customer portal page go to `Finance/Invoices` select unpaid invoice and click a button "pay with PayPal"
+![Pay invoice](portal_invoices.png)
+![Pay invoice](pay_with_paypal.png)
 
 You can allow customers with billing type *Prepaid (Monthly)* use last widget. To do this, code should be modified. Replace `if customer.billing_type == 'prepaid'` to `if customer.billing_type == 'prepaid_monthly' or customer.billing_type == 'prepaid'`:
-
-![Enable widget](widget2-custom.png)

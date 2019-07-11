@@ -3,7 +3,7 @@ Paypal payments
 
 You can receive payments via PayPal using Splynx. Splynx generates invoices for services that are sent to customer’s email and to Splynx portal. From Splynx portal customer can pay the invoice using Paypal.
 
-![Invoices](1.png)
+![Invoices](portal_invoices.png)
 
 
 When customer clicks the PayPal button and applies to pay now, he is transferred to the PayPal page to make the payment.

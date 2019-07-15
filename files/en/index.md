@@ -31,8 +31,7 @@ Table of contents
 * [CPE management](customer_management/cpe_management/cpe_management.md)
 * [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
 
-##### Customer Portal
-* [Customer Portal](customer_portal/customer_portal.md)
+##### [Customer Portal](customer_portal/customer_portal.md)
 
 ##### [Finance](finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
@@ -46,8 +45,7 @@ Table of contents
 * [Change service](finance/change_service/change_service.md)
 * [Apply credit](finance/apply_credit/apply_credit.md)
 
-##### Inventory
-* [Inventory](inventory/inventory.md)
+##### [Inventory](inventory/inventory.md)
 
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
@@ -99,6 +97,8 @@ Table of contents
 * [SMS messages](support_tickets_messages/sms_messages/sms_messages.md)
 * [Tickets](support_tickets_messages/tickets/tickets.md)
 * [News](support_tickets_messages/news/news.md)
+
+##### [Scheduling](scheduling/scheduling.md)
 
 ##### [Voice](voice/voice.md)
 

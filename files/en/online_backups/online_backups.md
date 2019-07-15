@@ -9,7 +9,7 @@ Backups are created automatically every 6 hours and sent to the cloud for storag
 
 
 To configure this feature the best way is to install the **splynx-remote-support** plugin.
-([how to install it?](addons_modules/splynx_remote_support/splynx_remote_support))
+([how to install it?](addons_modules/splynx_remote_support/splynx_remote_support.md))
 
 >This plugin uses [Burp](https://github.com/grke/burp) inside a secure tunnel for data transmission.
 

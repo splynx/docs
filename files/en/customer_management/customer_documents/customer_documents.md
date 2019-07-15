@@ -71,7 +71,6 @@ You can use the `Check Code`, `Preview` and `Placeholders` buttons to check the 
 
 ![Creating template](create_template.png)
 
-
 You can also edit existing templates or delete them by clicking on options ![Edit](edit_button.png) and ![Delete](delete_button.png) in Actions column of the table.
 
 ![Editing template](template_edit_delete_actions.png)

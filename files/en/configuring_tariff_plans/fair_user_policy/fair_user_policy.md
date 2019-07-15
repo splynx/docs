@@ -68,7 +68,7 @@ Below are examples of default accounting of tariff & online time rules:
 * Traffic consumption of your customers will be accounted from 08:00 to 02:00
 * Online time consumption of your customers will be accounted from 10:00 to 02:00
 
-![Screenshot_2017-07-28_at_04.24.03_PM.png](Screenshot_2017-07-28_at_04.24.03_PM.png)
+![Selection_544.png](Selection_544.png)
 
 _Overriding accounting configuration per rule:_
 
@@ -95,20 +95,20 @@ _<u>Examples of accounting of traffic & online time rules are shown below</u>_:
 * Traffic consumption of your customers will be accounted from 08:00 to 02:00
 * Online time consumption of your customers will be accounted from 10:00 to 02:00
 
-![Screenshot_2017-07-28_at_04.26.23_PM.png](Screenshot_2017-07-28_at_04.26.23_PM.png)
+![Selection_548.png](Selection_548.png)
 
 Here are some previews explaining logic of work:
 
-![Screenshot_2017-07-28_at_04.27.07_PM.png](Screenshot_2017-07-28_at_04.27.07_PM.png)
+![Selection_549.png](Selection_549.png)
 
 <u>Rule #1</u>: Override accounting is enabled, accounting of traffic is enabled, accounting of online time is enabled
 
-![Screenshot_2017-07-28_at_04.26.53_PM.png](Screenshot_2017-07-28_at_04.26.53_PM.png)
+![Selection_550.png](Selection_550.png)
 
 <u>Rule #2</u>: Override accounting is disabled
 
-![Screenshot_2017-07-28_at_04.27.33_PM.png](Screenshot_2017-07-28_at_04.27.33_PM.png)
+![Selection_551.png](Selection_551.png)
 
 <u>Rule #3</u>: Override accounting is enabled, accounting of traffic is enabled, accounting of online time is enabled:
 
-![Screenshot_2017-07-28_at_04.27.47_PM.png](Screenshot_2017-07-28_at_04.27.47_PM.png)
+![Selection_552.png](Selection_552.png)

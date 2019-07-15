@@ -1,7 +1,7 @@
 News
 ====
 
-News feature will help you to provide your customer an updated information on services or some business aspects of your company.
+News feature will help you to provide your customers an updated information about services or some business aspects of your company.
 
 **To create News** go to *Support → News* and click on *Add News* on the top right of the table.
 
@@ -27,7 +27,7 @@ It is also possible **to sort the news** by the Partner or Location.
 
 ![Sort news](./sort_news.png)
 
-With the help of icon <icon class="image-icon">![Save icon](./save_icon.png)</icon> at the bottom left of the table you can print or copy the list of the news or save it in PDF or SCV format. By clicking on icon <icon class="image-icon">![Columns icon](./columns_icon.png)</icon> you will choose columns to be displayed in the news table by drag &dropping them.
+With the help of icon <icon class="image-icon">![Save icon](./save_icon.png)</icon> at the bottom left of the table you can print or copy the list of the news or save it in PDF or SCV format. By clicking on icon <icon class="image-icon">![Columns icon](./columns_icon.png)</icon> you will choose columns to be displayed in the news table by drag & dropping them.
 
 ![Show hide columns](./show_hide_columns.png)
 

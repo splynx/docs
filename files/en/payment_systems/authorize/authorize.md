@@ -30,12 +30,10 @@ After installation, you have to configure add-on under _Config / Integrations / 
 **API key**, **API secret** - default values. Don't change them without need.
 **Payment account** -  
 **Payment method** - when customer pays by using this add-on, the payment will be with this payment type.  
-![image2018-8-21_10-54-36.png](image2018-8-21_10-54-36.png)  
 **Transaction fee category** - [transaction category](https://doc.splynx.com/display/SPL/Transaction+categories) of _service fee_. It is used only for [proforma invoices](https://doc.splynx.com/display/SPL/Proforma+invoices). For [invoices](https://doc.splynx.com/display/SPL/Invoices) _service fee_ category is always _Service._  
 **Service fee** - service fee (in %).
 **Fee VAT** - _service fee_ VAT percent.  
-**Fee message** - _service fee_ description.  
-![image2018-8-22_11-26-53.png](image2018-8-22_11-26-53.png)  
+**Fee message** - _service fee_ description.   
 **Add fee to request** -  
 **Bank statements group** - Group bank statements (_Finance / Bank Statements / History_) monthly or daily.  
 **Language** - language.  

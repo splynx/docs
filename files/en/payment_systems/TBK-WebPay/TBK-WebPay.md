@@ -14,8 +14,6 @@ or you can install it from Web UI:
 
 ![(image)](1.png)
 
-![(image)](2.png)
-
 Then first step - you should to register in http://www.transbank.cl. After that, you have to get Commercial Code on http://www.transbank.cl and set it at *Config/Integrations/Modules list/splynx_addon_webpay.* (And you can also set fee parameters here)
 
 ![(image)](3.png)

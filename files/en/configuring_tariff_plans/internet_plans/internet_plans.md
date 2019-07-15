@@ -1,11 +1,11 @@
 Internet plans
 ==============
 
-To configure the Internet plan, click on the _Tariffs plans → Internet_ and click on _Add plan._
+To configure the Internet plan, click on the _Tariff plans → Internet_ and click on _Add plan._
 
 ![tariff_internet](tariff_internet.png)
 
-A Create plan window will pop up and it will be possible to create a plan.
+You will redirect to add plan page and be possible to create a plan.
 
 ![create_plan_internet.png](create_plan_internet.png)
 
@@ -16,14 +16,21 @@ A Create plan window will pop up and it will be possible to create a plan.
 * VAT - the percentage of the VAT
 * VAT Included - select if Price in plan is VAT included or excluded
 * Download speed (Kbps) - the download speed for the internet plan
-* Upload speed (Kbps) - the upload speed for the internet plan
-* Values of Download and Upload speed are **MIR** (Maximum Information Rate) – best case scenario, maximum available data rate for flow, if there is free any part of bandwidth.
+* Upload speed (Kbps) - the upload speed for the internet plan. Values of Download and Upload speed are **MIR** (Maximum Information Rate) – best case scenario, maximum available data rate for flow, if there is free any part of bandwidth.
 * Guaranteed speed limit at - the percentage shows what speed we guarantee for the end user. It's **CIR** (Committed Information Rate) – worst case scenario, flow will get this amount of traffic rate regardless of other traffic flows. At any given time, the bandwidth should not fall below this committed rate.
 * Priority - the options are: Low, Normal, High. IP packets of customers with High priority will be forwarded as first in case of congestion. Values are 1 (high), 4(normal) and 8(low).
 * Aggregation - how many users will share the speed in plan
 * Burst limit - the percentage of maximum allowed burst speed
 * Burst threshold - the percentage that setups a value of burst on/off switch
 * Burst Time - the period of time for calculation of Burst values
+* Tariff plans available in customer portal - the list of tariffs allowed for changing from current tariff on customer's portal
+* Types of billing - the types of billing for which allowed current tariff
+* Prepaid (custom) period - by default it's monthly and customers will charges for whole month, but you can select "Days amount"
+* _Custom period (days)_* - appears only when selected "Days amount" (from previous step) and allow to set custom pedion in days (7 days (week), 10 days, etc up to 365 days)
+
+![prepaid_custom.png](prepaid_custom.png)
+
+* Available when register by social network - using from social/self registration addon and allow to select current tariff during registration
 
 It is possible to edit or to delete the tariff with the icons <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon>in the column Actions.
 

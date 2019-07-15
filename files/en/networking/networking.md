@@ -11,28 +11,28 @@ Important part of Splynx software is Network management. We use the following te
 
 The following network management topics are described below:
 
-* [ Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
+* [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 
-* [ Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
+* [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
 
-* [ Authentication of users](networking/authentication_users/authentication_users.md)
+* [Authentication of users](networking/authentication_users/authentication_users.md)
 
-* [ Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
+* [Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
 
-* [ Routers settings](networking/routers_settings/routers_settings.md)
+* [Routers settings](networking/routers_settings/routers_settings.md)
 
-* [ IP address management](networking/ip_address_maanagement/ip_address_maanagement.md)
+* [IP address management](networking/ip_address_maanagement/ip_address_maanagement.md)
 
-* [ Monitoring](networking/monitoring/monitoring.md)
+* [Monitoring](networking/monitoring/monitoring.md)
 
-* [ Weathermaps](networking/weathermaps/weathermaps.md)
+* [Weathermaps](networking/weathermaps/weathermaps.md)
 
-* [ Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
+* [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
-* [ PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
+* [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 
-* [ Huawei gpon](networking/huawei_gpon/huawei_gpon.md)
+* [Huawei gpon](networking/huawei_gpon/huawei_gpon.md)
 
-* [ Radius proxy accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
+* [Radius proxy accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 
-* [ Radius customization](networking/radius_customization/radius_customization.md)
+* [Radius customization](networking/radius_customization/radius_customization.md)

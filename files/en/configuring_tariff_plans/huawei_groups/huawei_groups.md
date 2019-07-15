@@ -5,11 +5,11 @@ In Huawei Groups is where we can create groups of plans that will limit the band
 
 It's located on Tariff Plans → Huawei Groups, by clicking on add you can configure new GPON group.
 
-![image2018-4-25_16-55-3.png](image2018-4-25_16-55-3.png)
+![huawei1.png](huawei1.png)
 
 Select the plans and set the tittle for create it.
 
-![image2018-4-25_16-57-23.png](image2018-4-25_16-57-23.png)
+![huawei2.png](huawei2.png)
 
 Note that now we have add this 2 new fields on the Voice and Custom tariffs plans, so it will allow you to limit the bandwidth for this specific services from Splynx, like VoIP and TV services.
 
@@ -17,7 +17,7 @@ Note that now we have add this 2 new fields on the Voice and Custom tariffs plan
 
 Once the group is created, we can assign it to the customer in his information page.
 
-![image2018-4-25_17-12-19.png](image2018-4-25_17-12-19.png)
+![huawei3.png](huawei3.png)
 
 And select the group for this customer.
 

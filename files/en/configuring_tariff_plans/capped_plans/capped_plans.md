@@ -11,7 +11,7 @@ First of all, you should enable the CAP module in _Config → Integrations _→ 
 
 **1. CAP configuration**
 
-To configure CAP policies go to _Tariffs → Internet_, and then choose selected plan and click on FUP button. A new window will appear there called CAP.
+To configure CAP policies go to _Tariffs → Internet_, and then choose selected plan and click on FUP button. A new tab will appear there called CAP.
 
 ![cap1.png](cap1.png)
 ![cap2.png](cap2.png)
@@ -21,6 +21,8 @@ There are 3 configuration boxes in CAP: _Monthly limits (CAP), Top Up Plans_ and
 In first box (_Monthly limits (CAP))_ we can set how much data (in KB, MB, GB or TB) customer is able to consume in Internet plan. It can be dowload, upload or bidirectional usage. When the CAP monthly data are used, Splynx automatically blocks user or reduce his speed according to the configured percentage level.
 
 Also, you can disable daily or weekly limits set on FUP or enable the _Rollover mode_. Rollover means that unused monthly data of the CAP will be moved to the next month.
+
+At last you can set limits for non accounting traffic via the bonus traffic limits.
 
 ![cap3.png](cap3.png)
 
@@ -47,7 +49,7 @@ You have to write a subject and customize the message clicking on _Edit message_
 ![cap5.png](cap5.png)
 ![cap6.png](cap6.png)
 
-To check, if the email or notification is working correctly, you can view the email log clicking on _Administration → Logs _→ Email.__
+To check, if the email or notification is working correctly, you can view the email log clicking on _Administration → Logs → Email._
 
 ![cap14.png](cap14.png)
 
@@ -117,3 +119,27 @@ Then we define the auto top-up plan and number of top-ups per month.
 ![cap7.png](cap7.png)
 
 _Transfer usage to new service_ means that Splynx will transfer unused data between plans in case when customer changes his plan.
+
+**3. Bonus traffic limits**
+
+Splynx allow to set limits for non accounting traffic via the bonus traffic limits. By default all non accounting traffic is unlimited:
+
+![bonus.png](bonus.png)
+
+but possible to set limits on that traffic:
+
+![bonus1.png](bonus1.png)
+
+The main logic is - when customer used all bonus traffic, system will start to use the monthly traffic. _Allow use bonus traffic when normal traffic is used_ toggle will block customers if they used all monthly traffic and the toggle is disabled, in another case - system will use bonus traffic. 
+
+When we turn on a Bonus traffic limit we can see that on customer's service:
+
+![bonus2.png](bonus2.png)
+
+Admins can Top-Ups bonus traffic for each customer:
+
+![bonus3.png](bonus3.png)
+
+and check it from the service:
+
+![bonus4.png](bonus4.png)

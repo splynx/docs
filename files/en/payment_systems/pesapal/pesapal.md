@@ -11,23 +11,21 @@ or you can install it from Web UI:
 
 *Config → Integrations → Add-ons:*
 
-![1.png](0.png)
+![1.png](addons.png)
 
-![1.png](1.png)
-
-![1.png](2.png)
-
-![1.png](3.png)
+![1.png](addons_list.png)
 
 After installation you have to configure addon:
 
 *Config → Integrations → Modules list:*
 
-![1.png](4.png)
+![1.png](modules_list.png)
 
-![1.png](5.png)
+![1.png](edit_pesapal.png)
 
-![1.png](6.png)
+![1.png](settings.png)
+
+![1.png](settings2.png)
 
 To get Consumer Key and Consumer Secret, you have to go to your PesaPal dashboard, press "Send" button and you will receive them on your email:
 
@@ -37,9 +35,9 @@ To get Consumer Key and Consumer Secret, you have to go to your PesaPal dashboar
 
 Now customers can pay their invoices using Pesapal system in Finance / Invoices:
 
-![1.png](9.png)
+![1.png](pay_invoice.png)
 
-![1.png](10.png)
+![1.png](pay.png)
 
 ![1.png](11.png)
 
@@ -53,4 +51,4 @@ To refill balance customers can use the link - “http://yoursplynxurl/pesapal�
 
 On Portal main page customers can also see the list of non-paid invoices and "Pay" button near each invoice:
 
-![1.png](14.png)
+![1.png](portal_widget.png)

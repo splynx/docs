@@ -18,7 +18,7 @@ apt install splynx-sagepay-direct-debit
 
 ![1.png](1.png)
 
-![2.png](2.png)
+![addons_list.png](addons_list.png)
 
 
 **After that you need to registrate on **[*https://sagepay.co.za/*](https://sagepay.co.za/)** . and configure your account.**
@@ -31,48 +31,45 @@ While you are configuring your "Sagepay" account you should to paste your Splynx
 
 ![11.png](22.png)
 
-After installation and registration you have to configure params:
+After installation and registration you have to configure parameters:
 
 Config → Integrations → Modules list:
-![3.png](3.png)
+![11.png](modules_list.png)
 
-![11.png](11.png)
+![edit_module.png](edit_module.png)
 
-
+![settings1.png](settings1.png)
 ****Servicice key - this key need only when customers use their own credit cards to pay.****
+![settings2.png](settings2.png)
 
-
-You can also set fee for customers and Set admins roles to access from admin panel:
-
-![3.png](3.png)
-
-![5.png](5.png)
+You can also set fee for customers and Set admins roles to access from admin panel.
 
 After installation SegaPay Direct Debit, customers will see new pay window on their Dashboard and new pay button on their invoices.
 
-![6.png](6.png)
+![portal_widget.png](portal_widget.png)
 
-![7.png](7.png)
+![pay_invoice.png](pay_invoice1.png)
 
 After pressing those buttons customers will see payment window where they have to set their Credit card or Bank account depending on how they want to pay their invoices:
 
-![20.png](20.png)
+![create_account.png](create_account.png)
 
-or they can set their credit card or bank account in *finance -> credit card* to use it all the time when they will make payments:
+or they can set their credit card or bank account in *Finance -> Credit Card* to use it all the time when they will make payments:
 
-![21.png](21.png)
+![create_account2.png](create_account2.png)
 
+You can also charge all customers using with few clicks! Go to: Finance → Invoices, set period and click "Charge" as on the screenshot:
 
-You can also charge all customers using one button! Go to: Finance → Invoices, set period and click "Charge" as on the screenshot:
+![charge1.png](charge_invoices.png)
 
-![8.png](8.png)
-
-![9.png](9.png)
-
+![charge1.png](charge_invoices2.png)
 
 
-After that splynx will create and send debit batch file with payment details to the [*https://sagepay.co.za/*](https://sagepay.co.za/) after what SegaPay procces this file. (The Statement API runs everyday at 00h15 and cheks all transactions for the previous day)
 
-Then you need to send the request once per day to SagePay by ****cron**** and sage pay will return you payment status or you can view Payments status by *“Sage Pay check payments”* in the *finance* menu:
+After that splynx will create and send debit batch file with payment details to the [*https://sagepay.co.za/*](https://sagepay.co.za/) after what SegaPay procces this file. (The Statement API runs everyday at 00h15 and checks all transactions for the previous day)
 
-![12.jpg](12.jpg)
+Then Splynx send a request once per day to SagePay by ****cron**** and sage pay will return you payment status what you can view Payments status by *“Sage Pay check payments”* in the *finance* menu:
+
+![12.jpg](sagepay_check_payments.png)
+
+![12.jpg](sagepay_check_payments2.png)

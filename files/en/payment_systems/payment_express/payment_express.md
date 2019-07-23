@@ -5,7 +5,7 @@ Paymentexpress is a Splynx add-on. It allows to refill balance and pay invoices 
 
 Add-on can work with different credit cards, if cards are saved, then addon allows to charge all customers using Direct debit order.
 
-To install splynx-icharge add-on, use following commands:
+To install splynx-paymentexpress add-on, use following commands:
 
 ```
 apt-get update
@@ -18,8 +18,6 @@ Config → Integrations → Add-ons:
 ![(image)](0.png)
 
 ![(image)](1.png)
-
-![(image)](2.png)
 
 After installation you have to configure addon:
 
@@ -35,23 +33,18 @@ In this menu you can also configure fee parameters:
 
 ![(image)](6.png)
 
-Customers can save pay-card details for the next payments in "Financ" menu:
+Customers can save pay-card details for the next payments in "Finance" menu:
 
 ![(image)](7.png)
 
-![(image)](8.png)
-
 or he can add it, from payment window while paying invoices as on the screenshot:
-
-![(image)](13.png)
-
-After that, customers can pay their invoices by using Payment Express system. They will see a new button "Pay by Payment Express" as on the screenshot:
-
 ![(image)](9.png)
 
-also you can turn on entry point in config -> integrations -> modules list -> Splynx Add-on Payment Express as on the screenshot:
+![(image)](9-1.png)
 
-![(image)](4.png)
+Also you can turn on entry point in Config -> Integrations -> Modules List -> Splynx Add-on Payment Express as on the screenshot:
+
+![(image)](10-1.png)
 
 ![(image)](10.png)
 

@@ -21,11 +21,13 @@ Config → Integrations → Add-ons:
 
 ![Integrations addons](addons_list.png)
 
-![Integrations addons 2](install.png)
-
 After installation you have to configure params in Config → Integrations → Modules list. Look at the screenshot:
+![Integrations addons 2](modules_list.png)
 
 ![Edit params](params.png)
+
+![Edit params](params1.png)
+![Edit params](params2.png)
 
 *Merchant details*
 
@@ -38,6 +40,10 @@ After that, customers can pay their invoices and refill balances using PayFast s
 
 ![Pay invoice](pay_invoice.png)
 
+And if in config entry points enabled customer will see few widgets on customer portal:
+
+![Edit params](portal_widget.png)
+
 And they can also refill balance using link - “*http://yoursplynxurl/payfast*”.
 
 ![Add amount](add_amount.png)
@@ -45,6 +51,9 @@ And they can also refill balance using link - “*http://yoursplynxurl/payfast*�
 After that you will press button “pay” you will be redirect to the [https://payfast.co.za](https://payfast.co.za) and you’ll need to Compleate your Payment:
 
 ![Complete payment](complete_payment.png)
+![Complete payment](complete_payment1.png)
+
+**PayFast configured like test environment on our server so URL looks like on a screenshot**
 
 
 splynx-payfast-rb
@@ -67,10 +76,10 @@ Now you need to go to your account on the https://www.payfast.co.za/ and turn on
 
 Now, as in previous add-on, after installation you have to configure param in Config → Integrations → Modules list. Look at the screenshot:
 
-![Integrations addons PF rb 2](params_rb.png)
+![Integrations addons PF rb](params_rb.png)
 
-![Edit params PF rb](params_rb_2.png)
-
+![Integrations addons PF rb](params_rb_1.png)
+![Integrations addons PF rb](params_rb_2.png)
 Now customers will see another button to pay as on the screenshot:
 
 ![Pay invoice rb](pay_invoice_rb.png)
@@ -82,5 +91,3 @@ To refill balance customers can use the link - “*http://yoursplynxurl/payfast-
 You can also charge all customers using one button! Go to: Finance → Invoices, set period and click "Charge" as on the screenshot:
 
 ![charge](1.1.png)
-
-![charge](2.png)

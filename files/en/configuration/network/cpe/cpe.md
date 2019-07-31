@@ -7,4 +7,3 @@ First of all we need establish the size of 1KB in the system, by default this is
 
 ![CPE KB Size](CPE KB Size.png)
 
-Test end

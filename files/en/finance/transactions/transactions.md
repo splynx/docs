@@ -16,13 +16,13 @@ Thanks to the transaction system, there is always a clear history as well as a w
 
 ---
 
-Transactions table in _Finance Module_ displays all type of transactions related to the customer and contain Customer name, ID, date of transaction, type of transaction (debit or credit), its description, price etc.
+Transactions table in _Finance Module_ displays all types of transactions related to the customer and contains Customer name, ID, date of transaction, type of transaction (debit or credit), its description, price etc.
 
-* There is a table called "_Totals_" below which shows `type of transaction` (Debit / Credit), `number of transactions` in each type and `total amount of money`.
+* There is a table called "_Totals_" below which `type of transaction` (Debit / Credit), `number of transactions` in each type and `total amount of money` are displayed.
 
   ![Transactions](./transactions.png)
 
-* In fact you can set a filter to view particular transactions, for example, by partner, by transaction's category or its type or period.
+* In fact, you can set a filter to view particular transactions, for example, by partner, by transaction's category, by its type or period.
 
   ![Filters](./filters.png)
 
@@ -34,16 +34,16 @@ Transactions table in _Finance Module_ displays all type of transactions related
 
   ![Columns](./columns.png)
 
-* **To correct customer's balance** is possible to create a new transaction and add invoice from transaction. You can find that option in _Customer → View Customer → Billing → Transactions_.
+* **To correct customer's balance** it is possible to create a new transaction and add invoice from transaction. You can find that option in _Customer → View Customer → Billing → Transactions_.
 
   ![Add transaction](./add_transaction.png)
 
-  When you click on _Add transaction_ a pop-up window will appear with different options of new transaction you can choose: `Type (Debit/ Credit)`, `Description`, `Quantity`, `Unit`, `Price`, `VAT`, `Total amount`, `Category` (service, discount, payment, correction for customer's balance, Braintree fee etc.), `Date`, `Comment` on the transaction and `Period`.
+  When you click on _Add transaction_ a pop-up window will appear with different options of new transaction you can choose: `Type (Debit/ Credit)`, `Description`, `Quantity`, `Unit`, `Price`, `VAT`, `Total amount`, `Category` (service, discount, payment, refund, correction for customer's balance, Braintree fee etc.), `Date`, `Comment` on the transaction and `Period`.
 
   ![Add transaction form](./create_transaction_form.png)
 
-* After the new transaction's created it is also possible **to generate an invoice manually** by clicking on _Add Invoice from transaction_ in the Transactions tab. The window will pop-up where you can fill in following fields: `Description`, `Price`, `Period`, `Note` for the customer or `Memo` for you (if necessary).
+* Once a new transaction is created, it is also possible **to generate an invoice manually** by clicking on _Add Invoice from transaction_ in the Transactions tab. The window will pop-up where you can fill in the following fields: `Description`, `Price`, `Period`, `Note` for the customer or `Memo` for you (if necessary).
 
   ![Create invoice](./create_invoice.png)
 
-* Once transaction is created it is possible to edit or delete it <icon class="image-icon">![Buttons](./small_buttons.png)</icon> . Please note, if you've added an Invoice from transaction there is no longer a possibility to edit that transaction, but invoice only.  
+* Once the transaction is created, it is possible to edit or delete it <icon class="image-icon">![Buttons](./small_buttons.png)</icon> . Please note, if you've added an Invoice from transaction there is no longer a possibility to edit that transaction, but invoice only.  

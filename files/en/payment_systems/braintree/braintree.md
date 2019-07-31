@@ -20,8 +20,6 @@ Config → Integrations → Add-ons:
 
 ![Install addon](install_addon.png)
 
-![Install addon 2](install_addon_2.png)
-
 After installation you have to configure addon:
 
 Config → Integrations → Modules list:

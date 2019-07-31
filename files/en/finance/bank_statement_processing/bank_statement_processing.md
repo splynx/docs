@@ -18,7 +18,7 @@ When the file's been downloaded next step is **to set up matching criteria** for
 
 
 ---
-The table with paired data will appear where we can **check all matches** with payments and invoices. To finish process multiple payments click on Process button below the table.
+The table with paired data will appear where we can **check all matches** with payments and invoices. To finish the processing of multiple payments click on Process button below the table.
 
 ![Period](period_data.png)
 
@@ -51,5 +51,5 @@ When you find a customer who's payment needs to be paired, click on *Manual pair
 ![Pair](confirmation.png)
 
 
-After manual paring is done the status of the payment in a Bank statements history view (`Finance → Bank Statements → View History`) will be marked as *Manually paired*.
+Once the manual paring is done, the status of the payment in a Bank statements history view (`Finance → Bank Statements → View History`) will be marked as *Manually paired*.
 ![Status](status.png)

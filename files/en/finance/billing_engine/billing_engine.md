@@ -9,10 +9,18 @@ Let's start with financial dashboard that shows us information about Splynx fina
 * Paid Invoices
 * Unpaid invoices
 
+The dashboard also includes the following mini reports:
+* All invoices for a set period
+* Invoices that are overdue
+* Top 10 payers
+* Top 10 debtors
+* Monthly recurring revenue
+* Average rate per user
+
 In particular, it shows the current month and last month statistics.
 
-![Finance dashboard](finance_dashboard.png)
-
+![Finance dashboard](finance_dashboard_1.jpg)
+![Finance dashboard](finance_dashboard_2.jpg)
 
 
 ## Recurring billing engine
@@ -21,7 +29,7 @@ Recurring billing is the best solution for ISP charging customer a fixed price o
 
 You can **set up recurring type of the payment** for a customer in Customer Information section (`Customers → View`) by clicking on *Type of billing* option and choosing *Recurring payments* as a type of billing.
 
-![Type of billing](type_of_billing.png)
+![Type of billing](type_of_billing_recurring.png)
 
 
 ---------
@@ -31,7 +39,7 @@ One month in advance means, for example, that 1st of May Splynx will generate in
 
 Postpay means that Splynx generates invoices on 1st of May for the period of 1-30 of April.
 
-You can set up Prepay or Postpay mode of recurring payments in `Customers →View→Billing→Billing` overview.
+You can set up Prepay or Postpay mode of recurring payments in `Customers → View → Billing → Billing overview`.
 
 In Billing settings click on Period and choose Postpay or Prepay mode with options to pay up to 12 months in advance.
 
@@ -39,7 +47,7 @@ In Billing settings click on Period and choose Postpay or Prepay mode with optio
 
 Choose a *Payment Method* for recurring payment, such as Cash, Bank Transfer, Credit Card, PayPal, Refill Card, BrainTree and others.
 
-![payment method](payment_method.png)
+![payment method](payment_method_1.png)
 
 ---------
 The next step of setting up Recurring payments will be to choose the *Billing day* and *Billing due day*.
@@ -67,50 +75,58 @@ You can choose a **Grace period** - time when customer will have inactive status
 
 Prepaid billing is used when ISP charges customer in advance and provide him access for certain period of time. When balance of the customer reaches set limit, he is disconnected.
 
-**To set up Prepaid type of billing** we need to change the billing type of customer to Prepaid.
+**To set up Prepaid type of billing** we need to change the billing type of customer to Prepaid (Custom).
 
-![Type of billing](type_of_billing1.png)
+![Type of billing](type_of_billing_prepaid.png)
 
 
 The next step is to choose *Payment method*,  such as Cash, Bank Transfer, Credit Card, PayPal, Refill Card, BrainTree and others.
 
-![Payment method](payment_method1.png)
+![Payment method](payment_method_2.png)
 
 
 Then we define what is the value of customer’s balance when Splynx will block his access to internet.
 By default it is set to “0”, but it can be changed in configuration of each customer inside of the field “Minimal balance”.
 
-![Minimal balance](minimal_balance1.png)
+![Minimal balance](minimal_balance_prepaid.png)
 
+Starting from Splynx v.2.3 it is possible to charge customers **daily, monthly or by any custom period (like one week)**  with the custom prepaid plans.
 
-After setting up type “Prepaid”, we need to add a payment to customer’s account by clicking on Add payment  button in `Customer → Billing → Payment`. For example, 20 USD has been added.
+By the default all prepaid tariff services are set to charge customers monthly.
+
+![Prepaid(custom)](custom_prepaid_1.png)
+![Prepaid(custom)](custom_prepaid_2.png)
+
+However it is possible to set any desirable period. Simply change the Prepaid Period of the service to **Days amount**.
+
+![Prepaid(custom)](custom_prepaid_3.png)
+
+The next step is to set the 'Period' in customer's billing settings `Customer → Billing → Billing overview`. It is possible to set any desired charged period to suit the unique needs of customers and every ISP.
+
+![Prepaid(custom)](prepaid_period.png)
+
+After setting up “Prepaid” type, we need to add a payment to customer’s account by clicking on Add payment  button in `Customer → Billing → Payment`. For example, 30 USD has been added.
 
 ![Payment](payment.png)
 
+The deposit of the customer changed to 30 USD and we can manually charge the customer by clicking **Charge & Invoice** button.
 
-The deposit of the customer changed to 20 USD.
+![Deposit](deposit_charge.png)
 
-![Deposit](deposit.png)
+After all the customer was charged 30 USD and provided with access for one month.
 
+![Deposit](information_prepaid.png)
 
----
-Let’s, for example, add a service of 5 Mbps for 40 USD/month.
-Splynx calculates the daily rate of the plan and charges user every day. There are 30 days in October, so daily rate will be 1,33 USD.
-Tomorrow balance of the customer will be changed from 40 USD to 38,66 USD and will continue decreasing every day according to his plan.
-
-![Services](services.png)
-
----
-In this particular situation, when customer has 20$ on a deposit, he will get access for 15 days. Then he will reach “0” on his balance and Splynx will block him.
-If we will check the deposit of the customer the next day, it will be reduced based on the daily fee:
-
-![Prepay balance](prepay_balance.png)
-
-
----
-Also one transaction has been added, which shows how much we charged. This transaction is updated every day and it shows the total amount of money that has been taken from customer’s deposit.
-
-![Prepay transaction](prepay_transaction.png)
-
----
 If option Make invoices (*after to charge*) is enabled, Splynx will generate an invoice for consumed services on a first day of the next month.
+
+---
+In case, we set the Prepaid daily option, Splynx calculates the daily rate of the plan and charges user every day. Let's imagine that customer's service cost 40 USD. There are 31 days in July, so daily rate will be 1,29 USD.
+
+![Prepaid daily](prepaid_daily_1.png)
+
+Tomorrow customer's balance will be changed from 40 USD to 38,71 USD and will continue decreasing every day according to his plan.
+
+![Prepaid daily](prepaid_daily_2.png)
+
+---
+In the situation, when customer has added 20 USD on a deposit, he will get access for 15 days only. Once the balance reaches “0”, Splynx will block him. Also one transaction has been added, which shows how much we charged. This transaction is updated every day and it shows the total amount of money that has been taken from customer’s deposit.

@@ -6,14 +6,14 @@ Very easy and convenient way for your customers to pay for their services or mak
 
 ## How to enable refill cards
 
-Enable Refill cards under `Config → Integrations → Main modules`
+Enable Refill cards under `Config → Integrations → Main modules → Finance`
 
 ![Modules](main_modules.png)
 
 
-## How to generate Refil cards for your customers
+## How to generate Refill cards for your customers
 
-* In `Finance → Refill cards → Generate` set up parameters for Refill cards generating: Quantity, Prefix, Price, choose the partner and valid date, and click on Generate.
+* In `Finance → Refill cards → Generate` set up parameters for Refill cards generation: Quantity, Prefix, Price, choose the partner and valid date, and click on Generate.
 
   ![Generate](generate.png)
 
@@ -30,7 +30,7 @@ Enable Refill cards under `Config → Integrations → Main modules`
   ![View series](view_series.png)
 
 ---
-Here you can redeem customers' card to top up their balance by clicking on <icon class="image-icon">![Export](export_icon.png)</icon>.
+Here you can redeem customers' card to top up their balance by clicking on <icon class="image-icon">![Redeem_icon](redeem_icon.png)</icon>.
 
 ![Redeem](redeem_card.png)
 
@@ -44,7 +44,7 @@ In `Customers → View → Billing → Payments` will be possible to see activat
 
 
 ---
-By clicking on icon  you can export cards in two available formats: CSV and PDF for further printing out and sale to customers.
+By clicking on icon <icon class="image-icon">![Export](export_icon.png)</icon> you can export cards in two available formats: CSV and PDF for further printing out and sale to customers.
 
 ![Export card](export_card.png)
 
@@ -53,12 +53,12 @@ By clicking on icon  you can export cards in two available formats: CSV and PDF 
 
 ## How customer can redeem purchased refill card
 
-First, Refill cards should be enabled for the customer's portal. It can be done under `Config → Main → Portal`.
+First, Refill cards should be enabled for the customer's portal. It can be done under `Config → Main → Portal → Finance section `.
 
 ![Portal config](portal_config.png)
 
 
-In Customer's portal customer will go to `Finance → Payments → Refill` card and enter the card's code into Code window.
+In Customer's portal customer will go to `Finance → Payments → Refill card` and enter the card's code into Code window.
 
 ![Refill card](refill_card.png)
 

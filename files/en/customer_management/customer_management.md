@@ -1,11 +1,11 @@
 Customer Management
 ===================
 
-Splynx has an advanced User Management. Each customer can have his own billing settings, where administrator is able to define when charge the customer or disconnect him, what is his payment method and other individual parameters.
+Splynx has an advanced customer management system. Each customer can have their own billing settings, where you as the administrator can define when to charge the customer or disconnect them, which payment method they prefer and other individual parameters.
 
-Customers have three types of services - _Internet_, _Voice_ and _Custom_. The access information like PPP username/password, IP addresses, Router information, MAC address is also defined in Services section of customer. You can generate document PDF such as agreement, installation document etc.
+Customers can have multiple types of services - _Bundle_, _Internet_, _Voice_ and _Custom_. The access information like PPP username/password, IP addresses, Router information, MAC address is also defined in the Services section of the customer. You can also generate/upload documents such as an agreement, installation document etc.
 
-Please, follow the sections below to find tutorial page about every single part of Customer Management:
+Please, follow the sections below to find the tutorial page about each section of the Customer Management:
 
 * [ Adding new customer](customer_management/add_new_customer/add_new_customer.md)
 

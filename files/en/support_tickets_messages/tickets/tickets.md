@@ -17,7 +17,7 @@ The ticketing dashboard shows the following sections:
 * Live log of recent activities.
 
 The administrator creates the tickets in 2 ways:
-1. From the Dashboard in `Support > Tickets > Dashboard` and clicking **Create** in the right top corner.
+1. From the Dashboard in `Tickets > Dashboard` and clicking **Create** in the right top corner.
 
 ![Create_ticket](admin_create_1.png)
 
@@ -73,7 +73,7 @@ The ticket working area is divided into 3 parts: *ticket properties, action butt
 ![Schedule tech](schedule_task.png)
 
 
-Once the ticket has been resolved, you can change the status on *closed* and close the ticket or press the button **Update and Close** right after the answer. Every closed ticket is shown in `Support → Tickets → List of closed`.
+Once the ticket has been resolved, you can change the status on *closed* and close the ticket or press the button **Update and Close** right after the answer. Every closed ticket is shown in `Tickets → List of closed`.
 
 ![List closed](closed_list.png)
 

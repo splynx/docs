@@ -19,6 +19,13 @@ Table of contents
 * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
 
+##### [CRM](crm/crm.md)
+* [Dashboard](crm/dashboard/dashboard.md)
+* [Leads](crm/leads/leads.md)
+* [Quotes](crm/quotes/quotes.md)
+* [Documents](crm/documents/documents.md)
+* [Deals](crm/deals/deals.md)
+
 ##### [Customer Management](customer_management/customer_management.md)
 * [Adding new customer](customer_management/add_new_customer/add_new_customer.md)
 * [Custom additional fields](customer_management/custom_additional_fields/custom_additional_fields.md)
@@ -33,6 +40,8 @@ Table of contents
 * [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
 
 ##### [Customer Portal](customer_portal/customer_portal.md)
+
+##### [Tickets](tickets/tickets.md)
 
 ##### [Finance](finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
@@ -93,11 +102,10 @@ Table of contents
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
-##### [Support, Tickets and Messages](support_tickets_messages/support_tickets_messages.md)
-* [Email messages](support_tickets_messages/email_messages/email_messages.md)
-* [SMS messages](support_tickets_messages/sms_messages/sms_messages.md)
-* [Tickets](support_tickets_messages/tickets/tickets.md)
-* [News](support_tickets_messages/news/news.md)
+##### [Support and Messages](support_messages/support_messages.md)
+* [Email messages](support_messages/email_messages/email_messages.md)
+* [SMS messages](support_messages/sms_messages/sms_messages.md)
+* [News](support_messages/news/news.md)
 
 ##### [Scheduling](scheduling/scheduling.md)
 

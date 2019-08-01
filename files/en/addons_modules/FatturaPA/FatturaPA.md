@@ -17,8 +17,6 @@ or oyu can install it from Web UI:
 
 ![1.png](1.png)
 
-![1.png](3.png)
-
 ![1.png](4.png)
 
 After installation, you have to configure add-on under *Config / Integrations / Modules list / splynx_fatturapa* <icon class="image-icon">![edit](2.png)</icon>.
@@ -34,7 +32,7 @@ choose partner to configure:
 
 set partner params:
 
-![1.png](8.2.png)
+![1.png](8.1.png)
 
 **ProgressivoInvio** - No particular criteria is established; the mode of valorization of the field, foreseen to contain an identifier alphanumeric of the transmitted file, is delegated to the user's evaluation according to requirement, but in compliance with the established characteristics from the XSD scheme.
 
@@ -73,7 +71,7 @@ set partner params:
 
 **ModalitaPagamento** - The field must contain one of the encoded values present in the associated list.
 
-Also you have to go to the *Config/Finance/Template values* and set partner settings.
+Also you have to go to the *Config/System/Company Information* and set partner settings.
 
 ![1.png](9.png)
 

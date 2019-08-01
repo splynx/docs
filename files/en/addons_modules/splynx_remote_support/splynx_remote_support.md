@@ -7,12 +7,12 @@ This simplifies the service when you contact us with questions.
 2. Сreating backup copies in the cloud, which can be very useful in case of loss or damage to local data.
 
 
-During the installation of packet, the user splynx-remote-support will be added to the server as a unix user and as a administrator of splynx.
+During the installation of packet, the user splynx-remote-support will be added to the server as a UNIX user and as a administrator of Splynx.
 For this user, two-factor authentication is enabled, and the password is regularly changed, in order to exclude password bruteforce.
 
-In order not to transfer your data over the Internet, the package uses openvpn to create a private encrypted tunnel between your server and our cloud.
+In order not to transfer your data over the Internet, the package uses OpenVPN to create a private encrypted tunnel between your server and our cloud.
 
-The advantage of this approach is that you do not need to share the server, you can limit ssh or web access at your discretion. For maintenance, it's enough to allow traffic inside our tunnel.
+The advantage of this approach is that you do not need to share the server, you can limit SSH or web access at your discretion. For maintenance, it's enough to allow traffic inside our tunnel.
 
 
 ## Installation can be performed in 2 ways:
@@ -21,9 +21,6 @@ The advantage of this approach is that you do not need to share the server, you 
 ### Web-based installation
 
 Open `Config -> Add-ons`
-
-![Config - > Add-ons](config.png)
-
 
 Click the *install* button <icon class="image-icon">![](install_icon.png)</icon> for  splynx-remote-support
 
@@ -35,9 +32,7 @@ Confirm the installation process
 
 Wait for confirmation that the addon was correctly installed
 
-![](web3.png)
-
-Check
+Check in `Config -> Add-ons`
 
 ![](web4.png)
 

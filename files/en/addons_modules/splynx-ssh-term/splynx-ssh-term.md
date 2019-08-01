@@ -1,6 +1,6 @@
 **ssh-term**
 ========
-**ssh-term** - is a splynx add-on, what had been developed to use  terminal from browser.
+**ssh-term** - is a Splynx add-on, what had been developed to use  terminal in Splynx web-interface.
 
 **Installation:**
 
@@ -17,16 +17,10 @@ or you can install it from Web UI:
 
 ![(image)](1.png)
 
-![(image)](2.png)
-
 after installation you will see a new icon in *Config → Tools:*
 
 ![(image)](3.png)
 
-when you'll press on this icon you will see a terminal window, and there you need to enter your login and password:
-
-![(image)](4.png)
-
-now you can use terminal from browser as from console:
+when you'll press on this icon you will see a terminal window, and there you need to enter your login and password and that you will be able to use terminal from Splynx web-interface as from console:
 
 ![(image)](5.png)

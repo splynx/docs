@@ -78,6 +78,8 @@ You can enable entry-point(widget) for customer portal here:
 For prepaid customers you can enable widget here:
 ![(image)](enable_prepaid_widget.png)
 
+![(image)](portal_widget.png)
+
 After that customer will see a new button and will be able to pay invoice by paynow:
 
 ![(image)](pay_with_paynow.png)

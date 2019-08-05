@@ -15,8 +15,6 @@ apt-get install splynx-paynow
 
 ![(image)](00.png)
 
-![(image)](000.png)
-
 ![(image)](1.png)
 
 ## Paynow account
@@ -50,57 +48,41 @@ Add-on configuration - _Config / Integrations / Modules list / splynx_paynow_add
 
 ![(image)](Modules_list.png)
 
-![(image)](paynow_edit-module.png)
-
-## Entry points
-
-By using **Entry points**, you can enable add-on features. You allow:
-
-1. Customers to pay invoices
-   ![(image)](paynow_entry-point-1.png)
-
-2. Customers to pay proforma invoices
-   ![(image)](paynow_entry-point-2.png)
-
-3. Customers to pay invoices and proforma invoices from portal dashboard  
-   ![(image)](paynow_entry-point-3.png)
-
-4. Customer with **type of billing** - **prepaid** to put money into account from portal dashboard  
-   ![(image)](paynow_entry-point-4.png)
+![(image)](4.png)
 
 ## Add On settings
 
-![(image)](paynow_add-on-settings1.png)
+![(image)](5.png)
+
+![(image)](5-1.png)
 
 * **API domain** - URL of Splynx server
 * **API key**, **API secret** - default values. Don't change them
 * **Integration ID**, **Integration Key** - values from Paynow portal
-
-![(image)](paynow_add-on-settings2.png)
-
 * **Splynx url** - URL of Splynx server
-
 * **Payment method ID** - id number of payment method from **Config** / **Finance** / **Payment methods**
-
 * **Bank statements group** - Group bank statements (**Config** / **Finance** / **Bank Statements** / **History**) monthly or daily
-
 * **Service Fee** - Paynow commision (in %). Depends on Paynow plan
-
 * **Add fee to request** - Add **service fee** to proforma invoice (as an additional item)
-
 * **Fee message** - Description of fee invoice item
-
 * **Fee VAT** - VAT of Paynow comission (in %). Will be included into service fee
-
 * **Transaction fee category** - id number of transaction category from **Config** / **Finance** / **Transaction categories**
-
 * **Additional info pattern for Paynow** - the value will be shown at the Paynow payment page.
+
+## Entry points(Widgets)
+![(image)](edit_entry_points.png)
+
+You can enable entry-point(widget) for customer portal here:
+![(image)](enable_widget.png)
+
+For prepaid customers you can enable widget here:
+![(image)](enable_prepaid_widget.png)
 
 After that customer will see a new button and will be able to pay invoice by paynow:
 
-![(image)](10.png)
+![(image)](pay_with_paynow.png)
 
-![(image)](11.png)
+![(image)](pay_invoice.png)
 
 customer will be redirect to paynow payment page, there he will need to approve his payment:
 

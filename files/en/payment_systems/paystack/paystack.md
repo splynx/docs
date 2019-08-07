@@ -18,40 +18,38 @@ or you can install it from Web UI:
 
 ![(image)](0.png)
 
-![(image)](0.1.png)
+![(image)](install.png)
 
-![(image)](1.png)
-
-![(image)](2.png)
-
-After installation you have to configure params in *config -> Integrations -> Modules list*. And here you can set a fee parameters. Look at the screenshot:
+After installation you have to configure parameters in *Config -> Integrations -> Modules list*. And here you can set a fee parameters. Look at the screenshot:
 
 ![(image)](3.png)
 
-![(image)](4.png)
-
-![(image)](5.1.png)
+![(image)](edit_module.png)
 
 Public and secret keys can be taken from *Paystack account:*
 
-![(image)](14.png)
+![(image)](settings_1.png)
+![(image)](settings_2.png)
 
-Now customers can pay their invoices using Paystack system in *Finance / Invoices:*
+Now customers can pay their invoices using Paystack in *Finance / Invoices:*
 
-![(image)](7.png)
+![(image)](portal_pay_invoice.png)
 
-![(image)](8.png)
+![(image)](portal_pay_invoice_1.png)
 
-![(image)](9.png)
+![(image)](portal_pay_invoice_2.png)
 
-![(image)](10.1.png)
+If everything well, you will see status of invoice as "Paid" (portal and admin).
+Also customer can add some money for PayStack account from portal dashboard:
+![(image)](portal_widget.png)
 
-If everything went well, you will see status of invoice as "Paid" (portal and admin):
+To enable portal widget go to *Config -> Integrations -> Modules list -> PayStack -> Entry points*.
+![(image)](entry_points.png)
 
-![(image)](11.png)
+![(image)](enable_widget.png)
 
 Besides that, you can charge all customers, using one button! Go to Finance → Invoices, set the period and click "Charge" as on a screenshot:
 
-![(image)](12.png)
+![(image)](charge_invoices.png)
 
-![(image)](13.png)
+![(image)](charge_invoices_1.png)

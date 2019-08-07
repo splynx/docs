@@ -18,52 +18,41 @@ or you can install it from Web UI:
 
 ![1.png](1.png)
 
-![2.png](2.png)
+![2.png](install.png)
 
-![3.png](3.png)
 
 After installation you have to configure addon:
 
 *Config → Integrations → Modules list:*
 
-![4.png](4.png)
+![4.png](edit_module.png)
 
-![5.png](5.png)
-
-![6.png](6.png)
+![5.png](settings.png)
+![6.png](settings1.png)
 
 Then customers have to add a credit card:
 
-![7.png](7.png)
+![7.png](portal_add_card.png)
 
-![8.png](8.png)
+![8.png](portal_add_card1.png)
 
 Now customers can pay their invoices using IPpay system in Finance / Invoices:
 
-![9.png](9.png)
+![9.png](portal_pay_invoice.png)
 
-![10.png](10.png)
+![10.png](portal_pay_invoice_2.png)
 
-![11.png](11.png)
-
-If everything went well, you will see status of invoice as "Paid" (in portal and in admin):
-
-![12.png](12.png)
+If everything went well, you will see status of invoice as "Paid" (in portal and in admin).
 
 On a portal dashboard customers can also see the list of non-paid invoices and "Pay" button near each invoice:
 
-![13.png](13.png)
+![13.png](portal_widget.png)
 
 To refill balance customers can use the link - “http://yoursplynxurl/ippay”, where they have to enter Amount of payment and click "Add":
 
-![14.png](14.png)
-
-![15.png](15.png)
+![14.png](url_ippay.png)
 
 Besides that, you can charge all customers using one button! Go to Finance → Invoices, set the period and click "Charge" as on a screenshot:
 
-![16.png](16.png)
-
-![17.png](17.png)
-
-![18.png](18.png)
+![16.png](charge_invoices.png)
+Select external handler, another settings if it needed and press "Charge".

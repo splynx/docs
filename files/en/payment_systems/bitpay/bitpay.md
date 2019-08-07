@@ -10,16 +10,15 @@ or you can install it from Web UI:
 
 Config → Integrations → Add-ons:
 
-![(image)](1.png)
+![(image)](install.png)
 
-![(image)](2.png)
-after the installation you have to Enter your splynx url on the *config -> integrations -> modules list:*
+After the installation you have to Enter your Splynx URL on the *Config -> Integrations -> Modules list:*
 
 ![(image)](3.png)
 
-![(image)](4.png)
+![(image)](edit_module.png)
 
-![(image)](5.png)
+![(image)](settings.png)
 
 After that you need to receive **"Pairing Code"**. To receive **"Pairing Code"**, please open your *Bitpay dashboard → Payment Tools*, choose *Manage API Tokens* and *create New Token*, like on the screenshot:
 
@@ -28,21 +27,21 @@ Now you need to enter your pairing code in *Config → Integrations → Bitpay �
 
 ![(image)](7.png)
 
-![(image)](8.png)
+![(image)](enter_code.png)
+
+![(image)](token.png)
 
 After that customers can pay their invoices and refill balances using Bitpay system. They will see a new button "Pay" on Dashboard:
 
-![(image)](8.1.png)
+![(image)](portal_widget.png)
 
 and new icon in Invoices as on a screenshot:
 
-![(image)](8.2.png)
+![(image)](pay_invoice.png)
 
-When customer will press pay button he will see new window:
+When customer will press pay button he will see new payment window.
 
-![(image)](8.3.png)
-
-After that he will be redirected to Bitpay-page:
+After complete a payment customer will be redirected to Bitpay-page:
 
 ![(image)](8.4.png)
 
@@ -54,9 +53,7 @@ Then customer has to confirm a payment:
 
 ![(image)](8.6.png)
 
-If payment was successful, the status of invoice will  be "Paid":
-
-![(image)](10.1.png)
+If payment was successful, the status of invoice will  be "Paid".
 
 To refill balance customers can use the link - “http://yoursplynxurl/bitpay” where they have to enter Amount of payment and click "Pay":
 

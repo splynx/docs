@@ -44,7 +44,13 @@ A window will pop up and it will be possible to select the service.
 
   <icon class="image-icon">![Warning](warning.png)</icon> If you don't create a password the password from the Main Information page will be used.
 
-* **IPv4 Assignment Method** - the options are None (Router will assign), Permanent IP, Dynamic IP. (Make sure the IP's network is the same type of assignment when creating it in IPv4 manager)
+* **Taking IPv4** - the options are None (Router will assign IP), Permanent IP, Dynamic IP. (Make sure the IP's network is the same type of assignment when creating it in IPv4 manager)
+
+* **IPv4** - IP address which will be assigned to customer's device. Available only when **Taking IPv4**=Permanent IP.
+
+* **Additional network** - this is customer's network. Network route to this network will be added on the provider's router (NAS). Available only when **Taking IPv4**=Permanent IP.
+
+* **IPv4 Pool** - the options are Any pool or specific pool. Available only when **Taking IPv4**=Dynamic IP.
 
 * **Mac(s)** - MAC address(es). Separated by comma.
 

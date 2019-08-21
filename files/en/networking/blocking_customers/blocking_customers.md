@@ -14,9 +14,8 @@ It changes the blocking behavior.
 When the option is **disabled** <icon class="image-icon">![](disabled.png)</icon> credentials of blocked customers are removed from the router (hotspot users, PPP secrets, firewall rules and DHCP leases).
 
 When this option is **enabled** <icon class="image-icon">![](enabled.png)</icon> blocked customers are added to one of address list:
-* **SpLBL_blocked** - for customers whose status is ***Blocked***.
+* **SpLBL_blocked** - for customers whose status is ***Blocked***. And for customers with ***Active*** status, when service is blocked due to [FUP](networking/bandwidth_management/fup/fup.md) or [CAP](networking/bandwidth_management/capped_plans/capped_plans.md) blocking rule.
 * **SpLBL_new** - for customers whose status is ***New***.
-* **SpLBL_active** - for customers status is ***Active***, but service is blocked due to [FUP](networking/bandwidth_management/fup/fup.md) or [CAP](networking/bandwidth_management/capped_plans/capped_plans.md) blocking rule.
 
 ![Screenshot AddressList](mk_al.png)
 
@@ -202,7 +201,6 @@ If you want in some cases to redirect the customer to the customer's portal, use
 # For mikrotik API
 /ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8102  src-address-list=SpLBL_blocked comment="Blocked -> 8102"
 /ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8101  src-address-list=SpLBL_new comment="new -> 8101"
-/ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8102  src-address-list=SpLBL_active comment="FUP or CAP -> 8102"
 
 # If you're using radius
 /ip firewall nat add chain=dstnat action=redirect protocol=tcp dst-port=80 to-ports=8101  src-address-list=Reject_0 comment="user not found"
@@ -221,7 +219,6 @@ If there are any resources that you want to keep available for blocked customers
 ```
 /ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=SpLBL_blocked
 /ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=SpLBL_new
-/ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=SpLBL_active
 
 /ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=Reject_0
 /ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=Reject_1

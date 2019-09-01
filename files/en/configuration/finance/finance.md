@@ -12,7 +12,7 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [ Pairing](configuration/finance/pairing/pairing.md)
 
-* [ Notifications](configuration/finance/notifications/notifications,md)
+* [ Notifications](configuration/finance/notifications/notifications.md)
 
 * [ Payment methods](configuration/finance/payment_methods/payment_methods.md)
 

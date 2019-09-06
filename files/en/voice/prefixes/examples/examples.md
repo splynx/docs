@@ -7,7 +7,7 @@
 | `{n}`       | One digit from 2 to 9.                                                            |
 | `{!}`       | Zero or more any characters.                                                      |
 | `{.}`       | One or more any characters.                                                       |
-| `{100-300}` | Number between 100 and 300. You can use any numbers instead of 100 and 300.       |
+| `{100-300}` | Number between 100 and 300. You can use any numbers instead of 100 and 300. Test change.      |
 | `{123|456}` | One of "123" or "456". You can use any string pattern instead of "123" and "456". |
 
 ---

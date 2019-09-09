@@ -13,8 +13,8 @@
 
 #### Warning
 
-Please note that pattern `{000-966}` will not be work as expected. This pattern mean number between 0 and 966.
-If you need detect `000`, `001`, `002` ... `966` then use `{0-9}{0-6}{0-6}` instead.
+Please note that the pattern `{000-966}` will not work as expected. This pattern means a number between 0 and 966.
+If you need to detect `000`, `001`, `002` ... `966` then use `{0-9}{0-6}{0-6}` instead.
 
 #### Examples:
 

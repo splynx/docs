@@ -132,7 +132,7 @@ For validate event you need to check header `X-Splynx-Signature` which contains 
 
 #### Example PHP webhook handler
 
-```php
+```
 <?php
 
 define('REQUEST_TYPE_PING', 'ping');

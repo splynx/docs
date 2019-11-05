@@ -33,7 +33,7 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 * [DSL Telkom (Openserve) authentication](networking/authentication_users/dsl_telkom_openserve/dsl_telkom_openserve.md)
 
-* [Cambium: Wireless Authentication via Radius](networking/authentication_users/cambium_wireless_auth_radius/cambium.md)
+* [Cambium: Wireless Authentication via Radius](networking/authentication_users/cambium_wireless_auth_radius/cambium_wireless_auth_radius.md)
 
 * [Ubiquiti: Wireless authentication with Radius](networking/authentication_users/ubiquiti_wireless_auth_radius/ubiquiti_wireless_auth_radius.md)
 

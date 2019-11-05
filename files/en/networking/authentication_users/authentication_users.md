@@ -33,6 +33,8 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 * [DSL Telkom (Openserve) authentication](networking/authentication_users/dsl_telkom_openserve/dsl_telkom_openserve.md)
 
+* [Cambium: Wireless Authentication via Radius](networking/authentication_users/cambium_wireless_auth_radius/cambium.md)
+
 * [Ubiquiti: Wireless authentication with Radius](networking/authentication_users/ubiquiti_wireless_auth_radius/ubiquiti_wireless_auth_radius.md)
 
 * [Ubiquiti: PPPoE authentication on Edge Routers](networking/authentication_users/ubiquiti_pppoe_edge/ubiquiti_pppoe_edge.md)
@@ -44,3 +46,4 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 * [Juniper: PPPoE with Radius server](networking/authentication_users/juniper_pppoe_radius/juniper_pppoe_radius.md)
 
 * [Accel-ppp: Server for Linux](networking/authentication_users/linux_accel/linux_accel.md)
+

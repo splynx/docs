@@ -72,6 +72,7 @@ Table of contents
     * [Mikrotik: OpenVPN, Radius](networking/authentication_users/mikrotik_openvpn_radius/mikrotik_openvpn_radius.md)
     * [Mikrotik: Static IPs with API](networking/authentication_users/mikrotik_static_api/mikrotik_static_api.md)
     * [Mikrotik: Local auth, API](networking/authentication_users/mikrotik_local_auth_api/mikrotik_local_auth_api.md)
+    * [Cambium: Wireless Authentication via Radius](networking/authentication_users/cambium_wireless_auth_radius/cambium_wireless_auth_radius.md)
     * [Ubiquiti: Wireless auth, Radius](networking/authentication_users/ubiquiti_wireless_auth_radius/ubiquiti_wireless_auth_radius.md)
     * [Ubiquiti: PPPoE on Edge Routers](networking/authentication_users/ubiquiti_pppoe_edge/ubiquiti_pppoe_edge.md)
     * [Cisco IOS: PPPoE with Radius](networking/authentication_users/cisco_pppoe_radius/cisco_pppoe_radius.md)

@@ -1,4 +1,5 @@
-## Products
+Products
+==========
 `Inventory/Products`
 
 This section allows you to see all the products that are in the system,  add a new product as well.
@@ -9,7 +10,7 @@ If you click to a specific product vendor, you will redirect to the Vendor page.
 
 ![Products](products.png)
 
-You can create new product via button «Add Product»
+You can create new product via button «Add Product»section
 
 ![Add product](add_product.png)
 

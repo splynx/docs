@@ -1,5 +1,5 @@
 ## Supplier invoices
-
+==========
 `Inventory/Supply/Supplier Invoices`
 
 ![Supplier invoices](supplier_invoices.png)
@@ -26,3 +26,4 @@ If you press «Add» invoice – the new window will appear. There you can add b
 After creating invoice – items of selected products will be added to the system. They will have status **In stock**
 
 ---
+You can't remove 

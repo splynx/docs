@@ -7,7 +7,7 @@ Below is a list of supported and integrated Payment Gateways. By clicking on Pay
 
 * [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
 
-* [SageOne](payment_systems/sageone/sageone.md)
+* [SageOne](sageone/sageone.md)
 
 * [Authorize.net](payment_systems/authorize/authorize.md)
 

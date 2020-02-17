@@ -47,6 +47,22 @@ Press "Load categories" for loading categories from SageOne account.
 On this screenshot we have only 4 categories so for services we selected "internet services" category, and for the rest - "Extra" category.
 Don't forget to save configuration.
 
+Categories configuration depends on your SageOne account items. If you have created item for each tariff(1 tariff in Splynx = 1 item in Sage) you would configurate categories like this:
+
+![step1.png](step1.png)
+Item for tariff Fibre 50Mbps - synced.
+
+![step2.png](step2.png)
+Now it's needed to create transaction category in Finance→Transaction categories for this item and select option "same as service or tariff" and save configuration.
+
+![step2-2.png](step2-2.png)
+Enable this option for tariffs what you are using.
+
+![step3.png](step3.png)
+On internet tariff settings select Transaction category - created transaction category in Finance→Transaction categories
+
+In this way you can configure every tariff plan for which you have created item in Sage.s
+
 For payment synchronization you have to configure bank accounts:
 
 For bank accounts configuration go to **Config → Finance → Accounting bank accounts**

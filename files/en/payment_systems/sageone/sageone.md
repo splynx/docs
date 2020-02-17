@@ -72,6 +72,7 @@ Here you can check statuses of all synchronized customers, payments, invoices.
 
 ![log_synced_customers.png](log_synced_customers.png)
 As you can see on *Customers* tab there are 3 entries for 3 synced customers. Every synchronized customer, invoice, payment will have "Accounting ID". If this value is empty - item wasn't synchronized with Sageone. In this case you can run manual synchronization or wait until next scheduled synchronization.
+On this screenshot you can see warning about categories configuration because this screenshot was made before mapping categories in *Config/Finance/Accounting categories*
 
 Once customers synchronized we can create some invoice and push it to SageOne.
 ![sync_invoice.png](sync_unpaid_invoice.png)

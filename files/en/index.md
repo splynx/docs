@@ -218,6 +218,7 @@ Table of contents
 * [Online backups](online_backups/online_backups.md)
 
 ##### [Payment systems](payment_systems/payment_systems.md)
+* [SageOne](payment_systems/sageone/sageone.md)
 * [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
 * [Authorize.net](payment_systems/authorize/authorize.md)
 * [Braintree payments](payment_systems/braintree/braintree.md)

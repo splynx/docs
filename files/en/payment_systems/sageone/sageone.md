@@ -14,7 +14,7 @@ apt update
 apt install splynx-sageone
 ```
 
-**or you can install it from Web UI:**
+or you can install it from Web UI:
 
 **Config → Integrations → Add-ons:**
 
@@ -26,7 +26,7 @@ On this screenshot an add-on already installed.
 
 **We recommend to start with fresh SageOne account, if you have customers data there, we are not able to match customers in SageOne with customers in Splynx.**
 
-Once new SageOne account created go to **Config/Integrations/Modules list** and press "Edit" button on *splynx_addon_sageone_accounting*:
+Once new SageOne account created go to **Config → Integrations → Modules list** and press "Edit" button on *splynx_addon_sageone_accounting*:
 
 ![edit_module.png](edit_module.png)
 
@@ -38,7 +38,7 @@ Here you have to specify your SageOne account login and password.
 
 **Configure and map your accounting categories and bank accounts**
 
-For categories configuration go to **Config/Finance/Accounting categories**
+For categories configuration go to **Config → Finance → Accounting categories**
 
 ![categories.png](configuration2.png)
 
@@ -49,14 +49,14 @@ Don't forget to save configuration.
 
 For payment synchronization you have to configure bank accounts:
 
-For bank accounts configuration go to **Config/Finance/Accounting bank accounts**
+For bank accounts configuration go to **Config → Finance → Accounting bank accounts**
 ![bank_accounts.png](bank_accounts.png)
 We have 2 bank accounts and we will use #2 "Bank Payment" as default account and specify it for SageOne payment method.
 
 
 **Once add-on configured we can start working with SageOne.**
 
-Go to **Config/Integrations/Splynx Sageone Accounting** and push your customers to SageOne.
+Go to **Config → Integrations → Splynx Sageone Accounting** and push your customers to SageOne.
 ![manual_sync.png](manual_sync.png)
 
 We have only 3 customers and by pressing **Export customers to SageOne** we will synchronize our customers with SageOne account.
@@ -66,13 +66,13 @@ We have only 3 customers and by pressing **Export customers to SageOne** we will
 Now you can login to your SageOne account to ensure that customers were synchronized:
 ![synced_customers.png](synced_customers.png)
 
-You can check SageOne synchronization logs in **Administration/Logs/Accounting integrations**:
+You can check SageOne synchronization logs in **Administration → Logs → Accounting integrations**:
 ![customers_sync.png](logs_location.png)
 Here you can check statuses of all synchronized customers, payments, invoices.
 
 ![log_synced_customers.png](log_synced_customers.png)
 As you can see on *Customers* tab there are 3 entries for 3 synced customers. Every synchronized customer, invoice, payment will have "Accounting ID". If this value is empty - item wasn't synchronized with Sageone. In this case you can run manual synchronization or wait until next scheduled synchronization.
-On this screenshot you can see warning about categories configuration because this screenshot was made before mapping categories in *Config/Finance/Accounting categories*
+On this screenshot you can see warning about categories configuration because this screenshot was made before mapping categories in *Config → Finance → Accounting categories*
 
 Once customers synchronized we can create some invoice and push it to SageOne.
 ![sync_invoice.png](sync_unpaid_invoice.png)

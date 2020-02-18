@@ -1,11 +1,11 @@
 SageOne
 ====================
 
-**SageOne is a Splynx add-on. It is using for synchronization of finance operations between SageOne and Splynx**
+**We have developed an addon for SageOne within Splynx. It’s used for synchronization of accounting actions between SageOne and Splynx**
 
-**Integration described on video: https://www.youtube.com/watch?v=ctuNzm_qWgs**
+**The integration is described here: https://www.youtube.com/watch?v=ctuNzm_qWgs**
 
-*SageOne is NOT allow charge of all customers*
+*SageOne does NOT allow the charging of customers.*
 
 Install the add-on with commands:
 
@@ -19,115 +19,110 @@ or you can install it from Web UI:
 **Config → Integrations → Add-ons:**
 
 ![install_sageone.png](install_sageone.png)
-Press "Update(apt)" button first and then install SageOne.
-On this screenshot an add-on already installed.
+Click on "Update(apt)" button first and then install SageOne. On this example the add-on already installed.
 
-**After that you need create new SageOne account and configure your account.**
+**For the Splynx-SageOne integration, you need to create a new SageOne account and configure your account accordingly.**
 
-**We recommend to start with fresh SageOne account, if you have customers data there, we are not able to match customers in SageOne with customers in Splynx.**
+**We recommend to starting with a fresh SageOne account, if you have existing customer data, we will not be able to match customers in SageOne with customers in Splynx.**
 
-Once new SageOne account created go to **Config → Integrations → Modules list** and press "Edit" button on *splynx_addon_sageone_accounting*:
+Once you have created a new SageOne account navigate to **Config → Integrations → Modules list** and click the "Edit" button on *splynx_addon_sageone_accounting*:
 
 ![edit_module.png](edit_module.png)
 
-and specify your account details:
+Enter your account details:
 
 ![configuration.png](configuration.png)
-Here you have to specify your SageOne account login and password.
-"Company ID" will be loaded automatically if leave empty but if you know your Company ID please insert it.
+Here you have to specify your SageOne account login and password. "Company ID" will be loaded automatically if left empty, however, if you know your Company ID please insert it.
 
 **Configure and map your accounting categories and bank accounts**
 
-For categories configuration go to **Config → Finance → Accounting categories**
+For categories-configuration navigate to **Config → Finance → Accounting categories**
 
 ![categories.png](configuration2.png)
 
 ![categories.png](categories.png)
-Press "Load categories" for loading categories from SageOne account.
-On this screenshot we have only 4 categories so for services we selected "internet services" category, and for the rest - "Extra" category.
-Don't forget to save configuration.
+Click on "Load categories" to sync categories from SageOne to Splynx. On this screenshot, we only have 4 categories. For services, we selected the "internet services" category, and for the rest - the "Extra" category. Don't forget to save the configuration.
 
-Categories configuration depends on your SageOne account items. If you have created item for each tariff(1 tariff in Splynx = 1 item in Sage) you would configurate categories like this:
+Category configuration depends on your SageOne account items. If you have created item for each tariff (1 tariff in Splynx = 1 item in Sage) you would configure the categories as per the guide below:
 
 ![step1.png](step1.png)
 Item for tariff Fibre 50Mbps - synced.
 
 ![step2.png](step2.png)
-Now it's needed to create transaction category in Finance→Transaction categories for this item and select option "same as service or tariff" and save configuration.
+Next, we need to create a transaction category in Finance→Transaction categories for this item and select the option "same as service or tariff" and save the configuration.
 
 ![step2-2.png](step2-2.png)
-Enable this option for tariffs what you are using.
+Enable the option below to access the transaction category option in the specified tariff.
 
 ![step3.png](step3.png)
-On internet tariff settings select Transaction category - created transaction category in Finance→Transaction categories
+In the internet tariff config, select the transaction category which you created in Finance→Transaction categories.
 
-In this way you can configure every tariff plan for which you have created item in Sage.s
+This way you can map all tariff plans which you have created as items in SageOne.
 
-For payment synchronization you have to configure bank accounts:
+For **payment synchronization** you must configure bank accounts:
 
-For bank accounts configuration go to **Config → Finance → Accounting bank accounts**
+For bank accounts configuration navigate to **Config → Finance → Accounting bank accounts**
 ![bank_accounts.png](bank_accounts.png)
-We have 2 bank accounts and we will use #2 "Bank Payment" as default account and specify it for SageOne payment method.
+In this example, we have 2 bank accounts and we will use #2 "Bank Payment" as the default account and specify it for the SageOne payment method.
 
 
-**Once add-on configured we can start working with SageOne.**
+**Once the add-on is configured we can start working with SageOne.**
 
-Go to **Config → Integrations → Splynx Sageone Accounting** and push your customers to SageOne.
+Navigate to **Config → Integrations → Splynx Sageone Accounting** and sync your customers to SageOne.
 ![manual_sync.png](manual_sync.png)
 
-We have only 3 customers and by pressing **Export customers to SageOne** we will synchronize our customers with SageOne account.
+In this example we have 3 customers and by clicking **Export customers to SageOne** we will synchronize our customers to the SageOne account.
 
 ![customers_sync.png](manual_customers_sync.png)
 
-Now you can login to your SageOne account to ensure that customers were synchronized:
+You can log in to your SageOne account to ensure that customers were synchronized:
 ![synced_customers.png](synced_customers.png)
 
-You can check SageOne synchronization logs in **Administration → Logs → Accounting integrations**:
+You can also view SageOne synchronization logs in **Administration → Logs → Accounting integrations**:
 ![customers_sync.png](logs_location.png)
-Here you can check statuses of all synchronized customers, payments, invoices.
+Here you can view statuses of all synchronized customers, payments and invoices.
 
 ![log_synced_customers.png](log_synced_customers.png)
-As you can see on *Customers* tab there are 3 entries for 3 synced customers. Every synchronized customer, invoice, payment will have "Accounting ID". If this value is empty - item wasn't synchronized with Sageone. In this case you can run manual synchronization or wait until next scheduled synchronization.
-On this screenshot you can see warning about categories configuration because this screenshot was made before mapping categories in *Config → Finance → Accounting categories*
+As you can see on the *Customers* tab there are 3 entries for 3 synced customers. Every synchronized customer, invoice and payment will have an "Accounting ID". If this value is empty - the item wasn't synchronized with SageOne. In this case, you can run a manual synchronization or wait until the next scheduled synchronization. In this view you can see a warning about transaction categories configuration because it was captured before we mapped the categories in *Config → Finance → Accounting categories*
 
-Once customers synchronized we can create some invoice and push it to SageOne.
+Once customers are synchronized, we can create an invoice and push it to SageOne.
 ![sync_invoice.png](sync_unpaid_invoice.png)
-As you can see from a screenshot invoice was synchronized.
+As you can see from the screenshot, the invoice was synchronized.
 
-In logs you can check synchronized invoices too:
+In the logs, you can view all synchronized invoices:
 ![sync_payments.png](log_synced_invoice.png)
 
 ![synced_invoice.png](synced_invoice_on_sageone.png)
-On SageOne we can also check this UNPAID invoice.
+In SageOne we can also view this UNPAID invoice.
 
-Once invoice was PAID, Splynx will import new payments(bank account must be configured for payments synchronization) automatically.
+Once the invoice is PAID, Splynx will import the new payment automatically (bank account must be configured for payments synchronization).
 ![paid_invoice.png](paid_invoice_on_sageone.png)
 
-Or you can force payments synchronization here:
+Alternatively, you can manually sync payments here:
 ![sync_payments.png](sync_payments.png)
 
-**NOTE! To make invoice status "paid" in Splynx after payment synchronization - "Allow pay invoices from account balance" option must be enabled for a customer**
+**NOTE! To mark the invoice status as "paid" we have to enable the following option after payment synchronization - "Allow pay invoices from account balance" must be enabled under the customer’s billing tab.**
 ![option_to_enable.png](option_to_enable.png)
 
-Now you can check logs of synced payments:
+You can also view logs of synced payments:
 ![log_sync_payments.png](log_synced_payment.png)
 
-Now we can check invoice status:
+We can also view the invoice status which will now reflect as “Paid”:
 ![sync_payments.png](customer_paid_invoice.png)
 
-Transaction was created:
+The transaction was also created:
 ![customer_transaction.png](customer_transaction.png)
 
-Payment:
+As well as the payment:
 ![customer_payment.png](customer_payment.png)
 
 
-**Some examples of errors what can happen**
+**Some examples of errors which could occur:**
 
-*Scenario*
+*Scenario 1*
 
-An invoice was synchronized earlier, deleted in Splynx(for example invoice was incorrect and you have deleted it and create a new once with the same number) and you are trying to push invoices into SageOne:
+An invoice was synchronized, deleted in Splynx (for example invoice was incorrect and you have deleted it and create a new one with the same number) and you are attempting to sync invoices to SageOne:
 
 ![error_sync_invoice.png](error_sync_invoice.png)
 
-How to fix: remove an invoice from SageOne account or if you can't remove it from SageOne re-create invoice in Splynx with new invoice number.
+Fix: Remove the invoice from within the SageOne account or if you are unable to remove it from SageOne re-create the invoice in Splynx with a new invoice number.

@@ -1,0 +1,10 @@
+Archive
+======
+
+Completed tasks can be moved to Archive from the boards or by using the **Actions** button in task window. It is a convenient method of keeping a history of tasks as well as a reference to restore any archived task
+
+![Archive task](archive_task.png)
+
+You can always restore the task from the archive in case of a necessity. Simply click on the **Restore** button in the specific task window.
+
+![Archive task](restore_archive.png)

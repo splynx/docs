@@ -16,7 +16,7 @@ This table displays the tasks assigned to the administrator currently logged int
 
 All Tasks (Assigned)
 ========
-This is a table displaying tasks assigned to each specific administrator or team as well as unassigned tasks, conveniently displaying how many tasks are assigned to each administrator as well as the percentage of all tasks assigned to the respective admin.
+This is a table displaying tasks assigned to each specific administrator or team as well as unassigned tasks, conveniently displaying how many tasks are assigned to each administrator or team as well as the percentage of all tasks assigned to the respective admin/team.
 
 ![All tasks](Alltasks.jpg)
 

@@ -1,7 +1,7 @@
 Scheduling
 =======
 
-Splynx scheduling feature was designed to optimize support and the management processes of Internet Service Providers to simplify the work of technicians. It is a set of efficient tools that when put together, creates a quick, easy and manageable system to manage processes for
+Splynx scheduling module was designed to optimize support and the management processes of Internet Service Providers to simplify the work and efficiency of technicians. It is a set of convenient tools that when put together, creates a quick, easy and manageable system to manage processes for technicians.
 
 * [Dashboard](scheduling/dashboard/dashboard.md)
 * [Projects](scheduling/projects/projects.md)

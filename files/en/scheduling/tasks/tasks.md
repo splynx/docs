@@ -1,12 +1,13 @@
-**Tasks**
+Tasks
+======
 
-Every project has various tasks that we create and assign for responsible person. The tasks can be created by clicking the **Add** button in `Scheduling > Tasks`.
+Every project has various tasks that we create and assign to a specific administrator. Tasks can be created by clicking the **Add** button in `Scheduling > Tasks`.
 
 ![Tasks](tasks_table.png)
 
 The existing tasks can be filtered by a specific project, priority or assignee.
 
-It is also possible to create the task directly form the ticket you are working with by clicking the button **Create task** in the top right corner.
+It is also possible to create the tasks directly from the ticket you are working with by clicking the **Create task** button in the top right corner of the page.
 
 ![Add task tickets](tickets_add_task.png)
 
@@ -14,7 +15,7 @@ Once clicked, the new window will appear:
 
 ![Add task window](project_task.png)
 
-You might have various task templates to optimize the routine process of adding the task. It is possible to create own templates at `Config > Scheduling > Task templates`.  
+It is possible to have various task templates to optimize the routine/process of adding new tasks. You can create your own templates at `Config > Scheduling > Task templates`.  
 
 ![Task templates](task_template.png)
 
@@ -49,6 +50,6 @@ Every task has action buttons that allows you to:
 * To archive the task
 
 
-Another feature that optimizes you work with tasks is an action log window that is displayed at the bottom. It allows you to track all the activities that were performed, check the worklog and task comments.
+Another feature that optimizes you functionality with tasks is an action log  that is located at the bottom of the tasks window. It allows you to track all the activities that were performed within the task, check the worklog and task comments.
 
 ![Activity log](activity_log.png)  

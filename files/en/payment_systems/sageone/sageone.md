@@ -125,4 +125,18 @@ An invoice was synchronized, deleted in Splynx (for example invoice was incorrec
 
 ![error_sync_invoice.png](error_sync_invoice.png)
 
-Fix: Remove the invoice from within the SageOne account or if you are unable to remove it from SageOne re-create the invoice in Splynx with a new invoice number.
+**Fix:** Remove the invoice from within the SageOne account or if you are unable to remove it from SageOne re-create the invoice in Splynx with a new invoice number.
+
+*Scenario 2*
+
+When trying export payments from Splynx to SageOne getting this error:
+![error_sync_invoice.png](export_payments2.png)
+
+```
+Export payment: 2020-02-00644
+Skip by payment method!
+Export payment: 2020-02-00645
+Skip by payment method!
+```
+**Fix:**  in SageOne add-on config set up appropriate for you payment method for payments export:
+![error_sync_invoice.png](export_payments.png)

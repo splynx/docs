@@ -32,10 +32,10 @@ Install:
 wget -qO- https://deb.splynx.com/setup | bash -
 apt-get install splynx
 ```
-Finish installation you should from the web. Open URL in browser - http://ip_address/admin (where ip_address it's IP address of your Splynx server), add your license key and save it:
+To finish the installation please type this order of URL in a browser - http://ip_address/admin (where ip_address is, replace with the IP address of your Splynx server), add your license key and save it:
 ![Screenshot](install_splynx1.png)
 
-After checking license you will redirect to the "Finish setup" menu (you can skip it, but we recommend to complete these steps):
+After applying your license you will be redirected to the "Finish setup" menu (you can skip it but we recommend completing these steps):
 
 ![Screenshot](install_splynx2.png)
 
@@ -53,7 +53,7 @@ Update:
 apt-get update
 apt-get dist-upgrade
 ```
-If you make error when enter license code, or mysql root password you can reenter it with:
+If you make an error when entering your license code, or mysql root password you can re-enter it with:
 ```bash
 dpkg-reconfigure splynx
 ```

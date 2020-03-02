@@ -1,12 +1,12 @@
 Dashboard
 =========
 
-Dashboard is the main control panel in Splynx which will help you to check financial and customer statistics on a daily basis. With dashboard you can also monitor system performance and immediately get information about your network health.
+Dashboard is the main control panel in Splynx which will help you to check financial and customer statistics on a daily basis. From the dashboard you can also monitor system performance and immediately get information about your network health and our other modules.
 
 ![Dashboard1](dashboard1.png)
 ![Dashboard2](dashboard2.png)
 
-At the top of the live dashboard will be displayed the number of customers online, number of new customers, new and open tickets and number of devices down. It is possible to view them in details in a list.
+At the top of the live dashboard you can find the number of online customers, the number of new customers, new and open tickets and the number of devices down in your network. It is possible to quickly navigate to detailed lists of each by clicking the view buttons.
 
 ![Screenshot](dashboard3.png)
 
@@ -14,43 +14,43 @@ At the top of the live dashboard will be displayed the number of customers onlin
 
 **Live dashboard** is divided into 6 main parts:
 
-_System status_ <icon class="image-icon">![icon](Screenshot_at_May_12_16-55-54.png)</icon> - with the information free memory, last DB backup, last remote backup, etc.
+_System status_ <icon class="image-icon">![icon](Screenshot_at_May_12_16-55-54.png)</icon> - displaying information on free memory, last DB backup, last remote backup, etc.
 
-_Customers_ <icon class="image-icon">![icon](Screenshot_at_May_12_16-57-33.png)</icon> - with the latest statistics about new, active, online, online today, blocked customers, etc.
+_Customers_ <icon class="image-icon">![icon](Screenshot_at_May_12_16-57-33.png)</icon> - representing statistics about new, active, online, online today, blocked customers, etc.
 
-_Networking_ <icon class="image-icon">![icon](Screenshot_at_May_12_16-56-17.png)</icon> - with the information about number of routers, IPv4 networks, Monitoring, public and private addresses etc.
+_Networking_ <icon class="image-icon">![icon](Screenshot_at_May_12_16-56-17.png)</icon> - a brief count of the number of routers, IPv4 networks, Monitoring, public and private addresses etc.
 
-_Finance_ <icon class="image-icon">![icon](Screenshot_at_May_12_16-56-28.png)</icon> - with the statistics of unpaid/ paid, debit transactions and payments for the current and last months.
+_Finance_ <icon class="image-icon">![icon](Screenshot_at_May_12_16-56-28.png)</icon> - a convenient table with the statistics of unpaid/ paid, debit transactions and payments for the current and last months.
 
-_CRM_ <icon class="image-icon">![icon](dashboard5.png)</icon> - with the information about leads, quotes and deals.
+_CRM_ <icon class="image-icon">![icon](dashboard5.png)</icon> - a count of all leads, quotes and deals in the system.
 
-_Tickets_ <icon class="image-icon">![icon](dashboard6.png)</icon> - with the statistics of new, work in progress, resolved and waiting on agent tickets.
+_Tickets_ <icon class="image-icon">![icon](dashboard6.png)</icon> - a quick list of tickets grouped by the status thereof.
 
 ![Dashboard1](dashboard7.png)
 ![Dashboard2](dashboard8.png)
 
-There is a **Side Menu** at the left side of the page with following modules:
+The navigation pane is located at the left side of the page with the following modules:
 
-[Tariffs](configuring_tariff_plans/configuring_tariff_plans.md) - It shows the tariffs aspect of the system
+[Tariffs](configuring_tariff_plans/configuring_tariff_plans.md) - The list of all your services and products in the system
 
-CRM - It shows the leads aspect of the system
+CRM - Your prospective client management platform.
 
-[Customers](customer_management/customer_management.md) - It shows the customers aspect of the system
+[Customers](customer_management/customer_management.md) - Your customizable list off all customers in the system.
 
-[Finance](finance/finance.md) - It shows the financial aspect of the system
+[Finance](finance/finance.md) - Your business in a financial aspect.
 
-[Inventory](inventory/inventory.md) - It shows the inventory aspect of the system
+[Inventory](inventory/inventory.md) - Physical products and equipment is managed here.
 
-[Networking](networking/networking.md) - It shows the networking aspect of the system
+[Networking](networking/networking.md) - The powerful Splynx networking management platform.
 
-[Support](support_tickets_messages/support_tickets_messages.md) - It shows the support aspect of the system
+[Support](support_tickets_messages/support_tickets_messages.md) - Your advanced support system for all your clients.
 
-Scheduling - It shows the scheduling aspect of the system
+Scheduling - Your technical staff manager.
 
-[Administration](administration/administration.md) - It shows the administration aspect of the system
+[Administration](administration/administration.md) - The administrative page of your Splynx server.
 
-[Config](configuration/configuration.md) - It shows the configuration aspect of the system
+[Config](configuration/configuration.md) - Where all configurations for each module is done.
 
-My profile - It shows the current profile on the system
+My profile - It shows the profile of the administrator currently logged into the system
 
 Logout - Logout from the system

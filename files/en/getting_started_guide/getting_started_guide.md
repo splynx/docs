@@ -1,8 +1,8 @@
 Getting Started With SPLYNX
 ===========================
-Hello Splynx Newby!
+The Splynx family welcomes you!
 
-The Splynx team proudly welcomes you to the world of efficiency and convenience. All your business activities are about to get much easier, quicker and proficient with the help of Splynx.
+We would like to introduce you to a world of efficiency and convenience specially designed for you. All your business activities are about to get much easier, quicker and proficient with the help of Splynx.
 
 Here are a few base requirements to get started.
 Kindly follow the links below to each step and get ready to optimize your business!

@@ -1,11 +1,12 @@
 Custom additional fields
 ==========
 
-To add additional field, click on the Config menu, and click on Additional field.
+To add an additional field, click on the Config menu, and click on Additional fields.
+
 ![Additional field](config.png)
 
 
-Select the module where you'd like to add an additional field and click on *Add button*.
+Select the module where you'd like to add an additional field and click on the *Add button*.
 
 ![Select module and add](module_and_add.png)
 
@@ -15,7 +16,7 @@ A window will pop up where you can create an additional field.
 In this example, it shows a `some_additional_field` additional field for the Customers module.
 ![Add additional field](add_additional_field.png)
 
-* **Required** - impossible to save without filling in this field.
+* **Required** - Make the field mandatory in order to save.
 * **Unique** -  unique value for this field.
 * **Show in list** - shows in the list of the selected module as a column.
 * **Add** - add to the entry of every module.

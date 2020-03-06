@@ -1,19 +1,19 @@
 Search
 ==========
 
-The Search engine in SPLYNX is divided in:
+The Search engine in SPLYNX is divided into:
 
-* Search a customer or a card
-* Search inside a table
-* Search the entire system
+* Searching for a customer or a card
+* Searching within a table
+* Searching the entire system
 
 ## Customer search
-To search a customer, click on `Customers Menu → Search`. In the search window it's possible to create a customized search that will query the customer database.
+To search a customer, click on `Customers Menu → Search`. In the search window it's possible to perform a customized search that will query the customer database.
 
 ![Customer search](customer_search.png)
 
 
-Here you will be able to use different parameters for the search, such as:
+Here you will be able to use different parameters for searching, such as:
 
 * **ID** - ID of the customer
 * **Login** - the login of the customer
@@ -29,16 +29,16 @@ Here you will be able to use different parameters for the search, such as:
 * **Service** - the options are: Internet, Voice, Custom.
 
 
-To get a more customizable search, you can click on `My Profile Menu → Customer` search fields and select different fields.
+For a more customizable search, you can click on `My Profile Menu → Customer` search fields and select different fields.
 
 ![Customer search fields](customer_search_fields.png)
 
 
-To search a voucher click on `Customers → Menu → Vouchers →  Search`. It is possible to do a search in the Prepaid vouchers database with the search option as shown below.
+To search for a voucher click on `Customers → Menu → Vouchers →  Search`. It is possible to do a search in the Prepaid vouchers database with the search option as shown below.
 
 ![Card search](card_search.png)
 
-The different parameters that are available for searching vouchers are listed below:
+These are the different parameters that are available for searching for vouchers:
 
 * **ID** - ID of the voucher
 * **Serie** - the Series the voucher belongs to
@@ -53,7 +53,7 @@ The different parameters that are available for searching vouchers are listed be
 
 ## Search inside a table
 
-We can search a particular data inside any table in Splynx.
+We can search for particular data inside any table in Splynx.
 Use the search tab of every table and get the complete view as a result.
 
 ![View search](view_search.png)

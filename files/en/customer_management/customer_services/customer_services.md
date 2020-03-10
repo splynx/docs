@@ -1,6 +1,6 @@
 Customer services
 ==========
-The customer service tab is where all products/services supplied to that specific customer can be found, edited or new services can be added to the clients account. This is where you control all services for a client which will influence the bill they receive.
+The customer service tab is where all products/services supplied to that specific customer can be found, edited or new services can be added to the customers account. This is where you control all services for a client which will influence the bill they receive.
 
 It is possible to associate different services for each customer: `Internet services`, `Voice services` and `Custom services`.
 In order **to add a new service** for the customer, select the *Customer view*, go to the services tab and click `Add service` or on the `+` sign above the service table on the left. Please note that customers have to be active on the system to make us of their services, as well as to be able to add services to their profile.
@@ -25,7 +25,7 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
 * **Discount** - sets a discount with parameters of a percentage, within start and end dates of the discount, please note that these dates refer to the period of which the discount will be applied.
 * **Status** - the options are `Active`, `Disabled`, `Stopped`, `Pending`, `Archived`.
   * **Active** - service is active and ready for use.
-  * **Disabled** - used when assuming that customer will no longer use the service,  end date has to be reached or configured for the system to stopped accounting for it in a billing perspective. This will be applied to existing services of clients marked as inactive
+  * **Disabled** - used when assuming that customer will no longer use the service,  end date has to be reached or configured for the system to stopped accounting for it in a billing perspective. This will be applied to existing services of customers marked as inactive
   * **Stopped** - Used to temporary disable the service. Will be set automatically  to the new service generated when a client is marked as Inactive, when the customer is activated, the service status will  automatically change to Active with the start date of the day of activation.
   * **Pending** - Status of the new service during the waiting period of a planned service change. Between the end date of the old service and the start date of the new.
   * **Archived** - status for services archived for future reference.

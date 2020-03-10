@@ -1,17 +1,21 @@
 CRM Dashboard
 ===
-The CRM dashboard gives us an overview of our sales activities in regards to prospective leads.
+The CRM dashboard provides an overview of all sales activities regarding to prospective customers.
 
-Here we can see the directory boards - My leads, My quotes, My deals, all leads which will direct you to the appropriate sections.
+The dashboard represents progressive and interactive data statistics for each contributing headers. You can see total amounts of deals and quotes with a estimated total revenue, as well as, the number of leads for the current administrator and all leads within the system.
 
-A pie chart - **My leads by stages** - displays the various stages of the logged in administrator's leads in the system.
+Each section is represented here by appropriate format. My leads, My quotes, My deals and all deals are represented by mean of informational box of totals and consists of links which directs you to the respective sub-module.
 
-The **Recent Activities** stream shows us live information of changes to the leads in the system.
+Other summarized information regarding activities on the system and progression in stages of leads are represented by means of the following:
+
+A pie chart for the **My leads by stages** section - which displays the various stages of the current administrator's leads in the system. A legend for the different stages and the color thereof on the chart is provided as descriptions for each stage.
+
+A table for the  **Recent Activities** section - representing live information of all actions applied to the leads in the system.
 
 ![CRM Dashboard](CRM_dashboard.jpg)
 
-In the **Leads Info** section we can see a tabulated breakdown of the quotes vs deals and their amounts.
+A table for the **Leads Info** section - tabulates a breakdown of the quotes vs deals and the number thereof as well as the total revenue it may generate.
 
-In the last table - **Upcoming follow-ups** we can see all reminder notifications set in the leads information page.
+A table for the **Upcoming follow-ups** - displays reminder notifications configured for each lead in their information page.
 
 ![CRM Dashboard Extended](CRM_dashboard1.jpg)

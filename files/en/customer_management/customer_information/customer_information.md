@@ -16,9 +16,9 @@ To edit a customers information, navigate to *Customers* -> *List* -> select the
 * Status - options to set are: New, Active, Inactive, Blocked. (Some functions are limited Active customers only, i.e, for the client of make use of services. Also, it is necessary for a customer to be inactive in order to delete them *Inactive -> Save -> Actions -> Delete*)
 
 **New** - status given to customer recently created or added to the system.<br>
-**Active** - status given to clients to allow the system to take their profile into account and make feature available.<br>
-**Inactive** - status given to clients for the system to disregard/ignore their profile, client no longer uses services.<br>
-**Blocked** - status given to clients who failed to make payments for services or to simply deny access to the client while taking their profile into account.
+**Active** - status given to customers to allow the system to take their profile into account and make feature available.<br>
+**Inactive** - status given to customers for the system to disregard/ignore their profile, client no longer uses services.<br>
+**Blocked** - status given to customers who failed to make payments for services or to simply deny access to the client while taking their profile into account.
 
 
 * Type of billing - the options are Recurring payments, Prepaid (daily) or Prepaid (custom)
@@ -51,7 +51,7 @@ Additional fields created will be displayed in the *Additional information* sect
 
 **Maps**
 
-This is a physical representation of the customer's address. If the customers address is set and maps is configured within the system, you will be able to view the clients physical location on the map
+This is a physical representation of the customer's address. If the customers address is set and maps is configured within the system, you will be able to view the customers physical location on the map
 
 ![Maps](customermap.png)
 

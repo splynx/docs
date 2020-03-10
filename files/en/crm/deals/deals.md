@@ -1,25 +1,25 @@
 Deals
 ====
-Deals are commitments created with leads on business done with them.
+Deals are commitments/agreements created with leads on business done with/for them.
 
-Deals are created within the specific lead's page under the **Deals** tab.
+These are created within the specific lead's page under the **Deals** tab.
 
 ![Deals](deals1.jpg)
 
-Once you have selected to add a deal you have to fill in the required information:
+Once you have selected to add a deal, it is necessary for you to fill in the required information in the fields provided:
 
 ![Deals](deals2.jpg)
 
 * `Name of deal` - Best practice is to create a descriptive name for the deal.
 * `Status` - Whether the deal is Open, Won or lost.
-* `Owner` - The administrator to whom the deal belongs to.
-* `Total` - The total value of the deal.
-* `Created` - The date the deal is created (by default today's date)
-* `Expected close` - The date that the deal is expected to close by.
+* `Owner` - The administrator to whom the deal belongs to/is responsible for.
+* `Total` - The total value estimated that the deal will generate.
+* `Created` - The date the deal is/was created (by default today's date)
+* `Expected close` - The date that the deal is expected to close by/quote accepted and requests service activation.
 * `Type` - Is the deal new, or existing business?
-* `Source` - The source of the deal eg. TV ad, newspaper, billboard etc.
+* `Source` - The source of where the deal was discovered by the lead eg. TV ad, newspaper, billboard etc.
 
-Once the deal is added it will also be added to the totals tab which will provide us with a summary of all deals made with the customer.
+Once the deal is added, it will also be added to the totals tab, which will provide us with a summary of all deals made with the customer.
 
 We can also use the filter options to filter between the different status' the deals belong to.
 

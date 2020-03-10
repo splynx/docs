@@ -10,8 +10,8 @@ The Map has a convenient filter for you to display specific data when viewing as
 ![Maps Filter](maps_filter.jpg)
 
 **Show** - select data to display on the map<br>
-**Partner** - select data to display from clients belonging to a specific partner in your list of partners<br>
-**Location** - select data to display from clients belonging to a specific location in your list of locations<br>
-**Customer status** - select data to display of clients with a specific status<br>
+**Partner** - select data to display from customers belonging to a specific partner in your list of partners<br>
+**Location** - select data to display from customers belonging to a specific location in your list of locations<br>
+**Customer status** - select data to display of customers with a specific status<br>
 
 ![Maps Legend](maps_legend.jpg)

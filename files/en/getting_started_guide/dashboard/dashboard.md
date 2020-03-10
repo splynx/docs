@@ -43,7 +43,7 @@ CRM - Your prospective client management platform.
 
 [Networking](networking/networking.md) - The powerful Splynx networking management platform.
 
-[Support](support_tickets_messages/support_tickets_messages.md) - Your advanced support system for all your clients.
+[Support](support_tickets_messages/support_tickets_messages.md) - Your advanced support system for all your customers.
 
 Scheduling - Your technical staff manager.
 

@@ -1,7 +1,7 @@
 Customer documents
 ==========
 
-As a company with multiple clients we've found keeping physical copies of all of the contracts and agreements for each client in files and folder, in boxes and storage rooms quite a inefficient, ineffective and honestly, messy way of doing things. Worry no more, we have digitalized this very necessary form of keeping records for you.
+As a company with multiple customers we've found keeping physical copies of all of the contracts and agreements for each client in files and folder, in boxes and storage rooms quite a inefficient, ineffective and honestly, messy way of doing things. Worry no more, we have digitalized this very necessary form of keeping records for you.
 
 Our documents section allows you to upload any format of a document, giving you a secure, neat, easily manageable and quite literally better method of storing your documents. Need more? Our document section can also generate documents according to templates you create for it! Digitalizing the entire process and achieving hassle free bookkeeping.
 

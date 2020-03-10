@@ -4,7 +4,7 @@ Customer management
 Dreading as can be, customer management is a vital task for the continued excellent service delivery as an ISP.
 The Splynx family has taken into account each element when dealing with this and compiled an advanced customer management system which brings you a easy and manageable platform for you to effortlessly manage your customers.
 
-Splynx customer management achieves complete control of each aspect of your clients, all in one place. Our management system consists of 6 main pages for each customer on the system. Namely, information, services, billing, statistics, documents, CPE and CRM.
+Splynx customer management achieves complete control of each aspect of your customers, all in one place. Our management system consists of 6 main pages for each customer on the system. Namely, information, services, billing, statistics, documents, CPE and CRM.
 
 
 Before we explore each section, it is vital to know that this module like all the others within Splynx, is customizable to display information of your preference, furthermore, you are not limited by the fields available in the system by default.

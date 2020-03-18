@@ -1,11 +1,11 @@
 Capped plans and Top-Ups
 ========================
 
-CAP is a concept used by ISP's to provide internet services with monthly data limits and a option for customers to purchase additional data once their allocated limit has been reached.
+CAP is a concept used by ISP's to provide internet services with monthly data limits and an option for customers to purchase additional data once their allocated limit has been reached.
 
-The advantage is that, customers can pay more to extend their CAP limits using a Top Up tool/function. Administrators design Top Up plans that are available to customers in addition to their regular internet/tariff plans.
+The advantage is that customers can pay more to extend their CAP limits using a Top Up tool/function. Administrators design Top Up plans that are available to customers in addition to their regular internet/tariff plans.
 
-Firstly, to make use of this feature, it is necessary enable the CAP module in _Config → Integrations _→ Main Modules.__
+Firstly, to make use of this feature, it is necessary to enable the CAP module in _Config → Integrations _→ Main Modules.__
 
 ![Screenshot_1.png](Screenshot_1.png)
 
@@ -15,7 +15,7 @@ A new tab will appear in the FUP page called CAP.
 
 **1. CAP configuration**
 
-To configure CAP policies navigate to _Tariffs → Internet_, then select a plan you wish to apply the CAP feature to by clicking on the FUP button in the actions column of the specific plan. Then click on the cap Tab:
+To configure CAP policies navigate to _Tariffs → Internet_, then select a plan you wish to apply the CAP feature to by clicking on the FUP button in the Actions column of the specific plan. Then click on the cap Tab:
 
 ![cap1.png](cap1.png)
 ![cap2.png](cap2.png)
@@ -24,19 +24,19 @@ There are three sections in the configuration of CAP: _Monthly limits (CAP), Top
 
 ## Monthly Limits (CAP)
 
-In monthly limits  we can set how much data (in KB, MB, GB or TB) customers are allowed to consume relevant to the internet plan. It can be configured based on download, upload or bidirectional usage. When the monthly data CAP has been reached, Splynx automatically blocks the customer or reduces speeds according to the configured action or percentage. We can choose enable the "_Rollover unused data_" function which means, unused monthly data of the CAP will be added to the data limits of the next month. When this feature is enabled, weekly and daily limits configured in the FUP settings are no longer applied.
+In monthly limits, we can set how much data (in KB, MB, GB or TB) customers are allowed to consume relevant to the internet plan. It can be configured based on download, upload or bidirectional usage. When the monthly data CAP has been reached, Splynx automatically blocks the customer or reduces speeds according to the configured action or percentage. We can choose to enable the "_Rollover unused data_" function which means, unused monthly data of the CAP will be added to the data limits of the next month. When this feature is enabled, weekly and daily limits configured in the FUP settings are no longer applied.
 
 ![Monthly limits](CAP_monthly.png)
 
 **Parameter descriptions**:
 
 _Monthly traffic limit_ - the total amount of traffic allowed for the tariff (in KB, MB, GB or TB)<br>
-_Bonus traffic limit_ - amount of non accounting traffic allowed for the tariff(in KB, MB, GB or TB)<br>
-_Traffic direction_ - direction of traffic to account for the monthly limit.<br>
-_Action_ - actions to execute once monthly limit is reached. <br>
-_Auto Top-Up plan_ - tariff to use if customer has auto top-up's enabled.<br>
+_Bonus traffic limit_ - the amount of non-accounting traffic allowed for the tariff(in KB, MB, GB or TB)<br>
+_Traffic direction_ - the direction of traffic to account for the monthly limit.<br>
+_Action_ - actions to execute once the monthly limit is reached. <br>
+_Auto Top-Up plan_ - tariff to use if a customer has auto top-up's enabled.<br>
 _Top-up will disable daily & weekly limits_ - whether top-up data should be included in FUP rules or not.<br>
-_Rollover unused data (monthly)_ - transfer unused data of cap to the next months limits.(when enabled, daily and weekly limits set in FUP are disabled)<br>
+_Rollover unused data (monthly)_ - transfer unused data of cap to the next month's limits. (when enabled, daily and weekly limits set in FUP are disabled)<br>
 _Allow the usage of bonus traffic when normal CAP is finished_ - enables/disables bonus data for customers.
 
 **Bonus traffic limits**
@@ -52,7 +52,7 @@ but it is possible to set limits on that traffic:
 
 The main logic is - when a customer used all bonus traffic, the system will start to use the monthly traffic.
 
- The "_Allow use bonus traffic when normal Cap is finished_" toggle will cause the system block customers if they've used all their monthly traffic and the toggle is disabled. If it is enabled, the system will allow use bonus traffic.
+ The "_Allow use bonus traffic when normal Cap is finished_" toggle will cause the system to block customers if they've used all their monthly traffic and the toggle is disabled. If it is enabled, the system will allow the use of bonus traffic.
 
 When we enable Bonus traffic limits, we can see statistics for that on the customer's services and a new section is added to the customer information page:
 
@@ -72,7 +72,7 @@ This can also be viewed in the service statistics of the customer:
 
 ## Top-up Plans
 
- These plans are used when monthly data CAP's are reached and the customer wishes to extend their services. Customers pay for Top Up's in order to regain access according to the data limits of the Top up plan.
+ These plans are used when monthly data CAP's are reached and the customer wishes to extend their services. Customers pay for Top-Ups in order to regain access according to the data limits of the Top up plan.
 
  Top-up plans are beneficial to you as a an ISP as this creates an additional source of income with existing customers using a capped service.
 

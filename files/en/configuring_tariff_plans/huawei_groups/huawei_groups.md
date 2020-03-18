@@ -1,6 +1,6 @@
 Huawei Groups
 =============
-
+ 
 Huawei Groups is where we can create groups of plans that will limit the bandwidth in the Huawei GPON.
 
 It's located in _Tariff Plans → Huawei Groups_, when the Huawei Gpon addon is enabled. This can be done in _Config → Integrations → Addons_, search for Huawei and install the addon:

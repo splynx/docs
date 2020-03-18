@@ -1,6 +1,6 @@
 One-Time plans
 ==============
-These are non recurring charges used regularly which include services like, call out fees, initial connection of customers, materials used in conduit, etc.
+These are non recurring charges used regularly which include services like, call out fees, initial connection of customers, materials used in conduit, etc. 
 
 To create new One-Time plans, navigate to _Tariff plans → One-time_ and click on Add plan.
 

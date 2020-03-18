@@ -135,5 +135,65 @@ Once the ticket is created it is possible to view or close it by using the follo
 
 ![Tickets mobile app](app_ticket.jpg)
 
-There are a number of elements that can be automated within the ticketing module to improve efficiency and speed up engagement. These automation rules can be set up under `Config / Support / Ticket automation` 
+There are a number of elements that can be automated within the ticketing module to improve efficiency and speed up engagement. These automation rules can be set up under `Config / Support / Ticket automation`
 More information about **tickets configuration** can be found here - [Support](configuration/main_configuration/support/support.md).
+
+## List of new & opened
+
+This is where you will find a list/table of all new and opened tickets. For administrators part of the support team and designated to answering customer queries it is their working space within the ticketing module.
+
+![Tickets](new&opened.png)
+
+Above the table of new & opened tickets, we've added a quick filter to change the tickets being displayed. You can choose to display tickets assigned to a specific administrator, unassigned tickets or all new and open tickets in the system. You may also filter tickets by status once the source of tickets to display has been selected. For ease of access "Refresh" and "Create ticket" buttons have been added along side the button to hide or display the main filter menu.
+
+![Tickets](topfilter_tickets.png)
+
+
+The main filter menu can be found on the right side of the page when the filter button  <icon class="image-icon">![filter](filter_icon.png)</icon> is clicked. This filter can be used to specify which tickets to view based on the selections in the fields provided.
+
+![Tickets](mainfilter.png)
+
+**Find filter parameter descriptions**
+
+**Full name** - search for tickets by the customers full name<br>
+**Condition** - search in the list of open, closed or all tickets<br>
+**Period** - search for tickets within a specific time period<br>
+**Customer / Lead ID** - search for tickets via the Splynx customer ID or lead ID<br>
+**Group** - search for tickets in the list of tickets for the specific group of administrators<br>
+**Partner** -  search for tickets of a particular partner<br>
+**Type** - search for tickets of a specific type or reason for opening<br>
+**Priority** - -search for tickets marked with a specific urgency<br>
+**Text search** - search for tickets containing specified Text<br>
+
+After selecting the desired data to display in the provided fields simply click _Apply_ to search for these tickets or _Clear filters_ to clear the filter fields and display all/assigned new & opened tickets.
+
+The layout of the new & opened tickets table can also be changed with two options <icon class="image-icon">![layout](tickets_layout.png)</icon>. The first formats the list into a _Table view_ and the second into a _Card view_.
+
+## Table View
+
+![Tickets](tablewview.png)
+
+## Card view
+
+![Tickets](cardview.png)
+
+
+Deciding which view to use is a matter of personal preference. Each view has its own capabilities too. Namely:
+
+**Table view**
+
+Displays more details and has a actions column limited to viewing the ticket, marking it as read or unread or closing the ticket. Please keep in mind that because this is a table, it can be customized to view more/less data like all tables in Splynx and the data can also be export with the use of the <icon class="image-icon">![layout](table_icons.png)</icon> icons.
+
+**Card View**
+
+Displays less details but has quick access to function like reassigning tickets to admins or groups and changing the priority, status or type of the ticket.
+
+
+## List of closed
+
+Here is where you will find the list/table of all closed tickets in the system.
+
+![Tickets](closedtickets.png)
+
+
+Above the list/table

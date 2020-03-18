@@ -26,7 +26,6 @@ In addition to the current tariff fields, we have added some other information f
 
 **Discount percent** → percentage of the price to be discounted.
 
-
 Here is an example of a basic bundle plan, please note that these are not limitation but merely an example illustrated:
 
 ![bundle3.png](bundle3.png)

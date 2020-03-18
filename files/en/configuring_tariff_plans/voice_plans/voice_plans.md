@@ -1,6 +1,7 @@
 Voice plans
 ===========
 
+
 This is the home of your voice services you will provide to your customers.
 
 **Why use Voice plans in Splynx?**

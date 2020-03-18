@@ -5,7 +5,7 @@ This is where all your **services** are created, edited and stored. Splynx desig
 
 In Splynx there are three types of tariff plans, namely; *Internet*, *Voice*, and *Custom* plans. These are the main plans and are more commonly used, however, there are also options to create *One-Time* charges and *Bundles*.
 
-Tariff plans are assigned to customers as services and these are the means by which we charge our customers.
+Tariff plans are assigned to customers as services and these are the means by which we charge our customers. 
 
 **Internet plans** can be created to control internet speeds, limit bandwidth usage(CAP) and create rules for usage (FUP). <br>
 **Voice plans** are created to charge customers for voice services and used for CDR processing. <br>

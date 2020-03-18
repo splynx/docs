@@ -1,6 +1,7 @@
 Internet plans
 ==============
 
+
 This is where you create new and configure all your internet plans. To create new internet plans, navigate to  _Tariff Plans_, click on the _Internet_ section then click the _Add_ button at the top right of the page.
 
 ![tariff_internet](tariff_internet.png)

@@ -1,6 +1,7 @@
 Fair Usage Policy
 ================
 
+
 Many Internet Service Providers make use of Fair Usage Policies (FUP) to regulate data usage of customers. With a growing customer base comes more strain on your network and it is therefore necessary to restrict usage for consumers that tend to abuse their connection.
 
 FUP is a method of restricting customer usage by means of decreasing or increasing customers internet speeds, if and when certain data usage parameters/limits are reached.

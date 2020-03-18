@@ -1,52 +1,56 @@
 Voice plans
 ===========
 
+This is the home of your voice services you will provide to your customers.
+
 **Why use Voice plans in Splynx?**
 
-There are two main reasons for voice plans :
+We can provide two main reasons using Splynx for voice plans:
 
-1. Charging clients monthly fee for voice services such as VOIP, Toll number, Number rental or Mobile plan.
-2. Processing of VOIP CDR. Splynx is able to auto or manual process the CDR from Voice platforms, attach calls from CDRs to proper customer, create transaction for voice usage and make one common invoice for Voice services and Internet.
+1. Charging customers monthly fees for voice services such as VOIP, Toll numbers, Number rentals or Mobile plans.
+2. Processing of VOIP CDR's. Splynx is able to automatically or manually process the CDR's from Voice platforms, attach calls from CDRs to corresponding customers, create transactions for voice service usage and make one common invoice for Voice and Internet services.
 
-To configure the Voice plan, click on _Tariff plans → Voice_ and click on _Add plan_.
+To configure a voice plan, navigate to _Tariff plans → Voice_ and click on the _Add plan_ button found in the top right of the page.
 
 ![voice_addplan.png](voice_addplan.png)
 
-You will redirect to add plan page and be possible to create a plan.
+You will be redirected to a add plan page where you will fill in the following parameters to create a new voice plan.
 
-![phone_1000.png](phone_1000.png)
+![Add Voice Plan](voice_addnew.png)
 
-* Title - the name that describe the tariff in the Voice Tariffs table
-* Service name - the service used
+* Title - the name of the tariff in the list/table of voice tariffs
+* Service name - the description of the plan
 * Price - the price for the service
-* Type - the options are: VOIP, Fix or Mobile
-* Partners - the partner 's name
-* VAT Included - select it on or off
-* VAT - you can decide the percentage of the VAT
-* Tariff plans available in customer portal - the list of tariffs allowed for changing from current tariff on customer's portal
-* Types of billing - the types of billing for which allowed current tariff
-* Prepaid (custom) period - by default it's monthly and customers will charges for whole month, but you can select "Days amount"
-* _Custom period (days)_* - appears only when selected "Days amount" (from previous step) and allow to set custom pedion in days (7 days (week), 10 days, etc up to 365 days)
+* Type - the options are VOIP, Fix or Mobile
+* Partners - the partners this plan will be available to.
+* VAT Included - whether VAT is included in the price of the plan or not.
+* VAT - the percentage of the VAT
+* Tariff plans to change (available in customer portal) - the list of other tariffs available for changing from the current tariff in the customer's portal
+* Types of billing - the types of billing the plan will be available to.
+* Prepaid (custom) period - by default it is set to monthly and customers will be charged for a period of a month, but it is possible to select "Days amount" which will cause another field to appear:"" _Custom period (days)_" - this will allow you to set a custom period in days. (7 days (week), 10 days, etc up to 365 days)
 
 ![prepaid_custom.png](prepaid_custom.png)
 
-* Available when register by social network - using from social/self registration addon and allow to select current tariff during registration
+* Available in self-registration -  enables/disables the availability of the tariff when customers sign up for services via the social/self-registration addon
 
+Once voice plans has been created, it is possible to edit or to delete them with the icons found in the actions column of the voice plans table.  <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon>
 
-It is possible to edit or to delete the tariff with the icons <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon> in the column Actions.
+Like all tables in Splynx, you can modify the appearance of content, content to display and export the table into Excel, CSV or PDF formats, you can also choose to copy or print the table. This is done with the use of these <icon class="image-icon">![symbolsbottomleft.png](symbolsbottomleft.png)</icon>  icons found at the bottom left of each table. The <icon class="image-icon">![esportaformati.png](esportaformati.png)</icon> icon is used to export and the   <icon class="image-icon">![modifytheview.png](modifytheview.png)</icon> icon is used to format the appearance and content of the table.
 
-There are two symbols <icon class="image-icon">![symbolsbottomleft.png](symbolsbottomleft.png)</icon> on the bottom left of the table. The first one on the left <icon class="image-icon">![esportaformati.png](esportaformati.png)</icon> is used to copy, print the table and to export it in different formats: Excel, CSV, PDF. The second <icon class="image-icon">![modifytheview.png](modifytheview.png)</icon> is used to modify the view of the table.
-
-After the creation of Voice plan, it is possible to associate the service to a customer. Click on _Customer → List_, select the customer, click on the tab _Services_ and select _Add voice service_ from the _Add service_ menu.
+After creating an voice plan, you can now assign it as a service to a customer. To assign a service to a customer, navigate to _Customers → List_, select the specific customer, navigate to their _Services_ tab and simply click on the *Add service* button located at the top left of the page.
 
 ![voiceservices.png](voiceservices.png)
 
-A window will pop up to create the service.
+A window will appear to create the service, where you will select a plan from the drop down list and specify the data in the fields provided for the service.
 
 ![createvoice_service.png](createvoice_service.png) ![createvoice1000.png](createvoice1000.png)
 
-It is possible to see the new service in the Services table.
+Once you have completed the service data form and added it, it will appear in the service table of the customer.
 
 ![Voice_servicestable.png](Voice_servicestable.png)
 
-To get more information about Voice CDR processing, please, follow the [link](voice/voice.md).
+In the service table in the Tariffs module, under the actions column, you will find the following icon: <icon class="image-icon">![Voice pricing](voice_pricing.png)</icon>.
+
+This icon refers to the rates and prices of voice services according to preconfigured/loaded rates tables for CDR's
+
+For more information about voice CDR processing, please click [here](voice/voice.md).

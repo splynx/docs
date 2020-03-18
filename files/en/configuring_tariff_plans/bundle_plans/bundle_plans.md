@@ -1,47 +1,46 @@
 Bundle Plans
 ============
 
-Bundle Plan is a new kind of plan that allows to group internet, voice and custom services in only one, so with that is possible to set a one common price for the services group. It also improves the service management when a customer has more than one service.
+Bundle plans are used to group internet, voice and custom services  so that is possible to set one common price for the services as a group. It also improves the service management when a customer has more than one service. This allows you as an ISP to create "Packages" of combined services to your liking which you can offer to customers instead of individual services. For instance, supplying a customer with VOIP services, instead of selling each of the related services as individual services, you can sell a package that includes; monthly connectivity, monthly account rental + monthly rental of equipment, as an example.
 
-To define a new Bundle plan, go to Tariff Plans → Bundles
-
-And click on Add bundle.
+To create a new Bundle plan, navigate to _Tariff Plans → Bundles_ and click on the "Add bundle" button on the top right of the page.
 
 ![bundle1.png](bundle1.png)
 ![bundle2.png](bundle2.png)
 
-In addition to the current tarif fields, we have add some other information related to an activation/cancellation fees and contract duration.
+In addition to the current tariff fields, we have added some other information fields related to an activation/cancellation fees and contract duration.
 
-**Activation fee** → Price for the service activation.
+**Activation fee** → the price for service activation of this package/bundle.
 
-**Get activation fee when →** Select between first service billing/create service.
+**Get activation fee when** → Select when to collect payments for activation, options are first service billing/create service.
 
-**Contract duration</label> month(s) →** Set number of months
+**Contract duration</label> month(s)** → the duration of this contract in months
 
-**Automatic renewal →** Enable automatic contract renewal.
+**Automatic renewal** → enables/disables automatic renewal of the contract.
 
-**Auto reactivate when deposit become more then minimal balance →** Enable reactivate customer after recharge deposit automatically.
+**Auto reactivate when deposit become more then minimal balance** → enables/disables reactivation of customer services if customers account balance is more than the minimal set in their billing settings and sufficient to pay for the services
 
-**Prior cancellation fee** → Price of prior cancellation of contract.
+**Prior cancellation fee** → price of prior cancellation of the contract.
 
-**Discount period month(s) →** Set number of months.
+**Discount period month(s)** → the period of validity of the discount if any is applied.
 
-**Discount percent →** Percentage of the discount.
+**Discount percent** → percentage of the price to be discounted.
 
-Here you can see an example already created. We could add more than 1 internet, voice or custom plan in the same bundle.
+
+Here is an example of a basic bundle plan, please note that these are not limitation but merely an example illustrated:
 
 ![bundle3.png](bundle3.png)
 
-After we add a bundle plan, it will also create each plan in the correct box, if you delete or the bundle, it will affect to all plans inside it.
+After we adding a bundle plan to customer services, it will also create each plan in the corresponding section of the customers services, please note if you delete any service pertaining to the bundle, it will affect to all plans associated.
 
 ![bundle4.png](bundle4.png)
 ![bundle5.png](bundle5.png)
 
-After add the plan, we can edit it and cancell/renew the contract or edit some fields.
+After adding the plan, we can edit it and cancel/renew the contract as well as edit selected fields.
 
 ![bundle6.png](bundle6.png)
 ![bundle7.png](bundle7.png)
 
-Also inside of each service you can config it individually.
+It is however, possible to edit each service individually, but if it is part of a bundle it will be indicated in the fashion of the window for the bundle services.
 
 ![bundle8.png](bundle8.png)

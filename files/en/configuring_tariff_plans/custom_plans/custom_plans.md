@@ -1,46 +1,45 @@
 Custom plans
 ============
+Here are all plans you specifically design to cater for the needs of your company and services you render uniquely.
 
-**When use custom plans?**
 
-For example, ISP provides public IP service to users; Rental of equipment; Hosting or IPTV services.
+For example, certain ISP's provides public IP services to users; Rental of equipment; Hosting or IPTV services are examples of custom tariff plans.
 
-To configure the Custom plan, click on the _Tariff plans → Custom_ and click on Add plan.
+To create custom plans navigate to _Tariff plans → Custom_ and click on Add plan in the top right of the page.
 
 ![custom_addplan.png](custom_addplan.png)
 
-You will redirect to add plan page and be possible to create a plan.
+You will be redirected to the add plan page and where you will enter the details of the plan in the provided fields.
 
 ![create_custom_plan.png](create_custom_plan.png)
 
-* Title - the name that describe the tariff in the Custom Tariffs table
-* Service name - the service used
+* Title - the name of the tariff in the list/table of custom tariffs
+* Service name - the description of the plan
 * Price - the price for the service
-* Partners - select the partner 's name
-* VAT Included - select it on or off
+* Partners - the partners this plan will be available to.
+* VAT Included - whether VAT is included in the price of the plan or not.
 * VAT - the percentage of the VAT
-* Tariff plans available in customer portal - the list of tariffs allowed for changing from current tariff on customer's portal
-* Types of billing - the types of billing for which allowed current tariff
-* Prepaid (custom) period - by default it's monthly and customers will charges for whole month, but you can select "Days amount"
-* _Custom period (days)_* - appears only when selected "Days amount" (from previous step) and allow to set custom pedion in days (7 days (week), 10 days, etc up to 365 days)
+* Tariff plans to change (available in customer portal) - the list of other tariffs available for changing from the current tariff in the customer's portal
+* Types of billing - the types of billing the plan will be available to
+* Prepaid (custom) period - by default it is set to monthly and customers will be charged for a period of a month, but it is possible to select "Days amount" which will cause another field to appear:"" _Custom period (days)_" - this will allow you to set a custom period in days. (7 days (week), 10 days, etc up to 365 days)
 
 ![prepaid_custom.png](prepaid_custom.png)
 
-* Available when register by social network - using from social/self registration addon and allow to select current tariff during registration
+* Available in self-registration -  enables/disables the availability of the tariff when customers sign up for services via the social/self-registration addon
 
 
-It is possible to edit or delete the tariff with the icons <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon> in the column Actions.
+Once custom plans has been created, it is possible to edit or to delete them with the icons found in the actions column of the voice plans table.  <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon>
 
-There are two symbols <icon class="image-icon">![symbolsbottomleft.png](symbolsbottomleft.png)</icon> on the bottom left of the table. First icon <icon class="image-icon">![esportaformati.png](esportaformati.png)</icon> is used to copy, print the table and to export it in different formats: Excel, CSV, PDF. The second one icon <icon class="image-icon">![modifytheview.png](modifytheview.png)</icon> is used to modify the view of the table.
+Like all tables in Splynx, you can modify the appearance of content, content to display and export the table into Excel, CSV or PDF formats, you can also choose to copy or print the table. This is done with the use of these <icon class="image-icon">![symbolsbottomleft.png](symbolsbottomleft.png)</icon>  icons found at the bottom left of each table. The <icon class="image-icon">![esportaformati.png](esportaformati.png)</icon> icon is used to export and the   <icon class="image-icon">![modifytheview.png](modifytheview.png)</icon> icon is used to format the appearance and content of the table.
 
-After the creation of Custom plan, it is possible to associate the service to a customer. Click on _Customer → List_, select the customer, click on the tab _Services_ and select _Add voice service_ from the _Add service_ menu.
+After creating a custom plan, you can now assign it as a service to a customer. To assign a service to a customer, navigate to _Customers → List_, select the specific customer, navigate to their _Services_ tab and simply click on the *Add service* button located at the top left of the page.
 
 ![Custom_add.png](Custom_add.png)
 
-A window will pop up to create the service.
+A window will appear to create the service, where you will select a plan from the drop down list and specify the data in the fields provided for the service.
 
 ![createserviceone.png](createserviceone.png)![createservicetwo.png](createservicetwo.png)
 
-It is possible to see the new service in the Services table.
- 
+Once you have completed the service data form and added it, it will appear in the service table of the customer.
+
 ![static_ip.png](static_ip.png)

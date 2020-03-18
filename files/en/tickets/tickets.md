@@ -135,5 +135,5 @@ Once the ticket is created it is possible to view or close it by using the follo
 
 ![Tickets mobile app](app_ticket.jpg)
 
-
+There are a number of elements that can be automated within the ticketing module to improve efficiency and speed up engagement. These automation rules can be set up under `Config / Support / Ticket automation` 
 More information about **tickets configuration** can be found here - [Support](configuration/main_configuration/support/support.md).

@@ -1,10 +1,10 @@
 Custom plans
 ============
 
-Here are all plans you specifically design to cater for the needs of your company and services you render uniquely.
+Here are all the plans you specifically design to cater to the needs of your company and the services you render uniquely.
 
 
-For example, certain ISP's provides public IP services to users; Rental of equipment; Hosting or IPTV services are examples of custom tariff plans.
+For example, certain ISP's provide public IP services to users; Rental of equipment; Hosting or IPTV services are examples of custom tariff plans.
 
 To create custom plans navigate to _Tariff plans → Custom_ and click on Add plan in the top right of the page.
 
@@ -22,7 +22,7 @@ You will be redirected to the add plan page and where you will enter the details
 * VAT - the percentage of the VAT
 * Tariff plans to change (available in customer portal) - the list of other tariffs available for changing from the current tariff in the customer's portal
 * Types of billing - the types of billing the plan will be available to
-* Prepaid (custom) period - by default it is set to monthly and customers will be charged for a period of a month, but it is possible to select "Days amount" which will cause another field to appear:"" _Custom period (days)_" - this will allow you to set a custom period in days. (7 days (week), 10 days, etc up to 365 days)
+* Prepaid (custom) period - by default, it is set to monthly and customers will be charged for a period of a month, but it is possible to select "Days amount" which will cause another field to appear:" _Custom period (days)_" - this will allow you to set a custom period in days. (7 days (week), 10 days, etc up to 365 days)
 
 ![prepaid_custom.png](prepaid_custom.png)
 
@@ -37,7 +37,7 @@ After creating a custom plan, you can now assign it as a service to a customer. 
 
 ![Custom_add.png](Custom_add.png)
 
-A window will appear to create the service, where you will select a plan from the drop down list and specify the data in the fields provided for the service.
+A window will appear to create the service, where you will select a plan from the drop-down list and specify the data in the fields provided for the service.
 
 ![createserviceone.png](createserviceone.png)![createservicetwo.png](createservicetwo.png)
 

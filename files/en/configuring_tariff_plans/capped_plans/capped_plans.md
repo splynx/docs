@@ -72,26 +72,26 @@ This can also be viewed in the service statistics of the customer:
 
 ## Top-up Plans
 
- These plans are used when monthly data CAP's are reached and the customer wishes to extend their services. Customers pay for Top-Ups in order to regain access according to the data limits of the Top up plan.
+ These plans are used when monthly data CAP's are reached and the customer wishes to extend their services. Customers pay for Top-Ups in order to regain access according to the data limits of the Top-up plan.
 
- Top-up plans are beneficial to you as a an ISP as this creates an additional source of income with existing customers using a capped service.
+ Top-up plans are beneficial to you as an ISP as this creates an additional source of income with existing customers using a capped service.
 
-Splynx has simplified the top-up concept for anyone to use appropriately, with just 5 parameters to be to be set to create a top-up plans or simply loading a preexisting top-up plan.
+Splynx has simplified the top-up concept for anyone to use appropriately, with just 5 parameters to be set to create a top-up plan or simply loading a preexisting top-up plan.
 
 ![Top up add](topup_add.png)
 
 **Parameter descriptions**:
-_Top-up Name_ - name of the top-up plan.<br>
+_Top-up Name_ - the name of the top-up plan.<br>
 _Amount_ - data allocation of top-up plan (in MB or GB).<br>
-_Price_ - price of the top-up plan charged to the customer.<br>
+_Price_ - the price of the top-up plan charged to the customer.<br>
 _Validity_ - top-up plan's validity period.<br>
 _Add to invoice_ - whether the charge of this invoice should be added to the customers monthly invoice or a separate invoice to be generated.<br>
 
 Once these fields have been completed, you finish the process by clicking save. The top-up will then be listed in top up plans and customers using this tariff will be able to select it for a top-up purchase. All top-ups created can be loaded to other tariffs with the *Load plans from other tariff* button.
 
-The validity of Top Up data can be set to unlimited or a fixed period in months. Also, there is an option add the applied Top Up within a month, to the customer invoice at the end of the month.
+The validity of Top Up data can be set to unlimited or a fixed period in months. Also, there is an option to add the applied Top Up within a month, to the customer invoice at the end of the month.
 
-Another very useful option is to _Load plans from other tariffs,_ meaning, you can configure Top Up plans once and then just copy the settings to all your tariffs. Top up plans configured in one tariff can simply be loaded onto the current plan.
+Another very useful option is to _Load plans from other tariffs,_ meaning, you can configure Top Up plans once and then just copy the settings to all your tariffs. Top-up plans configured in one tariff can simply be loaded onto the current plan.
 
 ![Top up load](load_plan.png)
 
@@ -102,9 +102,9 @@ _From plan_ - which tariff to load top-up plans from.<br>
 _Count plans_ - number of top-up plans available to load from the selected plan<br>
 _Clear existing plans_ - choose whether or not to remove existing plans after loading plans from the selected tariff<br>
 
-Simply complete the fields ad desired and click load. The top-up plans loaded from the tariff will then be listed under the list of top-up plans in the current tariff and will be available for customers subscribed to this tariff.
+Simply complete the fields as desired and click load. The top-up plans loaded from the tariff will then be listed under the list of top-up plans in the current tariff and will be available for customers subscribed to this tariff.
 
-When applying top-up's, there are different scenarios and/or reason for top-ups and therefore there are different methods of applying them. Here are the different methods of applying top-up's.
+When applying top-ups, there are different scenarios and/or reasons for top-ups and therefore there are different methods of applying them. Here are the different methods of applying top-ups.
 
 ` Splynx uses 3 methods of Top-up's`:
 
@@ -126,18 +126,18 @@ These are the configurations necessary for customizing the top-up window in the 
 
 _Auto Top-ups_ - this enables/disables automatic top-ups for the customer.<br>
 _Auto top-up plans_ - these are the top-up plans that will be applied according to the customers tariff(s), if the customer has more than one capped service an option to select a top-up plan will appear for each capped plan.<br>
-_Limitation type_ - this control permissions to either grant customer ability to do top-ups, grant access for automatic top ups or both.<br>
+_Limitation type_ - this control permissions to either grant customer ability to do top-ups, grant access for automatic top-ups or both.<br>
  _Max number of top-up per month_ - limit of top-ups a customer is allowed for a month.<br>
  _Transfer usage to new service_ - this will transfer unused data between plans in a case that a customer changes his plan.
 _History_ - displays the history of top-ups and actions done for/by the customer for each tariff.<br>
 _Remove_ - removes the top-up data applied to the customer's CAP, specific amounts of data can be removed.<br>
-_Top-up_ - add a administrative top-up to the customers CAP.<br>
+_Top-up_ - add an administrative top-up to the customers CAP.<br>
 
-To add a administrative top-up click on the "Top-up" button in the CAP section of the customers information page. This will open a new window *Add CAP to customer*, here administrator have the privilege of adding custom amounts of data with custom prices or simply selecting a top up plan from the list.
+To add an administrative top-up click on the "Top-up" button in the CAP section of the customers' information page. This will open a new window *Add CAP to customer*, here administrator has the privilege of adding custom amounts of data with custom prices or simply selecting a top-up plan from the list.
 
 ![cap8.png](cap8.png)
 
-In the image above,  a Top-Up for 1 GB was selected and we can see that 1GB of data is added to customer's account on the image below. The transaction is added to the list of transactions, since the toggle to add  transaction to invoice is disabled and the amount will be debited to the customers account. If this toggle is enabled the transaction will be added to the customers invoice as shown in the pictures below.
+In the image above,  a Top-Up for 1 GB was selected and we can see that 1GB of data is added to the customer's account on the image below. The transaction is added to the list of transactions since the toggle to add transaction to invoice is disabled and the amount will be debited to the customer's account. If this toggle is enabled the transaction will be added to the customers' invoice as shown in the pictures below.
 
 ![cap9.png](cap9.png)
 
@@ -157,21 +157,21 @@ This is the method whereby the customer chooses to apply a top-up within the por
 * Auto Top-up - select level of access/ability to Auto top-up feature (View, Edit, All selected)
 * Auto top-up plans - select level of access/ability to plans(View, Edit, All selected)
 * Limitation type - select level of access/ability to limitations(View, Edit, All selected)
-* Max number of top-up per month - select the level of access/ability to maximum allowed top ups per month(View, Edit, All selected)
+* Max number of top-up per month - select the level of access/ability to the maximum allowed top-ups per month(View, Edit, All selected)
 
 2. Manual Top-up settings
-These are permissions and actions for customer to create top-ups manually
+These are permissions and actions for customers to create top-ups manually
 and how they can interact
 
 * Enable - allow/deny the ability to make manual top-ups
 * Crate finance document - which type of documents to create for the applied/requested top-up.
-* Pay before top-up -  select whether the customer has to pay for the top up before the data can be used or not.
+* Pay before top-up -  select whether the customer has to pay for the top-up before the data can be used or not.
 
 
 ![cap15.png](cap15.png)
 
 
-When customer access their portal, top-up options can be accessed by clicking on _Services → Top Up_, where  options _for automatic and/or manuall top up_ will be available.
+When customers access their portal, top-up options can be accessed by clicking on _Services → Top Up_, where options _for automatic and/or manual top up_ will be available.
 
 In _Manual Top-up's_ customers simply choose a plan and add a top-up.
 
@@ -193,33 +193,33 @@ Once the invoice is paid an additional 1GB of data is now added.
 ![cap19.png](cap19.png)
 
 **Auto Top-up**
-This is the automatic method of applying top-ups for a customer, this  option requires prior agreements made between the customer and the service provider.
+This is the automatic method of applying top-ups for a customer, this option requires prior agreements made between the customer and the service provider.
 
  To apply auto top-ups:
 
- Navigate to the respective customer then, within the CAP section on the customer information page, we enable auto top-up's for a customer.
+ Navigate to the respective customer then, within the CAP section on the customer information page, we enable auto top-ups for a customer.
 
-We then simply define the auto top-up plan and number of top-ups per month.
+We then simply define the auto top-up plan and the number of top-ups per month.
 
 ![cap7.png](cap7.png)
 
-_Transfer usage to new service_ means that Splynx will transfer unused data between plans in case when customer changes his plan.
+_Transfer usage to new service_ means that Splynx will transfer unused data between plans in the case when a customer changes his plan.
 
 
 ## Notifications
 
-In this section we configure notifications which informs customers by means of email or SMS about their monthly usage, Top Up data usage or Top Up actions.
+In this section, we configure notifications that inform customers utilizing email or SMS about their monthly usage, Top Up data usage or Top Up actions.
 
-Like top up plans, it is also possible to load notifications that we have created in another plan.
+Like top-up plans, it is also possible to load notifications that we have created in another plan.
 
 ![Notifications add](notifications_add.png)
 
 **Parameters descriptions**:
 
-_Type_ - method to send notification (email or sms)<br>
+_Type_ - method to send notification (email or SMS)<br>
 _Source_ - the counter, statistic or action that we want to notify our customer on.<br>
-_Trigger limit_ - when this percentage of data is used , this will trigger the notifications to be sent to the customer.<br>
-_Subject_ - subject of the notification sent to the customer.<br>
+_Trigger limit_ - when this percentage of data is used, this will trigger the notifications to be sent to the customer.<br>
+_Subject_ - the subject of the notification sent to the customer.<br>
 
 After completing these fields it is then necessary to edit the message sent to the customer to select what content is provided in the notification.
 
@@ -227,4 +227,4 @@ After completing these fields it is then necessary to edit the message sent to t
 
 Here you can choose to manually type a message to use when notifying customers about their usage or you can choose a preconfigured template from your list of templates to load. Templates can be created and customized in _Config / System / Templates / Email or SMS CAP_
 
-Once your message fields has been populated either manually or by means of a template you can then confirm changes and save the notification. The new notification will be listen in the notification section and will be used to notify customers using this tariff
+Once your message fields have been populated either manually or using a template you can then confirm changes and save the notification. The new notification will be listed in the notification section and will be used to notify customers using this tariff.

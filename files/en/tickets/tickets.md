@@ -195,5 +195,30 @@ Here is where you will find the list/table of all closed tickets in the system.
 
 ![Tickets](closedtickets.png)
 
+Above the list/table is a filter to use when viewing closed tickets.
 
-Above the list/table
+![Tickets](closed_filter.png)
+
+You are able to filter tickets by a specific period and customer ID, assigned to a specific administrator, unassigned or all closed tickets.
+
+The table/list of closed tickets have the same functionalities of the list/table of the new and opened tickets list/table.
+You are able to select the layout just as with the new & opened list/table and perform certain functions.
+
+In the closed tickets section however, options to re-open tickets or move them to trash become available:
+
+![Tickets](closedtable_functions.png)
+
+
+## Trash
+
+Here you can find all tickets moved to trash from the list/table of closed tickets.
+
+![Tickets](trash.png)
+
+This list can also be filtered to view content of a specific time period and customer ID, of a specific administrator's, unassigned or all tickets in the system.
+
+![Tickets](trash_filter.png)
+
+The trash tickets list/table layout can also be customized to display tickets in a table or card format and has functions in the actions column of the table view to either view, restore or permanently delete tickets.
+
+![Tickets](trash_actions.png)

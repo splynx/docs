@@ -1,14 +1,14 @@
 Bundle Plans
 ============
 
-Bundle plans are used to group internet, voice and custom services  so that is possible to set one common price for the services as a group. It also improves the service management when a customer has more than one service. This allows you as an ISP to create "Packages" of combined services to your liking which you can offer to customers instead of individual services. For instance, supplying a customer with VOIP services, instead of selling each of the related services as individual services, you can sell a package that includes; monthly connectivity, monthly account rental + monthly rental of equipment, as an example.
+Bundle plans are used to group internet, voice and custom services so that is possible to set one common price for the services as a group. It also improves the service management when a customer has more than one service. This allows you as an ISP to create "Packages" of combined services to your liking which you can offer to customers instead of individual services. For instance, supplying a customer with VOIP services, instead of selling each of the related services as individual services, you can sell a package that includes; monthly connectivity, monthly account rental + monthly rental of equipment, as an example.
 
 To create a new Bundle plan, navigate to _Tariff Plans → Bundles_ and click on the "Add bundle" button on the top right of the page.
 
 ![bundle1.png](bundle1.png)
 ![bundle2.png](bundle2.png)
 
-In addition to the current tariff fields, we have added some other information fields related to an activation/cancellation fees and contract duration.
+In addition to the current tariff fields, we have added some other information fields related to activation/cancellation fees and contract duration.
 
 **Activation fee** → the price for service activation of this package/bundle.
 
@@ -26,11 +26,11 @@ In addition to the current tariff fields, we have added some other information f
 
 **Discount percent** → percentage of the price to be discounted.
 
-Here is an example of a basic bundle plan, please note that these are not limitation but merely an example illustrated:
+Here is an example of a basic bundle plan, please note that these are not limitations but merely an example illustrated:
 
 ![bundle3.png](bundle3.png)
 
-After we adding a bundle plan to customer services, it will also create each plan in the corresponding section of the customers services, please note if you delete any service pertaining to the bundle, it will affect to all plans associated.
+After adding a bundle plan to customer services, it will also create each plan in the corresponding section of the customer's services, please note if you delete any service pertaining to the bundle, it will affect to all plans associated.
 
 ![bundle4.png](bundle4.png)
 ![bundle5.png](bundle5.png)
@@ -40,6 +40,6 @@ After adding the plan, we can edit it and cancel/renew the contract as well as e
 ![bundle6.png](bundle6.png)
 ![bundle7.png](bundle7.png)
 
-It is however, possible to edit each service individually, but if it is part of a bundle it will be indicated in the fashion of the window for the bundle services.
+It is, however, possible to edit each service individually, but if it is part of a bundle it will be indicated in the fashion of the window for the bundle services.
 
 ![bundle8.png](bundle8.png)

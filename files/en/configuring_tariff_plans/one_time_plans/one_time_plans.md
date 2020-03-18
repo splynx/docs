@@ -1,12 +1,12 @@
 One-Time plans
 ==============
-These are non recurring charges used regularly which include services like, call out fees, initial connection of customers, materials used in conduit, etc. 
+These are non-recurring charges used regularly which include services like, call out fees, the initial connection of customers, materials used in conduit, etc.
 
 To create new One-Time plans, navigate to _Tariff plans → One-time_ and click on Add plan.
 
 ![one_time1.png](one_time1.png)
 
-You will be redirected to a add plan page where you will fill in the following parameters to create a new one-time plan.
+You will be redirected to an add plan page where you will fill in the following parameters to create a new one-time plan.
 
 ![one_time2.png](one_time2.png)
 
@@ -28,14 +28,14 @@ On customer's "_Billing - Invoices_ tab" the is an option to add One-time invoic
 
 ![one_time3.png](one_time3.png)
 
-In the One-time invoice creation here you are able to select One-time plans as items and all data pertaining to the selected plan will auto filled as depicted in the image below:
+In the One-time invoice creation here you are able to select One-time plans as items and all data pertaining to the selected plan will auto-filled as depicted in the image below:
 
 ![one_time4.png](one_time4.png)
 
 
 **2. Add Proforma invoice**
 
-Just as with "One-time invoices", the same logic can be used for pro-forma invoices , navigate to customer's "_Billing - Proforma Invoices_ tab", click on the Add Proforma invoice button:
+Just as with "One-time invoices", the same logic can be used for proforma invoices, navigate to customer's "_Billing - Proforma Invoices_ tab", click on the Add Proforma invoice button:
 
 ![one_time5.png](one_time5.png)
 

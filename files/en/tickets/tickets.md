@@ -3,7 +3,7 @@ Tickets
 
 The Splynx ticketing system has been designed to empower technicians and satisfy customers by means of integration and automation. We welcome you to your in-house support platform.
 
-To help understand both perspectives, let's separate our ticketing system into two sections or views, being an administrative perspective and a customer experience.
+To help understand both perspectives, let's separate our ticketing system into two sections or views, one being an administrative perspective and the other, a customer experience.
 
 **ADMINISTRATORS**
 
@@ -36,7 +36,7 @@ After clicking on the "create ticket" button anywhere in the system, you will be
 
 * **Customer** - which customer to open the ticket for
 * **Assign to** - the administrator the ticket will be assigned to
-* **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the tickt
+* **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket
 * **Priority** - the urgency of the ticket which can be set to low, medium, high or urgent
 * **Status** - the state of the ticket currently which can be set to New, Work in Progress, Waiting for Customer, Waiting on agent, Resolved
 * **Group** - the ticket can be filtered to a specific group of admins depending on the nature of the ticket
@@ -46,7 +46,7 @@ After clicking on the "create ticket" button anywhere in the system, you will be
 
 It is possible to add a canned response to the message body to optimize the productivity of admins.
 
-In Splynx we have added the ability to configure canned responses to minimize on typing and save on time to ultimately create efficiency. To populate the body of the ticket with a canned response, simply click on the arrow highlighted below and choose a response from you list of canned responses:
+In Splynx we have added the ability to configure canned responses to minimize typing and save on time to ultimately create efficiency. To populate the body of the ticket with a canned response, simply click on the arrow highlighted below and choose a response from your list of canned responses:
 
 ![Canned response](canned_response.png)
 
@@ -62,26 +62,26 @@ The  *Hidden* <icon class="image-icon">![Hidden](./hidden.png)</icon> toggle all
 
 You are also able to create [new fields](customer_management/custom_additional_fields/custom_additional_fields.md) in the tickets module. More information about **adding custom fields** is available here - [Additional fields](configuration/system/additional_fields/additional_fields.md). Remember, that in order to see the new field in the main table, you should enable it by clicking on the breadcrumbs <icon class="image-icon">![Add](add.png)</icon> icon below the table.
 
-Once the ticket has been created, it will be visible in the `New and opened tickets` table. Here you can **filter tickets** by *Condition, Period, Customer/Lead ID, Group, Partner, Type or Type*. We've added the capability to search for specific text with the _Text search function_ or the customers full name in the _Find Filter_ field. You can also choose the list of new and opened ticket to view filtered by the administrator assigned or the status of the tickets.
+Once the ticket has been created, it will be visible in the `New and opened tickets` table. Here you can **filter tickets** by *Condition, Period, Customer/Lead ID, Group, Partner, Type or Type*. We've added the capability to search for specific text with the _Text search function_ or the customers full name in the _Find Filter_ field. You can also choose the list of new and opened tickets to view filtered by the administrator assigned or the status of the tickets.
 
 ![New & Open](tickets_filter.png)
 
-Depending on the layout you have chosen to view ne and opened tickets with the layout <icon class="image-icon">![layout](tickets_layout.png)</icon> icons, you are to reassign, change the status of, change the priority or the type of the ticket, directly from the tickets table.
+Depending on the layout you have chosen to view new and opened tickets with the layout <icon class="image-icon">![layout](tickets_layout.png)</icon> icons, you are to reassign, change the status of, change the priority or the type of the ticket, directly from the tickets table.
 
 ![Edit ticket](edit_ticket.png)
 
-The ticket working area is divided into 3 parts: *ticket properties, action buttons and messages area*.
+The ticket working area is divided into 3 parts: *ticket properties, action buttons, and a messages area*.
 
 ![Working area](ticket_workarea.png)
 
-* In the properties we can reassign the ticket to the specific administrators, change status, prioritize the work, assign to a specific group and set the ticket type.  We also oversee the Customer's information like Name, Email, Phone number and recent tickets.
+* In the properties we can reassign the ticket to the specific administrators, change status, prioritize the work, assign to a specific group and set the ticket type.  We also oversee the Customer's information like Name, Email, Phone number, and recent tickets.
 
 ## Ticket properties section parameters:
 
 * **Customer/Lead** -  changes the customer this ticket has been open for
-* **Assigned to** - reassign the ticket to specific administrator
+* **Assigned to** - reassign the ticket to a specific administrator
 * **Subject** -  change the subject of the ticket
-* **Priority** - change the urgency of the of the ticket
+* **Priority** - change the urgency of the ticket
 * **Status** - change the current state of the ticket
 * **Group** - change the group of administrators this ticket is available to
 * **Type** - change the reason for the tickets
@@ -98,7 +98,7 @@ The ticket working area is divided into 3 parts: *ticket properties, action butt
 _Show Activities_ - to view all activities executed to/within the ticket
 _Show all files_ - provides a list of all attachments within the ticket
 _Create task_ -  integration to the scheduling module, this button allows you to create a task pertaining to requests made within the ticket
-_Merge ticket_ - allows merging of the current ticket with another
+_Merge ticket_ - allows the merging of the current ticket with another
 _Close ticket_ - marks ticket status as resolved and the ticket is moved into the list of closed tickets
 
 Below is a quick look at the task creation page after clicking the create task option
@@ -116,18 +116,18 @@ Once a ticket has been resolved, you can change the status on *closed* and close
 
 Your customers can also create tickets in three ways:
 
-1. By sending a query  to your incoming email (*support@yourdomain.com*), and the ticket will be created automatically on the system. Incoming mail configuration can be found [here](configuration/main_configuration/incoming_mail.md).
+1. By sending a query to your incoming email (*support@yourdomain.com*), and the ticket will be created automatically on the system. Incoming mail configuration can be found [here](configuration/main_configuration/incoming_mail.md).
 
 2. By creating a ticket from Customers Portal in `Tickets > Create`
 
 ![Tickets portal](portal_ticket.png)
 
-* **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the tickt
+* **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket
 * **Priority** - the urgency of the ticket which can be set to low, medium, high or urgent
 * **Message** - the body of the ticket can be typed here
 * **Attachments** - used to attach files to the ticket
 
-Once the ticket is created it is possible to view or close it by using the following icons <icon class="image-icon">![Add](icons.png)</icon>:
+Once the ticket is created it is possible to view or close it by using the following icons <icon class="image-icon">![Add](icons.png)</icon> within the tbale/list of new & opened tickets:
 
 ![Tickets portal](portal_list_of_tickets.png)
 
@@ -138,13 +138,15 @@ Once the ticket is created it is possible to view or close it by using the follo
 There are a number of elements that can be automated within the ticketing module to improve efficiency and speed up engagement. These automation rules can be set up under `Config / Support / Ticket automation`
 More information about **tickets configuration** can be found here - [Support](configuration/main_configuration/support/support.md).
 
+When tickets are opened by either the customer or administrator, notifications are sent to each other via email. Depending on the template you are using for tickets, tickets may include the body of the ticket and this can ultimately create convenience, as customers/administrators can respond directly from the email to respond to the ticket. If the template does not include the body, customers/administrators are able to log into their respective portals by means of a link included in the ticket notifications.
+
 ## List of new & opened
 
 This is where you will find a list/table of all new and opened tickets. For administrators part of the support team and designated to answering customer queries it is their working space within the ticketing module.
 
 ![Tickets](new&opened.png)
 
-Above the table of new & opened tickets, we've added a quick filter to change the tickets being displayed. You can choose to display tickets assigned to a specific administrator, unassigned tickets or all new and open tickets in the system. You may also filter tickets by status once the source of tickets to display has been selected. For ease of access "Refresh" and "Create ticket" buttons have been added along side the button to hide or display the main filter menu.
+Above the table of new & opened tickets, we've added a quick filter to change the tickets being displayed. You can choose to display tickets assigned to a specific administrator, unassigned tickets or all new and open tickets in the system. You may also filter tickets by status once the source of tickets to display has been selected. For ease of access "Refresh" and "Create ticket" buttons have been added alongside the button to hide or display the main filter menu.
 
 ![Tickets](topfilter_tickets.png)
 
@@ -182,11 +184,11 @@ Deciding which view to use is a matter of personal preference. Each view has its
 
 **Table view**
 
-Displays more details and has a actions column limited to viewing the ticket, marking it as read or unread or closing the ticket. Please keep in mind that because this is a table, it can be customized to view more/less data like all tables in Splynx and the data can also be export with the use of the <icon class="image-icon">![layout](table_icons.png)</icon> icons.
+Displays more details and has an "Actions" column limited to viewing the ticket, marking it as read or unread or closing the ticket. Please keep in mind that because this is a table, it can be customized to view more/less data like all tables in Splynx and the data can also be export with the use of the <icon class="image-icon">![layout](table_icons.png)</icon> icons.
 
 **Card View**
 
-Displays less details but has quick access to function like reassigning tickets to admins or groups and changing the priority, status or type of the ticket.
+Displays fewer details but has quick access to function like reassigning tickets to admins or groups and changing the priority, status or type of the ticket.
 
 
 ## List of closed
@@ -204,7 +206,7 @@ You are able to filter tickets by a specific period and customer ID, assigned to
 The table/list of closed tickets have the same functionalities of the list/table of the new and opened tickets list/table.
 You are able to select the layout just as with the new & opened list/table and perform certain functions.
 
-In the closed tickets section however, options to re-open tickets or move them to trash become available:
+In the closed tickets section, however, options to re-open tickets or move them to trash become available:
 
 ![Tickets](closedtable_functions.png)
 
@@ -215,7 +217,7 @@ Here you can find all tickets moved to trash from the list/table of closed ticke
 
 ![Tickets](trash.png)
 
-This list can also be filtered to view content of a specific time period and customer ID, of a specific administrator's, unassigned or all tickets in the system.
+This list can also be filtered to view the content of a specific time period and customer ID, of a specific administrator, unassigned or all tickets in the system.
 
 ![Tickets](trash_filter.png)
 

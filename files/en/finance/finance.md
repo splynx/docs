@@ -1,11 +1,11 @@
 Finance
 =======
 
-Finance module is one of the important parts of Splynx billing system.
+The finance module is the most important part of the Splynx billing system. It is the home of billing for all customers in the system and here, we can execute bulk actions.
 
-Splynx has Prepaid and Recurring billing engines. It's possible to define which billing engine is used by customer in his settings in _Customer → Billing → Billing overview_.
+Splynx has Prepaid and Recurring billing engines. Defining which billing engine each customer will be using is mandatory for charging customers for services. Defining customers billing types is done in _Customer → Billing → Billing overview_.
 
-Please, follow the links below to find tutorial page about each feature of Finance module:
+The billing module is separated into the following sections, please follow the links below to find tutorials for each of the features of the Finance module:
 
 * [ Billing engine](finance/billing_engine/billing_engine.md)
 

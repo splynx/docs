@@ -1,26 +1,42 @@
 Billing engine
 ==========
 
-In Billing engine section we describe the difference between Recurring and Prepaid billing of the customer.
-Let's start with financial dashboard that shows us information about Splynx financial status:
+In this section we describe the difference between Recurring and Prepaid billing of a customer.
+Let's start with the financial dashboard, which shows us a quick overview regarding information about your Splynx financial status:
+
+Quick totals for the following data and buttons to direct to a list for each:
 
 * Debit transactions
 * Payments
 * Paid Invoices
 * Unpaid invoices
+* Payment requests
+* Unpaid requests
 
-The dashboard also includes the following mini reports:
-* All invoices for a set period
-* Invoices that are overdue
+Totals data for the above mentioned for each of the following time periods:
+
+* Last Month
+* Current Month
+* Next Month
+
+The dashboard also includes the following mini reports in form of graphs:
+
+* Invoicing for period (VAT Included)
+* Payments for period (VAT Included)
 * Top 10 payers
 * Top 10 debtors
 * Monthly recurring revenue
-* Average rate per user
+* Average revenue per user
 
-In particular, it shows the current month and last month statistics.
+Each of the graphs can be customized to view provided time frames for specific partners and locations.
 
-![Finance dashboard](finance_dashboard_1.jpg)
-![Finance dashboard](finance_dashboard_2.jpg)
+A separate table is also included with information on all overdue invoices
+
+
+![Finance dashboard](finance_dashboard_3.png)
+![Finance dashboard](finance_dashboard_4.png)
+![Finance dashboard](finance_dashboard_5.png)
+![Finance dashboard](finance_dashboard_6.png)
 
 
 ## Recurring billing engine

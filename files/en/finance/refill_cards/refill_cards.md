@@ -1,12 +1,12 @@
 Refill cards
 ==========
 
-Very easy and convenient way for your customers to pay for their services or make a prepaid deposit is to use refill cards. You can generate Refill cards in Splynx with further exporting them in PDF and CSV format, printing out and delivering them to customers. Your customers, in turn, will be able to redeem refill card via customers' portal.
+This is a very easy-to-use and convenient method for your customers' to pay for their service and/or make prepaid deposits. Refill cards can be generated in Splynx with options to export them in PDF or CSV formats, to either send to the customer or print a physical copy to hand to the customer. The customer can then redeem the refill cards via the customer portal.
 
 
 ## How to enable refill cards
 
-Enable Refill cards under `Config → Integrations → Main modules → Finance`
+To enable Refill cards, navigate to `Config → Integrations → Main modules → Finance`, and simply enable the toggle.
 
 ![Modules](main_modules.png)
 
@@ -15,54 +15,64 @@ Enable Refill cards under `Config → Integrations → Main modules → Finance`
 
 * In `Finance → Refill cards → Generate` set up parameters for Refill cards generation: Quantity, Prefix, Price, choose the partner and valid date, and click on Generate.
 
-  ![Generate](generate.png)
+To generate new refill cards, navigate to `Finance → Refill cards → Generate`, once here, you can specify the parameters to generate the refill cards with.
 
-* As soon as cards will be generated a window will pop up with a table of refill cards series.
-  ![Series](series.png)
+  ![Generate](generate_refillcards.png)
 
-  In Actions column will be options <icon class="image-icon">![Icons](icons.png)</icon> for editing, viewing the list of Refill cards' series, exporting them and deleting. To edit refill cards serie click on <icon class="image-icon">![Edit](edit_icon.png)</icon> and window will appear enabling you to make changes.
+**Parameter descriptions**
 
-  ![Edit series](edit_series.png)
+* **Quantity** - The number of refill cards to generate.
+* **Prefix** - The prefixed characters to use for the series of refill cards.
+* **Price** - The price of one refill card within the series.
+* **Partner** - The partners you wish to make this series of refill cards available to.
+* **Valid till** - The expiration date of the refill cards in the series.
+
+After completing the parameters for the generation of a new series of refill cards, upon generating a new window will appear displaying a table of all the generated refill cards for the new series.
+
+  ![Series](view_serie.png)
+
+  In the Actions column the follow options (<icon class="image-icon">![Icons](cards_actions.png)</icon>) will be available for redeeming, editing, or deleting the refill card selected.
 
 
-*  By clicking on icon <icon class="image-icon">![View](view_icon.png)</icon> or on card serie in the Serie Column a table of all cards created under this serie will appear with their full codes.
-
-  ![View series](view_series.png)
-
----
-Here you can redeem customers' card to top up their balance by clicking on <icon class="image-icon">![Redeem_icon](redeem_icon.png)</icon>.
+Administrators can redeem a card to top up a customer's balance by clicking on the redeem icon <icon class="image-icon">![Redeem_icon](redeem_icon.png)</icon>.
 
 ![Redeem](redeem_card.png)
 
+As soon as a card has been redeemed, the status of the card will be changed.
 
-As soon as card will be redeemed its status will be changed.
 ![Status](status.png)
 
+After redeeming a refill card for the customer, it will be displayed in the list of the respective customer's payments table in `Customers → View → Billing → Payments`
 
-In `Customers → View → Billing → Payments` will be possible to see activated card and amount of deposit made on the customer's account.
 ![Payment type](payment_type.png)
 
+## Exporting refill cards
 
----
-By clicking on icon <icon class="image-icon">![Export](export_icon.png)</icon> you can export cards in two available formats: CSV and PDF for further printing out and sale to customers.
+By clicking on the export icon <icon class="image-icon">![Export](export_icon.png)</icon>, you can export cards in two available formats: CSV or PDF for further printing out and/or sending it as a sale to customers.
 
 ![Export card](export_card.png)
 
 ![Cards](cards.png)
 
+The list of all series of refill cards can be found in `Finance / Refill Cards / Series`
+
+![List Series](list_series.png)
+
+Here there are options available in the Actions column to edit, view refill cards within the series, export refill cards, or delete the series. <icon class="image-icon">![Icons](icons.png)</icon>
+
 
 ## How customer can redeem purchased refill card
 
-First, Refill cards should be enabled for the customer's portal. It can be done under `Config → Main → Portal → Finance section `.
+First, Refill cards should be enabled for the customer's portal. This can be done under `Config → Main → Portal → Finance section `.
 
 ![Portal config](portal_config.png)
 
 
-In Customer's portal customer will go to `Finance → Payments → Refill card` and enter the card's code into Code window.
+In the Customer's portal, the customer will go to `Finance → Payments → Refill card` and enter the refill card's full code into the Code field.
 
 ![Refill card](refill_card.png)
 
 
-Customers will be able to check their balance in `Finance → Payments → List`, where date of the payment, payment type, amount and possible comment on the payment will be shown.
+Customers will be able to check their balances in `Finance → Payments → List`, where the date of the payment, payment type, amount and a possible comment on the payment will be displayed in a table.
 
 ![Balance](balance.png)

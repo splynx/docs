@@ -1,44 +1,46 @@
 How to apply Credit to future invoices
 ====================================
 
-Sometimes your customer has a positive account balance, it is not enough for the next payment, but he wants to use it to reduce the invoice amount.
+In certain cases, you may have a customer with a positive balance however it is not enough to pay for the cost of their services on the next invoice. So the customer wants this positive balance to be deducted from the next invoice. Let's use an example to illustrate the process of applying credit to a customer's account.
+
 
 For example, the customer's account balance is $10:
 
 
 ![Preview](1.png)
 
-from transactions you can see the same, his first payment was more than invoiced amount:
+From the list of transactions you can see That the customer's first payment was more than invoiced amount:
 
 ![Preview](2.png)
 
-from the Services you can see the tariff price is $35:
+From the Services tab, you can see the tariff price is $35:
 
 ![Preview](3.png)
 
-and the same price you will see on the next charge (invoice):
+If you were to charge the customer for the next invoice, you will see the price of the service again on the invoice preview:
 
 ![Preview](4.png)
 
 
-To solve this issue and apply $10 to the future invoice, you have to go through the next steps:
+To resolve this issue and apply $10 credit to the future invoice,  the next steps should be taken:
 
-1. Create a Debit transaction with the same Total as account balance (Description and Category they don't matter):
+1. Create a Debit transaction with the same Total as account balance (Description and Category doesn't really matter, this is for your personal reference):
 
 ![Preview](5.png)
 
-2. Create a Credit transaction with the same Total as account balance, but it's **critical to turn on "To invoice" toggle**:
+2. Create a Credit transaction with the same Total as account balance, but it's **critical to turn on the "To invoice" toggle**:
 
 ![Preview](6.png)
 
-That's all you need - only two transactions. Then we can check customer`s balance (it's the same - $10):
+That's all you need to do  - only two transactions. Then we can check the customer's balance (it's the same - $10):
 
 ![Preview](7.png)
 
-At last, you can create a future invoice via "To Charge" button or just wait for a Billing day and the system will automatically create it:
+
+The final step will be to charge the customer for the future invoice with the "Charge & Invoice" button in the Billing overview tab or simply wait for the next billing day for the system to create the invoice automatically:
 
 ![Preview](8.png)
 
-As you can see - a new invoice includes Credit correction transaction and reduced total amount.
+As you can see - the new invoice includes the Credit correction transaction and the reduced total amount.
 
-Notice: Please don't worry if preview via To Charge button will not show the Credit transaction - it's normal. The invoice will be correct, with Credit transaction in any way.
+_Notice: Please don't worry if the preview via the Charge & invoice button does not show the Credit transaction - it is normal. The invoice will be correct, with Credit transaction if these steps were taken._

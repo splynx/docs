@@ -1,7 +1,7 @@
 Dashboard
 =========
 
-Dashboard is the main control panel in Splynx which will help you to check financial and customer statistics on a daily basis. From the dashboard you can also monitor system performance and immediately get information about your network health and our other modules.
+Dashboard is the main control panel in Splynx which will help you to check financial and customer statistics on a daily basis. From the dashboard, you can also monitor system performance and immediately get information about your network health and our other modules.
 
 ![Dashboard1](dashboard1.png)
 ![Dashboard2](dashboard2.png)
@@ -33,7 +33,7 @@ The navigation pane is located at the left side of the page with the following m
 
 [Tariffs](configuring_tariff_plans/configuring_tariff_plans.md) - The list of all your services and products in the system
 
-CRM - Your prospective client management platform.
+[CRM](crm/crm.md) - Your prospective client management platform.
 
 [Customers](customer_management/customer_management.md) - Your customizable list off all customers in the system.
 
@@ -45,7 +45,7 @@ CRM - Your prospective client management platform.
 
 [Support](support_tickets_messages/support_tickets_messages.md) - Your advanced support system for all your customers.
 
-Scheduling - Your technical staff manager.
+[Scheduling](scheduling/scheduling.md) - Your technical staff manager.
 
 [Administration](administration/administration.md) - The administrative page of your Splynx server.
 

@@ -37,7 +37,7 @@ To finish the installation please type this order of URL in a browser - http://i
 
 After applying your license you will be redirected to the "Finish setup" menu (you can skip it but we recommend completing these steps):
 
-![Screenshot](install_splynx2.png)
+![Screenshot](install_splynx2_1.png)
 
 ![Screenshot](install_splynx3.png)
 

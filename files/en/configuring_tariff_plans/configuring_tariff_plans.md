@@ -1,7 +1,7 @@
 Configuring Tariff Plans
 ========================
 
-This is where all your **services** are created, edited and stored. Splynx designed this platform to easily manage services you render while paying close attention to the complexity one might face when supplying the types of services ISP's do.
+This is where all your tariff plans for **services** are created, edited and stored. 
 
 In Splynx there are three types of tariff plans, namely; *Internet*, *Voice*, and *Custom* plans. These are the main plans and are more commonly used, however, there are also options to create *One-Time* charges and *Bundles*.
 

@@ -1,3 +1,0 @@
-Splynx SageOne integration
-==========================
-

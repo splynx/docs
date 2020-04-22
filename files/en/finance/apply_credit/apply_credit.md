@@ -38,7 +38,6 @@ That's all you need to do  - only two transactions. Then we can check the custom
 
 ![Preview](7.png)
 
-
 The final step will be to charge the customer for the future invoice with the "Charge & Invoice" button in the Billing overview tab or simply wait for the next billing day for the system to create the invoice automatically:
 
 ![Preview](8.png)

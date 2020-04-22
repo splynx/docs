@@ -6,31 +6,31 @@ Ubiquiti access points have the ability to authenticate CPEs via Radius server. 
 Usually ISP already has a PPPoE or similar authentication mechanism which is why wireless Radius authentication is added in Splynx to existing customers as one new (empty) service.
 
 As a first step, we define a Plan in Splynx with 0 price and 0 in all other fields.
-
-![Edit tariff](edit_tariff.png)
+  
+![Edit tariff](edit_tariff.png)  
 
 Then, we should add a wireless service to the customer and enter his login and password.
-
-![New service](new_service.png)
+  
+![New service](new_service.png)  
 
 It is also important to add AP to splynx.
+  
+![Router](router.png)  
 
-![Router](router.png)
+In the last step we should enable Wireless Radius authentication EAP on the UBNT router and setup a Radius server IP address and secret. This is Access point or router configuration:  
+  
+![Wireless](wireless.png)  
 
-In the last step we should enable Wireless Radius authentication EAP on the UBNT router and setup a Radius server IP address and secret. This is Access point or router configuration:
-
-![Wireless](wireless.png)
-
-Now we can connect a UBNT radio CPE to a UBNT Access Point. This is CPE configuration:
-
-![CPE](U_CPE.png)
+Now we can connect a UBNT radio CPE to a UBNT Access Point. This is CPE configuration:  
+  
+![CPE](U_CPE.png)  
 
 
 One thing that you must do is to setup Message-Authenticator attribute to to the Radius configuration.
 
-Under `Config → Radius → NAS Ubiquiti → Add Message-Authenticator=0` to the rate limit attributes field:
-
-![Message authenticator](message_authenticator.jpg)
+Under `Config → Radius → NAS Ubiquiti → Add Message-Authenticator=0` to the rate limit attributes field:  
+  
+![Message authenticator](message_authenticator.jpg)  
 
 #### Notice
 EAP-TTLS authentication should work from Splynx version 2.1.  
@@ -53,3 +53,7 @@ eap {
 ...
 }
 ```
+
+#### EAP-PEAP
+If you do not have EAP-Type selector on CPE, Freeradius should be configured for EAP-PEAP instead of EAP-TTLS.
+Here is an example from Ubiquiti - [https://help.ui.com/hc/en-us/articles/221961127](https://help.ui.com/hc/en-us/articles/221961127) 

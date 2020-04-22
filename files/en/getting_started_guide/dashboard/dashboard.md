@@ -1,7 +1,7 @@
 Dashboard
 =========
 
-Dashboard is the main control panel in Splynx which will help you to check financial and customer statistics on a daily basis. From the dashboard, you can also monitor system performance and immediately get information about your network health and our other modules.
+Dashboard is the main control panel in Splynx which will help you check financial and customer statistics on a daily basis. From the dashboard, you can also monitor system performance and immediately get information about your network health and other modules.
 
 ![Dashboard1](dashboard1.png)
 ![Dashboard2](dashboard2.png)
@@ -29,13 +29,15 @@ _Tickets_ <icon class="image-icon">![icon](dashboard6.png)</icon> - a quick list
 ![Dashboard1](dashboard7.png)
 ![Dashboard2](dashboard8.png)
 
-The navigation pane is located at the left side of the page with the following modules:
+The navigation pane is located on the left side of the page, with the following modules:
 
-[Tariffs](configuring_tariff_plans/configuring_tariff_plans.md) - The list of all your services and products in the system
+[Tariffs](configuring_tariff_plans/configuring_tariff_plans.md) - The list of all your services and products in the system.
 
 [CRM](crm/crm.md) - Your prospective client management platform.
 
 [Customers](customer_management/customer_management.md) - Your customizable list off all customers in the system.
+
+[Tickets](tickets/tickets.md) - Your in-house ticketing system and the home of your support communications.
 
 [Finance](finance/finance.md) - Your business in a financial aspect.
 
@@ -43,14 +45,16 @@ The navigation pane is located at the left side of the page with the following m
 
 [Networking](networking/networking.md) - The powerful Splynx networking management platform.
 
-[Support](support_tickets_messages/support_tickets_messages.md) - Your advanced support system for all your customers.
+[Support](support_messages/support_messages.md) - Your support communications system for all your customers.
 
 [Scheduling](scheduling/scheduling.md) - Your technical staff manager.
+
+[Voice](voice/voice.md) - The Voice home of your voice rates and CDR processing.
 
 [Administration](administration/administration.md) - The administrative page of your Splynx server.
 
 [Config](configuration/configuration.md) - Where all configurations for each module is done.
 
-My profile - It shows the profile of the administrator currently logged into the system
+[My profile] - A profile page of the administrator currently logged into the system
 
 Logout - Logout from the system

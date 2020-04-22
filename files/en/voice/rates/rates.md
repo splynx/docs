@@ -1,19 +1,19 @@
 Rates
 =====
 
-In the Rates tables, we associate prices with prefixes and categories. It's divided in Customer rates and Provider rates, Customers rates will be sell prices, and Provider rates Buy prices. You can manage it using only one of both.
+In the Rates tables, we associate prices with prefixes and categories. It's divided in Customer rates and Provider rates. Customers rates refer to sell prices, and Provider rates, buy prices. You can manage it using only one of both customer and provider rates.
 
-In Voice → Rates → Customers/Providers click on add.
+Navigate to Voice → Rates → Customers/Providers and click on add.
 
 ![Add rates](./add_rates.png)
 
 ![Add rate table](./add_rate_table.png)
 
-Once is created, click on the symbol <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> to config the rates.
+Once it is created, click on the icon <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> to config the rates.
 
 ![Rates config](./rates_config.png)
 
-We can add them manually or importing, and is also possible to update them in mass.
+We can add them manually or import them. Mass updates are also possible.
 
 ![Rates add, import, update](./rates_add_import_update.png)
 
@@ -24,7 +24,7 @@ Add customer's rate
 * **Category** - Category associate to this prefix.
 
 
-* **Prefix** - Prefix for configure price, you can follow this steps to type it:
+* **Prefix** - Prefix for configuring the price, you can follow these steps to type it:
 
 ![Phone patterns](./patterns.png)
 

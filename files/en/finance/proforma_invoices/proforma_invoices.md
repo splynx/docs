@@ -58,10 +58,9 @@ Automation for creating proforma invoices is also possible, navigate to `Custome
 
 **Parameter descriptions**
 
-* **Enable Auto Proforma Invoices** - enables/disables automatic creation of proforma invoices
-* **Day of generating Auto Proforma Invoices** - the date displayed on the invoice
-* **Period** - the period to charge for on the invoice
-* **Create Proforma Invoice for** - when to charge for
+* **Day of generating Auto Proforma Invoices**- the day to generate proforma invoices
+* **Period** - the period to charge customers for on the invoice
+* **Create Proforma Invoice for** - which month to charge the customer for
 * **Next Proforma** - when to generate the next proforma invoice
 ---
 There is also the possibility **to create Proforma Invoices manually** by clicking on *Add Proforma Invoice* in `Customer's Billing → Proforma Invoices`.

@@ -1,13 +1,13 @@
 Email messages
 ==============
 
-Messages' option in `Support → Messages` allows you to send an email to the customer directly from Splynx using different templates and attaching financial or other documents.
+The messages option in `Support → Messages` allows you to send an email to the customer(s) directly from Splynx using different templates and attaching financial or other documents.
 
 ![Main window](./main_window.png)
 
-It is necessary to configure email first in `Config → Main Configuration → Mail` before sending email to the customer. More information about email configuration is here - [Email config](configuration/main_configuration/email_config/email_config.md).
+It is necessary to configure email first in `Config → Main Configuration → Mail` before sending email to the customer. More information about email configuration can be found in - [Email config](configuration/main_configuration/email_config/email_config.md).
 
-**To create an email** click on Create in Support → Messages. The window will pop-up with the following fields:  
+**To create an email** click on Create in `Support → Messages`, a window will appear with the following fields:  
 
 
 * **ID** - ID of the customer. It has given by the system in a sequential order
@@ -66,39 +66,40 @@ It is necessary to configure email first in `Config → Main Configuration → M
 
 * **Attach financial documents** - Invoices, Proforma Invoices and Payments from Splynx.
 
-It is not necessary to fill in all fields to send an email to the customer. The easiest way is to enter customer's ID, choose option Send to, Subject and write a message. You can choose a body message from templates or write a particular text. You can also write your own message and save it as a new template by clicking on Save as new. You can attach financial documents of the customer (invoices, proforma invoices and payments receipts).
+It is not necessary to fill in all fields to send an email to the customer. The easiest way is to enter a customer's ID, choose the "Send to" option, type a Subject and write a message.
+ You can choose a message body from templates or write particular text to populate the body of the message. You can also type your own message and save it as a new template by clicking on "Save as new". There is also an option to attach financial documents of the customer (invoices, proforma invoices and payments receipts).
 
 ![New email](./new_email.png)
 
-You can check your message before sending it by clicking on Preview option at the bottom of the page.
+You can view your messages before sending it by clicking on the Preview option at the bottom of the page.
 
 ![Preview](./preview.png)
 
-When you click on Send icon the window will appear with the confirmation details of the recipient.
+When you click on the Send button, a window will appear with the confirmation details of the recipient.
 
 ![Send message](./send_message.png)
 
-If you click on Send as test  the window will pop-up, where customer's ID have to be entered.
+If you click on Send as test, a window will appear where the customer's ID has to be entered.
 
 ![Pop-up](./pop_up.png)
 
-There is an option of mass sending, for example, you can choose particular recipients by Partner or Location.
+There is also an option of mass sending, for example, you can choose particular recipients by Partner or Location.
 
 ![Mass sending](./mass_sending.png)
 
-If you choose the sending option as Sent to Customer portal or Customer Portal & email, customer will be able to read an email in his portal in Messages section, where all incoming emails will be shown.
+If you choose the sending option as Send to Customer portal or Customer Portal & email, customers will be able to read the email in their portal in the Messages section, where all incoming emails will be shown.
 
 ![Sent to customer](./sent_to_customer.png)
 
-By clicking on *View* <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> the email will show up with attachment enclosed.
+By clicking on *View* <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> the email will appear with the attachment enclosed.
 
 ![View message](./view_message.png)
 
-It is possible to track all emails that were sent in `Support → Messages → History`. You can sort them by their status (Any, New, Processing, Sent, Cancelled, Removed, Sent with error) or period of time (Today, Yesterday, Last 7 days, This month, Last month, Custom Range).
+It is possible to track all emails that were sent in Splynx by navigating to `Support → Messages → History`. You can sort all items by their status (Any, New, Processing, Sent, Cancelled, Removed, Sent with error) or a period of time (Today, Yesterday, Last 7 days, This month, Last month, Custom Range).
 
 ![History](./history.png)
 
-By clicking on actions <icon class="image-icon">![ViewIcon2](./icon2.png)</icon> you'll be able to see customers' list (in case of mass sending it will be a full list with customers' names), view email and delete it.
+By clicking on the actions buttons <icon class="image-icon">![ViewIcon2](./icon2.png)</icon>, you'll be able to see the list customers' (in case of mass sending it will be a full list with customers' names), view the email or delete it.
 
 ![Customer's list](./customers_list.png)
 

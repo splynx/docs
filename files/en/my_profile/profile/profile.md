@@ -27,7 +27,7 @@ Administrators can customize their profile details here. Details like login in p
 
 ![Add canned groups](add_canned_groups2.png)
 
-**Ticket canned responses** - pre-configured responses for tickets can be created and saved here to optimize response time and achieve efficiency. Simply click on the + add button to add a new response.
+**Ticket canned responses** - pre-configured responses for tickets can be created and saved here to optimize response time and improve efficiency. Simply click on the + add button to add a new response.
 
 ![Add canned response](add_canned_response.png)
 

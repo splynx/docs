@@ -62,7 +62,7 @@ To apply credit with invoices, please follow the steps below:
 
 ![Add credit](10.png)
 
-Dates can be specified if need be. Notes for the customer and a memo for yourself is recommended. Add a description of your choice for the credit note. The period is optional and the most important part is to add a amount with a negative value "-"
+Dates can be specified if need be. Notes for the customer and a memo for yourself is recommended. Add a description of your choice for the credit note. The period is optional and the most important part is to add a amount with a negative value "-".
 
 Once the invoice has been created it will appear in the list of invoices and can be operated with the tools in the actions column.
 

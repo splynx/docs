@@ -8,8 +8,6 @@ Upon clicking on the Add Google account button, the following window will appear
 
 ![Add Google account](add_google_account.png)
 
-Step 1
-
 Click on the Google authorize link to sign in or select an account to connect. You will be redirected to the a Google sign in page:
 
 ![Add Google account](google_signin.png)

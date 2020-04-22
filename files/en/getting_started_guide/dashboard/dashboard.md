@@ -55,6 +55,6 @@ The navigation pane is located on the left side of the page, with the following 
 
 [Config](configuration/configuration.md) - Where all configurations for each module is done.
 
-[My profile](my_profile/my_profile.md) - A profile page of the administrator currently logged into the system
+[My profile](my_profile/my_profile.md) - A profile page of the administrator currently logged into the system.
 
-Logout - Logout from the system
+Logout - Logout from the system.

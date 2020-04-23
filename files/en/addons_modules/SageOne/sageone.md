@@ -1,7 +1,7 @@
 Splynx and SageOne accounting integration
 =========================================
 
-The SageOne add-on in splynx was designed to improve efficiency and be able execute all actions in on platform. We have integrated all the abilities of SageOne into Splynx for your convenience. Syncing customer data, invoices and payments can now be done effortlessly by your powerful Splynx server.
+The SageOne add-on in splynx was designed to improve efficiency and be able to execute all actions in one platform. We have integrated all the abilities of SageOne into Splynx for your convenience. Syncing customer data, invoices, and payments can now be done effortlessly by your powerful Splynx server.
 
 The following steps can be used to integrate your splynx server to your SageOne platform.
 
@@ -19,18 +19,18 @@ Enter your password in the fields provided under the "SageOne API Settings" sect
 ![SageOne Install](sageone_passwd1_addon.png)
 
 ### Note:
-**The company ID will be fetched from SageOne upon saving the username and password. Once the ID appears within Splynx, this is an indicator that the platforms has connected successfully.**
+**The company ID will be fetched from SageOne upon saving the username and password. Once the ID appears within Splynx, this is an indicator that the platforms have connected successfully.**
 
 ![SageOne Install](sageone_passwd2_addon.png)
 
 ## 2. Define the payment methods to push to SageOne from Splynx
-* **Payments are processed within Splynx and sent to SageOne. Credit cards, cash, debit orders, Paypal payments etc.** - Navigate to the `Synchronization settings` section, select SageOne as the payment method ID and which payments to push to SageOne from Splynx:
+* **Payments are processed within Splynx and sent to SageOne. Credit cards, cash, debit orders, Paypal payments, etc.** - Navigate to the `Synchronization settings` section, select SageOne as the payment method ID and which payments to push to SageOne from Splynx:
 
 ![SageOne Payments](sageone_payment_methods.png)
 
-*It is recommended that all settings in the "Cron Settings" section of the page is disabled for the initial set up of the addon to avoid syncing all these elements automatically via cronjobs, the first import and export should be done manually*
+*It is recommended that all settings in the "Cron Settings" section of the page are disabled for the initial set up of the addon to avoid syncing all these elements automatically via cronjobs, the first import and export should be done manually*
 
-* **Exclude payments processed in SageOne from the payments to push to SageOne in Splynx.(If SageOne will be used as a payment gateway)**
+* **Exclude payments processed in SageOne from the payments to push to SageOne in Splynx. (If SageOne will be used as a payment gateway)**
 
 *Please note that you do not have to select SageOne in the list of payment methods to sync as this will grab payments from SageOne.*
 
@@ -57,7 +57,7 @@ Once the bank account has loaded, scroll to the top of the page and select this 
 
 ## 3. Define items within SageOne with the correct VAT
 
-* **Understanding transaction categories** -  All types of tariff plans within splynx creates it's own transaction and each transaction for tariff plans are by default set to a serviice type of transaction. This behaviour can be modified and is necessary to do when using the SageOne addon in order to successfully pair items with transaction categories.
+* **Understanding transaction categories** -  All types of tariff plans within splynx create its own transaction and each transaction for tariff plans are by default set to a service type of transaction. This behavior can be modified and is necessary to do when using the SageOne addon in order to successfully pair items with transaction categories.
 
 
 * **Define items in SageOne and sync it to Splynx** - These are items you will use to pair/sync it to transaction categories within splynx.
@@ -73,19 +73,19 @@ In essence, for each different **type** of service in Splynx, there should be a 
 
 ![SageOne items](sageone_items.png)
 
-Then we will create transaction categories within Splynx that corresponds to the items created within SageOne.
+Then we will create transaction categories within Splynx that correspond to the items created within SageOne.
 
 Navigate to `Config / Finance / Transaction categories`, here you edit the default service category or simply add new categories for each item created within SageOne.
 
 ![SageOne transaction categories](sageone_transaction_categories.png)
 
-After creating all the relevant categories, it is then necessary to assign these categories to the different types of services. You can assign categories to a type of services, i.e, one category for all internet services and one for all voice services etc, or you can assign categories to each of the different tariffs plans, i.e, one category for a wifi tariff and another for a fiber tariff.
+After creating all the relevant categories, it is then necessary to assign these categories to the different types of services. You can assign categories to a type of services, i.e, one category for all internet services and one for all voice services, etc, or you can assign categories to each of the different tariffs plans, i.e, one category for a wifi tariff and another for a fiber tariff.
 
-To assign transaction categories by tariff plans, it is necessary to enable the transaction category fields within the tariff plans. To do this, simply scroll to the bottiom of the `Transaction categories` page and enable this feature for the desired types of tariffs.
+To assign transaction categories by tariff plans, it is necessary to enable the transaction category fields within the tariff plans. To do this, simply scroll to the bottom of the `Transaction categories` page and enable this feature for the desired types of tariffs.
 
 ![SageOne transaction categories](sageone_transactions_tariffs.png)
 
-Once you have enabled this fields for the desired types of tariffs, you can simply navigate to the tariffs and assign categories to individual plans. For example, we will assign the fiber category to the fiber internet plan.
+Once you have enabled these fields for the desired types of tariffs, you can simply navigate to the tariffs and assign categories to individual plans. For example, we will assign the fiber category to the fiber internet plan.
 
 Navigate to `Tariffs / Edit the desired internet plan / Scroll to the bottom of the page and select/change the category in the provided field from the default category to the desired/corresponding category you have created.`:
 
@@ -93,13 +93,13 @@ Navigate to `Tariffs / Edit the desired internet plan / Scroll to the bottom of 
 
 ![SageOne transaction categories](sageone_tariff_category2.png)
 
-Once all your transaction categories have been created and assigned to the different plans, we can now proceed to connecting the categories within Splynx to items within SageOne.
+Once all your transaction categories have been created and assigned to the different plans, we can now proceed to connect the categories within Splynx to items within SageOne.
 
 `Navigate to Config / Finance / Accounting Categories`:
 
 ![SageOne accounting categories](sageone_accounting_categories.png)
 
-Once here, the first step is to load the categories/items from SageOne. To do so, scroll to the bottom of the page and click on the load button in the Accounting categories sections:
+Once here, the first step is to load the categories/items from SageOne. To do so, scroll to the bottom of the page and click on the Load button in the Accounting categories sections:
 
 ![SageOne accounting categories](sageone_accounting_loadcategories.png)
 
@@ -111,7 +111,7 @@ Once the categories have been loaded we can now proceed to map them to the relev
 
 *Please note that these settings will only apply to new tariff plans created, so it is necessary to configure the existing tariff plans accordingly.*
 
-Once this is done, you can test the functionality by simply creating a test invoice or perhaps cancelling the last charges and re-charging for services:
+Once this is done, you can test the functionality by simply creating a test invoice or perhaps canceling the last charges and re-charging for services:
 
 ![SageOne test categories](sageone_test1.png)
 
@@ -179,7 +179,7 @@ Click on export invoices:
 
 Check SageOne to ensure the export was successful:
 
-As show below, customer balances has already changed due to invoices.
+As shown below, customer balances have already changed due to invoices.
 
 ![SageOne Invoices](sageone_invoices4.png)
 
@@ -251,12 +251,12 @@ As shown above, all payments are synced and only non-existing payments are added
 
 Synchronized payments from SageOne should now be confirmed in Splynx by marking the outstanding invoice as paid.
 
- As you can see the customer account balance is changed and the payment has been added but the invoice is still marked as unpaid. Simply navigate to the customers billing tab and mark the respective invoice as prepaid.
+ As you can see the customer account balance is changed and the payment has been added but the invoice is still marked as unpaid. Simply navigate to the customer's billing tab and mark the respective invoice as prepaid.
 
 ![SageOne Payments](sageone_sagepayments8.png)
 ![SageOne Payments](sageone_sagepayments9.png)
 
-Simply navigate to the customers billing tab and mark the respective invoice as prepaid.
+Simply navigate to the customer's billing tab and mark the respective invoice as prepaid.
 
 ![SageOne Payments](sageone_sagepayments10.png)
 ![SageOne Payments](sageone_sagepayments11.png)
@@ -269,7 +269,7 @@ Navigate to the customers transactions tab and check if the transactions have be
 
 ![SageOne Payments](sageone_sagepayments14.png)
 
-To avoid having to mark invoices as paid after importing payments from SageOne, please ensure that the "Auto pay invoices from account balance" function is enabled:
+To avoid having to mark invoices as paid after importing payments from SageOne, please ensure that the "Autopay invoices from account balance" function is enabled:
 
 ![SageOne Payments](sageone_sagepayments15.png)
 
@@ -280,7 +280,7 @@ Now we can check the full list of payments for customers in Splynx by navigating
 
 ---------------------
 
-All activities of the SageOne addon can be tracked and check regurlarly. To make sure the addon is function as expected and for any other reasons.
+All activities of the SageOne addon can be tracked and checked regularly. To make sure the addon is functioning as expected and for any other reasons.
 
 One can check the activities of the addon by navigating to ` Administration / Logs / Accounting Integrations`:
 

@@ -288,6 +288,17 @@ One can check the activities of the addon by navigating to ` Administration / Lo
 
 ![SageOne customers](sageone_track1.png)
 
+## Some examples of errors which could occur:
+
+Scenario 1
+An invoice was synchronized, deleted in Splynx (for example invoice was incorrect and you have deleted it and create a new one with the same number) and you are attempting to sync invoices to SageOne:
+
+
+
+Fix: Remove the invoice from within the SageOne account or if you are unable to remove it from SageOne re-create the invoice in Splynx with a new invoice number.
+
+![SageOne customers](example.png)
+
 For a video tutorial provided by Alex Vishnyakov, please view the video below:
 
 <iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/watch?v=7q_BzL2LQbk&feature=youtu.be">Splynx - Sage One Deployment guide</iframe>

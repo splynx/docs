@@ -2,6 +2,7 @@
 * [Google maps add-on](addons_modules/google_maps/google_maps.md)
 * [Quickbooks accounting](addons_modules/quickbooks/quickbooks.md)
 * [Xero accounting](addons_modules/xero/xero.md)
+* [SageOne module](addons_modules/sageone/sageone.md)
 * [Ofipro contabilidad (Spanish)](addons_modules/ofipro/ofipro.md)
 * [FCC 477 export](addons_modules/fcc_export/fcc_export.md)
 * [Baicells LTE](addons_modules/baicells/baicells.md)
@@ -11,4 +12,4 @@
 * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
-* [FatturaPA](addons_modules/FatturaPA/FatturaPA.md) 
+* [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)

@@ -5,6 +5,7 @@ Ubiquiti access points have the ability to authenticate CPE's via a Radius serve
 
 Usually ISP's already have a PPPoE or similar authentication mechanism in place, which is why wireless Radius authentication is added in Splynx to existing customers as a new (empty) service.
 
+
 In the first step, we define a Plan in Splynx with the price as 0 and 0 in all other fields.
 
 ![Edit tariff](edit_tariff.png)
@@ -21,16 +22,18 @@ In the last step we should enable Wireless Radius authentication for EAP on the 
 
 ![Wireless](wireless.png)
 
-Now we can connect a UBNT radio CPE to a UBNT Access Point. This is CPE configuration:
-
-![CPE](U_CPE.png)
+Now we can connect a UBNT radio CPE to a UBNT Access Point. This is CPE configuration:  
+  
+![CPE](U_CPE.png)  
 
 
 Another mandatory configuration you must do, is to setup the Message-Authenticator attribute to the Radius configuration.
 
+
 Under `Config → Radius → NAS Ubiquiti → Add Message-Authenticator=0` in the rate limit attributes field:
 
 ![Message authenticator](message_authenticator.jpg)
+
 
 #### Notice
 EAP-TTLS authentication should work from Splynx version 2.1.  
@@ -53,3 +56,7 @@ eap {
 ...
 }
 ```
+
+#### EAP-PEAP
+If you do not have EAP-Type selector on CPE, Freeradius should be configured for EAP-PEAP instead of EAP-TTLS.
+Here is an example from Ubiquiti - [https://help.ui.com/hc/en-us/articles/221961127](https://help.ui.com/hc/en-us/articles/221961127) 

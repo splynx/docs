@@ -13,6 +13,7 @@ Quick totals for the following data and buttons to direct to a list for each:
 * Payment requests
 * Unpaid requests
 
+
 Totals data for the above mentioned for each of the following periods:
 
 * Last Month

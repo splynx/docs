@@ -31,6 +31,7 @@ The configuration of the **selected** customer billing is done here.
 
 ![Billing settings](billing_settings.png)
 
+
 ## Billing Settings:.
 * **Billing Enabled** - enables or disables billing for customer (whether the system should take customer into account or not)
 * **Period** - period the customer will be billed for

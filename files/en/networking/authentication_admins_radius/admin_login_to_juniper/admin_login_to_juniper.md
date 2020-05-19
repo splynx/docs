@@ -5,11 +5,13 @@ First of all we need to add router to Splynx and define NAS Type = Juniper.
 
 ![NAS type](junos_add_router.png)
 
-If you choose wrong NAS Type, authentication of administrators will not work. The difference between Junos Radius admin login and other vendors is that Juniper doesn't send Session-Type in Radius packet when administrator tries to login to the system. Because we set the NAS type to Juniper, Splynx expects this behaviour and knows that it's administrator, checks DB and if admin is there, he can login to router. Below is the packet format sent to Radius server in Access-request when administrator logins to Juniper router :
+If you choose the wrong NAS Type, authentication of administrators will not work. The difference between JunOS's Radius admin login and other vendors is that Juniper doesn't send Session-Type in the Radius packet when administrator's tries to login to the system. Because we set the NAS type to Juniper, Splynx expects this behaviour and knows that it's the administrator, checks the DB and if the admin is there, the admin will be allowed to login to router.
+
+ Below is an example of the packet format sent to the Radius server in Access-request when an administrator logs in to a Juniper router :
 
 ![JunOS](junos.png)
 
-How to configure Juniper router for Radius admin login :
+How to configure a Juniper router for Radius admin login :
 
 ```
 test@VMX-spl> configure
@@ -37,9 +39,9 @@ ssh;
 
 Statement authentication-order [ radius password ]; defines that we want to use Radius and then local login.
 
-Also we define Radius server IP and services that we will use to login to router, here it's SSH.
+Also we define the Radius server IP and services that we will use to login to the router, which here, is SSH.
 
-If we want to have also local login, this configuration helps us to achieve it :
+If we also want to have local logins, the following configuration can help us achieve it :
 ```
 groups {
 global {
@@ -60,7 +62,7 @@ apply-groups global;
 ```
 
 ---
-Our version of Junos that was tested :
+The version of JunOS that was used for testing is:
 
 Model: vmx
 Junos: 17.2R1.13

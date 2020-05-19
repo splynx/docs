@@ -1,17 +1,17 @@
 Authentication of users
 ==========
 
-Splynx supports different ways of  customers' central authentication in the network of Internet provider. It always depends on topology of ISP and technology that ISP decides to use. Access technologies are widely used and their advantages and disadvantages are described below:
+Splynx supports different ways of customers' central authentication within the network of Internet providers. It always depends on the topology of the ISP and the technology that the ISP decides to use. Access technologies are widely used and their advantages and disadvantages are described below:
 
-* **PPPoE** - easy to maintain and implement. Customer on CPE device setups username and password and all networking settings CPE receives from PPPoE NAS (Network Access Server). Also provides encryption if needed and accounting for getting statistics of usage. Had issues with MTU in past, but in last years these issues were fixed by main vendors.
+* **PPPoE** - easy to maintain and implement. Customer sets up username and password on the CPE device, and all networking settings received by the CPE comes from the PPPoE NAS (Network Access Server). It also provides encryption if needed and accounting for getting usage statistics. It had issues with MTU in past, but in the last few years these issues were fixed by main vendors.
 
-* **IPoE (or DHCP)** - DHCP is based on MAC address of client. Also can be linked to port of switch were customer is connected ([DHCP option 82](networking/authentication_users/dhcp_option_82/dhcp_option_82.md)). In several vendors don't provide accounting capability (Mikrotik routers)
+* **IPoE (or DHCP)** - DHCP is based on the MAC address of the client. It can also be linked to a port of the switch where the customer is connected ([DHCP option 82](networking/authentication_users/dhcp_option_82/dhcp_option_82.md)). Several vendors do not provide accounting capabilities (Mikrotik routers)
 
-* **Wireless Authentication** - when ISP has a wireless network, he needs to maintain access of CPE devices to his Access Points. For this purpose several wireless authentication methods are used, such as a password inside TDMA protocols or wireless access-lists
+* **Wireless Authentication** - when ISP's has a wireless network, they need to maintain access of CPE devices to their Access Points. For this purpose several wireless authentication methods are used, such as a password inside TDMA protocols or wireless access-lists
 
-* **Hotspot** - customer has to enter his username and password on the webpage before using the Internet. Many hotspot networks allow free limited access and then charge customers for addtional usage or advanced plans.
+* **Hotspot** - customers' has to enter their username's and password's on a webpage before using the Internet. Many hotspot networks allow free limited access and then charge customers for additional usage or advanced plans.
 
-* **Static IP addressing** - some ISPs don't have central management of authentication and setup static IP addresses to CPE devices. With Mikrotik RouterOS platform Splynx can manage even customers who's got static IPs in Vlan per customer scenario or plain IPv4 connection. Also Splynx can grab statistics from Mikrotik routers for such customers.
+* **Static IP addressing** - some ISP's don't have central management of authentication and setup static IP addresses to CPE devices. With the Mikrotik RouterOS platform, Splynx can manage even customers who has static IP's in Vlan per customer scenario or plain IPv4 connection. Also, Splynx can grab statistics from Mikrotik routers for such customers.
 
 
 Below are manuals for different types of user authentication in Splynx ISP Framework:
@@ -32,6 +32,8 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 * [Mikrotik: OpenVPN, Radius](networking/authentication_users/mikrotik_openvpn_radius/mikrotik_openvpn_radius.md)
 
 * [DSL Telkom (Openserve) authentication](networking/authentication_users/dsl_telkom_openserve/dsl_telkom_openserve.md)
+
+* [Cambium: Wireless Authentication via Radius](networking/authentication_users/cambium_wireless_auth_radius/cambium_wireless_auth_radius.md)
 
 * [Ubiquiti: Wireless authentication with Radius](networking/authentication_users/ubiquiti_wireless_auth_radius/ubiquiti_wireless_auth_radius.md)
 

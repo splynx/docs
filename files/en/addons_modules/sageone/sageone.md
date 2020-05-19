@@ -301,4 +301,4 @@ Fix: Remove the invoice from within the SageOne account or if you are unable to 
 
 For a video tutorial provided by Alex Vishnyakov, please view the video below:
 
-<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/watch?v=7q_BzL2LQbk&feature=youtu.be">Splynx - Sage One Deployment guide</iframe>
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/watch?v=7q_BzL2LQbk">Splynx - Sage One Deployment guide</iframe>

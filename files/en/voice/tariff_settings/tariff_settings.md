@@ -1,45 +1,45 @@
 Tariff Settings
 ===============
 
-We have introduced new settings on the tariff config, which allows to add included pricing and group pricing to the tariff, and also a preview tool for test. You also have to choose on which rate table will be based that tariff and in case we are managing buy prices(prices from our providers) we can add an increase percentage to define the final sell price.
+We have introduced settings in the tariffs configurations, which allows you to add included pricing and group pricing to the tariff, and also a preview tool for testing purposes. You also have the option to choose which rate table the tariff will be based on and to conveniently manage buy prices(prices from providers), we've added the ability to add an increase percentage to define the final sell prices.
 
-On Tariffs Plans → Voice, click on the symbol <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> pricing to configure settings.
+In Tariffs Plans → Voice, click on the pricing icon <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> to configure the tariff settings.
 
 ![Configure tariff](./configure_tariff.png)
 
-It has 2 windows Groups and Preview.
+Here you will be presented with 2 windows: Groups and Preview.
 
 ![Groups and Preview](./groups_preview.png)
 
-On the window Groups, we have 3 boxes. In the first one we have to set the Rate table and the Buy price increase in %.
+On the Groups window, we have 3 sections. In the first one we have to set the Rate table and the Buy price increase in %.
 
 ![Rate](./rate.png)
 
-On second one, we can add the included pricing.
+In the second one, we can add the included pricing.
 
 ![Included pricing](./included_pricing.png)
 
 ![Create pricing](./create_pricing.png)
 
-* **Type** - Type of the pricing, could be Call, SMS or Data.
+* **Type** - Type of pricing, could be Call, SMS or Data.
 
 
-* **Categoires** -  We have to choose to which categories are this price included. We should create first categories and prefixes.
+* **Categories** -  We have to choose to which categories are included in this price. We should always create categories and prefixes first.
 
 
-* **Days** - Select days of the week included.
+* **Days** - Select days of the week to be included.
 
 
-* **Unlimited** - Enable if is not limited by minutes.
+* **Unlimited** - Enable this if it is not limited by minutes.
 
 
-* **Included amount** - Select amount of time for calls(in seconds, minutes or hours), nº of messages or amount of data(in B, KB, MB or GB).
+* **Included amount** - Select the amount of time for calls(in seconds, minutes or hours), nº of messages or amount of data(in B, KB, MB or GB).
 
 
-* **Time** - Period when this pricing included is applied.
+* **Time** - Period when this included pricing is applied.
 
 
-And on the last one we can configure pricing groups. For example if we want to manage any category in different way or if we want to add something specific.
+In the last section we can configure pricing groups. For example if we want to manage any category in a different way or if we want to add something specific.
 
 ![Add pricing group](./add_pricing_group.png)
 
@@ -48,28 +48,28 @@ And on the last one we can configure pricing groups. For example if we want to m
 * **Title**  - Title of the Group pricing.
 
 
-* **Type** - Type of the pricing, could be Call, SMS or Data.
+* **Type** - Type of pricing, could be Call, SMS or Data.
 
 
-* **Categoires**  -  We have to choose to which categories are this price asigned. We should create first categories and prefixes.
+* **Categories**  -  We have to choose to which categories are assigned to this price . We should always create categories and prefixes first.
 
 
-* **Days** - Select days of the week included.
+* **Days** - Select days of the week to be included.
 
 
-* **Time** - Period when this pricing included is applied.
+* **Time** - Period when this included pricing is applied.
 
 
-* **Operation** - + % to buy, + % to sell, Establish, Tarification Step, First tarification.
+* **Operation** - + % to buy, + % to sell, Establish, Tariffication Step, First tariffication.
 
 
-* **Value** -  + % to buy, + % to sell → increase percentaje of price. Establish, Tarification Step, First tarification → Price.
+* **Value** -  + % to buy, + % to sell → increase percentage of price. Establish, Tariffication Step, First tariffication → Price.
 
 
-####Preview Tool
+#### Preview Tool
 
-We can set an example of comsuption to test if our setting and config are working well.
+We can set an example of consumption to test if our settings and configs are working as expected.
 
 ![Preview Tool](./preview_tool.png)
 
-The preview is showing that is included only 6000sec(100min), and as we have set 7000sec, the other 1000 seconds will be charged in base to the table, so total price is 1'17, that correspond to out config in the Rate table selected.
+The preview is showing that only 6000sec(100min) is included, and as we have set 7000sec, the other 1000 seconds will be charged based on the table, so total price is 1'17, that corresponds to our config in the Rate table selected.

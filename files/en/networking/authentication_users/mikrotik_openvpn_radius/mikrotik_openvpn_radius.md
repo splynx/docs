@@ -1,35 +1,38 @@
 Mikrotik: OpenVPN, Radius
 ==========
 
-The radius server should be configured following the page [PPPoE Radius](networking/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md). In the following guide you can follow steps for configure OpenVPN.
+When using this feature, please make that your radius server settings are configured according to the configurations specified on the [PPPoE Radius](networking/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md) page.
+
+The following is a guide you can follow to configure your OpenVPN server.
 
 
-We have to configure the radius server like in the other PPP cases.
+The radius server should be configured the same as in other PPP uses.
 
 ![PPP configure](radius.png)
 
 
-And enable radius for PPP.
+Be sure to enable radius for PPP.
 
 ![Use radius](use_radius.png)
 
 
-Then we have to create the OpenVPN server. We should create and sign one certificate to be able to use it.add
+Then we have to create the OpenVPN server.
+ *Please note, it is necessary to create and assign a certificate to it, to be able to use it.*
 
 ![Add radius](add_radius.png)
 
 
 ---
-### Create Certificate:
+### Creating the Certificate:
 
-On Mikrotik go to System → Certificates and we need to add 2 certificates, one will be the certificate for the server, and the other should be used to sign as CA.
+On your Mikrotik router, navigate to System → Certificates and add 2 certificates, one will be the certificate for the server, and the other will be used to sign as the CA.
 
-Add certificate for Server.
+Add the certificate for the Server.
 
 ![Add certificate](add_ca.png)
 
 
-Add certificate for sign as CA.
+Add the certificate to sign as the CA.
 
 ![Add certificate](add_ca1.png)
 
@@ -39,28 +42,28 @@ Sign the ca-cert certificate, without CA.
 ![Sign](sign_ca.png)
 
 
-It will appear a fingerprint
+A fingerprint will appear.
 
 ![List certificates](list_ca.png)
 
 
-Now sign the server certificate usign as CA the other certificate.
+Now sign the server certificate using the CA as the other certificate.
 
 ![Sign](sign_ca1.png)
 
 
-Now is signed and ready to use.
+Now it is signed and ready to be used.
 
 ![List certificate](list_ca1.png)
 
 
 ---
-Enable OpenVPN server setting the features you need and the server certificate. In this case we have configured it without client certificate.
+Enable the OpenVPN server setting features you need and the server certificate. In this case we have configured it without a client certificate.
 
 ![OpenVPN settings](ovpn_settings.png)
 
 
 ---
-Finally, we will be able to connect customers with login and password, that are set in Splynx for the customer's service. We will receive an IP from the pool we set, or is also possible to set an statical IP. Other option is to get them directly by mikrotik setting "none (router will assign)".
+Finally, we will be able to connect customers with their login's and password's, that have been set in Splynx in the customer's services. We will receive an IP from the pool we have selected, or if set, the static/permenant IP. The other option is to get an IP directly from the MikroTik, this is if the "IPv4 assignment method" setting is set to "None (Router will assign IP).
 
 ![Edit service](edit_service.png)

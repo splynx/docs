@@ -1,19 +1,19 @@
 Admin login to Mikrotik routers
 ==========
 
-It is possible to authenticate administrators locally on the router or using the Splynx Radius server.
+With the help of the Splynx Radius server, authenticating administrators locally has never been easier.
 
-To configure the Radius Server, click on `Config → Networking → Radius` and click on load at the bottom of the page.
+To configure the Radius Server, navigate to `Config → Networking → Radius` and click on the load button under the Nas config section.
 
 ![Radius](radius.png)
 
 ![Load](load.png)
 
-Turn the mode Use admin login on:
+Enable the "Use admin login" option:
 
 ![Radius](radius2.png)
 
-Select the router you want to configure with Radius. Click on `Networking → List`, select the router and write down the Radius secret password that is going to be used in the router Radius configuration.
+Select the router you want to configure with Radius. Navigate to `Networking → Routers → List`, select the router and type the Radius secret password that is going to be used in the router Radius configuration.
 
 ![Radius secret](radius_secret.png)
 
@@ -25,30 +25,30 @@ Click on `System → User`, the User List window will pop up. Select the tab *Ac
 
 ![Radius source](radius_source.png)
 
-In Splynx, click on `Administration → Administrators`, click on Add and fill up the administrator's fields.
+In Splynx, click on `Administration → Administrators`, click on Add and complete the administrator's details fields.
 
 ![Administrators](administrators.png)
 
 ![Create administrator](create_admin.png)
 
-It is possible to chose **the role of the administrator:** Administrator, Customer Creator, Financial Manager, Manager, Super Administrator. In Router access (radius) the default permission are: read, write, full.
+It is possible to choose **the role of the administrator:** Administrator, Customer Creator, Financial Manager, Manager, Super Administrator. In Router access (radius) the default permission are: read, write, full.
 
-It is possible to edit, change the permissions or delete the administrator with <icon class="image-icon">![Icons](conf_administrator.png)</icon>.
+You can edit, change the permissions or delete the administrator with the provided icons <icon class="image-icon">![Icons](conf_administrator.png)</icon>.
 
 Now, if you try to connect the new Administrator to the winbox-router, you will see the new user created with the Radius server in User list.
 
 ![Sysadmin](sysadmin.png)
 
-It is possible to see all operations of each Administrator. Click on `Administration → Logs → Operation`.
+You can conveniently view all operations of each Administrator by navigating to  `Administration → Logs → Operation`.
 
 ![Logs](logs_operations.png)
 
 
-If you click on <icon class="image-icon">![](operation_details.png)</icon>, you will see a pop up window with the operation in details.
+If you click on the details icon <icon class="image-icon">![](operation_details.png)</icon>, a window will appear displaying the details of the selected operation.
 ![Operation details](operation_details2.png)
 
 
-If you need a short log of the Radius login, click on `Administration → Logs → Operation` and click on the icon <icon class="image-icon">![Operation details](logs_files_actions.png)</icon>
+If you need a short log of the Radius logins, navigate to `Administration → Logs → Files`, search for radius and click on the file icon:
 
-![Logs](logs_operations.png)
+![Logs](radius_short.png)
 ![Radius shortlog](radius_shortlog.png)

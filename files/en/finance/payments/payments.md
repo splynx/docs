@@ -1,33 +1,34 @@
 Payments
-==========
+============
 
+This is the home of all payments in your Splynx system. All payments made by the customer or for the customer by means of all payment methods available are recorded and displayed here.
 
-Splynx processes different types of payments. When the customer pays cash at your company office, the cash desk module can be used to enter payments into the system. The cash desk operator’s access is limited: he can only accept, enter payments and view customers’ details. The administrator can add cash payments into the system as well.
+Splynx is able to process many different methods of payments, to name a few, cash payments, processing and generating of SEPA payment order, bank statement processing and a wide range of payment gateways(Sagepay, etc.)
 
-ISPs usually have different payment methods; Splynx supports bank transactions or generation of SEPA payment orders and also wide range of payment gateways.
+The Splynx cash desk module can be used to process payments administratively under a restricted and monitored platform.
 
+For more information on the cash desk module please click [ here](addons_modules/cashdesk/cashdesk.md).
 
-**Payments' table** in Finance module displays all different types of payments for a particular period of time according to your choice.
-You can also range them by Partner. Under the list of Payments will be a table called *"Totals"*, which will display all types of payments for a particular period of time with number of payments in each type and amount of money in each type.
+The **Payments' table** in the Finance module displays all different types of payments for a particular period of time according to your selection.
+You can also range payments by Partner. Under the list of Payments will be a table called *"Totals"*, which will display all types of payments for a particular period of time with a number of payments in each type and amount of money in each type.
 
 ![Payments](payments.png)
 ![Period](calendar.png)
 
-
-**To export payments** selected by you into one PDF or CSV file, click on tab Export and window with exporting options will pop-up, where you can create an export based on partner, location, customer payment type etc. Here you can also select an export type of the file.
+Payments selected by you can be **Exported** into one PDF or CSV file, click on the _Export_ button and a window with exporting options will appear, where you can create an export based on the partner, location, or the customer payment type, etc. Here you can also select an export format.
 
 ![Export](export.png)
 
+**Manual Payments**
 
-It is also possible **to add the payment manually** (without making an invoice).
-You will find that option in `Billing →Payments`. Click on `Add Payment` button and window will pop-up, where you can select a Payment type (Cash, Bank transfer, PayPal, Credit card, Braintree etc.), add a Date of payment, Amount, Receipt number, Note for customer and Memo for you etc.
-
-You can also **enable Send receipt option** here, so customer will receive a receipt once the payment is made. After the payment creation a credit transaction will appear in Transactions table (`Customer's Billing→Transactions`).
+Manual payments can be added in Splynx without the use or need of an invoice. This is done in the customer profile under `Customer view/ Billing / Payments`. Simply click on the _Add Payment_ button and a window will appear, where you can select a Payment type (Cash, Bank transfer, PayPal, Credit card, Braintree, etc.), add a Date of payment, Amount, Receipt number, Note for customer and Memo for you, etc.
+You can also choose to send a receipt to the customer by enabling the toggle
+thereof. Once a payment is created, a new credit transaction will be visible in the list of transactions.
 
 ![Add](add.png)
 
+In the list of payments, you will find a number of icons in the actions column which is used to execute different action to the payment.  <icon class="image-icon">![icons](icons.png)</icon>
+For example, with the edit  <icon class="image-icon">![Edit](edit_icon.png)</icon> option you can edit the payment, with the send <icon class="image-icon">![Send](send_icon.png)</icon> icon  you can send the payment receipt to the customer, with the download <icon class="image-icon">![Download](download.png)</icon> icon you can download payment receipt in PDF format.
 
-It is possible **to operate with every payment** using icons <icon class="image-icon">![icons](icons.png)</icon> the column Operations.
-For example, with <icon class="image-icon">![Edit](edit_icon.png)</icon> option you can edit the payment, with icon <icon class="image-icon">![Send](send_icon.png)</icon> you can send payment receipt to the customer, with icon <icon class="image-icon">![Download](download.png)</icon> you can download payment receipt in PDF format.
 
 ![Edit](edit.png)

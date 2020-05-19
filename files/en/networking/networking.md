@@ -1,15 +1,15 @@
  Networking
  ==========
 
-Important part of Splynx software is Network management. We use the following technologies for Network Management:
+ An important part of Splynx software is Network management. We use the following technologies for Network Management:
 
-* **Radius protocol** – central customer authentication, locking non-payers, getting statistics of Internet usage, support of different vendors.
+ * **Radius protocol** – centralized customer authentication, blocking of non-payers, getting statistics of Internet usage while supporting different vendors.
 
-* **Mikrotik API** – advanced bandwidth management on RouterOS. CPE configuration and provisioning.
+ * **Mikrotik API** – advanced bandwidth management on RouterOS. CPE configuration and provisioning.
 
-* **SNMP** - monitoring and building weathermaps directly in Splynx.
+ * **SNMP** - monitoring and building weather-maps directly in Splynx.
 
-The following network management topics are described below:
+ Please click on each of the network management topics for descriptions and guides to each:
 
 * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 

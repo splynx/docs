@@ -1,15 +1,25 @@
 Configuring Tariff Plans
 ========================
 
-Splynx has 3 different types of tariff plans - _Internet_, _Voice_ and _Custom_, also there are _Bundles_ and _One-Time_ tariffs. Plans are used to assign a service to customer and charge him. 
+This is where all your tariff plans for **services** are created, edited and stored. 
 
-_Internet plans_ are also limiting the speed accordingly to plan settings. _Voice Plans_ are used to create fees for voice services and for CDR processing. With _Custom plans_ you are able to charge customers for IPTV services, public IP addresses and other similar services. _Bundles plans_ are used for grouping of an Internet, Voice and Custom plans. _One-Time plans_ are used to charge customer only once, not recurring.
+In Splynx there are three types of tariff plans, namely; *Internet*, *Voice*, and *Custom* plans. These are the main plans and are more commonly used, however, there are also options to create *One-Time* charges and *Bundles*.
+
+Tariff plans are assigned to customers as services and these are the means by which we charge our customers.
+
+**Internet plans** can be created to control internet speeds, limit bandwidth usage(CAP) and create rules for usage (FUP). <br>
+**Voice plans** are created to charge customers for voice services and used for CDR processing. <br>
+**Custom plans** are created to charge for unique services like IPTV services, public IP addresses, and other similar services. <br>
+**One-Time plans** are items used to charge customers once off, these are your non-recurring charges like installation fees, etc.<br>
+**Bundles** are created to group internet, voice and custom plans, to charge customers for packages instead of multiple separate services.
+
+Please follow each of the sections below for more details on configuring tariff plans:
 
 * [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)
 
 * [Burst configuration](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
 
-* [Fair user policy settings](configuring_tariff_plans/fair_user_policy/fair_user_policy.md)
+* [Fair usage policy settings](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
 
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
 

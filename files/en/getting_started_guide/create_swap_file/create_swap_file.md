@@ -10,7 +10,7 @@ if [[ ! -f /swapfile ]]; then
     mkswap /swapfile
     chmod 0600 /swapfile
     swapon /swapfile
- 
+
     # Mount on reboot
     if [[ -z "$(cat /etc/fstab | grep swapfile)" ]]; then
         echo "/swapfile none swap sw 0 0" | tee -a /etc/fstab > /dev/null 2>&1
@@ -18,8 +18,8 @@ if [[ ! -f /swapfile ]]; then
 fi
 ```
 
-This commands create file with size 2 GB
-If you need more or less change `count=32`:
+These commands create a 2 GB file.
+If you need more or less, change `count=32`:
 
 * `count=16` - for 1 GB,
 * `count=64` - for 4 GB.

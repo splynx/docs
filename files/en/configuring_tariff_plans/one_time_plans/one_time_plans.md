@@ -1,47 +1,44 @@
 One-Time plans
 ==============
+These are non-recurring charges used regularly which include services like, call out fees, the initial connection of customers, materials used in conduit, etc.
 
-**When use One-Time plans?**
-
-For example, connect customers, extra support, Hosting or IPTV services, tariffs which require charges only once, not recurring.
-
-To configure the One-Time plan, click on the _Tariff plans → Custom_ and click on Add plan.
+To create new One-Time plans, navigate to _Tariff plans → One-time_ and click on Add plan.
 
 ![one_time1.png](one_time1.png)
 
-You will redirect to add plan page and be possible to create a plan.
+You will be redirected to an add plan page where you will fill in the following parameters to create a new one-time plan.
 
 ![one_time2.png](one_time2.png)
 
-* Title - the name that describe the tariff in the One-Time Tariffs table
+* Title - the name of the tariff in the One-Time Tariffs list/table
 * Price - the price for the service
-* Partners - select the partner 's name
-* VAT Included - select it on or off
+* Partners - the partners this plan will be available to
+* VAT Included - whether VAT is included in the price of the plan or not.
 * VAT - the percentage of the VAT
 
-It is possible to edit or delete the tariff with the icons <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon> in the column Actions.
+Once one-time plans has been created, it is possible to edit or to delete them with the icons found in the actions column of the voice plans table.  <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon>
 
-There are two symbols <icon class="image-icon">![symbolsbottomleft.png](symbolsbottomleft.png)</icon> on the bottom left of the table. First icon <icon class="image-icon">![esportaformati.png](esportaformati.png)</icon> is used to copy, print the table and to export it in different formats: Excel, CSV, PDF. The second one icon <icon class="image-icon">![modifytheview.png](modifytheview.png)</icon> is used to modify the view of the table.
+Like all tables in Splynx, you can modify the appearance of content, content to display and export the table into Excel, CSV or PDF formats, you can also choose to copy or print the table. This is done with the use of these <icon class="image-icon">![symbolsbottomleft.png](symbolsbottomleft.png)</icon>  icons found at the bottom left of each table. The <icon class="image-icon">![esportaformati.png](esportaformati.png)</icon> icon is used to export and the   <icon class="image-icon">![modifytheview.png](modifytheview.png)</icon> icon is used to format the appearance and content of the table.
 
-After the creation of One-Time plan, it is possible to use it from:
+After the creating One-Time plans, it is applicable to:
 
 **1. Add one-time invoice**
 
-On customer's _Billing - Invoices_ tab possible to add One-time invoice:
+On customer's "_Billing - Invoices_ tab" the is an option to add One-time invoices:
 
 ![one_time3.png](one_time3.png)
 
-In Create invoice modal window possible to select One-time plan as item and all data like description, price will auto filled:
+In the One-time invoice creation here you are able to select One-time plans as items and all data pertaining to the selected plan will auto-filled as depicted in the image below:
 
 ![one_time4.png](one_time4.png)
 
 
 **2. Add Proforma invoice**
 
-Working exactly the same as for Invoices - nn customer's _Billing - Proforma Invoices_ tab click on Add Proforma invoice button:
+Just as with "One-time invoices", the same logic can be used for proforma invoices, navigate to customer's "_Billing - Proforma Invoices_ tab", click on the Add Proforma invoice button:
 
 ![one_time5.png](one_time5.png)
 
-In the modal window possible to select One-time plan:
+In the proforma invoice creation page, same as the "One-time invoices", you are able to select One-time plans as items on the invoice:
 
 ![one_time6.png](one_time6.png)

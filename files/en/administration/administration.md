@@ -1,7 +1,7 @@
 Administration
 ==============
 
-Administration settings are divided into _3 main sections_ with its subcategories: _Splynx_, _Logs_ and _Information_. Please, follow the links below to find tutorial page about first two parts of Administration:
+Administration settings are divided into _3 main sections_ with the subcategories: _Splynx_, _Logs_ and _Information_. Please follow the links below to find tutorial pages about the first two parts of Administration:
 
 1. MAIN
    * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)

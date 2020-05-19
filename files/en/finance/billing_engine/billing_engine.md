@@ -52,7 +52,7 @@ Choose a *Payment Method* for recurring payment, such as Cash, Bank Transfer, Cr
 ---------
 The next step of setting up Recurring payments will be to choose the *Billing day* and *Billing due day*.
 
-* **Billing day** is a day of Invoice generating.
+* **Billing day** is the day of Invoice generating.
 * **Billing due day** is the last day when customer have to make a payment before get blocked.
 
 In our example we choose 1st day of the month as a billing day and 15th day of the month as Billing due day, which means that Invoice will be generated on 1st day of the month and if customer don't make a payment until 15th day of the month, the next day he will be in blocked status.

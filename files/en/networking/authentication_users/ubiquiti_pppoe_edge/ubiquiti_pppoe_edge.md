@@ -1,36 +1,36 @@
 Ubiquiti: PPPoE on Edge Routers
 ==========
 
-UBNT EdgeRouters can act as a PPPoE server with authentication of CPEs, providing statistics, blocking end users, and setting up speed limits and FUP rules.
+UBNT EdgeRouters can act as PPPoE servers with authentication of CPEs, providing statistics, blocking end users, setting up speed limits and applying FUP rules.
 
-Let’s divide it into parts:
+Let’s divide the configuration into steps:
 
-1. Configure EdgeRouter PPPoE server with Radius
-2. Configure EdgeRouter PPPoE server for incoming radius packets
-3. Add EdgeRouter to Splynx
-4. Connect PPPoE customer and check that everything is working fine
-5. Install other usefull tools to Edgerouter
+1. Configure the EdgeRouter's PPPoE server with Radius
+2. Configure the EdgeRouter's PPPoE server for incoming radius packets
+3. Add the EdgeRouter to Splynx
+4. Connect PPPoE customers and check that everything is working fine
+5. Install other usefull tools to your Edgerouter
 
 ### 1. Configure EdgeRouter PPPoE Server with Radius support
 
-The first step is to upgrade the system to at least 1.5 version and higher, because support of Radius attributes was added to EdgeOS in this version. The version we describe here is EdgeOS v1.8.5.
-Upgrade can be achieved in CLI with commands:
+The first step is to upgrade the system to at least version 1.5 or higher, because the support of Radius attributes was only added to EdgeOS starting from this version. The version we will be operating with here is EdgeOS v1.8.5.
+The upgrade can be performed in CLI with the following commands:
 ```
 add system image http://dl.ubnt.com/...
 add system image new-version-1085.tar
 ```
 
 
-As a second step we need to define the IP address for communication between Radius and EdgeRouter.
-In my case it’s 10.0.1.166, set it up as the main IP of EdgeRouter with a command (in configure mode):
+The second step is to define the IP address for communication between the Radius server and the EdgeRouter.
+In this case the ip address is: 10.0.1.166, configure it as the main IP of the EdgeRouter with the following command (in configure mode):
 ```
 set system ip override-hostname-ip 10.0.1.166
 ```
-In case that your router version don't accept that command, you could set it by the interface web.
+In the case that your router version does not accept this command, you can refer to setting it up via the web interface.
 
 ![override hostname/ip](override_hostname_ip.png)
 
-Then I setup the PPPoE server with mandatory settings:
+Then we will setup the PPPoE server with follwing mandatory settings:
 ```
 edit service pppoe-server
 set authentication mode radius
@@ -41,13 +41,12 @@ set interface eth2
 ```
 
 
-Radius configuration can also be done in web browser:
+The Radius configuration can also be done in web browser:
 
 ![PPPoE](pppoe.png)
 
 
-Encryption on Edge Routers tunnels is disabled by default. To enable it:
-Please login via SSH to EdgeRouter and type:
+Encryption on Edge Router tunnels are disabled by default. To enable it, login to the EdgeRouter via SSH and run the following command:
 ```
 sudo su -
 vi /opt/vyatta/share/perl5/Vyatta/PPPoEServerConfig.pm
@@ -55,40 +54,40 @@ vi /opt/vyatta/share/perl5/Vyatta/PPPoEServerConfig.pm
 
 press "/" on your keyboard and type: refuse-chap
 and then press 'i' on your keyboard and change "refuse-chap" to "require-chap".
-after that press Escape button and type :wq
-The same way you can enable PAP and MSCCHAP.
+thereafter, press the Escape button and type :wq
+You can enable PAP and MSCCHAP the same way.
 
 
 ### 2. Configure EdgeRouter PPPoE incoming packets
 
-This is an important part because we need to change plans, disconnect customers or apply FUP rules. In all these cases Splynx Radius sends packets to Edge Router.
-Default port is of UBNT is 3779. To enable incoming packet processing run these command on EdgeOS:
+This is an important part when we need to change plans, disconnect customers or apply FUP rules. In all these cases, the Splynx Radius server sends packets to the Edge Router.
+The default port of UBNT is 3779. To enable incoming packet processing, run the following command on the Edge router:
 ```
 sudo cp /opt/vyatta/etc/pppoe-server/start-pppoe-radius-disconnect /config/scripts/post-config.d/
 ```
-and reboot the router.
+Reboot the router.
 
-to debug, if packets are received use file pppoe-radius-disconnect.log:
+To debug, whether packets are received or not, use the pppoe-radius-disconnect.log file:
 ```
 tail /var/log/pppoe-radius-disconnect.log
 ```
 
 ---
-Below is example of output when packet disconnect was received by EdgeOS:
+Below is an example of the output when a disconnect packet was received by EdgeOS:
 
 ![Radius disconnect log](radius_disconnect_log.png)
 
 
 ### 3. Add EdgeRouter to Splynx and set up settings in Splynx
 
-Just add a router to Splynx in `Networking -> Routers` and choose the NAS Type Ubiquiti:
+Simply add a router to Splynx as usual in `Networking -> Routers -> Add` and choose the NAS Type as Ubiquiti:
 
 
 ![Information](information.png)
 
 
-You can add additional attributes to the configuration of NAS Type under `Config -> Networking -> Radius`.
-By default we support radius-rate-limit attributes to setup speeds of PPPoE tunnels.
+You can add additional attributes to the configuration of the NAS Type under `Config -> Networking -> Radius`.
+By default, we support radius-rate-limit attributes to setup speeds of PPPoE tunnels.
 
 ![NAS config](nas_config.png)
 
@@ -96,23 +95,23 @@ By default we support radius-rate-limit attributes to setup speeds of PPPoE tunn
 
 ### 4. Connect PPPoE customer and check that everything is working fine
 
-Now we can connect the PPPoE user to EdgeRouter and check that everything works fine.
-With the „show pppoe-server“ command we can see how many users are connected to the PPPoE server:
+Now we can connect the PPPoE customer to the EdgeRouter and check that everything works as expected.
+With the `show pppoe-server` command we can see how many users are connected to the PPPoE server:
 
 ![Show PPPoE](show_pppoe.png)
 
 
-In Splynx we can see if customer is online and get his stats:
+In Splynx, we can see if the customer is online and get their statistics:
 
 ![Online](online.png)
 
-When we click disconnect button the customer should dissapear from the online list and reconnect with a new session which means that EdgeRouter accepted the incoming packet from Splynx Radius server.
+When we click on the disconnect button, the customer should be removed from the online list and reconnect with a new session, which means that the EdgeRouter accepted the incoming packet from Splynx Radius server.
 
 
 ### 5. Install other usefull tools to EdgeRouter
 
-PPPoE client tunnels are dynamically created and are not shown in the web dashboard. We need to get statistics of customer throughput, and a simple way to do it is to install the software bwm-ng. It’s located in the Debian repository, which means we need to add new repositories first and then install bwm-ng.
-Add new repositories:
+PPPoE client tunnels are dynamically created and are not shown in the web dashboard. We need to get statistics of the customer's throughput, and a simple way to do this is to install the bwm-ng software. It is located in the Debian repository, which means we need to add new repositories first and then install bwm-ng.
+Adding new repositories:
 ```
 configure
 set system package repository wheezy components 'main contrib non-free'
@@ -125,17 +124,17 @@ commit
 save
 exit
 ```
-and install the tool
+Installing the tool
 ```
 apt-get install bwm-ng
 ```
 
 Then you can run bwm-ng -u bits to get the actual Kbps throughput of pppoe clients.
-Example of output of bwm-ng is in picture below:
+An example of the output of bwm-ng is depicted in the image below:
 
 ![BWM-NG](BWM-NG.png)
 
-Now you can configure Splynx Radius server with UBNT EdgeRouter and benefit from a fast router that delivers 1 million packets per second routing performance in a compact and affordable unit!
+Now you can configure the Splynx Radius server with the UBNT EdgeRouter, benefiting from a fast router that delivers 1 million packets per second routing performance in a compact and affordable unit!
 
 
-If you face any difficulties, please, use our forum – https://forum.splynx.com/ or submit us a ticket – https://splynx.com/my-tickets/
+If you do face any difficulties, please refer to our forum – https://forum.splynx.com/ or submit a ticket to us for assistance – https://splynx.com/my-tickets/

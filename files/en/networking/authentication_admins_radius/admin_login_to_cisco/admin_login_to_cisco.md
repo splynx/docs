@@ -1,7 +1,7 @@
 Admin login to Cisco devices
 ==========
 
-First of all, we need to grant permissions to access routers to Admin in Splynx. We have created a test admin who will login to devices:
+First of all, we need to grant permissions to access routers for the Admin in Splynx. We have created a test admin which we will use login to devices:
 
 ![Administrators](administrators.png)
 
@@ -9,16 +9,19 @@ First of all, we need to grant permissions to access routers to Admin in Splynx.
 Splynx has 3 permission levels - *Full, Write and Read.* These levels can be mapped to Cisco privilege levels:
 ![Edit administrator](cisco_admin_2.png)
 
-I'm creating admin with Full rights and then in `Config → Radius → Cisco` will choose that attribute used for Full access has privilege level 15:
+In this example, we are creating an admin with Full rights and then in `Config → Radius → Cisco` we will choose the attribute that is used for Full access and has the privilege level 15:
+
 ![NAS config](cisco_admin_3.png)
 
-Cisco-AVPair = shel:priv-lvl=15 says that Splynx will grant privilege level 15 to test admin when he connects to Cisco router/switch:
+Cisco-AVPair = shel:priv-lvl=15 defines that Splynx will grant the privilege level 15 to the test admin when he connects to the Cisco router/switch:
+
 ![](cisco_admin_4.png)
 
-Also we need to add router to Splynx and choose NAS type = Cisco and setup the same Radius secret as we will setup on Cisco router:
+Also, we need to add the router to Splynx, choose the NAS type = Cisco, and setup the same Radius secret we intend to use when setting up the Cisco router:
+
 ![NAS config](cisco_admin_6.png)
 
-Now we need to configure Cisco device to accept radius authentication and privilege levels:
+Now we need to configure the Cisco device to accept radius authentication and privilege levels:
 
 ```
 aaa new-model
@@ -41,6 +44,6 @@ cisco(config)# crypto key generate rsa   || (chose at lease 1024 bit key)
 cisco(config)# ip ssh version 2
 ```
 
-When commands entered to Cisco and Splynx are configured, admin is able to login to the Cisco router via SSH:
+When these commands are entered on the Cisco router/switch and Splynx has been configured, the admin is now able to login to the Cisco router/switch via SSH:
 
 ![SSH](cisco_admin_5.png)

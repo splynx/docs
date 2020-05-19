@@ -1,7 +1,7 @@
 Bandwidth management
 ==========
 
-Splynx has a powerful bandwidth management engine. Software can set the speed limitation for customers on different vendors using Radius protocol or you can achieve advanced bandwidth management with HTB Queuing system of Mikrotik Router OS. We manage Queues on Mikrotik router using API. Please, read the following articles related to bandwidth management:
+Splynx has a powerful bandwidth management engine. The software can set speed limitations for customers on different vendors using Radius protocol or you can achieve advanced bandwidth management with the HTB Queuing system of your Mikrotik Router OS. We manage Queues on Mikrotik routers using API. Please feel free to read the following articles related to bandwidth management:
 
 * [Capped plans and top up](networking/bandwidth_management/capped_plans/capped_plans.md)
 

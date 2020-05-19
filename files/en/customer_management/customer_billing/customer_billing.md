@@ -32,7 +32,7 @@ Billing Settings:.
 * **Billing due** - when the customer will be blocked
 * **Grace Period** - when the customer's services will be disabled
 * **Minimal balance** - minimal balance for the customer
-* **Make Invoices** (after Charge & Invoice) - create an invoice automatically after the charging action.
+* **Create Invoices** (after Charge & Invoice) - create an invoice automatically after the charging action.
 
 
 In **Payment Accounts** you can see the type of customer's payment account.

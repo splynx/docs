@@ -1,9 +1,9 @@
 Linux: Accel-ppp server
 ==========
 
-Accel-ppp is high permormance pptp/L2tp/PPPoE/IPoE server for Linux. The advantage of Accel-ppp is that is not only specialized in one technique, it’s various popiuar VPN service in on server application.
+Accel-ppp is a high permormance pptp/L2tp/PPPoE/IPoE server for Linux. The advantage of Accel-ppp is that it is not only specialized for one technique, as it has various popular VPN services/techniques that can be aggregated into one server application.
 
-With this guide, you will be able to authenticate splynx customers with Accel-ppp Server, use tariffs limits, set FUP Rules, use Session disconnect and others.
+With this guide, you will be able to authenticate Splynx customers with the Accel-ppp Server, use tariffs limits, set FUP Rules, use Session disconnect and others.
 
 ## INSTALLING ACCEL-PPP
 
@@ -38,26 +38,26 @@ sudo make install
 #### Configure Accel NAS type  
 `Config - Networking - Radius - NAS config - NAS Type`
 
-Choose “Accel”, “press Load”
+Choose “Accel”, “click Load”
 ![Load NAS type](load_nas_type.png)
 
-Paste in field “Rate-Limit attributes”:
+Paste in the “Rate-Limit attributes” field:
 ```
 PPPD-Upstream-Speed-Limit={{ rx_rate_limit /1000 }}
 PPPD-Downstream-Speed-Limit={{ tx_rate_limit/1000 }}
 ```
-Press “Save”
+Click “Save”
 
 ![Rate limit attributes](rate_limit_attr.png)
 
 ---
 #### Configure Splynx RADIUS
-Add to the end of `/etc/freeradius/dictionary`
+Add it to the end of `/etc/freeradius/dictionary`
 ```
 $INCLUDE                   /usr/share/freeradius/dictionary.accel
 ```
 
-Create file `/usr/share/freeradius/dictionary.accel` with this content
+Create the file `/usr/share/freeradius/dictionary.accel` with the following contents:
 ```
 # Limit session traffic
 ATTRIBUTE Session-Octets-Limit 227 integer
@@ -83,15 +83,15 @@ ATTRIBUTE Acct-Output-Gigawords   53      integer
 
 `Networking -> Routes -> Add`
 
-* **Title** – whatever you want
+* **Title** – provide a desired name
 
-* **NAS type** – Accel (we create it in previous steps)
+* **NAS type** – Accel (which we've created in the previous steps)
 
 * **IP/Host** – IP address of accel-ppp server
 
-* **Radius secret** – the same as in file `/etc/accel-ppp.conf` on accel-ppp server (section [radius], parameter “server”)
+* **Radius secret** – should be the same as in the file `/etc/accel-ppp.conf` on the accel-ppp server (section [radius], parameter “server”)
 
-* **NAS IP** - the same as in file `/etc/accel-ppp.conf` on accel-ppp server (section [radius], parameter “nas-ip-address”)
+* **NAS IP** - should be the same as in the file `/etc/accel-ppp.conf` on the accel-ppp server (section [radius], parameter “nas-ip-address”)
 
 ![Add router](route_add.png)
 
@@ -123,7 +123,7 @@ pptp
 pppoe
 #ipoe
 
-#uncomment auth methods for your need
+#uncomment auth methods to your need
 auth_mschap_v2
 #auth_mschap_v1
 #auth_chap_md5
@@ -513,7 +513,7 @@ $INCLUDE       dictionary.accel
 ```
 
 
-Create file `/usr/local/share/accel-ppp/radius/dictionary.accel` with this content
+Create the file `/usr/local/share/accel-ppp/radius/dictionary.accel` with the following content:
 ```
 # Limit session traffic
 ATTRIBUTE Session-Octets-Limit 227 integer
@@ -540,7 +540,7 @@ sudo service accel-ppp start
 
 
 ## Connection
-You must configure your accel-ppp server as router (NAS)
+You must configure your accel-ppp server as a router (NAS)
 Example:
 ```
 sudo sysctl net.ipv4.ip_forward=1
@@ -557,5 +557,5 @@ enp0s3 is the name of accel’s WAN interface
 sudo service accel-ppp restart
 ```
 
-Now you can connect to accel-ppp server.
-Create PPPoE, PPTP or L2TP connection and connect
+Now you can connect to the accel-ppp server.
+Create PPPoE, PPTP or L2TP connections and connect

@@ -1,7 +1,7 @@
 Cambium: Wireless Authentication via Radius
 ==========
 
-Cambium access points have the ability to authenticate CPEs via a Radius server. This means the admin doesn’t have to maintain local passwords for wireless authentication, each CPE/radio can have its own account in the Splynx ISP Framework and our Radius server will authenticate Cambium CPEs.
+Cambium access points have the ability to authenticate CPE's via a Radius server. This means that, admin's doesn’t have to maintain local passwords for wireless authentication, each CPE/radio can have its own account in the Splynx ISP Framework, and our Radius server will authenticate the Cambium CPE's.
 
 All files required for this setup can be downloaded here: [Cambium-Files](networking/authentication_users/cambium_wireless_auth_radius/cambium-certs.zip)
 
@@ -21,7 +21,7 @@ chown root:ssl-cert /etc/ssl/private/key-829.pem
 chmod 640 /etc/ssl/private/key-829.pem
 ```
 
-6. Within the file: /etc/freeradius/3.0/mods-available/eap - find `tls-config tls-common` and edit as follows:
+6. Within the file: /etc/freeradius/3.0/mods-available/eap - find `tls-config tls-common` and edit it as follows:
 
 ```
 tls-config tls-common {
@@ -29,9 +29,9 @@ tls-config tls-common {
     private_key_file = /etc/ssl/private/key-829.pem
     certificate_file = /etc/ssl/certs/cert-829.pem
     ca_file = /etc/ssl/camb-ca.crt    
-}	
+}
 ```
-7. Within Splynx navigate to Config / Networking / Radius extended - and set the following parameters:
+7. Within Splynx, navigate to `Config / Networking / Radius extended` - and set the following parameters:
 
 ```
 Force network to use one NAS - YES

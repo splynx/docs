@@ -1,12 +1,12 @@
 Radius server customization
 ==========
 
-In `Config → Networking → Radius` is a field available for setting additional attributes.
+In `Config → Networking → Radius` we will find a field available for setting additional attributes.
 
-Some attributes are configured by default, such as Framed-IP, Framed-Route, Auth-Type
+Some attributes are configured by default, such as Framed-IP, Framed-Route and Auth-Type.
 
 ## Variables
-We can use a lot of variables from Splynx
+We can use a lot of variables from within Splynx
 
 
 ### Tariff

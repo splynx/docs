@@ -4,7 +4,7 @@ Monitoring
 
 Splynx monitoring is based on SNMP and Ping tools.
 
-The following pictures show SNMP logs and RRD charts. We are using RRD as a technology for data logging and generating charts.
+The following images displays SNMP logs and RRD charts. We make use of RRD as a technology for data logging and generating charts.
 
 
 ![Logs](logs.png)
@@ -14,74 +14,74 @@ The following pictures show SNMP logs and RRD charts. We are using RRD as a tech
 
 #### How to add a device to monitoring:
 
-Open the monitoring Tab and Add a new device. Please enter the IP address and SNMP community. You can also define if you want to receive notifications if device is down.
+Navigate to `Networking / Monitoring` and Add a new device. Please enter the IP address and SNMP community. You can also choose if you would like to receive notifications if the device is down.
 
 ![Monitoring](monitoring_add.png)
 
 * **Title** - name of the device
-* **Parent** - you can build a parent-child relations in Splynx monitoring
+* **Parent** - you can build parent-child relations in Splynx monitoring
 * **Producer** - vendor name
 * **Model** - information about the device model
-* **IP address** - IPv4 of the device where SNMP and Ping tools will connect
+* **IP address** - IPv4 address of the device where SNMP and Ping tools will connect
 * **Ping this device** - If enabled, Splynx will send ICMP echo pings to the device
-* **SNMP Monitoring** - If enabled, Splynx will connect over SNMP to device and grab available information
-* **SNMP community** - define community, using "public" is insecure
-* **SNMP Version** - we recommend to choose version 2
+* **SNMP Monitoring** - If enabled, Splynx will connect to the device via SNMP and grab the available information
+* **SNMP community** - define a custom community, using "public" is insecure
+* **SNMP Version** - we recommend using version 2
 * **Type** - router, switch or any other type that is possible to configure in settings
-* **Group** - important fields, defines under which group device is device assigned. This is used for notification purpose
-* **Partners** - defines the partner that can see device in Monitoring
-* **Location** - used for searching and listing purpose
-* **Address** - information about the address where device is installed
-* **Send notifications** - If enabled, will send notification according to Group settings
+* **Group** - this is an important field as it defines under which group device the device is assigned to. This is used for notification purposes
+* **Partners** - defines the partners will be able to see the device in Monitoring
+* **Location** - used for searching and listing purposes
+* **Address** - information about the address where the device is installed
+* **Send notifications** - If enabled,  notifications will be sent according to Group settings
 
 
-When device is up and running we should see the message like on picture below:
+If the device is up and running we should see the information of the device as depicted in the image below:
 
 ![Monitoring information](mon_info.png)
 
 
-That was the simple configuration to get status of the device. We can use SNMP OIDs to get the values and measure such thing as CPU performance, Memory usage, Voltage or speed on interfaces. Please, open the SNMP OID tab and use SNMP watch to get the interface list and all available OIDs.
+That was the simple configuration to get the status of a device. We can use SNMP OIDs to get the values and measure hardware components such as CPU performance, Memory usage, Voltage or speed on interfaces. To achieve this, navigate to the SNMP OID tab and use SNMP Walk tool to get the interface list and all available OIDs.
 
 ![SNMP OID](snmp_oid.png)
 
 
-SNMP Walk is a linux tool that Splynx uses to get available SNMP OID values for configuration. Clicking the + button you will add the value for measurement:
+SNMP Walk is a linux tool that Splynx uses to get the available SNMP OID values for configuration. Clicking the "+" button, will add the value for monitoring:
 
 ![SNMP walk](snmp_walk.png)
 
 
-In the example we have added LAN, WAN and CPU usage.
+In the example, we have added LAN, WAN and CPU usage as the values to be monitored.
 
-Now using these values, we can add the charts to Splynx. Follow to Graph tab and click the button Add graph:
+Using these values, we can add charts to Splynx. By navigating to the Graph tab and clicking on the Add graph button:
 
-For measuring of speed on interfaces is important to set values bps and set Factor to 8. This will create charts and use Bits per second. Also is availabe to choose what type of chart will be drawn. Line, Bold line (LINE2) or Area.
+For the monitoring of speeds on interfaces, it is important to set the field "values in" to bps and set the "Factor" field to 8. This will create charts and use Bits per second. It is also possible choose which type of chart/graph you wish to create (Line, Bold line (LINE2) or Area).
 
 ![Edit graph](edit_graph.png)
 
 
-Below you can see the result of charts:
+Below is an example of the result of a graph/chart:
 
 ![Graph](view_graph.png)
 
 
-Charts and SNMP values from Monitoring can be used in Splynx Weathermap tool as on example below:
+Charts and SNMP values from Monitoring can be used in the Splynx Weathermap tool as depicted on the example below:
 
 ![Weathermap](weathermap.png)
 
 
-To configure notification for monitoring, please open `Config → Networking → Monitoring` section:
+To configure notifications for monitoring, please navigate to the `Config → Networking → Monitoring` section:
 
-Below all sections you can find Groups definition.
+Scroll to the bottom of the page to the Groups section.
 
 ![Groups](groups.png)
 
 
-Each group has it's members and types of notification - Email, to Admin portal or SMS.
+Each group has it's members and types of notifications - Email, to Admin portal or SMS.
 
 ![Edit group](edit_group.png)
 
 
-Please follow the video tutorials to get deeper understanding of Splynx monitoring:
+For a deeper understanding of Splynx monitoring, please view the videos below:
 
 <iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/2XDbqc7b-cI?wmode=opaque">Video on youtube</iframe>
 

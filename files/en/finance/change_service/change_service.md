@@ -17,4 +17,10 @@ To resolve this issue you have to go through the next steps:
 
 ![Preview](3.png)
 
+
+Please be advised that when charging the customer after the change of plan, it is very important to select the correct date to include all transactions on the invoice generated.
+
+In the scenario where the invoice generated does not include the customer's prior payment. It will then be necessary to add a credit transaction to the invoice.
+
+
 **Attention!** All the steps above are for recurring billing customers only.

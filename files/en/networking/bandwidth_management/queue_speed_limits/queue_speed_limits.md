@@ -12,16 +12,16 @@ The Configuration is shown on the image below:
 ![IP Service List](ipsrv_list.png)
 
 
-When both things are enabled, itis necessary to create a special admin account for Splynx, which will be used for API login to routers and for making changes to the router. You can create an admin named API or with another name and assign the admin to a special access group for API login:
+When both things are enabled, it is necessary to create a special admin account for Splynx, which will be used for API login to routers and for making changes to the router. You can create an admin named API or with another name and assign the admin to a special access group for API login:
 
 ![Add Group](group.png)
 ![Add API User](user.png)
 
-To create rules on the router, the router should be selected in the service of the customer. Please note that API queuing works only with permanent/static IP address assignments:
+To create rules on the router, the router should be selected in the service of the customer. Please note that API queuing only works with permanent/static IP address assignments:
 
 ![Edit service](edit_service.png)
 
-After saving the settings, a simple queue for the customer will be added to the router:
+After saving these settings, a simple queue for the customer will be added to the router:
 
 ![Simple queue](simple_queue.png)
 
@@ -31,7 +31,7 @@ If a FUP rule is applied, the queue speeds will be updated via API, automaticall
 
 ### Simple Queue tree shaping
 
-The Simple queue type of shaping does not provide a way to put customers under one shared plan or to make contentions per router.
+The Simple queue type of shaping does not provide a way to put customers under one shared plan or to create contentions per router.
 
 To successfully setup contentions, we need to change the Shaping type to "Simple Queue (with Tree)".
 

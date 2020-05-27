@@ -11,7 +11,7 @@ We can use a lot of variables from within Splynx
 
 ### Tariff
 
-Most of these values can be changed at the Tariff plans menu in Splynx
+Most of these values can be changed on the configuration of Tariff plans within Splynx
 
 [Internet plans description](configuring_tariff_plans/internet_plans/internet_plans.md)
 
@@ -46,7 +46,7 @@ Variable | Value | Comment |
 
 ### Service
 
-Most of these values can be changed at the `Customers/ List/customer/Services`
+Most of these values can be changed in `Customers/ List/customer/Services`
 
 [Customer services description](customer_management/customer_services/customer_services.md)
 
@@ -68,7 +68,7 @@ Variable | Value | Comment |
 {{ service.discount_end_date }}	| Discount end date (yyyy-mm-dd) | |
 {{ service.discount_text }} | Discount text | |
 {{ service.login }}	| Login	| |
-{{ service.password }} | Empty string |	<icon class="image-icon">![](info.png)</icon> Always is empty string for security reasons |
+{{ service.password }} | Empty string |	<icon class="image-icon">![](info.png)</icon> Always left empty for security reasons |
 {{ service.mac }}	| MAC | |
 {{ service.port_id }}	| Port ID | |
 {{ service.router_id }}	| ID number or Router | |
@@ -101,9 +101,9 @@ Variable | Value | Comment |
 {{ customer.date_add }}	| Date added (yyyy-mm-dd) |
 
 
-### FUP (Fair user policy)
+### FUP (Fair usage policy)
 
-Most of these values can be changed at the **Tariff plans** menu in Splynx
+Most of these values can be changed on the configuration of  **Tariff plans** within Splynx
 
 [FUP description](networking/bandwidth_management/fup/fup.md)
 
@@ -133,16 +133,20 @@ There are also 4 arrays of additional fields:
 3. **{{ tariff_attributes }}** - additional attributes of the internet plan.
 4. **{{ card_attributes }}** - additional attributes of the prepaid voucher.
 
-Can be used by typing {{ array_name.field_name }}
+These values can be utilized in the following format:
 
-<icon class="image-icon">![](warning.png)</icon> Additional field has its **name** and **title** in Splynx. We use **name** (not **title**)
+ {{ array_name.field_name }}
 
-For example, we can create additional field for customer, called 'my_field'. Then we can use its value by typing {{ customer_attributes.my_field }}
+<icon class="image-icon">![](warning.png)</icon> Additional fields have configuration fields available for the **name** and **title** of the additional within Splynx. We use the **name** field and not the **title** field.
+
+For example, we can create an additional field for a customer called 'my_field'. The format of the values for doing this would be as follows:
+
+ {{ customer_attributes.my_field }}
 
 
 ### Variables usage
 
-We use [Twig engine](https://twig.symfony.com/doc/2.x/templates.html) in Splynx. So, you can use its capabilities.
+We use [Twig engine](https://twig.symfony.com/doc/2.x/templates.html) within Splynx. Therefore, all it's capabilities are available for your use.
 
 * Basic mathematical operations (+ - * /)
 Example: Mikrotik-Rate-Limit = {{ tx_rate_limit / 1000 }}
@@ -163,44 +167,46 @@ Example:
 Mikrotik-Address-List = {{ service_attributes.adrlist }}
 {% endif %}
 
-  Result: Radius attribute **Mikrotik-Address-List** will be sent to router, only if internet service' additional attribute with name **adrlist** is not empty.
+  Result: Radius attribute **Mikrotik-Address-List** will be sent to the router, only if the internet service's additional attribute with the name **adrlist** is not empty.
 
 ### Examples
 
 
 #### Example 1
 
-We can assign IPv6 prefix to PPP client using RADIUS attribute Framed-IPv6-Prefix:
+We can assign IPv6 prefixes to PPP customers using the RADIUS attribute Framed-IPv6-Prefix:
 
 ![Framed-IPv6-Prefix](IPv6_prefix_1.png)
 
-And the route is created for the IPv6 prefix to the client's CPE:
+The route will be created for the IPv6 prefix, to the customer's CPE:
 
 ![Route list](IPV6_prefix.png)
 
 
-Of course, this example is very simple and useless, because then Splynx will setup the same IPv6 prefix to all clients.
+Surely, this example is quite simple and not of much use, because then Splynx will setup the same IPv6 prefix to all customers.
 
 
 
 #### Example 2
 
-We can tune previuos example a bit and get IPv6 prefix from the additional field
+We can reconfigure the previous example a bit to get the IPv6 prefix from the additional field
 
-First, we add the additional field to Splynx Internet services, called 'IPv6 prefix':
+Firstly, we have to add the additional field to the Internet services within Splynx, called 'IPv6 prefix':
 
 ![IPv6](IPv6_1.png)
 
-Then, define the IPv6 prefix in customer's services:
+Then we can define the IPv6 prefix in the customer's services:
 
 ![IPv6](IPv6_2.png)
 
-Then, we assign the value of additional field to RADIUS attribute:
+Thereafter, we can assign the value of the additional field to the RADIUS attributes:
 
 ![IPv6](IPv6_3.png)
 
 
 <icon class="image-icon">![](lightbulb_on.png)</icon> It's possible even to check if the parameter exists - send it in Radius reply. If field in Splynx is empty, don't send it in Radius reply:
+
+It is possible to check that the parameter exists by sending it in the radius reply. If the field is empty within Splynx, it will not be send in the radius reply
 
 ![IPv6](IPv6_4.png)
 
@@ -208,22 +214,22 @@ Then, we assign the value of additional field to RADIUS attribute:
 
 #### Example 3
 
-Address-List depends on plan settings
+Address-List depends on Tariff plan settings
 
-Let's add additional field to internet plan, with name **wan**:
+Let's add an additional field to the internet plan named **wan**:
 
 ![Create additional field](create_add_field.png)
 
-Follow to `Config/Networking/Radius`
+Navigate to `Config/Networking/Radius`
 
-Loading Nas Type: **Mikrotik**
+Load the Nas Type: **Mikrotik**
 
-Add **Rate-Limit attributes**:
+Add the following in the text box for **Rate-Limit attributes**:
 ```
 Mikrotik-Address-List = {{ tariff_attributes.wan }}
 ```
 
-Same value better to add to **FUP CoA Rate-Limit attributes, FUP CoA Restore attributes, CoA Restore attributes**
+It is good practice to add the same value to the **FUP CoA Rate-Limit attributes, FUP CoA Restore attributes, CoA Restore attributes** fields.
 
 
 Result should be:
@@ -236,16 +242,16 @@ Result should be:
 
 ![Radius attributes](radius_attr4.png)
 
-After reconnection customer should go to address-list wan1, or wan2 depends on plan settings.
+After reconnecting, the customer should be added to address-list wan1, or wan2 depending on the plan settings.
 
 
 #### Example 4
 
 Custom IP address.
 
-This example shows how to assign any IP address to customer's device. You do not have to add **IPv4 networks** to Splynx in this scenario.
+This example illustrates how to assign any IP address to a customer's device. You do not have to add **IPv4 networks** to Splynx in this scenario.
 
-1. Create the **additional field** for internet services. In this example its name is **ip**.
+1. Create the **additional field** for internet services. In this example we've named it **ip**.
 
   ![Additional fields](additional_fields.png)
   ![Create additional field](create_additional_field.png)
@@ -255,15 +261,15 @@ This example shows how to assign any IP address to customer's device. You do not
 Framed-IP-Address = {{ service_attributes.ip }}
 ```
 ![Attributes](attrs.png)
-<icon class="image-icon">![](info.png)</icon> Where "**ip**" - is the name of additional field, that we have added on the first step.
+<icon class="image-icon">![](info.png)</icon> Where "**ip**" is the name of additional field, that we have added in the first step.
 
 
-3. Save changes and Restart Radius to apply changes.
+3. Save the changes and Restart Radius to apply changes.
 
   ![Save attributes](save_attrs.png)
 
 
-4. Set the IP address for the internet service.
+4. Set the IP address for the internet service of the ccustomer.
 
 ![Set IP](set_ip.png)
 
@@ -276,9 +282,9 @@ Client:
 ![PPP client](ppp_client.png)
 
 
-<icon class="image-icon">![](lightbulb_on.png)</icon> In this case, custom IP address overrides IP address that is chosen in Splynx.
-If custom IP address is not entered, IP address will be 0.0.0.0 !
-If you want to override IP address only if custom IP address is entered (is not empty), add this lines to **Rate-Limit attributes**:
+<icon class="image-icon">![](lightbulb_on.png)</icon> In this case, the custom IP address overrides the IP address that is chosen in Splynx.
+If the custom IP address is not entered, the IP address will be set to 0.0.0.0 !
+If you only  want to override IP addresses when a custom IP address is entered (is not empty), add the following lines to the **Rate-Limit attributes**:
 ```
 {% if service_attributes.ip is not empty %}
 Framed-IP-Address = {{ service_attributes.ip }}

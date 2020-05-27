@@ -1,16 +1,17 @@
 Mikrotik routers
 ==========
 
-Mikrotik routers are default router type that is set up in Splynx when you create a new router.
+Mikrotik routers is the default router type selected in Splynx when you create a new router.
 
 Splynx supports communication with routers using Mikrotik API or Radius protocol.
 
 
 ### Mikrotik API custom Rules
 
-Splynx ISP Framework supports MikroTik API Custom rules
+Splynx supports Custom MikroTik API rules
 
-create file: ``/var/www/splynx/config/mikrotik.php`
+create the following file via CLI on your server as shown below: 
+``/var/www/splynx/config/mikrotik.php`
 header:
 ```
 ; <?php exit(); ?>

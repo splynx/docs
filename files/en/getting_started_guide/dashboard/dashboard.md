@@ -6,7 +6,7 @@ Dashboard is the main control panel in Splynx which will help you check financia
 ![Dashboard1](dashboard1.png)
 ![Dashboard2](dashboard2.png)
 
-At the top of the live dashboard you can find the number of online customers, the number of new customers, new and open tickets and the number of devices down in your network. It is possible to quickly navigate to detailed lists of each by clicking the view buttons.
+At the top of the live dashboard you can find the number of online customers, the number of new customers, new and open tickets as well as the number of devices that are down in your network, in summarized information boxes or if you looking for more detailed lists of data provided in the boxes, we've conveniently added view buttons to the boxes so you can quickly navigate to the full lists.
 
 ![Screenshot](dashboard3.png)
 

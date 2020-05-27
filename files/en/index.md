@@ -11,7 +11,7 @@ Table of contents
 ##### [Configuring Tariff Plans](configuring_tariff_plans/configuring_tariff_plans.md)
 * [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)
 * [Burst speed concept](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
-* [Fair User Policy](configuring_tariff_plans/fair_user_policy/fair_user_policy.md)
+* [Fair Usage Policy](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
 * [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)
 * [Custom plans](configuring_tariff_plans/custom_plans/custom_plans.md)

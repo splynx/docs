@@ -1,6 +1,5 @@
 ## Supplier invoices
 ==========
-`Inventory/Supply/Supplier Invoices`
 
 ![Supplier invoices](supplier_invoices.png)
 

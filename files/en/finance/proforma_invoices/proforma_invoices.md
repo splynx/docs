@@ -22,7 +22,7 @@ You can also filter proforma invoices in finance to view specific data by period
 Changes can be made to all proforma invoice with the icons <icon class="image-icon">![Icons](invoices_icons.png)</icon> in the "*Actions*" column.
 
 * To be able **to view** proforma invoices in PDF format with the view icon <icon class="image-icon">![View icon](view_invoice.png)</icon>, it is necessary to configure an invoice template first in `Config → System → Templates` and define the template to use in `Config → System → Company information`.
-More information about Invoice template configurations can be found here - [Templates](configuration/system/templates/templates.md), [Invoices](invoices/invoices.md).
+More information about Invoice template configurations can be found here - [Templates](configuration/system/templates/templates.md), [Invoices](finance/invoices/invoices.md).
 
 * You can also **set up proforma invoice global settings** for all customers in `Config → Finance → Settings`.
 
@@ -62,8 +62,11 @@ Automation for creating proforma invoices is also possible, navigate to `Custome
 * **Period** - the period to charge customers for on the invoice
 * **Create Proforma Invoice for** - which month to charge the customer for
 * **Next Proforma** - when to generate the next proforma invoice
----
+
+
 There is also the possibility **to create Proforma Invoices manually** by clicking on *Add Proforma Invoice* in `Customer's Billing → Proforma Invoices`.
 
 ![Create proforma invoice manually](manually.png)
 ![View](check.png)
+
+)

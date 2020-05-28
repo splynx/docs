@@ -60,4 +60,6 @@ Here customer can also create and submit a new ticket by clicking on Create tick
 10. Logout timeout
 11. Hotspot
 12. Additional attributes in profile.
-Detailed information about configuring Customer Portal can be found here - [Portal](configuration/configuration.md)
+
+
+For more information about configuring the Customer Portal please read our [Customer Portal](configuration/main_configuration/portal/portal.md) tutorial page.

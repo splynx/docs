@@ -45,6 +45,8 @@ Table of contents
 
 ##### [Finance](finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
+* [Recurring Billing](finance/billing_engine/recurring/recurring_billing.md)
+* [Prepaid Billing](finance/billing_engine/prepaid/prepaid_billing.md)
 * [Transactions](finance/transactions/transactions.md)
 * [Invoices](finance/invoices/invoices.md)
 * [Proforma invoices](finance/proforma_invoices/proforma_invoices.md)

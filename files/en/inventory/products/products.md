@@ -1,6 +1,5 @@
 Products
 ==========
-`Inventory/Products`
 
 This section allows you to see all the products that are in the system,  add a new product as well.
 Here are the filters for  Stock location and Vendor filter and Search.

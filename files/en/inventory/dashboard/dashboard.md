@@ -1,6 +1,6 @@
 Inventory Dashboard
 ==========
-`Inventory/Dashboard`
+
 
 The Inventory dashboard gives us an overview of all our products. We can see the product's statuses, type of using these products and recent activities.
 

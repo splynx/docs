@@ -58,6 +58,12 @@ Table of contents
 * [Apply credit](finance/apply_credit/apply_credit.md)
 
 ##### [Inventory](inventory/inventory.md)
+* [Dashboard](inventory/dashboard/dashboard.md)
+* [Items](inventory/items/items.md)
+* [Products](inventory/products/products.md)
+* [Vendors](inventory/vendors/vendors.md)
+* [Suppliers](inventory/suppliers/suppliers.md)
+* [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
 
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)

@@ -1,7 +1,7 @@
 Mikrotik: OpenVPN, Radius
 ==========
 
-When using this feature, please make that your radius server settings are configured according to the configurations specified on the [PPPoE Radius](networking/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md) page.
+When using this feature, please make that your radius server settings are configured according to the configurations specified on the [PPPoE Radius](networking/authentication_users/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md) page.
 
 The following is a guide you can follow to configure your OpenVPN server.
 

@@ -13,7 +13,7 @@ It is also possible to create the tasks directly from the ticket you are working
 
 Once clicked, the new window will appear:
 
-![Add task window](project_task.png)
+![Add task window](add_task.png)
 
 It is possible to have various task templates to optimize the routine/process of adding new tasks. You can create your own templates at `Config > Scheduling > Task templates`.  
 

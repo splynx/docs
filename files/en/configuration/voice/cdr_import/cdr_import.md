@@ -1,7 +1,7 @@
 CDR Import
 ==========
 
-You can import CDR from your bank to create transactions on customers. You should make the import from administrator portal. At first, you must have voice plans or [create it](https://doc.splynx.com/display/SPL/Voice+plans), an then add them to customers. To import CDR click on Config and in the box Voice click on CDR import.
+You can import CDR from your bank to create transactions on customers. You should make the import from administrator portal. At first, you must have voice plans or [create it](configuring_tariff_plans/voice_plans/voice_plans.md), an then add them to customers. To import CDR click on Config and in the box Voice click on CDR import.
 
 
 ![](menu.png)

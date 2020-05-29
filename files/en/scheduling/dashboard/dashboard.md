@@ -25,7 +25,7 @@ Activities
 
 Here we have a list of activities of all admins related to all tasks in the system. Displaying the history of each action taken by all admins for all tasks.
 
-![Activities](Activities_Scheduling.jpg)
+![Activities](Activities_scheduling.jpg)
 
 Created vs Resolved
 =====

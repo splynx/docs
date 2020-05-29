@@ -1,18 +1,18 @@
-Pending statuses/plans
+Pending statuses & services
 ======================
 
-Pending statuses\plans logs tables shows the list of statuses or plans with forthcoming changes.  It could be, for example, when customer's status is set to be changed on a particular day or new service will be activated on a specific day.
+The pending statuses & services logs tables shows the list of statuses or plans with forthcoming changes.  It could be, for example, when customer's status is set to be changed on a particular day or new service will be activated on a specific day.
 
 ![Pending](pending.png)
 
-*Pending statuses* section displays date of change, customer's ID and status (new, activate, blocked, inactive). To view Customer's information you can click on customer's ID.
+*Pending statuses* section displays the date of change, customer's ID and status (new, activate, blocked, inactive). To view a Customer's information you can simply click on the customer's ID in the table.
 
-*Pending services* section displays date of change, description of the service, its price, type and plan. To view Service plan information you can click on a name of the plan in a *Plan's* column of the table.
+*Pending services* section displays the date of change, description of the service, its price, type and plan. To view the Service plan information you can simply click on the name of the plan in the *Plan's* column of the table.
 
 
 1. **How to set up pending change of status**
 
-To set up a pending change of status for a customer click on *Calendar* icon next to the *Status* <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> in *Customer's Information* window. Then set the date when status will be changed and choose the appropriate status and save changes.
+To set up a pending change of status for a customer click on the *Calendar* icon next to the *Status* <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> in the *Customer's Information* window. You can then set the date when the status will be changed and choose the desired status to change to and save changes.
 
 ![Planned change status](planned_change_status.png)
 

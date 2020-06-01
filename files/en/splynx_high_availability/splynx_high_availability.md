@@ -61,7 +61,7 @@ We must merge all nodes into one cluster. Make sure that each node is installed 
 Run in shell on the first node:
 
 ```bash
-node1> pvecm create splynx-cluster</pre>
+node1> pvecm create splynx-cluster
 ```
 
 where ‘splynx-cluster’ – is the name of cluster. Can be any.
@@ -147,7 +147,7 @@ Create Ceph pool.
 Run on one node:
 
 ```bash
-node3> pveceph createpool default-pool -add_storages true</pre>
+node3> pveceph createpool default-pool -add_storages true
 ```
 
 This creates pool with name ‘default-pool’ and adds storages for VMs and containers to it. Pool name can be any.
@@ -242,7 +242,7 @@ bash> ha-manager migrate vm:100 DESTINATION-NODE
 This uses online migration and tries to keep the VM running. Online migration needs to transfer all used memory over the network, so it is sometimes faster to stop VM, then restart it on the new node. This can be done using the relocate command:
 
 ```bash
-bash> ha-manager relocate vm:100 DESTINATION-NODE</pre>
+bash> ha-manager relocate vm:100 DESTINATION-NODE
 ```
 
 Reference: [https://pve.proxmox.com/wiki/High_Availability](https://pve.proxmox.com/wiki/High_Availability)

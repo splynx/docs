@@ -38,6 +38,7 @@ Table of contents
 * [Customer documents](customer_management/customer_documents/customer_documents.md)
 * [CPE management](customer_management/cpe_management/cpe_management.md)
 * [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
+* [Maps](customer_management/maps/maps.md)
 
 ##### [Customer Portal](customer_portal/customer_portal.md)
 

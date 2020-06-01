@@ -163,7 +163,7 @@ nodeX> pveceph createosd /dev/sdb
 ```
 *We use /dev/sda for system and /dev/sdb for Ceph in this tutorial
 
-Create Ceph pool.  
+#### Create Ceph pool
 Run on one node:
 
 ```bash

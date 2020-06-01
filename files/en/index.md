@@ -118,6 +118,13 @@ Table of contents
 * [News](support_messages/news/news.md)
 
 ##### [Scheduling](scheduling/scheduling.md)
+* [Dashboard](scheduling/dashboard/dashboard.md)
+* [Projects](scheduling/projects/projects.md)
+* [Tasks](scheduling/tasks/taks.md)
+* [Workflows](scheduling/workflows/workflows.md)
+* [Calendars](scheduling/calendars/calendars.md)
+* [Maps](scheduling/maps/maps.md)
+* [Archive](scheduling/archive/archive.md)
 
 ##### [Voice](voice/voice.md)
 

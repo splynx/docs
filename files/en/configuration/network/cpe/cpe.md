@@ -5,5 +5,4 @@ In the CPE configuration window we can change several different settings in rega
 
 First of all we need establish the size of 1KB in the system, by default this is 1000
 
-![CPE KB Size](CPE KB Size.png)
-
+![CPE KB Size](CPE_KB_Size.png)

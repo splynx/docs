@@ -102,34 +102,55 @@ In this scenario we will use the IP pool option in Splynx.
 Assuming we have fresh Splynx instance, the following steps should be taken:
 
 1. [Create a customer](customer_management/add_new_customer/add_new_customer.md), and change their status to active (status=active):
+
     ![picture11](picture11.png)
     ![picture12](picture12.png)
+
 2. Create the [internet plan](configuring_tariff_plans/internet_plans/internet_plans.md):
+
     ![picture13](picture13.png)
     ![picture14](picture14.png)
+
 3. Create the IP pool for customers. Selecting the **Type of usage** as *Static*:
+
     ![picture32](picture32.png)
+
 4. Reserve the first IP of the pool for the router:
+
     ![picture39](picture39.png)
     ![picture40](picture40.png)
     ![picture41](picture41.png)
+
 5. Add this IP to the hotspot interface:
+
     ![picture42](picture42.png)
+
 6. Create a NAT rule for the Splynx pool:
+
     ![picture43](picture43.png)
     ![picture44](picture44.png)
+
 7. Add your router (NAS) into [Splynx routers](networking/routers_settings/routers_settings.md). **Authorization/Accounting** - *Hotspot (Users) / API accounting*:
+
     ![picture33](picture33.png)
+
 8. Enable API usage for this router in Splynx, and enter an API login and password:
+
     ![picture34](picture34.png)
+
 9. Enable API for the router in Winbox, create the API group and API user:
+
     ![picture45](picture45.png)
     ![picture37](picture37.png)
     ![picture38](picture38.png)
+
 10. Create the [internet service](customer_management/customer_services/customer_services.md) for the customer. Select the Router (required !) and permanent IP:
+
     ![picture15](picture15.png)
     ![picture35](picture35.png)
+
 11. Create the Mikrotik Hotspot server:
+
     ![picture20](picture20.png)
     ![picture21](picture21.png)
     ![picture22](picture22.png)
@@ -138,18 +159,28 @@ Assuming we have fresh Splynx instance, the following steps should be taken:
     ![picture25](picture25.png)
     ![picture26](picture26.png)
     ![picture27](picture27.png)
+
 12. In the Hotspot Server Profile set the *Login By* method to **HTTP Chap** and disable **Use RADIUS**:
+
     ![picture8](picture8.png)
     ![picture36](picture36.png)
+
 13. Download [this archive](splynx-hotspot.zip), and extract it.
 14. Replace "example.com" with your Splynx URL (domain name or IP) in all the HTML files:
+
     ![picture28](picture28.png)
+
 15. Copy these files into your Mikrotik and set the *HTML Directory override* in your Hotspot Server Profile to the "splynx-hotspot" directory:
+
     ![picture29](picture29.png)
     ![picture6](picture6.png)
+
 16. Add your Splynx server IP into the Walled Garden IP List:
+
     ![picture30](picture30.png)
+
 17. Enable Hotspot login via Splynx Portal under **Config / Main / Portal**:
+
     ![picture31](picture31.png)
 
 

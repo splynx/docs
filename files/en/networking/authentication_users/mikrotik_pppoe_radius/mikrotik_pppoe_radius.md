@@ -70,7 +70,7 @@ When customer's' status is changed from Active to Blocked, the Splynx Radius ser
 
 ![PPP blocking](ppp_blocking.png)
 
-For more information on blocking customers, please visit our - [blocking users in Splynx](networking/authentication_users/blocking_customers/blocking_customer.md) tutorial page.
+For more information on blocking customers, please visit our - [blocking users in Splynx](networking/blocking_customers/blocking_customer.md) tutorial page.
 
 
 

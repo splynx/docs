@@ -42,14 +42,16 @@ Reference: [https://pve.proxmox.com/wiki/Installation](https://pve.proxmox.com/w
 Disable the enterprise repository that is configured by default, add the no-subscription repository.  
 Edit _/etc/apt/sources.list.d/pve-enterprise.list_:
 
+Proxmox 5.x:  
+
 ```bash
 #deb https://enterprise.proxmox.com/debian/pve stretch pve-enterprise
 deb http://download.proxmox.com/debian stretch pve-no-subscription
 ```
 
-**OR**
+Proxmox 6.x:  
 
-```
+```bash
 #deb https://enterprise.proxmox.com/debian/pve buster pve-enterprise
 deb http://download.proxmox.com/debian buster pve-no-subscription
 ```
@@ -243,6 +245,7 @@ Install Splynx:
 wget -qO- https://deb.splynx.com/setup | sudo bash -
 sudo apt-get install splynx
 ```
+Reference: https://splynx.com/install/
 
 ## HA configuration
 

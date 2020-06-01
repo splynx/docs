@@ -47,6 +47,13 @@ Edit _/etc/apt/sources.list.d/pve-enterprise.list_:
 deb http://download.proxmox.com/debian stretch pve-no-subscription
 ```
 
+**OR**
+
+```
+#deb https://enterprise.proxmox.com/debian/pve buster pve-enterprise
+deb http://download.proxmox.com/debian buster pve-no-subscription
+```
+
 Run in shell (on each node):
 
 ```bash
@@ -103,8 +110,9 @@ Part of _/etc/network/interfaces_:
 ```bash
 auto ens19
 iface ens19 inet static
-address 172.30.250.1 #(172.30.250.2 – on 2nd node, 172.30.250.3 – on 3rd node)
-netmask 255.255.255.0
+  #(172.30.250.2 - on 2nd node, 172.30.250.3 - on 3rd node)
+  address 172.30.250.1
+  netmask 255.255.255.0
 ```
 
 After editing _/etc/network/interfaces_ - reboot node to apply changes.
@@ -134,6 +142,18 @@ node2> pveceph mon create
 ```bash
 node3> pveceph mon create
 ```
+
+#### Ceph Manager
+The Manager daemon runs alongside the monitors. It provides an interface to monitor the cluster. Since the Ceph luminous release at least one ceph-mgr daemon is required.
+
+##### Create Manager
+Multiple Managers can be installed, but at any time only one Manager is active.  
+
+```bash
+nodeX> pveceph mgr create
+```
+Note. It is recommended to install the Ceph Manager on the monitor nodes. For high availability install more then one manager.
+
 
 Erase partition table of Ceph drive(s) and create OSD(s) on it. Run on each node:
 

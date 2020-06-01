@@ -153,7 +153,7 @@ Table of contents
     * [Sessions](administration/logs/sessions/sessions.md)
     * [API](administration/logs/api/api.md)
     * [Changes of statuses/plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
-    * [Pending statuses/plans](administration/logs/pending_statuses_plans/pending_statuses_plans.md)
+    * [Pending statuses/plans](administration/logs/pending_statuses_&_services/pending_statuses_&_services.md)
 
 ##### [Configuration](configuration/configuration.md)
 * [System](configuration/system/system.md)

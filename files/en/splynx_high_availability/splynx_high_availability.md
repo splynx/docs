@@ -124,21 +124,21 @@ Reboot your nodes and try again.
 Create Ceph monitors on all nodes:
 
 ```bash
-node1> pveceph createmon
+node1> pveceph mon create
 ```
 
 ```bash
-node2> pveceph createmon
+node2> pveceph mon create
 ```
 
 ```bash
-node3> pveceph createmon
+node3> pveceph mon create
 ```
 
 Erase partition table of Ceph drive(s) and create OSD(s) on it. Run on each node:
 
 ```bash
-nodeX> ceph-disk zap /dev/sdb
+nodeX> ceph-volume lvm zap /dev/sdb --destroy
 nodeX> pveceph createosd /dev/sdb
 ```
 *We use /dev/sda for system and /dev/sdb for Ceph in this tutorial

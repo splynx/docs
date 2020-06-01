@@ -1,4 +1,4 @@
-## Supplier invoices
+Supplier invoices
 ==========
 
 ![Supplier invoices](supplier_invoices.png)

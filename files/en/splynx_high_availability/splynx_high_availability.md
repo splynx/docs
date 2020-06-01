@@ -183,7 +183,10 @@ Open your web-browser and type [https://IP-OF-ANY-NODE:8006](https://IP-OF-ANY-N
 User name: root  
 Password: the password you have entered during installation.
 
-We will install Ubuntu-16.04-server. [Download](https://www.ubuntu.com/download/server) ISO image to PC. Then upload it from PC to local storage of one of Proxmox nodes:
+We will install Ubuntu-16.04-server.  
+Note. On the page https://splynx.com/install you can always find which Linux version is required to install last Splynx version.  
+
+[Download](https://www.ubuntu.com/download/server) ISO image to PC. Then upload it from PC to local storage of one of Proxmox nodes:
 
 ![px_upload-iso.png](px_upload-iso.png)
 

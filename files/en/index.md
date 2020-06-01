@@ -11,7 +11,7 @@ Table of contents
 ##### [Configuring Tariff Plans](configuring_tariff_plans/configuring_tariff_plans.md)
 * [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)
 * [Burst speed concept](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
-* [Fair User Policy](configuring_tariff_plans/fair_user_policy/fair_user_policy.md)
+* [Fair Usage Policy](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
 * [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)
 * [Custom plans](configuring_tariff_plans/custom_plans/custom_plans.md)
@@ -45,6 +45,8 @@ Table of contents
 
 ##### [Finance](finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
+* [Recurring Billing](finance/billing_engine/recurring/recurring_billing.md)
+* [Prepaid Billing](finance/billing_engine/prepaid/prepaid_billing.md)
 * [Transactions](finance/transactions/transactions.md)
 * [Invoices](finance/invoices/invoices.md)
 * [Proforma invoices](finance/proforma_invoices/proforma_invoices.md)
@@ -56,6 +58,12 @@ Table of contents
 * [Apply credit](finance/apply_credit/apply_credit.md)
 
 ##### [Inventory](inventory/inventory.md)
+* [Dashboard](inventory/dashboard/dashboard.md)
+* [Items](inventory/items/items.md)
+* [Products](inventory/products/products.md)
+* [Vendors](inventory/vendors/vendors.md)
+* [Suppliers](inventory/suppliers/suppliers.md)
+* [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
 
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
@@ -110,6 +118,13 @@ Table of contents
 * [News](support_messages/news/news.md)
 
 ##### [Scheduling](scheduling/scheduling.md)
+* [Dashboard](scheduling/dashboard/dashboard.md)
+* [Projects](scheduling/projects/projects.md)
+* [Tasks](scheduling/tasks/taks.md)
+* [Workflows](scheduling/workflows/workflows.md)
+* [Calendars](scheduling/calendars/calendars.md)
+* [Maps](scheduling/maps/maps.md)
+* [Archive](scheduling/archive/archive.md)
 
 ##### [Voice](voice/voice.md)
 

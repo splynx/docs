@@ -30,7 +30,7 @@ In the case that your router version does not accept this command, you can refer
 
 ![override hostname/ip](override_hostname_ip.png)
 
-Then we will setup the PPPoE server with follwing mandatory settings:
+Then we will setup the PPPoE server with following mandatory settings:
 ```
 edit service pppoe-server
 set authentication mode radius
@@ -41,7 +41,7 @@ set interface eth2
 ```
 
 
-The Radius configuration can also be done in web browser:
+The Radius configuration can also be done in a web browser:
 
 ![PPPoE](pppoe.png)
 
@@ -67,7 +67,7 @@ sudo cp /opt/vyatta/etc/pppoe-server/start-pppoe-radius-disconnect /config/scrip
 ```
 Reboot the router.
 
-To debug, whether packets are received or not, use the pppoe-radius-disconnect.log file:
+To run a debug, to check whether packets are received or not, use the pppoe-radius-disconnect.log file:
 ```
 tail /var/log/pppoe-radius-disconnect.log
 ```
@@ -105,10 +105,10 @@ In Splynx, we can see if the customer is online and get their statistics:
 
 ![Online](online.png)
 
-When we click on the disconnect button, the customer should be removed from the online list and reconnect with a new session, which means that the EdgeRouter accepted the incoming packet from Splynx Radius server.
+When we click on the disconnect button, the customer should be removed from the online list and reconnect with a new session, which means that the EdgeRouter accepted the incoming packet from the Splynx Radius server.
 
 
-### 5. Install other usefull tools to EdgeRouter
+### 5. Install other useful tools to EdgeRouter
 
 PPPoE client tunnels are dynamically created and are not shown in the web dashboard. We need to get statistics of the customer's throughput, and a simple way to do this is to install the bwm-ng software. It is located in the Debian repository, which means we need to add new repositories first and then install bwm-ng.
 Adding new repositories:

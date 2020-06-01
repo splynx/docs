@@ -1,7 +1,7 @@
 Cisco routers
 ==========
 
-Splynx can manage administrative login to Cisco router and customer's PPPoE access, please find the tutorials for these topics below :
+Splynx can manage administrative login's to Cisco routers and PPPoE access for customers, kindly follow the links below for tutorials on each of the topics below :
 
 [→ Cisco admin login with Splynx Radius server](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
 

@@ -5,7 +5,7 @@ Tools
 
 * [Adminer](configuration/tools/adminer/adminer.md)
 
-* [Export](configuration/tools/export//export.md)
+* [Export](configuration/tools/export/export.md)
 
 * [Import](configuration/tools/import/import.md)
 

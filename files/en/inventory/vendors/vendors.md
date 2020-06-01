@@ -1,6 +1,5 @@
 ## Vendors
 
-In menu – `Inventory/Supply/Vendors`
 This section shows you all vendors and allows you to add new Vendors.
 
 ![Vendors](vendors.png)

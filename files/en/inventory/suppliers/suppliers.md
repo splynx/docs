@@ -1,6 +1,5 @@
-## Suppliers
+Suppliers
 ==========
-`Inventory/Supply/Suppliers`
 
 The suppliers section shows you all suppliers of equipment and allows you to create new suppliers.
 You cannot remove the supplier if it has at least one product with items.

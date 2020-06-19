@@ -1,13 +1,13 @@
 Pending statuses & services
 ======================
 
-The pending statuses & services logs tables shows the list of statuses or plans with forthcoming changes.  It could be, for example, when customer's status is set to be changed on a particular day or new service will be activated on a specific day.
+The pending statuses & services logs tables shows the list of statuses or plans with forthcoming changes.  It could be, for example, when customer's status is set to be changed on a particular day or a new service will be activated on a specific day.
 
 ![Pending](pending.png)
 
-*Pending statuses* section displays the date of change, customer's ID and status (new, activate, blocked, inactive). To view a Customer's information you can simply click on the customer's ID in the table.
+*Pending statuses* - this section displays the date of change, customer's ID and status (new, activate, blocked, inactive). To view a Customer's information you can simply click on the customer's ID in the table.
 
-*Pending services* section displays the date of change, description of the service, its price, type and plan. To view the Service plan information you can simply click on the name of the plan in the *Plan's* column of the table.
+*Pending services* - this section displays the date of change, description of the service, it's price, type and plan. To view the Service plan information you can simply click on the name of the plan in the *Plan's* column of the table.
 
 
 1. **How to set up pending change of status**

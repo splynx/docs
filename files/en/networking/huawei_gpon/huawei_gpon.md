@@ -28,7 +28,9 @@ Click on "OK, Confirm" to begin the installation process:
 
 To add an OLT, navigate to `Networking → Huawei GPON`, the IP, ssh port, and login/password are required to add the device. Also, it is of great importance to set the UPLINK BOARD and the UPLINK INTERFACE correctly.
 
-![](gpon.png)
+![Huawei GPON](hgpon2.png)
+
+![Huawei GPON](hgpon.png)
 
 After the OLT is added, we will be presented with a menu containing four different pages.
 

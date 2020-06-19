@@ -21,7 +21,7 @@
 
 * [Routers settings](networking/routers_settings/routers_settings.md)
 
-* [IP address management](networking/ip_address_maanagement/ip_address_maanagement.md)
+* [IP address management](networking/ip_address_management/ip_address_management.md)
 
 * [Monitoring](networking/monitoring/monitoring.md)
 

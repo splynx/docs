@@ -28,7 +28,7 @@ Now that those rules have been established, please take a look at each section o
 
 * [ Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
 
-* [ Maps](customer_management/maps/maps.md)
+* [ Maps ](customer_management/maps/maps.md)
 
 * [ Customer information](customer_management/customer_information/customer_information.md)
 

@@ -1,17 +1,25 @@
 Configuration
 =============
 
-Global configuration settings are divided into 7 _main sections_ with its subcategories, such as: System and Main configuration, Finance and Network configuration, Voice processing, Integrations and Tools.
+This is the section for your Global configurations of your Splynx server.
 
-Please, follow the links below to find tutorial page about each part of Configuration:
+Please follow the links below for tutorials of each of the sections of the Configuration:
 
 * [System](configuration/system/system.md)
 
 * [Main configuration](configuration/main_configuration/main_configuration.md)
 
+* [CRM](configuration/crm/crm.md)
+
+* [Scheduling](configuration/scheduling/scheduling.md)
+
+* [Inventory](configuration/inventory/inventory.md)
+
 * [Finance configuration](configuration/finance/finance.md)
 
 * [Network configuration](configuration/network/network.md)
+
+* [Support](configuration/support/support.md)
 
 * [Voice processing](configuration/voice/voice.md)
 

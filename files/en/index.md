@@ -106,6 +106,8 @@ Table of contents
 * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 * [IP address management](networking/ip_address_management/ip_address_management.md)
+    * [IPv4](networking/ip_address_management/ipv4/ipv4_address_management.md)
+    * [IPv6](networking/ip_address_management/ipv6/ipv6.md)
 * [Monitoring](networking/monitoring/monitoring.md)
 * [Weathermaps](networking/weathermaps/weathermaps.md)
 * [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)

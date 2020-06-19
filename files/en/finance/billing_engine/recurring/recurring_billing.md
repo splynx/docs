@@ -29,7 +29,7 @@ The next step of setting up "Recurring billing" will be to choose the *Billing d
 
 * **Billing day** - the day invoices will be generated automatically.
 
-* **Billing due day** _ the last day the customer has to make a payment before getting blocked.
+* **Billing due day** - the amount of days after the billing day the customer has to make payments before getting blocked.
 
 * **Grace period** - the number of days after the billing due until the system will automatically mark the customer status as inactive and
 In our example, we choose the 1st day of the month as the billing day and 15 days thereafter, as the Billing due day. This means that invoices will be generated on 1st day of the month and if the customer fails to make a payment before or on the 15th day of the month, the customer will be blocked and his services will be suspended.

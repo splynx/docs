@@ -1,37 +1,42 @@
 Localization
 ============
+![](icon.png)
 
-It is possible to configure Localization and Finance format settings in `Config→Main→Localization`.
+## Language
 
-![](main_menu.png)
+![](language.png)
 
-The following parameters can be set here:
+* **System language** - select system language.
 
-##### Language
-* **System language** - select system language, after save it and refresh a page.
+## Localization settings
 
-  ![](menu.png)
+![](localization.png)
+* **Date format** - select date format what will be used in system;
+* **Online time format** - select online time format;
+* **Time format** - select type format(12 or 24 hours);
+* **With seconds** - enable/disable seconds displaying;
+* **Decimals** - number of digits after separator;
+* **Decimals separator** - select separator;
+* **Thousands separator** - separator for thousands(if needed).
 
-##### Localization settings
-* **Date format** - choose a date format (MM-DD-YYYY, DD/MM/YYYY, YYYY/MM/DD etc.).
-* **Time format** - choose time format (12 or 24 hours)
-* **With seconds** - enable or disable option to show time format with seconds
+## Finance format settings
 
-##### Number format:
-* **Decimals** - choose decimals for numbers if needed from 0 to 4
-* **Decimals separator** - choose decimals separator (. , )
-* **Thousands separator** - choose thousands separator if needed  (, . ')
+![Finance menu](finance_format.png)
 
-![Localization menu](localization.png)
+* **Currency** - select preferred currency;
+* **Currency symbol** - currency symbol;
+* **Currency display position** - where to display currency symbol;
+* **Tax name** - your country tax name;
+* **Tax decimals** - choose tax decimals if needed (0, 2, 4);
+* **Decimals** - choose decimals if needed from 0 to 4;
+* **Decimals separator** - choose decimals separator (. , );
+* **Thousands separator** - choose thousands separator if needed  (, . ').
 
+## Networking settings
 
-##### Finance format settings
-* **Currency** - write the preferred currency
-* **Currency display option** - choose the currency display option (None, Before, Before with space, After with space)
-* **Tax name** - write your country tax name
-* **Tax decimals** - choose tax decimals if needed (0, 2, 4)
-* **Decimals** - choose decimals if needed from 0 to 4
-* **Decimals separator** - choose decimals separator (. , )
-* **Thousands separator** - choose thousands separator if needed  (, . ')
+![networking](networking_settings.png)
 
-![Finance menu](finance.png)
+* **Statistic usage unit** - select unit to display statistic in MB or GB;
+* **Decimals** - statistic usage decimals;
+* **Decimals separator** - statistic usage decimals separator;
+* **Thousands separator** - statistic usage thousands separator.

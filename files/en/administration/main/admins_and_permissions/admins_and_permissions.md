@@ -1,15 +1,15 @@
 Admins and permissions
 ======================
 
-Administrators' table in Logs shows a full list of all administrators using Splynx, their admin login, full name, role, phone number and other information.
+Administrators' table in administration displays a full list of all administrators using Splynx, their admin login, full name, role, phone number and other information.
 
 ![Administrators list](administrators_list.png)
 
-It is possible to choose administrators to display by their partners.
+You can easily filter administrators to display by partners using the partners filter on the top right of the table.
 
 ![Sort by partners](sort_by_partners.png)
 
-You can print, copy or save the list of admins in PDF and CSV file formats by clicking on <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> icon below the table. It is also possible to select columns to be displayed in the table by clicking on <icon class="image-icon">![ViewIcon2](view_icon2.png)</icon> icon below the table.
+You can export via print, copy or saving the list of admins in PDF and/or CSV file formats by clicking on <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> icon below the table. It is also possible to select columns to be displayed in the table by clicking on <icon class="image-icon">![ViewIcon2](view_icon2.png)</icon> icon below the table.
 
 ![Show hide columns](show_hide_columns.png)
 

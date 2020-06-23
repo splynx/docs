@@ -35,7 +35,7 @@ Please follow the links to each section below for tutorials and information page
    * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
 
 
-   * [Pending statuses & services](administration/logs/pending_statuses_plans/pending_statuses_plans.md)
+   * [Pending statuses & services](administration/logs/pending_statuses_&_services/pending_statuses_&_services.md)
 
 
    * [Accounting Integrations](administration/logs/accounting_integrations/accounting_integrations.md)

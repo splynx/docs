@@ -11,7 +11,7 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [Customers](configuration/main_configuration/customers/customers.md)
 
-* [Incoming mail](configuration/main_configuration/incoming_mail/incoming_mail.md)
+* [CAP](configuration/main_configuration/cap/cap.md)
 
 * [Email config](configuration/main_configuration/email_config/email_config.md)
 
@@ -21,8 +21,14 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [Portal](configuration/main_configuration/portal/portal.md)
 
-* [Cards](configuration/main_configuration/cards/cards.md)
+* [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
 
 * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
 
 * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
+
+* [Maps](configuration/main_configuration/api/api.md)
+
+* [Stealth Mode](configuration/main_configuration/stealth_mode/stealth_mode.md)
+
+* [API](configuration/main_configuration/api/api.md)

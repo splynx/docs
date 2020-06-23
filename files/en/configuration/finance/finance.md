@@ -20,4 +20,4 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [ Reminders](configuration/finance/reminders/reminders.md)
 
-* [ Template values](configuration/finance/tempplate_values/tempplate_values.md)
+* [ Template values](configuration/finance/template_values/template_values.md)

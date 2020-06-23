@@ -1,111 +1,60 @@
-SMS config
+SMS sending configuration
 =========
 
-Splynx ISP Framework supports sending of notifications and reminders to customers via SMS. For the configuration of SMS gateway you need to find a local SMS gateway and set up Splynx to work with that getaway.
+Splynx supports sending of SMS using different SMS gateways. To configure SMS sending you need to find a suitable SMS gateway and set up Splynx to work with it.
 
-To configure SMS sending in Splynx click on `Config→Main→SMS`.
+To configure SMS sending in Splynx navigate to `Config → Main → SMS`.
 
-![Config menu](main_menu.png)
+![Config menu](icon.png)
 
+**NOTE! Configuration will be unique for each SMS gateway.**
 
-You can set here the following SMS parameters:
-Main
-* **Gateway URL** - insert URL for sending SMS
-* **Params** - Params for request of sending SMS (use patterns %TO% and %MESSAGE% for relevant values).
-* **Method** - choose method to call gateway (POST or GET)
-* **Content type** - how to handle Params (json or x-www-form-urlencoded).
-* **Enable SMS sending** - enable this option when is desirable to send SMS from pool
-* **Debug** - you can enable debug to log file
-* **Successful response** - you can text here to check response from gateway
-* **Days to expire** - choose how many days server will try to send the email
+**SMS logs can be found under [`Administration - Logs - SMS`](../../../administration/logs/sms/sms.md) or under `Support - Messages - History`**
 
-For example, we will use https://www.smsapi.com as a service to send SMS. So we should register there, after that we can access the dashboard:
+Example of [Clikatell SMS gateway](https://www.clickatell.com/) configuration:
+![main](main.png)
+![main](custom_header.png)
 
-![Register](smsapi1.png)
+Example of [BurstSMS SMS gateway](https://burstsms.com.au/sms-api) configuration:
+![main](urlencoded_main.png)
+![main](urlencoded_header.png)
 
-And now, we have to see API documentation:
+## Main
+* **Gateway URL** - URL of SMS gateway(should be specified in gateway documentation);
+* **Payload** - request payload for sending SMS. Depends on content type(JSON or x-www-form-urlencoded) and syntax provided by SMS gateway;
+* **Method** - method to call gateway (POST or GET);
+* **Content type** - how to handle payload (JSON or x-www-form-urlencoded). JSON can be used only with POST method;
+* **Enable SMS sending** - enable/disable SMS sending from Splynx;
+* **Debug** - enable/disable debug to log file */var/www/splynx/logs/cron/sms.log*;
+* **Successful response** - if SMS gateway returns some successful response it should be configured here so Splynx could know what SMS was sent;
+* **Days to expire** - how many days server will try to send SMS. Then will be marked as "Error".
 
-![Register](smsapi2.png)
+## Check SMS balance
+Example of check SMS balance config using [Clikatell SMS gateway](https://www.clickatell.com/)
+![main](check_balance.png)
 
-![Register](smsapi3.png)
+* **Enalbe** - enable/disable checking SMS balance;
+* **Check URL** - URL what is using for checking SMS balance(should be in gateway documentation);
+* **Field name** - name of field with account balance;
+* **Requested method** - method to call gateway(GET or POST);
+* **Once per** - check balance every selected period of time;
+* **Email** - result will be send to this email;
+* **Dashboard notification** - enable/disable notification with SMS account balance on dashboard;
+* **Minimum balance** - balance value which will trigger notification.
 
-As you can see in previous screenshot, in "params" it used "password" in MD5-format. To receive that password we have to go https://www.smsapi.com in dashbord and set API password:
+## Custom header
+Sometimes needed for configuration of SMS sending. To use or not to use - must be described in SMS gateway documentation.
 
-![Register](smsapi4.png)
+Few examples of custom headers below:
 
+![header1](custom_header.png)
+OR
+![header2](urlencoded_header.png)
 
-Everything is ready to configure Splynx system. All data: Gateway URL, Params and Method we take from "API documentation".
+## Test
 
-![Configure Splynx](config.png)
+![test](test.png)
 
-Field **Params** should be:
-```
-username=insert_smsapi.com_username&password=insert_password_in_MD5_format&from=Info&to=%TO%&message=%MESSAGE%
-```
+* **Phone** - target phone number to make test. Sometimes must be specified with "+" ahead(full format of phone number for country).
 
-Field **Successful response** should be "OK:", as you can see on next screenshot, when we received response from smsapi-system.
-
-Then, click "Run test" button and see "Test result".
-
-
-#### Test
-
-* **Phone** - you can add here a phone number to run a test
-
-If everything is Ok, click "Save" button to save SMS-configuration.
-
-![Test result](test_result.png)
-
-That is all. System is fully configured. And now let's see an example, how to send SMS to the current customer. Open customers list, choose some customer and check his phone number:
-
-![Customer list](customer_list.png)
-
-Then, we will create SMS message:
-
-![Message create](msg_create.png)
-
-after that we can preview message and send it:
-
-![Message create](msg_create1.png)
-
-![Message preview](msg_preview.png)
-
-![Send message](msg_send.png)
-
-The same information you can also find in our video tutorial - https://splynx.com/235/configure-sms-in-ispframework/.
-
-
-----
-## SMS gateway me
-If you want to use your own phone to send SMS, you can use the service https://smsgateway.me
-
-In the [official documentation](https://smsgateway.me/sms-api-documentation/getting-started), you can find all the steps necessary for the initial configuration of the service.
-
-
-After installing the application into the phone and settings, your device appears in the list of devices.
-
-***Remember his ID***
-
-
-![SMS gateway devices list](sgm_devlist.png)
-
-Next you need to get API token, ***copy it***.
-
-![API token](sgm_token.png)
-
-Next switch to the splynx and fill in the required fields:
-* **Gateway URL** -  https://smsgateway.me/api/v4/message/send
-* **Payload** - [{"phone_number": "%TO%", "message": "%MESSAGE%", "device_id" : *<use_your_device_ID>*}]
-* **Method** - POST
-* **Content type** - json
-* **Enable SMS sending** - <icon class="image-icon">![Enable](enable.png)</icon>
-* **Successful response** - OK
-* **Custom header/Name** - Authorization
-* **Custom header/Value** - *<paste_your_api_token>*
-
-![Splynx SMS config](sgm_spl.png)
-
-
-That's all, you can specify the number of your mobile, click on the test button and check the operability.
-
-![Test](sgm_test.png)
+We have a special topic on forum where you can find a suitable SMS gateway and find our what gateways can't be used in Splynx: https://forum.splynx.com/t/sms-gateway-sharing-recommendations/1963/8

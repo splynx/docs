@@ -33,7 +33,7 @@ Below is an example of how IPv6 appears in Splynx IPv6 networks when a CPE recei
 
 ![IPv6](ipv62.png)
 
-Activation of IPv6 in existing infrastructure
+## Activation of IPv6 in existing infrastructure
 
 We have designed a simple IPv6 address plan, let’s recap what should be done during the first phase of IPv6 deployment :
 1. BGP peering should be configured on IPv6 addresses
@@ -43,7 +43,7 @@ We have designed a simple IPv6 address plan, let’s recap what should be done d
 2a0f:f041:f::/48. All traffic can actually be routed between routers using Link-local IPv6 addresses, but we have enabled IP's from the 2a0f:f041:f::/48 range on our routers to check IPv6 visibility to and from outside the network.
 4. Static routes to 2a0f:f041:1000::/48 and 2a0f:f041:2000::/48 should be created from BGP infrastructure to PPPoE routers.
 
-IPv6 assignments to the end users
+## IPv6 assignments to the end users
 
 When all the above is configured and working, we can start with the most tricky part of IPv6 deployment – assignments of IPv6 to the end users.
 Most commonly, end users have their own wireless routers that connects their devices to the Internet.

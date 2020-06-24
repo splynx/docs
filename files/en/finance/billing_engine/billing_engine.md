@@ -43,7 +43,7 @@ A separate table is also included with information on all overdue invoices
 In Splynx we support both Recurring and Prepaid types of billing. For tutorials and more information on each of these types and how to use them in Splynx, please follow each page respectively:
 
 
-[Recurring Billing](finance/billing_engine/recurring/recurring_billing.md)
+[Recurring Billing](finance/billing_engine/recurring_billing/recurring_billing.md)
 
 
-[Prepaid Billing](finance/billing_engine/recurring/prepaid_billing.md)
+[Prepaid Billing](finance/billing_engine/prepaid/prepaid_billing.md)

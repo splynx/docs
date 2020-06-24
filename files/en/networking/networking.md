@@ -15,7 +15,7 @@
 
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
 
-* [Authentication of users](networking/authentication_users/authentication_users.md)
+* [Authentication of customers](networking/authentication_of_customers/authentication_of_customers.md)
 
 * [Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
 

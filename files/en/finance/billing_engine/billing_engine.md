@@ -46,4 +46,4 @@ In Splynx we support both Recurring and Prepaid types of billing. For tutorials 
 [Recurring Billing](recurring/recurring_billing.md)
 
 
-[Prepaid Billing](fprepaid/prepaid_billing.md)
+[Prepaid Billing](prepaid/prepaid_billing.md)

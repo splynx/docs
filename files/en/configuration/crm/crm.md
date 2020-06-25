@@ -11,5 +11,5 @@ The following are the tutorials pages for each of the aspects available for conf
 
 * [Preferences](configuration/crm/preferences/preferences.md)
 * [Finance](configuration/crm/finance/finance.md)
-* [Sign Up Widget](configuration/crm/sign_up_widget/widget.md)
-* [Leads stages](configuration/crm/leads_stages/stages.md)
+* [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)
+* [Leads stages](configuration/crm/leads_stages/leads_stages.md)

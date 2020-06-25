@@ -19,7 +19,7 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [Support](configuration/main_configuration/support/support.md)
 
-* [Portal](configuration/main_configuration/portal/portal.md)
+* [Customer Portal](configuration/main_configuration/portal/portal.md)
 
 * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
 

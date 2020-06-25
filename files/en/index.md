@@ -46,8 +46,8 @@ Table of contents
 
 ##### [Finance](finance/finance.md)
 * [Billing engine](finance/billing_engine/billing_engine.md)
-* [Recurring Billing](finance/billing_engine/recurring/recurring_billing.md)
-* [Prepaid Billing](finance/billing_engine/prepaid/prepaid_billing.md)
+* [Recurring Billing](finance/billing_engine/recurring_billing/recurring_billing.md)
+* [Prepaid Billing](finance/billing_engine/prepaid_billing/prepaid_billing.md)
 * [Transactions](finance/transactions/transactions.md)
 * [Invoices](finance/invoices/invoices.md)
 * [Proforma invoices](finance/proforma_invoices/proforma_invoices.md)
@@ -72,7 +72,7 @@ Table of contents
     * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
     * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
     * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)
-    
+
 
 * [Authentication of customers](networking/authentication_of_customers/authentication_of_customers.md)
     * [Mikrotik: DHCP with Radius](networking/authentication_of_customers/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)

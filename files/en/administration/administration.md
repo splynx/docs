@@ -7,7 +7,8 @@ The administration module can be divided into _4 main sections_ with the subcate
 
 1. MAIN
    * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
-   * [Default roles in detail](administration/main/admins_and_permissions/default_roles/default_roles.md)
+     * [Default roles in detail](administration/main/admins_and_permissions/default_roles/default_roles.md)
+   * [Roles](administration/main/roles/roles.md)   
    * [Partners](administration/main/partners/partners.md)
    * [Locations](administration/main/locations/locations.md)
 

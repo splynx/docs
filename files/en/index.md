@@ -143,7 +143,8 @@ Table of contents
 * [Main](administration/main/main.md)
 
     * [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md)
-    * [Default roles in details](administration/main/admins_and_permissions/default_roles/default_roles.md)
+    * [Roles](administration/main/roles/roles.md)
+    * [Default roles in details](administration/main/roles/default_roles/default_roles.md)
     * [Partners](administration/main/partners/partners.md)
     * [Locations](administration/main/locations/locations.md)
 

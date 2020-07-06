@@ -17,8 +17,6 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [SMS config](configuration/main_configuration/sms_config/sms_config.md)
 
-* [Support](configuration/main_configuration/support/support.md)
-
 * [Customer Portal](configuration/main_configuration/portal/portal.md)
 
 * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
@@ -27,7 +25,7 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
 
-* [Maps](configuration/main_configuration/api/api.md)
+* [Maps](configuration/main_configuration/maps/maps.md)
 
 * [Stealth Mode](configuration/main_configuration/stealth_mode/stealth_mode.md)
 

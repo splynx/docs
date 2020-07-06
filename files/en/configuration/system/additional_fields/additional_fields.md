@@ -1,7 +1,7 @@
 Additional fields
 ================
 
-To add additional field click on `Config menu →System→ Additional fields` . Select the module where you'd like to add an additional field and click on  ***Add*** at the top-right corner of the screen.
+To add additional fields navigate to `Config menu →System→ Additional fields` . Select the module where you'd like to add an additional field and click on  ***Add*** at the top-right corner of the page.
 
 ![](menu.png)
 

@@ -42,9 +42,18 @@ Reference: [https://pve.proxmox.com/wiki/Installation](https://pve.proxmox.com/w
 Disable the enterprise repository that is configured by default, add the no-subscription repository.  
 Edit _/etc/apt/sources.list.d/pve-enterprise.list_:
 
+Proxmox 5.x:  
+
 ```bash
 #deb https://enterprise.proxmox.com/debian/pve stretch pve-enterprise
 deb http://download.proxmox.com/debian stretch pve-no-subscription
+```
+
+Proxmox 6.x:  
+
+```bash
+#deb https://enterprise.proxmox.com/debian/pve buster pve-enterprise
+deb http://download.proxmox.com/debian buster pve-no-subscription
 ```
 
 Run in shell (on each node):
@@ -61,7 +70,7 @@ We must merge all nodes into one cluster. Make sure that each node is installed 
 Run in shell on the first node:
 
 ```bash
-node1> pvecm create splynx-cluster</pre>
+node1> pvecm create splynx-cluster
 ```
 
 where ‘splynx-cluster’ – is the name of cluster. Can be any.
@@ -103,8 +112,9 @@ Part of _/etc/network/interfaces_:
 ```bash
 auto ens19
 iface ens19 inet static
-address 172.30.250.1 #(172.30.250.2 – on 2nd node, 172.30.250.3 – on 3rd node)
-netmask 255.255.255.0
+  #(172.30.250.2 - on 2nd node, 172.30.250.3 - on 3rd node)
+  address 172.30.250.1
+  netmask 255.255.255.0
 ```
 
 After editing _/etc/network/interfaces_ - reboot node to apply changes.
@@ -124,30 +134,42 @@ Reboot your nodes and try again.
 Create Ceph monitors on all nodes:
 
 ```bash
-node1> pveceph createmon
+node1> pveceph mon create
 ```
 
 ```bash
-node2> pveceph createmon
+node2> pveceph mon create
 ```
 
 ```bash
-node3> pveceph createmon
+node3> pveceph mon create
 ```
+
+#### Ceph Manager
+The Manager daemon runs alongside the monitors. It provides an interface to monitor the cluster. Since the Ceph luminous release at least one ceph-mgr daemon is required.
+
+##### Create Manager
+Multiple Managers can be installed, but at any time only one Manager is active.  
+
+```bash
+nodeX> pveceph mgr create
+```
+Note. It is recommended to install the Ceph Manager on the monitor nodes. For high availability install more then one manager.
+
 
 Erase partition table of Ceph drive(s) and create OSD(s) on it. Run on each node:
 
 ```bash
-nodeX> ceph-disk zap /dev/sdb
+nodeX> ceph-volume lvm zap /dev/sdb --destroy
 nodeX> pveceph createosd /dev/sdb
 ```
 *We use /dev/sda for system and /dev/sdb for Ceph in this tutorial
 
-Create Ceph pool.  
+#### Create Ceph pool
 Run on one node:
 
 ```bash
-node3> pveceph createpool default-pool -add_storages true</pre>
+node3> pveceph createpool default-pool -add_storages true
 ```
 
 This creates pool with name ‘default-pool’ and adds storages for VMs and containers to it. Pool name can be any.
@@ -163,7 +185,10 @@ Open your web-browser and type [https://IP-OF-ANY-NODE:8006](https://IP-OF-ANY-N
 User name: root  
 Password: the password you have entered during installation.
 
-We will install Ubuntu-16.04-server. [Download](https://www.ubuntu.com/download/server) ISO image to PC. Then upload it from PC to local storage of one of Proxmox nodes:
+We will install Ubuntu-16.04-server.  
+Note. On the page https://splynx.com/install you can always find which Linux version is required to install last Splynx version.  
+
+[Download](https://www.ubuntu.com/download/server) ISO image to PC. Then upload it from PC to local storage of one of Proxmox nodes:
 
 ![px_upload-iso.png](px_upload-iso.png)
 
@@ -220,6 +245,7 @@ Install Splynx:
 wget -qO- https://deb.splynx.com/setup | sudo bash -
 sudo apt-get install splynx
 ```
+Reference: https://splynx.com/install/
 
 ## HA configuration
 
@@ -242,7 +268,7 @@ bash> ha-manager migrate vm:100 DESTINATION-NODE
 This uses online migration and tries to keep the VM running. Online migration needs to transfer all used memory over the network, so it is sometimes faster to stop VM, then restart it on the new node. This can be done using the relocate command:
 
 ```bash
-bash> ha-manager relocate vm:100 DESTINATION-NODE</pre>
+bash> ha-manager relocate vm:100 DESTINATION-NODE
 ```
 
 Reference: [https://pve.proxmox.com/wiki/High_Availability](https://pve.proxmox.com/wiki/High_Availability)

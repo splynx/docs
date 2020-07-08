@@ -55,3 +55,14 @@ The following day the customer's balance will be changed from 40 USD to 38,71 US
 
 ---
 In the situation, when the customer has added 20 USD on a deposit, he will get access for 15 days only. Once the balance reaches “0”, Splynx will block him. Also, one transaction has been added, which shows how much we charged. This transaction is updated every day and it shows the total amount of money that has been taken from the customer’s deposit.
+
+
+***Please note that Grace periods for prepaid customers can be configured un Config / Finance / Settings***:
+
+![Settings](settings.png)
+![Settings](settings1.png)
+
+Please remember if you would like your grace periods to work it is necessary to enable the processing of grace periods under *Config / Finance / Automation*:
+
+![Automation](automation.png)
+

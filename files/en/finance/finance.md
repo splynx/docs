@@ -9,6 +9,10 @@ The billing module is separated into the following sections, please follow the l
 
 * [ Billing engine](finance/billing_engine/billing_engine.md)
 
+  * [Recurring Billing](finance/billing_engine/recurring_billing/recurring_billing.md)
+  * [Prepaid Billing](finance/billing_engine/prepaid_billing/prepaid_billing.md)
+
+
 * [ Transactions](finance/transactions/transactions.md)
 
 * [ Invoices](finance/invoices/invoices.md)

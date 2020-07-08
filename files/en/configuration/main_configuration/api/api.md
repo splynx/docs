@@ -1,15 +1,15 @@
 API
 ============
-Here system API parameters can be configured.
+In this section, we can configure system API parameters.
 
 ![icon](icon.png)
 
 ![api](api.png)
 
-* **System API URL** - API URL with protocol. Add-ons will use this URL to communicate with system. **Must be equal to your Splynx URL.**;
+* **System API URL** - API URL with protocol. Add-ons will use this URL to communicate with system. **Must be the same as your Splynx URL.**;
 
-* **Disable validation of API URL** - enable/disable validation of API URL. If you are getting error messages about API on dashboard, and can't fix it, enable this option will stop showing that messages;
+* **Disable validation of API URL** - enables/disables validation of API URL. If you are getting an error messages about the API on the dashboard, and can't fix it, enabling this option will stop the system from showing that messages;
 
-* **Trust all domains** - allow API requests to this Splynx from any domain. If disabled - will appear list of domains to trust:
+* **Trust all domains** - allow API requests to this Splynx server from any domain. If disabled -  list of domains to trust will appear:
 
 ![domains](domain_list.png)

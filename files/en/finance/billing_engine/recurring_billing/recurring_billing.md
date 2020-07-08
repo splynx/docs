@@ -34,6 +34,13 @@ The next step of setting up "Recurring billing" will be to choose the *Billing d
 * **Grace period** - the number of days after the billing due until the system will automatically mark the customer status as inactive and
 In our example, we choose the 1st day of the month as the billing day and 15 days thereafter, as the Billing due day. This means that invoices will be generated on 1st day of the month and if the customer fails to make a payment before or on the 15th day of the month, the customer will be blocked and his services will be suspended.
 
+
+***Please note that it is important to enable grace period processing under Config / Finance / Automation, for your grace periods to work as expected***:
+
+![Automation](automation.png)
+
+![Automation](automation1.png)
+
 * **Minimal balance** - the minimum amount funds to be available in the customer's account after service charges to avoid being blocked, this field is 0.0000 by default.
 
 Bear in mind, although the customer is blocked and their services suspended, the system will still account for the services from a billing perspective.

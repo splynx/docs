@@ -1,6 +1,7 @@
 Support
 =============
-Here you can find settings for tickets, ticket notifications, incoming emails configurations also some automation for tickets.
+
+In this section we can modify the configuration for tickets, ticket notifications, incoming emails configurations and also automation for tickets.
 
 ![Support](support_config.png)
 

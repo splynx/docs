@@ -1,18 +1,19 @@
 Finance configuration
 =============
 
+![Finance Config](finance.png)
 
-Finance module and its correct configuration is important part of Splynx billing system. Finance global configuration enables you to set automation of financial processes in Splynx, Paring, Notification and Reminders settings, configure Template values and Payment accounts with Payment methods. In Finance settings you can configure billing settings and define parameters for Invoices, Proforma Invoices and Receipts.
+The finance module and valid configurations thereof is an important element of the Splynx billing system. The finance global configuration enables to you to configure the automation of the financial processes in Splynx, processes like pairing, notifications and reminder settings, payment accounts and payment methods, etc. In finance settings, you can configure billing settings of customers and define parameters of invoices, proforma invoices and receipts.
 
-Please, follow the links below to find tutorial page about every single part of Finance configuration:
+Please follow the links below for tutorial pages on each part of Finance configuration:
 
 * [ Automation](configuration/finance/automation/automation.md)
 
-*  [ Finance settings](configuration/finance/finance_settings/finance_settings.md)
+* [ Finance settings](configuration/finance/finance_settings/finance_settings.md)
 
 * [ Pairing](configuration/finance/pairing/pairing.md)
 
-* [ Notifications](configuration/finance/notifications/notifications.md)
+* [ Notifications](configuration/finance/notifications/notifications,md)
 
 * [ Payment methods](configuration/finance/payment_methods/payment_methods.md)
 
@@ -20,4 +21,8 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [ Reminders](configuration/finance/reminders/reminders.md)
 
-* [ Template values](configuration/finance/template_values/template_values.md)
+* [ Cost categories](configuration/finance/cost_categories/cost_categories.md)
+
+* [ Fixed costs](configuration/finance/fixed_costs/fixed_costs.md)
+
+* [ Payment accounts](configuration/finance/payment_accounts/payment_accounts.md)

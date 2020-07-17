@@ -1,26 +1,23 @@
 Payment methods
 =============
 
-To check your Payment Methods click on `Config → Finance → Payment Methods`.
+To check your Payment Methods navigate to `Config → Finance → Payment Methods`.
 
-![Main menu](main_menu.png)
+![Main menu](icon.png)
 
 ![List of methods](list.png)
 
+Payment methods listed here are set by default. When you install a new payment module(ex. SageOne, Netcash, Stripe etc.) it will automatically appear here.  
 
-Payment methods listed here are set by default. When you install a new Payment Modul it will automatically appear here.  
+You can add a new Payment method manually by clicking the *Add* icon at the top-right corner of the page.  The window will appear where you will type the name of the Payment Method and enable the option *"Active"*.
 
-You can add a new Payment method manually by clicking *Add* icon <icon class="image-icon">![](add_icon.png)</icon> at the top-right corner of the screen.  The window will pop-up where you will write the name of the Payment Method and enable the option *"Active"*.
-
-![Create payment method](create.png)
+![Create payment method](add.png)
 
 ![list of methods](list1.png)
 
-After adding a new Payment method it will appear in each customer Billing settings in `Customers → View →Billing →Billing overview`.
+After adding a new Payment method it will appear in each customer's Billing settings in `Customers → View →Billing →Billing overview`.
 
-![Selected](select.png)
+![Selected](billing.png)
 
 
-It is possible to Edit (Rename) or Delete Payment methods by clicking on icons <icon class="image-icon">![](edit_icon.png)</icon> and <icon class="image-icon">![](del_icon.png)</icon>  in Actions section of the table.
-
-![Edit payment method](edit.png)
+It is possible to Edit (Rename) or Delete Payment methods by clicking on the icons in the Actions column of the table.

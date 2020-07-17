@@ -1,153 +1,95 @@
 Templates
 =========
 
-Splynx has set of templates that are used in different parts of the system. Email messages, Invoice PDFs, SMS messages, Document templates etc.
+Splynx has a set of templates that are used in different parts of the system. Email messages, Invoice PDFs, SMS messages, Document templates etc.
+
+
 
 ### Categories of templates
 
-* **Customer portal** – messages sent to customer portal
-* **Invoice PDF** – Invoices (customer billing)
-* **Mail** – messages sent to email
-* **SMS** – messages sent to SMS
-* **Documents** – Documents (located on customer)
-* **Cards** – Generation cards (prepaid, refill)
-* **Payment calendars** – payment calendars (customer billing)
-* **Payment receipts** – receipts for payments (customer billing)
-* **Request PDF** – proforma invoices – requests (customer billing)
-* **Reminder mail** – reminder mail notification (customer billing)
-* **Reminder SMS** – reminder sms notification (customer billing)
-* **Finance exports** – Export invoices, requests, payments on Finance part
+* **Customer portal** – messages formats used to send messages to the customer portal
+* **Invoice PDF** – Formats and layout used for Invoices
+* **Email** – messages which can be used to send customers email messages
+* **SMS** – messages which can be used to send customers SMS messages
+* **Documents** – messages/formats which can be used to send Documents to customers (located in customer profiles)
+* **Vouchers** – Content of generated vouchers (prepaid, refill)
+* **Payment calendars** – messages/formats sent for notifications of payment calendars (customer billing)
+* **Payment receipts** – messages/formats used to send receipts for payments (customer billing)
+* **Proforma invoice PDF** – messages/formats and layouts used when sending proforma invoices (customer billing)
+* **Reminder email** – messages used to send customers email reminder notifications (customer billing)
+* **Reminder SMS** – messages used to send customers SMS reminder notifications (customer billing)
+* **Monitoring notification email** - messages sent for monitoring via email
+* **Monitoring notification SMS** - messages sent for monitoring via sms
+* **Finance exports** – formats and layouts use when exporting invoices, quote and payments (Finance)
+* **Tickets** - messages sent for ticket notifications
+* **Ticket automation** - messages sent for automated ticket responses
+* **Email CAP** - messages sent for CAP notifications via email
+* **SMS CAP** - messages sent for CAP notifications via SMS
+* **Internal** - messages sent for internal system notifications
+* **Email FUP** - messages sent for FUP (fair usage policy) notifications via email
+* **SMS FUP** - messages sent for FUP (fair usage policy) notifications via SMS
+* **Report Statements** - messagest sent for statement reports
+* **Quote PDF** - messages sent for quote notifications (CRM)
+* **Scheduling email notifications** - messages sent for scheduling notifications via email (Scheduling)
+ **Scheduling SMS notifications** - messages sent for scheduling notifications via SMS (Scheduling)
+* **GDPR notifications** - messages sent for GDPR notifications(Preferences)
+* **Mention notifications** - messages sent for mention and group mention notifications (Preferences)
 
 
-### Add a new template
+### Adding a new template
+
 How to add a new template:
-![Settings](menu.png)
-![Type of template](type.png)
+
+Navigate to `Config / System / Templates`
+
+![Settings](template1.png)
+
+Select the section to add the new template to by clicking on the *Type* drop-down list located at the top right of the page and select the desired section:
+
+![Settings](template2.png)
+
+Then simply click on the *Add* button located at the top right of the page and the following window will appear to add a new template to the section you've selected:
+
+![Create Template](template3.png)
+
+**Parameter descriptions**
+
+* **Title** - type a relevant name for the template
+* **Description** - type a brief description of the template
+* **Code** - populate this field with all the contents you would like the template to contain. Variables, links and places holders can be used in templates.
+
+When creating templates, you can conveniently make use of "Placeholders", which are code values to populate details existing on the system of a customer or company:
+
+![Placeholders](template4.png)
+
+For example, we will use the customers "full name" placeholder:
+
+![Placeholders](template5.png)
+
+![Placeholders](template6.png)
+
+We can check the validity of the code by clicking on the *Check Code* button or simply check the result of the code by clicking on preview:
+
+![Placeholders](template6.png)
+
+![Placeholders](template7.png)
+
+![Placeholders](template8.png)
+
+When using the preview option to check the result of the code the system will always use the last customer you've interacted with. "Use last found entity for preview"
+
+Additionally, you can view variables that can be used in templates in [Template Variables](configuration/system/templates/templates_variables/templates_variables.md)
+
 
 ### Edit
-When you edit or change the template, Splynx displays you HTML editor:
+
+You can edit or change existing templates in Splynx by clicking on the ![](edit_icon.png) edit icon, upon clicking the edit icon the following window will appear:
 
 ![Edit template](edit.png)
 
 
 ### Delete
-You can always delete the template:
 
-![Delete template](delete.png)
+All templates in Splynx can be removed from the system by clicking on the delete icon ![](del_icon.png) :
 
-
-### Values for templates
-
-We recommend to create one test template in customer documents and enter the following values to get list of variables for section of Splynx that you need to use.
-
-For example, let's create a test template and dump all variables of customer:
-
-![](t1.png)
-
-![Generate document](generate_doc.png)
-
-And then we can get the list of variables:
-```php
-["id"]=> string(2) "50"
-["billing_type"]=> string(7) "prepaid"
-["partner_id"]=> string(1) "4"
-["location_id"]=> string(1) "1"
-["added_by"]=> string(5) "admin"
-["added_by_id"]=> string(1) "1"
-["login"]=> string(6) "000050"
-["category"]=> string(6) "person"
-```
-
-For example, If we need to use the value login of customer inside invoice PDF, just type:
-
-some HTML code {{ login }} continues HTML code
-
-Please find the list of most used variables here - [Variables for templates](configuration/system/templates_variables/templates_variables.md).
-
-There are dump commands for different Splynx sections below:
-
-
-##### Basic system values:
-```twig
-{{ dump(loader.values) }}
-```
-##### Customer's information:
-```twig
-{{ dump(loader.customer) }}
-```
-
-##### General information:
-```twig
-{{ dump(loader.info) }}
-```
-
-##### Customer's services:
-```twig
-{{ dump(loader.services) }}
-```
-
-##### Get all Internet services that are Active:
-```twig
-{{ dump(loader.getServicesByTypeAndStatus('internet', 'active')) }}
-```
-
-##### Billing information:
-  ```twig
-{{ dump(loader.billing) }}
-
-##### Partner:
-```twig
-{{ dump(loader.partner) }}
-```
-
-##### Transactions:
-```twig
-{{ dump(loader.transactions) }}
-```
-
-##### Invoices variables:
-```twig
-{{ dump(loader.invoices) }}
-```
-
-##### Invoice items:
-```twig
-{% for invoice in loader.getInvoices() %}
-Invoice {{ invoice.number}} items:
-{{ dump(invoice.items) }}
-{% endfor %}
-{{ dump(loader.invoices) }}
-```
-
-##### Pro-formas:
-```twig
-{{ dump(loader.requests) }}
-```
-
-##### Payments:
-```twig
-{{ dump(loader.payments) }}
-```
-
-##### Attached documents:
-```twig
-Invoices:
-{{ dump(loader.getAttachedInvoices) }}
-Pro-formas:
-{{ dump(loader.getAttachedRequests) }}
-Payment receipts:
-{{ dump(loader.getAttachedReceipts) }}
-```
-
-##### Example of usage:
-```twig
-{% set attached_invoices = loader.getAttachedInvoices %}
-{% for current in attached_invoices %}
-Invoice number: {{ current.number }} - sum: {{ current.total }} <br>
-{% endfor %}
-```
-
-
-### Twig (engine)
-
-In all templates we use twig engine, please find the [documentation](http://twig.sensiolabs.org/doc/templates.html).
+![Delete template](del.png)

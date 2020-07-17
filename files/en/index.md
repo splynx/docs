@@ -157,7 +157,7 @@ Table of contents
     * [Sessions](administration/logs/sessions/sessions.md)
     * [API](administration/logs/api/api.md)
     * [Changes of statuses/plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
-    * [Pending statuses/plans](administration/logs/pending_statuses_&_services/pending_statuses_&_services.md)
+    * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
 
 ##### [Configuration](configuration/configuration.md)
 * [System](configuration/system/system.md)
@@ -166,21 +166,47 @@ Table of contents
     * [Custom translations](configuration/system/custom_translations/custom_translations.md)
     * [File manager](configuration/system/file_manager/file_manager.md)
     * [Templates](configuration/system/templates/templates.md)
-    * [Variables for templates](configuration/system/templates_variables/templates_variables.md)
+      * [Variables for templates](configuration/system/templates/templates_variables.md)
+    * [Company Information](configuration/systen/company_information/company_information.md)
 
 * [Main configuration](configuration/main_configuration/main_configuration.md)
 
     * [Preferences](configuration/main_configuration/preferences/preferences.md)
     * [Localization](configuration/main_configuration/localization/localization.md)
     * [Customers](configuration/main_configuration/customers/customers.md)
-    * [Incoming mail](configuration/main_configuration/incoming_mail/incoming_mail.md)
+    * [CAP](configuration/main_configuration/cap/cap.md)
     * [Email config](configuration/main_configuration/email_config/email_config.md)
     * [SMS config](configuration/main_configuration/sms_config/sms_config.md)
-    * [Support](configuration/main_configuration/support/support.md)
-    * [Portal](configuration/main_configuration/portal/portal.md)
-    * [Cards](configuration/main_configuration/cards/cards.md)
+    * [Customer Portal](configuration/main_configuration/portal/portal.md)
+    * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
     * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
     * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
+    * [Prepaid monthly](configuration/main_configuration/prepaid_monthly/prepaid_monthly.md)
+    * [API](configuration/main_configuration/api/api.md)
+    * [Stealth Mode](configuration/main_configuration/stealth_mode/stealth_mode.md)
+    * [Voice](configuration/main_configuration/voice/voice.md)
+
+
+* [CRM](configuration/crm/crm.md)
+
+    * [Preferences](configuration/crm/preferences/preferences.md)
+    * [Finance](configuration/crm/finance/finance.md)
+    * [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)
+    * [Leads stages](configuration/crm/leads_stages/leads_stages.md)
+
+* [Scheduling](configuration/scheduling/scheduling.md)
+
+    * [Workflows](configuration/scheduling/workflows/workflows.md)
+    * [Teams](configuration/scheduling/teams/teams.md)
+    * [Task templates](configuration/scheduling/task_templates/task_templates.md)
+    * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
+    * [Project types](configuration/scheduling/project_types/project_types.md)
+    * [Project categories](configuration/scheduling/project_categories/project_categories.md)
+    * [Notifications](configuration/scheduling/notifications/notifications.md)
+
+* [Inventory](configuration/inventory/inventory.md)
+
+    * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
 
 * [Finance configuration](configuration/finance/finance.md)
 
@@ -191,7 +217,7 @@ Table of contents
     * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
     * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
     * [Reminders](configuration/finance/reminders/reminders.md)
-    * [Template values](configuration/finance/template_values/template_values.md)
+
 
 * [Network configuration](configuration/network/network.md)
 

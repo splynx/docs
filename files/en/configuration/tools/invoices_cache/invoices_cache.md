@@ -1,19 +1,23 @@
- Invoices cache
- ==========
+Invoices cache
+====
 
- This section displays the number of cached invoices on the system.
+![icon](icon.png)
 
-![Invoice Cache](invoices_cache.png)
+ This section displays the number of cached invoices on the system and an option to clear it.
 
-This section will only populate if invoice cache has been enabled in  `Config / Finance / Settings`
+Splynx caches invoices for faster generation of invoice PDF documents. Sometimes you need to make some changes in the invoice PDF template and thereafter  we recommend clearing the invoice cache using this tool.
 
-![Invoice Cache](finance_config.png)
+Invoice cache can be enabled under Config/Finance/Settings:
 
-As we are aware of the uses of cache, this can be a handy tool when constantly dealing with invoices for customers, as it will improve the time it takes to interact with invoices and ultimately your response time to customers with regards to invoices.
+![config](config_finance.png)
 
+And invoices cache can be cleared here:
 
-## Important Note!
+![cache](cache.png)
 
-We do not recommend the use of invoice cache if you are constantly making changes to invoices, as this impairs the functionality.
+Simply click on "Clear cache" - that's all.
 
-When cache is enabled and you make any changes to invoices, the invoices will not update on the customers side until you have cleared the invoice cache.
+### Note
+This tool might be helpful when changes were made in invoice PDF templates but it's not visible on generated PDF's, the reason can be in the invoice cache.
+
+If you are changing your PDF invoice template frequently, don't forget to clear cache here.

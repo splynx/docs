@@ -1,30 +1,48 @@
-Activate Services
-===============
+Activate services
+===
 
-This is a Splynx tool commonly used in the initial stages of your integration with Splynx.
+![icon](icon.png)
 
-It allows you to do mass activations of services for customers after creating or importing plans  your server. Improving efficiency, you can activate large numbers of services and customers, all at once after migrating your network and services to Splynx.
+With the use of this tool, services can be created in a bulk mode.
 
-![Activate Services](activate_services.png)
+For example we have a few "New" customers from partner "PR". All these customers need the  internet plan "Fibre 50Mbps",  with a start date: 2020-07-01 and an IP will be assigned for the service from an IP pool, and login's and password's will be generated. Using the  following settings, our objective can be achieved.
 
-Below are the descriptions of the parameters that need to be selected when performing an Activation of services with this tool.
+![activate1](activate1.png)
 
-***Please be advised this logic can be used for each of the tabs in the Activate Services tool.***
+Another example of using this tool:
+
+We have imported customers with RADIUS login's and password's as depicted below:
+
+![customer](customer.png)
+
+So to create services with imported login's and password's, we can use the following setup:
+
+![activate](activate_for_customer.png)
+
+Click on "Preview", to check the result of the setup:
+
+![preview](preview.png)
+
+Then, when we click on "Submit" the services will be created.
+
+![service](created_service.png)
+
+**Parameter descriptions**:
 
 ## Customers filter
 
 **Partner** - select the partner of which customers belong to, to operate with.
 
-**Status** - select the status of the customers
+**Status** - select the status of customers to operate with.
 
 **Skip check active service** - whether you want the system to check if the customer already has active services or not.
 
 **Ignore without IP/Additional IP** - whether you want the system to acknowledge if services are entered with or without an IP/Additional IP
 
 
-##  Pairing Fields
+## Fields Pairing
 
-**Plan** -  select which plan to add to the customers' services.
+**Plan** -  select which plan/item to add to the customers services.
 
 **Activation date** -  when the system should activate the services for these customers.
 
@@ -32,18 +50,18 @@ Below are the descriptions of the parameters that need to be selected when perfo
 
 **Taking IPv4** - select which type of IPv4 assignment method to use.
 
-**MAC** - select whether mac address(es) should be added and from where.
+**MAC** - select which mac address(es) to apply.
 
-**Additional Network** - select whether IPs/networks should be added and from where.
+**Additional Network** - which network to use to assign additional IP's.
 
 **Login Prefix** - select the prefix to use to generate logins.
 
 **Login Suffix** - select the suffix to use to generate logins.
 
-**Service password** - select the method of adding service passwords.
+**Service password** - select the method to use to generate service passwords.
 
 *If Manual input is selected for any of the fields, please enter the values manually in the provided fields.*
 
 ## Other
 
-**Set customers as "Active" on Submit** - select whether or not you wish to convert the selected customers as active after submitting.
+**Set customers as "Active" on Submit** - select whether or not you wish to make the selected customers as active after submitting the mass action to their services.

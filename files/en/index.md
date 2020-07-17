@@ -183,6 +183,27 @@ Table of contents
     * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
     * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
 
+* [CRM](configuration/crm/crm.md)
+
+    * [Preferences](configuration/crm/preferences/preferences.md)
+    * [Finance](configuration/crm/finance/finance.md)
+    * [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)
+    * [Leads stages](configuration/crm/leads_stages/leads_stages.md)
+
+* [Scheduling](configuration/scheduling/scheduling.md)
+
+    * [Workflows](configuration/scheduling/workflows/workflows.md)
+    * [Teams](configuration/scheduling/teams/teams.md)
+    * [Task templates](configuration/scheduling/task_templates/task_templates.md)
+    * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
+    * [Project types](configuration/scheduling/project_types/project_types.md)
+    * [Project categories](configuration/scheduling/project_categories/project_categories.md)
+    * [Notifications](configuration/scheduling/notifications/notifications.md)
+
+* [Inventory](configuration/inventory/inventory.md)
+
+    * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
+
 * [Finance configuration](configuration/finance/finance.md)
 
     * [Automation](configuration/finance/automation/automation.md)

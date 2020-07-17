@@ -20,7 +20,7 @@ The administration module can be divided into _4 main sections_ with the subcate
    * [Sessions](administration/logs/sessions/sessions.md)
    * [API](administration/logs/api/api.md)
    * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
-   * [Pending statuses & services](administration/logs/pending_statuses_plans/pending_statuses_plans.md)
+   * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
 
 3. INFORMATION
     * [License](administration/information/license/license.md)

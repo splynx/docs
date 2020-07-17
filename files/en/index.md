@@ -213,7 +213,7 @@ Table of contents
     * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
     * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
     * [Reminders](configuration/finance/reminders/reminders.md)
-    * [Template values](configuration/finance/template_values/template_values.md)
+  
 
 * [Network configuration](configuration/network/network.md)
 

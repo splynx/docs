@@ -21,6 +21,10 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
 
+* [Voice](configuration/main_configuration/voice/voice.md)
+
+* [Prepaid monthly](configuration/main_configuration/prepaid_monthly/prepaid_monthly.md)
+
 * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
 
 * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)

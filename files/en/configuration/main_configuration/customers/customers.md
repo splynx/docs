@@ -1,7 +1,7 @@
 Customers
 =========
 
-Customer settings such as login settings, customers limits in search, statistics graphs settings can be configured in `Config →Main →Customers`.
+Customer settings such as login settings, customers limits in search, statistics graphs settings can be configured in `Config→Main→Customers`.
 
 
 ![Main menu](main_menu2.png)

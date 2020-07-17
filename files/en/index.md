@@ -174,14 +174,18 @@ Table of contents
     * [Preferences](configuration/main_configuration/preferences/preferences.md)
     * [Localization](configuration/main_configuration/localization/localization.md)
     * [Customers](configuration/main_configuration/customers/customers.md)
-    * [Incoming mail](configuration/main_configuration/incoming_mail/incoming_mail.md)
+    * [CAP](configuration/main_configuration/cap/cap.md)
     * [Email config](configuration/main_configuration/email_config/email_config.md)
     * [SMS config](configuration/main_configuration/sms_config/sms_config.md)
-    * [Support](configuration/main_configuration/support/support.md)
-    * [Portal](configuration/main_configuration/portal/portal.md)
-    * [Cards](configuration/main_configuration/cards/cards.md)
+    * [Customer Portal](configuration/main_configuration/portal/portal.md)
+    * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
     * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
     * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
+    * [Prepaid monthly](configuration/main_configuration/prepaid_monthly/prepaid_monthly.md)
+    * [API](configuration/main_configuration/api/api.md)
+    * [Stealth Mode](configuration/main_configuration/stealth_mode/stealth_mode.md)
+    * [Voice](configuration/main_configuration/voice/voice.md)
+
 
 * [CRM](configuration/crm/crm.md)
 
@@ -213,7 +217,7 @@ Table of contents
     * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
     * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
     * [Reminders](configuration/finance/reminders/reminders.md)
-  
+
 
 * [Network configuration](configuration/network/network.md)
 

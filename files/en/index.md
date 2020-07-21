@@ -166,7 +166,7 @@ Table of contents
     * [Custom translations](configuration/system/custom_translations/custom_translations.md)
     * [File manager](configuration/system/file_manager/file_manager.md)
     * [Templates](configuration/system/templates/templates.md)
-      * [Variables for templates](configuration/system/templates/templates_variables.md)
+      * [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
     * [Company Information](configuration/systen/company_information/company_information.md)
 
 * [Main configuration](configuration/main_configuration/main_configuration.md)

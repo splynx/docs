@@ -1,40 +1,22 @@
 Main modules
 =============
 
-To configure Main Modules you'd like to use in Splynx go to `Configuration → Integrations → Main Modules`.
+`Configuration→Integrations→Main Modules`.
 
-![Menu](main_menu.png)
+In section, Splynx modules which are not necessary or not in use, can be disabled or enabled.
 
-These are Main Modules of Splynx which can be enabled or disabled according your needs of system usage:
+### Be very attentive with these settings
 
-![Menu](menu.png)
+![icon](icon.png)
 
-Tariffs
-* Internet
-* Voice
-* Custom
-* FUP
+Simply enable or disable each module as desired or required.
 
-Customers
-* Vouchers
+For example: We have enabled the CRM module
 
-Finance
-* Transactions
-* Invoices
-* Proforma Invoices
-* Payments
-* History & Preview
-* Bank Statements
-* Refill cards
+![crm_enabled](crm_enabled.png)
 
-Networking
-* CPE
-* IPv6 Networks
+It is visible on the navigation pane. We will not use the CRM module on our system, therefore we can disable it:
 
-Support
-* Tickets
+![crm_disabled](crm_disabled.png)
 
-For example, you will not use *Proforma Invoice Module* and *Bank statement* Module in Finance section. Disable these modules here, refresh the page and they will automatically disappear from the Splynx Side Menu:
-
-![Menu](menu1.png)
-![Menu](menu2.png)
+As you can see the CRM module disappeared from our navigation pane.

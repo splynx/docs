@@ -4,22 +4,22 @@ Ticket canned responses
 
 ![canned responses icon](icon.png)
 
-Here can be added quick replies for tickets. Some text what you are using frequently can be added to canned response and by clicking on 2 buttons this text will be uploaded to a ticket message.
+Quick replies for tickets can be added here. Specific text which you use frequently can be added to canned responses and by clicking on just 2 buttons, this text will be loaded to the ticket message.
 
 ![groups](groups_list.png)
 
-Using groups can help you to sort responses by topics for faster finding.
+Using groups can help you, sort responses by topics for faster and easier locating.
 
-Click on "+" on canned responses tab to add new response.
+Simply click on the `"+"` icon on the canned responses tab to add a new response.
 
 ![add response](add_response.png)
 
-And you will see it in your responses list.
+After adding a response, you will see it in your of list responses.
 
 ![responses list](responses_list.png)
 
-Now these canned responses can be used in ticket replies:
+Thereafter these canned responses can be used in ticket replies:
 
 ![reply with](reply_with.png)
 
-and by clicking on some canned response it will upload content of canned response what will save your time.
+By clicking on a canned response, it will load the content of the canned response which will save you valuable time.

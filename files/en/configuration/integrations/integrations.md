@@ -1,6 +1,6 @@
 Integrations
 =============
-
+![icon](icon.png)
 
 * [ Hooks](configuration/integrations/hooks/hooks.md)
 
@@ -9,3 +9,5 @@ Integrations
 * [ Main modules](configuration/integrations/main_modules/main_modules.md)
 
 * [ Modules list](configuration/integrations/modules_list/modules_list.md)
+
+* [ Add-ons](configuration/integrations/addons.md)

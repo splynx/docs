@@ -10,9 +10,9 @@ To configure feedback widgets navigate to **_Config -> Support -> Feedback widge
 
 ![pop-up](pop_up_widget.png)
 
-Pop-up widgets can be placed on a website as a small rectangle somewhere on the page for quick access.
-The size, color, alignment and form settings can be changed here. The "Use HTTPS" button means where to redirect your query, so if you have installed HTTPS/SSL on your server keep this enabled.
-Make sure that all changes applied before using this result code. If something is changed, the code will be re-generated and you can simply copy and paste it on your website code.
+Pop-up widgets can be placed on websites as a small rectangle box somewhere on the page for quick access.<br>
+The size, color, alignment and form settings can be changed here. The "Use HTTPS" button refers to where your query will be redirected to, so if you have installed HTTPS/SSL on your server, please keep this option enabled.<br>
+Make sure that all changes are applied before using this result code. If something has been changed, the code will be re-generated and you can simply copy and paste it onto your website code.
 
 ## EMBEDDED WIDGET
 

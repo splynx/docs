@@ -1,7 +1,10 @@
 Inboxes
 =============
-Here you can find settings of inboxes(incoming email). When customer will send message to email address of one of inboxes - ticket will be created in Splynx.
-This feature was developed for faster contact with Splynx support by sending email message to support email address instead of login to Splynx customer portal and create a ticket.
+
+
+In this section, settings of inboxes(incoming email) can be configured. When a customer  sends a message to the email address of one of the inboxes - a ticket will be created in Splynx.
+
+This feature was developed for faster communication with Splynx support by sending email messages to the support email address instead of logging into the Splynx customer portal to create a ticket.
 
 ![icon](icon.png)
 
@@ -9,36 +12,40 @@ This feature was developed for faster contact with Splynx support by sending ema
 
 ![Inboxes](mailboxes.png)
 
-Here new inboxes can be added, removed or changed. Let's create a new one, click on "+":
+New inboxes can be added, removed or changed here.
+Let's create a new one, simply click on the `"+"` icon on the top left of the table:
 
 ![add inbox](add_inbox.png)
 
-I'm going to create a new inbox using gmail email address. IMAP details for gmail can be found here: https://support.google.com/mail/answer/7126229?hl=en
+We are going to create a new inbox using a gmail email address. IMAP details for gmail can be found on the following page:
+ https://support.google.com/mail/answer/7126229?hl=en
 
-When all credentials added, click on "Test connection" to run test and ensure that inbox is connected to gmail account.
+When all the credentials have been added, click on "Test connection" to run a test to ensure that the inbox is connected to the gmail account.
 
-Under IMAP settings can be configured next parameters:
+### The following parameters can be configured for IMAP settings:
+
   * **Which messages to process:** "All" or "Unread";
 
-  * **Process from date/time** - here you should specify date for start email processing. Fox example here will be date 2020-01-01 00:00:00, all emails from this date Splynx will try to process and create a tickets from all these emails;
+  * **Process from date/time** - here you should specify the date to start email processing. For example, if you select the date as 2020-01-01 00:00:00, Splynx will try to process all emails from this date and create tickets from all these emails;
 
-  * **Mark as read** - mark email what was processed successfully as read in inbox;
+  * **Mark as read** - mark email what was successfully processed as read in the inbox;
 
-  * **Use address from header** - "From", "Reply to" or "Sender" - means use address from one of this available fields.
+  * **Use address from header** - "From", "Reply to" or "Sender" - means use the address from one of these available fields as the header.
 
-Under "Ticket Creating" settings can be configured next parameters:
-  * **Receive unregistered emails** - means if this option enabled, tickets will be created from all emails, even if email address isn't in Splynx. If disabled, only customers with email address can create a ticket from inbox;
+### The following parameters can be configured for Ticket creating:
 
-  * **Priority** - select priority for ticket;
+  * **Receive unregistered emails** - this means, if this option is enabled, tickets will be created from all emails, even if the email address isn't registered in Splynx. If disabled, only customer email addresses can create a ticket from the inbox;
 
-  * **Group** - select group for ticket;
+  * **Priority** - select a default priority for ticket new tickets;
 
-  * **Type** - select type for ticket;
+  * **Group** - select a default group to assign new tickets to;
 
-And the last option under "Other" config, "Enabled" - enable or disable creating tickets from this inbox.
+  * **Type** - select a default type for new tickets;
 
-I added few more inboxes for finance questions and for general support questions.
-So if customer will send a message to a finance@myisp.com will be created ticket type = accounts and will be assigned to ticket group "Finance", and if message will be send to support@myisp.com ticket will be created with type = Support and will be assigned to group "IT". Inbox with ID #1 is disabled and I'm not using it in my system.
+And the last option under **"Other"** config, "Enabled" - which enables or disables  creating tickets from this inbox.
+
+We've added a few more inboxes for finance questions and for general support questions.
+So if a customer will send a message to finance@myisp.com an "accounts" ticket type will be created and it will be assigned to the ticket group "Finance". Whereas, if message will be sent to support@myisp.com a "Support" ticket type will be created and will be assigned to the group "IT". The Inbox with ID #1 is disabled and we are not using it on our system.
 
 ![few inboxes](few_inboxes.png)
 
@@ -46,17 +53,17 @@ So if customer will send a message to a finance@myisp.com will be created ticket
 
 ![Common](common.png)
 
-**Regex for find ticket** - value what should be default, if change is needed better to contact Splynx support;
+**Regex for find ticket** - value which should be default, if changed it is better to contact Splynx support for assistance;
 
 **Save format** - for now only one option is available "Purify HTML";
 
-**Process forwarded emails from admins** - create tickets from admins emails;
+**Process forwarded emails from admins** - create tickets from administrators emails;
 
-**Enabled** - global enable/disabled option. Even if 5 inboxes with status "Enabled" but this option disabled, tickets won't be created.
+**Enabled** - this is the global enable/disabled option. Even if there are 5 inboxes with an "Enabled" status, if this option is set to disabled, tickets will not be created.
 
 
 ## BLACKLIST
 
 ![blacklist](blacklist.png)
 
-Here some email addresses can be added to ignore them. Tickets from emails from this list won't be created.
+Email addresses you wish to ignore can be added here. Tickets from these emails will not be created.

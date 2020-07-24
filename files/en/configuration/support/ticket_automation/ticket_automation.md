@@ -1,17 +1,17 @@
 Ticket automation
 =============
-We developed this feature to make a bit easier life of admins who are working with tickets.
+We've developed this feature to for the convenience of administrators who deals with tickets. With automation, the admin can breath easier and achieve more.
 
 ![icon](icon.png)
 
-In this menu can be created some rules to automate work with ticket.
+In this section, rules can be created to automate operations with tickets.
 
-**Example:** I want to close ticket, and reply with [canned response](../ticket_canned_responses/responses.md) to a customer if ticket has status "Waiting on customer" more than 7 days.
+**Example:** We want to close tickets automatically, and reply with a [canned response](../ticket_canned_responses/responses.md) to a customer if ticket has a status of "Waiting on customer" for more than 7 days.
 
-I can achieve this goal by adding next rule:
+We can achieve this goal by adding the following rule:
 
 ![add rule](add_rule.png)
 
-So if this rule created, all tickets with status "Waiting on customer" with time of last update more than 7 days will be closed automatically and customer will get email with text that this ticket was closed due to lack of activity more than 7 days(canned response with this text must be created first).
+If this rule is created, all tickets with a "Waiting on customer" status with a period of the last update being more than 7 days ago, the ticket will be closed automatically and the customer will receive an email with the text that this ticket was closed due to lack of activity for more than 7 days(a canned response with this text must be created first).
 
-##### Be attentive with "Recurrently" option as if logic of rule is incorrect it can re-work all tickets, even "Closed".
+##### Be attentive with the "Recurrently" option because if the logic of the rule is incorrect, it can reply to all tickets, even if it is "Closed".

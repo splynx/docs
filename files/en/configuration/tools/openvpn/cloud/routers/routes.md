@@ -1,4 +1,4 @@
-OpenVPN clinet / Routes
+OpenVPN client / Routes
 ==========
 Format:
 ------

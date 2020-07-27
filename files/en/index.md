@@ -101,7 +101,7 @@ Table of contents
     * [Cisco routers](networking/routers_settings/cisco/cisco.md)
     * [Juniper routers](networking/routers_settings/juniper/juniper.md)
     * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
-    * [Live bandwidth](networking/routers_settings/live_bandwidth/live_bandwidth_usage_mikrotik.md)
+    * [MikroTik Live bandwidth](networking/routers_settings/mikrotik_live_bandwidth/mikrotik_live_bandwidth.md)
     * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
     * [Other routers](networking/routers_settings/other/other.md)
 * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
@@ -157,7 +157,7 @@ Table of contents
     * [Sessions](administration/logs/sessions/sessions.md)
     * [API](administration/logs/api/api.md)
     * [Changes of statuses/plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
-    * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
+    * [Pending statuses and services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
 
 ##### [Configuration](configuration/configuration.md)
 * [System](configuration/system/system.md)
@@ -166,7 +166,7 @@ Table of contents
     * [Custom translations](configuration/system/custom_translations/custom_translations.md)
     * [File manager](configuration/system/file_manager/file_manager.md)
     * [Templates](configuration/system/templates/templates.md)
-      * [Variables for templates](configuration/system/templates/templates_variables.md)
+      * [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
     * [Company Information](configuration/systen/company_information/company_information.md)
 
 * [Main configuration](configuration/main_configuration/main_configuration.md)
@@ -237,10 +237,10 @@ Table of contents
 
     * [CDR Import](configuration/voice/cdr_import/cdr_import.md)
     * [CDR History](configuration/voice/cdr_history/cdr_history.md)
-    * [Categories](configuration/voice/categories/categories.md)
 
 * [Integrations](configuration/integrations/integrations.md)
 
+    * [Add-ons](configuration/integrations/addons/addons.md)
     * [Main modules](configuration/integrations/main_modules/main_modules.md)
     * [Install module](configuration/integrations/install_modules/install_modules.md)
     * [Modules list](configuration/integrations/modules_list/modules_list.md)
@@ -248,9 +248,12 @@ Table of contents
 
 * [Tools](configuration/tools/tools.md)
 
+    * [Activate Services](configuration/tools/activate_services/activate_services.md)
+    * [Backup and Restore](configuration/backup_restore/backup_restore.md)
     * [Import](configuration/tools/import/import.md)
     * [Export](configuration/tools/export/export.md)
-    * [Activate services](configuration/tools/activate_services/activate_services.md)
+    * [OpenVPN](configuration/tools/openvpn/openvpn.md)
+        * [Cloud](configuration/tools/openvpn/cloud/routers/routes.md)
     * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
     * [Adminer](configuration/tools/adminer/adminer.md)
 

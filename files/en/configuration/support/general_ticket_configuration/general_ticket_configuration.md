@@ -1,6 +1,6 @@
 General ticket configuration
 =============
-In this menu ticket statuses, ticket types, ticket groups can be added/removed or edited.
+In this section ticket statuses, ticket types, and ticket groups can be added/removed or edited.
 
 **_Config -> Support -> General ticket configuration_**
 
@@ -8,44 +8,49 @@ In this menu ticket statuses, ticket types, ticket groups can be added/removed o
 
 ## TICKET STATUSES
 
-Here is a list of default ticket statuses in Splynx, you can change, add or remove them.
+Here is a list of default ticket statuses in Splynx, you can change or remove them and add a new status.
 
 ![statuses](statuses.png)
 
-In some cases additional statuses needed so as example we will create status "Call scheduled" what means that I admin will call to a customer.
+In some cases additional statuses are needed, as an example, we will create a status "Call scheduled" which means that an admin will call the customer.
 
 ![create status](create_status.png)
 
-Select description and icon if needed. You can use icon codes from https://fontawesome.com/v4.7.0/icons/ page:
+Select a description and a icon if needed. You can use icon codes from the following page:
+https://fontawesome.com/v4.7.0/icons/
 
 ![icon code](code_icon.png)
 
-When new status is created it will be available in statuses list for ticket.
+When a new status is created, it will be available in the statuses list for ticket.
 
 ## TICKET TYPES
 
+![ticket types](ticket_types.png)
+
+Ticket types are used to describe the nature of a ticket. For example, it could be an Incident, question, problem or a feature request, etc. You can also configure ticket types to separate which department it is directed to. For example, support, accounts, sales, etc.
+
 ![ticket types](types.png)
 
-Ticket types can be used for marking tickets depending on departments.
-
-New ticket type can be added by click on "+".
+To add a new ticket type, simply click on the `"+"` icon at the tope right of the table.
 
 ## TICKET GROUPS
 
 ![ticket groups](groups.png)
 
-Ticket groups are using when your system configured to assign tickets to groups(teams).
+Ticket groups are used when your system is configured to assign tickets to specific groups(teams).
 
-To edit group click on "Edit" button near group. Here you can select admins who are in this group and create some description.
+To edit a ticket group click on the `"Edit"` button of the group. Here you can select the admins who are in this group and create a relevant description.
+
+![ticket groups](ticket_group.png)
 
 ![edit group](edit_group.png)
 
-I selected 2 admins to group "IT" it means that if ticket will be assigned to group, somebody from this group will get this ticket.
+We've selected 2 admins to add to the group "IT" which means that if a ticket is assigned to the group, an admin from this group will get this ticket.
 
 ![after](after_edit.png)
 
-Sometimes it happens that admin from group didn't get a ticket, but ticket was assigned to this admin group. In this case you should check admin scope under Administration -> Administrators -> Helpdesk:
+It is possible that sometimes an admin from the group didn't get a ticket, but the ticket was assigned to this admin's group. In this case you should check the admin's scope under `Administration -> Administrators -> Helpdesk`:
 
 ![scope](scope.png)
 
-Make sure that correct group selected here or Scope is Global.
+Make sure that correct group selected here or the Scope is Global.

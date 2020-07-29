@@ -1,7 +1,7 @@
 Main / Splynx
 ==========
 
-In this section you can configure all
+In this section you can configure all administrative details on the system.
 
 There are 5 subcategories in the Main (*Splynx*) section of Administration.
 

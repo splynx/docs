@@ -7,26 +7,26 @@ Splynx has Prepaid and Recurring billing engines. Defining which billing engine 
 
 The billing module is separated into the following sections, please follow the links below for more information on each of the features of the Finance module:
 
-* [ Billing engine](finance/billing_engine/billing_engine.md)
 
-  * [Recurring Billing](finance/billing_engine/recurring_billing/recurring_billing.md)
-  * [Prepaid Billing](finance/billing_engine/prepaid_billing/prepaid_billing.md)
+  * [ Apply credit](finance/apply_credit/apply_credit.md)
 
+  * [ Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
 
-* [ Transactions](finance/transactions/transactions.md)
+  * [ Billing engine](finance/billing_engine/billing_engine.md)
+    * [Prepaid Billing](finance/billing_engine/prepaid_billing/prepaid_billing.md)
+    * [Recurring Billing](finance/billing_engine/recurring_billing/recurring_billing.md)
+    
 
-* [ Invoices](finance/invoices/invoices.md)
+  * [ Change service](finance/change_service/change_service.md)
 
-* [ Proforma invoices](finance/proforma_invoices/proforma_invoices.md)
+  * [ History & Preview](finance/history_and_preview/history_and_preview.md)
 
-* [ Payments](finance/payments/payments.md)
+  * [ Invoices](finance/invoices/invoices.md)
 
-* [ History & Preview](finance/history_and_preview/history_and_preview.md)
+  * [ Payments](finance/payments/payments.md)
 
-* [ Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
+  * [ Proforma invoices](finance/proforma_invoices/proforma_invoices.md)
 
-* [ Refill cards](finance/refill_cards/refill_cards.md)
+  * [ Refill cards](finance/refill_cards/refill_cards.md)
 
-* [ Change service](finance/change_service/change_service.md)
-
-* [ Apply credit](finance/apply_credit/apply_credit.md)
+  * [ Transactions](finance/transactions/transactions.md)

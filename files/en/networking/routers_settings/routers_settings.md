@@ -53,6 +53,6 @@ Splynx supports different router models from different producers. Below are conf
 
 * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
 
-* [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
-
 * [Other](networking/routers_settings/other/other.md)
+
+* [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)

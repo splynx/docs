@@ -5,32 +5,32 @@ In main part of Splynx configuration is possible to select default site (Custome
 
 Please, follow the links below to find tutorial page about every single part of Main configuration:
 
-* [Preferences](configuration/main_configuration/preferences/preferences.md)
-
-* [Localization](configuration/main_configuration/localization/localization.md)
-
-* [Customers](configuration/main_configuration/customers/customers.md)
+* [API](configuration/main_configuration/api/api.md)
 
 * [CAP](configuration/main_configuration/cap/cap.md)
 
-* [Email config](configuration/main_configuration/email_config/email_config.md)
-
-* [SMS config](configuration/main_configuration/sms_config/sms_config.md)
-
 * [Customer Portal](configuration/main_configuration/portal/portal.md)
 
-* [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
+* [Customers](configuration/main_configuration/customers/customers.md)
 
-* [Voice](configuration/main_configuration/voice/voice.md)
+* [Email config](configuration/main_configuration/email_config/email_config.md)
 
-* [Prepaid monthly](configuration/main_configuration/prepaid_monthly/prepaid_monthly.md)
+* [Localization](configuration/main_configuration/localization/localization.md)
 
 * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
 
-* [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
-
 * [Maps](configuration/main_configuration/maps/maps.md)
+
+* [Preferences](configuration/main_configuration/preferences/preferences.md)
+
+* [Prepaid monthly](configuration/main_configuration/prepaid_monthly/prepaid_monthly.md)
+
+* [SMS config](configuration/main_configuration/sms_config/sms_config.md)
+
+* [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
 
 * [Stealth Mode](configuration/main_configuration/stealth_mode/stealth_mode.md)
 
-* [API](configuration/main_configuration/api/api.md)
+* [Voice](configuration/main_configuration/voice/voice.md)
+
+* [Vouchers](configuration/main_configuration/vouchers/vouchers.md)

@@ -11,8 +11,8 @@ This system is divided into:
 
 * [ Products](inventory/products/products.md)
 
-* [ Vendors](inventory/vendors/vendors.md)
-
 * [ Suppliers](inventory/suppliers/suppliers.md)
 
 * [ Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
+
+* [ Vendors](inventory/vendors/vendors.md)

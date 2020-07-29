@@ -1,7 +1,7 @@
 Configuring Tariff Plans
 ========================
 
-This is where all your tariff plans for **services** are created, edited and stored. 
+This is where all your tariff plans for **services** are created, edited and stored.
 
 In Splynx there are three types of tariff plans, namely; *Internet*, *Voice*, and *Custom* plans. These are the main plans and are more commonly used, however, there are also options to create *One-Time* charges and *Bundles*.
 
@@ -15,20 +15,20 @@ Tariff plans are assigned to customers as services and these are the means by wh
 
 Please follow each of the sections below for more details on configuring tariff plans:
 
-* [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)
+* [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
 
 * [Burst configuration](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
 
-* [Fair usage policy settings](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
-
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
-
-* [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)
 
 * [Custom plans](configuring_tariff_plans/custom_plans/custom_plans.md)
 
-* [One-Time plans](configuring_tariff_plans/one_time_plans/one_time_plans.md)
-
-* [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
+* [Fair usage policy settings](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
 
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
+
+* [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)
+
+* [One-Time plans](configuring_tariff_plans/one_time_plans/one_time_plans.md)
+
+* [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)

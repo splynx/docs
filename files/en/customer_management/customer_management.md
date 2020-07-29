@@ -24,12 +24,6 @@ Now that those rules have been established, please take a look at each section o
 
 * [ Adding new customer](customer_management/add_new_customer/add_new_customer.md)
 
-* [ Search](customer_management/search/search.md)
-
-* [ Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
-
-* [ Maps ](customer_management/maps/maps.md)
-
 * [ Customer information](customer_management/customer_information/customer_information.md)
 
 * [ Customer services](customer_management/customer_services/customer_services.md)
@@ -41,3 +35,9 @@ Now that those rules have been established, please take a look at each section o
 * [ Customer documents](customer_management/customer_documents/customer_documents.md)
 
 * [CPE management](customer_management/cpe_management/cpe_management.md)
+
+* [ Maps ](customer_management/maps/maps.md)
+
+* [ Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
+
+* [ Search](customer_management/search/search.md)

@@ -1,31 +1,25 @@
 Hooks
 =============
 
-
-
 ### Cli
 
-Hook is a method of augmenting or altering the behavior of a page or application with custom callbacks. These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating application (Splynx). For example, we show how to use hook and send email.
+Hook is a method of augmenting or altering the behavior of a page or application with custom callbacks. These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating application (Splynx). For example, we illustrate how to use hooks and send emails.
 
-To send notification on some action from Splynx you can use hooks (`Config → Integrations → Hooks`).
+To send notifications on a particular action from Splynx, you can use hooks (`Config → Integrations → Hooks`).
 
-**Attention!!!** beginning from Splynx v.1.3
+![Hooks](hooks.png)
 
-![Menu](main_menu.png)
-![Menu](main_menu1.png)
-
-
-First of all, you have to know how does it work. "Hook" is listening to event you choose and if it done, it runs script you wrote in "path"-field. By the way, hook can send data-array that call this event. Let's create a new hook:
+First of all, you have to know how hooks work. "Hooks" are listening to an event you've selected, and if the event is executed, it runs a script you wrote in the "path"-field. By the way, a hook can send data-array that calls this event. Let's create a new hook:
 
 ![Edit hook](edit.png)
 
-Before creating hook you have to put php-script in home-folder and give permissions 755:
+Before creating a hook you have to put php-script in the home-folder and give permissions 755:
 ```
 chmod 755 script-file.php
 ```
 ![ls](ls.png)
 
-And now, simple script - how to send email notification. Of course, you can use your own script that do something else.
+Therafter, a simple script should be created - to send an email notification. Of course, you can use your own script to do something else.
 
 ![Example](example.png)
 

@@ -1,10 +1,12 @@
 Install Module
 =================
 
-In this section, we can manually install a new module to the Splynx system.
+In this section, we can manually install new modules to the Splynx system.
 
 ![Install Module](install_module1.png)
 
-This feature is intended for efficiency and convenience, however, as it is not part of the main structure of Splynx and therefore we cannot guarantee the functionality expected.
+This feature is intended for developers and is used exclusively by us to create custom modules upon request.
 
-It works best for basic and non-compound implications.
+We strongly recommend that you avoid using this feature as it is intended for our developers.
+
+Simply contact `support@splynx.com` and request the custom module you would like to add to your system. You will then be advised if the module you've requested is possible to create and all the relevant charges thereof.

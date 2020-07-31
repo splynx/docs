@@ -23,6 +23,8 @@
 
  * [IP address management](networking/ip_address_management/ip_address_management.md)
 
+ * [Maps](networking/maps/maps.md)
+
  * [Monitoring](networking/monitoring/monitoring.md)
 
  * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)

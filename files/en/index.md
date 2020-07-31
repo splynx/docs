@@ -101,6 +101,25 @@ Table of contents
     * [Radius based speed limits](networking/bandwidth_management/radius_speed_limits/radius_speed_limits.md)
 
 
+* [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
+
+* [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)
+
+* [IP address management](networking/ip_address_management/ip_address_management.md)
+    * [IPv4](networking/ip_address_management/ipv4/ipv4.md)
+    * [IPv6](networking/ip_address_management/ipv6/ipv6.md)
+
+
+* [Maps](networking/maps/maps.md)
+
+* [Monitoring](networking/monitoring/monitoring.md)
+
+* [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
+
+* [Radius server customization](networking/radius_customization/radius_customization.md)
+
+* [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
+
 * [Routers settings](networking/routers_settings/routers_settings.md)
     * [Cisco routers](networking/routers_settings/cisco/cisco.md)
     * [Juniper routers](networking/routers_settings/juniper/juniper.md)
@@ -110,33 +129,9 @@ Table of contents
     * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
 
 
-* [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
-
-
-* [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
-
-
-* [IP address management](networking/ip_address_management/ip_address_management.md)
-    * [IPv4](networking/ip_address_management/ipv4/ipv4_address_management.md)
-    * [IPv6](networking/ip_address_management/ipv6/ipv6.md)
-
-
-* [Monitoring](networking/monitoring/monitoring.md)
-
+* [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
 * [Weathermaps](networking/weathermaps/weathermaps.md)
-
-
-* [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)
-
-
-* [Radius server customization](networking/radius_customization/radius_customization.md)
-
-
-* [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
-
-
-* [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
 ##### [Support and Messages](support_messages/support_messages.md)
 * [Email messages](support_messages/email_messages/email_messages.md)
@@ -245,11 +240,14 @@ Table of contents
 * [Finance configuration](configuration/finance/finance.md)
 
     * [Automation](configuration/finance/automation/automation.md)
+    * [Cost categories](configuration/finance/cost_categories/cost_categories.md)
     * [Finance settings](configuration/finance/finance_settings/finance_settings.md)
+    * [Fixed costs](configuration/finance/fixed_costs/fixed_costs.md)
     * [Notifications](configuration/finance/notifications/notifications.md)
     * [Pairing](configuration/finance/pairing/pairing.md)
     * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
     * [Reminders](configuration/finance/reminders/reminders.md)
+    * [Taxes](configuration/finance/taxes/taxes.md)
     * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
 
 
@@ -331,8 +329,7 @@ Table of contents
 * [PayU Africa](payment_systems/payu/payu.md)
 * [Pesapal](payment_systems/pesapal/pesapal.md)
 * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
-* [SagePay Direct Debit](payment_systems/sagepay_dd/sagepay_dd.md)
-* [SagePay Pay now](payment_systems/sagepay_pay_now/sagepay_pay_now.md)
+* [Netcash](payment_systems/netcash_do/netcash_do.md)
 * [SEPA debit orders](payment_systems/sepa/sepa.md)
 * [Stripe online payments](payment_systems/stripe/stripe.md)
 * [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)

@@ -25,4 +25,6 @@ Please follow the links below for tutorial pages on each part of Finance configu
 
 * [ Reminders](configuration/finance/reminders/reminders.md)
 
+* [Taxes](configuration/finance/taxes/taxes.md)
+
 * [ Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)

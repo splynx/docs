@@ -5,6 +5,6 @@ SPLYNX is a powerful all-in-one software solution tailormade for ISPs to handle 
 
 Our flexible mobile scheduling app is optimized to provide you with quick and efficient task management in the field. All tasks are located on a central platform, ready for your technicians to complete the job at hand with ease and keep you updated at all times. Their time is also managed by the integrated calendar, allowing them to navigate through scheduled work quickly and efficiently. Gone are the days of printed work orders - all task details, checklists, time spent, and customer information is readily available. The integration into maps also provide the possibility to easily track the location of all tasks.
 
-If you want to use this app please add next [permissions](scheduling_app_permissions/scheduling_app_permissions.md) for Engineer staff.
+If you want to use this app please add next [permissions](apps/scheduler_app/scheduling_app_permissions/scheduling_app_permissions.md) for Engineer staff.
 
 

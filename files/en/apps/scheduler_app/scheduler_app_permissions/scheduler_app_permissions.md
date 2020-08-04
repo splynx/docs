@@ -9,10 +9,10 @@ CRM
 
 * **Leads**
 * **List**
-* **List** - Show same partners leads
+* **List** / Show same partners leads
 * **View**
-* **View** - Edit
-* **View** - View leads password
+* **View** / Edit
+* **View** / View leads password
 * **Maps**
 
 ![CRM permission](crm_permission.jpg)
@@ -24,17 +24,17 @@ Customers
 * **List**
 * **View**
 * **Edit**
-* **Edit** - Geodata
-* **Edit** - Planned change status
-* **Edit** - View customer password
+* **Edit** / Geodata
+* **Edit** / Planned change status
+* **Edit** / View customer password
 * **Services**
-* **Services** - Bundles
-* **Services** - Internet services
-* **Services** - Voice services
-* **Services** - Custom services
+* **Services** / Bundles
+* **Services** / Internet services
+* **Services** / Voice services
+* **Services** / Custom services
 * **CRM**
-* **CRM** - Leads
-* **CRM** - Edit leads info
+* **CRM** / Leads
+* **CRM** / Edit leads info
 * **Maps**
 
 ![Customers permission](customers_permission.jpg)

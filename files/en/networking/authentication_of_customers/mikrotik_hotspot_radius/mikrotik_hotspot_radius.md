@@ -6,6 +6,7 @@ Mikrotik: Hotstpot, Radius
 The first steps in the configuration for Hotspot Radius authentication are the same as for other types of Radius authentication.
 
 The router should be added to Splynx and the Radius Hotspot authentication needs to be enabled. Even if other Radius authentication methods will be chosen in Splynx router settings, it will still allow Radius hotspot authentication.
+
 ![Hotspot](hotspot.png)
 
 * **Radius secret** - the password for authentication/communication between the Radius server and router.

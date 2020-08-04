@@ -334,5 +334,10 @@ Table of contents
 * [Stripe online payments](payment_systems/stripe/stripe.md)
 * [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
 
+##### [Splynx mobile applications](apps/apps.md)
+* [Customer Application](apps/customer_app/customer_app.md)
+* [Customer Application](apps/scheduler_app/scheduler_app.md)
+
 ##### Splynx High Availability setup
 * [Splynx High Availability setup](splynx_high_availability/splynx_high_availability.md)
+

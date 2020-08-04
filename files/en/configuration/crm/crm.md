@@ -9,7 +9,10 @@ All the functionalities of the CRM module within Splynx can be configured to you
 
 The following are the tutorials pages for each of the aspects available for configuration in the Splynx CRM module:
 
-* [Preferences](configuration/crm/preferences/preferences.md)
 * [Finance](configuration/crm/finance/finance.md)
-* [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)
+
 * [Leads stages](configuration/crm/leads_stages/leads_stages.md)
+
+* [Preferences](configuration/crm/preferences/preferences.md)
+
+* [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)

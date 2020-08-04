@@ -1,86 +1,181 @@
-Xero accounting (Add-on is outdated and not supporting)
+Xero accounting
 =============================================
 
-**(Add-on is outdated and not supporting)**
+Splynx is able to sync customers, invoices and payments with Xero accounting software - https://www.xero.com
 
-Splynx is able to sync Customers, Invoices and Payments with Xero accounting software - https://www.xero.com
+To install the Xero addon, navigate to **Config/Integrations/Add-ons**:
 
-The logic of the process is:
+![addons](addons.png)
 
-    Splynx synchronizes the customer database with Xero
-    Splynx issues invoices/charges customer on Billing day
-    All invoices generated in Splynx are pushed to Xero
-    Payments are processed in Splynx (Cash, Paypal, Bank statement processing, Debit orders, Authorize.net, Credit cards)
-    Payments are pushed from Splynx to Xero and invoices in Xero are marked as paid
+In the list of available addons, locate or search for "splynx-xero". Once located, click on the install button in the *Actions* column to begin the installation process:
 
-To setup Splynx and Xero integration we have to go through several steps.
+![install](install.png)
 
-Before all else, we need to install the Splynx Xero module:
+Once the installation has completed, navigate to **Config/Integrations/Modules list** and click on the edit button in the *Actions* column:
 
-     apt-get update
+![modules](modules_list.png)
 
-     apt-get install splynx-xero-addon
+![edit xero module](edit_xero_module.png)
 
-Then, first step is to create account in Xero (if you don't have one already):
-![Entry point 1](1.png)
-When account is created, we need to activate Xero API, which is located at https://app.xero.com/Application/
-![Entry point 1](2.png)
+The general configuration of the Xero integration module can be viewed and edited here. First of all we need to specify the "Splynx domain" in the *Accounting API Settings* section:
 
-Splynx is used as a Private application and we need to take a public key from Splynx and copy it to X509 Public key field to Xero Application settings.
+![settings1](settings1.png)
+![settings2](settings2.png)
 
-It's located on Linux Splynx server, path /var/www/splynx/addons/splynx-xero-addon/config/certs, file publickey.cer:
-![Entry point 1](3.png)
-Copy and paste it into Xero Application window:
-![Entry point 1](4.png)
-Xero creates Consumer Key and Consumer Secret, which we copy and paste into Splynx file path /var/www/splynx/addons/splynx-xero-addon/config/params.php:
-![Entry point 1](5.png)
+The Splynx domain must be the same as the API domain URL but without last slash "/". **HTTPS is required!**
 
-![Entry point 1](6.png)
-After these steps, Xero module should appear in Finance tab of Splynx and it should show us Xero module interface, where we can start syncing plans, customers and taxes:
-![Entry point 1](7.png)
-**Synchronizing of Taxes and Tariff plans**
+### Synchronization settings:
 
-Sales Tax or VAT depends on a country and it is different. In Splynx each plan has a tax field called VAT. Tax value in Splynx should correspond with Sales Tax in Xero. For example, if we have a Sales Tax 0%, we can leave Xero default settings, in case when Tax is different, we should change it or add more taxes in Xero. Taxes in Xero are located in Settings → Tax rates:
-![Entry point 1](8.png)
-We change it to 21%, because the local tax of testing company is 21%:
-![Entry point 1](9.png)
-Then, it's important to verify, if Taxes are loaded properly in Splynx Xero module:
-![Entry point 1](10.png)
-When Tariff plans are defined in Splynx, it creates services in Xero accordingly. Important is to define correct Sales Account number in Splynx plans. Xero has the list of all accounts according to the country where software is used. For example, Sales account for all sales in our example is 400, so it's needed to enter to Splynx plans value 400 in Sales Account field:
-![Entry point 1](11.png)
-Let's match all plans (internet, voice and custom) to Sales account 400:
-![Entry point 1](12.png)
-When taxes are ready, next step is to synchronize all Splynx plans with Xero services. Example of Internet plans sync is below:
-![Entry point 1](13.png)
-Voice plans sync:
-![Entry point 1](14.png)
-As soon as we synchronize all plans, Xero ID should appear in Tariff Plan settings in Splynx:
-![Entry point 1](15.png)
-**Pushing customers from Splynx to Xero and vice versa.**
-![Entry point 1](16.png)
-After clicking Sync button Splynx customer accounts will be created in Xero:
-![Entry point 1](17.png)
-Xero view:
-![Entry point 1](18.png)
-Also, there is a way how to push existing customers from Xero to Splynx, or match entries in Xero with existing accounts in Splynx:
-![Entry point 1](19.png)
-**Invoice and Payment synchronization with Xero**
+**Payment method ID** - select the payment method for imported payments;
 
-Splynx generates invoices for all customers with enabled billing engine accordingly to their Billing day. If billing day is set as 1, invoice to customer will be created on 1st day of the month. If, for example, Billing day is 15, Splynx will generate invoice  on 15th day of the month for the period: 15th - 14th of the next month. Splynx is able to charge customers in advance or charge for services already provided. All invoices are sent from Splynx to Xero during 1 hour of creation. Here are invoices generated in Splynx:
-![Entry point 1](20.png)
-They are also created automatically in Xero:
-![Entry point 1](21.png)
-Invoices in Splynx and Xero contain the same information. The PDF design can also be exactly the same, numbering sale as well:
-![Entry point 1](22.png)
-When payment arrives to Splynx, we also send it to Xero and mark Xero invoices as paid:
-![Entry point 1](23.png)
-Xero view of paid invoices:
-![Entry point 1](24.png)
-To sync Invoices and Payment on the fly we need to enable WebHooks inside Splynx settings, please open menu Config → Hooks:
-![Entry point 1](25.jpg)
+**Bank statements group** - group bank statements by "month" or "day";
 
-![Entry point 1](26.jpg)
+**Partners ignore list** - select the partners of which will be ignored in sync process. Customers, invoices and payments of the partners selected here, **WILL NOT** be synced with Xero.
 
-Video:
+  ***Note! Only one partner should be synced - multiple partner sync is not supported in accounting integrations***;
 
-<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/7WQFOq5ZyfU?wmode=opaque">Video on youtube</iframe>
+**Payments synchronization direction** - define the direction of syncing payments: Xero -> Splynx or Splynx -> Xero. If Xero to Splynx is selected - all payments which were created in Splynx will not be synced to Xero;
+
+**Payments push to Xero** - select the payment methods to sync to Xero, this selection only applies if the selected method to sync payments is set to "Splynx to Xero";
+
+
+**Import payments from date** - specify the date in 'Y-m-d'(2019-01-01) format, which will be used as the start date for importing all payments;
+
+**Import prepayments from date** - specify the date in 'Y-m-d'(2019-01-01) format, which will be used as the start date for importing all prepayments;
+
+**Prepayments account code** - Prepayments items Account code from Xero 'Chart of accounts';
+
+**Rounding account code** - Rounding items Account code from Xero 'Chart of accounts'.
+
+### Cron settings
+
+Here we can select which items to sync with Xero via cron jobs(scheduled sync once a day). Payments will only be synced if the direction of syncing payments is set to "Splynx->Xero".
+
+### Let's start with Xero
+
+![xero icon](xero_icon.png)
+
+In the next step, we have to connect the Xero account with Splynx, to achieve this, click on the "Connect with Xero" button:
+
+![connect with Xero](connect.png)
+
+After linking your Xero account with Splynx you will see a list of Xero organizations. Select the organization of which you will use with Splynx:
+
+![organizations](select_organization.png)
+
+**NOTE**: all customers, invoices and payments will only be synced with the selected organization. If the organization must be changed in the Splynx Xero addon, you will have to reset all synced invoices, customers, and payments, and start from scratch.
+
+When the Xero account linking is completed, the first step is to import mapping settings (chart accounts in Xero, tax rates, and bank accounts) into Splynx. Click on the "Import mapping settings into Splynx" button to achieve this.
+
+![mapping](mapping_settings.png)
+
+When this process completed, navigate to **Config/Finance**, you will see 3 new sections: *Accounting categories, Accounting bank accounts and Accounting taxes* - each of which will have to be configured.
+
+![config-finance](config_finance.png)
+
+Let's start with Accounting categories:
+
+![accounting_categories](accounting_categories.png)
+
+Under "Categories map" ALL categories must be selected with an item from "Accounting categories". Pay attention to the "Additional 2" field under accounting categories, each category should have an account code. To enable displaying of additional fields, click on the breadcrumbs (column selector) button at the bottom of the page and simply enable the fields to display:
+
+![show fields](show_fields.png)
+
+If the synced category has no account code - Xero will not be able to sync invoices for this category.
+
+As soon as the relevant categories are configured, we can proceed with bank accounts:
+
+![bank accounts](bank_accounts.png)
+
+We will follow the same procedure with bank accounts, each bank account should have an account code (additional 3 field here) and the default bank account should be selected.
+
+The last accounting config to sync are tax rates:
+
+![taxes](taxes.png)
+
+Once "Accounting categories", "Accounting bank accounts" and "Accounting tax rates" are configured, the Splynx Xero addon is ready to start syncing.
+
+In our test environment, we have 2 customers and a few invoices for each customer, let's sync them to Xero:
+
+![customers sync](customers_sync.png)
+
+Once the customer sync has completed, we can sync the invoices:
+
+![invoices_sync](invoices_sync.png)
+
+As you can see from the image above, an invoice was skipped due to an incorrect tax rate (not matching with the tax rates that we synced from Xero).
+
+On the Xero interface, we can see our synced customers and invoices:
+
+![xero customer](xero_customer.png)
+
+Let's capture the payment related to the invoice "C0000006" for the customer "Andrew":
+
+![pay on xero](pay_on_xero.png)
+
+![paid](paid_on_xero.png)
+
+Now we can sync payments from Xero to Splynx by clicking on "Import new payments into Splynx". On our test Xero account we had a lot of payments, so all of them were synced, but only payments which are matched to a corresponding customer will be created in Splynx.
+
+![sync payments](import_payments.png)
+
+Payments which we've synced from Xero can be viewed in **Finance/Bank statements/History**:
+
+![bank statements](bank_statements.png)
+
+If some payments are skipped, or you need to view payments - navigate to the above mentioned section to view all payments.
+
+![statements list](statements_list.png)
+
+As you can see from the image above, only 1 payment was processed (created). The statement record with an "Error", did not create a payment because all invoices with an amount of "2" were already paid in Splynx (we marked it as paid), but overdue in Xero. When there's a discrepancy in payments, we do not sync these payments.
+
+Sometimes it's required to manually pair a statement record(create a payment in Splynx) to a customer because the integration logic has been built in directly to avoid any mistakes. We recommend checking bank statements on a regular basis.
+
+Lastly, we can view the paid invoice as well as the payment under the customer's billing tab:
+
+![paid invoice](splynx_paid_invoice.png)
+
+![splynx payment](splynx_payment.png)
+
+### Xero logs
+
+Sync logs can be found under **Administration/Logs/Accounting integrations**:
+
+![logs](logs.png)
+
+If a customer/invoice/payment has an "Accounting ID", this indicates that it was synced, if not, it was not synced.
+
+![logs customers](logs_customer.png)
+
+The same for invoices and payments, if accounting ID is present - it was synced:
+
+"Invoice ID" corresponds with Splynx invoice ID's.
+
+![logs invoices](logs_invoices.png)
+
+"Payment ID" corresponds with payment ID's in Splynx.
+
+![logs payments](logs_payments.png)
+
+### Xero tweaks
+
+![xero tweaks](xero_tweaks.png)
+
+In this menu, there are a few more settings and tools related to the Xero addon:
+
+**Connect with Xero** - if the Splynx-Xero addon was disconnected from the Xero account, you have to reconnect here;
+
+**Refresh OAuth token** - setting to refresh the OAuth token;
+
+**Edit connection** - used for editing the connection with Xero, when the credentials were changed in Xero;
+
+**Customers manual pairing** - this function is used where there are existing customers in Splynx as well as Xero. There is a "Load Xero customers for manual pairing" button. This feature pulls the customer list from Xero into Splynx and allows the admin to manually pair the customers without having to create them in either platform again.
+![load for pair](load_for_manual_pairing.png)
+
+![pair customer](pair_customer.png)
+
+We only have 2 customers and they are paired, if the status is "Not paired" in the "select pair" field, you can find the required customer from Xero to pair with this customer;
+
+**Tools** - this menu is used for resetting the accounting database, all items will be erased. It is mainly used when the organization changes. Before changing the organization, the accounting database must be reset:
+
+![xero tools](xero_tools.png)

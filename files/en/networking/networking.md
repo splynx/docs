@@ -11,28 +11,30 @@
 
  Please click on each of the network management topics for descriptions and guides to each:
 
-* [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
+ * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
 
-* [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
+ * [Authentication of customers](networking/authentication_of_customers/authentication_of_customers.md)
 
-* [Authentication of customers](networking/authentication_of_customers/authentication_of_customers.md)
+ * [Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
 
-* [Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
+ * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 
-* [Routers settings](networking/routers_settings/routers_settings.md)
+ * [Huawei gpon](networking/huawei_gpon/huawei_gpon.md)
 
-* [IP address management](networking/ip_address_management/ip_address_management.md)
+ * [IP address management](networking/ip_address_management/ip_address_management.md)
 
-* [Monitoring](networking/monitoring/monitoring.md)
+ * [Maps](networking/maps/maps.md)
 
-* [Weathermaps](networking/weathermaps/weathermaps.md)
+ * [Monitoring](networking/monitoring/monitoring.md)
 
-* [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
+ * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 
-* [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
+ * [Radius customization](networking/radius_customization/radius_customization.md)
 
-* [Huawei gpon](networking/huawei_gpon/huawei_gpon.md)
+ * [Radius proxy accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 
-* [Radius proxy accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
+ * [Routers settings](networking/routers_settings/routers_settings.md)
 
-* [Radius customization](networking/radius_customization/radius_customization.md)
+ * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
+
+ * [Weathermaps](networking/weathermaps/weathermaps.md)

@@ -5,7 +5,7 @@ IP addresses are used in every corporate or ISP network. They are an essential c
 
 Please follow the links below to the different sections of IPAM in Splynx:
 
-* [IPv4](networking/ip_address_management/ipv4/ipv4_address_management.md)
+* [IPv4](networking/ip_address_management/ipv4/ipv4.md)
 
 * [IPv6](networking/ip_address_management/ipv6/ipv6.md)
 

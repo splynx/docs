@@ -68,5 +68,3 @@ There is also the possibility **to create Proforma Invoices manually** by clicki
 
 ![Create proforma invoice manually](manually.png)
 ![View](check.png)
-
-)

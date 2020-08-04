@@ -191,7 +191,7 @@ Table of contents
 * [System](configuration/system/system.md)
 
     * [Additional fields](configuration/system/additional_fields/additional_fields.md)
-    * [Company Information](configuration/systen/company_information/company_information.md)
+    * [Company Information](configuration/system/company_information/company_information.md)
     * [Custom translations](configuration/system/custom_translations/custom_translations.md)
     * [File manager](configuration/system/file_manager/file_manager.md)
     * [Templates](configuration/system/templates/templates.md)
@@ -284,7 +284,7 @@ Table of contents
 
     * [Activate Services](configuration/tools/activate_services/activate_services.md)
     * [Adminer](configuration/tools/adminer/adminer.md)
-    * [Backup and Restore](configuration/backup_restore/backup_restore.md)
+    * [Backup and Restore](configuration/tools/backup_restore/backup_restore.md)
     * [Export](configuration/tools/export/export.md)
     * [Import](configuration/tools/import/import.md)
     * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)

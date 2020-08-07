@@ -1,94 +1,9 @@
 Self Registration
 =================
 
-**Self Registration** (formerly called **Social registration**) is a Splynx add-on that allows customers to register themselves in the Splynx portal using their e-mail or mobile phone. Also customers can register and log in using Google+, Facebook or Twitter account.
+**Self Registration** (formerly called **Social registration**) is a Splynx add-on that allows customers to register themselves in the Splynx portal using their e-mail address or mobile phone numbers. Customers can also register and log in using their Google+, Facebook or Twitter accounts.
 
-If you want to use this add-on with social platforms - it is necessary to have API applications . If you don't have - you can read how to create them below.
-
-**To install "Self Registration" add-on, enter these commands:**
-
-```bash
-sudo apt update
-sudo apt install splynx-social-registration
-```
-or you can install it from Web UI:
-
-*Config -> Integrations -> Add-ons:*
-
-![1.png](1.png)
-
-![2.png](2.png)
-
-![3.png](3.png)
-
-
-After Installation you have to configure add-on under _Config / Integrations / Modules List_.
-
-![Modules_list.png](Modules_list.png)
-
-![Module_edit.png](Module_edit.png)
-
-You need to enable **Entry points status for portal** in **Main information** section
-
-![Module_edit1.png](Module_edit1.png)
-
-You may enable or disable **Entry Points**. There are two entry points in configuration.
-
-![Edit_entry.png](Edit_entry.png)
-
-The first one provides ability to sign-in to Splynx-portal using social networks.
-
-![Entry_point_one.png](Entry_point_one.png)
-
-The second one provides ability of registration via social networks.
-
-![Entry_point_two.png](Entry_point_two.png)
-
-Edit URL of your server:
-
-![Splynx_url.png](Splynx_url.png)
-
-Enable social networks that you want to use:
-
-![Social_networks_enable-disable.png](Social_networks_enable-disable.png)
-
-You can enable [TowerCoverage](addons_modules/towercoverage/towercoverage.md) integration:
-
-![selfreg_towercoverage.png](selfreg_towercoverage.png)
-
-Change setting and press **Save**.
-
-* * *
-
-**Registration**
-
-![28.png](28.png)
-
-Customer needs to Enter required information, and press **Sign In** button.
-
-![29.png](29.png)
-
-* * *
-
-## **Login customer to Splynx-portal**
-
-* Login with Facebook  
-    If customer is not logged in Facebook, he will be prompted to log in into Facebook and then redirected to Splynx-portal.
-    ![21.png](21.png)
-
-* Login with Google
-    If customer is not logged in Google+, he will be prompted to log in into Google and then redirected to Splynx-portal.
-    ![22.png](22.png)
-
-* Login with Twitter  
-    If customer is not logged in Twitter, he will be prompted to log in into Twitter and then redirected to Splynx-portal.
-    ![23.png](23.png)
-
-Information about social-network is stored in _Customer / Information / Additional information_ in the field **Social ID**
-
-![24.png](24.png)
-
-* * *
+If you want to use this add-on to social platforms - it is necessary to have the API applications . If you don't have this - below is how you create them.
 
 **How to create and enable API-apps in Google+, Facebook, and Twitter**
 
@@ -119,7 +34,7 @@ You need a Google API Console project to integrate Google Sign-In into your Sply
 
 * Click **Create**
 
-**NOTICE:** If the customer receives this error message during registration or sign-in process, then add _wrong_ URI (1), to **Authorized redirect URIs** list.
+**NOTICE:** If the customer receives this error message during registration or sign-in process, then the _wrong_ URI (1) has been added to **Authorized redirect URIs** list.
 
 ![10.png](10.png)
 
@@ -133,7 +48,7 @@ Reference: [Google documentation](https://developers.google.com/identity/sign-in
 
 ### **Facebook API**
 
-To integrate Facebook Login into your Splynx-site, you must have a Facebook API.
+To integrate Facebook Logins into your Splynx-site, you must have a Facebook API.
 **Notice:** Splynx-site must use HTTPS. It is required by Facebook.
 
 * Go to developers portal [https://developers.facebook.com/apps](https://developers.facebook.com/apps)
@@ -163,9 +78,9 @@ Reference: [Facebook documentation](https://developers.facebook.com/docs/faceboo
 
 ### **Twitter API**
 
-For Twitter integration, go to page Application Management - [https://apps.twitter.com/](https://apps.twitter.com/)
+For Twitter integration, go to the Application Management page - [https://apps.twitter.com/](https://apps.twitter.com/)
 
-* Create New App
+* Create a New App
     ![18.png](18.png)
 
 * Enter application **Name**, **Description**, **Website**, **Callback URL** (http://splynx.youdomain.com/register/login/auth?authclient=twitter), and click button **Create your Twitter application**
@@ -175,6 +90,100 @@ For Twitter integration, go to page Application Management - [https://apps.twitt
     ![](selfreg_twitter-copy-auth.png)
 * Go to **Permissions** and enable **Request email addresses from users**  
     ![Selection_034.png](Selection_034.png)
+
+## Installing the Add-on
+
+The add-on can be installed in two methods, via CLI or the Web UI.
+
+To install the "Self Registration" add-on via CLI, the following commands can be used:
+
+```bash
+sudo apt update
+sudo apt install splynx-social-registration
+```
+To install it via the Web UI:
+
+Navigate to *Config -> Integrations -> Add-ons:*
+
+![1.png](1.png)
+
+Locate or search for the "splynx-0self-registration" addon and click on the install icon in the *Actions* column
+
+![2.png](2.png)
+
+Click on the "OK, confirm" button to begin the installation process
+
+![3.png](3.png)
+
+
+After the installation has completed, you have to configure the add-on under _Config / Integrations / Modules List_.
+
+![Modules_list.png](Modules_list1.png)
+
+Locate or search for the "splynx-0self-registration" addon and click on the edit icon in the *Actions* column
+
+![Module_edit.png](Module_edit.png)
+
+You need to enable the **Entry points status for portal** in the **Main information** section
+
+![Module_edit1.png](Module_edit1.png)
+
+You may enable or disable **Entry Points** here as well. There are two entry points in the configuration.
+
+![Edit_entry.png](Edit_entry.png)
+
+The first one provides the ability to sign-in to the Splynx-portal using social networks.
+
+![Entry_point_one.png](Entry_point_one.png)
+
+The second one provides the ability of registration via social networks.
+
+![Entry_point_two.png](Entry_point_two.png)
+
+Edit the URL of your server:
+
+![Splynx_url.png](Splynx_url.png)
+
+Enable social networks that you want to use:
+
+![Social_networks_enable-disable.png](Social_networks_enable-disable.png)
+
+You can enable [TowerCoverage](addons_modules/towercoverage/towercoverage.md) integration:
+
+![selfreg_towercoverage.png](selfreg_towercoverage.png)
+
+Once all settings have been configured click on **Save**.
+
+* * *
+
+**Registration**
+
+![28.png](28.png)
+
+Customer will need to Enter the required information, and click on the **Sign In** button.
+
+![29.png](29.png)
+
+* * *
+
+## **Login customer to Splynx-portal**
+
+* Login with Facebook  
+    If the customer is not logged into Facebook, they will be prompted to log into Facebook and then redirected to Splynx-portal.
+    ![21.png](21.png)
+
+* Login with Google
+    If the customer is not logged in Google+, they will be prompted to log into Google and then redirected to Splynx-portal.
+    ![22.png](22.png)
+
+* Login with Twitter  
+    If the customer is not logged in Twitter, they will be prompted to log into Twitter and then redirected to Splynx-portal.
+    ![23.png](23.png)
+
+Information about social-networks is stored in _Customer / Information / Additional information_ in the **Social ID** field
+
+![24.png](24.png)
+
 
 * * *
 

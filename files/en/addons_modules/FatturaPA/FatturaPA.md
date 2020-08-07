@@ -1,44 +1,51 @@
 FatturaPA
 =========
 
-FatturaPA is a Splynx add-on. It allows to export splynx invoices in xlm format, then you can export them to the system of electronic invoices.
+FatturaPA is a Splynx add-on that allows the exporting of Splynx invoices in xlm format, which can then be exported to the system of electronic invoices.
 
-To install "splynx-fatturapa" add-on please enter the command:
+The add-on can be installed in two methods, via CLI or via the Web UI.
+
+To install the "splynx-fatturapa" add-on via CLI, the following commands can be used:
 
 ```bash
 sudo apt update
 sudo apt install splynx-fatturapa
 ```
-or oyu can install it from Web UI:
+To install it via the Web UI:
 
-*Config -> Integrations -> Add-ons:*
+Navigate to *Config -> Integrations -> Add-ons:*
 
 ![1.png](0.png)
 
+Locate or search for the "splynx-fatturapa" add-on and click on the install icon in the *Actions* column:
+
 ![1.png](1.png)
+
+Click on the "OK, confirm" button to begin the installation process:
 
 ![1.png](4.png)
 
-After installation, you have to configure add-on under *Config / Integrations / Modules list / splynx_fatturapa* <icon class="image-icon">![edit](2.png)</icon>.
-Look at the screenshot:
+After the installation has completed, it is necessary to configure the add-on under *Config / Integrations / Modules list / splynx_fatturapa*  using the edit <icon class="image-icon">![edit](2.png)</icon> icon.
+
+This process is illustrated in the images below:
 
 ![1.png](5.png)
 
 ![1.png](6.png)
 
-choose partner to configure:
+Select a partner to configure:
 
 ![1.png](7.png)
 
-set partner params:
+The configure the partner parameters:
 
 ![1.png](8.1.png)
 
-**ProgressivoInvio** - No particular criteria is established; the mode of valorization of the field, foreseen to contain an identifier alphanumeric of the transmitted file, is delegated to the user's evaluation according to requirement, but in compliance with the established characteristics from the XSD scheme.
+**ProgressivoInvio** - No particular criteria is established; the mode of valorization of the field, foreseen to contain an identifier alphanumeric of the transmitted file, is delegated to the user's evaluation according to requirements, but in compliance with the established characteristics from the XSD scheme.
 
 **FormatoTrasmissione** - assumes a fixed value equal to "SDI11".
 
-**CodiceDestinatario** - 567/5000 The field must contain the 6-character code, present on IndexPA between the information related to the billing service electronic, associated with the office, within the administration recipient, performs the function of receiving (and possibly processing) of the invoice. Alternatively, you can enhance the field with the Office code "Central" or with the default value "999999", when the conditions occur provided for by the provisions of the Ministry's interpretative circular of the Economy and Finance no. 1 of 31 March 2014.
+**CodiceDestinatario** - 567/5000 The field must contain the 6-character code, present on IndexPA between the information related to the billing service electronics, associated with the office, within the administration recipient, performs the function of receiving (and possibly processing) of the invoice. Alternatively, you can enhance the field with the Office code "Central" or with the default value "999999", when the conditions occur provided for by the provisions of the Ministry's interpretative circular of the Economy and Finance no. 1 of 31 March 2014.
 
 
 **RegimeFiscale** - The field must contain one of the codes provided in the associated value list; the code identifies, on the basis of the commercial sector or the income situation, the tax regime in which the seller/lender operates.
@@ -65,13 +72,13 @@ set partner params:
 
 **Divisa** - The field must contain the currency code used according to ISO 4217 alpha-3: 2001 (for example "EUR" in the case of euros).
 
-**EsigibilitaIVA** - The field can be used with "I" for VAT immediate repayment, "D" for VAT with deferred collectibility, "S" for spin-off of payments.
+**EsigibilitaIVA** - The field can be used with "I" for VAT immediate repayment, "D" for VAT with deferred collectability, "S" for spin-off of payments.
 
 **CondizioniPagamento** - In this field "TP01" should be indicated in the case of payment in installments, "TP02" in the case of total payment in a single payment, "TP03" in case of payment of an advance
 
 **ModalitaPagamento** - The field must contain one of the encoded values present in the associated list.
 
-Also you have to go to the *Config/System/Company Information* and set partner settings.
+You also have to configure the partner settings under *Config/System/Company Information*
 
 ![1.png](9.png)
 
@@ -97,7 +104,7 @@ Also you have to go to the *Config/System/Company Information* and set partner s
 
 **Bank name** - required
 
-Now you need to set *Customer additional fields* for customers whose invoices you will export. Look at the screenshot:
+Thereafter, you need to set up the *Customer additional fields* for customers whose invoices you will export, as depicted below:
 
 ![1.png](11.png)
 
@@ -111,10 +118,10 @@ Now you need to set *Customer additional fields* for customers whose invoices yo
 
 **Nazione** - required (format must be like - IT)
 
-**Rif.Ufficio** - required (if Category = Private person then _Rif.Ufficio = CodiceDestinatario_ (_CodiceDestinatario_ see in the _Config / Integrations / Modules list / Splynx Add-on Fatturapa_
-), if Category = Company then set here your Office code)
+**Rif.Ufficio** - required (if Category = Private person then _Rif.Ufficio = CodiceDestinatario_ (_CodiceDestinatario_ can be viewed in _Config / Integrations / Modules list / Splynx Add-on Fatturapa_
+), if Category = Company then set your Office code here)
 
-Now, when you Installed and configured _splynx-fatturapa_ you can go to the _Administration / Reports / Fatturapa Export_ and export invoices in XML format. Look at the screenshot:
+Once you've Installed and configured the _splynx-fatturapa_ add-on, you can navigate to _Administration / Reports / Fatturapa Export_ and export invoices in XML format, as depicted below:
 
 ![1.png](12.png)
 
@@ -122,13 +129,13 @@ Click the following button <icon class="image-icon">![1.png](16.png)</icon> and 
 
 ![1.png](13.png)
 
-If everything went well,  you will see the new record in the Fatturapa table with a possibility to download an archive with invoices in XML format.
+If the process completed successfully, you will see the new record in the Fatturapa table with the possibility to download an archive with invoices in XML format.
 
 ![1.png](14.png)
 
 ![1.png](15.png)
 
-In case of an error you will see a new record in the table with an exclamation mark in the "Actions" column. Click the following button <icon class="image-icon">![1.png](17.png)</icon> to see invoices that were not exported with a description why
+If an error occurred, you will see a new record in the table with an exclamation mark in the "Actions" column. Click the following button <icon class="image-icon">![1.png](17.png)</icon> to see invoices that were not exported with a description for the error
 
 ![1.png](18.png)
 

@@ -1,6 +1,10 @@
 Add-on modules
 =================
 
+![Add-ons](addons.png)
+
+In this section, we can view, install or delete useful add-ons for integration with Splynx and other helpful tools.
+
 * [Baicells LTE](addons_modules/baicells/baicells.md)
 * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)
 * [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)

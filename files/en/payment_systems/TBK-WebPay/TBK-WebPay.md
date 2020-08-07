@@ -1,3 +1,6 @@
+TBK-WebPay
+=================
+
 TBK-WebPay is a Splynx add-on. It allows to refill balance and pay invoices via payment gateway -  http://www.transbank.cl
 
 To install Splynx-Integrapay add-on, use following commands:

@@ -1,3 +1,6 @@
+Pesapal
+==========
+
 Pesapal is a Splynx add-on. It's used to synchronize customers, invoices and payments with Pesapal Payment Gateway - https://www.pesapal.com/.
 
 To install Pesapal add-on use following commands:

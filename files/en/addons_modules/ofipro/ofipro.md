@@ -55,4 +55,5 @@ Una vez importado, no solo se importan las facturas sino que la primera vez tamb
 
 ![Screenshot_15.png](Screenshot_15.png)
 
-<iframe frameborder=0 height=270 width=350 allowfullscreen src="www.youtube.com/embed/kfq61RsuDBw?wmode=opaque">Video on youtube</iframe>
+
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/kfq61RsuDBw">Video on youtube</iframe>

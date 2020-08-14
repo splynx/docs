@@ -1,14 +1,14 @@
 IPv4
 ====
 
-To configure some features of IPv4 click on `Config → Networking → IPv4`:
+To configure  features of IPv4, navigate to `Config → Networking → IPv4`:
 
-![Menu](main_menu.png)
+![Menu](icon.png)
 
 
-There are two options here:
+There are two options available here:
 
-![IPv4 settigns](ipv4.png)
+![IPv4 settigns](config.png)
 
-* **Performance** - If you need to work with big networks, divide it for smaller (for list).
-* **Assign static IP** -  Enable that option to allow assigning IP from pool as static.
+* **Performance** - If you need to work with big networks, this option divides it into smaller networks (for a list).
+* **Assign static IP** -  enable this option to allow assigning IP's from pools as static Ip's.

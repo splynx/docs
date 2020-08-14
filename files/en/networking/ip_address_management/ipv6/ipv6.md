@@ -49,7 +49,7 @@ When all the above is configured and working, we can start with the most tricky 
 Most commonly, end users have their own wireless routers that connects their devices to the Internet.
 Below is the topology of a connection of an advanced home user, that has one router and two access-point bridges with many devices, such as PCs and phones.
 
-![IPv6](IPv64.png)
+![IPv6](ipv64.png)
 
 As we can see in this topology, SOHO router has one public IPv4 address on it’s WAN interface and one IPv4 address from the LAN range 192.168.0.0/24 that is used as a default gateway for all devices at home. It’s obvious that the router acts as a NAT server in this scenario, where all customers from home are leaving the LAN network and connect to Internet from one public IP address and all traffic is sent back to the network via this one single public IP address.
 
@@ -58,7 +58,7 @@ The IPv6 world has no NAT abilities. This means that CPE's or SOHO/Home routers 
 In general, ISP routers assigns a IPv6 address to WAN interface in the same way  it does with IPv4 addresses, but also it should assign a “LAN” network. This is called Delegated IPv6 networks and it’s the network of the /64 mask.
 Below is an example of this theory/logic.
 
-![IPv6](IPv65.png)
+![IPv6](ipv65.png)
 
 In our example, the Home router received a single IPv6 address 2a0f:f041:a:1::1 on the pppoe-client tunnel and additionally it got a prefix, that is automatically configured on the LAN interface 2a0f:f041:1000:1::/64. All IPv6 end devices will receive the IP address with ND (Neighbor discover) technology which is called or referred to as SLAAC. This is a technology of stateless automatic IPv6 address configuration for end users that should be used in local area networks.
 

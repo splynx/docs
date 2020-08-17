@@ -86,6 +86,8 @@ If you charge the invoices using the “Netcash_balance” charge handler, the c
 For example, a customer has an invoice with an amount of 10, in the current month, but the balance of the account is -100 (meaning the customer didn't pay for 10 months) in this case, the customer will be charged with the amount of 100 and not 10. <br>
 ***Please be very attentive when using the “Netcash_balances” charge handler***.
 
+**Please be advised that the ability to charge balances have been removed from the features of the addon, however, it will be re-introduced in version 3.2 of Splynx**
+
 
 Once charged, Splynx will create and send the debit batch file with the payment details to  [*https://netcash.co.za/*](https://netcash.co.za/). When the file is received in Netcash, you should select the correct batch type, either “two days” or “same day” as well as the action date. The last step is to click on authorize and complete the procedure, after which Netcash will process the file on the selected action date.
 

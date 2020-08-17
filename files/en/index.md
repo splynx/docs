@@ -298,7 +298,7 @@ Table of contents
     * [Import](configuration/tools/import/import.md)
     * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
     * [OpenVPN](configuration/tools/openvpn/openvpn.md)
-        * [Cloud](configuration/tools/openvpn/cloud/routers/routes.md)
+      * [ Cloud ](configuration/tools/openvpn/cloud/routes/routes.md)
 
 
 * [Voice processing](configuration/voice/voice.md)

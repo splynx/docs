@@ -1,36 +1,41 @@
 Braintree payments
 ==================
 
-Braintree is a Splynx add-on. It allows to charge customer's credit cards via *Braintree payment gateway* - [https://www.braintreepayments.com](https://www.braintreepayments.com).
+Braintree is a Splynx add-on which allows recharging of customer credit cards via the *Braintree payment gateway* - [https://www.braintreepayments.com](https://www.braintreepayments.com).
 
-Add-on can work with different credit cards, if cards are saved, then addon allows to charge all customers using *Direct debit order*.
+The Add-on can work with different credit cards, if cards are saved on customer profiles, the addon allows charging all customers using *Direct debit orders*.
 
-To install *splynx-braintree-rb* add-on, use following commands:
+The add-on can be installed in two methods, via the CLI or Web UI of your Splynx server.
 
+To install the *splynx-braintree-rb* add-onv via CLI, the following commands can be used:
 
 ```bash
 apt-get update
 apt-get install splynx-braintree-rb
 ```
-or you can install it from Web UI:
+To install it via the Web UI:
 
-Config → Integrations → Add-ons:
+Navigate to `Config → Integrations → Add-ons`:
 
 ![Integrations addons](integrations_addons.png)
 
+Locate or search for the "splynx-braintree-rb" add-on and click on the install icon in the *Actions* column, a window will appear for you to confirm or the installation:
+
 ![Install addon](install_addon.png)
 
-After installation you have to configure addon:
+After installation process has completed, you have to configure the addon:
 
-Config → Integrations → Modules list:
+Navigate to `Config → Integrations → Modules list`:
 
 ![Modules list](modules_list.png)
+
+Locate or search for the "splynx-braintree-rb" add-on and click on the edit icon in the *Actions* column
 
 ![Edit Braintree](edit_braintree.png)
 
 ![Add settings](add_settings.png)
 
-Where:
+**Parameters**:
 
 * Public key: user-specific public identifier;
 
@@ -42,29 +47,29 @@ Where:
 
 Login to your Account in [https://www.braintreegateway.com](https://www.braintreegateway.com) and:
 
-* Select menu Account / My User;
+* Select the menu Account / My User;
 
 
 * API Keys, Tokenization Keys, Encryption Keys;
 
 
-* Click *“View Authorizations”*.
+* Click *“View Authorizations”*. and copy this into the provided fields of the module configuration in Splynx.
 
 ![API key](api_key.png)
 
-After that, customers can pay their invoices and refill balances using Braintree system. They will see a new button *"To pay"* as on the screenshot:
+Thereafter, customers can pay their invoices and refill balances using the Braintree system. Customers will see a new button *"To pay"* as on the screenshot:
 
 ![Pay by Braintree](pay_by_braintree.png)
 
-Customers can save pay-card details for the next payments:
+Customers can save their pay-card details for the next payments:
 
 ![Save card](save_card.png)
 
-To refill balance customers can use the link - *“http://yoursplynxurl/braintree-rb”*, and also they can set to remember pay-card:
+To refill balances, customers can use the link - *“http://yoursplynxurl/braintree-rb”*,  they also can choose to remember/save the pay-card:
 
 ![Save card 2](save_card_2.png)
 
-At last, you can charge all customers using one button! Go to *Finance → Invoices*, set period and click "Charge" as on the screenshot:
+Lastly, you can charge all customers using one button! Navigate to *Finance → Invoices*, set the period and click on the "Charge" button as below:
 
 ![Charge 1](charge_1.png)
 

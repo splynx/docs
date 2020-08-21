@@ -1,7 +1,7 @@
-CDR Import
+Auto CDR Processing
 ==========
 
-You can import CDR from your bank to create transactions on customers. You should make the import from administrator portal. At first, you must have voice plans or [create it](configuring_tariff_plans/voice_plans/voice_plans.md), an then add them to customers. To import CDR click on Config and in the box Voice click on CDR import.
+You can import CDR's from your bank to create transactions on customer accounts, automatically. You should make the import from administrator portal. At first, you must have voice plans or [create it](configuring_tariff_plans/voice_plans/voice_plans.md), an then add them to customers. To import CDR click on Config and in the box Voice click on CDR import.
 
 
 ![](menu.png)

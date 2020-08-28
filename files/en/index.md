@@ -19,6 +19,10 @@ Table of contents
 * [One-Time plans](configuring_tariff_plans/one_time_plans/one_time_plans.md)
 * [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)
 
+
+##### [Consoole Commands](console_commands/console_commands.md)
+
+
 ##### [CRM](crm/crm.md)
 * [Dashboard](crm/dashboard/dashboard.md)
 * [Deals](crm/deals/deals.md)
@@ -65,6 +69,8 @@ Table of contents
 * [Suppliers](inventory/suppliers/suppliers.md)
 * [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
 * [Vendors](inventory/vendors/vendors.md)
+
+##### [Linux Administration](linux_administration/linux_administration.md)
 
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
@@ -321,6 +327,7 @@ Table of contents
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
+* [Splynx Mailjet](splynx_mailjet/splynx_mailjet.md)
 * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)

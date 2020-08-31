@@ -26,4 +26,4 @@ When using the modify button, you will be presented with the following window:
 
 ![modify](modify1.png)
 
-In this window, you can simple enable or disable each field according to you preference with the toggles provided, and you can drag and drop the field to order it in a layout of you choice.
+In this window, you can simply enable or disable each field according to your preference with the toggles provided, and you can drag and drop the field to order it in a layout of your choice.

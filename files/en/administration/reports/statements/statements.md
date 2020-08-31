@@ -11,7 +11,7 @@ Upon clicking on "Show" the data will be retrieved according to your criteria:
 
 ![filter](3.png)
 
-You can further specify the data you wish to display with the use of the gear icon within in filter:
+You can further specify the data you wish to display with the use of the gear icon within the filter:
 
 ![filter](4.png)
 

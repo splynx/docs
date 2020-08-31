@@ -3,7 +3,7 @@ Future charges
 
 ![Future charges](1.png)
 
-This section displays a report of all future charges that will be charge to customer accounts according to their prescribed services. The report displays a date of charge, the transactions that will be charged relevant to the services, an amount of the charges, and a calculated total of the customers account balance after the charges will be applied.
+This section displays a report of all future charges that will be charged to customer accounts according to their prescribed services. The report displays the date of the charge, the transactions that will be charged relevant to the services, an amount of the charges, and a calculated total of the customers account balance after the charges will be applied.
 
 The report is presented in a table format as depicted below:
 

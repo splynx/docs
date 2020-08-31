@@ -3,7 +3,7 @@ Refill cards statistics
 
 ![Refill cards statistics](1.png)
 
-This section displays a report of all refill cards/vouchers that have been generated in the system. The report is presented in a table format displaying the series of the refill cards/vouchers, the partner the vouchers pertain to and the price of the voucher, the total amount vouchers in the series, how many have been used, are active, is expired or disabled. The report also displays a total amount of funds for vouchers that have been used and is active, vouchers which have expired and is disabled.:
+This section displays a report of all refill cards/vouchers that have been generated in the system. The report is presented in a table format displaying the series of the refill cards/vouchers, the partner the vouchers pertain to and the price of the voucher, the total amount vouchers in the series, how many have been used, are active, is expired or disabled. The report also displays a total amount of funds for vouchers that have been used and is active, vouchers which have expired and are disabled:
 
 ![Vouchers](2.png)
 

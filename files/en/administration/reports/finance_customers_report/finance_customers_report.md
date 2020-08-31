@@ -7,7 +7,7 @@ This section displays a report of customer finances. The report displays a total
 
 ![Finance](2.png)
 
-The report is presented in a table format which can be filter by a specific period or customer status. The filter can also be used to display data of a particular partner, location, payment type or custom field.
+The report is presented in a table format which can be filtered by a specific period or customer status. The filter can also be used to display data of a particular partner, location, payment type or custom field.
 
 ![Filter](4.png)
 
@@ -35,4 +35,4 @@ When using the modify button, you will be presented with the following window:
 
 ![modify](modify1.png)
 
-In this window, you can simple enable or disable each field according to you preference with the toggles provided, and you can drag and drop the field to order it in a layout of you choice.
+In this window, you can simply enable or disable each field according to your preference with the toggles provided, and you can drag and drop the field to order it in a layout of your choice.

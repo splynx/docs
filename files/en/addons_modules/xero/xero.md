@@ -49,7 +49,13 @@ The Splynx domain must be the same as the API domain URL but without last slash 
 
 ### Cron settings
 
-Here we can select which items to sync with Xero via cron jobs(scheduled sync once a day). Payments will only be synced if the direction of syncing payments is set to "Splynx->Xero".
+These are the global settings to automatically sync items between the two platforms, in any selected direction of syncing.
+
+**Customers** - enables/disables automatic syncing of customers
+**Invoices** - enables/disables automatic syncing of invoices
+**Payments** - enables/disables automatic syncing of payments.
+
+If any of the above items are not enabled to sync automatically, we can manually sync items via the Web UI under `Config/Integrations/Splynx Xero Accounting`, with the export and import functions.
 
 ### Let's start with Xero
 

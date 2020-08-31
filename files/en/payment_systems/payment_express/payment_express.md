@@ -1,69 +1,79 @@
 Paymentexpress
 ==============
 
-Paymentexpress is a Splynx add-on. It allows to refill balance and pay invoices via payment gateway - https://www.paymentexpress.com/
+Paymentexpress is a Splynx add-on which allows refilling of customer balances and paying invoices via the payment gateway - https://www.paymentexpress.com/
 
-Add-on can work with different credit cards, if cards are saved, then addon allows to charge all customers using Direct debit order.
+The add-on can work with different credit cards, if cards are saved on customer profiles, the addon allows you to charge all customers using Direct debit orders.
 
-To install splynx-icharge add-on, use following commands:
+The add-on can be installed in two methods, via the CLI or Web UI of your Splynx server.
+
+To install the "splynx-paymentexpress" add-on via CLI, the following commands can be used:
 
 ```
 apt-get update
 apt-get install splynx-paymentexpress
 ```
-or you can install it from Web UI:
+To install it via the Web UI:
 
-Config → Integrations → Add-ons:
+Navigate to `Config → Integrations → Add-ons`:
 
 ![(image)](0.png)
 
+Locate or search for the "splynx-paymentexpress" add-on and click on the install icon in the *Actions* column:
+
 ![(image)](1.png)
+
+Click on the "OK, confirm" button to begin the installation process:
 
 ![(image)](2.png)
 
-After installation you have to configure addon:
+After the installation process has completed, you have to configure the addon:
 
-Config → Integrations → Modules list:
+Navigate to `Config → Integrations → Modules list`:
 
 ![(image)](3.png)
 
+Locate or search for the "splynx-paymentexpress" add-on and click on the edit button in the *Actions* column:
+
 ![(image)](4.png)
+
+Configure these parameters with the details of your paymentexpress account.
 
 ![(image)](5.png)
 
-In this menu you can also configure fee parameters:
+You can also configure fee parameters in this section:
 
 ![(image)](6.png)
 
-Customers can save pay-card details for the next payments in "Financ" menu:
+Customers can save their pay-card details for future payments in the *Finance* section of the customer portal:
 
 ![(image)](7.png)
 
 ![(image)](8.png)
 
-or he can add it, from payment window while paying invoices as on the screenshot:
+Alternatively, they can add it from the payment window while paying for invoices as depicted below:
 
 ![(image)](13.png)
 
-After that, customers can pay their invoices by using Payment Express system. They will see a new button "Pay by Payment Express" as on the screenshot:
+Thereafter, customers can pay for their invoices using the Payment Express system. Customers will see a new button "Pay by Payment Express" as depicted below:
 
 ![(image)](9.png)
 
-also you can turn on entry point in config -> integrations -> modules list -> Splynx Add-on Payment Express as on the screenshot:
+You can also enable entry points in *Config -> integrations -> Modules list -> Splynx Add-on Payment Express* as depicted below:
 
 ![(image)](4.png)
 
 ![(image)](10.png)
 
-After that customers with billing type "Prepaid daily" will be able to refill balance from dashboard:
+After this entry point has been enabled, customers using the "Prepaid daily" billing type will be able to refill their balances from the customer portal dashboard:
 
 ![(image)](11.png)
 
-Customers with other billing type can refill balance by using the link - “http://yoursplynxurl/paymentexpress/"
+Customers with using billing types can refill their balances using the following link - “http://yoursplynxurl/paymentexpress/"
 
 ![(image)](12.png)
 
-When customers saved their credit cards, you can charge all customers, using one button! Go to Finance → Invoices, set the period and click "Charge" as at the screenshot:
+If customers has saved their credit card details, you can charge all customers using one button! Navigate to *Finance → Invoices*, set the period and click on "Charge" as depicted below:
 
 ![(image)](14.png)
 

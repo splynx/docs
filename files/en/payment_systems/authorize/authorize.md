@@ -2,23 +2,33 @@
 Authorize.net
 =============
 
-Authorize.net is a Splynx add-on. It uses to synchronize customers, invoices and payments with Authorize.net payment gateway - [https://www.authorize.net](https://www.authorize.net/).
+Authorize.net is a Splynx add-on used to synchronize customers, invoices and payments with the Authorize.net payment gateway - [https://www.authorize.net](https://www.authorize.net/).
 
-To install Authorize.net add-on use next commands:
+The add-on can be installed in two methods, via the CLI or via the Web UI of your Splynx server.
+
+To install the Authorize.net add-on via CLI, the following commands can be used:
 
 ```bash
 apt-get update
 apt-get install splynx-authorizenet
 ```
-or you can install it from Web UI:
-*Config -> Integrations -> Modules list*:
+
+To install it via the Web UI:
+
+Navigate to *Config -> Integrations -> Addons*:
 
 ![1.png](1.png)
 
+Locate or search for the "splynx-authorize.net" addon and click on the install button in the *Actions* column:
+
 ![2.png](2.png)
 
+Click on the "OK, confirm" button to begin the installation process:
+
 ![3.png](3.png)  
-After installation, you have to configure add-on under _Config / Integrations / Modules list / Splynx AuthorizeNet Recurring Billing Add-On /_  <icon class="image-icon">![edit](image2018-8-22_11-18-23.png)</icon>. Look at the screenshot:
+
+
+After the installation process has completed, you have to configure the add-on under _Config / Integrations / Modules list_, locate or search for the "Splynx AuthorizeNet Recurring Billing Add-On", and click on the edit  <icon class="image-icon">![edit](image2018-8-22_11-18-23.png)</icon> icon the *Actions* column, as depicted in the images below:
 
 ![4.png](4.png)
 
@@ -26,27 +36,27 @@ After installation, you have to configure add-on under _Config / Integrations / 
 
 ![image2018-8-22_11-15-13.png](image2018-8-22_11-15-13.png)  
 
-**API domain** - Splynx URL.  
-**API key**, **API secret** - default values. Don't change them without need.
-**Payment account** -  
-**Payment method** - when customer pays by using this add-on, the payment will be with this payment type.  
-**Transaction fee category** - [transaction category](https://doc.splynx.com/display/SPL/Transaction+categories) of _service fee_. It is used only for [proforma invoices](https://doc.splynx.com/display/SPL/Proforma+invoices). For [invoices](https://doc.splynx.com/display/SPL/Invoices) _service fee_ category is always _Service._  
-**Service fee** - service fee (in %).
+**API domain** - your Splynx URL.  
+**API key**, **API secret** - default values. Don't change this if it is not completely necessary.<br>
+**Payment account** -  select AuthorizeNet.<br>
+**Payment method** - when a customer pays using this add-on, the payment will be allocated as this payment type.  
+**Transaction fee category** - transaction category of the _service fee_. It is only used for proforma invoices. For invoices _service fee_ category is always _Service._  
+**Service fee** - service fee (in %).<br>
 **Fee VAT** - _service fee_ VAT percent.  
 **Fee message** - _service fee_ description.   
-**Add fee to request** -  
+**Add fee to request** -  enable/disable adding fees to requests<br>
 **Bank statements group** - Group bank statements (_Finance / Bank Statements / History_) monthly or daily.  
-**Language** - language.  
-**API login id**, **Transaction key** - described on support page - [https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key)
+**Language** - language of the addon.  
+**API login id**, **Transaction key** - described on the following page - [https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key)
 
-After that, customers can pay their invoices and refill balances using Authorize.net system. They will see a new button _To Pay_ as on the screenshot:
+Thereafter, customers can pay their invoices and refill balances using the Authorize.net system. They will see a new button _To Pay_ in the customer portal, as depicted below:
 
 ![Selection_008.png](Selection_008.png)  
 
-To refill balance customers can use the link - http://yoursplynxurl/authorizenet, where they have to enter registration details for the first time:
+To refill customers balances, the following link can be used - http://yoursplynxurl/authorizenet, where they will have to enter registration details for the first time:
 
 ![Selection_006.png](Selection_006.png)  
 
-On portal main page, customers can also see the list of non-paid invoices and "_Pay_" button near each invoice:
+On the dashboard of the portal, customers will also see the list of un-paid invoices and a "_Pay_" button near each invoice:
 
 ![Selection_001.png](Selection_001.png)  

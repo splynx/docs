@@ -19,6 +19,10 @@ Table of contents
 * [One-Time plans](configuring_tariff_plans/one_time_plans/one_time_plans.md)
 * [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)
 
+
+##### [Consoole Commands](console_commands/console_commands.md)
+
+
 ##### [CRM](crm/crm.md)
 * [Dashboard](crm/dashboard/dashboard.md)
 * [Deals](crm/deals/deals.md)
@@ -65,6 +69,8 @@ Table of contents
 * [Suppliers](inventory/suppliers/suppliers.md)
 * [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
 * [Vendors](inventory/vendors/vendors.md)
+
+##### [Linux Administration](linux_administration/linux_administration.md)
 
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
@@ -188,14 +194,42 @@ Table of contents
   * [SMS](administration/logs/sms/sms.md)
 
 ##### [Configuration](configuration/configuration.md)
-* [System](configuration/system/system.md)
 
-    * [Additional fields](configuration/system/additional_fields/additional_fields.md)
-    * [Company Information](configuration/system/company_information/company_information.md)
-    * [Custom translations](configuration/system/custom_translations/custom_translations.md)
-    * [File manager](configuration/system/file_manager/file_manager.md)
-    * [Templates](configuration/system/templates/templates.md)
-      * [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
+* [CRM](configuration/crm/crm.md)
+
+    * [Leads stages](configuration/crm/leads_stages/leads_stages.md)
+    * [Finance](configuration/crm/finance/finance.md)
+    * [Preferences](configuration/crm/preferences/preferences.md)
+    * [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)
+
+
+* [Finance configuration](configuration/finance/finance.md)
+
+        * [Automation](configuration/finance/automation/automation.md)
+        * [Cost categories](configuration/finance/cost_categories/cost_categories.md)
+        * [Finance settings](configuration/finance/finance_settings/finance_settings.md)
+        * [Fixed costs](configuration/finance/fixed_costs/fixed_costs.md)
+        * [Notifications](configuration/finance/notifications/notifications.md)
+        * [Pairing](configuration/finance/pairing/pairing.md)
+        * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
+        * [Reminders](configuration/finance/reminders/reminders.md)
+        * [Taxes](configuration/finance/taxes/taxes.md)
+        * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
+
+
+* [Integrations](configuration/integrations/integrations.md)
+
+            * [Add-ons](configuration/integrations/addons/addons.md)
+            * [Hooks](configuration/integrations/hooks/hooks.md)
+            * [Install module](configuration/integrations/install_modules/install_modules.md)
+            * [Main modules](configuration/integrations/main_modules/main_modules.md)
+            * [Modules list](configuration/integrations/modules_list/modules_list.md)
+
+
+* [Inventory](configuration/inventory/inventory.md)
+
+                * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
+
 
 
 * [Main configuration](configuration/main_configuration/main_configuration.md)
@@ -215,42 +249,6 @@ Table of contents
   * [Voice](configuration/main_configuration/voice/voice.md)
   * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
 
-* [CRM](configuration/crm/crm.md)
-
-    * [Leads stages](configuration/crm/leads_stages/leads_stages.md)
-    * [Finance](configuration/crm/finance/finance.md)
-    * [Preferences](configuration/crm/preferences/preferences.md)
-    * [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)
-
-
-* [Scheduling](configuration/scheduling/scheduling.md)
-
-  * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
-  * [Notifications](configuration/scheduling/notifications/notifications.md)
-  * [Project categories](configuration/scheduling/project_categories/project_categories.md)
-  * [Project types](configuration/scheduling/project_types/project_types.md)
-  * [Task templates](configuration/scheduling/task_templates/task_templates.md)
-  * [Teams](configuration/scheduling/teams/teams.md)
-  * [Workflows](configuration/scheduling/workflows/workflows.md)
-
-* [Inventory](configuration/inventory/inventory.md)
-
-    * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
-
-* [Finance configuration](configuration/finance/finance.md)
-
-    * [Automation](configuration/finance/automation/automation.md)
-    * [Cost categories](configuration/finance/cost_categories/cost_categories.md)
-    * [Finance settings](configuration/finance/finance_settings/finance_settings.md)
-    * [Fixed costs](configuration/finance/fixed_costs/fixed_costs.md)
-    * [Notifications](configuration/finance/notifications/notifications.md)
-    * [Pairing](configuration/finance/pairing/pairing.md)
-    * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
-    * [Reminders](configuration/finance/reminders/reminders.md)
-    * [Taxes](configuration/finance/taxes/taxes.md)
-    * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
-
-
 
 * [Network configuration](configuration/network/network.md)
 
@@ -266,19 +264,36 @@ Table of contents
   * [Radius Extended](configuration/network/radius_extended/radius_extended.md)
   * [Radius](configuration/network/radius/radius.md)
 
-* [Voice processing](configuration/voice/voice.md)
 
-    * [CDR Import](configuration/voice/cdr_import/cdr_import.md)
-    * [CDR History](configuration/voice/cdr_history/cdr_history.md)
+* [Scheduling](configuration/scheduling/scheduling.md)
 
-* [Integrations](configuration/integrations/integrations.md)
+    * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
+    * [Notifications](configuration/scheduling/notifications/notifications.md)
+    * [Project categories](configuration/scheduling/project_categories/project_categories.md)
+    * [Project types](configuration/scheduling/project_types/project_types.md)
+    * [Task templates](configuration/scheduling/task_templates/task_templates.md)
+    * [Teams](configuration/scheduling/teams/teams.md)
+    * [Workflows](configuration/scheduling/workflows/workflows.md)
 
-    * [Add-ons](configuration/integrations/addons/addons.md)
-    * [Hooks](configuration/integrations/hooks/hooks.md)
-    * [Install module](configuration/integrations/install_modules/install_modules.md)
-    * [Main modules](configuration/integrations/main_modules/main_modules.md)
-    * [Modules list](configuration/integrations/modules_list/modules_list.md)
 
+* [Support](configuration/support/support.md)    
+    * [Feedback widget](configuration/support/feedback_widget/feedback_widget.md)
+    * [General ticket configuration](configuration/support/general_ticket_configuration/general_ticket_configuration.md)
+    * [Inboxes](configuration/support/inboxes/inboxes.md)
+    * [Ticket automation](configuration/support/ticket_automation/ticket_automation.md)
+    * [Ticket canned responses](configuration/support/ticket_canned_responses/ticket_canned_responses.md)
+    * [Ticket notifications](configuration/support/ticket_notifications/ticket_notifications.md)
+    * [Tickets](configuration/support/tickets/tickets.md)
+
+
+* [System](configuration/system/system.md)
+
+        * [Additional fields](configuration/system/additional_fields/additional_fields.md)
+        * [Company Information](configuration/system/company_information/company_information.md)
+        * [Custom translations](configuration/system/custom_translations/custom_translations.md)
+        * [File manager](configuration/system/file_manager/file_manager.md)
+        * [Templates](configuration/system/templates/templates.md)
+          * [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
 
 * [Tools](configuration/tools/tools.md)
 
@@ -289,7 +304,15 @@ Table of contents
     * [Import](configuration/tools/import/import.md)
     * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
     * [OpenVPN](configuration/tools/openvpn/openvpn.md)
-        * [Cloud](configuration/tools/openvpn/cloud/routers/routes.md)
+      * [ Cloud ](configuration/tools/openvpn/cloud/routes/routes.md)
+
+
+* [Voice processing](configuration/voice/voice.md)
+
+            * [CDR Import](configuration/voice/cdr_import/cdr_import.md)
+            * [CDR History](configuration/voice/cdr_history/cdr_history.md)
+
+
 
 
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)
@@ -304,6 +327,7 @@ Table of contents
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
+* [Splynx Mailjet](splynx_mailjet/splynx_mailjet.md)
 * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
@@ -340,4 +364,3 @@ Table of contents
 
 ##### Splynx High Availability setup
 * [Splynx High Availability setup](splynx_high_availability/splynx_high_availability.md)
-

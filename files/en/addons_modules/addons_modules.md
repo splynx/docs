@@ -1,6 +1,10 @@
 Add-on modules
 =================
 
+![Add-ons](addons.png)
+
+In this section, we can view, install or delete useful add-ons for integration with Splynx and other helpful tools.
+
 * [Baicells LTE](addons_modules/baicells/baicells.md)
 * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)
 * [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
@@ -12,6 +16,7 @@ Add-on modules
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
+* [Splynx Mailjet](splynx_mailjet/splynx_mailjet.md)
 * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)

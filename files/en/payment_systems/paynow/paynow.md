@@ -1,33 +1,41 @@
 Paynow Zimbabwe
 ===============
 
-Paynow Zimbabwe is a Splynx add-on to make payments via Paynow payment gateway - [https://paynow.co.zw/](https://paynow.co.zw/).
+Paynow Zimbabwe is a Splynx add-on used to make payments via the Paynow payment gateway - [https://paynow.co.zw/](https://paynow.co.zw/).
 
-To install Paynow Zimbabwe add-on, use following commands:
+## installation
+
+The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server.
+
+To install the "Paynow Zimbabwe" add-on via CLI, the following commands can be used:
 
 ```bash
 apt-get update
 apt-get install splynx-paynow
 ```
-**or you can install it from Web UI:**
+To install it via the Web UI:
 
-*Config → Integrations → Add-ons:*
+Navigate to `Config → Integrations → Add-ons`:
 
 ![(image)](00.png)
 
+Locate or search for the "splynx-paynow" add-on and click on the install icon in the *Actions* column:
+
 ![(image)](000.png)
+
+Click on the "OK, confirm" button to begin the installation process:
 
 ![(image)](1.png)
 
 ## Paynow account
 
-To use this Splynx add-on, it is necessary to have **Paynow 3rd party shopping cart**.
+To use the Splynx add-on, it is necessary to have a **Paynow 3rd party shopping cart**.
 
-To create this:
+To create this cart the following steps need to be taken:
 
 1. Register your Paynow account
 2. Log in
-3. In the upper menu, choose **Receive Payments** / **Other ways to get paid**  
+3. In the top menu, select **Receive Payments** / **Other ways to get paid**  
     ![(image)](Menu_060.png)
 
 4. Under **3rd Party Shopping Carts & Business Systems Integration** press the button **Create/Manage Shopping Carts**  
@@ -39,14 +47,16 @@ To create this:
 6. Fill out the form and press **Save**
    ![(image)](Selection_063.png)
 
-7. After you have pressed **Save**, the section **Integration Key** appears.  
-    Copy **Intergration ID** and paste it into Splynx.  
-    Press the button **Email Key To**. Email letter will be sent to **Notification Email** address. Copy **Integration Key** and paste it into Splynx.
+7. After you have pressed **Save**, the section **Integration Key** will appear.  
+    Copy the **Intergration ID** and paste it into Splynx.  
+    Press the button **Email Key To**. The Email letter will be sent to the **Notification Email** address. Copy the **Integration Key** and paste it into Splynx.
     ![(image)](Selection_064.png)
 
 ## Configuration
 
-Add-on configuration - _Config / Integrations / Modules list / splynx_paynow_addon_
+Once the add-on has been installed and you have obtained all the details required from paynow, we can proceed to configurating the add-on.
+
+Navigate to - _Config / Integrations / Modules list / splynx_paynow_addon_ and click on the edit icon in the *Actions* column
 
 ![(image)](Modules_list.png)
 
@@ -54,18 +64,18 @@ Add-on configuration - _Config / Integrations / Modules list / splynx_paynow_add
 
 ## Entry points
 
-By using **Entry points**, you can enable add-on features. You allow:
+By using **Entry points**, you can enable add-on features where you can allow:
 
-1. Customers to pay invoices
+1. Customers to pay for invoices
    ![(image)](paynow_entry-point-1.png)
 
-2. Customers to pay proforma invoices
+2. Customers to pay for proforma invoices
    ![(image)](paynow_entry-point-2.png)
 
-3. Customers to pay invoices and proforma invoices from portal dashboard  
+3. Customers to pay for invoices and proforma invoices from the portal dashboard  
    ![(image)](paynow_entry-point-3.png)
 
-4. Customer with **type of billing** - **prepaid** to put money into account from portal dashboard  
+4. Customer with **type of billing** - **prepaid** to put money into their account from the portal dashboard  
    ![(image)](paynow_entry-point-4.png)
 
 ## Add On settings
@@ -73,35 +83,35 @@ By using **Entry points**, you can enable add-on features. You allow:
 ![(image)](paynow_add-on-settings1.png)
 
 * **API domain** - URL of Splynx server
-* **API key**, **API secret** - default values. Don't change them
-* **Integration ID**, **Integration Key** - values from Paynow portal
+* **API key**, **API secret** - default values. Don't change this unless entirely necessary
+* **Integration ID**, **Integration Key** - values from the Paynow portal
 
 ![(image)](paynow_add-on-settings2.png)
 
-* **Splynx url** - URL of Splynx server
+* **Splynx url** - URL of your Splynx server
 
-* **Payment method ID** - id number of payment method from **Config** / **Finance** / **Payment methods**
+* **Payment method ID** - id number of the payment method from **Config** / **Finance** / **Payment methods**
 
 * **Bank statements group** - Group bank statements (**Config** / **Finance** / **Bank Statements** / **History**) monthly or daily
 
-* **Service Fee** - Paynow commision (in %). Depends on Paynow plan
+* **Service Fee** - Paynow commision (in %). Depends on the Paynow plan
 
-* **Add fee to request** - Add **service fee** to proforma invoice (as an additional item)
+* **Add fee to request** - Add the **service fee** to proforma invoices (as an additional item)
 
-* **Fee message** - Description of fee invoice item
+* **Fee message** - Description of the fee invoice item
 
-* **Fee VAT** - VAT of Paynow comission (in %). Will be included into service fee
+* **Fee VAT** - VAT of Paynow comission (in %). Will be included into the service fee
 
-* **Transaction fee category** - id number of transaction category from **Config** / **Finance** / **Transaction categories**
+* **Transaction fee category** - id number of the transaction category from **Config** / **Finance** / **Transaction categories**
 
-* **Additional info pattern for Paynow** - the value will be shown at the Paynow payment page.
+* **Additional info pattern for Paynow** - the value that will be shown on the Paynow payment page.
 
-After that customer will see a new button and will be able to pay invoice by paynow:
+Thereafter, customers will see a new button and will be able to pay for their invoices via the paynow system:
 
 ![(image)](10.png)
 
 ![(image)](11.png)
 
-customer will be redirect to paynow payment page, there he will need to approve his payment:
+Customer will be redirected to paynow payment page, where they have to approve their payment:
 
   ![(image)](12.png)

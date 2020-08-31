@@ -1,37 +1,46 @@
-Monitoring config
+Monitoring configuration
 =================
 
-To configure Monitoring click on `Config → Networking → Monitoring`.
+To configure Monitoring navigate to `Config → Networking → Monitoring`.
 
-![](menu.png)
+![icon](icon.png)
 
-There you can:
-1. Add new Producers by adding their names.
+### Vendors
+![vedors](vendors.png)
 
-  ![Create producer](1.png)
+Here, you will be presented with a list of vendors. You can add/edit or remove vendors using the provided buttons, to add a new vendor click on the "+" button at the right top corner of the table.
 
-  You can also edit or delete Producer here by clicking on icons ![](edit_icon.png) and ![](delete_icon.png):
+### Device types
+![devices](device_types.png)
 
-  ![Producers](producers.png)
+Here, you will be presented with a list of device types. To add a new device type click on the "+" button.
 
+### Groups
+![groups](groups.png)
 
-2. Add new Device types:
+Here, you will be presented with a list of groups for monitoring notifications. To edit existing groups, click on the edit button and to add a new group, click on the "+" button:
 
-  ![Device types](device_types.png)
+Let's add a new group called "Tech", with the following parameters:
 
-  You can also edit or delete them here by clicking on icons ![](edit_icon.png) and ![](delete_icon.png):
+![add_group](add_group.png)
 
-  ![Device types](device_types2.png)
+**Parameter descriptions**:
 
+* **Delay time for notification** - If the device does not change it's status during this delay (in minutes), a notification will be sent;
 
-3. Create Groups for custom notifications:
+* **Administrators for notifications** - select the administrators for this group, who will receive notifications;
 
-  ![Groups](groups.png)
+* **Notifications to Splynx** - enables/disables notifications on the Splynx admin web page when an admin is online;
 
-  ![Edit groups](edit_group.png)
+* **Notification to email** - send notifications via email;
 
-  * **Group** - Set name of group.
-  * **Administrators for notifications** - Choose administrators who will recieve notificaitons.
-  * **Notifications to Splynx** - Enable Splynx notifications.
-  * **Notifications to email** - Enable email notifications.
-  * **Notifications via sms** - Enable sms notifications.
+* **Notification email template** - select the template of email notification;
+
+* **Notification via SMS** - send SMS notifications;
+
+* **Notification SMS template** - select the template of SMS notification;
+
+### Monitoring backups
+![backups](monitoring_backups.png)
+
+Select an SSH timeout for monitoring backups.

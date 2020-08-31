@@ -1,15 +1,14 @@
 IP Network categories
 =====================
 
-You can edit or add new Network categories by clicking on `Config → Networking → IP Network Categories`.
+You can edit or add new Network categories by navigating to `Config → Networking → IP Network Categories`.
 
-![Main_menu](main_menu.png)
+![Main_menu](icon.png)
 
+IP network categories can be added/removed or edited here.
 
-Click on ![](edit_icon.png)  to edit existing one or click on Add to create a Network category:
+![list](list.png)
 
-![Create a network category](create.png)
+To add a new category click on the "Add" button, at the top right of the page:
 
-The window will pop-up where you can write the name of category.
-
-![Create a network category](create1.png)
+![Create a network category](add.png)

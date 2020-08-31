@@ -1,9 +1,9 @@
 Payment systems
 ===============
 
-Splynx software can be connected to different Payment Gateways. Subscribers then are able to pay their invoices using Credit cards or their Payment system accounts.
+Splynx software can be connected and integrated to multiple different Payment Gateways. Subscribers  are then able to pay for their invoices using Credit cards or their Payment system accounts.
 
-Below is a list of supported and integrated Payment Gateways. By clicking on Payment Gateway link, you will be redirected to documentation page describing how to install and use Gateway with Splynx.
+Below is a list of supported and integrated Payment Gateways. By clicking on a Payment Gateway link, you will be redirected to documentation page describing how to install and use the Gateway with Splynx.
 
 * [Authorize.net](payment_systems/authorize/authorize.md)
 

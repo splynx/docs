@@ -1,41 +1,48 @@
 Safaricom M-PESA
 ================
 
-**Safaricom M-PESA** is a Splynx add-on which allows to pay via [Safaricom](https://www.safaricom.co.ke).
+**Safaricom M-PESA** is a Splynx add-on which allows customers to pay via [Safaricom](https://www.safaricom.co.ke).
 
-## Installation
+The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server.
 
-To install "Safaricom M-PESA" add-on please enter these commands:
+To install the "Safaricom M-PESA" add-on via Cli, the following commands can be used:
 
 ```bash
 sudo apt-get update
 sudo apt-get install splynx-safaricom-mpesa
 ```
-or you can install it from Web UI:
+To install it via the Web UI:
 
-*Config -> Integrations -> Add-ons*:
+Navigate to `Config -> Integrations -> Add-ons`:
 
 ![(image)](1.png)
 
+Locate or search for the "splynx-safaricom-mpesa" add-on and click on the install button in the *Actions* column, you be presented with a window to confirm or cancel the installation, click on confirm to begin the installation process:
+
 ![(image)](2.png)
 
+After the installation precess has completed, you should configure the add-on.
 
-## Configuration
-
-After installation you should configure it. Go to **Config / Integrations / Modules list / Splynx Safaricom M-PESA**
+Navigate to `Config / Integrations / Modules list / Splynx Safaricom M-PESA`
 
 ![(image)](Selection_150.png)
+
+Locate or search for the "splynx-safaricom-mpesa" add-on and click on the edit button
+
 ![(image)](Selection_151.png)
 
 ![(image)](image2018-9-19_14-58-28.png)
+
+**Parameters**
+
 **API domain** - URL of your Splynx server.
-**API key**, **API secret** - default values. You can change them only if you know what you are doing.  
-**Consumer Key**, **Consumer Secret**, **Short code** - you should [register your M-PESA account](https://www.safaricom.co.ke/personal/m-pesa/getting-started/register-for-m-pesa). After registration you can get these values from MPESA.
+**API key**, **API secret** - default values. Do not change this unless entirely necessary.
+**Consumer Key**, **Consumer Secret**, **Short code** - you should [register your M-PESA account](https://www.safaricom.co.ke/personal/m-pesa/getting-started/register-for-m-pesa). After registering, you can obtain these values from MPESA.
 
 ![(image)](image2018-9-19_15-18-14.png)
 
-**Splynx url** - URL of your Splynx server.
-**Payment method ID** - add-on payments will be made with this [payment method](configuration/finance/payment_methods/payment_methods.md)
+**Splynx url** - URL of your Splynx server.<br>
+**Payment method ID** - add-on payments will be made with this [payment method](configuration/finance/payment_methods/payment_methods.md)<br>
 **Search customer by** - what will be used to search for the customer in Splynx (during payment). **Login**, **M-PESA Phone** or **BillRefnumber**.
 
 ![](image2018-9-19_15-21-14.png)
@@ -51,15 +58,14 @@ After installation you should configure it. Go to **Config / Integrations / Modu
 **USD to KES exchange rate** - internal Splynx exchange rate.  
 **Bank statements group** - Group bank statements (**Config** / **Finance** / **Bank Statements** / **History**) monthly or daily.
 
-## URL registration
 
-After configuration you should register your URL at the **Config / Integrations / Safaricom M-PESA**
+After the successful configuration of the addon, you should register your URL under **Config / Integrations / Safaricom M-PESA**
 ![(image)](Selection_160.png)
 ![(image)](Selection_161.png)
 
 ## Payment process
 
-In this example customer pays via SIM menu.
+In this example, the customer pays via SIM menu.
 
 ![(image)](1-Select-MPESA-Paybill.png) ![(image)](image2018-9-3_15-30-23.png) ![(image)](image2018-9-3_15-31-1.png) ![(image)](image2018-9-3_15-34-2.png)
 
@@ -67,15 +73,15 @@ In this example customer pays via SIM menu.
 
 ![(image)](image2018-9-3_15-37-33.png) ![(image)](image2018-9-3_15-40-0.png)
 
-**Account no.** – this value will be sent to Splynx and depending on what is chosen in **Config / Integrations / Modules list / Splynx Safaricom M-PESA / Search customer by**, customer will be found.
+**Account no.** – this value will be sent to Splynx and depending on what is chosen in **Config / Integrations / Modules list / Splynx Safaricom M-PESA / Search customer by**, the customer will be found.
 
 ![(image)](image2018-9-3_15-40-23.png) ![(image)](image2018-9-3_15-41-50.png)
 
-After payment, customer receives SMS:
+After making a payment, the customer receives an SMS:
 
 ![(image)](image2018-9-3_15-44-25.png)
 
-His payments appears in Splynx:
+Their payments will appear in Splynx:
 ![(image)](image2018-9-3_15-45-43.png)
 
 ## Safaricom M-PESA account
@@ -84,9 +90,9 @@ His payments appears in Splynx:
 
 Here are the requirements to use Paybill - [https://www.safaricom.co.ke/personal/m-pesa/lipa-na-m-pesa/paybill](https://www.safaricom.co.ke/personal/m-pesa/lipa-na-m-pesa/paybill)
 
-Kindly note that currently Splynx supports only **paybill** option as the Payment option and does not support a **Till Number**.
+Kindly note that Splynx currently, only supports the **paybill** option as the Payment option and does not support a **Till Number**.
 
-After the Paybill application and approval, you need a developers account at the official M-Pesa Daraja Portal in order to integrate the Customer to business API. (C2B)
+After the Paybill application and approval, you need a developers account from the official M-Pesa Daraja Portal in order to integrate the Customer to the business API. (C2B)
 
 ### Daraja Portal
 
@@ -96,7 +102,7 @@ Sign up to the Portal.
 
 You need to register an account either as an individual or as a company.
 
-To register follow this link - [https://developer.safaricom.co.ke/login-register](https://developer.safaricom.co.ke/login-register)
+To register, follow this link - [https://developer.safaricom.co.ke/login-register](https://developer.safaricom.co.ke/login-register)
 
 An account activation link is sent to the email, used to create the account; this link expires in 24 hours.
 
@@ -106,9 +112,9 @@ Sandbox is a testing environment. You can use it to test your app before going t
 
 Daraja API documentation - [https://developer.safaricom.co.ke/docs](https://developer.safaricom.co.ke/docs)
 
-Splynx Safaricom M-PESA add-on uses a C2B API. Documentation gives a brief description how to test this C2B API.
+The Splynx Safaricom M-PESA add-on uses a C2B API. Documentation gives a brief description how to test this C2B API.
 
-Create an app by adding app name and select product (C2B).
+Create an app by adding the app name and select product (C2B).
 
 ![(image)](image2018-9-17_16-18-13.png)
 
@@ -127,7 +133,7 @@ The sandbox app is just used to test API calls, made for each different scenario
 
 This step involves moving your application into production.
 
-* After the going on process, a new app is created with new credentials.
+* After the on-going process, a new app is created with new credentials.
 * We use these live credentials to configure the M-PESA add-on in Splynx.
 * Kindly note that after going live and configuring the Module, Splynx registers your callback URLs automatically.
 
@@ -163,7 +169,7 @@ Video tutorial:
 * External Validation is disabled by default; this means that M-Pesa is incharge of validating all payments requests to your Paybill.
 * M-Pesa servers will accept any payments request, as long as the MSISDN (phone number) is allowed to use M-Pesa services.
 * This means that no transaction details are sent to the Splynx server.
-* To enable external Validation, you are required to send an Email letter to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusiness@Safaricom.co.ke) The email should be sent from the email address used to create an account at the Daraja Portal.
+* To enable external Validation, you are required to send an Email letter to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusiness@Safaricom.co.ke) The email should be sent from the email address used to create the account at the Daraja Portal.
 
 #### Business manager / administrator
 
@@ -185,7 +191,7 @@ Video tutorial:
   * Administrators User Name
   * Email
 
-This is Email is also sent to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusiness@Safaricom.co.ke).
+This Email is also sent to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusiness@Safaricom.co.ke).
 
 #### Re-registering callbacks
 
@@ -196,7 +202,7 @@ This is Email is also sent to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusi
   * The new URLs you need to register.
   * Shortcode – Paybill Number.
 
-This is Email is also sent to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusiness@Safaricom.co.ke).
+This Email is also sent to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusiness@Safaricom.co.ke).
 
 #### Nota Bene
 

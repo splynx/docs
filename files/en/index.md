@@ -20,9 +20,6 @@ Table of contents
 * [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)
 
 
-##### [Consoole Commands](console_commands/console_commands.md)
-
-
 ##### [CRM](crm/crm.md)
 * [Dashboard](crm/dashboard/dashboard.md)
 * [Deals](crm/deals/deals.md)
@@ -70,7 +67,6 @@ Table of contents
 * [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
 * [Vendors](inventory/vendors/vendors.md)
 
-##### [Linux Administration](linux_administration/linux_administration.md)
 
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
@@ -327,12 +323,10 @@ Table of contents
       * [ Cloud ](configuration/tools/openvpn/cloud/routes/routes.md)
 
 
-* [Voice processing](configuration/voice/voice.md)
+* [Voice](configuration/voice/voice.md)
 
-            * [CDR Import](configuration/voice/cdr_import/cdr_import.md)
-            * [CDR History](configuration/voice/cdr_history/cdr_history.md)
-
-
+            * [Auto CDR Processing](configuration/voice/auto_cdr_processing/auto_cdr_processing.md)
+            * [Import Data Source](configuration/voice/import_data_source/import_data_source.md)
 
 
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)
@@ -380,7 +374,11 @@ Table of contents
 
 ##### [Splynx mobile applications](apps/apps.md)
 * [Customer Application](apps/customer_app/customer_app.md)
-* [Customer Application](apps/scheduler_app/scheduler_app.md)
+* [Scheduling Application](apps/scheduler_app/scheduler_app.md)
 
 ##### Splynx High Availability setup
 * [Splynx High Availability setup](splynx_high_availability/splynx_high_availability.md)
+
+##### [Console Commands](console_commands/console_commands.md)
+
+##### [Linux Administration](linux_administration/linux_administration.md)

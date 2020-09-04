@@ -1,125 +1,80 @@
-Processing
+CDR processing
 ==========
 
-Voice CDR processing is managed here. We can import a CDR to charge customers and print the register of calls within their invoice.
+You can import a CDR (in .csv format) file, which can be used to charge customers via their invoice which will show the register of calls, messages and/or data.
 
-Within the processing module there are 4 menus, CDR Import, CDR Export, CDR History and CDR errors.
+Within the processing module there are 4 menus, CDR Import, CDR Export, CDR History and CDR errors:
 
+![Dashboard](dashboard_voice.png)
 
-### CDR Import
+### Import CDR
 
-To import a CDR, you simply just upload the file, select a delimiter, enable/disable first row contains column names, select the type and the handler(By default the Handler used is Base). Provider is not needed
+To import a CDR file you have to upload the file (in .csv format), select the delimiter, enable/disable “first row contains column names”, select the voice type (call, messages, data or mixed) and select the handler ( default handler = "Base"). Provider selection can be skipped.
 
-![Upload](./upload.png)
+*PLEASE NOTE! Every client has a different type/structure of CDR files, so if the Splynx base handler can't process your file because of another format, you can send a request to the Splynx Support team to develop a custom handler for your type of CDR files. Please send 2-3 CDR files as examples and a full description (which field should be imported, which field should be ignored etc.). The custom handler development takes a few business days, however it remains a free service.*
 
-Once the upload is complete, select the correct fields in every column, and then click on preview to check if all is working as expected.
+![Description](import_description.png)
 
-![Import](./import.png)
+Let's import a CDR file with a few calls.
 
-If the system does not show any alert then click on import and check that all is accepted.
+Here we have a CSV file with 3 calls in a simple format:
 
-![Alert](./alert.png)
+![File format](file_format.png)
 
-Then you will be able to view customer's calls, sms and data used on their statistics tab.
+![Import](import_file.png)
 
-![Statistics](./statistics.png)
+If you have any messages or data records in the CDR, other appropriate columns should be selected.
 
+*Regarding incoming calls - if your CDR file contains incoming calls, the appropriate voice service must be created for a customer: with "direction" = incoming, and "phone number" = Destination number from the file (or a pattern like 123{!} - means all phone numbers beginning with 123)*
 
-### CDR Export
+Once the data has been loaded, selected the correct value in every column(step 3), and then click on preview (step 4) to preview the output results:
 
-It is also possible to export the same data that we insert/import to Splynx, to a new CDR, filtering by period and voice type.
+![preview](preview.png)
 
-![Export](./export.png)
+The preview shows 1 error because the service was not found. The next 2 calls were imported as the customer has 2 voice services with the appropriate phone numbers:
 
+![Customer](customer_services.png)
 
-### CDR History
+We will import the 2 calls in the mean time and reprocess the error at a later stage after fixing the issue:
 
-In CDR history, we can check the register of imported CDR's, download them or delete them in case something was wrong or missing. If you delete a CDR the information imported will be also deleted.
+![Upload](import_result.png)
 
-![History](./history.png)
+![Calls](calls_stat1.png)
 
-### CDR errors
+Now let's view and fix the CDR errors:
 
-After importing CDR's, this section will give you an overview of any errors that may have occurred while processing, with actions available to operate with the errors.
+ ![CDR errors](error.png)
 
-![Errors](cdr_errors.png)
+In order to allow Splynx to link the CDR to the correct phone number and in turn with the correct customer, we have to create a voice service for the customer with the "Source" number as the "Phone number" in the customer's service:
 
-For example:
+![create service](add_new_service.png)
 
-An import was performed and completed with errors
+Now we can reprocess all the errors:
 
-![Error](cdr_error1.png)
+![Reprocess](error1.png)
 
-You can review these error in `Voice / Processing / CDR errors`
+![Reprocessed](reprocessed.png)
 
-![Error](cdr_error2.png)
+Now that we have reprocessed the error, we can view the voice statistics in the customer’s page:
 
-In the Actions column, you can choose to view the errors, download the CDR, reprocess or delete the file. Below is an example of viewing an error:
+![new call](new_call.png)
 
-![Error](cdr_error3.png)
-
-You can interact with each entry within the error with the tools provided in the actions column. The tools in the actions column allow you to view detailed info about the error, update the CDR record, pair the CDR record to a service, reprocess or delete the record.
-
-There could be a number of reasons for errors while importing CDR's and the tools provided in the CDR errors section are there to help fix these errors you may have encountered.
-
-In this example we've encountered an error stating that the records have no service or customer associated.
-
-An example of reprocessing an error:
-
-1. Error reads that no service was found in each entry.
-
-![Error](cdr_error3.png)
-
-Select all entries to perform a bulk action:
-
-![Error](cdr_reprocess1.png)
-
-Click on the actions button on the top of the list and select pair:
-
-![Error](cdr_reprocess2.png)
-
-Enter the service ID to find, to use to pair to the CDR records and click on find:
-
-![Error](cdr_reprocess3.png)
-![Error](cdr_reprocess4.png)
-
-Then click on the pair icon and confirm the action:
-
-![Error](cdr_reprocess5.png)
-![Error](cdr_reprocess6.png)
-
-After confirming, each entry will be paired to the service and there will be no more errors.
-
-![Error](cdr_reprocess7.png)
+If you are using voice categories in Splynx, and you have a category name for every call in the CDR file, this name should be changed to the category ID (under Voice/Categories), the name of a category can be detected and imported using a custom handler(our support team can develop it for you).
 
 
-2. Error states no customer could be found with this number:
+### Export CDR
 
-![Error](cdr_error3.png)
+We can also export the same data that we have imported to Splynx, to a new CDR, filtering by period and voice type.
 
-Navigate to the respective customer and ensure the number is present in his service and if it is not, please fill it in:
+![Export](export.png)
 
-![Error](cdr_fix1.png)
+After generating the file, you can download an archive with the CSV file that will contain all the call records.
 
-![Error](cdr_fix2.png)
 
-Navigate to `Voice / Processing / CDR errors` , view the errors:
+### History CDR
 
-![Error](cdr_fix3.png)
+In the CDR History module, we can view the log of all CDR records imported, download them or delete them in case there is an error or some details were missed. If an historic record is deleted, all the information (calls, data, messages) it contains, will be also deleted.
 
-Select all entries to perform a bulk action:
+![History](history.png)
 
-![Error](cdr_fix4.png)
-
-Click on the actions button on top of the table and select the reprocess option and confirm the action:
-
-![Error](cdr_fix5.png)
-![Error](cdr_fix6.png)
-
-The system will then reprocess the CDR record and match the number to the customer. You will see that the total number of errors will decrease depending on how many entries were fixed in the reprocessing of the CDR.
-
-Before the adding the number to the customer and reprocessing, there were 22 errors. After adding the number to the customer and reprocessing there are only 14 entires left to be fixed:
-
-![Error](cdr_fix7.png)
-
-The same process can be used again to fix the outstanding entries.
+![History](history_view.png)

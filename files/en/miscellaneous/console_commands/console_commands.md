@@ -1,6 +1,8 @@
 Console Commands
 ============
 
+Here are a few useful commands when working with your Splynx server via CLI.
+
 ##  Splynx ISP Framework services
 
 **Radius**
@@ -36,7 +38,7 @@ service splynx_transport restart
 
 **Node**
 
-Splynx ISP Framework nodejs service used for notifications, monitoring, ping, real time file output
+Splynx ISP Framework nodejs service is used for notifications, monitoring, ping, and real time file outputs.
 
 ```
 splynx_node
@@ -85,7 +87,7 @@ Video how to use this script:
 
 **Reset DB tools**
 
-Please not: all DB will be restored, and all data will be ereased.
+Please note: all DB's will be restored, and all data will be erased.
 
 Usage:
 
@@ -95,10 +97,10 @@ Usage:
 
 Output:
 
-Please note after this action all information of your database will be deleted, you can not restore it without backup
-Password for administrator 'admin' required for this action
+Please note after this action all information of your database will be deleted, you can not restore it without a backup.
+Password for administrator 'admin' is required for this action.
 
-Be sure you have backup, before this action
+Be sure you have a backup before you execute this action.
 
 Usage:
 ```
@@ -124,9 +126,9 @@ mikrotik-export - Export rules from mikrotik, params: --router_id=ID, --command=
 
 Video demo how to export customers from mikrotik with this script:
 
-```
-<youtube> FzOZnqhPt8E</youtube>
-```
+
+ <iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/watch?v=FzOZnqhPt8E&t=114s">Video on youtube</iframe>
+
 
 ## Splynx Mysql backup script
 Usage:
@@ -146,14 +148,14 @@ Usage: ./backup <action> <parameter>=<value>
 
 ## Splynx incremental remote backup system
 
-We provide support incremental backup system on our systems. Please send ticket with subject: backup configuration and information: Company name, Splynx Public IP address (with access to ssh) (may can be on different from 22 port) and we configure automation backup every 4 hours for your full system. (we store around 1 month of every 4 hours backups of full your Splynx information)
+We provide incremental backups system on our systems. Please send us a ticket with the subject containing: backup configuration and information: Company name, Splynx Public IP address (with access to ssh) (may can be on different from 22 port) and we will configure automation of backups for every 4 hours for your full system. (we store around 1 month of every 4 hours backups of full your Splynx information)
 
 
 ## Configuration of own incremental backup system
-all action make from root users, so don't forget to make sudo su - on ubuntu, or just su on debian
+all action are to be executed as root users, so don't forget to enter sudo su - on ubuntu, or just su on debian
 
 **Generation of SSH keys**
-To generate a public and private key run this command on your backup server:
+To generate a public and private key run the following command on your backup server:
 
 ```
 ssh-keygen -t rsa
@@ -229,7 +231,7 @@ Finally, you’ll need to decide on what you would like to backup.
 backup		 root@splynx.server:/var/www/ 		my_splynx_backup/
 ```
 
-Save file
+Save the file
 
 **Test Rsnapshot configuration**
 
@@ -237,7 +239,7 @@ Save file
 rsnapshot configtest
 ```
 
-If your file without error, you will receive a “Syntax OK” message. If you did not receive this message, you need to go back and fix the mistakes that it tells you about.
+If your file saves without an error, you will receive a “Syntax OK” message. If you did not receive this message, you need to go back and fix the mistakes that it tells you about.
 
 First backup:
 

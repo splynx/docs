@@ -380,6 +380,8 @@ Table of contents
 ##### Splynx High Availability setup
 * [Splynx High Availability setup](splynx_high_availability/splynx_high_availability.md)
 
-##### [Console Commands](console_commands/console_commands.md)
 
-##### [Linux Administration](linux_administration/linux_administration.md)
+
+##### [Miscellaneous](miscellaneous/miscellaneous.md)
+* [Console Commands](console_commands/console_commands.md)
+* [Linux Administration](linux_administration/linux_administration.md)

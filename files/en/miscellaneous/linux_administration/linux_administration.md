@@ -1,10 +1,12 @@
 Linux Administration
 ========
 
+Here are a few useful commands to use during Linux administration of your Splynx server.
+
 ## Linux administration/Linux disk usage
 
 
-Who use disk on linux?
+To check disk usage on Linux, the following command can be used to install the "NCDU" package:
 
 ```
 apt-get install ncdu
@@ -12,6 +14,8 @@ ncdu
 ```
 
 ## Linux administration/Create swap file
+
+To create a swap-file, the following commands can be used:
 
 ```
 if [[ ! -f /swapfile ]]; then
@@ -28,30 +32,35 @@ if [[ ! -f /swapfile ]]; then
 fi
 ```
 
-This was create file with size 2 GB, if you need more or less change bs=64M count=32 - 32 to 16 for 1 GB, 64 for 4 GB.
+This will create a 2 GB file, if you need more or less, please change bs=64M count=32 - 32 to 16 for 1 GB, 64 for 4 GB.
 
 ## Linux administration/Setup system time from NTP
 
+To configure the time on your server, please use the following commands and process:
 
-**Stop NTP:**
+It is necessary to first **Stop NTP** services:
 
 ```
 service ntp stop
 ```
 
-**Sync time:**
+Thereafter, run the following command to **Sync time:**
 
 ```
 ntpdate -s time.nist.gov
 ```
 
-**Start NTP:**
+*time.nist.gov is a load balancer that will find the best server for any particular location.*
+
+The final step is to simply **Start NTP** services again:
 
 ```
 service ntp start
 ```
 
 ## Linux administration/Setup linux timezone
+
+You can configure the time-zone of your server with the following command:
 
 ```
 dpkg-reconfigure tzdata

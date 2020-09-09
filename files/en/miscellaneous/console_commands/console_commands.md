@@ -38,7 +38,7 @@ service splynx_transport restart
 
 **Node**
 
-Splynx ISP Framework nodejs service is used for notifications, monitoring, ping, and real time file outputs.
+The Splynx ISP Framework nodejs service is used for notifications, monitoring, ping, and real-time file outputs.
 
 ```
 splynx_node
@@ -73,7 +73,7 @@ Usage:
 Change password for administrator <admin>
 
 ./passwd customer --login=<login> --password=<password>
-Change password for customer <login>, you can enter :ALL: for all customers , password not required
+Change the password for customer <login>, you can enter :ALL: for all customers, password not required
 ```
 
 Video how to use this script:
@@ -97,8 +97,8 @@ Usage:
 
 Output:
 
-Please note after this action all information of your database will be deleted, you can not restore it without a backup.
-Password for administrator 'admin' is required for this action.
+Please note after this action all information on your database will be deleted, you can not restore it without a backup.
+The password for administrator 'admin' is required for this action.
 
 Be sure you have a backup before you execute this action.
 
@@ -148,11 +148,11 @@ Usage: ./backup <action> <parameter>=<value>
 
 ## Splynx incremental remote backup system
 
-We provide incremental backups system on our systems. Please send us a ticket with the subject containing: backup configuration and information: Company name, Splynx Public IP address (with access to ssh) (may can be on different from 22 port) and we will configure automation of backups for every 4 hours for your full system. (we store around 1 month of every 4 hours backups of full your Splynx information)
+We provide incremental backups system on our systems. Please send us a ticket with the subject containing: backup configuration and information: Company name, Splynx Public IP address (with access to ssh) (it may be on a different from port 22) and we will configure automation of backups for every 4 hours for your full system. (we store around 1 month of every 4 hours backups of your full Splynx server)
 
 
 ## Configuration of own incremental backup system
-all action are to be executed as root users, so don't forget to enter sudo su - on ubuntu, or just su on debian
+all actions are to be executed as root users, so don't forget to enter sudo su - on ubuntu, or just su on debian
 
 **Generation of SSH keys**
 To generate a public and private key run the following command on your backup server:

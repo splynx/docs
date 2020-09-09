@@ -36,6 +36,21 @@ You will be redirected to an add plan page where you will fill in the following 
 
 Once voice plans has been created, it is possible to edit or to delete them with the icons found in the actions column of the voice plans table.  <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon>
 
+It is also possible to view a statistical graph of traffic for this plan with the use of the graph <icon class="image-icon">![graph](graph.png)</icon> icon, in the *Actions* column, this button will present you with the following window:
+
+![graph](graph2.png)
+
+The graph can be filtered to display statistical data by Hour, day, week, month or year:
+
+![graph](graph3.png)
+
+Alternatively, this data can be presented in a table format and can be filtered by a specific period of time:
+
+![Table](table.png)
+
+The Change plan <icon class="image-icon">![icon](change_plan.png)</icon> icon can be used to change the plan in a mass action for all customers subscribed to this plan. Please follow the link below for more information:<br>
+[Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md)
+
 Like all tables in Splynx, you can modify the appearance of content, content to display and export the table into Excel, CSV or PDF formats, you can also choose to copy or print the table. This is done with the use of these <icon class="image-icon">![symbolsbottomleft.png](symbolsbottomleft.png)</icon>  icons found at the bottom left of each table. The <icon class="image-icon">![esportaformati.png](esportaformati.png)</icon> icon is used to export and the   <icon class="image-icon">![modifytheview.png](modifytheview.png)</icon> icon is used to format the appearance and content of the table.
 
 After creating a voice plan, you can now assign it as a service to a customer. To assign a service to a customer, navigate to _Customers → List_, select the specific customer, navigate to their _Services_ tab and simply click on the *Add service* button located at the top left of the page.

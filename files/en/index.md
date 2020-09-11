@@ -194,7 +194,7 @@ Table of contents
 
   * [Blocked customers report](administration/reports/blocked_customers_report/blocked_customers_report.md)
   * [Charge history](administration/reports/charge_history/charge_history.md)
-  * [Custom prices & discounts](administration/reports/custom_prices_&_discounts/custom_prices_&_discounts.md)
+  * [Custom prices & discounts](administration/reports/custom_prices_and_discounts/custom_prices_and_discounts.md)
   * [Customer internet usage](administration/reports/customer_internet_usage/customer_internet_usage.md)
   * [Daily receipt](administration/reports/daily_receipt/daily_receipt.md)
   * [Finance customers report](administration/reports/finance_customers_report/finance_customers_report.md)
@@ -342,7 +342,7 @@ Table of contents
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
-* [Splynx Mailjet](splynx_mailjet/splynx_mailjet.md)
+* [Splynx Mailjet](addons_modules/splynx_mailjet/splynx_mailjet.md)
 * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)

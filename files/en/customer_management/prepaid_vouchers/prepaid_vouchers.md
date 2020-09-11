@@ -51,7 +51,7 @@ Once a voucher is in use, it is possible to view the statistics, cost of usage a
 
 ![Edit card](edit_card.png)
 
-The configuration of Hotspots which make use of prepaid vouchers can be found in the [Radius hotspot configuration page](networking/authentication_users/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md).
+The configuration of Hotspots which make use of prepaid vouchers can be found in the [Radius hotspot configuration page](networking/authentication_of_customers/mikrotik_hotspot_radius/mikrotik_hotspot_radius.md).
 
 
 The following video is a quick tutorial on the configuration of prepaid vouchers in Splynx:

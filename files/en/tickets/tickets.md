@@ -136,7 +136,7 @@ Once the ticket is created it is possible to view or close it by using the follo
 ![Tickets mobile app](app_ticket.jpg)
 
 There are a number of elements that can be automated within the ticketing module to improve efficiency and speed up engagement. These automation rules can be set up under `Config / Support / Ticket automation`
-More information about **tickets configuration** can be found here - [Support](configuration/main_configuration/support/support.md).
+More information about **tickets configuration** can be found here - [Support](configuration/support/support.md).
 
 When tickets are opened by either the customer or administrator, notifications are sent to each other via email. Depending on the template you are using for tickets, tickets may include the body of the ticket and this can ultimately create convenience, as customers/administrators can respond directly from the email to respond to the ticket. If the template does not include the body, customers/administrators are able to log into their respective portals by means of a link included in the ticket notifications.
 

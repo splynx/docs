@@ -11,4 +11,4 @@ Please follow the links below for more information on each section:
 
 * [Auto CDR processing](configuration/voice/auto_cdr_processing/auto_cdr_processing.md)
 
-* [Import data source](configuration/voice/0/import_data_source.md)
+* [Import data source](configuration/voice/import_data_source/import_data_source.md)

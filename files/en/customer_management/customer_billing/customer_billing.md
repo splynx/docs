@@ -128,7 +128,7 @@ In **Proforma Invoice settings** it is possible to enable Auto proforma invoice 
 
 In **Reminders settings** you can enable automatic sending of reminders to customers to remind them to pay for their services. It is also possible to enable a payment option for the last reminder and set an amount on the reminder payment with a comment on it.
 
-![cReminder settings](creminders_settings.png)
+![cReminder settings](creminder_settings.png)
 
 
 

@@ -1,8 +1,8 @@
 Splynx High Availability setup
 ==============================
 
-Splynx High Availability setup allows you to use Splynx in Virtual Machine on a group of physical servers. We will call this group of servers - ‘cluster’ and every server we will call - ‘node’  
-We use [Proxmox Virtual Environment](https://pve.proxmox.com/wiki/Main_Page) with [Ceph](https://ceph.com/) in this tutorial.
+Splynx High Availability setup allows you to use Splynx on a Virtual Machine in a group of physical servers. We will call this group of servers - ‘cluster’ and every server we will call - ‘node’  
+We used [Proxmox Virtual Environment](https://pve.proxmox.com/wiki/Main_Page) with [Ceph](https://ceph.com/) as examples in this tutorial.
 
 Requirements:
 
@@ -11,14 +11,16 @@ Requirements:
 * all servers must be in the same network
 * two network interface controllers for each server (one for Ceph)
 
-![Network_Diagram.png](Network_Diagram.png)
 Figure 1\. Network diagram
+
+![Network_Diagram.png](Network_Diagram.png)
+
 
 ## Install Proxmox
 
-Install Proxmox to all nodes  
-Download installation ISO from [https://www.proxmox.com/en/downloads/category/iso-images-pve](https://www.proxmox.com/en/downloads/category/iso-images-pve)  
-Burn it to CD or create bootable Flash USB drive
+1. Install Proxmox to all nodes  
+2. Download the installation ISO from [https://www.proxmox.com/en/downloads/category/iso-images-pve](https://www.proxmox.com/en/downloads/category/iso-images-pve)  
+3. Burn it to CD or create bootable Flash USB drive
 
 ![px_install_start.png](px_install_start.png)
 ***
@@ -28,19 +30,20 @@ Burn it to CD or create bootable Flash USB drive
 ***
 ![px_install_network.png](px_install_network.png)
 ***
-Hostname and IP Address must be different on different nodes
+The Hostname and IP Address must be different for all the different nodes
 ***
 ![px_install_finish.png](px_install_finish.png)
 ***
 ![px_install_reboot.png](px_install_reboot.png)
-After installation – remove Proxmox CD (Flash drive)
+
+After the installation process has completed – remove the Proxmox CD or Flash drive
 
 Reference: [https://pve.proxmox.com/wiki/Installation](https://pve.proxmox.com/wiki/Installation)
 
 ## Upgrade nodes
 
-Disable the enterprise repository that is configured by default, add the no-subscription repository.  
-Edit _/etc/apt/sources.list.d/pve-enterprise.list_:
+Disable the enterprise repository that is configured by default, and add the no-subscription repository.  
+Edit the file: _/etc/apt/sources.list.d/pve-enterprise.list_:
 
 Proxmox 5.x:  
 
@@ -56,27 +59,27 @@ Proxmox 6.x:
 deb http://download.proxmox.com/debian buster pve-no-subscription
 ```
 
-Run in shell (on each node):
+Run the following command in CLI (on each node):
 
 ```bash
 nodeX> apt-get update && apt-get -y dist-upgrade
 ```
 
-Reboot nodes after upgrade.
+Reboot the nodes after the upgrade has completed.
 
 ## Cluster
 
 We must merge all nodes into one cluster. Make sure that each node is installed with the final hostname and IP configuration. Changing the hostname and IP **is not possible** after cluster creation.  
-Run in shell on the first node:
+Run the following command in CLI on the first node:
 
 ```bash
 node1> pvecm create splynx-cluster
 ```
 
-where ‘splynx-cluster’ – is the name of cluster. Can be any.
+where ‘splynx-cluster’ – is the name of cluster. This can be set to any desired name.
 
-Add the rest nodes to the cluster.
-On every node run:
+Add the rest of the nodes to the cluster.
+On each node, run the following:
 
 ```bash
 node2> pvecm add IP-ADDRESS-OF-NODE1
@@ -90,7 +93,7 @@ Reference: [https://pve.proxmox.com/wiki/Cluster_Manager](https://pve.proxmox.co
 
 ## Ceph
 
-Ceph is a network-based file system. Ceph replicates data and makes it fault-tolerant. Your data will be in safe even if one (or more) servers will fail. This articles describes how to setup and run Ceph storage services directly on Proxmox VE nodes.
+Ceph is a network-based file system. Ceph replicates data and makes it fault-tolerant. Your data will be safe even if one (or more) servers will fail. This articles describes how to setup and run Ceph storage services directly on Proxmox VE nodes.
 
 Install Ceph to each node:
 
@@ -106,7 +109,7 @@ node2> pveceph install
 node3> pveceph install
 ```
 
-We use separated NICs and sepatated IP network for Ceph traffic.
+We use separated NICs and a separated IP network for Ceph traffic.
 Part of _/etc/network/interfaces_:
 
 ```bash
@@ -117,7 +120,7 @@ iface ens19 inet static
   netmask 255.255.255.0
 ```
 
-After editing _/etc/network/interfaces_ - reboot node to apply changes.
+After editing _/etc/network/interfaces_ - reboot the node to apply changes.
 
 Create an initial Ceph configuration on just one node:
 
@@ -154,10 +157,10 @@ Multiple Managers can be installed, but at any time only one Manager is active.
 ```bash
 nodeX> pveceph mgr create
 ```
-Note. It is recommended to install the Ceph Manager on the monitor nodes. For high availability install more then one manager.
+Note. It is recommended to install the Ceph Manager on the monitor nodes. For high availability, install more then one manager.
 
 
-Erase partition table of Ceph drive(s) and create OSD(s) on it. Run on each node:
+Erase the partition table of Ceph drive(s) and create OSD(s) on it. Run the following commands on each node:
 
 ```bash
 nodeX> ceph-volume lvm zap /dev/sdb --destroy
@@ -166,39 +169,39 @@ nodeX> pveceph createosd /dev/sdb
 *We use /dev/sda for system and /dev/sdb for Ceph in this tutorial
 
 #### Create Ceph pool
-Run on one node:
+Run the following command on one node:
 
 ```bash
 node3> pveceph createpool default-pool -add_storages true
 ```
 
-This creates pool with name ‘default-pool’ and adds storages for VMs and containers to it. Pool name can be any.
+This creates a pool with name ‘default-pool’ and adds storages for VMs and containers to it. The pool name can be any desired name.
 
 Reference: [https://pve.proxmox.com/wiki/Ceph_Server](https://pve.proxmox.com/wiki/Ceph_Server)
 
 ## Create VM
 
-Open your web-browser and type [https://IP-OF-ANY-NODE:8006](https://IP-OF-ANY-NODE:8006). If you get certificate error – just ignore it (add to exceptions).
+Open your web-browser and type [https://IP-OF-ANY-NODE:8006](https://IP-OF-ANY-NODE:8006). If you get a certificate error – just ignore it (add to exceptions).
 
 ![px_web-login.png](px_web-login.png)
 
 User name: root  
 Password: the password you have entered during installation.
 
-We will install Ubuntu-16.04-server.  
-Note. On the page https://splynx.com/install you can always find which Linux version is required to install last Splynx version.  
+We will install an Ubuntu-16.04-server.  
+Note. On the page https://splynx.com/install you can always find which Linux version is required to install the latest Splynx version.  
 
-[Download](https://www.ubuntu.com/download/server) ISO image to PC. Then upload it from PC to local storage of one of Proxmox nodes:
+[Download](https://www.ubuntu.com/download/server) the ISO image to your PC. Then upload it from your PC to the local storage of one of the Proxmox nodes:
 
 ![px_upload-iso.png](px_upload-iso.png)
 
-Create VM on the node:
+Create a VM on the node:
 
 ![px_create-vm.png](px_create-vm.png)
 
 ![px_vm-iso.png](px_vm-iso.png)
 
-Use Ceph storage for VM:
+Use Ceph storage for the VM:
 
 ![px_vm-storage.png](px_vm-storage.png)
 
@@ -208,7 +211,7 @@ Use Ceph storage for VM:
 
 ## Install Linux
 
-Start VM, open Console and install Linux as usual:
+Start the VM, open Console and install Linux as usual:
 
 ![px_vm-start.png](px_vm-start.png)
 
@@ -216,22 +219,23 @@ Start VM, open Console and install Linux as usual:
 
 ![px_install-linux-openssh.png](px_install-linux-openssh.png)
 
-Remove ISO from VM:
+Remove the ISO from the VM:
 
 ![px_vm-eject-iso.png](px_vm-eject-iso.png)
 
-Restart VM:
+Restart the VM:
 
 ![px_vm-reset.png](px_vm-reset.png)
 
-Let’s find IP address of VM. Open Console, log-in and type `ip a`
+Let’s find the IP address of the VM. Open Console, log-in and type `ip a` and hit enter
 
 ![px_vm_IP.png](px_vm_IP.png)
-We can see that VM has IP address 192.168.77.246
+
+We can see that the VM has the IP address: 192.168.77.246
 
 ## Install Splynx
 
-Connect to VM using SSH (we found IP address in the previous step)
+Connect to the VM using SSH (use the IP address we found in the previous step)
 
 Upgrade Linux:
 
@@ -249,17 +253,17 @@ Reference: https://splynx.com/install/
 
 ## HA configuration
 
-Create HA group:
+Create an HA group:
 
 ![px_ha-create-group.png](px_ha-create-group.png)
 
-Add VM to this group:
+Add the VM to this group:
 
 ![px_ha-add-vm.png](px_ha-add-vm.png)
 
-Now we have running VM on node1\. If node1 fails – ProxmoxVE automatically restarts VM on the other node in about 2 minutes.
+Now we have the VM running on node1\. If node1 fails – ProxmoxVE automatically restarts the VM on the other node in about 2 minutes.
 
-You can also initiate VM migration to other node:
+You can also initiate VM migration to other nodes:
 
 ```bash
 bash> ha-manager migrate vm:100 DESTINATION-NODE

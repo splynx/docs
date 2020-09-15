@@ -1,7 +1,8 @@
-Engineers permissions for app
+Engineers permissions for scheduling mobile application
 =========
 
-A minimal set of permissions for an engineering role (intended for technical workers engaged in direct installation and dismantling of equipment)
+A minimal set of permissions within each section required for an engineering role (intended for technical workers engaged in direct installation and dismantling of equipment, using the app)
+
 Part CRM:
 
 CRM
@@ -67,5 +68,3 @@ Config
 * **Scheduling** all permissions
 
 ![Config permission](config_permission.png)
-
-

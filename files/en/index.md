@@ -12,15 +12,13 @@ Table of contents
 * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
 * [Burst speed concept](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
+* [Change plan](configuring_tariff_plans/tariff_change/tariff_change.md)
 * [Custom plans](configuring_tariff_plans/custom_plans/custom_plans.md)
 * [Fair Usage Policy](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
 * [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)
 * [One-Time plans](configuring_tariff_plans/one_time_plans/one_time_plans.md)
 * [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)
-
-
-##### [Consoole Commands](console_commands/console_commands.md)
 
 
 ##### [CRM](crm/crm.md)
@@ -70,7 +68,6 @@ Table of contents
 * [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
 * [Vendors](inventory/vendors/vendors.md)
 
-##### [Linux Administration](linux_administration/linux_administration.md)
 
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
@@ -193,6 +190,26 @@ Table of contents
   * [Sessions](administration/logs/sessions/sessions.md)
   * [SMS](administration/logs/sms/sms.md)
 
+* [Reports](administration/reports/reports.md)  
+
+  * [Blocked customers report](administration/reports/blocked_customers_report/blocked_customers_report.md)
+  * [Charge history](administration/reports/charge_history/charge_history.md)
+  * [Custom prices & discounts](administration/reports/custom_prices_and_discounts/custom_prices_and_discounts.md)
+  * [Customer internet usage](administration/reports/customer_internet_usage/customer_internet_usage.md)
+  * [Daily receipt](administration/reports/daily_receipt/daily_receipt.md)
+  * [Finance customers report](administration/reports/finance_customers_report/finance_customers_report.md)
+  * [Financial report per plan](administration/reports/financial_report_per_plan/financial_report_per_plan.md)
+  * [Future charges](administration/reports/future_charges/future_charges.md)
+  * [Internet plan usage](administration/reports/internet_plan_usage/internet_plan_usage.md)
+  * [New services report](administration/reports/new_services_report/new_services_report.md)
+  * [Refill cards statistics](administration/reports/refill_cards_statistics/refill_cards_statistics.md)
+  * [Statements](administration/reports/statements/statements.md)
+  * [Tax grouped](administration/reports/tax_grouped/tax_grouped.md)
+  * [Tax report](administration/reports/tax_report/tax_report.md)
+  * [Tickets report](administration/reports/tickets_report/tickets_report.md)
+  * [Transaction categories](administration/reports/transaction_categories/transaction_categories.md)
+
+
 ##### [Configuration](configuration/configuration.md)
 
 * [CRM](configuration/crm/crm.md)
@@ -307,12 +324,10 @@ Table of contents
       * [ Cloud ](configuration/tools/openvpn/cloud/routes/routes.md)
 
 
-* [Voice processing](configuration/voice/voice.md)
+* [Voice](configuration/voice/voice.md)
 
-            * [CDR Import](configuration/voice/cdr_import/cdr_import.md)
-            * [CDR History](configuration/voice/cdr_history/cdr_history.md)
-
-
+            * [Auto CDR Processing](configuration/voice/auto_cdr_processing/auto_cdr_processing.md)
+            * [Import Data Source](configuration/voice/import_data_source/import_data_source.md)
 
 
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)
@@ -327,7 +342,7 @@ Table of contents
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
-* [Splynx Mailjet](splynx_mailjet/splynx_mailjet.md)
+* [Splynx Mailjet](addons_modules/splynx_mailjet/splynx_mailjet.md)
 * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
@@ -353,14 +368,21 @@ Table of contents
 * [PayU Africa](payment_systems/payu/payu.md)
 * [Pesapal](payment_systems/pesapal/pesapal.md)
 * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
-* [Netcash](payment_systems/netcash_do/netcash_do.md)
+* [Netcash](payment_systems/netcash/netcash.md)
+* [Netcash Debit orders](payment_systems/netcash_do/netcash_do.md)
 * [SEPA debit orders](payment_systems/sepa/sepa.md)
 * [Stripe online payments](payment_systems/stripe/stripe.md)
 * [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
 
 ##### [Splynx mobile applications](apps/apps.md)
 * [Customer Application](apps/customer_app/customer_app.md)
-* [Customer Application](apps/scheduler_app/scheduler_app.md)
+* [Scheduling Application](apps/scheduler_app/scheduler_app.md)
 
 ##### Splynx High Availability setup
 * [Splynx High Availability setup](splynx_high_availability/splynx_high_availability.md)
+
+
+
+##### [Miscellaneous](miscellaneous/miscellaneous.md)
+* [Console Commands](console_commands/console_commands.md)
+* [Linux Administration](linux_administration/linux_administration.md)

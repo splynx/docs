@@ -13,7 +13,7 @@ By clicking on "Generate certificates" OpenVPN server certificates will be gener
 
 The following parameters need have to be specified here:
 
-**Country** - This field contains the 2-character ISO format country code. For example, GB is the valid country code for Great Britain, and US is the valid code for the United States. To locate a specific country code, you may take a look at the following page [Country Codes](www.nationsonline.org/oneworld/country_code_list.html);
+**Country** - This field contains the 2-character ISO format country code. For example, GB is the valid country code for Great Britain, and US is the valid code for the United States. To locate a specific country code, you may take a look at the following page [Country Codes](https://www.nationsonline.org/oneworld/country_code_list.htm);
 
 **State/province** - U.S. and Canadian customers must enter a State or Province name. Do not abbreviate. In the United States, if your organization is incorporated, for instance, in the state of Delaware, but is operating within California, use California;
 

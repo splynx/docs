@@ -7,7 +7,7 @@ In this section, we can display a detailed report of customers pertaining to a p
 
 ![Tax report](2.png)
 
-The table can be filtered by a specific period, partner and/or location with the use of the filtered located at the top left of the table. Once you have specified you desired criteria, you can then click on show to display the results according to your criteria, you can then use the "generate" button to download a html copy of the report or choose to print it:
+The table can be filtered by a specific period, partner and/or location with the use of the filtered located at the top left of the table. Once you have specified you desired criteria, you can then click on show to display the results according to your criteria, you can then use the "generate" button to download an HTML copy of the report or choose to print it:
 
 ![generate](3.png)
 

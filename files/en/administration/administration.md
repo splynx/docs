@@ -45,6 +45,6 @@ The administration module can be divided into _4 main sections_ with the subcate
   * [Tax report](administration/reports/tax_report/tax_report.md)
   * [New services report](administration/reports/new_services_report/new_services_report.md)
   * [Tax (Grouped)](administration/reports/tax_grouped/tax_grouped.md)
-  * [Custom prices & discounts](administration/reports/custom_prices_&_discounts/custom_prices_&_discounts.md)
+  * [Custom prices & discounts](administration/reports/custom_prices_and_discounts/custom_prices_and_discounts.md)
   * [Transaction categories](administration/reports/transaction_categories/transaction_categories.md)
   * [Tickets report](administration/reports/tickets_report/tickets_report.md)

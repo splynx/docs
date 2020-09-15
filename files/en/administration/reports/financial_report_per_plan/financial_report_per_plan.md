@@ -9,7 +9,7 @@ The report is presented in a table format as depicted below:
 
 ![Financial report per plan](2.png)
 
-The table can be filter by a specific period, type of plan, a particular partner, and/or location. With the use of the filter located at the top right of the table, simply specify the criteria of your desire and click on show to retrieve the results of your criteria.
+The table can be filtered by a specific period, type of plan, a particular partner, and/or location. With the use of the filter located at the top right of the table, simply specify the criteria of your desire and click on show to retrieve the results of your criteria.
 
 ![Filter](3.png)
 

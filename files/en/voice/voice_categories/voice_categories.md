@@ -1,9 +1,9 @@
 Voice Categories
 ================
 
-We use categories to associate prices and prefixes, and be able to configure the included pricing and pricing groups.
+We use categories, for associate to them the prices and prefixes, and be able to configure the included pricing and the pricing groups.
 
-Navigate to Voice → Categories and click on add.
+Go to Voice → Categories and click on add.
 
 ![Add category](./add_category.png)
 
@@ -17,6 +17,6 @@ Complete the fields.
 * **Type** - Select if is Call, SMS or Data category.
 
 
-It is also possible to use the import tool to add categories from a .csv file.
+Is also possible to use the import tool to add categories from a .csv file.
 
 ![Import tool](./import.png)

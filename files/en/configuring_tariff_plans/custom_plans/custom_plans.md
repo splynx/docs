@@ -14,19 +14,19 @@ You will be redirected to the add plan page and where you will enter the details
 
 ![create_custom_plan.png](create_custom_plan.png)
 
-* Title - the name of the tariff in the list/table of custom tariffs
-* Service name - the description of the plan
-* Price - the price for the service
-* Partners - the partners this plan will be available to.
-* VAT Included - whether VAT is included in the price of the plan or not.
-* VAT - the percentage of the VAT
-* Tariff plans to change (available in customer portal) - the list of other tariffs available for changing from the current tariff in the customer's portal
-* Types of billing - the types of billing the plan will be available to
-* Prepaid (custom) period - by default, it is set to monthly and customers will be charged for a period of a month, but it is possible to select "Days amount" which will cause another field to appear:" _Custom period (days)_" - this will allow you to set a custom period in days. (7 days (week), 10 days, etc up to 365 days)
+* **Title** - the name of the tariff in the list/table of custom tariffs.
+* **Service** name - the description of the plan.
+* **Price** - the price for the service.
+* **Partners** - the partners this plan will be available to.
+* **VAT Included** - whether VAT is included in the price of the plan or not.
+* **VAT** - the percentage of the VAT.
+* **Tariff plans to change** (available in customer portal) - the list of other tariffs available for changing from the current tariff in the customer's portal.
+* **Types of billing** - the types of billing the plan will be available to.
+* **Prepaid (custom) period** - by default, it is set to monthly and customers will be charged for a period of a month, but it is possible to select "Days amount" which will cause another field to appear:" _Custom period (days)_" - this will allow you to set a custom period in days. (7 days (week), 10 days, etc up to 365 days).
 
 ![prepaid_custom.png](prepaid_custom.png)
 
-* Available in self-registration -  enables/disables the availability of the tariff when customers sign up for services via the social/self-registration addon
+* **Available in self-registration** -  enables/disables the availability of the tariff when customers sign up for services via the social/self-registration addon.
 
 
 Once custom plans has been created, it is possible to edit or to delete them with the icons found in the actions column of the voice plans table.  <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon>

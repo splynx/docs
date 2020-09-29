@@ -1,10 +1,10 @@
 CRM Dashboard
 ===
-The CRM dashboard provides an overview of all sales activities regarding to prospective customers.
+The CRM dashboard provides an overview of all sales activities regarding prospective customers.
 
-The dashboard represents progressive and interactive data statistics for each contributing headers. You can see total amounts of deals and quotes with a estimated total revenue, as well as, the number of leads for the current administrator and all leads within the system.
+The dashboard represents progressive and interactive data statistics for each contributing headers. You can see total amounts of deals and quotes with an estimated total revenue, as well as, the number of leads for the current administrator and all leads within the system.
 
-Each section is represented here by appropriate format. My leads, My quotes, My deals and all deals are represented by mean of informational box of totals and consists of links which directs you to the respective sub-module.
+Each section is represented here in an appropriate format. My leads, My quotes, My deals and all deals are represented by the mean of the informational box of totals and consist of links that direct you to the respective sub-module.
 
 Other summarized information regarding activities on the system and progression in stages of leads are represented by means of the following:
 

@@ -10,13 +10,13 @@ You will be redirected to an add plan page where you will fill in the following 
 
 ![one_time2.png](one_time2.png)
 
-* Title - the name of the tariff in the One-Time Tariffs list/table
-* Price - the price for the service
-* Partners - the partners this plan will be available to
-* VAT Included - whether VAT is included in the price of the plan or not.
-* VAT - the percentage of the VAT
+* **Title** - the name of the tariff in the One-Time Tariffs list/table.
+* **Price** - the price for the service.
+* **Partners** - the partners this plan will be available to.
+* **VAT Included** - whether VAT is included in the price of the plan or not.
+* **VAT** - the percentage of the VAT.
 
-Once one-time plans has been created, it is possible to edit or to delete them with the icons found in the actions column of the voice plans table.  <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon>
+Once one-time plans have been created, it is possible to edit or to delete them with the icons found in the actions column of the voice plans table.  <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon>
 
 It is also possible to view a statistical graph of traffic for this plan with the use of the graph <icon class="image-icon">![graph](graph.png)</icon> icon, in the *Actions* column, this button will present you with the following window:
 
@@ -35,11 +35,11 @@ The Change plan <icon class="image-icon">![icon](change_plan.png)</icon> icon ca
 
 Like all tables in Splynx, you can modify the appearance of content, content to display and export the table into Excel, CSV or PDF formats, you can also choose to copy or print the table. This is done with the use of these <icon class="image-icon">![symbolsbottomleft.png](symbolsbottomleft.png)</icon>  icons found at the bottom left of each table. The <icon class="image-icon">![esportaformati.png](esportaformati.png)</icon> icon is used to export and the   <icon class="image-icon">![modifytheview.png](modifytheview.png)</icon> icon is used to format the appearance and content of the table.
 
-After the creating One-Time plans, it is applicable to:
+After the creation One-Time plans, it is applicable to:
 
 **1. Add one-time invoice**
 
-On customer's "_Billing - Invoices_ tab" the is an option to add One-time invoices:
+On the customer's "_Billing - Invoices_ tab" is an option to add One-time invoices:
 
 ![one_time3.png](one_time3.png)
 
@@ -50,7 +50,7 @@ In the One-time invoice creation here you are able to select One-time plans as i
 
 **2. Add Proforma invoice**
 
-Just as with "One-time invoices", the same logic can be used for proforma invoices, navigate to customer's "_Billing - Proforma Invoices_ tab", click on the Add Proforma invoice button:
+Just as with "One-time invoices", the same logic can be used for proforma invoices, navigate to the customer's "_Billing - Proforma Invoices_ tab", click on the Add Proforma invoice button:
 
 ![one_time5.png](one_time5.png)
 

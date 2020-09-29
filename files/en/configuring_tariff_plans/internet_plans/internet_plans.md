@@ -10,27 +10,27 @@ You will be redirected to the "Add Plan" page, where you will provide the necess
 
 ![create_plan_internet.png](create_plan_internet.png)
 
-* Title - the name of the plan displayed in the list.
-* Service name - the service description
-* Price - the monthly price for the service
-* Partners - partners the plan will be available to
-* VAT - the percentage of the VAT
-* VAT Included - select whether the plan's price includes VAT or not
-* Download speed (Kbps) - the download speed limit of the internet plan
-* Upload speed (Kbps) - the upload speed limit of the internet plan.<br> *Values of Download and Upload speeds are **MIR** (Maximum Information Rate) – best-case scenario, maximum data rate available for flow, if there is any free part of bandwidth*.
-* Guaranteed speed limit at - the percentage we guarantee for the end-user. *This is the **CIR** (Committed Information Rate) – worst-case scenario, traffic will flow at this rate regardless of other traffic flows, at any given time, the bandwidth should not fall below this committed rate*.
-* Priority - the priority of IP packets of the plan, options are: Low, Normal, High. IP packets of customers subscribed to a plan with a High priority will be forwarded first in a case of traffic congestion. Values are 1 (high), 4(normal) and 8(low).
-* Aggregation - how many users will share the speed of the plan
-* Burst limit - the percentage of the maximum  burst speed allowed
-* Burst threshold - the percentage at which burst speeds are enabled/disabled
-* Burst Time - the period of time used in the calculation of Burst values
-* Tariff plans available in customer portal - the list of other tariffs available for changing from the current tariff in the customer's portal
-* Types of billing - the types of billing the plan will be available to
-* Prepaid (custom) period - by default, it is set to monthly and customers will be charged for a period of a month, but it is possible to select "Days amount" which will cause another field to appear:" _Custom period (days)_" - this will allow you to set a custom period in days. (7 days (week), 10 days, etc up to 365 days)
+* **Title** - the name of the plan displayed in the list.
+* **Service name** - the service description.
+* **Price** - the monthly price for the service.
+* **Partners** - partners the plan will be available to.
+* **VAT** - the percentage of the VAT.
+* **VAT Included** - select whether the plan's price includes VAT or not.
+* **Download speed (Kbps)** - the download speed limit of the internet plan.
+* **Upload speed (Kbps)** - the upload speed limit of the internet plan.<br> *Values of Download and Upload speeds are **MIR** (Maximum Information Rate) – best-case scenario, maximum data rate available for flow, if there is any free part of bandwidth*.
+* **Guaranteed speed limit at** - the percentage we guarantee for the end-user. *This is the **CIR** (Committed Information Rate) – worst-case scenario, traffic will flow at this rate regardless of other traffic flows, at any given time, the bandwidth should not fall below this committed rate*.
+* **Priority** - the priority of IP packets of the plan, options are: Low, Normal, High. IP packets of customers subscribed to a plan with a High priority will be forwarded first in a case of traffic congestion. Values are 1 (high), 4(normal) and 8(low).
+* **Aggregation** - how many users will share the speed of the plan.
+* **Burst limit** - the percentage of the maximum  burst speed allowed
+* **Burst threshold** - the percentage at which burst speeds are enabled/disabled.
+* **Burst Time** - the period of time used in the calculation of Burst values.
+* **Tariff plans available in customer portal** - the list of other tariffs available for changing from the current tariff in the customer's portal.
+* **Types of billing** - the types of billing the plan will be available to.
+* **Prepaid (custom) period** - by default, it is set to monthly and customers will be charged for a period of a month, but it is possible to select "Days amount" which will cause another field to appear:" _Custom period (days)_" - this will allow you to set a custom period in days. (7 days (week), 10 days, etc up to 365 days).
 
 ![prepaid_custom.png](prepaid_custom.png)
 
-* Available in self-registration -  enables/disables the availability of the tariff when customers sign up for services via the social/self-registration addon
+* **Available in self-registration** -  enables/disables the availability of the tariff when customers sign up for services via the social/self-registration addon
 
 Once internet plans has been created, it is possible to edit or to delete them with the icons found in the actions column of the internet plans table.  <icon class="image-icon">![edit.png](edit.png)</icon> or <icon class="image-icon">![delete.png](delete.png)</icon>
 

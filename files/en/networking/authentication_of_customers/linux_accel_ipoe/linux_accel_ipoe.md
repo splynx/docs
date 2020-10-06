@@ -1,17 +1,17 @@
 # Accel-PPP with IPoE
 
-This is an example how Splynx can be used with Accel-PPP to authenticate customers via IPoE
+This is an example how Splynx can be used with Accel-PPP to authenticate customers via IPoE. In this manual we use VLAN monitoring module to dynamically create VLANs for customers. This is also known as 'VLAN per user'.
 
-## INSTALLING ACCEL-PPP
+### Accel-PPP installation
 
-What we need is a separate server or virtual machine with Ubuntu 20.04 installed.
+For Accel-PPP we need a separate server or virtual machine with Ubuntu 20.04 installed.  
 Login as root:
 
 ```
 sudo su -l
 ```
 
-Install debian packets required to build Accel-PPP from source code:
+Install required packets:
 
 ```
 apt update && apt install -y build-essential cmake gcc linux-headers-`uname -r` git libpcre3-dev libssl-dev liblua5.1-0-dev
@@ -54,6 +54,7 @@ Set:
 ipoe
 shaper
 connlimit
+# end of uncomment
 
 # comment these lines:
 #pptp
@@ -65,13 +66,13 @@ username=lua:username
 lua-file=/etc/accel-ppp.lua
 
 vlan-mon=ens19,10-200
-# where: ens19 - interface name where accelPPP listens for DHCP discovery packets.
-# 10-200 - AccelPPP listens DHCP packets only with vlan tags in this range.
-# AccelPPP automatically creates vlan interface
+# where: ens19 - interface name where Accel-PPP listens for DHCP discovery packets.
+# 10-200 - Accel-PPP listens DHCP packets only with VLAN tags in this range.
+# Accel-PPP automatically creates VLAN interface
 
 interface=re:^ens19.*
-# where: ens19 - interface name where accelPPP listens for DHCP discovery packets.
-# we use regexp here because vlan interfaces should be also included
+# where: ens19 - interface name where Accel-PPP listens for DHCP discovery packets.
+# we use regexp here because VLAN interfaces should be also included
 
 gw-ip-address=192.0.2.1
 #this is router IP address for IPoE sessions
@@ -89,8 +90,6 @@ acct-timeout=0
 [client-ip-range]
 #10.0.0.0/8
 disabled
-
-#END of config file
 ```
 
 Create lua file:
@@ -105,7 +104,7 @@ end
 EOF
 ```
 
-Start accel-ppp system service:
+Start Accel-PPP system service:
 
 ```
 systemctl start accel-ppp
@@ -140,7 +139,7 @@ net.ipv6.neigh.default.gc_thresh3 = 12288
 EOF
 ```
 
-if you MASQUERADE rule, this is an example:
+If firewall MASQUERADE rule is needed, this is an example:
 
 ```
 apt -y install iptables-persistent
@@ -148,40 +147,100 @@ iptables -t nat -A POSTROUTING -o ens18 -j MASQUERADE
 iptables-save >/etc/iptables/rules.v4
 ```
 
-where ens18 - uplink interface
+where **ens18** - uplink interface
 
-# Splynx configuration
+### Splynx configuration
 
-1. Requirements
-   Create Splynx ipv4 network
-   Create Splynx internet tariff
+1. Requirements  
+   Create a [Splynx ipv4 network](https://docs.splynx.com/networking/ip_address_management/ipv4)  
+   Create a [Splynx internet tariff](https://docs.splynx.com/configuring_tariff_plans/internet_plans)
 
-2. Create internet service for customer
-   login=mac address of DHCP-client (??? or any ???)
-   password - any
-   IPv4 assignment method=permanent
-   IP=IP
-   MAC=mac address of DHCP-client
+2. Create [internet service](https://docs.splynx.com/customer_management/customer_services) for customer  
+   login=MAC address of DHCP-client  
+   password - any  
+   IPv4 assignment method=permanent  
+   IP=IP  
+   MAC=MAC address of DHCP-client
 
-3. Create NAS type
-   Config / Networking / NAS types
+3. Create a NAS type  
+   Config / Networking / NAS types  
    Create NAS type "Accel-PPP". MikroTik API disabled
 
-4. Add router
-   Networking / Routers / Add
-   NAS type=Accel-ppp
-   Authorization/Accounting=PPP radius/radius
+4. Add a router  
+   Networking / Routers / Add  
+   NAS type=Accel-PPP  
+   Authorization/Accounting=PPP RADIUS/RADIUS
 
-After router is created, set Radius secret. The same as in accel-ppp.conf
+   After router is created, set RADIUS secret. The secret must be the same as in file `/etc/ accel-ppp.conf` (see above)
 
-5. Configure Radius
-   Config / Networking / Radius
-   Nas Type = "Accel-PPP"
-   Load
+5. Configure Radius  
+   Config / Networking / Radius  
+   Nas Type = "Accel-PPP"  
+   Load  
+   Allow with no account balance - enabled  
+   Process accounting without IP - enabled  
+   Rate-Limit attributes: `Filter-Id={{ tx_rate_limit / 1000 }}/{{ rx_rate_limit / 1000 }}`  
+   Save  
+   Restart radius
 
-Allow with no account balance - enabled
-Process accounting without IP - enabled
-Rate-Limit attributes: Filter-Id={{ tx_rate_limit / 1000 }}/{{ rx_rate_limit / 1000 }}
+### DKMS for vlan and ipoe modules
 
-Save
-Restart radius
+When Accel-PPP is built from source and then installed as deb packet (see above), kernel modules **ipoe** and **vlan** are being installed only for current kernel. Each time Linux kernel is updated, it is required to (re)build **vlan** and **ipoe** kernel modules. This task can be automatized using DKMS.
+
+Install required packets:
+
+```
+apt install dkms debhelper
+export C_INCLUDE_PATH=/usr/src/$( uname -r)/
+export KERNELDIR=/lib/modules/$( uname -r)/build
+```
+
+#### IPoE module
+
+Create DKMS configuration:
+
+```
+cd /opt/accel-ppp-code/drivers/ipoe
+cat >dkms.conf <<EOF
+PACKAGE_NAME="accel-ppp-ipoe-dkms"
+PACKAGE_VERSION=1.0
+REMAKE_INITRD=no
+AUTOINSTALL=yes
+BUILT_MODULE_NAME="ipoe"
+DEST_MODULE_LOCATION="/kernel/misc"
+EOF
+```
+
+Create deb packet and install it:
+
+```
+dkms mkdeb --source-only
+cd ..
+dpkg -i accel-ppp-ipoe-dkms-dkms_1.0_all.deb
+```
+
+#### VLAN module
+
+Create DKMS configuration:
+
+```
+cd /opt/accel-ppp-code/drivers/vlan_mon
+cat >dkms.conf <<EOF
+PACKAGE_NAME="accel-ppp-vlan-mon-dkms"
+PACKAGE_VERSION=1.0
+REMAKE_INITRD=no
+AUTOINSTALL=yes
+BUILT_MODULE_NAME="vlan_mon"
+DEST_MODULE_LOCATION="/kernel/misc"
+EOF
+```
+
+Create deb packet and install it:
+
+```
+dkms mkdeb --source-only
+cd ..
+dpkg -i accel-ppp-vlan-mon-dkms-dkms_1.0_all.deb
+```
+
+Now, each time Linux kernel is updated, these modules will be built automatically

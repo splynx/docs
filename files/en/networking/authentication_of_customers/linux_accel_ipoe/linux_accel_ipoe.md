@@ -1,50 +1,76 @@
-What we need is a separate server/VM with Ubuntu 20.04 installed.
+# Accel-PPP with IPoE
 
-Login as root:  
-#> sudo su -l
+This is an example how Splynx can be used with Accel-PPP to authenticate customers via IPoE
 
-Install packets for building:  
-#> apt update && apt install -y build-essential cmake gcc linux-headers-`uname -r` git libpcre3-dev libssl-dev liblua5.1-0-dev
+## INSTALLING ACCEL-PPP
 
-Clone AccelPPP code:  
-#> git clone https://github.com/xebd/accel-ppp.git /opt/accel-ppp-code
+What we need is a separate server or virtual machine with Ubuntu 20.04 installed.
+Login as root:
 
-Compile AccelPPP code:  
-#> mkdir /opt/accel-ppp-code/build
-#> cd /opt/accel-ppp-code/build/
-#> cmake -DBUILD_IPOE_DRIVER=TRUE -DBUILD_VLAN_MON_DRIVER=TRUE -DCMAKE_INSTALL_PREFIX=/usr -DKDIR=/usr/src/linux-headers-`uname -r` -DLUA=TRUE -DCPACK_TYPE=Ubuntu20 ..
-#> make
+```
+sudo su -l
+```
 
-Create deb packet and install it:  
-#> cpack -G DEB
-#> dpkg -i accel-ppp.deb
+Install debian packets required to build Accel-PPP from source code:
 
-Copy and modify config file:  
-#> cp /etc/accel-ppp.conf.dist /etc/accel-ppp.conf
-#> nano /etc/accel-ppp.conf
+```
+apt update && apt install -y build-essential cmake gcc linux-headers-`uname -r` git libpcre3-dev libssl-dev liblua5.1-0-dev
+```
 
-Set:  
+Clone Accel-PPP code from Github:
+
+```
+git clone https://github.com/xebd/accel-ppp.git /opt/accel-ppp-code
+```
+
+Compile Accel-PPP code:
+
+```
+mkdir /opt/accel-ppp-code/build
+cd /opt/accel-ppp-code/build/
+cmake -DBUILD_IPOE_DRIVER=TRUE -DBUILD_VLAN_MON_DRIVER=TRUE -DCMAKE_INSTALL_PREFIX=/usr -DKDIR=/usr/src/linux-headers-`uname -r` -DLUA=TRUE -DCPACK_TYPE=Ubuntu20 ..
+make
+```
+
+Create deb packet and install it:
+
+```
+cpack -G DEB
+dpkg -i accel-ppp.deb
+```
+
+Copy and modify configuration file:
+
+```
+cp /etc/accel-ppp.conf.dist /etc/accel-ppp.conf
+nano /etc/accel-ppp.conf
+```
+
+Set:
+
+```
 [modules]
-# uncomment:  
+# uncomment:
 ipoe
 shaper
 connlimit
 
-# comment:  
+# comment these lines:
 #pptp
 #l2tp
+# end of comment
 
 [ipoe]
 username=lua:username
 lua-file=/etc/accel-ppp.lua
 
 vlan-mon=ens19,10-200
-# where: ens19 - interface name where accelPPP listens for DHCP discovery packets. 
+# where: ens19 - interface name where accelPPP listens for DHCP discovery packets.
 # 10-200 - AccelPPP listens DHCP packets only with vlan tags in this range.
 # AccelPPP automatically creates vlan interface
 
 interface=re:^ens19.*
-# where: ens19 - interface name where accelPPP listens for DHCP discovery packets. 
+# where: ens19 - interface name where accelPPP listens for DHCP discovery packets.
 # we use regexp here because vlan interfaces should be also included
 
 gw-ip-address=192.0.2.1
@@ -54,9 +80,9 @@ gw-ip-address=192.0.2.1
 #nas-ip-address=127.0.0.1
 # comment this ^^^
 
-server=192.168.99.49,testing123,auth-port=1812,acct-port=1813,req-limit=50,fail-timeout=0,max-fail=10,weight=1
+server=192.0.2.10,testing123,auth-port=1812,acct-port=1813,req-limit=50,fail-timeout=0,max-fail=10,weight=1
 dae-server=0.0.0.0:3799,testing123
-# where: 192.168.99.49 - Splynx server IP address
+# where: 192.0.2.10 - IP address of Splynx server
 # testing123 - RADIUS secret
 acct-timeout=0
 
@@ -65,23 +91,31 @@ acct-timeout=0
 disabled
 
 #END of config file
+```
 
+Create lua file:
 
-Create lua file:  
-#> cat >/etc/accel-ppp.lua <<EOF
+```
+cat >/etc/accel-ppp.lua <<EOF
 #!lua
 function username(pkt)
     mac=pkt:hdr('chaddr')
     return mac
 end
 EOF
+```
 
-Start accel-ppp system service:  
-#> systemctl start accel-ppp
-#> systemctl enable accel-ppp
+Start accel-ppp system service:
 
-Create logrotate rule:  
-#> cat >/etc/logrotate.d/accel-ppp <<EOF
+```
+systemctl start accel-ppp
+systemctl enable accel-ppp
+```
+
+Create logrotate rule:
+
+```
+cat >/etc/logrotate.d/accel-ppp <<EOF
 /var/log/accel-ppp/*.log {
         missingok
         sharedscripts
@@ -90,9 +124,12 @@ Create logrotate rule:
         endscript
 }
 EOF
+```
 
-Create sysctl config:  
-#> cat >/etc/sysctl.d/accel-ppp.conf <<EOF
+Create sysctl config:
+
+```
+cat >/etc/sysctl.d/accel-ppp.conf <<EOF
 net.ipv4.ip_forward = 1
 net.ipv4.neigh.default.gc_thresh1 = 4096
 net.ipv4.neigh.default.gc_thresh2 = 8192
@@ -101,44 +138,46 @@ net.ipv6.neigh.default.gc_thresh1 = 4096
 net.ipv6.neigh.default.gc_thresh2 = 8192
 net.ipv6.neigh.default.gc_thresh3 = 12288
 EOF
+```
 
-# if you need create MASQUERADE rule, this is an example:  
+if you MASQUERADE rule, this is an example:
 
-#> apt -y install iptables-persistent
-#> iptables -t nat -A POSTROUTING -o ens18 -j MASQUERADE
-#> iptables-save >/etc/iptables/rules.v4
-# where ens18 - uplink interface
+```
+apt -y install iptables-persistent
+iptables -t nat -A POSTROUTING -o ens18 -j MASQUERADE
+iptables-save >/etc/iptables/rules.v4
+```
 
-
+where ens18 - uplink interface
 
 # Splynx configuration
-0. Requirements
-Create Splynx ipv4 network
-Create Splynx internet tariff
 
-1. Create internet service for customer
-login=mac address of DHCP-client
-password - any
-IPv4 assignment method=permanent
-IP=IP
-MAC=mac address of DHCP-client
+1. Requirements
+   Create Splynx ipv4 network
+   Create Splynx internet tariff
 
-2. Create NAS type
-Config / Networking / NAS types
-Create NAS type "Accel-PPP". MikroTik API disabled
+2. Create internet service for customer
+   login=mac address of DHCP-client (??? or any ???)
+   password - any
+   IPv4 assignment method=permanent
+   IP=IP
+   MAC=mac address of DHCP-client
 
+3. Create NAS type
+   Config / Networking / NAS types
+   Create NAS type "Accel-PPP". MikroTik API disabled
 
-3. Add router
-Networking / Routers / Add
-NAS type=Accel-ppp
-Authorization/Accounting=PPP radius/radius
+4. Add router
+   Networking / Routers / Add
+   NAS type=Accel-ppp
+   Authorization/Accounting=PPP radius/radius
 
 After router is created, set Radius secret. The same as in accel-ppp.conf
 
-4. Configure Radius
-Config / Networking / Radius
-Nas Type = "Accel-PPP"
-Load
+5. Configure Radius
+   Config / Networking / Radius
+   Nas Type = "Accel-PPP"
+   Load
 
 Allow with no account balance - enabled
 Process accounting without IP - enabled

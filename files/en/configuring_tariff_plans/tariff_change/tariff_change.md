@@ -19,7 +19,7 @@ You then need to select the following parameters:
 
 * **New plan** - select the new plan to change to from the list of available plans in the drop down list, if desired, plans can be created prior to using this feature.
 
-* **ignore balance** - enabling this option will ignore the balance of the current plan for each of the customers registered to this plan.
+* **Ignore balance** - enabling this option will ignore the balance of the current plan for each of the customers registered to this plan.
 
 
 Upon specifying these parameters, the plan description and price will appear, and the "Preview" button will become available.
@@ -30,7 +30,7 @@ Simply click on the "Preview" button to display the preview of results found for
 
 ![Tariff Change](tariff_change3.png)
 
-To confirm the action, simply click on "Change tariff" or click on back to first step if you need to change anything.
+To confirm the action, simply click on "Change tariff" or click on back to the first step if you need to change anything.
 
 When clicking on "Change tariff", you will be presented with the following window:
 

@@ -72,9 +72,9 @@ Table of contents
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
 
-    * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
-    * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
-    * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)
+  * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
+  * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
+  * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)
 
 
 * [Authentication of customers](networking/authentication_of_customers/authentication_of_customers.md)
@@ -98,11 +98,11 @@ Table of contents
 
 
 * [Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
-    * [Capped plans and top up](networking/bandwidth_management/capped_plans/capped_plans.md)
-    * [Contentions](networking/bandwidth_management/contentions/contentions.md)
-    * [Fair user policy - FUP](networking/bandwidth_management/fup/fup.md)
-    * [Mikrotik queue speed limits](networking/bandwidth_management/queue_speed_limits/queue_speed_limits.md)
-    * [Radius based speed limits](networking/bandwidth_management/radius_speed_limits/radius_speed_limits.md)
+  * [Capped plans and top up](networking/bandwidth_management/capped_plans/capped_plans.md)
+  * [Contentions](networking/bandwidth_management/contentions/contentions.md)
+  * [Fair user policy - FUP](networking/bandwidth_management/fup/fup.md)
+  * [Mikrotik queue speed limits](networking/bandwidth_management/queue_speed_limits/queue_speed_limits.md)
+  * [Radius based speed limits](networking/bandwidth_management/radius_speed_limits/radius_speed_limits.md)
 
 
 * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
@@ -110,8 +110,8 @@ Table of contents
 * [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)
 
 * [IP address management](networking/ip_address_management/ip_address_management.md)
-    * [IPv4](networking/ip_address_management/ipv4/ipv4.md)
-    * [IPv6](networking/ip_address_management/ipv6/ipv6.md)
+  * [IPv4](networking/ip_address_management/ipv4/ipv4.md)
+  * [IPv6](networking/ip_address_management/ipv6/ipv6.md)
 
 
 * [Maps](networking/maps/maps.md)
@@ -125,12 +125,12 @@ Table of contents
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 
 * [Routers settings](networking/routers_settings/routers_settings.md)
-    * [Cisco routers](networking/routers_settings/cisco/cisco.md)
-    * [Juniper routers](networking/routers_settings/juniper/juniper.md)
-    * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
-    * [MikroTik Live bandwidth](networking/routers_settings/mikrotik_live_bandwidth/mikrotik_live_bandwidth.md)
-    * [Other routers](networking/routers_settings/other/other.md)
-    * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
+  * [Cisco routers](networking/routers_settings/cisco/cisco.md)
+  * [Juniper routers](networking/routers_settings/juniper/juniper.md)
+  * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
+  * [MikroTik Live bandwidth](networking/routers_settings/mikrotik_live_bandwidth/mikrotik_live_bandwidth.md)
+  * [Other routers](networking/routers_settings/other/other.md)
+  * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
 
 
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
@@ -215,38 +215,38 @@ Table of contents
 
 * [CRM](configuration/crm/crm.md)
 
-    * [Leads stages](configuration/crm/leads_stages/leads_stages.md)
-    * [Finance](configuration/crm/finance/finance.md)
-    * [Preferences](configuration/crm/preferences/preferences.md)
-    * [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)
+  * [Leads stages](configuration/crm/leads_stages/leads_stages.md)
+  * [Finance](configuration/crm/finance/finance.md)
+  * [Preferences](configuration/crm/preferences/preferences.md)
+  * [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)
 
 
 * [Finance configuration](configuration/finance/finance.md)
 
-        * [Automation](configuration/finance/automation/automation.md)
-        * [Cost categories](configuration/finance/cost_categories/cost_categories.md)
-        * [Finance settings](configuration/finance/finance_settings/finance_settings.md)
-        * [Fixed costs](configuration/finance/fixed_costs/fixed_costs.md)
-        * [Notifications](configuration/finance/notifications/notifications.md)
-        * [Pairing](configuration/finance/pairing/pairing.md)
-        * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
-        * [Reminders](configuration/finance/reminders/reminders.md)
-        * [Taxes](configuration/finance/taxes/taxes.md)
-        * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
+  * [Automation](configuration/finance/automation/automation.md)
+  * [Cost categories](configuration/finance/cost_categories/cost_categories.md)
+  * [Finance settings](configuration/finance/finance_settings/finance_settings.md)
+  * [Fixed costs](configuration/finance/fixed_costs/fixed_costs.md)
+  * [Notifications](configuration/finance/notifications/notifications.md)
+  * [Pairing](configuration/finance/pairing/pairing.md)
+  * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
+  * [Reminders](configuration/finance/reminders/reminders.md)
+  * [Taxes](configuration/finance/taxes/taxes.md)
+  * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
 
 
 * [Integrations](configuration/integrations/integrations.md)
 
-            * [Add-ons](configuration/integrations/addons/addons.md)
-            * [Hooks](configuration/integrations/hooks/hooks.md)
-            * [Install module](configuration/integrations/install_modules/install_modules.md)
-            * [Main modules](configuration/integrations/main_modules/main_modules.md)
-            * [Modules list](configuration/integrations/modules_list/modules_list.md)
+  * [Add-ons](configuration/integrations/addons/addons.md)
+  * [Hooks](configuration/integrations/hooks/hooks.md)
+  * [Install module](configuration/integrations/install_modules/install_modules.md)
+  * [Main modules](configuration/integrations/main_modules/main_modules.md)
+  * [Modules list](configuration/integrations/modules_list/modules_list.md)
 
 
 * [Inventory](configuration/inventory/inventory.md)
 
-                * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
+  * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
 
 
 
@@ -285,50 +285,50 @@ Table of contents
 
 * [Scheduling](configuration/scheduling/scheduling.md)
 
-    * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
-    * [Notifications](configuration/scheduling/notifications/notifications.md)
-    * [Project categories](configuration/scheduling/project_categories/project_categories.md)
-    * [Project types](configuration/scheduling/project_types/project_types.md)
-    * [Task templates](configuration/scheduling/task_templates/task_templates.md)
-    * [Teams](configuration/scheduling/teams/teams.md)
-    * [Workflows](configuration/scheduling/workflows/workflows.md)
+  * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
+  * [Notifications](configuration/scheduling/notifications/notifications.md)
+  * [Project categories](configuration/scheduling/project_categories/project_categories.md)
+  * [Project types](configuration/scheduling/project_types/project_types.md)
+  * [Task templates](configuration/scheduling/task_templates/task_templates.md)
+  * [Teams](configuration/scheduling/teams/teams.md)
+  * [Workflows](configuration/scheduling/workflows/workflows.md)
 
 
 * [Support](configuration/support/support.md)    
-    * [Feedback widget](configuration/support/feedback_widget/feedback_widget.md)
-    * [General ticket configuration](configuration/support/general_ticket_configuration/general_ticket_configuration.md)
-    * [Inboxes](configuration/support/inboxes/inboxes.md)
-    * [Ticket automation](configuration/support/ticket_automation/ticket_automation.md)
-    * [Ticket canned responses](configuration/support/ticket_canned_responses/ticket_canned_responses.md)
-    * [Ticket notifications](configuration/support/ticket_notifications/ticket_notifications.md)
-    * [Tickets](configuration/support/tickets/tickets.md)
+  * [Feedback widget](configuration/support/feedback_widget/feedback_widget.md)
+  * [General ticket configuration](configuration/support/general_ticket_configuration/general_ticket_configuration.md)
+  * [Inboxes](configuration/support/inboxes/inboxes.md)
+  * [Ticket automation](configuration/support/ticket_automation/ticket_automation.md)
+  * [Ticket canned responses](configuration/support/ticket_canned_responses/ticket_canned_responses.md)
+  * [Ticket notifications](configuration/support/ticket_notifications/ticket_notifications.md)
+  * [Tickets](configuration/support/tickets/tickets.md)
 
 
 * [System](configuration/system/system.md)
 
-        * [Additional fields](configuration/system/additional_fields/additional_fields.md)
-        * [Company Information](configuration/system/company_information/company_information.md)
-        * [Custom translations](configuration/system/custom_translations/custom_translations.md)
-        * [File manager](configuration/system/file_manager/file_manager.md)
-        * [Templates](configuration/system/templates/templates.md)
-          * [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
+  * [Additional fields](configuration/system/additional_fields/additional_fields.md)
+  * [Company Information](configuration/system/company_information/company_information.md)
+  * [Custom translations](configuration/system/custom_translations/custom_translations.md)
+  * [File manager](configuration/system/file_manager/file_manager.md)
+  * [Templates](configuration/system/templates/templates.md)
+    * [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
 
 * [Tools](configuration/tools/tools.md)
 
-    * [Activate Services](configuration/tools/activate_services/activate_services.md)
-    * [Adminer](configuration/tools/adminer/adminer.md)
-    * [Backup and Restore](configuration/tools/backup_restore/backup_restore.md)
-    * [Export](configuration/tools/export/export.md)
-    * [Import](configuration/tools/import/import.md)
-    * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
-    * [OpenVPN](configuration/tools/openvpn/openvpn.md)
-      * [ Cloud ](configuration/tools/openvpn/cloud/routes/routes.md)
+  * [Activate Services](configuration/tools/activate_services/activate_services.md)
+  * [Adminer](configuration/tools/adminer/adminer.md)
+  * [Backup and Restore](configuration/tools/backup_restore/backup_restore.md)
+  * [Export](configuration/tools/export/export.md)
+  * [Import](configuration/tools/import/import.md)
+  * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
+  * [OpenVPN](configuration/tools/openvpn/openvpn.md)
+    * [ Cloud ](configuration/tools/openvpn/cloud/routes/routes.md)
 
 
 * [Voice](configuration/voice/voice.md)
 
-            * [Auto CDR Processing](configuration/voice/auto_cdr_processing/auto_cdr_processing.md)
-            * [Import Data Source](configuration/voice/import_data_source/import_data_source.md)
+  * [Auto CDR Processing](configuration/voice/auto_cdr_processing/auto_cdr_processing.md)
+  * [Import Data Source](configuration/voice/import_data_source/import_data_source.md)
 
 
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)

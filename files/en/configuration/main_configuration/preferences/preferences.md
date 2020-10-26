@@ -71,6 +71,10 @@ Settings for auto backup.
 * **Rotation amount** - counter of auto backups for storage.
 
 ## Mention notifications
+
+These notifications are used to notify administrators when they are mentioned in within Tasks, the CRM module, Tickets, as well as in Customer comments.
+
+
 ![backup](mention_notifications.png)
 
 * **Enable mentions notifications** - enables/disables mentions notifications;

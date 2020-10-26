@@ -1,58 +1,131 @@
 Routers settings
 ==========
 
-`Networking / Routers` - is where you can add and configure routers to your network (Network Access Servers).
+`Networking / Routers` - In this section, you can add and configure your routers which will manage Authentication, Accounting and Bandwidth management (Network Access Servers).
 
-<icon class="image-icon">![(warning)](warning.png)</icon> Please note, if a new router is added or configuration is changed - it may take up to 5 minutes to apply the new radius configurations.
+To add a new router navigate to **Networking -> Routers -> Add**:
 
-![(image)](image2018-10-2_11-28-30.png)
+![Add router](add_router.png)
 
-**Title** - formal name. Just to distinguish between different routers.<br>
-**NAS type** - Type of NAS (Network Access Server). You can configure NAS types under _Config / Networking / NAS types_. The main difference between different NAS types is to use Mikrotik API for this NAS type or not. Also, you can set different settings for different NAS types under _Config / Networking / Radius_.  
-**Producer/Model** - Vendor and model of the device.  
-**Partners** - Partners to grant access to the device.  
-**Location** - Locations to grant access to the device.  
-**Address** - Physical address where the device is installed.  
-**IP/Host** - Router's IP address, this is the physical IP address from where packets are sent to the Radius server (to Splynx). **If the router is behind a NAT, this field should be populated with the public IP address of the NAT device.** This field can be set as a domain name or dynamic DNS entry.  
-**Authorization/Accounting** - which type of Authorization/Accounting to use.
+Here you need to specify:
 
-## Types of Authorization/Accounting:
+* **Title** - name of the router;
 
-*   **None / None** - used in unique scenarios.
-*   **None / API accounting** - useful for unique scenarios. In addition, Mikrotik API accounting will be used.
-*   **Firewall IP-MAC filter / API accounting** - Mikrotik API will be used to push firewall filter rules to the router. This is useful for Static IP addresses, when customers sets their IP addresses on the equipment manually.
-*   **DHCP (Radius) / API accounting** - The DHCP server on the router will use Radius authorization. Accounting will be performed with Mikrotik API.
-*   **DHCP (Leases) / API accounting** - Mikrotik API will be used to push DHCP leases to the router. <icon class="image-icon">![(warning)](warning.png)</icon> Do not forget to set MAC addresses for internet services. Accounting will be performed with Mikrotik API.
-*   **PPP (Radius) / Radius accounting** - PPPoE / PPTP / OpenVPN server will use Radius authorization. Radius accounting will be used.
-*   **PPP (Secrets) / API accounting** - Mikrotik API will be used to push PPP secrets to the router. Accounting will be performed with Mikrotik API.
-*   **Hotspot (Users) / API accounting** - Mikrotik API will be used to push Hotspot users to the router. Accounting will be performed with Mikrotik API.
-*   **Hotspot (Radius) / Radius accounting** - Mikrotik Hotspot server will use Radius authorization. Radius accounting will be used.
+* **NAS type** - select a NAS type for the new router. If you can't find the required NAS type here, it can be added under *Config -> Networking -> NAS types*;
 
-<icon class="image-icon">![(info)](info.png)</icon> Even if Authorization = None or API authorization is used - Radius authorization and Radius accounting will work.  
-<icon class="image-icon">![(info)](info.png)</icon> If API Authorization is used - do not forget to choose the specific router in internet service settings of the customer (if router = None, this will not work).  
-<icon class="image-icon">![(info)](info.png)</icon> If API Authorization is used - Mikrotik API should be enabled and configured on the _Mikrotik_ tab in Router settings.
+* **Vendor/Model** - specify the vendor and model of the router;
 
-**API ACCOUNTING** - The Splynx server will continuously (every 5 minutes) login to the Mikrotik device via Mikrotik API to gather statistics.
-**RADIUS ACCOUNTING** - The router sends accounting statistic every **n** seconds to the Splynx server using RADIUS accounting packets. **n** is the configurable value, which can be configured per NAS type under *Config / Networking / Radius / NAS Type/ Load / Accounting interval (in sec)*.
+* **Partners** - select the partners who can use this router;
 
-**GPS** - you are able to pin-point the location of the devices on the map (where router is located). This field is only available when the Google Maps add-on is installed.  
-**Radius secret** - Configure a Radius secret.  
-**NAS IP** - the real IP source address, for radius packets. **It does not matter if the router is behind NAT or not.** It is recommended that in the Radius settings of the Mikrotik router, Src. address should be the NAS IP configured in Splynx.
+* **Location** - select locations;
 
-![(image)](image2018-10-2_13-26-18.png)
+* **Physical address** - specify the physical address of the router;
 
-**Pools** - if selected, only use selected pools for this router. If you want to use all available pools - do not select any.
+* **IP/Host** - Router's IP address, this is the physical IP address from where packets are sent to Radius server (to Splynx). **In the case where a router is behind NAT, this is the public IP address of NAT device.** Can also be set as a domain name or dynamic DNS entry;
+
+* **NAS IP** - RADIUS server attribute **NAS-IP-Address** (RADIUS server "Src. address" field on a Mikrotik router). If field "Src. Address" is specified on a Mikrotik RADIUS server - NAS IP (in Splynx) should be the same;
+
+* **Authorization/Accounting** - select the type of Authorization/Accounting:
+
+  *  **None / None** - useful for non-standard scenarios;
+  *   **None / API accounting** - No authentication will be applied from Splynx but Mikrotik API accounting will be used;
+  *   **Firewall IP-MAC filter / API accounting** - Mikrotik API will be used to push firewall filter rules into the router. This is useful for Static IP address assignment - when a customer sets the IP address on the equipment manually;
+  *   **DHCP (Radius) / API accounting** - DHCP server on the router will use Radius authorization. Accounting will be done via Mikrotik API;
+  *   **DHCP (Leases) / API accounting** - Mikrotik API will be used to push DHCP leases to the router. **Do not forget to set the MAC addresses in the customer's internet service**. Accounting will be processed via Mikrotik API;
+  *   **PPP (Radius) / Radius accounting** - PPPoE/PPTP/OpenVPN server will use Radius authorization. Radius accounting will be used;
+  *   **PPP (Secrets) / API accounting** - Mikrotik API will push PPP secrets to the router. Accounting will be processed via Mikrotik API;
+  *   **Hotspot (Users) / API accounting** - Mikrotik API will push Hotspot users to the router. Accounting will be processed via Mikrotik API;
+  *   **Hotspot (Radius) / Radius accounting** - Mikrotik Hotspot server will use Radius authorization. Radius accounting will be used.
+
+
+ **NOTE!**
+ *Even if Authorization = None or API authorization is used - Radius will respond to authorization and accounting requests.*
+
+*If API Authorization is used - do not forget to specify the correct router in the customer's internet service settings (if router is set to None this will not work).*
+
+*If API Authorization is used - Mikrotik API should be enabled and configured on the _Mikrotik_ tab and in Router settings.*
+
+
+**API ACCOUNTING** - Splynx will login every 5 minutes (can be changed) and gathers statistics from the Mikrotik router using Mikrotik API;
+
+**RADIUS ACCOUNTING** - Router sends accounting statistics every **n** seconds to the Radius (Splynx) server using RADIUS accounting packets. **n** is a configurable value. It can be configured per NAS type under *Config / Networking / Radius / NAS Type / Load / Accounting interval (in sec)*.
 
 * * *
+Once the router is added, you can change the following parameters:
 
-Splynx supports different router models from different producers. Below are configuration tutorials for vendors that are most commonly used:
+![router_view](router_view.png)
+#### RADIUS
 
-* [Cisco routers](networking/routers_settings/cisco/cisco.md)
+* **Radius secret** - Radius secret (field "Secret" under RADIUS server on a Mikrotik);
 
-* [Juniper routers](networking/routers_settings/juniper/juniper.md)
+* **NAS IP** - RADIUS server attribute **NAS-IP-Address** (RADIUS server "Src. address" field on a Mikrotik router). If field "Src. Address" is specified on the Mikrotik RADIUS server - NAS IP(in Splynx) should be the same;
 
-* [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
+* **Pools** - if selected, only use the selected pools for this router. If you want to use all available pools - do not select any. Pools have to be created under *Networking / IPv4 Networks*.
 
-* [Other](networking/routers_settings/other/other.md)
+**IP/HOST** Next to this field you'll see a ping tool which indicates whether a router is pingable or not.
 
-* [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
+* * *
+### ROUTER CONTENTION
+Here you can add/edit router contention:
+
+![sector](sector.png)
+
+### Mikrotik
+
+In this section the API connection between the Mikrotik router and Splynx is managed. To use this function we have to create a new user within the Mikrotik under (System - Users) as seen below:
+
+![user](mikrotik_user.png)
+
+We'll use *splynx_user* to link the router with Splynx:
+
+![mikrotik](router_mikrotik.png)
+
+We configured all parameters in step 1(in the screenshot), saved the configuration in step 2 and test the connection in step 3 where we got the result.
+
+Additional parameters to configure:
+
+* **Enable shaper** - enable/disable Mikrotik API shaping (Radius rate limiting should be disabled (commands should be negated "#" - when enabling this);
+
+* **Shaper** - select where the API bandwidth rules should be applied;
+
+* **Shaping type** - select queue structure type. More info about shaping can be found [here](networking/bandwidth_management/bandwidth_management.md).
+
+* **Wireless access list** - if enabled, and the service of a customer has a MAC address specified, the MAC address of the service will be added under *Wireless - Access list* on the Mikrotik;
+
+* **Disabled customers to Address-List** - used for API authorization. This option changes the blocking behavior. If disabled - credentials of blocked customers will not be added to the router(hotspot users, PPP secrets firewall rules and DHCP leases), if enabled - blocked customers IP addresses will be placed in the respective address list;
+
+* **Blocking rules** - enable/disable blocking rules. If enabled - Splynx will push a series of firewall filter rules to the router to enforce the suspension of blocked customers' services.
+
+In the **Mikrotik status** window you can see the latest status of the API connection, router model, ROS version, CPU usage, status of IPv6 and date & time of the last received status.
+
+There are 3 more buttons:
+
+* **Delete all rules from router** - by click on this button all API rules will be removed from a router. If you need to use this, click on it and immediately disable "Enable API";
+
+* **Backups** - by clicking on this button you will see available backups of the router;
+
+* **Check status now** - forces Splynx to check the status.
+
+### Mikrotik log
+
+Here you can find Mikrotik logs:
+
+![logs](log.png)
+
+Files can be viewed of downloaded.
+
+### MAP
+
+Under this tab you can configure the geolocation of a router on the map by specifying the geo data for the router.
+
+Splynx supports different router models from different producers. Below are configuration tutorials for vendors that are used most often and supported by us:
+
+* [Mikrotik routers](mikrotik/mikrotik.md)
+
+* [Cisco routers](cisco/cisco.md)
+
+* [Juniper routers](juniper/juniper.md)
+
+* [Ubiquiti Edge routers](ubiquiti/ubiquiti.md)
+
+* [Other](other/other.md)

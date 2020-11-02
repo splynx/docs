@@ -105,11 +105,15 @@ After all certificates are imported, let's create an OpenVPN client interface:
 
 ![interface](interface_ovpn.png)
 
+**IMPORTANT! Be very attentive with "Add default route" option as it can broke current routes**
+
 Once it's created you will see new routes under **IP - Routes**
 
 A PPP profile in Mikrotik should be used that's not already used by another service (in case it has an IP assigned it will use this IP from the profile and not receive the correct IP from the server)
 
 ![routes](mikrotik_routes.png)
+
+**IMPORTANT! Make sure that you need to add NAT firewall rule before doint next step**
 
 Now we need to add a NAT rule under **IP - Firewall - NAT** with a "srcnat" chain and "Out.Interface" = your OpenVPN client interface:
 

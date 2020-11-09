@@ -1,29 +1,35 @@
 Hardware requirements
 =====================
 
-Hardware:
+For running Splynx on a hosted environment you need the following:
 
-* CPU's: 4 cores or more
-* CPU Core speed: 2400 Mhz or more
-* Memory: 4 GB or more
-* HDD: 64 GB or more (SSD preferred)
-* Network interface: 1 or more
+## Hardware:
 
-Virtual machines supported: *VMWare, XEN, KVM, Hyper-V*
+* CPU: 4 cores and more
+* CPU Core speed: 2400 Mhz and more
+* Memory: 4 GB (8 GB+ recommended for big installs)
+* HDD: 64 GB and more (SSD preferred)
+* Network interface: 1 and more
 
-Splynx Framework cannot work on OpenVZ containers.
+We support the following Virtual Machines – *VMWare, XEN, KVM, Hyper-V*
 
-Our System has been successfully tested on these cloud services:
+Splynx Isp Framework cannot work on OpenVZ containers.
 
-[DigitalOcean](https://splynx.com/digitalocean/) (can be used in production)
+Our system has been successfully tested on these cloud services:
 
-[Scaleway](https://www.scaleway.com/) (armv7 technology, used for small installations)
+DigitalOcean (can be used in production)
+
+[DigitalOcean](https://splynx.com/digitalocean/)
 
 
-Software:
+## Software:
 
-OS Linux: Debian 9 or Ubuntu (16.04) , PHP 7.0, MySQL server
+OS Linux: Ubuntu (20.04) , PHP 7.4, MySQL server
 
 SSL Certificate
+
+Always better to secure your web server with an SSL Certificate
+
+Our partner: GlobeSSL
 
 [GlobeSSL](https://splynx.com/ssl_cert/)

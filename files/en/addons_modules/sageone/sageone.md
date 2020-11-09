@@ -63,7 +63,7 @@ Once the bank account has loaded, scroll to the top of the page and select this 
 * **Define items in SageOne and sync it to Splynx** - These are items you will use to pair/sync it to transaction categories within splynx.
 
 The first step is to create the items within SageOne.
-Items created in SageOne should have relativity yo services within Splynx.
+Items created in SageOne should have relativity to services within Splynx.
 
 For instance, if you have prepaid and recurring Fibre tariff plans within Splynx, you should have/create these items within SageOne.
 

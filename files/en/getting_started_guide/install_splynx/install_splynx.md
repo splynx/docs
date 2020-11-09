@@ -3,9 +3,9 @@ Install Splynx ISP Framework
 
 **Base requirements:**
 
-**_Clear_ Debian or Ubuntu server.**
+**_Clear_ Ubuntu server.**
 
-**Supported OS(s): Debian 9 (without GUI) or Ubuntu 16.04 (server)**
+**Supported OS: Ubuntu 20.04 (server)**
 
 Login to your server via CLI, as root:
 
@@ -15,15 +15,17 @@ For Ubuntu, use the following command to gain root access:
 sudo su
 ```
 
-For Debian, use the following command to gain root access:
-```bash
-su
+Timezone configuration:
+
+```
+dpkg-reconfigure tzdata
 ```
 
-To configure your Timezone, use the following command:
+Install:
 
-```bash
-dpkg-reconfigure tzdata
+```
+wget -qO- https://deb.splynx.com/setup_3_1 | bash -
+apt-get install splynx
 ```
 
 To Update CA certificates for HTTPS, use the following commands:
@@ -33,11 +35,7 @@ apt-get install ca-certificates
 update-ca-certificates
 ```
 
-To Install Splynx, enter the following commands:
-```bash
-wget -qO- https://deb.splynx.com/setup | bash -
-apt-get install splynx
-```
+
 To finish the installation process, please type the following order of URL in a browser - http://ip_address/admin (where ip_address is, replace it with the IP address of your Splynx server), add your license key and save it:
 
 ![Screenshot](install_splynx1.png)
@@ -56,13 +54,29 @@ After applying your license, you will be redirected to the "Finish setup" menu (
 
 
 To Update your server:
+
+**Upgrade:** Supported OS for upgrade: Ubuntu 20.04 (server) (Splynx version 3.1)
+
+```
+apt update
+apt install splynx-7.4
+```
+**Update:**
+
 ```bash
 apt-get update
 apt-get dist-upgrade
 ```
+
+#### Important notice!
+If you are current running Splynx v3.0 or earlier, please contact support: support@splynx.com
 
 If you make an error when entering your license code, or mysql root password you can re-enter it with:
 
 ```bash
 dpkg-reconfigure splynx
 ```
+
+Video tutorial:
+
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://youtu.be/0KZAENbH5KE">Video on youtube</iframe>

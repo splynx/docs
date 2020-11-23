@@ -384,5 +384,5 @@ Table of contents
 
 
 ##### [Miscellaneous](miscellaneous/miscellaneous.md)
-* [Console Commands](console_commands/console_commands.md)
-* [Linux Administration](linux_administration/linux_administration.md)
+* [Console Commands](miscellaneous/console_commands/console_commands.md)
+* [Linux Administration](miscellaneous/linux_administration/linux_administration.md)

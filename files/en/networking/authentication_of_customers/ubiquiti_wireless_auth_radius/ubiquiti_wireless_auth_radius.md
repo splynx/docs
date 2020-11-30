@@ -53,6 +53,8 @@ eap {
                 copy_request_to_tunnel = yes
                 use_tunneled_reply = no
                 virtual_server = "inner-tunnel"
+                tls_min_version = "1.0" # On Ubuntu 20.04 (Splynx 3.1)
+                tls_max_version = “1.2" # On Ubuntu 20.04 (Splynx 3.1)
 ...
 }
 ```

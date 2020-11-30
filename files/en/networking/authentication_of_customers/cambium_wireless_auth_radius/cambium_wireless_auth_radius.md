@@ -38,3 +38,20 @@ Force network to use one NAS - YES
 Network - Any network can be used
 Default NAS Id - set correct NAS ID (Device that will show online users)
 ```
+
+
+For Ubuntu 20.04 (from Splynx 3.1) you should add to file `/etc/ssl/openssl.cnf`:
+after line: `oid_section		= new_oids`
+```
+openssl_conf = default_conf
+
+[ default_conf ]
+ssl_conf = ssl_sect
+
+[ ssl_sect ]
+system_default = system_default_sect
+
+[ system_default_sect ]
+MinProtocol = TLSv1
+CipherString=DEFAULT:@SECLEVEL=1
+```

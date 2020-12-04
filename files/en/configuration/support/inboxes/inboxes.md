@@ -22,6 +22,8 @@ We are going to create a new inbox using a gmail email address. IMAP details for
 
 When all the credentials have been added, click on "Test connection" to run a test to ensure that the inbox is connected to the gmail account.
 
+[IMAP - Troubleshooting SSL/TLS Errors](configuration/support/inboxes/imap_troubleshooting.md)
+
 ### The following parameters can be configured for IMAP settings:
 
   * **Which messages to process:** "All" or "Unread";

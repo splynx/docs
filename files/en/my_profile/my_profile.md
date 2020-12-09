@@ -1,17 +1,16 @@
 My Profile
 =============
 
-This is the profile management page for the administrator logged into the system. Basic details  of the current administrator can be personalized here.
+This is the profile management page for the administrator currently logged into the system. Basic details  of the current administrator can be personalized here.
 
 ![My profile](my_profile.png)
 
-This section is separated into the following sections, please click on each section for more information.
+This section is separated into the following sections, please click on each section for more information:
 
+* [ Profile ](profile/profile.md)
 
-* [Customer search fields](my_profile/customer_search_fields/custom_search_fields.md)
+* [Customer search fields](customer_search_fields/custom_search_fields.md)
 
-* [Last Login](my_profile/last_login/last_login.md)
+* [Last Login](last_login/last_login.md)
 
-* [ Profile ](my_profile/profile/profile.md)
-
-* [Scheduling](my_profile/scheduling/shceduling.md)
+* [Scheduling](scheduling/scheduling.md)

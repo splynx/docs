@@ -68,6 +68,12 @@ Table of contents
 * [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
 * [Vendors](inventory/vendors/vendors.md)
 
+##### [My Profile](my_profile/my_profile.md)
+* [ Profile ](my_profile/profile/profile.md)
+* [Customer search fields](my_profile/customer_search_fields/custom_search_fields.md)
+* [Last Login](my_profile/last_login/last_login.md)
+* [Scheduling](my_profile/scheduling/scheduling.md)
+
 
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)

@@ -45,7 +45,9 @@ To add a new administrator, click on the *Add icon* in the top right corner of t
 
 * **Router** access (radius) - specify the permissions to routers for the administrator: None, Read, Write, Full
 
+
 * **Send emails from my name** - enables/disables sending of emails from the administrators email, overrides system email configuration.
+
 
 * **Partner** - select a partner to associate the administrator with
 
@@ -69,16 +71,31 @@ Main fields available for changes :
 * **Tariff plans**
 
 
+* **CRM**
+
+
 * **Customers**
+
+
+* **Tickets**
 
 
 * **Finance**
 
 
+* **Inventory**
+
+
 * **Networking**
 
 
-* **Support**
+* **Messages**
+
+
+* **Scheduling**
+
+
+* **Voice**
 
 
 * **Administration**

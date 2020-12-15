@@ -8,6 +8,8 @@ This Splynx feature allows you to set up fully automatic customers registration 
 This is a built-in feature in Splynx starting from version 2.3 and can be configured under `Config / Main / Portal_:`
 ![picture1.png](picture1.png)
 
+Please note: Protocol (http, or https) should be same on Splynx and on Mikrotik (in case of HTTPS valid SSL Certificate (not self-signed) should be installed to Mikrotik.
+
 * **Enable hotspot** - Enable or disable this feature.
 * **Hotspot hostname** - Should be the same as in your Mikrotik settings. In the Hotspot Server Profile (*DNS Name*):
     ![picture2](picture2.png)

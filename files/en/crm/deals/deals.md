@@ -12,6 +12,6 @@ Creating the successful *Quotes* leads to a greater number and amount of deals i
 
 We can also use the filter options to filter between the different status' the deals belong to, switch the list of leads with quotes to workflow view according to their pipeline status or use advanced search.
 
-[Deals](deals3.png)
+![Deals](deals3.png)
 
-[Deals](deals4.png)
+![Deals](deals4.png)

@@ -2,19 +2,19 @@ Quotes
 =======
 A quote is a document provided to a lead to inform them of the cost of a service/s before they decide to purchase it.
 
-To view a list of all quotes, simply click on the Quotes menu in the sidebar under the CRM module. Here we can see details for each quote and the operations column with multiple actions to execute to each quote - *view*, *view PDF*, *download PDF*, *send*, *edit* or *delete*.
+To view a list of all quotes, simply click on the Quotes menu in the sidebar under the CRM module. Here we can see details for each quote and the operations column with multiple actions to execute to each quote - *view*, *view PDF*, *download PDF*, *send*, *convert quote* *edit* or *delete*.
 
-![Quotes Main View](quotes_main.jpg)
+![Quotes Main View](quotes_main.png)
 
 Quotes per lead can be accessed by navigating to the Quotes tab on the leads page. Here we can see a list of all quotes generated for the selected lead, displaying a summary of the total value of the quotes and a filter section at the bottom of the page, used to display quotes of a specified status.
 
-![Quote](quote.jpg)
+![Quote](quote.png)
 
 To add a quote we should click on the `Add quote` button in the top right-hand corner of the quotes tab under a selected lead's page.
 
 When adding a quote we are presented with the pop-up window below:
 
-![Quote_add](quote_add.png.jpg)
+![Quote_add](quote_add.png)
 
 Here we can edit the following fields:
 - **Status** - New, Sent, On review, Accepted or Denied.
@@ -31,4 +31,4 @@ Once we have created a quote, we can navigate to the operations column on the ta
 
 When sending quotes to leads, it is possible to use templates to format the content in a desired fashion to display the quote.
 
-Information on editing or creating Quote templates can found [here](configuration/system/templates/templates.md)
+Information on editing or creating **Quote templates** can be found [here](configuration/system/templates/templates.md)

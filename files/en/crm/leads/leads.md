@@ -31,6 +31,10 @@ However, you can to change the list of leads to display, by selecting the necess
 
 ![Leads list](leads_list.png)
 
+In case we need to apply some action to multiple leads at the same time, we should select necessary leads from the list and click on *Actions* button. The following actions are available in drop down menu: assign to, change, send message, delete.
+
+![Leads mass actions](leads_actions.png)
+
 Also, we can switch current table view of leads into workflow
 ![Leads workflow](leads_workflow.png)
 
@@ -46,7 +50,7 @@ CRM specific details:
 - *Score* - A scoring function that can be used to score leads based on popularity.
 - *Type of billing* - option allows to choose between reccuring and prepaid (custom) billing.
 - *Date added* - the date when the lead was added into system.
-- *Comments / Tasks* - the panel with scheduled tasks for current lead.
+- *Comments / Tasks* - the panel with scheduled tasks for current lead. Put check mark to mark task as done.
 - *Communication* - the panel with the history of communication with lead.
 - *Maps* - the visual map based on the coordinates in Geo data field.
 - *Recent activities* - the timeline shows us live information about all changes of lead profile in system.

@@ -10,6 +10,10 @@ Quotes per lead can be accessed by navigating to the Quotes tab on the leads pag
 
 ![Quote](quote.png)
 
+Quote can be converted directly to invoice for the lead that became customer.
+
+![Quote convert](quotes_convert.png)
+
 To add a quote we should click on the `Add quote` button in the top right-hand corner of the quotes tab under a selected lead's page.
 
 When adding a quote we are presented with the pop-up window below:

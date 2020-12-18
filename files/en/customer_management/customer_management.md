@@ -5,7 +5,7 @@ Dreading as can be, customer management is a vital task for the continued, excel
 
 The Splynx family has taken into account each element when dealing with this and compiled an advanced customer management system which brings you an easy and manageable platform for you to effortlessly manage your customers.
 
-Our management system consists of 6 main pages for each customer on the system. Namely, information, services, billing, statistics, documents, CPE and CRM.
+Our management system consists of 6 main pages for each customer on the system. Namely, *Information*, *Services*, *Billing*, *Statistics*, *Documents*, *CPE*, *CRM* and *Communication*.
 
 
 Before we explore each section, it is vital to know that this module's tables like all the others within Splynx, is customizable to display information of your preference, furthermore, you are not limited by the fields available in the system by default.

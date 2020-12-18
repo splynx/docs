@@ -10,9 +10,11 @@ Click on the <icon class="image-icon">![...](change_column_sorting.png)</icon> i
 
 ![Show column](show_column.png)
 
-You can select customers via checkboxes and make mass changes to them (change status, location, partner, type etc.) or send messages to selected customers.
+You can select customers via checkboxes and make mass changes to them (change status, location, partner, type, add coverage notes etc.), send messages, apply discount or delete the inactive customers.
 
 ![Select customers](customer_multi_choice.png)
+
+![Select customers](customer_multi_choice1.png)
 
 In addition, by clicking on the export icon <icon class="image-icon">![Export table](export_table.png)</icon> it's possible to print, copy or export a table in Excel, CSV or PDF formats.
 

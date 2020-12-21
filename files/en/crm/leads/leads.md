@@ -89,8 +89,9 @@ The option to change deal value/comment
 
 **Tickets**
 - *Create* - creates ticket linked to the lead (directs to [tickets](/tickets/tickets.md))
-- *All tickets* / *Opened* - redirects to *Tickets → List new & open* related to current lead
-- *Closed* - redirects to *Tickets → List of closed* related to current lead
+* *All tickets* - show all related ticket/-s to current lead
+* *Opened* - show only the opened ticket /-s to current lead
+* *Closed* - show only the closed ticket /-s to current lead
 
 ![Tickets button](tickets_button.png)
 

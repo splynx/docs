@@ -10,7 +10,7 @@ Click on the <icon class="image-icon">![...](change_column_sorting.png)</icon> i
 
 ![Show column](show_column.png)
 
-You can select customers via checkboxes and make mass changes to them (change status, location, partner, type, add coverage notes etc.), send messages, apply discount or delete the inactive customers.
+You can select customers via check boxes and make mass changes to them (change status, location, partner, type, add coverage notes etc.), send messages, apply discount or delete the inactive customers. Only if customer has *Inactive* status, the function *Delete* is available in *Actions* drop-down menu.
 
 ![Select customers](customer_multi_choice.png)
 

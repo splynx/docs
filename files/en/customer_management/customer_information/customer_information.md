@@ -2,11 +2,49 @@ Customer information
 ====================
 
 The customer information tab is divided into 6 main sections, namely, _Main information_, _Comments_, _Additional information_, _Maps_. _CAP_, _Activity_.
+On the top sidebar of information page of the selected customer, the following functions are available:
+
+![Customer_View.png](Customer_View3.png)
+
+**Full name of customer** - Names and surname of the customer
+**Customer id** - the customer's ID in Splynx system
+**Account balance** - the current customer's account balance
+
+**Actions**
+* *Create message* - Send Email, Message to *Customer portal*, Message to *Customer portal* & Email, SMS. In case of sending of email to customer the field *CC - Carbon Copy* is present in the form.
+The predefined templates can be used as well.
+
+Email / SMS configurations are required, check the articles:
+
+[Email sending configuration](configuration/main_configuration/email_config/email_config.md)
+[SMS sending configuration](configuration/main_configuration/sms_config/sms_config.md)
+
+* *Send welcome message* - Send welcome message as *Email* / *SMS* / *Email + SMS*  to customer using the predefined template. Templates can be changed in Config → Templates. Email / SMS configurations are required
+* *Login as customer* - Open the current customer account on [Customer Portal](customer_portal/customer_portal.md)
+
+In case customer has *New (Not yet connected)* status, the function *Convert to lead* is available in *Actions* drop-down menu. *Convert to lead* helps to convert current customer back to lead one.
+In case customer has *Inactive (Doesn't use services)* status, the function *Delete* is available in *Actions* drop-down menu. *Delete* - remove the current customer from Splynx. To remove multiple customer at the same time, go to Customers → List, select the customers, click on *Actions* and choose *Delete* option in drop down menu.
+This option is available only when customers with *Inactive* status were selected.
+
+**Task**
+* *Create task* - Create [Task](scheduling/tasks/tasks.md) for current customer
+* *List of tasks* - Open task/-s related to the current customer
+
+**Tickets**
+* *Create* - create [Ticket](tickets/tickets.md) linked to the current customer (directs to [tickets](/tickets/tickets.md))
+* *All tickets* - show all related ticket/-s to current customer
+* *Opened* - show only the opened ticket /-s to current customer
+* *Closed* - show only the closed ticket /-s to current customer
+
+**Save**
+The button to save all the changes on the current customer page.
+
 
 To edit a customers information, navigate to *Customers* -> *List* -> select the customer (click on the directly on the name or id or put a check mark to highlight the customer then click on *View*
 
 ![Customer_View.png](Customer_View.png)
 ![Customer_View.png](Customer_View1.png)
+
 
 **Main Information**
 

@@ -70,11 +70,17 @@ Select the `Type` of document in the top right corner - in this case: `Documents
 
 ![Template's types](template_types.png)
 
-
 **To create a new template** click on the <icon class="image-icon">![Add](add_button.png)</icon> option. A new window titled *Create template* will appear where you can specify the `Title`, `Description` (optional) and input code for the template. (HTML code - please see [Templates configuration](configuration/system/templates/templates.md))
 
-You can use the `Check Code`, `Preview` and `Placeholders` buttons to check the validity of the code, preview the live code in a new window and select placeholders from a list respectively.
+You can also edit existing templates or delete them by clicking on options ![Edit](edit_button.png) and ![Delete](delete_button.png) in the "Actions" column of the table.
+
+Use the `Check Code`, `Preview` and `Placeholders` buttons to check the validity of the code, preview the live code in a new window and select variables from a list respectively.
 
 ![Creating template](create_template.png)
 
-You can also edit existing templates or delete them by clicking on options ![Edit](edit_button.png) and ![Delete](delete_button.png) in the "Actions" column of the table.
+In case of variables, you can use a great number of them in your documents. For example, to get customer name use `{{ customer.name }}`, customer login - `{{ customer.login }}`, billing type - `{{ customer.billing_type }}`, account balance of customer - `{{ customer_billing.deposit }}`, show customer's signature in contract - `<img src="{{signature}}">`, signature date - `{{sign_date}}`, end of term - `{{end_of_term}}` etc.
+
+![Sign contract](sign_cont4.png)
+![Sign contract](sign_cont5.png)
+
+For more info, please follow this article - [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md))

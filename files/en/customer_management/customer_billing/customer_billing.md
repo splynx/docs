@@ -31,23 +31,36 @@ The configuration of the **selected** customer billing is done here.
 
 ![Billing settings](billing_settings.png)
 
-
 ## Billing Settings:.
 * **Billing Enabled** - enables or disables billing for customer (whether the system should take customer into account or not)
 * **Period** - period the customer will be billed for
 * **Payment Method** - means in which client will make payments; credit card, cash, etc.
 * **Billing day** - when the customer will be charged and invoices will be generated
 * **Billing due** - when the customer needs to make payments before being blocked
-* **Grace Period** - when the customer's services will be marked as inactive, client no longer uses services and the system no longer accounts for it
-* **Minimal balance** - minimal balance required in the customer account to avoid being blocked
-* **Create invoices** (after Charge & Invoice) - creates an invoice automatically after using the charge & invoice button <icon class="image-icon">![Charge button](charge_button.png)</icon>.
+* **Next blocking** - shows when customer will be blocked, e.g. in case of negative account balance you can change once the date of charge and postpone customer block
 
+![Next Blocking](next_blocking.png)
+![Next Blocking](next_blocking1.png)
+
+* **Deactivation period** (the old term **Grace period**) - when the customer's services will be marked as inactive, client no longer uses services and the system no longer accounts for it
+* **Minimal balance** - minimal balance required in the customer account to avoid being blocked
+* **Partner percent** - how many percent is deducted from customer's payment to partner. The value only makes sense if it's different from *Partner's percent (%)* in `Config → Company information`. Deductions amount we can check in `Finance → Invoices`, *Totals* table, *Partner* column
+
+![Partner percent](partner_percent.png)
+
+* **Create invoices (after Charge & Invoice)** - creates an invoice automatically after using the charge & invoice button <icon class="image-icon">![Charge button](charge_button.png)</icon>.
+
+* **Auto pay invoices from account balance** - enables/disables the automatic paying of services from the customers account balance, you can enable this option if customers' payments are regularly made from their account balance
+
+* **Send finance notifications** - enables/disables sending of notifications about payments, invoices, overdue invoices etc.
 
 ## Payment Accounts
 
  Accounts of the customer which can use to make payments on the system.
 
  ![Payment accounts](payment_accounts.png)
+
+ In `Config → Finance → Payment accounts` we can add new payment account.
 
  You can edit the available accounts to add customers accounts details with the "**+**" icon.
 

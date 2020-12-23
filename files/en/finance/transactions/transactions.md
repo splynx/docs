@@ -45,3 +45,8 @@ Like all tables in Splynx, the buttons below the table can be used to export the
   ![Create invoice](./create_invoice.png)
 
 * Once the transaction is created, it is possible to edit or delete it with the icons in the Actions column <icon class="image-icon">![Buttons](./small_buttons.png)</icon> . Please note, if you've added an Invoice from a transaction, the option to edit or delete the transaction will no longer be available, however, the invoice can be edited accordingly.  
+
+**Generate statement** - allows to generate *Invoices/Payments* or *Transactions statement* for a specific period in case customer has such request. The output statistic can be downloaded as pdf file, saved to documents or sent to customer.
+
+![Generate statement](./statement.png)
+![Send PDF statement to customer](./statement1.png)

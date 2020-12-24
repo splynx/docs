@@ -99,6 +99,7 @@ Please note that if you are charging a customer **manually**, the new invoice wi
 
 ![Billing settings](billing_settings_charge.png)
 
+By default, when customer uses recurring billing, the settings `Create invoices (after Charge & Invoice)`, `Auto pay invoices from account balance`, and `Send finance notifications` are turned on. Ability to automatically use money from balance is useful for overpayment scenarios.
 
 When charging customers, if necessary, discounts for customers services can be added. Discounts are applied in the customers services. Navigate to customers services tab and select the desired service to apply the discount to, click on Edit icon <icon class="image-icon">![Edit button](edit_button.png)</icon>. The edit service window will appear where you can apply the discount according to the parameters highlighted and you may add a note for reference in discount message. After a discount has been configured, it will appear in the <icon class="image-icon">![Charge button](charge_button.png)</icon> window and the final price will automatically be calculated.
 

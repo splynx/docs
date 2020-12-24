@@ -33,8 +33,10 @@ In monthly limits, we can set how much data (in KB, MB, GB or TB) customers are 
 _Monthly traffic limit_ - the total amount of traffic allowed for the tariff (in KB, MB, GB or TB)<br>
 _Bonus traffic limit_ - the amount of non-accounting traffic allowed for the tariff(in KB, MB, GB or TB)<br>
 _Traffic direction_ - the direction of traffic to account for the monthly limit.<br>
-_Action_ - actions to execute once the monthly limit is reached. <br>
+_Action_ - actions to execute once the monthly limit is reached.<br>
 _Auto Top-Up plan_ - tariff to use if a customer has auto top-up's enabled.<br>
+_Compensate over usage via Top-Up_ - auto Top-Up for all amount already used data (between accounting interval).<br>
+_Auto Top-Up trigger value_ (%) - if the value is reached then system make auto Top-Up. Max number of Top-Up per month will be ignored. This value is percent of Top-Up tariff amount.<br>
 _Top-up will disable daily & weekly limits_ - whether top-up data should be included in FUP rules or not.<br>
 _Rollover unused data (monthly)_ - transfer unused data of cap to the next month's limits. (when enabled, daily and weekly limits set in FUP are disabled)<br>
 _Allow the usage of bonus traffic when normal CAP is finished_ - enables/disables bonus data for customers.

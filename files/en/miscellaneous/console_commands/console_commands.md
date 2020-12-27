@@ -231,6 +231,12 @@ Finally, you’ll need to decide on what you would like to backup.
 backup		 root@splynx.server:/var/www/ 		my_splynx_backup/
 ```
 
+if you are using specific ssh port, please use ssh_args:
+
+```
+backup		 root@splynx.server:/var/www/ 		my_splynx_backup/   ssh_args=-p456
+```
+
 Save the file
 
 **Test Rsnapshot configuration**

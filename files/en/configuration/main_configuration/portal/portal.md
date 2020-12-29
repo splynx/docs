@@ -45,7 +45,7 @@ Parameter descriptions:
 In this section we can specify the permission to each additional attribute field in the My profile section of the customer portal:
 
 
-Configuration of additional attributes to be seen in Customer portal, for example, GPS, Contract ID, Bank Account etc. For each of these items you can specify the permission of the customer: View or Edit.
+Configuration of additional attributes to be seen in Customer portal, for example Social ID, Coverage notes, Bank Account etc. For each of these items you can specify the permission of the customer: View or Edit.
 Items you've selected to be viewed only in the Customer Account will have dimmed fields and items that you've granted editing permissions to customers for, will be displayed with white fields.
 
 ![Additional attributes in profile](additional_attr.png)
@@ -98,6 +98,12 @@ Below is an example of a Customer account in the portal with all items selected 
 
 ![Dashboard](dashboard0.png)
 
+### Documents**
+* **Subject for contract notification** - the field allows to edit a subject of the letter in case the contract was signed with customer
+* **Text for contract notification** - the field allows to edit a notification text in case the contract was signed with customer
+
+Information how to create contract, sign it etc. in Splynx can be found here - [Customer documents](customer_management/customer_documents/customer_documents.md).
+
 
 ### Profile
 
@@ -111,10 +117,12 @@ Profile information includes:
 * Login
 * Name
 * Email
+* Billing email
 * Phone
 * Street
 * ZIP
 * City
+* Payment method
 * Password
 
 For each of these items you can choose the actions available for the customer: View or Edit.
@@ -126,7 +134,7 @@ Items you've selected  to be viewed only in the Customer Account will have dimme
 ![Profile](profile2.png)
 
 
-### Statistics
+### Internet Statistics
 
 ![Statistics](stat1.png)
 
@@ -137,39 +145,50 @@ You can enable the following features here:
 * **Show graph** - enables/disables the displaying the Bandwidth usage graph in Customer portal
 * **Show FUP statistics** - enables/disables the displaying of the details of FUP statistics
 * **Show current limits** - enables/disables the displaying current speed limits information
-* **Show hard limits** - enables/disables the displaying hard limits information
 * **Show monthly limits (CAP)** - enables/disables the displaying information of monthly CAP limits
 * **Show sessions statistics** - enables/disables the displaying the details of session statistics
 
+### Voice Statistics
+
+![Voice Statistics](voice_stat.png)
+![Voice Statistics Dashboard](voice_stat_dash.png)
+
+* **Show calls total** - enables/disables the displaying of calls total statistic on customer portal
+* **Show voice data** - enables/disables the displaying of voice data statistic on customer portal
+* **Show messages total** - enables/disables the displaying of messages total statistic on customer portal
+* **Show data total** - enables/disables the displaying of data total statistic on customer portal
 
 ### Services
 
-This is the configuration of services and service fields to be displayed in the Customer portal. You can also enable the option to display how many days is left until the end of the service, as well as wheteher or not to display the hardware linked to the customer.
+This is the configuration of services and service fields to be displayed in the Customer portal. You can also enable the option to display how many days is left until the end of the service, as well as wheteher or not to display the hardware linked to the customer etc.
 
 ![Services](services1.png)
 
 For each type of service you can select the fields to be displayed:
 
-** **Bundle Services** - *Customer ID, Description, Price, Contract start date, Contract end date, Status*
+* **Bundle Services** - *Customer ID, Description, Price, Contract start date, Contract end date, Status*
 
-* **Internet Service** - *Customer ID, Price, Login, Radius IPv6, Change plan, Description, Start date, IPv4, Type of Connection, Password changed, Plan, End date, Test, Stop/Active service, Status*.
+* **Internet Service** - *Customer ID, Description, Plan, Price, Start date, End date, Login, IPv4 address, Stopped / Active service, Self-change tariff plan, Request tariff plan change, Password change, Status*.
 
 
   ![](srv1.png)
 
 
-* **Voice Service** - *Customer ID, Price, Phone, Status, Description, Start date, Stop/Active service, Plan, End date, Change plan*.
+* **Voice Service** - *Customer ID, Description, Plan, Price, Start date, End date, Phone, Direction, Stopped / Active service, Self-change tariff plan, Request tariff plan change, Status*.
 
   ![](srv2.png)
 
 
-* **Custom Service** - *ID, Price, New, Stop/active service, Description, Start date, USD/year, Change plane, Plan, End date, TEST field, Status*.
-![](srv1.png)
+* **Recurring Service** - *Customer ID, Description, Plan, Price, Start date, End date, Stopped/ Active service, Self-change tariff plan, Request tariff plan change, Status*.
+![](srv3.png)
 
 * **Show days** - enables/disables the displaying of the amount of days left until the end of the service.
 
 * **Hardware** - enables/disables the displaying of hardware linked to the customer
 
+* **ACS Devices** - enables/disables the displaying of ACS devices linked to the customer
+
+* **Show all services** - enables/disables the displaying of all services including all stopped and disabled
 
 ### Tickets
 
@@ -180,7 +199,7 @@ This is the configuration of field to be displayed in the Tickets module of the 
 Fields to be displayed in the module can simply be ticked or left unticked if you do not wish to display the field.
 
 Fields available the tickets modules are:
-*ID, Subject, Priority, Status, Group, Type, Assigned to, Created Date & Time, Updated date & time and Star*
+*ID, Subject, Priority, Status, Group, Type, Assigned to, Watching, Created Date & Time, Updated date & time and Star*
 
 ### Top-Up settings
 
@@ -204,8 +223,6 @@ This is the configuration of Manual Top-ups in the customer portal.
 
 ![Manual top up](mtopup.png)
 
-**Parameter descriptions**:
-
 * **Enable** - enables/disables manual top-ups in the customer portal.
 * **Create finance document** - select which document the system should create after a customer performs a manual top-up
 * **Pay before Top-up** - enables/disables whether the customer will receive their top-up data only after they pay for the top-up.
@@ -213,7 +230,7 @@ This is the configuration of Manual Top-ups in the customer portal.
 
 ### Finance
 
-This is the configuration of financial items to be displayed in Customer portal such as: Invoices, Payments, Proforma Invoices and Transactions, and Payment methods available for Customer, for example, Refill cards. As well as the available payment methods for the customer and which transaction fields the customer can display.
+This is the configuration of financial items to be displayed in Customer portal such as: Invoices, Payments, Proforma Invoices, Transactions and Statements. Payment methods, except other available, include Refill cards. The list of Transactions fields includes Debit/Credit, Movement and Invoice number
 
 
 ![Finance](finance2.png)
@@ -233,7 +250,6 @@ This is the configuration of Hotspot logins
 * **Hotspot status page** - enables/disables the hotspot status page
 
 
-
 ----
 ##### Some fields need to be explained more detailed:
 
@@ -242,11 +258,11 @@ This is the configuration of Hotspot logins
   ![](psw_change.png)
 
 
-* **Change plan** - when this option is enabled, it will allow customers to apply for a plan change via the Customer portal by sending a request to technical support. When this option is enabled customers will see an <icon class="image-icon">![](change_plan.png)</icon> icon in the *Actions* column in Services. By clicking on that icon a window "Change plan", will appear where customers will choose an option *Manual change request*.
+* **Change plan** - when this option is enabled, it will allow customers to apply for a plan change via the Customer portal by sending a request to technical support. When this option is enabled customers will see an <icon class="image-icon">![](change_plan.png)</icon> icon in the *Actions* column in Services. By clicking on that icon a window "Change plan", will appear where customers will choose an option *Request tariff plan change*.
 
 ![](change_plan1.png)
 
 
-The window "Create ticket" will appear where customers will choose the Priority of the ticket (Minor, Major, Critical) and write a short message. Customer can also upload a file by clicking on the Upload icon <icon class="image-icon">![Upload](upload.png)</icon> below the text message.
+The window "Create ticket" will appear where customers will choose the Priority of the ticket (Low, medium, High, Urgent) and write a short message. Customer can also upload a file by clicking on the Upload icon <icon class="image-icon">![Upload](upload.png)</icon> below the text message.
 
 ![](create_ticket.png)

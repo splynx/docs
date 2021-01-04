@@ -28,7 +28,7 @@ On this tab there are the following categories of settings:
 - IMAP port - a specific imap port.
 - Folder name of sent emails - can be loaded specific folder.
 - Use SSL - use  Secure Sockets Layer certificate.
-- No validayte cert - check if SSL cert isn't used.
+- No validayte cert - use to ignore server certificate validation. It allows a use of a self-signed certificate for incoming mailbox.
 
 **SMTP settings**
 

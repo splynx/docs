@@ -13,16 +13,17 @@ To help understand both perspectives, let's separate our ticketing system into t
 
 The ticketing dashboard shows the following sections:
 * Status of all current/open tickets on the system.
-* General and per-agent statistics of all your support agents
+* General and per-agent statistics of the top 10
 * Live log of recent activities of tickets.
 * Quick reference to the tickets table of the administrator currently logged into the system
+* The table with a balance of assigned tickets to administrators or unassigned ones
 
 Administrators are able to create the tickets in 3 ways:
 1. From `Tickets > Dashboard` and clicking **Create** in the top right corner of the page.
 
 ![Create_ticket](admin_create_1.png)
 
-2. Directly from a customer's profile by clicking on the **Support** button and selecting **Create** from the drop-down menu.
+2. Directly from a customer's profile by clicking on the **Tickets** button and selecting **Create** from the drop-down menu.
 
 ![Create_ticket](admin_create_2.png)
 
@@ -34,13 +35,15 @@ After clicking on the "create ticket" button anywhere in the system, you will be
 
 ![New ticket](createnew_ticket.png)
 
-* **Customer** - which customer to open the ticket for
+* **Customer / Lead** - which customer / lead to open the ticket for
 * **Assign to** - the administrator the ticket will be assigned to
-* **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket
+* **Group** - the ticket can be filtered to a specific group of admins depending on the nature of the ticket
+* **Watchers** - the person that tracks ticket and receives notifications
+* **CC Recipients** - the field to enter CC emails in case of creating a new ticket from the admin panel
 * **Priority** - the urgency of the ticket which can be set to low, medium, high or urgent
 * **Status** - the state of the ticket currently which can be set to New, Work in Progress, Waiting for Customer, Waiting on agent, Resolved
-* **Group** - the ticket can be filtered to a specific group of admins depending on the nature of the ticket
 * **Type** - the reason for creating the ticket which can be set to Question, Problem, Incident, Feature request, Lead
+* **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket
 * **Message** - the body of the ticket can be typed here
 * **Attachments** - used to attach files to the ticket
 
@@ -54,7 +57,7 @@ New canned responses can be added by clicking **Add response** button
 
 ![Canned response](canned_add_1.png)
 
-or in `Config > Ticket canned responses`.
+or in `Config → Support → Ticket canned responses`.
 
 ![Canned response](canned_add_2.png)
 
@@ -80,33 +83,46 @@ The ticket working area is divided into 3 parts: *ticket properties, action butt
 
 * **Customer/Lead** -  changes the customer this ticket has been open for
 * **Assigned to** - reassign the ticket to a specific administrator
+* **Group** - change the group of administrators this ticket is available to
+* **Watchers** - the person that tracks ticket and receives notifications
 * **Subject** -  change the subject of the ticket
 * **Priority** - change the urgency of the ticket
 * **Status** - change the current state of the ticket
-* **Group** - change the group of administrators this ticket is available to
 * **Type** - change the reason for the tickets
-* _Show more options_ - this option will either hide or display additional fields of tickets
+* The action buttons allow us to check all ticket activities and schedule the task for an engineer directly within the ticket, show all files, merge, close the ticket or move it to trash.
+![Action button](action_button.png)
 
-* The action buttons allow us to add a note, reply or forward the answer, check all ticket activities and schedule the task for an engineer directly within the ticket.
 
 ## Tickets actions section parameters:
+
+![Ticket action](ticket_actions1.png)
+
+![Ticket action](ticket_actions2.png)
+
+![Ticket action](ticket_actions3.png)
 
 * **Reply** - used to respond to a message or add a message to the conversation, this button opens up the body area of the message for you to type or insert content from canned responses.
 * **Add note** - this button opens a typing area to add a note to the ticket that is not visible to the customers
 * **Forward** - this button opens the "Cc" and "Bcc" fields for forwarding the response as well as ticket content to another email address(s)
 * **Actions** - this is a drop-down list of functions namely:
-_Show Activities_ - to view all activities executed to/within the ticket
-_Show all files_ - provides a list of all attachments within the ticket
-_Create task_ -  integration to the scheduling module, this button allows you to create a task pertaining to requests made within the ticket
-_Merge ticket_ - allows the merging of the current ticket with another
-_Close ticket_ - marks ticket status as resolved and the ticket is moved into the list of closed tickets
+_Show Activities_ - to view all activities executed to/within the ticket.
+_Show all files_ - provides a list of all attachments within the ticket.
+_Create task_ -  integration to the scheduling module, this button allows you to create a task pertaining to requests made within the ticket.
+_Merge ticket_ - allows the merging of the current ticket with another.
+_Close ticket_ - marks ticket status as resolved and the ticket is moved into the list of closed tickets.
 
-Below is a quick look at the task creation page after clicking the create task option
+Send button has a separate 'triangle' sign, by clicking on it we can send ticket and set its status.
+
+Below is a quick look at the task creation page after clicking the create task option.
 
 ![Schedule tech](schedule_task.png)
 
 
-Once a ticket has been resolved, you can change the status on *closed* and close the ticket or press the **Update and Close** option of the update button immediately after adding a response to the ticket. All closed tickets are shown in `Tickets → List of closed`.
+Once a ticket has been resolved, you can change the status on *closed* and close the ticket or press the **Update and Close** option of the update button immediately after adding a response to the ticket.
+
+![Ticket action](ticket_actions4.png)
+
+All closed tickets are shown in `Tickets → List of closed`.
 
 ![List closed](closed_list.png)
 
@@ -124,6 +140,7 @@ Your customers can also create tickets in three ways:
 
 * **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket
 * **Priority** - the urgency of the ticket which can be set to low, medium, high or urgent
+* **Type** - the reason for creating the ticket which can be set to Question, Problem, Incident, Feature request, Lead
 * **Message** - the body of the ticket can be typed here
 * **Attachments** - used to attach files to the ticket
 
@@ -135,7 +152,7 @@ Once the ticket is created it is possible to view or close it by using the follo
 
 ![Tickets mobile app](app_ticket.jpg)
 
-There are a number of elements that can be automated within the ticketing module to improve efficiency and speed up engagement. These automation rules can be set up under `Config / Support / Ticket automation`
+There are a number of elements that can be automated within the ticketing module to improve efficiency and speed up engagement. These automation rules can be set up under `Config / Support / Ticket automation`.
 More information about **tickets configuration** can be found here - [Support](configuration/support/support.md).
 
 When tickets are opened by either the customer or administrator, notifications are sent to each other via email. Depending on the template you are using for tickets, tickets may include the body of the ticket and this can ultimately create convenience, as customers/administrators can respond directly from the email to respond to the ticket. If the template does not include the body, customers/administrators are able to log into their respective portals by means of a link included in the ticket notifications.
@@ -146,7 +163,7 @@ This is where you will find a list/table of all new and opened tickets. For admi
 
 ![Tickets](new&opened.png)
 
-Above the table of new & opened tickets, we've added a quick filter to change the tickets being displayed. You can choose to display tickets assigned to a specific administrator, unassigned tickets or all new and open tickets in the system. You may also filter tickets by status once the source of tickets to display has been selected. For ease of access "Refresh" and "Create ticket" buttons have been added alongside the button to hide or display the main filter menu.
+Above the table of new & opened tickets, we've added a quick filter to change the tickets being displayed. With *Quick access* option you can choose to display tickets assigned to a specific administrator, unassigned tickets or all new and open tickets in the system. You may also filter tickets by *Status* option once the source of tickets to display has been selected. For ease of access "Refresh" and "Create ticket" buttons have been added alongside the button *Advanced Search*.
 
 ![Tickets](topfilter_tickets.png)
 
@@ -157,10 +174,9 @@ The main filter menu can be found on the right side of the page when the filter 
 
 **Find filter parameter descriptions**
 
-**Full name** - search for tickets by the customers full name<br>
 **Condition** - search in the list of open, closed or all tickets<br>
 **Period** - search for tickets within a specific time period<br>
-**Customer / Lead ID** - search for tickets via the Splynx customer ID or lead ID<br>
+**Customer / Lead** - search for tickets via the Splynx customer/lead name or id<br>
 **Group** - search for tickets in the list of tickets for the specific group of administrators<br>
 **Partner** -  search for tickets of a particular partner<br>
 **Type** - search for tickets of a specific type or reason for opening<br>
@@ -191,6 +207,7 @@ Displays more details and has an "Actions" column limited to viewing the ticket,
 Displays fewer details but has quick access to function like reassigning tickets to admins or groups and changing the priority, status or type of the ticket.
 
 
+
 ## List of closed
 
 Here is where you will find the list/table of all closed tickets in the system.
@@ -206,10 +223,16 @@ You are able to filter tickets by a specific period and customer ID, assigned to
 The table/list of closed tickets have the same functionalities of the list/table of the new and opened tickets list/table.
 You are able to select the layout just as with the new & opened list/table and perform certain functions.
 
-In the closed tickets section, however, options to re-open tickets or move them to trash become available:
+In *Actions* tickets' section, the such options become available:
 
 ![Tickets](closedtable_functions.png)
 
+**Actions button**
+![Actions](actions_button.png)
+
+The button is designed to apply actions for multiple selected tickets, for example to assign tickets to another admin, change priority, group etc. Press *Actions*, in drop-down menu select *Change*, then select necessary option.
+
+![Actions](actions_button1.png)
 
 ## Trash
 

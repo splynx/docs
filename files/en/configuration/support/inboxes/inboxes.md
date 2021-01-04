@@ -64,8 +64,10 @@ So if a customer will send a message to finance@myisp.com an "accounts" ticket t
 **Enabled** - this is the global enable/disabled option. Even if there are 5 inboxes with an "Enabled" status, if this option is set to disabled, tickets will not be created.
 
 
-## BLACKLIST
+## Deny list
 
 ![blacklist](blacklist.png)
+![blacklist](blacklist1.png)
+![blacklist](blacklist2.png)
 
 Email addresses you wish to ignore can be added here. Tickets from these emails will not be created.

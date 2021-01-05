@@ -65,6 +65,12 @@ The  *Hidden* <icon class="image-icon">![Hidden](./hidden.png)</icon> toggle all
 
 You are also able to create [new fields](customer_management/custom_additional_fields/custom_additional_fields.md) in the tickets module. More information about **adding custom fields** is available here - [Additional fields](configuration/system/additional_fields/additional_fields.md). Remember, that in order to see the new field in the main table, you should enable it by clicking on the breadcrumbs <icon class="image-icon">![Add](add.png)</icon> icon below the table.
 
+For example, *Source* column is helpful to understand where the ticket came from (administration, portal, API, incoming email).
+
+![Columns](columns1.png)
+![Columns](columns2.png)
+![Columns](columns3.png)
+
 Once the ticket has been created, it will be visible in the `New and opened tickets` table. Here you can **filter tickets** by *Condition, Period, Customer/Lead ID, Group, Partner, Type or Type*. We've added the capability to search for specific text with the _Text search function_ or the customers full name in the _Find Filter_ field. You can also choose the list of new and opened tickets to view filtered by the administrator assigned or the status of the tickets.
 
 ![New & Open](tickets_filter.png)
@@ -77,7 +83,11 @@ The ticket working area is divided into 3 parts: *ticket properties, action butt
 
 ![Working area](ticket_workarea.png)
 
-* In the properties we can reassign the ticket to the specific administrators, change status, prioritize the work, assign to a specific group and set the ticket type.  We also oversee the Customer's information like Name, Email, Phone number, and recent tickets.
+In the properties we can reassign the ticket to the specific administrators, change status, prioritize the work, assign to a specific group and set the ticket type.  We also oversee the Customer's information like Name, Email, Phone number, and recent tickets.
+
+Inside of ticket Splynx displays all admins that are currently working with it
+
+![Working-person](working_person.png)
 
 ## Ticket properties section parameters:
 

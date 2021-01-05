@@ -3,7 +3,7 @@ Ticket Report
 
 ![Ticket report](1.png)
 
-This section displays all data pertaining to tickets and useful tools to rate and observe performance in your company. The ticket report section consists of 5 sub-sections/tabs. Each providing information on tickets and agent performance in a different perspective.
+This section displays all data pertaining to tickets and useful tools to rate and observe performance in your company. The ticket report section consists of 7 sub-sections/tabs. Each providing information on tickets and agent performance in a different perspective.
 
 ![Tickets](2.png)
 
@@ -31,8 +31,10 @@ The report will then present a ticket ID, the administrator the ticket was assig
 
 Each of the rating criteria are rated by means of "1" or "0".
 
-0 - being not adequate or correct
-1 - being adequate or correct
+0 - being not adequate or correct;
+1 - being adequate or correct.
+
+![report tickets](3.1.png)
 
 This table can then be exported in a format of your preference by means of the export ![export](export.png) icon located at the bottom of the table:
 
@@ -66,9 +68,7 @@ This section of ticket reports displays a report of agent/admin performance for 
 
 **Tickets reassigned** - number of tickets that have been reassigned by the admin
 
-**Resolution SLA %**	- the percentage of tickets whose first responses were sent by the agent within SLA during the selected time period
-
-  **FCR %** - percentage of tickets resolved/closed after a single contact made with the customer by the admin, during the selected period
+**FCR %** - percentage of tickets resolved/closed after a single contact made with the customer by the admin, during the selected period
 
 **Private notes** - number of private notes added by the agent during the selected time period (add notes and reassigned)
 
@@ -80,7 +80,7 @@ This section of ticket reports displays a report of agent/admin performance for 
 
 **Average resolution time** - an average time taken for an admin to resolve/close a ticket in the selected time period
 
-This report/table can be exported in a format of your preference from that which is availabe with the use of the export ![export](export.png) icon located at the bottom left of the table:
+This report/table can be exported in a format of your preference from that which is available with the use of the export ![export](export.png) icon located at the bottom left of the table:
 
 ![export](export1.png)
 
@@ -109,3 +109,22 @@ The second section displays a graph representing average first response times ma
 The third and final section displays a graph of the average resolution time of tickets for the specified period within an hour:
 
 ![Performance](10.png)
+
+
+**Ticket lifecycle**
+
+This section summarizes a report of total or average time taken for the resolved tickets, the output result can be split by *type*, *source*, *priority*, *group* withing a specific period of time.
+
+![TLifecycle](tlifecycle.png)
+
+**Activity per admin**
+
+This tab shows the history of admins' activity within a specific time period. The information can be used to track what was done on the previous steps by other administrator.
+
+![ActivityPerAdmin](adminactivity.png)
+
+**Costs of support**
+
+This tab shows the value of support via tickets in correspondence with company revenue per customer. *MRR Cost (per action)* is a result of dividing *Total actions* on *Monthly Recurring Revenue*.
+
+![SupportCost](supportcost.png)

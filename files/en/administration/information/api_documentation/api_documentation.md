@@ -6,12 +6,49 @@ Splynx supports the following type of authentication:
 
 **Access by token**
 
-Generate the token for authorization and send GET request. Please note that it's necessary to create an admin user account in Splynx and assign the role e.g. super administrator, it depends on what the access rights you need.
+* **Authentication as admin**
+
+Generate the token for authorization and send GET request. Required fields: `login`, `password`. Please note that it's necessary to create an admin user account in Splynx and assign the role e.g. super administrator, it depends on what the access rights you need.
 
 ![Postman](postman1.png)
 ![Postman](postman2.png)
 
 The request method (verb) determines the nature of action you intend to perform.
+
+* **Authentication by API key**
+
+Create a new request in Postman, specify its details such as method *GET*, request URL and keys.
+
+Required fields: `auth_type`, `signature`, `nonce`, `key`.
+Where `key` - is your API key, `nonce` -  a current timestamp in seconds.
+Then, create pre-request script in Postman, for example:
+
+```
+var crypto = require('crypto-js');
+
+const KEY = 'bfe72xxxxxxxxxxa123bdc8e78a7c82f'; // Your Api key
+const SECRET = '7bxxxxxxxxxxc4332567c8afdfa18e65'; // Your Api secret
+
+var nonce = pm.globals.get('nonce');
+if (!nonce) {
+    nonce = 0;
+}
+
+var str = ++nonce + KEY;
+var hash = crypto.HmacSHA256(str, SECRET).toString().toUpperCase();
+
+console.log(hash,nonce);
+pm.environment.set("hash", hash);
+pm.environment.set("nonce", nonce);
+pm.globals.set('nonce', nonce);
+
+```
+Then, use *POST* with *Content-type* to add new data and press *Send*. Check your *access token* in body section.
+
+
+![Postman](postman8.png)
+![Postman](postman9.png)
+![Postman](postman10.png)
 
 **Basic authentication**
 

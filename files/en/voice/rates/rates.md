@@ -13,13 +13,17 @@ Once it is created, click on the <icon class="image-icon">![ViewIcon1](icon1.png
 
 ![Rates config](rates_config.png)
 
-We can add them manually or import it, and it is also possible to update them in a mass action.
+We can add them manually, load rates from another plan (clone values into a new rate table), import/export and it is also possible to update them in a mass action.
 
 ![Rates add, import, update](rates_add_import_update.png)
 
 Add customer's rate
 
 ![Customer's rate](customers_rate.png)
+
+![NumExample](numexample1.png)
+
+![NumExample](numexample2.png)
 
 * **Category** - Category to associate with this prefix.
 

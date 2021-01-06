@@ -45,7 +45,7 @@ After clicking on the "create ticket" button anywhere in the system, you will be
 * **Type** - the reason for creating the ticket which can be set to Question, Problem, Incident, Feature request, Lead
 * **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket
 * **Message** - the body of the ticket can be typed here
-* **Attachments** - used to attach files to the ticket
+* **Attachments** - used to attach files to the ticket such as images, archives (rar, 7z, tar) etc.
 
 It is possible to add a canned response to the message body to optimize the productivity of admins.
 
@@ -113,6 +113,7 @@ Inside of ticket Splynx displays all admins that are currently working with it
 
 * **Reply** - used to respond to a message or add a message to the conversation, this button opens up the body area of the message for you to type or insert content from canned responses.
 * **Add note** - this button opens a typing area to add a note to the ticket that is not visible to the customers
+* **Jump to last** - the button moves to the last message on the opened ticket page
 * **Forward** - this button opens the "Cc" and "Bcc" fields for forwarding the response as well as ticket content to another email address(s)
 * **Actions** - this is a drop-down list of functions namely:
 _Show Activities_ - to view all activities executed to/within the ticket.
@@ -122,6 +123,12 @@ _Merge ticket_ - allows the merging of the current ticket with another.
 _Close ticket_ - marks ticket status as resolved and the ticket is moved into the list of closed tickets.
 
 Send button has a separate 'triangle' sign, by clicking on it we can send ticket and set its status.
+
+On the right side from the ticket's title is located anchor link, it is present in all ticket messages. Such links allow to copy the direct link to the specific ticket message, with the help of *Public URL* toggle we can convert the link to public one. With the active public link we can view or reply to the ticket even we don't have an account in Splynx.
+
+![Ticket action](ticket_actions5.png)
+
+![Ticket action](ticket_actions6.png)
 
 Below is a quick look at the task creation page after clicking the create task option.
 
@@ -152,7 +159,7 @@ Your customers can also create tickets in three ways:
 * **Priority** - the urgency of the ticket which can be set to low, medium, high or urgent
 * **Type** - the reason for creating the ticket which can be set to Question, Problem, Incident, Feature request, Lead
 * **Message** - the body of the ticket can be typed here
-* **Attachments** - used to attach files to the ticket
+* **Attachments** - used to attach files to the ticket such as images, archives (rar, 7z, tar) etc.
 
 Once the ticket is created it is possible to view or close it by using the following icons <icon class="image-icon">![Add](icons.png)</icon> within the tbale/list of new & opened tickets:
 
@@ -240,7 +247,7 @@ In *Actions* tickets' section, the such options become available:
 **Actions button**
 ![Actions](actions_button.png)
 
-The button is designed to apply actions for multiple selected tickets, for example to assign tickets to another admin, change priority, group etc. Press *Actions*, in drop-down menu select *Change*, then select necessary option.
+The button is designed to apply actions for multiple selected tickets, for example to assign tickets to another admin, change priority, group etc. Press *Actions*, in drop-down menu select *Change*, then select necessary option. *Close tickets* option is designed to close tickets without notification.
 
 ![Actions](actions_button1.png)
 

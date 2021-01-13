@@ -9,7 +9,7 @@ The report is presented in a table format as depicted below:
 
 ![New services report](2.png)
 
-The table can be filtered to display data pertaining to a specific period, partner and/or location, or tariff type:
+The table can be filtered to display data pertaining to a specific period, partner, location or tariff type:
 
 ![Filter](3.png)
 

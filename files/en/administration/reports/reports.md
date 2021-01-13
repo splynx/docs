@@ -7,19 +7,13 @@ In this section we can view various reports generated in the system.
 
 * [Blocked customers report](administration/reports/blocked_customers_report/blocked_customers_report.md)
 
-* [Charge history](administration/reports/charge_history/charge_history.md)
-
 * [Custom prices & discounts](administration/reports/custom_prices_&_discounts/custom_prices_&_discounts.md)
 
 * [Customer internet usage](administration/reports/customer_internet_usage/customer_internet_usage.md)
 
-* [Daily receipt](administration/reports/daily_receipt/daily_receipt.md)
-
-* [Finance customers report](administration/reports/finance_customers_report/finance_customers_report.md)
+* [Finance logs](administration/reports/finance_logs/finance_logs.md)
 
 * [Financial report per plan](administration/reports/financial_report_per_plan/financial_report_per_plan.md)
-
-* [Future charges](administration/reports/future_charges/future_charges.md)
 
 * [Internet plan usage](administration/reports/internet_plan_usage/internet_plan_usage.md)
 
@@ -27,12 +21,14 @@ In this section we can view various reports generated in the system.
 
 * [Refill cards statistics](administration/reports/refill_cards_statistics/refill_cards_statistics.md)
 
+* [Services export](administration/reports/services_export/services_export.md)
+
 * [Statements](administration/reports/statements/statements.md)
 
-* [Tax grouped](administration/reports/tax_grouped/tax_grouped.md)
+* [Invoice report](administration/reports/invoice_report/invoice_report.md)
 
 * [Tax report](administration/reports/tax_report/tax_report.md)
 
-* [Tickets report](administration/reports/tickets_report/tickets_report.md)
+* [Ticket reports](administration/reports/ticket_reports/ticket_reports.md)
 
-* [Transaction categories](administration/reports/transaction_categories/transaction_categories.md)
+* [Transactions categories](administration/reports/transaction_categories/transactions_categories.md)

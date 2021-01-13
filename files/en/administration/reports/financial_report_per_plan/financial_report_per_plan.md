@@ -3,7 +3,7 @@ Financial report per plan
 
 ![Financial report per plan](1.png)
 
-This is a report displaying a financial report of all tariff plans on the system. The report displays the tariff name, a count of customers subscribed to the plan and a total amount of funds each plan has generated charges for, as well as discounts if any were recorded. The report also displays a total amount for all tariffs, discounts, and a total for the charge total - discounts.
+This is a report displaying a financial report of all tariff plans on the system. The report displays the tariff name, a count of transactions according to the plan and a total amount of funds each plan has generated charges for. The report shows per plan two charts with *Top 20* plans.
 
 The report is presented in a table format as depicted below:
 

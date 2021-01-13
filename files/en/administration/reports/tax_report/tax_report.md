@@ -3,9 +3,13 @@ Tax report
 
 ![Tax report](1.png)
 
-In this section, we can display a detailed report of customers pertaining to a particular tax. The report is represented in a table format which groups customers by the relevant tax rates recorded in the system. The report displays customer details, financial records like invoice and transaction ID's relevant to the VAT or tax rate and financial total details like, the rate amount, the net amount per invoice, the rate/VAT amount and a gross total of each entry.
+In *Tax Report* tab, we can display a detailed report of customers pertaining to a particular tax. The report is represented in a table format which groups customers by the relevant tax rates recorded in the system. The report displays customer details, financial records like invoice and transaction ID's relevant to the VAT or tax rate and financial total details like, the rate amount, the net amount per invoice, the rate/VAT amount and a gross total of each entry.
 
 ![Tax report](2.png)
+
+In *Tax Grouped report* tab, we can display a grouped report of all customer. The table includes the total invoices count according to the rate, its sum and tax amount.
+
+![Tax report](2.1.png)
 
 The table can be filtered by a specific period, partner and/or location with the use of the filtered located at the top left of the table. Once you have specified you desired criteria, you can then click on show to display the results according to your criteria, you can then use the "generate" button to download an HTML copy of the report or choose to print it:
 

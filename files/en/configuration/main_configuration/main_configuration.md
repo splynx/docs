@@ -9,7 +9,7 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [CAP](configuration/main_configuration/cap/cap.md)
 
-* [Customer Portal](configuration/main_configuration/portal/portal.md)
+* [Portal](configuration/main_configuration/portal/portal.md)
 
 * [Customers](configuration/main_configuration/customers/customers.md)
 

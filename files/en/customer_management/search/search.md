@@ -15,19 +15,18 @@ To search a customer, click on `Customers Menu → Search`. In the search window
 
 Here you will be able to use different parameters for searching, such as:
 
-* **ID** - ID of the customer
-* **Login** - the login of the customer
+* **Login** - the login of the customer.
 * **Status** - the options are: New (not yet connected), Active, Inactive (doesn't use services), Blocked, Select all (to select all options).
-* **Type of billing** - it can be Recurring Payments, Prepaid, Select all (to select all options).
-* **Email** - email of the customer.
+* **Full name** - the full name of the customer.
+* **Email** - the personal email of the customer.
+* **Billing email** - the billing email of the customer.
 * **Phone Number** - phone number of the customer.
-* **Date added** - the date when the customer was added into the system.
-* **Category** - the options are: Private person,  Company, Select all (to select all options).
-* **Partner** - one of the partners created or all of them.
+* **Category** - the options are: *Private person*, *Company*.
 * **Location** - location of the customer.
-* **Tariff plans** - the tariff created
-* **Service** - the options are: Internet, Voice, Custom.
-
+* **Type of billing** - it can be *Recurring payments*, *Prepaid (Custom)*, *Select all* (to select all options).
+* **Partner** - one of the partners created or all of them.
+* **Tariff plans** - the options are: *Internet*, *Voice*, *Recurring*, *Select all* (to select all options).
+* **Service** - the options are: *Bundle*, *Internet*, *Voice*, *Recurring*.
 
 For a more customizable search, you can click on `My Profile Menu → Customer` search fields and select different fields.
 
@@ -44,6 +43,7 @@ These are the different parameters that are available for searching for vouchers
 * **Serie** - the Series the voucher belongs to
 * **Prefix** - the voucher's prefix
 * **Status** -  the options are: New, Active, Expired, Used, Disabled, Online, Select all
+* **Login** - the login of the owner
 * **Full name** - name of the owner
 * **Phone** - phone number of the owner
 * **Email** - email of the owner
@@ -61,6 +61,8 @@ Use the search tab of every table and get the complete view as a result.
 
 ## Search in the whole system
 
-Lastly we can also do a full text search in the system. Use the main search tab as shown below:
+Lastly, we can also do a full text search in the system. The search is based on the popular search engine Manticore. Indexes are created for the entire software/database.
+
+Use the main search tab as shown below:
 
 ![Whole system search](whole_system_search.png)

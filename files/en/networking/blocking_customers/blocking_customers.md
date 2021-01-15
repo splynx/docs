@@ -133,6 +133,13 @@ For example, Ubuntu
 
   ![](ubuntu_hotspot.png) ![](ubuntu_hotspot_8102.png)
 
+### Can we redirect the blocked customers to HTTPS website?
+
+It's not possible to do over SSL-encrypted connection, the redirection only works over HTTP. HTTPS traffic cannot be redirected to HTTP one, there will be the SSL encryption error and the connection rejection as a necessary measure. In such case end-user should try to access different site.
+**HTTP Strict Transport Security (HSTS)** is a web security policy mechanism that helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie hijacking. 
+
+The best solution is to send many notification messages via SMS/Email, so then customer will not be surprised when one day the Internet will not work.
+*SMS* can be configured in `Config → Main → SMS` and *Email* config is in `Config → Main → Email`. Also, it's necessary to enable *Blocking wave* notification in `Config → Finance → Notification` and select a template.
 
 #### DNS
 When the DNS service does not work, the customer's computer spends about 10 seconds on each DNS request until it realizes that the Internet does not work.

@@ -122,6 +122,10 @@ _Create task_ -  integration to the scheduling module, this button allows you to
 _Merge ticket_ - allows the merging of the current ticket with another.
 _Close ticket_ - marks ticket status as resolved and the ticket is moved into the list of closed tickets.
 
+Using *Show all files* option, it's possible to download the all ticket's attachments at once
+
+![Show all files](download_all.png)
+
 Send button has a separate 'triangle' sign, by clicking on it we can send ticket and set its status.
 
 On the right side from the ticket's title is located anchor link, it is present in all ticket messages. Such links allow to copy the direct link to the specific ticket message, with the help of *Public URL* toggle we can convert the link to public one. With the active public link we can view or reply to the ticket even we don't have an account in Splynx.

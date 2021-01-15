@@ -22,22 +22,22 @@ Tables within Splynx can always be adjusted for whichever purpose to display wha
 
 Now that those rules have been established, please take a look at each section of our customer management module and how it works.
 
-* [ Adding new customer](customer_management/add_new_customer/add_new_customer.md)
-
-* [ Customer information](customer_management/customer_information/customer_information.md)
-
-* [ Customer services](customer_management/customer_services/customer_services.md)
-
-* [ Customer billing](customer_management/customer_billing/customer_billing.md)
-
-* [ Customer statistics](customer_management/customer_statistics/customer_statistics.md)
-
-* [ Customer documents](customer_management/customer_documents/customer_documents.md)
+* [Adding new customer](customer_management/add_new_customer/add_new_customer.md)
 
 * [CPE management](customer_management/cpe_management/cpe_management.md)
 
-* [ Maps ](customer_management/maps/maps.md)
+* [Customer billing](customer_management/customer_billing/customer_billing.md)
 
-* [ Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
+* [Customer documents](customer_management/customer_documents/customer_documents.md)
 
-* [ Search](customer_management/search/search.md)
+* [Customer information](customer_management/customer_information/customer_information.md)
+
+* [Customer services](customer_management/customer_services/customer_services.md)
+
+* [Customer statistics](customer_management/customer_statistics/customer_statistics.md)
+
+* [Maps](customer_management/maps/maps.md)
+
+* [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
+
+* [Search](customer_management/search/search.md)

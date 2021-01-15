@@ -25,6 +25,7 @@ Table of contents
 * [Dashboard](crm/dashboard/dashboard.md)
 * [Deals](crm/deals/deals.md)
 * [Documents](crm/documents/documents.md)
+* [Communication](crm/communication/communication.md)
 * [Leads](crm/leads/leads.md)
 * [Quotes](crm/quotes/quotes.md)
 
@@ -69,9 +70,10 @@ Table of contents
 * [Vendors](inventory/vendors/vendors.md)
 
 ##### [My Profile](my_profile/my_profile.md)
-* [ Profile ](my_profile/profile/profile.md)
 * [Customer search fields](my_profile/customer_search_fields/custom_search_fields.md)
+* [Imap](my_profile/imap/imap.md)
 * [Last Login](my_profile/last_login/last_login.md)
+* [Profile](my_profile/profile/profile.md)
 * [Scheduling](my_profile/scheduling/scheduling.md)
 
 
@@ -143,11 +145,11 @@ Table of contents
 
 * [Weathermaps](networking/weathermaps/weathermaps.md)
 
-##### [Support and Messages](support_messages/support_messages.md)
-* [Email messages](support_messages/email_messages/email_messages.md)
-* [News](support_messages/news/news.md)
-* [SMS messages](support_messages/sms_messages/sms_messages.md)
-
+##### [Messages](messages/messages.md)
+* [Inbox](messages/inbox/inbox.md)
+* [Mass Sending](messages/mass_sending/mass_sending.md)
+  * [SMS messages](messages/sms_messages/sms_messages.md)
+* [News](messages/news/news.md)
 
 ##### [Scheduling](scheduling/scheduling.md)
 * [Archive](scheduling/archive/archive.md)
@@ -192,29 +194,29 @@ Table of contents
   * [Changes of statuses/plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
   * [Email](administration/logs/email/email.md)
   * [Files](administration/logs/files/files.md)
+  * [Internal](administration/logs/internal/internal.md)
   * [Operations](administration/logs/operations/operations.md)
   * [Pending statuses and services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
+  * [Portal](administration/logs/portal/portal.md)
   * [Sessions](administration/logs/sessions/sessions.md)
   * [SMS](administration/logs/sms/sms.md)
 
 * [Reports](administration/reports/reports.md)  
 
   * [Blocked customers report](administration/reports/blocked_customers_report/blocked_customers_report.md)
-  * [Charge history](administration/reports/charge_history/charge_history.md)
-  * [Custom prices & discounts](administration/reports/custom_prices_and_discounts/custom_prices_and_discounts.md)
+  * [Custom prices & discounts](administration/reports/custom_prices_&_discounts/custom_prices_&_discounts.md)
   * [Customer internet usage](administration/reports/customer_internet_usage/customer_internet_usage.md)
-  * [Daily receipt](administration/reports/daily_receipt/daily_receipt.md)
-  * [Finance customers report](administration/reports/finance_customers_report/finance_customers_report.md)
+  * [Finance logs](administration/reports/finance_logs/finance_logs.md)
   * [Financial report per plan](administration/reports/financial_report_per_plan/financial_report_per_plan.md)
-  * [Future charges](administration/reports/future_charges/future_charges.md)
   * [Internet plan usage](administration/reports/internet_plan_usage/internet_plan_usage.md)
   * [New services report](administration/reports/new_services_report/new_services_report.md)
   * [Refill cards statistics](administration/reports/refill_cards_statistics/refill_cards_statistics.md)
+  * [Services export](administration/reports/services_export/services_export.md)
   * [Statements](administration/reports/statements/statements.md)
-  * [Tax grouped](administration/reports/tax_grouped/tax_grouped.md)
+  * [Invoice report](administration/reports/invoice_report/invoice_report.md)
   * [Tax report](administration/reports/tax_report/tax_report.md)
-  * [Tickets report](administration/reports/tickets_report/tickets_report.md)
-  * [Transaction categories](administration/reports/transaction_categories/transaction_categories.md)
+  * [Ticket reports](administration/reports/ticket_reports/ticket_reports.md)
+  * [Transactions categories](administration/reports/transaction_categories/transactions_categories.md)
 
 
 ##### [Configuration](configuration/configuration.md)
@@ -235,6 +237,7 @@ Table of contents
   * [Fixed costs](configuration/finance/fixed_costs/fixed_costs.md)
   * [Notifications](configuration/finance/notifications/notifications.md)
   * [Pairing](configuration/finance/pairing/pairing.md)
+  * [Payment accounts](configuration/finance/payment_accounts/payment_accounts.md)
   * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
   * [Reminders](configuration/finance/reminders/reminders.md)
   * [Taxes](configuration/finance/taxes/taxes.md)
@@ -260,7 +263,7 @@ Table of contents
 
   * [API](configuration/main_configuration/api/api.md)
   * [CAP](configuration/main_configuration/cap/cap.md)
-  * [Customer Portal](configuration/main_configuration/portal/portal.md)
+  * [Portal](configuration/main_configuration/portal/portal.md)
   * [Customers](configuration/main_configuration/customers/customers.md)
   * [Email config](configuration/main_configuration/email_config/email_config.md)
   * [Localization](configuration/main_configuration/localization/localization.md)
@@ -281,6 +284,7 @@ Table of contents
   * [IP Host categories](configuration/network/ip_host_categories/ip_host_categories.md)
   * [IP Network categories](configuration/network/ip_network_categories/ip_network_categories.md)
   * [IPv4](configuration/network/ipv4/ipv4.md)
+  * [IPv6](configuration/network/ipv6/ipv6.md)
   * [MikroTik API](configuration/network/mikrotik_api/mikrotik_api.md)
   * [Monitoring config](configuration/network/monitoring_config/monitoring_config.md)
   * [NAS types](configuration/network/nas_types/nas_types.md)
@@ -328,7 +332,8 @@ Table of contents
   * [Import](configuration/tools/import/import.md)
   * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
   * [OpenVPN](configuration/tools/openvpn/openvpn.md)
-    * [ Cloud ](configuration/tools/openvpn/cloud/routes/routes.md)
+    * [Cloud](configuration/tools/openvpn/cloud/routes/routes.md)
+  * [Update GPS coordinates](configuration/tools/gps/gps.md)
 
 
 * [Voice](configuration/voice/voice.md)

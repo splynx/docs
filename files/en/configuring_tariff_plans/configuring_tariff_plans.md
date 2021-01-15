@@ -17,13 +17,15 @@ Please follow each of the sections below for more details on configuring tariff 
 
 * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
 
-* [Burst configuration](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
+* [Burst speed concept](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
 
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
 
+* [Change plan](configuring_tariff_plans/tariff_change/tariff_change.md)
+
 * [Custom plans](configuring_tariff_plans/custom_plans/custom_plans.md)
 
-* [Fair usage policy settings](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
+* [Fair Usage Policy](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
 
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
 

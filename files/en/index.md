@@ -126,6 +126,8 @@ Table of contents
 
 * [Monitoring](networking/monitoring/monitoring.md)
 
+* [TR-069 (ACS)](networking/tr069_acs/tr069_acs.md)
+
 * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 
 * [Radius server customization](networking/radius_customization/radius_customization.md)

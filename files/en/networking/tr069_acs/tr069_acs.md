@@ -224,7 +224,7 @@ On the **Relation** tab you can set type of device (type should be created under
 
 On **Tasks** tab you will see the pending tasks (like you run a wi-fi password change and task will be created).
 
-On **Faults** tab you will see tasks what were executed with an errors.
+On **Faults** tab you will see the tasks what were executed with the errors.
 
 ![faults-tasks](tasks-faults.png)
 

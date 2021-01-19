@@ -36,7 +36,7 @@ Like all tables in Splynx, the buttons below the table can be used to export the
 
   ![Add transaction](./add_transaction.png)
 
-  When you click on _Add transaction_, a window will appear with different fields and options for you to complete and select for the new transaction: The `Type (Debit/ Credit)`, `Description`, `Quantity`, `Unit`, `Price`, `VAT`, `Total amount`, `Category` (service, discount, payment, refund, correction for customer's balance, Braintree fee, etc.), `Date`, `Comment` on the transaction and `Period` of the transaction can be specified here.
+  When you click on _Add transaction_, a window will appear with different fields and options for you to complete and select for the new transaction: The `Type (Debit/ Credit)`, `Description`, `Quantity`, `Unit`, `Price`, `VAT`, `Total amount`, `Category` (service, discount, payment, refund, correction for customer's balance), `Date`, `Comment` on the transaction and `Period` of the transaction can be specified here.
 
   ![Add transaction form](./create_transaction_form.png)
 

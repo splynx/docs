@@ -3,6 +3,7 @@ Configuration
 
 This is the section for your Global configurations of your Splynx server.
 
+
 Please follow the links below for tutorials of each of the sections of the Configuration:
 
 

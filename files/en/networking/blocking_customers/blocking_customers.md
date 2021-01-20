@@ -133,7 +133,7 @@ For example, Ubuntu
 
   ![](ubuntu_hotspot.png) ![](ubuntu_hotspot_8102.png)
   
-### Can we redirect the blocked customers to HTTPS website?
+### Can we redirect the blocked customers from HTTPS to HTTP website?
 
 It's not possible to do over SSL-encrypted connection, the redirection only works over HTTP. HTTPS traffic cannot be redirected to HTTP one, there will be the SSL encryption error and the connection rejection as a necessary measure. In such case end-user should try to access different site.
 **HTTP Strict Transport Security (HSTS)** is a web security policy mechanism that helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie hijacking. 

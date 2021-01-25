@@ -129,30 +129,40 @@ To enable debug mode of splynx_radd, navigate to *Config / Networking / Radius e
 
 ![(image)](splynx_radd_debug.png)
 
-Then wait for a few minutes until the new settings are applied or you can apply the new settings immediately by restarting the Radius server.
-To restart the Radius server, use the button at the bottom of the page (*Config / Networking / Radius extended*), or execute the follwing command in SSH:
+Then wait few minutes until new settings will be applied. Or you can apply new settings immediately if you restart Radius server.
+To restart Radius server use a button at the bottom of the same page (*Config / Networking / Radius extended*), or enter command in SSH:
 ```
 service splynx_radd restart
 ```
 
-Now we can check the debug file again, the file is accessible from CLI of the Splynx server:
+Now we can check the debug file, again it’s accessible from CLI of Linux Splynx server:
 `/var/www/splynx/logs/radius/debug.log`
-
-The best way to check the file is with the following command:
+The best way to check the file is command
 ```
 tail -f /var/www/splynx/logs/radius/debug.log
 ```
 
-If the splynx_radd debug doesn’t show us anything, we can try to run the freeradius daemon in debug mode and see if any packets are received by the Radius server.
+If splynx_radd debug doesn’t show us anything, we can try to run freeradius daemon in debug mode and see if any packets are received by Radius server.
 
-Run the following commands in CLI:
+Run CLI commands to get output in the console:
 ```
 service freeradius stop; freeradius -Xxxx
 ```
-then check the CLI console output.
+or this command to write all collected log into a log file:
 
+```
+service freeradius stop && freeradius -Xxxx | tee Debugxxx.log
+```
 
-If you don’t see any debug messages when a customer tries to connect to the Mikrotik Router, this means that your router cannot send packets and connect to the Radius server at all. Indicating that you have to verify your networking, routing and NAT settings of the network.
+wait for 2-5 minutes to collect some data and stop execution of this command by press **Ctrl+C** and start freeradius in a regular mode:
+
+```
+service freeradius start
+```
+
+If you don’t see any debug messages when customer tries to connect to Mikrotik Router, it means that your router cannot send packets and connect to Radius server at all. It means that you have to verify networking, routing and NAT settings of the network.
+
+**Make sure that UDP ports 1812 (authentication) and 1813 (accounting) are opened on a router. These ports by default are using for RADIUS authentication and accounting.**
 
 On the Mikrotik Router there is also the ability to run extended debug to see what exactly the router is sending to the Radius server:
 

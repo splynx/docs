@@ -6,7 +6,7 @@ We've developed this feature to for the convenience of administrators who deals 
 
 In this section, rules can be created to automate operations with tickets.
 
-**Example:** We want to close tickets automatically, and reply with a [canned response](../ticket_canned_responses/responses.md) to a customer if ticket has a status of "Waiting on customer" for more than 7 days.
+**Example:** We want to close tickets automatically, and reply with a [canned response](configuration/support/ticket_canned_responses/ticket_canned_responses.md) to a customer if ticket has a status of "Waiting on customer" for more than 7 days.
 
 We can achieve this goal by adding the following rule:
 

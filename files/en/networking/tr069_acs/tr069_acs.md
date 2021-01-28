@@ -1,4 +1,4 @@
-TR-069(ACS - Auto configuration server)
+TR-069 (ACS - Auto configuration server)
 ==========
 
 Starting from Splynx 3.1 version we have in-built ACS server based on [GenieACS](https://genieacs.com/) - open source TR-069 remote management solution with advanced device provisioning capabilities. GenieACS can work with any device that supports the TR-069 protocol. It auto-discovers the device’s parameter tree (including vendor-specific parameters) making no assumptions about the device’s data model.
@@ -75,6 +75,8 @@ And you should be redirected to the Genie ACS page, if you prompted for login/pa
 After successful login you will see this window where you should click on "ABRACADABRA" button.
 
 ![abracadabra](abracadabra.png)
+
+The default username and password for GenieACS: admin/admin
 
 Once this done, you will see GenieACS dashboard:
 

@@ -92,6 +92,8 @@ Simply add different types of devices:
 
 ![types](types.png)
 
+**NOTE!** Before starting to configure the *Groups*, [add the router](networking/routers_settings/routers_settings.md) to *Networking* section.
+
 ##### Groups:
 
 Under groups you can create new entries to group devices.

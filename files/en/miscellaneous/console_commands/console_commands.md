@@ -127,7 +127,7 @@ mikrotik-export - Export rules from mikrotik, params: --router_id=ID, --command=
 Video demo how to export customers from mikrotik with this script:
 
 
- <iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/FzOZnqhPt8E">Video on youtube</iframe>
+<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/FzOZnqhPt8E?wmode=opaque">Video on youtube</iframe>
 
 
 ## Splynx Mysql backup script

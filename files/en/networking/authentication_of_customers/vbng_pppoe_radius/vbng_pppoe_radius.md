@@ -55,30 +55,44 @@ The second physical interface, 10gei-1/1/1, will be used as a network
 interface (outgoing to Internet), and that’s NNI (Network-to-Network
 Interface) accordingly.
 
-I assigned the following IP address 192.168.10.10 to 10gei-1/1/1, and my
+![lab2](./image2.png)
+
+We assigned the following IP address 192.168.10.10 to 10gei-1/1/1, and our
 interface setup looks the following way:
+
+![lab2](./image3.png)
 
 Please note there is also a NAT-related parameter here, we’ll be
 discussing it further in this guide.
 
 Next, moving on to RADIUS Authentication group creation, which is used
-for authorization as well. I created ‘demo\_group’ with the following
+for authorization as well. We created ‘demo\_group’ with the following
 parameters:
+
+![lab2](./image4.png)
 
 Our Radius Server is at the 192.168.10.3 IP address as per diagram, uses
 default port 1812 and the key above. Please change these values as per
 your own setup. If configured properly, you should be able to test the
 connection to Radius server in vBNG Manager GUI.
 
-Now I create Radius Accounting group ‘acc\_grp’ with the following
+![lab2](./image5.png)
+
+Now we create Radius Accounting group ‘acc\_grp’ with the following
 configuration. It’s similar to Authentication group above, except it
 uses port 1813.
 
+![lab2](./image6.png)
+
 We also need to enable Radius accounting under Radius configuration.
 
+![lab2](./image7.png)
+
 Next, we create an Authentication template. For Radius authentication,
-we need to specify authentication type to use Radius. Here is my
+we need to specify authentication type to use Radius. Here is our
 configuration.
+
+![lab2](./image8.png)
 
 Radius authorization means vBNG will take authorization properties such
 as user’s IP address, QoS plan, ACL rules, etc. from the attributes
@@ -86,7 +100,11 @@ carried in the Radius accept reply message instead of using locally
 configured properties. To achieve this, we need to create an
 authorization template from which to specify Radius authorization.
 
+![lab2](./image9.png)
+
 Similarly, we create an Accounting template.
+
+![lab2](./imagea.png)
 
 Now we need to configure an IP pool from which PPPoE access subscribers’
 IP address will be assigned via DHCP. netElastic’s vBNG provides
@@ -96,12 +114,18 @@ segments. In this example, we will configure one IP segment
 the IP allocation on Splynx itself, we have to reserve the IP range on
 vBNG, so it honors the IPs assignments obtained via Radius.
 
+![lab2](./imageb.png)
+
 Next, creating a VGI interface. Subscribers need to have an access
 gateway configuration on the vBNG to have network access. netElastic’s
 vBNG implements the concept of Virtual Gateway Interface (VGI) to
 configure subscriber’s access gateway. The VGI interface IP address
 shall match the gateway address in the IP pool configuration as
 described above.
+
+![lab2](./imagec.png)
+
+![lab2](./imaged.png)
 
 We have created authentication, authorization & accounting templates, an
 IP pool, and a VGI interface. Now we need to create a domain to tie all
@@ -112,55 +136,87 @@ define different behaviors. User’s access domains can be switched during
 operations (through Radius COA or command line) to alter access
 behaviors.
 
+![lab2](./imagee.png)
+
 Same information displayed in the vBNG Manager web interface.
+
+![lab2](./imagef.png)
 
 Next, we create a PPPoE template. The parameters ppp-authentication,
 ac-name, default-domain should be configured according to your own
 setup.
+
+![lab2](./image10.png)
 
 Finally, we need to create a VCI configuration to tie the PPPoE template
 and the domain to the access interface so the access behavior for
 traffic coming to the interface will be subject to what we have defined
 in the PPPoE template and domain template.
 
+![lab2](./image11.png)
+
 In our test case for the users to be able to access the Internet we need
 to enable NAT on both the network interface (NAT outside) and the access
 side user gateway (NAT inside).
 
+![lab2](./image12.png)
+
 Here is the sample NAT configuration for our case.
 
+![lab2](./image13.png)
+
 Also we need to enable NAT in the authorization template.
+
+![lab2](./image14.png)
 
 This pretty much completes the setup on the vBNG side and now it’s time
 to perform some additional configuration on the Splynx side.
 
 First off, let’s add our vBNG to Splynx, so they can communicate
-properly. Go to Config &gt; Networking &gt; NAS types and add a new one.
+properly. Go to `Config → Networking → NAS types` and add a new one.
 
-Go to Networking &gt; Routers &gt; Add and add our vBNG with the
+![lab2](./image15.png)
+
+Go to `Networking → Routers → Add` and add our vBNG with the
 configuration according to diagram.
 
-For our test case I created a demo user with assigned Internet tariff
+![lab2](./image16.png)
+
+For our test case we created a demo user with assigned Internet tariff
 plan.
+
+![lab2](./image17.png)
+
+![lab2](./image18.png)
 
 We want him to obtain an IP address from Radius, so assigned a static
 one for testing purposes.
 
+![lab2](./image19.png)
+
 So, let’s say we also want him to have a certain rate limit on the
-internet service, for instance 20mbit/10mbit. I’ll show you how to
+internet service, for instance 20mbit/10mbit. This is how to
 configure it properly on both sides, vBNG and Splynx accordingly.
 
 In Splynx we have to edit the internet plan by adding an additional
 field, which will be sent by Radius to vBNG QoS engine in order to
 define the policy applied to customers.
 
+![lab2](./image1a.png)
+
+![lab2](./image1b.png)
+
 In order for this functionality to work, let’s make additional tweaks to
-the Radius configuration. Go to Config &gt; Networking &gt; Radius,
+the Radius configuration. Go to `Config → Networking → Radius`,
 under NAS Config section choose netElastic for NAS type from the
 drop-down menu and click on Load button.
 
+![lab2](./image1c.png)
+
 Under netElastic Configuration scroll down to Rate-Limit attributes and
 enter as follows:
+
+![lab2](./image1d.png)
 
 Here, NetElastic-Qos-Profile-Name is the parameter which tells the
 vBNG’s internal QoS engine which policy to apply, so essentially, we are
@@ -189,12 +245,22 @@ The QoS configuration on the vBNG side involves the following steps:
     accessing through this domain are subject to the QoS policies
     defined in the user QoS profile.
 
-Here is my configuration for our test case.
+Here is the configuration for our test case.
+
+![lab2](./image1e.png)
+
+![lab2](./image1f.png)
 
 Same configuration referenced in vBNG Manager
 
+![lab2](./image20.png)
+
 The QoS profile is attached to the authorization template as follows:
+
+![lab2](./image21.png)
 
 That's about it. If everything is configured properly you should be able
 to see the various accounting information related to our test user in
 Splynx dashboard.
+
+![lab2](./image22.png)

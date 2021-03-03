@@ -14,3 +14,5 @@ This section is separated into the following sections, please click on each sect
 * [Last Login](my_profile/last_login/last_login.md)
 
 * [Scheduling](my_profile/scheduling/scheduling.md)
+
+* [IMAP](my_profile/imap/imap.md)

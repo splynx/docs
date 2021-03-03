@@ -73,6 +73,7 @@ Table of contents
 * [Customer search fields](my_profile/customer_search_fields/custom_search_fields.md)
 * [Last Login](my_profile/last_login/last_login.md)
 * [Scheduling](my_profile/scheduling/scheduling.md)
+* [IMAP](my_profile/imap/imap.md)
 
 
 ##### [Networking](networking/networking.md)

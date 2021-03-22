@@ -20,7 +20,7 @@ Once *TR-069 (ACS)* is enabled you will see a new sector under left side menu un
 
 Let's start configuring the ACS server:
 
-##### Step 1
+### Step 1
 
 Navigate to **Config/Networking/TR-069(ACS)** and install the ACS server:
 
@@ -48,7 +48,7 @@ Here we have next options:
 
 Don't forget to click on "Save" button when configuration is completed.
 
-##### Step 2
+### Step 2
 
 On the same menu **Config/Networking/TR-069(ACS)** let's configure ACS User Interface parameters:
 
@@ -64,7 +64,7 @@ On the same menu **Config/Networking/TR-069(ACS)** let's configure ACS User Inte
 
 Don't forget to click on "Save" button when configuration is completed.
 
-##### Step 3
+### Step 3
 
 Click on a link for UI here:
 
@@ -86,15 +86,15 @@ Main parameters for ACS are configured, you can use this feature now. Also we ha
 
 ![additional config](more_config.png)
 
-##### Types:
+## Types:
 
 Simply add different types of devices:
 
 ![types](types.png)
 
-**NOTE!** Before starting to configure the *Groups*, [add the router](networking/routers_settings/routers_settings.md) to *Networking* section.
+**NOTE!** Before configuring ACS groups you need to connect some device to ACS server.
 
-##### Groups:
+## Groups:
 
 Under groups you can create new entries to group devices.
 
@@ -141,7 +141,7 @@ Also you can view custom attributes here:
 
 ![view attributes](display_attributes.png)
 
-##### Attributes:
+## Attributes:
 
 Here can be added some custom attributes to be displayed under ACS devices in Splynx. For example, we need to display a DNS attribute on the main info of device:
 
@@ -163,7 +163,7 @@ Select a device and click on "Load" button to load attributes. In this guide a M
 
 and after its configuration you'll see the attribute values on the device overview.
 
-### Connect the device
+## Connect the device
 
 Let's add some TR-069 client. We will use a Mikrotik device as an example. First of all, TR-069 package should be installed on Mikrotik. If this package is not installed, use the next steps to install it:
 

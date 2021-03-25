@@ -8,7 +8,7 @@ You can enable/disable sending of certain notifications to admins/customers here
 
 **These notifications can only be sent via Email.**
 
-**Sender must be configured under [Config->Support->Tickets->Tickets](configuration/tickets/tickets.md)**
+**Sender must be configured under [Config->Support->Tickets->Tickets](configuration/support/tickets/tickets.md)**
 
 ![Notifications list](list.png)
 
@@ -26,7 +26,7 @@ You can enable/disable sending of certain notifications to admins/customers here
 
 **Ticket assigned (message to admin)** - sends an email to the admin when a ticket is assigned to them;
 
-**Ticket assigned (message to group)** -sends an email to the group when ticket assigned to the group. Groups can be added/removed under [Config -> Support -> General ticket configuration -> Ticket groups](configuration/general_ticket_configuration/ticket_config.md);
+**Ticket assigned (message to group)** -sends an email to the group when ticket assigned to the group. Groups can be added/removed under [Config -> Support -> General ticket configuration -> Ticket groups](configuration/support/general_ticket_configuration/general_ticket_configuration.md);
 
 **Ticket closed (message to admin)** - sends an email to the admin when a ticket is closed;
 

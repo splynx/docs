@@ -123,7 +123,7 @@ Table of contents
 
 * [Maps](networking/maps/maps.md)
 
-* [Monitoring](networking/monitoring/monitoring.md)
+* [Monitoring (Hardware)](networking/monitoring/monitoring.md)
 
 * [TR-069 (ACS)](networking/tr069_acs/tr069_acs.md)
 

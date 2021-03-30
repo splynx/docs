@@ -6,7 +6,7 @@ Tickets
 
 ## TICKETS
 
-In this module you can configure the sender details for [ticket notifications](configuration/ticket_notifications/tickets_notifications.md).
+In this module you can configure the sender details for [ticket notifications](configuration/support/ticket_notifications/tickets_notifications.md).
 
 **Please note that email sending must be configured under [Config->Main->Email](configuration/main_configuration/email_config/email_config.md) first.**
 
@@ -59,6 +59,6 @@ The configuration of ticket statuses. Custom statuses can be added/removed under
 
 ## DEFAULT TICKET TYPE
 
-The configuration of default ticket types after creation. Custom ticket types can be added/removed under [Config->Support->General ticket configuration->Ticket Types](configuration/general_ticket_configuration/ticket_config.md)
+The configuration of default ticket types after creation. Custom ticket types can be added/removed under [Config->Support->General ticket configuration->Ticket Types](configuration/general_ticket_configuration/support/ticket_config.md)
 
 ![Ticket default type](default_type.png)

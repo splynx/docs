@@ -59,6 +59,6 @@ The configuration of ticket statuses. Custom statuses can be added/removed under
 
 ## DEFAULT TICKET TYPE
 
-The configuration of default ticket types after creation. Custom ticket types can be added/removed under [Config->Support->General ticket configuration->Ticket Types](configuration/general_ticket_configuration/support/ticket_config.md)
+The configuration of default ticket types after creation. Custom ticket types can be added/removed under [Config->Support->General ticket configuration->Ticket Types](configuration/support/general_ticket_configuration/general_ticket_configuration.md)
 
 ![Ticket default type](default_type.png)

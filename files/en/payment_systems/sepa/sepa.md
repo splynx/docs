@@ -28,21 +28,20 @@ After the installation process has completed, you have to configure the add-on.
 
 **2\. Configuration**
 
-Navigate to `Config→Integrations→Modules list→`
+Navigate to `Config → Integrations → Modules list`
 
 ![Module list](4.png)
 
-Locate or search for the "splynx-pesapal" add-on and click on the edit icon in the *Actions* column and fill in provided fields
+Locate or search for the "splynx-sepa" add-on and click on the edit icon in the *Actions* column and fill in provided fields
 
 ![113.png](113.png)
 
 ![113-1.png](113-1.png)
 
-where: ID prefix - is the bank contact ID prefix : ES12500 example (before company VAT ID)
-
-**Customer’s IBAN** can be set in the customer profile (see below)
+**Customer’s IBAN** and **Mandate ID** can be set in the customer profile (see below)
 
 ![add_iban.png](add_iban.png)
+![add_iban1.png](add_iban1.png)
 
 **3\. Generate the XML file for the bank.**
 
@@ -68,3 +67,15 @@ Sometimes customers does not have funds on their bank accounts. In that case, th
 The handler to choose is SEPA XML returns:
 
 ![SEPA_last.png](SEPA_process.png)
+
+**6\. **SEPA - process of the refund from the bank in case of overpaid**
+
+If customers have the overpayments, we can provide the money-back. In order to do this, create for particular customers the invoices with negative price value. The status for such invoices will be set to _Paid (from account balance)_. After that in `Finance → Invoices` apply the charge with the following options:
+
+![charge3.png](charge3.png)
+And download the archive with generated XML file:
+![charge4.png](charge4.png)
+
+When this XML file was sent to bank and you received a response with the new file, upload it back to Splynx with _SEPA XML_ handler:
+
+![SEPA_process1.png](SEPA_process1.png)

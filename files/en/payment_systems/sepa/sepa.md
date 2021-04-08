@@ -73,9 +73,6 @@ The handler to choose is SEPA XML returns:
 If customers have the overpayments, we can provide the money-back. In order to do this, create for particular customers the invoices with negative price value. The status for such invoices will be set to _Paid (from account balance)_ automatically. After that in `Finance → Invoices` apply the charge with the following options:
 
 ![charge3.png](charge3.png)
+
 and download the archive with generated XML file:
 ![charge4.png](charge4.png)
-
-When this XML file was sent to bank and you received a response with the new file, upload it back to Splynx with _SEPA XML_ handler:
-
-![SEPA_process1.png](SEPA_process1.png)

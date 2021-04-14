@@ -11,7 +11,7 @@ Within the processing module there are 4 menus, CDR Import, CDR Export, CDR Hist
 
 To import a CDR file you have to upload the file (in .csv format), select the delimiter, enable/disable “first row contains column names”, select the voice type (call, messages, data or mixed) and select the handler ( default handler = "Base"). Provider selection can be skipped.
 
-*PLEASE NOTE! Every client has a different type/structure of CDR files, so if the Splynx base handler can't process your file because of another format, you can send a request to the Splynx Support team to develop a custom handler for your type of CDR files. Please send 2-3 CDR files as examples and a full description (which field should be imported, which field should be ignored etc.). The custom handler development takes a few business days, however it remains a free service.*
+*PLEASE NOTE! Every client has a different type/structure of CDR files, so if the Splynx base handler can't process your file because of another format, you can send a request to the Splynx Support team to develop a custom handler for your type of CDR files. Please send 2-3 CDR files as examples and a full description (which field should be imported, which field should be ignored etc.).* **_The custom handler development is the paid service and takes a few business days, depending on the type and complexity of the request._**
 
 ![Description](import_description.png)
 

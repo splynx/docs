@@ -1,125 +1,108 @@
 Mikrotik: DHCP with Radius
 ==========
 
-#### Associate a permanent IP to a client
+### Step 1 - Configure RADIUS server on a router
 
-To configure the Splynx Radius Server with the DHCP service you should have a DHCP server configured on the interface of your router. Select your DHCP server and make sure you have the option "Use RADIUS" flagged. Also, make sure you have selected in the Address pool "static only" (the DHCP is going to get the IP from the Splynx RADIUS server).
+First of all we need to configure the RADIUS server on the router to communicate with Splynx.
 
-![DHCP config](dhcp_conf.png)
+![radius_server](radius_server.png)
 
+In this case 10.250.32.1 is the Splynx server IP and 10.250.32.2 is the router IP. The RADIUS secret should be specified in the `Secret` field - we will use this in Splynx in the router settings and then enable the `DHCP` service.
 
-To configure the Splynx Radius Server, navigate to `Networking → Routers → List`, select the router where you have configured your dhcp service, click on the *"Authorization/Accounting"* window and select DHCP *(Radius)/ API accounting).*
+Lastly we need to enable `RADIUS incoming`:
 
-![Radius view](radius_view.png)
+![incoming](radius_incoming.png)
 
-Click on `IPv4 Networks → Add` and create the network you want to use with the DHCP service. Don't forget to select Static in the Type of usage.
+### Step 2 - Configure DHCP server on a router
 
-![Subnet](subnet.png)
+We can setup the DHCP server manually or using the setup wizard.
 
-Click on `Customers →  List`, select a customer and click on the Services tab. Now you can add a new service, just click on the "+" button.
+![dhcp_server](dhcp_server.png)
 
-![Customers](customers_view.png)
+The main options here are: `Address pool=static-only` (it means that Splynx (Radius server) will assign the IP) and `use RADIUS=yes`. Specify the name, correct interface, lease time and save the settings.
 
+### Step 3 - add new router in Splynx
 
-When you add the service, you should pay special attention to the following three fields:
+Now we need to add a new router in Splynx under _Networking -> Routers -> Add_ :
 
-* **Router** - select the router that is used with the dhcp service
-* **Taking IPv4** - select Permanent IP ( from static IPs)
+![router](router_in_splynx.png)
 
-* **IPv4** - IP address you want to assign to the customer
+The main parameters here are:
 
-* **MAC (s)** -  MAC address of the customer
+1. **IP / Host** - IP of the router;
 
-![Create service](create_service.png)
+2. **Authorization / Accounting** - PPP/DHCP (Radius) / Radius acounting;
 
-<icon class="image-icon">![](warning_icon.png)</icon> Please note, even with AAA enabled on a Mikrotik router, it does not send DHCP statistics. In order to get statistics, you should enable an API on the Splynx Radius server.
+3. **Radius secret** - the same as the RADIUS secret on the router;
 
+4. **NAS IP** - IP of the router.
 
-Navigate to `Networking →  List`, and select the router where you have configured your dhcp service. Click on the Mikrotik tab, Enable API and insert a login and password of an administrator (be sure that the administrator is created on the router as well).
+### Step 4 - create IP network in Splynx
 
-![Mikrotik API](mikrotik_api.png)
+#### IP assignment - static IPs (recommended)
 
+In case you will use static IPs in Splynx you need to navigate to _Networking / IPv4 Networks / Add_ and add a network with `Type of usage = static`:
 
-#### Associate more than one MAC Address to a customer
+![ip_network](ip_network_static.png)
 
-To associate more than one MAC address to a customer, it is necessary to create a new service, with a new MAC address, and set the price to 0 to ensure that the customer will not be charged twice.
+#### IP assignment - assign IP from pool
 
-![Internet Services](internet_service.png)
+In this case we need to create IPv4 network with `Type of usage = Pool`:
 
+![pool](make_network_pool.png)
 
-As you can see from the screenshot, the DHCP service is going to release a second IP associated to a different MAC address.
+### Step 5 - add the internet service for a client
 
+#### Static IP (recommended)
 
-![Leases](leases.png)
+Under _Customers -> List_ select the customer, open the _Services_ tab and add a new internet service with following networking parameters:
 
-In Splynx, we have the ability to block a permanent IP address assigned from the DHCP service through an API. To block a permanent IP, navigate to `Networking → Routers → List`, select the router where you configured your dhcp service, click on the Mikrotik tab and enable the *"Disabled customer to Address-List"* option. Navigate to the respective customer and change the *Customer's Status* to *Blocked*.
+![client_service_mac_static](client_service_1mac_static.png)
 
-![Disabled customers to Address-List](add2addrlist.png)
+Select `IPv4 assignment method = Permanent IP(from static IPs)`, select the IP address and specify the MAC address of the interface on the CPE that will be receiving the IP.
 
-![Customer](status.png)
+Once this done the client should be connected:
 
-The user will be blocked and their internet traffic will be redirected to a Reject IP for blocked users defined in `Config → Networking → Radius`.
+![lease_mac1](lease_mac1.png)
 
-![RejectIP](reject_ip.png)
+On the router under the _Leases_ tab we can see the DHCP lease with the IP that we specified in Splynx.
 
+In Splynx we can see that customer is online.
 
-#### Associate a dynamic IP to a customer.
-<icon class="image-icon">![](warning_icon.png)</icon> We do not recommend the use of this setup.
+![online](online_in_splynx.png)
 
-To configure the Splynx Radius Server with the DHCP service, you should have a DHCP server configured on the interface of your router. Select your DHCP server and make sure you have the option *"Use RADIUS"* flagged. In the Address pool, you have to select *"Static only"* (DHCP will get an IP from the Splynx RADIUS server).
-![DHCP](dhcp_conf.png)
+We can add more MAC addresses to the service field _MAC(s)_ separated by a comma:
 
-To configure the Splynx Radius Server, navigate to `Networking → Routers → List`, select the router where you have configured your dhcp service, click on the `Authorization/Accounting` drop-down menu and select the `DHCP (Radius)/ API accounting` option.
+![client_service_mac2_](client_service_2mac_static.png)
 
-![Authorization/Accounting](aa.png)
+So a customer connection with the second MAC address can be authenticated:
 
+![](lease_mac2.png)
 
-Thereafter, navigate to  `IPv4 Networks → Add` and create the network you want to use with the dhcp service. Don't forget to select Pool in the Type of usage.
+Blocking of static IP customers will be performed using their own static IP in the address list. More information about customer blocking here - [Blocking of customers in Splynx](../../blocking_customers/blocking_customers.md)
 
-![TypeOfUsage](type_of_usage.png)
+#### IP from pool
 
-Finally, you can navigate to `Customers →  List`, select a customer and click on the Services tab to add a new service, simply click on the "+" button.
+Under _Customers -> List_ select the customer, open the _Services_ tab and add a new internet service with following networking parameters:
 
-![Add service](add_service.png)
+![ip_from_pool_](service_assign_pool.png)
 
-When you add the service, you should pay special attention to the following three fields:
+and this connection will receive an IP from the specified pool:
 
-* **Router** - select the router that is used with the dhcp service
-* **Taking IPv4** - select Dynamic IP (from IP Pools)
+![](lease_pool.png)
 
-* **IPv4 pool** - the IP pool you want to use to assign an IP to the customer from
+Some advanced parameters for RADIUS can be configured under [Config/Networking/Radius](../../../configuration/network/radius/radius.md) and [Config/Networking/Radius Extended](../../../configuration/network/radius_extended/radius_extended.md).
 
-* **MAC(s)** -MAC address of the customer
+Blocking of customers will be performed with using of reject IP pools in the address list. More information about customer blocking here - [Blocking of customers in Splynx](../../blocking_customers/blocking_customers.md)
 
-![IP from pool](ip4pool.png)
+### Please note!
 
+For DHCP to report accounting correctly queues have to be applied dynamically via radius. API queues will not report the accounting stats to Splynx.
 
-It is possible to get statistics from the DHCP dynamic assignments. Navigate to `Config / Networking / Radius extended_`and enable the **DHCP (Add customer to online after login)** option.  
+### Troubleshooting
 
-![Add customer to online after login](add_customer_to_online_after_login.png)
+#### Additional network issue for services with static IPs
 
+If you set additional network(s) in Splynx internet services, network routes will be sent to the router (NAS) during authorization. The router will then send all traffic with destination=additional network to the customer device. It is possible that these routes will also appear on the customer's device. To fix this issue, set use-framed-as-classless to disabled in the DHCP server settings:
 
-Restart the Radius Daemon with the **Restart radius** button at the bottom of the page under `Radius Tools`.
-
-![Restart radius](restart_radius.png)
-
-When a customer has a dynamic IP, the API blocking will not work and you will need to use a hack. Navigate to the DCHP server parameters on your Mikrotik router and set the *Lease Time* as 1 day(1d 00:00:00).
-
-![Lease time](leasetime_dhcp.png)
-
-
-Therafter, in Splynx, navigate `Config → Networking → Radius` and click on *Load*. In the Rate-Limit attributes, add the string "Session-Timeout = 86400" (equivalent to 24 hrs in seconds).
-
-![Seesion Timeout](session_timeout.png)
-
-
-#### Troubleshooting
-
-**Additional network issue**  
-If you set additional network(s) in Splynx internet services, network routes will be sent to the router (NAS) during authorization. The router will then send all traffic with destination=additional network to the customer device.
-It is possible that these routes will also appear on the customer's device. To fix this issue, set _use-framed-as-classless_ to _no_ in the DHCP server settings.
-
-Example:  
-```
- /ip dhcp-server set use-framed-as-classless=no [find name=dhcp1]
-```
+![use-framed](use_framed.png)

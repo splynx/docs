@@ -79,7 +79,7 @@ So a customer connection with the second MAC address can be authenticated:
 
 ![](lease_mac2.png)
 
-Blocking of static IP customers will be performed using their own static IP in the address list. More information about customer blocking here - [Blocking of customers in Splynx](../../blocking_customers/blocking_customers.md)
+Blocking of static IP customers will be performed using their own static IP in the address list. More information about customer blocking here - [Blocking of customers in Splynx](networking/blocking_customers/blocking_customers.md)
 
 #### IP from pool
 
@@ -93,7 +93,7 @@ and this connection will receive an IP from the specified pool:
 
 Some advanced parameters for RADIUS can be configured under [Config/Networking/Radius](../../../configuration/network/radius/radius.md) and [Config/Networking/Radius Extended](../../../configuration/network/radius_extended/radius_extended.md).
 
-Blocking of customers will be performed with using of reject IP pools in the address list. More information about customer blocking here - [Blocking of customers in Splynx](../../blocking_customers/blocking_customers.md)
+Blocking of customers will be performed with using of reject IP pools in the address list. More information about customer blocking here - [Blocking of customers in Splynx](networking/blocking_customers/blocking_customers.md)
 
 ### Please note!
 

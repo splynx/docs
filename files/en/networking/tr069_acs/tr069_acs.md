@@ -82,7 +82,63 @@ Once this done, you will see GenieACS dashboard:
 
 ![genie](genie.png)
 
-Main parameters for ACS are configured, you can use this feature now. Also we have a few more options to configure: Attributes, Types and Groups.
+## Connect the device
+
+Let's add some TR-069 client. We will use a Mikrotik device as an example. First of all, TR-069 package should be installed on Mikrotik. If this package is not installed, use the next steps to install it:
+
+1. Open Winbox and connect to the router;
+
+2. Update router to latest stable version *System > Packages > Check for updates* and update if required;
+
+3. Navigate to Mikrotik Downloads and download the package for your device;
+
+4. Extract the downloaded archive and find tr069-client-X.XX.npk;
+
+5. Upload tr069-client-X.XX.npk into your device and reboot Mikrotik (System > Reboot);
+
+6. After reboot you should see a TR-069 option in menu:
+
+![tr-mikrotik](tr-mikrotik.png)
+
+Click on TR069 item and configure connection to the ACS:
+
+1. Enable client;
+
+2. ACS URL is a URL from menu on step 3 for a CWMP (ends with port 7547);
+
+![URL](urls.png)
+
+If you noticed we are using here another URL - it's because we changed a hostname from IP 192.168.105.80 to a domain name.
+
+3. Specify username and password with values from global parameters (Step 1);
+
+4. Enable "Periodic Inform Enabled".
+
+That's all. After that you should see next:
+
+![connected](connected_device.png)
+
+Should appear "Connection Request Username" and "Connection Request Password" - do not change these parameters (only when you need to reconnect this device with an ACS, these values can be removed and re-enable client - with new connection you will see a new values).
+
+**Important note for Mikrotik devices**: if you are using HTTPS/SSL on your Splynx server you can get an error about SSL, asking for the local certificate. In this case you need to run 2 commands in Mikrotik terminal:
+
+```
+/tool fetch https://letsencrypt.org/certs/trustid-x3-root.pem.txt
+/certificate import file-name=trustid-x3-root.pem.txt passphrase=""
+```
+and do not change any other config in TR-069 client ("Client certificate" option must be "none"), just re-enable TR-069 client.
+
+After that device will be registered under GenieACS:
+
+![device under genie](device_under_genie.png)
+
+as well under Splynx:
+
+![device in Splynx](device_in_splynx.png)
+
+Devices can be in statuses: Online, Online today, Offline.
+
+Main parameters for ACS are configured and device is connected so you can manage the device remotely now. Also we have a few more options to configure: Attributes, Types and Groups.
 
 ![additional config](more_config.png)
 
@@ -163,62 +219,6 @@ Select a device and click on "Load" button to load attributes. In this guide a M
 
 and after its configuration you'll see the attribute values on the device overview.
 
-## Connect the device
-
-Let's add some TR-069 client. We will use a Mikrotik device as an example. First of all, TR-069 package should be installed on Mikrotik. If this package is not installed, use the next steps to install it:
-
-1. Open Winbox and connect to the router;
-
-2. Update router to latest stable version *System > Packages > Check for updates* and update if required;
-
-3. Navigate to Mikrotik Downloads and download the package for your device;
-
-4. Extract the downloaded archive and find tr069-client-X.XX.npk;
-
-5. Upload tr069-client-X.XX.npk into your device and reboot Mikrotik (System > Reboot);
-
-6. After reboot you should see a TR-069 option in menu:
-
-![tr-mikrotik](tr-mikrotik.png)
-
-Click on TR069 item and configure connection to the ACS:
-
-1. Enable client;
-
-2. ACS URL is a URL from menu on step 3 for a CWMP (ends with port 7547);
-
-![URL](urls.png)
-
-If you noticed we are using here another URL - it's because we changed a hostname from IP 192.168.105.80 to a domain name.
-
-3. Specify username and password with values from global parameters (Step 1);
-
-4. Enable "Periodic Inform Enabled".
-
-That's all. After that you should see next:
-
-![connected](connected_device.png)
-
-Should appear "Connection Request Username" and "Connection Request Password" - do not change these parameters (only when you need to reconnect this device with an ACS, these values can be removed and re-enable client - with new connection you will see a new values).
-
-**Important note for Mikrotik devices**: if you are using HTTPS/SSL on your Splynx server you can get an error about SSL, asking for the local certificate. In this case you need to run 2 commands in Mikrotik terminal:
-
-```
-/tool fetch https://letsencrypt.org/certs/trustid-x3-root.pem.txt
-/certificate import file-name=trustid-x3-root.pem.txt passphrase=""
-```
-and do not change any other config in TR-069 client ("Client certificate" option must be "none"), just re-enable TR-069 client.
-
-After that device will be registered under GenieACS:
-
-![device under genie](device_under_genie.png)
-
-as well under Splynx:
-
-![device in Splynx](device_in_splynx.png)
-
-Devices can be in statuses: Online, Online today, Offline.
-
 Let's see on device control menu:
 ![device overview](device_overview.png)
 
@@ -293,3 +293,80 @@ Now we can see devices for the upgrade (from this group) and some parameters for
 Click on this button to update a device.
 
 ![ready for upgrade](ready_for_update.png)
+
+### Some features description
+
+<details>
+<summary><b>Relation with inventory</b></summary>
+<p markdown="1">
+It is possible  to assign device by ACS identifier (Serial number) to customer before device establishes first connection to ACS. In this way you can add an inventory item with a serial number specified and assign it to a customer:
+
+![item](item.png)
+
+After this you can setup some group and auto provisioning, for example to push PPPoE login&password, wifi SSID&password on first connect. After this with first connect a TR-069 device will be automatically assigned to a customer and initial configuration will be pushed:
+
+![group_mikrotik](group.png)
+
+and after first connect:
+
+![first](device_assigned.png)
+
+</p>
+</details>
+
+<details>
+<summary><b>Device management by customer from portal page</b></summary>
+<p markdown="1">
+The customer can reboot and change SSID and Wi-Fi password for assigned devices directly from portal page on menu Service -> Hardware:
+
+![manage](device_on_portal.png)
+
+</p>
+</details>
+
+
+### Troubleshooting
+
+Follow these instructions to troubleshoot problems with TR-069 (ACS):
+
+<details>
+<summary><b>Can't connect device to ACS</b></summary>
+<p markdown="1">
+
+  0. Make sure that device is accessible from Splynx server. Use tools like ping or traceroute to ensure;
+
+  1. Pay attention to IP restrictions. Requests have to come from IP/network allowed in this list:
+
+  ![ip_restriction](ip_restriction.png)
+
+  2. Make sure that CWMP URL, username and password what are configured under TR-069 client on a device is correct and ports 7547, 7567 are opened;
+
+  3. Disable firewall on a device to ensure that it's not a firewall issue;
+
+  4. In case of using HTTPS - try to disable option "SSL enabled by default", and use CWMP URL like http://splynxserver.com:7547/ instead of https at the beginning.
+
+  5. Restart GenieACS services using this command - "sudo service genieacs* restart"
+
+</p>
+</details>
+
+<details>
+<summary><b>Device is registered in Splynx but no communication</b></summary>
+<p markdown="1">
+  0. Make sure that device is accessible from Splynx server. Use tools like ping or traceroute to ensure;
+
+  1. Pay attention to IP restrictions. Requests have to come from IP/network allowed in this list:
+
+  ![ip_restriction](ip_restriction.png)
+
+  2. Refresh device using this option and wait for the result:
+
+  ![refresh_Device](refresh_Device.png)
+
+  3. Pay attention to windows "Tasks" and "Faults". Try to remove all tasks and all faults using remove button:
+
+  ![troubleshoot_faults](tasks-faults.png)
+
+  4. Disable TR-069 client on a device, remove device from Splynx and enable TR-069 client to re-add device in Splynx.
+</p>
+</details>

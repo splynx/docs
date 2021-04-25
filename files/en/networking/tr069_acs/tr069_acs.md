@@ -299,9 +299,9 @@ Click on this button to update a device.
 <details>
 <summary><b>Relation with inventory</b></summary>
 <p markdown="1">
-It is possible  to assign device by ACS identifier (Serial number) to customer before device establishes first connection to ACS. In this way you can add an inventory item with a serial number specified and assign it to a customer:
+It is possible  to assign device by ACS identifier (Barcode or Serial number) to customer before device establishes first connection to ACS. Splynx is looking for some value in a field "Barcode" of inventory item, if "Barcode" matches with "Serial number" field of a device on first connect - customer will be linked automatically. If field barcode is empty or does not match "Serial number" of a device - in this case field "Serial number" will be used from inventory item. In this way you can add an inventory item with a barcode or serial number specified and assign it to a customer:
 
-![item](item.png)
+![item](inventory_item.png)
 
 After this you can setup some group and auto provisioning, for example to push PPPoE login&password, wifi SSID&password on first connect. After this with first connect a TR-069 device will be automatically assigned to a customer and initial configuration will be pushed:
 

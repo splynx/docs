@@ -351,7 +351,7 @@ Follow these instructions to troubleshoot problems with TR-069 (ACS):
 </details>
 
 <details>
-<summary><b>Device is registered in Splynx but no communication</b></summary>
+<summary><b>Device is registered in Splynx but no communication established</b></summary>
 <p markdown="1">
   0. Make sure that device is accessible from Splynx server. Use tools like ping or traceroute to ensure;
 

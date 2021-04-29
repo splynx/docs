@@ -10,9 +10,9 @@ To add a new customer, click on the _Customers Menu → + Add_. A window will ap
 * `Full name` - name and surname of the customer
 * `Email` - email address of the customer (the multiple ones are supported separated by comma ",")
 * `Billing email` - email address of the customer only for the billing correspondence (the multiple ones are supported separated by comma ",").
-*The current field has the next logic:*
-*if the billing email field is empty - all emails are sending to email(-s) from main "Email" field;*
-*if there is the email in the "Billing email" field - all billing notifications will be send to this billing email and all other emails will be send to email from main "Email" field. As a result, Splynx doesn't duplicate the billing notifications to email(-s) from the main "Email" field.*
+The current field has the next logic:
+**1)** *if the billing email field is empty - all emails are sending to email(-s) from main "Email" field;*
+**2)** *if there is the email in the "Billing email" field - all billing notifications will be send to this billing email and all other emails will be send to email from main "Email" field. As a result, Splynx doesn't duplicate the billing notifications to email(-s) from the main "Email" field.*
 * `Phone Number` - phone number of the customer (the multiple ones are supported separated by comma ",")
 * `Category` - if customer is a private person or a company.
 * `Date of birth` - birthday of the customer

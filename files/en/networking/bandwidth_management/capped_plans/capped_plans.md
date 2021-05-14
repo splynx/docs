@@ -1,131 +1,188 @@
-Capped plans and top up
-==========
+Capped plans and Top-Ups
+===
 
-CAP is a feature that allows ISP's to provide Internet services with monthly limitations of data and the ability to charge customers for additional data.
+CAP is a feature that allows ISPs to provide Internet services with monthly limitation of data and charge customers for additional data in the form of top-ups.
 
-The advantage is that customer can pay more to extend his CAP using the tool Top Up. Administrator designs Top Up plans, that are avaliable for customers in addition to their regular Internet plans.
+For example, the monthly limit for an internet tariff plan in Splynx is 200GB, once a customer has used 200GB the connection can be blocked or speed can be decreased. In a case, where the customer wants to use the Internet connection without speed limitations they can purchase a Top-up (additional data pack) and use this data without any speed limitations. In Splynx, we have designed this feature so that the customer can issue a Top-up from the customer portal, the administrator can also issue a Top-up for a customer on the administrator portal, and it can also be done automatically (when the monthly limit is reached - an auto top-up can be issued automatically).
 
+Firstly, you need to enable the CAP module under _Config → Integrations _→ Main Modules.__
 
-### CAP configuration
+![enable_module](enable_module.png)
 
-To configure CAP policies navigate to `Tariffs → Internet`, and then select the tariff plan you want to apply CAP to and click on the FUP button, a new window  will appear called CAP.
+Once this done you can navigate to _Tariff Plans -> Internet_ and click on this button to configure CAP:
 
-![Plans / Internet](plans_internet.png)
+![tariff](tariff.png)
 
-![CAP](cap.png)
+Here you can configure FUP policies, CAP, simulate & test the behavior of the system on FUP and CAP rules. Do not mix FUP and CAP configurations, it could cause conflicts on the router. We will skip the FUP rules and only focus on CAP + time frames for traffic accounting.
 
+## CAP сonfiguration
 
-In CAP there are 3 configuration sections, Monthly limits(CAP), Top Up Plans and Notifications.
+Let's start with the `Monthly limits (CAP)` configuration:
 
-In the first section, we can set the total amount of data (in KB, MB, GB or TB) customers using the Internet plan will be able to consume. Limits can be set to dowload, upload or bidirectional usage. When the CAP monthly data is used, Splynx will automatically block the customer or reduce their speeds according to the configured percentage level.
+![cap_limits](cap_limits.png)
 
-You can also disable daily or weekly limits by setting an FUP rule or enabling the Rollover mode. Rollover means that unused monthly data of the CAP will be moved to the next month.
+Here’s a description of available options:
 
-![Monthly limit](monthly_limit.png)
+* **Monthly traffic limit** - here you can set the amount of data a customer can consume per month
 
-In the second section, we can configure Top Up plans. These plans are used when customers have reached their monthly data CAP and wish to purchase more data . Customers simply pays for a Top Up, and then receives more data.
+* **Bonus traffic limit** - this option will ONLY work if a time frame has been specified under `FUP configuration` tab:
 
-The validity of Top Up data can be set to several months or it can set to unlimited. There is also an option to add Top Up charges to the customer's invoice.
+![time_frames](fup_time_frames.png)
 
-A very useful option is to Load plans from other tariffs. Meaning, you only have to configure top up plans once and then the same plans can simply be loaded to all other tariffs.
+In this case, the customer will be able to use 50GB of bonus traffic only from 00:00 to 04:00 (A monthly limit of 100GB won't be used here). If you account for traffic for a whole day (without FUP time frames) - this option will not work.
 
-![Top Up](top_up.png)
+You can set bonus traffic here or enable the toggle `Unlimited` to allow a customer to consume traffic without limits between 00:00 and 04:00.
 
+* **Traffic direction** - select the direction of traffic for accounting: `Up + Down`, `Up` or `Down`;
 
-The third section is the configuration of Notifications, which informs customers by means of email or SMS, about monthly usage, Top Up data usage or Top Up actions.
+* **Action** - select what to do with the connection once the monthly limit is reached: `Block`, `Set fixed speed`, `- Speed %`;
 
-Like with top up plans, it is also possible to load notifications that we have created in other plans.
+* **Auto top-up plan** - select one of the previously created top-ups that will be automatically applied to the customer when the monthly limit is reached (auto top-ups have to be enabled under customer's settings as well);
 
-Source - the counter or action that we want to notify our customer about.
+* **Compensate for over-usage with top-up** - this option is created for tariff plans with high speed to avoid not being charged for over-usage of traffic. Let's say a customer has a plan with 1Gbps speed and accounting interval = 5 minutes and CAP limit = 500GB, Splynx receives data that the customer has already used 499.95GB and Splynx won't block this connection as CAP limit is 500GB and in another 5 minutes Splynx receives the last data that a customer has already used 502GB, so the goal of this toggle is that Splynx will charge for over-used 2GB according to tariff price;
 
-Monthly limit - the data included in CAP,
+* **Auto top-up trigger value** - specify the amount of data (in percent) that a connection can consume after which an auto top-up will be applied. For example, a top-up of 1GB was applied and the customer has used it, so if it’s set to 10% of 1GB, once 100MB will be used additionally - an auto top-up will be applied;
 
-Top Up usage - notify the customer when a certain percentage of their the top up data has been spent
+* **Top-up will disable daily and weekly limits** - enable/disable this option to ignore daily or weekly FUP limits (under "FUP configuration" tab);
 
-Top Up action - notify the customer when a top up was added to customer's account
+* **Rollover unused data(monthly)** - enable/disable option to rollover unused data to the next month;
 
-Auto Top Up - notifies the customer when dat has been automatically added to the customer's account by Splynx.
+* **Allow the usage of bonus traffic when normal CAP is finished** - with this option enabled customers will be able to use bonus traffic even if the monthly limit is reached.
 
-It is necessary to type a subject and customize the message by clicking on the Edit message button. You also have the option to load a template you have prviously created in `Splynx → Config → Templates`.
 
-![Mail CAP](mail_cap.png)
+## Top-ups
 
-![Mail CAP](mail_cap_load.png)
+These plans are used when the monthly data CAP's are reached and the customer wishes to extend their services. Customers pay for Top-Ups in order to regain access according to the data limits of the Top-up plan.
 
-To make sure that the email or notifications are working correctly, you can view email logs by navigating to `Administration → Logs → Email`.
+Top-up plans are beneficial to you as an ISP as this creates an additional source of income with existing customers using a capped service.
 
+Splynx has simplified the top-up concept for anyone to use appropriately, with just 5 parameters to be set to create a top-up plan or simply loading a preexisting top-up plan.
 
-![Email logs](email_log.png)
+![top_ups](top_ups.png)
 
-The same method of verification is available for SMS messages in `Splynx → Administration → Logs → SMS`
+On this screenshot, you can see 2 top-up plans: 5GB and 10GB. Use the buttons `Add top-up plan` to add a new top-up, `Load top-ups from another tariff` - to load existing top-ups from what you previously created for another plan, and the `Save` button to save the changes.
 
+To create a new plan you need to specify the data amount, price, validity, transaction category, and enable/disable the option to add this transaction onto an invoice.
 
-### Top Up plans
+## Notifications
 
-Splynx has 3 types of Top up methods :
+It's really important to inform the customer about the amount of data used to avoid "surprises" when the Internet is not available and the customer wasn't notified.
 
-1. Administrative top up
-2. Customer portal top up
-3. Auto top up
+For this scenario we developed a flexible system of CAP notifications:
 
+![notifications](notification.png)
 
-#### 1. Administrative Top up
+According to these notification settings (as seen on the screenshot), Splynx will send an email message when half of the monthly limit is used with a subject which you can specify under the `Subject` field and a message body which you can specify by clicking on `Edit message` button.
 
-To perform an administrative top up, navigate to `Customers → List` and choose the customer you want to add the Top Up to. The CAP section can be found on the bottom right of the customer information tab, with the top up options available. When clicking on the Top UP button, a new window will appear, requesting a service and Top up plan. Administrators can be granted permissions to add custom top ups. This means that they can define the amount of Data to top up and the price of the single top up.
+Under the `Source` field you can select which data will be used for the notification:
 
-![Add cup](add_cup.png)
+* **Monthly limit** - the system will check only for the Monthly limit amount(CAP) to send the notification, top-ups, and bonus data will be ignored. For example, when the CAP is set at 100GB and the customer has bought a top-up of 10GB, a notification will be sent when the customer has used 50GB, not 55GB(50% of available 100GB + 10GB);
 
+* **Total usage** - the system will check for total available data amount including top-ups;
 
-After we've added a Top UP for 1 GB of data, we can see that the 1GB of data was added to customer's account. The transaction for the top up will be added to the customer's list of transactions and we can proceed to charge the customer to generating the invoice.
+* **Top-up usage** - the system will check only for top-up data usage, CAP limit is ignored;
 
-![Statisticks](statistics.png)
+* **Top-up action** - the system will inform the customer about any top-up applied;
 
+* **Auto top-up action** - inform the customer about applied auto top-up.
 
-Because we have enabled the option "To invoice" in the Top UP transaction, the Top up will appear on the PDF invoice  :
+Click on the `Add notification` button to add a new notification or `Load notifications from another tariff` to load previously created notifications from another tariff plan.
 
-![PDF](pdf.png)
+## Preview and test configuration
 
+Once CAP or FUP is configured you can preview and test settings under the `FUP preview and test` tab. Here you need to select "Day of the week", "Time of the day" (1), some values for "download/upload" (2) and "Online time" and click on the "Preview" button (3) to view the result.
 
-#### 2. Customer portal Top up
+![fup_preview](fup_preview.png)
 
-In Splynx, customer's can order a top up from the customer portal. The administrator will then configure permissions in Splynx and the options that the customers have to perform top ups. The configuration of these permissions can be found in `Config → Main → Portal`. There are two sections with options for customer Top Ups:
+According to our CAP configuration (monthly limit 100GB) when a customer will use a monthly limit Splynx will decrease speed by 90% and the maximum speed will be 10 Mbps / 10 Mbps.
 
-1. You can enable Top Ups and edit auto top up settings. Auto top up permissions shows whether a customer can enable/disable auto top ups and whether they can choose from the top up plans available. There is also an option to allow customer's to change the maximum amount of auto top ups per month.
+## Examples
 
-2. To enable manual top ups from the customer portal, select which type of document will be created when customer's performs top ups from the portal. Pay before means that the customer will not get the top up data until they pay the invoice.
+Let's add an internet service with a monthly limit for the customer:
 
-![TopUp](topup.png)
+![service_limits](service_limits.png)
 
-When a customer enters the Portal and clicks on `Services → Top Up`, they will be presented with top up options, for automatic and/or manuall top ups.
+So the customer has a 100GB monthly limit + 50GB bonus available only between 00:00 and 04:00 according to tariff plan settings.
 
-In the manual top up option, customer's can choose a plan and add a top up.
+On the customer main information page we now have this window with personal CAP settings:
 
-![TopUp](topup_settings.png)
+![customer_cap](customer_cap.png)
 
-![TopUp](topup_manual.png)
+* **Auto top-up** - enable/disable auto top-ups;
 
+* **Auto top-up plans** - select a top-up plan that will be applied automatically (if auto top-up is enabled);
 
-Thereafter, the customer's statistics will display the amount of traffic in the usage bar. The actual top up data will also be displayed.
+* **Limitation type** - select the type of limitation to apply the number of top-ups per month too;
 
-![FUP statistics](fup_stat.png)
+* **Max number of top-ups per month** - set max amount of top-ups per month;
 
+* **Transfer usage to the new service** - enable/disable the transfer of unused top-up data to a new service in case of plan change.
 
-In a case that an administrator enables the option to Pay Before Top Up, the data will only be available after the customer pays for it.
+Using the button `History` you can see top-up data history (top-ups, rollover data, transfers of data) for a specific period of time:
 
-![Invoices](invoices.png)
+![history](top_up_history.png)
 
+Using the button `Top-up` you can apply a top-up manually for a customer:
 
-Once the invoice is paid, another 1GB of data is now added to the customer's account.
+![top-up](add_cap.png)
 
-![FUP statistics](fup_stat1.png)
+Here you can select one of the available top-up plans OR set an amount(quantity), price or validity period manually.
 
+The transaction is added to the list of transactions since the toggle to add transaction to invoice is disabled and the amount will be debited to the customer's account. If this toggle is enabled the transaction will be added to the customers' next generated invoice.
 
-#### 3. Auto Top up
+To remove an amount of data that was added by the top-up use the `Remove` button.
 
-Whitin the CAP section in the customer information tab, we can enable auto top ups.
+It is possible to add bonus data using the `Add bonus data` button:
 
-Then we can define the auto top up plan and maximum amount of top ups allowed per month.
+![bonus](bonus.png)
 
-![CAP](auto_top_up.png)
+![add_bonus](add_bonus.png)
 
-Transfer usage to new service means that, Splynx will transfer unused data between plans in the case that the customer changes their plan.
+Just select the service, the amount of data, validity, and click on the `Add` button.
+
+You can track bonus data history by clicking on the `Bonus history` button.
+
+With a top-up applied and bonus data a customer's service will look like this:
+
+![service_with_cap_bonus](service_with_cap_bonus.png)
+
+**NOTE!** Bonus data will be available for use only on off-peak hours (00:00 - 04:00 according to tariff plan settings). If you want to bypass this, simply set the top-up price to 0.
+
+## What customer will see in their portal
+
+The look and feel can be customized according to which items you want to display to a customer but in this case, we have enabled displaying of all items related to traffic amount, CAP, and FUP so the customer will be able to see their available and used data directly on their dashboard:
+
+![portal_dashboard](portal_dashboard.png)
+
+Under `Services -> Top-up` the customer can enable/disable auto top-up issuing, select auto top-up plan (we disabled this option in our example) and issue a top-up manually:
+
+![portal_topup](portal_topup.png)
+
+For this option to be available, permissions in the portal should be granted for customers to have access to this feature. To grant access, navigate to Config → Main → Portal and select "Per partner settings". There are two sections to grant access for customers to perform top-ups:
+
+![topup_config](top_up_config.png)
+
+**Top-up settings** - Permissions regarding auto top-up plans made available to the customer tariffs and how they can interact with these fields:
+
+* **Enable** - allow/deny the ability to perform auto top-ups;
+
+* **Auto Top-up** - select the level of access/ability to use the Auto top-up feature (View, Edit, All selected);
+
+* **Auto top-up plans** - select the level of access/ability to use plans(View, Edit, All selected);
+
+* **Limitation type** - select the level of access/ability to change limitation types(View, Edit, All selected);
+
+* **Max number of top-ups per month** - select the level of access/ability to change the maximum allowed top-ups per month(View, Edit, All selected).
+
+
+**Manual Top-up** settings - These are permissions and actions for customers to create top-ups manually and how they can interact:
+
+* **Enable** - allow/deny the ability to make manual top-ups;
+
+* **Create finance document** - which type of documents to create for the applied/requested top-up;
+
+* **Pay before top-up** - select whether the customer has to pay for the top-up before the data can be used or not.
+
+**Global CAP settings can be adjusted under [Config -> Main -> CAP](configuration/main_configuration/cap/cap.md)**
+
+

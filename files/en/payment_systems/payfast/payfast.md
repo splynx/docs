@@ -78,11 +78,11 @@ Thereafter, you need to log into your account on  https://www.payfast.co.za/ and
 
 ![3.1.png](3.1.png)
 
-Also, it's necessary to set your _Notify Url_, e.g. `https://<your_domain>/payfast-rb/notify`, when the successful payment is made, PayFast will send an Instant Transaction Notifications (payment confirmation) to this url before a customer gets redirected to return_url:
+Also, it's necessary to set your _Notify Url_, e.g. `https://<your_domain>/payfast-rb/notify`, when the successful payment is made, PayFast will send an Instant Transaction Notifications (payment confirmation) to this url before a customer gets redirected to _return_url_:
 
 ![Notify Url](notify_url.png)
 
-More info related to recurring billing is [here](https://developers.payfast.co.za/docs#recurring_billing)
+More info related to recurring billing integration is [here](https://developers.payfast.co.za/docs#recurring_billing)
 
 Once these options were configured, you have to configure the parameters in *Config → Integrations → Modules list*. as depicted below:
 

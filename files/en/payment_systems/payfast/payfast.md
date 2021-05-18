@@ -75,9 +75,16 @@ Navigate to `Config → Integrations → Add-ons`:
 ![Integrations addons PF rb](addons_list_rb.png)
 
 Thereafter, you need to log into your account on  https://www.payfast.co.za/ and enable *"Subscription state"* and *"Ad hoc payments state":*
+
 ![3.1.png](3.1.png)
 
-Once it is enabled, as in the previous add-on, after the installation process has completed, you have to configure the parameters in *Config → Integrations → Modules list*. as depicted below:
+Also, it's necessary to set your _Notify Url_, e.g. `https://<your_domain>/payfast-rb/notify`, when the successful payment is made, PayFast will send an Instant Transaction Notifications (payment confirmation) to this url before a customer gets redirected to _return_url_:
+
+![Notify Url](notify_url.png)
+
+More info related to recurring billing integration is [here](https://developers.payfast.co.za/docs#recurring_billing)
+
+Once these options were configured, you have to configure the parameters in *Config → Integrations → Modules list*. as depicted below:
 
 ![Integrations addons PF rb 2](params_rb.png)
 

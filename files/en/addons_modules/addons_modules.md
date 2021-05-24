@@ -14,7 +14,6 @@ In this section, we can view, install or delete useful add-ons for integration w
 * [Quickbooks accounting](addons_modules/quickbooks/quickbooks.md)
 * [SageOne module](addons_modules/sageone/sageone.md)
 * [Self Registration](addons_modules/self_registration/self_registration.md)
-* [Signaturit](addons_modules/signaturit/signaturit.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
 * [Splynx Mailjet](addons_modules/splynx_mailjet/splynx_mailjet.md)
 * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)

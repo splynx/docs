@@ -5,7 +5,7 @@ _Splynx QuickBooks_ is the add-on of Splynx which is used to synchronize custome
 
 ### Important:
 
-**It's recommended do not configure the add-on on your own.**
+:bulb: **It's recommended do not configure the add-on on your own.**
 **Please, contact our support team before starting the accounting integration.**
 
 The add-on can be installed in two ways:

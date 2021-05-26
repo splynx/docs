@@ -5,9 +5,9 @@ The SageOne add-on in Splynx was designed to improve efficiency and be able to e
 
 ### Important:
 
-**The SageOne add-on is used only for South Africa.**
+:warning: **The SageOne add-on is used only for South Africa.**
 
-**It's recommended do not configure the add-on on your own.**
+:bulb: **It's recommended do not configure the add-on on your own.**
 **Please, contact our support team before starting the accounting integration.**
 
 The following steps can be used to integrate your splynx server to your SageOne platform.

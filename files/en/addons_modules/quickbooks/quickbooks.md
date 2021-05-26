@@ -3,7 +3,7 @@ Quickbooks accounting
 
 _Splynx QuickBooks_ is the add-on of Splynx which is used to synchronize customers, invoices and payments with the [Quickbooks accounting gateway](https://quickbooks.intuit.com/).
 
-### Important:
+### :bangbang: Important:
 
 :bulb: **It's recommended do not configure the add-on on your own.**
 **Please, contact our support team before starting the accounting integration.**

@@ -3,9 +3,9 @@ Xero accounting
 
 Splynx is able to sync customers, invoices and payments with Xero accounting software - https://www.xero.com
 
-### :bangbang: Important:
+### Important:
 
-:bulb: **It's recommended do not configure the add-on on your own.**
+**It's recommended do not configure the add-on on your own.**
 **Please, contact our support team before starting the accounting integration.**
 
 To install the Xero addon, navigate to **Config/Integrations/Add-ons**:

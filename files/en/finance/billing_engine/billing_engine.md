@@ -8,10 +8,10 @@ Quick totals for the following data and buttons to direct to a list for each:
 
 * Debit transactions
 * Payments
-* Paid Invoices
+* Paid invoices
 * Unpaid invoices
-* Payment requests
-* Unpaid requests
+* Paid proforma invoices
+* Unpaid proforma invoices
 
 
 Totals data for the above mentioned for each of the following periods:
@@ -19,6 +19,7 @@ Totals data for the above mentioned for each of the following periods:
 * Last Month
 * Current Month
 * Next Month
+
 
 The dashboard also includes the following mini-reports in form of graphs:
 
@@ -38,7 +39,7 @@ A separate table is also included with information on all overdue invoices
 ![Finance dashboard](finance_dashboard_4.png)
 ![Finance dashboard](finance_dashboard_5.png)
 ![Finance dashboard](finance_dashboard_6.png)
-
+![Finance dashboard](finance_dashboard_7.png)
 
 In Splynx we support both Recurring and Prepaid types of billing. For tutorials and more information on each of these types and how to use them in Splynx, please follow each page respectively:
 

@@ -7,7 +7,7 @@ To configure **Prepaid type of billing** we start by changing the _Billing type_
 ![Type of billing](type_of_billing_prepaid.png)
 
 
-The next step is to choose the *Payment method*,  options are Cash, Bank Transfer, Credit Card, PayPal, Refill Card, BrainTree and others when additional methods are installed.
+The next step is to choose the *Payment method*, options are Cash, Bank Transfer, Credit Card, Refill Card and others when additional methods are installed.
 
 ![Payment method](payment_method_2.png)
 
@@ -45,7 +45,7 @@ After charging the customer 30 USD and the customer is provided with access for 
 
 If the option to Create invoices (*after charge&invoice*) is enabled in finance settings under `Config / Finance / Settings`, Splynx will generate an invoice for consumed services on the first day of the next month.
 
-When using the Prepaid daily option, Splynx calculates the daily rate of the plan and charges the customer every day. Let's imagine that a customer's service costs 40 USD. There are 31 days in July, so the daily rate will be 1,29 USD.
+When using the Prepaid daily option, Splynx calculates the daily rate of the plan and charges the customer every day. Let's imagine that a customer's service costs 40 USD. There are 31 days in May, so the daily rate will be 1,29 USD.
 
 ![Prepaid daily](prepaid_daily_1.png)
 
@@ -57,12 +57,11 @@ The following day the customer's balance will be changed from 40 USD to 38,71 US
 In the situation, when the customer has added 20 USD on a deposit, he will get access for 15 days only. Once the balance reaches “0”, Splynx will block him. Also, one transaction has been added, which shows how much we charged. This transaction is updated every day and it shows the total amount of money that has been taken from the customer’s deposit.
 
 
-***Please note that Grace periods for prepaid customers can be configured un Config / Finance / Settings***:
+***Please note that Deactivation period for prepaid customers can be configured in Config / Finance / Settings***:
 
 ![Settings](settings.png)
 ![Settings](settings1.png)
 
-Please remember if you would like your grace periods to work it is necessary to enable the processing of grace periods under *Config / Finance / Automation*:
+Please remember if you would like your deactivation period to work it is necessary to enable the processing of deactivation period under *Config / Finance / Automation*:
 
 ![Automation](automation.png)
-

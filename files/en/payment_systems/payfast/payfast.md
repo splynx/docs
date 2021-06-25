@@ -3,96 +3,154 @@ Payfast.co.za payments
 
 Payfast is a Splynx add-on which allows refilling of customer balances and paying invoices via the PayFast payment gateway - [https://www.payfast.co.za](https://www.payfast.co.za).
 
-We've developed two different add-ons for using this payment system: *splynx-payfast* and *splynx-payfast-rb*. The first add-on - *splynx-payfast* is used for payments which proceed only in the PayFast system. The second add-on can work with different credit-cards using PayFast and allows you to charge all customers by using *Direct debit order*.
+We've developed two different add-ons for using this payment system: `splynx-payfast` and `splynx-payfast-rb`. The first add-on - `splynx-payfast` is used for payments which processed only by the PayFast system (mostly for prepaid billing) and the second one can work with different credit-cards using PayFast and allows you to charge the customer by using `Direct debit order` (mostly for recurring billing).
 
-**WARNING!** PayFast makes use of ports 80, 8080, 8081 and 443 only. So your Splynx_url has to be on the same ports!
+**WARNING!** PayFast uses ports 80, 8080, 8081 and 443 only.
 
-The add-ons can be installed in two method, via the CLi or the Web UI of your Splynx server.
+### Installation
+
+Navigate to `Config → Integrations → Add-ons` and find a packet by name:
+
+![icon](icon.png)
+
+![addons](addons.png)
+
+Press on install button on needed add-on, confirm the installation and wait for installation finish.
+
+Once add-on is installed it will be marked with green:
+
+![installed](installed.png)
+
+If the add-on is marked with yellow color it means that it can be updated. Just click in update button under actions.
+
+Now we need to configure Payfast add-ons. To do this navigate to `Config -> Integrations -> Modules list`:
+
+![modules_list](modules_list.png)
+
+and click on edit button under needed add-on:
+
+![edit_module](payfast_module.png)
+
+### splynx-payfast
+
+Let's configure and test payments using `splynx-payfast` add-on. First of all we need to navigate to `Config -> Integrations -> Modules list` and configure the module:
+
+Under _Main information_ section you need only enable enrty points for portal and save settings. With this option you can display/hide entry points on a customer's portal:
+
+![settings1](payfast_settings.png)
+
+_API settings_ should be configured by default and it's not recommended for change.
+
+Under _PayFast settings_ you need to set next parameters:
+
+![payfast_settings](payfast_settings_1.png)
+
+* **Splynx url** - Splynx URL without last slash. Must be the same as you see in your browser address bar;
+
+* **Payment method** - select payment method for payments what will be made with PayFast add-on;
+
+* **Service fee** - specify service fee % if needed;
+
+* **Fee request** - add fee to request. If enabled - fee will be added to the invoice;
+
+* **Fee message** - set description for invoice item (if Fee request is enabled);
+
+* **Fee VAT** - select VAT for fee;
+
+* **Fee category** - select category for fee transaction;
+
+* **Group bank statements** - select method how to group payments under `Finance -> Bank statements -> History`.
+
+Under _PayFast credentials_ you need to specify `Merchant ID` and `Merchant key`.
+
+* **Merchant ID** - The Merchant ID as given by the PayFast system. Used to uniquely identify the receiving account. This can be found on the merchant’s settings page;
+
+* **Merchant key** - The Merchant Key as given by the PayFast system. Used to uniquely identify the receiving account. This provides an extra level of certainty concerning the correct account as both the ID and the Key must be correct in order for the transaction to proceed. This can be found on the merchant’s settings page.
+
+Now customer can pay invoices directly from a portal page dashboard:
+
+![payfast_entry_point1](payfast_entrypoint_1.png)
+
+Or under `Finance -> Invoices`:
+
+![payfast_entrypoint_2](payfast_entry_point_2.png)
+
+Let's pay using pay button under `Finance -> Invoices`:
+
+![payfast_pay](payfast_pay.png)
+
+Just click on **Pay** button and you should be redirected to Payfast and complete a payment. Once completed you should be redirected back to Splynx portal and invoice will be paid if payment was successful.
+
+To check processed and not-processed payment by Payfast you can navigate to `Finance -> Bank statements -> History` and click on Payfast record:
+
+![payfast_statements](payfast_bank_statements.png)
+
+As you can see we have 1 processed payment. You can cancel it with this button:
+
+![payment](payment.png)
+
+Also it will be displayed under customer account:
+
+![customer_account_payment](payment1.png)
+
+### Entry points
+
+Almost each installed module in Splynx has its own entry points. For example the button "Pay" under each invoice it's an entry point which you can configure.
+Configuration of entry points for each add-on in Splynx is the same so you can easily use this description to configure entry points for PayPal add-on or even for Speedtest add-on.
+
+You can enable/disable entry points for portal for each installed module in Splynx under settings of the module:
+
+![entry_points](entry_points.png)
+
+Once this option enabled you can configure entry points by clicking on this button:
+
+![configure_entry_points](configure_entry_points.png)
+
+Let's take a look what can be done with entry points:
+
+![points](point_example.png)
+
+Here we can add a new entry point, delete some of them (not recommended) and change some parameters for each entry point. We do not recommend to change next parameters: `Place`, `Size`, `Type`, `Module`, `Icon`, `Add-on URL`. To enable/disable displaying of this entry point on portal just use an appropriate button and save config at the bottom of the page.
+
+Example of entry points on portal:
+
+Using this entry point customer can pay the invoice directly on a dashboard by clicking on "Pay" button:
+
+![example_1](portal_dashboard_entry_point.png)
+
+Also the invoice can be paid under _Finance/Invoices_:
+
+![example_2](invoices_entry_point.png)
 
 
-splynx-payfast
--------------
+### Payfast recurring billing
 
-To install the *splynx-payfast* add-on via CLie, the following commands can be used:
+The installation process for this add-on is the same, just find a package `splynx-payfast-rb` and install it.
 
-```bash
-apt-get update
-apt-get install splynx-payfast
-```
-To install it via the Web UI:
+Once installed let's nagivate to module configuration:
 
-Navigate to `Config → Integrations → Add-ons`:
+![rb_settings_1](rb_settings_1.png)
 
-![Addons](addons_icon.png)
+section "API settings" will be generated automatically so you don't need to change it. Under sections "PayFast API authorization settings" insert your PayFast credentials.
 
-Locate or search for "splynx-payfast" add-on and click on the install icon in the *Actions* column
+![rb_settings_2](rb_settings_2.png)
 
-![Integrations addons](addons_list.png)
+Under section "Sections" specify your Splynx URL but without last slash and next finance options:
 
-Click on the "OK, confirm" button to begin the installation process
+* **Payment account** - generated automatically, please do not change;
 
-![Integrations addons 2](install.png)
+* **Payment method** - select payment methor for new payments from PayFast RB;
 
-After the installation process has completed, you have to configure the parameters in `Config → Integrations → Modules list`.
+* **Service fee** - % of service fee;
 
-Locate or search for thr "splynx-payfast" add-on and click on edit in the *Actions* column, you will be presented with the following window
+* **Add fee to request** - enable/disable a separate line for fee into request;
 
-![Edit params](params.png)
+* **Fee message** - a message what will be displayed under request (if previous option enabled);
 
-*Merchant details*
+* **Fee VAT** - select one of available taxes to apply to fee;
 
-NAME | DESCRIPTION
------------- | -------------
-merchant_id | The Merchant ID as given by the PayFast system. Used to uniquely identify the receiving account. This can be found on the merchant’s settings page.
-merchant_key | The Merchant Key as given by the PayFast system. Used to uniquely identify the receiving account. This provides an extra level of certainty concerning the correct account as both the ID and the Key must be correct in order for the transaction to proceed. This can be found on the merchant’s settings page.
+* **Category of the transactions** - select category for transactions what will be created by this add-on;
 
-Thereafter, customers can pay for their invoices and refill their balances using the PayFast system. Customers will see a new button to pay as depicted below:
+* **Bank statements group** - how to group(by month or day) bank statements under _Finance / Bank statements / History_ .
 
-![Pay invoice](pay_invoice.png)
-
-Customers can also refill their balances using the following link - “*http://yoursplynxurl/payfast*”.
-
-![Add amount](add_amount.png)
-
-When clicking on the “pay” button, you will be redirect to [https://payfast.co.za](https://payfast.co.za) and you’ll need to Complete your Payment:
-
-![Complete payment](complete_payment.png)
-
-
-splynx-payfast-rb
------------------
-
-To install the *splynx-payfast-rb* add-on via CLI, the following commands can be used:
-
-```bash
-apt-get update
-apt-get install splynx-payfast-rb
-```
-To install it via the Web UI:
-
-Navigate to `Config → Integrations → Add-ons`:
-
-![Integrations addons PF rb](addons_list_rb.png)
-
-Thereafter, you need to log into your account on  https://www.payfast.co.za/ and enable *"Subscription state"* and *"Ad hoc payments state":*
-![3.1.png](3.1.png)
-
-Once it is enabled, as in the previous add-on, after the installation process has completed, you have to configure the parameters in *Config → Integrations → Modules list*. as depicted below:
-
-![Integrations addons PF rb 2](params_rb.png)
-
-![Edit params PF rb](params_rb_2.png)
-
-Customers will see another button to pay in the customer portal, as depicted below:
-
-![Pay invoice rb](pay_invoice_rb.png)
-
-To refill balances, customers can use the following link - “*http://yoursplynxurl/payfast-rb*”, where they have to enter their registration details for the first time:
-
-![Add payfast account rb](add_payfast_account.png)
-
-You can also charge all customers using one button! Navigate to: *Finance → Invoices*, set the period and click on "Charge" as depicted below:
-
-![charge](1.1.png)
-
-![charge](2.png)
+Once it's configured we can charge some invoices by Payfast Recurring billing add-on:

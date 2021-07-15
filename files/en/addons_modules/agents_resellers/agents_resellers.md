@@ -7,18 +7,14 @@ Agents and Resellers add-ons
 
 Offering competitive commissions to sales/resellers team members can motivate them to make more sales and improve their performance. There are many types of compensation structures to choose from, and sales leaders should implement a plan that aligns best with their team’s specific needs.
 
-The first step to activate *Agents* / *Resellers*, is installing the add-on. This can be done in two method, via CLI on the Splynx server or via the Splynx Web UI.
+The first step to activate *Agents* / *Resellers*, is installing the add-on. This can be done in two ways, via CLI on the Splynx server and via the Splynx Web UI.
 
 To install the add-on via CLI, the following commands can be used:
 
 ```bash
 apt-get update  
 apt-get install splynx-agents
-```
-
-```bash
-apt-get update  
-apt-get install splynx-resellers
+// apt-get install splynx-resellers
 ```
 
 To install the add-on from the Web UI:
@@ -39,7 +35,9 @@ Once the installation process has completed, all configurations for the add-on c
 
 ![Selection_60464.png](Selection_60464.png)
 
-Also, for the selected transaction categories will be automatically added *discount* and *refund* categories for the correct calculations in report.
+**Note:**
+
+**For the selected transaction categories will be automatically added *discount* and *refund* categories for the correct calculations in report.**
 
 ## Using the Agents / Resellers module
 
@@ -51,11 +49,11 @@ In new window, you can specify the *agent's / reseller's* name, paid periods (in
 
 **Note:**
 
-**If a zero value is specified in *paid periods* field, the commission will be paid all the time. The start period is the date of the first transaction of the customer or date is grabbed from 'period_from' or 'date' of transaction**
+**If a zero value is specified in *paid periods* field, the commission will be paid all the time. The start period is the date of the first transaction of the customer or date is grabbed from the filed 'period_from' or 'date' of transaction**
 
 ![Selection_565f6.png](Selection_565f6.png)
 
-To link the *agent / reseller* to specific customer, open the customer profile on information tab, click on the icon to show additional fields, select the necessary account in the appropriate field and press *Save* button.
+To link the particular *agent / reseller* to specific customer, open the customer profile on information tab, click on the icon to show additional fields, select the necessary account in the appropriate field and press *Save* button.
 
 ![Selection_3ecd2.png](Selection_3ecd2.png)
 

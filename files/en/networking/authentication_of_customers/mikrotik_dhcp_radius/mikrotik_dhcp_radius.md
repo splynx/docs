@@ -106,3 +106,7 @@ For DHCP to report accounting correctly queues have to be applied dynamically vi
 If you set additional network(s) in Splynx internet services, network routes will be sent to the router (NAS) during authorization. The router will then send all traffic with destination=additional network to the customer device. It is possible that these routes will also appear on the customer's device. To fix this issue, set use-framed-as-classless to disabled in the DHCP server settings:
 
 ![use-framed](use_framed.png)
+
+#### Incoming RADIUS
+
+CoA (change of authorization) and (Packet  of Disconnect) is not supported by Mikrotik. The alternative is to use a short lease time which caters for any CoA related changes and "Disabled customers to address list" from API to block the customer's internet access.

@@ -41,3 +41,13 @@ Localization
 * **Decimals** - select the statistic usage decimals;
 * **Decimals separator** - select a  usage statistics decimals separator;
 * **Thousands separator** - select a usage statistics thousands separator.
+
+## HOLIDAYS LIST
+
+![holidays](holidays_settings.png)
+### To manipulate the holidays, we have buttons on the upper right of the table
+
+* **+** - adding new holiday;
+* **Delete all** - delete all holidays;
+* **Reset to defaults** - will be reset to holidays on country which sets on company info for default partner in "ISO Country" field;
+* **Refresh button** - refreshing table.

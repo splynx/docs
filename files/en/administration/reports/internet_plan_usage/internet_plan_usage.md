@@ -7,10 +7,10 @@ This is a report of all customers internet usage pertaining to a particular plan
 
 ![Internet plan usage](2.png)
 
-The table/report can be filtered to display data pertaining to a specific period, partner, and/or location. Simply specify the criteria in the filter bar located at the top right of the table and click on "Show" to retrieve the data according to your criteria.
+The table/report can be filtered to display data pertaining to a specific period, partner, location and type. Simply specify the criteria in the filter bar located at the top right of the table and click on "Show" to retrieve the data according to your criteria.
 
 ![Filter](3.png)
 
-This report can be exported with the use of the export ![export](export.png) icon, located at the bottom left of the table. The table can be exported in a format of your preference from the methods available:
+This report can be exported with the use of the export <icon class="image-icon">![Export](export.png)</icon> icon, located at the bottom left of the table. The table can be exported in a format of your preference from the methods available:
 
 ![export](export1.png)

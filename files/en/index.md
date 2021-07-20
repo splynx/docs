@@ -171,7 +171,7 @@ Table of contents
 * [Voice Categories](voice/voice_categories/voice_categories.md)
 
 ##### [Administration](administration/administration.md)
-* [Main](administration/main/main.md)
+* [Splynx](administration/main/main.md)
 
   * [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md)
   * [Default roles in details](administration/main/roles/default_roles/default_roles.md)
@@ -203,21 +203,19 @@ Table of contents
 * [Reports](administration/reports/reports.md)  
 
   * [Blocked customers report](administration/reports/blocked_customers_report/blocked_customers_report.md)
-  * [Charge history](administration/reports/charge_history/charge_history.md)
-  * [Custom prices & discounts](administration/reports/custom_prices_and_discounts/custom_prices_and_discounts.md)
+  * [Custom prices & discounts](administration/reports/custom_prices_&_discounts/custom_prices_&_discounts.md)
   * [Customer internet usage](administration/reports/customer_internet_usage/customer_internet_usage.md)
-  * [Daily receipt](administration/reports/daily_receipt/daily_receipt.md)
-  * [Finance customers report](administration/reports/finance_customers_report/finance_customers_report.md)
+  * [Finance logs](administration/reports/finance_logs/finance_logs.md)
   * [Financial report per plan](administration/reports/financial_report_per_plan/financial_report_per_plan.md)
-  * [Future charges](administration/reports/future_charges/future_charges.md)
   * [Internet plan usage](administration/reports/internet_plan_usage/internet_plan_usage.md)
+  * [Invoice report](administration/reports/invoice_report/invoice_report.md)
   * [New services report](administration/reports/new_services_report/new_services_report.md)
   * [Refill cards statistics](administration/reports/refill_cards_statistics/refill_cards_statistics.md)
+  * [Services export](administration/reports/services_export/services_export.md)
   * [Statements](administration/reports/statements/statements.md)
-  * [Tax grouped](administration/reports/tax_grouped/tax_grouped.md)
   * [Tax report](administration/reports/tax_report/tax_report.md)
-  * [Tickets report](administration/reports/tickets_report/tickets_report.md)
-  * [Transaction categories](administration/reports/transaction_categories/transaction_categories.md)
+  * [Ticket reports](administration/reports/ticket_reports/ticket_reports.md)
+  * [Transactions categories](administration/reports/transaction_categories/transactions_categories.md)
 
 
 ##### [Configuration](configuration/configuration.md)

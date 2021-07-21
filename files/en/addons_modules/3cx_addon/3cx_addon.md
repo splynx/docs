@@ -1,7 +1,7 @@
 3CX add-on
 ========
 
-*3CX* is the add-on module designed for the integration your Splynx with [3CX service](https://www.3cx.com/call-center/crm-integration/) via the server-side CRM integration engine and its own API. The add-on creates the API key/secret with the necessary permissions and entry point in Splynx in order to download the generated XML configuration file.
+*3CX* is the add-on module designed for the integration your Splynx with [3CX service](https://www.3cx.com/call-center/crm-integration/) via the server-side CRM integration engine and its own API. The add-on creates the API key/secret with the necessary permissions and helps to generate the XML configuration file with specific structure inside for integration purpose.
 
 To install the add-on use one of the two methods: via CLI on the Splynx server or via the Splynx Web UI.
 

@@ -1,13 +1,13 @@
 Netcash Debit Order (formerly SagePay direct debit)
 ====================
 
-**Netcash Debit Order is a Splynx add-on (previously SagePay direct debit), used to generate debit orders and is processed via https://netcash.co.za/**
+**Netcash Debit Order is a Splynx add-on (previously SagePay direct debit), used to generate debit orders and is processed via** https://netcash.co.za/ .
 
-To install Netcash Debit Orders, navigate to **Config → Integrations → Add-ons:**
+To install Netcash Debit Orders, navigate to `Config → Integrations → Add-ons`:
 
 ![addons icon](addons_icon.png)
 
-Locate the Netcash addon and click on the install button as depicted below:
+Locate the Netcash addon and click on the install button as on the screenshot below:
 
 ![install](install.png)
 
@@ -35,8 +35,7 @@ apt install splynx-netcash-debit-order
 
 And your **merchant account number**.
 
-
-These values have to be added into **Config → Integrations → Modules list -> Netcash** :
+These values have to be added to add-on configuration, located in `Config → Integrations → Modules list`:
 
 ![modules_list.png](modules_list.png)
 
@@ -44,11 +43,14 @@ These values have to be added into **Config → Integrations → Modules list ->
 
 ![settings1.png](settings_1.png)
 
-****PCI vault key - this key is only needed when customers use their own credit cards to pay.****
+**Note:** PCI vault key - this key is only needed when customers use their own credit cards to pay.**
+
+You can also set service and unpaid fees for customers and set which admins roles have access via the admin panel.
 
 ![settings2.png](settings_2.png)
 
-You can also set service and unpaid fees for customers and set which admins roles have access via the admin panel.
+![settings2.1.png](settings_2.1.png)
+
 
 ![Netcash](netdo_set.png)
 
@@ -56,6 +58,11 @@ Also, admins can be notified when a customer has created a Netcash payment accou
 
 ![Netcash](netdo_not.png)
 
+In case in Splynx system is used the multiple [partners](administration/main/partners/partners.md) scheme, you can divide Netcash settings between them.
+
+![](division_into_partners.png)
+
+**Note:** The fields marked with '*' sign have the different values from original ones (Default partner).
 
 ## Adding a Netcash Payment account
 
@@ -66,7 +73,11 @@ To add a Netcash payment account, navigate to the customer's "Billing" tab, and 
 
 In this section, an admin can add a Netcash payment account for the customer with the provided bank account or credit card details.
 
-Also, a payment account can be added by clicking on the "+" button, however, this method of adding an account will bypass the Netcash validation procedure.
+A payment account can be added by clicking on the "+" button, however, this method of adding an account will bypass the Netcash validation procedure.
+
+Also, a Netcash payment account can be added on customer's portal as well.
+
+![add account.png](add_account_from_portal.png)
 
 When customers have Netcash payment accounts configured, the admin can charge their invoices all at once.
 
@@ -130,19 +141,19 @@ Once it's enabled let's navigate to the customer portal:
 
 The first entry point allows customers to pay their invoices on the dashboard of the customer portal.
 
-Another entry point allows payment for a specific invoice under  **Finance -> Invoices**:
+Another entry point allows payment for a specific invoice under  `Finance → Invoices`:
 
 ![widget2](widget2.png)
 
 The customer can also view, update, or remove Netcash account details here:
 
-![edit_module.png](customer_pay_creds.png)
+![add account.png](add_account_from_portal.png)
 
-**Note** if the customer pays their invoices using the Netcash Debit Order addon in the portal, a new bank statement will be created in the admin portal (**Finance/Bank statements/History**). We use bank statements in Splynx to track and allocate payments to the correct invoices once retrieved.
+**Note** if the customer pays their invoices using the Netcash Debit Order addon in the portal, a new bank statement will be created in the admin portal (`Finance → Bank statements → History`). We use bank statements in Splynx to track and allocate payments to the correct invoices once retrieved.
 
 ### Admin page widgets and log files
 
-Netcash logs can be found under **Administration/Logs**:
+Netcash logs can be found under `Administration → Logs`:
 
 ![logs](administration_logs.png)
 
@@ -154,7 +165,7 @@ Under charge logs only logs regarding charges can be found:
 
 ![charge logs](charge_logs.png)
 
-We have created a tool that we use to import account details from the Netcash Master file or any other CSV with the relevant details. We simply require an identifier to match the payment record in the document to the customer on Splynx eg. an account/reference number or customer name. This tool can be found under **Config -> Tools**:
+We have created a tool that we use to import account details from the Netcash Master file or any other CSV with the relevant details. We simply require an identifier to match the payment record in the document to the customer on Splynx eg. an account/reference number or customer name. This tool can be found under `Config -> Tools`:
 
 ![import tool](import_tool.png)
 
@@ -168,16 +179,15 @@ When the data has been uploaded, select the corresponding header:
 
 The file must contain the ID/Name, bank account type, branch code, bank account number, and bank account name.
 
-### General information
+-------------
 
-1. **Description on how the add-on works**:
+|   | General information - how the add-on works  |
+| ------------ | ------------ |
+| 1  | An admin will charge the invoices in Splynx. Once charged successfully, bank statements + batch files will be created and sent to Netcash and the charged invoices will change to a "Pending" state  |
+| 2  | Netcash can take up to two days after the action date to receive the payments as well as non-payments (bounced payments)  |
+| 3 | Splynx will check Netcash twice a day for any payments and allocate them to the correct invoice in which case the invoice will become “paid”. In the case we receive non-payments, the invoice status will return to unpaid  |
 
-  **1.1**. An admin will charge the invoices in Splynx. Once charged successfully, bank statements + batch files will be created and sent to Netcash and the charged invoices will change to a "Pending" state;
 
-  **1.2** Netcash can take up to two days after the action date to receive the payments as well as non-payments (bounced payments);
-
-  **1.3** Splynx will check Netcash twice a day for any payments and allocate them to the correct invoice in which case the invoice will become “paid”. In the case we receive non-payments, the invoice status will return to unpaid.
-
-2. **How to re-charge invoices**:
-
-  **2.1** The debit order batch should be deleted in Netcash as well as the relevant bank statement in Splynx (be very vigilant when deleting bank statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged.
+|   |  How to re-charge the invoices |
+| ------------ | ------------ |
+|   | The debit order batch should be deleted in Netcash as well as the relevant [bank statement](finance/bank_statement_processing/bank_statement_processing.md) in Splynx (be very vigilant when deleting bank statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged  |

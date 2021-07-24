@@ -13,7 +13,7 @@ Table of contents
 * [Burst speed concept](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
 * [Change plan](configuring_tariff_plans/tariff_change/tariff_change.md)
-* [Custom plans](configuring_tariff_plans/custom_plans/custom_plans.md)
+* [Recurring plans](configuring_tariff_plans/recurring_plans/recurring_plans.md)
 * [Fair Usage Policy](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
 * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
 * [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)

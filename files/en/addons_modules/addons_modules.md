@@ -13,6 +13,7 @@ In this section, we can view, install or delete useful add-ons for integration w
 * [FCC 477 export](addons_modules/fcc_export/fcc_export.md)
 * [Google maps add-on](addons_modules/google_maps/google_maps.md)
 * [Ofipro contabilidad (Spanish)](addons_modules/ofipro/ofipro.md)
+* [Preseem](addons_modules/preseem_addon/preseem_addon.md)
 * [Quickbooks accounting](addons_modules/quickbooks/quickbooks.md)
 * [SageOne module](addons_modules/sageone/sageone.md)
 * [Self Registration](addons_modules/self_registration/self_registration.md)

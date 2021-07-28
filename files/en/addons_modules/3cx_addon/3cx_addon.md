@@ -62,18 +62,18 @@ Let's perform the first time configuration of the 3CX system:
 
 1. [Sign up](https://www.3cx.com/ordering/pricing/) on the 3CX web page with preferred price choice
 
-2. Choose the location for the 3CX system, write down your license key and follow the required installation steps. Open the IP of the machine 3CX is installed on followed by port 5015 in a browser, e.g. https://10.172.1.88:5015. The 3CX Web Configuration Tool guides you through important network and security settings.
+2. Choose the location for the 3CX system, write down your license key and follow the required installation steps. Open the IP of the machine 3CX is installed on followed by port 5015 in a browser, e.g. `https://<IP_address>:5015`. The 3CX Web Configuration Tool guides you through important network and security settings.
 
 Check the following links for more details:
 
-[Installing 3CX using ISO (Debian)](https://www.3cx.com/docs/manual/configuring-your-pbx/)
-[Installing 3CX on Windows](https://www.3cx.com/docs/manual/phone-system-installation-windows/)
-[Using Hyper-V to host your 3CX](https://www.3cx.com/docs/installing-microsoft-hyper-v/)
-[Hosting 3CX on Google Cloud](https://www.3cx.com/docs/hosted-pbx-google-cloud/)
-[Hosting 3CX on Amazon AWS](https://www.3cx.com/docs/cloud-pbx-amazon-aws/)
-[Hosting 3CX on Amazon Lightsail](https://www.3cx.com/docs/hosted-pbx-amazon-lightsail/)
-[Hosting 3CX on Microsoft Azure](https://www.3cx.com/docs/hosting-pbx-phone-system-microsoft-azure/)
-[How to access for Self Hosted Instances via SSH](https://www.3cx.com/docs/self-hosted-instances-ssh/)
+- [Installing 3CX using ISO (Debian)](https://www.3cx.com/docs/manual/configuring-your-pbx/)
+- [Installing 3CX on Windows](https://www.3cx.com/docs/manual/phone-system-installation-windows/)
+- [Using Hyper-V to host your 3CX](https://www.3cx.com/docs/installing-microsoft-hyper-v/)
+- [Hosting 3CX on Google Cloud](https://www.3cx.com/docs/hosted-pbx-google-cloud/)
+- [Hosting 3CX on Amazon AWS](https://www.3cx.com/docs/cloud-pbx-amazon-aws/)
+- [Hosting 3CX on Amazon Lightsail](https://www.3cx.com/docs/hosted-pbx-amazon-lightsail/)
+- [Hosting 3CX on Microsoft Azure](https://www.3cx.com/docs/hosting-pbx-phone-system-microsoft-azure/)
+- [How to access for Self Hosted Instances via SSH](https://www.3cx.com/docs/self-hosted-instances-ssh/)
 
 ![](img_000011.png)
 

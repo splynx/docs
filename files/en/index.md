@@ -173,11 +173,12 @@ Table of contents
 ##### [Administration](administration/administration.md)
 * [Splynx](administration/main/main.md)
 
-  * [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md)
-  * [Default roles in details](administration/main/roles/default_roles/default_roles.md)
-  * [Locations](administration/main/locations/locations.md)
-  * [Partners](administration/main/partners/partners.md)
-  * [Roles](administration/main/roles/roles.md)
+* [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
+* [API keys](administration/main/api_keys/api_keys.md)
+* [Locations](administration/main/locations/locations.md)
+* [Partners](administration/main/partners/partners.md)
+* [Roles](administration/main/roles/roles.md)
+* [Default roles in detail](administration/main/roles/default_roles/default_roles.md)
 
 * [Information](administration/information/information.md)
 

@@ -6,11 +6,12 @@ This is the basis of all the administrative details and date of your Splynx serv
 The Administration settings can be divided into _4 main sections_ with the subcategories: _Splynx, _Logs_, _Information_ and _Reports_. Please follow the links below for tutorial and information pages on each of the sections of Administration:
 
 1. SPLYNX
-   * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
-   * [Default roles in detail](administration/main/roles/default_roles/default_roles.md)
-   * [Roles](administration/main/roles/roles.md)   
-   * [Partners](administration/main/partners/partners.md)
-   * [Locations](administration/main/locations/locations.md)
+  * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
+  * [API keys](administration/main/api_keys/api_keys.md)
+  * [Locations](administration/main/locations/locations.md)
+  * [Partners](administration/main/partners/partners.md)
+  * [Roles](administration/main/roles/roles.md)
+  * [Default roles in detail](administration/main/roles/default_roles/default_roles.md)
 
 2. LOGS
    * [Operations](administration/logs/operations/operations.md)

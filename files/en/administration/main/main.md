@@ -11,9 +11,12 @@ Please, follow the links below to find tutorial pages about the different sectio
 
    * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
 
+   * [API keys](administration/main/api_keys/api_keys.md)
+
    * [Locations](administration/main/locations/locations.md)
 
    * [Partners](administration/main/partners/partners.md)
 
    * [Roles](administration/main/roles/roles.md)
-    * [Default roles in detail](administration/main/roles/default_roles/default_roles.md)
+
+   * [Default roles in detail](administration/main/roles/default_roles/default_roles.md)

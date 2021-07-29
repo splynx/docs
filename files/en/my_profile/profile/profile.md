@@ -5,11 +5,11 @@ Administrators can customize their profile details here. Details like photo, pas
 
 ![Profile](profile1.png)
 
-**Profile** - displays the full name of the current administrator and a photo can be added here. In order to change your photo/avatar just click on the default profile image, in the new window you can choose one of the built-in avatars or your own photo.
+**Profile** - displays the full name of the current administrator and a photo can be added here. In order to change your photo/avatar just click on the default profile image, in the new window you can choose one of the built-in avatars or your own photo. The custom image requirements are: file with *jpg/jpeg/png/bmp* extension, size is not more than 5 megabytes. Zoom and visible image region selection functions are supported.
 
-![](img_000001.png)
+![](img_v3.2_000001.png)
 
-![](img_000002.png)
+![](img_v3.2_000001.png)
 
 **Change Password** - to change the current password of the administrator the old password needs to be entered first and the new password can be entered and confirmed with the fields provided.
 

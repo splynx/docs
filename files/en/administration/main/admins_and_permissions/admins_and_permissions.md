@@ -25,7 +25,7 @@ To add a new administrator, click on the *Add icon* in the top right corner of t
 * **Password** - type or generate the password of the administrator
 
 
-* **Profile photo/avatar** - click on the default profile image in order to change photo/avatar, in the new window you can choose one of the built-in avatars or the own photo.
+* **Profile photo/avatar** - click on the default profile image in order to change photo/avatar, in the new window you can choose one of the built-in avatars or the own photo. The custom image requirements are: file with *jpg/jpeg/png/bmp* extension, size is not more than 5 megabytes. Zoom and visible image region selection functions are supported.
 
 
 * **Two-factor authentication** - disables/enables two factor authentication for the administrator. The configuration can be made in [My Profile](my_profile/profile/profile.md) after the account has been created.
@@ -58,8 +58,11 @@ To add a new administrator, click on the *Add icon* in the top right corner of t
 #### Editing an administrator
 To edit and administrators details, click on the *edit icon* <icon class="image-icon">![ViewIcon3](view_icon3.png)</icon> in the Actions column of the table. The edit window will appear, where you can make the desired changes to their details.
 
-![Edit administrator](edit.png)
+![Edit administrator](edit_v3.2.png)
 
+![Edit administrator](edit1_v3.2.png)
+
+![Edit administrator](edit2_v3.2.png)
 
 #### Changing permissions for the new administrator
 To change the permissions of an administrator, click on the permissions icon <icon class="image-icon">![ViewIcon4](view_icon4.png)</icon> in Actions column. The window will appear, where you will be able to check and change all administrator's permissions.
@@ -129,7 +132,7 @@ It is possible **to view all the operations executed by each Administrator** by 
 
 There is a way to limit the access to information for admins in Splynx by selecting only one partner, so the administrator will only be able to operate with all information associated with one particular partner. Click on the  *Edit icon* <icon class="image-icon">![ViewIcon7](view_icon7.png)</icon> in the Actions column and window will appear, where it will be possible to choose one partner or the option *Any* to give the admin access to all the partners and their information on the system.
 
-![Limit access per partner](del2.png)
+![Limit access per partner](del2_v3.2.png)
 
 You can also change permissions for adding, editing or deleting partner (s) for the particular administrator by clicking on the permissions <icon class="image-icon">![ViewIcon8](view_icon8.png)</icon> icon in Actions column. In the window that will appear, click on the *Administration section*, and enable or disable the *Partner* section and choose additional permissions of the Partner you'd like to assign to the administrator.
 

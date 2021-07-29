@@ -6,22 +6,22 @@ This is the basis of all the administrative details and date of your Splynx serv
 The Administration settings can be divided into _4 main sections_ with the subcategories: _Splynx, _Logs_, _Information_ and _Reports_. Please follow the links below for tutorial and information pages on each of the sections of Administration:
 
 1. SPLYNX
-  * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
-  * [API keys](administration/main/api_keys/api_keys.md)
-  * [Locations](administration/main/locations/locations.md)
-  * [Partners](administration/main/partners/partners.md)
-  * [Roles](administration/main/roles/roles.md)
-  * [Default roles in detail](administration/main/roles/default_roles/default_roles.md)
+    * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
+    * [API keys](administration/main/api_keys/api_keys.md)
+    * [Locations](administration/main/locations/locations.md)
+    * [Partners](administration/main/partners/partners.md)
+    * [Roles](administration/main/roles/roles.md)
+    * [Default roles in detail](administration/main/roles/default_roles/default_roles.md)
 
 2. LOGS
-   * [Operations](administration/logs/operations/operations.md)
-   * [Files](administration/logs/files/files.md)
-   * [Email](administration/logs/email/email.md)
-   * [SMS](administration/logs/sms/sms.md)
-   * [Sessions](administration/logs/sessions/sessions.md)
-   * [API](administration/logs/api/api.md)
-   * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
-   * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
+    * [Operations](administration/logs/operations/operations.md)
+    * [Files](administration/logs/files/files.md)
+    * [Email](administration/logs/email/email.md)
+    * [SMS](administration/logs/sms/sms.md)
+    * [Sessions](administration/logs/sessions/sessions.md)
+    * [API](administration/logs/api/api.md)
+    * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
+    * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
 
 3. INFORMATION
     * [License](administration/information/license/license.md)

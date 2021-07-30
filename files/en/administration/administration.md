@@ -34,7 +34,7 @@ The Administration settings can be divided into _4 main sections_ with the subca
 
 4. REPORTS
     * [Blocked customers report](administration/reports/blocked_customers_report/blocked_customers_report.md)
-    * [Custom prices & discounts](administration/reports/custom_prices_&_discounts/custom_prices_&_discounts.md)
+    * [Custom prices & discounts](administration/reports/custom_prices_and_discounts/custom_prices_and_discounts.md)
     * [Customer internet usage](administration/reports/customer_internet_usage/customer_internet_usage.md)
     * [Finance logs](administration/reports/finance_logs/finance_logs.md)
     * [Financial report per plan](administration/reports/financial_report_per_plan/financial_report_per_plan.md)
@@ -46,4 +46,4 @@ The Administration settings can be divided into _4 main sections_ with the subca
     * [Statements](administration/reports/statements/statements.md)
     * [Tax report](administration/reports/tax_report/tax_report.md)
     * [Ticket reports](administration/reports/ticket_reports/ticket_reports.md)
-    * [Transactions categories](administration/reports/transaction_categories/transactions_categories.md)
+    * [Transactions categories](administration/reports/transactions_categories/transactions_categories.md)

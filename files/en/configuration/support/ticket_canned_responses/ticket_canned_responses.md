@@ -1,6 +1,6 @@
 Ticket canned responses
 =============
-**_Config -> Support -> Ticket canned responses_**
+`Config -> Tickets -> Ticket canned responses`
 
 ![canned responses icon](icon.png)
 

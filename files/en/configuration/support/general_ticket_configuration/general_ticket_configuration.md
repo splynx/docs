@@ -1,8 +1,8 @@
-General ticket configuration
+Miscellaneous ticket configuration
 =============
 In this section ticket statuses, ticket types, and ticket groups can be added/removed or edited.
 
-**_Config -> Support -> General ticket configuration_**
+`Config -> Tickets -> Miscellaneous ticket configuration`
 
 ![icon](icon.png)
 

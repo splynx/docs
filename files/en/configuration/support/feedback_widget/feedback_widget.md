@@ -1,8 +1,8 @@
-Feedback widget
+Ticket widget
 =============
-We have developed feedback widgets which can be placed on company websites for faster communication with Splynx support.
+We have developed ticket widget which can be placed on company websites for faster communication with Splynx support.
 
-To configure feedback widgets navigate to **_Config -> Support -> Feedback widget_**
+To configure feedback widgets navigate to `Config -> Tickets -> Ticket widget`
 
 ![feedback icon](icon.png)
 

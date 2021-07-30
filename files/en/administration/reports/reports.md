@@ -7,7 +7,7 @@ In this section we can view various reports generated in the system.
 
 * [Blocked customers report](administration/reports/blocked_customers_report/blocked_customers_report.md)
 
-* [Custom prices & discounts](administration/reports/custom_prices_&_discounts/custom_prices_&_discounts.md)
+* [Custom prices & discounts](administration/reports/custom_prices_and_discounts/custom_prices_and_discounts.md)
 
 * [Customer internet usage](administration/reports/customer_internet_usage/customer_internet_usage.md)
 
@@ -31,4 +31,4 @@ In this section we can view various reports generated in the system.
 
 * [Ticket reports](administration/reports/ticket_reports/ticket_reports.md)
 
-* [Transactions categories](administration/reports/transaction_categories/transactions_categories.md)
+* [Transactions categories](administration/reports/transactions_categories/transactions_categories.md)

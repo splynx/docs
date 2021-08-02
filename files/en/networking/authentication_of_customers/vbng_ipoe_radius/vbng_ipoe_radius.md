@@ -21,7 +21,7 @@ The process of configuring IPoE connections on the vBNG with Radius authenticati
 
 ##### STEP 1 - Configuring access interface: VCI, VGI interfaces
 
-How to install vBNG software and configure interfaces, you can find in its official ![documentation](./netElastic_vBNG_Service_Configuration_Guide.pdf).
+How to install vBNG software and configure interfaces, you can find in its official [documentation](netElastic_vBNG_Service_Configuration_Guide.pdf).
 
 In our example we use Splynx with IP: `139.59.xxx.yyy` and vBNG with IP: `108.217.xxx.yyy`
 
@@ -91,4 +91,4 @@ Finally, double check all your configurations, from *interfaces* to *domain* one
 
 ------------
 
-**The test example of all configuration** you can find ![here](./currentConfig.txt)
+**The test example of all configuration** you can find [here](currentConfig.zip)

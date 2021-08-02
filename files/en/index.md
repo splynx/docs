@@ -100,6 +100,8 @@ Table of contents
   * [Mikrotik: OpenVPN, Radius](networking/authentication_of_customers/mikrotik_openvpn_radius/mikrotik_openvpn_radius.md)
   * [Mikrotik: PPPoE, Radius](networking/authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
   * [Mikrotik: Static IPs with API](networking/authentication_of_customers/mikrotik_static_api/mikrotik_static_api.md)
+  * [netElastic vBNG: IPoE, Radius configuration](networking/authentication_of_customers/vbng_ipoe_radius/vbng_ipoe_radius.md)
+  * [netElastic vBNG: PPPoE, Radius](networking/authentication_of_customers/vbng_pppoe_radius/vbng_pppoe_radius.md)
   * [Ubiquiti: PPPoE on Edge Routers](networking/authentication_of_customers/ubiquiti_pppoe_edge/ubiquiti_pppoe_edge.md)
   * [Ubiquiti: Wireless auth, Radius](networking/authentication_of_customers/ubiquiti_wireless_auth_radius/ubiquiti_wireless_auth_radius.md)
 

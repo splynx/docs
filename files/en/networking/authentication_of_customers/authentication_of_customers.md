@@ -43,6 +43,10 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 * [Mikrotik: Static IPs with API](networking/authentication_of_customers/mikrotik_static_api/mikrotik_static_api.md)
 
+* [netElastic vBNG: IPoE, Radius configuration](networking/authentication_of_customers/vbng_ipoe_radius/vbng_ipoe_radius.md)
+
+* [netElastic vBNG: PPPoE, Radius](networking/authentication_of_customers/vbng_pppoe_radius/vbng_pppoe_radius.md)
+
 * [Ubiquiti: PPPoE authentication on Edge Routers](networking/authentication_of_customers/ubiquiti_pppoe_edge/ubiquiti_pppoe_edge.md)
 
 * [Ubiquiti: Wireless authentication with Radius](networking/authentication_of_customers/ubiquiti_wireless_auth_radius/ubiquiti_wireless_auth_radius.md)

@@ -9,7 +9,7 @@ Administrators can customize their profile details here. Details like photo, pas
 
 ![](img_v3.2_000001.png)
 
-![](img_v3.2_000001.png)
+![](img_v3.2_000002.png)
 
 **Change Password** - to change the current password of the administrator the old password needs to be entered first and the new password can be entered and confirmed with the fields provided.
 

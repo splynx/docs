@@ -29,40 +29,43 @@ In Splynx, open `Config → Networking → NAS-types` and add a new NAS-type - *
 
  ![](img_2.png)
 
-After that add your vBNG to Splynx routers and get radius secret to connect it with Splynx. vBNG software has the two methods to send attributes to radius server
-
- ![](img_3.png)
+After that add your vBNG to Splynx routers and get radius secret to connect it with Splynx.
 
  ![](img_4.png)
+
+vBNG software has the two methods to send attributes to radius server:
+
+ ![](img_3.png)
 
 In our case, we should use the `method 2` to connect customers to Splynx. On the screenshot below we can see a request what was send from vBNG to Splynx
 
  ![](img_5.png)
 
- After you connect your vBNG to the Internet you should configure a LAN interface to which you plan to connect the customers. In this example you can see all interfaces' configurations such as: VCI interface, VGI1, WAN and gei-1/1/5 interface to which customers will be connected.
+ After you connect your vBNG to the Internet you should configure a LAN interface to which you plan to connect the customers.
+ In this example you can see all interfaces' configurations such as: **VCI interface**, **VGI1**, **WAN** and **gei-1/1/5 interface** to which customers will be connected.
 
  ![](img_6.png)
 
 ##### STEP 2 - Creating a domain, Authentication template, Radius Authentication group
 
- On this screen you an see full domain configuration and authentication template what bind to domain
+ On this screen you an see full domain configuration and authentication template what bind to domain:
 
  ![](img_7.png)
 
 
-Create an authentication group in order to point the IP address of radius server and the IP of your router
+Create an authentication group in order to point the IP address of radius server and the IP of your router:
 
  ![](img_8.png)
 
 
- On the screenshot below you can see an authentication template configuration
+ On the screenshot below you can see an authentication template configuration:
 
  ![](img_9.png)
 
 
 ##### STEP 3 - Creating AAA Accounting template
 
-Next step is to configure the radius accounting template
+Next step is to configure the radius accounting template:
 
 ![](img_10.png)
 
@@ -77,12 +80,14 @@ Then, create the authorization template:
 ##### STEP 5 - Creating a IPoE template
 
 
-After you created the previous templates and bind them to your domain you should configure IPoE template to use it for customers as well
+After you created the previous templates and bind them to your domain you should configure IPoE template to use it for customers as well:
 
 ![](img_12.png)
 
 
-Finally, double check all your configurations, from *interfaces* to *domain* one.
+Finally, double check all your configurations, from *interfaces* to *domain* one. The IP address should be assigned to your test user:
+
+![](img_13.png)
 
 ------------
 

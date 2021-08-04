@@ -32,17 +32,17 @@ The following **Reminders settings** can be configured here:
 
 **Example:**
 
-- **`Static days` toggler is `disabled`** : we choose 10 days for the Reminder #1, 5 days for the Reminder #2 and 5 days for the Reminder #3. That means reminders will be sent on 11th, 16th and 21th of of month accordingly.
+- `Static days` toggler is `disabled`: we choose 10 days for the Reminder #1, 5 days for the Reminder #2 and 5 days for the Reminder #3. That means reminders will be sent on 11th, 16th and 21th of of month accordingly.
 
-- **`Static days` toggler is `enabled`** : we choose - 5 days for the Reminder #1, 7 days for the Reminder #2 and 10 days for the Reminder #3. It means that reminders will be sent on the defined dates of the current month (5th, 7th and 10th of August). If the admin selects a value for a reminder more than days in the current month, e.g. this month has 28 days and admin chooses 31 or 40, then the reminder will be sent on the last day of the month.
+- `Static days` toggler is `enabled`: we choose - 5 days for the Reminder #1, 7 days for the Reminder #2 and 10 days for the Reminder #3. It means that reminders will be sent on the defined dates of the current month (5th, 7th and 10th of August). If the admin selects a value for a reminder more than days in the current month, e.g. this month has 28 days and admin chooses 31 or 40, then the reminder will be sent on the last day of the month.
 
 
 All 3 dates selected for sending of reminders will be displayed in the **Calendar** next to **Reminders settings**.
 
-These settings are global and to update existing customers with these settings you can use the **Update existing customers** button. For example, I'd like to update the day for reminder #1, for customers in partner *"Person"* and recurring billing type, the update will look as follows:
+These settings are global and to update existing customers with these settings you can use the `Update existing customers` button. For example, I'd like to **update the day for reminder #1**, for customers in partner *Main* and recurring billing type, the update will look as follows:
 
-![update1](update.png)
+![update1](update_to_partner.png)
 
 Another example is an update of the **Enable reminders** option for all Splynx customers. Let's imagine that it was disabled for all customers, we enabled it in the config and the next step is to update this setting for all existing customers:
 
-![update all](update_all.png)
+![update all](update_to_all.png)

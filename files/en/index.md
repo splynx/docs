@@ -180,7 +180,7 @@ Table of contents
 * [Locations](administration/main/locations/locations.md)
 * [Partners](administration/main/partners/partners.md)
 * [Roles](administration/main/roles/roles.md)
-* [Default roles in detail](administration/main/roles/default_roles/default_roles.md)
+* [Default roles and its permissions in detail](administration/main/roles/default_roles/default_roles.md)
 
 * [Information](administration/information/information.md)
 

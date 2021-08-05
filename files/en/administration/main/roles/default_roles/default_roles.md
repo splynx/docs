@@ -27,7 +27,7 @@ Also, you can follow the permissions scheme of existing role when creating a new
 #### The list of default permissions for each of the build-in role
 
 <details>
-<summary><b>super-administrator>/b></summary>
+<summary><b>super-administrator</b></summary>
 <p markdown="1">
 
 Administrator account with `super-administrator`role has the access to ALL categories and its sub-categories in Splynx.
@@ -38,7 +38,7 @@ Administrator account with `super-administrator`role has the access to ALL categ
 ------------
 
 <details>
-<summary><b>administrator>/b></summary>
+<summary><b>administrator</b></summary>
 <p markdown="1">
 
 | DASHBOARD  |
@@ -128,7 +128,7 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 
 <details>
-<summary><b>manager>/b></summary>
+<summary><b>manager</b></summary>
 <p markdown="1">
 
 | DASHBOARD  |
@@ -214,97 +214,7 @@ Administrator account with `super-administrator`role has the access to ALL categ
 | Administrator account with `administrator` role has the access to ALL installed add-ons in Splynx.  |
 
 <details>
-<summary><b>financial-manager>/b></summary>
-<p markdown="1">
-
-| DASHBOARD  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> |
-
-------------
-
-|  TARIFF PLANS  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  CRM  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  CUSTOMERS  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  TICKETS  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  FINANCE  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  INVENTORY  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  NETWORKING  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  MESSAGES  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  SCHEDULING  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  VOICE  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  ADMINISTRATION  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  CONFIG  |
-| ------------ |
-| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
-
-------------
-
-|  ADD-ONS  |
-| ------------ |
-| Administrator account with `administrator` role has the access to ALL installed add-ons in Splynx.  |
-
-</p>
-</details>
-
-
-<details>
-<summary><b>customer-creator>/b></summary>
+<summary><b>financial-manager</b></summary>
 <p markdown="1">
 
 | DASHBOARD  |
@@ -393,9 +303,8 @@ Administrator account with `super-administrator`role has the access to ALL categ
 </details>
 
 
-
 <details>
-<summary><b>engineer>/b></summary>
+<summary><b>customer-creator</b></summary>
 <p markdown="1">
 
 | DASHBOARD  |
@@ -486,7 +395,98 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 
 <details>
-<summary><b>technician>/b></summary>
+<summary><b>engineer</b></summary>
+<p markdown="1">
+
+| DASHBOARD  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> |
+
+------------
+
+|  TARIFF PLANS  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  CRM  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  CUSTOMERS  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  TICKETS  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  FINANCE  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  INVENTORY  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  NETWORKING  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  MESSAGES  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  SCHEDULING  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  VOICE  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  ADMINISTRATION  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  CONFIG  |
+| ------------ |
+| <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p> <p> ![]() </p>  |
+
+------------
+
+|  ADD-ONS  |
+| ------------ |
+| Administrator account with `administrator` role has the access to ALL installed add-ons in Splynx.  |
+
+</p>
+</details>
+
+
+
+<details>
+<summary><b>technician</b></summary>
 <p markdown="1">
 
 | DASHBOARD  |

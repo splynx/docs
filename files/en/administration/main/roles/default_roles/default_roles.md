@@ -43,79 +43,79 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 | DASHBOARD  |
 | ------------ |
-| <p> ![](1_administrator.png) </p> |
+| ![](1_administrator.png) |
 
 ------------
 
 |  TARIFF PLANS  |
 | ------------ |
-| <p> ![](2_administrator.png) </p>  |
+| ![](2_administrator.png) |
 
 ------------
 
 |  CRM  |
 | ------------ |
-| <p> ![](3_administrator.png) </p>  |
+| ![](3_administrator.png) |
 
 ------------
 
 |  CUSTOMERS  |
 | ------------ |
-| <p> ![](4_administrator.png) </p>  |
+| ![](4_administrator.png) |
 
 ------------
 
 |  TICKETS  |
 | ------------ |
-| <p> ![](5_administrator.png) </p>  |
+|  ![](5_administrator.png) |
 
 ------------
 
 |  FINANCE  |
 | ------------ |
-| <p> ![](6_administrator.png) </p>   |
+| ![](6_administrator.png)  |
 
 ------------
 
 |  INVENTORY  |
 | ------------ |
-| <p> ![](7_administrator.png) </p>  |
+| ![](7_administrator.png)  |
 
 ------------
 
 |  NETWORKING  |
 | ------------ |
-| <p> ![](8_administrator.png) </p>  |
+| ![](8_administrator.png) |
 
 ------------
 
 |  MESSAGES  |
 | ------------ |
-| <p> ![](9_administrator.png) </p>  |
+| ![](9_administrator.png) |
 
 ------------
 
 |  SCHEDULING  |
 | ------------ |
-| <p> ![](10_administrator.png) </p>  |
+| ![](10_administrator.png) |
 
 ------------
 
 |  VOICE  |
 | ------------ |
-| <p> ![](11_administrator.png) </p> |
+| ![](11_administrator.png) |
 
 ------------
 
 |  ADMINISTRATION  |
 | ------------ |
-| <p> ![](12_administrator.png) </p>   |
+| ![](12_administrator.png) |
 
 ------------
 
 |  CONFIG  |
 | ------------ |
-| <p> ![](13_administrator.png) </p>   |
+| ![](13_administrator.png) |
 
 ------------
 

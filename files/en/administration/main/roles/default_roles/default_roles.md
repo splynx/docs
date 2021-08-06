@@ -214,6 +214,9 @@ Administrator account with `super-administrator`role has the access to ALL categ
 | ------------ |
 | Administrator account with `manager` role has NO access to installed add-ons in Splynx by default.  |
 
+</p>
+</details>
+
 ------------
 
 <details>

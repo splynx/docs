@@ -581,4 +581,8 @@ Administrator account with `super-administrator`role has the access to ALL categ
 </p>
 </details>
 
+------------
+
+**Note:**
+
 If it's necessary to change the default roles' permissions (except `super-administrator` one), you can do it on [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md) menu for specific administrator account.

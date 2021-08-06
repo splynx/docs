@@ -134,13 +134,13 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 | DASHBOARD  |
 | ------------ |
-| <p> ![](1_manager.png) </p>  |
+| ![](1_manager.png) <br> ![](1_manager.png) |
 
 ------------
 
 |  TARIFF PLANS  |
 | ------------ |
-| <p> ![](2_manager.png) </p>   |
+| ![](2_manager.png)<br>![](2_manager.png) |
 
 ------------
 

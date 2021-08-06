@@ -13,7 +13,7 @@ By default, there are 7 roles in Splynx:
 - `engineer`
 - `technician`
 
-We can create the own role and set the required permissions to it. For the default roles we can only change the *Name* and *Title*. The permissions can be changed only for a newly created role in this window. If it's necessary to change the default roles' permissions (except `super-administrator` one), you can do it on [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md) menu for specific administrator account.
+We can create the own role and set the required permissions to it. For the default roles we can only change the *Name* and *Title*. The permissions can be changed only for a newly created role in this window.
 
 ![img_000001](img_000001.png)
 
@@ -580,3 +580,5 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 </p>
 </details>
+
+If it's necessary to change the default roles' permissions (except `super-administrator` one), you can do it on [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md) menu for specific administrator account.

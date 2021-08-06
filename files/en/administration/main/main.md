@@ -19,4 +19,4 @@ Please, follow the links below to find tutorial pages about the different sectio
 
    * [Roles](administration/main/roles/roles.md)
 
-   * [Default roles in detail](administration/main/roles/default_roles/default_roles.md)
+   * [Default roles and its permissions in detail](administration/main/roles/default_roles/default_roles.md)

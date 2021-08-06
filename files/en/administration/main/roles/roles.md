@@ -7,7 +7,7 @@ We can use roles to limit administrative access to particular modules on the sys
 
 ### Adding a new role
 
-To add a new role, navigate to *Administration / Roles*:
+To add a new role, navigate to `Administration → Roles`:
 
 ![Roles](roles.png)
 
@@ -25,7 +25,7 @@ You will then be able to customize permissions under each of the module by enabl
 
 ![Roles](permissions.png)
 
-When you have customized the permissions to you liking, please do not forgot to save your changes.
+When you have customized the permissions to you like, please do not forget to save your changes.
 
 All custom roles can be edited or delete with the icons provided in the actions column:
 

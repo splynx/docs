@@ -126,6 +126,15 @@ The process of invoice charging can be automated. To achieve this, an admin shou
 
 Be vigilant when creating this filter as it will process the charge without any human interaction/intervention.
 
+<details>
+<summary><b>How to re-charge the invoices</b></summary>
+<p markdown="1">
+
+The debit order batch should be deleted in Netcash as well as the relevant [bank statement](finance/bank_statement_processing/bank_statement_processing.md) in Splynx (be very vigilant when deleting bank statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged
+
+</p>
+</details>
+
 ### Customer portal widgets (entry points)
 
 After installing the Netcash Debit order addon, customers can pay their invoices directly from their portal page using widgets.
@@ -207,12 +216,3 @@ And, when **Payment method id** value is incorrect - it will be ignored during i
 </details>
 
 -------------
-
-<details>
-<summary><b>How to re-charge the invoices</b></summary>
-<p markdown="1">
-
-The debit order batch should be deleted in Netcash as well as the relevant [bank statement](finance/bank_statement_processing/bank_statement_processing.md) in Splynx (be very vigilant when deleting bank statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged
-
-</p>
-</details>

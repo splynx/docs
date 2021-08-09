@@ -22,9 +22,7 @@ In order to prevent the display of the customer password for admin accounts, ple
 ```bash
 nano /var/www/splynx/config/config.php  
 ```
-![not_dispaly_password](not_dispaly_password.png)
-
-![not_dispaly_password](not_dispaly_password1.png)
+![not_dispaly_password](not_dispaly_password.png)  ![not_dispaly_password](not_dispaly_password1.png)
 
 * **Status** - options to set are: New, Active, Inactive, Blocked (some functions are available to Active customers only, e.g. for the client to make use of services. Also, it is necessary to customer to be inactive in order to delete them `Inactive → Save → Actions → Delete`);
 
@@ -32,7 +30,6 @@ nano /var/www/splynx/config/config.php
 - **Active** - status given to customers to allow the system to take their profile into account and make feature available;<br>
 - **Inactive (Doesn't use services)** - this status stops customers services and the system from accounting. It is the status given to customers' automatically when they've reached the _deactivation (grace) period_. This status is given to customers who will no longer use your services. In case the customer's account has _Inactive_ status it can be deleted.;<br>
 - **Blocked** - status given to customers who failed to make payments for services or to simply deny access to the client while taking their profile into account;
-
 
 * **Billing type** - the options are Recurring payments, Prepaid (daily) and Prepaid (custom);
 
@@ -76,7 +73,7 @@ This is a physical representation of the customer's address. If the customers ad
 
 ![Maps](customermap.png)
 
-Maps can be configured in `Config → Main → Mapss`
+Maps can be configured in `Config → Main → Maps`
 
 **Comments**
 
@@ -96,4 +93,4 @@ It's represented as a tab at the bottom of a customer information page. In this 
 
 ![activity_tab](activity_tab.png)
 
-The information is displayed in chronological order and can be sorted using *Period* and *Source* filters.
+The information is displayed in a chronological order and can be sorted using *Period* and *Source* filters.

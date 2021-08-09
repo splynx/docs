@@ -242,6 +242,7 @@ Table of contents
   * [Email config](configuration/main_configuration/email_config/email_config.md)
   * [Localization](configuration/main_configuration/localization/localization.md)
   * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
+  * [Maps](configuration/main_configuration/maps/maps.md)
   * [Preferences](configuration/main_configuration/preferences/preferences.md)
   * [Prepaid monthly](configuration/main_configuration/prepaid_monthly/prepaid_monthly.md)
   * [SMS config](configuration/main_configuration/sms_config/sms_config.md)

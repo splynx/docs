@@ -165,7 +165,7 @@ Under **charge logs** only logs regarding charges can be found:
 
 ![charge logs](charge_logs.png)
 
-We have created a tool that we use to import account details from the Netcash Master file or any other CSV with the relevant details. We simply require an identifier to match the payment record in the document to the customer on Splynx eg. an account/reference number or customer name. This tool can be found under `Config -> Tools`:
+We have created a tool that we use to import account details from the Netcash Master file or any other CSV with the relevant details. We simply require an identifier to match the payment record in the document to the customer on Splynx e.g. an account/reference number or customer name. This tool can be found under `Config -> Tools`:
 
 ![import tool](import_tool.png)
 
@@ -177,7 +177,26 @@ When the data has been uploaded, select the corresponding header:
 
 ![fields](required_fields.png)
 
-**Note:** The file must contain the **ID/Name**, **bank account type**, **branch code**, **bank account number**, and **bank account name**.
+**Note:** The file must contain the **Customer id**, **Bank account type id**, **Branch code**, **Bank account number**, **Account holder name** and **Payment method id**.
+
+<details>
+<summary><b>Example: change customer's payment method during import</b></summary>
+<p markdown="1">
+
+![payment_method_import](payment_method_import.png)
+
+![payment_method_import](payment_method_import1.png)
+
+In case **Payment method id** value is set in CSV file and [payment method](configuration/finance/payment_methods/payment_methods.md) exists in Splynx, the customer's `Payment method` (*Customers → List → View Customer → Billing → Billing Overview → Billing Settings section → Payment method field*) will be changed after import.
+
+If **Payment method id** value is empty in CSV file - the customer's payment method will not be changed.
+
+And, when **Payment method id** value is incorrect - it will be ignored during import.
+
+![payment_method_import](payment_method_import2.png)
+
+</p>
+</details>
 
 -------------
 

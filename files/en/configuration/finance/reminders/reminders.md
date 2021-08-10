@@ -19,7 +19,7 @@ The following **Reminders settings** can be configured here:
 * **Enable Reminders** - enables or disables automatic sending of reminders;
 * **Message type** - choose the message type for sending reminders: Email, SMS, Email+SMS;
 * **Hour to send at** - choose a time for sending reminders;
-* **Static days** - a toggler allows to choose in which days of the month the reminders should be sent: after `x` number of days after billing day or on static days of the month.
+* **Static days** - a toggle allows to choose in which days of the month the reminders should be sent: after `x` number of days after billing day or on static days of the month.
 * **Reminder #1 day** - select in how many days you'd like the First Reminder to be sent;
 * **Subject #1** - type a subject for the 1st Reminder;
 * **Reminder #2 day** - select in how many days you'd like the Second Reminder to be sent;
@@ -32,9 +32,9 @@ The following **Reminders settings** can be configured here:
 
 **Example:**
 
-- `Static days` toggler is `disabled`: we choose 10 days for the Reminder #1, 5 days for the Reminder #2 and 5 days for the Reminder #3. That means reminders will be sent on 11th, 16th and 21th of of month accordingly.
+- `Static days` toggle is `disabled`: we choose 10 days for the Reminder #1, 5 days for the Reminder #2 and 5 days for the Reminder #3. That means reminders will be sent on 11th, 16th and 21th of of month accordingly.
 
-- `Static days` toggler is `enabled`: we choose - 5 days for the Reminder #1, 7 days for the Reminder #2 and 10 days for the Reminder #3. It means that reminders will be sent on the defined dates of the current month (5th, 7th and 10th of August). If the admin selects a value for a reminder more than days in the current month, e.g. this month has 28 days and admin chooses 31 or 40, then the reminder will be sent on the last day of the month.
+- `Static days` toggle is `enabled`: we choose - 3 days for the Reminder #1, 5 days for the Reminder #2 and 7 days for the Reminder #3. It means that reminders will be sent on the defined dates of the current month (3d, 7th and 10th of August). If the admin selects a value for a reminder higher than the number of days in the current month, e.g. this month has 28 days and admin chooses 31 or 40, then the reminder will be sent on the last day of the month. Also, admin should select days for reminders in the correct ascending order: the day number for the first reminder cannot be greater than the day for the second reminder etc.
 
 
 All 3 dates selected for sending of reminders will be displayed in the **Calendar** next to **Reminders settings**.

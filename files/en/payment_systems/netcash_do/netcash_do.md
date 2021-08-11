@@ -55,7 +55,7 @@ The following roles can be specified in the field **admins roles**: `super-admin
 
 But if admin account has only `technician` role and this role was not selected in add-on config, the access to `Netcash Debit Order check payments` menu for such admin will be **forbidden**.
 
-[forbidden.png](forbidden.png)
+![](forbidden.png)
 
 Also, admins can be notified when a customer has created a Netcash payment account. To enable this feature, use the **Notifications settings** provided.
 
@@ -200,7 +200,7 @@ When the data has been uploaded, select the corresponding header:
 
 ![fields](required_fields.png)
 
-**Note:** The file must contain the **Customer id**, **Bank account type id**, **Branch code**, **Bank account number**, **Account holder name** and **Payment method id**.
+**Note:** The file must contain the **Customer id**, **Bank account type id**, **Branch code**, **Bank account number**, **Account holder name** and **Payment method id** fields.
 
 <details>
 <summary><b>Change customer's payment method during import</b></summary>

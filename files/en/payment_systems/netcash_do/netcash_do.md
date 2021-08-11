@@ -49,7 +49,13 @@ You can also set **service fee** and **unpaid fee** for customers and set which 
 
 The following roles can be specified in the field **admins roles**: `super-administrator`, `administrator`, `manager`, `financial-manager`, `customer-creator`, `engineer` and `technician`.
 
+**Note**: The roles of `super-administrator`, `administrator` and `manager` are selected by default after add-on installation, it means that admin account with any of these roles always has access to `Finance → Netcash Debit Order check payments` menu (account's [permissions](administration/main/admins_and_permissions/admins_and_permissions.md) to **Finance** module and **Netcash Debit Order add-on** are required as well).
+
 ![settings2.1.png](settings_2.1.png)
+
+But if admin account has only `technician` role and this role was not selected in add-on config, the access to `Netcash Debit Order check payments` menu for such admin will be **forbidden**.
+
+[forbidden.png](forbidden.png)
 
 Also, admins can be notified when a customer has created a Netcash payment account. To enable this feature, use the **Notifications settings** provided.
 

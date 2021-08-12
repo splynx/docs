@@ -57,10 +57,13 @@ But if admin account has only `technician` role and this role was not selected i
 
 ![](forbidden.png)
 
+In order to disable the payments sync from `Netcash → Splynx` (e.g. you configured the payments sync from [SageOne](addons_modules/sageone/sageone.md) to Splynx), you can use **Disable payment processing by system** toggle. If toggle is `enabled` - *cron* will not sync payments to Splynx from Netcash side, if it's `disabled` - payments will be synced into Splynx.
+
+![disable_payment_processing](disable_payment_processing.png)
+
 Also, admins can be notified when a customer has created a Netcash payment account. To enable this feature, use the **Notifications settings** provided.
 
 ![Netcash](netdo_set.png)
-
 
 In case in Splynx system is used the multiple [partners](administration/main/partners/partners.md) scheme, you can divide Netcash configuration between them. Create a new partner in Splynx, in Netcash config select the necessary partner and set the required settings.
 

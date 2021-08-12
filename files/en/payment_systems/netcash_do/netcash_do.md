@@ -51,13 +51,13 @@ The following roles can be specified in the field **admins roles**: `super-admin
 
 ![settings2.1.png](settings_2.1.png)
 
-Also, admins can be notified when a customer has created a Netcash payment account. To enable this feature, use the **Notifications settings** provided.
-
-![Netcash](netdo_set.png)
-
 In order to disable the payments sync from `Netcash → Splynx` (e.g. you configured the payments sync from [SageOne](addons_modules/sageone/sageone.md) to Splynx), you can use **Disable payment processing by system** toggle. If toggle is `enabled` - *cron* will not sync payments to Splynx from Netcash side, if it's `disabled` - payments will be synced into Splynx.
 
 ![disable_payment_processing](disable_payment_processing.png)
+
+Also, admins can be notified when a customer has created a Netcash payment account. To enable this feature, use the **Notifications settings** provided.
+
+![Netcash](netdo_set.png)
 
 ## Adding a Netcash Payment account
 

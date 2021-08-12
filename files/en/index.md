@@ -194,14 +194,17 @@ Table of contents
 
 * [Logs](administration/logs/logs.md)
 
-  * [API](administration/logs/api/api.md)
-  * [Changes of statuses/plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
-  * [Email](administration/logs/email/email.md)
-  * [Files](administration/logs/files/files.md)
   * [Operations](administration/logs/operations/operations.md)
-  * [Pending statuses and services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
-  * [Sessions](administration/logs/sessions/sessions.md)
+  * [Internal](administration/logs/internal/internal.md)
+  * [Portal](administration/logs/portal/portal.md)
+  * [Files](administration/logs/files/files.md)
+  * [Email](administration/logs/email/email.md)
   * [SMS](administration/logs/sms/sms.md)
+  * [Sessions](administration/logs/sessions/sessions.md)
+  * [API](administration/logs/api/api.md)
+  * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
+  * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
+  * [Accounting Integrations](administration/logs/accounting_integrations/accounting_integrations.md)
 
 * [Reports](administration/reports/reports.md)  
 

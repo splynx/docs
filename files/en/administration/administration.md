@@ -15,6 +15,8 @@ The Administration settings can be divided into _4 main sections_ with the subca
 
 2. LOGS
     * [Operations](administration/logs/operations/operations.md)
+    * [Internal](administration/logs/internal/internal.md)
+    * [Portal](administration/logs/portal/portal.md)
     * [Files](administration/logs/files/files.md)
     * [Email](administration/logs/email/email.md)
     * [SMS](administration/logs/sms/sms.md)
@@ -22,6 +24,7 @@ The Administration settings can be divided into _4 main sections_ with the subca
     * [API](administration/logs/api/api.md)
     * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
     * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
+    * [Accounting Integrations](administration/logs/accounting_integrations/accounting_integrations.md)
 
 3. INFORMATION
     * [License](administration/information/license/license.md)

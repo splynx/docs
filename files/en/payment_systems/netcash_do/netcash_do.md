@@ -47,7 +47,7 @@ You can also set **service fee** and **unpaid fee** for customers and set which 
 
 ![settings2.png](settings_2.png)
 
-The following roles can be specified in the field **admins roles**: `super-administrator`, `administrator`, `manager`, `financial-manager`, `customer-creator`, `engineer` and `technician`.
+The following roles can be specified in the field **admins roles**: `super-administrator`, `administrator`, `manager`, `financial-manager`, `customer-creator`, `engineer` and `technician` (account's [permissions](administration/main/admins_and_permissions/admins_and_permissions.md) to **Finance** module and **Netcash Debit Order add-on** are required as well).
 
 ![settings2.1.png](settings_2.1.png)
 
@@ -55,12 +55,9 @@ Also, admins can be notified when a customer has created a Netcash payment accou
 
 ![Netcash](netdo_set.png)
 
+In order to disable the payments sync from `Netcash → Splynx` (e.g. you configured the payments sync from [SageOne](addons_modules/sageone/sageone.md) to Splynx), you can use **Disable payment processing by system** toggle. If toggle is `enabled` - *cron* will not sync payments to Splynx from Netcash side, if it's `disabled` - payments will be synced into Splynx.
 
-In case in Splynx system is used the multiple [partners](administration/main/partners/partners.md) scheme, you can divide Netcash configuration between them. Create a new partner in Splynx, in Netcash config select the necessary partner and set the required settings.
-
-![](division_into_partners.png)
-
-**Note:** The fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner).
+![disable_payment_processing](disable_payment_processing.png)
 
 ## Adding a Netcash Payment account
 
@@ -194,7 +191,7 @@ When the data has been uploaded, select the corresponding header:
 
 ![fields](required_fields.png)
 
-**Note:** The file must contain the **Customer id**, **Bank account type id**, **Branch code**, **Bank account number**, **Account holder name** and **Payment method id**.
+**Note:** The file must contain the **Customer id**, **Bank account type id**, **Branch code**, **Bank account number**, **Account holder name** and **Payment method id** fields.
 
 <details>
 <summary><b>Change customer's payment method during import</b></summary>

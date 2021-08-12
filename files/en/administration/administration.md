@@ -3,7 +3,7 @@ Administration
 
 This is the basis of all the administrative details and date of your Splynx server. Administrative details like administrator accounts, its roles and permissions, partners on your system, locations and API keys can be configured here. All the data logs collected and stored by the system are available in this Administration settings page.
 
-The Administration settings can be divided into _4 main sections_ with the subcategories: _Splynx, _Logs_, _Information_ and _Reports_. Please follow the links below for tutorial and information pages on each of the sections of Administration:
+The Administration settings can be divided into _4 main sections_ with the subcategories: _Splynx_, _Logs_, _Information_ and _Reports_. Please follow the links below for tutorial and information pages on each of the sections of Administration:
 
 1. SPLYNX
     * [Administrators](administration/main/admins_and_permissions/admins_and_permissions.md)
@@ -15,6 +15,8 @@ The Administration settings can be divided into _4 main sections_ with the subca
 
 2. LOGS
     * [Operations](administration/logs/operations/operations.md)
+    * [Internal](administration/logs/internal/internal.md)
+    * [Portal](administration/logs/portal/portal.md)
     * [Files](administration/logs/files/files.md)
     * [Email](administration/logs/email/email.md)
     * [SMS](administration/logs/sms/sms.md)
@@ -22,6 +24,7 @@ The Administration settings can be divided into _4 main sections_ with the subca
     * [API](administration/logs/api/api.md)
     * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
     * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
+    * [Accounting Integrations](administration/logs/accounting_integrations/accounting_integrations.md)
 
 3. INFORMATION
     * [License](administration/information/license/license.md)

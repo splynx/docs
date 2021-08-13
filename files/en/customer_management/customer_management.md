@@ -1,43 +1,40 @@
 Customer management
 =========
 
-Dreading as can be, customer management is a vital task for the continued, excellent service delivery as an ISP.
+The customer management is a vital task to provide excellent service as an ISP.
 
-The Splynx family has taken into account each element when dealing with this and compiled an advanced customer management system which brings you an easy and manageable platform for you to effortlessly manage your customers.
+The Splynx has taken into consideration every element when dealing with this task and compiled an advanced customer management system that gives you a simple and manageable platform to effortlessly manage your customers.
 
-Our management system consists of 6 main pages for each customer on the system. Namely, information, services, billing, statistics, documents, CPE and CRM.
+Our management system consists of 8 main pages for each customer: **information**, **services**, **billing**, **statistics**, **documents**, **CPE**, **CRM** and **Communication**. Please take a look at the sections of our customer management module and how they work.
 
 
-Before we explore each section, it is vital to know that this module's tables like all the others within Splynx, is customizable to display information of your preference, furthermore, you are not limited by the fields available in the system by default.
+* [Adding new customer](customer_management/add_new_customer/add_new_customer.md)
 
-Tables within Splynx can always be adjusted for whichever purpose to display whatever available data and "Additional Fields" can be created to capture data you might find necessary and not included in the default fields.
+  1. [Customer information](customer_management/customer_information/customer_information.md)
 
-**Modifying Tables**
+  2. [Customer services](customer_management/customer_services/customer_services.md)
 
-* [ Configuration of table, configuring list view](customer_management/configuration_of_the_table/configuration_of_the_table.md)
+  3. [Customer billing](customer_management/customer_billing/customer_billing.md)
 
-**Additional Fields**
+  4. [Customer statistics](customer_management/customer_statistics/customer_statistics.md)
 
-* [ Additional fields](customer_management/custom_additional_fields/custom_additional_fields.md)
+  5. [Customer documents](customer_management/customer_documents/customer_documents.md)
 
-Now that those rules have been established, please take a look at each section of our customer management module and how it works.
+  6. [CPE management](customer_management/cpe_management/cpe_management.md)
 
-* [ Adding new customer](customer_management/add_new_customer/add_new_customer.md)
+  7. [CRM quotes](crm/quotes/quotes.md)
 
-* [ Customer information](customer_management/customer_information/customer_information.md)
+  8. [Communication](my_profile/imap/imap.md)
 
-* [ Customer services](customer_management/customer_services/customer_services.md)
+* [Search](customer_management/search/search.md)
 
-* [ Customer billing](customer_management/customer_billing/customer_billing.md)
+* [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
 
-* [ Customer statistics](customer_management/customer_statistics/customer_statistics.md)
+* [Maps](customer_management/maps/maps.md)
 
-* [ Customer documents](customer_management/customer_documents/customer_documents.md)
 
-* [CPE management](customer_management/cpe_management/cpe_management.md)
+Also, it is important to know that the tables in this module, like all the others within Splynx, are customizable to display information of your preference, moreover, you are not limited to the fields available in the system by default. Tables in Splynx can always be adjusted for any purpose to display any available data and *additional fields* can be created to collect data that you may find necessary and not included in the default fields. Refer to the information provided in the following articles:
 
-* [ Maps ](customer_management/maps/maps.md)
+- [Configuration of table, configuring list view](customer_management/configuration_of_the_table/configuration_of_the_table.md)
 
-* [ Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
-
-* [ Search](customer_management/search/search.md)
+- [Additional fields](customer_management/custom_additional_fields/custom_additional_fields.md)

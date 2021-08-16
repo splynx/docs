@@ -216,13 +216,13 @@ you can **preview**,  **export settings into a .csv format** (for future, use it
 
 ![object actions](provision_preview.png)
 
-**import an existing .csv file** with device settings
+**import an existing .csv file** with device settings (**NOTE!:** If there are already some settings on the device, they will be deleted during import)
 
 ![object actions](provision_import.png)
 
 or **clean up** the existing device config.
 
-**NOTE!:** If there are already some settings on the device, they will be deleted during import
+
 
 ## Attributes:
 
@@ -361,6 +361,7 @@ The customer can **reboot the router and change SSID and Wi-Fi password for assi
 </p>
 </details>
 
+------------
 
 ### Troubleshooting
 
@@ -409,3 +410,5 @@ Follow these instructions to troubleshoot problems with TR-069 (ACS):
   4. Disable **TR-069 client** on a device, remove device from Splynx and enable **TR-069 client** to re-add device in Splynx.
 </p>
 </details>
+
+------------

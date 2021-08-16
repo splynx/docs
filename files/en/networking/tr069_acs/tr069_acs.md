@@ -184,15 +184,11 @@ We have a few options here:
 | **I have a configuration file for import and want to import this file**  | in this step you need to import a .csv file with a configuration what can be imported  |
 | **I want to insert config manually**  | manual way to configure a device |
 
-If to choose **I want to insert config manually** step, you will see a window with the editor of device objects with its attributes:
+If to choose **I want to insert config manually** step, you will see a window with the editor of device objects with its attributes. In this configuration menu you can **create** new object and attribute related to the object, **update**, **delete** or apply the **mass actions** (*enable*, *disable*, *delete*) the existing object and its attribute (-s).
 
 ![provisioning attributes](provisioning_attributes.png)
 
-In this configuration menu you can **create** new object and attribute related to the object, **update**, **delete** or apply the **mass actions** (*enable*, *disable*, *delete*) the existing object and its attribute (-s).
-
-Also, by click on additional button near **Save** button you can **preview**, **export settings into a .csv format** (for future, use it for configuration of other devices) or **import an existing .csv file** with device settings.
-
-![object actions](import_export.png)
+![](mass_actions.png)
 
 We can apply **4 actions to the object**:
 
@@ -202,15 +198,31 @@ We can apply **4 actions to the object**:
 - **update** - update the object's attribute value (-s);
 - **delete** - remove all objects according to the path, e.g. object `Device.Firewall.X_MIKROTIK_Filter.Chain.3.Rule` will remove all firewall rules from output chain on Mikrotik;
 
-- **delete with equal condition** - remove the object if the attribute's `value` was specified in the configuration, e.g. remove all the disabled rules in firewall output chain.
-
 ![object actions](delete_firewall_rules.png)
+
+- **delete with equal condition** - remove the object if the attribute's `value` was specified in the configuration, e.g. remove all the disabled rules in firewall output chain.
 
 ![object actions](del_equal_condition.png)
 
 If you select **template** as attribute option you can **use twig** to create field value.
 
 ![object actions](template_twig.png)
+
+Also, by click on additional button near **Save** button
+
+![object actions](import_export.png)
+
+you can **preview**,  **export settings into a .csv format** (for future, use it for configuration of other devices)
+
+![object actions](provision_preview.png)
+
+**import an existing .csv file** with device settings
+
+![object actions](provision_import.png)
+
+or **clean up** the existing device config.
+
+**NOTE!:** If there are already some settings on the device, they will be deleted during import
 
 ## Attributes:
 

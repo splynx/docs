@@ -45,6 +45,8 @@ Table of contents
 ##### [Customer Portal](customer_portal/customer_portal.md)
 
 ##### [Tickets](tickets/tickets.md)
+* [Tickets Overview](tickets/tickets_overview/tickets_overview.md)
+* [Tickets Recipients](tickets/tickets_recipients/tickets_recipients.md)
 
 ##### [Finance](finance/finance.md)
 * [Apply credit](finance/apply_credit/apply_credit.md)

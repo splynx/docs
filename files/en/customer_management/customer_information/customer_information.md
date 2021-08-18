@@ -24,12 +24,37 @@ nano /var/www/splynx/config/config.php
 ```
 ![not_dispaly_password](not_dispaly_password.png)  ![not_dispaly_password](not_dispaly_password1.png)
 
-* **Status** - options to set are: New, Active, Inactive, Blocked (some functions are available to Active customers only, e.g. for the client to make use of services. Also, it is necessary to customer to be inactive in order to delete them `Inactive → Save → Actions → Delete`);
+* **Status** - options to set are: New, Active, Inactive, Blocked (some functions are available to Active customers only, e.g. for the client to make use of services. Also, it is necessary to customer to be inactive in order to delete them `Inactive → Save → Actions → Delete`).
 
 - **New (Not yet connected)** - status given to customer recently created or added to the system;<br>
 - **Active** - status given to customers to allow the system to take their profile into account and make feature available;<br>
 - **Inactive (Doesn't use services)** - this status stops customers services and the system from accounting. It is the status given to customers' automatically when they've reached the _deactivation (grace) period_. This status is given to customers who will no longer use your services. In case the customer's account has _Inactive_ status it can be deleted.;<br>
 - **Blocked** - status given to customers who failed to make payments for services or to simply deny access to the client while taking their profile into account;
+
+<icon class="image-icon">![Info](information.png)</icon> **The clarification of statuses relation (customer, service and invoice):**
+<details>
+<summary><b>Click here for more information</b></summary>
+<p markdown="1">
+
+1. If the customer has an `unpaid` invoice (e.g. an invoice was created in `Billing day` date) and the customer doesn't pay the invoice before the date of `Billing due`, the customer status will be changed to `Blocked`, but the service (e.g. Internet service) is still be active;
+
+2. The invoice status in period from `Billing day` to `Billing due` date is `unpaid`, from `Billing due` to `Deactivation period` and after `Deactivation period` the invoice will be considered  as `overdue`;
+
+3. If the customer with `Blocked` status pays the `overdue` invoice, the customer's status will be changed to `Active`;
+
+4. If the customer with `Blocked` status doesn't pay the invoice before the date of `Deactivation period` date, his status will be changed to `Inactive (doesn't use service)`. And after he decided to pay the invoice, the status would become `Active`;
+
+5. If the customer has `Inactive (doesn't use service)` status, his service (e.g. Internet service) will be `disabled` (with `Start date` = `Billing day` date and `End date` = `Deactivation period` date) and the duplicate of the previous service will be created with `Stopped` status, its `Start date` = the date of `Deactivation period`.
+And after customer decided to pay the `overdue` invoice, the status of duplicate service would become `Active`, its `Start date` would be changed to invoice payment date.
+
+![](clar_img1.png)
+
+![](clar_img2.png)
+
+------------
+
+</p>
+</details>
 
 * **Billing type** - the options are Recurring payments, Prepaid (daily) and Prepaid (custom);
 

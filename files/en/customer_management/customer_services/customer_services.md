@@ -50,6 +50,8 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
 
   ![](clar_img2.png)
 
+------------
+
   </p>
   </details>
 

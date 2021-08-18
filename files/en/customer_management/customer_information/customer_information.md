@@ -51,6 +51,8 @@ And after customer decided to pay the `overdue` invoice, the status of duplicate
 
 ![](clar_img2.png)
 
+------------
+
 </p>
 </details>
 

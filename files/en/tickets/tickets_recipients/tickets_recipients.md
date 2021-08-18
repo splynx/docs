@@ -21,7 +21,7 @@ The following actions can be applied in the *Recipients* table:
 
 **Tip:** If unrecognized email address is paired to some customer/lead e.g. by mistake in *Recipients* table, we can reassign the current ticket and the future ones to other customer/lead directly from ticket, after adding new customer/lead and pressing *Update*, the new *Change pair for recipient* window will appear, press *Yes* to proceed. If the `Shared email` option is enabled, the mass reassignment function will not work (only the current ticket will be assigned to specific customer/lead).
 
-![](change_ pair_for_recipient.png)
+![](change_pair.png)
 
 * **Edit sender** <icon class="image-icon">![edit_sender](edit_sender.png)</icon> - to edit sender's name in [Tickets](tickets/tickets_overview/tickets_overview.md);
 
@@ -35,13 +35,13 @@ The following actions can be applied in the *Recipients* table:
 
 * the status <icon class="image-icon">![yes](yes.png)</icon> in the column `in deny list` - means that the email address was added to **Deny list** in `Config → Tickets →` [Inboxes](configuration/support/inboxes/inboxes.md). Ticket from these email will not be created in Splynx.
 
+![](status_yes.png)
 
-**Example with notifications to customer's emails**
+**Example with notifications to customer's emails:**
 
 Let's imagine that we have set up **SMTP**, **Incoming mailbox** (`support@support.com`) and enabled **Ticket notifications**. In SMTP config, we use `admin@support.com` address in both *Sender's email* and *Admin email* fields.
 Customer sent a message to `support@support.com` from his new mail address, as a result, the new ticket will be created in Splynx. After that we paired new mail address with our customer in `Tickets → Recipients`.
 To `admin@support.com` will be sent a notification *New ticket created*, when administrator directly replies on this notification message, the new notifications `New ticket created (Request received) `and `New message in ticket;` will be sent to customer's paired mail address but to customer's mailbox (`Email` field in customer profile) - will be sent only `New message in ticket`. To customer's `Billing email `no notifications will be sent at all.
-
 
 The *Recipients* table can be modified to display the necessary fields with <icon class="image-icon">![view_icon3.png](view_icon3.png)</icon> icon at the bottom of the table or the date can exported in a format of choice with the export <icon class="image-icon">![view_icon2.png](view_icon2.png)</icon> icon.
 

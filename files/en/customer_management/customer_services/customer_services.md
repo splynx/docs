@@ -30,6 +30,28 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
   * **Pending** - Status of the new service during the waiting period of a planned service change. Between the end date of the old service and the start date of the new.
   * **Archived** - status for services archived for future reference.
 
+  <icon class="image-icon">![Info](information.png)</icon> **The clarification of statuses relation (customer, service and invoice):**
+  <details>
+  <summary><b>Click here for more information</b></summary>
+  <p markdown="1">
+
+  1. If the customer has an `unpaid` invoice (e.g. an invoice was created in `Billing day` date) and the customer doesn't pay the invoice before the date of `Billing due`, the customer status will be changed to `Blocked`, but the service (e.g. Internet service) is still be active;
+
+  2. The invoice status in period from `Billing day` to `Billing due` date is `unpaid`, from `Billing due` to `Deactivation period` and after `Deactivation period` the invoice will be considered  as `overdue`;
+
+  3. If the customer with `Blocked` status pays the `overdue` invoice, the customer's status will be changed to `Active`;
+
+  4. If the customer with `Blocked` status doesn't pay the invoice before the date of `Deactivation period` date, his status will be changed to `Inactive (doesn't use service)`. And after he decided to pay the invoice, the status would become `Active`;
+
+  5. If the customer has `Inactive (doesn't use service)` status, his service (e.g. Internet service) will be `disabled` (with `Start date` = `Billing day` date and `End date` = `Deactivation period` date) and the duplicate of the previous service will be created with `Stopped` status, its `Start date` = the date of `Deactivation period`.
+  And after customer decided to pay the `overdue` invoice, the status of duplicate service would become `Active`, its `Start date` would be changed to invoice payment date.
+
+  ![](clar_img1.png)
+
+  ![](clar_img2.png)
+
+  </p>
+  </details>
 
 ***Plan settings***
 * **Router** - The router that API will use to connect to (for all API functions - Shaping, contention, address lists)

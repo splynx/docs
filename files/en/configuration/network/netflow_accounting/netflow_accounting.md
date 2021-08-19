@@ -105,7 +105,7 @@ In `Config → Networking → NetFlow accounting` we can change its *Daemon* and
 | **Daemon options:**  |   |
 |  Interval|  Specifies the time interval in seconds to rotate files. The default value is 300 seconds |
 | Port |  Specifies the port number to listen. Default port is 9995 |
-|  **Expire options** |   |
+|  **Expire options:** |   |
 |  Directory size | Set size limit for the directory. The specified limit accepts values such as 100M, 100MB, 1G, 1.5G etc. Accpeted size factors are K, KB, M, MB, G, GB and T, TB  |
 | Maxlife time  | Sets the max life time for files in the directory. The supplied maxlife_time accepts values such as 31d, 240H 1.5d etc. Accpeted time scales are w (weeks) d (days) H (hours)  |
 

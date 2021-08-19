@@ -19,6 +19,8 @@ In the network configuration section, the following categories are available for
 
 * [ Mikrotik API](configuration/network/mikrotik_api/mikrotik_api.md)
 
+* [ Mikrotik Traffic Flow Configuration](configuration/network/netflow_accounting/netflow_accounting.md)
+
 * [ Monitoring config](configuration/network/monitoring_config/monitoring_config.md)
 
 * [ NAS types](configuration/network/nas_types/nas_types.md)

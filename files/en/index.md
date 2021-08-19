@@ -311,6 +311,7 @@ Table of contents
   * [IP Network categories](configuration/network/ip_network_categories/ip_network_categories.md)
   * [IPv4](configuration/network/ipv4/ipv4.md)
   * [MikroTik API](configuration/network/mikrotik_api/mikrotik_api.md)
+  * [ Mikrotik Traffic Flow Configuration](configuration/network/netflow_accounting/netflow_accounting.md)
   * [Monitoring config](configuration/network/monitoring_config/monitoring_config.md)
   * [NAS types](configuration/network/nas_types/nas_types.md)
   * [Network Weathermap Editor](configuration/network/network_weathermap_editor/network_weathermap_editor.md)

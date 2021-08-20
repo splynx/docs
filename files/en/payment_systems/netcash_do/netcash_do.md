@@ -59,6 +59,12 @@ Also, admins can be notified when a customer has created a Netcash payment accou
 
 ![Netcash](netdo_set.png)
 
+In case in Splynx system is used the multiple [partners](administration/main/partners/partners.md) scheme, you can divide Netcash configuration between them. Create a new partner in Splynx, in Netcash config select the necessary partner and set the required settings.
+
+![](division_into_partners.png)
+
+**Note:** The fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner).
+
 ## Adding a Netcash Payment account
 
 To add a Netcash payment account, navigate to the customer's "Billing" tab, and click on the card icon in the Payment accounts window.

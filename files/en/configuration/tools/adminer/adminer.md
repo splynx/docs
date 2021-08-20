@@ -1,6 +1,8 @@
 Adminer
 ============
 
+![icon](icon.png)
+
 This is the Splynx tool to access your Splynx server database.
 
 All the data of your server can be accessed and operated with, using this tool. It is our method of accessing your database to troubleshoot any changes/errors that may have occurred that is inexplicable from the information provided on the GUI of your Splynx server.

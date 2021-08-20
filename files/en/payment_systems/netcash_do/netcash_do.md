@@ -39,7 +39,7 @@ These values have to be added to add-on configuration, located in `Config → In
 
 ![modules_list.png](modules_list.png)
 
-![edit_module.png](edit.png)
+![edit_module.png](edit_module.png)
 
 **Note:** **PCI vault key** - this key is only needed when customers use their own credit cards to pay.
 
@@ -51,7 +51,7 @@ The following roles can be specified in the field **admins roles**: `super-admin
 
 **Note**: The roles of `super-administrator`, `administrator` and `manager` are selected by default after add-on installation, it means that admin account with any of these roles always has access to `Finance → Netcash Debit Order check payments` menu (account's [permissions](administration/main/admins_and_permissions/admins_and_permissions.md) to **Finance** module and **Netcash Debit Order add-on** are required as well).
 
-![settings2.1.png](settings_2.1.png)
+![settings2.1.png](settings2.png)
 
 But if admin account has only `technician` role and this role was not selected in add-on config, the access to `Netcash Debit Order check payments` menu for such admin will be **forbidden**.
 

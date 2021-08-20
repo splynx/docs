@@ -89,4 +89,4 @@ It is possible to update specific range or all the rates.
 
 * **Tariffication step** - Duration of tariffication step.
 
-Now when rate table is configured in can be assigned to some [voice plan](../tariff_settings/tariff_settings.md)
+Now when rate table is configured in can be assigned to some [voice plan](voice/tariff_settings/tariff_settings.md)

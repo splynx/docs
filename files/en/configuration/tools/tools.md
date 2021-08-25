@@ -20,6 +20,6 @@ Tools
 * [OpenVPN](configuration/tools/openvpn/openvpn.md)
   * [Cloud](configuration/tools/openvpn/cloud/routes/routes.md)
 
-* [Restore deleted customers](restore_deleted_customers/restore_deleted_customers.md)
+* [Restore deleted customers](configuration/tools/restore_deleted_customers/restore_deleted_customers.md)
 
 * [Update GPS coordinates](configuration/tools/gps/gps.md)

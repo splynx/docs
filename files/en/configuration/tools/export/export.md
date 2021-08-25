@@ -1,6 +1,8 @@
 Export
 ======
 
+![icon](icon.png)
+
 This tool can be used to export data from the system from all the available modules.
 
 If we need to export our customers, let’s use other feature, called “Export”. Choose your delimiter and click on Export button, it was never this easy before.

@@ -15,7 +15,11 @@ Tools
 
 * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
 
+* [Migrate services](configuration/tools/migrate_services/migrate_services.md)
+
 * [OpenVPN](configuration/tools/openvpn/openvpn.md)
   * [Cloud](configuration/tools/openvpn/cloud/routes/routes.md)
+
+* [Restore deleted customers](restore_deleted_customers/restore_deleted_customers.md)
 
 * [Update GPS coordinates](configuration/tools/gps/gps.md)

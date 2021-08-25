@@ -5,19 +5,21 @@ Restore deleted customers
 
 With the help of this tool, we can restore the deleted customers with all related data in Splynx system. The search can be performed by customer's *ID, login, full name* or *phone*.
 
-**NOTE:** the leads recovery is not yet supported.
+**NOTE:** the leads recovery is not supported yet.
 
 After you click on `Restore deleted customers` item in `Config → Tools`, the new page with the search field  will be opened to enter the necessary parameters:
 
 ![](search_field.png)
 
-After restore is started, customer's billing data and service (-s) will be recovered as well.
+After **restore** button is pressed, customer's billing data and service (-s) will be recovered as well.
 
 ![](restore.png)
 
 ![](restore2.png)
 
-If during the restore process there is the existing customer/lead with the same login or email in Splynx system, you will be requested to change this data. It depends on what type of data is used in *Authentication field* to login on customer's portal. This setting is located in `Config → Main → Portal`.
+If during the restore process there is the existing customer/lead with the same login or email in Splynx system, you will be requested to change this data. It depends on what type of data is used in **Authentication field** to login on customer's portal. This setting is located in `Config → Main → Portal`.
+
+![](authentication_field.png)
 
 ![](restore3.png)
 

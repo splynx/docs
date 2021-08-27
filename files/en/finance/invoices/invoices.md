@@ -141,9 +141,9 @@ Also, take into consideration the following:
 
 - if we create the invoice manually e.g. using `Add one-time invoice` button and after that remove such invoice, the transaction will be removed automatically;
 
-These statements and example above also apply to `delete` option in drop-down menu with mass **Actions** in `Billing → Invoices`.
+These statements and example above also apply to `delete` option in drop-down menu with mass **Actions** in `Billing → Invoices`. For more information about transactions, please navigate to the [Transactions manual](finance/transactions/transactions.md).
 
-For more information about transactions, please navigate to the [Transactions manual](finance/transactions/transactions.md).
+
 ---
 
 If we want to delete the unpaid invoice, it's possible to use `Mark as delete` option in customer's profile in `Billing → Invoices` tab. The option can be useful when we want to have a fuller context of the customer's billing flow.

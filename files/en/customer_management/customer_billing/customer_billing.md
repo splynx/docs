@@ -87,8 +87,19 @@ Please note that if you are charging a customer **manually**, the new invoice wi
 ![Billing settings](billing_settings_charge.png)
 
 
-When charging customers, if necessary, discounts for customers services can be added. Discounts are applied in the customers services. Navigate to customers services tab and select the desired service to apply the discount to, click on Edit icon <icon class="image-icon">![Edit button](edit_button.png)</icon>. The edit service window will appear where you can apply the discount according to the parameters highlighted and you may add a note for reference in discount message. After a discount has been configured, it will appear in the <icon class="image-icon">![Charge button](charge_button.png)</icon> window and the final price will automatically be calculated.
+If the transaction with `Add to Invoice` option is created, it will be added to the subsequent invoice. For example, you create manual transaction with `Add to Invoice` option, after that apply `Charge & Invoice`, the service and manual related transactions are visible in the preview:
 
+![](add_to_invoice.png)
+
+![](charge_and_inv_result.png)
+
+When we apply `Cancel last charge` option, only service transaction will be removed with the invoice. The manual transaction can be deleted manually in `Billing → Transactions` tab.
+
+![](view_invoice.png)
+
+![](cancel_last_charge.png)
+
+When charging customers, if necessary, discounts for customers services can be added. Discounts are applied in the customers services. Navigate to customers services tab and select the desired service to apply the discount to, click on Edit icon <icon class="image-icon">![Edit button](edit_button.png)</icon>. The edit service window will appear where you can apply the discount according to the parameters highlighted and you may add a note for reference in discount message. After a discount has been configured, it will appear in the <icon class="image-icon">![Charge button](charge_button.png)</icon> window and the final price will automatically be calculated.
 
 ![Discount](edit_service.png)
 
@@ -152,7 +163,9 @@ We can also customize the transactions table by enabling/disabling fields or dra
 
 ![Columns](columns.png)
 
-For more information on transactions, please navigate to the transactions manual - [Transactions](finance/transactions/transactions.md).
+More information about the transaction properties can be found in the next guide:
+
+- [Transactions](finance/transactions/transactions.md)
 
 
 ## Invoices
@@ -168,7 +181,9 @@ The invoices list comes well equipped with tools found in the operations column.
 
 Functions of each button in operations can be found by simply hovering over the icons.
 
-Detailed descriptions and an explanation of invoicing can be found here -  [Invoices](finance/invoices/invoices.md)
+Detailed description and an explanation of invoicing can be found in the next guide:
+
+- [Invoices](finance/invoices/invoices.md)
 
 
 ## Payments

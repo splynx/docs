@@ -163,10 +163,7 @@ We can also customize the transactions table by enabling/disabling fields or dra
 
 ![Columns](columns.png)
 
-More information about the transaction properties can be found in the next guide:
-
-- [Transactions](finance/transactions/transactions.md)
-
+More information about the transaction properties can be found in the [Transactions](finance/transactions/transactions.md) guide.
 
 ## Invoices
 
@@ -181,9 +178,7 @@ The invoices list comes well equipped with tools found in the operations column.
 
 Functions of each button in operations can be found by simply hovering over the icons.
 
-Detailed description and an explanation of invoicing can be found in the next guide:
-
-- [Invoices](finance/invoices/invoices.md)
+Detailed description and an explanation of invoicing can be found in the [Invoices](finance/invoices/invoices.md) guide.
 
 
 ## Payments

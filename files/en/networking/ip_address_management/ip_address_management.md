@@ -9,5 +9,6 @@ Please follow the links below to the different sections of IPAM in Splynx:
 
 * [IPv6](networking/ip_address_management/ipv6/ipv6.md)
 
- * [IPv6 CPE Support](networking/ip_address_management/ipv6/ipv6_cpe_support/ipv6_cpe_support.md)
-  * [IPv6 Mikrotik](networking/ip_address_management/ipv6/ipv6_mikrotik/ipv6_mikrotik.md)
+* [IPv6 CPE Support](networking/ip_address_management/ipv6/ipv6_cpe_support/ipv6_cpe_support.md)
+
+* [IPv6 Mikrotik](networking/ip_address_management/ipv6/ipv6_mikrotik/ipv6_mikrotik.md)

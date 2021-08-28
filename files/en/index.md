@@ -275,6 +275,7 @@ Table of contents
   * [Fixed costs](configuration/finance/fixed_costs/fixed_costs.md)
   * [Notifications](configuration/finance/notifications/notifications.md)
   * [Pairing](configuration/finance/pairing/pairing.md)
+  * [Payment accounts](configuration/finance/payment_accounts/payment_accounts.md)
   * [Payment methods](configuration/finance/payment_methods/payment_methods.md)
   * [Reminders](configuration/finance/reminders/reminders.md)
   * [Taxes](configuration/finance/taxes/taxes.md)

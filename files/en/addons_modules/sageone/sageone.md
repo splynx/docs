@@ -178,6 +178,8 @@ After we have successfully exported customers to SageOne, the next step is to ex
 
 *Please note that this step is only necessary for the initial set up of the SageOne addon as we have disabled the Cron settings in the second step of the configuration of the addon. Once this step has been completed the first time, all cron functions can be enabled to allow the system to sync data automatically.*
 
+**Attention:** The invoices without transactions or marked as **Deleted** in Splynx will not be synced to SageOne.
+
 Click on export invoices:
 
 ![SageOne Invoices](sageone_invoices1.png)

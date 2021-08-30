@@ -140,6 +140,8 @@ In our test environment, we have 2 customers and a few invoices for each custome
 
 Once the customer sync has completed, we can sync the invoices:
 
+**NOTE:** The invoices without transactions or marked as **Deleted** in Splynx will not be synced to Xero.
+
 ![invoices_sync](invoices_sync.png)
 
 As you can see from the image above, an invoice was skipped due to an incorrect tax rate (not matching with the tax rates that we synced from Xero).

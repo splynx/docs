@@ -29,7 +29,7 @@ If you are changing your PDF invoice template frequently, don't forget to clear 
 <p markdown="1">
 
 In Splynx, the `Invoice cache` option  is enabled and the default invoice [template](configuration/system/company_information/company_information.md) `Invoice A4 Classic` is used. The default template was changed and you want to apply these changes only to one invoice.
-To perform this action, enter invoice number e.g. 202101000845 in the field and press `Clear cache`. After that try to view the invoice as PDF to double check the result.
+To perform this action enter the invoice number e.g. 202101000845 in the field under `Config → Tools → Invoices cache` and press `Clear cache`. After that try to view the invoice as PDF to double check the result.
 
 </p>
 </details>

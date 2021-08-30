@@ -101,27 +101,37 @@ Another way to create invoice is to use **Add Invoice from transaction** button 
 
 So, if the invoice includes at least one manual transaction and we are going to remove this invoice, such transaction can be remove only manually. Let's check it:
 
-1. Create a transaction with the `Add to invoice` option:
+**STEP 1**
+
+Create a transaction with the `Add to invoice` option:
 
 ![](img1.png)
 
 ![](img2.png)
 
-2. Add some service to customer, e.g. Internet service
+**STEP 2**
+
+Add some service to customer, e.g. Internet service
 
 ![](img3.png)
 
-3. In `Billing → Billing Overview` press **Charge & Invoice** button to charge the customer
+**STEP 3**
+
+In `Billing → Billing Overview` press **Charge & Invoice** button to charge the customer
 
 ![](img4.png)
 
-4. Double check if the manual transaction has been added to newly created invoice
+**STEP 4**
+
+Double check if the manual transaction has been added to newly created invoice
 
 ![](img5.png)
 
 ![](img6.png)
 
-5. Delete the invoice in `Billing → Invoices`, in new window leave the toggle `Delete transactions` as 'enabled' and press `Delete` button. Or press `Cancel last charge` button in `Billing → Billing Overview` tab
+**STEP 5**
+
+Delete the invoice in `Billing → Invoices`, in new window leave the toggle `Delete transactions` as 'enabled' and press `Delete` button. Or press `Cancel last charge` button in `Billing → Billing Overview` tab
 
 ![](img7.png)
 
@@ -135,7 +145,9 @@ If the invoice includes only manual transaction (-s), e.g. invoice was created v
 
 ![](warning_msg1.png)
 
-6. Check if the manual transaction is present in `Billing → Transactions`. Mind, that it can be removed manually.
+**STEP 6**
+
+Check if the manual transaction is present in `Billing → Transactions`. Mind, that it can be removed manually.
 
 ![](img9.png)
 

@@ -37,11 +37,15 @@ The following actions can be applied in the *Recipients* table:
 
 ![](status_yes.png)
 
-**Example with notifications to customer's emails:**
+**Example #1: Notifications to customer's emails:**
 
 Let's imagine that we have set up **SMTP**, **Incoming mailbox** (`support@support.com`) and enabled **Ticket notifications**. In SMTP config, we use `admin@support.com` address in both *Sender's email* and *Admin email* fields.
 Customer sent a message to `support@support.com` from his new mail address, as a result, the new ticket will be created in Splynx. After that we paired new mail address with our customer in `Tickets → Recipients`.
-To `admin@support.com` will be sent a notification *New ticket created*, when administrator directly replies on this notification message, the new notifications `New ticket created (Request received) `and `New message in ticket;` will be sent to customer's paired mail address but to customer's mailbox (`Email` field in customer profile) - will be sent only `New message in ticket`. To customer's `Billing email `no notifications will be sent at all.
+To `admin@support.com` will be sent a notification *New ticket created*, when administrator directly replies on this notification message, the new notifications `New ticket created (Request received) `and `New message in ticket` will be sent to customer's paired mail address but to customer's mailbox (`Email` field in customer profile) - will be sent only `New message in ticket`. To customer's `Billing email `no notifications will be sent at all.
+
+**Example #2: The relationship of the customer's message to the ticket:**
+
+We paired two mail addresses to one customer in `Tickets → Recipients`: *address1@xxx.com* and *address2@xxx.com*. The customer wrote a message from *address1@xxx.com* to our **Incoming mailbox** (`support@support.com`), after that the new ticket was created in Splynx. If customer replies (the `subject` of the message shouldn't be changed, otherwise will be created a new ticket) from *address2@xxx.com* to ticket notification (e.g. `New message in ticket`), the message will be added to the existing ticket's thread (created from *address1@xxx.com*) in Splynx .
 
 The *Recipients* table can be modified to display the necessary fields with <icon class="image-icon">![view_icon3.png](view_icon3.png)</icon> icon at the bottom of the table or the date can exported in a format of choice with the export <icon class="image-icon">![view_icon2.png](view_icon2.png)</icon> icon.
 

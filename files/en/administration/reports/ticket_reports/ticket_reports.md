@@ -7,7 +7,7 @@ This section displays all data pertaining to tickets and useful tools to rate an
 
 ![Tickets](2.png)
 
-**Report ticket list**
+**Closed tickets**
 
 This subsection of ticket reports is used to rate agent performance with regards to tickets.
 
@@ -36,7 +36,7 @@ Each of the rating criteria are rated by means of "1" or "0".
 
 ![report tickets](3.1.png)
 
-This table can then be exported in a format of your preference by means of the export ![export](export.png) icon located at the bottom of the table:
+This table can then be exported in a format of your preference by means of the export <icon class="image-icon">![Export](export.png)</icon> icon located at the bottom of the table:
 
 ![export](export1.png)
 
@@ -84,7 +84,7 @@ This section of ticket reports displays a report of agent/admin performance for 
 
 **Average resolution time** - an average time taken for an admin to resolve/close a ticket in the selected time period
 
-This report/table can be exported in a format of your preference from that which is available with the use of the export ![export](export.png) icon located at the bottom left of the table:
+This report/table can be exported in a format of your preference from that which is available with the use of the export <icon class="image-icon">![Export](export.png)</icon> icon located at the bottom left of the table:
 
 ![export](export1.png)
 

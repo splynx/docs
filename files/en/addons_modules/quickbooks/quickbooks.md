@@ -161,6 +161,8 @@ We can check if all clients were pushed to QuickBooks:
 
 Once the customers export has completed, we can export the invoices:
 
+**NOTE:** The invoices without transactions or marked as **Deleted** in Splynx will not be synced to Quickbooks.
+
 ![Entry point 1](20.png)
 
 ![Entry point 1](21.png)

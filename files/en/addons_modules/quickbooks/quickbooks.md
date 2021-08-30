@@ -68,7 +68,21 @@ _Please note that you do not have to select QuickBooks in the list of payment me
 
 **Import payments from date** - specify the date in 'Y-m-d'(2021-05-01) format, which will be used as the start date for importing all prepayments to Splynx;
 
-**Create payment without invoice** - create payment in Splynx or add to bank statements only for payments without invoices (used on payments import).
+**Create payment without invoice** - create payment in Splynx or add to bank statements only for payments without invoices (used on payments import);
+
+**Customer name pattern** - used to set a customer's name pattern during sync to *QuickBooks* where it will be represented as **Display name as**. The next variables can be used: `{id}, {login}, {name}, {email}`. By default: `{name}`.
+
+<details>
+<summary><b>name display example</b></summary>
+<p markdown="1">
+
+![](display_name_example1.png)
+
+![](display_name_example2.png)
+
+</p>
+</details>
+
 
 ### Cron settings
 

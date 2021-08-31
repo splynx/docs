@@ -137,13 +137,11 @@ Table of contents
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 
 * [Routers settings](networking/routers_settings/routers_settings.md)
-  * [Cisco routers](networking/routers_settings/cisco/cisco.md)
-  * [Juniper routers](networking/routers_settings/juniper/juniper.md)
   * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
+  * [Cisco routers](networking/routers_settings/mikrotik/mikrotik.md)
+  * [Juniper routers](networking/routers_settings/juniper/juniper.md)
   * [MikroTik Live bandwidth](networking/routers_settings/mikrotik_live_bandwidth/mikrotik_live_bandwidth.md)
-  * [Other routers](networking/routers_settings/other/other.md)
   * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
-
 
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 

@@ -1,104 +1,80 @@
 SMS messages
 ============
 
-To send messages via BulkSMS service (bulksms.com, bulksms.co.za), please configure the following values:
+Before sending the SMS messages to customer (-s), it's necessary to configure SMS first in `Config → Main Configuration → SMS`. For example, you can use [BulkSMS](https://www.bulksms.com/countries/s/south-africa), [Clickatell](https://www.clickatell.com/) or any other SMS provider.
 
-URL:
-[https://bulksms.2way.co.za/eapi/submission/send_sms/2/2.0](https://bulksms.2way.co.za/eapi/submission/send_sms/2/2.0)
-
-POST:
-username=&password=&message=%MESSAGE%&msisdn=%TO%&concat_text_sms_max_parts=4
-
-and you will get a successful response:
-0|IN_PROGRESS|
-
-It is necessary to configure SMS first in `Config → Main Configuration → SMS` before sending SMS to the customer. More information about SMS configuration can be found on our tutorial page - [SMS config](configuration/main_configuration/sms_config/sms_config.md).
-
-To create an SMS click on **Create** in `Support → Messages`. The window will pop-up with the following fields:  
-
-* **ID** - ID of the customer. It has given by the system in a sequential order.
+More information can be found in this tutorial - [SMS sending configuration](configuration/main_configuration/sms_config/sms_config.md).
 
 
-* **Login** - user login
+To send message via SMS click on **Create** in `Messages → Mass sending`. The window will pop-up with the following fields:  
 
 
-* **Status** - there are New, Active, Inactive, Blocked statuses of the customer
+* **Recipient** - to select who receives the message: *Customer* or *Lead*;
 
+* **Portal login** - the login that customer uses to login to [Portal](customer_portal/customer_portal.md), e.g. `000040`;
 
-* **Type of billing** - Recurring payments or Prepaid options
+* **Status** - there are *New*, *Active*, *Inactive*, *Blocked* statuses of the customer and it's possible to *Select all*;
 
+* **Full name** - full name of the customer;
 
-* **Full name** - full name of the customer
+* **Email** - email address of the customer;
 
+* **Billing email** - email address of the customer for the billing correspondence;
 
-* **Email** - email of the customer
+* **Phone number** - phone number of the customer;
 
+* **Category** -  could be `Individual` person or `Business`;
 
-* **Phone number** - phone number of the customer
+* **Location** - [location](administration/main/locations/locations.md) of the customer;
 
+* **Billing type** - *Recurring*, *Prepaid (Custom)* or *Prepaid (Daily)*;
 
-* **Date added** - date customer was added
+* **Partner** - [partner](administration/main/partners/partners.md), service provider of the customer
 
+* **Tariff plans** - all available tariff plans in *Internet*, *Voice*, *Recurring*, *Bundles* categories;
 
-* **Category** -  could be Private person or Company
+* **Service** - type of service: *Bundles*, *Internet*, *Voice*, *Recurring*;
 
+* **Send to** - the options are: *Email*, *Customer portal*, *Customer portal & email*, *SMS*;
 
-* **Partner** - partner, service provider of the customer
+* **Send to billing email** - toggle enables/disables to send message to customer's *Billing email*;
 
+* **Subject** - subject of the email;
 
-* **Location** - location of the customer
+* **Message** - body of the message;
 
+* **Templates** - [templates](configuration/system/templates/templates.md) of *Email*, *SMS*, *Customer portal* can be used;
 
-* **Tariff plans** - all available tariff plans from Internet, Voice, Custom services
+* **Attach financial documents** - *Invoices*, *Proforma Invoices* and *Payments* from Splynx. **This function is not available for SMS**.
 
+You don't have to fill out all the fields to send an SMS to a customer. The easiest way is to enter a customer's **Portal login** or **Full name**, choose the **Send to** `SMS` option, type a **Subject** and write a message.
 
-* **Service** - Internet service, Voice service and Custom service
-
-
-* **Send to** - the options are: Email, Customer portal, Customer portal &  Email, SMS
-
-
-* **Message** - Body of the message
-
-
-* **Templates** - Templates of Customer portal and Mail  templates can be used.
-
-
-* **Attachments** - individual attachments
-
-
-* **Attach financial documents** - Invoices, Proforma Invoices and Payments from Splynx.
-
-It is not necessary to fill in all the fields to send SMS to the customer. The easiest way is to enter customer's 'ID', choose option 'Send to' and write a SMS message. You can choose a body message from templates or write particular text. You can also write your own message and save it as a new template by clicking on Save as new.
+You can choose a message body from SMS template or write particular text to populate the body of the message. You can also type your own message and save it as a new template by clicking on `Save as new` button or load the existing one.
 
 ![Main window](./main_window.png)
 
-You can check your SMS message before sending by clicking on the Preview option at the bottom of the page.
+You can check your SMS message before sending it by clicking on the `Preview` button at the bottom of the page.
 
 ![Preview](./preview.png)
 
-When you click on the Send button, a window will appear with the confirmation details of the recipient.
+When you click on the `Send` button, a window will appear with the confirmation details of the recipient.
 
 ![Send message](./send_message.png)
 
-If you click on 'Send as test'  a window will appear where customer's Phone number has to be entered.
+If you click on `Send as test` button, a window will appear where the customer's **Phone number** has to be entered.
 
 ![Pop-up](./pop_up.png)
 
-There is an option to send mass SMS's, for example, you can choose particular recipients by Partner or Location.
+There is an option to send mass SMS's, for example, you can choose particular recipients by  **Partner** or **Location**.
 
 ![Mass sending](./mass_sending.png)
 
-All SMS's and emails that were sent on the system are displayed in Support → Messages → History. You can sort them by their status (Any, New, Processing, Sent, Cancelled, Removed, Sent with error) or a period of time (Today, yesterday, Last 7 days, This month, Last month, Custom Range).
+All SMS's and emails that were sent on the system are displayed in `Messages → Mass sending → History`. You can sort them by their **status** (*Any, New, Processing, Sent, Cancelled, Removed, Sent with error*) or by **period** of time (*Today, Yesterday, Last 7 days, Last 30 Days, This month, Last month, Custom Range*).
 
 ![History](./history.png)
 
-By clicking on actions <icon class="image-icon">![ViewIcon2](./icons.png)</icon> you'll be able to see the list of customers' (in case of SMS mass sending it will be a full list with customers' names), view SMS messages and delete it.
+By clicking on actions <icon class="image-icon">![ViewIcon2](./icons.png)</icon> you'll be able to see the list of customers, view the SMS message or delete it.
 
-![Customer's list](./customers_list.png)
-
-![View message](./view_message.png)
-
-It is also possible to check the recipients list by their IDs and Phone numbers in Administration → Logs → SMS, where you can set a particular period, type of SMS or status (New, Sending, Sent, Error, Expired).
+It is also possible to check the recipients list by their **IDs** and **Phone number** in `Administration → Logs → SMS`, where you can set a particular **period**, **type** of SMS or its **status**.
 
 ![Recipients](./recipients.png)

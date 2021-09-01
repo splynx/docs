@@ -1,4 +1,4 @@
-Getting Started With SPLYNX
+Getting Started with Splynx
 ===========================
 The Splynx family welcomes you!
 
@@ -8,16 +8,14 @@ Here are a few base requirements to get started.
 Kindly follow the links below to each step and get ready to optimize your business!
 
 To ensure smooth sailing, please check the minimum hardware requirements before you start the installation process.
+
 * [ Hardware requirements](getting_started_guide/hardware_requirements/hardware_requirements.md)
 
 First step to joining the evolution, obtain a Splynx license.
+
 * [ Splynx license](getting_started_guide/splynx_license/splynx_license.md)
 
 You are ready for this! Let's begin.
+
 * [ Install Splynx ISP Framework](getting_started_guide/install_splynx/install_splynx.md)
-
-Introducing you to your new Splynx empowered business.
-* [ Dashboard](getting_started_guide/dashboard/dashboard.md)
-
-Just incase!
-* [ Create swap file ](getting_started_guide/create_swap_file/create_swap_file.md)
+  * [ Create swap file ](getting_started_guide/create_swap_file/create_swap_file.md)

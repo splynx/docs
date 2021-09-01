@@ -1,12 +1,13 @@
 Table of contents
 =================
 
-##### [Getting Started With SPLYNX](getting_started_guide/getting_started_guide.md)
+##### [Getting Started with Splynx](getting_started_guide/getting_started_guide.md)
   * [Splynx license](getting_started_guide/splynx_license/splynx_license.md)
   * [Hardware requirements](getting_started_guide/hardware_requirements/hardware_requirements.md)
   * [Install Splynx ISP Framework](getting_started_guide/install_splynx/install_splynx.md)
-  * [Dashboard](getting_started_guide/dashboard/dashboard.md)
-  * [Create swap file](getting_started_guide/create_swap_file/create_swap_file.md)
+    * [Create swap file](getting_started_guide/create_swap_file/create_swap_file.md)
+
+##### [Dashboard](dashboard/dashboard.md)
 
 ##### [Configuring Tariff Plans](configuring_tariff_plans/configuring_tariff_plans.md)
   * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
@@ -69,13 +70,6 @@ Table of contents
   * [Suppliers](inventory/suppliers/suppliers.md)
   * [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
   * [Vendors](inventory/vendors/vendors.md)
-
-##### [My Profile](my_profile/my_profile.md)
-  * [ Profile ](my_profile/profile/profile.md)
-  * [Customer search fields](my_profile/customer_search_fields/custom_search_fields.md)
-  * [Last Login](my_profile/last_login/last_login.md)
-  * [Scheduling](my_profile/scheduling/scheduling.md)
-  * [IMAP](my_profile/imap/imap.md)
 
 
 ##### [Networking](networking/networking.md)
@@ -147,11 +141,11 @@ Table of contents
 
 * [Weathermaps](networking/weathermaps/weathermaps.md)
 
-##### [Support and Messages](support_messages/support_messages.md)
-  * [Email messages](support_messages/email_messages/email_messages.md)
-  * [News](support_messages/news/news.md)
+##### [Messages](support_messages/support_messages.md)
+* [Inbox](support_messages/inbox/inbox.md)
+* [Mass sending](support_messages/email_messages/email_messages.md)
   * [SMS messages](support_messages/sms_messages/sms_messages.md)
-
+* [News](support_messages/news/news.md)
 
 ##### [Scheduling](scheduling/scheduling.md)
   * [Archive](scheduling/archive/archive.md)
@@ -330,6 +324,14 @@ Table of contents
   * [Cloud](configuration/tools/openvpn/cloud/routes/routes.md)
   * [Restore deleted customers](configuration/tools/restore_deleted_customers/restore_deleted_customers.md)
   * [Update GPS coordinates](configuration/tools/gps/gps.md)
+
+
+##### [My Profile](my_profile/my_profile.md)
+    * [ Profile ](my_profile/profile/profile.md)
+    * [Customer search fields](my_profile/customer_search_fields/custom_search_fields.md)
+    * [Last Login](my_profile/last_login/last_login.md)
+    * [Scheduling](my_profile/scheduling/scheduling.md)
+    * [IMAP](my_profile/imap/imap.md)
 
 
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)

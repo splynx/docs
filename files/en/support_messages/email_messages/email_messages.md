@@ -1,108 +1,90 @@
-Email messages
+Mass sending
 ==============
 
-The messages option in `Support → Messages` allows you to send an email to the customer(s) directly from Splynx using different templates and attaching financial or other documents.
+The messages option in `Messages → Mass sending → Create` allows you to send an email to the customer (-s) directly from Splynx using different templates and attaching financial or other documents.
 
 ![Main window](./main_window.png)
 
-It is necessary to configure email first in `Config → Main Configuration → Mail` before sending email to the customer. More information about email configuration can be found in - [Email config](configuration/main_configuration/email_config/email_config.md).
+It is necessary to configure SMTP first in `Config → Main → Email` before sending email to the customer. More information about email configuration can be found in - [Email config](configuration/main_configuration/email_config/email_config.md).
 
-**To create an email** click on Create in `Support → Messages`, a window will appear with the following fields:  
+**To create a new message** click on `Create` in `Messages → Mass sending`, a window will appear with the following fields:  
 
+* **Recipient** - to select who receives the message: *Customer* or *Lead*;
 
-* **ID** - ID of the customer. It has given by the system in a sequential order
+* **Portal login** - the login that customer uses to login to [Portal](customer_portal/customer_portal.md), e.g. `000040`;
 
+* **Status** - there are *New*, *Active*, *Inactive*, *Blocked* statuses of the customer and it's possible to *Select all*;
 
-* **Login** - user login
+* **Full name** - full name of the customer;
 
+* **Email** - email address of the customer;
 
-* **Status** - there are New, Active, Inactive, Blocked statuses of the customer
+* **Billing email** - email address of the customer for the billing correspondence;
 
+* **Phone number** - phone number of the customer;
 
-* **Type of billing** - Recurring payments or Prepaid options
+* **Category** -  could be `Individual` person or `Business`;
 
+* **Location** - [location](administration/main/locations/locations.md) of the customer;
 
-* **Full name** - full name of the customer
+* **Billing type** - *Recurring*, *Prepaid (Custom)* or *Prepaid (Daily)*;
 
+* **Partner** - [partner](administration/main/partners/partners.md), service provider of the customer
 
-* **Email** - email of the customer
+* **Tariff plans** - all available tariff plans in *Internet*, *Voice*, *Recurring*, *Bundles* categories;
 
+* **Service** - type of service: *Bundles*, *Internet*, *Voice*, *Recurring*;
 
-* **Phone number** - phone number of the customer
+* **Send to** - the options are: *Email*, *Customer portal*, *Customer portal & email*, *SMS*;
 
+* **Send to billing email** - toggle enables/disables to send message to customer's *Billing email*;
 
-* **Date added** - date customer was added
+* **Subject** - subject of the email;
 
+* **Message** - body of the message;
 
-* **Category** -  could be Private person or Company
+* **Templates** - [templates](configuration/system/templates/templates.md) of *Email*, *SMS*, *Customer portal* can be used;
 
+* **Attachments** - file (-s) sent along with a message;
 
-* **Partner** - partner, service provider of the customer
+* **Attach financial documents** - *Invoices*, *Proforma Invoices* and *Payments* from Splynx.
 
+You don't have to fill out all the fields to send an email to a customer. The easiest way is to enter a customer's **Portal login** or **Full name**, choose the **Send to** option, type a **Subject** and write a message.
 
-* **Location** - location of the customer
-
-
-* **Tariff plans** - all available tariff plans in Internet, Voice, Custom services
-
-
-* **Service** - Internet service, Voice service and Custom service
-
-
-* **Send to** - the options are: Email, Customer portal, Customer portal & Email, SMS
-
-
-* **Subject** - Subject of the email
-
-
-* **Message** - Body of the message
-
-
-* **Templates** - Templates of Customer portal and Mail templates can be used.
-
-
-* **Attachments** - individual attachments
-
-
-* **Attach financial documents** - Invoices, Proforma Invoices and Payments from Splynx.
-
-It is not necessary to fill in all fields to send an email to the customer. The easiest way is to enter a customer's ID, choose the "Send to" option, type a Subject and write a message.
- You can choose a message body from templates or write particular text to populate the body of the message. You can also type your own message and save it as a new template by clicking on "Save as new". There is also an option to attach financial documents of the customer (invoices, proforma invoices and payments receipts).
+You can choose a message body from templates or write particular text to populate the body of the message. You can also type your own message and save it as a new template by clicking on `Save as new` button or load the existing one. There is also an option to attach customer's financial documents.
 
 ![New email](./new_email.png)
 
-You can view your messages before sending it by clicking on the Preview option at the bottom of the page.
+You can view your message before sending it by clicking on the `Preview` button at the bottom of the page.
 
 ![Preview](./preview.png)
 
-When you click on the Send button, a window will appear with the confirmation details of the recipient.
+When you click on the `Send` button, a window will appear with the confirmation details of the recipient.
 
 ![Send message](./send_message.png)
 
-If you click on Send as test, a window will appear where the customer's ID has to be entered.
+If you click on `Send as test` button, a window will appear where the customer's **Portal login** has to be entered.
 
 ![Pop-up](./pop_up.png)
 
-There is also an option of mass sending, for example, you can choose particular recipients by Partner or Location.
+There is also an option of mass sending, for example, you can choose particular recipients by **Partner** or **Location**.
 
 ![Mass sending](./mass_sending.png)
 
-If you choose the sending option as Send to Customer portal or Customer Portal & email, customers will be able to read the email in their portal in the Messages section, where all incoming emails will be shown.
+If you choose the sending option as **Send to** `Customer portal` or `Customer portal & email`, customers will be able to read the email in their portal in the **Messages** section, where all incoming emails will be shown.
 
 ![Sent to customer](./sent_to_customer.png)
 
-By clicking on *View* <icon class="image-icon">![ViewIcon1](./icon1.png)</icon> the email will appear with the attachment enclosed.
+Click on the subject to open the message
 
 ![View message](./view_message.png)
 
-It is possible to track all emails that were sent in Splynx by navigating to `Support → Messages → History`. You can sort all items by their status (Any, New, Processing, Sent, Cancelled, Removed, Sent with error) or a period of time (Today, Yesterday, Last 7 days, This month, Last month, Custom Range).
+It is possible to track all emails that were sent in Splynx by navigating to `Messages → Mass sending → History`. You can sort all items by their **status** (*Any, New, Processing, Sent, Cancelled, Removed, Sent with error*) or by **period** of time (*Today, Yesterday, Last 7 days, Last 30 Days, This month, Last month, Custom Range*).
 
 ![History](./history.png)
 
-By clicking on the actions buttons <icon class="image-icon">![ViewIcon2](./icon2.png)</icon>, you'll be able to see the list customers' (in case of mass sending it will be a full list with customers' names), view the email or delete it.
+By clicking on the actions buttons <icon class="image-icon">![ViewIcon2](./icon2.png)</icon>, you'll be able to see the list customers, view the email or delete it.
 
-![Customer's list](./customers_list.png)
-
-It is also possible to check all recipients list by their IDs and Email addresses in `Administration → Logs → Email`, where you can set a particular period, type of email message or status.
+It is also possible to check all recipients list by their **IDs** and **Email** addresses in `Administration → Logs → Email`, where you can set a particular **period**, **type** of email message or its **status**.
 
 ![Recipients](./recipients.png)

@@ -120,12 +120,12 @@ Under this tab you can configure the geolocation of a router on the map by speci
 
 Splynx supports different router models from different producers. Below are configuration tutorials for vendors that are used most often and supported by us:
 
-* [Mikrotik routers](mikrotik/mikrotik.md)
+* [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
 
-* [Cisco routers](cisco/cisco.md)
+* [Cisco routers](networking/routers_settings/mikrotik/mikrotik.md)
 
-* [Juniper routers](juniper/juniper.md)
+* [Juniper routers](networking/routers_settings/juniper/juniper.md)
 
-* [Ubiquiti Edge routers](ubiquiti/ubiquiti.md)
+* [MikroTik Live bandwidth](networking/routers_settings/mikrotik_live_bandwidth/mikrotik_live_bandwidth.md)
 
-* [Other](other/other.md)
+* [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)

@@ -1,12 +1,15 @@
 Table of contents
 =================
 
-##### [Getting Started With SPLYNX](getting_started_guide/getting_started_guide.md)
+##### [Getting Started with Splynx](getting_started_guide/getting_started_guide.md)
   * [Splynx license](getting_started_guide/splynx_license/splynx_license.md)
   * [Hardware requirements](getting_started_guide/hardware_requirements/hardware_requirements.md)
   * [Install Splynx ISP Framework](getting_started_guide/install_splynx/install_splynx.md)
-  * [Dashboard](getting_started_guide/dashboard/dashboard.md)
-  * [Create swap file](getting_started_guide/create_swap_file/create_swap_file.md)
+    * [Create swap file](getting_started_guide/create_swap_file/create_swap_file.md)
+
+
+##### [Dashboard](dashboard/dashboard.md)
+
 
 ##### [Configuring Tariff Plans](configuring_tariff_plans/configuring_tariff_plans.md)
   * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
@@ -28,6 +31,7 @@ Table of contents
   * [Leads](crm/leads/leads.md)
   * [Quotes](crm/quotes/quotes.md)
 
+
 ##### [Customer Management](customer_management/customer_management.md)
   * [Adding new customer](customer_management/add_new_customer/add_new_customer.md)
   * [Customer information](customer_management/customer_information/customer_information.md)
@@ -42,11 +46,14 @@ Table of contents
   * [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
   * [Maps](customer_management/maps/maps.md)
 
+
 ##### [Customer Portal](customer_portal/customer_portal.md)
+
 
 ##### [Tickets](tickets/tickets.md)
   * [Tickets Overview](tickets/tickets_overview/tickets_overview.md)
   * [Tickets Recipients](tickets/tickets_recipients/tickets_recipients.md)
+
 
 ##### [Finance](finance/finance.md)
   * [Apply credit](finance/apply_credit/apply_credit.md)
@@ -62,6 +69,7 @@ Table of contents
   * [Refill cards](finance/refill_cards/refill_cards.md)
   * [Transactions](finance/transactions/transactions.md)
 
+
 ##### [Inventory](inventory/inventory.md)
   * [Dashboard](inventory/dashboard/dashboard.md)
   * [Items](inventory/items/items.md)
@@ -69,13 +77,6 @@ Table of contents
   * [Suppliers](inventory/suppliers/suppliers.md)
   * [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
   * [Vendors](inventory/vendors/vendors.md)
-
-##### [My Profile](my_profile/my_profile.md)
-  * [ Profile ](my_profile/profile/profile.md)
-  * [Customer search fields](my_profile/customer_search_fields/custom_search_fields.md)
-  * [Last Login](my_profile/last_login/last_login.md)
-  * [Scheduling](my_profile/scheduling/scheduling.md)
-  * [IMAP](my_profile/imap/imap.md)
 
 
 ##### [Networking](networking/networking.md)
@@ -137,11 +138,10 @@ Table of contents
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 
 * [Routers settings](networking/routers_settings/routers_settings.md)
-  * [Cisco routers](networking/routers_settings/cisco/cisco.md)
-  * [Juniper routers](networking/routers_settings/juniper/juniper.md)
   * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)
+  * [Cisco routers](networking/routers_settings/mikrotik/mikrotik.md)
+  * [Juniper routers](networking/routers_settings/juniper/juniper.md)
   * [MikroTik Live bandwidth](networking/routers_settings/mikrotik_live_bandwidth/mikrotik_live_bandwidth.md)
-  * [Other routers](networking/routers_settings/other/other.md)
   * [Ubiquiti Edge routers](networking/routers_settings/ubiquiti/ubiquiti.md)
 
 
@@ -149,10 +149,13 @@ Table of contents
 
 * [Weathermaps](networking/weathermaps/weathermaps.md)
 
-##### [Support and Messages](support_messages/support_messages.md)
-  * [Email messages](support_messages/email_messages/email_messages.md)
+
+
+##### [Messages](support_messages/support_messages.md)
+  * [Inbox](support_messages/inbox/inbox.md)
+  * [Mass sending](support_messages/email_messages/email_messages.md)
+    * [SMS messages](support_messages/sms_messages/sms_messages.md)
   * [News](support_messages/news/news.md)
-  * [SMS messages](support_messages/sms_messages/sms_messages.md)
 
 
 ##### [Scheduling](scheduling/scheduling.md)
@@ -164,14 +167,15 @@ Table of contents
   * [Tasks](scheduling/tasks/taks.md)
   * [Workflows](scheduling/workflows/workflows.md)
 
-##### [Voice](voice/voice.md)
 
+##### [Voice](voice/voice.md)
   * [Auto CDR Processing](voice/auto_cdr_processing/auto_cdr_processing.md)
   * [Prefixes](voice/prefixes/prefixes.md)
   * [Processing](voice/processing/processing.md)
   * [Rates](voice/rates/rates.md)
   * [Tariff Settings](voice/tariff_settings/tariff_settings.md)
   * [Voice Categories](voice/voice_categories/voice_categories.md)
+
 
 ##### [Administration](administration/administration.md)
 * [Splynx](administration/main/main.md)
@@ -223,7 +227,6 @@ Table of contents
 
 ##### [Configuration](configuration/configuration.md)
 
-
 * [System](configuration/system/system.md)
   * [Additional fields](configuration/system/additional_fields/additional_fields.md)
   * [Company Information](configuration/system/company_information/company_information.md)
@@ -266,7 +269,6 @@ Table of contents
 
 * [Inventory](configuration/inventory/inventory.md)
   * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
-
 
 * [Finance configuration](configuration/finance/finance.md)
   * [Automation](configuration/finance/automation/automation.md)
@@ -334,6 +336,14 @@ Table of contents
   * [Update GPS coordinates](configuration/tools/gps/gps.md)
 
 
+##### [My Profile](my_profile/my_profile.md)
+  * [Profile](my_profile/profile/profile.md)
+  * [Customer search fields](my_profile/customer_search_fields/custom_search_fields.md)
+  * [Last Login](my_profile/last_login/last_login.md)
+  * [Scheduling](my_profile/scheduling/scheduling.md)
+  * [IMAP](my_profile/imap/imap.md)
+
+
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)
   * [Agents and Resellers](addons_modules/agents_resellers/agents_resellers.md)
   * [Baicells LTE](addons_modules/baicells/baicells.md)
@@ -353,6 +363,7 @@ Table of contents
   * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
   * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
   * [Xero accounting](addons_modules/xero/xero.md)
+
 
 ##### [Online backups](online_backups/online_backups.md)
 
@@ -379,6 +390,7 @@ Table of contents
   * [SEPA debit orders](payment_systems/sepa/sepa.md)
   * [Stripe online payments](payment_systems/stripe/stripe.md)
   * [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
+
 
 ##### [Splynx mobile applications](apps/apps.md)
   * [Scheduling Application](apps/scheduler_app/scheduler_app.md)

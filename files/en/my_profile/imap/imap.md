@@ -66,7 +66,8 @@ Here we have ad administrator's personal SMTP settings(for email sending).
 
 * **Reply to** - here you can specify an email address to reply;
 
-* **Use system SMTP** - send messages to a customer using system email configuration under _Config/Main/Email_. If enabled next parameters as _SMTP server_, _SMTP port_, _SMTP security mode_ and _SMTP authentication type_ will be copied from system settings;
+* **Use system SMTP** - allows to send messages to a customer using system email configuration in `Config → Main → Email`. The global SMTP config settings will be copied to the appropriate fields such as _SMTP server_, _SMTP port_, _SMTP security mode_ and _SMTP authentication type_. Double check if the email address in the field `Sender's email` has the correct format e.g. `username@mailserver.com` in `Config → Main → Email`, exactly this value will be used to send mail, not the value from `Username` field, where the simple login can be used as well.
+
 
 * **SMTP server** - mail server address;
 

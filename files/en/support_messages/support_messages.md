@@ -9,6 +9,6 @@ Description of each section you can find at following links:
 * [Inbox](support_messages/inbox/inbox.md)
 
 * [Mass sending](support_messages/email_messages/email_messages.md)
-  * [SMS messages](support_messages/sms_messages/sms_messages.md)
+  * [→ SMS messages](support_messages/sms_messages/sms_messages.md)
 
 * [News](support_messages/news/news.md)

@@ -16,7 +16,7 @@ Quick and easy way to upload files onto Splynx.
 * [ Templates](configuration/system/templates/templates.md)
 In this section, we store templates which are used by the system for all different kinds elements, like invoices, notifications, payment receipts etc.
 
-  * [ Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
+  * [→ Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
  Examples of variables that can be used in templates are displayed here.
 
 * [ Company information](configuration/system/company_information/company_information.md)

@@ -130,6 +130,12 @@ Table of contents
 * [Monitoring (Hardware)](networking/monitoring/monitoring.md)
 
 * [TR-069 (ACS)](networking/tr069_acs/tr069_acs.md)
+  * [ACS services and server configuration](networking/tr069_acs/services_server_config/services_server_config.md)
+  * [Device connection, types, groups and auto-provision flow](networking/tr069_acs/dev_connection_types_groups_provision/dev_connection_types_groups_provision.md)
+  * [Attributes](networking/tr069_acs/attributes/attributes.md)
+  * [Files and upgrade](networking/tr069_acs/files_upgrade/files_upgrade.md)
+  * [Key features](networking/tr069_acs/key_features/key_features.md)
+  * [Troubleshooting](networking/tr069_acs/troubleshooting/troubleshooting.md)
 
 * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
 

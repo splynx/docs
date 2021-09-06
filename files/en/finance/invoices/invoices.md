@@ -25,7 +25,7 @@ Let's consider the invoice statuses in details:
 | <icon class="image-icon">![](unpaid.png)</icon> | the invoice has been created, but the customer has not made any payments towards the balance |
 | <icon class="image-icon">![](pending.png)</icon> | the invoice has not been paid and is not yet past due but payment is sent for processing. Once the invoice payment is processed successfully, the invoice will be updated to either a `Paid` or `Unpaid` status. If the due period has been exceeded and the amount hasn't been paid, the status will be changed to `Pending Overdue` or `Overdue` status  |
 | <icon class="image-icon">![](paid.png)</icon> | a payment has been successfully collected |
-| <icon class="image-icon">![](paid_from_account_balance.png)</icon> | the invoice was paid from customer's balance, a status is applied only if customer has enough funds |
+| <icon class="image-icon">![](paid.png)</icon> <icon class="image-icon">![](from_account_balance.png)</icon> | the invoice was paid from customer's balance, a status is applied only if customer has enough funds |
 | <icon class="image-icon">![](overdue.png)</icon> | no payment was received for this invoice and the `Billing due` date has already passed |
 | <icon class="image-icon">![](deleted.png)</icon> | the invoice was marked as deleted. If `Delete transactions` toggle is enabled and we apply the `Mark as delete` option for unpaid invoice, the invoice will be marked as deleted and its auto transaction (-s) will be removed, otherwise (toggle is disabled) the invoice's transaction won't be removed. The manual transaction (-s) will remain in any case. |
 

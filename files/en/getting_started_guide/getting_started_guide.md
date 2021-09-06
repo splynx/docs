@@ -18,4 +18,4 @@ First step to joining the evolution, obtain a Splynx license.
 You are ready for this! Let's begin.
 
 * [ Install Splynx ISP Framework](getting_started_guide/install_splynx/install_splynx.md)
-  * [ Create swap file ](getting_started_guide/create_swap_file/create_swap_file.md)
+  * [→ Create swap file ](getting_started_guide/create_swap_file/create_swap_file.md)

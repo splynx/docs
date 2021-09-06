@@ -15,9 +15,17 @@ All issued Proforma invoices in the system can be found in `Finance → Proforma
 
 ![proforma invoices list](customer_list.png)
 
-You can also filter proforma invoices in finance to view specific data by period, status or partner.
+You can also filter proforma invoices in finance to view specific data by its **number**, **period**, **status** or **partner**.
 
 ![Period](period.png)
+
+Let's consider the proforma invoice statuses in details:
+
+| Status  | Description |
+| ------------ | ------------ |
+| <icon class="image-icon">![](unpaid.png)</icon>  | the invoice has been created, but the customer has not made any payments towards the balance |
+| <icon class="image-icon">![](pending.png)</icon>   | the proforma invoice has not been paid and is not yet past due but payment is sent for processing. Once the invoice payment is processed successfully, the proforma invoice will be updated to either a `Paid` or `Unpaid` status.|
+| <icon class="image-icon">![](paid.png)</icon>   | a payment has been successfully collected |
 
 Changes can be made to all proforma invoice with the icons <icon class="image-icon">![Icons](invoices_icons.png)</icon> in the "*Actions*" column.
 

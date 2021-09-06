@@ -13,9 +13,9 @@ The billing module is separated into the following sections, please follow the l
   * [ Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
 
   * [ Billing engine](finance/billing_engine/billing_engine.md)
-    * [Prepaid Billing](finance/billing_engine/prepaid_billing/prepaid_billing.md)
-    * [Recurring Billing](finance/billing_engine/recurring_billing/recurring_billing.md)
-    
+    * [→ Prepaid Billing](finance/billing_engine/prepaid_billing/prepaid_billing.md)
+    * [→ Recurring Billing](finance/billing_engine/recurring_billing/recurring_billing.md)
+
 
   * [ Change service](finance/change_service/change_service.md)
 

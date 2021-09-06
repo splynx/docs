@@ -5,11 +5,11 @@ The Voice Module is designed for customized CDR processing according to your own
 
 * [Auto CDR Processing](voice/auto_cdr_processing/auto_cdr_processing.md)
 
- * [Auto CDR Processing Examples](voice/auto_cdr_processing/examples/examples.md)
+ * [→ Auto CDR Processing Examples](voice/auto_cdr_processing/examples/examples.md)
 
 * [Prefixes](voice/prefixes/prefixes.md)
 
-  * [Prefixes Examples](voice/prefixes/examples/examples.md)
+  * [→ Prefixes Examples](voice/prefixes/examples/examples.md)
 
 * [Processing](voice/processing/processing.md)  
 

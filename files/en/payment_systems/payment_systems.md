@@ -13,8 +13,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Gocardless.com](payment_systems/gocardless/gocardless.md)
 
-* [iCharge (Xilo payments)](payment_systems/iCharge/iCharge.md)
-
 * [Integrapay](payment_systems/integrapay/integrapay.md)
 
 * [IPpay](payment_systems/ippay/ippay.md)
@@ -36,8 +34,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Paystack](payment_systems/paystack/paystack.md)
 
-* [PayU Africa](payment_systems/payu/payu.md)
-
 * [Pesapal](payment_systems/pesapal/pesapal.md)
 
 * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
@@ -46,5 +42,3 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 [comment]: # (→ SEPA debit order in Spanish)
 
 * [Stripe](payment_systems/stripe/stripe.md)
-
-* [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)

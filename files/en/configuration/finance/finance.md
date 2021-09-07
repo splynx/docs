@@ -9,6 +9,8 @@ Please follow the links below for tutorial pages on each part of Finance configu
 
 * [ Automation](configuration/finance/automation/automation.md)
 
+* [Change plan](configuration/finance/change_plan/change_plan.md)
+
 * [ Cost categories](configuration/finance/cost_categories/cost_categories.md)
 
 * [ Finance settings](configuration/finance/finance_settings/finance_settings.md)

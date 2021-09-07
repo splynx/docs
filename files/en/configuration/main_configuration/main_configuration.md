@@ -23,8 +23,6 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [Preferences](configuration/main_configuration/preferences/preferences.md)
 
-* [Prepaid monthly](configuration/main_configuration/prepaid_monthly/prepaid_monthly.md)
-
 * [SMS config](configuration/main_configuration/sms_config/sms_config.md)
 
 * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)

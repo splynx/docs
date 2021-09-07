@@ -45,8 +45,7 @@ Here you need to specify:
 
 *If API Authorization is used - Mikrotik API should be enabled and configured on the _Mikrotik_ tab and in Router settings.*
 
-
-**API ACCOUNTING** - Splynx will login every 5 minutes (can't be changed) and gathers statistics from the Mikrotik router using Mikrotik API;
+**API ACCOUNTING** - Splynx will log in every 5 minutes (can't be changed) and gather statistics from the Mikrotik router using Mikrotik API;
 
 **RADIUS ACCOUNTING** - Router sends accounting statistics every **n** seconds to the Radius (Splynx) server using RADIUS accounting packets. **n** is a configurable value. It can be configured per NAS type under *Config / Networking / Radius / NAS Type / Load / Accounting interval (in sec)*.
 

@@ -19,7 +19,7 @@ In the network configuration section, the following categories are available for
 
 * [ Mikrotik API](configuration/network/mikrotik_api/mikrotik_api.md)
 
-* [ Mikrotik Traffic Flow Configuration](configuration/network/netflow_accounting/netflow_accounting.md)
+* [NetFlow accounting](configuration/network/netflow_accounting/netflow_accounting.md)
 
 * [ Monitoring config](configuration/network/monitoring_config/monitoring_config.md)
 
@@ -30,3 +30,5 @@ In the network configuration section, the following categories are available for
 * [ Radius](configuration/network/radius/radius.md)
 
 * [Radius Extended](configuration/network/radius_extended/radius_extended.md)
+
+* [Traffic class](configuration/network/traffic_class/traffic_class.md)

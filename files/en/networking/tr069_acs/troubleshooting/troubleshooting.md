@@ -99,10 +99,80 @@ For example: the current value is - `2021-09-03 15:50:24`, it should be changed 
 
 ![](acs_upgrade_records.png)
 
-After that press **Save** button.
+Then press **Save** button. And run the following command in Terminal:
+
+```
+php system/script/cron five-minutely
+```
+
 Double check the device status in `Networking → TR-069 (ACS) → Upgrade → View ACS upgrade batch`, the table **Devices for upgrade**.
 
 ![](device_status.png)
+
+</p>
+</details>
+
+------------
+
+<details>
+<summary><b>Install GenieACS manually</b></summary>
+<p markdown="1">
+
+**NOTE:** Make sure you’re using Node.js v12 or higher on your server:
+
+```
+node --version
+```
+
+To install **Node.js v12** use the following commands in Terminal:
+
+```
+sudo apt update && sudo apt -y upgrade
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt -y install nodejs
+```
+
+To install **GenieACS** use the next commands:
+
+```
+sudo su
+curl -s https://splynx.com/splynx.gpg.key | apt-key add -
+echo 'deb https://deb.splynx.com/ splynx splynx3_1' > /etc/apt/sources.list.d/splynx_3_1.list
+apt update
+apt install splynx-genieacs
+
+```
+
+```
+cd /var/www/splynx/system/nodejs/
+npm i
+```
+
+If the error occurs, it's required to install `mongodb-server` manually and try to install `splynx-genieacs` again.
+
+![](mongodb.png)
+
+
+After that, add these lines to `/etc/sudoers.d/splynx` file (after *OpenVPN tools* block)
+
+```
+sudo nano /etc/sudoers.d/splynx
+```
+
+```
+# Splynx ACS tools
+splynx ALL=(ALL)     NOPASSWD: SETENV: /var/www/splynx/system/script/tools acs *
+```
+
+and save changes.
+
+Restart services:
+
+```
+sudo service splynx_transport restart && sudo service splynx_node restart
+```
+
 
 </p>
 </details>

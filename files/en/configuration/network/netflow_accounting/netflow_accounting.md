@@ -1,11 +1,11 @@
-Mikrotik Traffic Flow Configuration
+NetFlow accounting
 ===========
 
 Splynx supports *NetFlow* protocol and calculates statistic information about packets which pass through the Mikrotik router. In this article will be show how to configure your router and Splynx as a collector to receive a statistics for calculation.
 
 Since Traffic Flow is fully compatible with *Cisco Netflow*, it can be used by various utilities that are designed for Netflow e.g. *ntop*, *flow-tools*, *ManageEngine NetFlow Analyzer* etc.
 
-### Mikrotik configuration
+### Mikrotik Traffic Flow Configuration
 
 The first thing to do is to enable *Traffic Flow* on the MikroTik and choose what router interface (-s) to monitor, all of these actions can done from the command line or from the GUI.
 
@@ -16,6 +16,8 @@ To configure **through the GUI** - open [Winbox](https://mt.lv/winbox64) and con
 In *Traffic Flow Settings* window, put the check mark near the option `Enabled`, set the interface to where your customer traffic is located.
 
 ![](img_2.png)
+
+You might also be interested in [Traffic class](configuration/network/traffic_class/traffic_class.md) tutorial that shows how to exclude the inbound and outbound traffic for specific network (-s) from counting.
 
 The other options that are configurable here:
 

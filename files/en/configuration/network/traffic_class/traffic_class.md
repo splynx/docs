@@ -11,7 +11,7 @@ To **create a new traffic class** with the new network (-s), open `Config → Ne
 
 ![](img_1.png)
 
-In the new window, type your traffic class **name**, the related **comment** and specify the **network** address (-es) and its mask from which traffic should not be counted. Please mind that each network address should be added from the new line, the adding of the domain names is not supported.
+In the new window, type your traffic class **name**, the related **comment** and specify the **network** address (-es) and its [mask](https://en.wikipedia.org/wiki/Subnetwork) from which traffic should not be counted. Please mind that each network address should be **added from the new line**, the adding of the **domain names are not supported**.
 
 ![](img_2.png)
 
@@ -23,7 +23,7 @@ After that we should add the newly created traffic class to some of our **Intern
 
 ![](img_3.png)
 
-In the new window, find the field `Exclude traffic classes from accounting` and select the name of the previously created traffic class from the drop-down list. After the `Save` button is pressed, the traffic in selected networks will begin to be ignored immediately in those services that use this tariff.
+In the new window, find the field `Exclude traffic classes from accounting` and select the name of the previously created traffic class from the drop-down list. After the `Save` button is pressed, the traffic in selected networks will begin to **be ignored immediately in those services that use this tariff**.
 
 ![](img_4.png)
 

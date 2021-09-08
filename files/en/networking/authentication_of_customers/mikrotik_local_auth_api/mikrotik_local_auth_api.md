@@ -80,6 +80,8 @@ When the authentication type is configured and Splynx has pushed the rules to th
 
 ![Accounting](accounting.png)
 
+You might also be interested in [Traffic class](configuration/network/traffic_class/traffic_class.md) tutorial that shows how to exclude the inbound and outbound traffic for specific network (-s) from counting.
+
 ### Troubleshooting
 
 If a PPP secret or DHCP lease, or Hotspot user is not created on the router via API, please check if the IP address is specified in the customer's internet service settings. Also, the router should be specified there. For DHCP, be sure to check that the MAC address has been set.

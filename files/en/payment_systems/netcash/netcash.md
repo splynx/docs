@@ -51,13 +51,11 @@ The rest of the parameters doesn't have to be changed or you can configure an ad
 
 After the configuration of the addon, entry points(widgets for portal) should be enabled:
 
-Navigate to **Config / Integrations / Module list**, locate or search for the "splynx-netcash" module and click on the entry points icon in the *Actions* column:
-
-
-![entry points](edit_entry_points.png)
-
 ![enable entry](enable_entry.png)
 
+Navigate to **Config / Integrations / Module list**, locate or search for the "splynx-netcash" module and click on the entry points icon in the *Actions* column:
+
+![entry points](edit_entry_points.png)
 
 Entry points (widgets) on the customer's portal for customers to pay their invoices can be enabled/disabled here.
 

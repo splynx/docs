@@ -29,13 +29,133 @@ Let's consider the invoice statuses in details:
 | <icon class="image-icon">![](overdue.png)</icon> | no payment was received for this invoice and the `Billing due` date has already passed |
 | <icon class="image-icon">![](deleted.png)</icon> | the invoice was marked as deleted. If `Delete transactions` toggle is enabled and we apply the `Mark as delete` option for unpaid invoice, the invoice will be marked as deleted and its auto transaction (-s) will be removed, otherwise (toggle is disabled) the invoice's transaction won't be removed. The manual transaction (-s) will remain in any case. |
 
-* **To print or to export the list of invoices** for accounting purposes, go to `Finance → Invoices` and click on `Export`.
+---
 
-  ![Invoices Export](export_invoices.png)
+To **export** the list of invoices for accounting purposes, open `Finance → Invoices` and click on `Export` button.
+
+![Invoices Export](export_invoices.png)
 
 In the export window, you can choose the period of time and the export type/format (PDF, CSV, external handler, etc.).
 
 ![Invoices Details](export_details.png)
+
+Alternatively, once you have selected the required invoices, you can export them using one of the following actions `One PDF file`, `PDF files in archive`or `Export` in the mass `Actions` drop down menu.
+
+![](mass_actions.png)
+
+---
+If one of the [payment add-ons](payment_systems/payment_systems.md) is configured for customers in Splynx, you can manually **charge** the invoices all at once using the `Charge` button at the top right corner of the table or you can use the same named option in the mass `Actions` drop down menu by selecting the required invoices before.
+
+In new window specify the necessary options for invoice charge:
+
+![](manually_charge_invoice.png)
+
+![](mass_actions_charge.png)
+
+- **Period** - the time period when the invoices were created;
+
+- **Partners** - the service [provider](administration/main/partners/partners.md) to which the customer is assigned to;
+
+- **Location** - the customer [location](administration/main/locations/locations.md);
+
+- **Customer payment type** - the [method](configuration/finance/payment_methods/payment_methods.md) that is used by customer to make payments;
+
+- **Status** - the status of invoice, by default is used `Unpaid`;
+
+- **Total** - the total sum of the invoice, the amount can be specified by `=`(equal to), `<`(less than) and `>` (greater than) sings;
+
+- **Customer ID** - the customer id within the Splynx;
+
+- **Invoice number** - the number of invoice in Splynx, usually the format `{year}{partner_id|2}{next|6}` is used by default, it can be changed in `Config → Finance → Settings`;
+
+- **External handler** - requires one of the [payment add-ons](payment_systems/payment_systems.md) in Splynx to be installed, as a result this determines which handler we can choose here;
+
+- **External handler parameters** - the additional parameters that can be used with a specific handler. These may vary depending on the selected handler. For example with `paymentexpress` handler we can set `chunk size` parameter in order to split generated CSV file (used only for *PxPay* processing interface in *Payment Express*); With `netcash_do` handler we can set `action date` parameter to specify the date of affected transaction (-s), etc. ;
+
+- **Confirm charge** - the toggle allows to confirm the charge;
+
+- **Preview** - the button helps to check the invoices information before performing the charge.
+
+Once charged successfully, bank statements and batch files will be created and sent to payment add-on side and the charged invoices will change to a *Pending* state. It takes some time to receive the payments or bounced payments.
+
+To download the charge result files click on the link under the `Preview` button or click on the <icon class="image-icon">![](download.png)</icon> icon in *Charge history* tab.
+
+![](charge_result.png)
+
+![](charge_history_tab.png)
+
+Splynx checks for any payments and allocates them to the correct invoice, as a result the invoices will become *paid* or *unpaid*. You can check the status of the bank statements for the charge invoices in `Finance → Bank Statements → History`
+
+![](check_bank_statements.png)
+
+---
+
+The invoice charging process can be automated using the **Auto charge filter**. Open `Finance → Invoices`, click on `Export` button and select `AUTO CHARGE FILTERS` tab. Then press `Add` button.
+
+![](auto_charge_filter1.png)
+
+**NOTE:**
+**Auto charge filter doesn't require any confirmation from the administrator, so use it with caution.**
+
+**To make Auto Charge work properly you should navigate to `Config → Finance → Automation` and ensure that the value in `Date to use on finance elements` field is set to `Real date of issuing`.**
+
+![](real_date_issue.png)
+
+
+<details>
+<summary><b>Explanation</b></summary>
+<p markdown="1">
+
+Why we **cannot** use `Date to use on finance elements` value that is equal to `Billing date` with Auto charge filter?
+
+Let's imagine that we have the default settings in `Config → Finance → Automation`:
+
+`Confirmation period (days)` = **3**;
+
+`Date to use on finance elements` = **Billing date**;
+
+And `Billing day` = **1** for the customers in Splynx (the option is located in  `Config → Finance → Settings`)
+
+Consequently, the invoices will be auto-generated and will be visible for customers on the 4th day of the next month, but the date creation of such invoices is the 1st day of the month. The Auto Charge filter won't find the invoices on 1st day of the month because they are not visible to customers. When the 4th day arrives, the Auto filter will not charge the invoices because its creation date is the 1st day of the month.
+
+
+</p>
+</details>
+
+In new window specify the necessary options for auto charge filter:
+
+![](auto_charge_filter2.png)
+
+- **Enabled** - the toggle to enable/disable the filter;
+
+- **Period** - date when the filter starts;
+  - **Day of issue** - the same day when the invoice is created;
+  - **Day after issue** - the day after the invoice is created;
+  - **Day before due date** -the day before the invoice is created;
+  - **On due date** - the amount of days after the billing day the customer has to make payments before getting blocked (usually it's 15th day of the month);
+  - **+N days after issue** - X days after the invoice was created, the number can be specified in new field **Days after issue**;
+
+- **Partners** - the service [provider](administration/main/partners/partners.md) to which the filter is applied to;
+
+- **Location** - the customer [location](administration/main/locations/locations.md) to which the filter is applied to;
+
+- **Customer payment type** - the customer's [method](configuration/finance/payment_methods/payment_methods.md) to make payments;
+
+- **Status** - the status of the invoice to which the filter applies;
+
+- **Total** - the total sum of the invoice to which the filter applies, the amount can be specified by `=`(equal to), `<`(less than) and `>` (greater than) sings;
+
+- **Customer ID** - the customer id within the Splynx;
+
+- **External handler** - requires one of the [payment add-ons](payment_systems/payment_systems.md) in Splynx to be installed, as a result this determines which handler we can choose here. **External handler parameters** can be specified as well for some add-ons;
+
+Then, press `Save` button. To edit the created filter click on <icon class="image-icon">![Edit](editinvoice.png)</icon> icon.
+
+![](auto_charge_filter3.png)
+
+The filter will be triggered on the selected day in **Period** field at 11:59 PM. The result of the charge execution can be checked in *Charge history* tab, the value in *Source* column should be `auto`.
+
+![](auto_charge_filter4.png)
 
 ---
 

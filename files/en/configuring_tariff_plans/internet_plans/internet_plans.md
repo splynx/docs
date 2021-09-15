@@ -50,7 +50,7 @@ Here is a description of all available options:
 
 * **Available in self-registration** -  enables/disables the availability of the tariff when customers sign up for services via the social/self-registration add-on.
 
-Once internet plans has been created, it is possible to configure [CAP](../capped_plans/capped_plans.md) or [FUP](../fair_usage_policy/fair_usage_policy.md) rules, see plan usage graphs and change plan for all services:
+Once internet plans has been created, it is possible to configure [CAP](configuring_tariff_plans/capped_plans/capped_plans.md) or [FUP](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md) rules, see plan usage graphs and change plan for all services:
 
 ![actions](actions.png)
 

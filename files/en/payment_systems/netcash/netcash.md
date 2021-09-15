@@ -1,15 +1,15 @@
 Netcash
 ====================
 
-Using the Netcash addon, customers can pay for their invoices with a few clicks from the customer portal.
+Using the Netcash add-on, customers can pay for their invoices with a few clicks from the customer portal.
 
-The addon can be install in two methods, via the CLI or Web UI of your Splynx server.
+The add-on can be install in two methods, via the CLI or Web UI of your Splynx server.
 
-To install the addon via the Web UI, navigate to **Config → Integrations → Add-ons**
+To install the add-on via the Web UI, navigate to **Config → Integrations → Add-ons**
 
 ![icon](icon.png)
 
-Locate or search for the "splynx-netcash" addon and click on the install button in the *Actions* column:
+Locate or search for the "splynx-netcash" add-on and click on the install button in the *Actions* column:
 
 ![install](install.png)
 
@@ -20,11 +20,11 @@ apt update
 apt install splynx-netcash
 ```
 
-After the installation  process has completed, the addon has to be configured, to do this navigate to **Config → Integrations → Modules list**
+After the installation  process has completed, the add-on has to be configured, to do this navigate to **Config → Integrations → Modules list**
 
 ![modules list](icon_modules.png)
 
-Locate or search for the "splynx-netcash" addon and click on the edit button in the *Actions* column:
+Locate or search for the "splynx-netcash" add-on and click on the edit button in the *Actions* column:
 
 ![netcash](edit_module.png)
 
@@ -49,7 +49,7 @@ Where *yoursplynx.net* your Splynx domain name.
 
 The rest of the parameters doesn't have to be changed or you can configure an additional service fee(if needed) and other common settings.
 
-After the configuration of the addon, entry points(widgets for portal) should be enabled:
+After the configuration of the add-on, entry points(widgets for portal) should be enabled:
 
 ![enable entry](enable_entry.png)
 

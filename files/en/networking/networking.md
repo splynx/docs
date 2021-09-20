@@ -35,7 +35,7 @@
     * [→ Key features](networking/tr069_acs/key_features/key_features.md)
     * [→ Troubleshooting](networking/tr069_acs/troubleshooting/troubleshooting.md)
 
- * [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
+ * [OpenVPN Connection between Splynx and router](../configuration/tools/openvpn/openvpn.md)
 
  * [Radius customization](networking/radius_customization/radius_customization.md)
 

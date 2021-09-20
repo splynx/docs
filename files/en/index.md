@@ -137,8 +137,6 @@ Table of contents
   * [Key features](networking/tr069_acs/key_features/key_features.md)
   * [Troubleshooting](networking/tr069_acs/troubleshooting/troubleshooting.md)
 
-* [PPTP Connection between Splynx and Mikrotik](networking/pptp_splynx_mikrotik/pptp_splynx_mikrotik.md)
-
 * [Radius server customization](networking/radius_customization/radius_customization.md)
 
 * [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)

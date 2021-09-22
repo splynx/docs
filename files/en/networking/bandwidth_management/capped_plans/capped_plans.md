@@ -88,6 +88,22 @@ Under the `Source` field you can select which data will be used for the notifica
 
 Click on the `Add notification` button to add a new notification or `Load notifications from another tariff` to load previously created notifications from another tariff plan.
 
+## Difference between auto top-ups and compensate overusage
+
+### Auto top-ups:
+
+* If the customer reached top-ups limit (*Amount* field), Splynx won't apply any new top-ups for this customer (option *Auto top-up trigger value* won't be used);
+
+* The auto top-up feature won't cover overusage. Overused data will be free for this customer. For example if customer has a CAP limit 1GB, but due to some reasons this customer has used 1.2GB - the service will be blocked. Once it's blocked system applies an auto top-up 100MB so customer could use some internet. After this the customer will be able to use 100MB but that 200MB of overusage will be free;
+
+* The system can apply a top-up only 1 time per 5 minutes.
+
+### Compensate overusage
+
+* This option *Compensate for over-usage with a top-up* can ignore max amount of auto top-ups per month if the overusage is more than *Auto top-up trigger value*;
+
+* This option will cover overusage. Overused data won't be free for this customer. For example if customer has a CAP limit 1GB, but due to some reasons this customer has used 1.2GB - the service will be blocked. Once it's blocked system will do a compensate with step 10MB ( 200MB of overusage = 20 x 10MB top-ups ). Each top-up will be added to the invoice so customer will pay for 200MB overused data;
+
 ## Preview and test configuration
 
 Once CAP or FUP is configured you can preview and test settings under the `FUP preview and test` tab. Here you need to select "Day of the week", "Time of the day" (1), some values for "download/upload" (2) and "Online time" and click on the "Preview" button (3) to view the result.
@@ -184,5 +200,3 @@ For this option to be available, permissions in the portal should be granted for
 * **Pay before top-up** - select whether the customer has to pay for the top-up before the data can be used or not.
 
 **Global CAP settings can be adjusted under [Config -> Main -> CAP](configuration/main_configuration/cap/cap.md)**
-
-

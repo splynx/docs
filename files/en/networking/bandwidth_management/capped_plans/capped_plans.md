@@ -64,6 +64,22 @@ On this screenshot, you can see 2 top-up plans: 5GB and 10GB. Use the buttons `A
 
 To create a new plan you need to specify the data amount, price, validity, transaction category, and enable/disable the option to add this transaction onto an invoice.
 
+## Difference between auto top-ups and compensate overusage
+
+### Auto top-ups:
+
+* If the customer reached top-ups limit (*Amount* field), Splynx won't apply any new top-ups for this customer (option *Auto top-up trigger value* won't be used);
+
+* The auto top-up feature won't cover overusage. Overused data will be free for this customer. For example if customer has a CAP limit 1GB, but due to some reasons this customer has used 1.2GB - the service will be blocked. Once it's blocked system applies an auto top-up 100MB so customer could use some internet. After this the customer will be able to use 100MB but that 200MB of overusage will be free;
+
+* The system can apply a top-up only 1 time per 5 minutes.
+
+### Compensate overusage
+
+* This option *Compensate for over-usage with a top-up* can ignore max amount of auto top-ups per month if the overusage is more than *Auto top-up trigger value*;
+
+* This option will cover overusage. Overused data won't be free for this customer. For example if customer has a CAP limit 1GB, but due to some reasons this customer has used 1.2GB - the service will be blocked. Once it's blocked system will do a compensate with step 10MB ( 200MB of overusage = 20 x 10MB top-ups ). Each top-up will be added to the invoice so customer will pay for 200MB overused data;
+
 ## Notifications
 
 It's really important to inform the customer about the amount of data used to avoid "surprises" when the Internet is not available and the customer wasn't notified.
@@ -87,22 +103,6 @@ Under the `Source` field you can select which data will be used for the notifica
 * **Auto top-up action** - inform the customer about applied auto top-up.
 
 Click on the `Add notification` button to add a new notification or `Load notifications from another tariff` to load previously created notifications from another tariff plan.
-
-## Difference between auto top-ups and compensate overusage
-
-### Auto top-ups:
-
-* If the customer reached top-ups limit (*Amount* field), Splynx won't apply any new top-ups for this customer (option *Auto top-up trigger value* won't be used);
-
-* The auto top-up feature won't cover overusage. Overused data will be free for this customer. For example if customer has a CAP limit 1GB, but due to some reasons this customer has used 1.2GB - the service will be blocked. Once it's blocked system applies an auto top-up 100MB so customer could use some internet. After this the customer will be able to use 100MB but that 200MB of overusage will be free;
-
-* The system can apply a top-up only 1 time per 5 minutes.
-
-### Compensate overusage
-
-* This option *Compensate for over-usage with a top-up* can ignore max amount of auto top-ups per month if the overusage is more than *Auto top-up trigger value*;
-
-* This option will cover overusage. Overused data won't be free for this customer. For example if customer has a CAP limit 1GB, but due to some reasons this customer has used 1.2GB - the service will be blocked. Once it's blocked system will do a compensate with step 10MB ( 200MB of overusage = 20 x 10MB top-ups ). Each top-up will be added to the invoice so customer will pay for 200MB overused data;
 
 ## Preview and test configuration
 

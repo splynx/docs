@@ -1,4 +1,4 @@
-Deals
+Deals[Removed in Splynx 3.1]
 ====
 Deals are commitments/agreements created with leads on business done with/for them.
 

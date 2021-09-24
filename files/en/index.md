@@ -24,7 +24,6 @@ Table of contents
 
 ##### [CRM](crm/crm.md)
   * [Dashboard](crm/dashboard/dashboard.md)
-  * [Deals](crm/deals/deals.md)
   * [Documents](crm/documents/documents.md)
   * [Leads](crm/leads/leads.md)
   * [Quotes](crm/quotes/quotes.md)

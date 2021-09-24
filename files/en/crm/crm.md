@@ -7,8 +7,6 @@ The system is divided into 5 sections/sub-modules:
 
 * [Dashboard](crm/dashboard/dashboard.md)
 
-* [Deals](crm/deals/deals.md)
-
 * [Documents](crm/documents/documents.md)
 
 * [Leads](crm/leads/leads.md)

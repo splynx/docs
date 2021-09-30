@@ -1,4 +1,4 @@
-### Mikrotik Live bandwidth usage
+## Mikrotik Live bandwidth usage graph
 
 Implemented in the release of Splynx version 3.0, we have a new feature called "Live bandwidth usage", which can be used in conjunction with Mikrotik devices.
 
@@ -6,8 +6,8 @@ Requirements:
 1. Radius authorization required;
 2. API should be configured and enabled for the router;
 3. NAS Type supported - Mikrotik only;
-4. Mikrotik RouterOS should be updated to a version newer than 6.43.
-
+4. Mikrotik RouterOS should be updated to a version newer than 6.43;
+5. PPP connection. DHCP leases are not acceptable.
 
 ![Routers](routers_list.png)
 

@@ -46,5 +46,3 @@
  * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
  * [Weathermaps](networking/weathermaps/weathermaps.md)
-
- * [Mikrotik live bandwidth graph](networking/routers_settings/mikrotik_live_bandwidth/mikrotik_live_bandwidth.md)

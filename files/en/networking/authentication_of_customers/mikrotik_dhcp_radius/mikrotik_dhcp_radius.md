@@ -109,4 +109,4 @@ If you set additional network(s) in Splynx internet services, network routes wil
 
 #### Incoming RADIUS
 
-CoA (change of authorization) and (Packet  of Disconnect) is not supported by Mikrotik. The alternative is to use a short lease time which caters for any CoA related changes and "Disabled customers to address list" from API to block the customer's internet access.
+Afther the plan change a queue wasn't updated and customer still has the same speed as on a previous plan? The reason is because CoA (change of authorization) and (Packet  of Disconnect) is not supported by Mikrotik. The alternative is to use a short lease time which caters for any CoA related changes and "Disabled customers to address list" from API to block the customer's internet access.

@@ -47,6 +47,7 @@ Table of contents
 
 
 ##### [Customer Portal](customer_portal/customer_portal.md)
+  * [Change plan from customer portal](customer_portal/change_plan_from_customer_portal/change_plan_from_customer_portal.md)
 
 
 ##### [Tickets](tickets/tickets.md)
@@ -58,7 +59,6 @@ Table of contents
   * [Apply credit](finance/apply_credit/apply_credit.md)
   * [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
   * [Billing engine](finance/billing_engine/billing_engine.md)
-  * [Change service](finance/change_service/change_service.md)
   * [History & Preview](finance/history_and_preview/history_and_preview.md)
   * [Invoices](finance/invoices/invoices.md)
   * [Payments](finance/payments/payments.md)

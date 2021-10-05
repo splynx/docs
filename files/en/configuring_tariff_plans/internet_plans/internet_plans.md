@@ -40,7 +40,7 @@ Here is a description of all available options:
  * **Burst Time** - the period of time used in the calculation of Burst values.
 
 
-* **Tariff plans available in customer portal** - the list of other tariffs available for changing from the current tariff in the customer's portal;
+* **Tariff plans available in customer portal** - the list of other tariffs available for changing from the current tariff in the customer's portal. For more information, please read the following tutorial - [Change plan from customer portal](customer_portal/change_plan_from_customer_portal/change_plan_from_customer_portal.md);
 
 * **Types of billing** - the types of billing the plan will be available to;
 

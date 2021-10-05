@@ -16,9 +16,6 @@ The billing module is separated into the following sections, please follow the l
     * [→ Prepaid Billing](finance/billing_engine/prepaid_billing/prepaid_billing.md)
     * [→ Recurring Billing](finance/billing_engine/recurring_billing/recurring_billing.md)
 
-
-  * [ Change service](finance/change_service/change_service.md)
-
   * [ History & Preview](finance/history_and_preview/history_and_preview.md)
 
   * [ Invoices](finance/invoices/invoices.md)

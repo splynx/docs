@@ -65,3 +65,5 @@ The **customer portal can be configured** according your preferences and your co
 
 
 For more information about configuring the Customer Portal please read our [Customer Portal](configuration/main_configuration/portal/portal.md) tutorial page.
+
+Also, you might be interested in [How to change plan from customer portal](customer_portal/change_plan_from_customer_portal/change_plan_from_customer_portal.md) guide.

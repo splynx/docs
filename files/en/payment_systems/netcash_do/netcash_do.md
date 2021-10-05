@@ -39,7 +39,9 @@ These values have to be added to add-on configuration, located in `Config → In
 
 ![modules_list.png](modules_list.png)
 
-![edit_module.png](edit.png)
+![](edit.png)
+
+![](edit1.png)
 
 **Note:** **PCI vault key** - this key is only needed when customers use their own credit cards to pay.
 
@@ -64,6 +66,30 @@ In case in Splynx system is used the multiple [partners](administration/main/par
 ![](division_into_partners.png)
 
 **Note:** The fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner).
+
+The *Netcash Debit Order* add-on supports the **Batch Auto Authorize** function that allows the Splynx system to authorize batches automatically (once per hour) without manual/human intervention during the invoice payment.
+
+To turn on this functionality, please enable the `Auto-authorise batches` toggle in the add-on configuration page and press `Save` button:
+
+![](auto_authorise_batch.png)
+
+**Important:** The **Batch Auto Authorize** function is available on request and access is only granted by Netcash management approval. Use this [link](https://api.netcash.co.za/autoauth/#access) to send a request.
+
+<details>
+<summary><b>'Auto-authorise batches' explanation</b></summary>
+<p markdown="1">
+
+In case you do **not** use the **Batch Auto Authorize** function, we have the following concept: the customers pay invoices, these payments are sent to Netcash side as batch files. After that, the administrator, at some intervals, logs into the Netcash account and manually authorises all customers' payments. The Netcash, for its part, does a final check of such payments and a provides the results; Splynx checks the Netcash output results by cron and we get the final status of the payments.
+
+If the access is granted and **Batch Auto Authorize** function in enabled in Splynx, the concept will be as follows: the administrator no longer needs to log in and authorise the batches in the Netcash account manually. Splynx will send the request to Netcash **once per hour** in order to receive a list of all currently unauthorised payments and re-send request to Netcash again to authorise them.
+
+The log records about the batch file (-s) authorisation can be found in `Administration → Logs → Netcash Debit Order General Logs`
+
+![](batch_log.png)
+
+</p>
+</details>
+
 
 ## Adding a Netcash Payment account
 

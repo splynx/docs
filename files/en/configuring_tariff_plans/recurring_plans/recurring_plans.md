@@ -20,7 +20,7 @@ You will be redirected to the add plan page and where you will enter the details
 * **Partners** - the partners this plan will be available to;
 * **VAT Included** - whether VAT is included in the price of the plan or not;
 * **VAT** - the percentage of the VAT;
-* **Tariff plans available in customer portal** - the list of tariffs available to change to from the current tariff in the customer portal;
+* **Tariff plans available in customer portal** - the list of tariffs available to change to from the current tariff in the customer portal. For more information, please read the following tutorial - [Change plan from customer portal](customer_portal/change_plan_from_customer_portal/change_plan_from_customer_portal.md);
 * **Types of billing** - the type of billing the plan will be available to;
 * **Prepaid (custom) period** - by default, it is set to monthly and customers will be charged for a period of a month, but it is possible to select "Days amount" which will cause another field to appear:" _Custom period (days)_" - this will allow you to set a custom period in days. (7 days (week), 10 days, etc up to 365 days);
 

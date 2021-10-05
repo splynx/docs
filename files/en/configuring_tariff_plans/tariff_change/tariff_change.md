@@ -3,8 +3,6 @@ Tariff Change
 
 This feature can be used to change a tariff in the system, regardless of how many customers are subscribed to it. This feature is used for mass changes as its functionality is to change the plan selected with another plan on the system for all customers subscribed to the plan.
 
-The concept is similar to that of the ["Change service"](finance/change_service/change_service.md) button found in "Customer services", only here, this button applies the change to all customers subscribed to the plan.
-
 This feature is available to use for all types of tariff's in the system to conveniently change the tariff for all customers using it, the feature can be used by clicking on the "Change plan" button in the *Actions* column of each respective tariff table:
 
 ![Tariff change](tariff_change.png)

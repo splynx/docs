@@ -54,8 +54,6 @@ Admins for auto-assigning tickets can be configured here.
 * If you select the admin account (-s) in the field `Admins available for auto-assigning tickets`, choose the option *All available admins (will not be assigned to anyone)* in the field `Sending notifications` and select *Any* groups in **Default ticket group** section, and after that customer creates ticket from Portal - the notifications will be sent to all admin account (-s) from the field `Admins available for auto-assigning tickets` and to customer as well.
 * If the specific group is selected in **Default ticket group** section and a ticket from Portal is created - the notification will be sent only to the admins in that group (**Ticket assigned (message to group)** [notification](configuration/support/ticket_notifications/tickets_notifications.md) is enabled) and to the customer who created a ticket.
 
-More example at the bottom of this page.
-
 ## Tickets link status with action
 
 The configuration of ticket statuses. Custom statuses can be added/removed under [Config ➝ Support ➝ General ticket configuration ➝ Ticket statuses](configuration/general_ticket_configuration/ticket_config.md)
@@ -81,38 +79,3 @@ The configuration of default ticket types after creation. Custom ticket types ca
 - **Select default group for tickets from Portal** - the option to choose the default [group](configuration/support/general_ticket_configuration/general_ticket_configuration.md) for tickets created from Portal
 
 ![Default ticket group](default_group.png)
-
-
-## Use cases
-
-#### Assign the ticket to group of administrators
-
-![usecase1](use_case_1.png)
-
-or
-
-![usecase2](use_case_2.png)
-
-In this case the ticket will be assigned to IT group, notification will be sent to all admins from IT group. No matter if some admins are selected in the "Admins available for auto-assigning tickets" field. A group must be specified.
-
-#### Assign the ticket to some administrator
-
-![usecase4](use_case_4.png)
-
-With this setup ticket will be assigned to one of selected admins in the "Admins available for auto-assigning tickets" field also a notification will be sent to this admin.
-
-The most popular setup is when the only 1 admin is selected in the "Admins available for auto-assigning tickets" field and all tickets will be assigned to this admin, then this administrator can decide to whom assign specific ticket.
-
-#### Do not assign ticket to administrator but notify
-
-![usecase5](use_case_5.png)
-
-In this example ticket won't be assigned to the administrator but admins selected in the "Admins available for auto-assigning tickets" field will be notified.
-
-Below you can find an example when a ticket will be assigned to the IT group and only administrator from IT group will get a notification. In this case administrators selected in the "Admins available for auto-assigning tickets" field won't get a notification because they are not in "IT" group:
-
-![usecase](use_case_3.png)
-
-To find out more about ticket groups please visit [this page](../general_ticket_configuration/general_ticket_configuration.md)
-
-In ticket notifications configuration you should pay attention to the "Scope" what each admin has. You can find this settings under [Administration/Administrators](../../../administration/main/admins_and_permissions/admins_and_permissions.md). You may face issues when some administrator has scope = "Global" and you assign ticket to a group, in this case this admin won't receive a notification because of global scope.

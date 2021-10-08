@@ -90,7 +90,9 @@ Splynx checks for any payments and allocates them to the correct invoice, as a r
 
 ---
 
-The invoice charging process can be automated using the **Auto charge filter**. Open `Finance → Invoices`, click on `Export` button and select `AUTO CHARGE FILTERS` tab. Then press `Add` button.
+The invoice charging process can be automated using the **Auto charge filter**. Open `Finance → Invoices`, click on `Charge` button and select `AUTO CHARGE FILTERS` tab. Then press `Add` button.
+
+![](press_export.png)
 
 ![](auto_charge_filter1.png)
 

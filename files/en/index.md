@@ -1,7 +1,7 @@
 Table of contents
 =================
 
-##### [Getting Started with Splynx](/getting_started_guide/getting_started_guide.md)
+##### [Getting Started with Splynx](getting_started_guide/getting_started_guide.md)
   * [Splynx license](getting_started_guide/splynx_license/splynx_license.md)
   * [Hardware requirements](getting_started_guide/hardware_requirements/hardware_requirements.md)
   * [Install Splynx ISP Framework](getting_started_guide/install_splynx/install_splynx.md)

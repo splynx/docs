@@ -142,6 +142,6 @@ The calls history with its directions can be found in customer's profile, **Comm
 
 The player to listen the call will be visible if the add-on receives `voice_file_url` value. In case we use the 3d-party add-on that receives only `recording_url`, the link (`Recording: <link>`) to listen/download the file will appear instead.
 
-To each call item in the list the description message can be added, the call can be link to the existing ticket in Splynx, if the ticket is closed, it will be reopened.
+To each call item in the list the description message can be added, the call can be link to the existing ticket in Splynx, if the ticket is closed, it will be reopened automatically.
 
 ![](description_link.png)

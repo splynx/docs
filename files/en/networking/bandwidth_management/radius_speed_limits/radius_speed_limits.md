@@ -35,4 +35,4 @@ You can disable the API queue and leave automatic Radius queues enabled, or if y
 ![Rate limit](remove_ratelimit.png)
 
 
-For more information on the different bandwidth management options, please read the following tutorials - [FUP bandwidth management](networking/fup/fup.md) and [contentions in Splynx](networking/contentions/ccontentions.md)
+For more information on the different bandwidth management options, please read the following tutorials - [FUP bandwidth management](networking/bandwidth_management/fup/fup.md) and [contentions in Splynx](networking/bandwidth_management/contentions/contentions.md)

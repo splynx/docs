@@ -169,7 +169,7 @@ Video tutorial:
 * External Validation is disabled by default; this means that M-Pesa is incharge of validating all payments requests to your Paybill.
 * M-Pesa servers will accept any payments request, as long as the MSISDN (phone number) is allowed to use M-Pesa services.
 * This means that no transaction details are sent to the Splynx server.
-* To enable external Validation, you are required to send an Email letter to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusiness@Safaricom.co.ke) The email should be sent from the email address used to create the account at the Daraja Portal.
+* To enable external Validation, you are required to send an Email letter to *m-pesabusiness@safaricom.co.ke*. The email should be sent from the email address used to create the account at the Daraja Portal.
 
 #### Business manager / administrator
 

@@ -58,7 +58,7 @@ More example at the bottom of this page.
 
 ## Tickets link status with action
 
-The configuration of ticket statuses. Custom statuses can be added/removed under [Config ➝ Support ➝ General ticket configuration ➝ Ticket statuses](configuration/general_ticket_configuration/ticket_config.md)
+The configuration of ticket statuses. Custom statuses can be added/removed under [Config ➝ Support ➝ General ticket configuration ➝ Ticket statuses]()
 
 ![Ticket statuses](ticket_statuses.png)
 
@@ -113,6 +113,6 @@ Below you can find an example when a ticket will be assigned to the IT group and
 
 ![usecase](use_case_3.png)
 
-To find out more about ticket groups please visit [this page](../general_ticket_configuration/general_ticket_configuration.md)
+To find out more about ticket groups please visit [this page](configuration/support/general_ticket_configuration/general_ticket_configuration.md)
 
 In ticket notifications configuration you should pay attention to the "Scope" what each admin has. You can find this settings under [Administration/Administrators](../../../administration/main/admins_and_permissions/admins_and_permissions.md). You may face issues when some administrator has scope = "Global" and you assign ticket to a group, in this case this admin won't receive a notification because of global scope.

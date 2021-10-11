@@ -140,7 +140,7 @@ So as per device configuration an administrator from a group "Engineers" should 
 
 ### Other
 
-Charts and SNMP values from Monitoring can be used in [Splynx Weathermap add-on](../weathermaps/weathermaps.md) as on example below:
+Charts and SNMP values from Monitoring can be used in [Splynx Weathermap add-on](networking/weathermaps/weathermaps.md) as on example below:
 
 ![Weathermap](weathermap.png)
 

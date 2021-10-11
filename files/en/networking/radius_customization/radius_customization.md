@@ -87,7 +87,7 @@ Variable | Value | Comment |
 {{ customer.id }}	| ID number of customer | |
 {{ customer.billing_type }}	| Billing type 'prepaid' or 'prepaid_monthly' or 'recurring'	| |
 {{ customer.partner_id }}	| ID number of [Partner](administration/main/partners/partners.md) | |
-{{ customer.location_id }} | ID number of [Location](administration/main/localtions/locations.md) | |
+{{ customer.location_id }} | ID number of [Location](administration/main/locations/locations.md) | |
 {{ customer.added_by }}	| Login of [Admin](administration/main/admins_and_permissions/admin_and_permissions.md) who added this customer | |
 {{ customer.added_by_id }} | ID number of Admin who added this customer |
 {{ customer.login }}	| Login to customers' portal |	<icon class="image-icon">![](info.png)</icon> This is not service.login |

@@ -24,7 +24,7 @@ Find there the "splynx-preseem" add-on and click on the install icon in the *Act
 
 Then, click on the "OK, confirm" button to begin the installation process
 
-[](img_000003.png)
+![](img_000003.png)
 
 Once the installation process has completed, all configurations for the add-on can be found in `Config → Modules → List`, simply click on the necessary icon of the module and you will be able to change settings of the add-on
 

@@ -11,27 +11,27 @@ Let's consider in details the *Credit notes* statuses and the actions that can b
 
 | Status  | Description  |
 | ------------ | ------------ |
-| <icon class="image-icon">![](non_refunded.png)</icon> | the initial status of a new credit note. It means that the money has been refunded to customer's balance but customer has not yet physically taken money out from SIP. The `-Credit` transaction will be created. The specific amount of money will be added on customer balance|
-| <icon class="image-icon">![](refunded.png)</icon>  | administrator sets this status when a customer withdrew money from the balance to the credit card or took the money physically. The `+Debit` transaction will be created. The specific amount of money will be withdrawn from the customer's balance. The new *Refund* payment with the negative sum amount will be created |
-| <icon class="image-icon">![](deleted.png)</icon>  | it means that the credit note was **Marked as deleted**. In this case the credit note item remains visible in Splynx but the `-Credit` transaction will be removed. Some specific amount of money will be withdrawn from the customer's balance. Not to be confused with **Delete completely** action  |
+| <icon class="image-icon">![](non_refunded.png)</icon> | the initial status of a new credit note. It means that the money has been refunded to customer's balance but customer has not yet physically taken money out from SIP. The `-Credit` transaction will be created. The specific amount of money will be added on customer balance.|
+| <icon class="image-icon">![](refunded.png)</icon>  | the administrator sets this status when a customer withdrew money from the balance to the credit card or took the money physically. The `+Debit` transaction will be created. The specific amount of money will be withdrawn from the customer's balance. The new *Refund* payment with the negative sum amount will be created. |
+| <icon class="image-icon">![](deleted.png)</icon>  | it means that the credit note was **Marked as deleted**. In this case the credit note item remains visible in Splynx but the `-Credit` transaction will be removed. Some specific amount of money will be withdrawn from the customer's balance. Not to be confused with **Delete completely** action.  |
 
 
 | Action  | Description  |
 | ------------ | ------------ |
-| <icon class="image-icon">![](view.png)</icon> View  | to view the details of the credit note  |
-| <icon class="image-icon">![](refund.png)</icon> Refund  | the administrator should choose this action when a customer withdrew money from the balance to the credit card or took the money physically |
-| <icon class="image-icon">![](view_pdf.png)</icon> View PDF  | to view the credit note according to its template in Splynx |
-| <icon class="image-icon">![](download_pdf.png)</icon> Download PDF  | to download the generated credit note pdf file |
-| <icon class="image-icon">![](send.png)</icon> Send  | send the credit note to customer's email or portal. The specific template can be loaded or saved as new one in a new window  |
+| <icon class="image-icon">![](view.png)</icon> View  | to view the details of the credit note.  |
+| <icon class="image-icon">![](refund.png)</icon> Refund  | the administrator should choose this action when a customer withdrew money from the balance to the credit card or took the money physically from SIP. |
+| <icon class="image-icon">![](view_pdf.png)</icon> View PDF  | to view the credit note according to its template in Splynx. |
+| <icon class="image-icon">![](download_pdf.png)</icon> Download PDF  | to download the generated credit note pdf file. |
+| <icon class="image-icon">![](send.png)</icon> Send  | send the credit note to customer's email or portal. The specific template can be loaded or saved as new one in a new window.  |
 | <icon class="image-icon">![](edit.png)</icon> Edit  | used to edit the details of the credit note: note, status, link/unlink to the invoice etc.|
-| <icon class="image-icon">![](delete.png)</icon> Delete  | can be applied to the credit note with `Non refunded` or `Delete` status. In case a credit note is in `Non refunded` status, two options are available to choose from:  **Marked as deleted** and **Delete completely**. If a credit note is in `Deleted` status, only **Delete completely** action can be applied to remove a credit note from the Splynx |
+| <icon class="image-icon">![](delete.png)</icon> Delete  | can be applied to the credit note with `Non refunded` or `Delete` status. In case a credit note is in `Non refunded` status, two options are available to choose from:  **Marked as deleted** and **Delete completely**. If a credit note is in `Deleted` status, only **Delete completely** action can be applied to remove a credit note from the Splynx. |
 | <icon class="image-icon">![](edit_payment.png)</icon> Edit payment  | can be applied to the credit note with `Refunded` status. In new window we can change/add payment type, date, sum, comment, note/memo etc. |
-| <icon class="image-icon">![](delete_payment.png)</icon> Delete payment  | The *Refund* payment will be remove and credit note status will be changed to `Non refunded`. The `+Debit` transaction will be re-created and the money will be returned to the customer balance |
+| <icon class="image-icon">![](delete_payment.png)</icon> Delete payment  | The *Refund* payment will be remove and credit note status will be changed to `Non refunded`. The `+Debit` transaction will be re-created and the money will be returned to the customer balance. |
 
 
 **Example - Creating a credit note:**
 
-Let's imagine that we have the customer who uses a 100$ Internet service. And SIP should give the money back to the customer.
+Let's imagine that we have the customer who uses a 100$ Internet service. And a SIP should give the money back to the customer.
 
 1. The customer has been invoiced for 100$ for the service (the balance = `-100`). The invoice was paid successfully by customer (the balance = `-0`);
 
@@ -56,7 +56,7 @@ As a result, at this moment the customer's balance = `0` because the customer wi
 
 ![](refunded_trans.png)
 
-**Note:** In Splynx v3.1 we could add the invoice with negative price value, but now this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function.
+**Note:** In Splynx v3.1 we could add the invoice with negative price value, but in v3.2 this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function.
 
 ![](inv_negative_price.png)
 

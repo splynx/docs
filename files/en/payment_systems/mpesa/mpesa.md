@@ -191,7 +191,7 @@ Video tutorial:
   * Administrators User Name
   * Email
 
-This Email is also sent to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusiness@Safaricom.co.ke).
+This Email is also sent to *m-pesabusiness@safaricom.co.ke*.
 
 #### Re-registering callbacks
 
@@ -202,7 +202,7 @@ This Email is also sent to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusines
   * The new URLs you need to register.
   * Shortcode – Paybill Number.
 
-This Email is also sent to [M-PESABusiness@Safaricom.co.ke](mailto:M-PESABusiness@Safaricom.co.ke).
+This Email is also sent to *m-pesabusiness@safaricom.co.ke*.
 
 #### Nota Bene
 

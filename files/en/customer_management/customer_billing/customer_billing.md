@@ -180,6 +180,16 @@ Functions of each button in operations can be found by simply hovering over the 
 
 Detailed description and an explanation of invoicing can be found in the [Invoices](finance/invoices/invoices.md) guide.
 
+## Credit notes
+
+The *Credit Notes* entity is a new feature in Splynx v3.2 to simplify the invoicing processes, it is useful for adjusting errors in created invoices. It allows you to lawfully amend an invoice, without having to delete or alter it.
+For example, you sent to customer the invoice which contains an error and the invoice has been paid, as a result you need to re-bill the customer for the billing period. Since you can’t change an invoice’s total amount, you need to apply credit note to correct the balance.
+The experience with creating a new invoice with the negative price in order to refund a money to customer is now a thing of the past.
+The *Credit notes* provide accurate and complete records keeping of the transactions that occur after an invoice has been created.
+
+![](credit_notes.png)
+
+The detailed description and the explanation of the credit notes management can be found in the [Credit Notes](finance/credit_notes/credit_notes.md) guide.
 
 ## Payments
 

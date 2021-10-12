@@ -3,7 +3,7 @@ Credit Notes
 
 The **Credit notes**, as a completely new entity, was introduced in Splynx v3.2. A credit note is a document issued to indicate a return of funds in the event of a service cancellation, network equipment return, miscalculation of price/tax/discount in the invoice or other specified circumstances. Sometimes we can send a customer an invoice and then realize that we have overcharged them for certain goods or services. Instead of canceling the original or recreating a new invoice, which can confuse the customer in accounting processes, we can issue a credit note to correct the totals.
 
-### Getting started
+------------
 
 Credit notes are negative invoices designed to give a refund on part or all of the invoice amount.
 
@@ -29,10 +29,38 @@ Let's consider in details the *Credit notes* statuses and the actions that can b
 | <icon class="image-icon">![](delete_payment.png)</icon> Delete payment  | The *Refund* payment will be remove and credit note status will be changed to `Non refunded`. The `+Debit` transaction will be re-created and the money will be returned to the customer balance |
 
 
-**Example:**
+**Example - Creating a credit note:**
 
-Let's imagine that
+Let's imagine that we have the customer who uses a 100$ Internet service. And SIP should give the money back to the customer.
 
+1. The customer has been invoiced for 100$ for the service (the balance = `-100`). The invoice was paid successfully by customer (the balance = `-0`);
+
+2. For some reason, the SIP should give the money back to the customer. So, the administrator should open the customer profile (`Customers → List`), click on `Billing → Credit Notes` tabs and press `Add credit note` button.
+
+![](create_credit_note.png)
+
+In new window you can add the **Note** to the customer, to link/unlink the related paid/unpaid invoice to the current credit note and specify the **Description**, **Price** etc. After that press `Add` button, the new credit note with `Non refunded` status will be created.
+
+![](new_cn.png)
+
+At this stage the sequence of transactions will be the following:
+
+![](nonrefunded_cn.png)
+
+3. The customer decides to withdraw money from the balance to the credit card. After the customer receives the money, the administrator will refund the credit note by pressing <icon class="image-icon">![](refund.png)</icon> icon in the *Operations* column.
+As a result, at this moment the customer's balance = `0` because the customer withdrew the money.
+
+![](refund_cn.png)
+
+![](refunded_cn.png)
+
+![](refunded_trans.png)
+
+**Note:** In Splynx v3.1 we could add the invoice with negative price value, but now this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function.
+
+![](inv_negative_price.png)
+
+------------
 
 All issued *Credit notes* can be found in `Finance → Credit Notes`. In case the module is not visible on the left sidebar of Splynx, you can enable it in `Config → Integration → Main modules`.
 
@@ -52,37 +80,13 @@ Alternatively, once you have selected the required *Credit note (-s)* in the tab
 
 ![](mass_actions.png)
 
-### Creating credit notes
-
-
-
-
-Поле status в Credit Notes имеет три состояния
-
-not_refunded - по дефолту ставим 'not_refunded' это значит что деньги вернулись на ланс клиента, но он их еще не забрал у провайдера
-
-refunded - когда клиент забрал деньги у провайдера, т.е. Вывел их с баланса
-
-deleted - удалено
-
-
 Credit notes in PDF format are fully customizable with [templates](configuration/system/templates/templates.md). You can create a new template using the different [variables](configuration/system/templates/templates_variables/templates_variables.md) or edit the build-in templates in `Config → Templates` (Type: **Credit Note PDF**). Then, open `Config → Company Information`, find the field `Credit Note PDF Template` and in drop down list choose the template that will be used by default in Splynx.
 
+------------
+
+The log with all *Credit notes* operations can be found in `Administration → Logs → Operations`. Click on <icon class="image-icon">![](details.png)</icon> icon to view more details.
 
 
-To choose the default template that will be used by Splynx
+![](logs.png)
 
-
-Use the Dashboard to adjust or refund finalized invoices with credit notes
-
-
-Explore more ways to simplify your invoicing processes and make sending credit notes easier with
-
-“Invalid price, must be greater than 0, if you need less than 0, create a credit note”, т.е. Если пользователь будет создавать инвойс с минусом, ему будет показана ошибка, что надо пойти и создать кредит ноту. (Если что поправьте текст)
-
-Добавил в Messages аттачментом кред ноты
-
-
-
-
-Related documents
+![](log_detail.png)

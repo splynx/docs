@@ -664,11 +664,6 @@ There is the list of all variables which are using in templates. So you can use 
 </p>
 </details>
 
-
-<details>
-<summary>Credit Notes: {{ dump(loader.getAttach ...</summary>
-<p markdown="1">
-
 ####Ignore Notification
 <details>
 <summary>Ignore Notification</summary>

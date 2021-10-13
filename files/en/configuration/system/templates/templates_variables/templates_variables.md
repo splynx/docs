@@ -643,17 +643,17 @@ There is the list of all variables which are using in templates. So you can use 
 
 ####Attached documents:
 <details>
-<summary>Invoices: {{ dump(loader.getAttach ...</summary>
+<summary>Financial documents: {{ dump(loader.getAttach ...</summary>
 <p markdown="1">
 
-##### Invoices:
+     Invoices:
      {{ dump(loader.getAttachedInvoices) }}
-     Pro-formas:
+     Proforma Invoices:
      {{ dump(loader.getAttachedRequests) }}
      Payment receipts:
      {{ dump(loader.getAttachedReceipts) }}
-
-
+     Credit notes:
+     {{ dump(loader.getAttachedCreditNotes) }}
 
 
      result will be array of attached documents fields:
@@ -668,18 +668,6 @@ There is the list of all variables which are using in templates. So you can use 
 <details>
 <summary>Credit Notes: {{ dump(loader.getAttach ...</summary>
 <p markdown="1">
-
-##### Credit Notes:
-	{{ dump(loader.getAttachedCreditNotes) }}
-
-	result will be array of attached documents fields:
-
-	array(1) {
-
-     }
-</p>
-</details>
-
 
 ####Ignore Notification
 <details>

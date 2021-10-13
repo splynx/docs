@@ -5,7 +5,7 @@ To set global financial settings for new customers, to update existing customers
 
 ![Icon](icon.png)
 
-The next important parts of the financial module can be configured here:
+The settings of **Recurring**/**Prepaid (Custom)**/**Prepay** billing, **Receipt**/**Invoices**/**Proforma Invoice** of the financial module can be configured here:
 
 ![view](view.png)
 
@@ -22,19 +22,19 @@ In the right top corner of the page, you can select the [partner](administration
 
 * **Billing Enabled** -  enables/disables billing for the customer;
 
-* **Period** -  it can be prepaid or postpaid, which means that in **Prepay** mode recurring invoices can be issued up to 12 months in advance and in **Postpaid** mode invoices will be generated after services usage;
+* **Payment period** -  it can be **prepay** (from 1 to 12 months) or **postpaid**, which means that in prepay mode recurring invoices can be issued up to 12 months in advance and in postpaid mode invoices will be generated after services usage;
 
 * **Payment method** - select a [payment method](configuration/finance/payment_methods/payment_methods.md) for recurring payments, such as **Cash**, **Bank transfer**, **Credit card**, **Refill Card** and others if installed and configured;
 
-* **Billing day** - when the customer will be charged. It is a day of Invoice generation. If the **use the customer creation date** option is enabled - the billing day will be set to the day the customer was created;
+* **Billing day** - when the customer will be charged. It is a day of Invoice generation. If the `Use the customer creation date` option is enabled - the billing day will be set to the day the customer was created;
 
-* **Billing due** - the last day customers have to make payments before getting blocked. For example, if we choose the 1st day of the month as the billing day and the 15th day of the month as the billing due day, invoices will be generated on the 1st day of the month and if customer don't make payments by the 15th day of the month, the customer will be blocked on the 16th day of the month. Even though the customer will have a blocked status, their services will still be accounted;
+* **Payment due (days after billing day)** - the last day customers have to make payments before getting blocked. For example, if we choose the 1st day of the month as the billing day and the 15th day of the month as the billing due day, invoices will be generated on the 1st day of the month and if customer don't make payments by the 15th day of the month, the customer will be blocked on the 16th day of the month. **Even though the customer will have a blocked status, their services will still be accounted**;
 
-* **Deactivation period (Grace period)** - the number of days after the customers' services will be disabled and the customer will be given an inactive status, after the customer has been blocked. For example, it could be 10 days, which means 10 days after the customer has been blocked, the customer's status will automatically be changed from blocked to inactive and service will not be accounted;
+* **Deactivation period (days after blocking) (Grace period)** - the number of days after the customers' services will be disabled and the customer will be given an inactive status, after the customer has been blocked. For example, it could be 10 days, which means 10 days after the customer has been blocked, the customer's status will automatically be changed from blocked to inactive and service will not be accounted;
 
 * **Minimal balance** - defines the minimum amount of funds to be available in the customers account at all times, after service charges, to avoid being blocked and is set, by default, to `0`. It can be changed to another value according to your needs;
 
-* **Send finance notifications** - enables/disables sending of notifications about payments, invoices, overdue invoices etc;
+* **Send billing notifications** - enables/disables sending of notifications about payments, invoices, overdue invoices etc;
 
 * **Payment calendar** - enables/disables payment calendars under the customer's `Billing → Billing overview` tab.
 
@@ -66,26 +66,26 @@ In the right top corner of the page, you can select the [partner](administration
 * **Receipt number format** - create a payment receipt number pattern here, the default is `{year}-{type|2}-{next|5}`. The next values can be used: `{var|length}` for the format; `{type} - payment type, {customer_id}, {partner_id}, {location_id}, {rand_string}, {rand_number}, {year}, {month}, {day}, {next}` for the variables.
 
 
-Finance format can be configured in [Localization](configuration/main_configuration/localization/localization.md)
+**Note:** Finance format can be configured in [Localization](configuration/main_configuration/localization/localization.md)
 
 
 ### Invoices settings
 
 ![Invoices](invoice_settings.png)
 
-* **Create invoices (after Charge & Invoice)** - with this option enabled invoices will be issued automatically after charging the customer using the `Charge & Invoice` button in the *billing overview* tab of the customer;
+* **Auto create invoices** - with this option enabled invoices will be issued automatically after charging the customer using the `Charge & Invoice` button in the *billing overview* tab of the customer;
 
-* **Auto pay invoices from account balance** - enables/disables the automatic paying of service from the customer's account balance, the payment will be completed if there are enough funds on the balance;
+* **Auto pay invoices from account balance** - enables/disables the automatic paying of service from the customer's account balance, the payment will be completed if there are enough funds on the balance. The **option is deprecated in Splynx v3.2**, Now, this **option is always enabled by default** for all customers;
 
 * **Allow pay invoice from account balance (with negative account balance)** - enables/disables the option to pay invoices from the customer's account balance when the customers balance is or will be with a negative amount of funds;
 
-* **Invoice number pattern** - you can set up an invoice number pattern here, the default is `{year}{partner_id|2}{next|6}`. The next values can be used: `{var|length}` for the format; `{customer_id}, {partner_id}, {location_id}, {rand_string}, {rand_number}, {year}, {month}, {day}, {next}` for the variables;
+* **Invoice number format** - you can set up an invoice number pattern here, the default is `{year}{partner_id|2}{next|6}`. The next values can be used: `{var|length}` for the format; `{customer_id}, {partner_id}, {location_id}, {rand_string}, {rand_number}, {year}, {month}, {day}, {next}` for the variables;
 
 * **Invoice cache** - enables/disables invoice caching on the system, with this option enabled, all changes made will be visible only in new invoices, old Invoices will remain without changes;
 
-* **Force create invoice if transaction "To invoice" exists** - enables/disables the creation of invoices from transactions with the `Add to invoice` option enabled;
+* **Force creating an invoice if a transaction with 'To Invoice' exists** - enables/disables the creation of invoices from transactions with the `Add to invoice` option enabled;
 
-* **Auto associate payments to invoice** - enables/disables the auto linking payments to invoice (invoice number will be added to the payment) if the amount of payment is equal to the total sum in the invoice, only for *Recurring billing* type where an invoice is created first, and then a payment is received. If the amount of the payment does not match the amount of the invoice, the invoice will be paid (only if `Auto pay invoices from account balance` option is enabled in customer's profile) from the client's account balance.
+* **Auto associate payments to invoice** - enables/disables the auto linking payments to invoice (invoice number will be added to the payment) if the amount of payment is equal to the total sum in the invoice, **only for Recurring billing type where an invoice is created first, and then a payment is received**. If the amount of the payment does not match the amount of the invoice, the invoice will be paid (only if `Auto pay invoices from account balance` option is enabled in customer's profile) from the client's account balance.
 
 
 ### Proforma Invoice settings
@@ -96,24 +96,24 @@ These are the parameters for auto generating Proforma Invoices. In our billing s
 
 * **Enable Auto Proforma Invoices** - with this option enabled Proforma Invoices will be issued automatically;
 * **Day of generating Auto Proforma Invoices** - select the day of the month for automatic issuing of Proforma Invoices;
-* **Period** - select the period to generate proforma invoice for;  
+* **Payment period** - select the period to generate proforma invoice for;  
 * **Create Proforma Invoices for** - there are 2 options here: create proforma invoice for current month or for the next month;
-* **Proforma Invoice number pattern** - create a Proforma Invoice number pattern here, the default is `{year}{next|6}`. The next values can be used: `{var|length}` for the format; `{customer_id}, {partner_id}, {location_id}, {rand_string}, {rand_number}, {year}, {month}, {day}, {next}` for the variables.
+* **Proforma Invoice number format** - create a Proforma Invoice number pattern here, the default is `{year}{next|6}`. The next values can be used: `{var|length}` for the format; `{customer_id}, {partner_id}, {location_id}, {rand_string}, {rand_number}, {year}, {month}, {day}, {next}` for the variables.
 
 
 ## Mass update of customers' billing settings
 
 Using the mass update tool, billing settings can be configured for multiple amounts of customers at once instead of manually changing billing settings for each customer. Be very attentive when using this tool. Here are a few examples on how to use it:
 
-**Task 1**: *disable billing for the partner "Person" and for customers using the billing type = recurring*:
+**Task 1**: *enable billing for the partner "Person" and for customers using the billing type = recurring*:
 
-After the `billing` was disabled in **Settings of recurring billing** click on **Update existing customers** select the partner, billing type and only the `billing enabled` value and click on the **Update** button.
+After the `billing` option was disabled in **Settings of recurring billing** click on **Update existing customers** select the necessary values for partner, billing type and only one - `Billing Enabled` attribute and click on the **Update** button.
 
 ![mass update 1](mass_update.png)
 
 
 **Task 2** : *change the billing day for all existing customers*:
 
-After the `Billing day` value was changed, select all partners, all billing types and just the value `billing day` for **Attributes to update** and click on the **Update** button.
+After the `Billing day` value was changed, select all partners, all billing types and only one - `Billing day` attribute and click on the **Update** button.
 
 ![mass update 2](mass_update2.png)

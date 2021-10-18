@@ -91,7 +91,7 @@ The log records about the batch file (-s) authorisation can be found in `Adminis
 </details>
 
 
-## Adding a Netcash Payment account
+### Adding a Netcash Payment account
 
 To add a Netcash payment account, navigate to the customer's "Billing" tab, and click on the card icon in the Payment accounts window.
 
@@ -194,6 +194,72 @@ The customer can also view, update, or remove Netcash account details here:
 ![add account.png](add_account_from_portal.png)
 
 **Note:** if the customer pays their invoices using the Netcash Debit Order addon on the portal, a new bank statement will be created on the admin portal (`Finance → Bank statements → History`). We use bank statements in Splynx to track and allocate payments to the correct invoices once retrieved.
+
+### Direct payments
+
+Using the payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the Netcash Debit Order addon to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customer, so the amount of on-time payments will increase. For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto this link instead of logging in to their *Portal* page. In case the customer has saved the payment credentials on the *Portal*, later the customer does not need to add any further details when using the direct payment link.
+
+To create a direct payment link, please use the patterns below:
+
+**To pay the Invoice:**
+
+<details>
+<summary>by invoice ID</summary>
+<div markdown="1">
+
+```
+https://<splynx_domain_address>/netcash-debit-order/direct-pay-invoice-by-id?item_id=<Invoice_id>
+```
+</div>
+</details>
+
+<details>
+<summary>by invoice number</summary>
+<div markdown="1">
+
+```
+https://<splynx_domain_address>/netcash-debit-order/direct-pay-invoice?item_id=<Invoice_number>
+```
+</div>
+</details>
+
+
+
+**To pay the Proforma Invoice:**
+
+<details>
+<summary>by proforma invoice ID</summary>
+<div markdown="1">
+
+```
+https://<splynx_domain_address>/netcash-debit-order/direct-pay-proforma-by-id?item_id=<proforma_id>
+```
+</div>
+</details>
+
+<details>
+<summary>by proforma invoice number</summary>
+<div markdown="1">
+
+```
+https://<splynx_domain_address>/netcash-debit-order/direct-pay-proforma?item_id=<proforma_number>
+```
+</div>
+</details>
+
+<details>
+<summary><b>Screenshots</b></summary>
+<p markdown="1">
+
+
+![](direct_payment_link_to_invoice.png)
+
+![](direct_payment_link_to_proforma.png)
+
+
+</p>
+</details>
+
 
 ### Admin page widgets and log files
 

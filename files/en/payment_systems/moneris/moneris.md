@@ -31,7 +31,7 @@ Navigate to `Config / Integrations / Modules list`,:
 
 ![(image)](1.png)
 
-Locate or search for the `splynx-moneris` add-on and click  on the edit icon <icon class="image-icon">![edit](image2018-8-21_9-56-59.png)</icon>
+Locate or search for the `splynx-moneris` add-on and click on the `Edit` icon <icon class="image-icon">![edit](image2018-8-21_9-56-59.png)</icon>
 
 ![(image)](2.png)
 
@@ -66,16 +66,22 @@ In case in Splynx system is used the multiple [partners](administration/main/par
 
 **Note:** The fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner).
 
-**Select Country** - the country to choose;<br>
-**Select payment currency** - the currency to choose;<br>
-**Store Id**, **API token**, **HT Profile ID** - these values you can find in Moneris portal.
+- **Select Country** - the country to choose;<br>
+- **Select payment currency** - the currency to choose;<br>
+- **Store Id**, **API token**, **HT Profile ID** - these values you can find in Moneris portal.
 
 
-After the successful configuration of the add-on, customers can pay for their invoices using the Moneris gateway in `Finance → Invoices` on the Portal:
+After the successful configuration of the add-on, customers can pay for their invoices using the Moneris gateway in `Finance → Invoices` on the Portal.
+
+The credit card can be added in `Finance → Credit card via Moneris gateway` section of the *Portal*.
 
 ![(image)](4.png)
 
 ![(image)](5.png)
+
+After the credit card was added successfully, the customer can pay the invoices in `Finance → Invoices` or the proforma invoices in `Finance → Proforma Invoices`
+
+
 
 ![(image)](6.png)
 
@@ -83,7 +89,7 @@ After the successful configuration of the add-on, customers can pay for their in
 
 ![(image)](8.png)
 
-If everything went well, you will see the status of invoice marked as "Paid" (portal and admin).
+If everything went well, you would see the status of invoice marked as "Paid" (portal and admin).
 
 ------------
 
@@ -144,9 +150,9 @@ https://<splynx_domain_address>/moneris/direct-pay-proforma?item_id=<proforma_nu
 <p markdown="1">
 
 
-![add screenshot here - direct_payment_link_to_invoice.png]()
+![]()
 
-![add screenshot here - direct_payment_link_to_proforma.png]()
+![]()
 
 
 </p>

@@ -145,17 +145,5 @@ https://<splynx_domain_address>/moneris/direct-pay-proforma?item_id=<proforma_nu
 </div>
 </details>
 
-<details>
-<summary><b>Screenshots</b></summary>
-<p markdown="1">
-
-
-![]()
-
-![]()
-
-
-</p>
-</details>
 
 ------------

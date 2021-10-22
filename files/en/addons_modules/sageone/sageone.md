@@ -14,9 +14,8 @@ The SageOne add-on in Splynx was designed to improve efficiency and the ability 
 
 The following steps can be taken to integrate your Splynx server with your SageOne platform:
 
-
 ## 1. Connecting the two platforms
-* **To install the SageOne addon in Splynx** - Navigate to `Config / Integrations / Addons`, search for `splynx-sageone` and click on the install icon:
+* **To install the SageOne addon in Splynx** - Navigate to `Config / Integrations / Addons`, search for `splynx-sageone` and click on the install <icon class="image-icon">![](pay_icon.png)</icon> icon:
 
 ![SageOne Install](sageone_install_addon.png)
 
@@ -24,7 +23,7 @@ The following steps can be taken to integrate your Splynx server with your SageO
 
 ![SageOne Install](sageone_edit_addon.png)
 
-Enter SageOne login and password in the fields provided under the **SageOne API settings** section:
+Enter SageOne credentials into the `Login` and `Password` fields provided under the **SageOne API settings** section:
 
 ![SageOne Install](sageone_passwd1_addon.png)
 
@@ -33,28 +32,27 @@ Enter SageOne login and password in the fields provided under the **SageOne API 
 
 ### Synchronization settings:
 
-The general configuration of the SageOne integration module can be viewed and edited here. Double check if **Entry points status for portal** option is enabled and **API domain** value is set correctly (with last slash).
+The general configuration of the SageOne integration module can be viewed and edited here. Double check if **Entry points status for portal** option is enabled and **API domain** (with last slash) value is set correctly.
 
 ![](synchronization_settings.png)
 
-- **Payment method ID** - ;
-- **Bank statements group** - ;
-- **Partners ignore list** - ;
-- **Import payments from date** - ;
-- **Payments synchronization direction** - ;
-- **Payments push to SageOne** - ;
-- **Create payment without invoice** - a toggle allows to enable creating payment in Splynx when customer doesn't have invoice (e.g. for the partial payments in SageOne) or, in disabled status - only bank statement (-s) will be created. Used on payments import. **Attention:** in some cases can lead to duplicate payments. Use this option with caution;
-- **Create payment for paid invoice** - a toggle allows to enable creating payment in Splynx when the invoice has already been paid (actually for invoice with any status), in disabled status - payment will be created only for **Not paid** invoice. Used on payments import. The option is useful when payment (receipt) in SageOne was incorrectly linked to the invoice, the invoice or the total amount were incorrect etc. The current option doesn't include the partial payments, in order to create payments for everything, the **Create payment without invoice** option should be enabled as well. **Attention:** in some cases can lead to duplicate payments. Use this option with caution;
-- **Customer name pattern** - ;
-- **Active** - ;
-- **Accepts Electronic Invoices** - ;
-- **Auto Allocate Receipts to Oldest Invoice** - ;
-- **Allow this customer to view invoices online** - ;
-- **Use Inclusive Amounts** - ;
-- **Invoice fix Item id** - ;
-- **Export invoices from date** - ;
-- **Use system document number** - ;
-- **Use Credit Notes** - .
+- **Payment method ID** - select the [payment method](configuration/finance/payment_methods/payment_methods.md) for imported payments. Payments with selected method id will not be pushed to SageOne;
+- **Bank statements group** - group bank statements by "month" or "day";
+- **Partners ignore list** - select the [partners](administration/main/partners/partners.md) which will be ignored in sync process. Customers, invoices and payments of the partners selected here, **WILL NOT** be synced with SageOne;
+- **Import payments from date** - specify the date in 'Y-m-d'(2021-03-31) format, which will be used as the start date for importing all payments;
+- **Payments synchronization direction** - define the direction of syncing payments: `SageOne → Splynx`, `Splynx → SageOne` or `Bidirectional`. If **SageOne to Splynx** direction is selected - all payments which were created in Splynx will not be synced to SageOne;
+- **Payments push to SageOne** - select the [payment methods](configuration/finance/payment_methods/payment_methods.md) to sync to SageOne, this selection only applies if the selected method to sync payments is set to `Splynx → SageOne`;
+- **Create payment without invoice** - a toggle allows to enable creating payment in Splynx when customer doesn't have invoice (e.g. for the partial payments in SageOne) or, in disabled status - only bank statement (-s) will be created in Splynx. Used on payments import. **Attention:** in some cases can lead to duplicate payments. Use this option with caution;
+- **Create payment for paid invoice** - a toggle allows to enable creating payment in Splynx when the invoice has already been paid (actually for invoice with any status in Splynx), in disabled status - payment will be created only for **Not paid** invoice in Splynx. Used on payments import. The option is useful when payment (receipt) in SageOne was incorrectly linked to the invoice, the invoice or the total amount were incorrect etc. The current option doesn't include the SageOne partial payments, during import to Splynx, in order to create payments for everything in Splynx, both options (*Create payment for paid invoice* and *Create payment without invoice*) should be enabled. **Attention:** in some cases can lead to duplicate payments. Use this option with caution;
+- **Customer name pattern** - used as SageOne customer 'Contact Name'. The following variables can be used: `{id}`, `{login}`, `{name}`, `{email}`. Customer name max length: 100;
+- **Active** - the option to activate (deactivate) the customer profile on SageOne side. The toggle allows to configure the same relevant state of customer profile (checkmark's status) during sync between Splynx and SageOne (e.g. in case of customers manual pairing);
+- **Accepts Electronic Invoices** - enable/disable to accept electronix invoices, the option is located in customer profile in SageOne. The toggle allows to configure the same relevant option state in customer profile (checkmark's status) during sync between Splynx and SageOne;
+- **Auto Allocate Receipts to Oldest Invoice** - use this option if you want Accounting to automatically allocate receipts to the oldest invoice. If you do not use this option, when you receive money from customer, you will need to go to the Customer Allocations option to allocate each receipt to the correct invoice. The toggle allows to configure the same relevant state of customer profile (checkmark's status) during sync between Splynx and SageOne;
+- **Allow this customer to view invoices online** - enable/disable for customer to view the invoices online, this option is located in customer profile in SageOne. The toggle allows to configure the same relevant option state in customer profile (checkmark's status) during sync between Splynx and SageOne;
+- **Use Inclusive Amounts** - toggle allows to enable/disable the usage of the inclusive amounts for invoices. Inclusive amounts may provide more accurate roundings. In disabled status Splynx pushes all invoices to SageOne with VAT exclusive, this however make some rounding in SageOne and most of the time the account is out by 1 or 2 cent. In enabled status - Splynx pushes the invoices to SageOne with VAT inclusiveso that the total amount will always be the same in Splynx and Sage One;
+- **Invoice fix Item id** - in the field the id of SageOne item can be specified to fix (the SageOne item will be added to invoice) mismatched totals due to rounding differences. Using the empty value - the totals will not be fixed. Items' ids can be found in `Config / Finance / Accounting categories` of Splynx.
+- **Use system document number** - toggle allows to enable/disable the usage of the Splynx invoice number format for new Sageone invoices during export;
+- **Use Credit Notes** - a toggle allows to enable/disable the sending Splynx invoices with negative totals to SageOne as *Credit Notes* (can be found in `Customers / Transactions / Customer Credit Notes ` in SageOne).
 
 ### Cron settings
 
@@ -67,6 +65,7 @@ These are the global settings to automatically sync items between the two platfo
 
 If any of the above items are not enabled to sync automatically, we can manually sync items via the Web UI under `Config → Integrations → Splynx Sageone Accounting`, with the export and import functions.
 
+**It is recommended that all settings in the "Cron settings" section of the page are disabled for the initial set up of the add-on to avoid syncing all these elements automatically via cron jobs, the first import and export should be done manually**
 
 
 ## 2. Define the payment methods to push to SageOne from Splynx
@@ -76,12 +75,13 @@ If any of the above items are not enabled to sync automatically, we can manually
 
 **NOTE:**
 
-* **It is recommended that all settings in the "Cron settings" section of the page are disabled for the initial set up of the add-on to avoid syncing all these elements automatically via cron jobs, the first import and export should be done manually**
-
-* **Exclude payments processed in SageOne from the payments to push to SageOne in Splynx (if SageOne will be used as a payment gateway) because it will grab payments from SageOne**
-
+* **Exclude payments processed in SageOne from the payments to push to SageOne from Splynx (if SageOne will be used as a payment gateway) because it will grab payments from SageOne.**
 
 <icon class="image-icon">![](information.png)</icon> **How to create and link a Bank account in Splynx and SageOne:**
+
+<details>
+<summary>Click here to expand</summary>
+<div markdown="1">
 
 **On SageOne side**
 
@@ -93,15 +93,18 @@ Navigate to `Config / Finance / Accounting bank accounts`, scroll to the **Accou
 
 ![SageOne Payments](sageone_bank_account2.png)
 
+</div>
+</details>
+
 Once the bank account has been loaded, scroll to the top of the page and select the necessary account as the default one to which all payments processed in Splynx will be transferred. The default bank account should be selected for each payment method listed in *Bank Accounts Map*.
 
 ![SageOne default account](sageone_default_account.png)
 
-In case the bank account list is not loaded, open `Config / Integrations / Splynx Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
-
 <details>
-<summary>click here to see the screenshot</summary>
+<summary>In case the bank account list is not loaded</summary>
 <div markdown="1">
+
+Open `Config / Integrations / Splynx Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
 
 ![](import_mapping_settings.png)
 
@@ -139,7 +142,7 @@ To assign transaction categories by tariff plans, it is necessary to enable the 
 
 ![SageOne transaction categories](sageone_transactions_tariffs.png)
 
-Once you have enabled these fields for the desired types of tariffs, you can simply navigate to the tariffs and assign categories to individual plans. For example, we will assign the *fiber* category to the *fiber* internet plan.
+Once you have enabled these fields for the desired types of tariffs, you can simply navigate to the tariffs and assign categories to individual plans.
 
 Navigate to `Tariff plans / Internet`, find in the list the desired Internet plan and click on *Edit* icon, scroll down to the bottom of the page, in the field `Transaction category` change the default category to the corresponding category you have created.
 
@@ -151,15 +154,15 @@ Once all your transaction categories have been created and assigned to the diffe
 
 ![SageOne accounting categories](sageone_accounting_categories.png)
 
-Once here, the first step is to load the categories/items from SageOne. To do so, scroll to the bottom of the page and click on the Load button in the Accounting categories sections:
+Once here, the first step is to load the categories/items from SageOne. To do so, scroll to the bottom of the page and click on the Load button in the *Accounting categories* sections:
 
 ![SageOne accounting categories](sageone_accounting_categories2.png)
 
-In case the accounting categories list is not loaded, open `Config / Integrations / Splynx Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
-
 <details>
-<summary>click here to see the screenshot</summary>
+<summary>In case the accounting categories list is not loaded</summary>
 <div markdown="1">
+
+Open `Config / Integrations / Splynx Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
 
 ![](import_mapping_settings.png)
 
@@ -285,7 +288,7 @@ Check the balance of the bank account in `Banking / Lists / List of Banks and Cr
 
 Now we can synchronize this payment that is present in SageOne to Splynx.
 
-<icon class="image-icon">![](warning.png)</icon> **Attention:** The `Payments synchronization direction` option should be set to `SageOne to Splynx` or `Bidirectional` in `Config / Integrations / Modules list / Splynx Sageone Accounting`.
+<icon class="image-icon">![](warning.png)</icon> **Attention:** The `Payments synchronization direction` option should be set to `SageOne to Splynx` in `Config / Integrations / Modules list / Splynx Sageone Accounting`.
 
 Navigate to `Config / Integrations / Splynx SageOne Accounting`, click on **Import all payments into Splynx** button.
 
@@ -295,37 +298,18 @@ After the payments import is completed, double check the invoice and its transac
 
 ![](sageone_payment.png)
 
-If the customer receipt has been created and processed on *SageOne* side without being linked to the *Unpaid* invoice and the step **Import new payments into Splynx** has been performed - the invoice will remain unpaid (the balance will not top up as well). To fix this it's necessary to do the manual pair of the new bank statement with *Unpaid* invoice in Splynx. Navigate to `Finance / Bank statements / History / SageOne (some date) ` find the related statement and click on *Manual pair* icon. In new window specify the invoice number to pair with and click on *Manual pair* icon again. In next window specify the *Payment type* and press **Pair** button (pay attention what types of payments are ignored in `Payments push to SageOne` drop down list in add-on config. This option is used for Splynx to SageOne sync).
+If the customer receipt has been created and processed on *SageOne* side without being linked to the *Unpaid* invoice and the step **Import new payments into Splynx** has been performed - the invoice will remain unpaid (the balance will not top up as well) in Splynx. To fix this it's necessary to do the manual pair of the new bank statement with *Unpaid* invoice in Splynx. Navigate to `Finance / Bank statements / History / SageOne (some date) ` find the related statement and click on *Manual pair* icon. In new window specify the invoice number to pair with and click on *Manual pair* icon again. In next window specify the *Payment type* and press **Pair** button (pay attention what types of payments are ignored in `Payments push to SageOne` drop down list in add-on config. This option is used for Splynx to SageOne sync).
 
 
 ![](manual_pair1.png)
 
 ![](manual_pair2.png)
 
-Now we can check the list of transactions to verify all is correct: navigate to the customer transactions tab and check if the transaction have been added accordingly:
+Now we can check the list of transactions to verify all is correct: navigate to the customer transactions tab and check if the transaction have been added accordingly.
 
 ---------------------
 
-## SageOne accounting integration logs
-
-All actions of the SageOne add-on can be monitored regularly to ensure that the add-on is working as expected. To check the list of add-on activities, navigate to `Administration / Logs / Accounting Integrations`:
-
-![SageOne customers](sageone_track.png)
-
-![SageOne customers](sageone_track1.png)
-
-## Troubleshoot
-
-Here you can find some examples of errors that may occur
-
-**Scenario 1:**
-*An invoice was synchronized to SageOne, then it was deleted in Splynx (e.g. invoice was an incorrect and you have deleted it and create a new one with the same number) and you are attempting to sync invoices to SageOne again*
-
-**Solution:** Remove the invoice from the SageOne account or if you are not able to remove it from SageOne - re-create the invoice in Splynx with a new invoice number.
-
-![SageOne customers](scenario1.png)
-
-You might also be interested in a video tutorials about SageOne integration
+You might also be interested in the **video tutorials about SageOne integration**
 
 <details>
 <summary>Click here to expand</summary>
@@ -340,3 +324,48 @@ You might also be interested in a video tutorials about SageOne integration
 
 </div>
 </details>
+
+---------------------
+
+
+## SageOne accounting integration logs
+
+All actions of the SageOne add-on can be monitored regularly to ensure that the add-on is working as expected. To check the list of add-on activities, navigate to `Administration / Logs / Accounting Integrations`:
+
+![SageOne customers](sageone_track.png)
+
+![SageOne customers](sageone_track1.png)
+
+---------------------
+## SageOne tweaks
+
+There are a few more settings and tools related to the SageOne add-on:
+
+![](sageone_manual_acc_sync.png)
+
+- **Import mapping settings into Splynx** - when SageOne login and password are set on the add-on configuration page, press this button to import mapping settings such as *accounting categories* and *bank accounts* into Splynx. Configure the mapping settings according to the steps described above.
+
+- **Customers manual pairing** - this function is used where there are existing customers in Splynx as well as SageOne. Press `Load SageOne customers for manual pairing` button, then click on the small gear icon at the top right corner, choose *Customers manual pairing* option. These features pull the customer list from SageOne into Splynx and allow the admin to manually pair the customers without having to create them in either platform again.
+
+- **Pair SageOne same number invoices** - allows to make the request for all unpaired invoices in order to receive their accounting IDs from SageOne and put those IDs into Splynx database. For example, the invoices have been exported but their IDs have not been received and an error *Document Number already exists* occurs when re-exporting.
+
+---------------------
+
+## Troubleshoot
+
+Follow these instructions to troubleshoot problems with *SageOne*:
+
+<details>
+<summary><b>Error: '400 Document Number already exists'</b></summary>
+<p markdown="1">
+
+*An invoice was synchronized to SageOne, then it was deleted in Splynx (e.g. invoice was an incorrect and you have deleted it and create a new one with the same number) and you are attempting to sync invoices to SageOne again*
+
+**Solution:** Remove the invoice from the SageOne account or if you are not able to remove it from SageOne - re-create the invoice in Splynx with a new invoice number.
+
+![SageOne customers](doc_num_exists.png)
+
+</p>
+</details>
+
+---------------------

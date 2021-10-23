@@ -376,7 +376,6 @@ Table of contents
 
 ##### [Payment systems](payment_systems/payment_systems.md)
   * [Authorize.net](payment_systems/authorize/authorize.md)
-  * [Bitpay bitcoin payments](payment_systems/bitpay/bitpay.md)
   * [Braintree payments](payment_systems/braintree/braintree.md)
   * [Gocardless.com](payment_systems/gocardless/gocardless.md)
   * [Integrapay](payment_systems/integrapay/integrapay.md)

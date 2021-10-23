@@ -7,8 +7,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Authorize.net](payment_systems/authorize/authorize.md)
 
-* [Bitpay, bitcoin payments](payment_systems/bitpay/bitpay.md)
-
 * [Braintree payments](payment_systems/braintree/braintree.md)
 
 * [Gocardless.com](payment_systems/gocardless/gocardless.md)

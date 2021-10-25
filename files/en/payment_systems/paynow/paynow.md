@@ -57,7 +57,7 @@ To create this cart the following steps need to be taken:
 
 ### Add-on settings
 
-Once the add-on has been installed and you have obtained all the details required from *Paynow*, we can proceed with add-on configuration.
+Once the add-on has been installed and you have obtained all the details required from *Paynow*, we can proceed with further add-on configuration.
 
 Navigate to `Config → Integrations → Modules list`:
 
@@ -78,7 +78,7 @@ By using **Entry points**, you can enable add-on features which can allow custom
 
 ### Invoice payment
 
-Once the configuration is complete, customers will see a new button and will be able to pay for their invoices via the *Paynow* system:
+Once the configuration is completed, customers will see a new button and will be able to pay for their invoices via the *Paynow* system:
 
 ![(image)](10.png)
 

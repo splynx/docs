@@ -5,6 +5,8 @@ Paystack is a Splynx add-on which allows customers to pay for invoices via the p
 
 The add-on can work with different credit cards and bank accounts, if cards or bank accounts are saved in customer profiles, the add-on allows you to charge all customers using *Direct debit orders*.
 
+### Add-on installation
+
 The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server.
 
 To install the Paystack add-on via CLI, the following commands can be used:
@@ -73,6 +75,16 @@ Additionally, you can charge all customers using one button, navigate to `Financ
 ![(image)](12.png)
 
 ![(image)](13.png)
+
+### Add-on log files
+
+*Paystack* add-on logs can be found in `Administration → Logs`:
+
+![(image)](paystack_logs.png)
+
+In *Paystack Logs* the different records can be viewed, like when a verification was performed or when a transaction was processed, etc.
+
+![(image)](paystack_logs1.png)
 
 ### Direct payments
 

@@ -3,7 +3,7 @@ Moneris
 
 Moneris is a Splynx add-on used to pay invoices and proforma invoices with the [Moneris Payment Gateway](https://www.moneris.com).
 
-
+### Add-on installation
 
 The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server.
 

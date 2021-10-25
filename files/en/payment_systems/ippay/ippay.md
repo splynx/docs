@@ -1,16 +1,16 @@
 IPpay by Convergence
 ==================
 
-IPpay is a Splynx add-on which allows refilling of customer balances and paying invoices via the IPpay payment gateway - https://www.ippay.com/.
+IPpay is a Splynx add-on which allows refilling of customer balance and paying invoices via the IPpay payment gateway - https://www.ippay.com/.
 
-The Add-on can work with different credit cards, and if cards are saved on customer profiles, the addon allows you to charge all customers using *Direct debit orders*.
+The add-on can work with different credit cards and bank accounts, if cards or bank accounts are saved in customer profiles, the add-on allows you to charge all customers using *Direct debit orders*.
 
 The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server
 
-To install the *splynx-ippay* add-on via CLI, the following commands can be used:
+To install the *IPpay* add-on via CLI, the following commands can be used:
 
 
-```bash
+```
 apt-get update
 apt-get install splynx-ippay
 ```
@@ -20,58 +20,121 @@ Navigate to `Config → Integrations → Add-ons`:
 
 ![1.png](1.png)
 
-Locate or search for the "splynx-ippay" add-on and click on the install in the *Actions* column:
+Locate or search for the `splynx-ippay` add-on and click on the *Install* icon in the *Actions* column:
 
 ![2.png](2.png)
 
-Click on the "OK, confirm" button to begin the installation process:
+Click on the **OK, confirm** button to begin the installation process:
 
 ![3.png](3.png)
 
-After installation process has completed, you have to configure addon:
+### Add-on settings
 
-Navigate to `Config → Integrations → Modules list`:
+After installation process has completed, you have to configure add-on, navigate to `Config → Integrations → Modules list`:
 
 ![4.png](4.png)
 
-Locate or search for the "splynx-ippay" add-on and click on the edit icon in the *actions column:
+Locate or search for the `splynx-ippay` add-on and click on the
+<icon class="image-icon">![edit](edit.png)</icon> (*Edit*) icon in the *Actions* column:
 
 ![5.png](5.png)
 
+`Terminal ID` can be obtained from your *Ippay* account.
+
 ![6.png](6.png)
 
-Customers then have to add a credit card in the customer portal under *Finance/Credit card*:
+### Invoice payment
+
+Once the configuration has been completed, customers can add a credit card or bank account on the [Portal](customer_portal/customer_portal.md) in `Finance → IpPay payment credentials`:
 
 ![7.png](7.png)
 
 ![8.png](8.png)
 
-Now customers can pay for their invoices using the IPpay system in *Finance / Invoices*:
+Now customers can pay for their invoices using the *IPpay* system in `Finance → Invoices`:
 
 ![9.png](9.png)
 
 ![10.png](10.png)
 
+![10.png](10.1.png)
+
 ![11.png](11.png)
 
-If everything went well, you will see the status of invoice marked as "Paid" (in the portal and in the admin page):
+If everything goes well, you will see the status of invoice marked as `Paid` (on the customer and admin portal):
 
 ![12.png](12.png)
 
-On the customer portal dashboard, customers can also see the list of non-paid invoices and a "Pay" button near each invoice:
+On the customer *Portal Dashboard*, customers can also see the list of non-paid invoices in *Ippay* widget (entry point) and the same-name buttons to pay such invoices.
 
 ![13.png](13.png)
 
-To refill balances, customers can use the following link - “http://yoursplynxurl/ippay”, where they have to enter an Amount of payment and click on "Add":
+The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx_ippay_addon` module item in *Actions* column, click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon. More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
+
+To refill balances, customers can use the following link - `https://<splynx_domain_address>/ippay`, where they have to choose the *Account type*, enter the *Amount* of payment and click on **Add** button:
 
 ![14.png](14.png)
 
 ![15.png](15.png)
 
-Additionally, you can charge all customers using one button! Navigate to *Finance → Invoices*, set the period and click on "Charge" as depicted below:
+Additionally, you can charge all customers using one button, navigate to `Finance → Invoices`, set the period and click on **Charge** button as depicted below:
 
 ![16.png](16.png)
 
 ![17.png](17.png)
 
-![18.png](18.png)
+### Direct payments
+
+Using the payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the *IPpay* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase. For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page. In case the customer has saved the payment credentials on the *Portal*, they do not need to add further details when using the direct payment link in the future. If the credit card in not linked on the *Portal*, the payment details need to be entered each time the payment link is used.
+
+To create a direct payment link, please use the patterns below:
+
+**To pay the Invoice:**
+
+<details>
+<summary>by invoice ID</summary>
+<div markdown="1">
+
+```
+https://<splynx_domain_address>/ippay/direct-pay-invoice-by-id?item_id=<Invoice_id>
+
+```
+</div>
+</details>
+
+<details>
+<summary>by invoice number</summary>
+<div markdown="1">
+
+```
+https://<splynx_domain_address>/ippay/direct-pay-invoice?item_id=<Invoice_number>
+
+```
+</div>
+</details>
+
+
+
+**To pay the Proforma Invoice:**
+
+<details>
+<summary>by proforma invoice ID</summary>
+<div markdown="1">
+
+```
+https://<splynx_domain_address>/ippay/direct-pay-proforma-by-id?item_id=<proforma_id>
+
+```
+</div>
+</details>
+
+<details>
+<summary>by proforma invoice number</summary>
+<div markdown="1">
+
+```
+https://<splynx_domain_address>/ippay/direct-pay-proforma?item_id=<proforma_number>
+
+```
+</div>
+</details>

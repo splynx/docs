@@ -3,7 +3,7 @@ Paystack
 
 Paystack is a Splynx add-on which allows customers to pay for invoices via the payment gateway - https://paystack.com/.
 
-The add-on can work with different credit cards and bank accounts, if cards or bank accounts are saved on customer profiles, the addon allows you to charge all customers using *Direct debit orders*.
+The add-on can work with different credit cards and bank accounts, if cards or bank accounts are saved in customer profiles, the add-on allows you to charge all customers using *Direct debit orders*.
 
 The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server.
 
@@ -20,7 +20,7 @@ Navigate to `Config -> Integrations -> Add-ons`:
 
 ![(image)](0.png)
 
-Locate or search for the `splynx-paystack` add-on and click on the install icon in the *Actions* column:
+Locate or search for the `splynx-paystack` add-on and click on the *Install* icon in the *Actions* column:
 
 ![(image)](1.png)
 
@@ -34,7 +34,8 @@ After the installation process has completed, you have to configure the paramete
 
 ![(image)](3.png)
 
-Locate or search for the `splynx-paystack` add-on module and click on the <icon class="image-icon">![](edit.png)</icon> (*Edit*) icon in the *Actions* column:
+Locate or search for the `splynx-paystack` add-on module and click on the
+<icon class="image-icon">![edit](edit.png)</icon> (*Edit*) icon in the *Actions* column:
 
 ![(image)](4.png)
 
@@ -63,11 +64,11 @@ The configuration of add-on **Entry points** can be found in `Config → Integra
 
 ![(image)](10.1.png)
 
-If everything went well, you will see the status of the invoice marked as "Paid" (in the customer and admin portal):
+If everything goes well, you will see the status of the invoice marked as `Paid` (on the customer and admin portal):
 
 ![(image)](11.png)
 
-Additionally, you can charge all customers using one button! Navigate to *Finance → Invoices*, set the period and click on "Charge" as depicted below:
+Additionally, you can charge all customers using one button, navigate to `Finance → Invoices`, set the period and click on **Charge** button as depicted below:
 
 ![(image)](12.png)
 
@@ -75,7 +76,7 @@ Additionally, you can charge all customers using one button! Navigate to *Financ
 
 ### Direct payments
 
-Using the payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the *Paystack* addon to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase. For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page. In case the customer has saved the payment credentials on the *Portal*, they do not need to add further details when using the direct payment link in the future. If the credit card in not linked on the Portal, the payment details need to be entered each time the payment link is used.
+Using the payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the *Paystack* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase. For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page. In case the customer has saved the payment credentials on the *Portal*, they do not need to add further details when using the direct payment link in the future. If the credit card in not linked on the *Portal*, the payment details need to be entered each time the payment link is used.
 
 To create a direct payment link, please use the patterns below:
 

@@ -6,48 +6,49 @@ This is a guide illustrating how to troubleshoot communication between your rout
 Video tutorials for Radius configuration can be found on the page below:
   https://splynx.com/384/ispframework-and-radius-mikrotik-example/.
 
+### Step 1
+Firstly make sure that the router is accessible from Splynx and vice versa that the router can "reach" Splynx. In Splynx you can check the reachability with a ping status from Splynx to the router:
 
 The steps below can be used to configure your router and the radius server:
 
-### Mikrotik Radius section
-To configure the Mikrotik router and Radius authentication, the following settings should be changed in the Mikrotik Radius section.
-1. Choose the services you want to be authenticated by Radius (ppp, DHCP, login etc.)
-2. Enter the server IP address = Splynx IP address, reachable from Mikrotik
-3. Enter the Radius Secret = this is the value configured in Splynx under `Networking / Routers / View,  Radius Secret`
+This troubleshooting step is only suitable when the "ping" (ICMP traffic) is not restricted between the router and the Splynx server (If ICMP echo responses are not blocked/filtered on the firewall).
 
   ![Radius server settings](mikrotik_router_radius.png)
 
-4. We cannot use more than one Radius server per Service
+* in case of using PPPOE with Radius follow this - [PPPoE with RADIUS](../authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
 
-  ![Radius server](router_radius.png)
+* in case of using DHCP with RADIUS (IPoE) follow this - [DHCP with RADIUS](../authentication_of_customers/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
 
 
+Compare RADIUS parameters on the router information tab in Splynx and on the Mikrotik router under the `RADIUS` menu:
 
 ### MikroTik PPP (in case if PPPoE is used)
 1. In the Secrets tab of the PPP configuration, please enable “Use radius (yes) and Accounting (yes)” for the PPP Authentication & Accounting features.
 
 ![PPP Authentication/Accounting](PPP_Authentication.png)
 
-2. Set the PPP Profile to default or default-encrypted and configure the Local address (this is the IP address of the Mikrotik router for establishing PPP connections)
+The `Secret` field on the Mikrotik should be the same as field `Radius secret` on the router in Splynx.
 
-![PPP profile](PPP_local_address.png)
+The `IP Address` field on the Mikrotik should be filled with Splynx' IP.
 
+The `Src.Address` field on Mikrotik should be filled with the router IP or can be 0.0.0.0.
 
-### MikroTik DHCP
+The `NAS IP` field in Splynx is the real source IP address for RADIUS packets. It is recommended that in the Radius settings of the Mikrotik router `Src. address` equals `NAS IP` in Splynx.
 
-If you intend on using IPoE authentication (DHCP), it is necessary to enable Radius communication on the DHCP server.
+Also make sure that you don't have multiple RADIUS servers configured with same services:
 
 ![DHCP server](radius_dhcp.png)
 
+You can have multiple RADIUS servers however each server should be configured with unique services, for example: RADIUS server #1 configured for DHCP service, RADIUS server #2 configured for PPP service.
 
 ### MikroTik Hotspot
 
-To enable Radius hotspot authentication, please change the Hotspot configuration of the Mikrotik router under `IP -> Hotspot` as depicted in the image below:
+Check the firewall and ports. RADIUS is transported over UDP on ports 1812 (authorization) and 1813 (accounting) so these 2 ports should be open on the router as well as port 3799 (radius incoming) should be open and not blocked by any firewall rules/filters.
 
 ![Radius hotspot](radius_hotspot.png)
 
 
-After we've enabled services for Radius authentication, we can proceed to configure the router within Splynx.
+By default Splynx writes logs into 2 files: `coa.log` and `short.log` that you can find in the folder `/var/www/splynx/logs/radius` on CLI or via the web interface, navigate to ` Administration -> Logs -> Files` and search these 2 files.
 
 
 
@@ -102,47 +103,65 @@ The file will display records as shown below:
 28/02 14:54:21:2743 - [265798031           ] - [               ] - [card] Accept
 28/02 14:54:21:5017 - [265798031           ] - [10.5.28.211    ] - [card] Log in
 28/02 15:10:35:6518 - [voucher-login       ] - [10.1.0.202     ] - [card] Log off -  (User-Request)
-28/02 15:11:05:2315 - [serieALRClM4sj      ] - [               ] - Reject card - [4FFE0CD555D3] -> [hap-liter] Password is incorrect
+28/02 15:11:05:2315 - [serieALRClM4sj      ] - [               ] - Reject card - [4FFE0CD555D3] -> [hap-lite] Password is incorrect
 ```
+
+This file contains the following information: date and time, login of the service, IP and description of action.
+
 Descriptions of records:
-* **Accept** - The Splynx server received the Radius Access Request packet from the Router and a Radius Access Accept packet was sent back. Customer was successfully authenticated.
-\* Please note, if MS-CHAP is used for authentication, we can see `Accept` here even if password is incorrect.
-* **Log in** - The Splynx server received the Radius Accounting Start packet from Router.
-* **Log off** - The Splynx server received the Radius Accounting Stop packet from Router.
-* **Reject** - The Splynx server received the Radius Access Request packet from Router and Radius Access Reject was sent back. Customer was not authenticated.
-* **Reject (Attribute accept)** - The Splynx server sent the Radius Access Accept packet to Router with the IP address from the Splynx service. Customer was authenticated on the router with a session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into the Address list `Reject_x` on the router.
-* **Reject (ATTR + IP accept)** - The Splynx server sent the Radius Access Accept packet to the Router with an IP address from the Splynx Reject pool (*Config / Networking / Radius / Reject IP x*). Customer was authenticated on the router with session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into the Address list `Reject_x` on the router.
+* **Accept** - The Splynx server received the Radius-Access Request packet from the Router and a Radius Access-Accept packet was sent back. Customer was successfully authenticated. *Please note, if MS-CHAP is used for authentication, we can see `Accept` here even if password is incorrect*;
+* **Log in** - The Splynx server received the Radius Accounting-Start packet from Router;
+* **Log off** - The Splynx server received the Radius Accounting-Stop packet from Router;
+* **Reject** - The Splynx server received the Radius Access-Request packet from Router and Radius Access-Reject was sent back. Customer was not authenticated;
+* **Reject (Attribute accept)** - The Splynx server sent the Radius Access-Accept packet to Router with the IP address from the Splynx service. Customer was authenticated on the router with a session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into the Address list `Reject_x` on the router;
+* **Reject (ATTR + IP accept)** - The Splynx server sent the Radius Access-Accept packet to the Router with an IP address from the Splynx Reject pool (*Config / Networking / Radius / Reject IP x*). Customer was authenticated on the router with session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into the Address list `Reject_x` on the router;
 * **\[card\] Accept** - The same as **Accept** but for Prepaid vouchers.
 * **\[card\] Log in** - The same as **Log in** but for Prepaid vouchers.
 * **\[card\] Log off** - The same as **Log out** but for Prepaid vouchers.
 * **Reject card** - The same as **Reject** but for Prepaid vouchers.
 
-In the case of authentication errors or logging off, the reasons are shown in the radius logs under `Administration / Logs / Files / radius short log`.
+In the case of authentication errors or logging off, the reasons are shown in the radius logs under ` Administration -> Logs -> Files -> radius/short` as well as in the customer statistics under sessions (enable the "Termination cause" column)
+
+**!Note** Disconnection reasons in the `short.log` like **Admin-reset** or **Lost-carrier** are not related to Splynx and should be investigated on the network.
 
 ---
+In the `coa.log` you can find records that can help you with troubleshooting of issues with disconnection, plan change etc. If Splynx sends a CoA packet - it will be logged here:
+
+```
+2021-10-07 07:15:02 - echo "User-Name = mike, Framed-IP-Address = 192.168.200.218, NAS-IP-Address = 10.250.32.3" | /usr/bin/sudo /usr/bin/radclient 10.250.32.3:3799 disconnect "9734c51bb208" > /dev/null &
+2021-10-07 07:15:49 - echo "User-Name = mike, Framed-IP-Address = 192.168.200.28, NAS-IP-Address = 10.250.32.3" | /usr/bin/sudo /usr/bin/radclient 10.250.32.3:3799 disconnect "9734c51bb208" > /dev/null &
+2021-10-07 07:20:10 - echo "User-Name = mike,Framed-IP-Address = 192.168.200.108,  NAS-IP-Address = 10.250.32.3 , Mikrotik-Rate-Limit = \"5000000/5000000 0/0 0/0 0/0 5 5000000/5000000\"" | /usr/bin/sudo /usr/bin/radclient 10.250.32.3:3799 coa "9734c51bb208" > /dev/null &
+2021-10-07 07:32:46 - echo "User-Name = mike, Framed-IP-Address = 192.168.200.137, NAS-IP-Address = 10.250.32.3" | /usr/bin/sudo /usr/bin/radclient 10.250.32.3:3799 disconnect "9734c51bb208" > /dev/null &
+2021-10-07 07:45:37 - echo "User-Name = mike, Framed-IP-Address = 192.168.200.5, NAS-IP-Address = 10.250.32.3" | /usr/bin/sudo /usr/bin/radclient 10.250.32.3:3799 disconnect "9734c51bb208" > /dev/null &
+2021-10-07 11:45:10 - echo "User-Name = mike,Framed-IP-Address = 192.168.200.5,  NAS-IP-Address = 10.250.32.3 , Mikrotik-Rate-Limit = \"10000000/10000000 0/0 0/0 0/0 5 1000000/1000000\"" | /usr/bin/sudo /usr/bin/radclient 10.250.32.3:3799 coa "9734c51bb208" > /dev/null &
+
+```
+
+In this part of the `coa.log` you can see that Splynx has sent some CoA packets to disconnect a user and change the speed of the connection.
 
 If `radius/short.log` is empty or does not provide enough information, the Radius server should be set to debug mode.
 
-The Splynx Radius server consist of 2 daemons – splynx_radd and freeradius. Both of them have different debugging and show different information. Let’s start with the splynx_radd debugging:
+The Splynx Radius server consist of 2 services – splynx_radd and freeradius. Both of them have different debugging procedures and show different information. Let’s start with the splynx_radd debug:
 
-To enable debug mode of splynx_radd, navigate to *Config / Networking / Radius extended* and enable debug into the file:
+To enable debug mode for splynx_radd, navigate to *Config / Networking / Radius extended* and enable debug (change the level of debug to get more or less detail in the log):
 
 ![(image)](splynx_radd_debug.png)
 
-Then wait few minutes until new settings will be applied. Or you can apply new settings immediately if you restart Radius server.
-To restart Radius server use a button at the bottom of the same page (*Config / Networking / Radius extended*), or enter command in SSH:
+Apply new settings immediately by saving and restarting the Radius server.
+To restart Radius server use the button at the bottom of the same page (*Config / Networking / Radius extended*), or enter command in SSH:
 ```
 service splynx_radd restart
 ```
 
-Now we can check the debug file, again it’s accessible from CLI of Linux Splynx server:
+Now we can check the debug file, again, it’s also accessible from the CLI of Linux Splynx server:
 `/var/www/splynx/logs/radius/debug.log`
-The best way to check the file is command
+The best way to check the file is by using the tail command:
 ```
 tail -f /var/www/splynx/logs/radius/debug.log
 ```
+Once the debug is completed - remember to switch the debug off the same way it was switched on, save and restart the radius server again. (To avoid massive radius rebug files forming)
 
-If splynx_radd debug doesn’t show us anything, we can try to run freeradius daemon in debug mode and see if any packets are received by Radius server.
+If splynx_radd debug doesn’t show us the desired results, we can also run freeradius daemon in debug mode and see if any packets are received by Radius server.
 
 Run CLI commands to get output in the console:
 ```
@@ -154,16 +173,26 @@ or this command to write all collected log into a log file:
 service freeradius stop && freeradius -Xxxx | tee Debugxxx.log
 ```
 
-wait for 2-5 minutes to collect some data and stop execution of this command by press **Ctrl+C** and start freeradius in a regular mode:
+wait for 2-5 minutes to collect some data and stop execution of this command by using **Ctrl+C** and start freeradius in a regular mode:
 
 ```
 service freeradius start
 ```
 
-If you don’t see any debug messages when customer tries to connect to Mikrotik Router, it means that your router cannot send packets and connect to Radius server at all. It means that you have to verify networking, routing and NAT settings of the network.
+if the freeradius daemon returns an error after the last command run this:
 
-**Make sure that UDP ports 1812 (authentication) and 1813 (accounting) are opened on a router. These ports by default are using for RADIUS authentication and accounting.**
+```
+killall freeradius; service freeradius restart
+```
+
+If you don’t see any debug messages when a customer tries to connect to the Mikrotik Router, it means that your router's radius packets are not reaching the Splynx Radius server at all. It means that you have to verify networking, routing and NAT settings of the network.
+
+The use of a VPN in any case where connectivity or Natting is an issue is highly recommended and can be setup natively in Splynx via the GUI:
+
+[Our guide on OpenVPN](/configuration/tools/openvpn/openvpn.md)
+
+On the Mikrotik Router there is also the ability to run extended debug to see exactly what the router is sending to the Radius server:
 
 On the Mikrotik Router there is also the ability to run extended debug to see what exactly the router is sending to the Radius server:
 
-![Debug router](debug_router.png)
+For more information on how RADIUS works, please visit [Radius Wikipedia](https://en.wikipedia.org/wiki/RADIUS) or [FreeRADIUS Wiki](https://wiki.freeradius.org/Home)

@@ -5,6 +5,8 @@ IPpay is a Splynx add-on which allows refilling of customer balance and paying i
 
 The add-on can work with different credit cards and bank accounts, if cards or bank accounts are saved in customer profiles, the add-on allows you to charge all customers using *Direct debit orders*.
 
+### Add-on installation
+
 The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server
 
 To install the *IPpay* add-on via CLI, the following commands can be used:
@@ -30,7 +32,7 @@ Click on the **OK, confirm** button to begin the installation process:
 
 ### Add-on settings
 
-After installation process has completed, you have to configure add-on, navigate to `Config → Integrations → Modules list`:
+After the installation process has completed, you have to configure add-on, navigate to `Config → Integrations → Modules list`:
 
 ![4.png](4.png)
 

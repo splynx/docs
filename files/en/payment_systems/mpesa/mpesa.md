@@ -149,9 +149,9 @@ This step involves moving your application into production.
 
     ![(image)](image2018-9-18_9-24-28.png)
 
-*Operator:*
+*Operator*
 
-    ![](operator.png)
+![(image)](operator.png)
 
 ### M-PESA web portal
 

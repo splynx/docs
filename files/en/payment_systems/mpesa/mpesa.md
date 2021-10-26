@@ -151,7 +151,7 @@ This step involves moving your application into production.
 
 *Operator:*
 
-    ![(image)](image2018-9-18_9-25-28.png)
+    ![](operator.png)
 
 ### M-PESA web portal
 
@@ -233,11 +233,11 @@ https://<splynx_domain_address>/smps/direct-pay-proforma?item_id=<proforma_numbe
 
 **Important**
 
-**Any request made to M-Pesa support team should be sent via the email used in the Paybill application process.**
+Any request made to M-Pesa support team should be sent via the email used in the Paybill application process.
 
-**M-Pesa will not take into action any request sent to them without verifying ownership of the Paybill Number**
+M-Pesa will not take into action any request sent to them without verifying ownership of the Paybill Number.
 
-**Every Email sent must include the Paybill Number and Organization Name as registered during application**
+Every Email sent must include the Paybill Number and Organization Name as registered during application.
 
 
 <details>

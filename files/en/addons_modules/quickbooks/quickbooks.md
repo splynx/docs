@@ -239,6 +239,6 @@ In `Config → Integration → Modules list → Splynx QuickBooks Accounting` wh
 
 In addition, there is a "Load QuickBooks customers for manual pairing" button. This feature pulls the customer list from QuickBooks into Splynx and allows the admin to manually pair the customers without having to create them in either platform again. Firstly, load customers and then, perform manual pairing.
 
-![Entry point 1](31.png)
+![Entry point 1](31u.png)
 
 ![Entry point 1](32.png)

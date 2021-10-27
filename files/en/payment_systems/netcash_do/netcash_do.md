@@ -47,11 +47,19 @@ These values have to be added to add-on configuration, located in `Config → In
 
 You can also set **service fee** and **unpaid fee** for customers and set which **admins roles** have access via the admin panel to `Finance → Netcash Debit Order check payments`.
 
-![settings2.png](settings_2.png)
+![settings2.png](settings2.png)
 
-The following roles can be specified in the field **admins roles**: `super-administrator`, `administrator`, `manager`, `financial-manager`, `customer-creator`, `engineer` and `technician` (account's [permissions](administration/main/admins_and_permissions/admins_and_permissions.md) to **Finance** module and **Netcash Debit Order add-on** are required as well).
+The following roles can be specified in the field **admins roles**: `super-administrator`, `administrator`, `manager`, `financial-manager`, `customer-creator`, `engineer` and `technician`.
+
+**Note**: The roles of `super-administrator`, `administrator` and `manager` are selected by default in the drop down menu after add-on installation, it means that admin account with any of these roles always has access to `Finance → Netcash Debit Order check payments` menu (account's [permissions](administration/main/admins_and_permissions/admins_and_permissions.md) to **Finance** module and **Netcash Debit Order add-on** are required as well).
 
 ![settings2.1.png](settings_2.1.png)
+
+In Splynx v3.1, the names of admins roles cannot be selected, you should write them into the field manually, each role should be separated by coma without spaces. For example, `administrator,super-administrator,manager,engineer`.
+
+But if admin account has only `technician` role and this role was not selected in add-on config, the access to `Netcash Debit Order check payments` menu for such admin will be **forbidden**.
+
+![](forbidden.png)
 
 In order to disable the payments sync from `Netcash → Splynx` (e.g. you configured the payments sync from [SageOne](addons_modules/sageone/sageone.md) to Splynx), you can use **Disable payment processing by system** toggle. If toggle is `enabled` - *cron* will not sync payments to Splynx from Netcash side, if it's `disabled` - payments will be synced into Splynx.
 
@@ -246,6 +254,7 @@ https://<splynx_domain_address>/netcash-debit-order/direct-pay-proforma?item_id=
 ```
 </div>
 </details>
+
 
 <details>
 <summary><b>Screenshots</b></summary>

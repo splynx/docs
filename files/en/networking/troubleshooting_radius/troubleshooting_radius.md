@@ -1,31 +1,41 @@
 Troubleshooting Radius server
 ==========
 
-This is a guide illustrating how to troubleshoot communication between your router (Mikrotik example) and the Radius server.
+This is a guide illustrating how to troubleshoot communication between your router (Mikrotik example) and the Radius server (Splynx).
 
-Video tutorials for Radius configuration can be found on the page below:
-  https://splynx.com/384/ispframework-and-radius-mikrotik-example/.
+Video tutorials for Radius configuration can be found on this [page](https://splynx.com/384/ispframework-and-radius-mikrotik-example)
+
+<details>
+<summary>Click here to expand</summary>
+<div markdown="1">
+
+<iframe width="350" height="270" src="https://www.youtube.com/embed/5iA85JCJRyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</details>
+
+
 
 ### Step 1
 Firstly make sure that the router is accessible from Splynx and vice versa that the router can "reach" Splynx. In Splynx you can check the reachability with a ping status from Splynx to the router:
 
-The steps below can be used to configure your router and the radius server:
+![ping](ping.png)
 
 This troubleshooting step is only suitable when the "ping" (ICMP traffic) is not restricted between the router and the Splynx server (If ICMP echo responses are not blocked/filtered on the firewall).
 
-  ![Radius server settings](mikrotik_router_radius.png)
+Also read these manuals and compare the settings to ensure that setup is correct:
 
-* in case of using PPPOE with Radius follow this - [PPPoE with RADIUS](../authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
+* in case of using PPPOE with Radius follow this - [PPPoE with RADIUS](networking/authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
 
-* in case of using DHCP with RADIUS (IPoE) follow this - [DHCP with RADIUS](../authentication_of_customers/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
+* in case of using DHCP with RADIUS (IPoE) follow this - [DHCP with RADIUS](networking/authentication_of_customers/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
 
+### Step 2
 
 Compare RADIUS parameters on the router information tab in Splynx and on the Mikrotik router under the `RADIUS` menu:
 
-### MikroTik PPP (in case if PPPoE is used)
-1. In the Secrets tab of the PPP configuration, please enable “Use radius (yes) and Accounting (yes)” for the PPP Authentication & Accounting features.
+![mikrotik](radius_server.png)
 
-![PPP Authentication/Accounting](PPP_Authentication.png)
+![splynx_router](router_splynx.png)
 
 The `Secret` field on the Mikrotik should be the same as field `Radius secret` on the router in Splynx.
 
@@ -37,61 +47,22 @@ The `NAS IP` field in Splynx is the real source IP address for RADIUS packets. I
 
 Also make sure that you don't have multiple RADIUS servers configured with same services:
 
-![DHCP server](radius_dhcp.png)
+![multiply](multiply_radius.png)
 
 You can have multiple RADIUS servers however each server should be configured with unique services, for example: RADIUS server #1 configured for DHCP service, RADIUS server #2 configured for PPP service.
 
-### MikroTik Hotspot
+### Step 3
 
 Check the firewall and ports. RADIUS is transported over UDP on ports 1812 (authorization) and 1813 (accounting) so these 2 ports should be open on the router as well as port 3799 (radius incoming) should be open and not blocked by any firewall rules/filters.
 
-![Radius hotspot](radius_hotspot.png)
+### Step 4
 
+Inspecting of logs.
 
 By default Splynx writes logs into 2 files: `coa.log` and `short.log` that you can find in the folder `/var/www/splynx/logs/radius` on CLI or via the web interface, navigate to ` Administration -> Logs -> Files` and search these 2 files.
 
+The `short.log` file will display all records of login attempts, the reason of disconnection. For example:
 
-
-### Splynx router configuration
-
-`Networking -> Routers`, here you can add or edit router settings.
-The following fields need to be given special attention as these are the important fields for the successful configuration of your router:
-1. Radius Secret - should be the same as in Mikrotik settings
-2. IP/Host –  the real IP (or host, or dyndns host) from which Mikrotik sends packets from. If there is a NAT between the Mikrotik and Splynx Radius, the host IP should be the public IP of NAT router and the real IP will be the private IP of Mikrotik router.
-3. Authorization/Accounting – select an authentication method between DHCP, PPP or HotSpot Radius authentication. Please note, radius authentication runs actively in the background on Splynx - this is especially useful because you can select an API method of authentication/accounting like DHCP (which requires API accounting as Mikrotik doesn't support Radius accounting via DHCP). In this case, the Mikrotik API will be used to login to the router to retrieve the accounting statistics for all customers. All services using radius authentication and accounting will work regardless of the authentication method chosen on Splynx as long as they are enabled in the Radius config of the router.
-4. NAS IP – IP address of the router (on the radius packet – NAS-IP-Address), if you are using the hostname of your router, it is necessary to set the physical IP address, which you have configured on your Mikrotik router as the – Radius – Src. Address)
-
-![Router information](router_info.png)
-
-
-### Define IP networks for IP assignments
-
-` Networking -> IPv4 networks`
-
-Add networks to use for dynamic assignment (pool) or permanent (static) IP assignments
-
-![Networks](networks.png)
-
-
-### Activate the customer and configure the Internet service
-
-After have added the router and networks to Splynx, we can proceed to add and activate a customer.
-
-![Active](active.png)
-
-
-Thereafter, we need to create an Internet service for the customer with the PPP details (or MAC when using DHCP authentication), IP address and other details.
-
-![Service](service.png)
-
-Once all these steps have been completed and the Mikrotik router still shows Radius timeout in the logs, Below is a guide for quick troubleshooting.
-
-
-### Troubleshooting
-
-First of all, check the file within Splynx logs called `radius/short.log`. Which can be found in `/var/www/splynx/logs/radius` on CLI or via the web interface, navigate to ` Administration -> Logs -> Files`.
-
-The file will display records as shown below:
 ```
 28/02 14:54:16:7361 - [Login               ] - [10.2.32.109    ] - Accept
 28/02 14:54:23:3637 - [C38F676DB15B        ] - [10.2.36.0      ] - Log in
@@ -139,13 +110,13 @@ In the `coa.log` you can find records that can help you with troubleshooting of 
 
 In this part of the `coa.log` you can see that Splynx has sent some CoA packets to disconnect a user and change the speed of the connection.
 
-If `radius/short.log` is empty or does not provide enough information, the Radius server should be set to debug mode.
+---
 
 The Splynx Radius server consist of 2 services – splynx_radd and freeradius. Both of them have different debugging procedures and show different information. Let’s start with the splynx_radd debug:
 
 To enable debug mode for splynx_radd, navigate to *Config / Networking / Radius extended* and enable debug (change the level of debug to get more or less detail in the log):
 
-![(image)](splynx_radd_debug.png)
+![(image)](debug.png)
 
 Apply new settings immediately by saving and restarting the Radius server.
 To restart Radius server use the button at the bottom of the same page (*Config / Networking / Radius extended*), or enter command in SSH:
@@ -163,11 +134,7 @@ Once the debug is completed - remember to switch the debug off the same way it w
 
 If splynx_radd debug doesn’t show us the desired results, we can also run freeradius daemon in debug mode and see if any packets are received by Radius server.
 
-Run CLI commands to get output in the console:
-```
-service freeradius stop; freeradius -Xxxx
-```
-or this command to write all collected log into a log file:
+Run CLI commands to get output into the file:
 
 ```
 service freeradius stop && freeradius -Xxxx | tee Debugxxx.log
@@ -193,6 +160,6 @@ The use of a VPN in any case where connectivity or Natting is an issue is highly
 
 On the Mikrotik Router there is also the ability to run extended debug to see exactly what the router is sending to the Radius server:
 
-On the Mikrotik Router there is also the ability to run extended debug to see what exactly the router is sending to the Radius server:
+![Debug router](logging.png)
 
 For more information on how RADIUS works, please visit [Radius Wikipedia](https://en.wikipedia.org/wiki/RADIUS) or [FreeRADIUS Wiki](https://wiki.freeradius.org/Home)

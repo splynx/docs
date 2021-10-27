@@ -3,8 +3,18 @@ Troubleshooting Radius server
 
 This is a guide illustrating how to troubleshoot communication between your router (Mikrotik example) and the Radius server (Splynx).
 
-Video tutorials for Radius configuration can be found on the page below:
-  https://splynx.com/384/ispframework-and-radius-mikrotik-example/.
+Video tutorials for Radius configuration can be found on this [page](https://splynx.com/384/ispframework-and-radius-mikrotik-example)
+
+<details>
+<summary>Click here to expand</summary>
+<div markdown="1">
+
+<iframe width="350" height="270" src="https://www.youtube.com/embed/5iA85JCJRyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</details>
+
+
 
 ### Step 1
 Firstly make sure that the router is accessible from Splynx and vice versa that the router can "reach" Splynx. In Splynx you can check the reachability with a ping status from Splynx to the router:
@@ -15,11 +25,11 @@ This troubleshooting step is only suitable when the "ping" (ICMP traffic) is not
 
 Also read these manuals and compare the settings to ensure that setup is correct:
 
-* in case of using PPPOE with Radius follow this - [PPPoE with RADIUS](../authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
+* in case of using PPPOE with Radius follow this - [PPPoE with RADIUS](networking/authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
 
-* in case of using DHCP with RADIUS (IPoE) follow this - [DHCP with RADIUS](../authentication_of_customers/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
+* in case of using DHCP with RADIUS (IPoE) follow this - [DHCP with RADIUS](networking/authentication_of_customers/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
 
-### Step 1
+### Step 2
 
 Compare RADIUS parameters on the router information tab in Splynx and on the Mikrotik router under the `RADIUS` menu:
 
@@ -41,11 +51,11 @@ Also make sure that you don't have multiple RADIUS servers configured with same 
 
 You can have multiple RADIUS servers however each server should be configured with unique services, for example: RADIUS server #1 configured for DHCP service, RADIUS server #2 configured for PPP service.
 
-### Step 2
+### Step 3
 
 Check the firewall and ports. RADIUS is transported over UDP on ports 1812 (authorization) and 1813 (accounting) so these 2 ports should be open on the router as well as port 3799 (radius incoming) should be open and not blocked by any firewall rules/filters.
 
-### Step 3
+### Step 4
 
 Inspecting of logs.
 
@@ -144,9 +154,10 @@ killall freeradius; service freeradius restart
 
 If you don’t see any debug messages when a customer tries to connect to the Mikrotik Router, it means that your router's radius packets are not reaching the Splynx Radius server at all. It means that you have to verify networking, routing and NAT settings of the network.
 
-The use of a VPN in any case where connectivity or Natting is an issue is highly recommended and can be setup natively in Splynx via the GUI:
+The use of a VPN in any case where connectivity or NATting is an issue is highly recommended and can be setup natively in Splynx via the GUI:
 
-[Our guide on OpenVPN](/configuration/tools/openvpn/openvpn.md)
+[Our guide on OpenVPN](configuration/tools/openvpn/openvpn.md) and [OpenVPN client / Routes](configuration/tools/openvpn/cloud/routes/routes.md)
+
 
 On the Mikrotik Router there is also the ability to run extended debug to see exactly what the router is sending to the Radius server:
 

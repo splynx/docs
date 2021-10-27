@@ -154,9 +154,10 @@ killall freeradius; service freeradius restart
 
 If you don’t see any debug messages when a customer tries to connect to the Mikrotik Router, it means that your router's radius packets are not reaching the Splynx Radius server at all. It means that you have to verify networking, routing and NAT settings of the network.
 
-The use of a VPN in any case where connectivity or Natting is an issue is highly recommended and can be setup natively in Splynx via the GUI:
+The use of a VPN in any case where connectivity or NATting is an issue is highly recommended and can be setup natively in Splynx via the GUI:
 
-[Our guide on OpenVPN](/configuration/tools/openvpn/openvpn.md)
+[Our guide on OpenVPN](configuration/tools/openvpn/openvpn.md) and [OpenVPN client / Routes](configuration/tools/openvpn/cloud/routes/routes.md)
+
 
 On the Mikrotik Router there is also the ability to run extended debug to see exactly what the router is sending to the Radius server:
 

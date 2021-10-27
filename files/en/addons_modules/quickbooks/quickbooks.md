@@ -41,7 +41,7 @@ The general configuration of the QuickBooks integration module can be viewed and
 
 ![Entry point 1](Selection_afeaa.png)
 
-![Entry point 1](Selection_bbb87.png)
+![Entry point 1](Selection_bbb87u.png)
 
 ### Accounting API settings:
 
@@ -225,7 +225,7 @@ The same logic is for invoices and payments, if accounting ID is present - it wa
 
 In `Config → Integration → Modules list → Splynx QuickBooks Accounting` when to click on the gear icon, we will see the drop down menu with additional settings related to QuickBooks add-on:
 
-![Entry point 1](30.png)
+![Entry point 1](30u.png)
 
 **Connect with QuickBook** - if the QuickBooks Accounting addon was disconnected from the QuickBooks account, you can reconnect it here;
 

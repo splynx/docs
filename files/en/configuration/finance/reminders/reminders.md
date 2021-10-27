@@ -26,7 +26,7 @@ The following **Reminders settings** can be configured here:
 * **Subject #2** - type a subject for 2nd Reminder;
 * **Reminder #3 day** - select in how many days you'd like the Third Reminder to be sent;
 * **Subject #3** - type a subject for 3rd Reminder;
-* **All available payment methods** - the toggler allows to choose all [payment methods](configuration/finance/payment_methods/payment_methods.md) in Splynx for which the reminders will be used;
+* **All available payment methods** - the toggle allows to choose all [payment methods](configuration/finance/payment_methods/payment_methods.md) in Splynx for which the reminders will be used;
 * **Reminder payment methods** - in case `All available payment methods` option is disabled, we can choose the particular payment method (-s) in drop-down list on which to send notifications;
 * **Attach unpaid invoices with reminders to email** - enable this option to attach unpaid invoices to the email.
 

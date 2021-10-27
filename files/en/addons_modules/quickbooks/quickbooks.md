@@ -41,7 +41,7 @@ The general configuration of the QuickBooks integration module can be viewed and
 
 ![Entry point 1](Selection_afeaa.png)
 
-![Entry point 1](Selection_bbb87.png)
+![Entry point 1](Selection_bbb87u.png)
 
 ### Accounting API settings:
 
@@ -66,9 +66,11 @@ The general configuration of the QuickBooks integration module can be viewed and
 **Payments push to QuickBooks** - select the payment methods to sync to QuickBooks, this selection only applies if the selected method to sync payments is set to _Splynx → QuickBooks_.
 _Please note that you do not have to select QuickBooks in the list of payment methods to sync as this will grab payments from QuickBooks._;
 
-**Import payments from date** - specify the date in 'Y-m-d'(2021-05-01) format, which will be used as the start date for importing all prepayments to Splynx;
+**Import payments from date** - specify the date in `Y-m-d` format, e.g. 2021-05-01, which will be used as the start date for importing all prepayments to Splynx;
 
-**Create payment without invoice** - create payment in Splynx or add to bank statements only for payments without invoices (used on payments import);
+**Export invoices from date** - set a date in `Y-m-d` format, e.g. 2021-01-01 from which the invoices will be synchronized. The invoices that have been created by this date will be ignored during export. Will be checked by the invoice field `Date`.
+
+**Create payment without invoice** - a toggle allows to enable creating payment in Splynx when customer doesn't have invoice (e.g. for the partial payments in *QuickBooks*) or, in disabled status - only bank statement (-s) will be created in Splynx. Used on payments import. Attention: in some cases can lead to duplicate payments. Use this option with caution;
 
 **Customer name pattern** - used to set a customer's name pattern during sync to *QuickBooks* where it will be represented as `Display name as`. The next variables can be used: `{id}, {login}, {name}, {email}`. By default: `{name}`.
 
@@ -223,7 +225,7 @@ The same logic is for invoices and payments, if accounting ID is present - it wa
 
 In `Config → Integration → Modules list → Splynx QuickBooks Accounting` when to click on the gear icon, we will see the drop down menu with additional settings related to QuickBooks add-on:
 
-![Entry point 1](30.png)
+![Entry point 1](30u.png)
 
 **Connect with QuickBook** - if the QuickBooks Accounting addon was disconnected from the QuickBooks account, you can reconnect it here;
 
@@ -231,10 +233,12 @@ In `Config → Integration → Modules list → Splynx QuickBooks Accounting` wh
 
 **Manual Synchronization** - used to go back to manual synchronization window;
 
-**Customers manual pairing** - setting is used to open pairing window when there are existing customers in Splynx as well as in QuickBooks. Notice what the currency is set in QuickBooks add-on configuration, if Quickbooks customer currency is different, there will be synchronization errors for their related data.
+**Customers manual pairing** - setting is used to open pairing window when there are existing customers in Splynx as well as in QuickBooks. Notice what the currency is set in QuickBooks add-on configuration, if Quickbooks customer currency is different, there will be synchronization errors for their related data;
+
+**Module Config** - the link is used to open the QuickBooks add-on configuration page (`Config → Integration → Modules list → Splynx QuickBooks Accounting`).
 
 In addition, there is a "Load QuickBooks customers for manual pairing" button. This feature pulls the customer list from QuickBooks into Splynx and allows the admin to manually pair the customers without having to create them in either platform again. Firstly, load customers and then, perform manual pairing.
 
-![Entry point 1](31.png)
+![Entry point 1](31u.png)
 
 ![Entry point 1](32.png)

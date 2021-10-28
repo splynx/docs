@@ -86,7 +86,7 @@ Additionally, you can charge all customers using one button, navigate to `Financ
 
 ![(image)](12.png)
 
-The **Charge history** tab contains the charge history of all charges you have made, sometimes it is very helpful when there are finance issues.
+The [Charge history](finance/invoices/invoices.md) tab contains the charge history of all charges you have made, sometimes it is very helpful when there are finance issues.
 
 ### Add-on log files
 
@@ -94,7 +94,7 @@ The **Charge history** tab contains the charge history of all charges you have m
 
 ![(image)](logs.png)
 
-In *Paystack Logs* the different records can be viewed, like when a verification was performed or when a transaction was processed, etc.
+In *Integrapay Logs* the different records can be viewed and its response details etc.
 
 ![(image)](logs1.png)
 

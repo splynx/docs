@@ -18,7 +18,7 @@ apt-get install splynx-paystack
 
 To install it via the Web UI:
 
-Navigate to `Config -> Integrations -> Add-ons`:
+Navigate to `Config → Integrations → Add-ons`:
 
 ![(image)](0.png)
 

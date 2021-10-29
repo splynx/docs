@@ -104,9 +104,9 @@ Customers can also refill their balances using the following link - `https://<
 
 Additionally, you can charge all customers using one button, navigate to `Finance → Invoices`, set the period and click on **Charge** button as depicted below:
 
-![](18.0.jpg)
+![](18.0.png)
 
-![18.jpg](18.jpg)
+![](18.png)
 
 ### Export customers
 
@@ -114,11 +114,11 @@ To **sync all customers from Splynx to GoCardless**, follow the steps below:
 
 Navigate to `Config → Integrations → GoCardless` :
 
-![18.jpg](18.1.jpg)
+![](18.1.png)
 
 Select the [Payment method](configuration/finance/payment_methods/payment_methods.md) and [Partner](administration/main/partners/partners.md), then click on the **Export** button:
 
-![19.jpg](19.jpg)
+![](19.png)
 
 You will receive your customers list as a csv-file. Then, you can open your *GoCardless* dashboard on https://gocardless.com/ and upload the csv-file, as depicted below:
 

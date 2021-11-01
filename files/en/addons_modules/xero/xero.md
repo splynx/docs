@@ -58,6 +58,19 @@ The general configuration of the Xero integration module can be viewed and edite
 
 - **Import overpayments from date** - specify the date in 'Y-m-d'(2021-03-31) format, which will be used as the start date for importing all overpayments (if customer accidentally pays too much);
 
+- **Xero non invoice payment type** - used to choose the type (`Prepayment` or `Overpayment`) of Splynx payment to export without invoice;
+
+<details>
+<summary>example</summary>
+<div markdown="1">
+
+The separate account has a rolling balance as a contra account for all payments that come from Splynx. Some customers paid R500 instead of R499 and the prepayments were allocated to your separate account.
+On allocation, you’ll take R499 of the payment to the invoice, and the R1 will just remain in the account as a running total. At the end of the year the R1 amount will be significant and unallocated on the account.
+It would be much easier if all R500 could simply be allocated to the client's account. Then, we can allocate R499 from the overpayment to the invoice and the R1 'overpayment' will end up in the customer's balance.
+
+</div>
+</details>
+
 - **Prepayments Account code** - a unique code (limited to 10 characters) of prepayments items (the expenditures that have been paid for in advance) in Xero account (`Accounting menu → Advanced → Chart of Accounts`);
 
 - **Rounding Account code** - a unique code (limited to 10 characters) of rounding item (an adjustment entry to allow for rounding) in Xero account (`Accounting menu → Advanced → Chart of Accounts`);

@@ -1,3 +1,6 @@
+Customer search fields
+=============
+
 Administrators can customize which fields to use when searching for customers within the search feature (`Customers -> Search`) and under `Messages -> Mass sending -> Create`.
 
 By simply enabling or disabling the provided fields, selected fields can be included or excluded in the search function.

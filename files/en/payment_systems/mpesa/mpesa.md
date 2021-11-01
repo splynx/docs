@@ -56,6 +56,7 @@ The general configuration of the *Safaricom M-PESA* integration module can be vi
 - **USD to KES exchange rate** - the current Splynx internal dollar exchange rate of the KES;
 - **Ignore validation** - toggle is used to ignore/allow payment validation automatically when confirmation is received. If the toggle is enabled and the confirmation is received but there is no validation, the payment will be created. Otherwise, the payments will be rejected.
 
+
 The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx-safaricom-mpesa` module item in *Actions* column, click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon. More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
 
 By using **Entry points**, you can enable add-on features which can allow customers to pay for (proforma) invoices, add money to the balance from *Dashboard* etc.
@@ -157,11 +158,10 @@ This step involves moving your application into production.
 
 ![(image)](image2018-9-18_9-26-6.png)
 
-This is another M-PESA portal, where your app is hosted. It can be found on the website - https://org.ke.m-pesa.com. You can't access this portal without certificate.
+This is another M-PESA portal, where your app is hosted. It can be found on the website - https://org.ke.m-pesa.com.
 
-How to apply and install a digital M-PESA certificate:
-
-<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/wQyBkJDsmuw?wmode=opaque">Video on youtube</iframe>
+**Note:** From **30th September 2021**, *Safaricom* discontinues the need for installation of an M-PESA [digital certificate](how_to_apply_and_install_the_mpesa_digital_certificate.pdf) on the computers as a requirement to access the M-PESA organization portal. This would be replaced with a 6-digit One Time Password (OTP), for each user login that has been in use and confirmed to provide additional security over the user’s password by ensuring that only authorized users can log in. This decision was made to retire the *Internet Explorer* which is coming to the end of its life and is the only browser that supports certificates.
+From now henceforth, no new certificates will be issued. The expired ones will as well not been renewed.
 
 ### Add-on log files
 
@@ -233,11 +233,11 @@ https://<splynx_domain_address>/smps/direct-pay-proforma?item_id=<proforma_numbe
 
 **Important**
 
-Any request made to M-Pesa support team should be sent via the email used in the Paybill application process.
+- any request made to M-Pesa support team should be sent via the email used in the Paybill application process;
 
-M-Pesa will not take into action any request sent to them without verifying ownership of the Paybill Number.
+- *M-Pesa* will not take into action any request sent to them without verifying ownership of the Paybill Number;
 
-Every Email sent must include the Paybill Number and Organization Name as registered during application.
+- every Email sent must include the Paybill Number and Organization Name as registered during application.
 
 
 <details>
@@ -247,43 +247,75 @@ Every Email sent must include the Paybill Number and Organization Name as regist
 
 **External Validation**
 
-* External Validation is disabled by default; this means that M-Pesa is incharge of validating all payments requests to your Paybill.
-* M-Pesa servers will accept any payments request, as long as the MSISDN (phone number) is allowed to use M-Pesa services.
-* This means that no transaction details are sent to the Splynx server.
-* To enable external Validation, you are required to send a request to **m-pesabusiness@safaricom.co.ke**. The email letter should be sent from the email address used to create the account on the Daraja Portal.
+
+1. External Validation is disabled by default; this means that M-Pesa is incharge of validating all payments requests to your Paybill.
+
+2. M-Pesa servers will accept any payments request, as long as the MSISDN (phone number) is allowed to use M-Pesa services.
+
+3. This means that no transaction details are sent to the Splynx server.
+
+4. To enable external Validation, you are required to send a request to **m-pesabusiness@safaricom.co.ke**. The email letter should be sent from the email address used to create the account on the Daraja Portal.
+
 
 **Business manager / administrator**
 
-* To create a Business Manager / administrator you need a logging credentials to access https://org.ke.m-pesa.com
-* It is required to send an email to M-Pesa support requesting creation of a System admin.
-* The Email should be in form of a scanned letter on the company letter head, signed by two signatories and bearing the organization stamp.
-* Also attach the administrator’s scanned ID copy on both sides.
-* The letter should have the following details:
+
+1. To create a Business Manager / administrator you need a logging credentials to access https://org.ke.m-pesa.com.
+
+2. It is required to send an email to M-Pesa support requesting creation of a System admin.
+
+3. The Email should be in form of a scanned letter on the company letter head, signed by two signatories and bearing the organization stamp.
+
+4. Also attach the administrator’s scanned ID copy on both sides.
+
+5. The letter should have the following details:
+
   * *Organization Name*
+
   * *Organization Short code*
+
   * *First Name*
+
   * *Middle Name*
+
   * *Last Name*
+
   * *Id type (National Id, passport)*
+
   * *Id/pp Number*
+
   * *Nationality*
+
   * *Date of Birth*
+
   * *Phone number*
+
   * *Administrators User Name*
+
   * *Email*
+
 
 The request should be sent to **m-pesabusiness@safaricom.co.ke**.
 
+
 **Re-registering callbacks**
 
-* After URL registration, it’s important to note that you cannot re-register new ones without deleting the previous.
-* Since there is no API to delete callback URLs, you are required to write an official letter to M-PESA support team requesting them to delete the URLs.
-* The letter should be on the company letter head and should include:
+
+1. After URL registration, it’s important to note that you cannot re-register new ones without deleting the previous.
+
+2. Since there is no API to delete callback URLs, you are required to write an official letter to M-PESA support team requesting them to delete the URLs.
+
+3. The letter should be on the company letter head and should include:
+
   * *Old URLs you want to delete*
+
   * *The new URLs you need to register*
+
   * *Shortcode – Paybill Number*
 
+
 Please send your request to **m-pesabusiness@safaricom.co.ke**.
+
 
 
 </p>

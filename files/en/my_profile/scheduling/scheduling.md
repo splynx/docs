@@ -19,8 +19,6 @@ After the code is generated, you should copy and paste it into the field provide
 
 After that click on *Connect Google account* (3) to complete the process.
 
-![Authorization](authorize2.png)
-
 ![Google authorized](linked_google_acccount.png)
 
 To sync Splynx tasks to the connected Google calendar, it is necessary to add a paired calendar. This allows the Splynx calendar of the administrator to sync items into the Google calendar. Simply click on the `+` add paired calendar button to add a paired calendar:

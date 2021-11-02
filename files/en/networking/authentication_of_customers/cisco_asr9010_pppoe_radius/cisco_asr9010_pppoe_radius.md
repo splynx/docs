@@ -28,7 +28,6 @@ aaa group server radius SPLYNX
 server x.x.x.x auth-port 1812 acct-port 1813
 vrf DMZ
 source-interface INtxxxx #use interface connected to Splynx
-
 ```
 
 
@@ -37,7 +36,6 @@ radius-server host x.x.x.x auth-port 1812 acct-port 1813 #these ports are defaul
 key XXXXXXXXXXXX #use the Radius secret generated in Splynx
 timeout 10
 retransmit 5
-
 ```
 
 **Radius configuration for AAA**
@@ -49,7 +47,6 @@ aaa accounting service default group SPLYNX
 aaa accounting subscriber default group SPLYNX
 aaa authorization subscriber default group SPLYNX
 aaa authentication subscriber default group SPLYNX
-
 ```
 
 Also, it's required to configure COA/COD session disconnect:
@@ -61,7 +58,6 @@ Also, it's required to configure COA/COD session disconnect:
  port 3799
  client x.x.x.x vrf DMZ #Splynx radd server IP
  server-key #(key defined in Splynx)
-
 ```
 
 2. Make the following configuration on Cisco ASR
@@ -71,7 +67,6 @@ Also, it's required to configure COA/COD session disconnect:
 ```
  interface Loopback10
  ipv4 address x.x.x.x 255.255.255.255
-
 ```
 
 **Create a dynamic template for your PPPoE users:**
@@ -90,7 +85,6 @@ ipv4 unnumbered Loopback10
 type ppp dynamic-template
 type service s1
 ipv4 unnumbered Loopback10
-
 ```
 
 3. PPPoE access for subscribers and define policy on Splynx/ASR
@@ -131,7 +125,6 @@ ipv4 unnumbered Loopback10
 service-policy type control subscriber PPP_PM
 pppoe enable bba-group SPLYNX_PPPOE
 encapsulation dot1q 920
-
 ```
 
 4. If the different VLANs are used it's required to configure more interfaces but service policy will be the same, On this step you configure Splynx and Cisco ASR to define speed limits according tariff plan.
@@ -151,7 +144,6 @@ And in `Config → Networking → Radius → NAS config → Cisco IOS XE Configu
 ```
 Cisco-AVPair = ip:sub-qos-policy-out={{ tariff_attributes.policy_ingress }}
 Cisco-AVPair += ip:sub-qos-policy-in={{ tariff_attributes.policy_egress }}
-
 ```
 
 ![](3.png)
@@ -170,7 +162,6 @@ queue-limit 1000000 bytes
 class class-default
 
 end-policy-map
-
 ```
 
 

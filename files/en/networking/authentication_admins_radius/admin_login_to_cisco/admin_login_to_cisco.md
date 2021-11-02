@@ -36,7 +36,6 @@ line vty 0 4
 authorization exec SPLYNX
 login authentication SPLYNX
 transport input ssh
-
 ```
 The commands to configure the **Cisco IOS XE** device are almost the same:
 
@@ -44,7 +43,6 @@ The commands to configure the **Cisco IOS XE** device are almost the same:
 aaa new-model
 aaa authentication login SPLYNX group radius local
 aaa authorization exec SPLYNX group radius local
-
 ```
 where `SPLYNX` - the client list with all users which use RADIUS to connect will be included to this list.
 
@@ -54,14 +52,12 @@ To **define a RADIUS server**:
 radius server splynx
 address ipv4 x.x.x.x auth-port 1812 acct-port 1813
 key 7 <your radius key>
-
 ```
 
 To **define a source interface** used to connect users to a RADIUS server:
 
 ```
 ip radius source-interface Loopback0
-
 ```
 
 To **define a radius attribute**:
@@ -69,7 +65,6 @@ To **define a radius attribute**:
 ```
 radius-server attribute 6 on-for-login-auth
 radius-server key 7 011751010A58005B711817081A
-
 ```
 
 And finally, when radius configuration is finished, it's required to **add the next rules to your router**:

@@ -74,7 +74,7 @@ Table of contents
 ##### [Networking](networking/networking.md)
 * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
   * [Admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
-  * [Admin login to Cisco devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
+  * [Admin login to Cisco IOS and IOS XE devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
   * [Admin login to Juniper (JUNOS)](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)
 
 * [Authentication of customers](networking/authentication_of_customers/authentication_of_customers.md)

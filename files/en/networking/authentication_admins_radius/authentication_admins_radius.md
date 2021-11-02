@@ -9,6 +9,6 @@ Below are tutorials of how to configure admin Login's using the Splynx Radius se
 
 * [Mikrotik: Radius admin login to Mikrotik routers](networking/authentication_admins_radius/admin_login_to_mikrotik/admin_login_to_mikrotik.md)
 
-* [Cisco: AAA for login on Cisco equipment](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
+* [Admin login to Cisco IOS and IOS XE devices](networking/authentication_admins_radius/admin_login_to_cisco/admin_login_to_cisco.md)
 
 * [Juniper: Junos admin login using Radius protocol](networking/authentication_admins_radius/admin_login_to_juniper/admin_login_to_juniper.md)

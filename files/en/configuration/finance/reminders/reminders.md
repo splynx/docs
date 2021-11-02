@@ -11,9 +11,14 @@ In case in Splynx system is used the multiple [partners](administration/main/par
 You can select the *Partner* to work with before setting Reminders at the top-right corner of the page:
 
 ![View](view_1.png)
+
 ![View2](view_2.png)
 
-**Note:** The fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner).
+**Important:**
+
+- The fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner);
+
+- Such settings as **Payment for Reminder #3**, **Amount of Payment Reminder** and **Comment on Payment Reminder** are deprecated, please do not use them in the Reminders section configuration.
 
 The following **Reminders settings** can be configured here:
 
@@ -30,11 +35,14 @@ The following **Reminders settings** can be configured here:
 * **Reminder payment methods** - in case `All available payment methods` option is disabled, we can choose the particular payment method (-s) in drop-down list on which to send notifications;
 * **Attach unpaid invoices with reminders to email** - enable this option to attach unpaid invoices to the email.
 
-**Example:**
+
+**Examples:**
 
 Let's choose 9 days for the Reminder #1, 5 days for the Reminder #2 and 5 days for the Reminder #3. That means reminders will be sent on 10th, 15th and 20th of of month accordingly. All 3 dates selected for sending of reminders will be displayed in the **Calendar** next to **Reminders settings**.
 
-These settings are global and to update existing customers with these settings you can use the `Update existing customers` button. For example, I'd like to **update the day for reminder #1**, for customers in partner *Main* and recurring billing type, the update will look as follows:
+These settings are global and to update existing customers with these settings you can use the `Update existing customers` button.
+
+For instance, I'd like to **update the day for reminder #1**, for customers in partner *Main* and recurring billing type, the update will look as follows:
 
 ![update1](update.png)
 
@@ -44,7 +52,7 @@ Another example is an update of the **Enable reminders** option for all Splynx c
 
 ### Updated reminder template
 
-Since Splynx 3.1 version we updated logic for reminders and because of this some old reminder templates might work wrong. We recommend to use next reminder template:
+Since Splynx 3.1 version we updated logic for reminders and that's why some old reminder templates might work wrong. We recommend to use next reminder template:
 
 ```
 {% set all_reminder_days = customer_billing.reminder_day_1 + customer_billing.reminder_day_2 + customer_billing.reminder_day_3 %}
@@ -82,8 +90,8 @@ your account is overdue with {{ App.formatMoney(customer_billing.deposit * -1 ) 
 
 ```
 
-This reminder can be copied into template "Account overdue reminder":
+This reminder can be copied into template `Account overdue reminder`:
 
 ![template](template.png)
 
-You can find template under Config/Templates and select type "Reminder email" or "Reminder SMS".
+You can find template under `Config → Templates` and select type `Reminder email` or `Reminder SMS`.

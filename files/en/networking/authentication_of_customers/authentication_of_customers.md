@@ -25,6 +25,8 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 * [Cisco IOS XE: PPPoE with Radius server](networking/authentication_of_customers/cisco_xe_pppoe_radius/cisco_xe_pppoe_radius.md)
 
+* [Cisco ASR 9010: PPPoE with Radius](networking/authentication_of_customers/cisco_asr9010_pppoe_radius/cisco_asr9010_pppoe_radius.md)
+
 * [DSL Telkom (Openserve) authentication](networking/authentication_of_customers/dsl_telkom_openserve/dsl_telkom_openserve.md)
 
 * [Juniper: PPPoE with Radius server](networking/authentication_of_customers/juniper_pppoe_radius/juniper_pppoe_radius.md)

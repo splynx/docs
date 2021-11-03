@@ -3,9 +3,7 @@ Voice processing
 
 ![Voice](voice.png)
 
-Voice processing enables administrators to upload different CDR files for Voip, Mobile or landline voice services. Splynx processes the CDR files and send calls to customer's statistics. Transactions are created from the voice statistics and one common invoice can be created for Internet, Voice and other services.
-
-Please note that for CDR processing, the CDR should include the final price of each single call, SMS or data unit. This means that you should upload CDR files that is already rated.
+The *Voice processing* enables administrators to upload different CDR files for VoIP, mobile or landline voice services. Splynx processes the CDR files and sends calls to customer's statistics. The transactions are created from the voice statistics and one common invoice can be created for Internet, Voice and other services.
 
 Please follow the links below for more information on each section:
 

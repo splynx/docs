@@ -28,7 +28,7 @@ The data source parameters:
     Check the [Examples](voice/auto_cdr_processing/examples/examples.md). We have all the CDR file names starting with `test-cdr-` (e.g. *test-cdr-2021-11-01.csv*);
 
   * **Import from file modification date** - specify the file modification date in `Y-m-d H:m:s` format for the initial import. In our example, will be imported files from November 2021 because we have specified 2020-11-01 00:00:00, but if the file with calls was created in July and it was modified at 2020-11-01 00:10:00, it will also be imported. Clear the field value to process all files which do not exist in the system, with any `Last Modification Time`.
-  Also, pay attention that the CDR files must have unique names as Splynx checks files by their names and if a file with a particular name has been imported into Splynx and the same file has since been modified, Splynx will not re-load the modified file as that file has already been imported.
+  Also, pay attention that **the CDR files must have unique names as Splynx checks files by their names and if a file with a particular name has been imported into Splynx and the same file has since been modified, Splynx will not re-load the modified file as that file has already been imported**.
 
   * **First row contains column names** - enable this option, if the first row in your CDR's contains the columns' names;
 
@@ -51,6 +51,8 @@ The data source parameters:
 But CSV file must contain such required columns as `Source`, `Datetime` (or separated `Date`, `Time` columns), `Duration`, `Destination` and `Type`. And columns quantity and columns order (`Pos.`) should be the same as in imported file.
 
 ![](fields.png)
+
+But **it never hurts to include the final price of each call, message or data into the CSV file. It means that you should upload CDR files that have been already rated.**
 
 After Auto CDR processing entries have been added, you can run import manually (in order to test it's functionality, after successful test results, the auto import can be enabled to execute all the processing actions automatically), in `Config → Voice → Auto CDR processing`, simply click on the <icon class="image-icon">![](import_icon.png)</icon> (Run import) button. Before running an import, we recommend to check the files preview that will be imported:
 

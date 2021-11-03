@@ -45,8 +45,8 @@ The following parameters need to be configured to add a new data source to impor
 
  **Important**
 
-- When using a (S)FTP server as a CDR data source - make sure that connection is successful;
+- **When using a (S)FTP server as a CDR data source - make sure that connection is successful**;
 
-- In case of using a Local data source type (storage on Splynx server), make sure that the folder with the CDR files has the correct permissions and `splynx` is the owner;
+- **In case of using a `Local` data source type (storage on Splynx server), make sure that the folder with the CDR files has the correct permissions and `splynx` user is the owner**;
 
-- The CDR files must have unique names as Splynx checks files by their names and if a file with a particular name has been imported into Splynx and the same file has since been updated, Splynx will not re-load the updated file as that file has already been imported.
+- **The CDR files must have unique names as Splynx checks files by their names and if a file with a particular name has been imported into Splynx and the same file has since been updated, Splynx will not re-load the updated file as that file has already been imported**.

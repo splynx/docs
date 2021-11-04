@@ -27,7 +27,7 @@ You can also **edit the partner's name** by clicking on *Edit icon* <icon class=
 
 ![Edit partner](edit_partner.png)
 
-You might also be interested in [Realms add-on](addons_modules/addons_modules.md) tutorial.
+You might also be interested in [Realms add-on](addons_modules/realms/realms.md) tutorial.
 
 Here are a few more tips on the configuration of Partners:
 

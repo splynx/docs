@@ -348,6 +348,7 @@ Table of contents
   * [Ofipro contabilidad (Spanish)](addons_modules/ofipro/ofipro.md)
   * [Preseem](addons_modules/preseem_addon/preseem_addon.md)
   * [Quickbooks accounting](addons_modules/quickbooks/quickbooks.md)
+  * [Realms add-on](addons_modules/addons_modules.md)
   * [SageOne module](addons_modules/sageone/sageone.md)
   * [Self Registration](addons_modules/self_registration/self_registration.md)
   * [Speedtest](addons_modules/speedtest/speedtest.md)

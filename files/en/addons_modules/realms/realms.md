@@ -105,5 +105,3 @@ Navigate to `Customers → List` and in the **Search** field type the name of *R
 In case **Realm** field is disabled in the list of customers, click on the breadcrumbs <icon class="image-icon">![](enable_fields.png)</icon> icon at the bottom of the table and enable the same-name toggle.
 
 ![(image)](18.png)
-
-додати у статтю Partners лінку на Realms

@@ -70,6 +70,11 @@ In case in Splynx system is used the multiple [partners](administration/main/par
 - **Select payment currency** - the currency to choose;<br>
 - **Store Id**, **API token**, **HT Profile ID** - these values you can find in Moneris portal.
 
+The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx-moneris` module item in *Actions* column, click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon. More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
+
+By using **Entry points**, you can enable add-on features which can allow customers to pay for (proforma) invoices, pay directly from *Portal Dashboard* or add money to the balance from *Dashboard*.
+
+### Invoice payment
 
 After the successful configuration of the add-on, customers can pay for their invoices using the Moneris gateway in `Finance → Invoices` on the Portal.
 
@@ -81,15 +86,17 @@ The credit card can be added in `Finance → Credit card via Moneris gateway` se
 
 After the credit card was added successfully, the customer can pay the invoices in `Finance → Invoices` or the proforma invoices in `Finance → Proforma Invoices`
 
-
-
 ![(image)](6.png)
 
 ![(image)](7.png)
 
 ![(image)](8.png)
 
-If everything went well, you would see the status of invoice marked as "Paid" (portal and admin).
+If everything goes well, you will see the status of invoice marked as `Paid` (on the customer and admin portal).
+
+On the customer *Portal Dashboard*, customers can also see the list of non-paid invoices in *Moneris* widget (entry point) and the same-name buttons to pay such invoices. Moreover, using the *Add money by Moneris* widget on the *Dashboard* the customer can refill the account balance.
+
+![(image)](widgets.png)
 
 ------------
 

@@ -3,7 +3,7 @@ Customer billing
 
 This is your centralized finance department for each customer. Here you can customize your customer's billing to suit agreements and unique terms made with the respective customer, with regards to how they will be billed and interactions thereof.
 
-The Customer Billing tab is divided into 5 sub-tabs:
+The customer *Billing* tab is divided into 5 sub-tabs:
 
 * **Billing Overview** - the main information configuration page of your customer billing;
 * **Transactions** - all transactions pertaining to the customer can be found here;
@@ -35,17 +35,17 @@ In this section you can set up the billing of the **selected customer**.
 **Billing settings description:**
 
 * **Billing Enabled** - enables or disables billing for customer (whether the system should take customer into account or not);
-* **Period** - period the customer will be billed for;
+* **Period** - the period the customer will be billed for;
 * **Payment method** - means in which way client will make payments; credit card, cash, etc.;
 * **Billing day** - when the customer will be charged and invoices will be generated;
 * **Billing due** - when the customer needs to make payments before being blocked. Even though the customer will have a blocked status, their services will still be accounted;
-* **Next block** - the indicator for customer's profile with recurring billing type that shows the date when customer will be blocked. The date can be edited, it implies that the date of the last charge (from which the billing due is calculated) will be changed. If the parameter `Enable processing of Billing Due` in `Config → Finance → Automation` is disabled, the status will be shown as `Disabled in config`. The status `Already blocked` means that customer has been blocked, the status `In the next billing cycle` means that the customer's balance exceeds the minimum required value;
+* **Next block** - the indicator for customer's profile with recurring billing type that shows the date when customer will be blocked. The displayed date can be edited, it implies that the date of the last charge (from which the billing due is calculated) will be changed. If the parameter `Enable processing of Billing Due` in `Config → Finance → Automation` is disabled, the status will be shown as `Disabled in config`. The status `Already blocked` means that customer has been blocked, the status `In the next billing cycle` means that the customer's balance exceeds the minimum required value;
 * **Deactivation period (Grace period)** - when the customer's services will be marked as inactive, client no longer uses services and the system no longer accounts for it;
-* **Minimal balance** - minimal balance required in the customer account to avoid being blocked;
+* **Minimal balance** - the minimal balance required in the customer account to avoid being blocked;
 * **Partner percent** - shows the individual partner percent value the customer belongs to. The global `Partner's commission (%)` setting is located in `Config → System → Company Information`;
 * **Create invoices** (after Charge & Invoice) - creates an invoice automatically after using the charge & invoice button <icon class="image-icon">![Charge button](charge_button.png)</icon>
 * **Auto pay invoices from account balance** - enables/disables the automatic paying of service from the customer's account balance, the payment will be completed if there are enough funds on the balance;
-* **Send finance notifications** - toggle allows individually to enable/disable finance notifications for customer, the global configuration is located in `Config → Finance → Notifications`.
+* **Send finance notifications** - the toggle allows individually to enable/disable finance notifications for customer, the global configuration is located in `Config → Finance → Notifications`.
 
 
 ## Payment Accounts
@@ -81,7 +81,7 @@ Specific billing address can be set here if the customer uses a different addres
 Customers can be charged **manually** with the `Charge & Invoice` button.<br>
 Simply click on the button, a *Charge and Invoice* window will appear where you can select the date and period of charging, then click on `Preview` to view service (-s) description and click on `Charge & Invoice` button to manually charge the customer.
 
-The system will automatically charge the customer and the new transaction and invoice items will be created, they can be viewed in the Transactions/Invoices tab.
+The system will automatically charge the customer and the new transaction and invoice items will be created, they can be viewed in the *Transactions/Invoices* tab.
 
 ![To charge](charge.png)
 
@@ -93,7 +93,7 @@ The system will automatically charge the customer and the new transaction and in
 
 ![Billing settings](billing_settings_charge.png)
 
-During the process of adding a service to a customer, the discount can be adjusted. Navigate to customer services tab and select the desired service to apply the discount to, click on `Edit` icon <icon class="image-icon">![Edit button](edit_button.png)</icon>. The edit service window will appear where you can apply the discount according to the parameters highlighted and you may add a note for reference in discount message. Once the discount has been set, it will appear in the new window when the button <icon class="image-icon">![Charge button](charge_button.png)</icon> is pressed and the final price will be calculated automatically.
+During the process of adding a service to a customer, the **discount can be adjusted**. Navigate to customer services tab and select the desired service to apply the discount to, click on `Edit` icon <icon class="image-icon">![Edit button](edit_button.png)</icon>. The edit service window will appear where you can apply the discount according to the parameters highlighted and you may add a note for reference in discount message. Once the discount has been set, it will appear in the new window when the button <icon class="image-icon">![Charge button](charge_button.png)</icon> is pressed and the final price will be calculated automatically.
 
 ![Discount](edit_service.png)
 
@@ -105,7 +105,7 @@ During the process of adding a service to a customer, the discount can be adjust
 
 You can generate a payment calendar for the customer with the use of templates.
 
-By default payment calendar generating is disabled. To enable it you need to activate the  `Payment Calendar` option in `Config -> Finance -> Settings`.
+By default payment calendar generating is disabled. To enable it you need to activate the `Payment Calendar` option in `Config -> Finance -> Settings`.
 
 ![Generate payment calendar](generate_payment_calendar.png)
 
@@ -121,7 +121,7 @@ By default payment calendar generating is disabled. To enable it you need to act
 
 This button can be used to cancel the previous bill of a customer. This feature ensures that charges are cleared appropriately in the system by deleting the invoice and transaction pertaining to the charge.
 
-**Save** (the button at the bottom of the page)
+**Save**
 
 <icon class="image-icon">![Save button](save_icon.png)</icon>
 
@@ -131,7 +131,9 @@ In **Proforma Invoice settings** it is possible to enable the option `Enable Aut
 
 ![Proforma invoice settings](proforma_invoice_settings.png)
 
-In **Reminders settings** you can enable automatic sending of reminders to customers to remind them to pay for their services. Such settings as **Payment for Reminder #3**, **Amount of Payment Reminder** and **Comment on Payment Reminder** are deprecated, please do not use them in the *Reminders* section configuration.
+In **Reminders settings** you can enable automatic sending of reminders to customers to remind them to pay for their services.
+
+**NOTE:** Such settings as **Payment for Reminder #3**, **Amount of Payment Reminder** and **Comment on Payment Reminder** are deprecated, please do not use them in the *Reminders* section configuration.
 
 ![cReminder settings](creminder_settings.png)
 
@@ -150,7 +152,6 @@ All transactions can be edited or deleted.
 The option to print, copy or save customer's transactions list, in either CSV, Excel or PDF files can be found at the bottom of the table.
 
 ![Export](export.png)
-
 
 We can also customize the transactions table by enabling/disabling fields or drag&drop fields in a preferred method of displaying.
 

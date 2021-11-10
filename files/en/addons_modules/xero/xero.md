@@ -95,9 +95,11 @@ These are the global settings to automatically sync items between the two platfo
 - **Invoices** - enables/disables automatic syncing of invoices;
 - **Payments** - enables/disables automatic syncing of payments.
 
-If any of the above items are not enabled to sync automatically, we can manually sync items via the Web UI under `Config → Integrations → Splynx Xero Accounting`, with the export and import functions.
+If any of the above items are not enabled to sync automatically, we can manually sync items via the Web UI under `Finance → Xero Accounting`, with the export and import functions.
 
 ### Let's start with Xero
+
+Click on `Finance` item on the sidebar of Splynx and in the drop-down menu click on `Xero Accounting`.
 
 ![xero icon](xero_icon.png)
 
@@ -230,16 +232,18 @@ In this menu, there are a few more settings and tools related to the Xero add-on
 
 - **Edit connection** - used for editing the connection with Xero, when the credentials were changed in Xero;
 
-- **Manual Synchronization** - used to open `Config → Integrations → Splynx Xero Accounting` when you are located in other menu window;
+- **Manual Synchronization** - used to open `Finance → Xero Accounting` when you are located in other menu window;
 
-- **Customers manual pairing** - this function is used where there are existing customers in Splynx as well as Xero. There is a `Load Xero customers for manual pairing` button. This feature pulls the customer list from Xero into Splynx and allows the admin to manually pair the customers without having to create them in either platform again.
+- **Customers manual pairing** - this function is used where there are existing customers in Splynx as well as Xero. There is a `Load Xero customers for manual pairing` button. This feature pulls the customer list from Xero into Splynx and allows the admin to manually pair the customers without having to create them in either platform again;
+
+- **Tools** - this menu is used for resetting the accounting database, all items that were selected previously in `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` will be erased. It is mainly used when the organization changes. Before changing the organization, the accounting database must be reset:
+
+![xero tools](xero_tools.png)
+
+- **Module Config** - the link is used to open the Xero add-on configuration page (`Config → Integration → Modules list → Xero Accounting`).
 
 ![load for pair](load_for_manual_pairing.png)
 
 ![pair customer](pair_customer.png)
 
-We only have 2 customers and they are paired, if the status is `Not paired` in the "status" field, you can find the required customer from Xero to pair with this customer;
-
-- **Tools** - this menu is used for resetting the accounting database, all items that were selected previously in `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` will be erased. It is mainly used when the organization changes. Before changing the organization, the accounting database must be reset:
-
-![xero tools](xero_tools.png)
+We only have 2 customers and they are paired, if the status is `Not paired` in the "status" field, you can find the required customer from Xero to pair with this customer.

@@ -63,7 +63,7 @@ These are the global settings to automatically sync items between the two platfo
 - **Payments** - enables/disables automatic syncing of payments;
 - **Payments synchronization dates** - enables/disables payments sync by cron on selected dates in drop-down list. The toggle **Payments** should be enabled.
 
-If any of the above items are not enabled to sync automatically, we can manually sync items via the Web UI under `Config → Integrations → Splynx Sageone Accounting`, with the export and import functions.
+If any of the above items are not enabled to sync automatically, we can manually sync items via the Web UI under `Finance → Sageone Accounting`, with the export and import functions.
 
 **It is recommended that all settings in the "Cron settings" section of the page are disabled for the initial set up of the add-on to avoid syncing all these elements automatically via cron jobs, the first import and export should be done manually**
 
@@ -96,6 +96,7 @@ Navigate to `Config / Finance / Accounting bank accounts`, scroll to the **Accou
 </div>
 </details>
 
+
 Once the bank account has been loaded, scroll to the top of the page and select the necessary account as the default one to which all payments processed in Splynx will be transferred. The default bank account should be selected for each payment method listed in *Bank Accounts Map*.
 
 ![SageOne default account](sageone_default_account.png)
@@ -104,7 +105,7 @@ Once the bank account has been loaded, scroll to the top of the page and select 
 <summary>In case the bank account list is not loaded</summary>
 <div markdown="1">
 
-Open `Config / Integrations / Splynx Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
+On the sidebar, click on the `Finance / Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
 
 ![](import_mapping_settings.png)
 
@@ -162,7 +163,7 @@ Once here, the first step is to load the categories/items from SageOne. To do so
 <summary>In case the accounting categories list is not loaded</summary>
 <div markdown="1">
 
-Open `Config / Integrations / Splynx Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
+On the sidebar, click on the `Finance / Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
 
 ![](import_mapping_settings.png)
 
@@ -174,6 +175,7 @@ Once the categories have been loaded we can now proceed to map them to the relev
 ![SageOne accounting categories](sageone_accounting_mapcategories.png)
 
 **NOTE:** In case the monthly invoices are [generated](finance/history_and_preview/history_and_preview.md) in Splynx, its transactions won't be related to the newly created transaction categories. This setting will be applied only for new created transactions.
+
 
 <details>
 <summary>Click here to see how to cancel the last charge and perform the new service re-charge</summary>
@@ -209,7 +211,7 @@ Once the categories have been loaded we can now proceed to map them to the relev
 
 ## 4. Push customers from Splynx to SageOne and merge the customers between two platforms
 
-In order to sync all customers between two platforms, navigate to `Config / Integrations / Splynx SageOne Accounting`.
+In order to sync all customers between two platforms, click on `Finance` item on the sidebar of Splynx and in the drop-down menu click on `SageOne Accounting`.
 
 **NOTE:** This step is only required for the initial set up of the *SageOne* add-on, as we have disabled the Cron settings in the second step of the configuration of the add-on. Once the step **Export customers to SageOne** has been completed for the first time, all cron functions can be enabled to allow the system to sync data automatically.
 
@@ -224,7 +226,7 @@ Check exported customers in SageOne to confirm the export was successful:
 
 ## 5. Push customer invoices from Splynx to SageOne
 
-After we have successfully exported customers to SageOne, the next step is to export all customer invoices. To do so, navigate to `Config / Integrations / Splynx SageOne Accounting`.
+After we have successfully exported customers to SageOne, the next step is to export all customer invoices. To do so, on the sidebar, navigate to `Finance / SageOne Accounting`.
 
 **NOTE:** This step is only required for the initial set up of the *SageOne* add-on, as we have disabled the Cron settings in the second step of the configuration of the add-on. Once the step **Export invoices to SageOne** has been completed for the first time, all cron functions can be enabled to allow the system to sync data automatically.
 
@@ -253,7 +255,7 @@ The next step is to export the payments from Splynx to SageOne.
 
 ![SageOne Payments](sageone_payments1.png)
 
-To do so, navigate to `Config / Integrations / Splynx SageOne Accounting`, click on **Export new payments to SageOne** button:
+To do so, on the sidebar, navigate to `Finance / SageOne Accounting`, click on **Export new payments to SageOne** button:
 
 **NOTE:**  This step is only required for the initial set up of the *SageOne* add-on, as we have disabled the Cron settings in the second step of the configuration of the add-on. Once the step **Export new payments to SageOne** has been completed for the first time, all cron functions can be enabled to allow the system to sync data automatically.
 
@@ -288,9 +290,9 @@ Check the balance of the bank account in `Banking / Lists / List of Banks and Cr
 
 Now we can synchronize this payment that is present in SageOne to Splynx.
 
-<icon class="image-icon">![](warning.png)</icon> **Attention:** The `Payments synchronization direction` option should be set to `SageOne to Splynx` in `Config / Integrations / Modules list / Splynx Sageone Accounting`.
+<icon class="image-icon">![](warning.png)</icon> **Attention:** The `Payments synchronization direction` option should be set to `SageOne to Splynx` in `Config / Integrations / Modules list / Sageone Accounting`.
 
-Navigate to `Config / Integrations / Splynx SageOne Accounting`, click on **Import all payments into Splynx** button.
+On the sidebar, navigate to `Finance / SageOne Accounting`, click on **Import all payments into Splynx** button.
 
 ![SageOne Payments](sageone_sagepayments5.png)
 

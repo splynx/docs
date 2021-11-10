@@ -17,7 +17,7 @@ apt install splynx-quickbooks
 * via the Web UI of your Splynx server in `Config → Integrations → Add-ons`
 ![Install add-on](Selection_f3f25.png)
 
-After the installation process has completed, the QuickBooks addon will be available in `Config → Integration (section)`:
+After the installation process has completed, click on `Finance` item on the sidebar of Splynx and in the drop-down menu click on `QuickBooks Accounting`.
 
 ![Entry point 1](1.png)
 
@@ -29,7 +29,7 @@ And create your company
 
 ![Entry point 1](3.png)
 
-The settings of Splynx QuickBooks Accounting add-on is located in `Config → Integration → Modules list`, click on the edit button in the Actions column:
+The settings of QuickBooks Accounting add-on is located in `Config → Integration → Modules list`, click on the edit button in the Actions column:
 
 ![Entry point 1](Selection_c31f3.png)
 
@@ -97,9 +97,11 @@ _Please note that you do not have to select QuickBooks in the list of payment me
 
 **Payments** - enables/disables automatic syncing of payments.
 
-_It is recommended that all settings in the "Cron Settings" section should be disabled for the initial set up of the add-on to avoid syncing all these elements automatically via cron jobs, the first import and export should be done manually in `Config → Integration → Splynx QuickBooks Accounting`_
+_It is recommended that all settings in the "Cron Settings" section should be disabled for the initial set up of the add-on to avoid syncing all these elements automatically via cron jobs, the first import and export should be done manually in `Finance → QuickBooks Accounting`_
 
 ### Let's start with QuickBooks
+
+Click on `Finance` item on the sidebar of Splynx and in the drop-down menu click on `QuickBooks Accounting`.
 
 ![Entry point 1](1.png)
 
@@ -124,7 +126,7 @@ We can add/edit Taxes, Products and Services in Quickbooks:
 
 The taxes should be the same as the taxes in Splynx (`Config → Finance → Taxes`) to work properly.
 
-Now, in `Config → Integration → Splynx QuickBooks Accounting` run _Import mapping settings into Splynx_
+Now, in `Finance → QuickBooks Accounting` run _Import mapping settings into Splynx_
 
 ![Entry point 1](10.png)
 
@@ -158,7 +160,7 @@ For US company select "NON" for zero values and "TAX" for other values
 
 ![Entry point 1](14.png)
 
-And in `Config → Integration → Modules list → Splynx QuickBooks Accounting` set the tax rate accounting id and the currency:
+And in `Config → Integration → Modules list → QuickBooks Accounting` set the tax rate accounting id and the currency:
 
 ![Entry point 1](15.png)
 
@@ -223,7 +225,7 @@ The same logic is for invoices and payments, if accounting ID is present - it wa
 
 ### Quickbooks tweaks
 
-In `Config → Integration → Modules list → Splynx QuickBooks Accounting` when to click on the gear icon, we will see the drop down menu with additional settings related to QuickBooks add-on:
+In `Config → Integration → Modules list → QuickBooks Accounting` when to click on the gear icon, we will see the drop down menu with additional settings related to QuickBooks add-on:
 
 ![Entry point 1](30u.png)
 
@@ -235,7 +237,11 @@ In `Config → Integration → Modules list → Splynx QuickBooks Accounting` wh
 
 **Customers manual pairing** - setting is used to open pairing window when there are existing customers in Splynx as well as in QuickBooks. Notice what the currency is set in QuickBooks add-on configuration, if Quickbooks customer currency is different, there will be synchronization errors for their related data;
 
-**Module Config** - the link is used to open the QuickBooks add-on configuration page (`Config → Integration → Modules list → Splynx QuickBooks Accounting`).
+- **Tools** - this menu is used for resetting the accounting database, all items that were selected previously in `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` will be erased. It is mainly used when the organization changes. Before changing the organization, the accounting database must be reset:
+
+![quickbooks tools](quickbooks_tools.png)
+
+**Module Config** - the link is used to open the QuickBooks add-on configuration page (`Config → Integration → Modules list → QuickBooks Accounting`).
 
 In addition, there is a "Load QuickBooks customers for manual pairing" button. This feature pulls the customer list from QuickBooks into Splynx and allows the admin to manually pair the customers without having to create them in either platform again. Firstly, load customers and then, perform manual pairing.
 

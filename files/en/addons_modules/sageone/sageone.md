@@ -52,7 +52,7 @@ The general configuration of the SageOne integration module can be viewed and ed
 - **Use Inclusive Amounts** - toggle allows to enable/disable the usage of the inclusive amounts for invoices. Inclusive amounts may provide more accurate roundings. In disabled status Splynx pushes all invoices to SageOne with VAT exclusive, this however make some rounding in SageOne and most of the time the account is out by 1 or 2 cent. In enabled status - Splynx pushes the invoices to SageOne with VAT inclusiveso that the total amount will always be the same in Splynx and Sage One;
 - **Invoice fix Item id** - in the field the id of SageOne item can be specified to fix (the SageOne item will be added to invoice) mismatched totals due to rounding differences. Using the empty value - the totals will not be fixed. Items' ids can be found in `Config / Finance / Accounting categories` of Splynx.
 - **Use system document number** - toggle allows to enable/disable the usage of the Splynx invoice number format for new Sageone invoices during export;
-- **Use Credit Notes** - a toggle allows to enable/disable the sending Splynx invoices with negative totals to SageOne as *Credit Notes* (can be found in `Customers / Transactions / Customer Credit Notes ` in SageOne).
+- **Use Credit Notes** - a toggle allows to enable/disable the sending Splynx invoices with negative totals to SageOne as *Credit Notes* (can be found in `Customers / Transactions / Customer Credit Notes` in SageOne).
 
 ### Cron settings
 
@@ -213,6 +213,8 @@ Once the categories have been loaded we can now proceed to map them to the relev
 
 In order to sync all customers between two platforms, click on `Finance` item on the sidebar of Splynx and in the drop-down menu click on `SageOne Accounting`.
 
+![image](sageone_icon.png)
+
 **NOTE:** This step is only required for the initial set up of the *SageOne* add-on, as we have disabled the Cron settings in the second step of the configuration of the add-on. Once the step **Export customers to SageOne** has been completed for the first time, all cron functions can be enabled to allow the system to sync data automatically.
 
 To export customers **from Splynx to SageOne**, simply click on **Export customers to SageOne** button:
@@ -345,9 +347,11 @@ There are a few more settings and tools related to the SageOne add-on:
 
 ![](sageone_manual_acc_sync.png)
 
-- **Import mapping settings into Splynx** - when SageOne login and password are set on the add-on configuration page, press this button to import mapping settings such as *accounting categories* and *bank accounts* into Splynx. Configure the mapping settings according to the steps described above.
+- **Import mapping settings into Splynx** - when SageOne login and password are set on the add-on configuration page, press this button to import mapping settings such as *accounting categories* and *bank accounts* into Splynx. Configure the mapping settings according to the steps described above;
 
-- **Customers manual pairing** - this function is used where there are existing customers in Splynx as well as SageOne. Press `Load SageOne customers for manual pairing` button, then click on the small gear icon at the top right corner, choose *Customers manual pairing* option. These features pull the customer list from SageOne into Splynx and allow the admin to manually pair the customers without having to create them in either platform again.
+- **Customers manual pairing** - this function is used where there are existing customers in Splynx as well as SageOne. Press `Load SageOne customers for manual pairing` button, then click on the small gear icon at the top right corner, choose *Customers manual pairing* option. These features pull the customer list from SageOne into Splynx and allow the admin to manually pair the customers without having to create them in either platform again;
+
+- **Module Config** - the link is used to open the SageOne add-on configuration page (`Config → Integration → Modules list → SageOne Accounting`).
 
 - **Pair SageOne same number invoices** - allows to make the request for all unpaired invoices in order to receive their accounting IDs from SageOne and put those IDs into Splynx database. For example, the invoices have been exported but their IDs have not been received and an error *Document Number already exists* occurs when re-exporting.
 

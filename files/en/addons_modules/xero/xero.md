@@ -236,14 +236,14 @@ In this menu, there are a few more settings and tools related to the Xero add-on
 
 - **Customers manual pairing** - this function is used where there are existing customers in Splynx as well as Xero. There is a `Load Xero customers for manual pairing` button. This feature pulls the customer list from Xero into Splynx and allows the admin to manually pair the customers without having to create them in either platform again;
 
-- **Tools** - this menu is used for resetting the accounting database, all items that were selected previously in `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` will be erased. It is mainly used when the organization changes. Before changing the organization, the accounting database must be reset:
-
-![xero tools](xero_tools.png)
-
-- **Module Config** - the link is used to open the Xero add-on configuration page (`Config → Integration → Modules list → Xero Accounting`).
-
 ![load for pair](load_for_manual_pairing.png)
 
 ![pair customer](pair_customer.png)
 
 We only have 2 customers and they are paired, if the status is `Not paired` in the "status" field, you can find the required customer from Xero to pair with this customer.
+
+- **Tools** - this menu is used for resetting the accounting database, all items that were selected previously in `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` will be erased. It is mainly used when the organization changes. Before changing the organization, the accounting database must be reset:
+
+![xero tools](xero_tools.png)
+
+- **Module Config** - the link is used to open the Xero add-on configuration page (`Config → Integration → Modules list → Xero Accounting`).

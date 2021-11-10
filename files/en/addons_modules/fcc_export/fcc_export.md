@@ -49,6 +49,12 @@ Once you've generated an API key, you have to copy it into the Google API Key fi
 
 ![Add API key](add_api_key.png)
 
+**Important**
+
+After that, please check if the required value is selected in the `Type of connection` field in **Services** of the necessary customers:
+
+![image](type_of_connection.png)
+
 Once this configuration is completed, a new section will appear in the “Administration” module under the reports section:
 
 ![fcc icon](fcc_icon.png)

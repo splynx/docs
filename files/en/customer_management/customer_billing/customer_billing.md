@@ -5,9 +5,10 @@ This is your centralized finance department for each customer. Here you can cust
 
 The customer **Billing** tab is divided into 3 sub-tabs:
 
-* **Finance documents** - here you can create any type of financial documents for customer and you can also check the list of all existing ones;
-* **Transactions** - all transactions pertaining to the customer can be found here;
-* **Billing config** - the main information configuration page of your customer billing.
+* **Finance documents** - here you can create any type of financial documents for the customer and you can also check the list of all existing ones;
+* **Transactions** - all operations related to the customer can be found here;
+[comment]: # not sure if this section will be present in future, as a result all screenshots need to be re-make.
+* **Billing config** - the billing configuration page for the specific customer in Splynx.
 
 
 ## Finance documents
@@ -20,27 +21,29 @@ In this section can be found all financial documents related to the particular c
 - **Payment**;
 - **Credit note**;
 - **Future items**;
-- **Statement**.
+- **Statement**
+
+**NOTE:** The statements will not be shown in the table. But when the statement is added (generated), the options to send it to the customer's email, save to the customer's [documents](customer_management/customer_documents/customer_documents.md) or download it as a PDF file are available. More information can be found below.
 
 ![image](1.png)
 
 **One-time invoice**
 
-The invoice is a financial document which indicates the supply of goods or services between a vendor and a customer.
+The *invoice* is a financial document which indicates the supply of goods or services between a vendor and a customer.
 
-The *One-time* invoice is designed for the customer who pays a one-time cost to obtain the product or service. If they need it again, when they choose, they’ll pay again. Usually, you can create one-time invoice if you want to charge customer for [One-Time Plan](configuring_tariff_plans/one_time_plans/one_time_plans.md):
+The *One-time* invoice is designed for the customer who pays a one-time cost to obtain the product or service. If they need it again, when they choose, they’ll pay again. Usually, you can **create the one-time invoice** if you want to charge customer for [One-Time Plan](configuring_tariff_plans/one_time_plans/one_time_plans.md):
 
 1. Click on the <icon class="image-icon">![image](add_document.png)</icon> button and in the drop-down list select `One-time invoice` item.
 
-2. In the new window, click on <icon class="image-icon">![image](breadcrumbs.png)</icon> (breadcrumbs) icon and in drop-down list choose the existing *One-Time Plan*, it will be automatically added to the one-time invoice with all details (e.g. price, VAT, description etc.).
+2. In the new window, click on the <icon class="image-icon">![image](breadcrumbs.png)</icon> (breadcrumbs) icon and in the drop-down list choose the existing *One-Time Plan*, it will be automatically added to the one-time invoice with all details (e.g. price, VAT, description etc.).
+
+In order to add the additional item (-s) to the one-time/recurring invoice, press `+` sign or use the option `Add more items`, after that specify its date, price, quantity, description etc.
+
+The option `Load items from uncharged transactions` is used to add to the current invoice (*One-time* or *Recurring*) the future item (a `+Debit` transaction) that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge.
 
 3. Press **Save** button to create the invoice.
 
 ![image](2.png)
-
-Also, you can create the one-time invoice to charge a customer for a random amount and specify price, quantity, description of the item manually or add the additional items by pressing `+` sign or using the option `Add more items`.
-
-The option `Load items from uncharged transactions` is used to add to the current invoice (*One-time* or *Recurring*) the future item (a manual transaction) that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge.
 
 **Recurring invoice**
 
@@ -56,80 +59,56 @@ The detailed information about *Proforma* invoices can be found here - [Proforma
 
 **Payment**
 
-The *Payment* is a record that indicates an amount of money that has been paid. The Splynx can authorize any [payment methods](configuration/finance/payment_methods/payment_methods.md) to be made using bank transfer, credit card, cash etc.
+The *Payment* is a record that indicates an amount of money that has been paid. The Splynx can authorize the [payment methods](configuration/finance/payment_methods/payment_methods.md) to be made using bank transfer, credit card, cash etc.
 To show all payments that customer has made, select `Payment` type and the list of items will be shown:
 
 ![image](3.png)
 
-Usually the payment is related to specific invoice however it can be added manually in Splynx, in this case only the credit future item (transaction) will be created.
+Usually the payment is related to specific invoice however it can be added manually as standalone in Splynx, in this case the credit note (`-Credit` transaction) will be created.
 
 More information about *Payments* can be found here - [Payments](finance/payments/payments.md)
 
 **Credit note**
 
 The *Credit Notes* help to simplify the invoicing processes, it is useful for adjusting errors in created invoices. It allows you to lawfully amend an invoice, without having to delete or alter it.
+In other words, the *Credit Note* - a `-Credit` transaction added to customers account after making payments (increases customers account balance).
 For example, you sent to customer the invoice which contains an error and the invoice has been paid, as a result you need to re-bill the customer for the billing period. Since you can’t change an invoice’s total amount, you need to apply credit note to correct the balance.
 The experience with creating a new invoice with the negative price in order to refund a money to customer is now a thing of the past.
-The *Credit notes* provide accurate and complete records keeping of the future items (transactions) that occur after an invoice has been created.
+The *Credit notes* provide accurate and complete records keeping of the transactions that occur after an invoice has been created.
 
 The detailed description and the explanation of the credit notes management can be found in the [Credit Notes](finance/credit_notes/credit_notes.md) guide.
 
 **Future items**
 
-The *Future item* (a manual transaction) - the act, initiated by the payer or by the payee, of placing, transferring or withdrawing funds. It helps to see the correlation between what the customer do and what they pay.
+The *Future item*  - a `+Debit` transaction with the option `Include transaction in next recurring invoice`, it can be added to customers account with amounts to be paid (decreases customers account balance).
 
-The *Future items* (the manual transactions) are divided into 2 types, namely, **+Debit** and **-Credit**.
+The option `Include transaction in next recurring invoice` defines if the current future item will be included to the next *Recurring* (or *One-time* invoice if the option `Load items from uncharged transactions` was used) invoice.
 
-**+Debit** - a transaction added to customers account with amounts to be paid (decreases customers account balance);<br>
-**-Credit** - a transaction added to customers account after making payments (increases customers account balance).<br>
+As a result, the uncharged future item can be loaded to the new *One-time* or *Recurring* invoice during its creation. If the future item has already been loaded into an invoice, it loses its functions and becomes a transaction in the created invoice.
 
-To add a *Future item* (a manual transaction):
+To add a *Future item*:
 
 1. Click on the <icon class="image-icon">![image](add_document.png)</icon> button and in the drop-down list select `Future item`.
 
 ![Transactions](transactions.png)
 
-2. In the new window, choose the type of *Future item* and specify other details such as period, category, comment, item description, its price etc.
+[comment]: # the option to choose the type probably will be deprecated by default it will be +Debit. Change the screenshot
+
+2. In the new window, specify the item (-s) details such as period, category, comment, item description, its price etc.
 
 3. Press **Save** button to create the future item.
 
 ![Transactions](transactions1.png)
 
-**NOTE:**
-
-The option `Include transaction in next recurring invoice` defines if the current transaction will be included to the next *Recurring* (or *One-time* if the option `Load items from uncharged transactions` was used) invoice.
-
-
-
-
-Credit note = -Credit
-
-Future item = +Debit
-
-бо вже ж не можна вибрати тип транзакції.
-
-А как только появляется в инвойса, то он пропадает как сущность "Future item" и страновиться транзакцией в этом инвойсе. А соотв. пропадает с таблицы "Financial documents". (после того как будет создан рекаринг инвойс, эти транзакции пропадут из списка Finance documents)
-
-https://jira-splynx.atlassian.net/browse/SPL-8082
-
-+
-
-Якщо я залоадив future item в інвойс one-time чи recurring і мінуснув, при тому в інвойсі ще є один айтем вручну створений. то мінуснутий future item, який вже став транзакцією не вернувся в список future item, ні в список транзакцій
-
-Як має воно відпрацьовувати?
-
+[comment]: # the option to choose the type probably will be deprecated by default it will be +Debit. Change the screenshot
 
 ![Transactions](transactions2.png)
 
+The future item will be added automatically to recurring invoice when we are going to create it:
+
 ![Transactions](transactions3.png)
 
-All transactions can be edited or deleted.
-
-The option <icon class="image-icon">![](print.png)</icon> icon to print, copy or save customer's transactions list in CSV file can be found at the top right corner of the table.
-
-![Export](export.png)
-
-More information about the transaction properties can be found in the [Transactions](finance/transactions/transactions.md) guide.
+More information about the transactions can be found in the [Transactions](finance/transactions/transactions.md) guide.
 
 **Statement**
 
@@ -139,7 +118,7 @@ To add the *Statement*:
 
 1. Click on the <icon class="image-icon">![image](add_document.png)</icon> button and in the drop-down list select `Statement` item;
 
-2. In the new window, specify the period (this/last month, custom range etc.), select what types of records should be included (Invoice/Payments or Transactions) and press *View* button.
+2. In the new window, specify the period (this/last month, custom range etc.), select what types of records should be included (`Invoice/Payments` or `Transactions`) and press *View* button.
 
 ![image](4.png)
 
@@ -148,6 +127,12 @@ To add the *Statement*:
 ![image](5.png)
 
 You might also be interested in the [Statements report](administration/reports/statements/statements.md) tutorial.
+
+------------
+
+The icon <icon class="image-icon">![](print.png)</icon> is designed to print, copy or save customer's finance documents in CSV file, it can be found at the top right corner of the table.
+
+![Export](export.png)
 
 ------------
 

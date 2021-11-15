@@ -92,9 +92,11 @@ Customer will be redirected to *Paynow* payment page, where they have to approve
 
 If everything goes well, you will see the status of invoice marked as `Paid` (on the customer and admin portal).
 
-On the customer *Portal Dashboard*, customers can also see the list of non-paid invoices in *Paynow* widget (entry point) and the same-name buttons to pay such invoices. Moreover, using the *Add money by Paynow* widget on the *Dashboard* or the direct link ```https://<splynx_domain_address>/paynow``` the customer can refill the account balance.
+On the customer *Portal Dashboard*, customers can also see the list of non-paid invoices in *Paynow* widget (entry point) and the same-name buttons to pay such invoices. Moreover, using the *Add money by Paynow* widget on the *Dashboard*
 
 ![(image)](14.png)
+
+or the direct link *https://<splynx_domain_address>/paynow* the customer can refill the account balance.
 
 ![(image)](15.png)
 

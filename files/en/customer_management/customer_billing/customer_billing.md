@@ -130,7 +130,7 @@ You might also be interested in the [Statements report](administration/reports/s
 
 ------------
 
-The icon <icon class="image-icon">![](print.png)</icon> is designed to print, copy or save customer's finance documents in CSV file, it can be found at the top right corner of the table.
+The icon <icon class="image-icon">![](print.png)</icon> is designed to print, copy or save customer's finance documents as Excel, CSV, PDF file, it can be found at the top right corner of the table.
 
 ![Export](export.png)
 

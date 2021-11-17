@@ -1,7 +1,7 @@
 Credit Notes
 ==========
 
-The **Credit notes**, as a completely new entity, was introduced in Splynx v3.2. A credit note is a document issued to indicate a return of funds in the event of a service cancellation, network equipment return, miscalculation of price/tax/discount in the invoice or other specified circumstances. Sometimes we can send a customer an invoice and then realize that we have overcharged them for certain goods or services. Instead of canceling the original or recreating a new invoice, which can confuse the customer in accounting processes, we can issue a credit note to correct the totals.
+The **Credit notes** is a document issued to indicate a return of funds in the event of a service cancellation, network equipment return, miscalculation of price/tax/discount in the invoice or other specified circumstances. Sometimes we can send a customer an invoice and then realize that we have overcharged them for certain goods or services. Instead of canceling the original or recreating a new invoice, which can confuse the customer in accounting processes, we can issue a credit note to correct the totals.
 
 ------------
 
@@ -33,9 +33,13 @@ Let's consider in details the *Credit notes* statuses and the actions that can b
 
 Let's imagine that we have the customer who uses a 100$ Internet service. And a SIP should give the money back to the customer.
 
-1. The customer has been invoiced for 100$ for the service (the balance = `-100`). The invoice was paid successfully by customer (the balance = `-0`);
+1. The customer has been invoiced for 100$ for the service (the balance = `-100`). The invoice was paid successfully by customer (the balance = `0`);
 
-2. For some reason, the SIP should give the money back to the customer. So, the administrator should open the customer profile (`Customers → List`), click on `Billing → Credit Notes` tabs and press `Add credit note` button.
+![image](charged.png)
+
+![image](transaction_after charge.png)
+
+2. For some reason, the SIP should give the money back to the customer. So, the administrator should open the customer profile (`Customers → List`), click on `Billing → Finance documents` tabs, press `Add document` button and choose `Credit note` in drop down list.
 
 ![](create_credit_note.png)
 
@@ -56,9 +60,19 @@ As a result, at this moment the customer's balance = `0` because the customer wi
 
 ![](refunded_trans.png)
 
-**Note:** In Splynx v3.1 we could add the invoice with negative price value, but in v3.2 this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function.
+**Note:**
+
+- In Splynx v3.1 we could add the invoice with negative price value, but in v3.2 this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function;
 
 ![](inv_negative_price.png)
+
+- In case the customer with existing *Credit notes* is converted back to the lead, the items of credit notes can be found in `History → Billing → Credit Notes`;
+
+- If the customer's service was charged (the recurring invoice was created and it was paid) and the administrator changed the service/plan - a money for the unused period will be refunded to the customer's balance as *Credit note* (it's assumed that the `Refund unused money` option is used in `Config → Finance → Change plan`). For example, the initial Internet service price = R200 and the new Internet service price = R100, in such case we will have the next result:
+
+![image](refund_money_as_credit_note.png)
+
+Also, pay attention, if the service is planed to be changed (the new service is in `pending` status), the *Credit note* will be created immediately. In case the customer changed their mind, do not forget to correct the customer's finance documents, e.g. to remove newly created *Credit note*, *Recurring* invoice.
 
 ------------
 

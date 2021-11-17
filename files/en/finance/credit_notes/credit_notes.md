@@ -37,7 +37,7 @@ Let's imagine that we have the customer who uses a 100$ Internet service. And a 
 
 ![image](charged.png)
 
-![image](transaction_after charge.png)
+![](transaction_after charge.png)
 
 2. For some reason, the SIP should give the money back to the customer. So, the administrator should open the customer profile (`Customers → List`), click on `Billing → Finance documents` tabs, press `Add document` button and choose `Credit note` in drop down list.
 
@@ -45,7 +45,7 @@ Let's imagine that we have the customer who uses a 100$ Internet service. And a 
 
 ![](create_credit_note.png)
 
-In new window you can add the **Note** to the customer, to **link**/**unlink** the related paid/unpaid invoice to the current credit note and specify the **Description**, **Price** etc. After that press `Add` button, the new credit note with `Non refunded` status will be created.
+In new window you can **link**/**unlink** only **one** related paid/unpaid invoice to the current credit note. If the invoice is linked - all items (transactions) of such invoice will be added to the new credit note with all details. Moreover, it's possible to use the option `Add more items` to add the additional item (-s) and specify its **Description**, **Price** etc. Use `-` sign to remove the unnecessary items. After that press `Add` button, the new credit note with `Non refunded` status will be created.
 
 ![](new_cn.png)
 

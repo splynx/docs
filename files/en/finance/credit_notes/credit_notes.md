@@ -41,9 +41,11 @@ Let's imagine that we have the customer who uses a 100$ Internet service. And a 
 
 2. For some reason, the SIP should give the money back to the customer. So, the administrator should open the customer profile (`Customers → List`), click on `Billing → Finance documents` tabs, press `Add document` button and choose `Credit note` in drop down list.
 
+![](create_credit_note_0.png)
+
 ![](create_credit_note.png)
 
-In new window you can add the **Note** to the customer, to link/unlink the related paid/unpaid invoice to the current credit note and specify the **Description**, **Price** etc. After that press `Add` button, the new credit note with `Non refunded` status will be created.
+In new window you can add the **Note** to the customer, to **link**/**unlink** the related paid/unpaid invoice to the current credit note and specify the **Description**, **Price** etc. After that press `Add` button, the new credit note with `Non refunded` status will be created.
 
 ![](new_cn.png)
 
@@ -54,6 +56,8 @@ At this stage the sequence of transactions will be the following:
 3. The customer decides to withdraw money from the balance to the credit card. After the customer receives the money, the administrator will refund the credit note by pressing <icon class="image-icon">![](refund.png)</icon> icon in the *Operations* column.
 As a result, at this moment the customer's balance = `0` because the customer withdrew the money.
 
+![](refund_cn_0.png)
+
 ![](refund_cn.png)
 
 ![](refunded_cn.png)
@@ -62,17 +66,48 @@ As a result, at this moment the customer's balance = `0` because the customer wi
 
 **Note:**
 
-- In Splynx v3.1 we could add the invoice with negative price value, but in v3.2 this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function;
+- In Splynx v3.1 we could add the invoice with negative price value, but in v3.2 this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function instead;
 
 ![](inv_negative_price.png)
 
-- In case the customer with existing *Credit notes* is converted back to the lead, the items of credit notes can be found in `History → Billing → Credit Notes`;
+- In case the customer with existing *Credit notes* is converted back to the lead, the item (-s) of credit note can be found in `History → Billing → Credit Notes` of the lead account;
 
-- If the customer's service was charged (the recurring invoice was created and it was paid) and the administrator changed the service/plan - a money for the unused period will be refunded to the customer's balance as *Credit note* (it's assumed that the `Refund unused money` option is used in `Config → Finance → Change plan`). For example, the initial Internet service price = R200 and the new Internet service price = R100, in such case we will have the next result:
+- If the customer's service was charged (the recurring invoice was created and it was paid) and the administrator changed the service/plan to a new one in customer profile - a money for the unused period will be refunded to the customer's balance as *Credit note* (it's assumed that the `Refund unused money` option is enabled in `Config → Finance → Change plan`).
+
+For example, the initial Internet service price = R200 and the new Internet service price = R100, in such case we will have the next result:
 
 ![image](refund_money_as_credit_note.png)
 
-Also, pay attention, if the service is planed to be changed (the new service is in `pending` status), the *Credit note* will be created immediately. In case the customer changed their mind, do not forget to correct the customer's finance documents, e.g. to remove newly created *Credit note*, *Recurring* invoice.
+<details>
+<summary>Click to expand</summary>
+<div markdown="1">
+
+```     
+November 2021 = 30 days.
+
+R200/30 days = R6.6666.
+
+The service was changed on November 16.
+
+As a result, the initial Internet service start date - 2021-11-01 and End date - 2021-11-15 and the new Internet service start date - 2021-11-16.
+
+30 days - 15 days = 15 days of initial paid Internet service left.
+
+15 days * R6.66 = R99.99 ~ R100 (for Credit note, this amount will be added to the customer balance).
+
+And we have other 15 days for the new Internet service.
+
+The new Internet service price = R100 / 30 days = R3.3333.
+
+R3.33 * 15 days = R49.99 ~ R50 (price of the new Internet service).
+
+The new recurring invoice will be paid from the account balance and R50 will remain on the balance.
+
+```
+</div>
+</details>
+
+Also, pay attention, if the service is planed to be changed (the new service is in `pending` status), the *Credit note* will be created immediately. In case the customer changed their mind, do not forget to correct the customer's finance documents manually, e.g. to remove newly created *Credit note*, *Recurring* invoice.
 
 ------------
 
@@ -82,7 +117,7 @@ All issued *Credit notes* can be found in `Finance → Credit Notes`. In case th
 
 ![](enable_disable_cred_notes.png)
 
-With the use of a filter, it is possible to display credit notes by its **Number**, **Period** of time, **Partner** or **Status** (Any, Paid, Refunded, Non refunded, Deleted). Below the table of *Credit notes* you'll find a *Totals* table that displays a total of all credit notes by their status and the amount of credit notes in each status.
+With the use of a filter, it is possible to display credit notes by its **Number**, **Period** of time, **Partner** or **Status** (*Any, Paid, Refunded, Non refunded, Deleted*). Below the table of *Credit notes* you'll find a *Totals* table that displays a total of all credit notes by their status and the amount of credit notes in each status.
 
 ![](credit_notes_list.png)
 

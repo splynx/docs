@@ -182,11 +182,26 @@ We can check if all clients were pushed to QuickBooks:
 
 Once the customers export has completed, we can export the invoices:
 
-**NOTE:** The invoices without transactions or marked as **Deleted** in Splynx will not be synced to Quickbooks.
+**NOTE:**
+
+- The invoices without transactions or marked as **Deleted** in Splynx will not be synced to Quickbooks;
+
+- The invoices in Splynx with negative total amount will be exported to Quickbooks as **Credit Note** or **Credit Memo** (the name depends on the company location).
+
+<details>
+<summary>What Is A Credit Note?</summary>
+<div markdown="1">
+
+The credit notes can be used in any situation that would require an invoice to be changed and re-issued. For example, the credit note should be issued when there is a need to cancel all or part of an invoice that has already been charged. This is done to keep accounting records straight since invoices cannot be deleted or edited once issued. Credit notes allow you to delete the amount of the invoice from your financial records without deleting the invoice itself in cases when the invoices deleting is unlawful.
+
+</div>
+</details>
 
 ![Entry point 1](20.png)
 
 ![Entry point 1](21.png)
+
+![](credit_memo.png)
 
 And after that export the payments from Splynx to Quickbooks (depends on _Payments synchronization direction setting_ in add-on configuration), you can check received payments via report.
 

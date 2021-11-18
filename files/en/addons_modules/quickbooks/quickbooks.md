@@ -188,12 +188,6 @@ Once the customers export has completed, we can export the invoices:
 
 - The invoices in Splynx with negative total amount will be exported to Quickbooks as **Credit Note** or **Credit Memo** (the name depends on the company location).
 
-![Entry point 1](20.png)
-
-![Entry point 1](21.png)
-
-![](credit_memo.png)
-
 <details>
 <summary>What Is A Credit Note?</summary>
 <div markdown="1">
@@ -202,6 +196,12 @@ The credit notes can be used in any situation that would require an invoice to b
 
 </div>
 </details>
+
+![Entry point 1](20.png)
+
+![Entry point 1](21.png)
+
+![](credit_memo.png)
 
 And after that export the payments from Splynx to Quickbooks (depends on _Payments synchronization direction setting_ in add-on configuration), you can check received payments via report.
 

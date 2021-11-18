@@ -194,6 +194,15 @@ Once the customers export has completed, we can export the invoices:
 
 ![](credit_memo.png)
 
+<details>
+<summary>What Is A Credit Note?</summary>
+<div markdown="1">
+
+The credit notes can be used in any situation that would require an invoice to be changed and re-issued. For example, the credit note should be issued when there is a need to cancel all or part of an invoice that has already been charged. This is done to keep accounting records straight since invoices cannot be deleted or edited once issued. Credit notes allow you to delete the amount of the invoice from your financial records without deleting the invoice itself in cases when the invoices deleting is unlawful.
+
+</div>
+</details>
+
 And after that export the payments from Splynx to Quickbooks (depends on _Payments synchronization direction setting_ in add-on configuration), you can check received payments via report.
 
 ![Entry point 1](22.png)

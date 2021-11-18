@@ -182,11 +182,17 @@ We can check if all clients were pushed to QuickBooks:
 
 Once the customers export has completed, we can export the invoices:
 
-**NOTE:** The invoices without transactions or marked as **Deleted** in Splynx will not be synced to Quickbooks.
+**NOTE:**
+
+- The invoices without transactions or marked as **Deleted** in Splynx will not be synced to Quickbooks;
+
+- The invoices in Splynx with negative total amount will be exported to Quickbooks as **Credit Note** or **Credit Memo** (the name depends on the company location).
 
 ![Entry point 1](20.png)
 
 ![Entry point 1](21.png)
+
+![](credit_memo.png)
 
 And after that export the payments from Splynx to Quickbooks (depends on _Payments synchronization direction setting_ in add-on configuration), you can check received payments via report.
 

@@ -58,7 +58,7 @@ The new ticket will be created in Splynx for support team.
 
 **Step 5**
 
-The support representative, using admin portal, can change the customer's service in their profile, navigate to **Services** tab and click on the <icon class="image-icon">![Change plan](change_plan.png)</icon> (Change plan) icon near the required plan.
+The support representative, using admin portal, can change the customer's service in their profile, to do that navigate to **Services** tab and click on the <icon class="image-icon">![Change plan](change_plan.png)</icon> (Change plan) icon near the required plan.
 
 ![](img_ks_000009.png)
 
@@ -98,7 +98,7 @@ On customer portal on the sidebar click on **Services** item, the active service
 
 ![](img_ks_000005.png)
 
-In new window we can select the **New plan** (the opportunity to choose the plan is available only when in the field `Tariff plans available in customer portal` are selected multiple ones), the **Price of change** value will be set according to the settings in [Change plan](configuration/finance/change_plan/change_plan.md)
+In new window we can select the **New plan** (the opportunity to choose the plan is available only when in the field `Tariff plans available in customer portal` are selected multiple ones), the **Price of change** value will be set according to the settings in [Change plan](configuration/finance/change_plan/change_plan.md).
 
 ![](img_ks_000011.png)
 

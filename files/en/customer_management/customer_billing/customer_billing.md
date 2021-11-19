@@ -7,7 +7,6 @@ The customer **Billing** tab is divided into 3 sub-tabs:
 
 * **Finance documents** - here you can create any type of financial documents for the customer and you can also check the list of all existing ones;
 * **Transactions** - all operations related to the customer can be found here;
-[comment]: # not sure if this section will be present in future, as a result all screenshots need to be re-make.
 * **Billing config** - the billing configuration page for the specific customer in Splynx.
 
 
@@ -92,15 +91,11 @@ To add a *Future item*:
 
 ![Transactions](transactions.png)
 
-[comment]: # the option to choose the type probably will be deprecated by default it will be +Debit. Change the screenshot
-
 2. In the new window, specify the item (-s) details such as period, category, comment, item description, its price etc.
 
 3. Press **Save** button to create the future item.
 
 ![Transactions](transactions1.png)
-
-[comment]: # the option to choose the type probably will be deprecated by default it will be +Debit. Change the screenshot
 
 ![Transactions](transactions2.png)
 

@@ -110,7 +110,8 @@ After you press `Apply` button, the new service with will be added in `Pending` 
 
 ![](img_ks_000012.png)
 
-In order to change tariff for multiple customers, please use the following guide - [Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md)
-
 </p>
 </details>
+
+
+In order to change tariff for multiple customers, please use the following guide - [Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md)

@@ -4,7 +4,9 @@ Change Plan from Customer Portal
 The variety of Splynx settings complements an out-of-the-box customer portal system to help the customers manage their account. Among other things, the portal lets your customers **request the change** or **change their tariff plans by themselves**. The last self-serve option will reduce the need for your customers to contact your support team for their tariff management. As a result it gives you the time to focus on other important aspects of your business.
 This comprehensive guide reviews the settings that the administrator can adjust to enable or disable certain features.
 
-**Important:** It's required to have more than one *Internet/Voice/Recurring* plan in Splynx in order to send a request or change from one service to another. After that double check if the necessary tariff plans are selected in the `Tariff plans available in customer portal` field of the current customer's plan.
+**Important:**
+
+It's required to have more than one *Internet/Voice/Recurring* plan in Splynx in order to send a request or change from one service to another. After that double check if the necessary tariff plans are selected in the `Tariff plans available in customer portal` field of the current customer's plan.
 
 **Example:** a customer uses *Ethernet_100Mbps* as his current Internet service and wants to change it to *Ethernet_500Mbps* plan or just send the request to change the plan by support representative. To maintain such capability, the administrator should [add](configuring_tariff_plans/internet_plans/internet_plans.md) a new *Ethernet_500Mbps* plan into Splynx. Then, go back to the list of all Internet tariff plans and near the *Ethernet_100Mbps*, in *Actions* column, click on <icon class="image-icon">![edit](edit.png)</icon> (Edit) icon, find the field `Tariff plans available in customer portal` in drop down list choose newly created plan (-s) - *Ethernet_500Mbps* and press `Save` button.
 
@@ -44,7 +46,7 @@ In new window we can select the **New plan start date**, select the **New plan**
 
 ![](img_ks_000006.png)
 
-If other plans are not chosen in the drop-down list of the field `Tariff plans available in customer portal` by administrator, customer can still perform the request:
+If other plans are not chosen in the drop-down list of the field `Tariff plans available in customer portal` by administrator, customer can still perform the request to change the plan:
 
 ![](no_plan_chosen.png)
 
@@ -61,8 +63,6 @@ The new ticket will be created in Splynx for support team.
 The support representative, using admin portal, can change the customer's service in their profile, to do that navigate to **Services** tab and click on the <icon class="image-icon">![Change plan](change_plan.png)</icon> (Change plan) icon near the required plan.
 
 ![](img_ks_000009.png)
-
-In order to change tariff for multiple customers, please use the following guide - [Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md)
 
 </p>
 </details>
@@ -114,4 +114,8 @@ After you press `Apply` button, the new service with will be added in `Pending` 
 </details>
 
 
-In order to change tariff for multiple customers, please use the following guide - [Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md)
+**NOTE:**
+
+- Provided that two values (`Request tariff plan change` and `Self-change tariff plan`) are simultaneously selected  in `Config → Main → Portal` and no tariffs are chosen in the `Tariff plans available in customer portal` field of the plan, the customer can still make a plan change request from the *Portal*;
+
+- In order to change tariff for multiple customers, please use the following guide - [Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md).

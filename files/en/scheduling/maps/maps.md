@@ -16,4 +16,4 @@ Tapping any task icon on the map displays brief information about the task. In t
 You might also be interested in the following tutorials:
 
 - [Maps configuration](configuration/main_configuration/maps/maps.md) ;
-- [Google Maps API key](addons_modules/google_maps/google_maps.md).
+- [Google Maps API keys](addons_modules/google_maps/google_maps.md).

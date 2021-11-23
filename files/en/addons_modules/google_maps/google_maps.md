@@ -26,8 +26,7 @@ The maps is used to help you to find out where your customers, leads, routers an
 
 Google Cloud offers a $300 free trial, and Google Maps Platform features a recurring $200 monthly credit. More information can be found at the following links:
 
-- [Billing account credits](https://developers.google.com/maps/billing-credits);
-- [Billing](https://developers.google.com/maps/billing/gmp-billing).
+- [Billing account credits](https://developers.google.com/maps/billing-credits).
 
 
 </div>
@@ -92,11 +91,11 @@ To create the **Google Maps API key** (Restricted for domain):
 </div>
 </details>
 
-Click **Save** at the bottom of the page;
-
 ![](api_key1.png)
 
 ![](api_key2.png)
+
+Click **Save** at the bottom of the page;
 
 5. Copy and paste your *Google Maps API key 1* to the corresponding field in Splynx.
 
@@ -111,9 +110,11 @@ To create the **Google Geocode Javascript API Key** (Restricted for IP):
 
 3. Click **Close**. The new API key is listed on the **Credentials** page under **API keys**;
 
-4. Click on **Edit API key**, on new page change the **Name**, set **Application restrictions** to `IP addresses (web servers, cron jobs, etc.)` and in **Website restrictions** section add your Splynx public IP address. Click **Save** at the bottom of the page;
+4. Click on **Edit API key**, on new page change the **Name**, set **Application restrictions** to `IP addresses (web servers, cron jobs, etc.)` and in **Website restrictions** section add your Splynx public IP address;
 
 ![](api_key4.png)
+
+Click **Save** at the bottom of the page;
 
 ![](api_key4.1.png)
 
@@ -137,7 +138,7 @@ To shutdown the project use this [link](https://console.cloud.google.com/iam-adm
 
 ------------
 
-To view your map navigate to `Customers → Maps`
+To view your map navigate to `Customers → Maps`.
 
 ![](gm_general_map.png)
 
@@ -153,7 +154,7 @@ If the customer has the saved address (Street, ZIP code, City), the GPS coordina
 
 ![gm_customer_edit.png](gm_customer_edit.png)
 
-You can set the GPS coordinates to the leads, routers, services and other hardware in the same way:
+You can set the GPS coordinates to the **leads**, **routers**, **services** and other **hardware** in the same way:
 
 ![](lead.png)
 

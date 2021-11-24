@@ -7,9 +7,13 @@ Adminer
 
 **We strongly advise against using *Adminer* on your own because the changes made in this tool are permanent and can damage your system if something is done incorrectly. The data can be lost if anything is deleted while using this tool and changes to sensitive data can corrupt the database completely. The Splynx team is not responsible for any changes you make to the database using this tool.**
 
-The **Adminer** - is a full-featured database management tool used to access your Splynx server database. We use the [fork](https://github.com/splynx/adminer) of the official tool which is adopted to the Splynx requirements.
+**Adminer** - is a full-featured database management tool used to access your Splynx server database. We use the [fork](https://github.com/splynx/adminer) of the official tool which is adopted to the Splynx requirements.
 
 All data on your server can be accessed and operated with *Adminer*. This is our method of accessing your database to resolve any changes/errors that may occur or may be inexplicable from the information displayed in the GUI of your Splynx server.
+
+**Adminer** is integrated into Splynx as the add-on, to install it open `Config → Integrations → Add-ons`, find `splynx-adminer` item and click on <icon class="image-icon">![](install.png)</icon> (Install) icon.
+
+![](adminer0.png)
 
 Navigate to `Config → Tools` and click on **Adminer** button, the tool GUI will be opened in a new tab of your browser with the request to enter your administrative password:
 
@@ -21,7 +25,7 @@ Type your password and press **Confirm** button. After that you can start work w
 
 **NOTE:**
 
-- If you try to drop any database which contains the word `splynx`, the attempt will be blocked;
+- Do not try to drop the database which contains the word `splynx`, the attempt will be blocked;
 
 ![Adminer](adminer2.png)
 

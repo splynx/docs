@@ -27,7 +27,11 @@ If during the restore process there is the existing customer/lead with the same 
 
 ![](restore4.png)
 
-**NOTE:** please, **double check all restored customer's data after the process is finished**, e.g. the integrity of invoices (its inside items and values), if the payments match with the customer's invoices, the services/transactions accuracy, the relations of payments with proforma invoices etc.
+**NOTE:**
+
+- **double check all restored customer's data after the process is finished**, e.g. the integrity of invoices (its inside items and values), if the payments match with the customer's invoices, the services/transactions accuracy, the relations of payments with proforma invoices etc;
+
+- the **log of customers restore activity** can be found in `Administration → Logs → Operations`.
 
 The **multiple customers can be restored** one by one as well, just enter the **similar parameter** for all accounts to search:
 
@@ -36,5 +40,3 @@ The **multiple customers can be restored** one by one as well, just enter the **
 The list of found customers in `Config → Tools → Restore deleted customers` can be printed or exported in a format of choice with the export <icon class="image-icon">![view_icon2.png](view_icon2.png)</icon> icon at the top right corner of the table.
 
 ![](export.png)
-
-The **log of customers restore activity** can be found in `Administration → Logs → Operations`.

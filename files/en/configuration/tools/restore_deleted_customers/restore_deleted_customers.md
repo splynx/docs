@@ -31,7 +31,7 @@ If during the restore process there is the existing customer/lead with the same 
 
 - **double check all restored customer's data after the process is finished**, e.g. the integrity of invoices (its inside items and values), if the payments match with the customer's invoices, the services/transactions accuracy, the relations of payments with proforma invoices etc;
 
-- the **log of customers restore activity** can be found in `Administration → Logs → Operations`.
+- the **log of customers restore activity** can be found in `Administration → Logs → Operations`. Follow this [link](administration/logs/operations/operations.md) to find more information about **Operations log**.
 
 The **multiple customers can be restored** one by one as well, just enter the **similar parameter** for all accounts to search:
 

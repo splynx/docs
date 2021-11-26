@@ -29,6 +29,6 @@ In the network configuration section, the following categories are available for
 
 * [ Radius](configuration/network/radius/radius.md)
 
-* [Radius Extended](configuration/network/radius_extended/radius_extended.md)
+* [Radius advanced](configuration/network/radius_extended/radius_extended.md)
 
 * [Traffic class](configuration/network/traffic_class/traffic_class.md)

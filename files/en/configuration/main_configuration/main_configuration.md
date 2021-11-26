@@ -23,7 +23,7 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [Preferences](configuration/main_configuration/preferences/preferences.md)
 
-* [Prepaid monthly](configuration/main_configuration/prepaid_monthly/prepaid_monthly.md)
+* [Site customization](configuration/main_configuration/site_customization/site_customization.md)
 
 * [SMS config](configuration/main_configuration/sms_config/sms_config.md)
 

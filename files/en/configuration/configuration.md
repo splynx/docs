@@ -20,7 +20,7 @@ Please follow the links below for tutorials of each of the sections of the Confi
 
 * [Tickets](configuration/support/support.md)
 
-* [Network](configuration/network/network.md)
+* [Networking](configuration/network/network.md)
 
 * [Voice](configuration/voice/voice.md)
 

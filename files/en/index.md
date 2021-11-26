@@ -250,6 +250,7 @@ Table of contents
   * [Logrotate](configuration/main_configuration/logrotate/logrotate.md)
   * [Maps](configuration/main_configuration/maps/maps.md)
   * [Preferences](configuration/main_configuration/preferences/preferences.md)
+  * [Site customization](configuration/main_configuration/site_customization/site_customization.md)
   * [SMS config](configuration/main_configuration/sms_config/sms_config.md)
   * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
   * [Stealth Mode](configuration/main_configuration/stealth_mode/stealth_mode.md)
@@ -299,7 +300,7 @@ Table of contents
   * [Tickets](configuration/support/tickets/tickets.md)
 
 
-* [Network configuration](configuration/network/network.md)
+* [Networking](configuration/network/network.md)
   * [CPE](configuration/network/cpe/cpe.md)
   * [FUP](configuration/network/fup/fup.md)
   * [IP Host categories](configuration/network/ip_host_categories/ip_host_categories.md)
@@ -312,7 +313,7 @@ Table of contents
   * [NAS types](configuration/network/nas_types/nas_types.md)
   * [Network weathermap Editor](configuration/network/network_weathermap_editor/network_weathermap_editor.md)
   * [Radius](configuration/network/radius/radius.md)
-  * [Radius Extended](configuration/network/radius_extended/radius_extended.md)
+  * [Radius advanced](configuration/network/radius_extended/radius_extended.md)
   * [Traffic class](configuration/network/traffic_class/traffic_class.md)
 
 

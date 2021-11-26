@@ -33,6 +33,8 @@ If during the restore process there is the existing customer/lead with the same 
 
 - the **log of customers restore activity** can be found in `Administration → Logs → Operations`. Follow this [link](administration/logs/operations/operations.md) to find more information about **Operations log**.
 
+![](log.png)
+
 The **multiple customers can be restored** one by one as well, just enter the **similar parameter** for all accounts to search:
 
 ![](restore5.png)

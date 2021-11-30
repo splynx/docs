@@ -72,7 +72,7 @@ Navigate to [Google Maps Platform page](https://console.cloud.google.com/project
 
 - [Maps Embed API](https://console.cloud.google.com/apis/library/maps-embed-backend.googleapis.com) - [overview](https://developers.google.com/maps/documentation/embed/get-started);
 - [Maps JavaScript API](https://console.cloud.google.com/apis/library/maps-backend.googleapis.com) - [overview](https://developers.google.com/maps/documentation/javascript/overview);
-- [Geocoding API](https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com) [overview](https://developers.google.com/maps/documentation/geocoding/overview).
+- [Geocoding API](https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com) - [overview](https://developers.google.com/maps/documentation/geocoding/overview).
 
 Click [here](https://console.cloud.google.com/project/_/google/maps-apis/api-list) to view the APIs you have enabled. If the button says *ENABLE*, click the button to enable the API, it it says *MANAGE*, the API is already enabled and you don't need to do anything further.
 

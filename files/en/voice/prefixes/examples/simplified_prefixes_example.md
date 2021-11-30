@@ -11,7 +11,7 @@
 | Phone pattern        | Description                                                                             |
 |----------------------|-----------------------------------------------------------------------------------------|
 | `{!}`                | Any phone number                                                                        |
-| `+260{!}`            | Any phone number started from +260                                                       |
+| `260{!}`            | Any phone number started from 260                                                       |
 
 **Important**
 

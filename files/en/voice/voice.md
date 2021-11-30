@@ -9,7 +9,7 @@ The Voice Module is designed for customized CDR processing according to your own
 
 * [Prefixes](voice/prefixes/prefixes.md)
 
-  * [→ Prefixes Examples](voice/prefixes/examples/examples.md)
+  * [→ Prefixes Examples](voice/prefixes/examples/simplified_prefixes_example.md)
 
 * [Processing](voice/processing/processing.md)  
 

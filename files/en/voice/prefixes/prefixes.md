@@ -32,11 +32,11 @@ We can also, import all prefixes from a *.csv* file.:
 
 Simply click on the **Import** button located at the top right corner of the table:
 
-![Add prefixes](import.png)
+![Add prefixes](import1.png)
 
 Then upload the file and specify the necessary parameters:
 
-![Import tool](import.png)
+![Import tool](import2.png)
 
 * **File** -  click to upload the file from your computer;
 

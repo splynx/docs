@@ -1,4 +1,4 @@
-#### Special symbols:
+#### Special symbols supported:
 
 | Symbol      | Description                                                                       |
 |-------------|-----------------------------------------------------------------------------------|
@@ -15,6 +15,6 @@
 
 **Important**
 
-The previous difficult patters, like `{x}` (one digit from 0 to 9), `{.}` (one or more any characters), `{n}` (one digit from 2 to 9) etc. are no longer supported in Splynx.
+The previous complex patters, like `{x}` (one digit from 0 to 9), `{.}` (one or more any characters), `{n}` (one digit from 2 to 9) etc. are no longer supported in Splynx.
 
 In case complex patters have already been used, it is necessary to change them.

@@ -44,11 +44,27 @@ The values in **Connection Request Username** and **Connection Request Password*
 **IMPORTANT (for Mikrotik devices only)**: if you are using **HTTPS/SSL** on your Splynx server you can get **an error about SSL, asking for the local certificate**. In this case you need to run 2 commands in Mikrotik terminal:
 
 ```
-/tool fetch https://letsencrypt.org/certs/trustid-x3-root.pem.txt
+/tool fetch https://letsencrypt.org/certs/isrgrootx1.pem
 ```
 ```
-/certificate import file-name=trustid-x3-root.pem.txt passphrase=""
+/certificate import file-name=isrgrootx1.pem passphrase="
 ```
+
+<details>
+<summary>To remove the expired cert use the next</summary>
+<div markdown="1">
+
+Example:
+
+```
+/certificate remove trustid-x3-root.pem.txt_0
+
+```
+
+
+</div>
+</details>
+
 and **do not change any other config in TR-069 client** (**Client certificate** option must be "none"), just **re-enable TR-069 client**.
 
 After that device will be registered under GenieACS:

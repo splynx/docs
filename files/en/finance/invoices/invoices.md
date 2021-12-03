@@ -168,6 +168,7 @@ The filter will be triggered on the selected day in **Period** field at 11:59 PM
 |<icon class="image-icon">![icon3](icon3.png)</icon>   | Download an invoice as a PDF file  |
 |<icon class="image-icon">![icon4](icon4.png)</icon>   | Send an invoice via Email/SMS or as a message to Customer portal |
 |<icon class="image-icon">![icon5](icon5.png)</icon>   | Edit a payment  |
+|<icon class="image-icon">![icon5](create_credit_note.png)</icon>   | Create [credit note](finance/credit_notes/credit_notes.md) for the current invoice  |
 |<icon class="image-icon">![icon6](icon6.png)</icon>   | Delete a payment or mark it as unpaid  |
 |<icon class="image-icon">![icon7](icon7.png)</icon>   | Delete an invoice with/without transaction |
 |<icon class="image-icon">![icon8](icon8.png)</icon>   |Pay an invoice|
@@ -178,10 +179,8 @@ The same operations with invoices you can find in [Customer billing](customer_ma
 
 ![Template values](template_values.png)
 
-On the **Company information** page, we define the [partner](administration/main/partners/partners.md) and the PDF [template](configuration/system/templates/templates.md) ('Invoice PDF base' is selected as an example by default).
+On the **Company information** page, we define the [partner](administration/main/partners/partners.md) and the PDF [template](configuration/system/templates/templates.md) (`Invoice A4 Classic` item is selected as an example by default).
 Once the PDF template is defined, it will be possible to view the invoice in PDF format.
-
-![Invoice view](invoice_view.jpg)
 
 ![Invoice view](invoice_view.png)
 
@@ -197,7 +196,7 @@ Please note that all [templates](configuration/system/templates/templates.md) ca
 
 ---
 
-In `Config → Finance → Settings` can be found the **Global invoices settings** for all customers in Splynx system. In this menu, you can also define the **Invoice number format**, by default is used `{year}{partner_id|2}{next|6}`.
+In `Config → Finance → Settings` can be found the global **Invoices settings** for all customers in Splynx system. In this menu, you can also define the **Invoice number format**, by default is used `{year}{partner_id|2}{next|6}`.
 
 ![Invoice number pattern](invoice_number_pattern.png)
 
@@ -205,26 +204,23 @@ You might also be interested in [Finance settings](configuration/finance/finance
 
 ## Options description:
 
-**Create invoices (after Charge & Invoice)** - toggle enables/disables an automatic invoice generation for specific customer when the **Charge & Invoice** was used in `Customers → View → Billing Overview`
-
 ![Charge & Invoice](charge&invoice.png)
 
-The global option to **enable automatic issuing** is located in `Config → Finance → Automation` (see [Automation](configuration/finance/automation/automation.md)).
+**Auto create invoices** - toggle enables/disables an automatic invoice generation for specific customer when the **Charge & Invoice** was used in `Customers → View → Billing Overview`
 
- When the toggle **Create Invoices (after charge & invoice)** is not enabled in customer's `Billing Overview` tab, you can create invoice manually using the **Add One-Time invoice** or **Add recurring invoice** buttons in `Billing → Invoices` tab, during the step of invoice creating you can choose the next options - **Use transactions** (enabled by default), type a description, select a date, add (optionally) note for the customer or memo for yourself and specify service details such as period, price, VAT etc.
+The global option to **Enable automatic issuing** is located in `Config → Finance → Automation` (see [Automation](configuration/finance/automation/automation.md)).
 
-The button **Add recurring invoice** allows the creation of invoice that will be issued on a recurring basis, separately from the global billing cycle.
+When the toggle **Auto create invoices** is not enabled in customer's `Billing → Billing config` tab, you can create invoice manually using the `Add document → One-Time invoice` or `Add document → Recurring invoice` buttons in `Billing → Finance documents` tab, during the step of invoice creating you can choose the next options - type a description, select a document date, payment due date, add (optionally) note for the customer, add more items and specify its charging details such as price, VAT etc. Also, the option `Load items from uncharged transactions` can be used to add to the current invoice (*One-time* or *Recurring*) the future item (a `+Debit` transaction) that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge.
+
+The button `Add document → Recurring invoice` allows the creation of invoice that will be issued on a recurring basis, separately from the global billing cycle.
 
 ![Create invoice](create_invoice.png)
 
----
+**NOTE:**
 
-Another way to create invoice is to use **Add Invoice from transaction** button in the [Transactions](finance/transactions/transactions.md) tab under `Billing → Transactions`.
+- If a *transaction* is added manually using the `Billing → Transactions → Add Transaction` button with the `Include transaction in next recurring invoice` option, transaction will not be removed during the deletion of created invoice (*One-time* or *Recurring*) with it or using `Cancel last recurring invoice` button. Such the unlinked transaction can only be deleted manually;
 
-![Transaction tab](add_invoice_from_transaction.png)
-
-
-**NOTE:** If a *transaction* was added manually using the **Add Transaction** button with the `Add to invoice` option, transaction would not be removed during the deletion of created invoice with it or using `Cancel last charge` button. Such unlinked transaction can be deleted manually.
+- The items with negative price value can be added to the invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`.
 
 <details>
 <summary><b>click here to see the step-by-step example</b></summary>
@@ -234,7 +230,7 @@ So, if the invoice includes at least one manual transaction and we are going to 
 
 **STEP 1**
 
-Create a transaction with the `Add to invoice` option:
+Create a transaction (future item) with the `Include transaction in next recurring invoice` option:
 
 ![](img1.png)
 
@@ -248,7 +244,7 @@ Add some service to customer, e.g. Internet service
 
 **STEP 3**
 
-In `Billing → Billing Overview` press **Charge & Invoice** button to charge the customer
+In `Billing → Billing config` press **Charge & Invoice** button to charge the customer
 
 ![](img4.png)
 
@@ -262,7 +258,7 @@ Double check if the manual transaction has been added to newly created invoice
 
 **STEP 5**
 
-Delete the invoice completely using <icon class="image-icon">![icon7](icon7.png)</icon> icon in `Billing → Invoices` tab. Or press `Cancel last charge` button in `Billing → Billing Overview` tab. The current invoice includes the auto (charge for service - step 3) and manual transactions (it was added manually in step 1).
+Delete the invoice completely using <icon class="image-icon">![icon7](icon7.png)</icon> icon in `Billing → Finance documents` tab. Or press `Cancel last recurring invoice` button in `Billing → Billing config` tab. The current invoice includes the auto (charge for service - step 3) and manual transactions (it was added manually in step 1).
 
 ![](img7.png)
 
@@ -272,13 +268,13 @@ The next warning message will be shown:
 
 ![](img7.1.png)
 
-If the invoice includes only manual transaction (-s), e.g. invoice was created via **Add Invoice from Transactions** button, the warning message will be the next:
+If we apply `Cancel last recurring invoice` and the invoice includes not only manual transaction (-s), the warning message will be the next:
 
 ![](warning_msg1.png)
 
 **STEP 6**
 
-Check if the manual transaction is present in `Billing → Transactions`. Mind, that it can be removed manually.
+Check if the manual transaction is present in `Billing → Transactions`. Mind, that it can only be removed manually.
 
 ![](img9.png)
 
@@ -290,18 +286,18 @@ Also, take into consideration the following:
 
 - during the converting a [quote](crm/quotes/quotes.md) to the invoice in customer's profile (`CRM → Quotes` tabs) or the converting some lead account to customer one, the auto transaction will be created. If we remove the created invoice, the auto transaction will be removed as well;
 
-- if we create the invoice manually e.g. using `Add one-time invoice` button and after that remove such invoice, the transaction will be removed automatically;
+- if we create the invoice manually e.g. using `Add document -> One-time invoice` button and after that remove such invoice, the transaction will be removed automatically;
 
-These statements and example above also apply to `delete` option in drop-down menu with mass **Actions** in `Billing → Invoices`. For more information about transactions, please navigate to the [Transactions manual](finance/transactions/transactions.md).
+These statements and example above also apply to `delete` option in drop-down menu with mass **Actions** in `Finance → Invoices`. For more information about transactions, please navigate to the [Transactions manual](finance/transactions/transactions.md).
 
 
 ---
 
-While deleting the unpaid invoice in customer's profile in `Billing → Invoices` tab, it's possible to use `Mark as delete` option instead of delete invoice completely. The option can be useful when we want to have a fuller context of the customer's billing flow.
+While deleting the unpaid invoice in customer's profile in `Billing → Finance documents` tab, it's possible to use `Mark as delete` option instead of delete invoice completely. The option can be useful when we want to have a fuller context of the customer's billing flow.
 
 ![](mark_as_deleted.png)
 
-In this case, the invoice will be marked as deleted and its auto transaction (-s) will be removed. The manual transaction (-s) related to the invoice will remain in any case. But such transaction can be deleted manually.
+In this case, the invoice will be marked as deleted, its auto transaction (-s) will be removed. The manual transaction (-s) (future item) related to the invoice will remain in any case. But such transaction can be deleted manually.
 
 ![](mark_as_deleted1.png)
 
@@ -311,13 +307,13 @@ In this case, the invoice will be marked as deleted and its auto transaction (-s
 
 ---
 
-To **edit an unpaid invoice** click on the <icon class="image-icon">![Edit icon](editinvoice.png)</icon> icon in customer's `Billing → Invoices` tab.
+To **edit an unpaid invoice** click on the <icon class="image-icon">![Edit icon](editinvoice.png)</icon> icon in customer's `Billing → Finance documents` tab.
 
 ![Invoice mobile rent](edit_invoice.png)
 
 ---
 
-It is also possible to send invoices via email with the <icon class="image-icon">![Send invoice](icon4.png)</icon> icon (if the email server is [configured](configuration/main_configuration/email_config/email_config.md)) in `Billing → Invoices`.
+It is also possible **to send invoice (-s) via email** with the <icon class="image-icon">![Send invoice](icon4.png)</icon> icon (if the email server is [configured](configuration/main_configuration/email_config/email_config.md)) in `Billing → Invoices`.
 You can write a message body or choose a template to populate it.
 
 ![Send file](send_file.png)

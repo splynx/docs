@@ -44,6 +44,8 @@ The option `Load items from uncharged transactions` is used to add to the curren
 
 ![image](2.png)
 
+**NOTE:** The items with negative price value can be added to any type of invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`.
+
 **Recurring invoice**
 
 The *Recurring* invoice is when the items or services are supplied to a customer on a regular basis and the automatic charge is applied. If there’s no change in services your customers regularly need, the usage of the recurring invoicing is more preferable.

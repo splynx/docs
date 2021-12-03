@@ -47,6 +47,8 @@ Let's imagine that we have the customer who uses a 100$ Internet service. And a 
 
 In new window you can **link**/**unlink** only **one** related paid/unpaid invoice to the current credit note. If the invoice is linked - all items (transactions) of such invoice will be added to the new credit note with all details. Moreover, it's possible to use the option `Add more items` to add the additional item (-s) and specify its **Description**, **Price** etc. Use `-` sign to remove the unnecessary items. After that press `Add` button, the new credit note with `Non refunded` status will be created.
 
+**NOTE:** The items with negative price value can be added to the credit note, but the credit note total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`.
+
 ![](new_cn.png)
 
 At this stage the sequence of transactions will be the following:
@@ -63,6 +65,22 @@ As a result, at this moment the customer's balance = `0` because the customer wi
 ![](refunded_cn.png)
 
 ![](refunded_trans.png)
+
+---
+
+You can immediately create a [credit note](finance/credit_notes/credit_notes.md) to the existing invoice in customer profile.
+
+Find the necessary invoice in customer's `Finance documents` and click on <icon class="image-icon">![icon5](icon_create_credit_note.png)</icon> icon to create a credit note.
+
+![](cred_note_from_action.png)
+
+In such case, the related invoice (and its transaction) will be automatically linked to this credit note.
+
+![](cred_note_from_action1.png)
+
+If it's necessary you can change the price, description etc. of an included item or add a new one.
+
+---
 
 **Note:**
 

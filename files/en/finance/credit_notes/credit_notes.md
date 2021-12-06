@@ -29,7 +29,7 @@ Let's consider in details the *Credit notes* statuses and the actions that can b
 | <icon class="image-icon">![](delete_payment.png)</icon> Delete payment  | The *Refund* payment will be remove and credit note status will be changed to `Non refunded`. The `+Debit` transaction will be re-created and the money will be returned to the customer balance. |
 
 
-**Example - Creating a credit note:**
+**Example #1 - Creating a credit note:**
 
 Let's imagine that we have the customer who uses a 100$ Internet service. And a SIP should give the money back to the customer.
 
@@ -37,7 +37,7 @@ Let's imagine that we have the customer who uses a 100$ Internet service. And a 
 
 ![image](charged.png)
 
-![](transaction_after charge.png)
+![image](transaction_after_charge.png)
 
 2. For some reason, the SIP should give the money back to the customer. So, the administrator should open the customer profile (`Customers → List`), click on `Billing → Finance documents` tabs, press `Add document` button and choose `Credit note` in drop down list.
 
@@ -64,11 +64,31 @@ As a result, at this moment the customer's balance = `0` because the customer wi
 
 ![](refunded_trans.png)
 
+---
+
+**Example #2 - Creating a credit note:**
+
+You can immediately create a [credit note](finance/credit_notes/credit_notes.md) to the existing invoice in customer profile.
+
+Find the necessary invoice in customer's `Finance documents` and click on <icon class="image-icon">![icon5](icon_create_credit_note.png)</icon> icon to create a credit note.
+
+![](cred_note_from_action.png)
+
+In such case, the related invoice (and its transaction) will be automatically linked to this credit note.
+
+![](cred_note_from_action1.png)
+
+If it's necessary you can change the price, description etc. of an included item or add a new one.
+
+---
+
 **Note:**
 
-- In Splynx v3.1 we could add the invoice with negative price value, but in v3.2 this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function instead;
+- In Splynx v3.1 we could add the invoice with negative price value, but in v3.2 this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function instead.
 
 ![](inv_negative_price.png)
+
+Nevertheless, the items with negative price value can be added to the credit note, but the credit note total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`;
 
 - In case the customer with existing *Credit notes* is converted back to the lead, the item (-s) of credit note can be found in `History → Billing → Credit Notes` of the lead account;
 
@@ -79,7 +99,7 @@ For example, the initial Internet service price = R200 and the new Internet serv
 ![image](refund_money_as_credit_note.png)
 
 <details>
-<summary>Click to expand</summary>
+<summary>Click to see the example</summary>
 <div markdown="1">
 
 ```     
@@ -129,7 +149,15 @@ Alternatively, once you have selected the required *Credit note (-s)* in the tab
 
 ![](mass_actions.png)
 
+------------
+
 Credit notes in PDF format are fully customizable with [templates](configuration/system/templates/templates.md). You can create a new template using the different [variables](configuration/system/templates/templates_variables/templates_variables.md) or edit the build-in templates in `Config → Templates` (Type: **Credit Note PDF**). Then, open `Config → Company Information`, find the field `Credit Note PDF Template` and in drop down list choose the template that will be used by default in Splynx.
+
+------------
+
+To **configure the notifications after credit note is created**, navigate to `Config → Finance → Notifications → Global (tab) → Credit notes` and set the required settings.
+
+![](credit_note_notifications.png)
 
 ------------
 

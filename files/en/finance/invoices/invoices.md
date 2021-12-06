@@ -23,7 +23,7 @@ Let's consider the invoice statuses in details:
 | <icon class="image-icon">![](unpaid.png)</icon> | the invoice has been created, but the customer has not made any payments towards the balance |
 | <icon class="image-icon">![](pending.png)</icon> | the invoice has not been paid and is not yet past the due date but payment is sent for processing. Once the invoice payment is processed successfully, the invoice will be updated to either a `Paid` or `Unpaid` status. If the due period has been exceeded and the amount hasn't been paid, the status will be changed to `Pending Overdue` or `Overdue` status  |
 | <icon class="image-icon">![](paid.png)</icon> | a payment has been successfully collected |
-| <icon class="image-icon">![](paid.png)</icon> <icon class="image-icon">![](from_account_balance.png)</icon> | the invoice was paid from customer's balance, a status is applied only if customer has enough funds |
+|<icon class="image-icon">![](from_account_balance.png)</icon> | the invoice was paid from customer's balance, a status is applied only if customer has enough funds |
 | <icon class="image-icon">![](overdue.png)</icon> | no payment was received for this invoice and the `Payment due` date has already passed |
 | <icon class="image-icon">![](deleted.png)</icon> | the invoice was marked as deleted. If we apply the `Mark as deleted` option for unpaid invoice, the invoice will be marked as deleted and its auto (`+Debit`) transaction (-s) will be removed. The manual transaction (-s), that was added to the invoice, will remain (even when `Delete completely` option was used) in any case. It's required to remove it manually |
 
@@ -288,7 +288,7 @@ Also, take into consideration the following:
 
 - if we create the invoice manually e.g. using `Add document -> One-time invoice` button and after that remove such invoice, the transaction will be removed automatically;
 
-These statements and example above also apply to `delete` option in drop-down menu with mass **Actions** in `Finance → Invoices`. For more information about transactions, please navigate to the [Transactions manual](finance/transactions/transactions.md).
+These statements and example above also apply to `delete` option in drop-down menu with mass **Actions** in `Finance → Invoices`. For more information about transactions, see [Transactions guide](finance/transactions/transactions.md).
 
 
 ---

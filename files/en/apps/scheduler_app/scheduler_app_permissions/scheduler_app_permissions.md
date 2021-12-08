@@ -1,30 +1,27 @@
 Engineers permissions for scheduling mobile application
 =========
 
-A minimal set of permissions within each section required for an engineering role (intended for technical workers engaged in direct installation and dismantling of equipment, using the app)
+Navigate to `Administration → Administrators` and check the permission for the required account.
 
-Part CRM:
+A **minimal set of permissions** within each section required for the engineer/technician role (intended for technical workers engaged in direct installation and dismantling of equipment, using the mobile app).
 
-CRM
-========
+### CRM
 
 * **Leads**
-* **List**
-* **List** / Show same partners leads
+* **List** (Leads)
+* **List** (Leads) / Show same partners leads
 * **View**
 * **View** / Edit
 * **View** / View leads password
 * **Maps**
 
-![CRM permission](crm_permission.jpg)
+![CRM permission](crm_permission.png)
 
-Customers
-========
+### Customers
 
 * **Search**
 * **List**
-* **View**
-* **Edit**
+* **View** / Edit
 * **Edit** / Geodata
 * **Edit** / Planned change status
 * **Edit** / View customer password
@@ -32,38 +29,34 @@ Customers
 * **Services** / Bundles
 * **Services** / Internet services
 * **Services** / Voice services
-* **Services** / Custom services
+* **Services** / Recurring services
 * **CRM**
-* **CRM** / Leads
+* **CRM** / Lead information
 * **CRM** / Edit leads info
 * **Maps**
 
-![Customers permission](customers_permission.jpg)
+![Customers permission](customers_permission.png)
 
-Tickets
-========
+### Tickets
 
 * **List new & open**
 
 ![Tickets permission](ticket_permission.png)
 
-Scheduling
-========
+### Scheduling
 
-* All permission exclude **Tasks-Delete**
+* All permission except permission **Tasks** / Delete
 
-![Scheduling permission](scheduling_permission.jpg)
+![Scheduling permission](scheduling_permission.png)
 
-Administration
-========
+### Administration
 
 * **Administrators**
-* **Administrators**
+* **Partners**
 
 ![Administration permission](admin_permission.png)
 
-Config
-========
+### Config
 
 * **Scheduling** all permissions
 

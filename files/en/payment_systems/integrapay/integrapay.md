@@ -246,6 +246,8 @@ Add the next line to the *footer* of your template:
 
 ![(image)](edit_template.png)
 
+After that, double-check if the correct template is selected in [Company information](configuration/system/company_information/company_information.md), the fields: `Invoice PDF Template` and `Proforma Invoice PDF Template`.
+
 **CRN for the invoice:**
 
 

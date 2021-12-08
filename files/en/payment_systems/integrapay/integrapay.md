@@ -185,15 +185,15 @@ More information you can find in an official [FAQ](https://bpay.com.au/bpay-for-
 </details>
 
 
-**Pay the invoice through BPAY according to the created (proforma) invoice CRN in Splynx**
+**Pay the invoice by BPAY according to the created (proforma) invoice CRN in Splynx:**
 
-1. Double-check if the necessary entry point for (proforma) invoice is enabled: navigate to `Config → Integrations → Modules list → Splynx Add-on IntegraPay` and click on **Edit entry points**
+1. (for administrator) Install and configure the *IntegraPay* add-on in Splynx (see above). Create the invoice for the customer to pay;
+
+2. (for administrator) Double-check if the necessary entry point for (proforma) invoice is enabled: navigate to `Config → Integrations → Modules list → Splynx Add-on IntegraPay` and click on **Edit entry points**
 
 ![(image)](entry_point_invoice.png)
 
 ![(image)](entry_point_proforma.png)
-
-2. (for administrator) Install and configure the *IntegraPay* add-on in Splynx (see above). Create the invoice for the customer to pay;
 
 3. (for customer) Open the [Portal](customer_portal/customer_portal.md), navigate to `Finance → Invoices` (`Finance → Proforma invoices`) and click on `Pay via BPay` icon near the unpaid invoice (the [bank statement](bank_statement_processing/bank_statement_processing.md) will be created in `Pending` status - it will be used to read the status of transaction from *IntegraPay* side. The payment will be created if the customer pays the invoice in their bank and we receive information about this transaction from *IntegraPay*): showing the Customer Reference Number (CRN) of the current invoice indicates that it has been generated successfully and the CRN is fixed in *IntegraPay*.
 
@@ -202,18 +202,22 @@ More information you can find in an official [FAQ](https://bpay.com.au/bpay-for-
 4. A customer makes payment using the provided Biller Code and Customer Reference Number (CRN). After that, a new transaction associated with CRN will appear in the customer profile.
 
 
-**Pay the invoice through BPAY according to the created customer CRN in Splynx**
+**Pay the invoice by BPAY according to the created customer CRN in Splynx:**
 
-1. Double-check if the `BPay CRN` entry point in `Finance` section  is enabled: navigate to `Config → Integrations → Modules list → Splynx Add-on IntegraPay` and click on **Edit entry points**
+1. (for administrator) Install and configure the *IntegraPay* add-on in Splynx (see above). Create the invoice for the customer to pay;
 
+2. (for administrator) Double-check if the `BPay CRN` entry point in `Finance` section is enabled: navigate to `Config → Integrations → Modules list → Splynx Add-on IntegraPay` and click on **Edit entry points**
 
+3. (for customer) Open the Portal, click on `Finance` item on the sidebar, then click on `BPay CRN` item: the unique CRN for customer will be generated (each customer will have their own unique CRN)
 
+![(image)](bpay_crn_for_customer.png)
 
+4. A customer can pay any amount of money using the provided Biller Code and Customer Reference Number (CRN). Then, Splynx receives the status of the transaction and the money will be added to the customer's balance - only the payment will be created in the customer profile..
 
 
 **Things to keep in mind:**
 
-- the change of transaction statuses is deducted by API request, which is limited to no more than 1 request per hour;
+- the change of transaction statuses is deducted by API request from Splynx, which is limited to no more than 1 request per hour (the task is performed by *cron*);
 
 - two methods (for the invoice and the customer) of CRN generation in Splynx can work simultaneously;
 
@@ -221,7 +225,10 @@ More information you can find in an official [FAQ](https://bpay.com.au/bpay-for-
 
 - if a customer later pays the correct amount using the same CRN (of the invoice), the payment should be linked to the correct invoice;
 
-- if the amount of payment is larger than required, then 2 payments will be created in Splynx. The one with the required amount and it will be linked to the invoice, the second one will be added to the customer's balance.
+- if the amount of payment is larger than required, then 2 payments will be created in Splynx. The one with the required amount and it will be linked to the invoice, the second one will be added to the customer's balance;
+
+- in case an invoice is paid or deleted before the transaction status is analyzed, information about this event will be added to the log and the transaction will be marked as processed.
+
 
 **Add the Bpay logo with references to the (proforma) invoice templates**
 
@@ -234,28 +241,81 @@ Add the next line to the *footer* of your template:
 
 ![(image)](edit_template.png)
 
+**CRN for the invoice**
+
+
+
+
 <details>
-<summary>for Invoice PDF template</summary>
-<div markdown="1">
+<summary><b>for Invoice PDF template</b></summary>
+<p markdown="1">
+
+
 
 ```   
 <img src="https://your_domain/integrapay/get-bpay-crn?invoiceNumber={{ number }}" width="150" height="43">
 
 ```
-</div>
+
+
+</p>
 </details>
 
 
+
+
 <details>
-<summary>for Proforma Invoice PDF template</summary>
-<div markdown="1">
+<summary><b>for Proforma Invoice PDF template</b></summary>
+<p markdown="1">
+
 
 ```   
 <img src="https://your_domain/integrapay/get-bpay-crn?invoiceNumber={{ number }}&isProforma=1" width="150" height="43">
 
 ```
-</div>
+
+
+</p>
 </details>
+
+
+
+**CRN for the customer**
+
+
+
+<details>
+<summary><b>for Invoice PDF template</b></summary>
+<p markdown="1">
+
+
+
+```   
+<img src="http://your_domain/integrapay/get-bpay-crn-customer?customerId={{ customer.id }}" width="150" height="43">
+
+```
+
+
+</p>
+</details>
+
+
+
+
+<details>
+<summary><b>for Proforma Invoice PDF template</b></summary>
+<p markdown="1">
+
+
+```   
+<img src="http://your_domain/integrapay/get-bpay-crn-customer?customerId={{ customer.id }}&isProforma=1" width="150" height="43">
+
+```
+
+
+</p>
+</details>
+
 
 **Example:**
 

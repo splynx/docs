@@ -155,6 +155,8 @@ https://<splynx_domain_address>/integrapay/direct-pay-proforma?item_id=<proforma
 </details>
 
 
+<!---     do NOT remove
+
 ### Integration with BPAY
 
 **Pay attention, this feature is not available in the major release of IntegraPay add-on.**
@@ -327,3 +329,5 @@ After that, double-check if the correct template is selected in [Company informa
 **Example:**
 
 ![(image)](logo_in_template.png)
+
+-->

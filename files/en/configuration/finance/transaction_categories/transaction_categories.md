@@ -1,42 +1,54 @@
 Transaction categories
 =============
 
-To check all Transaction categories in Splynx navigate to `Config → Finance → Transaction categories`.
+To check all transaction categories in Splynx navigate to `Config → Finance → Transaction categories`.
 
 ![Main menu](icon.png)
 
+
 #### Transaction categories
 
-Transaction categories listed here are set by default:
+The transaction categories such as **Service**, **Discount**, **Payment**, **Refund** and **Correction** are set by default in Splynx.
 
 ![List](list.png)
 
-We've added categories 6,7,8 and they can be removed. Default categories 1-5 can be only edited.
+You can add a new transaction category manually by clicking on the **Add** button at the top-right corner of the page. You can **export** or **select columns to display** by clicking on the matching icons.
 
-You can add a new Transaction category manually by clicking on the *Add* icon at the top-right corner of the page. You can export or select fields to display by clicking on the icons at the bottom left of the table.
+We manually added categories 8, 9 and they can be removed only if these categories are not used withing Splynx, e.g. in transactions or CAP plans.
+
+![image](remove_category.png)
+
+The default categories cannot be deleted, you can only change its names.
+
 
 #### Transaction categories configuration
 
 ![Mapping](mapping.png)
 
-Mapping settings between services(internet, voice, custom, bundle or one-time), inventory and transaction categories can be configured here. If all services have to be configured with this mapping you should select transaction category = "default for service type" under each tariff:
+The global mapping settings between services (internet, voice, recurring, bundle or one-time), inventory, invoice and credit note categories can be configured here.
 
-![tariff](tariff.png)
+**Example**
 
-Then you will be able to track the amount of money for each transaction category in Administration/Reports/Transaction categories report:
+If we choose `other_test` value instead of default `Service` one for Internet service and charge the customer, their new transaction will be categorized as `other_test` category:
 
-![Reports](reports.png)
+![image](other_test.png)
 
-![Report](report1.png)
+![image](other_test1.png)
+
 
 #### Transaction categories configuration for tariff plans
 
-Mapping configuration for tariff plans can be enabled here, if something was configured in the previous step in the "Transaction categories configuration".
+The mapping configuration for tariff plans can be enabled here. If these items are enabled, the additional field `Transaction category` will be activated in each tariff configuration window. By default, the `Default for service type` value is used there, in this case the global settings will be followed.
+
+But if you choose any other transaction category in tariff configuration window, the global settings for this particular tariff plan will be ignored and the chosen category will be used instead.
 
 ![Enable](enable.png)
 
-If these are items enabled, tariffs will use the configuration for transaction categories from this menu, if disabled - directly from tariff plan settings.
+![Enable](enable1.png)
 
-Now with the created and configured transaction categories we can use them in billing:
 
-![Customer billing](customer_billing.png)
+#### Report
+
+To track the amount of money for each transaction category, navigate to `Administration → Reports → Transaction categories report`.
+
+For more information, see [Transaction Categories Report](administration/reports/transactions_categories/transactions_categories.md).

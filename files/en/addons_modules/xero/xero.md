@@ -61,16 +61,20 @@ The **Splynx domain** must be the same as the **API domain URL** but without las
 
 - **Xero non invoice payment type** - used to choose the type (`Prepayment` or `Overpayment`) of Splynx payment to export without invoice;
 
+
 <details>
-<summary>example</summary>
-<div markdown="1">
+<summary><b>Example</b></summary>
+<p markdown="1">
+
 
 The separate account has a rolling balance as a contra account for all payments that come from Splynx. Some customers paid R500 instead of R499 and the prepayments were allocated to your separate account.
 On allocation, you’ll take R499 of the payment to the invoice, and the R1 will just remain in the account as a running total. At the end of the year the R1 amount will be significant and unallocated on the account.
 It would be much easier if all R500 could simply be allocated to the client's account. Then, we can allocate R499 from the overpayment to the invoice and the R1 'overpayment' will end up in the customer's balance.
 
-</div>
+
+</p>
 </details>
+
 
 - **Prepayments Account code** - a unique code (limited to 10 characters) of prepayments items (the expenditures that have been paid for in advance) in Xero account (`Accounting menu → Advanced → Chart of Accounts`);
 
@@ -162,7 +166,26 @@ In our test environment, we have 2 customers and a few invoices for each custome
 
 Once the customer export has completed, we can start export their invoices to Xero:
 
-**NOTE:** **The invoices without transactions or marked as Deleted in Splynx will not be synced to Xero.**
+**NOTE:**
+
+**The invoices without transactions or marked as Deleted in Splynx will not be synced to Xero;**
+
+**If the invoice includes item with a given period of time in Splynx, such period will be added to the related item description on Xero side after sync.**
+
+
+<details>
+<summary><b>Example</b></summary>
+<p markdown="1">
+
+
+![image](invoice_with_period1.png)
+
+![image](invoice_with_period2.png)
+
+
+</p>
+</details>
+
 
 ![invoices_sync](invoices_sync.png)
 

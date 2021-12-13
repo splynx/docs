@@ -68,7 +68,7 @@ As a result, at this moment the customer's balance = `0` because the customer wi
 
 **Example #2 - Creating a credit note:**
 
-You can immediately create a [credit note](finance/credit_notes/credit_notes.md) to the existing invoice in customer profile.
+You can immediately create a [credit note](finance/credit_notes/credit_notes.md) and link it with the existing invoice in customer profile.
 
 Find the necessary invoice in customer's `Finance documents` and click on <icon class="image-icon">![icon5](icon_create_credit_note.png)</icon> icon to create a credit note.
 
@@ -82,13 +82,11 @@ If it's necessary you can change the price, description etc. of an included item
 
 ---
 
-**Note:**
+**IMPORTANT:**
 
-- In Splynx v3.1 we could add the invoice with negative price value, but in v3.2 this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function instead.
+- In Splynx v3.1 we could add the invoice with negative price value in 'Total', but in v4.0 this feature is deprecated. Such invoice cannot be created now. Please, use the *Credit notes* function instead. Now, the items with negative price value can be added to the credit note, but the credit note total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`. The invoice with negative item (-s) can be linked to credit note as well;
 
 ![](inv_negative_price.png)
-
-Nevertheless, the items with negative price value can be added to the credit note, but the credit note total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`;
 
 - In case the customer with existing *Credit notes* is converted back to the lead, the item (-s) of credit note can be found in `History → Billing → Credit Notes` of the lead account;
 
@@ -99,7 +97,7 @@ For example, the initial Internet service price = R200 and the new Internet serv
 ![image](refund_money_as_credit_note.png)
 
 <details>
-<summary>Click to see the example</summary>
+<summary>Click to see the detailed explanation</summary>
 <div markdown="1">
 
 ```     

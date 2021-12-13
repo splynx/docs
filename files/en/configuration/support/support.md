@@ -1,4 +1,4 @@
-Tickets
+Helpdesk
 =============
 
 In this section we can modify the configuration for tickets, ticket notifications, incoming emails configurations and also automation for tickets.

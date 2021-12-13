@@ -1,10 +1,7 @@
 Tickets
 =============
-`Config ➝ Tickets ➝ Tickets`
 
 ![tickets icon](icon.png)
-
-## Tickets
 
 In this section you can configure the sender details for [ticket notifications](configuration/support/ticket_notifications/tickets_notifications.md).
 

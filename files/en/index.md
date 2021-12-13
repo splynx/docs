@@ -290,7 +290,7 @@ Table of contents
   * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
 
 
-* [Tickets](configuration/support/support.md)    
+* [Helpdesk](configuration/support/support.md)    
   * [Feedback widget](configuration/support/feedback_widget/feedback_widget.md)
   * [General ticket configuration](configuration/support/general_ticket_configuration/general_ticket_configuration.md)
   * [Inboxes](configuration/support/inboxes/inboxes.md)

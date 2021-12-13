@@ -18,7 +18,7 @@ Please follow the links below for tutorials of each of the sections of the Confi
 
 * [Finance](configuration/finance/finance.md)
 
-* [Tickets](configuration/support/support.md)
+* [Helpdesk](configuration/support/support.md)
 
 * [Networking](configuration/network/network.md)
 

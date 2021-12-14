@@ -11,7 +11,7 @@ This section displays all data pertaining to tickets and useful tools to rate an
 
 This subsection of ticket reports is used to rate agent performance with regards to tickets.
 
-To view any data in this tab of tickets reports, it is necessary to first specify the criteria of results you wish to view. This can be done with the filter at the top right of the table. Simply specify a period and which administrator on your system you would like to view results of and click on show:
+To view any data in this tab of tickets reports, it is necessary to first specify the criteria of results you wish to view. This can be done with the filter at the top right of the table. Simply specify a period and which administrator on your system you would like to view results of and click on Show button:
 
 ![report tickets](3.png)
 
@@ -25,7 +25,7 @@ The report will then present a ticket ID, the administrator the ticket was assig
 
 **Timing** - used to rate the response times of the agents
 
-**feedback** - used to rate the relevance of the agents feedback to the customer.
+**Feedback** - used to rate the relevance of the agents feedback to the customer.
 
 **Grade** - this is a total obtained from the results of the rating criteria to give the administrator a total score.
 
@@ -47,7 +47,7 @@ This section is used to display the agents response times to tickets grouped by 
 ![SLA](4.png)
 ![SLA](4.1.png)
 
-To display data in this report, it is necessary to first specify a period to retrieve the SLA report data. Simply specify the period and click on show to view the results for that period. The report will display data of each admin in the system and their response times under each time interval pertaining to a specific date group, as well as the total of response time intervals for each date interval:
+To display data in this report, it is necessary to first specify a period to retrieve the SLA report data. Simply specify the period and click on Refresh button to view the results for that period. The report will display data of each admin in the system and their response times under each time interval pertaining to a specific date group, as well as the total of response time intervals for each date interval:
 
 ![SLA](5.png)
 
@@ -86,7 +86,7 @@ This section of ticket reports displays a report of agent/admin performance for 
 
 This report/table can be exported in a format of your preference from that which is available with the use of the export <icon class="image-icon">![Export](export.png)</icon> icon located at the bottom left of the table:
 
-![export](export1.png)
+![export](export2.png)
 
 
 **Performance distribution report**
@@ -97,7 +97,7 @@ This section summarizes a report of average times taken by administrators to sen
 
 ![Performance](8.png)
 
-Simply specify the criteria and click on show to display the results
+Simply specify the criteria and click on Show button to display the results
 
 
 The performance distribution report is divided into three sections:
@@ -129,6 +129,11 @@ This tab shows the history of admins' activity within a specific time period. Th
 
 **Costs of support**
 
-This tab shows the value of support via tickets in correspondence with company revenue per customer. *MRR Cost (per action)* is a result of dividing *Total actions* on *Monthly Recurring Revenue*.
+This tab shows the value of support via tickets in correspondence with company revenue per customer. The formula to compute the **MRR Cost (per action)** is the next:
+```
+(Total actions / Monthly Recurring Revenue) * Quantity of customer services
+```
+
+**Total actions (in `+` out `+` notes)** is divided on **Monthly Recurring Revenue**, after that the result is multiplied by **Quantity of customer services**.
 
 ![SupportCost](supportcost.png)

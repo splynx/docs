@@ -19,7 +19,7 @@ In order to open a more detailed list of the data presented in the blocks, use t
 
 ![Screenshot](shortcuts.png)
 
-On this panel can be configured and pinned the quick actions available in Splynx. The list of actions depends on the role of the account. Note, when we install at least one add-on on the system, the `Install add-ons` item will change to `Configure modules` one.
+On this panel are provided the quick actions available in Splynx. The list of actions depends on the role of the account and its permissions. Note, when we install at least one add-on on the system, the `Install add-ons` item will be changed to `Configure modules` one. `Configure modules` action opens `Config → Integrations → Modules list` (the configuration page of all add-ons installed on system)
 
 **Example:**
 

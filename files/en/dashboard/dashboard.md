@@ -101,7 +101,7 @@ In the upper right corner of the page the **ACCOUNT** menu is located with the n
 | <icon class="image-icon">![image](quick_addition.png)</icon> <br> **Quick addition** | the following actions available: `Add lead`, `Add customer`, `Add ticket`, `Add task`.  |
 | <icon class="image-icon">![image](search.png)</icon> <br> **Search** |the global search of Splynx. |
 | <icon class="image-icon">![image](help_and_support.png)</icon> <br> **Help and Support**| create a new ticket for Splynx support.   |
-| <icon class="image-icon">![image](documentation.png)</icon> <br> **Documentation** | open the documentation in the sidebar. Each article can be opened in a new window. |
+| <icon class="image-icon">![image](documentation.png)</icon> <br> **Documentation** | open the documentation in the sidebar. Each article can be opened in a new window. In addition, you can search for the guide you need by keywords. |
 | <icon class="image-icon">![image](notifications.png)</icon> <br> **Notifications** | the list of recent notifications.|
 
 **Quick addition**
@@ -126,7 +126,7 @@ The action is used to create a ticket for Splynx support team. Please, use this 
 
 ![Screenshot](doc_icon.png)
 
-The instant access to the appropriate documentation in the Splynx window. Depending on which page you are on, the necessary manual will open in the right sidebar after clicking on the icon. The manual can be opened in a separate tab of the web browser and you can navigate to the `Table of contents` of the full documentation as well.
+It's provided the instant access to the appropriate documentation in the Splynx window. Depending on which page you are on, the necessary manual will open in the right sidebar after clicking on the icon. The manual can be opened in a separate tab of the web browser and you can navigate to the `Table of contents` of the full documentation or search the necessary guide as well.
 
 **Notifications**
 

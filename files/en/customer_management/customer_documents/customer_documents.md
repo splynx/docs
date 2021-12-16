@@ -8,7 +8,7 @@ Our **Documents** section allows you to upload documents in any format, providin
 ![Documents](documents.png)
 
 
-### How to upload a document to Splynx.
+### How to upload a document to Splynx
 
 **To upload a document to Splynx** click on the <icon class="image-icon">![Upload](upload_button.png)</icon> button at the top right corner of the table and a pop-up window **Upload file** will appear. In this window you can specify a **Title** of the document, a short **Description** (optional) and choose whether this document will be **Visible to customer** on their [Portal](customer_portal/customer_portal.md) or only available for administrator. Then, click on **File** upload icon <icon class="image-icon">![Load](load_button.png)</icon> and choose the document to upload.
 
@@ -29,7 +29,7 @@ If you upload the file with the `Visible to customer` option enabled, the file w
 The customer can download the file from *Portal* by clicking on the `Download` icon <icon class="image-icon">![Download](download_button1.png)</icon> on the right side of the table.
 
 
-### Generating a document in Splynx.
+### Generating a document in Splynx
 
 Let's take a look at the process of generating a document for customer in Splynx .
 
@@ -105,19 +105,19 @@ You can create your own contract using the functionality of template and custome
 
 3. Fill out the fields `Title`, `Description` (optional) and `Code`. Pay attention that in the contract template code should be included the next variables:
 
-**To show customer's signature image in contract:**
+**To show customer's signature image in contract (required):**
 
 ```
 <img src="{{signature}}">
 ```
 
-**To show the signature date:**
+**To show the signature date (optional):**
 
 ```
 {{sign_date}}
 ```
 
-**To show the end of term:**
+**To show the end of term (optional):**
 
 ```
 {{end_of_term}}
@@ -157,7 +157,7 @@ Press **Generate** button to create a contract for the selected customer.
 
 ![image](signature_in_contact4.png)
 
-Let's emulate the provided contract signing by customer.
+Let's simulate the signing of the contract by customer.
 
 In customer profile, navigate to **Information** tab and click on **Actions** drop-down menu, choose `Login as customer` option to open customer *Portal* in a new tab of your web browser.
 Click on `Documents` items on the sidebar and click on `Contract` tab. Then, press <icon class="image-icon">![image](sign.png)</icon> (Sign contract) button.
@@ -168,7 +168,7 @@ If you make a mistake, press **Clear** button and start from the beginning.
 
 ![image](signature_in_contact5.png)
 
-After the contract is signed, the `(Signed)` label will be added to contract title and the date and time values will be set automatically in **Signature date** and **End of term** fields:
+After the contract is signed, the `(Signed)` label will be added to contract title and the date / time values will be set automatically in **Signature date** and **End of term** fields:
 
 ![image](signature_in_contact6.png)
 
@@ -177,14 +177,4 @@ The customer can download the signed contract to their local storage:
 ![image](signature_in_contact7.png)
 
 
-
-<details>
-<summary><b>Video: How to sing the contract</b></summary>
-<p markdown="1">
-
-
-
-
-
-</p>
-</details>
+<iframe width="350" height="270" src="https://www.youtube.com/embed/mfDjhX4Ux-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

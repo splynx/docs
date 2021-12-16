@@ -21,15 +21,28 @@ For **Google Map** type, it's required to create the **Google Maps API keys**.
 ![Google Maps](googlemaps.png)
 
 
+
+
 <details>
-<summary>How to get the Google Maps API keys</summary>
-<div markdown="1">
+<summary><b>How to get the Google Maps API keys</b></summary>
+<p markdown="1">
+
+
+
 
 **IMPORTANT:**
 
-- **Google Maps API key** (Restricted for domain) - ensures the operation of the map appearance in Splynx. The **Maps Embed API** is free to use, you can use this API without enabling billing.
-- **Google Geocode Javascript API Key** (Restricted for IP) - provides the search according to the entered address, e.g. in customer's profile. To use this key it's required to [enable billing](https://console.cloud.google.com/projectselector/billing) for your Cloud project. Your account will not be charged if you stay within your [free quota](https://developers.google.com/maps/billing-credits);
-- After you enable billing, there is no limit to the amount that you might be charged. To gain more control over your costs, you can [create a budget and set alerts](https://developers.google.com/maps/documentation/embed/cloud-setup#creating_budgets_and_setting_alerts). More information you can find in the [Billing](https://developers.google.com/maps/billing/gmp-billing) documentation and in the [FAQ](https://developers.google.com/maps/faq).
+
+* **Google Maps API key** (Restricted for domain) - ensures the operation of the map appearance in Splynx. The **Maps Embed API** is free to use, you can use this API without enabling billing;
+
+
+* **Google Geocode Javascript API Key** (Restricted for IP) - provides the search according to the entered address, e.g. in customer's profile. To use this key it's required to [enable billing](https://console.cloud.google.com/projectselector/billing) for your Cloud project. Your account will not be charged if you stay within your [free quota](https://developers.google.com/maps/billing-credits);
+
+
+* After you enable billing, there is no limit to the amount that you might be charged. To gain more control over your costs, you can [create a budget and set alerts](https://developers.google.com/maps/documentation/embed/cloud-setup#creating_budgets_and_setting_alerts). More information you can find in the [Billing](https://developers.google.com/maps/billing/gmp-billing) documentation and in the [FAQ](https://developers.google.com/maps/faq).
+
+
+
 
 <details>
 <summary>Video: How do I set up billing for my project</summary>
@@ -48,7 +61,8 @@ Google Cloud offers a $300 free trial, and Google Maps Platform features a recur
 ------------
 
 
-### Step #1: Set up the project
+**Step #1: Set up the project**
+
 
 Before you start using the Google Maps Platform APIs you need to set up your Google Cloud project in order to manage your API keys.
 
@@ -64,21 +78,28 @@ More information can be found [here](https://developers.google.com/maps/document
 
 ------------
 
-### Step #2: Enable APIs
+**Step #2: Enable APIs**
+
 
 To use *Google Maps Platform*, you must enable the APIs you plan to use with your project. If you are not sure which APIs to enable, try using the [API Picker](https://developers.google.com/maps/documentation/api-picker) or documentation - [link 1](https://developers.google.com/maps/documentation) and [link 2](https://developers.google.com/maps/apis-by-platform).
 
 Navigate to [Google Maps Platform page](https://console.cloud.google.com/project/_/google/maps-apis/api-list) and **enable** the next APIs:
 
-- [Maps Embed API](https://console.cloud.google.com/apis/library/maps-embed-backend.googleapis.com) - [overview](https://developers.google.com/maps/documentation/embed/get-started);
-- [Maps JavaScript API](https://console.cloud.google.com/apis/library/maps-backend.googleapis.com) - [overview](https://developers.google.com/maps/documentation/javascript/overview);
-- [Geocoding API](https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com) - [overview](https://developers.google.com/maps/documentation/geocoding/overview).
+
+* [Maps Embed API](https://console.cloud.google.com/apis/library/maps-embed-backend.googleapis.com) - [overview](https://developers.google.com/maps/documentation/embed/get-started);
+
+
+* [Maps JavaScript API](https://console.cloud.google.com/apis/library/maps-backend.googleapis.com) - [overview](https://developers.google.com/maps/documentation/javascript/overview);
+
+
+* [Geocoding API](https://console.cloud.google.com/apis/library/geocoding-backend.googleapis.com) - [overview](https://developers.google.com/maps/documentation/geocoding/overview).
 
 Click [here](https://console.cloud.google.com/project/_/google/maps-apis/api-list) to view the APIs you have enabled. If the button says *ENABLE*, click the button to enable the API, it it says *MANAGE*, the API is already enabled and you don't need to do anything further.
 
 ------------
 
-### Step #3: Get the API keys
+**Step #3: Get the API keys**
+
 
 The [API key](https://cloud.google.com/docs/authentication/api-keys) is a unique identifier that authenticates requests associated with your project.
 
@@ -94,13 +115,17 @@ To create the **Google Maps API key** (Restricted for domain):
 
 4. Click on **Edit API key**, on new page change the **Name**, set **Application restrictions** to `HTTP referrers (web sites)` and in **Website restrictions** section add your Splynx domain address.
 
+
+
 <details>
-<summary>Adding HTTP restrictions</summary>
+<summary>Examples of adding the HTTP restrictions</summary>
 <div markdown="1">
+
 
 ![](examples.png)
 
 [More examples](https://cloud.google.com/docs/authentication/api-keys#adding_http_restrictions)
+
 
 </div>
 </details>
@@ -110,6 +135,8 @@ To create the **Google Maps API key** (Restricted for domain):
 ![](api_key2.png)
 
 Click **Save** at the bottom of the page;
+
+
 
 5. Copy and paste your *Google Maps API key 1* to the corresponding field in Splynx.
 
@@ -132,9 +159,12 @@ Click **Save** at the bottom of the page;
 
 ![](api_key4.1.png)
 
+
+
 5. Copy and paste your *Google Geocode Javascript API Key 2* to the corresponding field in Splynx and press **Save**.
 
 ![](api_key5.png)
+
 
 
 <details>
@@ -176,8 +206,12 @@ You can set the GPS coordinates to the **leads**, **routers**, **services** and 
 
 ![](service.png)
 
+![](hardware.png)
 
-</div>
+
+
+
+</p>
 </details>
 
 ------------

@@ -62,6 +62,7 @@ The **Splynx domain** must be the same as the **API domain URL** but without las
 - **Xero non invoice payment type** - used to choose the type (`Prepayment` or `Overpayment`) of Splynx payment to export without invoice;
 
 
+
 <details>
 <summary><b>Example</b></summary>
 <p markdown="1">
@@ -76,6 +77,7 @@ It would be much easier if all R500 could simply be allocated to the client's ac
 </details>
 
 
+
 - **Prepayments Account code** - a unique code (limited to 10 characters) of prepayments items (the expenditures that have been paid for in advance) in Xero account (`Accounting menu → Advanced → Chart of Accounts`);
 
 - **Rounding Account code** - a unique code (limited to 10 characters) of rounding item (an adjustment entry to allow for rounding) in Xero account (`Accounting menu → Advanced → Chart of Accounts`);
@@ -88,7 +90,34 @@ It would be much easier if all R500 could simply be allocated to the client's ac
 
 - **Ignore expense payments on import** - a toggle allows to enable/disable ignoring 'Spend money' (a payment that doesn't relate to a bill, expense claim, or refund) in Xero payments during payments import. If option is enabled, 'Spend money' payments will not be added to bank statements;
 
-- **Customer name pattern** - used as Xero customer 'Contact Name'. The following variables can be used: `{id}`, `{login}`, `{name}`, `{email}`.
+- **Customer name pattern** - used to set the format of the customer name during the sync to Xero. The value will be visible in **Contact Name** field of customer contact information on Xero side. The following variables can be used in the field: `{id}`, `{login}`, `{name}`, `{email}`;
+
+- **Customer account number pattern** - set the format of customer **Account number** field during the sync to Xero. The max field length is 50 symbols. The following variables can be used: `{id}`,`{login}`;
+
+- **Invoice/Credit note reference pattern** - set the format of invoice / credit note (`credit note` - *the Xero term, it's an invoice with negative total price in Splynx v3.1*) **Reference** field during the sync to Xero. The max field length is 255 symbols. The following variables can be used: `{id}`, `{number}`, `{date}` (e.g. Dec 2021);
+
+
+
+<details>
+<summary><b>Example of the variables usage</b></summary>
+<p markdown="1">
+
+
+![example](example1.png)
+
+![example](example2.png)
+
+![example](example3.png)
+
+![example](example4.png)
+
+![example](example5.png)
+
+
+</p>
+</details>
+
+<br>
 
 - **Decimal Places** - by default Xero is rounding prices to `2` decimal places. `4` decimal places can be used instead.
 

@@ -92,7 +92,7 @@ It would be much easier if all R500 could simply be allocated to the client's ac
 
 - **Customer name pattern** - used to set the format of the customer name during the sync to Xero. The value will be visible in **Contact Name** field of customer contact information on Xero side. The following variables can be used in the field: `{id}`, `{login}`, `{name}`, `{email}`;
 
-- **Customer account number pattern** - set the format of customer **Account number** field during the sync to Xero. The max filed length is 50 symbols. The following variables can be used: `{id}`,`{login}`;
+- **Customer account number pattern** - set the format of customer **Account number** field during the sync to Xero. The max field length is 50 symbols. The following variables can be used: `{id}`,`{login}`;
 
 - **Invoice/Credit note reference pattern** - set the format of invoice / credit note (`credit note` - *the Xero term, it's an invoice with negative total price in Splynx v3.1*) **Reference** field during the sync to Xero. The max field length is 255 symbols. The following variables can be used: `{id}`, `{number}`, `{date}` (e.g. Dec 2021);
 

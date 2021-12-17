@@ -1,7 +1,7 @@
 Dashboard
 =========
 
-**Dashboard** is the main control page in Splynx which will help you check financial and customer statistics on a daily basis. From the dashboard, you can monitor system performance and immediately get information about your network devices health and the state of other modules. Using the **shortcuts** gives you access to regular actions in Splynx.
+**Dashboard** is the main control page in Splynx which will help you check financial and customer statistics on a daily basis. From the dashboard, you can monitor system performance and immediately get information about your network devices health and the state of other modules. Using the **Shortcuts** gives you access to regular actions in Splynx.
 
 ![Dashboard1](dashboard1.png)
 
@@ -9,7 +9,7 @@ Dashboard
 
 At the top of the live dashboard you can find the blocks with the summarized information about the number of **online customers**, **new customers**, **new and open tickets** and the number of **devices down** in your network.
 
-In order to open a more detailed list of the data presented in the blocks, use the buttons withing the blocks, it helps to quickly jump to the full list of necessary information.
+In order to open a more detailed list of the data presented in the blocks, just click on the required block, it helps to quickly jump to the full list of necessary information.
 
 ![Screenshot](dashboard3.png)
 

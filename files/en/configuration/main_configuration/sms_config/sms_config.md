@@ -61,10 +61,8 @@ or
 
 ------------
 
-
-
-<details>
-<summary><b>Example of Bulk SMS gateway configuration</b></summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>Example of Bulk SMS gateway configuration</summary>
 <div markdown="1">
 
 
@@ -94,10 +92,8 @@ or
 4. In Splynx, navigate to `Config → Main → SMS`, in **Main** section configure the following settings:
 
 
-
-
-<details>
-<summary><b>The values example</b></summary>
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>The values example</summary>
 <div markdown="1">
 
 
@@ -161,11 +157,10 @@ More information you can find in these articles:
 
 
 
-<details>
-<summary><b>Example of Clickatell SMS gateway configuration</b></summary>
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>Example of Clickatell SMS gateway configuration</summary>
 <div markdown="1">
-
-
 
 
 ![main](main.png)
@@ -180,6 +175,8 @@ For more information, see:
 
 - https://docs.clickatell.com/channels/sms-channels/sms-api-documentation/
 
+
+
 </div>
 </details>
 
@@ -189,11 +186,10 @@ For more information, see:
 
 
 
-<details>
-<summary><b>Example of BurstSMS SMS gateway configuration</b></summary>
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>Example of BurstSMS SMS gateway configuration</summary>
 <div markdown="1">
-
-
 
 
 ![main](urlencoded_main.png)

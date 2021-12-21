@@ -45,6 +45,8 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 * [Mikrotik: Static IPs with API](networking/authentication_of_customers/mikrotik_static_api/mikrotik_static_api.md)
 
+* [Mikrotik: Wireless ACL Authentication](networking/authentication_of_customers/mikrotik_wireless_acl_auth/mikrotik_wireless_acl_auth.md)
+
 * [netElastic vBNG: IPoE, Radius configuration](networking/authentication_of_customers/vbng_ipoe_radius/vbng_ipoe_radius.md)
 
 * [netElastic vBNG: PPPoE, Radius](networking/authentication_of_customers/vbng_pppoe_radius/vbng_pppoe_radius.md)

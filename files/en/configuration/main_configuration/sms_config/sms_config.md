@@ -61,11 +61,9 @@ or
 
 ------------
 
-
-
-<details>
-<summary><b>Example of Bulk SMS gateway configuration</b></summary>
-<p markdown="1">
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>Example of Bulk SMS gateway configuration</summary>
+<div markdown="1">
 
 
 
@@ -82,6 +80,7 @@ or
 ![image](bulk_sms_3.png)
 
 
+
 3. To **request sender id** which will be shown in SMS for your customers, navigate to `Settings → Message` and click on *Sender IDs* tab.
 
 **NOTE:** You must have purchased credits at least once before you can use this facility.
@@ -89,16 +88,13 @@ or
 ![image](bulk_sms_4.png)
 
 
-4. In Splynx, navigate to `Config → Main → SMS` <br>
 
-In **Main** section configure the following settings:
-
+4. In Splynx, navigate to `Config → Main → SMS`, in **Main** section configure the following settings:
 
 
-
-<details>
-<summary><b>The values example</b></summary>
-<p markdown="1">
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>The values example</summary>
+<div markdown="1">
 
 
 **Gateway URL:**
@@ -114,7 +110,7 @@ https://api.bulksms.com/v1/messages
 ```
 
 
-</p>
+</div>
 </details>
 
 
@@ -136,6 +132,7 @@ In **Custom header** section use the generated `Basic Auth` value from **step 2*
 ![image](bulk_sms_6.png)
 
 
+
 5. In **Test** section, type your test phone number to check the SMS configuration
 
 ![test](test.png)
@@ -145,23 +142,25 @@ In **Custom header** section use the generated `Basic Auth` value from **step 2*
 More information you can find in these articles:
 
 
-[BulkSMS JSON REST API (v1.0.0)](https://www.bulksms.com/developer/json/v1/#)
+- [BulkSMS JSON REST API (v1.0.0)](https://www.bulksms.com/developer/json/v1/#)
 
-[BulkSMS generic error types](https://www.bulksms.com/developer/json/v1/errors/)
+- [BulkSMS generic error types](https://www.bulksms.com/developer/json/v1/errors/)
 
 
 
-</p>
+</div>
 </details>
 
 
 
-
-<details>
-<summary><b>Example of Clickatell SMS gateway configuration</b></summary>
-<p markdown="1">
+------------
 
 
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>Example of Clickatell SMS gateway configuration</summary>
+<div markdown="1">
 
 
 ![main](main.png)
@@ -176,17 +175,21 @@ For more information, see:
 
 - https://docs.clickatell.com/channels/sms-channels/sms-api-documentation/
 
-</p>
+
+
+</div>
 </details>
 
 
 
-
-<details>
-<summary><b>Example of BurstSMS SMS gateway configuration</b></summary>
-<p markdown="1">
+------------
 
 
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>Example of BurstSMS SMS gateway configuration</summary>
+<div markdown="1">
 
 
 ![main](urlencoded_main.png)
@@ -201,9 +204,12 @@ For more information, see:
 
 
 
-</p>
+</div>
 </details>
 
+
+
+------------
 
 
 

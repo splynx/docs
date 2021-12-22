@@ -3,6 +3,8 @@ Mikrotik: Wireless ACL Authentication
 
 Splynx can authorize wireless stations on MikroTik by making changes to *Wireless Access List* in Router OS. With Wireless Access List you can set up the complex logic to work with customers: by signal strength, time of day, limit the speed of each customer, move their to a specific VLAN, etc.
 
+In our case, Splynx can connect each of the APs as a router over the network and add the rules via API to the Wireless ACL. Each AP can authorize the real services of the customers to access the Internet or it can be just added as a free service to block customer by the Wireless ACL.
+
 On **MikroTik Wireless Access Point** device, make the following configuration steps:
 
 1. Create a new user account and a special access group with the following permissions. After that, include the user account to the created group:
@@ -22,8 +24,6 @@ Doing the above step MikroTik WiFi AP will turn into MAC address filtering WiFi 
 ------------
 
 On **Splynx** side, make the next configuration steps:
-
-In our case, Splynx can connect each of the APs as a router over the network and add these rules via API to the Wireless ACL. Each AP can authorize the real services of the customers to access the Internet or it can be just added as a free service to block customer by the Wireless ACL.
 
 3. Create a new Internet tariff for Mikrotik: Wireless ACL to prevent any possible issues:
 

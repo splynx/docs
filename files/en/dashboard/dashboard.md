@@ -19,11 +19,15 @@ In order to open a more detailed list of the data presented in the blocks, just 
 
 ![Screenshot](shortcuts.png)
 
-On this panel are provided the quick actions available in Splynx. The list of actions depends on the role of the account and its permissions. Note, when we install at least one add-on on the system, the `Install add-ons` item will be changed to `Configure modules` one. `Configure modules` action opens `Config → Integrations → Modules list` (the configuration page of all add-ons installed on system)
+On this panel are provided the quick actions available in Splynx. The list of actions depends on the role of the account and its permissions. Note, when we install at least one add-on on the system, the `Install add-ons` item will be changed to `Configure modules` one. `Configure modules` action opens `Config → Integrations → Modules list` (the configuration page of all add-ons installed on system).
 
-**Example:**
+For instance, we can navigate to `Config → Integrations → Add-ons`, find the necessary add-on and click on `Install`, but it's faster to click on `Install add-ons` action in *Shortcuts* panel.
 
-We can navigate to `Config → Integrations → Add-ons`, find the necessary add-on and click on `Install`, but it's faster to click on `Install add-ons` action in *Shortcuts* panel.
+With the help of [entry point](configuration/integrations/modules_list/modules_list.md) we can add on the shortcuts panel the separate action item to access the specific add-on.
+
+
+
+
 
 
 ### Live dashboard

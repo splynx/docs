@@ -37,10 +37,12 @@ The customers can now pay for (proforma) invoices directly from their portal.
 
 ------------
 
-[Shortcuts](dashboard/dashboard.md) (available in Splynx v4.0), in addition to quick actions feature, allows you to pin the action items on the panel to access/configure a specific installed add-on in Splynx.
+To pin the action item on the [Shortcuts](dashboard/dashboard.md) panel (available in Splynx v4.0) to quick access a specific installed add-on, add the new entry point for the chosen add-on and, during the entry point configuration, use `Dashboards shortcuts` value for the **Root** field.
 
-To do this, add the new entry point for the chosen add-on and use `Dashboards shortcuts` value for the **Root** field there.
+For **example**, let's create the new entry for [Xero](addons_modules/xero/xero.md) add-on:
 
 ![image](entry_point1.png)
 
 ![image](entry_point2.png)
+
+------------

@@ -1,7 +1,7 @@
 Variables for templates
 =======================
 
-The variables are used in custom templates in Splynx.
+The variables are used in custom templates on Splynx.
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>How to generate the list of variables by your own?</b></summary>

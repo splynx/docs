@@ -1,691 +1,1654 @@
 Variables for templates
 =======================
 
-There is the list of all variables which are using in templates. So you can use them in your custom templates.
+The variables are used in custom templates in Splynx.
 
-####Basic system values:
-<details>
-<summary>{{ dump(loader.values) }}</summary>
-<p markdown="1">
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>How to generate the list of variables by your own?</b></summary>
+<div markdown="1">
 
-##### result will be array of company fields:
+Use the specific value from some category listed below when creating a template, then press *Preview* button to show the output result.
 
-     object(models\common\finance\TemplateValues)#226 (30) {
-     ["id"]=> string(2) "13"
-     ["invoice_template_id"]=> string(1) "5"
-     ["request_template_id"]=> string(2) "14"
-     ["receipt_template_id"]=> string(2) "34"
-     ["reminder_mail_template_id"]=> string(2) "15"
-     ["reminder_sms_template_id"]=> string(2) "16"
-     ["company_name"]=> string(33) "Private Company Internet Ltd."
-     ["street_1"]=> string(47) "56, Adamause str."
-     ["street_2"]=> string(0) ""
-     ["zip"]=> string(6) "568749"
-     ["city"]=> string(8) "Yamayka"
-     ["country"]=> string(5) "Gonduras"
-     ["email"]=> string(20) "office@privatecompany.com"
-     ["phone"]=> string(14) "8 500 600 8526"
-     ["company_id"]=> string(21) "K683621TP2398723321"
-     ["company_vat"]=> string(0) ""
-     ["vat_percent"]=> string(7) "20.0000"
-     ["bank_account"]=> string(0) ""
-     ["bank_name"]=> string(0) ""
-     ["bank_id"]=> string(0) ""
-     ["bank_address"]=> string(0) ""
-     ["splynx_url"]=> string(44) "https://privatecompany/admin/login"
-     ["partner_percent"]=> string(4) "0.00"
-     ["deleted"]=> NULL
-     ["_relations":"db\Record":private]=> array(0) { }
-     ["connected_models":"db\Record":private]=> NULL
-     ["_oldAttributes":protected]=> array(23) {
-             some old attributes ...
-             }
-     ["_errors":"base\Model":private]=> NULL
-     ["_additionalAttributes":protected]=> array(0) { }
-     ["_isAdditionalAttributesLoaded":protected]=> bool(false)
-     }
-</p>
+**Example**
+
+Let's generate the variables of customer information, we are going to use them in *Document* template.
+
+1.  Navigate to `Config → Templates`, in **Type** select `Documents`;
+
+2. Press **Add** button to add a new template;
+
+![image](img1.png)
+
+3. In new window, insert the code shown below into the **Code** area and press **Preview** button
+
+```
+<pre>{{ dump(customer) }}</pre>
+```
+![image](img2.png)
+
+4. Check the output result.
+
+![image](img3.png)
+
+</div>
 </details>
 
-####Customer's information:
-<details>
-<summary>{{ dump(customer) }}</summary>
-<p markdown="1">
+------------
 
-##### result will be array of customer fields:
+Below are lists of all available variables in relation to the different categories:
 
-     array(38) {
-     ["id"]=> string(1) "4"
-     ["billing_type"]=> string(7) "prepaid"
-     ["partner_id"]=> string(2) "13"
-     ["location_id"]=> string(1) "3"
-     ["added_by"]=> string(5) "admin"
-     ["added_by_id"]=> string(1) "1"
-     ["login"]=> string(11) "qwerty"
-     ["category"]=> string(6) "person"
-     ["password"]=> string(11) "ZaXsCdVfBg"
-     ["name"]=> string(12) "Qwert Ytrewq"
-     ["email"]=> string(19) "qwerty@gmail.com"
-     ["phone"]=> string(10) "132456789"
-     ["street_1"]=> string(57) "Long Island str., 526/4"
-     ["zip_code"]=> string(0) "48567"
-     ["city"]=> string(0) "Malibu"
-     ["status"]=> string(6) "active"
-     ["date_add"]=> string(10) "2016-05-21"
-     ["last_online"]=> string(19) "2017-06-01 11:41:01"
-     ["last_update"]=> string(19) "2017-05-01 14:10:50"
-     ["internet_tariffs"]=> NULL
-     ["voice_tariffs"]=> NULL
-     ["custom_tariffs"]=> NULL
-     ["services_internet_router_id"]=> NULL
-     ["services_internet_sector_id"]=> NULL
-     ["services_internet_login"]=> NULL
-     ["services_internet_ipv4"]=> NULL
-     ["services_internet_ipv4_route"]=> NULL
-     ["services_internet_mac"]=> NULL
-     ["services_voice_phone"]=> NULL
-     ["services_voice_voice_device_id"]=> NULL
-     ["services_internet_start_date"]=> NULL
-     ["services_internet_end_date"]=> NULL
-     ["services_voice_start_date"]=> NULL
-     ["services_voice_end_date"]=> NULL
-     ["services_custom_start_date"]=> NULL
-     ["services_custom_end_date"]=> NULL
-     ["deleted"]=> string(1) "0"
-     ["additional_attributes"]=> array(10) {
-             ["some_additional_field"]=> string(0) "some additional field"
-             }
-     }
-</p>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Company information</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(loader.values) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+
+object(models\common\finance\CompanyInfo)#1303 (47) {
+["id"]=>  string(1) "1"
+["invoice_template_id"]=> string(3) "140"
+["credit_note_template_id"]=> string(1) "0"
+["request_template_id"]=> string(3) "141"
+["receipt_template_id"]=> string(2) "25"
+["quote_template_id"]=> string(2) "56"
+["reminder_mail_template_id"]=> string(2) "29"
+["reminder_sms_template_id"]=> string(2) "30"
+["report_statements_template_id"]=> string(2) "55"
+["company_name"]=> string(15) "Private Company Internet Ltd."
+["street_1"]=> string(10) "56, Adamause str."
+["street_2"]=> string(10) "56, Adamause str."
+["zip"]=> string(5) "568749"
+["city"]=> string(5) "Yamayka"
+["country"]=> string(1) "Gonduras"
+["iso_country"]=> string(7) "Gonduras"
+["email"]=> string(25) "office@privatecompany.com"
+["phone"]=> string(10) "85006008526"
+["company_id"]=> string(0) "K683621TP2398723321"
+["company_vat"]=> string(13) "IT22222222222"
+["vat_percent"]=> string(6) "0.0000"
+["bank_account"]=> string(27) "IT0000000000000000000000000"
+["bank_name"]=> string(7) "BANK_IT"
+["bank_id"]=> string(0) ""
+["bank_address"]=> string(0) ""
+["splynx_url"]=> string(36) "https://privatecompany.com"
+["partner_percent"]=> string(4) "0.00"
+["logo"]=> NULL
+["file_logo"]=> NULL
+["logo_from_another_partner"]=> NULL
+["_defaultModel":"models\common\finance\TemplateValues":private]=> NULL
+["_realOldAttributes":"models\common\finance\TemplateValues":private]=> NULL
+["deleted"]=> NULL
+["_changedAttributes":"db\Record":private]=> NULL
+["activeMysqlLocks":protected]=>  array(0) {}
+["_forceDelete":"db\Record":private]=> bool(false)
+["_afterFirstSave":"db\Record":private]=> bool(false)
+["_relations":"db\Record":private]=> array(0) {}
+["_connected_models":"db\Record":private]=> NULL
+["relatedItems":protected]=> array(0) {}
+["_deleteWithRelations":"db\Record":private]=> bool(false)
+["_oldAttributes":protected]=> array(30)
+["_related":protected]=> array(0) {}
+["_errors":"base\Model":private]=> array(0) {}
+["_ignoreFillables":"base\Model":private]=> bool(false)
+["_additionalAttributes":protected]=> array(0) {}
+["_isAdditionalAttributesLoaded":protected]=> bool(false)
+}
+
+```
+
+</div>
 </details>
 
-####General information:
-<details>
-<summary>{{ dump(loader.info) }}</summary>
-<p markdown="1">
 
-##### result will be array of customer's information fields:
 
-     object(models\common\customers\CustomerInfo)#226 (12) {
-     ["customer_id"]=> string(1) "4"
-     ["birthday"]=> string(0) ""
-     ["passport"]=> string(0) ""
-     ["company_id"]=> string(0) ""
-     ["vat_id"]=> string(0) ""
-     ["deleted"]=> NULL
-     ["_relations":"db\Record":private]=> array(0) { }
-     ["connected_models":"db\Record":private]=> NULL
-     ["_oldAttributes":protected]=> array(5) {
-             some old attributes ...
-             }
-     ["_errors":"base\Model":private]=> NULL
-     ["_additionalAttributes":protected]=> array(0) { }
-     ["_isAdditionalAttributesLoaded":protected]=> bool(false)
-     }
-</p>
+</div>
 </details>
 
-####Get all Internet services that are Active:
-<details>
-<summary>{{ dump(loader.getServicesByTypeAndStatus('internet', 'active')) }}</summary>
-<p markdown="1">
 
-##### result will be array of service fields:
 
-     array(1) {
-     [0]=> object(models\common\customers\ServicesInternet)#235 (47) {
-     ["type"]=> string(8) "internet"
-     ["router_id"]=> string(1) "0"
-     ["login"]=> string(11) "qwerty_login"
-     ["password"]=> string(11) "qwert_pass"
-     ["sector_id"]=> string(1) "0"
-     ["taking_ipv4"]=> string(1) "0"
-     ["ipv4"]=> string(0) ""
-     ["ipv4_pool_id"]=> string(1) "0"
-     ["taking_ipv6"]=> string(1) "0"
-     ["ipv6"]=> string(0) ""
-     ["ipv6_pool_id"]=> string(1) "0"
-     ["mac"]=> string(0) ""
-     ["port_id"]=> string(1) "0"
-     ["ipv4_route"]=> string(0) ""
-     ["ipv6_route"]=> string(0) ""
-     ["update_online_tariff":"models\common\customers\ServicesInternet":private]=> bool(false)
-     ["_is_password_changed":"models\common\customers\ServicesInternet":private]=> bool(false)
-     ["parent_id"]=> string(1) "0"
-     ["customer_id"]=> string(1) "4"
-     ["tariff_id"]=> string(3) "206"
-     ["description"]=> string(9) "Internet tariff - 30Mb"
-     ["quantity"]=> string(1) "1"
-     ["unit"]=> string(0) ""
-     ["unit_price"]=> string(9) "100"
-     ["start_date"]=> string(10) "2017-01-16"
-     ["end_date"]=> string(10) "0000-00-00"
-     ["discount"]=> string(1) "0"
-     ["discount_percent"]=> string(4) "0.00"
-     ["discount_start_date"]=> string(10) "0000-00-00"
-     ["discount_end_date"]=> string(10) "0000-00-00"
-     ["discount_text"]=> string(0) ""
-     ["status"]=> string(6) "active"
-     ["status_new"]=> string(0) ""
-     ["old_tariff_id"]=> NULL
-     ["planned_date"]=> NULL
-     ["validate_login"]=> bool(true)
-     ["skip_some_validations"]=> bool(false)
-     ["id"]=> string(4) "83"
-     ["ips_to_remove":"db\ActiveTable":private]=> array(0) { } ["relatedItems":protected]=> array(0) { }
-     ["deleted"]=> string(1) "0"
-     ["_relations":"db\Record":private]=> array(0) { }
-     ["connected_models":"db\Record":private]=> NULL
-     ["_oldAttributes":protected]=> array(32) {
-             some old attributes ...
-             }
-     }
-</p>
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Customer's information</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(customer) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+array(59) {
+["id"]=> string(2) "18"
+["billing_type"]=> string(9) "recurring"
+["partner_id"]=> string(1) "1"
+["location_id"]=> string(1) "1"
+["added_by"]=> string(5) "admin"
+["added_by_id"]=> string(1) "1"
+["login"]=> string(6) "000018"
+["category"]=> string(6) "person"
+["password"]=> string(6) "123456"
+["name"]=> string(15) "Robert E. Myers"
+["email"]=> string(16) "xxxxxx@gmail.com"
+["billing_email"]=> string(16) "xxxxxx@gmail.com"
+["phone"]=> string(12) "254708374149"
+["street_1"]=> string(12) "13th Street "
+["zip_code"]=> string(5) "10011"
+["city"]=> string(8) "New York"
+["status"]=> string(6) "active"
+["date_add"]=> string(10) "2021-02-25"
+["last_online"]=> string(19) "2021-07-08 15:47:02"
+["last_update"]=> string(19) "2021-12-20 13:14:02"
+["daily_prepaid_cost"]=> string(6) "0.0000"
+["gps"]=> string(22) "40.7383963,-74.0014389"
+["conversion_date"]=> string(0) ""
+["street_2"]=> string(0) ""
+["internet_tariffs"]=> NULL
+["voice_tariffs"]=> NULL
+["custom_tariffs"]=> NULL
+["bundles"]=> NULL
+["services_internet_router_id"]=> NULL
+["services_internet_sector_id"]=> NULL
+["services_internet_login"]=> NULL
+["services_internet_ipv4"]=> NULL
+["services_internet_ipv4_route"]=> NULL
+["services_internet_ipv6"]=> NULL
+["services_internet_ipv6_delegated"]=> NULL
+["services_internet_mac"]=> NULL
+["services_internet_unit_price"]=> NULL
+["services_voice_phone"]=> NULL
+["services_voice_voice_device_id"]=> NULL
+["services_voice_unit_price"]=> NULL
+["services_internet_start_date"]=> NULL
+["services_internet_end_date"]=> NULL
+["services_voice_start_date"]=> NULL
+["services_voice_end_date"]=> NULL
+["services_custom_start_date"]=> NULL
+["services_custom_end_date"]=> NULL
+["services_custom_unit_price"]=> NULL
+["services_bundle_start_date"]=> NULL
+["services_bundle_end_date"]=> NULL
+["services_bundle_unit_price"]=> NULL
+["mrr_total"]=> string(8) "200.0000"
+["gdpr_agreed"]=> string(12) "empty_answer"
+["prepaid_monthly_costs"]=> string(0) ""
+["prepaid_expiration_date"]=> string(0) ""
+["prepaid_remains_days"]=> string(0) ""
+["starting_account_balance"]=> int(0)
+}
+
+```
+
+</div>
 </details>
 
-####Bundles:
-<details>
-<summary>{% set bundles = loader.getBundles() %} {{ dump(bundles) }}</summary>
-<p markdown="1">
-
-##### result will be array of all Bundles fields:
 
 
-     array(2) {
-      [1]=> object(models\admin\tariffs\Bundle)#117 (34) {
-         ["id"]=> string(1) "1"
-         ["title"]=>  string(3) "New"
-         ["service_description"]=>  string(4) "New1"
-         ["price"]=> string(7) "10.0000"
-         ["customers"]=> NULL
-         ["services"]=> NULL
-          ["with_vat"]=> string(1) "1"
-          ["vat_percent"]=> string(6) "0.0000"
-          ["partner_ids"]=> array(3) {
-              [0]=> string(1) "1"
-             [1]=> string(1) "2"
-              [2]=> string(1) "3"
-          }
-          ["activation_fee"]=> string(6) "0.0000"
-          ["get_activation_fee_when"]=> string(21) "first_service_billing"
-          ["issue_invoice_while_service_creation"]=> string(1) "0"
-          ["contract_duration"]=> string(1) "0"
-          ["automatic_renewal"]=> string(1) "0"
-          ["auto_reactivate"]=> string(1) "0"
-          ["prior_cancellation_fee"]=> string(6) "0.0000"
-          ["change_to_other_bundle_fee"]=> string(6) "0.0000"
-          ["discount_period"]=> string(1) "0"
-          ["discount_percent"]=> string(6) "0.0000"
-          ["internet_tariffs"]=> array(1) {
-              [0]=> string(1) "2"
-         }
-         ["voice_tariffs"]=> array(0) {
-         }
-         ["custom_tariffs"]=> array(0) {
-         }
-         ["_recalculateBlockingDate":"models\admin\tariffs\Bundle":private]=> bool(false)
-         ["_ips_to_remove":"db\ActiveTable":private]=> array(0) {
-         }
-         ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=> bool(false)
-         ["deleted"]=> string(1) "0"
-         ["_changedAttributes":"db\Record":private]=> NULL
-         ["_relations":"db\Record":private]=> array(0) {
-         }
-         ["_connected_models":"db\Record":private]=> NULL
-         ["relatedItems":protected]=> array(0) {
-         }
-     ...
-         }
-      [2]=> object(models\admin\tariffs\Bundle)#119 (34) {
-      ["id"]=> string(1) "2"
-      ["title"]=> string(20) "Bundle with discount"
-      ["service_description"]=> string(20) "Bundle with discount"
-      ["price"]=> string(8) "100.0000"
-      ["customers"]=> NULL
-      ["services"]=> NULL
-      ["with_vat"]=> string(1) "1"
-      ["vat_percent"]=> string(6) "0.0000"
-      ["partner_ids"]=> array(2) {
-         [0]=> string(1) "1"
-      [  1]=> string(1) "2"
-      }
-      ["activation_fee"]=> string(6) "0.0000"
-      ["get_activation_fee_when"]=> string(21) "first_service_billing"
-      ["issue_invoice_while_service_creation"]=> string(1) "0"
-      ["contract_duration"]=> string(2) "12"
-      ["automatic_renewal"]=> string(1) "1"
-      ["auto_reactivate"]=>  string(1) "0"
-      ["prior_cancellation_fee"]=> string(6) "0.0000"
-      ["change_to_other_bundle_fee"]=> string(6) "0.0000"
-      ["discount_period"]=> string(2) "12"
-      ["discount_percent"]=> string(7) "20.0000"
-      ["internet_tariffs"]=> array(1) {
-         [0]=> string(1) "9"
-      }
-      ["voice_tariffs"]=> array(0) {
-      }
-      ["custom_tariffs"]=> array(0) {
-      }
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>General information</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(loader.info) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+object(models\common\customers\CustomerInfo)#1291 (21) {
+["customer_id"]=> string(2) "18"
+["birthday"]=> string(11) "20 Jan 1980"
+["passport"]=> string(0) ""
+["company_id"]=> string(0) ""
+["vat_id"]=> string(0) ""
+["deleted"]=> NULL
+["_changedAttributes":"db\Record":private]=> NULL
+["activeMysqlLocks":protected]=> array(0) {}
+["_forceDelete":"db\Record":private]=> bool(false)
+["_afterFirstSave":"db\Record":private]=> bool(false)
+["_relations":"db\Record":private]=> array(0) {}
+["_connected_models":"db\Record":private]=> NULL
+["relatedItems":protected]=> array(0) {}
+["_deleteWithRelations":"db\Record":private]=> bool(false)
+["_oldAttributes":protected]=> array(6) {
+  some old attributes ...
+["_errors":"base\Model":private]=> array(0) {}
+["_ignoreFillables":"base\Model":private]=> bool(false)
+["_additionalAttributes":protected]=> array(0) {}
+["_isAdditionalAttributesLoaded":protected]=> bool(false)
+["updated_at"]=> string(19) "2021-12-20 13:14:03"
+}
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Get all Internet services that are Active</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(loader.getServicesByTypeAndStatus('internet', 'active')) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+array(1) {
+[0]=>
+object(models\common\customers\ServicesInternet)#1329 (68) {
+["type"]=> string(8) "internet"
+["top_up_tariff_id"]=> NULL
+["router_id"]=> string(1) "3"
+["login"]=> string(6) "000018"
+["password"]=> string(6) "123456"
+["sector_id"]=> string(1) "2"
+["taking_ipv4"]=> string(1) "1"
+["ipv4"]=> string(8) "10.0.0.8"
+["ipv4_pool_id"]=> string(1) "0"
+["taking_ipv6"]=> string(1) "0"
+["ipv6"]=> string(0) ""
+["ipv6_pool_id"]=> string(1) "0"
+["mac"]=> string(12) "0800272C3D65"
+["port_id"]=> string(0) ""
+["ipv4_route"]=> string(0) ""
+["ipv6_delegated"]=> string(0) ""
+["_update_online_tariff":"models\common\customers\ServicesInternet":private]=> bool(false)
+["_is_password_changed":"models\common\customers\ServicesInternet":private]=> bool(false)
+["_attributesHiddenForShowHideColumns":protected]=> NULL
+["_kill_from_online":"models\common\customers\ServicesInternet":private]=> bool(false)
+["parent_id"]=> string(1) "0"
+["customer_id"]=> string(2) "18"
+["tariff_id"]=> string(1) "1"
+["bundle_service_id"]=> string(1) "0"
+["description"]=> string(16) "Ethernet_500Mbps"
+["quantity"]=> string(1) "1"
+["unit"]=> string(0) ""
+["unit_price"]=> string(8) "200.0000"
+["start_date"]=> string(10) "2021-02-25"
+["end_date"]=> string(10) "0000-00-00"
+["discount"]=> string(1) "0"
+["discount_value"]=> string(6) "0.0000"
+["discount_type"]=> string(7) "percent"
+["discount_start_date"]=> string(10) "0000-00-00"
+["discount_end_date"]=> string(10) "0000-00-00"
+["discount_text"]=> string(0) ""
+["status"]=> string(6) "active"
+["status_new"]=> string(0) ""
+["period"]=> string(2) "-1"
+["old_tariff_id"]=> NULL
+["planned_date"]=> NULL
+["validate_login"]=> bool(true)
+["_validate_required_af":"models\common\customers\ServicesBase":private]=> bool(true)
+["_customer":"models\common\customers\ServicesBase":private]=> NULL
+["_tariff":"models\common\customers\ServicesBase":private]=> NULL
+["idForMultipleForm":protected]=> NULL
+["_skip_some_validations":"models\common\customers\ServicesBase":private]=> bool(false)
+["id"]=> string(2) "29"
+["_ips_to_remove":"db\ActiveTable":private]=> array(0) {}
+["_ipv6_to_remove":"db\ActiveTable":private]=> array(0) {}
+["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=> bool(false)
+["deleted"]=> string(1) "0"
+["_changedAttributes":"db\Record":private]=> NULL
+["activeMysqlLocks":protected]=> array(0) {}
+["_forceDelete":"db\Record":private]=> bool(false)
+["_afterFirstSave":"db\Record":private]=> bool(false)
+["_relations":"db\Record":private]=> array(0) {}
+["_connected_models":"db\Record":private]=> NULL
+["relatedItems":protected]=> array(0) {}
+["_deleteWithRelations":"db\Record":private]=> bool(false)
+["_oldAttributes":protected]=> array(41) {
+some old attributes ...
+}
+
+}
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Bundles</b></summary>
+<div markdown="1">
+
+```
+<pre>{% set bundles = loader.getBundles() %} {{ dump(bundles) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+array(2) {
+  [3]=>
+  object(models\admin\tariffs\Bundle)#1320 (49) {
+    ["id"]=>
+    string(1) "3"
+    ["title"]=>
+    string(4) "Same"
+    ["service_description"]=>
+    string(4) "Same"
+    ["price"]=>
+    string(8) "800.0000"
+    ["billing_days_count"]=>
+    NULL
+    ["customers"]=>
+    NULL
+    ["services"]=>
+    NULL
+    ["with_vat"]=>
+    string(1) "1"
+    ["vat_percent"]=>
+    string(6) "0.0000"
+    ["partner_ids"]=>
+    array(7) {
+      [0]=>
+      int(1)
+      [1]=>
+      int(3)
+      [2]=>
       ...
-     }
-</p>
-</details>
+    }
+    ["billing_types"]=>
+    array(1) {
+      [0]=>
+      string(9) "recurring"
+    }
+    ["activation_fee"]=>
+    string(6) "0.0000"
+    ["get_activation_fee_when"]=>
+    string(21) "first_service_billing"
+    ["issue_invoice_while_service_creation"]=>
+    string(1) "0"
+    ["contract_duration"]=>
+    string(1) "0"
+    ["automatic_renewal"]=>
+    string(1) "0"
+    ["auto_reactivate"]=>
+    string(1) "0"
+    ["cancellation_fee"]=>
+    string(6) "0.0000"
+    ["prior_cancellation_fee"]=>
+    string(6) "0.0000"
+    ["change_to_other_bundle_fee"]=>
+    string(6) "0.0000"
+    ["discount_period"]=>
+    string(1) "0"
+    ["discount_value"]=>
+    string(6) "0.0000"
+    ["discount_type"]=>
+    string(7) "percent"
+    ["available_for_services"]=>
+    string(1) "1"
+    ["internet_tariffs"]=>
+    array(2) {
+      [0]=>
+      string(1) "1"
+      [1]=>
+      string(1) "2"
+    }
+    ["voice_tariffs"]=>
+    array(2) {
+      [0]=>
+      string(1) "1"
+      [1]=>
+      string(1) "2"
+    }
+    ["custom_tariffs"]=>
+...
+    }
 
-####Services from Bundles:
-<details>
-<summary>{% set servisesBundle = loader.getServicesBundle() %} {{ dump(servisesBundle) }}</summary>
-<p markdown="1">
+```
 
-##### result will be array of the Bundle and all Services fields:
-
-     array(1) {
-      [4]=> object(models\common\customers\services\ServicesBundle)#407 (35) {
-      ["parent_id"]=> string(1) "0"
-      ["customer_id"]=> string(4) "5001"
-      ["bundle_id"]=> string(1) "1"
-      ["description"]=> string(4) "New1"
-      ["unit_price"]=> string(7) "10.0000"
-      ["start_date"]=> string(10) "2018-10-22"
-      ["end_date"]=> string(10) "2019-01-21"
-      ["automatic_renewal"]=> string(1) "0"
-      ["activation_fee_transaction_id"]=> string(1) "0"
-      ["prior_cancellation_fee_transaction_id"]=> string(1) "0"
-      ["discount"]=> string(1) "0"
-      ["discount_percent"]=> string(4) "0.00"
-      ["discount_start_date"]=> string(10) "2018-10-22"
-      ["discount_end_date"]=> string(10) "0000-00-00"
-      ["discount_text"]=> string(0) ""
-      ["status"]=> string(6) "active"
-      ["period"]=> string(2) "-1"
-      ["type"]=> string(6) "bundle"
-      ["services_internet"]=> array(1) {
-         [130]=> object(models\common\customers\ServicesInternet)#415 (51) {
-         ["type"]=> string(8) "internet"
-         ["router_id"]=> string(1) "0"
-         ["login"]=> string(11) "00500123456"
-         ["password"]=> string(0) ""
-         ["sector_id"]=> string(1) "0"
-         ["taking_ipv4"]=> string(1) "0"
-         ["ipv4"]=> string(0) ""
-         ["ipv4_pool_id"]=> string(1) "0"
-         ["taking_ipv6"]=> string(1) "0"
-         ["ipv6"]=> string(0) ""
-         ["ipv6_pool_id"]=> string(1) "0"
-         ["mac"]=> string(0) ""
-         ["port_id"]=> string(0) ""
-         ["ipv4_route"]=> string(0) ""
-         ["ipv6_route"]=> string(0) ""
-      }
-     ....
-     }
-</p>
-</details>
-
-####Billing information:
-<details>
-<summary>{{ dump(loader.billing) }}</summary>
-<p markdown="1">
-
-##### result will be array of billing fields:
-
-     object(models\common\customers\CustomerBilling)#226 (36) {
-     ["customer_id"]=> string(1) "4"
-     ["enabled"]=> string(1) "1"
-     ["type"]=> string(1) "1"
-     ["deposit"]=> string(8) "758.0000"
-     ["billing_date"]=> string(1) "1"
-     ["billing_due"]=> string(2) "15"
-     ["grace_period"]=> string(2) "10"
-     ["make_invoices"]=> string(1) "1"
-     ["auto_pay_invoices_from_deposit"]=> string(0) ""
-     ["payment_method"]=> string(1) "1"
-     ["min_balance"]=> string(6) "0.0000"
-     ["request_auto_enable"]=> string(0) ""
-     ["request_auto_day"]=> string(1) "1"
-     ["request_auto_period"]=> string(1) "0"
-     ["reminder_enable"]=> string(1) "1"
-     ["reminder_day_1"]=> string(1) "2"
-     ["reminder_day_2"]=> string(1) "8"
-     ["reminder_day_3"]=> string(2) "20"
-     ["reminder_payment"]=> string(0) ""
-     ["reminder_payment_value"]=> string(6) "0.0000"
-     ["reminder_payment_comment"]=> string(0) ""
-     ["reminder_type"]=> string(1) "0"
-     ["billing_person"]=> string(0) ""
-     ["billing_street_1"]=> string(0) ""
-     ["billing_zip_code"]=> string(0) ""
-     ["billing_city"]=> string(0) ""
-     ["request_auto_type"]=> string(1) "1"
-     ["request_auto_next"]=> string(10) "0000-00-00"
-     ["partner_id"]=> NULL ["deleted"]=> string(1) "0"
-     ["_relations":"db\Record":private]=> array(0) { }
-     ["connected_models":"db\Record":private]=> NULL
-     ["_oldAttributes":protected]=> array(29) {
-             some old attributes ...
-             }
-     ["_errors":"base\Model":private]=> NULL
-     ["_additionalAttributes":protected]=> array(0) { }
-     ["_isAdditionalAttributesLoaded":protected]=> bool(false)
-     }
-</p>
-</details>
-
-####Partner:
-<details>
-<summary>{{ dump(loader.partner) }}</summary>
-<p markdown="1">
-
-##### result will be array of partner fields:
-
-     object(models\admin\administration\Partners)#226 (11) {
-     ["id"]=> string(2) "13"
-     ["name"]=> string(14) "Partner West"
-     ["ips_to_remove":"db\ActiveTable":private]=> array(0) { }
-     ["relatedItems":protected]=> array(0) { }
-     ["deleted"]=> string(1) "0"
-     ["_relations":"db\Record":private]=> array(0) { }
-     ["connected_models":"db\Record":private]=> NULL
-     ["_oldAttributes":protected]=> array(3) {
-             ["id"]=> string(2) "13"
-             ["name"]=> string(14) "Partner West"
-             ["deleted"]=> string(1) "0"
-             }
-     ["_errors":"base\Model":private]=> NULL
-     ["_additionalAttributes":protected]=> array(1) {
-             ["code"]=> string(4) "EUR"
-             }
-     ["_isAdditionalAttributesLoaded":protected]=> bool(true) }
-</p>
-</details>
-
-####Transactions:
-<details>
-<summary>{{ dump(loader.transactions) }}</summary>
-<p markdown="1">
-
-##### result will be array of transactions fields:
-
-     array(3) {
-     [158]=> object(models\common\finance\Transactions)#226 (32) {
-             ["id"]=> string(4) "158"
-             ["customer_id"]=> string(1) "4"
-             ["type"]=> string(6) "credit"
-             ["quantity"]=> string(1) "1"
-             ["unit"]=> string(0) ""
-             ["price"]=> string(9) "1033.8500"
-             ["tax_percent"]=> string(6) "0.0000"
-             ["total"]=> string(9) "1033.8500"
-             ["date"]=> string(10) "2017-05-11"
-             ["category"]=> string(1) "3"
-             ["description"]=> string(11) "Credit Card"
-             ["period_from"]=> string(10) "0000-00-00"
-             ["period_to"]=> string(10) "0000-00-00"
-             ["service_id"]=> string(1) "0"
-             ["payment_id"]=> string(3) "366"
-             ["invoice_id"]=> string(1) "0"
-             ["invoiced_by_id"]=> string(1) "0"
-             ["comment"]=> string(15) "Pay by Credit Card"
-             ["to_invoice"]=> string(1) "0"
-             ["service_type"]=> string(8) "internet"
-             ["source"]=> string(6) "manual"
-             ["balance"]=> NULL
-             ["total_with_tax"]=> NULL
-             ["ips_to_remove":"db\ActiveTable":private]=> array(0) { }
-             ["relatedItems":protected]=> array(0) { }
-             ["deleted"]=> string(1) "0"
-             ["_relations":"db\Record":private]=> array(0) { }
-             ["connected_models":"db\Record":private]=> NULL
-             ["_oldAttributes":protected]=> array(22) { [
-                     some old attributes ...
-                     }
-             ["_errors":"base\Model":private]=> NULL     
-             ["_additionalAttributes":protected]=> array(0) { }
-             ["_isAdditionalAttributesLoaded":protected]=> bool(false)
-             }
-     [681]=> object(models\common\finance\Transactions)#224 (32) {
-             The same attributes
-             }
-     [985]=> object(models\common\finance\Transactions)#223 (32) {
-             The same attributes
-             }
-</p>
-</details>
-
-####Invoices variables:
-<details>
-<summary>{{ dump(loader.invoices) }}</summary>
-<p markdown="1">
-
-##### result will be array of invoices variables fields:
-
-     array(1) { [685]=> object(models\common\finance\Invoices)#226 (29) {
-     ["id"]=> string(4) "685"
-     ["customer_id"]=> string(1) "4"
-     ["date_created"]=> string(10) "2017-05-31"
-     ["real_create_datetime"]=> string(19) "2017-06-01 00:00:13"
-     ["date_updated"]=> string(10) "2017-06-01"
-     ["date_payment"]=> string(10) "2017-05-31"
-     ["date_till"]=> string(10) "2017-06-15"
-     ["use_transactions"]=> string(1) "1"
-     ["note"]=> string(0) ""
-     ["memo"]=> string(0) ""
-     ["number"]=> string(12) "201713000183"
-     ["total"]=> string(8) "533.6000"
-     ["payment_id"]=> string(1) "0"
-     ["payd_from_deposit"]=> string(1) "1"
-     ["status"]=> string(4) "paid"
-     ["mark"]=> NULL
-     ["recalculated"]=> bool(false)
-     ["noCache"]=> bool(false)
-     ["is_sent"]=> string(1) "0"
-     ["disable_cache"]=> NULL
-     ["ips_to_remove":"db\ActiveTable":private]=> array(0) { }
-     ["relatedItems":protected]=> array(0) { }
-     ["deleted"]=> string(1) "0"
-     ["_relations":"db\Record":private]=> array(0) { }
-     ["connected_models":"db\Record":private]=> NULL
-     ["_oldAttributes":protected]=> array(17) {
-             some old attributes ...
-             }
-     }
-</p>
-</details>
-
-####Invoice items:
-<details>
-<summary>{% for invoice in loader.getInvoices() %} ...</summary>
-<p markdown="1">
-
-##### {% for invoice in loader.getInvoices() %}
-     Invoice {{ invoice.number}} items:
-     {{ dump(invoice.items) }}
-     {% endfor %}
-     {{ dump(loader.invoices) }}
-
-
-
-     result will be array of tariff field and invoices fields:
-
-     Invoice 201713000183 items:
-     array(1) {
-     [0]=> array(12) {
-             ["id"]=> string(4) "948"
-             ["invoice_id"]=> string(4) "684"
-             ["pos"]=> string(1) "0"
-             ["description"]=> string(9) "Internet tariff - 30Mb"
-             ["quantity"]=> string(1) "1"
-             ["unit"]=> string(0) ""
-             ["price"]=> string(8) "464.0000"    
-             ["tax"]=> string(7) "15.0000"
-             ["period_from"]=> string(10) "2017-05-14"
-             ["period_to"]=> string(10) "2017-05-31"
-             ["transaction_id"]=> string(4) "984"
-             ["deleted"]=> string(1) "0"
-             }
-     }
-     array(1) {
-     [948]=> object(models\common\finance\Invoices)#280 (29) {
-             ["id"]=> string(4) "948"
-             ["customer_id"]=> string(1) "4"
-             ["date_created"]=> string(10) "2017-05-31"
-             ["real_create_datetime"]=> string(19) "2017-06-01 00:00:13"
-             ["date_updated"]=> string(10) "2017-06-01"
-             ["date_payment"]=> string(10) "2017-05-31"
-             ["date_till"]=> string(10) "2017-06-15"
-             ["use_transactions"]=> string(1) "1"
-             ["note"]=> string(0) ""
-             ["memo"]=> string(0) ""
-             ["number"]=> string(12) "201713000183"
-             ["total"]=> string(8) "533.6000"
-             ["payment_id"]=> string(1) "0"
-             ["payd_from_deposit"]=> string(1) "1"
-             ["status"]=> string(4) "paid"
-             ["mark"]=> NULL
-             ["recalculated"]=> bool(false)
-             ["noCache"]=> bool(false)
-             ["is_sent"]=> string(1) "0"
-             ["disable_cache"]=> NULL
-             ["ips_to_remove":"db\ActiveTable":private]=> array(0) { }
-             ["relatedItems":protected]=> array(0) { }
-             ["deleted"]=> string(1) "0"
-             ["_relations":"db\Record":private]=> array(0) { }
-             ["connected_models":"db\Record":private]=> NULL
-             ["_oldAttributes":protected]=> array(17) {
-                     some old attributes ...
-                     }
-             }
-     }
-</p>
-</details>
-
-####Pro-formas:
-<details>
-<summary>{{ dump(loader.requests) }}</summary>
-<p markdown="1">
-
-##### result will be array of pro-forma fields:
-
-     array(1) {
-     [2]=> object(models\common\finance\Requests)#226 (23) {
-             ["id"]=> string(1) "2"
-             ["customer_id"]=> string(1) "4"
-             ["date_created"]=> string(10) "2017-06-07"
-             ["real_create_datetime"]=> string(19) "2017-06-07 14:56:25"
-             ["date_updated"]=> string(10) "2017-06-07"
-             ["date_payment"]=> string(10) "0000-00-00"
-             ["date_till"]=> string(10) "2017-06-22"
-             ["number"]=> string(10) "2017000002"
-             ["total"]=> string(8) "180.0000"    
-             ["payment_id"]=> string(1) "0"
-             ["status"]=> string(8) "not_paid"
-             ["is_sent"]=> string(1) "0"
-             ["note"]=> string(4) "Note"
-             ["memo"]=> string(4) "Memo"
-             ["ips_to_remove":"db\ActiveTable":private]=> array(0) { }
-             ["relatedItems":protected]=> array(0) { }
-             ["deleted"]=> string(1) "0"
-             ["_relations":"db\Record":private]=> array(0) { }   
-             ["connected_models":"db\Record":private]=> NULL
-             ["_oldAttributes":protected]=> array(15) {
-                     some old attributes ...
-                     }
-             ["_errors":"base\Model":private]=> NULL
-             ["_additionalAttributes":protected]=> array(0) { }
-             ["_isAdditionalAttributesLoaded":protected]=> bool(false)
-             }
-     }
-</p>
-</details>
-
-####Payments:
-<details>
-<summary>{{ dump(loader.payments) }}</summary>
-<p markdown="1">
-
-##### result will be array of payment fields:
-
-     array(1) {
-     [366]=> object(models\common\finance\Payments)#226 (28) {
-             ["id"]=> string(3) "366"
-             ["customer_id"]=> string(1) "4"
-             ["invoice_id"]=> string(1) "0"
-             ["request_id"]=> string(1) "0"
-             ["transaction_id"]=> string(4) "2400"
-             ["payment_type"]=> string(2) "10"
-             ["receipt_number"]=> string(13) "2017-10-00011"
-             ["date"]=> string(10) "2017-05-13"
-             ["real_create_datetime"]=> string(19) "2017-05-13 09:19:02"
-             ["amount"]=> string(9) "1033.8500"
-             ["comment"]=> string(15) "Pay by Bank Transfer"
-             ["is_sent"]=> string(1) "1"
-             ["field_1"]=> string(0) ""
-             ["field_2"]=> string(10) "UNIC00032"
-             ["field_3"]=> string(10) "UNIC00032"
-             ["field_4"]=> string(13) "Payment: null"
-             ["field_5"]=> string(19) "Bank Statement: 23"
-             ["note"]=> string(0) ""
-             ["memo"]=> string(0) ""
-             ["ips_to_remove":"db\ActiveTable":private]=> array(0) { }
-             ["relatedItems":protected]=> array(0) { }
-             ["deleted"]=> string(1) "0"
-             ["_relations":"db\Record":private]=> array(0) { }
-             ["connected_models":"db\Record":private]=> NULL
-             ["_oldAttributes":protected]=> array(20) {
-                     some old attributes ...
-                     }
-             ["_errors":"base\Model":private]=> NULL
-             ["_additionalAttributes":protected]=> array(0) { }
-             ["_isAdditionalAttributesLoaded":protected]=> bool(false)
-             }
-     }
-</p>
-</details>
-
-####Attached documents:
-<details>
-<summary>Financial documents: {{ dump(loader.getAttach ...</summary>
-<p markdown="1">
-
-     Invoices:
-     {{ dump(loader.getAttachedInvoices) }}
-     Proforma Invoices:
-     {{ dump(loader.getAttachedRequests) }}
-     Payment receipts:
-     {{ dump(loader.getAttachedReceipts) }}
-     Credit notes:
-     {{ dump(loader.getAttachedCreditNotes) }}
-
-
-     result will be array of attached documents fields:
-
-     array(1) {
-
-     }
-</p>
-</details>
-
-####Ignore Notification
-<details>
-<summary>Ignore Notification</summary>
-<p markdown="1">
-
-##### Example:
-     {% if customer.billing_type == 'prepaid' %}
-     === IGNORE NOTIFICATION ===
-     {% else %}
-     example  {{ customer.login }}
-     {% endif %}
-
-
-
-if the template result is "=== IGNORE NOTIFICATION ===" the notification will not be sent
-
-</p>
+</div>
 </details>
 
 
 
-And now, you can see **examples** how to use variables in templates:
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Services from Bundles</b></summary>
+<div markdown="1">
+
+```
+<pre>{% set servisesBundle = loader.getServicesBundle() %} {{ dump(servisesBundle) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+array(1) {
+  [19]=>
+  object(models\common\customers\services\ServicesBundle)#1320 (52) {
+    ["parent_id"]=>
+    string(1) "0"
+    ["customer_id"]=>
+    string(4) "7323"
+    ["bundle_id"]=>
+    string(1) "3"
+    ["description"]=>
+    string(4) "Same"
+    ["unit_price"]=>
+    string(8) "800.0000"
+    ["start_date"]=>
+    string(10) "2021-12-24"
+    ["end_date"]=>
+    string(10) "0000-00-00"
+    ["automatic_renewal"]=>
+    string(1) "0"
+    ["auto_reactivate"]=>
+    bool(false)
+    ["activation_fee"]=>
+    float(0)
+    ["get_activation_fee_when"]=>
+    string(21) "first_service_billing"
+    ["issue_invoice_while_service_creation"]=>
+    bool(false)
+    ["activation_fee_transaction_id"]=>
+    string(1) "0"
+    ["cancellation_fee"]=>
+    float(0)
+    ["cancellation_fee_transaction_id"]=>
+    NULL
+    ["prior_cancellation_fee"]=>
+    float(0)
+    ["prior_cancellation_fee_transaction_id"]=>
+    string(1) "0"
+    ["discount"]=>
+    string(1) "0"
+    ["discount_value"]=>
+    string(6) "0.0000"
+    ["discount_type"]=>
+    string(7) "percent"
+    ["discount_start_date"]=>
+    string(10) "0000-00-00"
+    ["discount_end_date"]=>
+    string(10) "0000-00-00"
+    ["discount_text"]=>
+    string(0) ""
+    ["status"]=>
+    string(6) "active"
+    ["period"]=>
+    string(2) "-1"
+    ["type"]=>
+    string(6) "bundle"
+    ["services_internet"]=>
+    array(2) {
+      [505]=>
+      object(models\common\customers\ServicesInternet)#1281 (68) {
+        ["type"]=>
+        string(8) "internet"
+        ["top_up_tariff_id"]=>
+        NULL
+        ["router_id"]=>
+        string(1) "0"
+        ["login"]=>
+        string(8) "007323_1"
+        ["password"]=>
+        string(0) ""
+        ["sector_id"]=>
+        string(1) "0"
+        ["taking_ipv4"]=>
+        string(1) "0"
+        ["ipv4"]=>
+        string(0) ""
+        ["ipv4_pool_id"]=>
+        string(1) "0"
+        ["taking_ipv6"]=>
+        string(1) "0"
+        ["ipv6"]=>
+        string(0) ""
+        ["ipv6_pool_id"]=>
+        string(1) "0"
+        ["mac"]=>
+        string(0) ""
+        ["port_id"]=>
+        string(0) ""
+        ["ipv4_route"]=>
+        string(0) ""
+        ["ipv6_route"]=>
+		string(0) ""
+
+		["ipv6_delegated"]=>
+        string(0) ""
+        ["_update_online_tariff":"models\common\customers\ServicesInternet":private]=>
+        bool(false)
+        ["_is_password_changed":"models\common\customers\ServicesInternet":private]=>
+        bool(false)
+        ["_attributesHiddenForShowHideColumns":protected]=>
+        NULL
+        ["_kill_from_online":"models\common\customers\ServicesInternet":private]=>
+        bool(false)
+        ["parent_id"]=>
+        string(1) "0"
+        ["customer_id"]=>
+        string(4) "7323"
+        ["tariff_id"]=>
+        string(1) "1"
+        ["bundle_service_id"]=>
+        string(2) "19"
+        ["description"]=>
+        string(16) "Ethernet_500Mbps"
+        ["quantity"]=>
+        string(1) "1"
+        ["unit"]=>
+        string(0) ""
+        ["unit_price"]=>
+        string(6) "0.0000"
+        ["start_date"]=>
+        string(10) "0000-00-00"
+        ["end_date"]=>
+        string(10) "0000-00-00"
+        ["discount"]=>
+        string(1) "0"
+        ["discount_value"]=>
+        string(6) "0.0000"
+        ["discount_type"]=>
+        string(7) "percent"
+        ["discount_start_date"]=>
+        string(10) "0000-00-00"
+        ["discount_end_date"]=>
+        string(10) "0000-00-00"
+        ["discount_text"]=>
+        string(0) ""
+        ["status"]=>
+        string(6) "active"
+        ["status_new"]=>
+        string(0) ""
+        ["period"]=>
+        string(2) "-1"
+        ["old_tariff_id"]=>
+        NULL
+		...
+		}
+	}
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Billing information</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(loader.billing) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+object(models\common\customers\CustomerBilling)#1334 (52) {
+  ["customer_id"]=>
+  string(4) "7323"
+  ["enabled"]=>
+  string(1) "1"
+  ["type"]=>
+  string(1) "1"
+  ["deposit"]=>
+  string(8) "150.0000"
+  ["billing_date"]=>
+  string(1) "1"
+  ["billing_due"]=>
+  string(2) "15"
+  ["blocking_period"]=>
+  int(0)
+  ["grace_period"]=>
+  string(2) "10"
+  ["make_invoices"]=>
+  string(1) "1"
+  ["payment_method"]=>
+  string(1) "1"
+  ["min_balance"]=>
+  string(6) "0.0000"
+  ["request_auto_enable"]=>
+  string(0) ""
+  ["request_auto_day"]=>
+  string(1) "1"
+  ["request_auto_period"]=>
+  string(1) "0"
+  ["reminder_enable"]=>
+  string(0) ""
+  ["reminder_day_1"]=>
+  string(2) "10"
+  ["reminder_day_2"]=>
+  string(1) "5"
+  ["reminder_day_3"]=>
+  string(1) "5"
+  ["reminder_payment"]=>
+  string(0) ""
+  ["reminder_payment_value"]=>
+  string(6) "0.0000"
+  ["reminder_payment_comment"]=>
+  string(0) ""
+  ["reminder_type"]=>
+  string(1) "0"
+  ["billing_person"]=>
+  string(0) ""
+  ["billing_street_1"]=>
+  string(0) ""
+  ["billing_zip_code"]=>
+  string(0) ""
+  ["billing_city"]=>
+  string(0) ""
+  ["request_auto_type"]=>
+  string(1) "1"
+  ["request_auto_next"]=>
+  string(10) "0000-00-00"
+  ["partner_id"]=>
+  NULL
+  ["send_finance_notification"]=>
+  string(1) "1"
+  ["partner_percent"]=>
+  NULL
+  ["blocking_date"]=>
+  string(10) "0000-00-00"
+  ["month_price"]=>
+  string(6) "0.0000"
+  ["billing_street_2"]=>
+  string(0) ""
+  ["_needRecalculateBlockingDate":"models\common\customers\CustomerBilling":private]=>
+  bool(true)
+  ["_updatedBalance":"models\common\customers\CustomerBilling":private]=>
+  bool(false)
+  ["_lastCancelledCharge":"models\common\customers\CustomerBilling":private]=>
+  NULL
+  ["deleted"]=>
+  string(1) "0"
+  ["_changedAttributes":"db\Record":private]=>
+  NULL
+  ["activeMysqlLocks":protected]=>
+  array(0) {
+  }
+  ["_forceDelete":"db\Record":private]=>
+  bool(false)
+  ["_afterFirstSave":"db\Record":private]=>
+  bool(false)
+  ["_relations":"db\Record":private]=>
+  array(0) {
+  }
+  ["_connected_models":"db\Record":private]=>
+  NULL
+  ["relatedItems":protected]=>
+  array(0) {
+  }
+  ["_deleteWithRelations":"db\Record":private]=>
+  bool(false)
+  ["_oldAttributes":protected]=>
+  array(35) {
+    ["customer_id"]=>
+    string(4) "7323"
+    ["enabled"]=>
+    string(1) "1"
+    ["type"]=>
+    string(1) "1"
+    ["deposit"]=>
+    string(8) "150.0000"
+    ["billing_date"]=>
+    string(1) "1"
+    ["billing_due"]=>
+    string(2) "15"
+    ["blocking_period"]=>
+    int(0)
+    ["grace_period"]=>
+    string(2) "10"
+    ["make_invoices"]=>
+    string(1) "1"
+    ["payment_method"]=>
+    string(1) "1"
+    ["min_balance"]=>
+    string(6) "0.0000"
+    ["request_auto_enable"]=>
+    string(0) ""
+    ["request_auto_day"]=>
+    string(1) "1"
+    ["request_auto_period"]=>
+    string(1) "0"
+    ["reminder_enable"]=>
+    string(0) ""
+    ["reminder_day_1"]=>
+    string(2) "10"
+    ["reminder_day_2"]=>
+    string(1) "5"
+    ["reminder_day_3"]=>
+    string(1) "5"
+    ["reminder_payment"]=>
+    string(0) ""
+    ["reminder_payment_value"]=>
+    string(6) "0.0000"
+    ["reminder_payment_comment"]=>
+    string(0) ""
+    ["reminder_type"]=>
+    string(1) "0"
+    ["billing_person"]=>
+    string(0) ""
+    ["billing_street_1"]=>
+    string(0) ""
+    ["billing_zip_code"]=>
+    string(0) ""
+    ["billing_city"]=>
+    string(0) ""
+    ["request_auto_type"]=>
+    string(1) "1"
+    ["request_auto_next"]=>
+    string(10) "0000-00-00"
+    ["partner_id"]=>
+    NULL
+    ["send_finance_notification"]=>
+    string(1) "1"
+    ["partner_percent"]=>
+    NULL
+    ["blocking_date"]=>
+    string(10) "0000-00-00"
+    ["month_price"]=>
+    string(6) "0.0000"
+    ["billing_street_2"]=>
+    string(0) ""
+    ["deleted"]=>
+    string(1) "0"
+  }
+  ["_related":protected]=>
+  array(0) {
+  }
+  ["_errors":"base\Model":private]=>
+  array(0) {
+  }
+  ["_ignoreFillables":"base\Model":private]=>
+  bool(false)
+  ["_additionalAttributes":protected]=>
+  array(0) {
+  }
+  ["_isAdditionalAttributesLoaded":protected]=>
+  bool(false)
+}
+
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Partner</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(loader.partner) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+object(models\admin\administration\Partners)#1334 (24) {
+  ["id"]=>
+  int(1)
+  ["name"]=>
+  string(4) "Main"
+  ["add_to_tariffs"]=>
+  NULL
+  ["add_to_routers"]=>
+  NULL
+  ["add_to_hardware"]=>
+  NULL
+  ["add_to_projects"]=>
+  NULL
+  ["_ips_to_remove":"db\ActiveTable":private]=>
+  array(0) {
+  }
+  ["_ipv6_to_remove":"db\ActiveTable":private]=>
+  array(0) {
+  }
+  ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+  bool(false)
+  ["deleted"]=>
+  string(1) "0"
+  ["_changedAttributes":"db\Record":private]=>
+  NULL
+  ["activeMysqlLocks":protected]=>
+  array(0) {
+  }
+  ["_forceDelete":"db\Record":private]=>
+  bool(false)
+  ["_afterFirstSave":"db\Record":private]=>
+  bool(false)
+  ["_relations":"db\Record":private]=>
+  array(0) {
+  }
+  ["_connected_models":"db\Record":private]=>
+  NULL
+  ["relatedItems":protected]=>
+  array(0) {
+  }
+  ["_deleteWithRelations":"db\Record":private]=>
+  bool(false)
+  ["_oldAttributes":protected]=>
+  array(7) {
+    ["id"]=>
+    int(1)
+    ["name"]=>
+    string(4) "Main"
+    ["add_to_tariffs"]=>
+    NULL
+    ["add_to_routers"]=>
+    NULL
+    ["add_to_hardware"]=>
+    NULL
+    ["add_to_projects"]=>
+    NULL
+    ["deleted"]=>
+    string(1) "0"
+  }
+  ["_related":protected]=>
+  array(0) {
+  }
+  ["_errors":"base\Model":private]=>
+  array(0) {
+  }
+  ["_ignoreFillables":"base\Model":private]=>
+  bool(false)
+  ["_additionalAttributes":protected]=>
+  array(1) {
+    ["available_in_self_registration"]=>
+    string(0) ""
+  }
+  ["_isAdditionalAttributesLoaded":protected]=>
+  bool(true)
+}
+
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Transactions</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(loader.transactions) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+array(3) {
+  [5488]=>
+  object(models\common\finance\Transactions)#1334 (46) {
+    ["id"]=>
+    int(5488)
+    ["customer_id"]=>
+    string(4) "7323"
+    ["type"]=>
+    string(5) "debit"
+    ["quantity"]=>
+    int(1)
+    ["unit"]=>
+    string(0) ""
+    ["price"]=>
+    float(200)
+    ["tax_percent"]=>
+    string(6) "0.0000"
+    ["total"]=>
+    string(8) "200.0000"
+    ["date"]=>
+    string(10) "2021-12-01"
+    ["category"]=>
+    string(1) "1"
+    ["description"]=>
+    string(16) "Ethernet_500Mbps"
+    ["period_from"]=>
+    string(10) "2021-12-01"
+    ["period_to"]=>
+    string(10) "2021-12-31"
+    ["service_id"]=>
+    string(3) "504"
+    ["payment_id"]=>
+    NULL
+    ["invoice_id"]=>
+    NULL
+    ["credit_note_id"]=>
+    int(0)
+    ["invoiced_by_id"]=>
+    string(4) "1973"
+    ["comment"]=>
+    string(0) ""
+    ["to_invoice"]=>
+    bool(true)
+    ["service_type"]=>
+    string(8) "internet"
+    ["source"]=>
+    string(4) "auto"
+    ["balance"]=>
+    NULL
+    ["movement"]=>
+    NULL
+    ["service_name"]=>
+    NULL
+    ["invoice_number"]=>
+    NULL
+    ["total_with_tax"]=>
+    NULL
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(29) {
+      ["id"]=>
+      int(5488)
+      ["customer_id"]=>
+      string(4) "7323"
+      ["type"]=>
+      string(5) "debit"
+      ["quantity"]=>
+      int(1)
+      ["unit"]=>
+      string(0) ""
+      ["price"]=>
+      float(200)
+      ["tax_percent"]=>
+      string(6) "0.0000"
+      ["total"]=>
+      string(8) "200.0000"
+      ["date"]=>
+      string(10) "2021-12-01"
+      ["category"]=>
+      string(1) "1"
+      ["description"]=>
+      string(16) "Ethernet_500Mbps"
+      ["period_from"]=>
+      string(10) "2021-12-01"
+      ["period_to"]=>
+      string(10) "2021-12-31"
+      ["service_id"]=>
+      string(3) "504"
+      ["payment_id"]=>
+      NULL
+      ["invoice_id"]=>
+      NULL
+      ["credit_note_id"]=>
+      int(0)
+      ["invoiced_by_id"]=>
+      string(4) "1973"
+      ["comment"]=>
+      string(0) ""
+      ["to_invoice"]=>
+      bool(true)
+      ["service_type"]=>
+      string(8) "internet"
+      ["source"]=>
+      string(4) "auto"
+      ["balance"]=>
+      NULL
+      ["movement"]=>
+      NULL
+      ["service_name"]=>
+      NULL
+      ["invoice_number"]=>
+      NULL
+      ["total_with_tax"]=>
+      NULL
+      ["deleted"]=>
+      string(1) "0"
+      ["updated_at"]=>
+      string(19) "2021-12-16 16:31:52"
+    }
+    ["_related":protected]=>
+    array(0) {
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(0) {
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["updated_at"]=>
+    string(19) "2021-12-16 16:31:52"
+  }
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Invoices variables</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(loader.invoices) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+array(1) {
+  [1973]=>
+  object(models\common\finance\Invoices)#1334 (49) {
+    ["id"]=>
+    string(4) "1973"
+    ["customer_id"]=>
+    string(4) "7323"
+    ["date_created"]=>
+    string(10) "2021-12-16"
+    ["real_create_datetime"]=>
+    string(19) "2021-12-16 16:31:50"
+    ["date_updated"]=>
+    string(10) "2021-12-16"
+    ["date_payment"]=>
+    string(10) "2021-12-16"
+    ["date_till"]=>
+    string(10) "2021-12-31"
+    ["use_transactions"]=>
+    string(1) "1"
+    ["note"]=>
+    string(0) ""
+    ["memo"]=>
+    string(0) ""
+    ["number"]=>
+    string(12) "202101001268"
+    ["total"]=>
+    float(200)
+    ["payment_id"]=>
+    string(4) "1442"
+    ["type"]=>
+    string(9) "recurring"
+    ["payd_from_deposit"]=>
+    string(1) "0"
+    ["status"]=>
+    string(4) "paid"
+    ["mark"]=>
+    NULL
+    ["recalculated"]=>
+    bool(false)
+    ["noCache"]=>
+    bool(false)
+    ["is_sent"]=>
+    string(1) "1"
+    ["delete_transactions"]=>
+    bool(true)
+    ["_oldDateCreated":"models\common\finance\Invoices":private]=>
+    NULL
+    ["_internalItemsForCalculations":protected]=>
+    array(0) {
+    }
+    ["disable_cache"]=>
+    NULL
+    ["_toCache":"models\common\finance\Invoices":private]=>
+    NULL
+    ["_hasShowDeleteTransaction":protected]=>
+    bool(true)
+    ["_hasShowWarningMessage":protected]=>
+    bool(false)
+    ["_needRemoveToBillLog":"models\common\finance\Invoices":private]=>
+    bool(true)
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(25) {
+     ...
+  }
+}
+
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Invoice items</b></summary>
+<div markdown="1">
+
+```
+Invoice {{ invoice.number}} items:
+{{ dump(invoice.items) }}
+{% endfor %}
+{{ dump(loader.invoices) }}
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+array(1) {
+  [1973]=>
+  object(models\common\finance\Invoices)#1334 (49) {
+    ["id"]=>
+    string(4) "1973"
+    ["customer_id"]=>
+    string(4) "7323"
+    ["date_created"]=>
+    string(10) "2021-12-16"
+    ["real_create_datetime"]=>
+    string(19) "2021-12-16 16:31:50"
+    ["date_updated"]=>
+    string(10) "2021-12-16"
+    ["date_payment"]=>
+    string(10) "2021-12-16"
+    ["date_till"]=>
+    string(10) "2021-12-31"
+    ["use_transactions"]=>
+    string(1) "1"
+    ["note"]=>
+    string(0) ""
+    ["memo"]=>
+    string(0) ""
+    ["number"]=>
+    string(12) "202101001268"
+    ["total"]=>
+    float(200)
+    ["payment_id"]=>
+    string(4) "1442"
+    ["type"]=>
+    string(9) "recurring"
+    ["payd_from_deposit"]=>
+    string(1) "0"
+    ["status"]=>
+    string(4) "paid"
+    ["mark"]=>
+    NULL
+    ["recalculated"]=>
+    bool(false)
+    ["noCache"]=>
+    bool(false)
+    ["is_sent"]=>
+    string(1) "1"
+    ["delete_transactions"]=>
+    bool(true)
+    ["_oldDateCreated":"models\common\finance\Invoices":private]=>
+    NULL
+    ["_internalItemsForCalculations":protected]=>
+    array(0) {
+    }
+    ["disable_cache"]=>
+    NULL
+    ["_toCache":"models\common\finance\Invoices":private]=>
+    NULL
+    ["_hasShowDeleteTransaction":protected]=>
+    bool(true)
+    ["_hasShowWarningMessage":protected]=>
+    bool(false)
+    ["_needRemoveToBillLog":"models\common\finance\Invoices":private]=>
+    bool(true)
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(25) {
+     ...
+
+  }
+}
+
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Proforma invoices</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(loader.requests) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+array(51) {
+  [68]=>
+  object(models\common\finance\ProformaInvoices)#1338 (37) {
+    ["id"]=>
+    string(2) "68"
+    ["customer_id"]=>
+    string(2) "18"
+    ["date_created"]=>
+    string(10) "2021-02-25"
+    ["real_create_datetime"]=>
+    string(19) "2021-02-25 12:35:03"
+    ["date_updated"]=>
+    string(10) "2021-02-25"
+    ["date_payment"]=>
+    string(10) "2021-02-25"
+    ["date_till"]=>
+    string(10) "2021-03-12"
+    ["number"]=>
+    string(10) "2021000054"
+    ["total"]=>
+    float(3)
+    ["payment_id"]=>
+    string(3) "142"
+    ["status"]=>
+    string(4) "paid"
+    ["is_sent"]=>
+    string(1) "1"
+    ["note"]=>
+    string(0) ""
+    ["memo"]=>
+    string(0) ""
+    ["is_crm_request"]=>
+    string(0) ""
+    ["_needRemoveToBillLog":"models\common\finance\ProformaInvoices":private]=>
+    bool(true)
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(18) {
+      ...
+    }
+
+  }
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Payments</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump(loader.payments) }}</pre>
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+array(1) {
+  [1442]=>
+  object(models\common\finance\Payments)#1334 (41) {
+    ["id"]=>
+    string(4) "1442"
+    ["customer_id"]=>
+    string(4) "7323"
+    ["invoice_id"]=>
+    string(4) "1973"
+    ["credit_note_id"]=>
+    NULL
+    ["request_id"]=>
+    NULL
+    ["transaction_id"]=>
+    string(4) "5489"
+    ["payment_type"]=>
+    string(1) "3"
+    ["receipt_number"]=>
+    string(13) "2021-01-00624"
+    ["date"]=>
+    string(10) "2021-12-16"
+    ["real_create_datetime"]=>
+    string(19) "2021-12-16 16:32:03"
+    ["amount"]=>
+    string(8) "200.0000"
+    ["comment"]=>
+    string(0) ""
+    ["is_sent"]=>
+    string(1) "1"
+    ["field_1"]=>
+    string(0) ""
+    ["field_2"]=>
+    string(0) ""
+    ["field_3"]=>
+    string(0) ""
+    ["field_4"]=>
+    string(0) ""
+    ["field_5"]=>
+    string(0) ""
+    ["note"]=>
+    string(0) ""
+    ["memo"]=>
+    string(0) ""
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(24) {
+      ...
+    }
+    ["_related":protected]=>
+    array(0) {
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(1) {
+      ["mpesa_payment_msisdn"]=>
+      string(0) ""
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["added_by"]=>
+    string(5) "admin"
+    ["added_by_id"]=>
+    string(1) "1"
+    ["updated_at"]=>
+    string(19) "2021-12-16 16:32:03"
+  }
+}
+
+
+```
+
+</div>
+</details>
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Attached financial documents</b></summary>
+<div markdown="1">
+
+**Invoices:**
+
+`{{ dump(loader.getAttachedInvoices) }}`
+
+**Proforma Invoices:**
+
+`{{ dump(loader.getAttachedRequests) }}`
+
+**Payment receipts:**
+
+`{{ dump(loader.getAttachedReceipts) }}`
+
+**Credit notes:**
+
+`{{ dump(loader.getAttachedCreditNotes) }}`
+
+
+</div>
+</details>
+
+------------
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>To show all variables</b></summary>
+<div markdown="1">
+
+```
+<pre>{{ dump() }}</pre>
+```
+
+</div>
+</details>
+
+------------
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>To Ignore Notification</b></summary>
+<div markdown="1">
+
+```
+{% if customer.billing_type == 'prepaid' %}
+ === IGNORE NOTIFICATION ===
+ {% else %}
+ example  {{ customer.login }}
+ {% endif %}
+```
+
+if the template result is `=== IGNORE NOTIFICATION ===` the notification will not be sent.
+
+
+
+</div>
+</details>
+
+------------
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Examples: how to use variables in templates</b></summary>
+<div markdown="1">
+
 ```
 Hello!
 
@@ -695,6 +1658,7 @@ For example to get customer name use {{ customer.name }},
 customer login - {{ customer.login }}.
 ```
 
+
 ```
 {% set billing_custom = loader.billing %}
 
@@ -702,6 +1666,7 @@ Hello {{ customer.name}},
 your deposit is {{ billing_custom.deposit }} EUR,
 we strongly recommended to refill it.
 ```
+
 
 ```
 
@@ -724,14 +1689,25 @@ Our phone numbers in case you have not saved them yet,
 office@superisp.com
 ```
 
+</div>
+</details>
 
+------------
 
-####Here you can find example of Document - Contract:
-<details>
-<summary>Template of a Contract</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Contract: template example</b></summary>
 <div markdown="1">
 
-```bash     
+Suggested read: [Contract and its signing by customer](customer_management/customer_documents/customer_documents.md)
+
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary><b>Example:</b></summary>
+<div markdown="1">
+
+```
+
+
      <!DOCTYPE html>
      <html lang="en">
      <head>
@@ -1063,15 +2039,23 @@ office@superisp.com
      (c)Â These Terms and Conditions may be modified by BEST ISP from time to time, the current and applicableÂ version always being available in electronic form from the relevant section of the BEST ISP website atÂ www.wi.ie. BEST ISP will make reasonable attempts by email or other communication, including but notÂ limited to national press, to inform The Subscriber when the Terms and Conditions of the Service are amended.Â Should any modification cause a reasonable deterioration in the level of the Service the Subscriber couldÂ reasonably expect, their sole remedy is to terminate service in writing within 30 days of such change. ShouldÂ The Subscriber continue to use the Service 30 days following date of notice of an amendment made to the Terms andÂ Conditions the Subscriber is deemed to have accepted the amended terms.
      <br>
      (d)Â Headings for Convenience. All headings preceding paragraphs and subparagraphs have been inserted forÂ convenience of reference only, and shall not be relied upon in determining the meaning of the rights andÂ obligations of BEST ISP or Subscriber.
+
      </div>
-     <div style="position: fixed; bottom: 0; width: 100%;" class="fs">
-     <div style="text-align: right"></div>
-     <hr style="width: 100%"/>
-     <div>BEST ISP BROADBAND SERVICE AGREEMENT</div>
-     <div style="text-align: right">Page 8 of 8</div>
-     </div>
-     </body>
-     </html>
-     ```
+        <div style="position: fixed; bottom: 0; width: 100%;" class="fs">
+        <div style="text-align: right"></div>
+        <hr style="width: 100%"/>
+        <div>BEST ISP BROADBAND SERVICE AGREEMENT</div>
+        <div style="text-align: right">Page 8 of 8</div>
+        </div>
+        </body>
+        </html>
+
+```
+
+</div>
+</details>
+
+
+
 </div>
 </details>

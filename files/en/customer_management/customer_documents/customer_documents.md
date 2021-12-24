@@ -123,6 +123,24 @@ You can create your own contract using the functionality of template and custome
 {{end_of_term}}
 ```
 
+**To show the document id (optional):**
+
+```
+{{id}}
+```
+
+**To show who added the document (optional):**
+
+```
+{{added_by}}
+```
+or
+
+```
+{{added_by_id}}
+```
+
+
 Use `Placeholders` button to quickly insert the necessary variable into the code and customize your template.
 
 ![image](signature_in_contact.png)
@@ -176,5 +194,6 @@ The customer can download the signed contract to their local storage:
 
 ![image](signature_in_contact7.png)
 
+You may also like: [Contract template example](configuration/system/templates/templates_variables/templates_variables.md)
 
 <iframe width="350" height="270" src="https://www.youtube.com/embed/mfDjhX4Ux-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

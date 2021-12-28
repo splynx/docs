@@ -3,9 +3,9 @@ Troubleshooting
 
 Follow these instructions to troubleshoot problems with **TR-069 (ACS)**:
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Can't connect device to ACS</b></summary>
-<p markdown="1">
+<div markdown="1">
 
   0. Make sure that device is accessible from Splynx server. Use tools like *ping* or *traceroute* to doublecheck;
 
@@ -21,14 +21,14 @@ Follow these instructions to troubleshoot problems with **TR-069 (ACS)**:
 
   5. Restart **GenieACS services** using this command - `sudo service genieacs* restart`
 
-</p>
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Device is registered in Splynx but no connection established</b></summary>
-<p markdown="1">
+<div markdown="1">
   0. Make sure that device is accessible from Splynx server. Use tools like *ping* or *traceroute* to doublecheck;
 
   1. Pay attention to the IP restrictions. The requests can be sent only from IPs/networks allowed in this list:
@@ -44,14 +44,15 @@ Follow these instructions to troubleshoot problems with **TR-069 (ACS)**:
   ![troubleshoot_faults](tasks-faults.png)
 
   4. Disable **TR-069 client** on a device, remove device from Splynx and enable **TR-069 client** to re-add device in Splynx.
-</p>
+
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Debug GenieACS services</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 To enable logs:
 
@@ -83,14 +84,14 @@ The logs can be found in:
 /var/www/splynx/logs/nginx
 ```
 
-</p>
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>To reduce the timeout of device status after update/upgrade</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 Splynx uses the default timeout 30m to check if the version on the device is up to date after the update/upgrade process has been performed. .
 
@@ -109,14 +110,14 @@ Double check the device status in `Networking → TR-069 (ACS) → Upgrade → V
 
 ![](device_status.png)
 
-</p>
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Install GenieACS manually</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 **NOTE:** Make sure you’re using Node.js v12 or higher on your server:
 
@@ -174,7 +175,7 @@ sudo service splynx_transport restart && sudo service splynx_node restart
 ```
 
 
-</p>
+</div>
 </details>
 
 ------------

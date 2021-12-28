@@ -83,9 +83,9 @@ To turn on this functionality, please enable the `Auto-authorise batches` toggle
 
 **Important:** The **Batch Auto Authorize** function is available on request and access is only granted by Netcash management approval. Use this [link](https://api.netcash.co.za/autoauth/#access) to send a request.
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>'Auto-authorise batches' explanation</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 In case you do **not** use the **Batch Auto Authorize** function, we have the following concept: the customers pay invoices, these payments are sent to Netcash side as batch files. After that, the administrator, at some intervals, logs into the Netcash account and manually authorises all customers' payments. The Netcash, for its part, does a final check of such payments and a provides the results; Splynx checks the Netcash output results by cron and we get the final status of the payments.
 
@@ -95,7 +95,7 @@ The log records about the batch file (-s) authorisation can be found in `Adminis
 
 ![](batch_log.png)
 
-</p>
+</div>
 </details>
 
 
@@ -163,13 +163,13 @@ The process of invoice charging can be automated. To achieve this, an admin shou
 
 Be vigilant when creating this filter as it will process the charge without any human interaction/intervention.
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>How to re-charge the invoices</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 The debit order batch should be deleted in Netcash as well as the relevant [bank statement](finance/bank_statement_processing/bank_statement_processing.md) in Splynx (be very vigilant when deleting bank statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged
 
-</p>
+</div>
 </details>
 
 ### Customer portal widgets (entry points)
@@ -211,8 +211,8 @@ To create a direct payment link, please use the patterns below:
 
 **To pay the Invoice:**
 
-<details>
-<summary>by invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -221,8 +221,8 @@ https://<splynx_domain_address>/netcash-debit-order/direct-pay-invoice-by-id?ite
 </div>
 </details>
 
-<details>
-<summary>by invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice number</b></summary>
 <div markdown="1">
 
 ```
@@ -231,12 +231,12 @@ https://<splynx_domain_address>/netcash-debit-order/direct-pay-invoice?item_id=<
 </div>
 </details>
 
-
+<br>
 
 **To pay the Proforma Invoice:**
 
-<details>
-<summary>by proforma invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -245,8 +245,8 @@ https://<splynx_domain_address>/netcash-debit-order/direct-pay-proforma-by-id?it
 </div>
 </details>
 
-<details>
-<summary>by proforma invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice number</b></summary>
 <div markdown="1">
 
 ```
@@ -255,10 +255,11 @@ https://<splynx_domain_address>/netcash-debit-order/direct-pay-proforma?item_id=
 </div>
 </details>
 
+<br>
 
-<details>
-<summary><b>Screenshots</b></summary>
-<p markdown="1">
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Examples</b></summary>
+<div markdown="1">
 
 
 ![](direct_payment_link_to_invoice.png)
@@ -266,7 +267,7 @@ https://<splynx_domain_address>/netcash-debit-order/direct-pay-proforma?item_id=
 ![](direct_payment_link_to_proforma.png)
 
 
-</p>
+</div>
 </details>
 
 
@@ -300,9 +301,9 @@ When the data has been uploaded, select the corresponding header:
 
 **Note:** The file must contain the **Customer id**, **Bank account type id**, **Branch code**, **Bank account number**, **Account holder name** and **Payment method id** fields.
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Change customer's payment method during import</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 ![payment_method_import](payment_method_import.png)
 
@@ -316,7 +317,7 @@ And, when **Payment method id** value is incorrect - it will be ignored during i
 
 ![payment_method_import](payment_method_import2.png)
 
-</p>
+</div>
 </details>
 
 -------------

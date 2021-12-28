@@ -60,9 +60,9 @@ Also, you can edit the provided info or delete the created account.
 
 `Commission fixed amount` - it's the fixed amount of money per month. The fixed amount is calculated for each calendar month, e.g. if the agent's payments start on 28 June and the agent's period is 3 months, then the fixed amount should be calculated for June, July and August.
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example with fixed amount</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 Agent's Paid periods (in months) = 3 month;
 
@@ -81,7 +81,7 @@ The report for July will **not** show the accrual of the `Commission fixed amoun
 The report for July-August or just for August or August-September will show the accrual of the `Commission fixed amount` for August.
 
 
-</p>
+</div>
 </details>
 
 To link the particular *Agent / Reseller* to specific customer, open the customer profile on information tab, click on the icon to show additional fields, select the necessary account in the appropriate field and press *Save* button.

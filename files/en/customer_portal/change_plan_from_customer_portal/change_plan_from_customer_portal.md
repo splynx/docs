@@ -12,9 +12,9 @@ For example, a customer uses *Ethernet_100Mbps* as his current Internet service 
 
 Follow the step-by-step guide to configure the required settings:
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Request for tariff plan change</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 **Step 1**
 
@@ -58,14 +58,14 @@ The support representative, using admin portal, can change the customer's servic
 
 In order to change tariff for multiple customers, please use the following guide - [Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md)
 
-</p>
+</div>
 </details>
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Self-change tariff plan</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 **Step 1**
@@ -102,5 +102,5 @@ After you press `Apply` button, the new service with will be added in `Pending` 
 
 In order to change tariff for multiple customers, please use the following guide - [Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md)
 
-</p>
+</div>
 </details>

@@ -181,8 +181,8 @@ To create a direct payment link, please use the patterns below:
 
 **To pay the Invoice:**
 
-<details>
-<summary>by invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -192,8 +192,8 @@ https://<splynx_domain_address>/smps/direct-pay-invoice-by-id?item_id=<Invoice_i
 </div>
 </details>
 
-<details>
-<summary>by invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice number</b></summary>
 <div markdown="1">
 
 ```
@@ -203,12 +203,12 @@ https://<splynx_domain_address>/smps/direct-pay-invoice?item_id=<Invoice_number>
 </div>
 </details>
 
-
+<br>
 
 **To pay the Proforma Invoice:**
 
-<details>
-<summary>by proforma invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -218,8 +218,8 @@ https://<splynx_domain_address>/smps/direct-pay-proforma-by-id?item_id=<proforma
 </div>
 </details>
 
-<details>
-<summary>by proforma invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice number</b></summary>
 <div markdown="1">
 
 ```
@@ -240,9 +240,9 @@ https://<splynx_domain_address>/smps/direct-pay-proforma?item_id=<proforma_numbe
 - every Email sent must include the Paybill Number and Organization Name as registered during application.
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Requests to M-PESA support team</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 **External Validation**
@@ -318,5 +318,5 @@ Please send your request to **m-pesabusiness@safaricom.co.ke**.
 
 
 
-</p>
+</div>
 </details>

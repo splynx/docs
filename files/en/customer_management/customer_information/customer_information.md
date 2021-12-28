@@ -32,9 +32,10 @@ nano /var/www/splynx/config/config.php
 - **Blocked** - status given to customers who failed to make payments for services or to simply deny access to the client while taking their profile into account;
 
 <icon class="image-icon">![Info](information.png)</icon> **The clarification of statuses relation (customer, service and invoice):**
-<details>
+
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Click here for more information</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 1. If the customer has an `unpaid` invoice (e.g. an invoice was created in `Billing day` date) and the customer doesn't pay the invoice before the date of `Billing due`, the customer status will be changed to `Blocked`, but the service (e.g. Internet service) is still be active;
 
@@ -53,7 +54,7 @@ And after customer decided to pay the `overdue` invoice, the status of duplicate
 
 ------------
 
-</p>
+</div>
 </details>
 
 * **Billing type** - the options are Recurring payments, Prepaid (daily) and Prepaid (custom);

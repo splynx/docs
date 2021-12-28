@@ -5,8 +5,8 @@ This is a guide illustrating how to troubleshoot communication between your rout
 
 Video tutorials for Radius configuration can be found on this [page](https://splynx.com/384/ispframework-and-radius-mikrotik-example)
 
-<details>
-<summary>Click here to expand</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Click here to expand</b></summary>
 <div markdown="1">
 
 <iframe width="350" height="270" src="https://www.youtube.com/embed/5iA85JCJRyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

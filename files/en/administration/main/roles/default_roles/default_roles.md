@@ -26,20 +26,20 @@ Also, you can follow the permissions scheme of existing role when creating a new
 
 ### The list of default permissions for each of the build-in role:
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>super-administrator</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 Administrator account with `super-administrator`role has the access to ALL categories and its sub-categories in Splynx by default.
 
-</p>
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>administrator</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 | DASHBOARD  |
 | ------------ |
@@ -123,14 +123,14 @@ Administrator account with `super-administrator`role has the access to ALL categ
 | ------------ |
 | Administrator account with `administrator` role has the access to ALL installed add-ons in Splynx by default.  |
 
-</p>
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>manager</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 | DASHBOARD  |
 | ------------ |
@@ -214,14 +214,14 @@ Administrator account with `super-administrator`role has the access to ALL categ
 | ------------ |
 | Administrator account with `manager` role has NO access to installed add-ons in Splynx by default.  |
 
-</p>
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>financial-manager</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 | DASHBOARD  |
 | ------------ |
@@ -305,14 +305,14 @@ Administrator account with `super-administrator`role has the access to ALL categ
 | ------------ |
 | Administrator account with `financial-manager` role has NO access to installed add-ons in Splynx by default.  |
 
-</p>
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>customer-creator</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 | DASHBOARD  |
 | ------------ |
@@ -396,14 +396,14 @@ Administrator account with `super-administrator`role has the access to ALL categ
 | ------------ |
 | Administrator account with `customer-creator` role has NO access to installed add-ons in Splynx by default.  |
 
-</p>
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>engineer</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 | DASHBOARD  |
 | ------------ |
@@ -487,14 +487,14 @@ Administrator account with `super-administrator`role has the access to ALL categ
 | ------------ |
 | Administrator account with `engineer` role has NO access to installed add-ons in Splynx by default.   |
 
-</p>
+</div>
 </details>
 
 ------------
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>technician</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 | DASHBOARD  |
 | ------------ |
@@ -578,7 +578,7 @@ Administrator account with `super-administrator`role has the access to ALL categ
 | ------------ |
 | Administrator account with `technician` role has NO access to installed add-ons in Splynx by default.  |
 
-</p>
+</div>
 </details>
 
 ------------

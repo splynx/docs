@@ -75,9 +75,9 @@ _Please note that you do not have to select QuickBooks in the list of payment me
 **Customer name pattern** - used to set a customer's name pattern during sync to *QuickBooks* where it will be represented as `Display name as`. The next variables can be used: `{id}, {login}, {name}, {email}`. By default: `{name}`.
 
 
-<details>
-<summary><b>name display example</b></summary>
-<p markdown="1">
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Example: display name</b></summary>
+<div markdown="1">
 
 
 ![](display_name_example1.png)
@@ -85,7 +85,7 @@ _Please note that you do not have to select QuickBooks in the list of payment me
 ![](display_name_example2.png)
 
 
-</p>
+</div>
 </details>
 
 
@@ -142,7 +142,7 @@ After successful synchronization,
 2021-05-13 09:04:33.162500 Accounting bank accounts synchronization completed
 2021-05-13 09:04:33.162600 Done!
 ```
-make chnages to _Accounting categories_, _Accounting bank accounts_ and _Taxes settings_ in `Config → Finance`
+make changes to _Accounting categories_, _Accounting bank accounts_ and _Taxes settings_ in `Config → Finance`
 
 ![Entry point 1](11.png)
 
@@ -188,8 +188,8 @@ Once the customers export has completed, we can export the invoices:
 
 - The invoices in Splynx with negative total amount will be exported to Quickbooks as **Credit Note** or **Credit Memo** (the name depends on the company location).
 
-<details>
-<summary>What Is A Credit Note?</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>What Is A Credit Note?</b></summary>
 <div markdown="1">
 
 The credit notes can be used in any situation that would require an invoice to be changed and re-issued. For example, the credit note should be issued when there is a need to cancel all or part of an invoice that has already been charged. This is done to keep accounting records straight since invoices cannot be deleted or edited once issued. Credit notes allow you to delete the amount of the invoice from your financial records without deleting the invoice itself in cases when the invoices deleting is unlawful.

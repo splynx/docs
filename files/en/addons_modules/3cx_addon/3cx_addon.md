@@ -99,9 +99,9 @@ Check the following links for more details:
 
 ![](commands_for_execution.png)
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example of commands</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 ```
@@ -113,7 +113,7 @@ touch authorized_keys
 echo "ssh-rsa rsa_key_value= splynx@base" >> "authorized_keys"
 ```
 
-</p>
+</div>
 </details>
 
 The permission and owner to **.ssh** folder should be the next `drwxr-xr-x  2 root   root   4096 Sep 15 08:40 .ssh`.

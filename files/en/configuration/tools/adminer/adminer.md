@@ -47,7 +47,7 @@ Type your password and press **Confirm** button. After that you can start work w
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary>Related links:</summary>
 <div markdown="1">
 

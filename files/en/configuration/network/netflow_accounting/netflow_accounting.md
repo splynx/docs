@@ -66,17 +66,19 @@ ip traffic-flow set enabled=yes cache-entries=4k set active-flow-timeout=30m ina
 ip traffic-flow target add address=192.168.88.100.182:9995 disabled=no version=5
 ```
 
-<details>
-<summary><b>command for **version: 9**</b></summary>
-<p markdown="1">
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>command for version: 9</b></summary>
+<div markdown="1">
 
 ```
 ip traffic-flow target add address=192.168.88.100.182:9995 disabled=no version=9 v9-template-refresh=20 v9-template-timeout=30m
 
 ```
 
-</p>
+</div>
 </details>
+
+<br>
 
 **To view your settings:**
 

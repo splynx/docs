@@ -161,7 +161,7 @@ https://<splynx_domain_address>/integrapay/direct-pay-proforma?item_id=<proforma
 </details>
 
 
-<!---     do NOT remove
+<!---     do NOT remove this info block !
 
 ### Integration with BPAY
 
@@ -174,9 +174,9 @@ Splynx uses BPAY service via *IntegraPay* API to pay (proforma) invoices, but **
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>How does BPAY work?</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 1. SIP sends a customer an invoice displaying a BPAY logo, a **unique BPAY Biller Code** and a **Customer Reference Number (CRN)**;
 
@@ -193,7 +193,7 @@ More information you can find in an official [FAQ](https://bpay.com.au/bpay-for-
 
 
 
-</p>
+</div>
 </details>
 
 
@@ -261,9 +261,9 @@ After that, double-check if the correct template is selected in [Company informa
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>for Invoice PDF template</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 
@@ -273,15 +273,15 @@ After that, double-check if the correct template is selected in [Company informa
 ```
 
 
-</p>
+</div>
 </details>
 
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>for Proforma Invoice PDF template</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 ```   
@@ -290,18 +290,18 @@ After that, double-check if the correct template is selected in [Company informa
 ```
 
 
-</p>
+</div>
 </details>
 
-
+<br>
 
 **CRN for the customer:**
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>for Invoice PDF template</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 
@@ -311,15 +311,15 @@ After that, double-check if the correct template is selected in [Company informa
 ```
 
 
-</p>
+</div>
 </details>
 
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>for Proforma Invoice PDF template</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 ```   
@@ -328,12 +328,14 @@ After that, double-check if the correct template is selected in [Company informa
 ```
 
 
-</p>
+</div>
 </details>
 
+<br>
 
-**Example:**
+Example:
 
 ![(image)](logo_in_template.png)
+
 
 -->

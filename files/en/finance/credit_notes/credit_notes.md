@@ -96,8 +96,8 @@ For example, the initial Internet service price = R200 and the new Internet serv
 
 ![image](refund_money_as_credit_note.png)
 
-<details>
-<summary>Click to see the detailed explanation</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Click to see the detailed explanation</b></summary>
 <div markdown="1">
 
 ```     

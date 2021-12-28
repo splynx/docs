@@ -63,9 +63,9 @@ The **Splynx domain** must be the same as the **API domain URL** but without las
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 The separate account has a rolling balance as a contra account for all payments that come from Splynx. Some customers paid R500 instead of R499 and the prepayments were allocated to your separate account.
@@ -73,7 +73,7 @@ On allocation, you’ll take R499 of the payment to the invoice, and the R1 will
 It would be much easier if all R500 could simply be allocated to the client's account. Then, we can allocate R499 from the overpayment to the invoice and the R1 'overpayment' will end up in the customer's balance.
 
 
-</p>
+</div>
 </details>
 
 
@@ -98,9 +98,9 @@ It would be much easier if all R500 could simply be allocated to the client's ac
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example of the variables usage</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 ![example](example1.png)
@@ -114,10 +114,9 @@ It would be much easier if all R500 could simply be allocated to the client's ac
 ![example](example5.png)
 
 
-</p>
+</div>
 </details>
 
-<br>
 
 - **Decimal Places** - by default Xero is rounding prices to `2` decimal places. `4` decimal places can be used instead.
 
@@ -202,9 +201,9 @@ Once the customer export has completed, we can start export their invoices to Xe
 **If the invoice includes item with a given period of time in Splynx, such period will be added to the related item description on Xero side after sync.**
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 ![image](invoice_with_period1.png)
@@ -212,7 +211,7 @@ Once the customer export has completed, we can start export their invoices to Xe
 ![image](invoice_with_period2.png)
 
 
-</p>
+</div>
 </details>
 
 

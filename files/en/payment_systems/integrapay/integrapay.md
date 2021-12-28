@@ -52,7 +52,7 @@ The configuration of add-on **Entry points** can be found in `Config → Integra
 
 Before making any payment it's required to set up the bank account or the credit card, depends on what option customers would like to use to pay.
 
-Navigate to `Finance → Pay via IntegraPay direct debit` and type the required credentials.
+Navigate to `Finance → IntegraPay payment credentials` and type the required credentials.
 
 ![(image)](8.png)
 
@@ -60,7 +60,9 @@ Navigate to `Finance → Pay via IntegraPay direct debit` and type the required 
 
 ![(image)](9.3.png)
 
-Once the configuration has been completed, customers can pay their invoices on the [Portal](customer_portal/customer_portal.md) using the *IntegraPay* system in `Finance → Invoices`. Using the *IntegraPay* add-on the `Service Fee` value cannot be set, as a result, will be shown only `Total to pay` amount.
+Once the configuration has been completed, customers can pay their invoices on [Portal](customer_portal/customer_portal.md),
+
+using the *IntegraPay* system in `Finance → Invoices`. Using the *IntegraPay* add-on the `Service Fee` value cannot be set, as a result, will be shown only `Total to pay` amount:
 
 ![(image)](6.png)
 
@@ -68,13 +70,17 @@ Once the configuration has been completed, customers can pay their invoices on t
 
 ![(image)](6.2.png)
 
+or pay directly on Portal Dashboard:
+
+![(image)](pay_from_dashboard.png)
+
 ![(image)](6.3.png)
 
 If everything goes well, you will see the status of the invoice marked as `Paid` (on the customer and admin portal).
 
 ![(image)](6.4.png)
 
-Customers can also refill their balances using `Finance → Pay via IntegraPay direct debit` menu.
+Customers can also refill their balances using **Add money via Integrapay** menu on Portal Dashboard.
 
 ![(image)](10.png)
 
@@ -106,8 +112,8 @@ To create a direct payment link, please use the patterns below:
 
 **To pay the Invoice:**
 
-<details>
-<summary>by invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -117,8 +123,8 @@ https://<splynx_domain_address>/integrapay/direct-pay-invoice-by-id?item_id=<Inv
 </div>
 </details>
 
-<details>
-<summary>by invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice number</b></summary>
 <div markdown="1">
 
 ```
@@ -128,12 +134,12 @@ https://<splynx_domain_address>/integrapay/direct-pay-invoice?item_id=<Invoice_n
 </div>
 </details>
 
-
+<br>
 
 **To pay the Proforma Invoice:**
 
-<details>
-<summary>by proforma invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -143,8 +149,8 @@ https://<splynx_domain_address>/integrapay/direct-pay-proforma-by-id?item_id=<pr
 </div>
 </details>
 
-<details>
-<summary>by proforma invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice number</b></summary>
 <div markdown="1">
 
 ```

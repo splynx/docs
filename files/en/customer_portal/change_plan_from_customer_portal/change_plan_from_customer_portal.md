@@ -14,9 +14,9 @@ It's required to have more than one *Internet/Voice/Recurring* plan in Splynx in
 
 Follow the step-by-step guide to configure the required settings:
 
-<details>
-<summary><b>How to set up the 'Request for tariff plan change' option</b></summary>
-<p markdown="1">
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Request for tariff plan change</b></summary>
+<div markdown="1">
 
 **Step 1**
 
@@ -64,14 +64,14 @@ The support representative, using admin portal, can change the customer's servic
 
 ![](img_ks_000009.png)
 
-</p>
+</div>
 </details>
 
 
 
-<details>
-<summary><b>How to set up the 'Self-change tariff plan' option</b></summary>
-<p markdown="1">
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Self-change tariff plan</b></summary>
+<div markdown="1">
 
 
 **Step 1**
@@ -110,7 +110,8 @@ After you press `Apply` button, the new service with will be added in `Pending` 
 
 ![](img_ks_000012.png)
 
-</p>
+
+</div>
 </details>
 
 

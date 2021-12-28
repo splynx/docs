@@ -50,8 +50,8 @@ The values in **Connection Request Username** and **Connection Request Password*
 /certificate import file-name=isrgrootx1.pem passphrase="
 ```
 
-<details>
-<summary>To remove the expired cert use the next</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>To remove the expired cert use the next</b></summary>
 <div markdown="1">
 
 Example:

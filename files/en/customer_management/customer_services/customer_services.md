@@ -31,9 +31,10 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
   * **Archived** - status for services archived for future reference.
 
   <icon class="image-icon">![Info](information.png)</icon> **The clarification of statuses relation (customer, service and invoice):**
-  <details>
+
+  <details style="font-size: 15px; margin-bottom: 5px;">
   <summary><b>Click here for more information</b></summary>
-  <p markdown="1">
+  <div markdown="1">
 
   1. If the customer has an `unpaid` invoice (e.g. an invoice was created in `Billing day` date) and the customer doesn't pay the invoice before the date of `Billing due`, the customer status will be changed to `Blocked`, but the service (e.g. Internet service) is still be active;
 
@@ -52,7 +53,7 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
 
 ------------
 
-  </p>
+  </div>
   </details>
 
 ***Plan settings***

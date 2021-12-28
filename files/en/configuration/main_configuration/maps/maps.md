@@ -23,10 +23,9 @@ For **Google Map** type, it's required to obtain the **Google Maps API keys**.
 
 
 
-
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>How to get the Google Maps API keys</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 
 
@@ -43,7 +42,8 @@ For **Google Map** type, it's required to obtain the **Google Maps API keys**.
 
 
 
-<details>
+
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary>Video: How do I set up billing for my project</summary>
 <div markdown="1">
 
@@ -113,8 +113,7 @@ To create the **Google Maps API key** (Restricted for domain):
 
 
 
-
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary>Examples of adding the HTTP restrictions</summary>
 <div markdown="1">
 
@@ -165,7 +164,7 @@ Click **Save** at the bottom of the page;
 
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary>Video: How to generate and restrict API keys</summary>
 <div markdown="1">
 
@@ -212,8 +211,7 @@ You can set the GPS coordinates to the **leads**, **routers**, **services** and 
 
 
 
-
-</p>
+</div>
 </details>
 
 

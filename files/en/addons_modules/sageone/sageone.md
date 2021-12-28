@@ -79,8 +79,8 @@ If any of the above items are not enabled to sync automatically, we can manually
 
 <icon class="image-icon">![](information.png)</icon> **How to create and link a Bank account in Splynx and SageOne:**
 
-<details>
-<summary>Click here to expand</summary>
+<details style="font-size: ; margin-bottom: 5px;">
+<summary><b>Click here to expands</b></summary>
 <div markdown="1">
 
 **On SageOne side**
@@ -101,8 +101,8 @@ Once the bank account has been loaded, scroll to the top of the page and select 
 
 ![SageOne default account](sageone_default_account.png)
 
-<details>
-<summary>In case the bank account list is not loaded</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>In case the bank account list is not loaded</b></summary>
 <div markdown="1">
 
 On the sidebar, click on the `Finance / Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
@@ -159,8 +159,8 @@ Once here, the first step is to load the categories/items from SageOne. To do so
 
 ![SageOne accounting categories](sageone_accounting_categories2.png)
 
-<details>
-<summary>In case the accounting categories list is not loaded</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>In case the accounting categories list is not loaded</b></summary>
 <div markdown="1">
 
 On the sidebar, click on the `Finance / Sageone Accounting` and press the **Import mapping settings into Splynx** button, then try again.
@@ -177,8 +177,8 @@ Once the categories have been loaded we can now proceed to map them to the relev
 **NOTE:** In case the monthly invoices are [generated](finance/history_and_preview/history_and_preview.md) in Splynx, its transactions won't be related to the newly created transaction categories. This setting will be applied only for new created transactions.
 
 
-<details>
-<summary>Click here to see how to cancel the last charge and perform the new service re-charge</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Click here to see how to cancel the last charge and perform the new service re-charge</b></summary>
 <div markdown="1">
 
 1. **To delete the created invoices and its transactions:** open `Finance / History & Preview` in the *History* table find the necessary item of charged invoices, click on the **Cancel** icon and confirm the action;
@@ -315,8 +315,8 @@ Now we can check the list of transactions to verify all is correct: navigate to 
 
 You might also be interested in the **video tutorials about SageOne integration**
 
-<details>
-<summary>Click here to expand</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Click here to expand</b></summary>
 <div markdown="1">
 
 (*based on Splynx v3.0 and SageOne add-on v1.0.90.20200417*)
@@ -361,9 +361,9 @@ There are a few more settings and tools related to the SageOne add-on:
 
 Follow these instructions to troubleshoot problems with *SageOne*:
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Error: '400 Document Number already exists'</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 *An invoice was synchronized to SageOne, then it was deleted in Splynx (e.g. invoice was an incorrect and you have deleted it and create a new one with the same number) and you are attempting to sync invoices to SageOne again*
 
@@ -371,7 +371,7 @@ Follow these instructions to troubleshoot problems with *SageOne*:
 
 ![SageOne customers](doc_num_exists.png)
 
-</p>
+</div>
 </details>
 
 ---------------------

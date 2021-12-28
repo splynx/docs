@@ -119,14 +119,14 @@ Using the payments links is the simplest way to accept payments made with credit
 To create a direct payment link, please use the patterns below:
 
 
-<details>
-<summary>for PayFast</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>for PayFast</b></summary>
 <div markdown="1">
 
 **To pay the Invoice:**
 
-<details>
-<summary>by invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -135,8 +135,8 @@ https://<splynx_domain_address>/payfast/direct-pay-invoice-by-id?item_id=<Invoic
 </div>
 </details>
 
-<details>
-<summary>by invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice number</b></summary>
 <div markdown="1">
 
 ```
@@ -145,12 +145,12 @@ https://<splynx_domain_address>/payfast/direct-pay-invoice?item_id=<Invoice_numb
 </div>
 </details>
 
-
+<br>
 
 **To pay the Proforma Invoice:**
 
-<details>
-<summary>by proforma invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -159,8 +159,9 @@ https://<splynx_domain_address>/payfast/direct-pay-proforma-by-id?item_id=<profo
 </div>
 </details>
 
-<details>
-<summary>by proforma invoice number</summary>
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice number</b></summary>
 <div markdown="1">
 
 ```
@@ -174,16 +175,17 @@ https://<splynx_domain_address>/payfast/direct-pay-proforma?item_id=<proforma_nu
 </details>
 
 
+<br>
 
 
-<details>
-<summary>for PayFast-RB</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>for PayFast-RB</b></summary>
 <div markdown="1">
 
 **To pay the Invoice:**
 
-<details>
-<summary>by invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -192,8 +194,10 @@ https://<splynx_domain_address>/payfast-rb/direct-pay-invoice-by-id?item_id=<Inv
 </div>
 </details>
 
-<details>
-<summary>by invoice number</summary>
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice number</b></summary>
 <div markdown="1">
 
 ```
@@ -206,8 +210,8 @@ https://<splynx_domain_address>/payfast-rb/direct-pay-invoice?item_id=<Invoice_n
 
 **To pay the Proforma Invoice:**
 
-<details>
-<summary>by proforma invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -216,8 +220,8 @@ https://<splynx_domain_address>/payfast-rb/direct-pay-proforma-by-id?item_id=<pr
 </div>
 </details>
 
-<details>
-<summary>by proforma invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice number</b></summary>
 <div markdown="1">
 
 ```

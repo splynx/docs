@@ -17,15 +17,15 @@ During *Internet* service (-s) migration will be moved all its statistic, e.g. t
 
 **NOTE:** For the process of migration use only administrator account with `super administrator` [role](administration/main/admins_and_permissions/admins_and_permissions.md). Double check if `ID` column is enabled in *Services* tab of customer's profile.
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>click here to see the screenshots</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 ![](sa.png)
 
 ![](id.png)
 
-</p>
+</div>
 </details>
 
 In the new window, put the check mark near the service you want to migrate and press `Move to customer` button. Then, select the new customer and press `Confirm migration` button

@@ -93,8 +93,8 @@ To create a direct payment link, please use the patterns below:
 
 **To pay the Invoice:**
 
-<details>
-<summary>by invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -104,8 +104,8 @@ https://<splynx_domain_address>/ippay/direct-pay-invoice-by-id?item_id=<Invoice_
 </div>
 </details>
 
-<details>
-<summary>by invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by invoice number</b></summary>
 <div markdown="1">
 
 ```
@@ -115,12 +115,12 @@ https://<splynx_domain_address>/ippay/direct-pay-invoice?item_id=<Invoice_number
 </div>
 </details>
 
-
+<br>
 
 **To pay the Proforma Invoice:**
 
-<details>
-<summary>by proforma invoice ID</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice ID</b></summary>
 <div markdown="1">
 
 ```
@@ -130,8 +130,8 @@ https://<splynx_domain_address>/ippay/direct-pay-proforma-by-id?item_id=<proform
 </div>
 </details>
 
-<details>
-<summary>by proforma invoice number</summary>
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>by proforma invoice number</b></summary>
 <div markdown="1">
 
 ```

@@ -17,7 +17,7 @@ Let's **create an auto processing entry** by clicking on the **Add** button loca
 
 ![create auto processing](add_auto_processing.png)
 
-The data source parameters:
+The **data source parameters**:
 
   * **Title** - provide a relevant name for the entry;
 
@@ -46,11 +46,15 @@ The data source parameters:
 
   * **Enable** - when a toggle is enabled, an auto processing unit will be executed every time `Interval` value, and if a toggle is  disabled - you will have to run it manually;
 
-**Position** and **Column** values should be specified according to your file. If you are using a handler - columns configuration can be ignored.
+**Position** and **Column** values should be specified according to your file. If you are using an external handler - the columns configuration can be ignored because a handler was designed, taking into account the particularities of the fields.
 
-But CSV file must contain such required columns as `Source`, `Datetime` (or separated `Date`, `Time` columns), `Duration`, `Destination` and `Type`. And columns quantity and columns order (`Pos.`) should be the same as in imported file.
+**NOTE:** The `Mixed` type cannot be used with `Base` handler during data import.
+
+For the `Call` type, the **CSV file must contain such required columns** as `Source`, `Datetime` (or separated `Date`, `Time` columns), `Duration`, `Destination` and `Type` (_Call_). The columns quantity and columns order (`Pos.`) should be the same as in file for import.
 
 ![](fields.png)
+
+For `Data` type the required fields are the following:  `Source`, `Datetime`, `Amount` and `Type` (_Data_)
 
 But **it never hurts to include the final price of each call, message or data into the CSV file. It means that you should upload CDR files that have been already rated.**
 

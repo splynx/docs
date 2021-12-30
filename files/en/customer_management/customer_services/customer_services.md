@@ -13,7 +13,6 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
 
 ![Create service 2](create_service2.png)
 
-
 * **Plan** - the tariff selected/list of tariffs available to select (`Internet`, `Voice`, `Custom`)
 * **Description** - a description of the tariff (optional)
 * **Quantity** - the multiple of plans for the selected service
@@ -36,27 +35,28 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
   <summary><b>Click here for more information</b></summary>
   <div markdown="1">
 
-  1. If the customer has an `unpaid` invoice (e.g. an invoice was created in `Billing day` date) and the customer doesn't pay the invoice before the date of `Billing due`, the customer status will be changed to `Blocked`, but the service (e.g. Internet service) is still be active;
+  1. If the customer has the `unpaid` **recurring** invoice (e.g. an invoice was created in `Billing day` date) and the customer doesn't pay the invoice before the date of `Payment due (days after billing day)`, the customer status will be changed to `Blocked`, but **the service (e.g. Internet service) is still be active**. If customer has only the **one-time invoice** and it's not paid before `Payment due`, the `Blocked` status won't be applied to the customer, the one-time invoice will have `unpaid` status. The customer won't be `Disabled` after `Deactivation period` has passed as well;
 
-  2. The invoice status in period from `Billing day` to `Billing due` date is `unpaid`, from `Billing due` to `Deactivation period` and after `Deactivation period` the invoice will be considered  as `overdue`;
+  2. The recurring invoice status in period from `Billing day` to `Payment due` date is `unpaid`, from `Billing due` to `Deactivation period` and after `Deactivation period` the invoice will be considered  as `overdue`;
 
   3. If the customer with `Blocked` status pays the `overdue` invoice, the customer's status will be changed to `Active`;
 
-  4. If the customer with `Blocked` status doesn't pay the invoice before the date of `Deactivation period` date, his status will be changed to `Inactive (doesn't use service)`. And after he decided to pay the invoice, the status would become `Active`;
+  4. If the customer with `Blocked` status doesn't pay the invoice before the date of `Deactivation period` date, his status will be changed to `Inactive (doesn't use service)`. And after he decides to pay the invoice, the status will be changed to `Active`;
 
   5. If the customer has `Inactive (doesn't use service)` status, his service (e.g. Internet service) will be `disabled` (with `Start date` = `Billing day` date and `End date` = `Deactivation period` date) and the duplicate of the previous service will be created with `Stopped` status, its `Start date` = the date of `Deactivation period`.
-  And after customer decided to pay the `overdue` invoice, the status of duplicate service would become `Active`, its `Start date` would be changed to invoice payment date.
+  And after customer decides to pay the `overdue` invoice, the status of duplicate service will be changed to `Active`and its `Start date` will be changed to invoice payment date.
 
   ![](clar_img1.png)
 
   ![](clar_img2.png)
 
-------------
-
   </div>
   </details>
 
-***Plan settings***
+------------
+
+**Plan settings**
+
 * **Router** - The router that API will use to connect to (for all API functions - Shaping, contention, address lists)
 
   <icon class="image-icon">![Warning](warning.png)</icon> This is only required when using API authentication methods in [Networking settings](networking\routers_settings\routers_settings.md)

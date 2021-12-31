@@ -51,10 +51,10 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
 
   ![](clar_img2.png)
 
-------------
-
   </div>
   </details>
+
+------------
 
 ***Plan settings***
 * **Router** - The router that API will use to connect to (for all API functions - Shaping, contention, address lists)

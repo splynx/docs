@@ -35,7 +35,7 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
   <summary><b>Click here for more information</b></summary>
   <div markdown="1">
 
-  1. If the customer has the `unpaid` **recurring** invoice (e.g. an invoice was created in `Billing day` date) and the customer doesn't pay the invoice before the date of `Payment due (days after billing day)`, the customer status will be changed to `Blocked`, but **the service (e.g. Internet service) is still be active**. If customer has only the **one-time invoice** and it's not paid before `Payment due`, the `Blocked` status won't be applied to the customer, the one-time invoice will have `unpaid` status. The customer won't be `Disabled` after `Deactivation period` has passed as well;
+  1. If the customer has the `unpaid` recurring invoice (e.g. an invoice was created on the date of `Billing day`) and the customer doesn't pay the invoice before the date of `Payment due (days after billing day)`, the customer status will be changed to `Blocked`, but **the service (e.g. Internet service) is still be active**. If the customer has only the **one-time invoice** and it's not paid before `Payment due`, the `Blocked` status won't be applied to the customer, the one-time invoice will have `unpaid` status. The customer won't be `Disabled` after `Deactivation period` has passed as well;
 
   2. The recurring invoice status in period from `Billing day` to `Payment due` date is `unpaid`, from `Billing due` to `Deactivation period` and after `Deactivation period` the invoice will be considered  as `overdue`;
 

@@ -3,12 +3,12 @@ Variables for templates
 
 There is the list of all variables which are using in templates. So you can use them in your custom templates.
 
-####Basic system values:
-<details>
+**Basic system values:**
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary>{{ dump(loader.values) }}</summary>
-<p markdown="1">
+<div markdown="1">
 
-##### result will be array of company fields:
+##### the result will be array of company fields:
 
      object(models\common\finance\TemplateValues)#226 (30) {
      ["id"]=> string(2) "13"
@@ -44,15 +44,17 @@ There is the list of all variables which are using in templates. So you can use 
      ["_additionalAttributes":protected]=> array(0) { }
      ["_isAdditionalAttributesLoaded":protected]=> bool(false)
      }
-</p>
+</div>
 </details>
 
-####Customer's information:
-<details>
-<summary>{{ dump(customer) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of customer fields:
+**Customer's information:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(customer) }}</summary>
+<div markdown="1">
+
+##### the result will be array of customer fields:
 
      array(38) {
      ["id"]=> string(1) "4"
@@ -96,15 +98,17 @@ There is the list of all variables which are using in templates. So you can use 
              ["some_additional_field"]=> string(0) "some additional field"
              }
      }
-</p>
+</div>
 </details>
 
-####General information:
-<details>
-<summary>{{ dump(loader.info) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of customer's information fields:
+**General information:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(loader.info) }}</summary>
+<div markdown="1">
+
+##### the result will be array of customer's information fields:
 
      object(models\common\customers\CustomerInfo)#226 (12) {
      ["customer_id"]=> string(1) "4"
@@ -122,15 +126,17 @@ There is the list of all variables which are using in templates. So you can use 
      ["_additionalAttributes":protected]=> array(0) { }
      ["_isAdditionalAttributesLoaded":protected]=> bool(false)
      }
-</p>
+</div>
 </details>
 
-####Get all Internet services that are Active:
-<details>
-<summary>{{ dump(loader.getServicesByTypeAndStatus('internet', 'active')) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of service fields:
+**Get all Internet services that are Active:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(loader.getServicesByTypeAndStatus('internet', 'active')) }}</summary>
+<div markdown="1">
+
+##### the result will be array of service fields:
 
      array(1) {
      [0]=> object(models\common\customers\ServicesInternet)#235 (47) {
@@ -180,15 +186,17 @@ There is the list of all variables which are using in templates. So you can use 
              some old attributes ...
              }
      }
-</p>
+</div>
 </details>
 
-####Bundles:
-<details>
-<summary>{% set bundles = loader.getBundles() %} {{ dump(bundles) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of all Bundles fields:
+**Bundles:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{% set bundles = loader.getBundles() %} {{ dump(bundles) }}</summary>
+<div markdown="1">
+
+##### the result will be array of all Bundles fields:
 
 
      array(2) {
@@ -268,15 +276,17 @@ There is the list of all variables which are using in templates. So you can use 
       }
       ...
      }
-</p>
+</div>
 </details>
 
-####Services from Bundles:
-<details>
-<summary>{% set servisesBundle = loader.getServicesBundle() %} {{ dump(servisesBundle) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of the Bundle and all Services fields:
+**Services from Bundles:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{% set servisesBundle = loader.getServicesBundle() %} {{ dump(servisesBundle) }}</summary>
+<div markdown="1">
+
+##### the result will be array of the Bundle and all Services fields:
 
      array(1) {
       [4]=> object(models\common\customers\services\ServicesBundle)#407 (35) {
@@ -318,15 +328,17 @@ There is the list of all variables which are using in templates. So you can use 
       }
      ....
      }
-</p>
+</div>
 </details>
 
-####Billing information:
-<details>
-<summary>{{ dump(loader.billing) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of billing fields:
+**Billing information:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(loader.billing) }}</summary>
+<div markdown="1">
+
+##### the result will be array of billing fields:
 
      object(models\common\customers\CustomerBilling)#226 (36) {
      ["customer_id"]=> string(1) "4"
@@ -367,15 +379,17 @@ There is the list of all variables which are using in templates. So you can use 
      ["_additionalAttributes":protected]=> array(0) { }
      ["_isAdditionalAttributesLoaded":protected]=> bool(false)
      }
-</p>
+</div>
 </details>
 
-####Partner:
-<details>
-<summary>{{ dump(loader.partner) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of partner fields:
+**Partner:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(loader.partner) }}</summary>
+<div markdown="1">
+
+##### the result will be array of partner fields:
 
      object(models\admin\administration\Partners)#226 (11) {
      ["id"]=> string(2) "13"
@@ -395,15 +409,17 @@ There is the list of all variables which are using in templates. So you can use 
              ["code"]=> string(4) "EUR"
              }
      ["_isAdditionalAttributesLoaded":protected]=> bool(true) }
-</p>
+</div>
 </details>
 
-####Transactions:
-<details>
-<summary>{{ dump(loader.transactions) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of transactions fields:
+**Transactions:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(loader.transactions) }}</summary>
+<div markdown="1">
+
+##### the result will be array of transactions fields:
 
      array(3) {
      [158]=> object(models\common\finance\Transactions)#226 (32) {
@@ -448,15 +464,17 @@ There is the list of all variables which are using in templates. So you can use 
      [985]=> object(models\common\finance\Transactions)#223 (32) {
              The same attributes
              }
-</p>
+</div>
 </details>
 
-####Invoices variables:
-<details>
-<summary>{{ dump(loader.invoices) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of invoices variables fields:
+**Invoices variables:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(loader.invoices) }}</summary>
+<div markdown="1">
+
+##### the result will be array of invoices variables fields:
 
      array(1) { [685]=> object(models\common\finance\Invoices)#226 (29) {
      ["id"]=> string(4) "685"
@@ -488,13 +506,15 @@ There is the list of all variables which are using in templates. So you can use 
              some old attributes ...
              }
      }
-</p>
+</div>
 </details>
 
-####Invoice items:
-<details>
+<br>
+
+**Invoice items:**
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary>{% for invoice in loader.getInvoices() %} ...</summary>
-<p markdown="1">
+<div markdown="1">
 
 ##### {% for invoice in loader.getInvoices() %}
      Invoice {{ invoice.number}} items:
@@ -555,15 +575,17 @@ There is the list of all variables which are using in templates. So you can use 
                      }
              }
      }
-</p>
+</div>
 </details>
 
-####Pro-formas:
-<details>
-<summary>{{ dump(loader.requests) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of pro-forma fields:
+**Proforma invoice:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(loader.requests) }}</summary>
+<div markdown="1">
+
+##### the result will be array of pro-forma fields:
 
      array(1) {
      [2]=> object(models\common\finance\Requests)#226 (23) {
@@ -594,15 +616,17 @@ There is the list of all variables which are using in templates. So you can use 
              ["_isAdditionalAttributesLoaded":protected]=> bool(false)
              }
      }
-</p>
+</div>
 </details>
 
-####Payments:
-<details>
-<summary>{{ dump(loader.payments) }}</summary>
-<p markdown="1">
+<br>
 
-##### result will be array of payment fields:
+**Payments:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(loader.payments) }}</summary>
+<div markdown="1">
+
+##### the result will be array of payment fields:
 
      array(1) {
      [366]=> object(models\common\finance\Payments)#226 (28) {
@@ -638,37 +662,39 @@ There is the list of all variables which are using in templates. So you can use 
              ["_isAdditionalAttributesLoaded":protected]=> bool(false)
              }
      }
-</p>
+</div>
 </details>
 
-####Attached documents:
-<details>
-<summary>Invoices: {{ dump(loader.getAttac ...</summary>
-<p markdown="1">
+<br>
 
-##### Invoices:
+**Attached documents:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>{{ dump(loader.getAttached...</summary>
+<div markdown="1">
+
+**Invoices:**
+```
      {{ dump(loader.getAttachedInvoices) }}
-     Pro-formas:
+
+```
+**Proforma Invoices:**
+```
      {{ dump(loader.getAttachedRequests) }}
-     Payment receipts:
+```
+**Payment receipts:**
+```
      {{ dump(loader.getAttachedReceipts) }}
+```
 
-
-
-
-     result will be array of attached documents fields:
-
-     array(1) {
-
-     }
-</p>
+</div>
 </details>
 
+<br>
 
-####Ignore Notification
-<details>
+**Ignore Notification**
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary>Ignore Notification</summary>
-<p markdown="1">
+<div markdown="1">
 
 ##### Example:
      {% if customer.billing_type == 'prepaid' %}
@@ -681,12 +707,19 @@ There is the list of all variables which are using in templates. So you can use 
 
 if the template result is "=== IGNORE NOTIFICATION ===" the notification will not be sent
 
-</p>
+</div>
 </details>
 
+<br>
 
+------------
 
-And now, you can see **examples** how to use variables in templates:
+Check the **examples** below how to use variables in templates:
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>Click here to expand</summary>
+<div markdown="1">
+
 ```
 Hello!
 
@@ -725,11 +758,14 @@ Our phone numbers in case you have not saved them yet,
 office@superisp.com
 ```
 
+</div>
+</details>
 
+<br>
 
-####Here you can find example of Document - Contract:
-<details>
-<summary>Template of a Contract</summary>
+**Here you can find example of Document - Contract:**
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>Contract: template example</summary>
 <div markdown="1">
 
 ```bash     

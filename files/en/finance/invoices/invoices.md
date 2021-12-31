@@ -104,9 +104,9 @@ The invoice charging process can be automated using the **Auto charge filter**. 
 ![](real_date_issue.png)
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Explanation</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 Why we **cannot** use `Date to use on finance elements` value that is equal to `Billing date` with Auto charge filter?
 
@@ -121,7 +121,7 @@ And `Billing day` = **1** for the customers in Splynx (the option is located in 
 Consequently, the invoices will be auto-generated and will be visible for customers on the 4th day of the next month, but the date creation of such invoices is the 1st day of the month. The Auto Charge filter won't find the invoices on 1st day of the month because they are not visible to customers. When the 4th day arrives, the Auto filter will not charge the invoices because its creation date is the 1st day of the month.
 
 
-</p>
+</div>
 </details>
 
 In new window specify the necessary options for auto charge filter:
@@ -228,9 +228,9 @@ Another way to create invoice is to use **Add Invoice from transaction** button 
 **NOTE:** If a *transaction* was added manually using the **Add Transaction** button with the `Add to invoice` option, transaction would not be removed during the deletion of created invoice with it or using `Cancel last charge` button. Such unlinked transaction can be deleted manually.
 
 
-<details>
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>click here to see the step-by-step example</b></summary>
-<p markdown="1">
+<div markdown="1">
 
 So, if the invoice includes at least one manual transaction and we are going to remove this invoice, such transaction can be remove only manually. Let's check it:
 
@@ -284,7 +284,7 @@ Check if the manual transaction is present in `Billing → Transactions`. Mind, 
 
 ![](img9.png)
 
-</p>
+</div>
 </details>
 
 

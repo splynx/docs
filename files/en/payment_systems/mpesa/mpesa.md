@@ -173,6 +173,11 @@ In *M-PESA Logs* the full payment statistic records can be viewed:
 
 ![(image)](mpesa_logs1.png)
 
+
+<!--- do NOT remove this info block. The related task is https://jira-splynx.atlassian.net/browse/SASMPESA-47. Double check the correctness of the direct links.
+When task is finished - uncomment the info below. Copy changes in 'v3.2_release' branch.
+
+
 ### Direct payments
 
 Using the payments links is the simplest way to accept payments. This feature is available in the *Safaricom M-PESA* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase. For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page.
@@ -228,6 +233,8 @@ https://<splynx_domain_address>/smps/direct-pay-proforma?item_id=<proforma_numbe
 ```
 </div>
 </details>
+
+-->
 
 ### Troubleshoot
 

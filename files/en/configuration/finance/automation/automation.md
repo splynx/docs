@@ -2,16 +2,16 @@ Automation
 =============
 
 To eliminate financial errors and delays caused by manual processes, in Splynx, you can configure finance automation in `Config → Finance → Automation`.
-*Please note, these will be the global settings of the system*.
+
+**NOTE:** **these settings are global and affect all customers in your Splynx**.
 
 ![Menu](icon.png)
 
-
 The following parameters can be configured for automation:
 
-![automation](automation.png)
-
 ### Finance automation
+
+![automation](automation.png)
 
 * **Enable automatic issuing** - enables/disables automatic issuing of Invoices, Transactions, and Proforma Invoices;
 

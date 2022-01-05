@@ -81,11 +81,12 @@ The detailed description and the explanation of the credit notes management can 
 
 **Future items**
 
-The *Future item*  - a `+Debit` transaction with the option `Include transaction in next recurring invoice`, it can be added to customers account with amounts to be paid (decreases customers account balance).
+The *Future item*  - a transaction with the `Include transaction in next recurring invoice` option enabled, it can be both `+Debit` and `-Credit` transactions, depends on what price value (negative/positive) is set there. For example, a future item with R100 price will be shown as `+Debit` transaction (customer account balance will be decreased on -R100) and a future item with negative price (-R100) will be represented as `-Credit` transaction (customer account balance will be increased on R100). In other words, the created
+`-Credit` transaction will appear in finance documents as future item with negative total price and vice versa. But the `+Debit` transaction with negative price will be automatically converted to `-Credit` one.
 
 The option `Include transaction in next recurring invoice` defines if the current future item will be included to the next *Recurring* (or *One-time* invoice if the option `Load items from uncharged transactions` was used) invoice.
 
-As a result, the uncharged future item can be loaded to the new *One-time* or *Recurring* invoice during its creation. If the future item has already been loaded into an invoice, it loses its functions and becomes a transaction in the created invoice.
+As a result, the uncharged future item can be loaded to the new *One-time* or *Recurring* invoice during its creation. If the future item has already been loaded into an invoice, it loses its functions and becomes a transaction in the created invoice. The future item with negative price can be loaded to invoice as well, but the invoice total may be zero, but not negative.
 
 To add a *Future item*:
 

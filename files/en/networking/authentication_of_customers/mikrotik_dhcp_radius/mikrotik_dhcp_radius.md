@@ -110,3 +110,15 @@ If you set additional network(s) in Splynx internet services, network routes wil
 #### Incoming RADIUS
 
 Afther the plan change a queue wasn't updated and customer still has the same speed as on a previous plan? The reason is because CoA (change of authorization) and (Packet  of Disconnect) is not supported by Mikrotik. The alternative is to use a short lease time which caters for any CoA related changes and "Disabled customers to address list" from API to block the customer's internet access.
+
+#### Session timeout for disabled services
+
+To change the timeout, navigate to `Config → Networking → Radius`, find **NAS config** section, in **NAS Type** choose `MikroTik` and press **Load** button. In the appeared **MikroTik Configuration** section, the following line should be added in the rate-limit-attributes (Access-accept) section:
+
+```
+Session-Timeout = "Lease time in seconds"
+```
+This config is critical and if not added the router will control the lease time internally, not release the IP and not renew the lease with the Radius server.
+This is especially important when dealing with disabled services (disconnected without active service)
+
+![image](session_timeout.png)

@@ -165,15 +165,26 @@ More information you can find in these articles:
 
 ![main](main.png)
 
+* **Gateway URL** - ```https://platform.clickatell.com/messages```
+* **Payload** - ```{''to'': [''%TO%''], ''content'': ''%MESSAGE%''}```
+
+
 ![main](check_balance.png)
 
+* **Check URL** - ```https://platform.clickatell.com/public-client/balance?Authorization:your_API_key```
+
 ![main](custom_header.png)
+
+* **Custom Header Name** - header parameter name, e.g `Authorization`;
+* **Custom Header Value** - API Key.
 
 For more information, see:
 
 - https://www.clickatell.com/products/sms-platform
 
 - https://docs.clickatell.com/channels/sms-channels/sms-api-documentation/
+
+- https://docs.clickatell.com/channels/sms-channels/sms-api-reference/
 
 
 

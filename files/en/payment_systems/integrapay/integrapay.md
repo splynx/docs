@@ -31,18 +31,42 @@ The first step is to register an account on https://www.integrapay.com.au/. Afte
 
 ![(image)](13.png)
 
-Then, you need to set your **Username**, **Business ID** and **Password** in Splynx under `Config → Integrations → Modules list → Splynx Add-on IntegraPay`.
-
-Locate or search for the `splynx_addon_integrapay` add-on module and click on the
-<icon class="image-icon">![edit](edit.png)</icon> (*Edit*) icon in the *Actions* column
+Then, you need to set your **Username**, **Business ID** and **Password** in `IntegraPay API settings` section of add-on config page, navigate to `Config → Integrations → Modules list → Splynx Add-on IntegraPay` and locate or search for the `splynx_addon_integrapay` add-on module and click on the <icon class="image-icon">![edit](edit.png)</icon> (*Edit*) icon in the *Actions* column, enter your credentials in the related fields.
 
 ![(image)](2.png)
 
 ![(image)](3.png)
 
+
+**Main information and API settings:**
+
 ![(image)](4.png)
 
+* **API domain** - api domain should be the same as Splynx URL. The forward slash `/` is required at the end;
+
+* **API key, API secret** - auto generated default values. Don't change it unless it is absolutely necessary.
+
+
+**IntegraPay billing settings:**
+
 ![(image)](5.png)
+
+* **Ignore Fee** - ignore IntegraPay fee;
+* **Fee VAT** - service [fee VAT](configuration/finance/taxes/taxes.md) percent;
+* **Add fee to request** - add fee (position) to request;
+* **Fee message** - if `Add fee to request` option is enabled, the current message will be added as description for fee item in invoice;
+* **Payment method for Credit Card / Bank Account** - when a customer pays using this add-on, the payment will be allocated as this payment type;
+* **Transaction fee category** - transaction [category](configuration/finance/transaction_categories/transaction_categories.md) of the fee transactions;
+* **Bank statements group** - choose how to group bank statements (`Finance → Bank Statements → History`) monthly or daily;
+* **Available Payment Methods** - choose a payment method that the customer can add on Portal. Pay attention, IntegraPay service does not support using two payment methods at the same time. If 'Bank account or Card' option is selected, a customer can add either their bank account or a credit card and use only one method at a time;
+* **Mask card's number and CVV** - hide card number and CVV code when adding on the Portal;
+* **Customers identifier** - select what to use as identifier of customer on IntegraPay service side;
+* **Sending email with terms** - enable/disable the email sending with terms and conditions of the service to customers;
+* **Subject of email with terms** - subject of the email with terms and conditions of the service;
+* **Message of email with terms** - message of the email with terms and conditions of the service.
+
+
+**IntegraPay API settings:**
 
 ![(image)](5.1.png)
 

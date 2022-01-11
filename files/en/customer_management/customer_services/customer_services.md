@@ -30,15 +30,12 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
   * **Pending** - Status of the new service during the waiting period of a planned service change. Between the end date of the old service and the start date of the new.
   * **Archived** - status for services archived for future reference.
 
-  <icon class="image-icon">![Info](information.png)</icon> **The clarification of statuses relation (customer, service and invoice):**
+  <icon class="image-icon">![Info](information.png)</icon> **The relation between customer, service and invoice and service accounting:**
 
-  <details style="font-size: 15px; margin-bottom: 5px;">
-  <summary><b>Click here for more information</b></summary>
-  <div markdown="1">
 
-  1. If the customer has an `unpaid` invoice (e.g. an invoice was created in `Billing day` date) and the customer doesn't pay the invoice before the date of `Billing due`, the customer status will be changed to `Blocked`, but the service (e.g. Internet service) is still be active;
+  1. If the customer has an `unpaid` recurring invoice (e.g. an invoice was created in `Billing day` date at 22:00 PM) and the customer doesn't pay the invoice before the date of `Billing due`, the customer status will be changed to `Blocked`, but **their service (e.g. Internet service) is still active and accounted by billing**. If the customer has only the **one-time invoice** and it's not paid before `Billing due`, the `Blocked` status won't be applied to the customer, the one-time invoice will have `unpaid` status. The customer won't be `Disabled` after `Deactivation period` has passed as well;
 
-  2. The invoice status in period from `Billing day` to `Billing due` date is `unpaid`, from `Billing due` to `Deactivation period` and after `Deactivation period` the invoice will be considered  as `overdue`;
+  2. The recurring invoice status in period from `Billing day` to `Billing due` date is `unpaid`, from `Billing due` to `Deactivation period` and after `Deactivation period` the invoice will be considered  as `overdue`;
 
   3. If the customer with `Blocked` status pays the `overdue` invoice, the customer's status will be changed to `Active`;
 
@@ -51,8 +48,8 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
 
   ![](clar_img2.png)
 
-  </div>
-  </details>
+  6. Mind that the service (-s) with `Disable` status but **without** `End date` **is still accounted by billing**. If you want to disable the charge for such service (-s) in the next month, please set `End date` to service or change its status to `Archived`. Also, pay attention that the disabled customer service will be charged up for the whole month e.g. the disabled service `Start date` = 2022-01-01, the `End date` = 2022-01-25 (`Billing due` (value: 15 days) and `Deactivation period` (value: 10 days), as a result the disabled service is charged up to 2022-01-31)
+
 
 ------------
 
@@ -86,3 +83,73 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
 You can **edit** a service, **schedule a future change**, **change** the plan, view the **graph** for the service, apply **additional discounts**, **delete** or **geolocate** the service by these icons <icon class="image-icon">![Services actions](services_actions.png)</icon>, located in the actions column of the service table.
 
 ![Actions table](actions_table.png)
+
+
+------------
+
+**Change Plan from Administrator Portal**
+
+The following steps will show how an administrator in Splynx can change customer service in correct way.
+
+**NOTE:** It's required to have more than one `Internet/Voice/Recurring` tariff plan in Splynx in order to change from one to another.
+
+For example, a customer uses `Ethernet_500Mbps` as his current Internet service and wants to change it to `Ethernet_100Mbps` (is created in `Tariff plans → Internet`). The `Ethernet_500Mbps` service had been already charged and customer had paid the invoice (period: (2022-01-01 - 2022-01-31)). The `Ethernet_500Mbps` service start date is 2022-01-01. The new `Ethernet_100Mbps` service should be started on 2022-01-20 according to customer request.
+
+![image](change_service_0.png)
+
+
+1. Find the necessary customer and go to `Services` tab of their profile. There is an active service that the customer uses at the moment.
+
+2. Click on <icon class="image-icon">![icon](change_plan_icon.png)</icon> (Change plan) icon in *Actions* column of the required service:
+
+![image](change_service_1.png)
+
+3. In the new window, choose `New plan start date` (2022-01-20) and `New plan` (`Ethernet_100Mbps`) for customer and press **Apply** button:
+
+**NOTE:** If the option `Refund unused money` is not used for recurring billing in `Config → Finance → Change plan`, you can change the tariff only after 2022-01-31.
+
+More info about available settings you can find in [Change plan](configuration/finance/change_plan/change_plan.md) guide.
+
+In our case we use the next settings:
+
+* **Plan change refund:** `Refund unused money`;
+
+* **Additional fee when changing to a less expensive plan:** `Additional fee when changing to a less expensive plan` (value: 30);
+
+* **Create invoice after service change:** `Immediately till end of active month`.
+
+
+![image](change_service_2.png)
+
+4. As a result, the end date (2022-01-19) is added to `Ethernet_500Mbps` service and the new service `Ethernet_100Mbps` is appeared in the list with pending status, its start date is 2022-01-20. On customer balance we can see 8.71$ that were refunded:
+
+![image](change_service_3.png)
+
+![image](change_service_4.png)
+
+![image](change_service_5.png)
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>How it was calculated</b></summary>
+<div markdown="1">
+
+```
+200$/31days = 6.4516$/day
+19days*6.4516$/= 122.5804$
+200$ - 122.5804 = 77.4196$
+77.4196$ - 30$ (fee) = 47.4196$ ~ 47.42$
+
+100$/31days = 3.2258$/day
+3.2258$ * 12days (from 20 to 31 of January 2022) = 38.7096$ ~ 38.71$
+
+47.42$ - 38.71$ = 8.71$
+
+```
+</div>
+</details>
+
+5. On January 20, the new service `Ethernet_100Mbps` will be activated and the previous one - `Ethernet_500Mbps` will be disabled:
+
+![image](change_service_6.png)
+
+Suggested read: [Change Plan from Customer Portal](customer_portal/change_plan_from_customer_portal/change_plan_from_customer_portal.md)

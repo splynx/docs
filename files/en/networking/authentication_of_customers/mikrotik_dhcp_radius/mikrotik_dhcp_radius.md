@@ -122,3 +122,7 @@ This config is critical and if not added the router will control the lease time 
 This is especially important when dealing with disabled services (disconnected without active service)
 
 ![image](session_timeout.png)
+
+For more information, watch the next video:
+
+<iframe width="350" height="270" src="https://www.youtube.com/embed/vCOecp75g0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

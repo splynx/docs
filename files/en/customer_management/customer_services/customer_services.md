@@ -48,7 +48,7 @@ After clicking the "add service" or "+" button, a window will pop up for you to 
 
   ![](clar_img2.png)
 
-  6. Mind that the service (-s) with `Disable` status but **without** `End date` **is still accounted by billing**. If you want to disable the charge for such service (-s) in the next month, please set `End date` to service or change its status to `Archived`. Also, pay attention that the disabled customer service will be charged up for the whole month e.g. the disabled service `Start date` = 2022-01-01, the `End date` = 2022-01-25 (`Billing due` (value: 15 days) and `Deactivation period` (value: 10 days), as a result the disabled service is charged up to 2022-01-31)
+  6. Mind that the service (-s) with `Disable` status but **without** `End date` **is still accounted by billing**. If you want to **disable the charge for such service (-s) in the next month**, please set `End date` to service or change its status to `Archived` manually. Also, pay attention that the disabled customer service will be charged up for the whole month e.g. the disabled service `Start date` = 2022-01-01, the `End date` = 2022-01-25 (`Billing due` (value: 15 days) and `Deactivation period` (value: 10 days), as a result the disabled service is charged up to 2022-01-31)
 
 
 ------------
@@ -151,5 +151,23 @@ In our case we use the next settings:
 5. On January 20, the new service `Ethernet_100Mbps` will be activated and the previous one - `Ethernet_500Mbps` will be disabled:
 
 ![image](change_service_6.png)
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Another example</b></summary>
+<div markdown="1">
+
+<!-- task SPL-7321 -->
+
+In case a customer decides to change their previous service (`Ethernet_100Mbps`, price R100) on the same day of its activation (e.g. the option `Use the customer creation date` as billing day is enabled in `Config → Finance → Settings`. The customer was created on Jan 12 (Billing day), the service start date is also 2022-01-12. And the customer was charged for `Ethernet_100Mbps` service on Jan 12 as well) to a new one (`Ethernet_500Mbps`, price R200), the previous service will be archived and new one will be activated on the same day.
+
+![image](example_1.png)
+
+![image](example_2.png)
+
+
+</div>
+</details>
+
 
 Suggested read: [Change Plan from Customer Portal](customer_portal/change_plan_from_customer_portal/change_plan_from_customer_portal.md)

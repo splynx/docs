@@ -216,3 +216,8 @@ For more information, see:
 We have a special topic on our forum where you can find a suitable SMS gateway and find out which gateways can't be used in Splynx:
 
 - https://forum.splynx.com/t/sms-gateway-sharing-recommendations/1963 .
+
+
+You might also be interested in video tutorial:
+
+<iframe width="350" height="270" src="https://www.youtube.com/embed/grh1nMXrP4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

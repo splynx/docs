@@ -32,7 +32,37 @@ In the right top corner of the page, you can select the [partner](administration
 
 * **Deactivation period (Grace period)** - the number of days after the customers' services will be disabled and the customer will be given an inactive status, after the customer has been blocked. For example, it could be 10 days, which means 10 days after the customer has been blocked, the customer's status will automatically be changed from blocked to inactive and service will not be accounted;
 
-* **Minimal balance** - defines the minimum amount of funds to be available in the customers account at all times, after service charges, to avoid being blocked and is set, by default, to `0`. It can be changed to another value according to your needs;
+* **Minimal balance** - defines the minimum amount of funds that must be available in the customer account balance at any time, even after the service charge, in order to avoid blocking. The default value is `0`. This value can be changed to another according to your needs. The negative value (e.g. `-50`) is allowed to use as well;
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Example</b></summary>
+<div markdown="1">
+
+A **minimum balance** is the minimum amount of money that customer has to keep on their balance, maintaining a minimum balance will allow customer to avoid being blocked on the next day after Billing due. It means a customer balance cannot drop below the specified amount at any time during billing cycle.
+
+For instance, a customer uses some Internet service (e.g. its price is R100) and has the next settings on Billing overview tab:
+- Billing day = 1;
+- Billing due = 15;
+
+The recurring invoice will be auto generated on the 1st day of next month. And imagine that customer will pay R100 for the invoice on the same day.
+
+If we have `0` (zero) value as a minimum balance requirement, a customer won't be blocked, because their balance will be equal to the set value.
+If customer balance becomes negative, customer will be blocked on the 16th day of the month.
+
+![image](min_balance_4.png)
+
+If we have `50` value as a minimum balance requirement, a customer need to pay R150 for the invoice to keep R50 on the balance to avoid blocking. If a customer has less than 50 on the balance, they will be blocked.
+
+![image](min_balance_3.png)
+
+If we have `-50` value as a minimum balance requirement, a customer can pay only R50 for the invoice, because it's allowed to have a negative balance, but no less (`-60`, `-70` etc.) than`-50`. Pay attention, if a customer pays R60, the account balance will be `-40` that is acceptable value. Even if a customer pays the full price for the invoice, the account balance will be equal to `0` and, as a result, a zero value will be greater than allowed minimal balance.
+
+![image](min_balance_1.png)
+
+![image](min_balance_2.png)
+
+</div>
+</details>
 
 * **Send finance notifications** - enables/disables sending of notifications about payments, invoices, overdue invoices etc;
 

@@ -27,3 +27,8 @@ There is also the ability to customize the colors and types of devices, as well 
 Below is an example of how to visualize small networks /29,/28 etc, in one common /24 network
 
 ![Customize](customize.png)
+
+
+You might also like the next video tutorial:
+
+<iframe width="350" height="270" src="https://www.youtube.com/embed/z1XdFHUM3zA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

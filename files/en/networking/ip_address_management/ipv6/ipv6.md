@@ -64,3 +64,12 @@ In our example, the Home router received a single IPv6 address 2a0f:f041:a:1::1 
 
 In Splynx each customer has Internet service, under the settings of this services are options to assign IPv4 and IPv6 addresses.
 The first option “IPv6 network” is for IPv6 assignment to the WAN interface and the second “Delegated IPv6 network” is for the network, that should be used by CPE's/Home routers within LAN network.
+
+
+You might also like the next video tutorials:
+
+
+<iframe width="350" height="270" src="https://www.youtube.com/embed/JGytvVHl780" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="350" height="270" src="https://www.youtube.com/embed/jJejxvQvMDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

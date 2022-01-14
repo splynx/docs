@@ -123,31 +123,26 @@ When customers have Netcash payment accounts configured, the admin can charge th
 | 2  | Netcash can take up to two days after the action date to receive the payments as well as non-payments (bounced payments)  |
 | 3 | Splynx will check Netcash twice a day for any payments and allocate them to the correct invoice in which case the invoice will become “paid”. In the case we receive non-payments, the invoice status will return to unpaid  |
 
-This is the concept that will allow us to run debit orders.
+To perform the charge of `Unpaid` invoices, navigate to `Finance / Invoices` on the sidebar:
 
-Navigate to `Finance / Invoices`:
+**NOTE: The ability to charge balances have been removed from the features of the addon, however, it will be re-introduced in the next version of Splynx.**
+
 
 ![charge1.png](invoices_charge.png)
 
-Invoices can be charged by full invoice amount or by customer balance:
+Invoices can be charged by **full invoice amount** or by **customer balance**:
 
 ![charge1.png](charge.png)
 
 ![charge balances.png](charge_balances.png)
 
-If you charge the invoices using the “Netcash_balance” charge handler, the customer will be charged not according to an invoice amount, but with the amount outstanding on the customer’s account. <br>
-**For example:** *a customer has an invoice with an amount of 10, in the current month, but the balance of the account is -100 (meaning the customer didn't pay for 10 months) in this case, the customer will be charged with the amount of 100 and not 10.*
+If you charge the invoices using the `netcash_balances` charge handler, the **customer will be charged not according to an invoice amount, but with the amount outstanding on the customer’s account**.
 
+**Example:** *A customer has an invoice with an amount of 10, in the current month, but the balance of the account is -100 (meaning the customer didn't pay for 10 months) in this case, the customer will be charged with the amount of 100 and not 10.* That's why, **please be very attentive when using the `netcash_balances` charge handler**.
 
-**Please be very attentive when using the “Netcash_balances” charge handler**.
+Once charged, Splynx will create and send the debit batch file with the payment details to  [*https://netcash.co.za/*](https://netcash.co.za/). When the file is received in *Netcash*, you should select the correct batch type, either `two days` or `same day` as well as the action date. The last step is to click on authorize and complete the procedure, after which *Netcash* will process the file on the selected action date.
 
-**Note that the ability to charge balances have been removed from the features of the addon, however, it will be re-introduced in version 3.2 of Splynx**
-
-
-Once charged, Splynx will create and send the debit batch file with the payment details to  [*https://netcash.co.za/*](https://netcash.co.za/). When the file is received in Netcash, you should select the correct batch type, either “two days” or “same day” as well as the action date. The last step is to click on authorize and complete the procedure, after which Netcash will process the file on the selected action date.
-
-
-Splynx will send two requests per day (00:15 and 12:15) to Netcash via a cron job to retrieve the payments from Netcash. This will auto allocate the payments and update the invoice statuses to “paid”. You can also manually run the check payments for any historic date by using the **“*Netcash debit order check payments*”** in the finance module:
+Splynx will send two requests per day (00:15 and 12:15) to *Netcash* via a cron job to retrieve the payments from *Netcash*. This will auto allocate the payments and update the invoice statuses to `Paid`. You can also manually run the check payments for any historic date by using the **“*Netcash debit order check payments*”** in the finance module:
 
 ![check payments](check_payments.png)
 
@@ -157,7 +152,41 @@ The charge history can be viewed under the **"Charge history"** tab:
 
 File records with charged invoices can be downloaded or deleted in this section.
 
-The process of invoice charging can be automated. To achieve this, an admin should add an **"Auto charge filter"**:
+**NOTE:** If a customer doesn't have the saved payment credentials for Netcash service in Splynx, the customer id will be recorded in the charge log to easily identify their profile.
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>The invoice charge log example:</b></summary>
+<div markdown="1">
+
+```
+ERRORS:
+
+Error: Customer payment account is empty! - Customer id : 7322
+
+OUTPUT:
+
+Start Netcash Debit Order charging..
+type: "invoice"
+amount items: 1
+
+Fri, 14 Jan 2022 15:16:52 +0200
+
+Work with invoice with id 2155
+
+Loaded invoice number "202201000151"
+Customer id: 7322
+Invoice amount: 100
+No fee
+Total amount: 100
+Customer payment account is empty! - Customer id : 7322
+
+```
+</div>
+</details>
+
+<br>
+
+The process of invoice **charging can be automated**. To achieve this, an admin should add an **"Auto charge filter"**:
 
 ![auto charge](add_auto_charge.png)
 
@@ -205,7 +234,9 @@ The customer can also view, update, or remove Netcash account details here:
 
 ### Direct payments
 
-Using the payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the Netcash Debit Order addon to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customer, so the amount of on-time payments will increase. For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto this link instead of logging in to their *Portal* page. In case the customer has saved the payment credentials on the *Portal*, later the customer does not need to add any further details when using the direct payment link.
+Using the direct payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the Netcash Debit Order add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customer, so the amount of on-time payments will increase. For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto this link instead of logging in to their *Portal* page.
+In case the customer has saved the payment credentials on the *Portal*, later they do not need to add any further details when using the direct payment link.
+Otherwise (the customer payment accounts are not saved), the option `Save and allow future charge` can be used on the direct payment form page to save the customer credit card or bank account credentials on their Portal.
 
 To create a direct payment link, please use the patterns below:
 

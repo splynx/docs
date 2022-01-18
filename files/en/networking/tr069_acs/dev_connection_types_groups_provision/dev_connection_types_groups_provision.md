@@ -118,9 +118,11 @@ We have a few options here:
 | **I have a configuration file for import and want to import this file**  | in this step you need to import a .csv file with a configuration what can be imported  |
 | **I want to insert config manually**  | manual way to configure a device |
 
-If to choose **I want to insert config manually** step, you will see a window with the editor of device objects with its attributes. In this configuration menu you can **create** new object and attribute related to the object, **update**, **delete** or apply the **mass actions** (*enable*, *disable*, *delete*) the existing object and its attribute (-s).
+If to choose **I want to insert config manually** step, you will see a window with the editor of device objects with its attributes. In this configuration menu you can **create** new object and attribute related to the object, **update**, **delete**
 
 ![provisioning attributes](provisioning_attributes.png)
+
+or apply the **mass actions** (*enable*, *disable*, *delete*) the existing object and its attribute (-s).
 
 ![](mass_actions.png)
 
@@ -130,28 +132,59 @@ We can apply **4 actions to the object**:
 
 - **create** - create an object with the attributes specified in the configuration, but if we already have an object with these attributes, a new object will not be created;
 - **update** - update the object's attribute value (-s);
-- **delete** - remove all objects according to the path, e.g. object `Device.Firewall.X_MIKROTIK_Filter.Chain.3.Rule` will remove all firewall rules from output chain on Mikrotik;
+- **delete** - remove all objects according to the path, **for example** object `Device.Firewall.X_MIKROTIK_Filter.Chain.3.Rule` will remove all firewall rules from output chain on Mikrotik;
 
 ![object actions](delete_firewall_rules.png)
 
-- **delete with equal condition** - remove the object if the attribute's `value` was specified in the configuration, e.g. remove all the disabled rules in firewall output chain.
+- **delete with equal condition** - remove the object if the attribute's `value` was specified in the configuration, **for example** remove all the disabled rules in firewall output chain.
 
 ![object actions](del_equal_condition.png)
 
-If you select **template** as attribute option you can **use twig** to create field value.
+**Ignore statement** as an attribute option allows to use `---ignore---` value in the field to skip sending the attribute to the device.
+
+![image](ignore_statement.png)
+
+**Example**
+
+```
+{% if customer.login is not empty %}value{% else %}---ignore---{% endif %}
+```
+
+**Template** as an attribute option helps to **use twig** to create provision template with conditional values.
 
 ![object actions](template_twig.png)
 
-Also, by click on additional button near **Save** button
+**Examples**
+
+```
+{{ customer.login }}.spl.rv.ua
+```
+
+```
+{% if true %}---ignore---{% else %}{{ customer.login }}.spl.loc{% endif %}
+```
+
+```
+{{ device.device_id[:5] }}
+```
+
+```
+{% if customer.custom.wifi_ssid is not empty %}{{ customer.custom.wifi_ssid }}{% else %}--ignore---{%endif %}
+```
+
+Click on drop down menu to find out the correct variable of the value you need, e.g. **customer** (`{{ device.customer_id }}`), **model name** (`{{ device.model_name }}`), **IPv4 address** (`{{ internet_service.ipv4 }}`)
+
+By clicking on drop down arrow button near **Save**
 
 ![object actions](import_export.png)
 
-you can **preview**,  **export settings into a .csv format** (for future, use it for configuration of other devices)
+you can **preview**, **export settings to .csv file** (for future, use it for configuration of other devices)
 
 ![object actions](provision_preview.png)
 
-**import an existing .csv file** with device settings (**NOTE!:** If there are already some settings on the device, they will be deleted during import)
+**import settings from .csv file** (**Important:** If the `Auto provisioning` option is enabled and you import configuration from .csv file, the existing settings on the device will be erased)
+
 
 ![object actions](provision_import.png)
 
-or **clean up** the existing device config.
+or **clean up** the existing/loaded device config.

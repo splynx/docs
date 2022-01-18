@@ -1,7 +1,7 @@
 Transactions
 ============
 
-The entire billing process within Splynx is based on transactions. Transactions are the key points in billing and they are always added when there is a change in the customer’s flow or balance. The following actions create transactions:
+The entire billing process within Splynx is based on transactions. Transactions are the key points in billing and they are always added when there is a change in the customer’s billing flow or balance. The following actions create transactions:
 
 1. **Each invoice period Splynx charges customers automatically**. The administrator can set up the invoice date as the 1st day of the month, and then the customer will be charged for the calendar month.
 Splynx has the ability to charge each customer on a different date. For example, one customer is charged on the 15th day of the month and another customer is charged on the 20th. This action creates an `+ Debit` transaction.

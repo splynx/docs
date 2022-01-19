@@ -63,7 +63,34 @@ Then, you need to set your **Username**, **Business ID** and **Password** in `In
 * **Customers identifier** - select what to use as identifier of customer on IntegraPay service side;
 * **Sending email with terms** - enable/disable the email sending with terms and conditions of the service to customers;
 * **Subject of email with terms** - subject of the email with terms and conditions of the service;
-* **Message of email with terms** - message of the email with terms and conditions of the service.
+* **Message of email with terms** - message of the email with terms and conditions of the service;
+* **Top-up for admins** - enable/disable the form to refill customer account balance from their billing configuration page (see the example below).
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Example</b></summary>
+<div markdown="1">
+
+![(image)](top-up_1.png)
+
+If the payment credentials are not added, the administrator can add it from this form. Pay attention, only one payment method can be used.
+
+![(image)](top-up_2.png)
+
+If the payment credentials are added by customer, e.g. credit card but `Top-up for admins` option is disabled on add-on configuration page, the administrator will see the next message
+
+![(image)](top-up_3.png)
+
+If the option `Top-up for admins` is enabled on add-on configuration page, the administrator can top up the customer's balance, the saved payment method will be used.
+
+![(image)](top-up_4.png)
+
+![(image)](top-up_5.png)
+
+</div>
+</details>
+
+
+<br>
 
 
 **IntegraPay API settings:**
@@ -86,15 +113,17 @@ Navigate to `Finance → IntegraPay payment credentials` and type the required c
 
 Once the configuration has been completed, customers can pay their invoices on [Portal](customer_portal/customer_portal.md),
 
-using the *IntegraPay* system in `Finance → Invoices`. Using the *IntegraPay* add-on the `Service Fee` value cannot be set, as a result, will be shown only `Total to pay` amount:
+using the *IntegraPay* entry point in `Finance → Invoices`:
 
 ![(image)](6.png)
 
 ![(image)](6.1.png)
 
+**IMPORTANT:** the `Service Fee` value cannot be set on add-on config page, as a result, will be shown only `Total to pay` amount.
+
 ![(image)](6.2.png)
 
-or pay directly on Portal Dashboard:
+or pay directly on Portal Dashboard (the related entry points should be enabled):
 
 ![(image)](pay_from_dashboard.png)
 

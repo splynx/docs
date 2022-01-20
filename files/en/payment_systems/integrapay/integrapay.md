@@ -64,27 +64,31 @@ Then, you need to set your **Username**, **Business ID** and **Password** in `In
 * **Sending email with terms** - enable/disable the email sending with terms and conditions of the service to customers;
 * **Subject of email with terms** - subject of the email with terms and conditions of the service;
 * **Message of email with terms** - message of the email with terms and conditions of the service;
-* **Top-up for admins** - enable/disable the form to refill customer account balance from their billing configuration page (see the example below).
+* **Top-up for admins** - enable/disable the form to refill customer account balance on their billing configuration page (**only for administrators** in Splynx, see the example below).
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example</b></summary>
 <div markdown="1">
 
+Navigate to customer billing configuration page (Billing/Billing overview) and in **Payment accounts** section click on **Refill balance** icon near *Integrapay* item.
+
 ![(image)](top-up_1.png)
 
-If the payment credentials are not added, the administrator can add it from this form. Pay attention, only one payment method can be used.
+If the payment credentials are **not** added by the customer, the administrator can add them from this form. Pay attention, **only one payment method can be used**.
 
 ![(image)](top-up_2.png)
 
-If the payment credentials are added by customer, e.g. credit card but `Top-up for admins` option is disabled on add-on configuration page, the administrator will see the next message
+If the payment credentials are added by customer, e.g. credit card but `Top-up for admins` option is **disabled** on add-on configuration page, the administrator will see the next message
 
 ![(image)](top-up_3.png)
 
-If the option `Top-up for admins` is enabled on add-on configuration page, the administrator can top up the customer's balance, the saved payment method will be used.
+If the option `Top-up for admins` is **enabled** on add-on configuration page, the administrator can top up the customer's balance, the saved payment method will be used.
 
 ![(image)](top-up_4.png)
 
 ![(image)](top-up_5.png)
+
+Moreover, when the credit card or bank account is added by customer as a payment method, the administrator can remove them using the top-up form on the customer's billing configuration page.
 
 </div>
 </details>
@@ -97,13 +101,21 @@ If the option `Top-up for admins` is enabled on add-on configuration page, the a
 
 ![(image)](5.1.png)
 
-The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx_addon_integrapay` module item in *Actions* column, click on the <icon class="image-icon">![](entry_point.png)</icon> (*Edit entry points*) icon. More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
+------------
+
+The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx_addon_integrapay` module item in *Actions* column, click on the <icon class="image-icon">![](entry_point.png)</icon> (*Edit entry points*) icon.
+
+![(image)](entry_points.png)
+
+More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
 
 ### Invoice payment
 
-Before making any payment it's required to set up the bank account or the credit card, depends on what option customers would like to use to pay.
+Before making any payment **it's required to add the bank account or the credit card**, depends on what option customers would like to use to pay.
 
-Navigate to `Finance → IntegraPay payment credentials` and type the required credentials.
+Also, **it's necessary to enable the related entry points** for *IntegraPay* add-on in `Config → Integrations → Modules list`.
+
+After that a customer can login on [Portal](customer_portal/customer_portal.md), navigate to `Finance → IntegraPay payment credentials` and type the required credentials
 
 ![(image)](8.png)
 
@@ -113,7 +125,7 @@ Navigate to `Finance → IntegraPay payment credentials` and type the required c
 
 Once the configuration has been completed, customers can pay their invoices on [Portal](customer_portal/customer_portal.md),
 
-using the *IntegraPay* entry point in `Finance → Invoices`:
+using the *IntegraPay* icon (the related entry point should be enabled) in `Finance → Invoices`:
 
 ![(image)](6.png)
 
@@ -129,17 +141,17 @@ or pay directly on Portal Dashboard (the related entry points should be enabled)
 
 ![(image)](6.3.png)
 
-If everything goes well, you will see the status of the invoice marked as `Paid` (on the customer and admin portal).
+If everything goes well, a customer will see the status of the invoice marked as `Paid`.
 
 ![(image)](6.4.png)
 
-Customers can also refill their balances using **Add money via Integrapay** menu on Portal Dashboard.
+Customers can also refill their balances using **Add money via Integrapay** menu on Portal Dashboard (`integrapay_add_money_on_dashboard` entry point should be enabled, it will work only for customers in Splynx).
 
 ![(image)](10.png)
 
 ![(image)](10.1.png)
 
-Additionally, you can charge all customers using one button, navigate to `Finance → Invoices`, set the period and click on **Charge** button as depicted below:
+Additionally, an administrator can charge all customers using one button, navigate to `Finance → Invoices`, set the period and click on **Charge** button as depicted below:
 
 ![(image)](11.png)
 

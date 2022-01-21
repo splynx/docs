@@ -23,3 +23,4 @@ In this section, we can view, install or delete useful add-ons for integration w
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
 * [Xero accounting](addons_modules/xero/xero.md)
+* [AADE MyData (Greece)](addons_modules/aade/aade.md)

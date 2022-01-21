@@ -146,6 +146,26 @@ We can also customize each of the table related to all types of finance document
 
 ------------
 
+## Transactions
+
+Transactions are divided into 2 types: `+Debit` and `-Credit` transactions.
+
+`+Debit` - transaction added to customers account with amounts to be paid. (decreases customers account balance);
+
+`-Credit` - transaction added to customers account after making payments. (increases customers account balance).
+
+![image](transaction1.png)
+
+The transaction created with the enabled `Include transaction in next recurring invoice` option is called - **Future item**:
+
+![image](transaction2.png)
+
+![image](transaction3.png)
+
+For more information, see [Transactions](finance/transactions/transactions.md) guide.
+
+------------
+
 ## Billing config
 
 Billing config displays 6 main sections:
@@ -175,7 +195,8 @@ In this section you can set up the billing of the **selected customer**.
 * **Billing day** - when the customer will be charged and invoices will be generated (default value is `1`st day of the month. The available values are from `1` to `28`);
 * **Payment due (days after billing day)** - when the customer needs to make payments before being blocked. **Even though the customer will have a blocked status, their services will still be accounted** (default value is `15` days after `billing day`. The available values are from `1` to `28`). From Splynx v4.0, the current option cannot be disabled in select menu, that solved the problem when the invoices with `overdue` status could be created from scratch <!-- SPL-8581 -->;
 * **Blocking period (days after payment due)** - allows to extend the period when customer will be blocked (by default the value is `0` days. The available values are `Do not block` and from `0` to `99` days). The option `Do not block` allows to disable customer blocking after `Payment due` date, if the option is enabled, the customer deactivation won't work as well;
-* **Next block** - the indicator for customer's profile with recurring billing type that shows the date when customer will be blocked. Click on <icon class="image-icon">![image](edit_icon.png)</icon> (Edit) button to change the next block date. In case, the options `Block customers on weekends / on holidays` in `Config → Finance → Automation` **are not used** and the date of blocking coincides with the weekends or holidays (**Holidays list** in `Config → Main → Localization`), the date of block **will be moved to the next available workday in your area**.
+* **Next block** - the indicator for customer's profile with recurring billing type that shows the date when customer will be blocked. Click on <icon class="image-icon">![image](edit_icon.png)</icon> (Edit) button to change the next block date. To be precise, it implies that the date of the last charge (from which the billing due is calculated) will be changed. Pay attention that the blocking date will be changed only once for the current billing period based on the unpaid recurring invoice.
+In case, the options `Block customers on weekends / on holidays` in `Config → Finance → Automation` **are not used** and the date of blocking coincides with the weekends or holidays (**Holidays list** in `Config → Main → Localization`), the date of block **will be moved to the next available workday in your area**.
 If the parameter `Enable processing of Billing Due` in `Config → Finance → Automation` is disabled, the status will be shown as `Disabled in config`.
 The status `Already blocked` means that customer has been blocked, the status `In the next billing cycle` means that the customer's balance exceeds the minimum required value;
 * **Deactivation period (days after blocking) (Grace period)** - when the customer's services will be marked as inactive, client no longer uses services and the system no longer accounts for it (by default the value is `10`. The available values are `Do not block` and from `1` to `99` days after `Payment due`);
@@ -294,6 +315,8 @@ By default payment calendar generating is disabled. To enable it you need to act
 ![Payment calendar](payment_calendar1.png)
 
 ![Enable payment calendar](enable_payment_calendar.png)
+
+**IMPORTANT:** The calendar shows the dates of *billing*, *blocking* and *deactivation* of the customer, the calculation is based on the values set in `Billing day`, `Payment due`, `Deactivation period` fields, the changes made in field **Next block** **will be ignored**.
 
 **Cancel last recurring invoice**
 

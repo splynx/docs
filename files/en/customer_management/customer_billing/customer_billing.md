@@ -146,6 +146,26 @@ We can also customize each of the table related to all types of finance document
 
 ------------
 
+## Transactions
+
+Transactions are divided into 2 types: `+Debit` and `-Credit` transactions.
+
+`+Debit` - transaction added to customers account with amounts to be paid. (decreases customers account balance);
+
+`-Credit` - transaction added to customers account after making payments. (increases customers account balance).
+
+![image](transaction1.png)
+
+The transaction created with the enabled `Include transaction in next recurring invoice` option is called - **Future item**:
+
+![image](transaction2.png)
+
+![image](transaction3.png)
+
+For more information, see [Transactions](finance/transactions/transactions.md) guide.
+
+------------
+
 ## Billing config
 
 Billing config displays 6 main sections:

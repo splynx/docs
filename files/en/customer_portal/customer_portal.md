@@ -1,69 +1,124 @@
 Customer Portal
 ==========
 
-The customer portal provides each customer private access to their accounts containing information on their services and it's statistic, and financial aspects of provided services. Customers can also check their profile, latest news and updates, important documents including financial documents, all messages received or tickets submitted for support in the customer portal.
+The customer portal provides each customer private access to their accounts containing information on their services, it's statistic and other financial aspects of provided services. The customers can also check their profile information, latest news and updates, important documents including financial documents and contracts, all messages received or tickets submitted for support team on the portal.
 
-The navigation pane in the customer portal can display the following Modules:
+The navigation pane on the customer portal can display the following modules:
 
-* **Dashboard** -  displays general information about the customers current balance, unpaid invoices or proforma invoices, new messages, new tickets and latest news.
+
+#### Dashboard
+
+It displays general information about the customers account balance, unpaid (proforma) invoices, new messages, new tickets and latest news. If some of the payment add-ons is installed, its widgets will be displayed (only if the entry points are enabled) to pay the specific (proforma) invoice (-s) or top-up the customer account balance.
+
 ![Dashboard](dashboard.png)
 
 
-* **Statistics** - displays statistics of the services the customer is subscribe to and using. In the top-right corner of the screen, customers can choose which service to be displayed in the statistics and specify the period of time to display statistics for.
+#### Statistics
+
+It displays statistics of the services the customer has subscribed to and uses. In the top-right corner of the screen, customers can choose which service will be displayed in the statistics and specify the period of time to display statistics for.
 
 ![Statistics](statistics.png)
+
 ![Statistics_voice](voice_statistics.png)
 
-* **Services** - displays all the customer's services such as Internet, Voice or Custom services.
+
+#### Services
+
+It displays all the customer's services such as Internet, Voice, Recurring or Bundle services.
 
 ![Services](services.png)
 
+The **Hardware** section shows an information about the customer router configured via [ACS](networking/tr069_acs/tr069_acs.md) in Splynx. Using the form a customer can reboot a device, change **SSID** name and **password** to Wi-Fi network:
 
-* **Finance** - displays financial information such as Transactions, Proforma Invoices, Invoices and Payments. Customer can view or download invoices and payments by clicking on the *View* icon <icon class="image-icon">![ViewIcon](view_icon.png)</icon> or the *Download* icon <icon class="image-icon">![DownloadIcon](download_icon.png)</icon> in Operations column of the relevant tables.
-![Payments](payments.png)
-
-
-* **Messages** - displayes all messages that has been sent to the customer via the Customer portal.
-By clicking on the *View* icon <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> in the Actions column, customers can read their messages.
-![Messages](messages.png)
+![Services](hardware.png)
 
 
-* **News** - displays latest news and updates for the customer.
+#### Finance
+
+It displays financial information such as **Transactions**, **(Proforma) Invoices**, **Payments** and **Statements**. Also, the section includes the **form to add/remove the credentials (credit card or bank account)** to the integrated payment services that are provided by installed add-ons in Splynx.
+A customer can pay the unpaid invoice by some payment add-on, e.g. [Payment express](payment_systems/payment_express/payment_express.md) or download as PDF the necessary paid invoice or payment receipt by clicking on <icon class="image-icon">![DownloadIcon](download_icon.png)</icon> icon in *Actions* column of the relevant table.
+
+![Finance](finance_transactions.png)
+
+A customer can click on <icon class="image-icon">![image](export_to.png)</icon> (Export to) icon to print/copy any table date, e.g. the transactions list or export it to Excel, CSV, PDF file.
+
+![Finance](finance_invoices.png)
+
+![Finance](payments_list.png)
+
+![Finance](payment_credentials.png)
+
+Also, a customer can view or download their account [statements](customer_management/customer_billing/customer_billing.md) by invoices/payments or transactions types:
+
+![Finance](statements.png)
+
+
+#### Messages
+
+It displays all messages that has been sent to the customer, e.g. via [Mass sending](support_messages/email_messages/email_messages.md).
+
+Click on the subject name to read the message:
+
+![Messages](messages1.png)
+
+![Messages](messages2.png)
+
+
+#### News
+
+It displays the latest news and updates for the customer. This information will be displayed on *Dashboard* as well.
+
 ![News](news.png)
 
 
-* **Tickets** - displays all tickets submitted by and for the customer, for technical support. By clicking on the *View* icon <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> in the Actions column, customers can read their ticket.
+#### Tickets
+
+All tickets submitted by the customer to the technical support and the support team's responses are displayed here. Click on <icon class="image-icon">![ViewIcon1](view_icon.png)</icon> (View) to read the ticket.
+
 ![Tickets](tickets.png)
-Customers can also create and submit a new ticket by clicking on the Create ticket icon at the top-right corner of the page. The "Create ticket" window will appear, where customers can type the Subject of the ticket, choose a Priority, and type a message for their query, as well as upload any files if necessary.
+
+A customer can also **create and submit a new ticket** by clicking on the **Create ticket** button at the top-right corner of the page. In new appeared window, a customer can type a **Subject** of the ticket, choose a **Priority** and choose a **Type** of a ticket, as well as attach any files if necessary.
+
 ![CreateTicket](create_ticket.png)
 
 
-* **Documents** - contains any documents which can be important for a customer, such as Agreements, Additional Agreements, manually created Invoices, Certificates etc. Customers can view and download these documents from here by clicking on the *Download* icon <icon class="image-icon">![DownloadIcon](download_icon.png)</icon> in the Actions column of the table.
-![Documens](documents.png)
+#### Documents
+
+It contains any documents which can be important to a customer, such as technical manuals, agreements, manually created invoices, contracts to sign etc. A customer can **view** and **download** these documents, as well as, **sign the contract** by clicking on the related icon in *Actions* column of the table.
+
+![Documents](documents1.png)
+
+![Documents](documents2.png)
+
+For more information, see [Customer documents](customer_management/customer_documents/customer_documents.md).
 
 
-* **Profile** - displays the customer's main contact and access information.  If fields are marked in white, customers can change information provided in those fields, if they are dimmed, customers can only view that information.
+#### Profile
+
+It displays a customer's main contact and access information. If the fields are marked in white, customers can modify the information presented in these fields, if they are dimmed, customers can only view this information.
+
+In addition, in this section, a customer can change their password to log in to the Portal.
+
 ![Profile](profile.png)
 
-* **About** - Splynx contact information
-* **Logout** - Logout from the customer portal
 
-The **customer portal can be configured** according your preferences and your company needs. To configure the Customer portal navigate to `Config → Main → Portal`. The main sections that are configurable here will be:
+#### About
 
-1. Main
-2. Menu
-3. Dashboard
-4. Profile
-5. Statistics
-6. Services
-7. TOP-UP settings
-8. Manual TOP-UP
-9. Finance
-10. Logout timeout
-11. Hotspot
-12. Additional attributes in profile.
+It displays the contact information of your company. The information can be added/edited in [Company information](configuration/system/company_information/company_information.md) section.
+
+![About](about.png)
 
 
-For more information about configuring the Customer Portal please read our [Customer Portal](configuration/main_configuration/portal/portal.md) tutorial page.
+#### Logout
+
+The option is used to logout from the customer *Portal*.
+
+------------
+
+**Portal configuration**
+
+The **customer Portal can be configured** according your preferences and your company needs in `Config → Main → Portal`.
+
+Suggested read: [Customer Portal](configuration/main_configuration/portal/portal.md) tutorial page.
 
 Also, you might be interested in [How to change plan from customer portal](customer_portal/change_plan_from_customer_portal/change_plan_from_customer_portal.md) guide.

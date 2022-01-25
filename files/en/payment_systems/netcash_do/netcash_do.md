@@ -3,7 +3,7 @@ Netcash Debit Order (formerly SagePay direct debit)
 
 **Netcash Debit Order is a Splynx add-on (previously SagePay direct debit), used to generate debit orders and is processed via** https://netcash.co.za/.
 
-<icon class="image-icon">![image](information.png)</icon> **IMPORTANT:** If you have difficulties with a Netcash debit charge in Splynx, please follow the how-to instructions [below](payment_systems/netcash_do/netcash_do.md#how-do-i-check-if-my-customers-have-been-successfully-charged).
+<icon class="image-icon">![image](information.png)</icon> **IMPORTANT:** If you have difficulties with a Netcash debit charge in Splynx, please follow the how-to instructions in chapter *How do I check if my customers have been successfully charged* below.
 
 To install Netcash Debit Orders, navigate to `Config → Integrations → Add-ons`:
 

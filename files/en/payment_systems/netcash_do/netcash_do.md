@@ -11,7 +11,7 @@ To install Netcash Debit Orders, navigate to `Config → Integrations → Add-on
 
 Locate the Netcash addon and click on the install button as on the screenshot below:
 
-![install](install.png)
+![install](install.png)it
 
 Alternatively, the addon can be installed using the following commands via a terminal on your server:
 

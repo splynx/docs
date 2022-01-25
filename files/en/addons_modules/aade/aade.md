@@ -79,7 +79,7 @@ These settings are individual and may differ for every company. Some types of in
 
 All types of invoices require a customer's VAT number, except : **Retail Sales Receipt**, **Service Rendered Receipt**, **Simplified Invoice**, **Retail Sales Credit Note**.
 
-To find out how these categories and types should be configured, you can download a file that contains sheets for each invoice type: [Download](adde.xls).
+To find out how these categories and types should be configured, you can download a file that contains sheets for each invoice type: [Download](aade_file.zip).
 
  <icon class="image-icon">![image](warning.png)</icon> **IMPORTANT** - the invoice which contains positive (100) and negative (-100) items can't be synced to AADE. These items should be separated into different invoices.
 

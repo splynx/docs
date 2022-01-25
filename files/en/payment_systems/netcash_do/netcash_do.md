@@ -1,7 +1,9 @@
 Netcash Debit Order (formerly SagePay direct debit)
 ====================
 
-**Netcash Debit Order is a Splynx add-on (previously SagePay direct debit), used to generate debit orders and is processed via** https://netcash.co.za/ .
+**Netcash Debit Order is a Splynx add-on (previously SagePay direct debit), used to generate debit orders and is processed via** https://netcash.co.za/.
+
+<icon class="image-icon">![image](information.png)</icon> **IMPORTANT:** If you have difficulties with a Netcash debit charge in Splynx, please follow the how-to instructions below.
 
 To install Netcash Debit Orders, navigate to `Config → Integrations → Add-ons`:
 
@@ -152,7 +154,36 @@ The charge history can be viewed under the **"Charge history"** tab:
 
 File records with charged invoices can be downloaded or deleted in this section.
 
-**NOTE:** If a customer doesn't have the saved payment credentials for Netcash service in Splynx, the customer id will be recorded in the charge log to easily identify their profile.
+
+The process of invoice **charging can be automated**. To achieve this, an admin should add an **"Auto charge filter"**:
+
+![auto charge](add_auto_charge.png)
+
+Be vigilant when creating this filter as it will process the charge without any human interaction/intervention.
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>How to re-charge the invoices</b></summary>
+<div markdown="1">
+
+The debit order batch should be deleted in Netcash as well as the relevant [bank statement](finance/bank_statement_processing/bank_statement_processing.md) in Splynx (be very vigilant when deleting bank statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged
+
+</div>
+</details>
+
+<br>
+
+------------
+
+##### How do I check if my customers have been successfully charged?
+
+1. After the charge was made, go to `Finance → Invoices`, press the **Charge** button and click on the **Charge history** tab. Use the **Search** field or click on the column name (e.g `Id`) to sort items and find the latest `netcash_do` item you need.
+Check its charge status, in case of `Error` status, please download the charge history log by clicking on <icon class="image-icon">![image](download_icon.png)</icon> (Download) icon.
+
+![image](check_charge1.png)
+
+Open and check the log file, you can easily determine the cause of the error.
+
+**NOTE:** **If a customer doesn't have the saved payment credentials for Netcash service in Splynx, the customer id will be recorded in the charge log to easily identify their profile**.
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>The invoice charge log example:</b></summary>
@@ -186,20 +217,13 @@ Customer payment account is empty! - Customer id : 7322
 
 <br>
 
-The process of invoice **charging can be automated**. To achieve this, an admin should add an **"Auto charge filter"**:
+2. If the latest `netcash_do` item has the charge status as `Ready` on the tab **Charge history** in Splynx, but you still cannot validate the payments in Netcash account, please double check your email box registered with Netcash service.
 
-![auto charge](add_auto_charge.png)
+![image](check_charge2.png)
 
-Be vigilant when creating this filter as it will process the charge without any human interaction/intervention.
+If there are errors in the Batch file - NetCash sends an email with errors to this email box.
 
-<details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>How to re-charge the invoices</b></summary>
-<div markdown="1">
-
-The debit order batch should be deleted in Netcash as well as the relevant [bank statement](finance/bank_statement_processing/bank_statement_processing.md) in Splynx (be very vigilant when deleting bank statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged
-
-</div>
-</details>
+------------
 
 ### Customer portal widgets (entry points)
 

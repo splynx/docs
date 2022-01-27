@@ -73,6 +73,8 @@ And you should be redirected to the *Genie ACS page*, if you prompted for login/
 
 After successful login you will see a window as in the screenshot below, you should click on "ABRACADABRA" button.
 
+**IMPORTANT:** **All check-boxes should be selected**.
+
 ![abracadabra](abracadabra.png)
 
 **The default username and password for GenieACS are**: `admin` / `admin`
@@ -80,4 +82,3 @@ After successful login you will see a window as in the screenshot below, you sho
 Once this done, you will see **GenieACS dashboard**:
 
 ![genie](genie.png)
-

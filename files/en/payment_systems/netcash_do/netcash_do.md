@@ -3,7 +3,7 @@ Netcash Debit Order (formerly SagePay direct debit)
 
 **Netcash Debit Order is a Splynx add-on (previously SagePay direct debit), used to generate debit orders and is processed via** https://netcash.co.za/.
 
-<icon class="image-icon">![image](information.png)</icon> **IMPORTANT:** If you have difficulties with a Netcash debit charge in Splynx, please follow the how-to instructions in chapter *How do I check if my customers have been successfully charged* below.
+<icon class="image-icon">![image](information.png)</icon> **IMPORTANT:** If you have difficulties with a Netcash debit charge in Splynx, please follow the how-to instructions in chapter *'How do I check if my customers have been successfully charged'* [below](payment_systems/netcash_do/netcash_do.md#check_charge).
 
 To install Netcash Debit Orders, navigate to `Config → Integrations → Add-ons`:
 
@@ -174,7 +174,9 @@ The debit order batch should be deleted in Netcash as well as the relevant [bank
 
 ------------
 
-#### How do I check if my customers have been successfully charged?
+<a id="check_charge"></a>
+<br>
+##### How do I check if my customers have been successfully charged?
 
 1. After the charge was made, go to `Finance → Invoices`, press the **Charge** button and click on the **Charge history** tab. Use the **Search** field or click on the column name (e.g `Id`) to sort items and find the latest `netcash_do` item you need.
 Check its charge status, in case of `Error` status, please download the charge history log by clicking on <icon class="image-icon">![image](download_icon.png)</icon> (Download) icon.

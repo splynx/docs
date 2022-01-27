@@ -29,29 +29,30 @@ Click on the **OK, confirm** button to begin the installation process:
 
 ### Paynow account
 
-To use the Splynx add-on, it is necessary to have a **Paynow 3rd party shopping cart**.
+To use the add-on in Splynx, it is necessary to have a **Paynow 3rd party shopping cart**.
 
 To create this cart the following steps need to be taken:
 
 1. Register your [Paynow account](https://www.paynow.co.zw);
 2. Log in;
-3. In the top menu, select `Receive Payments → Other Ways To Get Paid`  
+3. In the top menu, select `Receive Payments → Other Ways To Get Paid`;  
 
 ![(image)](Menu_060.png)
 
-4. Under **3rd Party Shopping Carts & Business Systems Integration** press the button **Create/Manage Shopping Carts**  
+4. Under **3rd Party Shopping Carts & Business Systems Integration** press the button **Create/Manage Shopping Carts**;  
 
 ![(image)](Selection_061.png)
 
-5. **Under Advanced Integration** press the button **Create Advanced Integration**  
+5. **Under Advanced Integration** press the button **Create Advanced Integration**;  
 
 ![(image)](Selection_062.png)
 
-6. Fill out the form and press **Save**
+6. Fill out the form and press the **Save** button;
 
 ![(image)](Selection_063.png)
 
-7. After you have pressed **Save**, the section **Integration Key** will appear. Copy the **Intergration ID** and paste it into Splynx. Press the **Email Key To** button. The email letter will be sent to the **Notification Email** address. Copy the **Integration Key** and paste it into Splynx.
+7. After pressing the **Save** button, the section **Integration Key** will appear. Copy the **Intergration ID** and paste the value into the related field on the add-on configuration page (`Config → Integrations → Modules list`, *Paynow authorization setting* section).
+Press the **Email Key To** button. The email letter will be sent to the **Notification Email** address. Copy the **Integration Key** value from the received letter and paste it into the related field on the add-on configuration page.
 
 ![(image)](Selection_064.png)
 
@@ -68,9 +69,13 @@ Locate or search for the `splynx_paynow_addon` add-on and click on the
 
 ![(image)](paynow_edit-module.png)
 
+Double check if the **Entry points status for portal** option is set to `Enabled`. Also check, if your Splynx domain address is correct in the **API domain** and **Splynx url** fields.
+
 ![(image)](paynow_config.png)
 
-The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx_paynow_addon` module item in *Actions* column, click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon. More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
+The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx_paynow_addon` module item in *Actions* column, click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon.
+
+More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
 
 By using **Entry points**, you can enable add-on features which can allow customers to pay for (proforma) invoices, pay directly from *Portal Dashboard* or add money to the balance from *Dashboard*.
 
@@ -78,35 +83,37 @@ By using **Entry points**, you can enable add-on features which can allow custom
 
 ### Invoice payment
 
-Once the configuration is completed, customers will see a new button and will be able to pay for their invoices via the *Paynow* system:
+Once the configuration is completed, customer will see a new button on the [Portal](customer_portal/customer_portal.md) and will be able to pay for their invoices via the *Paynow* system:
 
 ![(image)](10.png)
 
+A customer should click on the  *Paynow* form:
+
 ![(image)](11.png)
 
-Customer will be redirected to *Paynow* payment page, where they have to approve their payment:
+After that they will be redirected to *Paynow* payment page, where they have to approve the current payment:
 
 ![(image)](12.png)
 
 ![(image)](13.png)
 
-If everything goes well, you will see the status of invoice marked as `Paid` (on the customer and admin portal).
+If everything goes well, you will see the status of invoice marked as `Paid` (on the customer and admin portal). Click `Back to portal` link to go back on the customer *Portal*.
 
-On the customer *Portal Dashboard*, customers can also see the list of non-paid invoices in *Paynow* widget (entry point) and the same-name buttons to pay such invoices. Moreover, using the *Add money by Paynow* widget on the *Dashboard*
+On the customer *Portal Dashboard*, customers can also see the list of non-paid invoices in *Paynow* widget (provided by entry point) and the same-name buttons to pay such invoices. Moreover, using the *Add money by Paynow* widget on the *Dashboard*
 
 ![(image)](14.png)
 
-or the direct link *https://<splynx_domain_address>/paynow* the customer can refill the account balance.
+or the direct link ``` https://<splynx_domain_address>/paynow ``` the customer can refill the account balance.  
 
 ![(image)](15.png)
 
 ### Add-on log files
 
-*Paynow* add-on logs can be found in `Administration → Logs`:
+The *Paynow* add-on logs can be found in `Administration → Logs`:
 
 ![(image)](paynow_logs.png)
 
-In *Paynow Logs* the full payment statistic records can be viewed:
+In the *Paynow Logs* the full payment statistic records can be viewed:
 
 ![(image)](paynow_logs1.png)
 

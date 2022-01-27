@@ -1,9 +1,9 @@
 Tickets Overview
 =======
 
-The Splynx ticketing system has been designed to empower technicians and satisfy customers by means of integration and automation. We welcome you to your in-house support platform.
+The ticketing system in Splynx was designed to empower technicians and meet customers needs through integration and automation. It provides all the functionalities you would expect from a support platform for your support team and customers. Through the following tutorial, we will learn how to use **Tickets** and get to know its features.
 
-To help understand both perspectives, let's separate our ticketing system into two sections or views, one being an administrative perspective and the other, a customer experience.
+To help understand both perspectives, let's separate our ticketing system into two sections or views: one is the administrative perspective and the other is the customer experience.
 
 **ADMINISTRATORS**
 
@@ -12,69 +12,100 @@ To help understand both perspectives, let's separate our ticketing system into t
 ![Dashboard](tickets_dashboard.png)
 
 The ticketing dashboard shows the following sections:
-* Status of all current/open tickets on the system.
-* General and per-agent statistics of all your support agents
-* Live log of recent activities of tickets.
-* Quick reference to the tickets table of the administrator currently logged into the system
 
-Administrators are able to create the tickets in 3 ways:
-1. From `Tickets > Dashboard` and clicking **Create** in the top right corner of the page.
+* Number of all tickets in the system with the statuses *New*/*Work in progress*/*Resolved* and *Waiting on agent*;
+* General and per-agent (top 10) statistics of tickets with date range selection;
+* Live log of the recent activities in tickets;
+* Quick reference to the tickets that were assigned to the administrator currently logged into the system;
+* Statistics of assigned tickets between administrators in the system.
+
+Administrators can create the tickets in 3 ways:
+
+1. In `Tickets → Dashboard`, click on the **Create ticket** button at the top-right corner of the page.
 
 ![Create_ticket](admin_create_1.png)
 
-2. Directly from a customer's profile by clicking on the **Support** button and selecting **Create** from the drop-down menu.
+2. Directly from a customer's / lead's profile by clicking on the **Tickets** button and selecting the option **Create** from the drop-down menu.
 
 ![Create_ticket](admin_create_2.png)
 
-3. Within the list of new & open tickets `Ticket > List new & open`, there is a button located at the top right of the page.
+3. Within the list of **new & open** tickets `Ticket → List new & open`, there is the **Create ticket** button located at the top right of the page.
 
 ![Create ticket](tickets_new&opened.png)
 
-After clicking on the "create ticket" button anywhere in the system, you will be redirected to the *'Create ticket'* window where the following fields have to be completed together with a body for the ticket:
+After pressing the button in any of the above ways, you will be redirected to a new window, where you need to fill out the following fields along with the message area:
 
 ![New ticket](createnew_ticket.png)
 
-* **Customer** - which customer to open the ticket for
-* **Assign to** - the administrator the ticket will be assigned to
-* **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket
-* **Priority** - the urgency of the ticket which can be set to low, medium, high or urgent
-* **Status** - the state of the ticket currently which can be set to New, Work in Progress, Waiting for Customer, Waiting on agent, Resolved
-* **Group** - the ticket can be filtered to a specific group of admins depending on the nature of the ticket
-* **Type** - the reason for creating the ticket which can be set to Question, Problem, Incident, Feature request, Lead
-* **Message** - the body of the ticket can be typed here
-* **Attachments** - used to attach files to the ticket
+* **Customer** / **Lead** - for which client/lead to create a ticket;
+* **Assign to** - the administrator to whom the ticket will be assigned;
+* **Group** - the ticket can be filtered to a specific group of tickets depending on the context of issue. The new group (-s) can be created in `Config → Helpdesk → Miscellaneous ticket configuration` (*Ticket groups* section);
+* **Watchers** - administrator in Splynx who tracks the progress of a specific ticket but is not responsible for it. The added watcher will be informed of any changes in ticket activity through notification. The notification and its template can be configured in `Config → Helpdesk → Ticket notifications`;
+* **Cc Recipients** - CC recipients receive an exact copy of the ticket and any further `Reply All` responses in the thread. For example, you are sending a ticket to a lead with the network project and you want to send a copy of your email to your managers, so that they are kept in the loop. Pay attention, all recipients of the email will also see who has been CC’d;
+* **Priority** - the urgency of the ticket which can be set to `low`, `medium`, `high` or `urgent`;
+* **Status** - the current state of the ticket, which can be set to `New`, `Work in Progress`, `Resolved`, `Waiting on customer` or `Waiting on agent`. The ticket statuses can be configured in `Config → Helpdesk → Miscellaneous ticket configuration`;
+* **Type** - the reason for creating the ticket which can be set to `Question`, `Incident`, `Problem`, `Feature request` or `Lead`. The ticket types can be configured in `Config → Helpdesk → Miscellaneous ticket configuration`;
+* **Subject** -  a relevant subject of the ticket, usually referring to the reason for opening the ticket;
+* **Message** - the main text content of the ticket can be typed here;
+* **Attachments** - used to attach files to the ticket.
 
-It is possible to add a canned response to the message body to optimize the productivity of admins.
+The `Hidden` allows you to hide the ticket from the customer.
 
-In Splynx we have added the ability to configure canned responses to minimize typing and save on time to ultimately create efficiency. To populate the body of the ticket with a canned response, simply click on the arrow highlighted below and choose a response from your list of canned responses:
+------------
+
+To minimize the typing process and save time of your team in general, use the **Canned responses** when creating tickets in Splynx. A new canned response can be added by clicking the **Add response** button.
+
+**NOTE:** By default, a response added in this way will be associated with the `Personal` group.
+
+After a response is added, simply click on <icon class="image-icon">![image](response_icon.png)</icon> icon and choose your response to insert it into the ticket:
 
 ![Canned response](canned_response.png)
 
-New canned responses can be added by clicking **Add response** button
+For more information, see [Canned response](configuration/support/ticket_canned_responses/ticket_canned_responses.md) guide.
 
-![Canned response](canned_add_1.png)
+------------
 
-or in `Config > Ticket canned responses`.
+In the *Tickets* module you can create new additional fields according to your needs.
 
-![Canned response](canned_add_2.png)
+For more information, see [Additional fields](configuration/system/additional_fields/additional_fields.md) tutorial.
 
-The  *Hidden* <icon class="image-icon">![Hidden](./hidden.png)</icon> toggle allows you to hide tickets from a customer.
+To show / hide the build-in columns or change its order in the ticket list, click on <icon class="image-icon">![image](show_hide_columns_icon.png)</icon> icon at the top-right corner of the table
 
-You are also able to create [new fields](customer_management/custom_additional_fields/custom_additional_fields.md) in the tickets module. More information about **adding custom fields** is available here - [Additional fields](configuration/system/additional_fields/additional_fields.md). Remember, that in order to see the new field in the main table, you should enable it by clicking on the breadcrumbs <icon class="image-icon">![Add](add.png)</icon> icon below the table.
+![image](show_hide_columns.png)
 
-Once the ticket has been created, it will be visible in the `New and opened tickets` table. Here you can **filter tickets** by *Condition, Period, Customer/Lead ID, Group, Partner, Type or Type*. We've added the capability to search for specific text with the _Text search function_ or the customers full name in the _Find Filter_ field. You can also choose the list of new and opened tickets to view filtered by the administrator assigned or the status of the tickets.
+------------
+
+Once the ticket has been created, it will be visible in the `List new & open` table. Click on **Filter** button to sort tickets by *Condition*, *Period*, *Customer/Lead*, *Group*, *Partner*, *Type*, *Priority*. Also, it's possible to search for specific text with the help of **Text search** field in the filter sidebar. On the top bar, click on the **Quick access** menu to filter tickets by assigned administrator or click on **Status** to show tickets only in a certain status.
 
 ![New & Open](tickets_filter.png)
 
-Depending on the layout you have chosen to view new and opened tickets with the layout <icon class="image-icon">![layout](tickets_layout.png)</icon> icons, you are to reassign, change the status of, change the priority or the type of the ticket, directly from the tickets table.
+The list of tickets can be shown in two **layouts**: **table view** and **card view**. Use <icon class="image-icon">![image](change_layout.png)</icon> icon to change to your preferred layout.
 
-![Edit ticket](edit_ticket.png)
+Use the mass **Actions** menu for selected ticket (-s) to reassign, change the status / priority, type of the ticket etc. directly from the tickets table.
 
-The ticket working area is divided into 3 parts: *ticket properties, action buttons, and a messages area*.
+![image](mass_actions1.png)
+
+![image](mass_actions2.png)
+
+The ticket working area is divided into 3 parts:
+
+- ticket properties;
+- action buttons;
+- messages area.
 
 ![Working area](ticket_workarea.png)
 
-* In the properties we can reassign the ticket to the specific administrators, change status, prioritize the work, assign to a specific group and set the ticket type.  We also oversee the Customer's information like Name, Email, Phone number, and recent tickets.
+In the properties we can reassign the ticket to the specific administrator, change status, change the priority, assign to a specific group, set the ticket type.  We also oversee the Customer's information like Name, Email, Phone number, and recent tickets.
+
+
+
+
+
+
+
+
+
+
 
 ## Ticket properties section parameters:
 
@@ -118,7 +149,7 @@ Your customers can also create tickets in three ways:
 
 1. By sending a query to your incoming email (*support@yourdomain.com*), and the ticket will be created automatically on the system. Incoming mail configuration can be found [here](configuration/main_configuration/incoming_mail.md).
 
-2. By creating a ticket from Customers Portal in `Tickets > Create`
+2. By creating a ticket from Customers Portal in `Tickets → Create`
 
 ![Tickets portal](portal_ticket.png)
 
@@ -127,7 +158,7 @@ Your customers can also create tickets in three ways:
 * **Message** - the body of the ticket can be typed here
 * **Attachments** - used to attach files to the ticket
 
-Once the ticket is created it is possible to view or close it by using the following icons <icon class="image-icon">![Add](icons.png)</icon> within the tbale/list of new & opened tickets:
+Once the ticket is created it is possible to view or close it by using the following icons <icon class="image-icon"→![Add](icons.png)</icon→ within the tbale/list of new & opened tickets:
 
 ![Tickets portal](portal_list_of_tickets.png)
 
@@ -151,25 +182,25 @@ Above the table of new & opened tickets, we've added a quick filter to change th
 ![Tickets](topfilter_tickets.png)
 
 
-The main filter menu can be found on the right side of the page when the filter button  <icon class="image-icon">![filter](filter_icon.png)</icon> is clicked. This filter can be used to specify which tickets to view based on the selections in the fields provided.
+The main filter menu can be found on the right side of the page when the filter button  <icon class="image-icon"→![filter](filter_icon.png)</icon→ is clicked. This filter can be used to specify which tickets to view based on the selections in the fields provided.
 
 ![Tickets](mainfilter.png)
 
 **Find filter parameter descriptions**
 
-**Full name** - search for tickets by the customers full name<br>
-**Condition** - search in the list of open, closed or all tickets<br>
-**Period** - search for tickets within a specific time period<br>
-**Customer / Lead ID** - search for tickets via the Splynx customer ID or lead ID<br>
-**Group** - search for tickets in the list of tickets for the specific group of administrators<br>
-**Partner** -  search for tickets of a particular partner<br>
-**Type** - search for tickets of a specific type or reason for opening<br>
-**Priority** - -search for tickets marked with a specific urgency<br>
-**Text search** - search for tickets containing specified Text<br>
+**Full name** - search for tickets by the customers full name<br→
+**Condition** - search in the list of open, closed or all tickets<br→
+**Period** - search for tickets within a specific time period<br→
+**Customer / Lead ID** - search for tickets via the Splynx customer ID or lead ID<br→
+**Group** - search for tickets in the list of tickets for the specific group of administrators<br→
+**Partner** -  search for tickets of a particular partner<br→
+**Type** - search for tickets of a specific type or reason for opening<br→
+**Priority** - -search for tickets marked with a specific urgency<br→
+**Text search** - search for tickets containing specified Text<br→
 
 After selecting the desired data to display in the provided fields simply click _Apply_ to search for these tickets or _Clear filters_ to clear the filter fields and display all/assigned new & opened tickets.
 
-The layout of the new & opened tickets table can also be changed with two options <icon class="image-icon">![layout](tickets_layout.png)</icon>. The first formats the list into a _Table view_ and the second into a _Card view_.
+The layout of the new & opened tickets table can also be changed with two options <icon class="image-icon"→![layout](tickets_layout.png)</icon→. The first formats the list into a _Table view_ and the second into a _Card view_.
 
 ## Table View
 
@@ -184,7 +215,7 @@ Deciding which view to use is a matter of personal preference. Each view has its
 
 **Table view**
 
-Displays more details and has an "Actions" column limited to viewing the ticket, marking it as read or unread or closing the ticket. Please keep in mind that because this is a table, it can be customized to view more/less data like all tables in Splynx and the data can also be export with the use of the <icon class="image-icon">![layout](table_icons.png)</icon> icons.
+Displays more details and has an "Actions" column limited to viewing the ticket, marking it as read or unread or closing the ticket. Please keep in mind that because this is a table, it can be customized to view more/less data like all tables in Splynx and the data can also be export with the use of the <icon class="image-icon"→![layout](table_icons.png)</icon→ icons.
 
 **Card View**
 

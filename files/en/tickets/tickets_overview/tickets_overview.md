@@ -81,65 +81,93 @@ Once the ticket has been created, it will be visible in the `List new & open` ta
 
 The list of tickets can be shown in two **layouts**: **table view** and **card view**. Use <icon class="image-icon">![image](change_layout.png)</icon> icon to change to your preferred layout.
 
-Use the mass **Actions** menu for selected ticket (-s) to reassign, change the status / priority, type of the ticket etc. directly from the tickets table.
+Use the mass **Actions** menu for selected ticket (-s) to reassign, change the status / priority, type of the ticket etc. directly from the tickets table. The available options in the drop-down list depend on the section that is currently opened.
 
 ![image](mass_actions1.png)
 
 ![image](mass_actions2.png)
 
+![image](mass_actions3.png)
+
+![image](mass_actions4.png)
+
+In addition, we can manage each ticket in the table with the available actions in the column with the same name:
+
+![image](actions_new_open.png)
+
+![image](actions_closed.png)
+
+![image](actions_archive.png)
+
+------------
+
 The ticket working area is divided into 3 parts:
 
-- ticket properties;
-- action buttons;
-- messages area.
+1. ticket properties;
+2. action buttons;
+3. messages area.
 
 ![Working area](ticket_workarea.png)
 
-In the properties we can reassign the ticket to the specific administrator, change status, change the priority, assign to a specific group, set the ticket type.  We also oversee the Customer's information like Name, Email, Phone number, and recent tickets.
+
+**Ticket properties section parameters:**
+
+* **Note** - area for entering a note that is not visible to the customer. This note is only visible in the sidebar;
+* **Hide from customer** - toggle to hide/show the ticket from the customer;
+* **Customer/Lead** - change the customer/list for whom the ticket was opened;
+* **Assigned to** - reassign the ticket to a specific administrator;
+* **Group** - change the group of ticket with which administrators are associated;
+* **Watchers** - add watchers to view all ticket activity;
+* **Subject** - change the subject of the ticket;
+* **Priority** - change the urgency of the ticket;
+* **Status** - change the current state of the ticket;
+* **Type** - change the reason for the ticket;
+* **Add file** - attach file to the ticket.
+
+The **Update** button is used to save changes made in the sidebar of the ticket properties. Note that the button has an additional function that allows you to save changes and change the status of the ticket at the same time.
+
+**Ticket action buttons:**
+
+![image](action_buttons.png)
+
+* **Reply** - used to respond to a message or add a message to a conversation, this button opens the message area for entering or inserting content from canned responses;
+* **Add note** - add a note to the ticket thread conversation, such note won't be visible for a customer, only to ticket's watchers or other administrators with a permission to view a ticket;
+* **Jump to last message** - scroll down to the last message in the ticket thread conversation;
+**Actions** drop-down menu:
+  * **Show activities** - show all activities related to the current ticket, including automatic change of ticket status by the system;
+  * **Show all files** - show all attached files in the ticket;
+  * **Create task** - create a new task for support team, all pre-written messages, including notes, will be quoted in the description of the new task;
+  * **Merge ticket** - merge one ticket into another ticket, e.g. you received two support requests about the same issue from the same customer;
+  * **Close ticket** - close the ticket, in new pop-up window the option `Close without notification` can be enabled;
+  * **Move to archive** - change the status of the ticket to resolved and move it to the Archive.  
+
+To **share a ticket** thread conversation with an agent who doesn't have a Splynx account, e.g. from another department in you company, you can enable **Public URl** for the ticket. Open the necessary ticket, next to its title click on a small arrow sign, a small pop-up window should appear, click on the **Public URl** toggle to enable the option, the direct link to the current ticket will be copied to the clipboard.
+
+![image](public_url.png)
+
+In addition, for each text block (message) of the ticket there are additional actions:
+
+![image](additional_actions.png)
+
+* **Edit message** - each message in the thread of ticket can be edited by the administrator;
+* **Send message to email** - send a separate message from the ticket thread to the email, a message text will be quoted;
+* **Delete message** - remove separate message from the ticket;
+* **Split ticket** - opens the form to create a new ticket with the quoted response of the client in the message area.
 
 
+**Ticket message area**
 
+* **Forward** - this button opens the `Cc` and `Bcc` fields for forwarding the response as well as ticket content to another email address(s);
+* **Send** - send a response to the customer, an additional feature allows you to respond and change the status of the ticket at the same time;
+* **Upload** - used to attach file (-s) to the ticket.
 
+------------
 
+Once the issue reported in the ticket is resolved, click on the small arrow next to the **Update** button to open more options, click on **Update and close** item to close the current ticket, its status will be set to `Resolved` and the ticket will be moved to `Tickets → List of closed` section.
 
+![image](update_button.png)
 
-
-
-
-
-## Ticket properties section parameters:
-
-* **Customer/Lead** -  changes the customer this ticket has been open for
-* **Assigned to** - reassign the ticket to a specific administrator
-* **Subject** -  change the subject of the ticket
-* **Priority** - change the urgency of the ticket
-* **Status** - change the current state of the ticket
-* **Group** - change the group of administrators this ticket is available to
-* **Type** - change the reason for the tickets
-* _Show more options_ - this option will either hide or display additional fields of tickets
-
-* The action buttons allow us to add a note, reply or forward the answer, check all ticket activities and schedule the task for an engineer directly within the ticket.
-
-## Tickets actions section parameters:
-
-* **Reply** - used to respond to a message or add a message to the conversation, this button opens up the body area of the message for you to type or insert content from canned responses.
-* **Add note** - this button opens a typing area to add a note to the ticket that is not visible to the customers
-* **Forward** - this button opens the "Cc" and "Bcc" fields for forwarding the response as well as ticket content to another email address(s)
-* **Actions** - this is a drop-down list of functions namely:
-_Show Activities_ - to view all activities executed to/within the ticket
-_Show all files_ - provides a list of all attachments within the ticket
-_Create task_ -  integration to the scheduling module, this button allows you to create a task pertaining to requests made within the ticket
-_Merge ticket_ - allows the merging of the current ticket with another
-_Close ticket_ - marks ticket status as resolved and the ticket is moved into the list of closed tickets
-
-Below is a quick look at the task creation page after clicking the create task option
-
-![Schedule tech](schedule_task.png)
-
-
-Once a ticket has been resolved, you can change the status on *closed* and close the ticket or press the **Update and Close** option of the update button immediately after adding a response to the ticket. All closed tickets are shown in `Tickets → List of closed`.
-
-![List closed](closed_list.png)
+![image](resolved_ticket.png)
 
 ------
 
@@ -147,27 +175,45 @@ Once a ticket has been resolved, you can change the status on *closed* and close
 
 Your customers can also create tickets in three ways:
 
-1. By sending a query to your incoming email (*support@yourdomain.com*), and the ticket will be created automatically on the system. Incoming mail configuration can be found [here](configuration/main_configuration/incoming_mail.md).
+1. By sending a query to your **incoming email** (*support@yourdomain.com*), and the ticket will be created automatically in the system. Suggested read: [how to configure your Inboxes](configuration/main_configuration/incoming_mail.md).
 
-2. By creating a ticket from Customers Portal in `Tickets → Create`
+2. By creating a ticket on Customers [Portal](customer_portal/customer_portal.md) in `Tickets → Create ticket`
 
 ![Tickets portal](portal_ticket.png)
 
-* **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket
-* **Priority** - the urgency of the ticket which can be set to low, medium, high or urgent
-* **Message** - the body of the ticket can be typed here
-* **Attachments** - used to attach files to the ticket
+* **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket;
+* **Priority** - the urgency of the ticket which can be set to low, medium, high or urgent;
+* **Type** - the reason for creating the ticket which can be set to `Question`, `Incident`, `Problem`, `Feature request` or `Lead`.;
+* **Message** - the main text body of the ticket;
+* **Attachments** - used to attach files to the ticket.
 
-Once the ticket is created it is possible to view or close it by using the following icons <icon class="image-icon"→![Add](icons.png)</icon→ within the tbale/list of new & opened tickets:
+Once the ticket is created it is possible to **view** or **close** it by using the following icons <icon class="image-icon"→![Add](icons.png)</icon within the table/list of opened tickets:
 
 ![Tickets portal](portal_list_of_tickets.png)
 
-3. By creating a ticket from Splynx mobile self-service app.
+3. By creating a ticket from mobile app - SPLYNX - [Customer Application](apps/customer_app/customer_app.md).
 
 ![Tickets mobile app](app_ticket.jpg)
 
-There are a number of elements that can be automated within the ticketing module to improve efficiency and speed up engagement. These automation rules can be set up under `Config / Support / Ticket automation`
-More information about **tickets configuration** can be found here - [Support](configuration/support/support.md).
+------
+
+More information how to automate your work with tickets and its additional settings, you can find the the next tutorials:
+
+- [Ticket automation](configuration/support/ticket_automation/ticket_automation.md);
+
+- [Helpdesk](configuration/support/support.md).
+
+
+
+
+
+
+
+
+
+
+
+
 
 When tickets are opened by either the customer or administrator, notifications are sent to each other via email. Depending on the template you are using for tickets, tickets may include the body of the ticket and this can ultimately create convenience, as customers/administrators can respond directly from the email to respond to the ticket. If the template does not include the body, customers/administrators are able to log into their respective portals by means of a link included in the ticket notifications.
 

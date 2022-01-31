@@ -101,11 +101,11 @@ In addition, we can manage each ticket in the table with the available actions i
 
 ------------
 
-The ticket working area is divided into 3 parts:
+The **ticket working area is divided into 3 parts**:
 
-1. ticket properties;
-2. action buttons;
-3. messages area.
+1. **ticket properties**;
+2. **action buttons**;
+3. **message area**.
 
 ![Working area](ticket_workarea.png)
 
@@ -173,7 +173,7 @@ Once the issue reported in the ticket is resolved, click on the small arrow next
 
 **CUSTOMERS**
 
-Your customers can also create tickets in three ways:
+Your **customers can also create tickets in three ways**:
 
 1. By sending a query to your **incoming email** (*support@yourdomain.com*), and the ticket will be created automatically in the system. Suggested read: [how to configure your Inboxes](configuration/main_configuration/incoming_mail.md).
 
@@ -197,107 +197,87 @@ Once the ticket is created it is possible to **view** or **close** it by using t
 
 ------
 
-More information how to automate your work with tickets and its additional settings, you can find the the next tutorials:
+Once a ticket is created by a customer or administrator, notifications are sent to each other via email.
+Depending on the template you use for tickets, tickets can include a ticket main message, which can ultimately create a convenience because customers/administrators can respond to the ticket directly from the email.
+If the template does not include a ticket main message, customers/administrators can log in to their respective portals using the link included in the ticket notifications.
+
+For more information, see
+
+- [Templates](configuration/system/templates/templates.md) (select the *Tickets* type from select menu);
+- [Ticket notifications](configuration/support/ticket_notifications/ticket_notifications.md)
+
+More information how to automate your work with tickets and configure its additional settings, you can find in the the next tutorials:
 
 - [Ticket automation](configuration/support/ticket_automation/ticket_automation.md);
-
 - [Helpdesk](configuration/support/support.md).
 
 
-
-
-
-
-
-
-
-
-
-
-
-When tickets are opened by either the customer or administrator, notifications are sent to each other via email. Depending on the template you are using for tickets, tickets may include the body of the ticket and this can ultimately create convenience, as customers/administrators can respond directly from the email to respond to the ticket. If the template does not include the body, customers/administrators are able to log into their respective portals by means of a link included in the ticket notifications.
-
 ## List of new & opened
 
-This is where you will find a list/table of all new and opened tickets. For administrators part of the support team and designated to answering customer queries it is their working space within the ticketing module.
+In this section you will find a list/table of **all new and opened tickets** in Splynx. For administrators who are part of the support team and respond to customer requests, this is their workspace in the ticketing module.
 
-![Tickets](new&opened.png)
+![image](new_open.png)
 
-Above the table of new & opened tickets, we've added a quick filter to change the tickets being displayed. You can choose to display tickets assigned to a specific administrator, unassigned tickets or all new and open tickets in the system. You may also filter tickets by status once the source of tickets to display has been selected. For ease of access "Refresh" and "Create ticket" buttons have been added alongside the button to hide or display the main filter menu.
+In the filter above the table you can choose to show tickets assigned to a specific administrator, unassigned tickets, or all new tickets in the system. You can also filter tickets by status after selecting a ticket source to display. For ease of access, the **Refresh** and **Create ticket** buttons have been added along a button to hide or show the filter sidebar.
 
-![Tickets](topfilter_tickets.png)
+![image](new_open1.png)
 
+Press the **Filter** to open its main sidebar. This filter can be used to specify tickets to view based on the selections in the specified fields
 
-The main filter menu can be found on the right side of the page when the filter button  <icon class="image-icon"→![filter](filter_icon.png)</icon→ is clicked. This filter can be used to specify which tickets to view based on the selections in the fields provided.
-
-![Tickets](mainfilter.png)
-
-**Find filter parameter descriptions**
-
-**Full name** - search for tickets by the customers full name<br→
-**Condition** - search in the list of open, closed or all tickets<br→
-**Period** - search for tickets within a specific time period<br→
-**Customer / Lead ID** - search for tickets via the Splynx customer ID or lead ID<br→
-**Group** - search for tickets in the list of tickets for the specific group of administrators<br→
-**Partner** -  search for tickets of a particular partner<br→
-**Type** - search for tickets of a specific type or reason for opening<br→
-**Priority** - -search for tickets marked with a specific urgency<br→
-**Text search** - search for tickets containing specified Text<br→
-
-After selecting the desired data to display in the provided fields simply click _Apply_ to search for these tickets or _Clear filters_ to clear the filter fields and display all/assigned new & opened tickets.
-
-The layout of the new & opened tickets table can also be changed with two options <icon class="image-icon"→![layout](tickets_layout.png)</icon→. The first formats the list into a _Table view_ and the second into a _Card view_.
-
-## Table View
-
-![Tickets](tablewview.png)
-
-## Card view
-
-![Tickets](cardview.png)
+![image](new_open2.png)
 
 
-Deciding which view to use is a matter of personal preference. Each view has its own capabilities too. Namely:
+Description of the **filter sidebar parameters**:
 
-**Table view**
+- **Condition** - search in the list of open, closed or all tickets;
+- **Period** - search for tickets within a specific time period;
+- **Customer / Lead** - search for tickets via the Splynx customer/lead *Full name*, *ID* or *Portal login*;
+- **Group** - search for tickets by a specific group of tickets with which administrators are associated;
+- **Partner** - search for tickets by a particular partner the customer is related to;
+- **Type** - search for tickets by its specific type (reason for opening);
+- **Priority** - search for tickets marked with a specific urgency;
+- **Text search** - search for tickets containing the specified text.
 
-Displays more details and has an "Actions" column limited to viewing the ticket, marking it as read or unread or closing the ticket. Please keep in mind that because this is a table, it can be customized to view more/less data like all tables in Splynx and the data can also be export with the use of the <icon class="image-icon"→![layout](table_icons.png)</icon→ icons.
+After selecting the necessary values in the provided fields on the sidebar of the filter, click the **Apply** button to search for the tickets or click on the **Clear filters** button to clear all selected values and all the tickets in the table will be displayed.
 
-**Card View**
+The red dot on the **Filter** button means that the filter is applied:
 
-Displays fewer details but has quick access to function like reassigning tickets to admins or groups and changing the priority, status or type of the ticket.
+![image](filter_dot.png)
+
+The layout of each table related to the *Tickets* section in Splynx can be changed using two buttons - **Table view** and **Card view**. Deciding which kind to use is a matter of personal preference.
+
+**NOTE:**
+
+- Only when using the table view layout, the **Show/hide columns** <icon class="image-icon">![image](show_hide_columns_icon.png)</icon> and **Export to** <icon class="image-icon">![image](export_to_icon.png)</icon> options are available.
+
+| <icon class="image-icon">![image](table_layout_table.png)</icon> (Table view) | <icon class="image-icon">![image](table_layout_card.png)</icon> (Card view)  |
+| ------------ | ------------ |
+| ![image](table_view.png) | ![image](card_view.png) |
 
 
 ## List of closed
 
-Here is where you will find the list/table of all closed tickets in the system.
+In this section you will find a list/table of **all closed tickets** in Splynx.
 
-![Tickets](closedtickets.png)
+![image](closed_tickets.png)
 
-Above the list/table is a filter to use when viewing closed tickets.
+At the top of the table is a filter that can be used to view closed tickets. The results can be filtered by the time **period**, the **customer id** and the **assignee**:
 
-![Tickets](closed_filter.png)
+![image](closed_filter.png)
 
-You are able to filter tickets by a specific period and customer ID, assigned to a specific administrator, unassigned or all closed tickets.
-
-The table/list of closed tickets have the same functionalities of the list/table of the new and opened tickets list/table.
-You are able to select the layout just as with the new & opened list/table and perform certain functions.
-
-In the closed tickets section, however, options to re-open tickets or move them to trash become available:
-
-![Tickets](closedtable_functions.png)
+To **re-open ticket** or apply any other actions use the **Actions** mass selection menu or click the appropriate icon in the table column of the same name.
 
 
-## Trash
+## Archive
 
-Here you can find all tickets moved to trash from the list/table of closed tickets.
+In this section you will find a list/table of **all archived tickets** in Splynx.
 
-![Tickets](trash.png)
+![image](archived.png)
 
-This list can also be filtered to view the content of a specific time period and customer ID, of a specific administrator, unassigned or all tickets in the system.
+The archived ticket list also be filtered to view the contents of a specific time period, by the client ID, by assignee to a specific administrator, by unassigned or by all tickets in the system.
 
-![Tickets](trash_filter.png)
+To **restore ticket** or apply any other actions use the **Actions** mass selection menu or click the appropriate icon in the table column of the same name.
 
-The trash tickets list/table layout can also be customized to display tickets in a table or card format and has functions in the actions column of the table view to either view, restore or permanently delete tickets.
+------
 
-![Tickets](trash_actions.png)
+You might also like: [Recipients](tickets/tickets_recipients/tickets_recipients.md)

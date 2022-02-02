@@ -18,7 +18,7 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 * [Moneris (recurring billing) payments](payment_systems/moneris/moneris.md)
 [comment]: # (→ Mercadopago)
 
-* [Netcash](payment_systems/netcash/netcash.md)
+* [Netcash Pay Now](payment_systems/netcash_pay_now/netcash_pay_now.md)
 
 * [Netcash Debit Orders](payment_systems/netcash_do/netcash_do.md)
 

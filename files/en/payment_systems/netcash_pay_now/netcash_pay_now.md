@@ -80,7 +80,7 @@ You will then see it on the customer's *Portal*:
 
 ![prepaid pay](pay_widget_1.png)
 
-Netcash Pay Now **logs** can be found under `Administration → Logs → Netcash Pay Now logs`
+Netcash Pay Now **logs** can be found under `Administration → Logs → Netcash Logs`
 
 ![Logs](logs.png)
 
@@ -107,4 +107,4 @@ Here you can find all payment attempts. A description of **statement statuses**:
 
 - In most cases when some *Netcash Pay Now* payments **weren't processed** in Splynx (for example under *Bank Statements* you have multiply payment with `New` status even if payment was completed and it exists in Netcash Pay Now account) it's related to **payment notification URLs** under *Pay Now* configuration. Make sure that all *URLs* are correct;
 
-- Also you can check *Netcash Pay Now* logs under `Administration/Logs/Netcash Pay Now logs` for the possible reason of failed payment.
+- Also you can check *Netcash Pay Now* logs under `Administration → Logs → Netcash Logs` for the possible reason of failed payment.

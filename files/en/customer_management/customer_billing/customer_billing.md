@@ -38,7 +38,8 @@ The *One-time* invoice is designed for the customer who pays a one-time cost to 
 
 In order to add the additional item (-s) to the one-time/recurring invoice, press `+` sign or use the option `Add more items`, after that specify its date, price, quantity, description etc.
 
-The option `Load items from uncharged transactions` is used to add to the current invoice (*One-time* or *Recurring*) the future item (a `+Debit` transaction) that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge.
+The option `Load items from uncharged transactions` in the *One-time* invoice can be used to add the future item that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge. Note that the future item will automatically be added to the *Recurring* invoice.
+
 
 3. Press **Save** button to create the invoice.
 
@@ -194,7 +195,7 @@ In this section you can set up the billing of the **selected customer**.
 * **Payment method** - means in which way client will make payments; credit card, cash, etc.;
 * **Billing day** - when the customer will be charged and invoices will be generated (default value is `1`st day of the month. The available values are from `1` to `28`);
 * **Payment due (days after billing day)** - when the customer needs to make payments before being blocked. **Even though the customer will have a blocked status, their services will still be accounted** (default value is `15` days after `billing day`. The available values are from `1` to `28`). From Splynx v4.0, the current option cannot be disabled in select menu, that solved the problem when the invoices with `overdue` status could be created from scratch <!-- SPL-8581 -->;
-* **Blocking period (days after payment due)** - allows to extend the period when customer will be blocked (by default the value is `0` days. The available values are `Do not block` and from `0` to `99` days). The option `Do not block` allows to disable customer blocking after `Payment due` date, if the option is enabled, the customer deactivation won't work as well;
+* **Blocking period (days after payment due)** - allows to extend the period when customer will be blocked (by default the value is `0` days. The available values are `Do not block` and from `0` to `99` days). The option `Do not block` allows to disable customer blocking after `Payment due` date, if the option is enabled, the customer deactivation won't work as well. In addition, if the value is set to `Do not block`, the status of the *Next block* field will be shown as `Disabled for current customer` <!-- SPL-8937 --> ;
 * **Next block** - the indicator for customer's profile with recurring billing type that shows the date when customer will be blocked. Click on <icon class="image-icon">![image](edit_icon.png)</icon> (Edit) button to change the next block date. To be precise, it implies that the date of the last charge (from which the billing due is calculated) will be changed. Pay attention that the blocking date will be changed only once for the current billing period based on the unpaid recurring invoice.
 In case, the options `Block customers on weekends / on holidays` in `Config → Finance → Automation` **are not used** and the date of blocking coincides with the weekends or holidays (**Holidays list** in `Config → Main → Localization`), the date of block **will be moved to the next available workday in your area**.
 If the parameter `Enable processing of Billing Due` in `Config → Finance → Automation` is disabled, the status will be shown as `Disabled in config`.

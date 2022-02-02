@@ -210,11 +210,28 @@ You might also be interested in [Finance settings](configuration/finance/finance
 
 The global option to **Enable automatic issuing** is located in `Config → Finance → Automation` (see [Automation](configuration/finance/automation/automation.md)).
 
-When the toggle **Auto create invoices** is not enabled in customer's `Billing → Billing config` tab, you can create invoice manually using the `Add document → One-Time invoice` or `Add document → Recurring invoice` buttons in `Billing → Finance documents` tab, during the step of invoice creating you can choose the next options - type a description, select a document date, payment due date, add (optionally) note for the customer, add more items and specify its charging details such as price, VAT etc. Also, the option `Load items from uncharged transactions` can be used to add to the current invoice (*One-time* or *Recurring*) the future item (a `+Debit` transaction) that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge.
+When the toggle **Auto create invoices** is not enabled in customer's `Billing → Billing config` tab, you can create invoice manually using the `Add document → One-Time invoice` or `Add document → Recurring invoice` buttons in `Billing → Finance documents` tab, during the step of invoice creating you can modify the next options: -
 
-The button `Add document → Recurring invoice` allows the creation of invoice that will be issued on a recurring basis, separately from the global billing cycle.
+- **Number** - a number will be generated automatically. You can generate a new number using the button next to the field (an icon of magic wand). The invoice format number can be set in [Finance settings](configuration/finance/finance_settings/finance_settings.md);
+- **Document date** - a transaction creation date;
+- **Period** (only for a *Recurring* invoice ) - a period for which the invoice will be charged;
+- **Payment due date** - the date by which the invoice must be paid. Please note, if you set the *Payment due date* value greater than the value in the *Payment due* field in the customer's *Billing config*, the customer will still be blocked the day after *Payment due*, but the *Recurring* invoice won't be with `Overdue` status;
+- **Note** - some additional notes for the customer;
+- **Select plan** - if the tariff plans have been created, you can select the necessary one in the selection menu. For a *Recurring* invoice, the plan will be loaded automatically, it's based on the service (-s) the customer uses;
+- **Description** - a plan description, loaded automatically if you select a plan from the selection menu;
+- **Quantity** - a property that is measured, e.g. `3`;
+- **Unit** - a standard quantity against which a quantity is measured, e.g. `hour`; which is unit of the above quantity (in most cases, cannot be applied for a recurring invoice with service plan. But can be used for *One-time* invoices, where payment is made per hour);
+- **Price** - a price of the plan, the value will be loaded automatically if the plan is chosen from the selection menu;
+- **VAT %** - *Value Added Tax* is a flat tax levied on an item. Learn more about [Taxes](configuration/finance/taxes/taxes.md);
 
-![Create invoice](create_invoice.png)
+
+Also, the option `Load items from uncharged transactions` in the *One-time* invoice can be used to add the future item that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge. Note that the future item will automatically be added to the *Recurring* invoice.
+
+![Create invoice](create_invoice1.png)
+
+![Create invoice](create_invoice2.png)
+
+![Create invoice](create_invoice3.png)
 
 **NOTE:**
 

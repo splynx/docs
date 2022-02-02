@@ -38,7 +38,8 @@ The *One-time* invoice is designed for the customer who pays a one-time cost to 
 
 In order to add the additional item (-s) to the one-time/recurring invoice, press `+` sign or use the option `Add more items`, after that specify its date, price, quantity, description etc.
 
-The option `Load items from uncharged transactions` is used to add to the current invoice (*One-time* or *Recurring*) the future item (a `+Debit` transaction) that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge.
+The option `Load items from uncharged transactions` in the *One-time* invoice can be used to add the future item that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge. Note that the future item will automatically be added to the *Recurring* invoice.
+
 
 3. Press **Save** button to create the invoice.
 

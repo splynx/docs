@@ -387,7 +387,6 @@ Table of contents
   * [Moneris](payment_systems/moneris/moneris.md)
   * [Payfast.co.za payments](payment_systems/payfast/payfast.md)
   * [Payment-express](payment_systems/payment_express/payment_express.md)
-  * [Paynow Zimbabwe](payment_systems/paynow/paynow.md)
   * [Paypal payments](payment_systems/paypal/paypal.md)
   * [Paystack](payment_systems/paystack/paystack.md)
   * [Pesapal](payment_systems/pesapal/pesapal.md)

@@ -28,8 +28,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Payment-express](payment_systems/payment_express/payment_express.md)
 
-* [Paynow](payment_systems/paynow/paynow.md)
-
 * [Paypal payments](payment_systems/paypal/paypal.md)
 
 * [Paystack](payment_systems/paystack/paystack.md)

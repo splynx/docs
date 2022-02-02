@@ -391,7 +391,7 @@ Table of contents
   * [Paystack](payment_systems/paystack/paystack.md)
   * [Pesapal](payment_systems/pesapal/pesapal.md)
   * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
-  * [Netcash](payment_systems/netcash/netcash.md)
+  * [Netcash Pay Now](payment_systems/netcash_pay_now/netcash_pay_now.md)
   * [Netcash Debit orders](payment_systems/netcash_do/netcash_do.md)
   * [SEPA debit orders](payment_systems/sepa/sepa.md)
   * [Stripe online payments](payment_systems/stripe/stripe.md)

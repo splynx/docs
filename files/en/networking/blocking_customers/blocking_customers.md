@@ -1,50 +1,56 @@
-Blocking customers in Splynx
+Blocking of customers in Splynx
 ==========
 
-Splynx has the ability to block non-paying customers automatically, however, administrators can block customers manually as well. When a customer's status is changed to **Blocked** or **Inactive**, Splynx sends a command to the router to block the respective customer. By default, Splynx does not cut the service, but places the IP address of the end-user into the address-list or gives him an IP address from the special IP pool for blocked customers. You just need to create the necessary firewall rules that block or redirects defaulters to a special page.
+Splynx has the ability to block non-paying customers automatically, however, administrators can block customers manually as well. When a customer's status is changed to "New" or "Blocked", Splynx sends a command to the router to block the respective customer. By default, Splynx does not cut the service, but places the IP address of the end-user into the address-list or gives him an IP address from the special IP pool for blocked customers. You just need to create the necessary firewall rules that block or redirects defaulters to a special page.
 
 
 # Mikrotik API
 This method is useful if you do not use Radius authorization. Splynx uses Mikrotik API to execute commands on a router.
 
-Pay special attention to the option ***Disabled customers to Address-List***.
-As this changes the blocking behavior.
+Pay special attention to next options:
+
+![api_blocking](disabled_to_address_list.png)
+
+* **Disabled customers to Address-List** - with this option disabled credentials (hotspot users, PPP secrets, firewall rules and DHCP leases) of blocked customer will be removed from the router. When enabled - credentials of blocked customer will be placed to one of the address lists:
+
+  - **SpLBL_blocked** - when the customer is blocked in Splynx it will be placed to this address list:
+
+  ![api_spl_block](api_spl_bl.png)
+
+  - **SpLBL_new** - when the customer has a service but status is "new":
+
+  ![api_spl_new](api_spl_new.png)
+
+* **Blocking rules** - enable/disable blocking on a router. With this option disabled customers will be connected even if the status is "New" or "Blocked".
 
 
-![](c2al.png)
+Rules what will be uploaded to a router can be configured under [`Config -> Networking -> Mikrotik API`](../../configuration/network/mikrotik_api/mikrotik_api.md):
 
-When the option is **disabled** <icon class="image-icon">![](disabled.png)</icon>, credentials of blocked customers are removed from the router (hotspot users, PPP secrets, firewall rules and DHCP leases).
+![rules](api_rules.png)
 
-When this option is **enabled** <icon class="image-icon">![](enabled.png)</icon>, blocked customers are added to one of the address lists:
-* **SpLBL_blocked** - for customers whose status is ***Blocked***. And for customers with ***Active*** status, when service is blocked due to [FUP](networking/bandwidth_management/fup/fup.md) or [CAP](networking/bandwidth_management/capped_plans/capped_plans.md) blocking rules.
-* **SpLBL_new** - for customers whose status is ***New***.
-
-![Screenshot AddressList](mk_al.png)
-
+Be careful with updating of "Filter rules" as it can change behavior of blocking.
 
 ---
-# Radius
+# Radius blocking
 Radius also provides the ability to block users in several ways.
 
-![](mkrad_settings.png)
->Settings from the screenshots above screenshot can be found in `Config / Networking / Radius` -> NAS config / NAS Type = Mikrotik -> click on the load button.
+![radius_config](config_radius.png)
+>Settings from the screenshots above can be found under `Config / Networking / Radius` -> NAS config / NAS Type = Mikrotik -> click on the "Load" button.
 
 
-## Change of Authorization (CoA) packet
-###### (customer's session does not break)
-To use CoA select **COA Block attribute** for the **Customer Block** field.
+## 1. Change of Authorization (CoA) packet
 
-![](coa_block.png)
+In this case customer's session does not brake.
+To use this method of blocking select **COA Block attribute** for the **Customer Block** field.
+
+![coa_block](coa_block.png)
 
 
-When a customer becomes blocked, splynx sends a CoA packet to the router with attributes specified in the **CoA Block attributes** field.
-
-![](coa.png)
-
+When the customer becomes blocked, Splynx sends a CoA packet to the router with attributes specified in the **CoA Block attributes** field.
 
 The same attributes for [FUP](networking/bandwidth_management/fup/fup.md):
 
-![](fup_coa.png)
+![fup_coa](fup_coa.png)
 
 
 By default, The field **CoA Block attributes** contains the attribute **Mikrotik-Address-List = Reject_1**. Having received such an attribute, the router adds the customer's IP to the **Reject_1** list.
@@ -53,64 +59,74 @@ The session is not interrupted, which allows, if necessary, open access to local
 > <icon class="image-icon">![](warning.png)</icon> If you put an IP address to the Address-List via **CoA Block attributes**, you should also put the IP address into another Address-List via **CoA Restore attributes**. Otherwise, the IP address will remain in the previous Address-List and the session will be still blocked.
 
 > <icon class="image-icon">![](warning.png)</icon> Turn on the **Radius incoming** on the mikrotik to process the CoA packets.
-![](radius_incoming.png)
+![radius_incoming](enable_incoming.png)
 
 
 ## Reject IP pools
-###### customers get an ip from a reject ip pool
+In this case customers get an IP from  one of reject IP pools:
+
+
 
 By default, Radius allows connection (sends Radius-Accept) even if there is an authorization error. In the case of authorization errors, Radius will assign an IP address from reject address pools (lists). By default, these pools are 10.250.x.0/20. Pools can be configured in `Config -> Networking -> Radius`, as shown on the screenshot below:
 
-![](reject_pool.png)
+![pools](reject_pools.png)
 
 
-* **Reject IP 0** - when the User is not found (in fact, this Customer does not exist).
-* **Reject IP 1** - when the User is blocked, not active or not in the system (when the customer's status is not active).
-* **Reject IP 2** - when the User has a negative balance or a filter is applied.
-* **Reject IP 3** - when the User has the wrong MAC address (if enabled) or other error.
-* **Reject IP 4** - when the User has entered the wrong password.
+* **Reject IP 0** - when the customer is not found in Splynx;
 
-<br>
+* **Reject IP 1** - when the customer is blocked (when the customer's status is not active);
+
+* **Reject IP 2** - when the customer has a negative balance or a filter rule (FUP) is applied;
+
+* **Reject IP 3** - MAC address error (if enabled) or some other error not mentioned in this list;
+
+* **Reject IP 4** - when the customer has entered wrong password.
+
+
 For using Reject pools:
 
-* Set the value **Block** for the **Customer Block** field.
-  ![](block.png)
+* Set the value **Block** for the **Customer Block** field:
 
-* Enable the **Use reject IP**, as shown in the screenshot below.
+  ![customer_block](customer_block.png)
 
-  ![](rejectpool_names.png)
+* Enable the **Use reject IP**, as shown in the screenshot below:
 
- ><icon class="image-icon">![](lightbulb_on.png)</icon> In addition, you can change the attributes for each reject pool.
+  ![enable_reject_pools](enable_reject_pools.png)
+
+ >In addition, you can change the attributes for each reject pool.
+
+ Example: blocked customer in Splynx is under Reject 1 pool on a router:
+
+ ![reject1](reject1.png)
 
 
 ## Drop customer's session
-###### interrupts customer session and prohibits further connection
-* Set the value **Block** for the **Customer Block** field.
-  ![](block.png)
+
+In this case customer's connection will be interrupted and prohibits further connections.
+
+* Set the value **Block** for the **Customer Block** field:
+
+  ![customer_block](customer_block.png)
 
 * Disable the **Use reject IP** as shown in the screenshot below.
 
-![](rejectpool_disable.png)
+![disable_reject_pools](disable_reject_pools.png)
 
 
 ----
 # Special blocking pages
 
-Splynx has 4 default blocking pages under:
+Splynx has 4 default blocking pages:
+
 * http://your.splynx.url:8101
 * http://your.splynx.url:8102
 * http://your.splynx.url:8103
 * http://your.splynx.url:8104
 
-These are simple HTML files, which you can change via command line within your Splynx installation (via SSH). In the folder ``/var/www/splynx/web/errors/`` there are folders labelled 1,2,3,4 that are corresponding to ports 8101, 8102, 8103 and 8104.
+These are simple HTML files, which you can change via command line within your Splynx server (via SSH). In the folder ``/var/www/splynx/web/errors/`` there are folders labeled 1,2,3,4 that are corresponding to ports 8101, 8102, 8103 and 8104.
 
 An example of the default blocking page is shown below:
-![102](102.png)
-
-An example of how this page can be customized:
-![102 new version](102_new.png)
-
-
+![8101](8101.png)
 
 # Effective blocking
 Often, providers just block customers by simply dropping all packets from the customers in the router's firewall.
@@ -129,16 +145,12 @@ This fact can also serve as an additional tool for quick network diagnostics. In
 * Most modern OS's has a mechanism for detecting the state of the internet.
 The OS checks the network access when connected, if the system detects a stub page, it notifies the user about it by opening the stub page in a separate window/frame, displaying a notification in the notification panel, etc.
 
-For example, Ubuntu
-
-  ![](ubuntu_hotspot.png) ![](ubuntu_hotspot_8102.png)
-  
 ### Can we redirect the blocked customers from HTTPS to HTTP website?
 
 It's not possible to do over SSL-encrypted connection, the redirection only works over HTTP. HTTPS traffic cannot be redirected to HTTP one, there will be the SSL encryption error and the connection rejection as a necessary measure. In such case end-user should try to access different site.
-**HTTP Strict Transport Security (HSTS)** is a web security policy mechanism that helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie hijacking. 
+**HTTP Strict Transport Security (HSTS)** is a web security policy mechanism that helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie hijacking.
 
-The best solution is to send many notification messages via SMS/Email, so then customer will not be surprised when one day the Internet will not work. 
+The best solution is to send many notification messages via SMS/Email, so then customer will not be surprised when one day the Internet will not work.
 *SMS* can be configured in `Config → Main → SMS` and *Email* config is in `Config → Main → Email`. Also, it's necessary to enable *Blocking wave* notification in `Config → Finance → Notification` and select a template.
 
 
@@ -162,18 +174,6 @@ Having added a burst at the beginning is useful during system boot.
 ###### by sending ICMP packet type 3 code 9. *"3/9 Communication with Destination Network is Administratively Prohibited".*
 
 This solution will remove all other delays, since the program sending the request will immediately be refused, instead of waiting for an answer for a while, and then trying again.
-
-The screenshots below displays an attempt to open the website, they display the time after which the browser showed that the website is not available.
-
-***7ms*** *(icmp3/9)* **vs** ***91645ms*** *(drop rule)*
-
-###### DROP
-![](stat_drop_rule.png)
-
-###### ICMP 3/9
-![](stat_reject_rule.png)
-
-
 
 ## Practice
 ###### An example of setting up all of the above on MikroTik.

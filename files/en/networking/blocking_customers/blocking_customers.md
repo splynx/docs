@@ -45,7 +45,6 @@ To use this method of blocking select **COA Block attribute** for the **Customer
 
 ![coa_block](coa_block.png)
 
-
 When the customer becomes blocked, Splynx sends a CoA packet to the router with attributes specified in the **CoA Block attributes** field.
 
 The same attributes for [FUP](networking/bandwidth_management/fup/fup.md):
@@ -53,12 +52,17 @@ The same attributes for [FUP](networking/bandwidth_management/fup/fup.md):
 ![fup_coa](fup_coa.png)
 
 
-By default, The field **CoA Block attributes** contains the attribute **Mikrotik-Address-List = Reject_1**. Having received such an attribute, the router adds the customer's IP to the **Reject_1** list.
+By default, The **CoA Block attributes** field contains the attribute **Mikrotik-Address-List = Reject_1**. Having received such an attribute, the router adds the customer's IP to the **Reject_1** list.
 The session is not interrupted, which allows, if necessary, open access to local resources without changing the customer's IP address.
 
-> <icon class="image-icon">![](warning.png)</icon> If you put an IP address to the Address-List via **CoA Block attributes**, you should also put the IP address into another Address-List via **CoA Restore attributes**. Otherwise, the IP address will remain in the previous Address-List and the session will be still blocked.
+> <icon class="image-icon">![](warning.png)</icon> **Important:** MikroTik Radius client does not support the **CoA** and **PoD** packets for **DHCP** connections. Only **PPPoE**, **PPTP**, **L2TP** and **Hotspot** are supported.
 
-> <icon class="image-icon">![](warning.png)</icon> Turn on the **Radius incoming** on the mikrotik to process the CoA packets.
+> <icon class="image-icon">![](warning.png)</icon> For DHCP connections, to **avoid possible problems with lease time and blocking/restoring**, you can specify the lease time of Session-Timeout attribute in `Config → Networking → Radius → NAS config (MikroTik) → Rate-Limit attributes`:
+![image](session_timeout.png)
+
+> <icon class="image-icon">![](warning.png)</icon> If you put an IP address to the *Address-List* via **CoA Block attributes**, you should also put the IP address into another *Address-List* via **CoA Restore attributes**. Otherwise, the IP address will remain in the previous *Address-List* and the session will be still blocked.
+
+> <icon class="image-icon">![](warning.png)</icon> Turn on **Radius incoming** on the MikroTik to process the CoA packets.
 ![radius_incoming](enable_incoming.png)
 
 

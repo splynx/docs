@@ -1,6 +1,9 @@
-Bank statement processing
+Payment statement processing
 ==========
-The bank statement processing feature lets you reconcile payments receivable with invoices issued by paring them, so it can process multiple payments. Bank payment transactions are automatically processed by Splynx handlers – small modules created for each bank file format.
+
+The payment statement processing feature allows you to reconcile bank payments receivable with issued invoices by paring them, processing of multiple bank payments simultaneously is supported.
+
+Bank payment transactions are automatically processed by Splynx **handlers** – *small modules created for each bank file format*.
 
 ![Bank statement processing](main.png)
 

@@ -10,7 +10,7 @@ The billing module is separated into the following sections, please follow the l
 
   * [ Apply credit](finance/apply_credit/apply_credit.md)
 
-  * [ Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md)
+  * [ Payment statement processing](finance/payment_statement_processing/payment_statement_processing.md)
 
   * [ Billing engine](finance/billing_engine/billing_engine.md)
     * [→ Prepaid Billing](finance/billing_engine/prepaid_billing/prepaid_billing.md)

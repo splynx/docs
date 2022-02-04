@@ -121,7 +121,7 @@ When customers have Netcash payment accounts configured, the admin can charge th
 
 |   | General information - how the add-on works  |
 | ------------ | ------------ |
-| 1  | An admin will charge the invoices in Splynx. Once charged successfully, bank statements + batch files will be created and sent to Netcash and the charged invoices will change to a "Pending" state  |
+| 1  | An admin will charge the invoices in Splynx. Once charged successfully, payment statements + batch files will be created and sent to Netcash and the charged invoices will change to a "Pending" state  |
 | 2  | Netcash can take up to two days after the action date to receive the payments as well as non-payments (bounced payments)  |
 | 3 | Splynx will check Netcash twice a day for any payments and allocate them to the correct invoice in which case the invoice will become “paid”. In the case we receive non-payments, the invoice status will return to unpaid  |
 
@@ -165,7 +165,7 @@ Be vigilant when creating this filter as it will process the charge without any 
 <summary><b>How to re-charge the invoices</b></summary>
 <div markdown="1">
 
-The debit order batch should be deleted in Netcash as well as the relevant [bank statement](finance/bank_statement_processing/bank_statement_processing.md) in Splynx (be very vigilant when deleting bank statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged
+The debit order batch should be deleted in Netcash as well as the relevant [payment statement](finance/payment_statement_processing/payment_statement_processing.md) in Splynx (be very vigilant when deleting payment statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged
 
 </div>
 </details>
@@ -256,7 +256,7 @@ The customer can also view, update, or remove Netcash account details here:
 
 ![add account.png](add_account_from_portal.png)
 
-**Note:** if the customer pays their invoices using the Netcash Debit Order addon on the portal, a new bank statement will be created on the admin portal (`Finance → Bank statements → History`). We use bank statements in Splynx to track and allocate payments to the correct invoices once retrieved.
+**Note:** if the customer pays their invoices using the Netcash Debit Order addon on the portal, a new payment statement will be created on the admin portal (`Finance → Payment statements → History`). We use payment statements in Splynx to track and allocate payments to the correct invoices once retrieved.
 
 ### Direct payments
 

@@ -6,9 +6,11 @@ Sometimes our clients are confused with the situation when some service continue
 First of all, keep in mind that services with statuses **Stopped** and **Archived** are not included in the billing run, Splynx just ignores services with such statuses.
 It means that you can update start/end dates for such services and it won't make affect on billing.
 
+**!NOTE** Stopped service with the start date in the future, will be activated automatically at that date.
+
 Services with statuses **Active**, **Pending** and **Disabled** are included in the billing run and it's quite obvious for Active and Pending services, but what about Disabled? For Disabled services it's crucial to have the start date and the end date and for correct billing run this service must be charged for entire period from the start date till the end date. Let's have a look on examples:
 
-On 7 Feb. 20222 I created an internet service with start date = 2022-01-01:
+On 7 Feb. 2022 I created an internet service with start date = 2022-01-01:
 
 ![create_service](create_service.png)
 

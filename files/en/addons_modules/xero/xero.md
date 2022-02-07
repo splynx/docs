@@ -76,7 +76,113 @@ It would be much easier if all R500 could simply be allocated to the client's ac
 </div>
 </details>
 
+<br>
 
+- **Create exceeding invoice payments in Xero** - a toggle allows to create a payment in Xero when the Splynx payment amount exceeds the Xero `Due` invoice amount. On Xero side will be created a payment with the type chosen in the **Xero non invoice payment type** select menu (`Prepayment` or `Overpayment`), such payment won't be link to the invoice.
+In disabled status, when there is a partially paid invoice on Xero side, a Splynx payment won't be exported to Xero and you will see the error message - `A validation exception occurred - Payment amount exceeds the amount outstanding on this document` in `Administration → Logs → Accounting integrations`.
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Example</b></summary>
+<div markdown="1">
+
+Let's say in Xero add-on config, we use the `Overpayment` value in the **Xero non invoice payment type** select menu. The **Create exceeding invoice payments in Xero** toggle is **disabled**.
+
+![image](exc_addon_config.png)
+
+The unpaid invoice of customer was exported to Xero.
+
+```
+2022-02-07 15:29:36.432800 Start new customers synchronization
+Export customer: Anthony Moffitt.
+2022-02-07 15:29:41.686100 New customers synchronization completed
+2022-02-07 15:29:41.686300 Start modified customers synchronization
+2022-02-07 15:29:41.688400 Modified customers synchronization completed
+2022-02-07 15:29:41.688600 Done!
+
+2022-02-07 15:29:56.398800 Start new invoices synchronization
+Export invoice: 202201000041.
+2022-02-07 15:29:59.667500 New invoices synchronization completed
+2022-02-07 15:29:59.667700 Start modified invoices synchronization
+2022-02-07 15:29:59.671600 Modified invoices synchronization completed
+2022-02-07 15:29:59.671700 Done!
+
+```
+![image](exc0.png)
+
+![image](exc1.png)
+
+![image](exc2.png)
+
+The exported invoice on Xero side is partially paid e.g. from customer balance, as a result the invoice due is 75:
+
+![image](exc3.png)
+
+![image](exc4.png)
+
+Then, the customer pays the total amount of the invoice in Splynx and this new payment is synced to Xero.
+
+As a result we have the following error when exporting a payment, you can see it directly in the `Finance → Xero Accounting` section:
+
+```
+2022-02-07 15:50:30.847000 Start payments synchronization from Splynx to Xero
+Export payment: 2022-01-00051
+api
+A validation exception occurred
+Payment amount exceeds the amount outstanding on this document
+2022-02-07 15:50:35.594300 Payments synchronization from Splynx to Xero completed
+
+2022-02-07 15:50:35.594500 Start deleted payments synchronization from Splynx to Xero
+2022-02-07 15:50:35.597100 Deleted payments synchronization from Splynx to Xero completed
+2022-02-07 15:50:35.597300 Done!
+
+```
+
+Also, you can check the log in `Administration → Logs → Accounting integrations`
+
+![image](exc5.png)
+
+To fix this problem, it's necessary to enable **Create exceeding invoice payments in Xero** toggle and press **Save**, after that, export a new payment from Splynx to Xero one more time.
+
+![image](exc6.png)
+
+```
+2022-02-07 16:03:27.057300 Start payments synchronization from Splynx to Xero
+Export payment: 2022-01-00051
+api
+A validation exception occurred
+Payment amount exceeds the amount outstanding on this document
+Export payment: 2022-01-00051 Exceeds amount of document. Export as Overpayment
+2022-02-07 16:03:31.338500 Payments synchronization from Splynx to Xero completed
+
+2022-02-07 16:03:31.338600 Start deleted payments synchronization from Splynx to Xero
+2022-02-07 16:03:31.340700 Deleted payments synchronization from Splynx to Xero completed
+2022-02-07 16:03:31.340800 Done!
+
+```
+![image](exc7.png)
+
+**IMPORTANT:** This exported payment will not be linked to the customer's invoice, but it will be added as `overpayment` (or `prepayment`, it depends on the selected option) to the bank account balance on Xero side:
+
+![image](exc8.png)
+
+![image](exc9.png)
+
+Finally, you can make payments correction and if it's necessary, remove overpayment on Xero side
+
+![image](exc10.png)
+
+![image](exc11.png)
+
+Related Read:
+
+- [Remove an overpayment](https://central.xero.com/s/article/Remove-payment-from-an-invoice-or-bill);
+- [Delete an account transaction](https://central.xero.com/s/article/Delete-an-account-transaction?userregion=true).
+
+</div>
+</details>
+
+<br>
 
 - **Prepayments Account code** - a unique code (limited to 10 characters) of prepayments items (the expenditures that have been paid for in advance) in Xero account (`Accounting menu → Advanced → Chart of Accounts`);
 

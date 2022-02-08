@@ -45,7 +45,7 @@ After the installation process has completed, you have to configure the add-on u
 **Fee VAT** - _service fee_ VAT percent.  
 **Fee message** - _service fee_ description.   
 **Add fee to request** -  enable/disable adding fees to requests<br>
-**Bank statements group** - Group bank statements (_Finance / Bank Statements / History_) monthly or daily.  
+**Bank statements group** - Group bank statements (`Finance → Payment Statements → History`) monthly or daily.  
 **Language** - language of the addon.  
 **API login id**, **Transaction key** - described on the following page - [https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key)
 

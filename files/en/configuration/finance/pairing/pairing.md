@@ -1,7 +1,7 @@
 Pairing
 =============
 
-Before processing Bank statements, it is necessary to define pairing parameters first. The bank statement processing feature allows you reconcile payments receivable with invoices issued by pairing them, so it can proceed multiple payments.
+Before processing Payment statements, it is necessary to define pairing parameters first. The payment statement processing feature allows you reconcile payments receivable with invoices issued by pairing them, so it can proceed multiple payments at once.
 
 To configure Paring click on `Config → Finance → Pairing`.
 
@@ -39,4 +39,4 @@ You can choose the following Proforma Invoice parameters:
 
 ![Proforma invoice](proforma.png)
 
-After defining Pairing parameters you can process bank statements. More information about bank statement processing can be found in the following tutorial page -  [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md).
+After defining Pairing parameters you can process payment (bank) statements. More information about payment statement processing can be found in the following tutorial page -  [Payment statement processing](finance/payment_statement_processing/payment_statement_processing.md).

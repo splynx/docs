@@ -188,13 +188,13 @@ Related Read:
 
 - **Rounding Account code** - a unique code (limited to 10 characters) of rounding item (an adjustment entry to allow for rounding) in Xero account (`Accounting menu → Advanced → Chart of Accounts`);
 
-- **Create payments for prepayments** - a toggle allows to enable creating payment for prepayment (a payment made in advance) in Splynx or, in disabled status - add such payment to the bank statements only. Used on payments import;
+- **Create payments for prepayments** - a toggle allows to enable creating payment for prepayment (a payment made in advance) in Splynx or, in disabled status - add such payment to the payment (bank) statements only. Used on payments import;
 
-- **Create payments for overpayments** - a toggle allows to enable creating payment for overpayment in Splynx or, in disabled status - add such payment to the bank statements only. Used on payments import;
+- **Create payments for overpayments** - a toggle allows to enable creating payment for overpayment in Splynx or, in disabled status - add such payment to the payment (bank) statements only. Used on payments import;
 
 - **Create payment without invoice** - a toggle allows to enable/disable creating payment in Splynx when customer doesn't have invoice. Used on payments import. **Attention:** in some cases can lead to duplicate payments;
 
-- **Ignore expense payments on import** - a toggle allows to enable/disable ignoring 'Spend money' (a payment that doesn't relate to a bill, expense claim, or refund) in Xero payments during payments import. If option is enabled, 'Spend money' payments will not be added to bank statements;
+- **Ignore expense payments on import** - a toggle allows to enable/disable ignoring 'Spend money' (a payment that doesn't relate to a bill, expense claim, or refund) in Xero payments during payments import. If option is enabled, 'Spend money' payments will not be added to payment (bank) statements;
 
 - **Customer name pattern** - used to set the format of the customer name during the sync to Xero. The value will be visible in **Contact Name** field of customer contact information on Xero side. The following variables can be used in the field: `{id}`, `{login}`, `{name}`, `{email}`;
 
@@ -349,12 +349,12 @@ Now we can sync payments from `Xero → Splynx` by clicking on `Import new payme
 
 ![sync payments](import_payments.png)
 
-Payments which we've synced from Xero can be viewed in `Finance → Bank statements → History`:
+Payments which we've synced from Xero can be viewed in `Finance → Payment statements → History`:
 
 ![bank statements](bank_statements.png)
 
 Here you can check the status of synchronization in relation to each payment item. More information can be found in
-[Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md) tutorial.
+[Payment statement processing](finance/payment_statement_processing/payment_statement_processing.md) tutorial.
 
 ![statements list](statements_list.png)
 
@@ -363,7 +363,7 @@ Sometimes it's required to manually pair a statement record (create a payment in
 
 ![image](prepayment.png)
 
-To do the manual pair, open `Finance → Bank statements → History`, choose Xero statements then click on the <icon class="image-icon">![manual_pair_icon](manual_pair_icon.png)</icon> icon related to the item that is need to be paired
+To do the manual pair, open `Finance → Payment statements → History`, choose Xero statements then click on the <icon class="image-icon">![manual_pair_icon](manual_pair_icon.png)</icon> icon related to the item that is need to be paired
 
 ![image](prepayment1.png)
 
@@ -379,7 +379,7 @@ and find the necessary customer, invoice or proforma invoice to pair with:
 
 ![manual_pair2](manual_pair5.png)
 
-We recommend to check bank statements on a regular basis.
+We recommend to check payment (bank) statements on a regular basis.
 
 **NOTE:** If on Xero side was applied **Remove & Redo** action to delete an account transaction for the payment related to the invoice (the status will be *Deleted*) or for the prepayment / overpayment (the status will be *Voided*), such items won't be imported to Splynx:
 

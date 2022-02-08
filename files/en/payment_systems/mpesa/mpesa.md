@@ -51,7 +51,7 @@ The general configuration of the *Safaricom M-PESA* integration module can be vi
 - **Search customer by** - what field (*Invoice number*, *M-PESA Phone*, *Login*) will be used to search for the customer in Splynx (during payment);
 - **Check Debt amount** - the toggle allows to enable/disable to check whether the payment amount is sufficient for paying the debt. If enabled and the customer's account balance is less than 0, the payment amount must be equal to or larger than the customer's debt;
 - **Minimum payment amount** - Minimum payment's amount (no less than 0). The payment amount must be larger than this value;
-- **Bank statements group** - Group [bank statements](finance/bank_statement_processing/bank_statement_processing.md) by `month` or `day`';
+- **Bank statements group** - Group of bank statements by (`Finance → Payment Statements → History`) `month` or `day`';
 - **Convert received funds to USD** - convert received payment from MPESA (Kenyan shilling) to USD. Enable if you use USD currency in Splynx;
 - **USD to KES exchange rate** - the current Splynx internal dollar exchange rate of the KES;
 - **Ignore validation** - toggle is used to ignore/allow payment validation automatically when confirmation is received. If the toggle is enabled and the confirmation is received but there is no validation, the payment will be created. Otherwise, the payments will be rejected.

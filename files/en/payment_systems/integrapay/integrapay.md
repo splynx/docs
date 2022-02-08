@@ -57,7 +57,7 @@ Then, you need to set your **Username**, **Business ID** and **Password** in `In
 * **Fee message** - if `Add fee to request` option is enabled, the current message will be added as description for fee item in invoice;
 * **Payment method for Credit Card / Bank Account** - when a customer pays using this add-on, the payment will be allocated as this payment type;
 * **Transaction fee category** - transaction [category](configuration/finance/transaction_categories/transaction_categories.md) of the fee transactions;
-* **Bank statements group** - choose how to group bank statements (`Finance → Bank Statements → History`) monthly or daily;
+* **Bank statements group** - choose how to group bank statements (`Finance → Payment Statements → History`) monthly or daily;
 * **Available Payment Methods** - choose a payment method that the customer can add on Portal. Pay attention, IntegraPay service does not support using two payment methods at the same time. If 'Bank account or Card' option is selected, a customer can add either their bank account or a credit card and use only one method at a time;
 * **Mask card's number and CVV** - hide card number and CVV code when adding on the Portal;
 * **Customers identifier** - select what to use as identifier of customer on IntegraPay service side;

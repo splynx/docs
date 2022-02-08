@@ -74,7 +74,7 @@ In new window specify the necessary options for invoice charge:
 
 - **Preview** - the button helps to check the invoices information before performing the charge.
 
-Once charged successfully, bank statements and batch files will be created and sent to payment add-on side and the charged invoices will change to a *Pending* state. It takes some time to receive the payments or bounced payments.
+Once charged successfully, payment statements and batch files will be created and sent to payment add-on side and the charged invoices will change to a *Pending* state. It takes some time to receive the payments or bounced payments.
 
 To download the charge result files click on the link under the `Preview` button or click on the <icon class="image-icon">![](download.png)</icon> icon in *Charge history* tab.
 

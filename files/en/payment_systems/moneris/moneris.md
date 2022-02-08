@@ -49,7 +49,7 @@ Locate or search for the `splynx-moneris` add-on and click on the `Edit` icon <i
 
 ![(image)](image2018-8-21_10-54-36.png)
 
-- **Group of bank statements** - how to group the bank statements (`Finance → Bank Statements → History`) monthly or daily;  
+- **Group of bank statements** - how to group the bank statements (`Finance → Payment Statements → History`) monthly or daily;  
 - **Service fee to**: **Payee** value - customer won't pay **Additional service fee**. **Additional service fee** value - customer will pay *Additional service fee* specified in the next field;
 
 - **Additional service fee** - if **Service fee to** option is set to: _Additional service fee_, you have to specify the additional service fee percent value in the current field, it will be used instead *Moneris* real fees, for example 5.9 would mean 5.9%;

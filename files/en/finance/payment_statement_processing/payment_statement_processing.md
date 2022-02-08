@@ -9,11 +9,13 @@ Payment transactions are automatically processed by Splynx **handlers** – *sma
 
 ---
 
-Payment statement processing starts with **importing statement format file** into Splynx, e.g. **csv** file. For each payments list, a different external handler can be used. We can also connect your bank to email processing bank statements.
+Payment statement processing starts with **importing statement format file** into Splynx, e.g. **csv** file. For each payments list, a different external handler can be used.
 
 ![Handler](handler.png)
 
 ![Upload](upload.png)
+
+<icon class="image-icon">![image](information.png)</icon> Our development team, on a paid basis, can create an external handler to process your bank statements if the *Base* handler doesn't correspond your needs. Please, create a ticket for more details.
 
 ---
 

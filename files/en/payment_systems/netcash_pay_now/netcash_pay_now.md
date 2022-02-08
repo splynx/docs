@@ -86,7 +86,7 @@ Netcash Pay Now **logs** can be found under `Administration → Logs → Netcash
 
 We highly recommend to check *Netcash Pay Now* logs in case of payment failure to understand the reason of it.
 
-Also all *Netcash Pay Now* bank statements can be found under `Finance → Bank statements → View history`:
+Also all *Netcash Pay Now* payment statements can be found under `Finance → Payment statements → View history`:
 
 ![statements](statements.png)
 

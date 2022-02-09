@@ -226,20 +226,9 @@ A new user account will be added on the GenieACS server:
 
 ![image](ui_link.png)
 
-<details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>If you forget your UI Password, click here</b></summary>
-<div markdown="1">
-
-If you forget your **UI Password**, use the [Adminer](configuration/tools/adminer/adminer.md) tool to check the `ui_password` value in `splynx` database.
-
-Also, you can just type a new **UI Password** on `Config → Networking → TR-069 (ACS)` page.
+If you forget your **UI Password**, use the [Adminer](configuration/tools/adminer/adminer.md) tool to check the `ui_password` value in `splynx` database. Also, you can just type a new **UI Password** on `Config → Networking → TR-069 (ACS)` page.
 
 ![image](ui_password.png)
-
-</div>
-</details>
-
-<br>
 
 ![image](connect_to_ACS.png)
 

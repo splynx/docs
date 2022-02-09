@@ -29,6 +29,7 @@ Follow these instructions to troubleshoot problems with **TR-069 (ACS)**:
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Device is registered in Splynx but no connection established</b></summary>
 <div markdown="1">
+
   0. Make sure that device is accessible from Splynx server. Use tools like *ping* or *traceroute* to doublecheck;
 
   1. Pay attention to the IP restrictions. The requests can be sent only from IPs/networks allowed in this list:
@@ -173,6 +174,85 @@ Restart services:
 ```
 sudo service splynx_transport restart && sudo service splynx_node restart
 ```
+
+
+</div>
+</details>
+
+------------
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>GenieACS password reset</b></summary>
+<div markdown="1">
+
+If the password for an admin account has been changed and you cannot recall it, you can add a new user account to the GenieACS server to be able to log in.
+
+Just follow with this step-by-step instructions:
+
+1. To log in to MongoDB, please run the next command on your server CLI:
+
+```
+mongo
+```
+
+2. To connect to the ACS users database, run the following:
+
+```
+use genieacs
+```
+
+3. To check all rows in users tables, use the next command:
+
+```
+db.users.find()
+```
+
+4. To add a new user account to database, please copy and run:
+
+```
+
+db.users.insert({ "_id" : "new", "roles" : "admin", "password" : "86aebaa124d7ad917ac9bb8d8aedada1a065c045b02a99c873fe2028c6814421002b2c759d47f4501acc3759746bdca77693de63f4579351394f3ca892b6b7c41ee14894a57f30208946a09382504f6397be43724a5233cd666026e1a3a2f0736f3aceb2b2b9728e52aa6b5d9e636a025ea55bcd092bcc32194c94f799fa4ad9", "salt" : "45280c26e6a8fbabefa35d6fbee9da0c37189193aff2ea1d9d0bcb341244d2c8ccccbeef595fcb0a8f49e9c0030bd3fb834876a66f750ba68a3befc6922c9b11" })
+
+```
+Then, type ```exit``` to log out of the database:
+
+![image](password_reset.png)
+
+A new user account will be added on the GenieACS server:
+
+![image](new_user.png)
+
+5. Navigate to `Config → Networking → TR-069 (ACS)` and click on the link next to the **UI** section - ```https://splynx_url:3000/```. Use the credentials from the **UI** section to connect to ACS server:
+
+![image](ui_link.png)
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>If you forget your UI Password, click here</b></summary>
+<div markdown="1">
+
+If you forget your **UI Password**, use the [Adminer](configuration/tools/adminer/adminer.md) tool to check the `ui_password` value in `splynx` database.
+
+Also, you can just type a new **UI Password** on `Config → Networking → TR-069 (ACS)` page.
+
+![image](ui_password.png)
+
+</div>
+</details>
+
+<br>
+
+![image](connect_to_ACS.png)
+
+6. Use your new credentials to log in to GenieACS server:
+
+- **username:** `new`
+- **password:** `admin`
+
+![image](login_to_ACS.png)
+
+On the GenieACS page, navigate to **Users** section to change the password for your current user:
+
+![image](edit_user.png)
 
 
 </div>

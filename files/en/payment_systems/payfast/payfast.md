@@ -141,10 +141,7 @@ Using the payments links is the simplest way to accept payments made with credit
 To **create a direct payment link**, please use the patterns below:
 
 
-<details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>for PayFast</b></summary>
-<div markdown="1">
-
+- **For PayFast →**
 
 **To pay the Invoice:**
 
@@ -196,18 +193,11 @@ https://<splynx_domain_address>/payfast/direct-pay-proforma?item_id=<proforma_nu
 </div>
 </details>
 
-
-
-</div>
-</details>
-
-
 <br>
 
+---
 
-<details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>for PayFast-RB</b></summary>
-<div markdown="1">
+- **For PayFast-RB →**
 
 **To pay the Invoice:**
 
@@ -258,10 +248,3 @@ https://<splynx_domain_address>/payfast-rb/direct-pay-proforma?item_id=<proforma
 ```
 </div>
 </details>
-
-
-</div>
-</details>
-
-
-------------

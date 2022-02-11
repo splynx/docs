@@ -166,9 +166,9 @@ For each type of service you can select the fields to be displayed:
 * **Custom Service** - *ID, Price, New, Stop/active service, Description, Start date, USD/year, Change plane, Plan, End date, TEST field, Status*.
 ![](srv1.png)
 
-* **Show days** - enables/disables the displaying of the amount of days left until the end of the service.
+* **Show days** (only for prepaid customers) - enables/disables the displaying of the amount of days left until the end of the service.
 
-* **Hardware** - enables/disables the displaying of hardware linked to the customer
+* **Hardware** - enables/disables the displaying of hardware linked to the customer.
 
 
 ### Tickets

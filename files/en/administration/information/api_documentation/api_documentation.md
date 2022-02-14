@@ -4,7 +4,7 @@ Splynx system has its own Application Programming Interface (API) which allows s
 
 Splynx supports the following type of authentication:
 
-**Access by token**
+#### Access by token
 
 * **Authentication as admin**
 
@@ -50,7 +50,7 @@ Then, use *POST* with *Content-type* to add new data and press *Send*. Check you
 ![Postman](postman9.png)
 ![Postman](postman10.png)
 
-**Basic authentication**
+#### Basic authentication
 
 Add API key with *Unsecure access* in `Administaration → API keys`;
 
@@ -62,10 +62,10 @@ Copy the encoded text, insert it as a value for *Authorization* key in Postman a
 ![Postman](postman4.png)
 ![Postman](postman5.png)
 
-**Access by signature**
-*Like in API v1*
+#### Access by signature
+(*Like in API v1*)
 
-Create API key and its secret in `Administaration → API keys` ;
+Create API key and its secret in `Administaration → API keys`;
 
 Create pre-request script in Postman, for example:
 
@@ -99,6 +99,63 @@ Create autorizaton request with `{{authorizationHeader}}` value and press Send.
 
 The output results indicate that tests were successful.
 
-To get started with Postman, please check its [documentation](https://learning.getpostman.com/).
+#### API search
 
-For more information about Splynx API, please check our wiki page: https://splynx.docs.apiary.io
+**Example:**
+
+```
+<?php
+
+$params = [
+    'main_attributes' => [
+        'login' => ['LIKE', 'durden'],
+        'partner_id' => ['BETWEEN', 1, 10],
+        'date_add' => date('Y-m-d'),
+        'added_by' => 'api',
+    ],
+    'additional_attributes' => [
+        'sex' => ['IN', ['male', 'female']],
+    ],
+    'order' => [
+        'id' => 'DESC',
+    ],
+    'limit' => 10,
+    'offset' => 20,
+];
+
+$apiUrl = 'admin/customers/customer' . '?' . http_build_query($params);
+```
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>All operators list</b></summary>
+<div markdown="1">
+
+- `=`
+- `!=`
+- `>=`
+- `<=`
+- `>`
+- `<`
+- `<>`
+- `IS`
+- `REGEXP`
+- `BETWEEN`
+- `LIKE`
+- `IN'`
+- `FIND_IN_SET`
+
+
+</div>
+</details>
+
+<br>
+
+![image](api_search1.png)
+
+![image](api_search2.png)
+
+---
+
+To get started with Postman, please check this [documentation](https://learning.getpostman.com/).
+
+For more information about Splynx API, see our wiki page: https://splynx.docs.apiary.io

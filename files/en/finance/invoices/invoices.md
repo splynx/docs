@@ -113,9 +113,10 @@ The  **invoice charging process can be automated** using the **Auto charge filte
 <summary><b>Explanation</b></summary>
 <div markdown="1">
 
-Why we **cannot** use `Date to use on finance elements` value that is equal to `Billing date` with Auto charge filter?
+Why we **cannot** use the `Billing date` value in the **Date to use on finance elements** field for Auto charge filter?
 
-Let's imagine that we have the default settings in `Config → Finance → Automation`:
+
+Let's say that we have the default settings in `Config → Finance → Automation`:
 
 `Confirmation period (days)` = **3**;
 
@@ -156,13 +157,15 @@ In new window specify the necessary options for auto charge filter:
 
 - **External handler** - requires one of the [payment add-ons](payment_systems/payment_systems.md) in Splynx to be installed, as a result this determines which handler we can choose here. **External handler parameters** can be specified as well for some add-ons;
 
-Then, press **Save** button. To edit the created filter click on <icon class="image-icon">![Edit](editinvoice.png)</icon> icon.
+Then, press **Save** button. To edit the created filter click on <icon class="image-icon">![Edit](icon5.png)</icon> icon.
 
 ![](auto_charge_filter3.png)
 
-The filter will be triggered on the selected day in **Period** field at 11:59 PM. The result of the charge execution can be checked in *Charge history* tab, the value in *Source* column should be `auto`.
+<icon class="image-icon">![image](information.png)</icon> The filter will be triggered on the selected day in **Period** field **at 11:59 PM**. The result of the charge execution can be checked in **Charge history** tab, the value in **Source** column should be `auto`.
 
 ![](auto_charge_filter4.png)
+
+![](auto_charge_filter5.png)
 
 ---
 
@@ -247,7 +250,7 @@ Also, the option `Load items from uncharged transactions` in the *One-time* invo
 
 - The items with negative price value can be added to the invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`;
 
-- Statistics of `Partially paid` invoices will be included in the `Unpaid` category of the **Total invoiced** table.
+- Statistics of `Partially paid` invoices will be included in the `Unpaid` category of the **Totals** table.
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>click here to see the step-by-step example</b></summary>

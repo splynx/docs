@@ -29,11 +29,66 @@ Let's consider the **invoice statuses** in details:
 
 ---
 
-**What is an Invoice Total Due Amount?**
+**Invoice Due Amount and Partial Payment**
 
-It's an invoice details how much your customer owes you when payment is due for some provided service. The total due amount depends on the total cost per service, fees (taxes),  etc.
+The **Due Amount** - an invoice details how much your customer owes you when payment is due for some provided service. The total due amount depends on the total cost per service, fees (taxes),  etc.
+
+The **Partial Payment** refers to the payment of an invoice that is less than the total amount due. In this case, the invoice will have the `Partially paid` status.
+
+**Example #1**
+
+A customer was invoiced a total of 120$ and a 50$ payment was received. As a result, the invoice has the `Partially paid` status and its total due amount is 70$.
+
+![image](inv_due_amount1.png)
+
+If the next payment is more than the invoice due amount, the money will be added to customer's account balance. The invoice won't become overpaid, because the payment is added to the account balance, not directly to the invoice.
+
+![image](inv_due_amount2.png)
+
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+- If an invoice is paid in one payment, that payment will be deleted along with the invoice deletion. But if an invoice is paid by more than one payment, that invoice cannot be deleted until all related payments are deleted.
+
+![image](related_payments.png)
+
+- To check the payments which are related to the paid invoice, choose `All invoices` in customer's finance documents section, find the necessary invoice in the table and in the **Payment** column, next to the invoice item, click on three dots to **Show all** payments.
+
+![image](inv_due_amount3.png)
+
+If the **Payment** column is not displayed in the table, click the **Show/hide columns** icon and enable the **Payment** toggle.
+
+![image](inv_due_amount4.png)
+
+![image](inv_due_amount5.png)
+
+- To **delete a payment (-s) associated with an invoice**, click on the IDs of displayed payments, the filter will be applied -  the payments that are associated with a specific invoice ID will be displayed, click on the <icon class="image-icon">![icon7](icon7.png)</icon> (Delete) icon next to the necessary payment item.
+
+![image](inv_due_amount6.png)
+
+- An invoice can be (partially) paid not only by a payment, but also by a credit note. The uncharged future item can be loaded/added to one time/recurring invoice as well.
+
+![image](inv_due_amount7.png)
 
 
+**Example #2**
+
+If a customer has a transaction (type: `+ Debit`) and has an invoice with `Unpaid` status, and a new payment is received, the transaction will be paid first, then the invoice.
+
+Let's say, the transaction (type: `+ Debit`) is created equal to 100$. Also, the customer has the `Unpaid` invoice for 50$. The customer makes the payment for 100$. The result is the following:
+
+The invoice is still with `Unpaid`status and there are no related payments to it.
+
+![image](example_2_1.png)
+
+![image](example_2_2.png)
+
+![image](example_2_3.png)
+
+If the customer makes the new payment for 50$, the invoice will be paid and payment relation will be added.
+
+![image](example_2_4.png)
+
+![image](example_2_5.png)
 
 ---
 
@@ -252,21 +307,20 @@ Also, the option **Load items from uncharged transactions** in the **One-time** 
 
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-- If a future item (transaction) is added manually using the **Billing → Transactions → Add Transaction** button with the `Include transaction in next recurring invoice` option, a future item (transaction) will not be removed during the deletion of created invoice (*One-time* or *Recurring*) with this item or using **Cancel last recurring invoice** button. After deleting an invoice, such the unlinked transaction can only be deleted manually;
+- If a future item is added manually using the **Billing → Transactions → Add Transaction** button with the `Include transaction in next recurring invoice` option, a future item will not be removed during the deletion of created invoice (*One-time* or *Recurring*) with this item or using **Cancel last recurring invoice** button. After deleting an invoice, such the unlinked transaction can only be deleted manually;
 
 - The items with negative price value can be added to the invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`;
 
-- To **delete a payment associated with an invoice**, navigate to `Billing → Finance documents` in customer profile, choose `Payment` from the select menu of document type field and click on the <icon class="image-icon">![icon7](icon7.png)</icon> (Delete) icon next to the necessary payment item.
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>click here to see the step-by-step example</b></summary>
 <div markdown="1">
 
-If the invoice includes at least one manual future item (transaction) and we are going to remove this invoice, such future item (transaction) can be remove only manually. Let's check it:
+If the invoice includes at least one manual future item and we are going to remove this invoice, such future item can be remove only manually. Let's check it:
 
 **STEP 1**
 
-Create a future item (transaction) with the `Include transaction in next recurring invoice` option:
+Create a transaction (future item) with the `Include transaction in next recurring invoice` option:
 
 ![](img1.png)
 
@@ -286,7 +340,7 @@ In `Billing → Billing config` press **Charge & Invoice** button to charge the 
 
 **STEP 4**
 
-Double check if the manual future item (transaction) has been added to newly created invoice
+Double check if the manual future item has been added to newly created invoice
 
 ![](img5.png)
 
@@ -294,7 +348,7 @@ Double check if the manual future item (transaction) has been added to newly cre
 
 **STEP 5**
 
-Delete the invoice completely using <icon class="image-icon">![icon7](icon7.png)</icon> icon in `Billing → Finance documents` tab. Or press **Cancel last recurring invoice** button in `Billing → Billing config` tab. The current invoice includes the auto (charge for service - step 3) and manual future item (transaction) (it was added manually in step 1).
+Delete the invoice completely using <icon class="image-icon">![icon7](icon7.png)</icon> icon in `Billing → Finance documents` tab. Or press **Cancel last recurring invoice** button in `Billing → Billing config` tab. The current invoice includes the auto (charge for service - step 3) and manual future item (it was added manually in step 1).
 
 ![](img7.png)
 
@@ -304,13 +358,13 @@ The next warning message will be shown:
 
 ![](img7.1.png)
 
-If we apply `Cancel last recurring invoice` and the invoice includes not only manual future item (transaction) (-s), the warning message will be the next:
+If we apply `Cancel last recurring invoice` and the invoice includes not only manual future item (-s), the warning message will be the next:
 
 ![](warning_msg1.png)
 
 **STEP 6**
 
-Check if the manual future item (transaction) is present in `Billing → Transactions`. Mind, that it can only be removed manually.
+Check if the manual future item is present in `Billing → Transactions`. Mind, that it can only be removed manually.
 
 ![](img9.png)
 

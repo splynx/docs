@@ -17,47 +17,299 @@ In this section can be found all financial documents related to the particular c
 - **One-time invoice**;
 - **Recurring invoice**;
 - **Proforma invoice**;
-- **Payment**;
 - **Credit note**;
+- **Payment**;
 - **Future items**;
 - **Statement**
 
-**NOTE:** The statements will not be shown in the table. But when the statement is added (generated), the options to send it to the customer's email, save to the customer's [documents](customer_management/customer_documents/customer_documents.md) or download it as a PDF file are available. More information can be found below.
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+The statement (-s) will not be shown in the table under the **Finance documents** tab. But when the statement is added (generated), the options to send it to the customer's email, save to the customer's [documents](customer_management/customer_documents/customer_documents.md) or download it as a PDF file are available.
 
 ![image](1.png)
 
-**One-time invoice**
+#### Invoices: One-time, Recurring and Proforma
 
-The *invoice* is a financial document which indicates the supply of goods or services between a vendor and a customer.
+An **invoice** is a financial document which indicates the supply of goods or services between a vendor and a customer.
 
-The *One-time* invoice is designed for the customer who pays a one-time cost to obtain the product or service. If they need it again, when they choose, they’ll pay again. Usually, you can **create the one-time invoice** if you want to charge customer for [One-Time Plan](configuring_tariff_plans/one_time_plans/one_time_plans.md):
+An **One-time** invoice is designed for a customer who pays an one-time cost to obtain the product or service. If they need it again, when they choose, they’ll pay again.
 
-1. Click on the <icon class="image-icon">![image](add_document.png)</icon> button and in the drop-down list select `One-time invoice` item.
+The **Recurring** invoice is when the items or services are supplied to a customer on a regular basis and the automatic charge is applied. If there’s no change in services your customers regularly need, the usage of the recurring invoicing is more preferable.
 
-2. In the new window, click on the <icon class="image-icon">![image](breadcrumbs.png)</icon> (breadcrumbs) icon and in the drop-down list choose the existing *One-Time Plan*, it will be automatically added to the one-time invoice with all details (e.g. price, VAT, description etc.).
+More information **about the charging by invoices** can be found here - [Invoices](finance/invoices/invoices.md).
 
-In order to add the additional item (-s) to the one-time/recurring invoice, press `+` sign or use the option `Add more items`, after that specify its date, price, quantity, description etc.
+A **Proforma** invoice is a non-official estimated invoice in advance that is given to a customer before products or services are supplied. It looks almost identical to one-time/recurring invoice, however it doesn't care the same weight because it's provisional. In other words it's a 'good faith' agreement between the vendor and the customer, used to avoid unexpected charges down the line.
 
-The option `Load items from uncharged transactions` in the *One-time* invoice can be used to add the future item that was created with the option `Include transaction in next recurring invoice` and such transaction has not yet been included to any charge. Note that the future item will automatically be added to the *Recurring* invoice.
+The detailed information about *Proforma* invoices can be found here - [Proforma invoices](finance/proforma_invoices/proforma_invoices.md).
 
+
+Let's consider the **invoice statuses** in details:
+
+| Status  | Description |
+| ------------ | ------------ |
+| <icon class="image-icon">![](unpaid.png)</icon> | the invoice has been created, but the customer has not made any payments towards the balance. The customer is expected to pay the invoice's amount due|
+| <icon class="image-icon">![](pending.png)</icon> | the invoice has not been paid and is not yet past the due date but payment is sent for processing. Once the invoice payment is processed successfully, the invoice will be updated to either the `Paid` or `Unpaid` status. If the due period has been exceeded and the due amount hasn't been paid, a status will be changed to `Pending Overdue` or `Overdue`|
+| <icon class="image-icon">![](paid.png)</icon> | the invoice was paid in full from customer's balance, the status is applied only if customer has enough funds |
+|<icon class="image-icon">![](partially_paid.png)</icon> | the payment was received, but it does not cover the full invoice amount (invoice total due amount). The statistics of `Partially paid` invoices will be included in the `Unpaid` category of the **Totals** table in `Finance → Invoices`. |
+| <icon class="image-icon">![](overdue.png)</icon> | no payment was received for this invoice and the `Payment due` date has already passed |
+| <icon class="image-icon">![](deleted.png)</icon> | the invoice was marked as deleted. If we apply the `Mark as deleted` option for unpaid invoice, the invoice will be marked as deleted and its auto (`+Debit`) transaction (-s) will be removed. The manual transaction (-s), that was added to the invoice, will remain (even when `Delete completely` option was used) in any case. It's required to remove it manually |
+
+Also, there are a **number of operations** that can be executed with the icons in the **Actions** column:
+
+| Action  | Description  |
+| ------------ | ------------ |
+|<icon class="image-icon">![icon1](icon1.png)</icon>  |  View an invoice |
+|<icon class="image-icon">![icon2](icon2.png)</icon>   | View an invoice as a PDF file  |
+|<icon class="image-icon">![icon3](icon3.png)</icon>   | Download an invoice as a PDF file  |
+|<icon class="image-icon">![icon4](icon4.png)</icon>   | Send an invoice via Email/SMS or as a message to Customer portal |
+|<icon class="image-icon">![icon5](icon5.png)</icon>   | Edit a payment  |
+|<icon class="image-icon">![icon5](create_credit_note.png)</icon>   | Create [credit note](finance/credit_notes/credit_notes.md) for the current invoice  |
+|<icon class="image-icon">![icon7](icon7.png)</icon>   | Delete an invoice with/without transaction |
+|<icon class="image-icon">![icon8](icon8.png)</icon>   |Pay an invoice|
+
+
+---
+
+Usually, you can **create a one-time invoice** if you want to charge customer for [One-Time Plan](configuring_tariff_plans/one_time_plans/one_time_plans.md):
+
+1. Click on the <icon class="image-icon">![image](add_document.png)</icon> button and in the drop-down list and choose `One-time invoice`.
+
+2. In the new window, click on the <icon class="image-icon">![image](breadcrumbs.png)</icon> (breadcrumbs) icon and in the drop-down list choose the existing *One-Time Plan*, it will be automatically added to the invoice form with all details (e.g. price, VAT, description etc.).
+
+In order to add the additional item (-s) to the invoice, press `+` sign or use the option `Add more items`, after that specify its date, price, quantity, description etc.
+
+During the step of invoice creating you can modify the next option:
+
+- **Number** - a number will be generated automatically. You can generate a new number using the button next to the field (an icon of magic wand). The invoice format number can be set in [Finance settings](configuration/finance/finance_settings/finance_settings.md);
+- **Document date** - a transaction creation date;
+- **Period** (only for a *Recurring* invoice ) - a period for which the invoice will be charged;
+- **Payment due date** - the date by which the invoice must be paid. Please note, if you set the *Payment due date* value greater than the value in the *Payment due* field in the customer's *Billing config*, the customer will still be blocked the day after *Payment due*, but the *Recurring* invoice won't be with `Overdue` status;
+- **Note** - some additional notes for the customer;
+- **Select plan** - if the tariff plans have been created, you can select the necessary one in the selection menu. For a *Recurring* invoice, the plan will be loaded automatically, it's based on the service (-s) the customer uses;
+- **Description** - a plan description, loaded automatically if you select a plan from the selection menu;
+- **Quantity** - a property that is measured, e.g. `3`;
+- **Unit** - a standard quantity against which a quantity is measured, e.g. `hour`; which is unit of the above quantity (in most cases, cannot be applied for a recurring invoice with service plan. But can be used for *One-time* invoices, where payment is made per hour);
+- **Price** - a price of the plan, the value will be loaded automatically if the plan is chosen from the selection menu;
+- **VAT %** - *Value Added Tax* is a flat tax levied on an item. Learn more about [Taxes](configuration/finance/taxes/taxes.md);
+
+
+The option **Load items from uncharged transactions** in the **One-time** invoice can be used to **add the future item** (an uncharged transaction with the option `Include transaction in next recurring invoice`).
 
 3. Press **Save** button to create the invoice.
 
-![image](2.png)
+![Create invoice](create_invoice1.png)
 
-**NOTE:** The items with negative price value can be added to any type of invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`.
+![Create invoice](create_invoice2.png)
 
-**Recurring invoice**
+![Create invoice](create_invoice3.png)
 
-The *Recurring* invoice is when the items or services are supplied to a customer on a regular basis and the automatic charge is applied. If there’s no change in services your customers regularly need, the usage of the recurring invoicing is more preferable.
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-The detailed descriptions of *Invoices* can be found here - [Invoices](finance/invoices/invoices.md).
+- A future item by itself will **NOT** change the customer account balance (**!** only for `Recurring` billing type) until it's loaded/added to **One time**/**Recurring invoice**;
 
-**Proforma invoice**
+- A future item will **automatically** be added to the next **Recurring** invoice;
 
-A *Proforma* invoice is a non-official estimated invoice in advance that is given to a customer before products or services are supplied. It looks almost identical to one-time/recurring invoice, however it doesn't care the same weight because it's provisional. In other words it's a 'good faith' agreement between the vendor and the customer, used to avoid unexpected charges down the line.
+- If the invoice includes at least one future item and we are going to remove this invoice, such future item can be removed only manually;
 
-The detailed information about *Proforma* invoices can be found here - [Proforma invoices](finance/proforma_invoices/proforma_invoices.md).
+- The items with negative price value can be added to the invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`.
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>click here to see the step-by-step example</b></summary>
+<div markdown="1">
+
+**STEP 1**
+
+Create a future item (it's an uncharged transaction with the option `Include transaction in next recurring invoice`):
+
+![](img1.png)
+
+![](img2.png)
+
+**STEP 2**
+
+Add some service in customer profile, e.g. Internet service
+
+![](img3.png)
+
+**STEP 3**
+
+In `Billing → Billing config` press the **Charge & Invoice** button to charge the customer
+
+![](img4.png)
+
+**STEP 4**
+
+Double check if the future item has been added to newly created invoice
+
+![](img5.png)
+
+![](img6.png)
+
+**STEP 5**
+
+Delete the invoice completely using the <icon class="image-icon">![icon7](icon7.png)</icon> (Delete) icon under `Billing → Finance documents` tab or press the **Cancel last recurring invoice** button under `Billing → Billing config` tab. The current invoice includes the auto (charge for service - step 3) and future item (it was added manually in step 1).
+
+![](img7.png)
+
+The next warning message will be shown:
+
+![](img7del_inv.png)
+
+![](img7.1.png)
+
+If we apply the **Cancel last recurring invoice** action and the invoice includes not only the future item (-s), the warning message will be the next:
+
+![](warning_msg1.png)
+
+**STEP 6**
+
+Check if the future item is present in `Billing → Transactions` or in `Billing → Finance documents` locations. Mind, that the future item can only be removed manually.
+
+![](img9.png)
+
+</div>
+</details>
+
+
+Also, take into consideration the following:
+
+- during the converting a [quote](crm/quotes/quotes.md) to the invoice in customer's profile (`Lead → Quotes` tabs) or the converting some lead account to customer one, the auto transaction will be created. If we remove the created invoice, the auto transaction will be removed as well;
+
+- if we create the invoice manually e.g. using the **Add document → One-time invoice** button and after that remove such invoice, its transaction will be removed automatically;
+
+These statements and example above also apply to `Delete` option in drop-down menu with mass **Actions** in `Finance → Invoices`.
+
+---
+
+While deleting the `Unpaid` invoice in the customer's profile under `Billing → Finance documents` tab, it's possible to use `Mark as delete` option instead of delete invoice completely. The option can be useful when we want to have a fuller context of the customer's billing flow.
+
+![](mark_as_deleted.png)
+
+In this case, the invoice will be marked as `Deleted`, its auto transaction (-s) will be removed. The future item related to the invoice will remain in any case. But such future item can be deleted manually.
+
+![](mark_as_deleted1.png)
+
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+The invoice (-s) with `Deleted` status cannot be reverted back to `Unpaid` status, only the **Delete completely** option can be applied.
+
+![](mark_as_deleted2.png)
+
+---
+
+To **edit an unpaid invoice** click on the <icon class="image-icon">![Edit icon](icon5.png)</icon> icon under the customer's `Billing → Finance documents` tab.
+
+![Invoice mobile rent](edit_invoice.png)
+
+---
+
+It is also possible **to send invoice (-s) via email** with the <icon class="image-icon">![Send invoice](icon4.png)</icon> icon (if the SMTP server is [configured](configuration/main_configuration/email_config/email_config.md)) in `Billing → Invoices`.
+You can write a message body manually or choose a template to populate it.
+
+![Send file](send_file.png)
+
+Also if a new body text is manually typed, you can save it as a new template.
+
+![Save template](save_template.png)
+
+
+---
+
+
+**Invoice Due Amount and Partial Payment**
+
+The **Due Amount** - an invoice details how much your customer owes you when payment is due for some provided service. The total due amount depends on the total cost per service, fees (taxes),  etc.
+
+The **Partial Payment** refers to the payment of an invoice that is less than the total amount due. In this case, the invoice will have the `Partially paid` status.
+
+**Example #1**
+
+A customer was invoiced a total of 120$ and a 50$ payment was received. As a result, the invoice has the `Partially paid` status and its total due amount is 70$.
+
+![image](inv_due_amount1.png)
+
+If the next payment is more than the invoice due amount, the money will be added to customer's account balance. The invoice won't become overpaid, because the payment is added to the account balance, not directly to the invoice.
+
+![image](inv_due_amount2.png)
+
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+- If an invoice is paid in one payment, that payment will be deleted along with the invoice deletion. But if an invoice is paid by more than one payment, that invoice cannot be deleted until all related payments are deleted.
+
+![image](related_payments.png)
+
+- To check the payments which are related to the paid invoice, choose `All invoices` in customer's finance documents section, find the necessary invoice in the table and in the **Payment** column, next to the invoice item, click on three dots to **Show all** payments.
+
+![image](inv_due_amount3.png)
+
+If the **Payment** column is not displayed in the table, click the **Show/hide columns** icon and enable the **Payment** toggle.
+
+![image](inv_due_amount4.png)
+
+![image](inv_due_amount5.png)
+
+- To **delete a payment (-s) associated with an invoice**, click on the IDs of displayed payments, the filter will be applied -  the payments that are associated with a specific invoice ID will be displayed, click on the <icon class="image-icon">![icon7](icon7.png)</icon> (Delete) icon next to the necessary payment item.
+
+![image](inv_due_amount6.png)
+
+- An invoice can be (partially) paid not only by a payment, but also by a credit note. The uncharged future item can be loaded/added to one time/recurring invoice as well.
+
+![image](inv_due_amount7.png)
+
+
+**Example #2**
+
+If a customer has a transaction (type: `+ Debit`) and has an invoice with `Unpaid` status, and a new payment is received, the transaction will be paid first, then the invoice.
+
+Let's say, the transaction (type: `+ Debit`) is created equal to 100$. Also, the customer has the `Unpaid` invoice for 50$. The customer makes the payment for 100$. The result is the following:
+
+The invoice is still with `Unpaid`status and there are no related payments to it.
+
+![image](example_2_1.png)
+
+![image](example_2_2.png)
+
+![image](example_2_3.png)
+
+If the customer makes the new payment for 50$, the invoice will be paid and payment relation will be added.
+
+![image](example_2_4.png)
+
+![image](example_2_5.png)
+
+---
+
+<icon class="image-icon">![image](information.png)</icon> **NOTE:** To **view an invoice** with the view icon<icon class="image-icon">![View icon](icon2.png)</icon>, it is necessary to configure an **invoice template** first in `Config → System → Templates` and also to specify the use of the selected/modified template in `Config → System → Company information`.
+
+![Template values](template_values.png)
+
+On the **Company information** page, we define the [partner](administration/main/partners/partners.md) and the PDF [template](configuration/system/templates/templates.md) (`Invoice A4 Classic` item is selected as an example by default).
+Once the PDF template is chosen, it will be possible to view the invoice in PDF format.
+
+![Invoice view](invoice_view.png)
+
+Please note that all [templates](configuration/system/templates/templates.md) can be customized, navigate to `Config → Templates`, choose the type of templates to display/work with and simple edit or add a new template you wish to use:
+
+![Invoice templates](templates.png)
+
+---
+
+[Finance formats](configuration/main_configuration/localization/localization.md) displayed on the invoice are customizable. Click on `Config → Main → Localization`,  to define the currency and other finance format settings.
+
+![Finance format settings](finance_format_setting.png)
+
+---
+
+In `Config → Finance → Settings` can be found the global **Invoices settings** for all customers in Splynx system. In this menu, you can also define the **Invoice number format**, by default is used `{year}{partner_id|2}{next|6}`.
+
+![Invoice number pattern](invoice_number_pattern.png)
+
+You might also be interested in [Finance settings](configuration/finance/finance_settings/finance_settings.md) description.
+
+
+
+---
 
 **Payment**
 
@@ -234,9 +486,19 @@ If we have `-50` value as a minimum balance requirement, a customer can pay only
 </details>
 
 * **Partner percent** - shows the individual partner percent value the customer belongs to. The global `Partner's commission (%)` setting is located in `Config → System → Company Information`;
-* **Auto create invoices** (after Charge & Invoice) - creates an invoice automatically after using the charge & invoice button <icon class="image-icon">![Charge button](charge_button.png)</icon>
+* **Auto create invoices**  - toggle enables/disables an automatic invoice generation for specific customer when the **Charge & Invoice** button was used in `Customers → View → Billing Overview`. The global option to **Enable automatic issuing** is located in `Config → Finance → Automation` (see [Automation config](configuration/finance/automation/automation.md))
+
+> When the toggle **Auto create invoices** is not enabled under the customer's `Billing → Billing config` tab, you can create invoice manually using the **Add document → One-Time invoice** or **Add document → Recurring invoice** buttons under `Billing → Finance documents` tab;
+
 * **Send billing notifications** - toggle allows individually to enable/disable finance notifications for customer, the global configuration is located in `Config → Finance → Notifications`.
 
+---
+
+**Invoice options description:**
+
+
+
+---
 
 ## Payment Accounts
 

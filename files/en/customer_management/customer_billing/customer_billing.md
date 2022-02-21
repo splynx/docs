@@ -22,25 +22,27 @@ In this section can be found all financial documents related to the particular c
 - **Future items**;
 - **Statement**
 
-<icon class="image-icon">![image](information.png)</icon> **NOTE:**
-
-The statement (-s) will not be shown in the table under the **Finance documents** tab. But when the statement is added (generated), the options to send it to the customer's email, save to the customer's [documents](customer_management/customer_documents/customer_documents.md) or download it as a PDF file are available.
-
 ![image](1.png)
 
-#### Invoices: One-time, Recurring and Proforma
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-An **invoice** is a financial document which indicates the supply of goods or services between a vendor and a customer.
+- **Statements** will not be displayed in the table under the **Finance documents** tab. But when a statement is added (generated), the options to send it to the customer's email, save to the customer's [documents](customer_management/customer_documents/customer_documents.md) or download it as a PDF file will be available.
 
-An **One-time** invoice is designed for a customer who pays an one-time cost to obtain the product or service. If they need it again, when they choose, they’ll pay again.
 
-The **Recurring** invoice is when the items or services are supplied to a customer on a regular basis and the automatic charge is applied. If there’s no change in services your customers regularly need, the usage of the recurring invoicing is more preferable.
 
-More information **about the charging by invoices** can be found here - [Invoices](finance/invoices/invoices.md).
+### Invoices: One-time, Recurring and Proforma
 
-A **Proforma** invoice is a non-official estimated invoice in advance that is given to a customer before products or services are supplied. It looks almost identical to one-time/recurring invoice, however it doesn't care the same weight because it's provisional. In other words it's a 'good faith' agreement between the vendor and the customer, used to avoid unexpected charges down the line.
+**Invoice** is a financial document which indicates the supply of goods or services between a vendor and a customer.
 
-The detailed information about *Proforma* invoices can be found here - [Proforma invoices](finance/proforma_invoices/proforma_invoices.md).
+**One-time invoice** is designed for a customer who pays an one-time cost to obtain the product or service. If they need it again, when they choose, they’ll pay again.
+
+**Recurring invoice** is when the items or services are supplied to a customer on a regular basis and the automatic charge is applied. If there’s no change in services your customers regularly need, the usage of the recurring invoicing is more preferable.
+
+<icon class="image-icon">![image](bulb.png)</icon> See documentation [about the charging by invoices](finance/invoices/invoices.md)  for more information.
+
+**Proforma invoice** is a non-official estimated invoice in advance that is given to a customer before products or services are supplied. It looks almost identical to one-time/recurring invoice, however it doesn't care the same weight because it's provisional. In other words it's a 'good faith' agreement between the vendor and the customer, used to avoid unexpected charges down the line.
+
+<icon class="image-icon">![image](bulb.png)</icon> Related Read: [Proforma invoices](finance/proforma_invoices/proforma_invoices.md) documentation.
 
 
 Let's consider the **invoice statuses** in details:
@@ -97,12 +99,6 @@ The option **Load items from uncharged transactions** in the **One-time** invoic
 
 3. Press **Save** button to create the invoice.
 
-![Create invoice](create_invoice1.png)
-
-![Create invoice](create_invoice2.png)
-
-![Create invoice](create_invoice3.png)
-
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
 - A future item by itself will **NOT** change the customer account balance (**!** only for `Recurring` billing type) until it's loaded/added to **One time**/**Recurring invoice**;
@@ -112,6 +108,12 @@ The option **Load items from uncharged transactions** in the **One-time** invoic
 - If the invoice includes at least one future item and we are going to remove this invoice, such future item can be removed only manually;
 
 - The items with negative price value can be added to the invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`.
+
+![Create invoice](create_invoice1.png)
+
+![Create invoice](create_invoice2.png)
+
+![Create invoice](create_invoice3.png)
 
 
 <details style="font-size: 15px; margin-bottom: 5px;">
@@ -148,17 +150,17 @@ Double check if the future item has been added to newly created invoice
 
 **STEP 5**
 
-Delete the invoice completely using the <icon class="image-icon">![icon7](icon7.png)</icon> (Delete) icon under `Billing → Finance documents` tab or press the **Cancel last recurring invoice** button under `Billing → Billing config` tab. The current invoice includes the auto (charge for service - step 3) and future item (it was added manually in step 1).
+Delete the invoice completely using the <icon class="image-icon">![icon7](icon7.png)</icon> (Delete) icon under `Billing → Finance documents` tab or press the **Cancel last recurring invoice** button under `Billing → Billing config` tab. The current invoice includes the auto transaction (service charge  - step 3) and future item (it was added manually on step 1).
 
 ![](img7.png)
 
-The next warning message will be shown:
+The next warning message will be displayed:
 
 ![](img7del_inv.png)
 
 ![](img7.1.png)
 
-If we apply the **Cancel last recurring invoice** action and the invoice includes not only the future item (-s), the warning message will be the next:
+If we apply the **Cancel last recurring invoice** action and the invoice includes not only the transaction of service charge, the warning message will be the next:
 
 ![](warning_msg1.png)
 
@@ -182,7 +184,7 @@ These statements and example above also apply to `Delete` option in drop-down me
 
 ---
 
-While deleting the `Unpaid` invoice in the customer's profile under `Billing → Finance documents` tab, it's possible to use `Mark as delete` option instead of delete invoice completely. The option can be useful when we want to have a fuller context of the customer's billing flow.
+While **deleting the `Unpaid` invoice in the customer's profile** under `Billing → Finance documents` tab, it's possible to use `Mark as delete` option instead of delete invoice completely. The option can be useful when we want to have a fuller context of the customer's billing flow.
 
 ![](mark_as_deleted.png)
 
@@ -192,7 +194,7 @@ In this case, the invoice will be marked as `Deleted`, its auto transaction (-s)
 
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-The invoice (-s) with `Deleted` status cannot be reverted back to `Unpaid` status, only the **Delete completely** option can be applied.
+- The invoice (-s) with `Deleted` status cannot be reverted back to `Unpaid` status, only the **Delete completely** option can be applied.
 
 ![](mark_as_deleted2.png)
 
@@ -217,11 +219,11 @@ Also if a new body text is manually typed, you can save it as a new template.
 ---
 
 
-**Invoice Due Amount and Partial Payment**
+#### Invoice Due Amount and Partial Payment
 
-The **Due Amount** - an invoice details how much your customer owes you when payment is due for some provided service. The total due amount depends on the total cost per service, fees (taxes),  etc.
+**Due Amount** - an invoice details how much your customer owes you when payment is due for some provided service. The total due amount depends on the total cost per service, fees (taxes),  etc.
 
-The **Partial Payment** refers to the payment of an invoice that is less than the total amount due. In this case, the invoice will have the `Partially paid` status.
+**Partial Payment** refers to the payment of an invoice that is less than the total amount due. In this case, the invoice will have the `Partially paid` status.
 
 **Example #1**
 
@@ -235,11 +237,11 @@ If the next payment is more than the invoice due amount, the money will be added
 
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-- If an invoice is paid in one payment, that payment will be deleted along with the invoice deletion. But if an invoice is paid by more than one payment, that invoice cannot be deleted until all related payments are deleted.
+- If an invoice is paid in one payment, that payment will be deleted along with the invoice deletion. But if an **invoice is paid by more than one payment, that invoice cannot be deleted until all related payments are deleted**.
 
 ![image](related_payments.png)
 
-- To check the payments which are related to the paid invoice, choose `All invoices` in customer's finance documents section, find the necessary invoice in the table and in the **Payment** column, next to the invoice item, click on three dots to **Show all** payments.
+- To check the payments which are related to the paid invoice, choose `All invoices` under customer's finance documents tab, find the necessary invoice in the table and in the **Payment** column, next to the invoice item, click on three dots to **Show all** payments.
 
 ![image](inv_due_amount3.png)
 
@@ -253,14 +255,14 @@ If the **Payment** column is not displayed in the table, click the **Show/hide c
 
 ![image](inv_due_amount6.png)
 
-- An invoice can be (partially) paid not only by a payment, but also by a credit note. The uncharged future item can be loaded/added to one time/recurring invoice as well.
+- An invoice can be (partially) paid not only by a payment, but also by a [**credit note**](finance/credit_notes/credit_notes.md). The uncharged future item can be loaded/added to one time/recurring invoice as well.
 
 ![image](inv_due_amount7.png)
 
 
 **Example #2**
 
-If a customer has a transaction (type: `+ Debit`) and has an invoice with `Unpaid` status, and a new payment is received, the transaction will be paid first, then the invoice.
+If a customer has a transaction (type: `+ Debit`) and has an invoice with `Unpaid` status, and a new payment is received, the transaction will be paid off first, then the invoice.
 
 Let's say, the transaction (type: `+ Debit`) is created equal to 100$. Also, the customer has the `Unpaid` invoice for 50$. The customer makes the payment for 100$. The result is the following:
 
@@ -280,11 +282,13 @@ If the customer makes the new payment for 50$, the invoice will be paid and paym
 
 ---
 
-<icon class="image-icon">![image](information.png)</icon> **NOTE:** To **view an invoice** with the view icon<icon class="image-icon">![View icon](icon2.png)</icon>, it is necessary to configure an **invoice template** first in `Config → System → Templates` and also to specify the use of the selected/modified template in `Config → System → Company information`.
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+- To **view an invoice** as PDF with the <icon class="image-icon">![View icon](icon2.png)</icon> (view PDF) icon, it is necessary to configure an **invoice template** first in `Config → System → Templates` and also to specify the use of the selected/modified template in `Config → System → Company information`.
 
 ![Template values](template_values.png)
 
-On the **Company information** page, we define the [partner](administration/main/partners/partners.md) and the PDF [template](configuration/system/templates/templates.md) (`Invoice A4 Classic` item is selected as an example by default).
+On the **Company information** page, we define the [Partner](administration/main/partners/partners.md) and its PDF [Template](configuration/system/templates/templates.md) (`Invoice A4 Classic` item is selected as an example by default).
 Once the PDF template is chosen, it will be possible to view the invoice in PDF format.
 
 ![Invoice view](invoice_view.png)
@@ -301,69 +305,75 @@ Please note that all [templates](configuration/system/templates/templates.md) ca
 
 ---
 
-In `Config → Finance → Settings` can be found the global **Invoices settings** for all customers in Splynx system. In this menu, you can also define the **Invoice number format**, by default is used `{year}{partner_id|2}{next|6}`.
+In `Config → Finance → Settings` can be found the global **Invoices settings** for all customers in Splynx system. In this menu, you can also define the **Invoice number format**, by default is used `{year}{partner_id|2}{next|6}` format.
 
 ![Invoice number pattern](invoice_number_pattern.png)
 
 You might also be interested in [Finance settings](configuration/finance/finance_settings/finance_settings.md) description.
 
 
+---
+
+### Credit note
+
+**Credit Notes** help to simplify the invoicing processes, it is useful for adjusting errors in created invoices. It allows you to lawfully amend an invoice, without having to delete or alter it.
+In other words, the *Credit Note* - a `-Credit` transaction added to customers account after making payments (increases customers account balance).
+
+![image](credit_note1.png)
+
+![image](credit_note2.png)
+
+**Example:**
+
+You sent to customer the invoice which contains an error and the invoice has been paid, as a result you need to re-bill the customer for the billing period. Since you can’t change an invoice’s total amount, you need to apply credit note to correct the balance.
+The experience with creating a new invoice with the negative price in order to refund a money to customer is now a thing of the past.
+The *Credit notes* provide accurate and complete records keeping of the transactions that occur after an invoice has been created.
+
+<icon class="image-icon">![image](bulb.png)</icon>  Suggested read: [Credit Notes](finance/credit_notes/credit_notes.md) management guide.
 
 ---
 
-**Payment**
 
-The *Payment* is a record that indicates an amount of money that has been paid. The Splynx can authorize the [payment methods](configuration/finance/payment_methods/payment_methods.md) to be made using bank transfer, credit card, cash etc.
+### Payment
+
+**Payment** is a record that indicates an amount of money that has been paid. The Splynx can authorize the [payment methods](configuration/finance/payment_methods/payment_methods.md) to be made using bank transfer, credit card, cash etc.
 To show all payments that customer has made, select `Payment` type and the list of items will be shown:
 
 ![image](3.png)
 
-Usually the payment is related to specific invoice however it can be added manually as standalone in Splynx, in this case the credit note (`-Credit` transaction) will be created.
+Usually a payment is related to specific invoice however it can be added manually as standalone in Splynx.
 
-More information about *Payments* can be found here - [Payments](finance/payments/payments.md)
 
-**Credit note**
+<icon class="image-icon">![image](bulb.png)</icon> For more information, see the [Payments](finance/payments/payments.md) documentation
 
-The *Credit Notes* help to simplify the invoicing processes, it is useful for adjusting errors in created invoices. It allows you to lawfully amend an invoice, without having to delete or alter it.
-In other words, the *Credit Note* - a `-Credit` transaction added to customers account after making payments (increases customers account balance).
-For example, you sent to customer the invoice which contains an error and the invoice has been paid, as a result you need to re-bill the customer for the billing period. Since you can’t change an invoice’s total amount, you need to apply credit note to correct the balance.
-The experience with creating a new invoice with the negative price in order to refund a money to customer is now a thing of the past.
-The *Credit notes* provide accurate and complete records keeping of the transactions that occur after an invoice has been created.
 
-The detailed description and the explanation of the credit notes management can be found in the [Credit Notes](finance/credit_notes/credit_notes.md) guide.
+---
 
-**Future items**
+### Future items
 
-The *Future item*  - a transaction with the `Include transaction in next recurring invoice` option enabled, it can be both `+Debit` and `-Credit` transactions, depends on what price value (negative/positive) is set there. For example, a future item with R100 price will be shown as `+Debit` transaction (customer account balance will be decreased on -R100) and a future item with negative price (-R100) will be represented as `-Credit` transaction (customer account balance will be increased on R100). In other words, the created
-`-Credit` transaction will appear in finance documents as future item with negative total price and vice versa. But the `+Debit` transaction with negative price will be automatically converted to `-Credit` one.
+**Future item**  - a transaction with the `Include transaction in next recurring invoice` option enabled, it can be either `+Debit` or `-Credit` transaction, depends on what price value (negative/positive) is set there.
+
+**Example**
+
+A future item with R100 price will be shown as `+Debit` transaction and a future item with negative price (-R200) will be represented as `-Credit` transaction.
+
+In other words, with the option `Include transaction in next recurring invoice`, the created `-Credit` transaction will appear in finance documents as future item with negative total price and vice versa.
 
 The option `Include transaction in next recurring invoice` defines if the current future item will be included to the next *Recurring* (or *One-time* invoice if the option `Load items from uncharged transactions` was used) invoice.
 
-As a result, the uncharged future item can be loaded to the new *One-time* or *Recurring* invoice during its creation. If the future item has already been loaded into an invoice, it loses its functions and becomes a transaction in the created invoice. The future item with negative price can be loaded to invoice as well, but the invoice total may be zero, but not negative.
+![image](future_item1.png)
 
-To add a *Future item*:
+![image](future_item2.png)
 
-1. Click on the <icon class="image-icon">![image](add_document.png)</icon> button and in the drop-down list select `Future item`.
+As a result, the uncharged future item can be loaded to the new *One-time* or *Recurring* invoice (will be added automatically) during its creation. If the future item has already been loaded into an invoice, it loses its functions and becomes a transaction in the created invoice and change a customer's account balance. The future item with negative price can be loaded to invoice as well, but the **invoice total may be zero, but not negative**.
 
-![Transactions](transactions.png)
+<icon class="image-icon">![image](bulb.png)</icon> For more information, see the [Transactions](finance/transactions/transactions.md) guide
 
-2. In the new window, specify the item (-s) details such as period, category, comment, item description, its price etc.
+---
 
-3. Press **Save** button to create the future item.
+### Statement
 
-![Transactions](transactions1.png)
-
-![Transactions](transactions2.png)
-
-The future item will be added automatically to recurring invoice when we are going to create it:
-
-![Transactions](transactions3.png)
-
-More information about the transactions can be found in the [Transactions](finance/transactions/transactions.md) guide.
-
-**Statement**
-
-The *Statement* (an account statement) - is a document that summarizes and lists all the Invoice/Payments or Transactions records within a specific time period. Such report can be sent to the customer on the email, saved to their [documents](customer_management/customer_documents/customer_documents.md) or exported to the separate PDF file.
+**Statement** (an account statement) - is a document that summarizes and lists all the *Invoice/Payments* or *Transactions* records for a certain period of time. Such report can be sent to the customer on the email, saved to their [documents](customer_management/customer_documents/customer_documents.md) or exported to the separate PDF file.
 
 To add the *Statement*:
 
@@ -373,7 +383,7 @@ To add the *Statement*:
 
 ![image](4.png)
 
-3. Choose one of the next options: *Send to customer*, *Save to document* or *Download as PDF*.
+3. Choose one of the next options: **Send to customer**, **Save to document** or **Download as PDF**.
 
 ![image](5.png)
 
@@ -387,13 +397,13 @@ The icon <icon class="image-icon">![](print.png)</icon> is designed to print, co
 
 ------------
 
-The **Total invoiced** and **Total paid** tables show the statistic of all finance documents in relation to the particular customer. These tables can be found at the bottom of finance documents section page. The **Total paid** table may differ depending on what payment methods are set up in the system.
+The **Total invoiced** and **Total paid** tables show the statistic of all finance documents in relation to the particular customer. These tables can be found at the bottom of *Finance documents* tab. The **Total paid** table may differ depending on what [payment methods](configuration/finance/payment_methods/payment_methods.md) are set up in the system.
 
 ![image](6.png)
 
 ------------
 
-We can also customize each of the table related to all types of finance documents, all/one-time/recurring/proforma invoices, payments, credit notes or future items by enabling/disabling fields or drag&drop fields in a preferred method of displaying.
+We can also **customize each of the table** related to all types of finance documents - *All*/*One-time*/*Recurring*/*Proforma invoices*, *Payments*, *Credit notes* or *Future items*s by enabling/disabling or drag&drop the fields in a preferred displaying way.
 
 ![Columns](columns.png)
 
@@ -401,11 +411,11 @@ We can also customize each of the table related to all types of finance document
 
 ## Transactions
 
-Transactions are divided into 2 types: `+Debit` and `-Credit` transactions.
+**Transactions** are divided into 2 types: `+Debit` and `-Credit`.
 
-`+Debit` - transaction added to customers account with amounts to be paid. (decreases customers account balance);
+`+Debit` - a transaction added to customer account with amount to be paid (decreases customers account balance, money is taken out of the account);
 
-`-Credit` - transaction added to customers account after making payments. (increases customers account balance).
+`-Credit` - a transaction added to customers account after making payments (increases customers account balance, money is added to customer account).
 
 ![image](transaction1.png)
 
@@ -415,7 +425,7 @@ The transaction created with the enabled `Include transaction in next recurring 
 
 ![image](transaction3.png)
 
-For more information, see [Transactions](finance/transactions/transactions.md) guide.
+<icon class="image-icon">![image](bulb.png)</icon> For more information, see [Transactions](finance/transactions/transactions.md) guide.
 
 ------------
 
@@ -423,18 +433,18 @@ For more information, see [Transactions](finance/transactions/transactions.md) g
 
 Billing config displays 6 main sections:
 
-* Billing Settings
-* Billing actions
-* Proforma Invoice Settings
-* Payment Accounts
-* Billing Address
-* Reminders Settings
+* **Billing Settings**
+* **Billing actions**
+* **Proforma Invoice Settings**
+* **Payment Accounts**
+* **Billing Address**
+* **Reminders Settings**
 
 ![Billing overview](billingoverview.png)
 
-## Billing Settings:
+#### Billing Settings:
 
-In this section you can set up the billing of the **selected customer**.
+In this section you can set up the billing parameters of the **selected customer**.
 
 (The global settings for **all customers** are located in `Config → Finance → Settings`).
 
@@ -459,24 +469,25 @@ The status `Already blocked` means that customer has been blocked, the status `I
 <summary><b>Example</b></summary>
 <div markdown="1">
 
-A **minimum balance** is the minimum amount of money that customer has to keep on their balance, maintaining a minimum balance will allow customer to avoid being blocked on the next day after Billing due. It means a customer balance cannot drop below the specified amount at any time during billing cycle.
+**Minimum balance** is a minimum amount of money that customer has to keep on their balance, maintaining a minimum balance will allow customer to avoid being blocked on the next day after *Billing due*. It means a customer balance cannot drop below the specified amount at any time during billing cycle.
 
-For instance, a customer uses some Internet service (e.g. its price is R100) and has the next settings on Billing overview tab:
+For instance, a customer uses some Internet service (e.g. its price is R100) and has the next settings on the *Billing overview* tab:
 - Billing day = 1;
 - Billing due = 15;
 
-The recurring invoice will be auto generated on the 1st day of next month. And imagine that customer will pay R100 for the invoice on the same day.
+The recurring invoice will be auto generated on the 1st day of next month. Let's say that a customer will pay R100 for the invoice on the same day when the invoice is created.
 
-If we have `0` (zero) value as a minimum balance requirement, a customer won't be blocked, because their balance will be equal to the set value.
-If customer balance becomes negative, customer will be blocked on the 16th day of the month.
+- If we have `0` (zero) value as a minimum balance requirement, a customer won't be blocked, because their balance will be equal to the set value.
+
+- If a customer balance becomes negative, customer will be blocked on the 16th day of the month.
 
 ![image](min_balance_4.png)
 
-If we have `50` value as a minimum balance requirement, a customer need to pay R150 for the invoice to keep R50 on the balance to avoid blocking. If a customer has less than 50 on the balance, they will be blocked.
+- If we have `50` value as a minimum balance requirement, a customer need to pay R150 for the invoice to keep R50 on the balance to avoid blocking. If a customer has less than 50 on the balance, they will be blocked.
 
 ![image](min_balance_3.png)
 
-If we have `-50` value as a minimum balance requirement, a customer can pay only R50 for the invoice, because it's allowed to have a negative balance, but no less (`-60`, `-70` etc.) than`-50`. Pay attention, if a customer pays R60, the account balance will be `-40` that is acceptable value. Even if a customer pays the full price for the invoice, the account balance will be equal to `0` and, as a result, a zero value will be greater than allowed minimal balance.
+- If we have `-50` value as a minimum balance requirement, a customer can pay only R50 for the invoice, because it's allowed to have a negative balance, but no less (`-60`, `-70` etc.) than`-50`. Pay attention, if a customer pays R60, the account balance will be `-40` that is acceptable value. Even if a customer pays the full price for the invoice, the account balance will be equal to `0` and, as a result, a zero value will be greater than allowed minimal balance.
 
 ![image](min_balance_1.png)
 
@@ -494,15 +505,10 @@ If we have `-50` value as a minimum balance requirement, a customer can pay only
 
 ---
 
-**Invoice options description:**
 
+#### Payment Accounts
 
-
----
-
-## Payment Accounts
-
- The accounts of customer which are used to make payments in the Splynx system.
+ The accounts of customer which are used to make payments in Splynx.
 
  ![Payment accounts](payment_accounts.png)
 
@@ -510,64 +516,49 @@ If we have `-50` value as a minimum balance requirement, a customer can pay only
 
  ![Edit payment accounts](editpayment_accounts.png)
 
-## Billing address
+#### Billing address
 
 Billing address can be configured here if it is different to the address on the **Main information** tab of the customer. By default, it is left empty and the address is taken from the **Main information** tab of the customer.
 
-Specific billing address can be set here if the customer uses a different address for billing from the listed one in the *Main Information* page.
+Specific **billing address** can be set here if the customer uses a different address for billing from the listed one on the *Main Information* page.
 
 ![Billing address](billing_address.png)
 
 
-## Billing actions
+#### Billing actions
 
  The actions section provide a quick access toolbox when dealing with customer billing.
 
 ![Actiond](actions_tab.png)
 
-**Charge & Invoice**
+##### Charge & Invoice
 
 <icon class="image-icon">![Charge button](charge_button.png)</icon>
 
 Customers can be charged **manually** with the `Charge & Invoice` button.<br>
 Simply click on the button, a *Charge and Invoice* window will appear where you can select the date and period of charging, then click on `Preview` to view service (-s) description and click on `Charge & Invoice` button to manually charge the customer.
 
-The system will automatically charge the customer and the new transaction and invoice items will be created, they can be viewed in the Transactions/Invoices tab.
+The system will automatically charge the customer and the new transaction and invoice items will be created, they can be viewed in the **Transactions** or **Finance documents** tab.
 
 ![To charge](charge.png)
 
 ![New transaction](new_transaction.png)
 
-![](new_invoice.png)
+![image](new_invoice.png)
 
-**NOTE:** if you are charging a customer **manually**, the new invoice will be created only if the `Auto create invoices` setting is enabled in customer's `Billing → Billing config → Billing settings`. The global `Auto create invoices` setting is located in `Config → Finance → Settings` (*Invoices settings* section).
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+- If you charge a customer **manually**, the new invoice will be created only if the `Auto create invoices` toggle is enabled in customer's `Billing → Billing config → Billing settings`;
 
 ![Billing settings](billing_settings_charge.png)
 
+- The global `Auto create invoices` setting is located in `Config → Finance → Settings` (*Invoices settings* section).
 
-If the transaction with `Include transaction in next recurring invoice` option is created, it will be added to the subsequent invoice (*One-time* or *Recurring*). For example, you create manual transaction with `Include transaction in next recurring invoice` option, after that apply `Charge & Invoice`, the service and manual related transactions are visible in the preview:
+##### Payment Calendar
 
-![](add_to_invoice.png)
+ **Payment Calendar** is used to generate a payment schedule list which defines the dates and amounts of payments to be made in the selected period.
 
-![](charge_and_inv_result.png)
-
-When we apply `Cancel last charge` option, only service transaction will be removed with the invoice. The manual transaction can be deleted manually in `Billing → Transactions` tab.
-
-![](view_invoice.png)
-
-During the process of adding a service to a customer, the discount can be adjusted. Navigate to customer services tab and select the desired service to apply the discount to, click on `Edit` icon <icon class="image-icon">![Edit button](edit_button.png)</icon>. The edit service window will appear where you can apply the discount according to the parameters highlighted and you may add a note for reference in discount message. Once the discount has been set, it will appear in the new window when the button <icon class="image-icon">![Charge button](charge_button.png)</icon> is pressed and the final price will be calculated automatically.
-
-![Discount](edit_service.png)
-
-![Charge with discount](charge_with_discount.png)
-
-In case the previous invoice was canceled and the administrator doesn't want to change e.g. the invoice number, the option `Use the last canceled invoice` can be applied during the next manual charge.
-
-**Payment Calendar**
-
-<icon class="image-icon">![Payment Calendar](calendar_icon.png)</icon>
-
- You can generate a payment calendar for the customer with the use of templates.
+You can generate a payment calendar for a customer using templates.
 
 By default payment calendar generating is disabled. To enable it you need to activate the `Payment Calendar` option in `Config -> Finance -> Settings`.
 
@@ -577,9 +568,11 @@ By default payment calendar generating is disabled. To enable it you need to act
 
 ![Payment calendar](payment_calendar1.png)
 
-![Enable payment calendar](enable_payment_calendar.png)
+<icon class="image-icon">![image](warning.png)</icon> **IMPORTANT:**
 
-**IMPORTANT:** The calendar shows the dates of *billing*, *blocking* and *deactivation* of the customer, the calculation is based on the values set in `Billing day`, `Payment due`, `Deactivation period` fields, the changes made in field **Next block** **will be ignored**.
+Under the **Billing Settings** section, the calendar shows the dates of *billing*, *blocking* and *deactivation* of the customer, the calculation is based on the values set in `Billing day`, `Payment due`, `Deactivation period` fields, the changes made in the field **Next block** **will be ignored**.
+
+![Enable payment calendar](enable_payment_calendar.png)
 
 **Cancel last recurring invoice**
 
@@ -587,18 +580,21 @@ By default payment calendar generating is disabled. To enable it you need to act
 
 This button can be used to cancel the previous bill of a customer. This feature ensures that charges are cleared appropriately in the system by deleting the invoice and transaction pertaining to the charge.
 
-**Save** (the button at the bottom of the page)
+**Save**
 
 <icon class="image-icon">![Save button](save_icon.png)</icon>
 
-Save any change made in the customer billing tab.
+Save any change made in the customer Billing tab, the button is located at the bottom of the page.
+
+#### Proforma Invoice settings
 
 
-In **Proforma Invoice settings** it is possible to enable the option `Enable Auto Proforma Invoice` creation for the current or next month as well as being able to choose a prepay payment period (up to 12 months).
+In **Proforma Invoice settings** section it is possible to enable the option `Enable Auto Proforma Invoice` creation for the current or next month as well as being able to choose a prepay payment period (up to 12 months).
 
 ![Proforma invoice settings](proforma_invoice_settings.png)
 
+#### Reminders settings
 
-In **Reminders settings** you can enable automatic sending of reminders to customers to remind them to pay for their services.
+In **Reminders settings** section you can enable automatic sending of reminders to customers to remind them to pay for their services.
 
 ![cReminder settings](creminder_settings.png)

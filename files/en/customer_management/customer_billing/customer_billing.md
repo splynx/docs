@@ -101,12 +101,6 @@ The option **Load items from uncharged transactions** in the **One-time** invoic
 
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-- A future item by itself will **NOT** change the customer account balance (**!** only for `Recurring` billing type) until it's loaded/added to **One time**/**Recurring invoice**;
-
-- A future item will **automatically** be added to the next **Recurring** invoice;
-
-- If the invoice includes at least one future item and we are going to remove this invoice, such future item can be removed only manually;
-
 - The items with negative price value can be added to the invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`.
 
 ![Create invoice](create_invoice1.png)
@@ -235,9 +229,12 @@ If the next payment is more than the invoice due amount, the money will be added
 
 ![image](inv_due_amount2.png)
 
-<icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-- If an invoice is paid in one payment, that payment will be deleted along with the invoice deletion. But if an **invoice is paid by more than one payment, that invoice cannot be deleted until all related payments are deleted**.
+**Delete invoice and payment**
+
+- If an invoice is paid in one payment (payment amount is equal to the total invoice amount), that payment will be deleted along with the invoice deletion;
+
+- If an **invoice is paid by more than one payment, that invoice cannot be deleted until all related payments are deleted**;
 
 ![image](related_payments.png)
 
@@ -280,11 +277,14 @@ If the customer makes the new payment for 50$, the invoice will be paid and paym
 
 ![image](example_2_5.png)
 
----
-
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-- To **view an invoice** as PDF with the <icon class="image-icon">![View icon](icon2.png)</icon> (view PDF) icon, it is necessary to configure an **invoice template** first in `Config → System → Templates` and also to specify the use of the selected/modified template in `Config → System → Company information`.
+- A `Partially paid` status does not apply to an overdue invoice.
+
+---
+
+
+To **view an invoice** as PDF with the <icon class="image-icon">![View icon](icon2.png)</icon> (view PDF) icon, it is necessary to configure an **invoice template** first in `Config → System → Templates` and also to specify the use of the selected/modified template in `Config → System → Company information`.
 
 ![Template values](template_values.png)
 
@@ -299,7 +299,7 @@ Please note that all [templates](configuration/system/templates/templates.md) ca
 
 ---
 
-[Finance formats](configuration/main_configuration/localization/localization.md) displayed on the invoice are customizable. Click on `Config → Main → Localization`,  to define the currency and other finance format settings.
+The [**Finance format**](configuration/main_configuration/localization/localization.md) displayed on the invoice are customizable. Click on `Config → Main → Localization`,  to define the currency and other finance format settings.
 
 ![Finance format settings](finance_format_setting.png)
 
@@ -365,9 +365,21 @@ The option `Include transaction in next recurring invoice` defines if the curren
 
 ![image](future_item2.png)
 
-As a result, the uncharged future item can be loaded to the new *One-time* or *Recurring* invoice (will be added automatically) during its creation. If the future item has already been loaded into an invoice, it loses its functions and becomes a transaction in the created invoice and change a customer's account balance. The future item with negative price can be loaded to invoice as well, but the **invoice total may be zero, but not negative**.
 
-<icon class="image-icon">![image](bulb.png)</icon> For more information, see the [Transactions](finance/transactions/transactions.md) guide
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+- A future item by itself will **NOT** change the customer account balance (**!** only for `Recurring` billing type) until it's loaded/added to **One time**/**Recurring invoice**.
+
+- If the future item has already been loaded into an invoice, it loses its functions and becomes a transaction in the created invoice and change a customer's account balance;
+
+- A future item will **automatically** be added to the next **Recurring** invoice;
+
+- If the invoice includes at least one future item and we are going to remove this invoice, such future item can be removed only manually;
+
+-  The future item with negative price can be loaded to invoice as well, but the **invoice total may be zero, but not negative**.
+
+
+<icon class="image-icon">![image](bulb.png)</icon> For more information, see the [Transactions](finance/transactions/transactions.md) guide.
 
 ---
 

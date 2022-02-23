@@ -86,7 +86,14 @@ In new window specify the necessary options for invoice charge:
 
 - **Confirm charge** - the toggle allows to confirm the charge;
 
+- **Amount** - the quantity of invoices to be issued for charge;
+
+- **Total sum** - the total final price at which customers are invoiced;
+
+- **Due sum** - the actual price that is charged because some invoices have been partially paid;
+
 - **Preview** - the button helps to check the invoices information before performing the charge.
+
 
 Once charged successfully, payment statements and batch files will be created and sent to payment add-on side and the issued invoices will be in **Pending** state. It will take some time for payments or bounced payments to be received. Then the status of the invoices will be changed to **Paid**.
 
@@ -103,7 +110,6 @@ Splynx checks for any payments and allocates them to the correct invoice, as a r
 ![](check_bank_statements.png)
 
 ![](check_bank_statements1.png)
-
 
 ---
 
@@ -186,8 +192,6 @@ Then, press **Save** button. To edit the created filter click on <icon class="im
 - The result of the charge execution can be checked under the **Charge history** tab, the value in the **Source** column should be `auto`.
 
 ![](auto_charge_filter4.png)
-
-![](auto_charge_filter5.png)
 
 ---
 

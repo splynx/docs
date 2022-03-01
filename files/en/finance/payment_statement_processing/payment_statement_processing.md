@@ -69,7 +69,7 @@ You can also search by entering the Invoice or Proforma Invoice number in the In
 
 ![Manual pair](manual_pair2.png)
 
-When you find the customer whose payment need to be paired, click on the <icon class="image-icon">![Paired](paired_icon1.png)</icon> (Pair) icon in the **Pair** column of the table. In new window select the [Payment type](configuration/finance/payment_methods/payment_methods.md) and press the **Pair** button to confirm.
+When you find the customer whose payment need to be paired, click on the <icon class="image-icon">![Paired](paired_icon.png)</icon> (Pair) icon in the **Pair** column of the table. In new window select the [Payment type](configuration/finance/payment_methods/payment_methods.md) and press the **Pair** button to confirm.
 
 ![Manual pair](manual_pair3.png)
 

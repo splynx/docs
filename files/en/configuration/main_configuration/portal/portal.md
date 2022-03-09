@@ -207,7 +207,7 @@ This is the configuration of Manual Top-ups in the customer portal.
 **Parameter descriptions**:
 
 * **Enable** - enables/disables manual top-ups in the customer portal.
-* **Create finance document** - select which document the system should create after a customer performs a manual top-up
+* **Create finance document** - select which document the system should create after a customer performs a manual top-up. The following options are available: `Invoice` or `Proforma`.
 * **Pay before Top-up** - enables/disables whether the customer will receive their top-up data only after they pay for the top-up.
 
 

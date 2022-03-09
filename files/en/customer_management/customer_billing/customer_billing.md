@@ -38,7 +38,7 @@ In this section can be found all financial documents related to the particular c
 
 **Recurring invoice** is when the items or services are supplied to a customer on a regular basis and the automatic charge is applied. If there’s no change in services your customers regularly need, the usage of the recurring invoicing is more preferable.
 
-<icon class="image-icon">![image](bulb.png)</icon> See documentation [about the charging by invoices](finance/invoices/invoices.md)  for more information.
+<icon class="image-icon">![image](bulb.png)</icon> See documentation [about the invoices charging](finance/invoices/invoices.md)  for more information.
 
 **Proforma invoice** is a non-official estimated invoice in advance that is given to a customer before products or services are supplied. It looks almost identical to one-time/recurring invoice, however it doesn't care the same weight because it's provisional. In other words it's a 'good faith' agreement between the vendor and the customer, used to avoid unexpected charges down the line.
 
@@ -52,7 +52,7 @@ Let's consider the **invoice statuses** in details:
 | <icon class="image-icon">![](unpaid.png)</icon> | the invoice has been created, but the customer has not made any payments towards the balance. The customer is expected to pay the invoice's amount due|
 | <icon class="image-icon">![](pending.png)</icon> | the invoice has not been paid and is not yet past the due date but payment is sent for processing. Once the invoice payment is processed successfully, the invoice will be updated to either the `Paid` or `Unpaid` status. If the due period has been exceeded and the due amount hasn't been paid, a status will be changed to `Pending Overdue` or `Overdue`|
 | <icon class="image-icon">![](paid.png)</icon> | the invoice was paid in full from customer's balance, the status is applied only if customer has enough funds |
-|<icon class="image-icon">![](partially_paid.png)</icon> | the payment was received, but it does not cover the full invoice amount (invoice total due amount). The statistics of `Partially paid` invoices will be included in the `Unpaid` category of the **Totals** table in `Finance → Invoices`. |
+|<icon class="image-icon">![](partially_paid.png)</icon> | the payment was received, but it does not cover the full invoice amount (invoice total due amount). The statistics of `Partially paid` invoices will be included in the `Due` category of the **Total invoiced** table |
 | <icon class="image-icon">![](overdue.png)</icon> | no payment was received for this invoice and the `Payment due` date has already passed |
 | <icon class="image-icon">![](deleted.png)</icon> | the invoice was marked as deleted. If we apply the `Mark as deleted` option for unpaid invoice, the invoice will be marked as deleted and its auto (`+Debit`) transaction (-s) will be removed. The manual transaction (-s), that was added to the invoice, will remain (even when `Delete completely` option was used) in any case. It's required to remove it manually |
 
@@ -253,7 +253,7 @@ If the **Payment** column is not displayed in the table, click the **Show/hide c
 
 ![image](inv_due_amount6.png)
 
-- An invoice can be (partially) paid not only by a payment, but also by a [**credit note**](finance/credit_notes/credit_notes.md). The uncharged future item can be loaded/added to one time/recurring invoice as well.
+- An **invoice can be (partially) paid not only by a payment, but also by a** [**credit note**](finance/credit_notes/credit_notes.md). The uncharged future item can be loaded/added to one time/recurring invoice as well.
 
 ![image](inv_due_amount7.png)
 
@@ -280,7 +280,9 @@ If the customer makes the new payment for 50$, the invoice will be paid and paym
 
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-- A `Partially paid` status does not apply to an overdue invoice.
+- a `Partially paid` status does not apply to the `Overdue` invoice;
+
+-  if a customer has several `Unpaid` invoices and payment is received, the invoices will be paid in the order of their creation.
 
 ---
 
@@ -362,6 +364,7 @@ In other words, with the option `Include transaction in next recurring invoice`,
 
 The option `Include transaction in next recurring invoice` defines if the current future item will be included to the next *Recurring* (or *One-time* invoice if the option `Load items from uncharged transactions` was used) invoice.
 
+
 ![image](future_item1.png)
 
 ![image](future_item2.png)
@@ -369,13 +372,15 @@ The option `Include transaction in next recurring invoice` defines if the curren
 
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-- A future item by itself will **NOT** change the customer account balance (**!** only for `Recurring` billing type) until it's loaded/added to **One time**/**Recurring invoice**.
+- A future item by itself will **NOT** change the customer account balance (**!** only for `Recurring` billing type) until it's loaded/added to **One time**/**Recurring invoice**;
+
+- A future item that is used in the customer's profile with the billing type `Prepaid (Custom)` or `Prepaid (Daily)` will change its account balance. To be precise, all transactions will be accounted;
 
 - If the future item has already been loaded into an invoice, it loses its functions and becomes a transaction in the created invoice and change a customer's account balance;
 
 - A future item will **automatically** be added to the next **Recurring** invoice;
 
-- If the invoice includes at least one future item and we are going to remove this invoice, such future item can be removed only manually;
+- If the invoice includes at least one future item and we are going to remove this invoice, such future item can be removed only manually in the customer's finance documents;
 
 -  The future item with negative price can be loaded to invoice as well, but the **invoice total may be zero, but not negative**.
 
@@ -413,6 +418,8 @@ The icon <icon class="image-icon">![](print.png)</icon> is designed to print, co
 The **Total invoiced** and **Total paid** tables show the statistic of all finance documents in relation to the particular customer. These tables can be found at the bottom of *Finance documents* tab. The **Total paid** table may differ depending on what [payment methods](configuration/finance/payment_methods/payment_methods.md) are set up in the system.
 
 ![image](6.png)
+
+The statistics of `Partially paid` invoices will be included in the `Due` category of the **Total invoiced** table.
 
 ------------
 
@@ -605,6 +612,7 @@ Save any change made in the customer Billing tab, the button is located at the b
 In **Proforma Invoice settings** section it is possible to enable the option `Enable Auto Proforma Invoice` creation for the current or next month as well as being able to choose a prepay payment period (up to 12 months).
 
 ![Proforma invoice settings](proforma_invoice_settings.png)
+
 
 #### Reminders settings
 

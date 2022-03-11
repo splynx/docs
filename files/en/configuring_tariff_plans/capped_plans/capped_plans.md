@@ -25,13 +25,15 @@ Here’s a description of available options:
 
 * **Monthly traffic limit** - here you can set the amount of data a customer can consume per month
 
-* **Bonus traffic limit** - this option will ONLY work if a time frame has been specified under `FUP configuration` tab:
+* **Bonus traffic limit** - this option will **ONLY work if a time frame has been specified** under `FUP configuration` tab:
 
 ![time_frames](fup_time_frames.png)
 
-In this case, the customer will be able to use 50GB of bonus traffic only from 00:00 to 04:00 (A monthly limit of 100GB won't be used here). If you account for traffic for a whole day (without FUP time frames) - this option will not work.
+Based on the screenshots above, the **customer will be able to use 50GB of bonus traffic only from 00:00 to 04:00 (a monthly limit of 100GB won't be used here)**.
 
-You can set bonus traffic here or enable the toggle `Unlimited` to allow a customer to consume traffic without limits between 00:00 and 04:00.
+<icon class="image-icon">![image](warning.png)</icon> If you account for traffic for a whole day (without FUP time frames) - this option will not work.
+
+Under the **CAP** tab, you can set bonus traffic amount or enable the toggle `Unlimited` to allow a customer to consume traffic without limits from 00:00 to 04:00.
 
 * **Traffic direction** - select the direction of traffic for accounting: `Up + Down`, `Up` or `Down`;
 
@@ -47,7 +49,7 @@ You can set bonus traffic here or enable the toggle `Unlimited` to allow a custo
 
 * **Rollover unused data(monthly)** - enable/disable option to rollover unused data to the next month;
 
-* **Allow the usage of bonus traffic when normal CAP is finished** - with this option enabled customers will be able to use bonus traffic even if the monthly limit is reached.
+* **Allow the usage of bonus traffic when normal CAP is finished** - with this option enabled customers will be able to use bonus traffic even if the monthly limit is reached. Please note that in our case, **bonus traffic can be used only from 00:00 to 04:00, at other times the customer will be blocked**.
 
 
 ## Top-ups
@@ -119,7 +121,7 @@ Let's add an internet service with a monthly limit for the customer:
 
 ![service_limits](service_limits.png)
 
-So the customer has a 100GB monthly limit + 50GB bonus available only between 00:00 and 04:00 according to tariff plan settings.
+So the customer has a 100GB monthly limit + 50GB bonus available only from 00:00 to 04:00 according to tariff plan settings.
 
 On the customer main information page we now have this window with personal CAP settings:
 

@@ -1,11 +1,11 @@
 FCC 477 export
 ==============
 
-"FCC 477 export" is a Splynx module used to generate reports for the Federal Communications Commission (USA) - [https://www.fcc.gov/](https://www.fcc.gov/).
+**FCC 477 export** is a Splynx module used to generate reports for the *Federal Communications Commission (USA)* - [https://www.fcc.gov/](https://www.fcc.gov/).
 
-The add-on can be installed in two methods, via CLI or via the Web UI
+The add-on can be installed in two methods, via CLI or via the Web UI.
 
-To install the "FCC 477 export" add-on via CLI, the following commands can be used:
+To install the **FCC 477 export** add-on via CLI, the following commands can be used:
 
 ```bash
 apt-get update
@@ -17,15 +17,15 @@ Navigate to `Config → Integrations → Add-ons`:
 
 ![Add-ons](0.png)
 
-Locate or search for the "splynx-fcc-export" add-on and click on the install icon in the *Actions* column:
+Locate or search for the `splynx-fcc-export` package and click on the install icon in the *Actions* column:
 
 ![fcc Web install](fcc_web_install.png)
 
-The following window will appear for you to either cancel or confirm the installation, click on "OK, confirm" to begin the installation process:
+The following window will appear for you to either cancel or confirm the installation, click on **OK, confirm** to begin the installation process:
 
 ![Addon](confirm.png)
 
-After the installation process has completed, you need to generate a Google API Key to use in the configuration of the add-on - [https://console.cloud.google.com](https://console.cloud.google.com)
+After the installation process has completed, you need to generate a **Google API key** to use in the configuration of the add-on. Open a page of **Google Cloud Console**  - [https://console.cloud.google.com](https://console.cloud.google.com) and follow the steps below:
 
 ![fcc Google get key 1](fcc_google_key_1.png)
 
@@ -41,34 +41,53 @@ After the installation process has completed, you need to generate a Google API 
 
 ![fcc Google get key 7](fcc_google_key_7.png)
 
-![fcc Google get key 8](fcc_google_key_8.png)
-
-Once you've generated an API key, you have to copy it into the Google API Key field of the add-on configuration. To achieve this, navigate *Config → Module Lists →* locate the Splynx FCC module and click on the Edit in the *Actions* column:
+Once you've generated an **API key**, you have to copy it into the **Google API key** field of the add-on configuration. To achieve this, navigate `Config → Module Lists` locate the `splynx_addon_fcc_export` module and click on the Edit in the *Actions* column:
 
 ![Edit module list](edit_module_list.png)
 
 ![Add API key](add_api_key.png)
 
-**Important**
+ <icon class="image-icon">![image](warning.png)</icon> **IMPORTANT**
 
-After that, please check if the required value is selected in the `Type of connection` field in **Services** of the necessary customers:
+ After that, it's necessary to investigate the following parameters:
+
+- check if the required value is selected in the **Type of connection** field in **Services** of the necessary customers:
 
 ![image](type_of_connection.png)
 
-Once this configuration is completed, a new section will appear in the “Administration” module under the reports section:
+- check whether a customer has filled out the next fields under **Information** tab: **Street**, **Zip Code** and **City**. Please note, in the **City** field, it's obligatory to add the state value as well, e.g. `Colorado Springs, CO`, where `CO` stands for state:
+
+![image](set_state.png)
+
+Once these steps are completed, a new section will appear in `Config → Administration` - **FCC Export**
 
 ![fcc icon](fcc_icon.png)
 
-Now we can sync addresses of your customers to “FCC Export” (it’s not necessary, but it will be better for you to improve the performance of the “FCC Export”. Syncing addresses is only necessary when using FCC export for the first time on Splynx):
+Now we can sync addresses of your customers to **FCC Export**:
+
+<icon class="image-icon">![image](information.png)</icon> It’s not necessary to do it on a regular basis, but it will be better for you to improve the performance of the **FCC Export** module. Syncing addresses is only necessary when using *FCC export* for the first time on Splynx.
 
 ![fcc Sync 1](fcc_sync_1.png)
 
 ![fcc Sync 2](fcc_sync_2.png)
 
-To run an export, simply select the desired "Partners" and Tariffs, then click on the "Load" button:
+To run the export, simply select the desired **Partners** and **Tariffs**, then click on the **Load** button:
 
 ![fcc filters](fcc_filters.png)
 
-If all configurations are correct, upon clicking the "Load" button, you will be presented with the results of the criteria you have specified, with the ability to export the results with the export buttons provided below the tables:
+If all configurations are correct, after you click the **Load** button, you will be presented with the results based on the criteria you set, with the option to export the results using the **Export** buttons below the tables:
 
 ![fcc export data](export_report.png)
+
+In case of error, double check the error identifier to understand the reason issue and fix it (click on the example to see more information).
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Example</b></summary>
+<div markdown="1">
+
+![image](error1.png)
+
+![image](error2.png)
+
+</div>
+</details>

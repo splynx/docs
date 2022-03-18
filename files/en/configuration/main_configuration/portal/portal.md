@@ -1,30 +1,32 @@
 Portal
 ======
 
-To configure parameters of the Customer portal navigate tp `Config → Main → Portal`.
+To configure parameters of the **Customer Portal** navigate to `Config → Main → Portal`:
 
-The Customer Portal configuration includes the following sections:
+![img](main_portal.png)
+
+The **Customer Portal** configuration includes the following **sections**:
 
 
 ## **General Settings**
 
 ### Main
-This section of the portal configuration includes configurations of customer's authentication, password, ways of resetting password and languages in the Customer Portal.
+This section includes customer's authentication way, password reset methods and language settings.
 
 ![Main](main1.png)
 
 **Parameter descriptions**:
 
-* **Languages** - select the languages available for your Customer Portal
-* **Authentication field** - select the method of customer's authentication, options available are: Email or Login
-* **Reset password** -  enable or disable the option of resetting the password for the Customer Portal
-* **Type of resetting password** - select the method of resetting passwords, options are: SMS or Email
-* **Template for email message** - select the template of the email for resetting the password
-* **Text for SMS message** - type the text for the SMS messages for resetting the password.
-* **Characters for generate email check code** - specify the characters available to generate a email code.
-* **Email check code length** - specify the number of characters to use when generating an email code.
-* **Characters for generate SMS check code** - specify the characters available top generate a SMS code.
-* **SMS check code length** - specify the number of characters to use when generating an SMS code
+* **Languages** - select the languages available on the Customer Portal;
+* **Authentication field** - select the method of customer's authentication, the next options are available: Email or Login;
+* **Reset password** -  enable or disable the option of resetting the password on the Customer Portal;
+* **Type of resetting password** - select the method of resetting passwords, options are: SMS or Email;
+* **Template for email message** - select the template of the email for resetting the password;
+* **Text for SMS message** - type the text for the SMS messages for resetting the password;
+* **Characters for generate email check code** - specify the characters available to generate an email code;
+* **Email check code length** - specify the number of characters to use when generating an email code;
+* **Characters for generate SMS check code** - specify the characters available to generate a SMS code;
+* **SMS check code length** - specify the number of characters to use when generating an SMS code.
 
 
 ## Customer Mobile app
@@ -35,28 +37,28 @@ In this section, we can configure elements of the customer mobile app.
 
 Parameter descriptions:
 
-* **Enabled** - enables/disables the displaying of the mobile app download links on customer portal login page
-* **Google Play App ID** - specify the Google play app ID, should be *com.splynx.portal*
-* **App Store App ID** - specify the AppStore App ID, should *id1462886761*
+* **Enabled** - enables/disables the displaying of the mobile app download links on the Customer Portal login page;
+* **Google Play App ID** - specify the Google play app ID, should be `com.splynx.portal`;
+* **App Store App ID** - specify the AppStore App ID, should be `id1462886761`.
 
 
 ### Additional attributes in profile
 
-In this section we can specify the permission to each additional attribute field in the My profile section of the customer portal:
+In this section we can specify the permission to each field in Additional information section of customer's profile.
 
+The following permissions can be set: **View**, **Edit** or **both** of them. After the necessary permission is set, the field will be visible in the **My profile** section of the Customer Portal.
 
-Configuration of additional attributes to be seen in Customer portal, for example, GPS, Contract ID, Bank Account etc. For each of these items you can specify the permission of the customer: View or Edit.
-Items you've selected to be viewed only in the Customer Account will have dimmed fields and items that you've granted editing permissions to customers for, will be displayed with white fields.
+Items that you have chosen to view only on a customer account will have darkened background field, and items for which you have granted edit rights to customer will be displayed with white background field.
 
 ![Additional attributes in profile](additional_attr.png)
 
-For example, you'd like to add a Customer's bank account as additional attribute to the Customer portal and you'd also like to give customer the right to edit his account number. In that case, as soon as you will select options View and Edit in Bank account field in Configuration, customer will be able to see that attribute in his Profile in Customer portal and change it.
+For example, you want to add the **Home phone number** field to the Customer Portal and give the customer the right to edit their number. In this case, once you select **Edit**, the customer will be able to see this attribute in their profile on the portal and change it.
 
 ![Bank account](bank_account.png)
 
 Information about configuring Additional fields in Splynx can be found here - [Additional fields](configuration/system/additional_fields/additional_fields.md).
 
-
+---
 
 ## **Per Partner Settings**
 
@@ -64,39 +66,70 @@ Information about configuring Additional fields in Splynx can be found here - [A
 
 ![Main](main2.png)
 
-* **Portal title** - specify a title for the Portal
-* **GDPR enabled** - enables/disables GDPR practices in the portal.
+* **Portal title** - specify a title for the Portal;
+* **GDPR enabled** - enables/disables GDPR practices on the portal.
+
+In case in Splynx system is used the multiple [partners](administration/main/partners/partners.md) scheme, you can divide configurations between partners. Create a new partner in Splynx, on this tab select the necessary partner and set the required settings.
+
+**NOTE:**
+
+The fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner).
 
 ### Menu
-This is the configuration of main modules to be displayed in the Customer portal.
-You can choose whether or not to display specific modules by ticking or unticking each module.
+This is the configuration of the main modules that will be displayed on the Customer Portal.
 
- Modules to choose from are: *Statistics, Services, Finance, Messages, Tickets, Documents, Profile, About, News*.
+You can choose whether or not to display certain modules by checking or unchecking each item.
+
+You can choose from the following modules or select all of them:
+
+- Statistics
+- Services
+- Finance
+- Messages
+- Tickets
+- Documents
+- Profile
+- About
+- News
 
 ![Menu](menu2.png)
 
 ### Dashboard
-This is the configuration of items to be shown on the Customer Dashboard.
-Here you can enable the option Show Portal News and the last three portal news will be shown on a customer dashboard. The options to display CAP/FUP usage of active service and live bandwidth usage is also available here.
+This is the configuration of the items that will be displayed on the customer's Dashboard page.
+Here you can enable the option **Show portal news** and the last three portal news will be displayed. The options **Show FUP/CAP active services** and **Live Bandwidth Usage** are also available here.
 
 ![Dashboard](dashboard2.png)
 
 **Parameter descriptions**:
 
-* **Show FUP/CAP active services** - enables/disables the displaying of FUP/CAP statistics of active services on the dashboard
-* **Items** - select the items to be displayed on the dashboard
+* **Show FUP/CAP active services** - enables/disables the displaying of FUP/CAP statistics of active services on the Dashboard page;
+* **Items** - select the items to be displayed on the dashboard.
 
-You can select following items to be displayed on Customer Dashboard: *Balance, New Tickets, New Messages, Unpaid Invoices, Unpaid Proforma Invoices*.
+You can choose from the following items or select all of them:
 
-* **Show portal news** - enables/disables the displaying of portal News
-* **Show Live Bandwidth Usage** - enables/disables the displaying of live bandwidth usage on the dashboard
-
-
-Below is an example of a Customer account in the portal with all items selected to be displayed in the navigation menu and only Balance, New Messages and Unpaid Invoices selected to be displayed on the Dashboard.
+- Balance
+- New Tickets
+- New Messages
+- Unpaid Invoices
+- Unpaid Proforma Invoices
 
 ![Dashboard](dashboard1.png)
 
+* **Show portal news** - enables/disables the display of the three most recent news articles on the dashboard
+* **Show Live Bandwidth Usage** - enables/disables real-time display of bandwidth usage on the dashboard
+
 ![Dashboard](dashboard0.png)
+
+
+
+
+
+
+
+
+
+
+### Documents
 
 
 ### Profile
@@ -126,7 +159,7 @@ Items you've selected  to be viewed only in the Customer Account will have dimme
 ![Profile](profile2.png)
 
 
-### Statistics
+### Internet Statistics
 
 ![Statistics](stat1.png)
 
@@ -140,6 +173,8 @@ You can enable the following features here:
 * **Show hard limits** - enables/disables the displaying hard limits information
 * **Show monthly limits (CAP)** - enables/disables the displaying information of monthly CAP limits
 * **Show sessions statistics** - enables/disables the displaying the details of session statistics
+
+### Voice Statistics
 
 
 ### Services
@@ -199,7 +234,8 @@ Define the customers permissions to *View, Edit or Both* for the following field
 * **Limitation type**
 * **Max number of top-up per month**
 
-### Manual Top-Up
+### Manual top-up
+
 This is the configuration of Manual Top-ups in the customer portal.
 
 ![Manual top up](mtopup.png)

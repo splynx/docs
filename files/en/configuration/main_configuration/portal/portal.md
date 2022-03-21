@@ -48,7 +48,7 @@ In this section we can specify the permission to each field in Additional inform
 
 The following permissions can be set: **View**, **Edit** or **both** of them. After the necessary permission is set, the field will be visible in the **My profile** section of the Customer Portal.
 
-Items that you have chosen to view only on a customer account will have darkened background field, and items for which you have granted edit rights to customer will be displayed with white background field.
+Items that you have chosen to view only on a customer account will have dimmed background field, and items for which you have granted edit rights to customer will be displayed with white background field.
 
 ![Additional attributes in profile](additional_attr.png)
 
@@ -115,46 +115,50 @@ You can choose from the following items or select all of them:
 
 ![Dashboard](dashboard1.png)
 
-* **Show portal news** - enables/disables the display of the three most recent news articles on the dashboard
-* **Show Live Bandwidth Usage** - enables/disables real-time display of bandwidth usage on the dashboard
+* **Show portal news** - enables/disables the display of the three most recent news articles on the dashboard;
+* **Show Live Bandwidth Usage** - enables/disables real-time display of bandwidth usage on the dashboard.
+
+Below is an example of the overall view of the customer portal with all the elements selected to be displayed in the navigation menu sidebar and on the Dashboard:
 
 ![Dashboard](dashboard0.png)
 
 
-
-
-
-
-
-
-
-
 ### Documents
 
+In this sub-menu you can customize the subject and the main text of the notification that the customer receives when the contract is signed.
+
+![img](documents.png)
+
+* **Subject for contract notification** - set the subject of notification;
+
+* **Text for contract notification** - set the main text of notification.
+
+For more information about variables, see [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
 
 ### Profile
 
-This is the configuration of the customer profile which will give customers option to view their contact information or to edit it. To be able to edit and save changes customer can be asked for their current password, for this to work, you should enable the option to *"Request Password"*.
+This is the configuration of the customer profile which will give customers option to view their contact information or to edit it. To be able to edit and save changes customer can be asked for their current password, for this to work, you should enable the option to **Request Password**.
 
 ![Request password](profile3.png)
-
 
 Profile information includes:
 
 * Login
 * Name
 * Email
+* Billing email
 * Phone
 * Street
 * ZIP
 * City
+* Payment method
 * Password
 
-For each of these items you can choose the actions available for the customer: View or Edit.
+For each of these items you can choose the actions available for the customer: **View**, **Edit** or **both**.
 
 ![Profile](profile4.png)
 
-Items you've selected  to be viewed only in the Customer Account will have dimmed fields and items which customer can edit will be presented with white fields.
+Items that you choose to view only will have dimmed background fields and items that the customer can edit will be presented with white background fields.
 
 ![Profile](profile2.png)
 
@@ -165,14 +169,14 @@ Items you've selected  to be viewed only in the Customer Account will have dimme
 
 You can enable the following features here:
 
-* **Show daily usage** - enables/disables the displaying of daily usage
-* **Show totals** - enables/disables the displaying of usage totals
-* **Show graph** - enables/disables the displaying the Bandwidth usage graph in Customer portal
-* **Show FUP statistics** - enables/disables the displaying of the details of FUP statistics
-* **Show current limits** - enables/disables the displaying current speed limits information
-* **Show hard limits** - enables/disables the displaying hard limits information
-* **Show monthly limits (CAP)** - enables/disables the displaying information of monthly CAP limits
-* **Show sessions statistics** - enables/disables the displaying the details of session statistics
+* **Show daily usage** - enables/disables displaying the daily usage graphs;
+* **Show totals** - enables/disables displaying the usage totals for the selected period;
+* **Show graph** - enables/disables displaying the bandwidth usage graph;
+* **Show FUP statistics** - enables/disables displaying the detailed FUP statistics;
+* **Show current limits** - enables/disables displaying the current speed limits information;
+* **Show monthly limits (CAP)** - enables/disables displaying the information about monthly limits (CAP);
+* **Show sessions statistics** - enables/disables displaying the detailed session statistics;
+* **Show session termination cause** - enables/disables displaying the reason for session termination in session statistics.
 
 ### Voice Statistics
 

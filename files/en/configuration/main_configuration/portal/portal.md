@@ -12,6 +12,7 @@ The **Portal** configuration includes the following **sections**:
 
 
 ### Main
+
 This section includes customer's authentication way, password reset methods and language settings.
 
 ![Main](main1.png)
@@ -19,9 +20,9 @@ This section includes customer's authentication way, password reset methods and 
 **Parameter descriptions**:
 
 * **Languages** - select the languages available on the Portal;
-* **Authentication field** - select the method of customer's authentication, the next options are available: Email or Login;
+* **Authentication field** - select the method of customer's authentication, the next options are available: `Email` or `Login`;
 * **Reset password** -  enable or disable the option of resetting the password on the Portal;
-* **Type of resetting password** - select the method of resetting passwords, options are: SMS or Email;
+* **Type of resetting password** - select the method of resetting passwords, options are: `SMS` or `Email`;
 * **Template for email message** - select the template of the email for resetting the password;
 * **Text for SMS message** - type the text for the SMS messages for resetting the password;
 * **Characters for generate email check code** - specify the characters available to generate an email code;
@@ -47,17 +48,17 @@ Parameter descriptions:
 
 In this section we can specify the permission to each field in Additional information section of customer's profile.
 
-The following permissions can be set: **View**, **Edit** or **both** of them. After the necessary permission is set, the field will be visible in the **My profile** section of the Portal.
+The following permissions can be set: `View`, `Edit` or `both` of them. After the necessary permission is set, the field will be visible in the **My profile** section of the Portal.
 
 Items that you have chosen to view only on a customer account will have dimmed background field, and items for which you have granted edit rights to customer will be displayed with white background field.
 
 ![Additional attributes in profile](additional_attr.png)
 
-For example, you want to add the **Home phone number** field to the Portal and give the customer the right to edit their number. In this case, once you select **Edit**, the customer will be able to see this attribute in their profile on the portal and change it.
+For example, you want to add the **Home phone number** field to the Portal and give the customer the right to edit their number. In this case, once you select `Edit`, the customer will be able to see this attribute in their profile on the Portal and change it.
 
 ![Bank account](bank_account.png)
 
-Information about configuring Additional fields in Splynx can be found here - [Additional fields](configuration/system/additional_fields/additional_fields.md).
+<icon class="image-icon">![img](information.png)</icon> Information about configuring Additional fields in Splynx can be found here - [Additional fields](configuration/system/additional_fields/additional_fields.md).
 
 ---
 
@@ -74,7 +75,7 @@ Information about configuring Additional fields in Splynx can be found here - [A
 
 In case in Splynx system is used the multiple [partners](administration/main/partners/partners.md) scheme, you can divide configurations between partners. Create a new partner in Splynx, on this tab select the necessary partner and set the required settings.
 
-**NOTE:**
+<icon class="image-icon">![img](note.png)</icon> **NOTE:**
 
 The fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner).
 
@@ -87,15 +88,15 @@ You can choose whether or not to display certain modules by checking or unchecki
 
 You can choose from the following modules or select all of them:
 
-- Statistics
-- Services
-- Finance
-- Messages
-- Tickets
-- Documents
-- Profile
-- About
-- News
+- `Statistics`
+- `Services`
+- `Finance`
+- `Messages`
+- `Tickets`
+- `Documents`
+- `Profile`
+- `About`
+- `News`
 
 ![Menu](menu2.png)
 
@@ -115,11 +116,11 @@ Here you can enable the option **Show portal news** and the last three portal ne
 
 You can choose from the following items or select all of them:
 
-- Balance
-- New Tickets
-- New Messages
-- Unpaid Invoices
-- Unpaid Proforma Invoices
+- `Balance`
+- `New Tickets`
+- `New Messages`
+- `Unpaid Invoices`
+- `Unpaid Proforma Invoices`
 
 ![Dashboard](dashboard1.png)
 
@@ -145,7 +146,7 @@ As a result, when the contract is signed, the customer will receive a notificati
 
 ![img](documents1.png)
 
-For more information about variables, see [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
+<icon class="image-icon">![img](information.png)</icon> For more information about variables, see [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
 
 
 ### Profile
@@ -156,18 +157,18 @@ This is the configuration of the customer profile which will give customers opti
 
 Profile information includes:
 
-* _Login_
-* _Name_
-* _Email_
-* _Billing email_
-* _Phone_
-* _Street_
-* _ZIP_
-* _City_
-* _Payment method_
-* _Password_
+* `Login`
+* `Name`
+* `Email`
+* `Billing email`
+* `Phone`
+* `Street`
+* `ZIP`
+* `City`
+* `Payment method`
+* `Password`
 
-For each of these items you can choose the actions available for the customer: **View**, **Edit** or **both**.
+For each of these items you can choose the actions available for the customer: `View`, `Edit` or `both`.
 
 ![Profile](profile4.png)
 
@@ -200,7 +201,7 @@ You can enable the next options here:
 
 A customer can check this statistical information in `Statistics → Voice` section according to the selected period on the Portal
 
-[Statistics](voice_statistics1.png)
+![Statistics](voice_statistics1.png)
 
 
 ### Services
@@ -211,13 +212,13 @@ In this section, you can customize the display of services, service fields and h
 
 For each type of service, you can select fields to display:
 
-* **Bundle service** - *ID, Description, Price, Contract start date, Charged up, Contract end date, Status*;
+* **Bundle service** - `ID`, `Description`, `Price`, `Contract start date`, `Charged up`, `Contract end date`, `Status`;
 
-* **Internet service** - *ID, Description, Plan, Price, Start date, Charged up, Service login, IPv4 address, End of contract, Type of connection, Stop/Active service, Self-change tariff plan, Request tariff plan change, Password change, Status*;
+* **Internet service** - `ID`, `Description`, `Plan`, `Price`, `Start date`, `Charged up`, `Service login`, `IPv4 address`, `End of contract`, `Type of connection`, `Stop/Active service`, `Self-change tariff plan`, `Request tariff plan change`, `Password change`, `Status`;
 
-* **Voice service** - *ID, Description, Plan, Price, Start date, Charged up, Phone, Direction, Stop/Active service, Request tariff plan change, Status*;
+* **Voice service** - `ID`, `Description`, `Plan`, `Price`, `Start date`, `Charged up`, `Phone`, `Direction`, `Stop/Active service`, `Request tariff plan change`, `Status`;
 
-* **Recurring service** - *ID, Description, Plan, Price, Start date, Charged up, Stop/Active service, Self-change tariff plan, Request tariff plan change, Status*.
+* **Recurring service** - `ID`, `Description`, `Plan`, `Price`, `Start date`, `Charged up`, `Stop/Active service`, `Self-change tariff plan`, `Request tariff plan change`, `Status`;
 
 * **Show days** (**only for prepaid customers**) - enable/disable displaying the number of days remaining to the end of the service;
 
@@ -228,18 +229,34 @@ For each type of service, you can select fields to display:
 * **Show all services** - enable/disable displaying of all services (including all stopped and disabled) related to the customer.
 
 
+##### Some fields need more explanation::
+
+* **Password change** - when this field is enabled, it allows a customer to change password for their service. A customer should click on the <icon class="image-icon">![](key_icon.png)</icon> icon in the *Actions* column of the **Services** table.
+
+![](psw_change.png)
+
+
+* **Self-change tariff plan** / **Request tariff plan change** - if one of these fields is enabled, it allows a customer to change a plan independently or to submit a request to technical support via a ticket. A customer should click on the <icon class="image-icon">![](change_plan.png)</icon> icon in the *Actions* column of the **Services** table.
+
+![](change_plan1.png)
+
+If the customer sends a request, in a new window the customer can select a priority, attach a file and write a short message:
+
+![](create_ticket.png)
+
+<icon class="image-icon">![img](information.png)</icon> For more information, see [Change Plan from Customer Portal](configuration/main_configuration/portal/portal.md).
+
+
 ### Tickets
 
 In this section, you can configure the ticket fields that will be displayed on the Portal.
 
 ![Tickets](tickets.png)
 
-Fields to be displayed in the module can simply be ticked or left unticked if you do not wish to display the field.
-
 For the fields that will be displayed in the module, just check the box or leave the item unchecked if you do not want to display it
 
 The following fields are available in the ticket modules:
-*ID, Subject, Priority, Status, Group, Type, Assigned to, Watching, Created Date & Time, Updated date & time, Star, Add file*.
+`ID`, `Subject`, `Priority`, `Status`, `Group`, `Type`, `Assigned to`, `Watching`, `Created Date & Time`, `Updated date & time`, `Star`, `Add file`.
 
 
 ### Top-Up settings
@@ -252,12 +269,13 @@ In this section, you can configure the permissions of top-up plans on the Portal
 
 * **Enable** - enable/disable the top-ups on the Portal
 
-Define the customers permissions to *View, Edit or both* for the following fields:
+Define the customers permissions to `View`, `Edit` or `both` for the following fields:
 
 * **Auto Top-Up**
 * **Auto top-up plans**
 * **Limitation type**
 * **Max number of top-up per month**
+
 
 ### Manual top-up
 
@@ -272,48 +290,38 @@ In this section, you can configure the Manual Top-ups on the Portal.
 * **Pay before top-up** - enable/disable whether the customer will receive their top-up data only after they pay for the top-up.
 
 
-
-
-
-
-
-
 ### Finance
 
-This is the configuration of financial items to be displayed in Portal such as: Invoices, Payments, Proforma Invoices and Transactions, and Payment methods available for Customer, for example, Refill cards. As well as the available payment methods for the customer and which transaction fields the customer can display.
-
+In this section, you can configure the financial elements, available payment methods, transaction fields and customize the account balance view that will be displayed on the Portal.
 
 ![Finance](finance2.png)
+
+**Parameter descriptions**:
+
+* **Items** - enable/disable categories in the **Finance** section on the Portal. Available items to display: `Invoices`, `Payments`, `Credit Notes`, `Statements`, `Transactions`, `Proforma invoices`;
+* **Payment methods** - enable/disable payment methods in the **Payments** section. Available item to display: `Refill card`;
+* **Transactions fields** - enable/disable fields in the **Transactions** table on the Portal. Available item to display: `Debit/Credit`, `Movement`, `Invoice number`;
+* **Invert account balance** - enable/disable displaying the inverted account balance on the Portal.
+
+<icon class="image-icon">![img](information.png)</icon> Suggested read:
+
+- [Invoices](finance/invoices/invoices.md);
+- [Payments](finance/payments/payments.md);
+- [Credit Notes](finance/credit_notes/credit_notes.md);
+- [Statements](finance/payment_statement_processing/payment_statement_processing.md);
+- [Transactions](finance/transactions/transactions.md);
+- [Proforma invoices](finance/proforma_invoices/proforma_invoices.md).
 
 
 ### Hotspot
 
-This is the configuration of Hotspot logins
+In this section, you can configure the Hotspot logins
 
 ![Hotspot](hotspot.png)
 
 **Parameter descriptions**:
 
-* **Enable hotspot** -  enables/disables the system Hotspot
-* **Hotspot hostname** - specify the URL of your Splynx System
-* **Login** - select the method of logging into the hotspot.
-* **Hotspot status page** - enables/disables the hotspot status page
-
-
-
-----
-##### Some fields need to be explained more detailed:
-
-* **Password changed** - when this option is enabled, it will allow customers to change passwords for their services. Customers will be able to change their passwords by clicking on the <icon class="image-icon">![](key_icon.png)</icon> icon in the *Actions section* of the table in Services.
-
-  ![](psw_change.png)
-
-
-* **Change plan** - when this option is enabled, it will allow customers to apply for a plan change via the Portal by sending a request to technical support. When this option is enabled customers will see an <icon class="image-icon">![](change_plan.png)</icon> icon in the *Actions* column in Services. By clicking on that icon a window "Change plan", will appear where customers will choose an option *Manual change request*.
-
-![](change_plan1.png)
-
-
-The window "Create ticket" will appear where customers will choose the Priority of the ticket (Minor, Major, Critical) and write a short message. Customer can also upload a file by clicking on the Upload icon <icon class="image-icon">![Upload](upload.png)</icon> below the text message.
-
-![](create_ticket.png)
+* **Enable hotspot** -  enables/disables the system Hotspot;
+* **Hotspot hostname** - specify the URL of your Splynx system;
+* **Login** - select the method of log in to the Hotspot, available options: `Automatic, after login to portal`, `Click to login button`, `Disabled`;
+* **Hotspot status page** - enables/disables the Hotspot status page.

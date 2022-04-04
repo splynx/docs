@@ -54,7 +54,7 @@ The **Splynx domain** must be the same as the **API domain URL** but without las
 - **Payments reference field** - select the payment field whose value will be sent as a payment reference when synchronizing payments to Xero;
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>by invoice ID</b></summary>
+<summary><b>Example</b></summary>
 <div markdown="1">
 
 ![payments_reference_field](prf1.png)
@@ -201,9 +201,7 @@ If the option **Create payments for prepayments** is not used (a toggle is **dis
 
 ![image](bnk1.png)
 
-Suggested read:
-
-- [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md).
+Suggested read: [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md).
 
 </div>
 </details>

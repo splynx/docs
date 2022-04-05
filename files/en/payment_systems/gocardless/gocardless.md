@@ -108,23 +108,26 @@ locate or search for the `splynx_go_cardless_rb_addon` add-on module and click o
 
 To get Intelligent Retries running for payments that are created, you need to **make sure intelligent retries are enabled in your GoCardless control panel**:
 
-  1. Click on **Success+** in the left hand menu bar and select **Set up a retry schedule**;
+1. Click on **Success+** in the left hand menu bar and select **Set up a retry schedule**;
 
-    ![img](int_ret1.png)
+  ![img](int_ret1.jpg)
 
-  2. Next you will have the option to choose which currencies to turn automatic retries on for. The Intelligent Retries feature is currently available for *Bacs (GBP), SEPA (EUR), Autogiro (SEK), Becs (AUD), Becs NZ (NZD), PAD (CAD)*, and *ACH (USD)* payments. Click the toggle next to the currency you wish to enable;
 
-    ![img](int_ret2.png)
+2. Next you will have the option to choose which currencies to turn automatic retries on for. The Intelligent Retries feature is currently available for *Bacs (GBP), SEPA (EUR), Autogiro (SEK), Becs (AUD), Becs NZ (NZD), PAD (CAD)*, and *ACH (USD)* payments. Click the toggle next to the currency you wish to enable;
 
-  3. Once you have toggled it on, you will be able to select the settings for how many times you'd like to retry payments and for how long. The default configuration is: 3 retries within a 4 week period, it provides up to 76% successful recovery.
+  ![img](int_ret2.jpg)
+
+
+3. Once you have toggled it on, you will be able to select the settings for how many times you'd like to retry payments and for how long. The default configuration is: 3 retries within a 4 week period, it provides up to 76% successful recovery.
 
   You can also choose to enable a failure filter which will prevent retries if the likelihood of the payment failing is very high (90% or higher). You can find more information about this feature [here](https://support.gocardless.com/hc/en-gb/articles/360014132059). Then, click **Next** and **Confirm** the changes.
 
-    ![img](int_ret3.png)
+  ![img](int_ret3.jpg)
 
-  4. If you would like to change your retry settings in the future, just head to the **Success+** tab and click on **Manage retry settings**.
 
-    ![img](int_ret4.png)
+4. If you would like to change your retry settings in the future, just head to the **Success+** tab and click on **Manage retry settings**.
+
+  ![img](int_ret4.jpg)
 
 
 ### Invoice payment

@@ -1,142 +1,162 @@
 FatturaPA
 =========
 
-FatturaPA is a Splynx add-on that allows the exporting of Splynx invoices in xlm format, which can then be exported to the system of electronic invoices.
+FatturaPA is a Splynx add-on that **allows Splynx invoices to be exported into XML format**, which can then be exported into an electronic invoice system.
 
-The add-on can be installed in two methods, via CLI or via the Web UI.
 
-To install the "splynx-fatturapa" add-on via CLI, the following commands can be used:
+The add-on **can be installed in two methods**, via **CLI** or via the **Web UI**.
+
+To install the `splynx-fatturapa` add-on via **CLI**, the following commands can be used:
 
 ```bash
 sudo apt update
 sudo apt install splynx-fatturapa
 ```
-To install it via the Web UI:
+To install it via the **Web UI**:
 
-Navigate to *Config -> Integrations -> Add-ons:*
+Navigate to `Config → Integrations → Add-ons`:
 
-![1.png](0.png)
+![img](0.png)
 
-Locate or search for the "splynx-fatturapa" add-on and click on the install icon in the *Actions* column:
+Locate or search for the `splynx-fatturapa` add-on and click on the install icon in the *Actions* column:
 
-![1.png](1.png)
+![img](1.png)
 
-Click on the "OK, confirm" button to begin the installation process:
+Click on the **OK, confirm** button to begin the installation process:
 
-![1.png](4.png)
+![img](4.png)
 
-After the installation has completed, it is necessary to configure the add-on under *Config / Integrations / Modules list / splynx_fatturapa*  using the edit <icon class="image-icon">![edit](2.png)</icon> icon.
+After the installation has completed, it is necessary to configure the add-on under `Config → Integrations → Modules list → splynx_fatturapa`  using the edit <icon class="image-icon">![edit](2.png)</icon> icon.
 
 This process is illustrated in the images below:
 
-![1.png](5.png)
+![img](5.png)
 
-![1.png](6.png)
+![img](6.png)
 
-Select a partner to configure:
+Turn on the [Entry points](configuration/integrations/modules_list/modules_list.md) display and select a [Partner](administration/main/partners/partners.md) (optional) to configure:
 
-![1.png](7.png)
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:**
 
-The configure the partner parameters:
+- In case in Splynx system is used the multiple partners scheme, you can divide FatturaPA configuration between them. Create a new partner in Splynx, in FatturaPA config select the necessary partner and set the required settings;
 
-![1.png](8.1.png)
+- The fields marked with ***** sign have the different values from original ones (original values are related to **Default** partner).
 
-**ProgressivoInvio** - No particular criteria is established; the mode of valorization of the field, foreseen to contain an identifier alphanumeric of the transmitted file, is delegated to the user's evaluation according to requirements, but in compliance with the established characteristics from the XSD scheme.
+![img](7.png)
 
-**FormatoTrasmissione** - assumes a fixed value equal to "SDI11".
-
-**CodiceDestinatario** - 567/5000 The field must contain the 6-character code, present on IndexPA between the information related to the billing service electronics, associated with the office, within the administration recipient, performs the function of receiving (and possibly processing) of the invoice. Alternatively, you can enhance the field with the Office code "Central" or with the default value "999999", when the conditions occur provided for by the provisions of the Ministry's interpretative circular of the Economy and Finance no. 1 of 31 March 2014.
+Once the required *Partner* is selected, click **Save** at the bottom of the page.
 
 
-**RegimeFiscale** - The field must contain one of the codes provided in the associated value list; the code identifies, on the basis of the commercial sector or the income situation, the tax regime in which the seller/lender operates.
+**Partners settings**
 
-**Nazione** - The field must contain, according to the standard ISO 3166-1 alpha-2 code, the country code.
+![img](partners_settings.png)
 
-**Provincia** - The field must contain the initials of the province in Italy to which the municipality indicated in the Common field belongs; its valorization is not allowed if the Nation field   contains a value other than "IT". Vice versa (field Country = "IT") must be present.
+- **ProgressivoInvio Pattern** - the max field length is 10 symbols. Usage: ``` {var|length} ``` (where the value `length` only works with the **var** type of the `next` value). Available variables: ```{next} {year} {month}```. By default is used: ```{year}{next|8}```. The mode of valorization of the field, foreseen to contain an identifier alphanumeric of the transmitted file, is delegated to the user's evaluation according to requirements, but in compliance with the established characteristics from the XSD scheme;
 
-**Ufficio** - The field must contain the initials of the province of the registry of companies with which he is registered and registered the seller / lender.
+- **RegimeFiscale** - the field must contain one of the codes provided in the corresponding list of values; the code identifies, based on the commercial sector or income situation, the tax regime in which the seller/creditor operates;
 
-**NumeroREA** - The field must contain the number with which the seller / lender is registered with the business register
+- **Nazione** - the field must contain, according to the standard ISO 3166-1 alpha-2 code, the country code;
 
-**CapitaleSociale** - The field must contain the amount of the capital actually paid as a result of the last budget; is expected a numerical value consisting of an integer and two decimals; the decimals, separated by the whole with the dot character ("."), always go indicated even if zero (eg: 28000000.00).
+- **Provincia** - the field must contain the initials of the province in Italy to which the municipality indicated in the Common field belongs; its valorization is not allowed if the Nation field  contains a value other than `IT`. Vice versa (field Country = `IT`) must be present;
 
-**SocioUnico** - The field must contain the value "SU" in the case single member, or "SM" in the case of multi-personal company.
+- **Ufficio** - the field must contain the initials of the province of the company registry in which the seller/lender is registered and listed;
 
-**StatoLiquidazione** - The field must contain the value "LS" in the case of companies in liquidation, or "LN" in the case of companies not in liquidation.
+- **NumeroREA** - the field must contain the number under which the seller / creditor is registered in the business register;
 
-**Fax** - The field, if valued, must contain one fax number of the seller / lender.
+- **CapitaleSociale** - the field must contain the amount of the capital actually paid as a result of the last budget; is expected a numerical value consisting of an integer one and two decimals; the decimal numbers separated from integers by a dot character (**.**) must always be specified, even if it is a zero value (for example: 28000000.00);
 
-**RiferimentoAmministrazione** - no particular criteria is established; the mode of valorization of the field, with a view to use such as the one on exposed, it is necessarily the result of an agreement between the parties, recipient of the document on one side and compiler of the document on the other; in particular the first (recipient of the document) will have an interest in communicating the correct value to be entered in the field, always respecting the characteristics established by the XSD scheme.
+- **SocioUnico** - the field must contain the value `SU` in the case single member, or `SM` in the case of multi-personal company;
 
-**TipoDocumento** - The field must contain one of the codes provided in the associated value list.
+- **StatoLiquidazione** - the field must contain the value `LS` in the case of companies in liquidation, or `LN` in the case of companies not in liquidation;
 
-**Divisa** - The field must contain the currency code used according to ISO 4217 alpha-3: 2001 (for example "EUR" in the case of euros).
+- **Fax** - the field, if valued, must contain one fax number of the seller / lender;
 
-**EsigibilitaIVA** - The field can be used with "I" for VAT immediate repayment, "D" for VAT with deferred collectability, "S" for spin-off of payments.
+- **RiferimentoAmministrazione** - no particular criteria is established; the mode of valorization of the field, with a view to use such as the one on exposed, it is necessarily the result of an agreement between the parties, recipient of the document on one side and compiler of the document on the other; in particular the first (recipient of the document) will have an interest in communicating the correct value to be entered in the field, always respecting the characteristics established by the XSD scheme.
 
-**CondizioniPagamento** - In this field "TP01" should be indicated in the case of payment in installments, "TP02" in the case of total payment in a single payment, "TP03" in case of payment of an advance
+- **TipoDocumento** - the field must contain one of the codes provided in the associated value list;
 
-**ModalitaPagamento** - The field must contain one of the encoded values present in the associated list.
+- **Divisa** - The field must contain the currency code used according to ISO 4217 alpha-3: 2001 (for example `EUR` in the case of euros);
 
-You also have to configure the partner settings under *Config/System/Company Information*
+- **CondizioniPagamento** - in this field you should specify `TP01` in the case of payment in installments, `TP02` in the case of full payment in one payment, `TP03` in case of payment in advance;
 
-![1.png](9.png)
+- **ModalitaPagamento** - the field must contain one of the encoded values present in the associated list;
 
-![1.png](10.png)
+- **File Extnetions** - available values: `xml` or `xml.p7m`;
 
-**Company name** - required
+- **Get name from this field for business customers** - use this setting only for customers related to the business category. Available values: `Full name` or `Company ID`. It defines what value will be used in exported XML. If a customer profile is of **Business** type and **Company ID** field is not empty (in most cases this field contains company name), then when exporting invoices, the FatturaPA add-on will use value from the **Company ID** field instead of the **Full name** field value. On the other hand, if there is no value in the **Company ID** field, then the value from the **Full name** field will be used. <!-- SAFAT-28 -->
 
-**Street** - required
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Example</b></summary>
+<div markdown="1">
 
-**ZIP Code** - required
+If the **Category** field = `Business` and the **Company ID** field is not empty, use the **Company ID** value instead of **Full name** one.
 
-**City** - required
+![img](exp_business_customers1.png)
 
-**Email** - required
+In the XML file in the `<CessionarioCommittente>` block the `<Denominazione>` field must correspond to the value `Company ID`.
 
-**Phone** - required
+![img](exp_business_customers2.png)
 
-**VAT number** - required (format must be like - IT11111111111)
+</div>
+</details>
+<br>
 
-**VAT %** - required
 
-**Bank Account** - required
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:**
 
-**Bank name** - required
+Before getting started, you need to fill out the customer **additional fields** for customers (individual or business category) whose invoices you are going to export:
 
-Thereafter, you need to set up the *Customer additional fields* for customers whose invoices you will export, as depicted below:
+![img](11.png)
 
-![1.png](11.png)
+Under the **Main information** block:
 
-**Fields: _Street, ZIP code and City_ in _customers information_ must be set!!!**
+- the fields **Street**, **ZIP code** and **City** under the *Information* tab of customer profile must be set;
 
-**IdPaese** - required  (format must be like - IT)
+Under the **Additional information** block:
 
-**IdCodice** - required (format must be like - 00071090303)
+- **IdPaese** - required  (format must be like - IT)
+- **P.IVA** - required
+- **Provincia** - required  (format must be like - CB)
+- **Nazione** - required (format must be like - IT)
+- **CodiceDestinatario** - required
+- **PEC** - required
 
-**Provincia** - required (format must be like - CB)
 
-**Nazione** - required (format must be like - IT)
+Also, make sure that the **Company Information** fields under `Config → System → Company Information` are correctly filled out and its values are related to the required *Partner*:
 
-**Rif.Ufficio** - required (if Category = Private person then _Rif.Ufficio = CodiceDestinatario_ (_CodiceDestinatario_ can be viewed in _Config / Integrations / Modules list / Splynx Add-on Fatturapa_
-), if Category = Company then set your Office code here)
 
-Once you've Installed and configured the _splynx-fatturapa_ add-on, you can navigate to _Administration / Reports / Fatturapa Export_ and export invoices in XML format, as depicted below:
+![img](9.png)
 
-![1.png](12.png)
+![img](10.png)
 
-Click the following button <icon class="image-icon">![1.png](16.png)</icon> and set filter to export. Then click "Export" button.
+- **Company name** - required
+- **Street** - required
+- **ZIP Code** - required
+- **City** - required
+- **Email** - required
+- **Phone** - required
+- **VAT number** - required (format must be like - *IT11111111111*)
+- **VAT %** - required
+- **Bank Account** - required
+- **Bank name** - required
 
-![1.png](13.png)
+---
 
-If the process completed successfully, you will see the new record in the Fatturapa table with the possibility to download an archive with invoices in XML format.
 
-![1.png](14.png)
+Once you've installed and configured the FatturaPA add-on, you can navigate to `Administration → Reports → Fatturapa Export` and export invoices in XML format, as depicted below:
 
-![1.png](15.png)
+![img](12.png)
 
-If an error occurred, you will see a new record in the table with an exclamation mark in the "Actions" column. Click the following button <icon class="image-icon">![1.png](17.png)</icon> to see invoices that were not exported with a description for the error
+Use the filter on the right sidebar to set the necessary parameters. Then click the **Export** button.
 
-![1.png](18.png)
+If the process is completed successfully, you will see the new record in the Fatturapa table with the possibility to download an archive with invoices in XML format.
 
-![1.png](19.png)
+![img](14.png)
+
+![img](15.png)
+
+If there was an error, you will see a new entry in the table with an exclamation mark in the *Actions* column. Click the following icon <icon class="image-icon">![img](17.png)</icon> to view invoice (-s) that have not been exported, with a description of the error
+
+![img](18.png)
+
+![img](19.png)

@@ -53,7 +53,7 @@ Once the configuration has been completed, customers can add a credit card or ba
 
 ![8.png](8.png)
 
-Now customers can pay for their invoices using the *IPpay* system in `Finance → Invoices`:
+Now customers can pay for their invoices using the *IPpay* system in `Finance → Invoices` on the Portal:
 
 ![9.png](9.png)
 
@@ -61,9 +61,15 @@ Now customers can pay for their invoices using the *IPpay* system in `Finance �
 
 ![10.png](10.1.png)
 
-![11.png](11.png)
+Moreover, if one or both payment methods are added by the customer, the **administrator can pay the invoices directly from customer's profile**:
+
+![img](from_admin_side1.png)
+
+![img](from_admin_side2.png)
 
 If everything goes well, you will see the status of invoice marked as `Paid` (on the customer and admin portal):
+
+![11.png](11.png)
 
 ![12.png](12.png)
 
@@ -73,7 +79,7 @@ On the customer *Portal Dashboard*, customers can also see the list of non-paid 
 
 The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx_ippay_addon` module item in *Actions* column, click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon. More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
 
-To refill balances, customers can use the following link - `https://<splynx_domain_address>/ippay`, where they have to choose the *Account type*, enter the *Amount* of payment and click on **Add** button:
+To refill balances, customers can use the following link - ```https://<splynx_domain_address>/ippay```, where they have to choose the *Account type*, enter the *Amount* of payment and click on **Add** button:
 
 ![14.png](14.png)
 

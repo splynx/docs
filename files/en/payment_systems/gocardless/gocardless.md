@@ -59,20 +59,76 @@ After that, the customer should enter the registration details in the provided f
 
 ![10.png](10.1.png)
 
-Other *Gocardless* add-on parameters are located in `Config → Integrations → Modules list`,
+Other *Gocardless* add-on settings are located in `Config → Integrations → Modules list`,
 
 ![](config1.png)
 
 locate or search for the `splynx_go_cardless_rb_addon` add-on module and click on the
-<icon class="image-icon">![edit](edit.png)</icon> (*Edit*) icon in the *Actions* column:
+<icon class="image-icon">![edit](edit.png)</icon> (*Edit*) icon in the *Actions* column to change the necessary settings:
 
 ![](config2.png)
 
+**Main information & API settings**
+
 ![](config3.png)
+
+**System settings**
 
 ![](config4.png)
 
+**Additional settings**
+
 ![](config5.png)
+
+- **Service Fee** - service fee in percent;
+
+- **Add fee to request** - enable/disable adding fee to requests;
+
+- **Fee message** - if the **Add fee to request** toggle is enabled, the current message will be added as description for fee item in invoice;
+
+- **Fee VAT** - service fee [VAT](configuration/finance/taxes/taxes.md) in percent. Will be included into the service fee;
+
+- **Create payments once they Confirmed** - create payment only when it has been confirmed by the customer’s bank as having been successfully collected from their account. Once the payment has been confirmed, GoCardless will arrange for it to be paid out to your registered account.;
+
+- **Bank statements group** - choose how to group bank statements (`Finance → Bank Statements → History`) monthly or daily;
+
+- **Pay invoice payment description pattern** - description of the payment when paying the invoice. By default is used: `Splynx pay-invoice #{number}`;
+
+- **Pay proforma payment description pattern** - description of the payment when paying the proforma invoice. By default is used: `Splynx pay-proforma #{number}`;
+
+- **Payment description** - text that is added to the payment description field;
+
+- **Description of payment for customer** - text that will be displayed for customer while Direct Debit mandate creating;
+
+- **Language** - select the language;
+
+- **Intelligently retry payments** - toggle allows to enable/disable the automatic retry any payments that fail. Payments can fail for a number of reasons, the most common one being that the customer did not have the funds available. Once you’ve switched it on, your failed payments will be automatically retried according to the schedule you’ve configured in your GoCardless dashboard. By default the toggle is enabled.
+
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:**
+
+To get Intelligent Retries running for payments that are created, you need to **make sure intelligent retries are enabled in your GoCardless control panel**:
+
+1. Click on **Success+** in the left hand menu bar and select **Set up a retry schedule**;
+
+  ![img](int_ret1.jpg)
+
+
+2. Next you will have the option to choose which currencies to turn automatic retries on for. The Intelligent Retries feature is currently available for *Bacs (GBP), SEPA (EUR), Autogiro (SEK), Becs (AUD), Becs NZ (NZD), PAD (CAD)*, and *ACH (USD)* payments. Click the toggle next to the currency you wish to enable;
+
+  ![img](int_ret2.jpg)
+
+
+3. Once you have toggled it on, you will be able to select the settings for how many times you'd like to retry payments and for how long. The default configuration is: 3 retries within a 4 week period, it provides up to 76% successful recovery.
+
+  You can also choose to enable a failure filter which will prevent retries if the likelihood of the payment failing is very high (90% or higher). You can find more information about this feature [here](https://support.gocardless.com/hc/en-gb/articles/360014132059). Then, click **Next** and **Confirm** the changes.
+
+  ![img](int_ret3.jpg)
+
+
+4. If you would like to change your retry settings in the future, just head to the **Success+** tab and click on **Manage retry settings**.
+
+  ![img](int_ret4.jpg)
+
 
 ### Invoice payment
 
@@ -98,7 +154,7 @@ After a period of time, which can be view on the following page: https://gocardl
 
 ![15.png](15.png)
 
-Customers can also refill their balances using the following link - `https://<splynx_domain_address>/gocardless-rb`:
+Customers can also refill their balances using the following link - ```https://<splynx_domain_address>/gocardless-rb```:
 
 ![16.png](16.png)
 

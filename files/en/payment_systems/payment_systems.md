@@ -38,3 +38,5 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 [comment]: # (→ SEPA debit order in Spanish)
 
 * [Stripe](payment_systems/stripe/stripe.md)
+
+* [VulaCoin](payment_systems/vulacoin/vulacoin.md)

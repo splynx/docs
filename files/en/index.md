@@ -379,6 +379,7 @@ Table of contents
   * [Netcash Debit orders](payment_systems/netcash_do/netcash_do.md)
   * [SEPA debit orders](payment_systems/sepa/sepa.md)
   * [Stripe online payments](payment_systems/stripe/stripe.md)
+  * [VulaCoin](payment_systems/vulacoin/vulacoin.md)
 
 
 ##### [Splynx mobile applications](apps/apps.md)

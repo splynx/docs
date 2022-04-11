@@ -43,4 +43,4 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Stripe](payment_systems/stripe/stripe.md)
 
-* [TBK-WebPay](payment_systems/TBK-WebPay/TBK-WebPay.md)
+* [VulaCoin](payment_systems/vulacoin/vulacoin.md)

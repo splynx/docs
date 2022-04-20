@@ -3643,11 +3643,13 @@ office@superisp.com
 <summary>Contract: template example</summary>
 <div markdown="1">
 
+<br>
+
 Suggested read: [Contract and its signing by customer](customer_management/customer_documents/customer_documents.md)
 
 
 <details style="font-size: 12px; margin-bottom: 5px;">
-<summary><b>Example:</b></summary>
+<summary>Example:</summary>
 <div markdown="1">
 
 ```

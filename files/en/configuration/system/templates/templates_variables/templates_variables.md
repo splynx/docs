@@ -1,7 +1,8 @@
 Variables for templates
 =======================
 
-The variables are used in custom templates on Splynx.
+Here you can find variables that can be used in custom templates.
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>How to generate the list of variables by your own?</b></summary>
@@ -13,16 +14,17 @@ Use the specific value from some category listed below when creating a template,
 
 Let's generate the variables of customer information, we are going to use them in *Document* template.
 
-1.  Navigate to `Config → Templates`, in **Type** select `Documents`;
+1. Navigate to `Config → Templates`, in **Type** select the `Documents` item;
 
-2. Press **Add** button to add a new template;
+2. Press **Add** to open the **Create template** window;
 
 ![image](img1.png)
 
-3. In new window, insert the code shown below into the **Code** area and press **Preview** button
+3. Insert the code shown below into the **Code** area and press **Preview** button
 
 ```
 <pre>{{ dump(customer) }}</pre>
+
 ```
 ![image](img2.png)
 
@@ -35,7 +37,7 @@ Let's generate the variables of customer information, we are going to use them i
 
 ------------
 
-Below are lists of all available variables in relation to the different categories:
+Below are all the available variables in relation to the different categories:
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Company information</b></summary>
@@ -50,55 +52,112 @@ Below are lists of all available variables in relation to the different categori
 <div markdown="1">
 
 ```
-
-object(models\common\finance\CompanyInfo)#1303 (47) {
-["id"]=>  string(1) "1"
-["invoice_template_id"]=> string(3) "140"
-["credit_note_template_id"]=> string(1) "0"
-["request_template_id"]=> string(3) "141"
-["receipt_template_id"]=> string(2) "25"
-["quote_template_id"]=> string(2) "56"
-["reminder_mail_template_id"]=> string(2) "29"
-["reminder_sms_template_id"]=> string(2) "30"
-["report_statements_template_id"]=> string(2) "55"
-["company_name"]=> string(15) "Private Company Internet Ltd."
-["street_1"]=> string(10) "56, Adamause str."
-["street_2"]=> string(10) "56, Adamause str."
-["zip"]=> string(5) "568749"
-["city"]=> string(5) "Yamayka"
-["country"]=> string(1) "Gonduras"
-["iso_country"]=> string(7) "Gonduras"
-["email"]=> string(25) "office@privatecompany.com"
-["phone"]=> string(10) "85006008526"
-["company_id"]=> string(0) "K683621TP2398723321"
-["company_vat"]=> string(13) "IT22222222222"
-["vat_percent"]=> string(6) "0.0000"
-["bank_account"]=> string(27) "IT0000000000000000000000000"
-["bank_name"]=> string(7) "BANK_IT"
-["bank_id"]=> string(0) ""
-["bank_address"]=> string(0) ""
-["splynx_url"]=> string(36) "https://privatecompany.com"
-["partner_percent"]=> string(4) "0.00"
-["logo"]=> NULL
-["file_logo"]=> NULL
-["logo_from_another_partner"]=> NULL
-["_defaultModel":"models\common\finance\TemplateValues":private]=> NULL
-["_realOldAttributes":"models\common\finance\TemplateValues":private]=> NULL
-["deleted"]=> NULL
-["_changedAttributes":"db\Record":private]=> NULL
-["activeMysqlLocks":protected]=>  array(0) {}
-["_forceDelete":"db\Record":private]=> bool(false)
-["_afterFirstSave":"db\Record":private]=> bool(false)
-["_relations":"db\Record":private]=> array(0) {}
-["_connected_models":"db\Record":private]=> NULL
-["relatedItems":protected]=> array(0) {}
-["_deleteWithRelations":"db\Record":private]=> bool(false)
-["_oldAttributes":protected]=> array(30)
-["_related":protected]=> array(0) {}
-["_errors":"base\Model":private]=> array(0) {}
-["_ignoreFillables":"base\Model":private]=> bool(false)
-["_additionalAttributes":protected]=> array(0) {}
-["_isAdditionalAttributesLoaded":protected]=> bool(false)
+object(models\common\finance\CompanyInfo)#1334 (48) {
+  ["id"]=>
+  string(1) "1"
+  ["invoice_template_id"]=>
+  string(3) "154"
+  ["credit_note_template_id"]=>
+  string(3) "155"
+  ["request_template_id"]=>
+  string(3) "141"
+  ["receipt_template_id"]=>
+  string(2) "25"
+  ["quote_template_id"]=>
+  string(2) "56"
+  ["reminder_mail_template_id"]=>
+  string(2) "29"
+  ["reminder_sms_template_id"]=>
+  string(2) "30"
+  ["report_statements_template_id"]=>
+  string(2) "55"
+  ["company_name"]=>
+  string(7) "DEV ISP"
+  ["street_1"]=>
+  string(10) "13th Street "
+  ["street_2"]=>
+  string(10) "13th Street "
+  ["zip"]=>
+  string(5) "10011"
+  ["city"]=>
+  string(5) "New York"
+  ["country"]=>
+  string(1) "0"
+  ["iso_country"]=>
+  string(7) "USA"
+  ["email"]=>
+  string(14) "admin@test.com"
+  ["phone"]=>
+  string(10) "1111111111"
+  ["company_id"]=>
+  string(0) ""
+  ["company_vat"]=>
+  string(13) "IT11111111111"
+  ["vat_percent"]=>
+  string(6) "0.0000"
+  ["bank_account"]=>
+  string(27) "IT0000000000000000000000000"
+  ["bank_name"]=>
+  string(7) "BANK_IT"
+  ["bank_id"]=>
+  string(0) ""
+  ["bank_address"]=>
+  string(0) ""
+  ["splynx_url"]=>
+  string(36) "https://privatecompany.com"
+  ["partner_percent"]=>
+  string(4) "0.00"
+  ["logo"]=>
+  NULL
+  ["file_logo"]=>
+  string(3) "287"
+  ["logo_from_another_partner"]=>
+  NULL
+  ["_defaultModel":"models\common\finance\CompanyInfo":private]=>
+  NULL
+  ["_realOldAttributes":"models\common\finance\CompanyInfo":private]=>
+  NULL
+  ["deleted"]=>
+  NULL
+  ["_changedAttributes":"db\Record":private]=>
+  NULL
+  ["activeMysqlLocks":protected]=>
+  array(0) {
+  }
+  ["_forceDelete":"db\Record":private]=>
+  bool(false)
+  ["_afterFirstSave":"db\Record":private]=>
+  bool(false)
+  ["_relations":"db\Record":private]=>
+  array(0) {
+  }
+  ["_connected_models":"db\Record":private]=>
+  NULL
+  ["relatedItems":protected]=>
+  array(0) {
+  }
+  ["_deleteWithRelations":"db\Record":private]=>
+  bool(false)
+  ["_oldAttributes":protected]=>
+  array(30) {
+    ...
+  }
+  ["_related":protected]=>
+  array(0) {
+  }
+  ["_errors":"base\Model":private]=>
+  array(0) {
+  }
+  ["_removalErrors":"base\Model":private]=>
+  array(0) {
+  }
+  ["_ignoreFillables":"base\Model":private]=>
+  bool(false)
+  ["_additionalAttributes":protected]=>
+  array(0) {
+  }
+  ["_isAdditionalAttributesLoaded":protected]=>
+  bool(false)
 }
 
 ```
@@ -127,64 +186,144 @@ object(models\common\finance\CompanyInfo)#1303 (47) {
 <div markdown="1">
 
 ```
-array(59) {
-["id"]=> string(2) "18"
-["billing_type"]=> string(9) "recurring"
-["partner_id"]=> string(1) "1"
-["location_id"]=> string(1) "1"
-["added_by"]=> string(5) "admin"
-["added_by_id"]=> string(1) "1"
-["login"]=> string(6) "000018"
-["category"]=> string(6) "person"
-["password"]=> string(6) "123456"
-["name"]=> string(15) "Robert E. Myers"
-["email"]=> string(16) "xxxxxx@gmail.com"
-["billing_email"]=> string(16) "xxxxxx@gmail.com"
-["phone"]=> string(12) "254708374149"
-["street_1"]=> string(12) "13th Street "
-["zip_code"]=> string(5) "10011"
-["city"]=> string(8) "New York"
-["status"]=> string(6) "active"
-["date_add"]=> string(10) "2021-02-25"
-["last_online"]=> string(19) "2021-07-08 15:47:02"
-["last_update"]=> string(19) "2021-12-20 13:14:02"
-["daily_prepaid_cost"]=> string(6) "0.0000"
-["gps"]=> string(22) "40.7383963,-74.0014389"
-["conversion_date"]=> string(0) ""
-["street_2"]=> string(0) ""
-["internet_tariffs"]=> NULL
-["voice_tariffs"]=> NULL
-["custom_tariffs"]=> NULL
-["bundles"]=> NULL
-["services_internet_router_id"]=> NULL
-["services_internet_sector_id"]=> NULL
-["services_internet_login"]=> NULL
-["services_internet_ipv4"]=> NULL
-["services_internet_ipv4_route"]=> NULL
-["services_internet_ipv6"]=> NULL
-["services_internet_ipv6_delegated"]=> NULL
-["services_internet_mac"]=> NULL
-["services_internet_unit_price"]=> NULL
-["services_voice_phone"]=> NULL
-["services_voice_voice_device_id"]=> NULL
-["services_voice_unit_price"]=> NULL
-["services_internet_start_date"]=> NULL
-["services_internet_end_date"]=> NULL
-["services_voice_start_date"]=> NULL
-["services_voice_end_date"]=> NULL
-["services_custom_start_date"]=> NULL
-["services_custom_end_date"]=> NULL
-["services_custom_unit_price"]=> NULL
-["services_bundle_start_date"]=> NULL
-["services_bundle_end_date"]=> NULL
-["services_bundle_unit_price"]=> NULL
-["mrr_total"]=> string(8) "200.0000"
-["gdpr_agreed"]=> string(12) "empty_answer"
-["prepaid_monthly_costs"]=> string(0) ""
-["prepaid_expiration_date"]=> string(0) ""
-["prepaid_remains_days"]=> string(0) ""
-["starting_account_balance"]=> int(0)
+
+array(30) {
+  ["mrr_total"]=>
+  string(6) "0.0000"
+  ["gdpr_agreed"]=>
+  string(12) "empty_answer"
+  ["prepaid_monthly_costs"]=>
+  NULL
+  ["prepaid_expiration_date"]=>
+  NULL
+  ["prepaid_remains_days"]=>
+  NULL
+  ["id"]=>
+  string(4) "7331"
+  ["billing_type"]=>
+  string(9) "recurring"
+  ["partner_id"]=>
+  string(1) "1"
+  ["location_id"]=>
+  string(1) "1"
+  ["added_by"]=>
+  string(5) "admin"
+  ["added_by_id"]=>
+  string(1) "1"
+  ["login"]=>
+  string(6) "007331"
+  ["category"]=>
+  string(6) "person"
+  ["password"]=>
+  string(6) "123456"
+  ["name"]=>
+  string(11) "Henry Jones"
+  ["email"]=>
+  string(24) "HenryLJones1@teleworm.us"
+  ["billing_email"]=>
+  string(24) "HenryLJones2@teleworm.us"
+  ["phone"]=>
+  string(12) "+14026643935"
+  ["street_1"]=>
+  string(0) ""
+  ["zip_code"]=>
+  string(0) ""
+  ["city"]=>
+  string(0) ""
+  ["status"]=>
+  string(3) "new"
+  ["date_add"]=>
+  string(10) "2022-04-01"
+  ["last_online"]=>
+  string(19) "0000-00-00 00:00:00"
+  ["last_update"]=>
+  string(19) "2022-04-04 16:55:12"
+  ["daily_prepaid_cost"]=>
+  string(6) "0.0000"
+  ["gps"]=>
+  string(0) ""
+  ["conversion_date"]=>
+  string(0) ""
+  ["street_2"]=>
+  string(0) ""
+  ["additionalAttributes"]=>
+  array(36) {
+    ["aade_branch"]=>
+    string(0) ""
+    ["aade_country"]=>
+    string(0) ""
+    ["account_holderid"]=>
+    string(0) ""
+    ["alternative_contactno"]=>
+    string(0) ""
+    ["alternative_contactperson"]=>
+    string(0) ""
+    ["card_type"]=>
+    string(0) ""
+    ["choose_wifirouter"]=>
+    string(0) ""
+    ["company_address"]=>
+    string(0) ""
+    ["company_name"]=>
+    string(0) ""
+    ["company_office_number"]=>
+    string(0) ""
+    ["company_office_number_alt"]=>
+    string(0) ""
+    ["coverage_notes"]=>
+    string(0) ""
+    ["ct_hosting_term"]=>
+    string(0) ""
+    ["ct_term"]=>
+    string(0) ""
+    ["ct_wireless_term"]=>
+    string(0) ""
+    ["customers_gpon_olt"]=>
+    string(0) ""
+    ["data_field"]=>
+    string(0) ""
+    ["debitorder_eft"]=>
+    string(0) ""
+    ["installation_details"]=>
+    string(0) ""
+    ["integra_payer_bpay_biller"]=>
+    string(0) ""
+    ["integra_payer_bpay_crn"]=>
+    string(0) ""
+    ["mobile_number"]=>
+    string(0) ""
+    ["mpesa_phone_number"]=>
+    string(0) ""
+    ["primo_additional_account"]=>
+    string(0) ""
+    ["primo_dob"]=>
+    string(0) ""
+    ["primo_home_phone"]=>
+    string(0) ""
+    ["primo_notes"]=>
+    string(0) ""
+    ["primo_outage_email"]=>
+    string(0) ""
+    ["primo_site_contract"]=>
+    string(0) ""
+    ["self_registration_comment"]=>
+    string(0) ""
+    ["smileaccountnumber"]=>
+    string(0) ""
+    ["social_id"]=>
+    string(0) ""
+    ["splynx_addon_agents_agent"]=>
+    string(0) ""
+    ["splynx_addon_resellers_reseller"]=>
+    string(0) ""
+    ["srvname"]=>
+    string(0) ""
+    ["wn_survey_send"]=>
+    string(1) "0"
+  }
 }
+
+
 
 ```
 
@@ -204,6 +343,7 @@ array(59) {
 
 ```
 <pre>{{ dump(loader.info) }}</pre>
+
 ```
 
 <details style="font-size: 12px; margin-bottom: 5px;">
@@ -211,29 +351,67 @@ array(59) {
 <div markdown="1">
 
 ```
-object(models\common\customers\CustomerInfo)#1291 (21) {
-["customer_id"]=> string(2) "18"
-["birthday"]=> string(11) "20 Jan 1980"
-["passport"]=> string(0) ""
-["company_id"]=> string(0) ""
-["vat_id"]=> string(0) ""
-["deleted"]=> NULL
-["_changedAttributes":"db\Record":private]=> NULL
-["activeMysqlLocks":protected]=> array(0) {}
-["_forceDelete":"db\Record":private]=> bool(false)
-["_afterFirstSave":"db\Record":private]=> bool(false)
-["_relations":"db\Record":private]=> array(0) {}
-["_connected_models":"db\Record":private]=> NULL
-["relatedItems":protected]=> array(0) {}
-["_deleteWithRelations":"db\Record":private]=> bool(false)
-["_oldAttributes":protected]=> array(6) {
-  some old attributes ...
-["_errors":"base\Model":private]=> array(0) {}
-["_ignoreFillables":"base\Model":private]=> bool(false)
-["_additionalAttributes":protected]=> array(0) {}
-["_isAdditionalAttributesLoaded":protected]=> bool(false)
-["updated_at"]=> string(19) "2021-12-20 13:14:03"
+
+object(models\common\customers\CustomerInfo)#1328 (23) {
+  ["customer_id"]=>
+  string(4) "7331"
+  ["birthday"]=>
+  string(0) ""
+  ["passport"]=>
+  string(0) ""
+  ["company_id"]=>
+  string(0) ""
+  ["contact_person"]=>
+  string(0) ""
+  ["vat_id"]=>
+  string(0) ""
+  ["deleted"]=>
+  NULL
+  ["_changedAttributes":"db\Record":private]=>
+  NULL
+  ["activeMysqlLocks":protected]=>
+  array(0) {
+  }
+  ["_forceDelete":"db\Record":private]=>
+  bool(false)
+  ["_afterFirstSave":"db\Record":private]=>
+  bool(false)
+  ["_relations":"db\Record":private]=>
+  array(0) {
+  }
+  ["_connected_models":"db\Record":private]=>
+  NULL
+  ["relatedItems":protected]=>
+  array(0) {
+  }
+  ["_deleteWithRelations":"db\Record":private]=>
+  bool(false)
+  ["_oldAttributes":protected]=>
+  array(7) {
+    ...
+
+  }
+  ["_related":protected]=>
+  array(0) {
+  }
+  ["_errors":"base\Model":private]=>
+  array(0) {
+  }
+  ["_removalErrors":"base\Model":private]=>
+  array(0) {
+  }
+  ["_ignoreFillables":"base\Model":private]=>
+  bool(false)
+  ["_additionalAttributes":protected]=>
+  array(0) {
+  }
+  ["_isAdditionalAttributesLoaded":protected]=>
+  bool(false)
+  ["updated_at"]=>
+  string(19) "2022-04-04 16:55:12"
 }
+
+
 
 ```
 
@@ -253,6 +431,7 @@ object(models\common\customers\CustomerInfo)#1291 (21) {
 
 ```
 <pre>{{ dump(loader.getServicesByTypeAndStatus('internet', 'active')) }}</pre>
+
 ```
 
 <details style="font-size: 12px; margin-bottom: 5px;">
@@ -260,74 +439,169 @@ object(models\common\customers\CustomerInfo)#1291 (21) {
 <div markdown="1">
 
 ```
+
 array(1) {
-[0]=>
-object(models\common\customers\ServicesInternet)#1329 (68) {
-["type"]=> string(8) "internet"
-["top_up_tariff_id"]=> NULL
-["router_id"]=> string(1) "3"
-["login"]=> string(6) "000018"
-["password"]=> string(6) "123456"
-["sector_id"]=> string(1) "2"
-["taking_ipv4"]=> string(1) "1"
-["ipv4"]=> string(8) "10.0.0.8"
-["ipv4_pool_id"]=> string(1) "0"
-["taking_ipv6"]=> string(1) "0"
-["ipv6"]=> string(0) ""
-["ipv6_pool_id"]=> string(1) "0"
-["mac"]=> string(12) "0800272C3D65"
-["port_id"]=> string(0) ""
-["ipv4_route"]=> string(0) ""
-["ipv6_delegated"]=> string(0) ""
-["_update_online_tariff":"models\common\customers\ServicesInternet":private]=> bool(false)
-["_is_password_changed":"models\common\customers\ServicesInternet":private]=> bool(false)
-["_attributesHiddenForShowHideColumns":protected]=> NULL
-["_kill_from_online":"models\common\customers\ServicesInternet":private]=> bool(false)
-["parent_id"]=> string(1) "0"
-["customer_id"]=> string(2) "18"
-["tariff_id"]=> string(1) "1"
-["bundle_service_id"]=> string(1) "0"
-["description"]=> string(16) "Ethernet_500Mbps"
-["quantity"]=> string(1) "1"
-["unit"]=> string(0) ""
-["unit_price"]=> string(8) "200.0000"
-["start_date"]=> string(10) "2021-02-25"
-["end_date"]=> string(10) "0000-00-00"
-["discount"]=> string(1) "0"
-["discount_value"]=> string(6) "0.0000"
-["discount_type"]=> string(7) "percent"
-["discount_start_date"]=> string(10) "0000-00-00"
-["discount_end_date"]=> string(10) "0000-00-00"
-["discount_text"]=> string(0) ""
-["status"]=> string(6) "active"
-["status_new"]=> string(0) ""
-["period"]=> string(2) "-1"
-["old_tariff_id"]=> NULL
-["planned_date"]=> NULL
-["validate_login"]=> bool(true)
-["_validate_required_af":"models\common\customers\ServicesBase":private]=> bool(true)
-["_customer":"models\common\customers\ServicesBase":private]=> NULL
-["_tariff":"models\common\customers\ServicesBase":private]=> NULL
-["idForMultipleForm":protected]=> NULL
-["_skip_some_validations":"models\common\customers\ServicesBase":private]=> bool(false)
-["id"]=> string(2) "29"
-["_ips_to_remove":"db\ActiveTable":private]=> array(0) {}
-["_ipv6_to_remove":"db\ActiveTable":private]=> array(0) {}
-["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=> bool(false)
-["deleted"]=> string(1) "0"
-["_changedAttributes":"db\Record":private]=> NULL
-["activeMysqlLocks":protected]=> array(0) {}
-["_forceDelete":"db\Record":private]=> bool(false)
-["_afterFirstSave":"db\Record":private]=> bool(false)
-["_relations":"db\Record":private]=> array(0) {}
-["_connected_models":"db\Record":private]=> NULL
-["relatedItems":protected]=> array(0) {}
-["_deleteWithRelations":"db\Record":private]=> bool(false)
-["_oldAttributes":protected]=> array(41) {
-some old attributes ...
+  [0]=>
+  object(models\common\customers\ServicesInternet)#1320 (69) {
+    ["type"]=>
+    string(8) "internet"
+    ["top_up_tariff_id"]=>
+    NULL
+    ["router_id"]=>
+    string(1) "1"
+    ["login"]=>
+    string(6) "007331"
+    ["password"]=>
+    string(6) "qwerty"
+    ["sector_id"]=>
+    string(1) "1"
+    ["taking_ipv4"]=>
+    string(1) "0"
+    ["ipv4"]=>
+    string(0) ""
+    ["ipv4_pool_id"]=>
+    string(1) "0"
+    ["taking_ipv6"]=>
+    string(1) "0"
+    ["ipv6"]=>
+    string(0) ""
+    ["ipv6_pool_id"]=>
+    string(1) "0"
+    ["mac"]=>
+    string(0) ""
+    ["port_id"]=>
+    string(0) ""
+    ["ipv4_route"]=>
+    string(0) ""
+    ["ipv6_delegated"]=>
+    string(0) ""
+    ["_update_online_tariff":"models\common\customers\ServicesInternet":private]=>
+    bool(false)
+    ["_is_password_changed":"models\common\customers\ServicesInternet":private]=>
+    bool(false)
+    ["_attributesHiddenForShowHideColumns":protected]=>
+    NULL
+    ["_kill_from_online":"models\common\customers\ServicesInternet":private]=>
+    bool(false)
+    ["parent_id"]=>
+    string(1) "0"
+    ["customer_id"]=>
+    string(4) "7331"
+    ["tariff_id"]=>
+    string(1) "2"
+    ["bundle_service_id"]=>
+    string(1) "0"
+    ["description"]=>
+    string(16) "Ethernet_100Mbps"
+    ["quantity"]=>
+    string(1) "1"
+    ["unit"]=>
+    string(0) ""
+    ["unit_price"]=>
+    string(8) "100.0000"
+    ["start_date"]=>
+    string(10) "2022-04-01"
+    ["end_date"]=>
+    string(10) "0000-00-00"
+    ["discount"]=>
+    string(1) "1"
+    ["discount_value"]=>
+    string(7) "50.0000"
+    ["discount_type"]=>
+    string(7) "percent"
+    ["discount_start_date"]=>
+    string(10) "2022-04-01"
+    ["discount_end_date"]=>
+    string(10) "2022-04-30"
+    ["discount_text"]=>
+    string(28) "Your discount is 50%. Enjoy!"
+    ["status"]=>
+    string(6) "active"
+    ["status_new"]=>
+    string(0) ""
+    ["period"]=>
+    string(2) "-1"
+    ["old_tariff_id"]=>
+    NULL
+    ["planned_date"]=>
+    NULL
+    ["validate_login"]=>
+    bool(true)
+    ["_validate_required_af":"models\common\customers\ServicesBase":private]=>
+    bool(true)
+    ["_customer":"models\common\customers\ServicesBase":private]=>
+    NULL
+    ["_tariff":"models\common\customers\ServicesBase":private]=>
+    NULL
+    ["idForMultipleForm":protected]=>
+    NULL
+    ["_skip_some_validations":"models\common\customers\ServicesBase":private]=>
+    bool(false)
+    ["id"]=>
+    string(3) "591"
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(41) {
+      ...
+    }
+    ["_related":protected]=>
+    array(0) {
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(3) {
+      ["end_of_contract"]=>
+      string(0) ""
+      ["imsi"]=>
+      string(0) ""
+      ["type_of_connection"]=>
+      string(0) ""
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["updated_at"]=>
+    string(19) "2022-04-20 16:09:30"
+    ["_isMigrateService":protected]=>
+    bool(false)
+  }
 }
 
-}
+
 
 ```
 
@@ -347,6 +621,7 @@ some old attributes ...
 
 ```
 <pre>{% set bundles = loader.getBundles() %} {{ dump(bundles) }}</pre>
+
 ```
 
 <details style="font-size: 12px; margin-bottom: 5px;">
@@ -354,17 +629,18 @@ some old attributes ...
 <div markdown="1">
 
 ```
-array(2) {
-  [3]=>
-  object(models\admin\tariffs\Bundle)#1320 (49) {
+
+ array(2) {
+   [4]=>
+  object(models\admin\tariffs\Bundle)#1265 (50) {
     ["id"]=>
-    string(1) "3"
+    string(1) "4"
     ["title"]=>
-    string(4) "Same"
+    string(22) "GPON-Internet-and-IPTV"
     ["service_description"]=>
-    string(4) "Same"
+    string(22) "GPON-Internet-and-IPTV"
     ["price"]=>
-    string(8) "800.0000"
+    string(8) "320.0000"
     ["billing_days_count"]=>
     NULL
     ["customers"]=>
@@ -382,11 +658,21 @@ array(2) {
       [1]=>
       int(3)
       [2]=>
-      ...
+      int(4)
+      [3]=>
+      int(5)
+      [4]=>
+      int(6)
+      [5]=>
+      int(7)
+      [6]=>
+      int(8)
     }
     ["billing_types"]=>
-    array(1) {
+    array(2) {
       [0]=>
+      string(15) "prepaid_monthly"
+      [1]=>
       string(9) "recurring"
     }
     ["activation_fee"]=>
@@ -416,22 +702,1312 @@ array(2) {
     ["available_for_services"]=>
     string(1) "1"
     ["internet_tariffs"]=>
-    array(2) {
+    array(1) {
       [0]=>
       string(1) "1"
-      [1]=>
-      string(1) "2"
     }
     ["voice_tariffs"]=>
-    array(2) {
-      [0]=>
-      string(1) "1"
-      [1]=>
-      string(1) "2"
+    array(0) {
     }
     ["custom_tariffs"]=>
-...
+    array(1) {
+      [0]=>
+      string(1) "3"
     }
+    ["custom_period"]=>
+    int(0)
+    ["_recalculateBlockingDate":"models\admin\tariffs\Bundle":private]=>
+    bool(false)
+    ["transaction_category_id"]=>
+    string(1) "0"
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(31) {
+      ...
+    }
+    ["_related":protected]=>
+    array(3) {
+      ["partners"]=>
+      array(7) {
+        [1]=>
+        object(models\admin\administration\Partners)#1233 (25) {
+          ["id"]=>
+          int(1)
+          ["name"]=>
+          string(4) "Main"
+          ["add_to_tariffs"]=>
+          NULL
+          ["add_to_routers"]=>
+          NULL
+          ["add_to_hardware"]=>
+          NULL
+          ["add_to_projects"]=>
+          NULL
+          ["_ips_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_ipv6_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+          bool(false)
+          ["deleted"]=>
+          string(1) "0"
+          ["_changedAttributes":"db\Record":private]=>
+          NULL
+          ["activeMysqlLocks":protected]=>
+          array(0) {
+          }
+          ["_forceDelete":"db\Record":private]=>
+          bool(false)
+          ["_afterFirstSave":"db\Record":private]=>
+          bool(false)
+          ["_relations":"db\Record":private]=>
+          array(0) {
+          }
+          ["_connected_models":"db\Record":private]=>
+          NULL
+          ["relatedItems":protected]=>
+          array(0) {
+          }
+          ["_deleteWithRelations":"db\Record":private]=>
+          bool(false)
+          ["_oldAttributes":protected]=>
+          array(7) {
+          ...
+          }
+          ["_related":protected]=>
+          array(0) {
+          }
+          ["_errors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_removalErrors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_ignoreFillables":"base\Model":private]=>
+          bool(false)
+          ["_additionalAttributes":protected]=>
+          array(1) {
+            ["available_in_self_registration"]=>
+            string(0) ""
+          }
+          ["_isAdditionalAttributesLoaded":protected]=>
+          bool(true)
+        }
+        [3]=>
+        object(models\admin\administration\Partners)#1295 (25) {
+          ["id"]=>
+          int(3)
+          ["name"]=>
+          string(3) "RMS"
+          ["add_to_tariffs"]=>
+          NULL
+          ["add_to_routers"]=>
+          NULL
+          ["add_to_hardware"]=>
+          NULL
+          ["add_to_projects"]=>
+          NULL
+          ["_ips_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_ipv6_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+          bool(false)
+          ["deleted"]=>
+          string(1) "0"
+          ["_changedAttributes":"db\Record":private]=>
+          NULL
+          ["activeMysqlLocks":protected]=>
+          array(0) {
+          }
+          ["_forceDelete":"db\Record":private]=>
+          bool(false)
+          ["_afterFirstSave":"db\Record":private]=>
+          bool(false)
+          ["_relations":"db\Record":private]=>
+          array(0) {
+          }
+          ["_connected_models":"db\Record":private]=>
+          NULL
+          ["relatedItems":protected]=>
+          array(0) {
+          }
+          ["_deleteWithRelations":"db\Record":private]=>
+          bool(false)
+          ["_oldAttributes":protected]=>
+          array(7) {
+            ...
+          }
+          ["_related":protected]=>
+          array(0) {
+          }
+          ["_errors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_removalErrors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_ignoreFillables":"base\Model":private]=>
+          bool(false)
+          ["_additionalAttributes":protected]=>
+          array(1) {
+            ["available_in_self_registration"]=>
+            string(0) ""
+          }
+          ["_isAdditionalAttributesLoaded":protected]=>
+          bool(true)
+        }
+        [4]=>
+        object(models\admin\administration\Partners)#1207 (25) {
+          ["id"]=>
+          int(4)
+          ["name"]=>
+          string(6) "Second"
+          ["add_to_tariffs"]=>
+          NULL
+          ["add_to_routers"]=>
+          NULL
+          ["add_to_hardware"]=>
+          NULL
+          ["add_to_projects"]=>
+          NULL
+          ["_ips_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_ipv6_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+          bool(false)
+          ["deleted"]=>
+          string(1) "0"
+          ["_changedAttributes":"db\Record":private]=>
+          NULL
+          ["activeMysqlLocks":protected]=>
+          array(0) {
+          }
+          ["_forceDelete":"db\Record":private]=>
+          bool(false)
+          ["_afterFirstSave":"db\Record":private]=>
+          bool(false)
+          ["_relations":"db\Record":private]=>
+          array(0) {
+          }
+          ["_connected_models":"db\Record":private]=>
+          NULL
+          ["relatedItems":protected]=>
+          array(0) {
+          }
+          ["_deleteWithRelations":"db\Record":private]=>
+          bool(false)
+          ["_oldAttributes":protected]=>
+          array(7) {
+            ...
+          }
+          ["_related":protected]=>
+          array(0) {
+          }
+          ["_errors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_removalErrors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_ignoreFillables":"base\Model":private]=>
+          bool(false)
+          ["_additionalAttributes":protected]=>
+          array(1) {
+            ["available_in_self_registration"]=>
+            string(0) ""
+          }
+          ["_isAdditionalAttributesLoaded":protected]=>
+          bool(true)
+        }
+        [5]=>
+        object(models\admin\administration\Partners)#1220 (25) {
+          ["id"]=>
+          int(5)
+          ["name"]=>
+          string(5) "Third"
+          ["add_to_tariffs"]=>
+          NULL
+          ["add_to_routers"]=>
+          NULL
+          ["add_to_hardware"]=>
+          NULL
+          ["add_to_projects"]=>
+          NULL
+          ["_ips_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_ipv6_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+          bool(false)
+          ["deleted"]=>
+          string(1) "0"
+          ["_changedAttributes":"db\Record":private]=>
+          NULL
+          ["activeMysqlLocks":protected]=>
+          array(0) {
+          }
+          ["_forceDelete":"db\Record":private]=>
+          bool(false)
+          ["_afterFirstSave":"db\Record":private]=>
+          bool(false)
+          ["_relations":"db\Record":private]=>
+          array(0) {
+          }
+          ["_connected_models":"db\Record":private]=>
+          NULL
+          ["relatedItems":protected]=>
+          array(0) {
+          }
+          ["_deleteWithRelations":"db\Record":private]=>
+          bool(false)
+          ["_oldAttributes":protected]=>
+          array(7) {
+          ...
+          }
+          ["_related":protected]=>
+          array(0) {
+          }
+          ["_errors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_removalErrors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_ignoreFillables":"base\Model":private]=>
+          bool(false)
+          ["_additionalAttributes":protected]=>
+          array(1) {
+            ["available_in_self_registration"]=>
+            string(0) ""
+          }
+          ["_isAdditionalAttributesLoaded":protected]=>
+          bool(true)
+        }
+        [6]=>
+        object(models\admin\administration\Partners)#1221 (25) {
+          ["id"]=>
+          int(6)
+          ["name"]=>
+          string(4) "Four"
+          ["add_to_tariffs"]=>
+          NULL
+          ["add_to_routers"]=>
+          NULL
+          ["add_to_hardware"]=>
+          NULL
+          ["add_to_projects"]=>
+          NULL
+          ["_ips_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_ipv6_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+          bool(false)
+          ["deleted"]=>
+          string(1) "0"
+          ["_changedAttributes":"db\Record":private]=>
+          NULL
+          ["activeMysqlLocks":protected]=>
+          array(0) {
+          }
+          ["_forceDelete":"db\Record":private]=>
+          bool(false)
+          ["_afterFirstSave":"db\Record":private]=>
+          bool(false)
+          ["_relations":"db\Record":private]=>
+          array(0) {
+          }
+          ["_connected_models":"db\Record":private]=>
+          NULL
+          ["relatedItems":protected]=>
+          array(0) {
+          }
+          ["_deleteWithRelations":"db\Record":private]=>
+          bool(false)
+          ["_oldAttributes":protected]=>
+          array(7) {
+          ...
+          }
+          ["_related":protected]=>
+          array(0) {
+          }
+          ["_errors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_removalErrors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_ignoreFillables":"base\Model":private]=>
+          bool(false)
+          ["_additionalAttributes":protected]=>
+          array(1) {
+            ["available_in_self_registration"]=>
+            string(0) ""
+          }
+          ["_isAdditionalAttributesLoaded":protected]=>
+          bool(true)
+        }
+        [7]=>
+        object(models\admin\administration\Partners)#1341 (25) {
+          ["id"]=>
+          int(7)
+          ["name"]=>
+          string(4) "Five"
+          ["add_to_tariffs"]=>
+          NULL
+          ["add_to_routers"]=>
+          NULL
+          ["add_to_hardware"]=>
+          NULL
+          ["add_to_projects"]=>
+          NULL
+          ["_ips_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_ipv6_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+          bool(false)
+          ["deleted"]=>
+          string(1) "0"
+          ["_changedAttributes":"db\Record":private]=>
+          NULL
+          ["activeMysqlLocks":protected]=>
+          array(0) {
+          }
+          ["_forceDelete":"db\Record":private]=>
+          bool(false)
+          ["_afterFirstSave":"db\Record":private]=>
+          bool(false)
+          ["_relations":"db\Record":private]=>
+          array(0) {
+          }
+          ["_connected_models":"db\Record":private]=>
+          NULL
+          ["relatedItems":protected]=>
+          array(0) {
+          }
+          ["_deleteWithRelations":"db\Record":private]=>
+          bool(false)
+          ["_oldAttributes":protected]=>
+          array(7) {
+          ...
+          }
+          ["_related":protected]=>
+          array(0) {
+          }
+          ["_errors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_removalErrors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_ignoreFillables":"base\Model":private]=>
+          bool(false)
+          ["_additionalAttributes":protected]=>
+          array(1) {
+            ["available_in_self_registration"]=>
+            string(0) ""
+          }
+          ["_isAdditionalAttributesLoaded":protected]=>
+          bool(true)
+        }
+        [8]=>
+        object(models\admin\administration\Partners)#1310 (25) {
+          ["id"]=>
+          int(8)
+          ["name"]=>
+          string(13) "inter_partner"
+          ["add_to_tariffs"]=>
+          NULL
+          ["add_to_routers"]=>
+          NULL
+          ["add_to_hardware"]=>
+          NULL
+          ["add_to_projects"]=>
+          NULL
+          ["_ips_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_ipv6_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+          bool(false)
+          ["deleted"]=>
+          string(1) "0"
+          ["_changedAttributes":"db\Record":private]=>
+          NULL
+          ["activeMysqlLocks":protected]=>
+          array(0) {
+          }
+          ["_forceDelete":"db\Record":private]=>
+          bool(false)
+          ["_afterFirstSave":"db\Record":private]=>
+          bool(false)
+          ["_relations":"db\Record":private]=>
+          array(0) {
+          }
+          ["_connected_models":"db\Record":private]=>
+          NULL
+          ["relatedItems":protected]=>
+          array(0) {
+          }
+          ["_deleteWithRelations":"db\Record":private]=>
+          bool(false)
+          ["_oldAttributes":protected]=>
+          array(7) {
+            ...
+          }
+          ["_related":protected]=>
+          array(0) {
+          }
+          ["_errors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_removalErrors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_ignoreFillables":"base\Model":private]=>
+          bool(false)
+          ["_additionalAttributes":protected]=>
+          array(1) {
+            ["available_in_self_registration"]=>
+            string(0) ""
+          }
+          ["_isAdditionalAttributesLoaded":protected]=>
+          bool(true)
+        }
+      }
+      ["uniqueInternetTariffsRelation"]=>
+      array(1) {
+        [1]=>
+        object(models\admin\tariffs\InternetTariffs)#1312 (62) {
+          ["speed_download"]=>
+          string(6) "500000"
+          ["speed_upload"]=>
+          string(6) "500000"
+          ["speed_limit_type"]=>
+          string(7) "percent"
+          ["speed_limit_at"]=>
+          string(2) "10"
+          ["speed_limit_fixed_up"]=>
+          string(1) "0"
+          ["speed_limit_fixed_down"]=>
+          string(1) "0"
+          ["aggregation"]=>
+          string(1) "1"
+          ["burst_type"]=>
+          string(4) "none"
+          ["burst_limit"]=>
+          NULL
+          ["burst_limit_fixed_up"]=>
+          string(1) "0"
+          ["burst_limit_fixed_down"]=>
+          string(1) "0"
+          ["burst_threshold"]=>
+          string(1) "0"
+          ["burst_threshold_fixed_up"]=>
+          string(1) "0"
+          ["burst_threshold_fixed_down"]=>
+          string(1) "0"
+          ["burst_time"]=>
+          string(1) "0"
+          ["priority"]=>
+          string(6) "normal"
+          ["services"]=>
+          NULL
+          ["services_online"]=>
+          NULL
+          ["exclude_traffic_classes"]=>
+          array(0) {
+          }
+          ["_privateIsNewRecord":"models\admin\tariffs\InternetTariffs":private]=>
+          bool(false)
+          ["_need_touch_router":"models\admin\tariffs\InternetTariffs":private]=>
+          bool(false)
+          ["id"]=>
+          string(1) "1"
+          ["title"]=>
+          string(16) "Ethernet_500Mbps"
+          ["service_name"]=>
+          string(16) "Ethernet_500Mbps"
+          ["price"]=>
+          string(8) "200.0000"
+          ["billing_days_count"]=>
+          NULL
+          ["with_vat"]=>
+          string(1) "0"
+          ["vat_percent"]=>
+          string(6) "0.0000"
+          ["available_for_services"]=>
+          string(1) "1"
+          ["update_service_price"]=>
+          bool(false)
+          ["old_price":protected]=>
+          NULL
+          ["update_service_name"]=>
+          bool(false)
+          ["old_service_name":protected]=>
+          NULL
+          ["force_update_service_price"]=>
+          NULL
+          ["force_update_service_name"]=>
+          NULL
+          ["partners_ids"]=>
+          array(7) {
+            [0]=>
+            int(1)
+            [1]=>
+            int(3)
+            [2]=>
+            int(4)
+            [3]=>
+            int(5)
+            [4]=>
+            int(6)
+            [5]=>
+            int(7)
+            [6]=>
+            int(8)
+          }
+          ["billing_types"]=>
+          array(3) {
+            [0]=>
+            string(7) "prepaid"
+            [1]=>
+            string(15) "prepaid_monthly"
+            [2]=>
+            string(9) "recurring"
+          }
+          ["tariffs_for_change"]=>
+          array(0) {
+          }
+          ["custom_period"]=>
+          int(0)
+          ["_recalculateBlockingDate":"models\admin\tariffs\TariffsCommon":private]=>
+          bool(false)
+          ["transaction_category_id"]=>
+          string(1) "0"
+          ["_cant_delete_message":"models\admin\tariffs\TariffsCommon":private]=>
+          NULL
+          ["_ips_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_ipv6_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+          bool(false)
+          ["deleted"]=>
+          string(1) "0"
+          ["_changedAttributes":"db\Record":private]=>
+          NULL
+          ["activeMysqlLocks":protected]=>
+          array(0) {
+          }
+          ["_forceDelete":"db\Record":private]=>
+          bool(false)
+          ["_afterFirstSave":"db\Record":private]=>
+          bool(false)
+          ["_relations":"db\Record":private]=>
+          array(0) {
+          }
+          ["_connected_models":"db\Record":private]=>
+          NULL
+          ["relatedItems":protected]=>
+          array(0) {
+          }
+          ["_deleteWithRelations":"db\Record":private]=>
+          bool(false)
+          ["_oldAttributes":protected]=>
+          array(38) {
+            ...
+          }
+          ["_related":protected]=>
+          array(0) {
+          }
+          ["_errors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_removalErrors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_ignoreFillables":"base\Model":private]=>
+          bool(false)
+          ["_additionalAttributes":protected]=>
+          array(3) {
+            ["available_when_register_by_social_network"]=>
+            string(0) ""
+            ["enable_to_prepaid_portal"]=>
+            string(0) ""
+            ["primotype"]=>
+            string(0) ""
+          }
+          ["_isAdditionalAttributesLoaded":protected]=>
+          bool(true)
+          ["updated_at"]=>
+          string(19) "2021-12-13 13:29:47"
+        }
+      }
+      ["uniqueCustomTariffsRelation"]=>
+      array(1) {
+        [3]=>
+        object(models\admin\tariffs\RecurringTariffs)#1305 (42) {
+          ["services"]=>
+          NULL
+          ["id"]=>
+          string(1) "3"
+          ["title"]=>
+          string(4) "IPTV"
+          ["service_name"]=>
+          string(4) "IPTV"
+          ["price"]=>
+          string(8) "120.0000"
+          ["billing_days_count"]=>
+          NULL
+          ["with_vat"]=>
+          string(1) "1"
+          ["vat_percent"]=>
+          string(6) "0.0000"
+          ["available_for_services"]=>
+          string(1) "1"
+          ["update_service_price"]=>
+          bool(false)
+          ["old_price":protected]=>
+          NULL
+          ["update_service_name"]=>
+          bool(false)
+          ["old_service_name":protected]=>
+          NULL
+          ["force_update_service_price"]=>
+          NULL
+          ["force_update_service_name"]=>
+          NULL
+          ["partners_ids"]=>
+          array(7) {
+            [0]=>
+            int(1)
+            [1]=>
+            int(3)
+            [2]=>
+            int(4)
+            [3]=>
+            int(5)
+            [4]=>
+            int(6)
+            [5]=>
+            int(7)
+            [6]=>
+            int(8)
+          }
+          ["billing_types"]=>
+          array(2) {
+            [0]=>
+            string(15) "prepaid_monthly"
+            [1]=>
+            string(9) "recurring"
+          }
+          ["tariffs_for_change"]=>
+          array(2) {
+            [0]=>
+            string(1) "1"
+            [1]=>
+            string(1) "2"
+          }
+          ["custom_period"]=>
+          int(0)
+          ["_recalculateBlockingDate":"models\admin\tariffs\TariffsCommon":private]=>
+          bool(false)
+          ["transaction_category_id"]=>
+          string(1) "0"
+          ["_cant_delete_message":"models\admin\tariffs\TariffsCommon":private]=>
+          NULL
+          ["_ips_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_ipv6_to_remove":"db\ActiveTable":private]=>
+          array(0) {
+          }
+          ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+          bool(false)
+          ["deleted"]=>
+          string(1) "0"
+          ["_changedAttributes":"db\Record":private]=>
+          NULL
+          ["activeMysqlLocks":protected]=>
+          array(0) {
+          }
+          ["_forceDelete":"db\Record":private]=>
+          bool(false)
+          ["_afterFirstSave":"db\Record":private]=>
+          bool(false)
+          ["_relations":"db\Record":private]=>
+          array(0) {
+          }
+          ["_connected_models":"db\Record":private]=>
+          NULL
+          ["relatedItems":protected]=>
+          array(0) {
+          }
+          ["_deleteWithRelations":"db\Record":private]=>
+          bool(false)
+          ["_oldAttributes":protected]=>
+          array(20) {
+            ...
+          }
+          ["_related":protected]=>
+          array(1) {
+            ["relatedPartners"]=>
+            array(7) {
+              [1]=>
+              object(models\admin\administration\Partners)#1296 (25) {
+                ["id"]=>
+                int(1)
+                ["name"]=>
+                string(4) "Main"
+                ["add_to_tariffs"]=>
+                NULL
+                ["add_to_routers"]=>
+                NULL
+                ["add_to_hardware"]=>
+                NULL
+                ["add_to_projects"]=>
+                NULL
+                ["_ips_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_ipv6_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+                bool(false)
+                ["deleted"]=>
+                string(1) "0"
+                ["_changedAttributes":"db\Record":private]=>
+                NULL
+                ["activeMysqlLocks":protected]=>
+                array(0) {
+                }
+                ["_forceDelete":"db\Record":private]=>
+                bool(false)
+                ["_afterFirstSave":"db\Record":private]=>
+                bool(false)
+                ["_relations":"db\Record":private]=>
+                array(0) {
+                }
+                ["_connected_models":"db\Record":private]=>
+                NULL
+                ["relatedItems":protected]=>
+                array(0) {
+                }
+                ["_deleteWithRelations":"db\Record":private]=>
+                bool(false)
+                ["_oldAttributes":protected]=>
+                array(7) {
+                ...
+                }
+                ["_related":protected]=>
+                array(0) {
+                }
+                ["_errors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_removalErrors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_ignoreFillables":"base\Model":private]=>
+                bool(false)
+                ["_additionalAttributes":protected]=>
+                array(1) {
+                  ["available_in_self_registration"]=>
+                  string(0) ""
+                }
+                ["_isAdditionalAttributesLoaded":protected]=>
+                bool(true)
+              }
+              [3]=>
+              object(models\admin\administration\Partners)#1297 (25) {
+                ["id"]=>
+                int(3)
+                ["name"]=>
+                string(3) "RMS"
+                ["add_to_tariffs"]=>
+                NULL
+                ["add_to_routers"]=>
+                NULL
+                ["add_to_hardware"]=>
+                NULL
+                ["add_to_projects"]=>
+                NULL
+                ["_ips_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_ipv6_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+                bool(false)
+                ["deleted"]=>
+                string(1) "0"
+                ["_changedAttributes":"db\Record":private]=>
+                NULL
+                ["activeMysqlLocks":protected]=>
+                array(0) {
+                }
+                ["_forceDelete":"db\Record":private]=>
+                bool(false)
+                ["_afterFirstSave":"db\Record":private]=>
+                bool(false)
+                ["_relations":"db\Record":private]=>
+                array(0) {
+                }
+                ["_connected_models":"db\Record":private]=>
+                NULL
+                ["relatedItems":protected]=>
+                array(0) {
+                }
+                ["_deleteWithRelations":"db\Record":private]=>
+                bool(false)
+                ["_oldAttributes":protected]=>
+                array(7) {
+                ...
+                }
+                ["_related":protected]=>
+                array(0) {
+                }
+                ["_errors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_removalErrors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_ignoreFillables":"base\Model":private]=>
+                bool(false)
+                ["_additionalAttributes":protected]=>
+                array(1) {
+                  ["available_in_self_registration"]=>
+                  string(0) ""
+                }
+                ["_isAdditionalAttributesLoaded":protected]=>
+                bool(true)
+              }
+              [4]=>
+              object(models\admin\administration\Partners)#1292 (25) {
+                ["id"]=>
+                int(4)
+                ["name"]=>
+                string(6) "Second"
+                ["add_to_tariffs"]=>
+                NULL
+                ["add_to_routers"]=>
+                NULL
+                ["add_to_hardware"]=>
+                NULL
+                ["add_to_projects"]=>
+                NULL
+                ["_ips_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_ipv6_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+                bool(false)
+                ["deleted"]=>
+                string(1) "0"
+                ["_changedAttributes":"db\Record":private]=>
+                NULL
+                ["activeMysqlLocks":protected]=>
+                array(0) {
+                }
+                ["_forceDelete":"db\Record":private]=>
+                bool(false)
+                ["_afterFirstSave":"db\Record":private]=>
+                bool(false)
+                ["_relations":"db\Record":private]=>
+                array(0) {
+                }
+                ["_connected_models":"db\Record":private]=>
+                NULL
+                ["relatedItems":protected]=>
+                array(0) {
+                }
+                ["_deleteWithRelations":"db\Record":private]=>
+                bool(false)
+                ["_oldAttributes":protected]=>
+                array(7) {
+                ...
+                }
+                ["_related":protected]=>
+                array(0) {
+                }
+                ["_errors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_removalErrors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_ignoreFillables":"base\Model":private]=>
+                bool(false)
+                ["_additionalAttributes":protected]=>
+                array(1) {
+                  ["available_in_self_registration"]=>
+                  string(0) ""
+                }
+                ["_isAdditionalAttributesLoaded":protected]=>
+                bool(true)
+              }
+              [5]=>
+              object(models\admin\administration\Partners)#1201 (25) {
+                ["id"]=>
+                int(5)
+                ["name"]=>
+                string(5) "Third"
+                ["add_to_tariffs"]=>
+                NULL
+                ["add_to_routers"]=>
+                NULL
+                ["add_to_hardware"]=>
+                NULL
+                ["add_to_projects"]=>
+                NULL
+                ["_ips_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_ipv6_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+                bool(false)
+                ["deleted"]=>
+                string(1) "0"
+                ["_changedAttributes":"db\Record":private]=>
+                NULL
+                ["activeMysqlLocks":protected]=>
+                array(0) {
+                }
+                ["_forceDelete":"db\Record":private]=>
+                bool(false)
+                ["_afterFirstSave":"db\Record":private]=>
+                bool(false)
+                ["_relations":"db\Record":private]=>
+                array(0) {
+                }
+                ["_connected_models":"db\Record":private]=>
+                NULL
+                ["relatedItems":protected]=>
+                array(0) {
+                }
+                ["_deleteWithRelations":"db\Record":private]=>
+                bool(false)
+                ["_oldAttributes":protected]=>
+                array(7) {
+                  ...
+                }
+                ["_related":protected]=>
+                array(0) {
+                }
+                ["_errors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_removalErrors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_ignoreFillables":"base\Model":private]=>
+                bool(false)
+                ["_additionalAttributes":protected]=>
+                array(1) {
+                  ["available_in_self_registration"]=>
+                  string(0) ""
+                }
+                ["_isAdditionalAttributesLoaded":protected]=>
+                bool(true)
+              }
+              [6]=>
+              object(models\admin\administration\Partners)#1204 (25) {
+                ["id"]=>
+                int(6)
+                ["name"]=>
+                string(4) "Four"
+                ["add_to_tariffs"]=>
+                NULL
+                ["add_to_routers"]=>
+                NULL
+                ["add_to_hardware"]=>
+                NULL
+                ["add_to_projects"]=>
+                NULL
+                ["_ips_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_ipv6_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+                bool(false)
+                ["deleted"]=>
+                string(1) "0"
+                ["_changedAttributes":"db\Record":private]=>
+                NULL
+                ["activeMysqlLocks":protected]=>
+                array(0) {
+                }
+                ["_forceDelete":"db\Record":private]=>
+                bool(false)
+                ["_afterFirstSave":"db\Record":private]=>
+                bool(false)
+                ["_relations":"db\Record":private]=>
+                array(0) {
+                }
+                ["_connected_models":"db\Record":private]=>
+                NULL
+                ["relatedItems":protected]=>
+                array(0) {
+                }
+                ["_deleteWithRelations":"db\Record":private]=>
+                bool(false)
+                ["_oldAttributes":protected]=>
+                array(7) {
+                ...
+                }
+                ["_related":protected]=>
+                array(0) {
+                }
+                ["_errors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_removalErrors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_ignoreFillables":"base\Model":private]=>
+                bool(false)
+                ["_additionalAttributes":protected]=>
+                array(1) {
+                  ["available_in_self_registration"]=>
+                  string(0) ""
+                }
+                ["_isAdditionalAttributesLoaded":protected]=>
+                bool(true)
+              }
+              [7]=>
+              object(models\admin\administration\Partners)#1203 (25) {
+                ["id"]=>
+                int(7)
+                ["name"]=>
+                string(4) "Five"
+                ["add_to_tariffs"]=>
+                NULL
+                ["add_to_routers"]=>
+                NULL
+                ["add_to_hardware"]=>
+                NULL
+                ["add_to_projects"]=>
+                NULL
+                ["_ips_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_ipv6_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+                bool(false)
+                ["deleted"]=>
+                string(1) "0"
+                ["_changedAttributes":"db\Record":private]=>
+                NULL
+                ["activeMysqlLocks":protected]=>
+                array(0) {
+                }
+                ["_forceDelete":"db\Record":private]=>
+                bool(false)
+                ["_afterFirstSave":"db\Record":private]=>
+                bool(false)
+                ["_relations":"db\Record":private]=>
+                array(0) {
+                }
+                ["_connected_models":"db\Record":private]=>
+                NULL
+                ["relatedItems":protected]=>
+                array(0) {
+                }
+                ["_deleteWithRelations":"db\Record":private]=>
+                bool(false)
+                ["_oldAttributes":protected]=>
+                array(7) {
+                ...
+                }
+                ["_related":protected]=>
+                array(0) {
+                }
+                ["_errors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_removalErrors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_ignoreFillables":"base\Model":private]=>
+                bool(false)
+                ["_additionalAttributes":protected]=>
+                array(1) {
+                  ["available_in_self_registration"]=>
+                  string(0) ""
+                }
+                ["_isAdditionalAttributesLoaded":protected]=>
+                bool(true)
+              }
+              [8]=>
+              object(models\admin\administration\Partners)#1202 (25) {
+                ["id"]=>
+                int(8)
+                ["name"]=>
+                string(13) "inter_partner"
+                ["add_to_tariffs"]=>
+                NULL
+                ["add_to_routers"]=>
+                NULL
+                ["add_to_hardware"]=>
+                NULL
+                ["add_to_projects"]=>
+                NULL
+                ["_ips_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_ipv6_to_remove":"db\ActiveTable":private]=>
+                array(0) {
+                }
+                ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+                bool(false)
+                ["deleted"]=>
+                string(1) "0"
+                ["_changedAttributes":"db\Record":private]=>
+                NULL
+                ["activeMysqlLocks":protected]=>
+                array(0) {
+                }
+                ["_forceDelete":"db\Record":private]=>
+                bool(false)
+                ["_afterFirstSave":"db\Record":private]=>
+                bool(false)
+                ["_relations":"db\Record":private]=>
+                array(0) {
+                }
+                ["_connected_models":"db\Record":private]=>
+                NULL
+                ["relatedItems":protected]=>
+                array(0) {
+                }
+                ["_deleteWithRelations":"db\Record":private]=>
+                bool(false)
+                ["_oldAttributes":protected]=>
+                array(7) {
+                ...
+                }
+                ["_related":protected]=>
+                array(0) {
+                }
+                ["_errors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_removalErrors":"base\Model":private]=>
+                array(0) {
+                }
+                ["_ignoreFillables":"base\Model":private]=>
+                bool(false)
+                ["_additionalAttributes":protected]=>
+                array(1) {
+                  ["available_in_self_registration"]=>
+                  string(0) ""
+                }
+                ["_isAdditionalAttributesLoaded":protected]=>
+                bool(true)
+              }
+            }
+          }
+          ["_errors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_removalErrors":"base\Model":private]=>
+          array(0) {
+          }
+          ["_ignoreFillables":"base\Model":private]=>
+          bool(false)
+          ["_additionalAttributes":protected]=>
+          array(3) {
+            ["available_in_self_registration"]=>
+            string(0) ""
+            ["huawei_tariffs_custom_bandwidth"]=>
+            string(0) ""
+            ["huawei_tariffs_custom_priority"]=>
+            string(1) "1"
+          }
+          ["_isAdditionalAttributesLoaded":protected]=>
+          bool(true)
+          ["updated_at"]=>
+          string(19) "2021-06-08 09:28:48"
+        }
+      }
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(0) {
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["updated_at"]=>
+    string(19) "2021-06-08 09:29:15"
+  }
+}
+
+
 
 ```
 
@@ -451,6 +2027,7 @@ array(2) {
 
 ```
 <pre>{% set servisesBundle = loader.getServicesBundle() %} {{ dump(servisesBundle) }}</pre>
+
 ```
 
 <details style="font-size: 12px; margin-bottom: 5px;">
@@ -458,21 +2035,22 @@ array(2) {
 <div markdown="1">
 
 ```
+
 array(1) {
-  [19]=>
-  object(models\common\customers\services\ServicesBundle)#1320 (52) {
+  [20]=>
+  object(models\common\customers\services\ServicesBundle)#1314 (53) {
     ["parent_id"]=>
     string(1) "0"
     ["customer_id"]=>
-    string(4) "7323"
+    string(4) "7331"
     ["bundle_id"]=>
-    string(1) "3"
+    string(1) "4"
     ["description"]=>
-    string(4) "Same"
+    string(22) "GPON-Internet-and-IPTV"
     ["unit_price"]=>
-    string(8) "800.0000"
+    string(8) "320.0000"
     ["start_date"]=>
-    string(10) "2021-12-24"
+    string(10) "2022-04-20"
     ["end_date"]=>
     string(10) "0000-00-00"
     ["automatic_renewal"]=>
@@ -514,9 +2092,9 @@ array(1) {
     ["type"]=>
     string(6) "bundle"
     ["services_internet"]=>
-    array(2) {
-      [505]=>
-      object(models\common\customers\ServicesInternet)#1281 (68) {
+    array(1) {
+      [592]=>
+      object(models\common\customers\ServicesInternet)#1283 (69) {
         ["type"]=>
         string(8) "internet"
         ["top_up_tariff_id"]=>
@@ -524,7 +2102,7 @@ array(1) {
         ["router_id"]=>
         string(1) "0"
         ["login"]=>
-        string(8) "007323_1"
+        string(6) "007331"
         ["password"]=>
         string(0) ""
         ["sector_id"]=>
@@ -547,10 +2125,7 @@ array(1) {
         string(0) ""
         ["ipv4_route"]=>
         string(0) ""
-        ["ipv6_route"]=>
-		string(0) ""
-
-		["ipv6_delegated"]=>
+        ["ipv6_delegated"]=>
         string(0) ""
         ["_update_online_tariff":"models\common\customers\ServicesInternet":private]=>
         bool(false)
@@ -563,11 +2138,11 @@ array(1) {
         ["parent_id"]=>
         string(1) "0"
         ["customer_id"]=>
-        string(4) "7323"
+        string(4) "7331"
         ["tariff_id"]=>
         string(1) "1"
         ["bundle_service_id"]=>
-        string(2) "19"
+        string(2) "20"
         ["description"]=>
         string(16) "Ethernet_500Mbps"
         ["quantity"]=>
@@ -600,9 +2175,896 @@ array(1) {
         string(2) "-1"
         ["old_tariff_id"]=>
         NULL
-		...
-		}
-	}
+        ["planned_date"]=>
+        NULL
+        ["validate_login"]=>
+        bool(true)
+        ["_validate_required_af":"models\common\customers\ServicesBase":private]=>
+        bool(true)
+        ["_customer":"models\common\customers\ServicesBase":private]=>
+        NULL
+        ["_tariff":"models\common\customers\ServicesBase":private]=>
+        NULL
+        ["idForMultipleForm":protected]=>
+        NULL
+        ["_skip_some_validations":"models\common\customers\ServicesBase":private]=>
+        bool(false)
+        ["id"]=>
+        string(3) "592"
+        ["_ips_to_remove":"db\ActiveTable":private]=>
+        array(0) {
+        }
+        ["_ipv6_to_remove":"db\ActiveTable":private]=>
+        array(0) {
+        }
+        ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+        bool(false)
+        ["deleted"]=>
+        string(1) "0"
+        ["_changedAttributes":"db\Record":private]=>
+        NULL
+        ["activeMysqlLocks":protected]=>
+        array(0) {
+        }
+        ["_forceDelete":"db\Record":private]=>
+        bool(false)
+        ["_afterFirstSave":"db\Record":private]=>
+        bool(false)
+        ["_relations":"db\Record":private]=>
+        array(0) {
+        }
+        ["_connected_models":"db\Record":private]=>
+        NULL
+        ["relatedItems":protected]=>
+        array(0) {
+        }
+        ["_deleteWithRelations":"db\Record":private]=>
+        bool(false)
+        ["_oldAttributes":protected]=>
+        array(41) {
+        ...
+        }
+        ["_related":protected]=>
+        array(0) {
+        }
+        ["_errors":"base\Model":private]=>
+        array(0) {
+        }
+        ["_removalErrors":"base\Model":private]=>
+        array(0) {
+        }
+        ["_ignoreFillables":"base\Model":private]=>
+        bool(false)
+        ["_additionalAttributes":protected]=>
+        array(3) {
+          ["end_of_contract"]=>
+          string(0) ""
+          ["imsi"]=>
+          string(0) ""
+          ["type_of_connection"]=>
+          string(0) ""
+        }
+        ["_isAdditionalAttributesLoaded":protected]=>
+        bool(true)
+        ["updated_at"]=>
+        string(19) "2022-04-20 16:10:53"
+        ["_isMigrateService":protected]=>
+        bool(false)
+      }
+    }
+    ["services_voice"]=>
+    NULL
+    ["services_custom"]=>
+    array(1) {
+      [93]=>
+      object(models\common\customers\ServicesCustom)#1197 (50) {
+        ["type"]=>
+        string(6) "custom"
+        ["parent_id"]=>
+        string(1) "0"
+        ["customer_id"]=>
+        string(4) "7331"
+        ["tariff_id"]=>
+        string(1) "3"
+        ["bundle_service_id"]=>
+        string(2) "20"
+        ["description"]=>
+        string(4) "IPTV"
+        ["quantity"]=>
+        string(1) "1"
+        ["unit"]=>
+        string(0) ""
+        ["unit_price"]=>
+        string(6) "0.0000"
+        ["start_date"]=>
+        string(10) "0000-00-00"
+        ["end_date"]=>
+        string(10) "0000-00-00"
+        ["discount"]=>
+        string(1) "0"
+        ["discount_value"]=>
+        string(6) "0.0000"
+        ["discount_type"]=>
+        string(7) "percent"
+        ["discount_start_date"]=>
+        string(10) "0000-00-00"
+        ["discount_end_date"]=>
+        string(10) "0000-00-00"
+        ["discount_text"]=>
+        string(0) ""
+        ["status"]=>
+        string(6) "active"
+        ["status_new"]=>
+        string(0) ""
+        ["period"]=>
+        string(2) "-1"
+        ["old_tariff_id"]=>
+        NULL
+        ["planned_date"]=>
+        NULL
+        ["validate_login"]=>
+        bool(true)
+        ["_validate_required_af":"models\common\customers\ServicesBase":private]=>
+        bool(true)
+        ["_customer":"models\common\customers\ServicesBase":private]=>
+        NULL
+        ["_tariff":"models\common\customers\ServicesBase":private]=>
+        NULL
+        ["idForMultipleForm":protected]=>
+        NULL
+        ["_skip_some_validations":"models\common\customers\ServicesBase":private]=>
+        bool(false)
+        ["id"]=>
+        string(2) "93"
+        ["_ips_to_remove":"db\ActiveTable":private]=>
+        array(0) {
+        }
+        ["_ipv6_to_remove":"db\ActiveTable":private]=>
+        array(0) {
+        }
+        ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+        bool(false)
+        ["deleted"]=>
+        string(1) "0"
+        ["_changedAttributes":"db\Record":private]=>
+        NULL
+        ["activeMysqlLocks":protected]=>
+        array(0) {
+        }
+        ["_forceDelete":"db\Record":private]=>
+        bool(false)
+        ["_afterFirstSave":"db\Record":private]=>
+        bool(false)
+        ["_relations":"db\Record":private]=>
+        array(0) {
+        }
+        ["_connected_models":"db\Record":private]=>
+        NULL
+        ["relatedItems":protected]=>
+        array(0) {
+        }
+        ["_deleteWithRelations":"db\Record":private]=>
+        bool(false)
+        ["_oldAttributes":protected]=>
+        array(26) {
+          ...
+        }
+        ["_related":protected]=>
+        array(0) {
+        }
+        ["_errors":"base\Model":private]=>
+        array(0) {
+        }
+        ["_removalErrors":"base\Model":private]=>
+        array(0) {
+        }
+        ["_ignoreFillables":"base\Model":private]=>
+        bool(false)
+        ["_additionalAttributes":protected]=>
+        array(0) {
+        }
+        ["_isAdditionalAttributesLoaded":protected]=>
+        bool(true)
+        ["updated_at"]=>
+        string(19) "2022-04-20 16:10:53"
+        ["_isMigrateService":protected]=>
+        bool(false)
+      }
+    }
+    ["_skip_some_validations":"models\common\customers\services\ServicesBundle":private]=>
+    bool(false)
+    ["_servicesLogs":"models\common\customers\services\ServicesBundle":private]=>
+    array(3) {
+      ["services_internet"]=>
+      array(1) {
+        [592]=>
+        object(log\AdminLogger)#1249 (5) {
+          ["action"]=>
+          string(4) "edit"
+          ["model"]=>
+          object(models\common\customers\ServicesInternet)#1283 (69) {
+            ["type"]=>
+            string(8) "internet"
+            ["top_up_tariff_id"]=>
+            NULL
+            ["router_id"]=>
+            string(1) "0"
+            ["login"]=>
+            string(6) "007331"
+            ["password"]=>
+            string(0) ""
+            ["sector_id"]=>
+            string(1) "0"
+            ["taking_ipv4"]=>
+            string(1) "0"
+            ["ipv4"]=>
+            string(0) ""
+            ["ipv4_pool_id"]=>
+            string(1) "0"
+            ["taking_ipv6"]=>
+            string(1) "0"
+            ["ipv6"]=>
+            string(0) ""
+            ["ipv6_pool_id"]=>
+            string(1) "0"
+            ["mac"]=>
+            string(0) ""
+            ["port_id"]=>
+            string(0) ""
+            ["ipv4_route"]=>
+            string(0) ""
+            ["ipv6_delegated"]=>
+            string(0) ""
+            ["_update_online_tariff":"models\common\customers\ServicesInternet":private]=>
+            bool(false)
+            ["_is_password_changed":"models\common\customers\ServicesInternet":private]=>
+            bool(false)
+            ["_attributesHiddenForShowHideColumns":protected]=>
+            NULL
+            ["_kill_from_online":"models\common\customers\ServicesInternet":private]=>
+            bool(false)
+            ["parent_id"]=>
+            string(1) "0"
+            ["customer_id"]=>
+            string(4) "7331"
+            ["tariff_id"]=>
+            string(1) "1"
+            ["bundle_service_id"]=>
+            string(2) "20"
+            ["description"]=>
+            string(16) "Ethernet_500Mbps"
+            ["quantity"]=>
+            string(1) "1"
+            ["unit"]=>
+            string(0) ""
+            ["unit_price"]=>
+            string(6) "0.0000"
+            ["start_date"]=>
+            string(10) "0000-00-00"
+            ["end_date"]=>
+            string(10) "0000-00-00"
+            ["discount"]=>
+            string(1) "0"
+            ["discount_value"]=>
+            string(6) "0.0000"
+            ["discount_type"]=>
+            string(7) "percent"
+            ["discount_start_date"]=>
+            string(10) "0000-00-00"
+            ["discount_end_date"]=>
+            string(10) "0000-00-00"
+            ["discount_text"]=>
+            string(0) ""
+            ["status"]=>
+            string(6) "active"
+            ["status_new"]=>
+            string(0) ""
+            ["period"]=>
+            string(2) "-1"
+            ["old_tariff_id"]=>
+            NULL
+            ["planned_date"]=>
+            NULL
+            ["validate_login"]=>
+            bool(true)
+            ["_validate_required_af":"models\common\customers\ServicesBase":private]=>
+            bool(true)
+            ["_customer":"models\common\customers\ServicesBase":private]=>
+            NULL
+            ["_tariff":"models\common\customers\ServicesBase":private]=>
+            NULL
+            ["idForMultipleForm":protected]=>
+            NULL
+            ["_skip_some_validations":"models\common\customers\ServicesBase":private]=>
+            bool(false)
+            ["id"]=>
+            string(3) "592"
+            ["_ips_to_remove":"db\ActiveTable":private]=>
+            array(0) {
+            }
+            ["_ipv6_to_remove":"db\ActiveTable":private]=>
+            array(0) {
+            }
+            ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+            bool(false)
+            ["deleted"]=>
+            string(1) "0"
+            ["_changedAttributes":"db\Record":private]=>
+            NULL
+            ["activeMysqlLocks":protected]=>
+            array(0) {
+            }
+            ["_forceDelete":"db\Record":private]=>
+            bool(false)
+            ["_afterFirstSave":"db\Record":private]=>
+            bool(false)
+            ["_relations":"db\Record":private]=>
+            array(0) {
+            }
+            ["_connected_models":"db\Record":private]=>
+            NULL
+            ["relatedItems":protected]=>
+            array(0) {
+            }
+            ["_deleteWithRelations":"db\Record":private]=>
+            bool(false)
+            ["_oldAttributes":protected]=>
+            array(41) {
+              ...
+            }
+            ["_related":protected]=>
+            array(0) {
+            }
+            ["_errors":"base\Model":private]=>
+            array(0) {
+            }
+            ["_removalErrors":"base\Model":private]=>
+            array(0) {
+            }
+            ["_ignoreFillables":"base\Model":private]=>
+            bool(false)
+            ["_additionalAttributes":protected]=>
+            array(3) {
+              ["end_of_contract"]=>
+              string(0) ""
+              ["imsi"]=>
+              string(0) ""
+              ["type_of_connection"]=>
+              string(0) ""
+            }
+            ["_isAdditionalAttributesLoaded":protected]=>
+            bool(true)
+            ["updated_at"]=>
+            string(19) "2022-04-20 16:10:53"
+            ["_isMigrateService":protected]=>
+            bool(false)
+          }
+          ["_log":protected]=>
+          object(log\models\LogsAdmins)#1273 (36) {
+            ["administrator_id"]=>
+            NULL
+            ["ip"]=>
+            NULL
+            ["administrator"]=>
+            NULL
+            ["entry_id"]=>
+            NULL
+            ["customer_id"]=>
+            NULL
+            ["date"]=>
+            NULL
+            ["time"]=>
+            NULL
+            ["action"]=>
+            string(4) "edit"
+            ["model"]=>
+            string(40) "models\common\customers\ServicesInternet"
+            ["result"]=>
+            NULL
+            ["extra"]=>
+            NULL
+            ["attributes"]=>
+            array(40) {
+              ["type"]=>
+              string(8) "internet"
+              ["top_up_tariff_id"]=>
+              NULL
+              ["router_id"]=>
+              string(1) "0"
+              ["login"]=>
+              string(6) "007331"
+              ["password"]=>
+              string(0) ""
+              ["sector_id"]=>
+              string(1) "0"
+              ["taking_ipv4"]=>
+              string(1) "0"
+              ["ipv4"]=>
+              string(0) ""
+              ["ipv4_pool_id"]=>
+              string(1) "0"
+              ["taking_ipv6"]=>
+              string(1) "0"
+              ["ipv6"]=>
+              string(0) ""
+              ["ipv6_pool_id"]=>
+              string(1) "0"
+              ["mac"]=>
+              string(0) ""
+              ["port_id"]=>
+              string(0) ""
+              ["ipv4_route"]=>
+              string(0) ""
+              ["ipv6_delegated"]=>
+              string(0) ""
+              ["parent_id"]=>
+              string(1) "0"
+              ["customer_id"]=>
+              string(4) "7331"
+              ["tariff_id"]=>
+              string(1) "1"
+              ["bundle_service_id"]=>
+              string(2) "20"
+              ["description"]=>
+              string(16) "Ethernet_500Mbps"
+              ["quantity"]=>
+              string(1) "1"
+              ["unit"]=>
+              string(0) ""
+              ["unit_price"]=>
+              string(6) "0.0000"
+              ["start_date"]=>
+              string(10) "0000-00-00"
+              ["end_date"]=>
+              string(10) "0000-00-00"
+              ["discount"]=>
+              string(1) "0"
+              ["discount_value"]=>
+              string(6) "0.0000"
+              ["discount_type"]=>
+              string(7) "percent"
+              ["discount_start_date"]=>
+              string(10) "0000-00-00"
+              ["discount_end_date"]=>
+              string(10) "0000-00-00"
+              ["discount_text"]=>
+              string(0) ""
+              ["status"]=>
+              string(6) "active"
+              ["status_new"]=>
+              string(0) ""
+              ["period"]=>
+              string(2) "-1"
+              ["old_tariff_id"]=>
+              NULL
+              ["planned_date"]=>
+              NULL
+              ["validate_login"]=>
+              bool(true)
+              ["id"]=>
+              string(3) "592"
+              ["updated_at"]=>
+              string(19) "2022-04-20 16:10:53"
+            }
+            ["attributes_additional"]=>
+            array(3) {
+              ["end_of_contract"]=>
+              string(0) ""
+              ["imsi"]=>
+              string(0) ""
+              ["type_of_connection"]=>
+              string(0) ""
+            }
+            ["changed_attributes"]=>
+            array(0) {
+            }
+            ["attributesToHide":protected]=>
+            array(1) {
+              [0]=>
+              array(3) {
+                ["name"]=>
+                string(8) "password"
+                ["is_additional"]=>
+                bool(false)
+                ["attributes"]=>
+                array(0) {
+                }
+              }
+            }
+            ["labels"]=>
+            NULL
+            ["errors"]=>
+            NULL
+            ["date_from"]=>
+            NULL
+            ["date_to"]=>
+            NULL
+            ["operation"]=>
+            NULL
+            ["deleted"]=>
+            NULL
+            ["_changedAttributes":"db\Record":private]=>
+            NULL
+            ["activeMysqlLocks":protected]=>
+            array(0) {
+            }
+            ["_forceDelete":"db\Record":private]=>
+            bool(false)
+            ["_afterFirstSave":"db\Record":private]=>
+            bool(false)
+            ["_relations":"db\Record":private]=>
+            array(0) {
+            }
+            ["_connected_models":"db\Record":private]=>
+            NULL
+            ["relatedItems":protected]=>
+            array(0) {
+            }
+            ["_deleteWithRelations":"db\Record":private]=>
+            bool(false)
+            ["_oldAttributes":protected]=>
+            NULL
+            ["_related":protected]=>
+            array(0) {
+            }
+            ["_errors":"base\Model":private]=>
+            array(0) {
+            }
+            ["_removalErrors":"base\Model":private]=>
+            array(0) {
+            }
+            ["_ignoreFillables":"base\Model":private]=>
+            bool(false)
+            ["_additionalAttributes":protected]=>
+            array(0) {
+            }
+            ["_isAdditionalAttributesLoaded":protected]=>
+            bool(false)
+          }
+          ["_oldAttributes":protected]=>
+          array(40) {
+            ...
+          }
+          ["_oldAdditionalAttributes":protected]=>
+          array(3) {
+            ["end_of_contract"]=>
+            string(0) ""
+            ["imsi"]=>
+            string(0) ""
+            ["type_of_connection"]=>
+            string(0) ""
+          }
+        }
+      }
+      ["services_voice"]=>
+      array(0) {
+      }
+      ["services_custom"]=>
+      array(1) {
+        [93]=>
+        object(log\AdminLogger)#1199 (5) {
+          ["action"]=>
+          string(4) "edit"
+          ["model"]=>
+          object(models\common\customers\ServicesCustom)#1197 (50) {
+            ["type"]=>
+            string(6) "custom"
+            ["parent_id"]=>
+            string(1) "0"
+            ["customer_id"]=>
+            string(4) "7331"
+            ["tariff_id"]=>
+            string(1) "3"
+            ["bundle_service_id"]=>
+            string(2) "20"
+            ["description"]=>
+            string(4) "IPTV"
+            ["quantity"]=>
+            string(1) "1"
+            ["unit"]=>
+            string(0) ""
+            ["unit_price"]=>
+            string(6) "0.0000"
+            ["start_date"]=>
+            string(10) "0000-00-00"
+            ["end_date"]=>
+            string(10) "0000-00-00"
+            ["discount"]=>
+            string(1) "0"
+            ["discount_value"]=>
+            string(6) "0.0000"
+            ["discount_type"]=>
+            string(7) "percent"
+            ["discount_start_date"]=>
+            string(10) "0000-00-00"
+            ["discount_end_date"]=>
+            string(10) "0000-00-00"
+            ["discount_text"]=>
+            string(0) ""
+            ["status"]=>
+            string(6) "active"
+            ["status_new"]=>
+            string(0) ""
+            ["period"]=>
+            string(2) "-1"
+            ["old_tariff_id"]=>
+            NULL
+            ["planned_date"]=>
+            NULL
+            ["validate_login"]=>
+            bool(true)
+            ["_validate_required_af":"models\common\customers\ServicesBase":private]=>
+            bool(true)
+            ["_customer":"models\common\customers\ServicesBase":private]=>
+            NULL
+            ["_tariff":"models\common\customers\ServicesBase":private]=>
+            NULL
+            ["idForMultipleForm":protected]=>
+            NULL
+            ["_skip_some_validations":"models\common\customers\ServicesBase":private]=>
+            bool(false)
+            ["id"]=>
+            string(2) "93"
+            ["_ips_to_remove":"db\ActiveTable":private]=>
+            array(0) {
+            }
+            ["_ipv6_to_remove":"db\ActiveTable":private]=>
+            array(0) {
+            }
+            ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+            bool(false)
+            ["deleted"]=>
+            string(1) "0"
+            ["_changedAttributes":"db\Record":private]=>
+            NULL
+            ["activeMysqlLocks":protected]=>
+            array(0) {
+            }
+            ["_forceDelete":"db\Record":private]=>
+            bool(false)
+            ["_afterFirstSave":"db\Record":private]=>
+            bool(false)
+            ["_relations":"db\Record":private]=>
+            array(0) {
+            }
+            ["_connected_models":"db\Record":private]=>
+            NULL
+            ["relatedItems":protected]=>
+            array(0) {
+            }
+            ["_deleteWithRelations":"db\Record":private]=>
+            bool(false)
+            ["_oldAttributes":protected]=>
+            array(26) {
+              ...
+            }
+            ["_related":protected]=>
+            array(0) {
+            }
+            ["_errors":"base\Model":private]=>
+            array(0) {
+            }
+            ["_removalErrors":"base\Model":private]=>
+            array(0) {
+            }
+            ["_ignoreFillables":"base\Model":private]=>
+            bool(false)
+            ["_additionalAttributes":protected]=>
+            array(0) {
+            }
+            ["_isAdditionalAttributesLoaded":protected]=>
+            bool(true)
+            ["updated_at"]=>
+            string(19) "2022-04-20 16:10:53"
+            ["_isMigrateService":protected]=>
+            bool(false)
+          }
+          ["_log":protected]=>
+          object(log\models\LogsAdmins)#1198 (36) {
+            ["administrator_id"]=>
+            NULL
+            ["ip"]=>
+            NULL
+            ["administrator"]=>
+            NULL
+            ["entry_id"]=>
+            NULL
+            ["customer_id"]=>
+            NULL
+            ["date"]=>
+            NULL
+            ["time"]=>
+            NULL
+            ["action"]=>
+            string(4) "edit"
+            ["model"]=>
+            string(38) "models\common\customers\ServicesCustom"
+            ["result"]=>
+            NULL
+            ["extra"]=>
+            NULL
+            ["attributes"]=>
+            array(25) {
+              ["type"]=>
+              string(6) "custom"
+              ["parent_id"]=>
+              string(1) "0"
+              ["customer_id"]=>
+              string(4) "7331"
+              ["tariff_id"]=>
+              string(1) "3"
+              ["bundle_service_id"]=>
+              string(2) "20"
+              ["description"]=>
+              string(4) "IPTV"
+              ["quantity"]=>
+              string(1) "1"
+              ["unit"]=>
+              string(0) ""
+              ["unit_price"]=>
+              string(6) "0.0000"
+              ["start_date"]=>
+              string(10) "0000-00-00"
+              ["end_date"]=>
+              string(10) "0000-00-00"
+              ["discount"]=>
+              string(1) "0"
+              ["discount_value"]=>
+              string(6) "0.0000"
+              ["discount_type"]=>
+              string(7) "percent"
+              ["discount_start_date"]=>
+              string(10) "0000-00-00"
+              ["discount_end_date"]=>
+              string(10) "0000-00-00"
+              ["discount_text"]=>
+              string(0) ""
+              ["status"]=>
+              string(6) "active"
+              ["status_new"]=>
+              string(0) ""
+              ["period"]=>
+              string(2) "-1"
+              ["old_tariff_id"]=>
+              NULL
+              ["planned_date"]=>
+              NULL
+              ["validate_login"]=>
+              bool(true)
+              ["id"]=>
+              string(2) "93"
+              ["updated_at"]=>
+              string(19) "2022-04-20 16:10:53"
+            }
+            ["attributes_additional"]=>
+            array(0) {
+            }
+            ["changed_attributes"]=>
+            array(0) {
+            }
+            ["attributesToHide":protected]=>
+            array(0) {
+            }
+            ["labels"]=>
+            NULL
+            ["errors"]=>
+            NULL
+            ["date_from"]=>
+            NULL
+            ["date_to"]=>
+            NULL
+            ["operation"]=>
+            NULL
+            ["deleted"]=>
+            NULL
+            ["_changedAttributes":"db\Record":private]=>
+            NULL
+            ["activeMysqlLocks":protected]=>
+            array(0) {
+            }
+            ["_forceDelete":"db\Record":private]=>
+            bool(false)
+            ["_afterFirstSave":"db\Record":private]=>
+            bool(false)
+            ["_relations":"db\Record":private]=>
+            array(0) {
+            }
+            ["_connected_models":"db\Record":private]=>
+            NULL
+            ["relatedItems":protected]=>
+            array(0) {
+            }
+            ["_deleteWithRelations":"db\Record":private]=>
+            bool(false)
+            ["_oldAttributes":protected]=>
+            NULL
+            ["_related":protected]=>
+            array(0) {
+            }
+            ["_errors":"base\Model":private]=>
+            array(0) {
+            }
+            ["_removalErrors":"base\Model":private]=>
+            array(0) {
+            }
+            ["_ignoreFillables":"base\Model":private]=>
+            bool(false)
+            ["_additionalAttributes":protected]=>
+            array(0) {
+            }
+            ["_isAdditionalAttributesLoaded":protected]=>
+            bool(false)
+          }
+          ["_oldAttributes":protected]=>
+          array(25) {
+            ...
+          }
+          ["_oldAdditionalAttributes":protected]=>
+          array(0) {
+          }
+        }
+      }
+    }
+    ["_charge_cancellation_fee":"models\common\customers\services\ServicesBundle":private]=>
+    bool(true)
+    ["id"]=>
+    string(2) "20"
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(31) {
+      ...
+    }
+    ["_related":protected]=>
+    array(0) {
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(0) {
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["_isMigrateService":protected]=>
+    bool(false)
+  }
+}
+
+
+
 
 ```
 
@@ -622,6 +3084,7 @@ array(1) {
 
 ```
 <pre>{{ dump(loader.billing) }}</pre>
+
 ```
 
 <details style="font-size: 12px; margin-bottom: 5px;">
@@ -629,15 +3092,16 @@ array(1) {
 <div markdown="1">
 
 ```
-object(models\common\customers\CustomerBilling)#1334 (52) {
+
+object(models\common\customers\CustomerBilling)#1328 (53) {
   ["customer_id"]=>
-  string(4) "7323"
+  string(4) "7331"
   ["enabled"]=>
   string(1) "1"
   ["type"]=>
   string(1) "1"
   ["deposit"]=>
-  string(8) "150.0000"
+  string(8) "363.0000"
   ["billing_date"]=>
   string(1) "1"
   ["billing_due"]=>
@@ -727,81 +3191,15 @@ object(models\common\customers\CustomerBilling)#1334 (52) {
   bool(false)
   ["_oldAttributes":protected]=>
   array(35) {
-    ["customer_id"]=>
-    string(4) "7323"
-    ["enabled"]=>
-    string(1) "1"
-    ["type"]=>
-    string(1) "1"
-    ["deposit"]=>
-    string(8) "150.0000"
-    ["billing_date"]=>
-    string(1) "1"
-    ["billing_due"]=>
-    string(2) "15"
-    ["blocking_period"]=>
-    int(0)
-    ["grace_period"]=>
-    string(2) "10"
-    ["make_invoices"]=>
-    string(1) "1"
-    ["payment_method"]=>
-    string(1) "1"
-    ["min_balance"]=>
-    string(6) "0.0000"
-    ["request_auto_enable"]=>
-    string(0) ""
-    ["request_auto_day"]=>
-    string(1) "1"
-    ["request_auto_period"]=>
-    string(1) "0"
-    ["reminder_enable"]=>
-    string(0) ""
-    ["reminder_day_1"]=>
-    string(2) "10"
-    ["reminder_day_2"]=>
-    string(1) "5"
-    ["reminder_day_3"]=>
-    string(1) "5"
-    ["reminder_payment"]=>
-    string(0) ""
-    ["reminder_payment_value"]=>
-    string(6) "0.0000"
-    ["reminder_payment_comment"]=>
-    string(0) ""
-    ["reminder_type"]=>
-    string(1) "0"
-    ["billing_person"]=>
-    string(0) ""
-    ["billing_street_1"]=>
-    string(0) ""
-    ["billing_zip_code"]=>
-    string(0) ""
-    ["billing_city"]=>
-    string(0) ""
-    ["request_auto_type"]=>
-    string(1) "1"
-    ["request_auto_next"]=>
-    string(10) "0000-00-00"
-    ["partner_id"]=>
-    NULL
-    ["send_finance_notification"]=>
-    string(1) "1"
-    ["partner_percent"]=>
-    NULL
-    ["blocking_date"]=>
-    string(10) "0000-00-00"
-    ["month_price"]=>
-    string(6) "0.0000"
-    ["billing_street_2"]=>
-    string(0) ""
-    ["deleted"]=>
-    string(1) "0"
+  ...
   }
   ["_related":protected]=>
   array(0) {
   }
   ["_errors":"base\Model":private]=>
+  array(0) {
+  }
+  ["_removalErrors":"base\Model":private]=>
   array(0) {
   }
   ["_ignoreFillables":"base\Model":private]=>
@@ -812,6 +3210,7 @@ object(models\common\customers\CustomerBilling)#1334 (52) {
   ["_isAdditionalAttributesLoaded":protected]=>
   bool(false)
 }
+
 
 
 ```
@@ -832,6 +3231,7 @@ object(models\common\customers\CustomerBilling)#1334 (52) {
 
 ```
 <pre>{{ dump(loader.partner) }}</pre>
+
 ```
 
 <details style="font-size: 12px; margin-bottom: 5px;">
@@ -839,7 +3239,8 @@ object(models\common\customers\CustomerBilling)#1334 (52) {
 <div markdown="1">
 
 ```
-object(models\admin\administration\Partners)#1334 (24) {
+
+object(models\admin\administration\Partners)#1328 (25) {
   ["id"]=>
   int(1)
   ["name"]=>
@@ -883,20 +3284,7 @@ object(models\admin\administration\Partners)#1334 (24) {
   bool(false)
   ["_oldAttributes":protected]=>
   array(7) {
-    ["id"]=>
-    int(1)
-    ["name"]=>
-    string(4) "Main"
-    ["add_to_tariffs"]=>
-    NULL
-    ["add_to_routers"]=>
-    NULL
-    ["add_to_hardware"]=>
-    NULL
-    ["add_to_projects"]=>
-    NULL
-    ["deleted"]=>
-    string(1) "0"
+    ...
   }
   ["_related":protected]=>
   array(0) {
@@ -904,12 +3292,15 @@ object(models\admin\administration\Partners)#1334 (24) {
   ["_errors":"base\Model":private]=>
   array(0) {
   }
+  ["_removalErrors":"base\Model":private]=>
+  array(0) {
+  }
   ["_ignoreFillables":"base\Model":private]=>
   bool(false)
   ["_additionalAttributes":protected]=>
   array(1) {
     ["available_in_self_registration"]=>
-    string(0) ""
+    string(1) "0"
   }
   ["_isAdditionalAttributesLoaded":protected]=>
   bool(true)
@@ -934,6 +3325,7 @@ object(models\admin\administration\Partners)#1334 (24) {
 
 ```
 <pre>{{ dump(loader.transactions) }}</pre>
+
 ```
 
 <details style="font-size: 12px; margin-bottom: 5px;">
@@ -941,13 +3333,14 @@ object(models\admin\administration\Partners)#1334 (24) {
 <div markdown="1">
 
 ```
-array(3) {
-  [5488]=>
-  object(models\common\finance\Transactions)#1334 (46) {
+
+array(2) {
+  [6974]=>
+  object(models\common\finance\Transactions)#1328 (48) {
     ["id"]=>
-    int(5488)
+    int(6974)
     ["customer_id"]=>
-    string(4) "7323"
+    string(4) "7332"
     ["type"]=>
     string(5) "debit"
     ["quantity"]=>
@@ -955,48 +3348,50 @@ array(3) {
     ["unit"]=>
     string(0) ""
     ["price"]=>
-    float(200)
+    float(120)
     ["tax_percent"]=>
     string(6) "0.0000"
     ["total"]=>
-    string(8) "200.0000"
+    string(8) "120.0000"
+    ["remind_amount"]=>
+    string(6) "0.0000"
     ["date"]=>
-    string(10) "2021-12-01"
+    string(10) "2022-04-20"
     ["category"]=>
-    string(1) "1"
+    string(2) "10"
     ["description"]=>
-    string(16) "Ethernet_500Mbps"
+    string(22) "Server set-up_one-time"
     ["period_from"]=>
-    string(10) "2021-12-01"
+    string(10) "0000-00-00"
     ["period_to"]=>
-    string(10) "2021-12-31"
+    string(10) "0000-00-00"
     ["service_id"]=>
-    string(3) "504"
+    string(1) "1"
     ["payment_id"]=>
-    NULL
-    ["invoice_id"]=>
     NULL
     ["credit_note_id"]=>
     int(0)
+    ["invoice_id"]=>
+    string(4) "2614"
     ["invoiced_by_id"]=>
-    string(4) "1973"
+    string(4) "2614"
     ["comment"]=>
     string(0) ""
     ["to_invoice"]=>
     bool(true)
     ["service_type"]=>
-    string(8) "internet"
+    string(8) "one_time"
     ["source"]=>
-    string(4) "auto"
+    string(6) "manual"
     ["balance"]=>
     NULL
     ["movement"]=>
     NULL
     ["service_name"]=>
     NULL
-    ["invoice_number"]=>
-    NULL
     ["total_with_tax"]=>
+    NULL
+    ["_oldTotal":"models\common\finance\Transactions":private]=>
     NULL
     ["_ips_to_remove":"db\ActiveTable":private]=>
     array(0) {
@@ -1029,69 +3424,15 @@ array(3) {
     bool(false)
     ["_oldAttributes":protected]=>
     array(29) {
-      ["id"]=>
-      int(5488)
-      ["customer_id"]=>
-      string(4) "7323"
-      ["type"]=>
-      string(5) "debit"
-      ["quantity"]=>
-      int(1)
-      ["unit"]=>
-      string(0) ""
-      ["price"]=>
-      float(200)
-      ["tax_percent"]=>
-      string(6) "0.0000"
-      ["total"]=>
-      string(8) "200.0000"
-      ["date"]=>
-      string(10) "2021-12-01"
-      ["category"]=>
-      string(1) "1"
-      ["description"]=>
-      string(16) "Ethernet_500Mbps"
-      ["period_from"]=>
-      string(10) "2021-12-01"
-      ["period_to"]=>
-      string(10) "2021-12-31"
-      ["service_id"]=>
-      string(3) "504"
-      ["payment_id"]=>
-      NULL
-      ["invoice_id"]=>
-      NULL
-      ["credit_note_id"]=>
-      int(0)
-      ["invoiced_by_id"]=>
-      string(4) "1973"
-      ["comment"]=>
-      string(0) ""
-      ["to_invoice"]=>
-      bool(true)
-      ["service_type"]=>
-      string(8) "internet"
-      ["source"]=>
-      string(4) "auto"
-      ["balance"]=>
-      NULL
-      ["movement"]=>
-      NULL
-      ["service_name"]=>
-      NULL
-      ["invoice_number"]=>
-      NULL
-      ["total_with_tax"]=>
-      NULL
-      ["deleted"]=>
-      string(1) "0"
-      ["updated_at"]=>
-      string(19) "2021-12-16 16:31:52"
+    ...
     }
     ["_related":protected]=>
     array(0) {
     }
     ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
     array(0) {
     }
     ["_ignoreFillables":"base\Model":private]=>
@@ -1102,8 +3443,120 @@ array(3) {
     ["_isAdditionalAttributesLoaded":protected]=>
     bool(true)
     ["updated_at"]=>
-    string(19) "2021-12-16 16:31:52"
+    string(19) "2022-04-20 16:33:46"
   }
+  [6975]=>
+  object(models\common\finance\Transactions)#1288 (48) {
+    ["id"]=>
+    int(6975)
+    ["customer_id"]=>
+    string(4) "7332"
+    ["type"]=>
+    string(6) "credit"
+    ["quantity"]=>
+    int(1)
+    ["unit"]=>
+    string(0) ""
+    ["price"]=>
+    float(120)
+    ["tax_percent"]=>
+    string(6) "0.0000"
+    ["total"]=>
+    string(8) "120.0000"
+    ["remind_amount"]=>
+    string(6) "0.0000"
+    ["date"]=>
+    string(10) "2022-04-20"
+    ["category"]=>
+    string(1) "3"
+    ["description"]=>
+    string(4) "Cash"
+    ["period_from"]=>
+    string(10) "0000-00-00"
+    ["period_to"]=>
+    string(10) "0000-00-00"
+    ["service_id"]=>
+    NULL
+    ["payment_id"]=>
+    string(4) "1821"
+    ["credit_note_id"]=>
+    int(0)
+    ["invoice_id"]=>
+    NULL
+    ["invoiced_by_id"]=>
+    NULL
+    ["comment"]=>
+    string(0) ""
+    ["to_invoice"]=>
+    bool(false)
+    ["service_type"]=>
+    string(8) "internet"
+    ["source"]=>
+    string(6) "manual"
+    ["balance"]=>
+    NULL
+    ["movement"]=>
+    NULL
+    ["service_name"]=>
+    NULL
+    ["total_with_tax"]=>
+    NULL
+    ["_oldTotal":"models\common\finance\Transactions":private]=>
+    NULL
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(29) {
+    ...
+    }
+    ["_related":protected]=>
+    array(0) {
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(0) {
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["updated_at"]=>
+    string(19) "2022-04-20 16:33:52"
+  }
+}
+
 
 ```
 
@@ -1123,6 +3576,7 @@ array(3) {
 
 ```
 <pre>{{ dump(loader.invoices) }}</pre>
+
 ```
 
 <details style="font-size: 12px; margin-bottom: 5px;">
@@ -1130,23 +3584,24 @@ array(3) {
 <div markdown="1">
 
 ```
+
 array(1) {
-  [1973]=>
-  object(models\common\finance\Invoices)#1334 (49) {
+  [2614]=>
+  object(models\common\finance\Invoices)#1328 (52) {
     ["id"]=>
-    string(4) "1973"
+    string(4) "2614"
     ["customer_id"]=>
-    string(4) "7323"
+    string(4) "7332"
     ["date_created"]=>
-    string(10) "2021-12-16"
+    string(10) "2022-04-20"
     ["real_create_datetime"]=>
-    string(19) "2021-12-16 16:31:50"
+    string(19) "2022-04-20 16:33:46"
     ["date_updated"]=>
-    string(10) "2021-12-16"
+    string(10) "2022-04-20"
     ["date_payment"]=>
-    string(10) "2021-12-16"
+    string(10) "2022-04-20"
     ["date_till"]=>
-    string(10) "2021-12-31"
+    string(10) "2022-05-05"
     ["use_transactions"]=>
     string(1) "1"
     ["note"]=>
@@ -1154,13 +3609,15 @@ array(1) {
     ["memo"]=>
     string(0) ""
     ["number"]=>
-    string(12) "202101001268"
+    string(12) "202201000409"
     ["total"]=>
-    float(200)
+    float(120)
+    ["due"]=>
+    float(0)
     ["payment_id"]=>
-    string(4) "1442"
+    string(4) "1821"
     ["type"]=>
-    string(9) "recurring"
+    string(8) "one_time"
     ["payd_from_deposit"]=>
     string(1) "0"
     ["status"]=>
@@ -1172,7 +3629,7 @@ array(1) {
     ["noCache"]=>
     bool(false)
     ["is_sent"]=>
-    string(1) "1"
+    string(1) "0"
     ["delete_transactions"]=>
     bool(true)
     ["_oldDateCreated":"models\common\finance\Invoices":private]=>
@@ -1220,10 +3677,46 @@ array(1) {
     ["_deleteWithRelations":"db\Record":private]=>
     bool(false)
     ["_oldAttributes":protected]=>
-    array(25) {
-     ...
+    array(26) {
+      ...
+    }
+    ["_related":protected]=>
+    array(0) {
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(5) {
+      ["codice_cig"]=>
+      string(0) ""
+      ["codice_cup"]=>
+      string(0) ""
+      ["id_documento"]=>
+      string(0) ""
+      ["integra_bpay_biller_code"]=>
+      string(0) ""
+      ["integra_bpay_crn"]=>
+      string(0) ""
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["_calcModel":"models\common\finance\Invoices":private]=>
+    *RECURSION*
+    ["added_by"]=>
+    string(5) "admin"
+    ["added_by_id"]=>
+    string(1) "1"
+    ["_syncedToAccounting":protected]=>
+    NULL
   }
 }
+
 
 
 ```
@@ -1254,23 +3747,24 @@ Invoice {{ invoice.number}} items:
 <div markdown="1">
 
 ```
-array(1) {
-  [1973]=>
-  object(models\common\finance\Invoices)#1334 (49) {
+
+array(2) {
+  [2614]=>
+  object(models\common\finance\Invoices)#1312 (52) {
     ["id"]=>
-    string(4) "1973"
+    string(4) "2614"
     ["customer_id"]=>
-    string(4) "7323"
+    string(4) "7332"
     ["date_created"]=>
-    string(10) "2021-12-16"
+    string(10) "2022-04-20"
     ["real_create_datetime"]=>
-    string(19) "2021-12-16 16:31:50"
+    string(19) "2022-04-20 16:33:46"
     ["date_updated"]=>
-    string(10) "2021-12-16"
+    string(10) "2022-04-20"
     ["date_payment"]=>
-    string(10) "2021-12-16"
+    string(10) "2022-04-20"
     ["date_till"]=>
-    string(10) "2021-12-31"
+    string(10) "2022-05-05"
     ["use_transactions"]=>
     string(1) "1"
     ["note"]=>
@@ -1278,13 +3772,15 @@ array(1) {
     ["memo"]=>
     string(0) ""
     ["number"]=>
-    string(12) "202101001268"
+    string(12) "202201000409"
     ["total"]=>
-    float(200)
+    float(120)
+    ["due"]=>
+    float(0)
     ["payment_id"]=>
-    string(4) "1442"
+    string(4) "1821"
     ["type"]=>
-    string(9) "recurring"
+    string(8) "one_time"
     ["payd_from_deposit"]=>
     string(1) "0"
     ["status"]=>
@@ -1296,7 +3792,7 @@ array(1) {
     ["noCache"]=>
     bool(false)
     ["is_sent"]=>
-    string(1) "1"
+    string(1) "0"
     ["delete_transactions"]=>
     bool(true)
     ["_oldDateCreated":"models\common\finance\Invoices":private]=>
@@ -1344,11 +3840,175 @@ array(1) {
     ["_deleteWithRelations":"db\Record":private]=>
     bool(false)
     ["_oldAttributes":protected]=>
-    array(25) {
-     ...
-
+    array(26) {
+    ...
+    }
+    ["_related":protected]=>
+    array(0) {
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(5) {
+      ["codice_cig"]=>
+      string(0) ""
+      ["codice_cup"]=>
+      string(0) ""
+      ["id_documento"]=>
+      string(0) ""
+      ["integra_bpay_biller_code"]=>
+      string(0) ""
+      ["integra_bpay_crn"]=>
+      string(0) ""
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["_calcModel":"models\common\finance\Invoices":private]=>
+    *RECURSION*
+    ["added_by"]=>
+    string(5) "admin"
+    ["added_by_id"]=>
+    string(1) "1"
+    ["_syncedToAccounting":protected]=>
+    NULL
+  }
+  [2615]=>
+  object(models\common\finance\Invoices)#1269 (52) {
+    ["id"]=>
+    string(4) "2615"
+    ["customer_id"]=>
+    string(4) "7332"
+    ["date_created"]=>
+    string(10) "2022-04-20"
+    ["real_create_datetime"]=>
+    string(19) "2022-04-20 16:44:09"
+    ["date_updated"]=>
+    string(10) "2022-04-20"
+    ["date_payment"]=>
+    string(10) "0000-00-00"
+    ["date_till"]=>
+    string(10) "2022-05-05"
+    ["use_transactions"]=>
+    string(1) "1"
+    ["note"]=>
+    string(0) ""
+    ["memo"]=>
+    string(0) ""
+    ["number"]=>
+    string(12) "202201000410"
+    ["total"]=>
+    float(220)
+    ["due"]=>
+    float(220)
+    ["payment_id"]=>
+    string(1) "0"
+    ["type"]=>
+    string(8) "one_time"
+    ["payd_from_deposit"]=>
+    string(1) "0"
+    ["status"]=>
+    string(8) "not_paid"
+    ["mark"]=>
+    NULL
+    ["recalculated"]=>
+    bool(false)
+    ["noCache"]=>
+    bool(false)
+    ["is_sent"]=>
+    string(1) "0"
+    ["delete_transactions"]=>
+    bool(true)
+    ["_oldDateCreated":"models\common\finance\Invoices":private]=>
+    NULL
+    ["_internalItemsForCalculations":protected]=>
+    array(0) {
+    }
+    ["disable_cache"]=>
+    NULL
+    ["_toCache":"models\common\finance\Invoices":private]=>
+    NULL
+    ["_hasShowDeleteTransaction":protected]=>
+    bool(true)
+    ["_hasShowWarningMessage":protected]=>
+    bool(false)
+    ["_needRemoveToBillLog":"models\common\finance\Invoices":private]=>
+    bool(true)
+    ["_ips_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_ipv6_to_remove":"db\ActiveTable":private]=>
+    array(0) {
+    }
+    ["_disableRequiredRuleForAdditionalAttribute":"db\ActiveTable":private]=>
+    bool(false)
+    ["deleted"]=>
+    string(1) "0"
+    ["_changedAttributes":"db\Record":private]=>
+    NULL
+    ["activeMysqlLocks":protected]=>
+    array(0) {
+    }
+    ["_forceDelete":"db\Record":private]=>
+    bool(false)
+    ["_afterFirstSave":"db\Record":private]=>
+    bool(false)
+    ["_relations":"db\Record":private]=>
+    array(0) {
+    }
+    ["_connected_models":"db\Record":private]=>
+    NULL
+    ["relatedItems":protected]=>
+    array(0) {
+    }
+    ["_deleteWithRelations":"db\Record":private]=>
+    bool(false)
+    ["_oldAttributes":protected]=>
+    array(26) {
+    ...
+    }
+    ["_related":protected]=>
+    array(0) {
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(5) {
+      ["codice_cig"]=>
+      string(0) ""
+      ["codice_cup"]=>
+      string(0) ""
+      ["id_documento"]=>
+      string(0) ""
+      ["integra_bpay_biller_code"]=>
+      string(0) ""
+      ["integra_bpay_crn"]=>
+      string(0) ""
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["_calcModel":"models\common\finance\Invoices":private]=>
+    *RECURSION*
+    ["added_by"]=>
+    string(5) "admin"
+    ["added_by_id"]=>
+    string(1) "1"
+    ["_syncedToAccounting":protected]=>
+    NULL
   }
 }
+
 
 
 ```
@@ -1376,39 +4036,39 @@ array(1) {
 <div markdown="1">
 
 ```
-array(51) {
-  [68]=>
-  object(models\common\finance\ProformaInvoices)#1338 (37) {
+array(1) {
+  [226]=>
+  object(models\common\finance\ProformaInvoices)#1328 (38) {
     ["id"]=>
-    string(2) "68"
+    string(3) "226"
     ["customer_id"]=>
-    string(2) "18"
+    string(4) "7332"
     ["date_created"]=>
-    string(10) "2021-02-25"
+    string(10) "2022-04-20"
     ["real_create_datetime"]=>
-    string(19) "2021-02-25 12:35:03"
+    string(19) "2022-04-20 16:50:09"
     ["date_updated"]=>
-    string(10) "2021-02-25"
+    string(10) "2022-04-20"
     ["date_payment"]=>
-    string(10) "2021-02-25"
+    string(10) "0000-00-00"
     ["date_till"]=>
-    string(10) "2021-03-12"
+    string(10) "2022-05-05"
     ["number"]=>
-    string(10) "2021000054"
+    string(10) "2022000006"
     ["total"]=>
-    float(3)
+    float(100)
     ["payment_id"]=>
-    string(3) "142"
+    string(1) "0"
     ["status"]=>
-    string(4) "paid"
+    string(8) "not_paid"
     ["is_sent"]=>
-    string(1) "1"
+    string(1) "0"
     ["note"]=>
     string(0) ""
     ["memo"]=>
     string(0) ""
     ["is_crm_request"]=>
-    string(0) ""
+    string(1) "0"
     ["_needRemoveToBillLog":"models\common\finance\ProformaInvoices":private]=>
     bool(true)
     ["_ips_to_remove":"db\ActiveTable":private]=>
@@ -1444,8 +4104,35 @@ array(51) {
     array(18) {
       ...
     }
-
+    ["_related":protected]=>
+    array(0) {
+    }
+    ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_ignoreFillables":"base\Model":private]=>
+    bool(false)
+    ["_additionalAttributes":protected]=>
+    array(2) {
+      ["integra_bpay_biller_code"]=>
+      string(0) ""
+      ["integra_bpay_crn"]=>
+      string(0) ""
+    }
+    ["_isAdditionalAttributesLoaded":protected]=>
+    bool(true)
+    ["_calcModel":"models\common\finance\ProformaInvoices":private]=>
+    *RECURSION*
+    ["added_by"]=>
+    string(5) "admin"
+    ["added_by_id"]=>
+    string(1) "1"
   }
+}
+
 
 ```
 
@@ -1465,6 +4152,7 @@ array(51) {
 
 ```
 <pre>{{ dump(loader.payments) }}</pre>
+
 ```
 
 <details style="font-size: 12px; margin-bottom: 5px;">
@@ -1472,35 +4160,38 @@ array(51) {
 <div markdown="1">
 
 ```
+
 array(1) {
-  [1442]=>
-  object(models\common\finance\Payments)#1334 (41) {
+  [1822]=>
+  object(models\common\finance\Payments)#1328 (44) {
     ["id"]=>
-    string(4) "1442"
+    string(4) "1822"
     ["customer_id"]=>
-    string(4) "7323"
+    string(4) "7332"
     ["invoice_id"]=>
-    string(4) "1973"
+    NULL
     ["credit_note_id"]=>
     NULL
     ["request_id"]=>
-    NULL
+    string(3) "226"
     ["transaction_id"]=>
-    string(4) "5489"
+    string(4) "6978"
     ["payment_type"]=>
-    string(1) "3"
+    string(1) "1"
     ["receipt_number"]=>
-    string(13) "2021-01-00624"
+    string(13) "2022-01-00215"
     ["date"]=>
-    string(10) "2021-12-16"
+    string(10) "2022-04-20"
     ["real_create_datetime"]=>
-    string(19) "2021-12-16 16:32:03"
+    string(19) "2022-04-20 16:50:49"
     ["amount"]=>
-    string(8) "200.0000"
+    float(100)
+    ["remind_amount"]=>
+    string(8) "100.0000"
     ["comment"]=>
     string(0) ""
     ["is_sent"]=>
-    string(1) "1"
+    string(1) "0"
     ["field_1"]=>
     string(0) ""
     ["field_2"]=>
@@ -1515,6 +4206,8 @@ array(1) {
     string(0) ""
     ["memo"]=>
     string(0) ""
+    ["_oldAmount":"models\common\finance\Payments":private]=>
+    NULL
     ["_ips_to_remove":"db\ActiveTable":private]=>
     array(0) {
     }
@@ -1545,13 +4238,16 @@ array(1) {
     ["_deleteWithRelations":"db\Record":private]=>
     bool(false)
     ["_oldAttributes":protected]=>
-    array(24) {
-      ...
+    array(25) {
+    ...
     }
     ["_related":protected]=>
     array(0) {
     }
     ["_errors":"base\Model":private]=>
+    array(0) {
+    }
+    ["_removalErrors":"base\Model":private]=>
     array(0) {
     }
     ["_ignoreFillables":"base\Model":private]=>
@@ -1568,9 +4264,10 @@ array(1) {
     ["added_by_id"]=>
     string(1) "1"
     ["updated_at"]=>
-    string(19) "2021-12-16 16:32:03"
+    string(19) "2022-04-20 16:50:49"
   }
 }
+
 
 
 ```
@@ -1609,10 +4306,118 @@ array(1) {
 </div>
 </details>
 
-------------
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>To show all variables</b></summary>
+<summary><b>Additional service fields related to the schedule task</b></summary>
+<div markdown="1">
+
+<br>
+
+**NOTE:** This only works in the `Scheduling notification email` template, which you can customize in `Config → Templates`.
+
+```
+<pre>{{ dump(related_service) }} </pre>
+
+```
+
+<details style="font-size: 12px; margin-bottom: 5px;">
+<summary>Output result:</summary>
+<div markdown="1">
+
+```
+
+array(33) {
+  ["type"]=>
+  string(8) "internet"
+  ["top_up_tariff_id"]=>
+  NULL
+  ["router_id"]=>
+  string(1) "3"
+  ["login"]=>
+  string(6) "000018"
+  ["sector_id"]=>
+  string(1) "2"
+  ["taking_ipv4"]=>
+  string(1) "1"
+  ["ipv4"]=>
+  string(8) "10.0.0.8"
+  ["ipv4_pool_id"]=>
+  string(1) "0"
+  ["ipv6"]=>
+  string(0) ""
+  ["mac"]=>
+  string(12) "0800272C3D65"
+  ["port_id"]=>
+  string(0) ""
+  ["ipv4_route"]=>
+  string(0) ""
+  ["ipv6_delegated"]=>
+  string(0) ""
+  ["parent_id"]=>
+  string(1) "0"
+  ["customer_id"]=>
+  string(2) "18"
+  ["tariff_id"]=>
+  string(1) "1"
+  ["bundle_service_id"]=>
+  string(1) "0"
+  ["description"]=>
+  string(16) "Ethernet_500Mbps"
+  ["quantity"]=>
+  string(1) "1"
+  ["unit"]=>
+  string(0) ""
+  ["unit_price"]=>
+  string(8) "200.0000"
+  ["start_date"]=>
+  string(10) "2021-02-25"
+  ["end_date"]=>
+  string(10) "0000-00-00"
+  ["discount"]=>
+  string(1) "0"
+  ["discount_value"]=>
+  string(6) "0.0000"
+  ["discount_type"]=>
+  string(7) "percent"
+  ["discount_start_date"]=>
+  string(10) "0000-00-00"
+  ["discount_end_date"]=>
+  string(10) "0000-00-00"
+  ["discount_text"]=>
+  string(0) ""
+  ["status"]=>
+  string(6) "active"
+  ["period"]=>
+  string(2) "-1"
+  ["id"]=>
+  string(2) "29"
+  ["additionalAttributes"]=>
+  array(3) {
+    ["end_of_contract"]=>
+    string(0) ""
+    ["imsi"]=>
+    string(0) ""
+    ["type_of_connection"]=>
+    string(0) ""
+  }
+}
+
+
+```
+
+</div>
+</details>
+
+</div>
+</details>
+
+------------
+
+**Tips and Examples**
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>To show all variables</summary>
 <div markdown="1">
 
 ```
@@ -1622,10 +4427,57 @@ array(1) {
 </div>
 </details>
 
-------------
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>To Ignore Notification</b></summary>
+<summary>To show the current month's name according to the localization settings</summary>
+<div markdown="1">
+
+```
+{{ monthInWord(date_created| date("m"))}}
+```
+where ```{{ date_create }}``` - variable for the date value.
+
+Output (EN): ``` April ```
+
+```
+{{ monthInWord(date_created| date("m"), "el") }}
+```
+
+Output (EL): ``` Απριλίου ```
+
+```
+{{ date_created| date("F Y") }}
+```
+Output: ``` April 2022 ```
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>To write a number in words</summary>
+<div markdown="1">
+
+```
+{{ numberToWords(date_created| date("m"))}}
+
+```
+
+```
+{{ numberToWords(customer.login)}}
+```
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary>To Ignore Notification</summary>
 <div markdown="1">
 
 ```
@@ -1643,10 +4495,10 @@ if the template result is `=== IGNORE NOTIFICATION ===` the notification will no
 </div>
 </details>
 
-------------
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>Examples: how to use variables in templates</b></summary>
+<summary>Using variables in templates</summary>
 <div markdown="1">
 
 ```
@@ -1692,18 +4544,20 @@ office@superisp.com
 </div>
 </details>
 
-------------
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>Contract: template example</b></summary>
+<summary>Contract: template example</summary>
 <div markdown="1">
+
 
 Suggested read: [Contract and its signing by customer](customer_management/customer_documents/customer_documents.md)
 
 
 <details style="font-size: 12px; margin-bottom: 5px;">
-<summary><b>Example:</b></summary>
+<summary>Example:</summary>
 <div markdown="1">
+
 
 ```
 

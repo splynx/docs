@@ -3414,7 +3414,9 @@ array(1) {
 <summary><b>Additional service fields related to the schedule task</b></summary>
 <div markdown="1">
 
-**NOTE:** It works only in `Scheduling notification email` template in `Config → Templates`
+<br>
+
+**NOTE:** This only works in the `Scheduling notification email` template, which you can customize in `Config → Templates`.
 
 ```
 <pre>{{ dump(related_service) }} </pre>
@@ -3508,7 +3510,7 @@ array(32) {
 **Tips and Examples**
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>To show all variables</b></summary>
+<summary>To show all variables</summary>
 <div markdown="1">
 
 ```
@@ -3518,10 +3520,10 @@ array(32) {
 </div>
 </details>
 
-------------
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>To show the current month's name according to the localization settings</b></summary>
+<summary>To show the current month's name according to the localization settings</summary>
 <div markdown="1">
 
 ```
@@ -3547,10 +3549,10 @@ Output: ``` April 2022 ```
 </div>
 </details>
 
-------------
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>To write a number in words </b></summary>
+<summary>To write a number in words</summary>
 <div markdown="1">
 
 ```
@@ -3565,10 +3567,10 @@ Output: ``` April 2022 ```
 </div>
 </details>
 
-------------
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>To Ignore Notification</b></summary>
+<summary>To Ignore Notification</summary>
 <div markdown="1">
 
 ```
@@ -3586,10 +3588,10 @@ if the template result is `=== IGNORE NOTIFICATION ===` the notification will no
 </div>
 </details>
 
-------------
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>Using variables in templates</b></summary>
+<summary>Using variables in templates</summary>
 <div markdown="1">
 
 ```
@@ -3635,10 +3637,10 @@ office@superisp.com
 </div>
 </details>
 
-------------
+
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>Contract: template example</b></summary>
+<summary>Contract: template example</summary>
 <div markdown="1">
 
 Suggested read: [Contract and its signing by customer](customer_management/customer_documents/customer_documents.md)

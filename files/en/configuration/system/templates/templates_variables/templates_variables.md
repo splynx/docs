@@ -3521,54 +3521,6 @@ array(32) {
 </details>
 
 
-
-<details style="font-size: 15px; margin-bottom: 5px;">
-<summary>To show the current month's name according to the localization settings</summary>
-<div markdown="1">
-
-```
-{{ monthInWord(date_created| date("m"))}}
-```
-where ```{{ date_create }}``` - variable for the date value.
-
-Output (EN): ``` April ```
-
-```
-{{ monthInWord(date_created| date("m"), "el") }}
-```
-
-Output (EL): ``` Απριλίου ```
-
-```
-{{ date_created| date("F Y") }}
-```
-Output: ``` April 2022 ```
-
-
-
-</div>
-</details>
-
-
-
-<details style="font-size: 15px; margin-bottom: 5px;">
-<summary>To write a number in words</summary>
-<div markdown="1">
-
-```
-{{ numberToWords(date_created| date("m"))}}
-
-```
-
-```
-{{ numberToWords(customer.login)}}
-```
-
-</div>
-</details>
-
-
-
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary>To Ignore Notification</summary>
 <div markdown="1">
@@ -4003,6 +3955,109 @@ Suggested read: [Contract and its signing by customer](customer_management/custo
 </details>
 
 
+
+</div>
+</details>
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>monthInWord:</b> to show the current month's name according to the localization settings</summary>
+<div markdown="1">
+
+```
+{{ monthInWord(date_created| date("m"))}}
+```
+where ```{{ date_create }}``` - variable for the date value.
+
+Output (EN): ``` April ```
+
+```
+{{ monthInWord(date_created| date("m"), "el") }}
+```
+
+Output (EL): ``` Απριλίου ```
+
+```
+{{ date_created| date("F Y") }}
+```
+Output: ``` April 2022 ```
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>numberToWords:</b> to write a number in words</summary>
+<div markdown="1">
+
+```
+{{ numberToWords(date_created| date("m"))}}
+```
+
+```
+{{ numberToWords(customer.login)}}
+```
+Output: ``` seven thousand three hundred thirty-two ```
+
+</div>
+</details>
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>decimalPart:</b> to show the digits lying to the left of the decimal point form the whole number part </summary>
+<div markdown="1">
+
+<br>
+
+ In the decimal number 220.45; the whole number part is 220 and the decimal part is .45
+
+```
+{{ 220.45 | decimalPart }}
+```
+
+Output: ``` 45 ```
+
+</div>
+</details>
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>numberFormatter:</b> to convert between numeric values and their textual representations</summary>
+<div markdown="1">
+
+Different countries use different decimal separators and grouping separators
+NumberFormatter shows the correct currency symbol and it allows you to flexibly convert backwards and forwards between numbers and localized string representations of those numbers.
+
+<br>
+
+
+
+```
+
+```
+
+Output: ```  ```
+
+</div>
+</details>
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>dateFormatExtended:</b> to specify the format for the date and time.</summary>
+<div markdown="1">
+
+<br>
+
+
+
+```
+
+```
+
+Output: ```  ```
 
 </div>
 </details>

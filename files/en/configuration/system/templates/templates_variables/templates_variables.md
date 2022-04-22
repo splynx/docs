@@ -4428,54 +4428,6 @@ array(33) {
 </details>
 
 
-
-<details style="font-size: 15px; margin-bottom: 5px;">
-<summary>To show the current month's name according to the localization settings</summary>
-<div markdown="1">
-
-```
-{{ monthInWord(date_created| date("m"))}}
-```
-where ```{{ date_create }}``` - variable for the date value.
-
-Output (EN): ``` April ```
-
-```
-{{ monthInWord(date_created| date("m"), "el") }}
-```
-
-Output (EL): ``` Απριλίου ```
-
-```
-{{ date_created| date("F Y") }}
-```
-Output: ``` April 2022 ```
-
-
-
-</div>
-</details>
-
-
-
-<details style="font-size: 15px; margin-bottom: 5px;">
-<summary>To write a number in words</summary>
-<div markdown="1">
-
-```
-{{ numberToWords(date_created| date("m"))}}
-
-```
-
-```
-{{ numberToWords(customer.login)}}
-```
-
-</div>
-</details>
-
-
-
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary>To Ignore Notification</summary>
 <div markdown="1">
@@ -4558,7 +4510,6 @@ Suggested read: [Contract and its signing by customer](customer_management/custo
 <details style="font-size: 12px; margin-bottom: 5px;">
 <summary>Example:</summary>
 <div markdown="1">
-
 
 ```
 
@@ -4910,6 +4861,131 @@ Suggested read: [Contract and its signing by customer](customer_management/custo
 </div>
 </details>
 
+
+
+</div>
+</details>
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>monthInWord:</b> to show the current month's name according to the localization settings</summary>
+<div markdown="1">
+
+```
+{{ monthInWord(date_created| date("m"))}}
+```
+where ```{{ date_create }}``` - variable for the date value.
+
+Output (EN): ``` April ```
+
+```
+{{ monthInWord(date_created| date("m"), "el") }}
+```
+
+Output (EL): ``` Απριλίου ```
+
+```
+{{ date_created| date("F Y") }}
+```
+Output: ``` April 2022 ```
+
+
+
+</div>
+</details>
+
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>numberToWords: </b>to display the number string in word format according to the localization</summary>
+<div markdown="1">
+
+```
+{{ numberToWords(date_created| date("m"))}}
+```
+
+Output: ``` four ``` (the number of the current month)
+
+```
+{{ numberToWords(customer.login)}}
+```
+Output: ``` seven thousand three hundred thirty-two ```
+
+```
+{{ numberToWords(12345.67, 'en')}}
+```
+
+Output: ``` twelve thousand three hundred forty-five point six seven ```
+
+```
+{{ numberToWords(12345.67, 'fr')}}
+```
+
+Output: ``` douze mille trois cent quarante-cinq virgule six sept ```
+
+</div>
+</details>
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>decimalPart:</b> to show the digits lying to the left of the decimal point form the whole number part </summary>
+<div markdown="1">
+
+<br>
+
+ In the decimal number 220.45; the whole number part is 220 and the decimal part is .45
+
+```
+{{ 220.45 | decimalPart }}
+```
+
+Output: ``` 45 ```
+
+</div>
+</details>
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>NumberFormatter:</b> to convert between numeric values and their textual representations</summary>
+<div markdown="1">
+
+<br>
+
+The **NumberFormatter** function has the same functionality as the **numberToWords** one. The **NumberFormatter** method format primitive-type numbers, such as double and output the number as a locale-specific string.
+
+```
+{{ NumberFormatter(12345.67, 'en')}}
+```
+
+Output: ``` twelve thousand three hundred forty-five point six seven ```
+
+```
+{{ NumberFormatter(12345.67, 'de')}}
+```
+
+Output: ``` zwölf­tausend­drei­hundert­fünf­und­vierzig Komma sechs sieben ```
+
+</div>
+</details>
+
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>DateFormatExtended:</b> to print the format for the date and time according to the specified or default locale</summary>
+<div markdown="1">
+
+
+```
+{{ DateFormatExtended('2022-01-04', 'en')}}
+```
+
+Output: ``` Tuesday, January 4, 2022 at 12:00:00 AM Eastern European Standard Time ```
+
+
+```
+{{ DateFormatExtended('2022-01-04', 'fr')}}
+```
+
+Output: ``` mardi 4 janvier 2022 à 00:00:00 heure normale d’Europe de l’Est ```
 
 
 </div>

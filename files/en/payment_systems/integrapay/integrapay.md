@@ -1,7 +1,9 @@
 Integrapay
 ============
 
-**Integrapay** is a Splynx add-on which allows customers to pay for invoices via the payment gateway - https://www.integrapay.com.au/. Customers using *Integrapay* can pay for their invoices through bank and credit card or you can charge your customers bank accounts by debit orders.
+**Integrapay** is a Splynx add-on which allows customers to pay for invoices via the payment gateway - https://www.integrapay.com.au/.
+
+The add-on can work with various credit cards and bank accounts, if cards or bank account are saved in customer profiles, the add-on allows you to charge all customers using Direct debit orders.
 
 ### Add-on installation
 
@@ -31,7 +33,7 @@ The first step is to register an account on https://www.integrapay.com.au/. Afte
 
 ![(image)](13.png)
 
-Then, you need to set your **Username**, **Business ID** and **Password** in `IntegraPay API settings` section of add-on config page, navigate to `Config → Integrations → Modules list → Splynx Add-on IntegraPay` and locate or search for the `splynx_addon_integrapay` add-on module and click on the <icon class="image-icon">![edit](edit.png)</icon> (*Edit*) icon in the *Actions* column, enter your credentials in the related fields.
+Then, you need to set your **Username**, **Business ID** and **Password** in `IntegraPay API settings` section of add-on config page, navigate to `Config → Integrations → Modules list` and locate or search for the `splynx_addon_integrapay` add-on module and click on the <icon class="image-icon">![edit](edit.png)</icon> (*Edit*) icon in the *Actions* column, enter your credentials in the related fields.
 
 ![(image)](2.png)
 

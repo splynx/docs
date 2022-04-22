@@ -79,7 +79,7 @@ On the customer *Portal Dashboard*, customers can also see the list of non-paid 
 
 The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx_ippay_addon` module item in *Actions* column, click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon. More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
 
-To refill balances, customers can use the following link - ```https://<splynx_domain_address>/ippay```, where they have to choose the *Account type*, enter the *Amount* of payment and click on **Add** button:
+To refill balances, customers can use the following link - ``` https://<splynx_domain_address>/ippay ```, where they have to choose the *Account type*, enter the *Amount* of payment and click on **Add** button:
 
 ![14.png](14.png)
 

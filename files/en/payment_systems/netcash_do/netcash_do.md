@@ -189,10 +189,21 @@ If you charge the invoices using the `netcash_balances` charge handler, the **cu
 
 **Example:** *A customer has the invoice with the amount of 10, in the current month, but the balance of the account is -100 (it means that the customer didn't pay for 10 months) in this case, the customer will be charged with the amount of 100 and not 10.* That's why, **please be very attentive when using the `netcash_balances` charge handler**.
 
-Once the invoices are charged, Splynx will create and send the debit batch file with the payment details to [*https://netcash.co.za/*](https://netcash.co.za/). When the file is received on the *Netcash* side, log in to your *Netcash* account and navigate to `Services → Debit orders → Debit batches`, in the debit batch list select the correct item, pay attention on its action date or service type (either `two days` or `same day`). The last step is to press the **Authorise** button and complete the procedure, after that *Netcash* will process the file on the selected action date.
+**Authorising debit order batches**
 
+Once the invoices are charged, Splynx will create and send the debit batch file with the payment details to [*https://netcash.co.za/*](https://netcash.co.za/). When the file is received on the *Netcash* side, log in to your *Netcash* account and navigate to `Services → Debit orders → Manage debit orders → Debit batches`, in the debit batch list select the correct item, check the detail of the batch for accuracy. Then, press the **Authorise** button. Select **Email or SMS notifications** if you would like to notify your customers of the debits to be processed to the accounts.
 
 ![img](debit_batch_list.png)
+
+The next step is to release funds to my bank account:
+- a) **Yes:** *Netcash* will pay the proceeds of the batch less deductions to your bank account when available.
+- b) **No:** Proceeds will be credited to your *Netcash* account only – this creates an available balance for salary and creditor payments.
+
+After that, Accept the **Terms and conditions** - the screen will then refresh and display and **Authorise button**. Click on the **Authorise** button again. Your batch is now *authorised*, click **Ok**. *Netcash* has processed the file on the selected action date.
+
+Your batch will now be displayed with an **Unauthorise** button in the *Authorisation* column - **batches can be unauthorised for further editing or deletion up until the cut-off time** for that service type (`Two days` or `Same day`).
+
+
 
 
 If the toggle of **Disable payment processing by system** option is disabled, Splynx will send two requests per day (at **00:15** and **12:15**) to *Netcash* via a cron job to retrieve the payments from *Netcash*. This will auto allocate the payments and update the invoice statuses to `Paid`.

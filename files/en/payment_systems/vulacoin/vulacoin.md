@@ -47,7 +47,7 @@ Locate or search for the `splynx-vulacoin` add-on and click on the
 
 **Main information & API settings**
 
-Make sure that **Entry points** option is **enable**. Note that changes are not saved until you click **Save**.
+Make sure that **Entry points** option is **enabled**. Note that changes are not saved until you click **Save**.
 
 The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx_vulacoin_addon` module item in *Actions* column, click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon. More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
 

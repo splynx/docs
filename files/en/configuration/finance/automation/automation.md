@@ -50,9 +50,9 @@ The billing day is on 1st day of the month and you have set 3 days as a confirma
 
 * **Blocking time** - the time when clients will be blocked and their services will be disabled;
 
-* **Enable processing of Deactivation (grace) period** - set the recurring customers to inactive status on the the `Deactivation period` date if their balance is less than the minimum balance;
+* **Enable processing of Deactivation (grace) period** - set the recurring customers to **inactive** status on the the `Deactivation period` date if their balance is less than the minimum balance;
 
-* **Enable processing of Deactivation (grace) period for prepaid customers** - set the prepaid customers to inactive status when the `Deactivation period` date is reached.
+* **Enable processing of Deactivation (grace) period for prepaid customers** - set the prepaid customers' services as **stopped** status when the `Deactivation period` date is reached.
 
 ### Automatically remove IP's for inactive prepaid customers
 

@@ -3,7 +3,7 @@ Engineers permissions for scheduling mobile application
 
 Navigate to `Administration → Administrators` and check the permission for the required account.
 
-A **minimal set of permissions** within each section required for the engineer/technician role (intended for technical workers engaged in direct installation and dismantling of equipment, using the mobile app).
+A **minimum set of permissions** within each section required for the engineer/technician role (intended for technical workers engaged in direct installation and dismantling of equipment, using the mobile app).
 
 ### CRM
 

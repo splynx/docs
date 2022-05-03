@@ -34,7 +34,7 @@ In the right top corner of the page, you can select the [partner](administration
 
 * **Deactivation period (days after blocking) (Grace period)** - the number of days after the customers' services will be disabled and the customer will be given an inactive status, after the customer has been blocked. For example, a default value is `10` days (can be set from `1` to `99` days or `disabled` as well), which means 10 days after the date when customer has been blocked, the customer's status will be automatically changed from blocked to inactive and service won't be accounted;
 
-* **Minimal balance** - defines the minimum amount of funds that must be available in the customer account balance at any time, even after the service charge, in order to avoid blocking. The default value is `0`. This value can be changed to another according to your needs. The negative value (e.g. `-50`) is allowed to use as well;
+* **Minimum balance** - defines the minimum amount of funds that must be available in the customer account balance at any time, even after the service charge, in order to avoid blocking. The default value is `0`. This value can be changed to another according to your needs. The negative value (e.g. `-50`) is allowed to use as well;
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example</b></summary>
@@ -57,7 +57,7 @@ If we have `50` value as a minimum balance requirement, a customer need to pay R
 
 ![image](min_balance_3.png)
 
-If we have `-50` value as a minimum balance requirement, a customer can pay only R50 for the invoice, because it's allowed to have a negative balance, but no less (`-60`, `-70` etc.) than`-50`. Pay attention, if a customer pays R60, the account balance will be `-40` that is acceptable value. Even if a customer pays the full price for the invoice, the account balance will be equal to `0` and, as a result, a zero value will be greater than allowed minimal balance.
+If we have `-50` value as a minimum balance requirement, a customer can pay only R50 for the invoice, because it's allowed to have a negative balance, but no less (`-60`, `-70` etc.) than`-50`. Pay attention, if a customer pays R60, the account balance will be `-40` that is acceptable value. Even if a customer pays the full price for the invoice, the account balance will be equal to `0` and, as a result, a zero value will be greater than allowed minimum balance.
 
 ![image](min_balance_1.png)
 

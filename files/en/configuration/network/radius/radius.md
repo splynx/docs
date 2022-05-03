@@ -30,7 +30,7 @@ A new configuration section will appear:
 ![NAS configuration 3](settings_3.png)
 
 * **Prevent duplicate session** - If a customer is online and tries to connect, send a disconnect package to the online session;
-* **Allow with no account balance** - allows a connection when the account balance of the customer trying to connect is less than the specified  minimal balance;
+* **Allow with no account balance** - allows a connection when the account balance of the customer trying to connect is less than the specified  minimum balance;
 * **Allow without IP/MAC** - if disabled, IP/MAC will be checked during authorization, and if enabled, authorization will be allowed with any IP/MAC;
 * **MAC address field** - different NAS routers can use different fields of MAC addresses, default is "Calling-Station-Id";
 * **Inverse rate limit** - change rate limit of upload by download and vice versa;

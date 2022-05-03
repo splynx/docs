@@ -18,7 +18,7 @@ In addition to the current tariff fields, we have added some other information f
 
 **Automatic renewal** → enables/disables automatic renewal of the contract.
 
-**Auto reactivate when deposit become more then minimal balance** → enables/disables reactivation of customer services if customers account balance is more than the minimal set in their billing settings and sufficient to pay for the services
+**Auto reactivate when deposit become more then minimum balance** → enables/disables reactivation of customer services if customers account balance is more than the minimum set in their billing settings and sufficient to pay for the services
 
 **Prior cancellation fee** → price of prior cancellation of the contract.
 

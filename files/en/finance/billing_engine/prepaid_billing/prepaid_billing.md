@@ -12,7 +12,7 @@ The next step is to choose the *Payment method*, options are Cash, Bank Transfer
 ![Payment method](payment_method_2.png)
 
 
-Then we define the minimum amount of funds to be available in the customer's account after service charges to avoid being blocked in the *Minimal balance* field, this field is 0.0000 by default.
+Then we define the minimum amount of funds to be available in the customer's account after service charges to avoid being blocked in the *Minimum balance* field, this field is 0.0000 by default.
 
 ![Minimal balance](minimal_balance_prepaid.png)
 

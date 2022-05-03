@@ -55,7 +55,7 @@ in our example, we choose the 1st day of the month as the billing day and 15 day
 
 ![Automation](automation1.png)
 
-* **Minimal balance** - the minimum amount funds to be available in the customer's account after service charges to avoid being blocked, this field is 0.0000 by default.
+* **Minimum balance** - the minimum amount funds to be available in the customer's account after service charges to avoid being blocked, this field is 0.0000 by default.
 
 
 **Bear in mind, although the customer is blocked and their services suspended, the system will still account for the services from a billing perspective.**

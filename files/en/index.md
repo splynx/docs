@@ -200,7 +200,7 @@ Table of contents
   * [Email](administration/logs/email/email.md)
   * [SMS](administration/logs/sms/sms.md)
   * [Sessions](administration/logs/sessions/sessions.md)
-  * [API](administration/logs/api/api.md)
+  * [API logs](administration/logs/api/api.md)
   * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
   * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
   * [Accounting Integrations](administration/logs/accounting_integrations/accounting_integrations.md)
@@ -242,7 +242,7 @@ Table of contents
   * [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
 
 * [Main configuration](configuration/main_configuration/main_configuration.md)
-  * [API](configuration/main_configuration/api/api.md)
+  * [API config](configuration/main_configuration/api/api.md)
   * [CAP](configuration/main_configuration/cap/cap.md)
   * [Customer Portal](configuration/main_configuration/portal/portal.md)
   * [Customers](configuration/main_configuration/customers/customers.md)

@@ -22,7 +22,7 @@ Please follow the links to each section below for tutorials and information page
 
 * [Sessions](administration/logs/sessions/sessions.md)
 
-* [API](administration/logs/api/api.md)
+* [API logs](administration/logs/api/api.md)
 
 * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
 

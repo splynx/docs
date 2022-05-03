@@ -5,7 +5,7 @@ In main part of Splynx configuration is possible to select default site (Custome
 
 Please, follow the links below to find tutorial page about every single part of Main configuration:
 
-* [API](configuration/main_configuration/api/api.md)
+* [API config](configuration/main_configuration/api/api.md)
 
 * [CAP](configuration/main_configuration/cap/cap.md)
 

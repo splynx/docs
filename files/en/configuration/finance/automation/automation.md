@@ -29,11 +29,11 @@ The following parameters can be configured for automation:
 
 ### Automatic blocking
 
-* **Enable processing of  billing Due** - enabling this process will lead to blocking non-paying customers on their billing due date and when their deposit is less than the minimum deposit/minimal balance allowed;
+* **Enable processing of  billing Due** - enabling this process will lead to blocking non-paying customers on their billing due date and when their deposit is less than the minimum deposit/minimum balance allowed;
 
 * **Blocking time** - the time at which customers will be blocked and their services will be disabled;
 
-* **Enable processing Grace Period** - with this option enabled, non-paying customers will be set to an inactive status by the end of their Grace periods and when their deposit is less than minimum deposit/minimal balance allowed;
+* **Enable processing Grace Period** - with this option enabled, non-paying customers will be set to an inactive status by the end of their Grace periods and when their deposit is less than minimum deposit/minimum balance allowed;
 
 * **Enable processing of Grace period for prepaid customers** - enabling this option will set prepaid customers' services as stopped when their grace period is reached. (Prepaid grace periods can be set under `Config / Finance / Billing settings`)
 

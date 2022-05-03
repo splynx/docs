@@ -132,13 +132,13 @@ The OS checks the network access when connected, if the system detects a stub pa
 For example, Ubuntu
 
   ![](ubuntu_hotspot.png) ![](ubuntu_hotspot_8102.png)
-  
+
 ### Can we redirect the blocked customers from HTTPS to HTTP website?
 
 It's not possible to do over SSL-encrypted connection, the redirection only works over HTTP. HTTPS traffic cannot be redirected to HTTP one, there will be the SSL encryption error and the connection rejection as a necessary measure. In such case end-user should try to access different site.
-**HTTP Strict Transport Security (HSTS)** is a web security policy mechanism that helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie hijacking. 
+**HTTP Strict Transport Security (HSTS)** is a web security policy mechanism that helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie hijacking.
 
-The best solution is to send many notification messages via SMS/Email, so then customer will not be surprised when one day the Internet will not work. 
+The best solution is to send many notification messages via SMS/Email, so then customer will not be surprised when one day the Internet will not work.
 *SMS* can be configured in `Config → Main → SMS` and *Email* config is in `Config → Main → Email`. Also, it's necessary to enable *Blocking wave* notification in `Config → Finance → Notification` and select a template.
 
 
@@ -152,7 +152,7 @@ real    0m10,031s
 Some software will constantly try to connect, often at this point, the program interface may freeze.
 
 A good solution is to set up your own caching DNS server, the traffic to which users will not limit.
-This is generally a good way to increase web responsiveness for all customers at a minimal cost.
+This is generally a good way to increase web responsiveness for all customers at a minimum cost.
 
 If you use external DNS servers, you can limit the amount of traffic for them.
 Having added a burst at the beginning is useful during system boot.

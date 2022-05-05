@@ -2,6 +2,8 @@ API Documentation
 =============
 Splynx system has its own Application Programming Interface (API) which allows software applications to communicate with each other via API calls. In order to simplify the workflow with Splynx API in testing and development you can use [Postman](https://www.postman.com/). *Postman* - is an open source tool and can be easily downloaded [here](https://www.postman.com/downloads/) according to your desired platform. After install the app and sign up for account you can start work on Postman startup screen.
 
+To get started with the **Postman** app, please check this [documentation](https://learning.getpostman.com/).
+
 Splynx supports the following type of authentication:
 
 #### Access by token
@@ -50,6 +52,8 @@ Then, use *POST* with *Content-type* to add new data and press *Send*. Check you
 ![Postman](postman9.png)
 ![Postman](postman10.png)
 
+---
+
 #### Basic authentication
 
 Add API key with *Unsecure access* in `Administaration → API keys`;
@@ -61,6 +65,8 @@ Copy the encoded text, insert it as a value for *Authorization* key in Postman a
 ![Postman](postman3.png)
 ![Postman](postman4.png)
 ![Postman](postman5.png)
+
+---
 
 #### Access by signature
 (*Like in API v1*)
@@ -98,6 +104,8 @@ Create autorizaton request with `{{authorizationHeader}}` value and press Send.
 
 
 The output results indicate that tests were successful.
+
+---
 
 #### API search
 
@@ -156,6 +164,10 @@ $apiUrl = 'admin/customers/customer' . '?' . http_build_query($params);
 
 ---
 
-To get started with Postman, please check this [documentation](https://learning.getpostman.com/).
+#### Splynx PHP API template with examples
 
-For more information about Splynx API, see our wiki page: https://splynx.docs.apiary.io
+For the developers, it's recommended to check this [template](https://bitbucket.org/splynx/splynx-php-api/src/master/) (`splynx-php-api/src → SplynxApi.php` and the files in `splynx-php-api/examples`), it provides useful methods on **how to make queries to the Splynx API**.
+
+If you have already installed the Splynx system, you can **find the same template on your server**, just navigate to `/var/www/splynx/addons/splynx-addon-base-2/vendor/splynx/splynx-php-api` location.
+
+For more information about the Splynx API, see our wiki page: https://splynx.docs.apiary.io

@@ -58,6 +58,8 @@ And, in `Config → Integrations`, you can find the **3CX** section
 
 with the link to download the generated XML configuration file - `splynx.xml`. It has a specific structure that is used for integration purposes.
 
+Suggested read: [CRM Template XML Description](https://www.3cx.com/docs/server-side-crm-template-xml-description/#h.ydml7w97b24x).
+
 ![](img_000007.png)
 
 ![](img_000008.png)

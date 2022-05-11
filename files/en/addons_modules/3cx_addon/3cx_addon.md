@@ -62,11 +62,7 @@ with the link to download the generated XML configuration file - `splynx.xml`. I
 
 ![](img_000008.png)
 
-![](img_000009.png)
-
-Use any text editor to open the downloaded `splynx.xml` file, specify the necessary values, such as your Splynx domain (`[Domain]`), API key/secret (`[ApiKey]` / `[ApiSecret]`). and save the changes. Use this XML file for CRM integration procedure.
-
-
+Save the XML file, it will be used for the CRM integration procedure.
 
 Let's perform the first time configuration of the 3CX system:
 
@@ -121,11 +117,33 @@ The permission and owner to **.ssh** folder should be the next `drwxr-xr-x  2 ro
 Type the IP address or domain name of your **3CX** system in **Domain or IP** field and press the **Test Connection** button to check the connection. Press **Save** button in order to save the entered IP address or domain name.
 
 
-5. To upload your XML file to 3CX system, click on `Settings → CRM Integration` and follow the required CRM integration steps
+5. To upload your XML file to 3CX system, click on `Settings → CRM Integration` and follow the required CRM integration steps as shown on the screenshots.
 
 ![](img_000015.png)
 
+- Click the **Add** button to upload the XML file:
+
+![](add.png)
+
+- After that, fill in the **API Key/Secret/URL** values in the required fields:
+
+![](fill_out.png)
+
+- Then, scroll down and enable the **Call Journaling** and **Contract Creation** option blocks:
+
+![](call_journaling.png)
+
+![](contract_creation.png)
+
+- And press the **Test** button to check the CRM configuration.
+
+- To check the creation of contacts, try dialing a number and click on the **Contacts** item on the sidebar and enter the phone number to search in CRM:
+
 ![](img_000010.png)
+
+![](test1.png)
+
+![](test2.png)
 
 More information about the integration can be found on the following link: https://www.3cx.com/docs/crm-integration/
 

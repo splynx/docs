@@ -3,31 +3,35 @@
 
 *3CX* is the add-on module designed for the integration your Splynx with [3CX service](https://www.3cx.com/call-center/crm-integration/) via the server-side CRM integration engine and its own API. 3CX add-on simplifies the calls management in Splynx, as a result, we have a complete call history in relation to the specific customer, it's possible to listen, download the recorded files, add the comment to the call, to link/unlink call to the ticket etc.
 
-**Note:** **3CX server is required to be installed on separate/cloud server.**
-More information you can find using these links:
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** **To use the CRM Integration module, you should have the** [**3CX Professional license level**](https://www.3cx.com/phone-system/download-phone-system?resellerId=214267).
+
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:** **3CX server is required to be installed on separate/cloud server.**
+
+
+<icon class="image-icon">![Suggested](bulb.png)</icon> More information you can find using these links:
 - https://www.3cx.com/3cxacademy/videos/basic/installing/
 - https://www.3cx.com/3cxacademy/videos/basic/installing/
 
-To install the add-on use one of the two methods: via CLI on the Splynx server or via the Splynx Web UI.
+To install the add-on use one of the two methods: via **CLI** on the Splynx server or via the Splynx **Web UI**.
 
-To install the add-on via CLI, the following commands can be used:
+To install the add-on via **CLI**, the following commands can be used:
 
 ```bash
 apt-get update  
 apt-get install splynx-3cx
 ```
 
-To install the add-on from the Web UI:
+To install the add-on from the **Web UI**:
 
 Navigate to `Config → Integrations → Add-ons`:
 
 ![](img_000001.png)
 
-Find there the "splynx-3cx" add-on and click on the install icon in the *Actions* column of the table
+Find there the `splynx-3cx` add-on and click on the install icon in the *Actions* column of the table
 
 ![](img_000002.png)
 
-Then, click on the "OK, confirm" button to begin the installation process
+Then, click on the **OK, confirm** button to begin the installation process
 
 ![](img_000003.png)
 
@@ -58,13 +62,13 @@ And, in `Config → Integrations`, you can find the **3CX** section
 
 with the link to download the generated XML configuration file - `splynx.xml`. It has a specific structure that is used for integration purposes.
 
-Suggested read: [CRM Template XML Description](https://www.3cx.com/docs/server-side-crm-template-xml-description/#h.ydml7w97b24x).
+<icon class="image-icon">![Suggested](bulb.png)</icon> Suggested read: [CRM Template XML Description](https://www.3cx.com/docs/server-side-crm-template-xml-description/#h.ydml7w97b24x).
 
 ![](img_000007.png)
 
 ![](img_000008.png)
 
-Save the XML file, it will be used for the CRM integration procedure.
+Save the XML file, it will be used for the CRM integration procedure. Note, **to use this module, you need to have the [3CX Professional license level](https://www.3cx.com/phone-system/download-phone-system?resellerId=214267)**.
 
 Let's perform the first time configuration of the 3CX system:
 
@@ -147,7 +151,7 @@ Type the IP address or domain name of your **3CX** system in **Domain or IP** fi
 
 ![](test2.png)
 
-More information about the integration can be found on the following link: https://www.3cx.com/docs/crm-integration/
+<icon class="image-icon">![Suggested](bulb.png)</icon> More information about the integration can be found on the following link: https://www.3cx.com/docs/crm-integration/
 
 6. Install [iOS](https://apps.apple.com/us/app/3cx-communications-system/id992045982), [Android](https://play.google.com/store/apps/details?id=com.tcx.sipphone14) or [Windows](https://www.3cx.com/user-manual/installation-windows/) app, navigate to your [3CX Web Client](https://www.3cx.com/user-manual/web-client/) via `https://<domain/IP>/webclient`, log in using the extension number and password from your email letter and click on *Activate your 3CX Browser Extension*, in the top left-hand corner of the Web Client click *Allow Notifications* to enable desktop notifications, you will see the blue phone icon in the extensions bar in your browser. Click on the icon to open the Browser Extension pop out window.
 Now you can quickly and easily make and receive calls from your desktop without needing to open the full Web Client. Moreover, you can call to customers directly from Splynx.

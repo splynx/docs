@@ -80,4 +80,4 @@ dpkg-reconfigure splynx
 
 Video tutorial:
 
-<iframe frameborder=0 height=270 width=350 allowfullscreen src="https://www.youtube.com/embed/0KZAENbH5KE">Video on youtube</iframe>
+<iframe width="350" height="270" src="https://www.youtube.com/embed/0KZAENbH5KE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

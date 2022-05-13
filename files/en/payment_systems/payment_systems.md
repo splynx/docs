@@ -34,8 +34,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [PayU Africa](payment_systems/payu/payu.md)
 
-* [Pesapal](payment_systems/pesapal/pesapal.md)
-
 * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
 
 * [SEPA debit orders](payment_systems/sepa/sepa.md)

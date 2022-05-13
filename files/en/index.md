@@ -389,7 +389,6 @@ Table of contents
   * [Payment-express](payment_systems/payment_express/payment_express.md)
   * [Paypal payments](payment_systems/paypal/paypal.md)
   * [Paystack](payment_systems/paystack/paystack.md)
-  * [Pesapal](payment_systems/pesapal/pesapal.md)
   * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
   * [Netcash Pay Now](payment_systems/netcash_pay_now/netcash_pay_now.md)
   * [Netcash Debit orders](payment_systems/netcash_do/netcash_do.md)

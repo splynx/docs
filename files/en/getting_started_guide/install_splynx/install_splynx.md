@@ -3,8 +3,9 @@ Install Splynx ISP Framework
 
 <icon class="image-icon">![Important](warning.png)</icon> **Basic requirements & Supported OS:**
 
-- **fresh installed `Ubuntu 20.04 (server)`**
+- **fresh installed `Ubuntu 20.04 (server)`**;
 
+- [hardware requirements](getting_started_guide/hardware_requirements/hardware_requirements.md).
 
 <icon class="image-icon">![INF](information.png)</icon> **To install Splynx on your server**, please make the following steps:
 
@@ -36,7 +37,7 @@ apt-get install ca-certificates
 update-ca-certificates
 ```
 
-After installation is completed, type in the address line of web browser - http://IP_address (e.g.http://192.168.0.239/) (where the `IP_address` is the address of your Splynx server).
+After installation is completed, type in the address line of web browser - http://IP_address (e.g.http://192.168.0.239/admin) (where the `IP_address` is the address of your Splynx server).
 
 After that, enter your license key and save it:
 
@@ -47,6 +48,7 @@ After your license key is applied, you will be redirected to the *Initial setup 
 ![Screenshot](install_splynx2_1.png)
 
 ![Screenshot](install_splynx3.png)
+
 
 ![Screenshot](install_splynx4.png)
 

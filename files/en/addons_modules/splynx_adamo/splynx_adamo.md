@@ -11,6 +11,7 @@ Splynx Adamo
     - [1.1 Preparación de los datos](#11-preparación-de-los-datos)
     - [1.2 Obtención del Api-Key de Adamo](#12-obtención-del-api-key-de-adamo)
     - [1.3 Configuración del módulo](#13-configuración-del-módulo)
+    - [1.4 Carga de Servicios](#14-carga-de-servicios)
   - [2. Gestión de UUIS](#2-gestión-de-uuis)
     - [2.1 Añadir UUIS](#21-añadir-uuis)
     - [2.1 Actualizar UUIS](#21-actualizar-uuis)
@@ -65,6 +66,14 @@ Aquí pegamos la key que obtuvimos en el paso anterior.
 ![SFTP configuration](./03.png)
 
 Completamos los datos de FTP de Adamo (IP, puerto, usuario y contraseña), en el caso de que se quiera hacer uso del botón de importación de UIs automático desde el FTP.
+
+### 1.4 Carga de Servicios
+Para que el addon funcione, es fundamental cargar los servicios antes del primero uso. Además, en el caso de contratar un nuevo servicio con Adamo, será necesario repetir esta operación de forma manual.
+Para ello, hay que acceder a Configuración > Integraciones > Adamo Services y hacer click en el botón Actualizar servicios que se muestra
+a continuación:
+
+![Carga de servicios](./33.png)
+
 
 ## 2. Gestión de UUIS
 ### 2.1 Añadir UUIS

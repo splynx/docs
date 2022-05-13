@@ -372,6 +372,7 @@ Table of contents
   * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
   * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
   * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
+  * [HotSpot add-on with VulaCoin payments support](addons_modules/hotspot_vulacoin/hotspot_vulacoin.md)
   * [Xero accounting](addons_modules/xero/xero.md)
 
 

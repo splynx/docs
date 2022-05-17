@@ -372,7 +372,7 @@ Table of contents
   * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
   * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
   * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
-  * [HotSpot add-on with VulaCoin payments support](addons_modules/hotspot_vulacoin/hotspot_vulacoin.md)
+  * [HotSpot add-on configuration](addons_modules/hotspot_addon/hotspot_addon.md)
   * [Xero accounting](addons_modules/xero/xero.md)
 
 
@@ -390,7 +390,6 @@ Table of contents
   * [Payment-express](payment_systems/payment_express/payment_express.md)
   * [Paypal payments](payment_systems/paypal/paypal.md)
   * [Paystack](payment_systems/paystack/paystack.md)
-  * [Pesapal](payment_systems/pesapal/pesapal.md)
   * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
   * [Netcash Pay Now](payment_systems/netcash_pay_now/netcash_pay_now.md)
   * [Netcash Debit orders](payment_systems/netcash_do/netcash_do.md)

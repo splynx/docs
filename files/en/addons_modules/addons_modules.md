@@ -18,6 +18,7 @@ In this section, we can view, install or delete useful add-ons for integration w
 * [SageOne module](addons_modules/sageone/sageone.md)
 * [Self Registration](addons_modules/self_registration/self_registration.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
+* [Splynx Adamo](addons_modules/splynx_adamo/splynx_adamo.md)
 * [Splynx Mailjet](addons_modules/splynx_mailjet/splynx_mailjet.md)
 * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)

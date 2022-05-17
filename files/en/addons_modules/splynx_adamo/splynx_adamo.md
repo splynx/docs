@@ -45,7 +45,7 @@ Se sustituirá xyz tanto en email y en la password con los datos de acceso al po
 respuesta como esta:
 ```sh
 {
-    "key":"9775aed2ce1a547d0d78e3c8f60cc51883a34234e4b0b1ca1138dbffad2ac918a491cf6871619286b04ce97b7e6eb8e86073a59bb8414ed5286069f7bf63f6c4",
+    "key":"12345abcdef12345abcdef345f60123458312345e12345abcdef45bf12345abcdef45c123456192812345e912345abcdef5731234541412345abcdefabcdef6c4",
     "role":"operator",
     "organization":"yy",
     "id":"xxx",

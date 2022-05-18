@@ -102,18 +102,18 @@ We will use Splynx server (public domain and SSL are set) and Mikrotik hAP AC li
 In HotSpot will be used `10.5.50.0/24` network.
 The Android-based cell phone will be a HotSpot client.
 
-Suggested read: [OpenVPN configuration](configuration/tools/openvpn/openvpn.md)
+Suggested read: [OpenVPN configuration](configuration/tools/openvpn/openvpn.md).
 
 
 **Step 1**
 
-Define the port for WAN connection to connect to the Internet via DHCP. Navigate to `IP → DHCP Client` and add the DHCP Client, for example, to the **ether1** interface:
+Define the port for WAN connection to connect to the Internet via DHCP. Navigate to`IP → DHCP Client` and add the DHCP Client, for example, to the **ether1** interface:
 
 ![img](9.png)
 
 **Step 2**
 
-After the OpenVPN certificates are generated and imported on MikroTik, add your router to Splynx and check the connection:
+After the OpenVPN certificates are generated in Splynx and imported to MikroTik, add your router to Splynx and check the connection:
 
 ![img](ovpn1.png)
 
@@ -169,15 +169,15 @@ Now start making the HotSpot configuration, for this purpose use the HotSpot Set
 
 ![img](17.png)
 
-- In our example we are not going to use SSL/HTTPS certificates for HotSpot, so just leave the option set to `none` and continue.
+- In our example we are not going to use SSL/HTTPS certificates for HotSpot, so just leave the option set to `none` and press **Next**.
 
 ![img](18.png)
 
-- In our example we don't need SMTP server, so just leave the address as `0.0.0.0`
+- In our example we don't need SMTP server, so just leave the address as `0.0.0.0`.
 
 ![img](19.png)
 
-- The DNS address will be filled in automatically based on our previous configuration
+- The DNS address will be filled in automatically based on our previous configuration.
 
 ![img](20.png)
 
@@ -185,9 +185,13 @@ Now start making the HotSpot configuration, for this purpose use the HotSpot Set
 
 ![img](21.png)
 
-In this window you can create your first HotSpot username and password, but we'll leave it as it is (don't set any password):
+In this window you can create your first HotSpot username and password, but we'll leave it as it is (don't set any password).
 
 ![img](22.png)
+
+After that the HotSpot server will be created:
+
+![img](22.1.png)
 
 **Step 8**
 
@@ -203,17 +207,71 @@ But first of all, you need to download the [configured html file](file_mikrotik.
 
 **Step 9**
 
-Make the Radius configuration as shown below:
+The clients authorization uses the RADIUS protocol. Let's configure the interaction between the router and the service by adding a new server to the RADIUS menu, after that make its configuration:
+
+- **Service:** `hotspot`;
+- **Address:** `your Splynx IP address`;
+- **Protocol:** `udp`;
+- **Secret:** `automatically generated value from your router page in Splynx`;
+- **Authentication Port:** `1812`;
+- **Accounting Port** `1813`;
+- **Timeout:** `3000`
+
+Then, navigate to `IP → Hotspot → Server Profiles`, double click on your HotSpot profile and click on the **RADIUS** tab, change settings as shown below:
 
 ![img](26.png)
 
 **Step 10**
 
-Set the correct parameters for the HotSpot Server Profile:
+Set the correct parameters on the **Login** tab for the HotSpot Server Profile:
 
-**Login By:** `MAC`, `HTTP CHAP`;
-**MAC Auth. Mode:** `MAC as username and password`.
+- **Login By:** `MAC`, `HTTP CHAP`;
+- **MAC Auth. Mode:** `MAC as username and password`.
 
 ![img](27.png)
 
-### VulaCoin Integration
+**Step 11**
+
+In `IP → Hotspot → Server Profiles`, the default profile should be with the next settings:
+
+![img](28.png)
+
+**Step 12**
+
+In `IP → Hotspot → Walled Garden`, configure the following addresses to **Dst. Address** one by one for access by unauthorized clients::
+
+![img](29.png)
+
+### Connection to HotSpot and Payments via VulaCoin
+
+<icon class="image-icon">![Note](information.png)</icon> Double check if the [VulaCoin add-on](payment_systems/vulacoin/vulacoin.md) is installed and configured in Splynx.
+
+Imitating the client's steps, try to connect to the newly created Wi-Fi HotSpot:
+
+![img](30.png)
+
+![img](31.png)
+
+To sign in to your HotSpot, enter your phone number and press **Next**:
+
+![img](34.png)
+
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:** To receive an SMS with a code, you need to set up an [SMS gataway](configuration/main_configuration/sms_config/sms_config.md) in Splynx.
+
+![img](35.png)
+
+Then, select your plan. In case the plan is paid you will be redirected to the VulaCoin page to make payment:
+
+![img](36.png)
+
+![img](37.png)
+
+![img](38.png)
+
+![img](39.png)
+
+![img](40.png)
+
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:** The client will be connected to the Internet through an automatically created **prepaid voucher**, an invoice will be created for the paid plan only in Splynx.
+
+![img](41.png)

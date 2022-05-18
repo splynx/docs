@@ -11,8 +11,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Gocardless.com](payment_systems/gocardless/gocardless.md)
 
-* [iCharge (Xilo payments)](payment_systems/iCharge/iCharge.md)
-
 * [Integrapay](payment_systems/integrapay/integrapay.md)
 
 * [IPpay](payment_systems/ippay/ippay.md)
@@ -31,8 +29,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 * [Paypal payments](payment_systems/paypal/paypal.md)
 
 * [Paystack](payment_systems/paystack/paystack.md)
-
-* [PayU Africa](payment_systems/payu/payu.md)
 
 * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
 

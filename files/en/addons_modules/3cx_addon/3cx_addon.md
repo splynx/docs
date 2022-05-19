@@ -3,14 +3,15 @@
 
 *3CX* is the add-on module designed for the integration your Splynx with [3CX service](https://www.3cx.com/call-center/crm-integration/) via the server-side CRM integration engine and its own API. 3CX add-on simplifies the calls management in Splynx, as a result, we have a complete call history in relation to the specific customer, it's possible to listen, download the recorded files, add the comment to the call, to link/unlink call to the ticket etc.
 
+
 <icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** **To use the CRM Integration module, you should have the** [**3CX Professional license level**](https://www.3cx.com/phone-system/download-phone-system?resellerId=214267).
 
 <icon class="image-icon">![Note](note.png)</icon> **NOTE:** **3CX server is required to be installed on separate/cloud server.**
 
+<icon class="image-icon">![Suggested](bulb.png)</icon> For more information about 3CX installation on the server, see [link](https://www.3cx.com/3cxacademy/videos/basic/installing/).
 
-<icon class="image-icon">![Suggested](bulb.png)</icon> More information you can find using these links:
-- https://www.3cx.com/3cxacademy/videos/basic/installing/
-- https://www.3cx.com/3cxacademy/videos/basic/installing/
+
+## Add-on installation
 
 To install the add-on use one of the two methods: via **CLI** on the Splynx server or via the Splynx **Web UI**.
 
@@ -35,16 +36,16 @@ Then, click on the **OK, confirm** button to begin the installation process
 
 ![](img_000003.png)
 
-Once the installation process has completed, all configurations for the add-on can be found in `Config → Modules → List`, simply click on the necessary icon of the module and you will be able to change settings of the add-on
+Once the installation process has completed, all configurations for the add-on can be found in `Config → Modules → List`, simply click on the necessary icon of the `splynx_3cx_addon` module and you will be able to change settings of the add-on
 
 ![](img_000004.png)
 
-In add-on configuration you can set the absolute **path to the record's folder**, by default it's `/var/lib/3cxpbx/Instance1/Data/Recordings/`.
+In the add-on configuration you can set the absolute **path to the record's folder**, by default it's `/var/lib/3cxpbx/Instance1/Data/Recordings/`.
 
 
-## Using the 3CX module
+### 3CX Module Overview
 
-After add-on installation in your Splynx system will be created the [API key and its secret](administration/main/api_keys/api_keys.md) (an `Unsecure access` is enabled by default) with such permissions:
+After installing the add-on, the [API key and its secret](administration/main/api_keys/api_keys.md) will be created in Splynx (the `Unsecure access` option is enabled by default) with the following permissions:
 
 |Customers|
 |:-----------:|
@@ -58,9 +59,10 @@ After add-on installation in your Splynx system will be created the [API key and
 
 ![](img_000006.png)
 
-And, in `Config → Integrations`, you can find the **3CX** section
 
-with the link to download the generated XML configuration file - `splynx.xml`. It has a specific structure that is used for integration purposes.
+### XML Configuration File
+
+In `Config → Integrations`, you can find the **3CX** section with the link to download the **generated XML configuration file** - `splynx.xml`.
 
 <icon class="image-icon">![Suggested](bulb.png)</icon> Suggested read: [CRM Template XML Description](https://www.3cx.com/docs/server-side-crm-template-xml-description/#h.ydml7w97b24x).
 
@@ -68,13 +70,16 @@ with the link to download the generated XML configuration file - `splynx.xml`. I
 
 ![](img_000008.png)
 
-Save the XML file, it will be used for the CRM integration procedure. Note, **to use this module, you need to have the [3CX Professional license level](https://www.3cx.com/phone-system/download-phone-system?resellerId=214267)**.
+Save the output XML file on your local machine and **do not edit it**, it will be used for the CRM integration procedure. Note, **to use the CRM integration module on 3CX server, you need to purchase the [3CX Professional level license](https://www.3cx.com/phone-system/download-phone-system?resellerId=214267)**.
+
+
+### 3CX System Configuration
 
 Let's perform the first time configuration of the 3CX system:
 
 1. [Sign up](https://www.3cx.com/ordering/pricing/) on the 3CX web page with preferred price choice
 
-2. Choose the location for the 3CX system, write down your license key and follow the required installation steps. Open the IP of the machine 3CX is installed on followed by port `5015` in a browser, e.g. `https://<IP_address>:5015`. The *3CX Web Configuration Tool* guides you through important network and security settings.
+2. Choose the location for the 3CX system, write down your license key and follow the required installation steps. Open the IP of the machine 3CX is installed on followed by port `5015` in a browser, e.g. ```https://<IP_address>:5015```. The *3CX Web Configuration Tool* guides you through important network and security settings.
 
 Check the following links for more details:
 
@@ -91,7 +96,7 @@ Check the following links for more details:
 
 ![](img_000012.png)
 
-3. Once the 3CX system installation has finished, open the *3CX Management console* via `https://<domain/IP>:5001`  
+3. Once the 3CX system installation has finished, open the *3CX Management console* via ```https://<domain/IP>:5001```
 
 ![](img_000013.png)
 
@@ -143,7 +148,7 @@ Type the IP address or domain name of your **3CX** system in **Domain or IP** fi
 
 - And press the **Test** button to check the CRM configuration.
 
-- To check the creation of contacts, try dialing a number and click on the **Contacts** item on the sidebar and enter the phone number to search in CRM:
+- To **check the creation of contacts**, try dialing a number and click on the **Contacts** item on the sidebar and enter the phone number to search in CRM:
 
 ![](img_000010.png)
 
@@ -151,16 +156,16 @@ Type the IP address or domain name of your **3CX** system in **Domain or IP** fi
 
 ![](test2.png)
 
-<icon class="image-icon">![Suggested](bulb.png)</icon> More information about the integration can be found on the following link: https://www.3cx.com/docs/crm-integration/
+<icon class="image-icon">![Suggested](bulb.png)</icon> More information about the integration process can be found at the following [link](https://www.3cx.com/docs/crm-integration/).
 
-6. Install [iOS](https://apps.apple.com/us/app/3cx-communications-system/id992045982), [Android](https://play.google.com/store/apps/details?id=com.tcx.sipphone14) or [Windows](https://www.3cx.com/user-manual/installation-windows/) app, navigate to your [3CX Web Client](https://www.3cx.com/user-manual/web-client/) via `https://<domain/IP>/webclient`, log in using the extension number and password from your email letter and click on *Activate your 3CX Browser Extension*, in the top left-hand corner of the Web Client click *Allow Notifications* to enable desktop notifications, you will see the blue phone icon in the extensions bar in your browser. Click on the icon to open the Browser Extension pop out window.
+6. Install [iOS](https://apps.apple.com/us/app/3cx-communications-system/id992045982), [Android](https://play.google.com/store/apps/details?id=com.tcx.sipphone14) or [Windows](https://www.3cx.com/user-manual/installation-windows/) app, navigate to your [3CX Web Client](https://www.3cx.com/user-manual/web-client/) via ```https://<domain/IP>/webclient```, log in using the extension number and password from your email letter and click on *Activate your 3CX Browser Extension*, in the top left-hand corner of the Web Client click *Allow Notifications* to enable desktop notifications, you will see the blue phone icon in the extensions bar in your browser. Click on the icon to open the Browser Extension pop out window.
 Now you can quickly and easily make and receive calls from your desktop without needing to open the full Web Client. Moreover, you can call to customers directly from Splynx.
 
 ![](img_000016.png)
 
 ![](img_000017.png)
 
-The calls history with its directions can be found in customer's profile, **Communications** tab
+The calls history with its directions can be found in customer's profile, the **Communications** tab
 
 ![](call_history.png)
 
@@ -169,3 +174,20 @@ The player to listen the call will be visible if the add-on receives `voice_file
 To each call item in the list the description message can be added, the call can be link to the existing ticket in Splynx, if the ticket is closed, it will be reopened automatically.
 
 ![](description_link.png)
+
+
+### Troubleshooting
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Case 1: Calls are not recorded if a web browser with the 3CX extension is used to interact with a customer</b></summary>
+<div markdown="1">
+
+Navigate to the 3CX server admin dashboard, click **Settings** and in the **Recording Quota** section **disable** the option `Compress recordings to save space (ADPCM format 256Kb per minute instead of PCM format 1Mb per minute of recording)`:
+
+![img](compression.png)
+
+The option **Compression** - enables to compress recordings in ADPCM format 256Kb to further conserve disk space.
+
+
+</div>
+</details>

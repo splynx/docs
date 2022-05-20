@@ -7,7 +7,7 @@ Splynx supports *NetFlow* protocol and calculates statistic information about pa
 
 Since Traffic Flow is fully compatible with *Cisco Netflow*,  it can be monitored with various utilities that are designed for Netflow e.g. *ntop*, *flow-tools*, *ManageEngine NetFlow Analyzer* etc.
 
-### Mikrotik Traffic Flow Configuration
+### Mikrotik Traffic Flow Configuration Overview
 
 The first thing to do is to enable *Traffic Flow* on the MikroTik and choose what router interface (-s) to monitor, all of these actions can done from the command line or from the GUI.
 
@@ -101,7 +101,7 @@ ip traffic-flow print
 ip traffic-flow target print
 ```
 
-### Splynx configuration
+### Splynx Configuration Overview
 
 To add your router to Splynx, open `Networking → Routers → Add`, in new window, specify your router options, select **NetFlow accounting** as seen below:
 
@@ -131,6 +131,54 @@ In `Config → Networking → NetFlow accounting` we can change its *Daemon* and
 With these configurations set, you should see traffic flowing on Splynx, e.g. open the customer's statistic to double check:
 
 ![](img_7.png)
+
+---
+### Example of RouterOS v7.2.3 configuration
+
+**Step 1:**
+
+In Splynx, navigate to `Networking → Routers`, press **Add**, specify the router **IP** and **Accounting** type:
+
+![img](exp1.jpg)
+
+**Step 2:**
+
+Go to `Customers → List`, open the necessary customer's profile, click on the **Services** tab and open the window to edit their Internet service. Specify the router that this service in connected to, the IP assignment method (pool or static) and the IP address:
+
+![img](exp2.jpg)
+
+**Step 3:**
+
+On the MikroTik device, navigate to `IP → DHCP Server → DHCP (tab) → DHCP Config` and **disable** the `Accounting` option.
+
+Then, open `PPP → Secrets (tab) → PPP Authentication&Accounting` and **disable** the `Accounting` option too.
+
+![img](exp3.jpg)
+
+**Step 4:**
+
+On the MikroTik device, navigate to `IP → Traffic Flow`, put the check-mark to **enable** the setting and set the value in the **Cache Entries** field. Make sure this value is at least `128k`, you can increase this value, but this depends on the amount of built-in RAM of the router.
+
+![img](exp4.jpg)
+
+**Step 5:**
+
+On the MikroTik device, in the **Traffic Flow Settings** window, click on the **Targets** button and add Splynx as the traffic flow target:
+
+- add your Splynx IP address to the **Dst. Address** and type your router IP address to the **Src. Address**, specify the **Port** value, it should be `9995` and select the **Version** value - `5`.
+
+![img](exp5.jpg)
+
+**Step 6:**
+
+Once the Traffic Flow is enabled on MikroTik router, please wait 5-10 minutes for traffic to appear.
+
+The traffic should be counted from the first finished flow that MikroTik sent to the Splynx *nfcapd* collector:
+
+![img](exp6.jpg)
+
+---
+
 
 ### Troubleshooting
 

@@ -9,7 +9,7 @@ Please follow the links below for tutorials of each of the sections of *Config s
 
 * [Main](configuration/main_configuration/main_configuration.md)
 
-* [CRM](configuration/crm/crm.md)
+* [Leads](configuration/crm/crm.md)
 
 * [Scheduling](configuration/scheduling/scheduling.md)
 

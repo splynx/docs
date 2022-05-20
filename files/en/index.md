@@ -258,7 +258,7 @@ Table of contents
   * [Voice](configuration/main_configuration/voice/voice.md)
   * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
 
-* [CRM](configuration/crm/crm.md)
+* [Leads](configuration/crm/crm.md)
   * [Leads stages](configuration/crm/leads_stages/leads_stages.md)
   * [Finance](configuration/crm/finance/finance.md)
   * [Preferences](configuration/crm/preferences/preferences.md)

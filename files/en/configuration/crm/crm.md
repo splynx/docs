@@ -10,17 +10,15 @@ The following are the tutorials pages for each of the aspects available for conf
 
 * [Finance](configuration/crm/finance/finance.md)
 
-* IMAP
+* [IMAP](configuration/crm/imap/imap.md)
 
-* Lead convert settings
+* [Lead convert settings](configuration/crm/lead_convert_settings/lead_convert_settings.md)
 
-* Leads fields
+* [Leads fields](configuration/crm/leads_fields/leads_fields.md)
 
-* Leads pipeline
+* [Leads pipeline](configuration/crm/leads_pipeline/leads_pipeline.md)
 
-* [Leads stages](configuration/crm/leads_stages/leads_stages.md)
-
-* Notifications
+* [Notifications](configuration/crm/notifications/notifications.md)
 
 * [Preferences](configuration/crm/preferences/preferences.md)
 

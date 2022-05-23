@@ -1,6 +1,6 @@
 CRM Dashboard
 ===
-The CRM dashboard provides an overview of all sales activities regarding prospective customers.
+The Leads dashboard provides an overview of all sales activities regarding prospective customers.
 
 The dashboard represents progressive and interactive data statistics for each contributing headers. You can see total amounts of deals and quotes with an estimated total revenue, as well as, the number of leads for the current administrator and all leads within the system.
 
@@ -12,10 +12,10 @@ A pie chart for the **My leads by stages** section - which displays the various 
 
 A table for the  **Recent Activities** section - representing live information of all actions applied to the leads in the system.
 
-![CRM Dashboard](CRM_dashboard.jpg)
+![CRM Dashboard](CRM_dashboard.png)
 
 A table for the **Leads Info** section - tabulates a breakdown of the quotes vs deals and the number thereof as well as the total revenue it may generate.
 
 A table for the **Upcoming follow-ups** - displays reminder notifications configured for each lead in their information page.
 
-![CRM Dashboard Extended](CRM_dashboard1.jpg)
+![CRM Dashboard Extended](CRM_dashboard1.png)

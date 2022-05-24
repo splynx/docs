@@ -1,6 +1,8 @@
 Finance
 =============
 
+![img](icon.png)
+
 Below are the finance settings available for the Leads module.
 
 ![finance](finance.png)

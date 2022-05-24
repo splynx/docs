@@ -1,6 +1,8 @@
 Lead convert settings
 =============
 
+![img](icon.png)
+
 ![img](1.png)
 
 **Lead status conversion type**

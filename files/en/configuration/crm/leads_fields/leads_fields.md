@@ -1,6 +1,8 @@
 Leads fields
 =============
 
+![img](icon.png)
+
 ![img](1.png)
 
 **Default fields**

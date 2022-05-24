@@ -128,17 +128,23 @@ The permission and owner to **.ssh** folder should be the next `drwxr-xr-x  2 ro
 Type the IP address or domain name of your **3CX** system in **Domain or IP** field and press the **Test Connection** button to check the connection. Press **Save** button in order to save the entered IP address or domain name.
 
 
-5. To upload your XML file to 3CX system, click on `Settings → CRM Integration` and follow the required CRM integration steps as shown on the screenshots.
+5. To **upload your XML file to 3CX system**, navigate to 3CX `Management Console → Settings → CRM` and choose the **Server side** tab.
 
 ![](img_000015.png)
 
-- Click the **Add** button to upload the XML file:
+- Click the **Add** button to upload your XML template file to 3CX:
 
 ![](add.png)
 
 - After that, fill in the **API Key/Secret/URL** values in the required fields:
 
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:**
+
+The **Domain Part** field should contain only the main domain address (without ```https//:``` | ```www.```, etc.), for example if we have the address ```https://www.portal.mysplynx.com/```, only ```portal.mysplynx.com```  should be used.
+
 ![](fill_out.png)
+
+![](fill_out1.png)
 
 - Then, scroll down and enable the **Call Journaling** and **Contract Creation** option blocks:
 

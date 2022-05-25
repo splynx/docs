@@ -149,11 +149,17 @@ Go to `Customers → List`, open the necessary customer's profile, click on the 
 
 **Step 3:**
 
-On the MikroTik device, navigate to `IP → DHCP Server → DHCP (tab) → DHCP Config` and **disable** the `Accounting` option.
+If we use Radius on our router to authorize customers, we should **disable Radius accounting** for services that must be counted by NetFlow:
 
-Then, open `PPP → Secrets (tab) → PPP Authentication&Accounting` and **disable** the `Accounting` option too.
+- On the MikroTik device, navigate to `IP → DHCP Server → DHCP (tab) → DHCP Config` and **disable** the `Accounting` option;
+
+- Open `PPP → Secrets (tab) → PPP Authentication&Accounting` and **disable** the `Accounting` option there:
 
 ![img](exp3.jpg)
+
+- Navigate to `IP → Hotspot`, click on the **Server Profiles** tab, choose your profile and **disable** the `Accounting` option:
+
+![img](exp3.1.png)
 
 **Step 4:**
 

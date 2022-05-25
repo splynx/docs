@@ -51,8 +51,8 @@ Let's consider the **invoice statuses** in details:
 | ------------ | ------------ |
 | <icon class="image-icon">![](unpaid.png)</icon> | the invoice has been created, but the customer has not made any payments towards the balance. The customer is expected to pay the invoice's amount due|
 | <icon class="image-icon">![](pending.png)</icon> | the invoice has not been paid and is not yet past the due date but payment is sent for processing. Once the invoice payment is processed successfully, the invoice will be updated to either the `Paid` or `Unpaid` status. If the due period has been exceeded and the due amount hasn't been paid, a status will be changed to `Pending Overdue` or `Overdue`|
-| <icon class="image-icon">![](paid.png)</icon> | the invoice was paid in full from customer's balance, the status is applied only if customer has enough funds |
-|<icon class="image-icon">![](partially_paid.png)</icon> | the payment was received, but it does not cover the full invoice amount (invoice total due amount). The statistics of `Partially paid` invoices will be included in the `Due` category of the **Total invoiced** table |
+| <icon class="image-icon">![](paid.png)</icon> | the invoice was paid in full from customer's balance, the status is applied only if customer has enough funds.|
+|<icon class="image-icon">![](partially_paid.png)</icon> | the payment was received, but it does not cover the full invoice amount (invoice total due amount). The statistics of `Partially paid` invoices will be included in the `Paid` category of the **Total invoiced** table |
 | <icon class="image-icon">![](overdue.png)</icon> | no payment was received for this invoice and the `Payment due` date has already passed |
 | <icon class="image-icon">![](deleted.png)</icon> | the invoice was marked as deleted. If we apply the `Mark as deleted` option for unpaid invoice, the invoice will be marked as deleted and its auto (`+Debit`) transaction (-s) will be removed. The manual transaction (-s), that was added to the invoice, will remain (even when `Delete completely` option was used) in any case. It's required to remove it manually |
 
@@ -95,14 +95,15 @@ The option `Same as document date` means that the value is equal to zero. To be 
 - **Price** - a price of the plan, the value will be loaded automatically if the plan is chosen from the selection menu;
 - **VAT %** - *Value Added Tax* is a flat tax levied on an item. Learn more about [Taxes](configuration/finance/taxes/taxes.md);
 
-
-The option **Load items from uncharged transactions** in the **One-time** invoice can be used to **add the future item** (an uncharged transaction with the option `Include transaction in next recurring invoice`).
-
-3. Press **Save** button to create the invoice.
-
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
 - The items with negative price value can be added to the invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`.
+
+
+3. Press the **Save** button to create the invoice.
+
+
+The option **Load items from uncharged transactions** into the **One-time** invoice can be used to **add the future item** (an uncharged transaction with the option `Include transaction in next recurring invoice`).
 
 ![Create invoice](create_invoice1.png)
 
@@ -110,9 +111,8 @@ The option **Load items from uncharged transactions** in the **One-time** invoic
 
 ![Create invoice](create_invoice3.png)
 
-
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>click here to see the step-by-step example</b></summary>
+<summary><b>Loading a future item to a recurring invoice - click here to see the step-by-step example</b></summary>
 <div markdown="1">
 
 **STEP 1**
@@ -131,13 +131,17 @@ Add some service in customer profile, e.g. Internet service
 
 **STEP 3**
 
-In `Billing → Billing config` press the **Charge & Invoice** button to charge the customer
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+In Splynx v4.0 the **Charge & Invoice** button was deprecated. To charge a customer, navigate to the **Finance documents** tab, press **Add document** and in drop-down list choose the **Recurring invoice** item.
 
 ![](img4.png)
 
+![](img4.1.png)
+
 **STEP 4**
 
-Double check if the future item has been added to newly created invoice
+Double check if the future item has been added to a newly created recurring invoice
 
 ![](img5.png)
 
@@ -169,23 +173,25 @@ Check if the future item is present in `Billing → Transactions` or in `Billing
 </details>
 
 
-Also, take into consideration the following:
+<icon class="image-icon">![image](information.png)</icon>  Also, take into consideration the following:
 
-- during the converting a [quote](crm/quotes/quotes.md) to the invoice in customer's profile (`Lead → Quotes` tabs) or the converting some lead account to customer one, the auto transaction will be created. If we remove the created invoice, the auto transaction will be removed as well;
+- during the converting a [quote](crm/quotes/quotes.md) to the invoice in customer's profile (`Lead → Quotes` tabs) or the converting some lead account to customer one, the **auto transaction will be created**. If we remove the created invoice, the auto transaction will be removed;
 
-- if we create the invoice manually e.g. using the **Add document → One-time invoice** button and after that remove such invoice, its transaction will be removed automatically;
+- if we create the invoice manually e.g. using the **Add document → One-time invoice** button and after that remove such invoice, its transaction will be removed automatically as well;
 
 These statements and example above also apply to `Delete` option in drop-down menu with mass **Actions** in `Finance → Invoices`.
 
 ---
 
-While **deleting the `Unpaid` invoice in the customer's profile** under `Billing → Finance documents` tab, it's possible to use `Mark as delete` option instead of delete invoice completely. The option can be useful when we want to have a fuller context of the customer's billing flow.
+While **deleting the `Unpaid` invoice in the customer's profile** under `Billing → Finance documents` tab, it's possible to use `Mark as delete` option instead of delete invoice completely.
+
+In this case, the invoice is marked as `Deleted`, its auto transaction (-s) will be removed. The future item related to the invoice will remain in any case. But such future item can be deleted manually.
 
 ![](mark_as_deleted.png)
 
-In this case, the invoice will be marked as `Deleted`, its auto transaction (-s) will be removed. The future item related to the invoice will remain in any case. But such future item can be deleted manually.
-
 ![](mark_as_deleted1.png)
+
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** It is not recommended to completely delete any invoice from the customer's profile. The best idea is to create a [Credit note](finance/credit_notes/credit_notes.md) to keep a complete context of the billing flow to the customer.
 
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
@@ -195,9 +201,19 @@ In this case, the invoice will be marked as `Deleted`, its auto transaction (-s)
 
 ---
 
-To **edit an unpaid invoice** click on the <icon class="image-icon">![Edit icon](icon5.png)</icon> icon under the customer's `Billing → Finance documents` tab.
+To **edit any unpaid invoice** click on the <icon class="image-icon">![Edit icon](icon5.png)</icon> icon under the customer's `Billing → Finance documents` tab.
 
 ![Invoice mobile rent](edit_invoice.png)
+
+When editing a recurring invoice, its possible to change its **Period**. Pay attention, if the period is edited, the **total sum of the item/-s won't be changed** but in the next charge (new created recurring invoice) the pre-specified period won't be counted. <!-- SPL-9263 -->
+
+![Invoice mobile rent](edit_invoice2.png)
+
+- If the invoice is in the `Not paid` status, we can edit any fields, items, dates of the invoice.
+
+- If the invoice is in the `Partially paid` status, only the following fields can be edited: **Note**, **Memo**, **Document date**, **Payment due date**, **Number** and existing additional fields.
+
+- If the invoice is in the `Paid` status, we can edit only **Note**, **Memo** and existing additional fields.
 
 ---
 
@@ -216,7 +232,7 @@ Also if a new body text is manually typed, you can save it as a new template.
 
 #### Invoice Due Amount and Partial Payment
 
-**Due Amount** - an invoice details how much your customer owes you when payment is due for some provided service. The total due amount depends on the total cost per service, fees (taxes),  etc.
+**Due Amount** - invoice details how much your customer owes you when payment is due for some provided service. The total due amount depends on the total cost per service, fees (taxes),  etc.
 
 **Partial Payment** refers to the payment of an invoice that is less than the total amount due. In this case, the invoice will have the `Partially paid` status.
 
@@ -233,13 +249,11 @@ If the next payment is more than the invoice due amount, the money will be added
 
 **Delete invoice and payment**
 
-- If an invoice is paid in one payment (payment amount is equal to the total invoice amount), that payment will be deleted along with the invoice deletion;
-
-- If an **invoice is paid by more than one payment, that invoice cannot be deleted until all related payments are deleted**;
+- If the invoice is paid in one payment (payment amount is equal to the total invoice amount) or invoice is paid by more than one payment, such **invoice cannot be deleted until all related payments are deleted**
 
 ![image](related_payments.png)
 
-- To check the payments which are related to the paid invoice, choose `All invoices` under customer's finance documents tab, find the necessary invoice in the table and in the **Payment** column, next to the invoice item, click on three dots to **Show all** payments.
+- To **check the payments which are related to the paid invoice**, choose `All invoices` under customer's finance documents tab, find the necessary invoice in the table and in the **Payment** column, next to the invoice item, click on three dots to **Show all** payments.
 
 ![image](inv_due_amount3.png)
 
@@ -249,7 +263,7 @@ If the **Payment** column is not displayed in the table, click the **Show/hide c
 
 ![image](inv_due_amount5.png)
 
-- To **delete a payment (-s) associated with an invoice**, click on the IDs of displayed payments, the filter will be applied -  the payments that are associated with a specific invoice ID will be displayed, click on the <icon class="image-icon">![icon7](icon7.png)</icon> (Delete) icon next to the necessary payment item.
+- To **delete a payment (-s) associated with an invoice**, click on the ID of displayed payment, the filter will be applied -  the payment that is associated with a specific invoice ID will be displayed in new window with all details, click on the **Actions** button to open additional menu, choose there the **Delete** option.
 
 ![image](inv_due_amount6.png)
 
@@ -280,9 +294,9 @@ If the customer makes the new payment for 50$, the invoice will be paid and paym
 
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
-- a `Partially paid` status does not apply to the `Overdue` invoice;
+- the `Partially paid` status does not apply to the `Overdue` invoice;
 
--  if a customer has several `Unpaid` invoices and payment is received, the invoices will be paid in the order of their creation.
+-  if a customer has several `Unpaid` invoices and payment is received, the **invoices will be paid in the order of their creation**.
 
 ---
 

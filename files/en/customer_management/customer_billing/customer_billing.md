@@ -333,8 +333,8 @@ You might also be interested in [Finance settings](configuration/finance/finance
 
 ### Credit note
 
-**Credit Notes** help to simplify the invoicing processes, it is useful for adjusting errors in created invoices. It allows you to lawfully amend an invoice, without having to delete or alter it.
-In other words, the *Credit Note* - a `-Credit` transaction added to customers account after making payments (increases customers account balance).
+The **Credit Notes** help to simplify the invoicing processes, it is useful for adjusting errors in created invoices. It allows you to lawfully amend an invoice, without having to delete or alter it.
+In other words, the *Credit Note* - it's the `-Credit` transaction added to customers account after making payments (increases customers account balance).
 
 ![image](credit_note1.png)
 
@@ -370,7 +370,7 @@ Usually a payment is related to specific invoice however it can be added manuall
 
 **Future item**  - a transaction with the `Include transaction in next recurring invoice` option enabled, it can be either `+Debit` or `-Credit` transaction, depends on what price value (negative/positive) is set there.
 
-**Example**
+**Example:**
 
 A future item with R100 price will be shown as `+Debit` transaction and a future item with negative price (-R200) will be represented as `-Credit` transaction.
 
@@ -405,7 +405,7 @@ The option `Include transaction in next recurring invoice` defines if the curren
 
 ### Statement
 
-**Statement** (an account statement) - is a document that summarizes and lists all the *Invoice/Payments* or *Transactions* records for a certain period of time. Such report can be sent to the customer on the email, saved to their [documents](customer_management/customer_documents/customer_documents.md) or exported to the separate PDF file.
+**Statement** (account statement) - is a document that summarizes and lists all the *Invoice/Payments* or *Transactions* records for a certain period of time. Such report can be sent to the customer on the email, saved to their [documents](customer_management/customer_documents/customer_documents.md) or exported to the separate PDF file.
 
 To add the *Statement*:
 
@@ -429,11 +429,17 @@ The icon <icon class="image-icon">![](print.png)</icon> is designed to print, co
 
 ------------
 
-The **Total invoiced** and **Total paid** tables show the statistic of all finance documents in relation to the particular customer. These tables can be found at the bottom of *Finance documents* tab. The **Total paid** table may differ depending on what [payment methods](configuration/finance/payment_methods/payment_methods.md) are set up in the system.
+The **Total invoiced** and **Total paid** tables show the statistic of all finance documents in relation to the particular customer. These tables can be found at the bottom of the *Finance documents* tab. The **Total paid** table may differ depending on what [payment methods](configuration/finance/payment_methods/payment_methods.md) are set up in the system.
 
 ![image](6.png)
 
-The statistics of `Partially paid` invoices will be included in the `Due` category of the **Total invoiced** table.
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+- The `Partially paid` and `Due` statistics aren't shown in the **Total invoiced** table;
+
+- The statistics of `Paid` and `Partially paid` invoices will be included in the `Paid` category of the **Total invoiced** table;
+
+- The `Unpaid` category includes statistics of the `Due`(unpaid) and `Partially paid` invoices.
 
 ------------
 
@@ -445,11 +451,11 @@ We can also **customize each of the table** related to all types of finance docu
 
 ## Transactions
 
-**Transactions** are divided into 2 types: `+Debit` and `-Credit`.
+**Transactions** are divided into 2 types: `Debit` and `Credit`.
 
-`+Debit` - a transaction added to customer account with amount to be paid (decreases customers account balance, money is taken out of the account);
+`Debit` - transaction added to customer account with amount to be paid (decreases customers account balance, money is taken out of the account);
 
-`-Credit` - a transaction added to customers account after making payments (increases customers account balance, money is added to customer account).
+`Credit` - transaction added to customers account after making payments (increases customers account balance, money is added to customer account).
 
 ![image](transaction1.png)
 
@@ -489,12 +495,12 @@ In this section you can set up the billing parameters of the **selected customer
 * **Billing Enabled** - enables or disables billing for customer (whether the system should take customer into account or not);
 * **Payment period** - period the customer will be billed for;
 * **Payment method** - means in which way client will make payments; credit card, cash, etc.;
-* **Billing day** - when the customer will be charged and invoices will be generated (default value is `1`st day of the month. The available values are from `1` to `28`);
+* **Billing day (automatic document date)** - when the customer will be charged and invoices will be generated (default value is `1`st day of the month. The available values are from `1` to `28`);
 * **Payment due (days after billing day)** - when the customer needs to make payments before being blocked. **Even though the customer will have a blocked status, their services will still be accounted** (default value is `15` days after `billing day`. The available values are from `1` to `28`). From Splynx v4.0, the current option cannot be disabled in select menu, that solved the problem when the invoices with `overdue` status could be created from scratch <!-- SPL-8581 -->;
-* **Blocking period (days after payment due)** - allows to extend the period when customer will be blocked (by default the value is `0` days. The available values are `Do not block` and from `0` to `99` days). The option `Do not block` allows to disable customer blocking after `Payment due` date, if the option is enabled, the customer deactivation won't work as well. In addition, if the value is set to `Do not block`, the status of the *Next block* field will be shown as `Disabled` for current customer <!-- SPL-8937 --> ;
-* **Next block** - the indicator for customer's profile with recurring billing type that shows the date when customer will be blocked. Click on <icon class="image-icon">![image](edit_icon.png)</icon> (Edit) button to change the next block date. To be precise, it implies that the date of the last charge (from which the billing due is calculated) will be changed. Pay attention that the blocking date will be changed only once for the current billing period based on the unpaid recurring invoice.
+* **Blocking period (days after payment due)** - allows to extend the period when customer will be blocked (by default the value is `Same as payment due date` (0 days). The available values are `Do not block` and from `0` to `99` days). The option `Do not block` allows to disable customer blocking after `Payment due` date, if the option is enabled, the customer deactivation won't work as well. In addition, if the value is set to `Do not block`, the status of the *Next block* field will be shown as `Disabled` for current customer <!-- SPL-8937 --> ;
+* **Next block** - the indicator for customer's profile with recurring billing type that shows the date when customer will be blocked. Click on the <icon class="image-icon">![image](edit_icon.png)</icon> (**Edit**) button to change the next block date. To be precise, it implies that the date of the last charge (from which the billing due is calculated) will be changed. Pay attention that the blocking date will be changed only once for the current billing period based on the unpaid recurring invoice.
 In case, the options `Block customers on weekends / on holidays` in `Config → Finance → Automation` **are not used** and the date of blocking coincides with the weekends or holidays (**Holidays list** in `Config → Main → Localization`), the date of block **will be moved to the next available workday in your area**.
-If the parameter `Enable processing of Billing Due` in `Config → Finance → Automation` is disabled, the status will be shown as `Disabled in config`.
+If the parameter `Enable processing of Billing Due` in `Config → Finance → Automation` is disabled, the status will be shown as `Disabled in config`. Also, the **Set next block date** window displays information about the date of **Next deactivation** .
 The status `Already blocked` means that customer has been blocked, the status `In the next billing cycle` means that the customer's balance exceeds the minimum required value;
 * **Deactivation period (days after blocking) (Grace period)** - when the customer's services will be marked as inactive, client no longer uses services and the system no longer accounts for it (by default the value is `10`. The available values are `Do not block` and from `1` to `99` days after `Payment due`);
 * **Minimum balance** - defines the minimum amount of funds that must be available in the customer account balance at any time, even after the service charge, in order to avoid blocking. The default value is `0`. This value can be changed to another according to your needs. The negative value (e.g. `-50`) is allowed to use as well;
@@ -517,9 +523,13 @@ The recurring invoice will be auto generated on the 1st day of next month. Let's
 
 ![image](min_balance_4.png)
 
+<!--
+
 - If we have `50` value as a minimum balance requirement, a customer need to pay R150 for the invoice to keep R50 on the balance to avoid blocking. If a customer has less than 50 on the balance, they will be blocked.
 
 ![image](min_balance_3.png)
+
+-->
 
 - If we have `-50` value as a minimum balance requirement, a customer can pay only R50 for the invoice, because it's allowed to have a negative balance, but no less (`-60`, `-70` etc.) than`-50`. Pay attention, if a customer pays R60, the account balance will be `-40` that is acceptable value. Even if a customer pays the full price for the invoice, the account balance will be equal to `0` and, as a result, a zero value will be greater than allowed minimum balance.
 
@@ -531,9 +541,9 @@ The recurring invoice will be auto generated on the 1st day of next month. Let's
 </details>
 
 * **Partner percent** - shows the individual partner percent value the customer belongs to. The global `Partner's commission (%)` setting is located in `Config → System → Company Information`;
-* **Auto create invoices**  - toggle enables/disables an automatic invoice generation for specific customer when the **Charge & Invoice** button was used in `Customers → View → Billing Overview`. The global option to **Enable automatic issuing** is located in `Config → Finance → Automation` (see [Automation config](configuration/finance/automation/automation.md))
+* **Auto create invoices**  - toggle enables/disables automatic generation of an invoice for a particular customer on the billing day. The global option to **Enable automatic issuing** is located in `Config → Finance → Automation` (see [Automation config](configuration/finance/automation/automation.md)).
 
-> When the toggle **Auto create invoices** is not enabled under the customer's `Billing → Billing config` tab, you can create invoice manually using the **Add document → One-Time invoice** or **Add document → Recurring invoice** buttons under `Billing → Finance documents` tab;
+When the toggle **Auto create invoices** is not enabled under the customer's `Billing → Billing config` tab, you can create invoice manually using the **Add document → One-Time invoice** or **Add document → Recurring invoice** buttons under `Billing → Finance documents` tab;
 
 * **Send billing notifications** - toggle allows individually to enable/disable finance notifications for customer, the global configuration is located in `Config → Finance → Notifications`.
 
@@ -552,9 +562,9 @@ The recurring invoice will be auto generated on the 1st day of next month. Let's
 
 #### Billing address
 
-Billing address can be configured here if it is different to the address on the **Main information** tab of the customer. By default, it is left empty and the address is taken from the **Main information** tab of the customer.
+Billing address can be configured here if it is different to the address on the **Information** tab of the customer. By default, if it's left blank and the address is taken from the **Information** tab of the customer.
 
-Specific **billing address** can be set here if the customer uses a different address for billing from the listed one on the *Main Information* page.
+Specific **billing address** can be set here if the customer uses a different address for billing from the listed one on the *Information* page.
 
 ![Billing address](billing_address.png)
 
@@ -565,32 +575,9 @@ Specific **billing address** can be set here if the customer uses a different ad
 
 ![Actiond](actions_tab.png)
 
-##### Charge & Invoice
-
-<icon class="image-icon">![Charge button](charge_button.png)</icon>
-
-Customers can be charged **manually** with the `Charge & Invoice` button.<br>
-Simply click on the button, a *Charge and Invoice* window will appear where you can select the date and period of charging, then click on `Preview` to view service (-s) description and click on `Charge & Invoice` button to manually charge the customer.
-
-The system will automatically charge the customer and the new transaction and invoice items will be created, they can be viewed in the **Transactions** or **Finance documents** tab.
-
-![To charge](charge.png)
-
-![New transaction](new_transaction.png)
-
-![image](new_invoice.png)
-
-<icon class="image-icon">![image](information.png)</icon> **NOTE:**
-
-- If you charge a customer **manually**, the new invoice will be created only if the `Auto create invoices` toggle is enabled in customer's `Billing → Billing config → Billing settings`;
-
-![Billing settings](billing_settings_charge.png)
-
-- The global `Auto create invoices` setting is located in `Config → Finance → Settings` (*Invoices settings* section).
-
 ##### Payment Calendar
 
- **Payment Calendar** is used to generate a payment schedule list which defines the dates and amounts of payments to be made in the selected period.
+**Payment Calendar** is used to generate a payment schedule list which defines the dates and amounts of payments to be made in the selected period.
 
 You can generate a payment calendar for a customer using templates.
 
@@ -604,21 +591,59 @@ By default payment calendar generating is disabled. To enable it you need to act
 
 <icon class="image-icon">![image](warning.png)</icon> **IMPORTANT:**
 
-Under the **Billing Settings** section, the calendar shows the dates of *billing*, *blocking* and *deactivation* of the customer, the calculation is based on the values set in `Billing day`, `Payment due`, `Deactivation period` fields, the changes made in the field **Next block** **will be ignored**.
+Under the **Billing Settings** section, the calendar shows the dates of *billing*, *blocking* and *deactivation* of the customer, the calculation is based only on the values set in `Billing day`, `Payment due`, `Deactivation period` fields, the changes made in the field **Next block** will be applied to the customer's profile but the **new date/-s won't be displayed in the calendar**.
 
 ![Enable payment calendar](enable_payment_calendar.png)
+
+
+##### Add Recurring Invoice
+
+The **Add recurring invoice** button does not work as a button instance, it acts as a hint for those who used the **Charge & Invoice** button in previous version of Splynx.
+
+In Splynx v4.0, in order to create a recurring invoice for a customer, navigate to `Billing → Finance documents`, click **Add document** and select **Recurring invoice** from the drop-down list.
+
+![img](recurring_invoice1.png)
+
+In the appeared window, you can change the **Number**, **Document date**, **Period**, **Payment due date**, add **Note** to the customer or add more items to the invoice.
+
+![img](recurring_invoice2.png)
+
+If you change the invoice **Period**, the service item/-s re-calculation will be performed automatically and you will see the result immediately.
+
+![img](recurring_invoice3.png)
+
+The date from which the total invoice amount is counted refers to the date on which the customer was previously charged.
+
+After the **Save** button is pressed, system will automatically charge the customer and the new transaction and invoice items will be created, you can view them in the **Transactions** or **Finance documents** tab.
+
+![img](recurring_invoice4.png)
+
+![img](recurring_invoice5.png)
+
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
+
+The recurring invoice can be added only if:
+
+- the customer has an active service, e.g. Internet;
+
+- the `Auto create invoices` toggle is enabled in customer's `Billing → Billing config → Billing settings`. The global `Auto create invoices` settings are located in `Config → Finance → Settings` (*Invoices settings* section).;
+
+![Billing settings](billing_settings_charge.png)
+
+
+
 
 **Cancel last recurring invoice**
 
 <icon class="image-icon">![Cancel Charge](cancelcharge_icon.png)</icon>
 
-This button can be used to cancel the previous bill of a customer. This feature ensures that charges are cleared appropriately in the system by deleting the invoice and transaction pertaining to the charge.
+This button is used to cancel the customer's previous recurring invoice. This feature ensures that charges are properly cleared in the system by deleting the invoice and transaction associated with the account.
 
 **Save**
 
 <icon class="image-icon">![Save button](save_icon.png)</icon>
 
-Save any change made in the customer Billing tab, the button is located at the bottom of the page.
+Save any change made in the customer **Billing config** tab, the button is located at the bottom of the page.
 
 #### Proforma Invoice settings
 

@@ -3,7 +3,7 @@ Customer billing
 
 **Contents:**
 
-- 1. [Finance documents](customer_management/customer_billing/customer_billing.md#finance_documents)
+-  [1. Finance documents](customer_management/customer_billing/customer_billing.md#finance_documents)
 	- [Invoices: One-time, Recurring and Proforma](customer_management/customer_billing/customer_billing.md#invoices)
 		- [Invoice statuses](customer_management/customer_billing/customer_billing.md#invoices_statuses)
 		- [Invoice operations](customer_management/customer_billing/customer_billing.md#invoices_operations)
@@ -20,9 +20,9 @@ Customer billing
 	- [Future Items](customer_management/customer_billing/customer_billing.md#future_items)
 	- [Statement](customer_management/customer_billing/customer_billing.md#statement)
 
-- 2. [Transactions](customer_management/customer_billing/customer_billing.md#transactions)
+-  [2. Transactions](customer_management/customer_billing/customer_billing.md#transactions)
 
-- 3. [Billing config](customer_management/customer_billing/customer_billing.md#billing_config)
+-  [3. Billing config](customer_management/customer_billing/customer_billing.md#billing_config)
 	- [Billing settings](customer_management/customer_billing/customer_billing.md#billing_settings)
 	- [Payment accounts](customer_management/customer_billing/customer_billing.md#payment_accounts)
 	- [Billing address](customer_management/customer_billing/customer_billing.md#billing_address)

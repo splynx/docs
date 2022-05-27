@@ -9,21 +9,21 @@ Please follow the links below for tutorials of each of the sections of *Config s
 
 * [Main](configuration/main_configuration/main_configuration.md)
 
-* [CRM](configuration/crm/crm.md)
-
-* [Scheduling](configuration/scheduling/scheduling.md)
-
-* [Inventory](configuration/inventory/inventory.md)
-
 * [Finance](configuration/finance/finance.md)
-
-* [Helpdesk](configuration/support/support.md)
 
 * [Networking](configuration/network/network.md)
 
-* [Voice](configuration/voice/voice.md)
+* [Helpdesk](configuration/support/support.md)
+
+* [Scheduling](configuration/scheduling/scheduling.md)
+
+* [Leads](configuration/crm/crm.md)
+
+* [Inventory](configuration/inventory/inventory.md)
 
 * [Integrations](configuration/integrations/integrations.md)
+
+* [Voice](configuration/voice/voice.md)
 
 * [Tools](configuration/tools/tools.md)
 

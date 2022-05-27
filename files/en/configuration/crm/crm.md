@@ -1,17 +1,24 @@
-Customer relationship management(CRM)
+Leads
 =============
 
-**_Config -> CRM_**
-
-All the functionalities of the CRM module within Splynx can be configured to your preferences within the means of the available settings provided.
+All the functionalities of the Leads module within Splynx can be configured to your preferences within the means of the available settings provided.
 
 ![crm](crm.png)
 
-The following are the tutorials pages for each of the aspects available for configuration in the Splynx CRM module:
+The following are the tutorials pages for each of the aspects available for configuration in the Splynx Leads module:
+
 
 * [Finance](configuration/crm/finance/finance.md)
 
-* [Leads stages](configuration/crm/leads_stages/leads_stages.md)
+* [IMAP](configuration/crm/imap/imap.md)
+
+* [Lead convert settings](configuration/crm/lead_convert_settings/lead_convert_settings.md)
+
+* [Leads fields](configuration/crm/leads_fields/leads_fields.md)
+
+* [Leads pipeline](configuration/crm/leads_pipeline/leads_pipeline.md)
+
+* [Notifications](configuration/crm/notifications/notifications.md)
 
 * [Preferences](configuration/crm/preferences/preferences.md)
 

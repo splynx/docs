@@ -146,15 +146,26 @@ The **Domain Part** field should contain only the main domain address (without `
 
 ![](fill_out1.png)
 
-- Then, scroll down and enable the **Call Journaling** and **Contract Creation** option blocks:
+And press the **Test** button to check the CRM configuration.
+
+Then, scroll down and enable the **Call Journaling**:
 
 ![](call_journaling.png)
 
-![](contract_creation.png)
+If you want a new lead or customer in Splynx to be created automatically if someone calls from an unknown number - **enable Contact creation** in the template settings.
 
-- And press the **Test** button to check the CRM configuration.
+![](contact_creation.png)
 
-- To **check the creation of contacts**, try dialing a number and click on the **Contacts** item on the sidebar and enter the phone number to search in CRM:
+In the **Create Lead or Contact** field can be selected the following:
+
+- `Contact` - new customer will be created in Splynx;
+- `Lead` - new Lead will be created in Splynx.
+
+
+
+
+
+To **check the creation of contacts**, try dialing a number and click on the **Contacts** item on the sidebar and enter the phone number to search in CRM:
 
 ![](img_000010.png)
 
@@ -197,3 +208,17 @@ The option **Compression** - enables to compress recordings in ADPCM format 256K
 
 </div>
 </details>
+<br>
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Case 2: Delete contacts with an unknown number</b></summary>
+<div markdown="1">
+
+If new contacts were created with unknown numbers and you want to delete them, navigate to `Advanced → Contacts` and click on the `X` button under the contact that you wish to delete from your 3cx system:
+
+![](delete_contact.png)
+
+
+</div>
+</details>
+<br>

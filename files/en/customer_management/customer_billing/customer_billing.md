@@ -1,6 +1,40 @@
 Customer billing
 ==========
 
+**Contents:**
+
+-  [1. Finance documents](customer_management/customer_billing/customer_billing.md#finance_documents)
+	- [Invoices: One-time, Recurring and Proforma](customer_management/customer_billing/customer_billing.md#invoices)
+		- [Invoice statuses](customer_management/customer_billing/customer_billing.md#invoices_statuses)
+		- [Invoice operations](customer_management/customer_billing/customer_billing.md#invoices_operations)
+		- [One-time Invoice](customer_management/customer_billing/customer_billing.md#invoices_one_time)
+		- [Load Future Item to One-time Invoice](customer_management/customer_billing/customer_billing.md#load_future_one_time)
+		- [Loading Future Item to Recurring Invoice](customer_management/customer_billing/customer_billing.md#load_future_recurring_time)
+		- [Delete Invoice and Payment](customer_management/customer_billing/customer_billing.md#del_inv_payment)
+		- [View Invoice](customer_management/customer_billing/customer_billing.md#view_invoice)
+		- [Edit invoice](customer_management/customer_billing/customer_billing.md#edit_invoice)
+		- [Send Invoice](customer_management/customer_billing/customer_billing.md#send_invoice)
+		- [Invoice Due Amount and Partial Payment](customer_management/customer_billing/customer_billing.md#invoice_due)
+	- [Credit Note](customer_management/customer_billing/customer_billing.md#credit_note)
+	- [Payment](customer_management/customer_billing/customer_billing.md#payment)
+	- [Future Items](customer_management/customer_billing/customer_billing.md#future_items)
+	- [Statement](customer_management/customer_billing/customer_billing.md#statement)
+
+-  [2. Transactions](customer_management/customer_billing/customer_billing.md#transactions)
+
+-  [3. Billing config](customer_management/customer_billing/customer_billing.md#billing_config)
+	- [Billing settings](customer_management/customer_billing/customer_billing.md#billing_settings)
+	- [Payment accounts](customer_management/customer_billing/customer_billing.md#payment_accounts)
+	- [Billing address](customer_management/customer_billing/customer_billing.md#billing_address)
+	- [Billing actions](customer_management/customer_billing/customer_billing.md#billing_actions)
+	- [Payment calendar](customer_management/customer_billing/customer_billing.md#payment_calendar)
+	- [Add Recurring Invoice](customer_management/customer_billing/customer_billing.md#add_recurring_invoice)
+	- [Cancel last Recurring Invoice](customer_management/customer_billing/customer_billing.md#cancel_recurring_invoice)
+	- [Save (changes)](customer_management/customer_billing/customer_billing.md#save_changes)
+	- [Proforma Invoice Settings](customer_management/customer_billing/customer_billing.md#proforma_invoice_settings)
+	- [Reminders Settings](customer_management/customer_billing/customer_billing.md#reminders_settings)
+
+
 This is your centralized finance department for each customer. Here you can customize your customer's billing to suit agreements and unique terms made with the respective customer, with regards to how they will be billed and interactions thereof.
 
 The customer **Billing** tab is divided into 3 sub-tabs:
@@ -9,7 +43,8 @@ The customer **Billing** tab is divided into 3 sub-tabs:
 * **Transactions** - all operations related to the customer can be found here;
 * **Billing config** - the billing configuration page for the specific customer in Splynx.
 
-
+<a id="finance_documents"></a>
+<br>
 ## Finance documents
 
 In this section can be found all financial documents related to the particular customer in Splynx or can be added the new ones:
@@ -34,7 +69,8 @@ In this section can be found all financial documents related to the particular c
 
 ![img](related_fin_docs2.png)
 
-
+<a id="invoices"></a>
+<br>
 ### Invoices: One-time, Recurring and Proforma
 
 **Invoice** is a financial document which indicates the supply of goods or services between a vendor and a customer.
@@ -49,6 +85,9 @@ In this section can be found all financial documents related to the particular c
 
 <icon class="image-icon">![image](bulb.png)</icon> Related Read: [Proforma invoices](finance/proforma_invoices/proforma_invoices.md) documentation.
 
+<a id="invoices_statuses"></a>
+<br>
+### Invoice statuses
 
 Let's consider the **invoice statuses** in details:
 
@@ -60,6 +99,10 @@ Let's consider the **invoice statuses** in details:
 |<icon class="image-icon">![](partially_paid.png)</icon> | the payment was received, but it does not cover the full invoice amount (invoice total due amount). The statistics of `Partially paid` invoices will be included in the `Paid` category of the **Total invoiced** table |
 | <icon class="image-icon">![](overdue.png)</icon> | no payment was received for this invoice and the `Payment due` date has already passed |
 | <icon class="image-icon">![](deleted.png)</icon> | the invoice was marked as deleted. If we apply the `Mark as deleted` option for unpaid invoice, the invoice will be marked as deleted and its auto (`+Debit`) transaction (-s) will be removed. The manual transaction (-s), that was added to the invoice, will remain (even when `Delete completely` option was used) in any case. It's required to remove it manually |
+
+<a id="invoices_operations"></a>
+<br>
+### Invoice operations
 
 Also, there are a **number of operations** that can be executed with the icons in the **Actions** column:
 
@@ -77,6 +120,9 @@ Also, there are a **number of operations** that can be executed with the icons i
 
 ---
 
+<a id="invoices_one_time"></a>
+<br>
+### One-time Invoice
 
 Usually, you can **create a one-time invoice** if you want to charge customer for [One-Time Plan](configuring_tariff_plans/one_time_plans/one_time_plans.md):
 
@@ -101,12 +147,16 @@ The option `Same as document date` means that the value is equal to zero. To be 
 - **Price** - a price of the plan, the value will be loaded automatically if the plan is chosen from the selection menu;
 - **VAT %** - *Value Added Tax* is a flat tax levied on an item. Learn more about [Taxes](configuration/finance/taxes/taxes.md);
 
+
 <icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
 - The items with negative price value can be added to the invoice, but the invoice total price cannot be with the negative amount, it can only be equal to `0` or  greater than `0`.
 
 3. Press the **Save** button to create the invoice.
 
+<a id="load_future_one_time"></a>
+<br>
+### Load Future Item to One-time Invoice
 
 The option **Load items from uncharged transactions** into the **One-time** invoice can be used to **add the future item** (an uncharged transaction with the option `Include transaction in next recurring invoice`).
 
@@ -116,8 +166,9 @@ The option **Load items from uncharged transactions** into the **One-time** invo
 
 ![Create invoice](create_invoice3.png)
 
-
-#### Loading a future item to a recurring invoice
+<a id="load_future_recurring_time"></a>
+<br>
+#### Loading Future Item to Recurring Invoice
 
 **STEP 1**
 
@@ -188,8 +239,9 @@ These statements and example above also apply to `Delete` option in drop-down me
 
 ---
 
-
-### Delete invoice and payment
+<a id="del_inv_payment"></a>
+<br>
+### Delete Invoice and Payment
 
 - If the invoice is paid in one payment (payment amount is equal to the total invoice amount) or invoice is paid by more than one payment, such **invoice cannot be deleted until all related payments are deleted**
 
@@ -237,8 +289,46 @@ In addition, an **invoice or credit note synced with an accounting add-on, e.g. 
 
 
 ---
+<a id="view_invoice"></a>
+<br>
+### View Invoice
 
-### Edit invoice
+To **view an invoice** as PDF with the <icon class="image-icon">![View icon](icon2.png)</icon> (view PDF) icon, it is necessary to configure an **invoice template** first in `Config → System → Templates` and also to specify the use of the selected/modified template in `Config → System → Company information`.
+
+![Template values](template_values.png)
+
+On the **Company information** page, we define the [Partner](administration/main/partners/partners.md) and its PDF [Template](configuration/system/templates/templates.md) (`Invoice A4 Classic` item is selected as an example by default).
+Once the PDF template is chosen, it will be possible to view the invoice in PDF format.
+
+![Invoice view](invoice_view.png)
+
+Please note that all [templates](configuration/system/templates/templates.md) can be customized, navigate to `Config → Templates`, choose the type of templates to display/work with and simple edit or add a new template you wish to use:
+
+![Invoice templates](templates.png)
+
+
+---
+
+
+The [**Finance format**](configuration/main_configuration/localization/localization.md) displayed on the invoice are customizable. Click on `Config → Main → Localization`,  to define the currency and other finance format settings.
+
+![Finance format settings](finance_format_setting.png)
+
+
+---
+
+
+In `Config → Finance → Settings` can be found the global **Invoices settings** for all customers in Splynx system. In this menu, you can also define the **Invoice number format**, by default is used `{year}{partner_id|2}{next|6}` format.
+
+![Invoice number pattern](invoice_number_pattern.png)
+
+You might also be interested in [Finance settings](configuration/finance/finance_settings/finance_settings.md) description.
+
+
+---
+<a id="edit_invoice"></a>
+<br>
+### Edit Invoice
 
 To **edit any unpaid invoice** click on the <icon class="image-icon">![Edit icon](icon5.png)</icon> icon under the customer's `Billing → Finance documents` tab.
 
@@ -257,7 +347,9 @@ When editing a recurring invoice, its possible to change its **Period**. Pay att
 
 ---
 
-### Send invoice
+<a id="send_invoice"></a>
+<br>
+### Send Invoice
 
 It is also possible **to send invoice (-s) via email** with the <icon class="image-icon">![Send invoice](icon4.png)</icon> icon (if the SMTP server is [configured](configuration/main_configuration/email_config/email_config.md)) in `Billing → Invoices`.
 You can write a message body manually or choose a template to populate it.
@@ -271,7 +363,8 @@ Also if a new body text is manually typed, you can save it as a new template.
 
 ---
 
-
+<a id="invoice_due"></a>
+<br>
 ### Invoice Due Amount and Partial Payment
 
 **Due Amount** - invoice details how much your customer owes you when payment is due for some provided service. The total due amount depends on the total cost per service, fees (taxes),  etc.
@@ -318,44 +411,9 @@ If the customer makes the new payment for 50$, the invoice will be paid and paym
 
 ---
 
-### View invoice
-
-To **view an invoice** as PDF with the <icon class="image-icon">![View icon](icon2.png)</icon> (view PDF) icon, it is necessary to configure an **invoice template** first in `Config → System → Templates` and also to specify the use of the selected/modified template in `Config → System → Company information`.
-
-![Template values](template_values.png)
-
-On the **Company information** page, we define the [Partner](administration/main/partners/partners.md) and its PDF [Template](configuration/system/templates/templates.md) (`Invoice A4 Classic` item is selected as an example by default).
-Once the PDF template is chosen, it will be possible to view the invoice in PDF format.
-
-![Invoice view](invoice_view.png)
-
-Please note that all [templates](configuration/system/templates/templates.md) can be customized, navigate to `Config → Templates`, choose the type of templates to display/work with and simple edit or add a new template you wish to use:
-
-![Invoice templates](templates.png)
-
-
----
-
-
-The [**Finance format**](configuration/main_configuration/localization/localization.md) displayed on the invoice are customizable. Click on `Config → Main → Localization`,  to define the currency and other finance format settings.
-
-![Finance format settings](finance_format_setting.png)
-
-
----
-
-
-In `Config → Finance → Settings` can be found the global **Invoices settings** for all customers in Splynx system. In this menu, you can also define the **Invoice number format**, by default is used `{year}{partner_id|2}{next|6}` format.
-
-![Invoice number pattern](invoice_number_pattern.png)
-
-You might also be interested in [Finance settings](configuration/finance/finance_settings/finance_settings.md) description.
-
-
----
-
-
-### Credit note
+<a id="credit_note"></a>
+<br>
+### Credit Note
 
 The **Credit Notes** help to simplify the invoicing processes, it is useful for adjusting errors in created invoices. It allows you to lawfully amend an invoice, without having to delete or alter it.
 In other words, the *Credit Note* - it's the `-Credit` transaction added to customers account after making payments (increases customers account balance).
@@ -375,7 +433,8 @@ The *Credit notes* provide accurate and complete records keeping of the transact
 
 ---
 
-
+<a id="payment"></a>
+<br>
 ### Payment
 
 **Payment** is a record that indicates an amount of money that has been paid. The Splynx can authorize the [payment methods](configuration/finance/payment_methods/payment_methods.md) to be made using bank transfer, credit card, cash etc.
@@ -390,8 +449,9 @@ Usually a payment is related to specific invoice however it can be added manuall
 
 ---
 
-
-### Future items
+<a id="future_items"></a>
+<br>
+### Future Items
 
 **Future item**  - a transaction with the `Include transaction in next recurring invoice` option enabled, it can be either `+Debit` or `-Credit` transaction, depends on what price value (negative/positive) is set there.
 
@@ -429,7 +489,8 @@ The option `Include transaction in next recurring invoice` defines if the curren
 
 ---
 
-
+<a id="statement"></a>
+<br>
 ### Statement
 
 **Statement** (account statement) - is a document that summarizes and lists all the *Invoice/Payments* or *Transactions* records for a certain period of time. Such report can be sent to the customer on the email, saved to their [documents](customer_management/customer_documents/customer_documents.md) or exported to the separate PDF file.
@@ -482,7 +543,8 @@ We can also **customize each of the table** related to all types of finance docu
 
 ------------
 
-
+<a id="transactions"></a>
+<br>
 ## Transactions
 
 **Transactions** are divided into 2 types: `Debit` and `Credit`.
@@ -505,6 +567,8 @@ The transaction created with the enabled `Include transaction in next recurring 
 ------------
 
 
+<a id="billing_config"></a>
+<br>
 ## Billing config
 
 Billing config displays 6 main sections:
@@ -519,7 +583,9 @@ Billing config displays 6 main sections:
 ![Billing overview](billingoverview.png)
 
 
-### Billing Settings:
+<a id="billing_settings"></a>
+<br>
+### Billing settings:
 
 In this section you can set up the billing parameters of the **selected customer**.
 
@@ -598,8 +664,9 @@ When the toggle **Auto create invoices** is not enabled under the customer's `Bi
 
 ---
 
-
-### Payment Accounts
+<a id="payment_accounts"></a>
+<br>
+### Payment accounts
 
  The accounts of customer which are used to make payments in Splynx.
 
@@ -610,6 +677,8 @@ When the toggle **Auto create invoices** is not enabled under the customer's `Bi
  ![Edit payment accounts](editpayment_accounts.png)
 
 
+<a id="billing_address"></a>
+<br>
 ### Billing address
 
 Billing address can be configured here if it is different to the address on the **Information** tab of the customer. By default, if it's left blank and the address is taken from the **Information** tab of the customer.
@@ -619,6 +688,8 @@ Specific **billing address** can be set here if the customer uses a different ad
 ![Billing address](billing_address.png)
 
 
+<a id="billing_actions"></a>
+<br>
 ### Billing actions
 
  The actions section provide a quick access toolbox when dealing with customer billing.
@@ -626,7 +697,9 @@ Specific **billing address** can be set here if the customer uses a different ad
 ![Actiond](actions_tab.png)
 
 
-### Payment Calendar
+<a id="payment_calendar"></a>
+<br>
+### Payment calendar
 
 **Payment Calendar** is used to generate a payment schedule list which defines the dates and amounts of payments to be made in the selected period.
 
@@ -647,6 +720,8 @@ Under the **Billing Settings** section, the calendar shows the dates of *billing
 ![Enable payment calendar](enable_payment_calendar.png)
 
 
+<a id="add_recurring_invoice"></a>
+<br>
 ### Add Recurring Invoice
 
 The **Add recurring invoice** button does not work as a button instance, it acts as a hint for those who used the **Charge & Invoice** button in previous version of Splynx.
@@ -682,12 +757,17 @@ The recurring invoice can be added only if:
 ![Billing settings](billing_settings_charge.png)
 
 
-### Cancel last recurring invoice
+<a id="cancel_recurring_invoice"></a>
+<br>
+### Cancel last Recurring Invoice
 
 <icon class="image-icon">![Cancel Charge](cancelcharge_icon.png)</icon>
 
 This button is used to cancel the customer's previous recurring invoice. This feature ensures that charges are properly cleared in the system by deleting the invoice and transaction associated with the account.
 
+
+<a id="save_changes"></a>
+<br>
 ### Save
 
 <icon class="image-icon">![Save button](save_icon.png)</icon>
@@ -695,14 +775,18 @@ This button is used to cancel the customer's previous recurring invoice. This fe
 Save any change made in the customer **Billing config** tab, the button is located at the bottom of the page.
 
 
-### Proforma Invoice settings
+<a id="proforma_invoice_settings"></a>
+<br>
+### Proforma Invoice Settings
 
 In **Proforma Invoice settings** section it is possible to enable the option `Enable Auto Proforma Invoice` creation for the current or next month as well as being able to choose a prepay payment period (up to 12 months).
 
 ![Proforma invoice settings](proforma_invoice_settings.png)
 
 
-### Reminders settings
+<a id="reminders_settings"></a>
+<br>
+### Reminders Settings
 
 In **Reminders settings** section you can enable automatic sending of reminders to customers to remind them to pay for their services.
 

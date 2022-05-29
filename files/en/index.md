@@ -231,8 +231,8 @@ Table of contents
   * [Transactions categories](administration/reports/transactions_categories/transactions_categories.md)
 
 
-  ##### [Configuration](configuration/configuration.md)
-  * [System](configuration/system/system.md)
+##### [Configuration](configuration/configuration.md)
+* [System](configuration/system/system.md)
     * [Additional fields](configuration/system/additional_fields/additional_fields.md)
     * [Company Information](configuration/system/company_information/company_information.md)
     * [Custom translations](configuration/system/custom_translations/custom_translations.md)
@@ -240,7 +240,7 @@ Table of contents
     * [Templates](configuration/system/templates/templates.md)
     * [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
 
-  * [Main configuration](configuration/main_configuration/main_configuration.md)
+* [Main configuration](configuration/main_configuration/main_configuration.md)
     * [API config](configuration/main_configuration/api/api.md)
     * [CAP](configuration/main_configuration/cap/cap.md)
     * [Customer Portal](configuration/main_configuration/portal/portal.md)
@@ -257,7 +257,7 @@ Table of contents
     * [Voice](configuration/main_configuration/voice/voice.md)
     * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)
 
-  * [Finance configuration](configuration/finance/finance.md)
+* [Finance configuration](configuration/finance/finance.md)
     * [Automation](configuration/finance/automation/automation.md)
     * [Change plan](configuration/finance/change_plan/change_plan.md)
     * [Cost categories](configuration/finance/cost_categories/cost_categories.md)
@@ -271,7 +271,7 @@ Table of contents
     * [Taxes](configuration/finance/taxes/taxes.md)
     * [Transaction categories](configuration/finance/transaction_categories/transaction_categories.md)
 
-  * [Networking](configuration/network/network.md)
+* [Networking](configuration/network/network.md)
     * [CPE](configuration/network/cpe/cpe.md)
     * [FUP](configuration/network/fup/fup.md)
     * [IP Host categories](configuration/network/ip_host_categories/ip_host_categories.md)
@@ -287,7 +287,7 @@ Table of contents
     * [Radius advanced](configuration/network/radius_extended/radius_extended.md)
     * [Traffic class](configuration/network/traffic_class/traffic_class.md)
 
-  * [Helpdesk](configuration/support/support.md)    
+* [Helpdesk](configuration/support/support.md)    
     * [Feedback widget](configuration/support/feedback_widget/feedback_widget.md)
     * [General ticket configuration](configuration/support/general_ticket_configuration/general_ticket_configuration.md)
     * [Inboxes](configuration/support/inboxes/inboxes.md)
@@ -296,7 +296,7 @@ Table of contents
     * [Ticket notifications](configuration/support/ticket_notifications/ticket_notifications.md)
     * [Tickets](configuration/support/tickets/tickets.md)
 
-  * [Scheduling](configuration/scheduling/scheduling.md)
+* [Scheduling](configuration/scheduling/scheduling.md)
     * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
     * [Notifications](configuration/scheduling/notifications/notifications.md)
     * [Project categories](configuration/scheduling/project_categories/project_categories.md)
@@ -305,7 +305,7 @@ Table of contents
     * [Teams](configuration/scheduling/teams/teams.md)
     * [Workflows](configuration/scheduling/workflows/workflows.md)
 
-  * [Leads](configuration/crm/crm.md)
+* [Leads](configuration/crm/crm.md)
     * [Finance](configuration/crm/finance/finance.md)
     * [IMAP](configuration/crm/imap/imap.md)
     * [Lead convert settings](configuration/crm/lead_convert_settings/lead_convert_settings.md)
@@ -315,21 +315,21 @@ Table of contents
     * [Preferences](configuration/crm/preferences/preferences.md)
     * [Sign Up Widget](configuration/crm/sign_up_widget/sign_up_widget.md)
 
-  * [Inventory](configuration/inventory/inventory.md)
+* [Inventory](configuration/inventory/inventory.md)
     * [Stock locations](configuration/inventory/stock_locations/stock_locations.md)
 
-  * [Integrations](configuration/integrations/integrations.md)
+* [Integrations](configuration/integrations/integrations.md)
     * [Add-ons](configuration/integrations/addons/addons.md)
     * [Hooks](configuration/integrations/hooks/hooks.md)
     * [Install module](configuration/integrations/install_modules/install_modules.md)
     * [Main modules](configuration/integrations/main_modules/main_modules.md)
     * [Modules list](configuration/integrations/modules_list/modules_list.md)
 
-  * [Voice](configuration/voice/voice.md)
+* [Voice](configuration/voice/voice.md)
     * [Auto CDR Processing](configuration/voice/auto_cdr_processing/auto_cdr_processing.md)
     * [Import Data Source](configuration/voice/import_data_source/import_data_source.md)
 
-  * [Tools](configuration/tools/tools.md)
+* [Tools](configuration/tools/tools.md)
     * [Activate services](configuration/tools/activate_services/activate_services.md)
     * [Adminer](configuration/tools/adminer/adminer.md)
     * [Backup and restore](configuration/tools/backup_restore/backup_restore.md)

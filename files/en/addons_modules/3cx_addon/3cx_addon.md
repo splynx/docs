@@ -79,7 +79,7 @@ Let's perform the first time configuration of the 3CX system:
 
 1. [Sign up](https://www.3cx.com/ordering/pricing/) on the 3CX web page with preferred price choice
 
-2. Choose the location for the 3CX system, write down your license key and follow the required installation steps. Open the IP of the machine 3CX is installed on followed by port `5015` in a browser, e.g. ```https://<IP_address>:5015```. The *3CX Web Configuration Tool* guides you through important network and security settings.
+2. Choose the location for the 3CX system, write down your license key and follow the required installation steps. Open the IP of the machine 3CX is installed on followed by port `5015` in a browser, e.g. ``` https://<IP_address>:5015 ```. The *3CX Web Configuration Tool* guides you through important network and security settings.
 
 Check the following links for more details:
 
@@ -96,7 +96,7 @@ Check the following links for more details:
 
 ![](img_000012.png)
 
-3. Once the 3CX system installation has finished, open the *3CX Management console* via ```https://<domain/IP>:5001```
+3. Once the 3CX system installation has finished, open the *3CX Management console* via ``` https://<domain/IP>:5001 ```
 
 ![](img_000013.png)
 
@@ -175,7 +175,7 @@ To **check the creation of contacts**, try dialing a number and click on the **C
 
 <icon class="image-icon">![Suggested](bulb.png)</icon> More information about the integration process can be found at the following [link](https://www.3cx.com/docs/crm-integration/).
 
-6. Install [iOS](https://apps.apple.com/us/app/3cx-communications-system/id992045982), [Android](https://play.google.com/store/apps/details?id=com.tcx.sipphone14) or [Windows](https://www.3cx.com/user-manual/installation-windows/) app, navigate to your [3CX Web Client](https://www.3cx.com/user-manual/web-client/) via ```https://<domain/IP>/webclient```, log in using the extension number and password from your email letter and click on *Activate your 3CX Browser Extension*, in the top left-hand corner of the Web Client click *Allow Notifications* to enable desktop notifications, you will see the blue phone icon in the extensions bar in your browser. Click on the icon to open the Browser Extension pop out window.
+6. Install [iOS](https://apps.apple.com/us/app/3cx-communications-system/id992045982), [Android](https://play.google.com/store/apps/details?id=com.tcx.sipphone14) or [Windows](https://www.3cx.com/user-manual/installation-windows/) app, navigate to your [3CX Web Client](https://www.3cx.com/user-manual/web-client/) via ``` https://<domain/IP>/webclient ```, log in using the extension number and password from your email letter and click on *Activate your 3CX Browser Extension*, in the top left-hand corner of the Web Client click *Allow Notifications* to enable desktop notifications, you will see the blue phone icon in the extensions bar in your browser. Click on the icon to open the Browser Extension pop out window.
 Now you can quickly and easily make and receive calls from your desktop without needing to open the full Web Client. Moreover, you can call to customers directly from Splynx.
 
 ![](img_000016.png)

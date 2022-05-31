@@ -724,7 +724,11 @@ Under the **Billing Settings** section, the calendar shows the dates of *billing
 <br>
 ### Add Recurring Invoice
 
-The **Add recurring invoice** button does not work as a button instance, it acts as a hint for those who used the **Charge & Invoice** button in previous version of Splynx.
+The **Add recurring invoice** button does not work as a button instance, it acts as a prompt for those who used the **Charge & Invoice** button in previous version of Splynx.
+
+Now that we found out that the **Charge & Invoice** button is deprecated, the question remains, how do we charge a customer. It is quite simple, just follow the steps described below:
+
+![img](recurring_invoice0.png)
 
 In Splynx v4.0, in order to create a recurring invoice for a customer, navigate to `Billing → Finance documents`, click **Add document** and select **Recurring invoice** from the drop-down list.
 
@@ -734,7 +738,7 @@ In the appeared window, you can change the **Number**, **Document date**, **Peri
 
 ![img](recurring_invoice2.png)
 
-If you change the invoice **Period**, the service item/-s re-calculation will be performed automatically and you will see the result immediately.
+If you change the invoice **Period**, the **service item/-s re-calculation will be performed automatically and you will see the result immediately**.
 
 ![img](recurring_invoice3.png)
 

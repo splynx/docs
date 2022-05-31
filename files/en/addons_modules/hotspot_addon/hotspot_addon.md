@@ -238,9 +238,15 @@ In `IP → Hotspot → Server Profiles`, the default profile should be with the 
 
 **Step 12**
 
-In `IP → Hotspot → Walled Garden`, configure the following addresses to **Dst. Address** one by one for access by unauthorized clients::
+In `IP → Hotspot → Walled Garden`, configure the following addresses to **Dst. Address** one by one for access by unauthorized clients, where:
 
 ![img](29.png)
+
+- ``` 192.168.100.182 ``` - IP address of your Splynx server behind NAT;
+
+- ``` <splynx_domain> ``` URL of your Splynx, the field should contain only the main domain address (without ```https//:``` | ```www.```, etc.), for example if we have the address ```https://www.portal.mysplynx.com/```, only ```portal.mysplynx.com```  should be used;
+
+- ``` vulacoin.com ``` - URL of VulaCoin service.
 
 ### Connection to HotSpot and Payments via VulaCoin
 

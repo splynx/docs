@@ -225,7 +225,7 @@ Then, navigate to `IP → Hotspot → Server Profiles`, double click on your Hot
 
 Set the correct parameters on the **Login** tab for the HotSpot Server Profile:
 
-- **Login By:** `MAC`, `HTTP CHAP`;
+- **Login By:** `HTTP CHAP`;
 - **MAC Auth. Mode:** `MAC as username and password`.
 
 ![img](27.png)

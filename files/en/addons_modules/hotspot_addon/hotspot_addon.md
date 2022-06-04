@@ -81,15 +81,25 @@ More information about *Modules list* can be found [here](configuration/integrat
 
 ### One-time Tariff Plans and Vouchers Configuration
 
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** For HotSpot add-in to work correctly, **it's required to create One-time plans and enable the Vouchers module in Splynx**.
+
+To do so:
+
 Navigate to `Tariffs plans → One-Time` at the top right, click the **Add plan** button:
 
 ![img](6.1.png)
 
-Add some plans which will be available for customers, e.g.:
+Add some plans which will be available for customers, for example:
 
 ![img](7.png)
 
 ![img](8.png)
+
+After that, navigate to `Config → Integrations → Main modules` and **enable** the **Vouchers** toggle and press **Save**:
+
+![img](8.1.png)
+
+![img](8.2.png)
 
 
 ### HotSpot Configuration in MikroTik Router
@@ -217,9 +227,16 @@ The clients authorization uses the RADIUS protocol. Let's configure the interact
 - **Accounting Port** `1813`;
 - **Timeout:** `3000`
 
-Then, navigate to `IP → Hotspot → Server Profiles`, double click on your HotSpot profile and click on the **RADIUS** tab, change settings as shown below:
+![img](26.1.png)
 
-![img](26.png)
+Then, navigate to `IP → Hotspot → Server Profiles`, double click on your HotSpot profile and click on the **RADIUS** tab, make the next changes:
+
+- **Use RADIUS** - put the check-mark to enable this setting;
+- **MAC Format** - use the default value (`XX:XX:XX:XX:XX:XX`);
+- **Accounting** - put the check-mark to enable this setting;
+- **NAS Port Type** - select the `15 (ethernet)` value.
+
+![img](26.2.png)
 
 **Step 10**
 

@@ -81,7 +81,7 @@ More information about *Modules list* can be found [here](configuration/integrat
 
 ### One-time Tariff Plans and Vouchers Configuration
 
-<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** For HotSpot add-in to work correctly, **it's required to create One-time plans and enable the Vouchers module in Splynx**.
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** For HotSpot add-on to work correctly, **it's required to create One-time plans and enable the Vouchers module in Splynx**.
 
 To do so:
 

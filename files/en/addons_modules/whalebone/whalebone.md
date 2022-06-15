@@ -13,13 +13,13 @@ Whalebone can be deployed in several [scenarios](https://docs.whalebone.io/en/la
 
 ![img](0.png)
 
-The main advantage of such scheme is visibility of local IP addresses that send the actual DNS requests.
+The **main advantage of such scheme is visibility of local IP addresses that send the actual DNS requests**.
 
-Whalebone supports the latest versions of the most popular Linux distributions, but only without desktop environments (GNOME, KDE, etc.). The **minimum hardware requirements** are 2 CPU cores, 4 GB RAM, and a 40 GB HDD. Such machine can handle up to 20 000 users.
+Whalebone supports the latest versions of the most popular Linux server distributions, e.g. Ubuntu. The **minimum hardware requirements** are 2 CPU cores, 4 GB RAM, and a 40 GB HDD. Such machine can handle up to 20 000 users.
 
-The **network setup requirements** you can find [here](https://docs.whalebone.io/en/latest/local_resolver.html#local-resolver-system-requirements)
+The **network setup requirements** you can find [here](https://docs.whalebone.io/en/latest/local_resolver.html#local-resolver-system-requirements).
 
-Once the server is ready and you bought the Whalebone license, go to the Whalebone Portal, on the menu bar click on **Resolvers** and press the button **Create new**.
+Once your virtual or physical server is ready and you bought the Whalebone license, go to the Whalebone Portal - https://latest.whalebone.io (resolver is managed using cloud platform only), on the menu bar click on **Resolvers** and press the button **Create new**.
 
 ![img](1.png)
 
@@ -43,7 +43,142 @@ As soon as the resolver becomes **Active**, you can route the traffic to it and 
 
 ![img](5.png)
 
-To test the security filtering of your Whalebone resolver, try to open the next domains:
+
+###  Whalebone Basic Configuration
+
+The first component that need to be configured is **Security Policies**. Navigate to the [Whalebone Portal](https://latest.whalebone.io), then `Configuration → Security Policies`
+
+![img](6.png)
+
+In the Security policies tab you can customize security functions, such as **Audit and Block score**, your **Allow and Deny lists**, choose the **Regulatory restrictions** depending on the country, use the **Content filtering**.
+
+![img](6.1.png)
+
+For example, you can lower the blocking threshold or disable Blocking completely, leaving only Audit mode. In this mode, Whalebone monitors incidents without preventing them.
+
+The audit and blocking configuration is based on the so-called `score`, which is assigned to individual domains by the Whalebone algorithm. The higher the score, the more dangerous the domain is. You can select one of the preset sensitivity levels or adjust the threshold manually.
+
+<icon class="image-icon">![NOTE](information.png)</icon> **NOTE:** The lower the threshold, the more sensitive the blocking. Keep in mind, though, that setting a low threshold increases the risk of false positives.
+
+You can also choose different types of threats to be blocked.
+
+![img](6.2.png)
+
+If needed, you can easily create your own blocking lists or define domains that should always be accessible.
+
+![img](6.3.png)
+
+![img](6.4.png)
+
+After the configuration of policy is completed, navigate to the resolver config page and assign your policy to it, the different IP addresses and ranges can be applied.
+
+![img](7.png)
+
+![img](8.png)
+
+<iframe width="350" height="270" src="https://www.youtube.com/embed/sUqVXKaPuIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+To customize the **Blocking page**, which appears when customer tries to visit a dangerous site in their browser, navigate to `Configuration → Blocking pages`. You can change the default one or create a new page:
+
+![img](9.png)
+
+You can define the page name, the domain and the language of the page. Afterward, fill in all the necessary data including the name of the company, its logo and contact information.
+
+![img](10.png)
+
+In order to change the information use the magic stick or edit directly in the HTML code. You can modify the design as well as the content of the blocking page as you choose. All you need to do is to preserve the necessary variables shown over the blocking field.
+
+![img](11.png)
+
+![img](12.png)
+
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Variables</b></summary>
+<div markdown="1">
+
+**Variables available in Blocking page templates for inserting dynamic content provided by Whalebone Resolver:**
+
+- ```{$targetUrl}``` - Target URL of original request;
+
+- ```{$threatTypes}``` - Detected threats;
+
+- ```{$contentTypes}``` - Detected types of content.
+
+**Usage example:**
+
+`<p>You wanted to reach address {$targetUrl}</p>`
+
+**Threat names:**
+
+You can translate threat names by providing names in Javascript
+
+```
+<script>
+window.__WB = {
+    trans: {
+        'MALWARE': 'Malware', 'C_AND_C': 'Botnets', 'PHISHING': 'Phishing', 'SPAM': 'Spamsites',
+        'COMPROMISED': 'Compromised', 'COINMINER': 'Cryptomining'
+    }
+};
+</script>
+```
+
+**Content categories**
+
+You can translate content category names by providing them in Javascript
+
+```
+<script>
+window.__WB = {
+    trans: {
+        'ADVERTISEMENT': 'Advertisement',
+        'AUDIO_VIDEO': 'Audio/Video',
+        'CHAT': 'Chat',
+        'COINMINER': 'Cryptomining',
+        'DRUGS': 'Drugs',
+        'GAMBLING': 'Gambling',
+        'GAMES': 'Games',
+        'PORN': 'Sexual content',
+        'RACISM': 'Racism',
+        'SOCIAL_NETWORKS': 'Social networks',
+        'TERRORISM': 'Terrorism',
+        'TRACKING': 'Tracking',
+        'VIOLENCE': 'Violence',
+        'WEAPONS': 'Weapons',
+    }
+};
+</script>
+```
+
+</div>
+</details>
+<br>
+
+
+Once the configuration of blocking page is completed, navigate to **Resolvers**, click on your resolver item and go to **Policy assignment**, in drop down list choose the blocking page you would like to apply:
+
+![img](13.png)
+
+You can assign a particular Blocking page to a specific IP address or range. Also, you can use the **bypass** option which allows the customer to access the blocked domain (proceed anyway).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To test the security filtering of your Whalebone resolver, change the DNS settings on your router, in our case it's, the address should be changed to `192.168.115.151`  and try to open the next domains:
 
 - `http://malware.test.attacker.online`
 - `http://c2server.test.attacker.online`
@@ -51,4 +186,13 @@ To test the security filtering of your Whalebone resolver, try to open the next 
 
 When you open these domains, a blocking page like the following should appear:
 
-![img](6.png)
+![img](blocked_page.png)
+
+
+
+whalebone basic config ?
+
+
+install add-on in splynx & configuration
+
+description - o Splynx we will get only incident/security issues. In Whalebone it’s called “events”, general statistic, per customer

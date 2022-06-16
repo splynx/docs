@@ -1,12 +1,24 @@
 Whalebone
 =============================
 
+**Contents**
+
+- [Installation of Whalebone as local DNS resolver](addons_modules/whalebone/whalebone.md#installation-of-whalebone-as-local-dns-resolver)
+- [Whalebone Basic Configuration](addons_modules/whalebone/whalebone.md#whalebone-basic-configuration)
+- [Installing Whalebone add-on](addons_modules/whalebone/whalebone.md#installing-whalebone-add-on)
+- [Add-on settings](addons_modules/whalebone/whalebone.md#add-on-settings)
+- [Splynx and Whalebone connection](addons_modules/whalebone/whalebone.md#splynx-and-whalebone-connection)
+
+
 [Whalebone](https://www.whalebone.io/) is a service for security filtering of DNS traffic and based on the implementation of [Knot Resolver](https://www.knot-resolver.cz/) features. Whalebone is used to monitor DNS activity to indicate that a security issue may occur elsewhere in your network. This secure DNS solution provides: content filtering, malware, phishing, outgoing SPAM or DoS campaigns blocking, blacklisting of IPs and many more options. As a result it makes your network secure, fast, and reliable.
 
 To allow you to make use of all advantages of Whalebone, our developers have integrated Whalebone service into Splynx via API.
 
 In this guide, we are going to learn how to install the *Whalebone* add-on in Splynx, make the basic configuration of *Whalebone* as a local DNS resolver and how to check the statistic of visited websites in the measured period.
 
+
+<a id="installation-of-whalebone-as-local-dns-resolver"></a>
+<br>
 ### Installation of Whalebone as local DNS resolver
 
 Whalebone can be deployed in several [scenarios](https://docs.whalebone.io/en/latest/deployment.html), but in our example we will use it as a full-fledged **local DNS resolver** in the following network topology:
@@ -44,6 +56,8 @@ As soon as the resolver becomes **Active**, you can route the traffic to it and 
 ![img](5.png)
 
 
+<a id="whalebone-basic-configuration"></a>
+<br>
 ###  Whalebone Basic Configuration
 
 The first component that need to be configured is **Security Policies**. Navigate to the [Whalebone Portal](https://latest.whalebone.io), then `Configuration → Security Policies`
@@ -173,8 +187,9 @@ then, choose what type of information you want to get and specify the destinatio
 
 ![img](15.png)
 
----
 
+<a id="installing-whalebone-add-on"></a>
+<br>
 ### Installing Whalebone add-on
 
 The add-on can be installed in two methods, via the **CLI** or the **Web UI** of your Splynx server.
@@ -201,6 +216,8 @@ Click on the **OK, confirm** button to begin the installation process:
 ![img](18.png)
 
 
+<a id="add-on-settings"></a>
+<br>
 ### Add-on settings
 
 After the installation process has completed, you have to configure add-on, navigate to `Config → Integrations → Modules list`:
@@ -239,6 +256,8 @@ Copy the generated values (`Key` and `Key Secret`) and paste them into the appro
 Make sure to save the settings.
 
 
+<a id="splynx-and-whalebone-connection"></a>
+<br>
 ### Splynx and Whalebone connection
 
 The Whalebone statistic will be represented in Splynx in two places:

@@ -358,6 +358,7 @@ Table of contents
   * [Baicells LTE](addons_modules/baicells/baicells.md)
   * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)
   * [3CX](addons_modules/3cx_addon/3cx_addon.md)
+  * [HotSpot add-on configuration](addons_modules/hotspot_addon/hotspot_addon.md)
   * [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
   * [FCC 477 export](addons_modules/fcc_export/fcc_export.md)
   * [Ofipro contabilidad (Spanish)](addons_modules/ofipro/ofipro.md)
@@ -371,7 +372,7 @@ Table of contents
   * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
   * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
   * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
-  * [HotSpot add-on configuration](addons_modules/hotspot_addon/hotspot_addon.md)
+  * [Whalebone](addons_modules/whalebone/whalebone.md)
   * [Xero accounting](addons_modules/xero/xero.md)
 
 

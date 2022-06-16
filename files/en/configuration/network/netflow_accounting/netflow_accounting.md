@@ -141,6 +141,11 @@ In Splynx, navigate to `Networking → Routers`, press **Add**, specify the rout
 
 ![img](exp1.jpg)
 
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:**
+
+**NetFlow accounting will only work if the SRC IP in NetFlow packets originating from router is the same as IP/Host field value on router's info Splynx page, it will not work if router's outgoing traffic is translated (NAT) to IP that is different from what is entered in IP/Host field. It's better to connect your router with built-in [OpenVPN feature](configuration/tools/openvpn/openvpn.md) for NAS and Splynx to be in the same network**.
+
+
 **Step 2:**
 
 Go to `Customers → List`, open the necessary customer's profile, click on the **Services** tab and open the window to edit their Internet service. Specify the router that this service in connected to, the IP assignment method (pool or static) and the IP address:

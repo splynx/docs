@@ -90,7 +90,7 @@ You can immediately create a credit note and link it to the existing invoice in 
 
 Find the necessary invoice in customer's `Finance documents` and click on <icon class="image-icon">![icon5](icon_create_credit_note.png)</icon> icon to create a credit note.
 
-<icon class="image-icon">![Note](note.png)</icon> **NOTE:** You cannot create a credit note to `Paid` or `Deleted` invoice.
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:** You cannot create a credit note to the invoice with `Deleted` (*Mark as Deleted*) status.
 
 ![](cred_note_from_action.png)
 

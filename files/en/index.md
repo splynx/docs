@@ -56,7 +56,6 @@ Table of contents
 
 
 ##### [Finance](finance/finance.md)
-  * [Apply credit](finance/apply_credit/apply_credit.md)
   * [Payment statement processing](finance/payment_statement_processing/payment_statement_processing.md)
   * [Billing engine](finance/billing_engine/billing_engine.md)
   * [Credit notes](finance/credit_notes/credit_notes.md)

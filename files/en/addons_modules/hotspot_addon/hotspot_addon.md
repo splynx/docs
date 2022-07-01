@@ -25,8 +25,8 @@ apt update
 apt install splynx-hotspot
 ```
 
-<icon class="image-icon">![Note](information.png)</icon> The guide **how to install and configure the VulaCoin add-on** can be found in the following [article](payment_systems/vulacoin/vulacoin.md).
-<icon class="image-icon">![Note](information.png)</icon> The guide **how to install and configure the Netcash add-on** can be found in the following [article](payment_systems/netcash-pay-now/netcash-pay-now.md).
+<icon class="image-icon">![Note](information.png)</icon> The guide **how to install and configure the VulaCoin add-on** can be found in the following [article](payment_systems/vulacoin/vulacoin.md).<br>
+<icon class="image-icon">![Note](information.png)</icon> The guide **how to install and configure the Netcash add-on** can be found in the following [article](payment_systems/netcash_pay_now/netcash_pay_now.md).
 
 #### HotSpot add-on settings
 

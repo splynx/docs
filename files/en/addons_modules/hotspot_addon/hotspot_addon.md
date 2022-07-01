@@ -1,9 +1,9 @@
-HotSpot add-on configuration
+HotSpot add-on
 =============================
 
 If you look at the reality today, every visitor has a mobile gadget that connects to the public WiFi network in a place where people stay for a few time, such as a hotel, airport, store etc. The use of HotSpot on the router, in addition to providing the Internet, can bring more benefits to the development of your business. In the HotSpot network, the user can authenticate using any web browser, so there is no need to install any additional software to customer end. As the HotSpot login prompt is a web page, the HotSpot service can effectively be used as an advertising technique of your company.
 
-In this guide, we are going to learn how to install the HotSpot add-on in Splynx, configure MikroTik router and how to perform the **VulaCoin** payments feature integration.
+In this guide, we are going to learn how to install the HotSpot add-on in Splynx, configure MikroTik router and how to perform the **VulaCoin** or **Netcash** payments feature integration.
 
 
 ### Install HotSpot add-on
@@ -25,7 +25,8 @@ apt update
 apt install splynx-hotspot
 ```
 
-<icon class="image-icon">![Note](information.png)</icon> The guide **how to install and configure (required) the VulaCoin add-on** can be found in the following [article](payment_systems/vulacoin/vulacoin.md).
+<icon class="image-icon">![Note](information.png)</icon> The guide **how to install and configure the VulaCoin add-on** can be found in the following [article](payment_systems/vulacoin/vulacoin.md).
+<icon class="image-icon">![Note](information.png)</icon> The guide **how to install and configure the Netcash add-on** can be found in the following [article](payment_systems/netcash-pay-now/netcash-pay-now.md).
 
 #### HotSpot add-on settings
 
@@ -47,30 +48,44 @@ After the installation process has completed, you have to configure the HotSpot 
 
 **Common settings**
 
-![img](5.png)
+![img](common_settings.png)
 
 * **Splynx url** - your Splynx URL address without the forward slash `/` sign at the end;
 
 * **Default partner** - select the default partner for the created customer;
 
-* **Default location** - select the default location for the created customer.
+* **Default location** - select the default location for the created customer;
+
+* **Disable inactive customers after** - select the period after that the customer will be disabled;
+
+* **Payment method** - select payment method.
 
 <br>
 
 **Customer setting**
 
-![img](6.png)
+![img](customer_settings.png)
 
 * **Name** - enable/disable the use of the name field when registering a customer;
 
-* **Email** - enable/disable the use of the email field when registering a customer;
+* **Email** - enable/disable the use of the email field when registering a customer. If enabled, you should change the "Login format" under `Config/Main/Customers` to "{email}":
 
-* **Phone length (symbols)** - phone length (symbols). The default value: `13`;
+![email](email_format.png)
 
-* **Phone placeholder** - phone number pattern. The default value: `+420XXXXXXXXX`.
+* **Country calling codes** - select a country phone code.
 
 
 Note that changes are not saved until you click **Save**.
+
+**Confirm code setting**
+
+![code_settings](code_settings.png)
+
+* **Code length** - specify code length;
+
+* **New code template** - specify format of code message. Do not remove {code} variable from this field. You can use "{code} is your internet access code" as a possible option for this field;
+
+* **Reset code template** - specify format of reset code message. Do not remove {code} variable from this field.
 
 ---
 
@@ -91,9 +106,9 @@ Navigate to `Tariffs plans → One-Time` at the top right, click the **Add plan*
 
 Add some plans which will be available for customers, for example:
 
-![img](7.png)
+![img](one_time_example.png)
 
-![img](8.png)
+![img](one_time_example2.png)
 
 After that, navigate to `Config → Integrations → Main modules` and **enable** the **Vouchers** toggle and press **Save**:
 
@@ -115,13 +130,13 @@ The Android-based cell phone will be a HotSpot client.
 Suggested read: [OpenVPN configuration](configuration/tools/openvpn/openvpn.md).
 
 
-**Step 1**
+**Step 1 (optional, depends on your initial setup)**
 
 Define the port for WAN connection to connect to the Internet via DHCP. Navigate to`IP → DHCP Client` and add the DHCP Client, for example, to the **ether1** interface:
 
 ![img](9.png)
 
-**Step 2**
+**Step 2 (optional but recommended)**
 
 After the OpenVPN certificates are generated in Splynx and imported to MikroTik, add your router to Splynx and check the connection:
 
@@ -136,7 +151,7 @@ After the OpenVPN certificates are generated in Splynx and imported to MikroTik,
 ![img](ovpn5.png)
 
 
-**Step 3**
+**Step 3 (optional, depends on your initial setup)**
 
 Create two Bridges and combine the WLAN (wlan1, wlan2) and LAN (ether2-ether5) ports with the related bridges:
 
@@ -263,7 +278,25 @@ In `IP → Hotspot → Walled Garden`, configure the following addresses to **Ds
 
 - ``` <splynx_domain> ``` URL of your Splynx, the field should contain only the main domain address (without ```https//:``` | ```www.```, etc.), for example if we have the address ```https://www.portal.mysplynx.com/```, only ```portal.mysplynx.com```  should be used;
 
-- ``` vulacoin.com ``` - URL of VulaCoin service.
+- ``` vulacoin.com ``` - URL of VulaCoin service;
+
+- ```netcash.co.za``` - URL of Netcash service.
+
+**Step 13**
+
+Under `Administration -> Partners` click on the "Edit" button on a partner and set the "Hotspot WLAN name" (SSID) to which customers of this partner will connect:
+
+![set_ssid](set_ssid.png)
+
+Make sure each partner who uses the Hotspot add-on has a correct WLAN name here:
+
+![partners_list](partners_list.png)
+
+It is crucial when each partner has its own branding (logo under `Company information`). In case when real SSID does not match WLAN name in this field, the system will load a logo of default partner.
+
+You can check a real SSID name of connected customers under `Customers -> Vouchers -> List` on a tab `Online vouchers` under the field "Port":
+
+![ssid_name](vouchers_list.png)
 
 ### Connection to HotSpot and Payments via VulaCoin
 
@@ -298,3 +331,11 @@ Then, select your plan. In case the plan is paid you will be redirected to the V
 <icon class="image-icon">![Note](note.png)</icon> **NOTE:** The client will be connected to the Internet through an automatically created **prepaid voucher**, an invoice will be created for the paid plan only in Splynx.
 
 ![img](41.png)
+
+
+### Logs
+You can check a Hotspot logs under `Administration -> Logs -> Hotspot Logs`:
+
+![logs](logs.png)
+
+Also there is an option to check Netcash and/or Vulacoin logs here.

@@ -70,7 +70,9 @@ Here we have to specify how many bytes is in 1KB in Splynx, available options ar
 
 * **Add framed route** - enables/disables adding routes to the service's additional network field if IP-MAC filter or DHCP is enabled;
 
-* **Filter rules** - list of rules that will be uploaded to the router. Use {{SPLYNX_WHITE_RESOURCES_ADDRESS_LIST}} for white resources Address list name and {{SPLYNX_IP_ADDRESS}} for Splynx IP address;
+* **Filter rules** - list of rules that will be uploaded to the router. Use {{SPLYNX_WHITE_RESOURCES_ADDRESS_LIST}} for white resources Address list name and {{SPLYNX_IP_ADDRESS}} for Splynx IP address.
+
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** Only **IP/IPv6 firewall filter rules without comments** are allowed, firewall address list entries are not supported in this field;
 
 * **Filter rules position** - select the position for firewall filter rules. Available options are: default, top, bottom;
 

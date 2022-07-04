@@ -8,13 +8,13 @@ Splynx has Prepaid and Recurring billing engines. Defining which billing engine 
 The billing module is separated into the following sections, please follow the links below for more information on each of the features of the Finance module:
 
 
-  * [ Apply credit](finance/apply_credit/apply_credit.md)
-
   * [ Payment statement processing](finance/payment_statement_processing/payment_statement_processing.md)
 
   * [ Billing engine](finance/billing_engine/billing_engine.md)
     * [→ Prepaid Billing](finance/billing_engine/prepaid_billing/prepaid_billing.md)
     * [→ Recurring Billing](finance/billing_engine/recurring_billing/recurring_billing.md)
+
+  * [Credit notes](finance/credit_notes/credit_notes.md)
 
   * [ History & Preview](finance/history_and_preview/history_and_preview.md)
 

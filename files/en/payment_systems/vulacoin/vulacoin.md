@@ -156,3 +156,43 @@ https://<splynx_domain_address>/vulacoin/direct-pay-proforma?item_id=<proforma_n
 ```
 </div>
 </details>
+
+### Required Permissions
+  
+For the payment system to work properly, Splynx needs to have access to some external services. Therefore, these hosts should not be blocked by firewall rules:
+  
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Whitelist URLs</b></summary>
+<div markdown="1">
+
+```
+vulacoin.com
+*.vulacoin.com
+api.ravepay.co
+*.bankserv.co.za
+*.cardinalcommerce.com
+*.capitecbank.co.za
+oppwa.com
+*.absa.co.za
+*.africanbank.co.za
+*.bidvestbank.co.za
+*.fnb.co.za
+*.investec.com
+*.nedbank.co.za
+*.sasfin.co.za
+*.standardbank.co.za
+*.ubank.co.za
+3dsecureprd.fnb.co.za
+acs.nedsecure.co.za
+*.bankserv.co.za
+*.ctpe.net
+ctpe.net
+ppipe.net
+*.ppipe.net
+*.capitecbank.co.za
+secure.stitch.money
+eu-prod.oppwa.com
+  
+```
+</div>
+</details>

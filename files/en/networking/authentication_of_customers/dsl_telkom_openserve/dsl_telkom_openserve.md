@@ -49,7 +49,7 @@ ATTRIBUTE Alcatel-Lucent-Service- 3002 integer
 
 More information on this connection method can be found [here](RADIUS_Authentication_Information_For_IPC_Customers.pdf).
 
-***Openserve authentication (PPPoE via L2tP Method)***
+#PPPOE to L2TP Basic Configuration#
 
 1. The technical documentation should be completed and sent to the Corporate account manager
 2. L2TP LNS IP should advertised accross BGP to Openserve on the upstream
@@ -57,7 +57,7 @@ More information on this connection method can be found [here](RADIUS_Authentica
 4. The accepted Realms should be created on Openserve portal.
 
 *Example config* 
-#PPPOE to L2TP Basic Configuration#
+***Openserve authentication (PPPoE via L2tP Method)***
 ```
 /ppp l2tp-secret
 add address=196.43.32.128/25 comment=OpenServe secret=<secret>

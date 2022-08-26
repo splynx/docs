@@ -42,7 +42,7 @@ Under the **Payment notifications** section, you have to configure all URLs with
 
 * **Decline URL** - https://yoursplynx.net/netcash/result?type=decline
 
-* **Notify URL** - https://yoursplynx.net/netcash?type=notify
+* **Notify URL** - https://yoursplynx.net/netcash/result?type=notify
 
 * **Re-direct URL** - https://yoursplynx.net/netcash/result?type=redirect
 

@@ -122,7 +122,7 @@ According to our CAP configuration (monthly limit 100GB) when a customer will us
 
 ****************************************************************
 <details>
-<summary><b>Examples</b></summary>
+<summary><b style="font-size: 18px">Examples</b></summary>
 <div markdown="1">
 
 Let's add an internet service with a monthly limit for the customer:

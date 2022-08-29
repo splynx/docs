@@ -121,8 +121,8 @@ Once CAP or FUP is configured you can preview and test settings under the `FUP p
 According to our CAP configuration (monthly limit 100GB) when a customer will use a monthly limit Splynx will decrease speed by 90% and the maximum speed will be 10 Mbps / 10 Mbps.
 
 ****************************************************************
-<details>
-<summary><b style="font-size: 18px">Examples</b></summary>
+<details style="font-size: 18px">
+<summary><b>Examples</b></summary>
 <div markdown="1">
 
 Let's add an internet service with a monthly limit for the customer:

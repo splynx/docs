@@ -54,8 +54,9 @@ To be able to set your VAT percentage amount, you need first to add it in _Confi
 **Discount value** → price to be discounted as percentage or a fixed sum.
 
 ****************************************************************
+
 <details>
-<summary><b>Example</b></summary>
+<summary><b style="font-size: 18px">Example</b></summary>
 <div markdown="1">
 
 Here is an example of a basic bundle plan. Please note that there are no limitations, it's merely an example illustrated:

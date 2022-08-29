@@ -14,7 +14,6 @@ Tariff plans are assigned to customers as services, and these are the means by w
 **Bundles** are created to group internet, voice and custom plans, to charge customers for packages instead of multiple separate services.
 
 Please follow each of the sections below for more details on configuring tariff plans:
-
 * [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)
 
 * [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)

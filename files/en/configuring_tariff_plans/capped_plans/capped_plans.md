@@ -185,7 +185,7 @@ Under `Services → Top-up` the customer can enable/disable auto top-up issuing,
 
 ![portal_topup](portal_topup.png)
 
-For this option to be available, permissions in the portal should be granted for customers to have access to this feature. To grant access, navigate to Config → Main → Portal and select "Per partner settings". There are two sections to grant access for customers to perform top-ups:
+For this option to be available, permissions in the portal should be granted for customers to have access to this feature. To grant access, navigate to _Config → Main → Portal_ and select "Per partner settings". There are two sections to grant access for customers to perform top-ups:
 
 ![topup_config](top_up_config.png)
 

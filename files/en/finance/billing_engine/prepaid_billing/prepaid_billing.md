@@ -16,7 +16,7 @@ Then we define the minimum amount of funds to be available in the customer's acc
 
 ![Minimal balance](minimal_balance_prepaid.png)
 
-Customers can be charged for daily, monthly or by any custom periods, (for example, one week), with the use of prepaid tariff custom periods.
+Customers can be charged for monthly or by any custom periods, (for example, one week), with the use of prepaid tariff custom periods.
 
 By default, all prepaid tariffs are set to charge customers monthly.
 
@@ -44,18 +44,6 @@ After charging the customer 30 USD and the customer is provided with access for 
 ![Deposit](information_prepaid.png)
 
 If the option to Create invoices (*after charge&invoice*) is enabled in finance settings under `Config / Finance / Settings`, Splynx will generate an invoice for consumed services on the first day of the next month.
-
-When using the Prepaid daily option, Splynx calculates the daily rate of the plan and charges the customer every day. Let's imagine that a customer's service costs 40 USD. There are 31 days in May, so the daily rate will be 1,29 USD.
-
-![Prepaid daily](prepaid_daily_1.png)
-
-The following day the customer's balance will be changed from 40 USD to 38,71 USD, deducting the cost of services for the day, and this will continue to decrease every day according to the customer's plan.
-
-![Prepaid daily](prepaid_daily_2.png)
-
----
-In the situation, when the customer has added 20 USD on a deposit, he will get access for 15 days only. Once the balance reaches “0”, Splynx will block him. Also, one transaction has been added, which shows how much we charged. This transaction is updated every day and it shows the total amount of money that has been taken from the customer’s deposit.
-
 
 ***Please note that Deactivation period for prepaid customers can be configured in Config / Finance / Settings***:
 

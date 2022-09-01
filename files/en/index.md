@@ -382,7 +382,7 @@ Table of contents
   * [Authorize.net](payment_systems/authorize/authorize.md)
   * [Braintree payments](payment_systems/braintree/braintree.md)
   * [Gocardless.com](payment_systems/gocardless/gocardless.md)
-  * [Integrapay](payment_systems/integrapay/integrapay.md)
+  * [Payrix](payment_systems/payrix/payrix.md)
   * [IPpay by Convergence](payment_systems/ippay/ippay.md)
   * [Moneris](payment_systems/moneris/moneris.md)
   * [Payfast.co.za payments](payment_systems/payfast/payfast.md)

@@ -11,7 +11,7 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Gocardless.com](payment_systems/gocardless/gocardless.md)
 
-* [Integrapay](payment_systems/integrapay/integrapay.md)
+* [Payrix](payment_systems/payrix/payrix.md)
 
 * [IPpay](payment_systems/ippay/ippay.md)
 

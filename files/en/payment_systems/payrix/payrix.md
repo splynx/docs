@@ -51,18 +51,24 @@ Then, you need to set your **Username**, **Business ID** and **Password** in `Pa
 
 **Payrix billing settings:**
 
-![(image)](5.png)
+![settings1](settings1.png)
 
 * **Ignore Fee** - ignore Payrix fee;
 * **Fee VAT** - service [fee VAT](configuration/finance/taxes/taxes.md) percent;
 * **Add fee to request** - add fee (position) to request;
 * **Fee message** - if `Add fee to request` option is enabled, the current message will be added as description for fee item in invoice;
 * **Payment method for Credit Card / Bank Account** - when a customer pays using this add-on, the payment will be allocated as this payment type;
+**********************************************************************
+![settings2](settings2.png)
+
 * **Transaction fee category** - transaction [category](configuration/finance/transaction_categories/transaction_categories.md) of the fee transactions;
 * **Payment statement grouping** - choose how to group payment statements (`Finance → Payment Statements → History`) monthly or daily;
 * **Available Payment Methods** - choose a payment method that the customer can add on Portal. Pay attention, Payrix service does not support using two payment methods at the same time. If 'Bank account or Card' option is selected, a customer can add either their bank account or a credit card and use only one method at a time;
 * **Mask card's number and CVV** - hide card number and CVV code when adding on the Portal;
 * **Customers identifier** - select what to use as identifier of customer on Payrix service side;
+***********************************************************************
+![settings3](settings3.png)
+
 * **Sending email with terms** - enable/disable the email sending with terms and conditions of the service to customers;
 * **Subject of email with terms** - subject of the email with terms and conditions of the service;
 * **Message of email with terms** - message of the email with terms and conditions of the service;

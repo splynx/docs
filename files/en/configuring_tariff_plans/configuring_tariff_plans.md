@@ -24,6 +24,8 @@ Please follow each of the sections below for more details on configuring tariff 
 
 * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
 
+* [Change plan](configuring_tariff_plans/tariff_change/tariff_change.md)
+
 * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
 
 * [Fair Usage Policy](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)

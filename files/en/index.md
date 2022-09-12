@@ -12,16 +12,16 @@ Table of contents
 
 
 ##### [Configuring Tariff Plans](configuring_tariff_plans/configuring_tariff_plans.md)
-  * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
-  * [Burst speed concept](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
-  * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
-  * [Change plan](configuring_tariff_plans/tariff_change/tariff_change.md)
-  * [Recurring plans](configuring_tariff_plans/recurring_plans/recurring_plans.md)
-  * [Fair Usage Policy](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
-  * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
   * [Internet plans](configuring_tariff_plans/internet_plans/internet_plans.md)
-  * [One-Time plans](configuring_tariff_plans/one_time_plans/one_time_plans.md)
   * [Voice plans](configuring_tariff_plans/voice_plans/voice_plans.md)
+  * [Recurring plans](configuring_tariff_plans/recurring_plans/recurring_plans.md)
+  * [One-Time plans](configuring_tariff_plans/one_time_plans/one_time_plans.md)
+  * [Bundle plans](configuring_tariff_plans/bundle_plans/bundle_plans.md)
+  * [Change plan](configuring_tariff_plans/tariff_change/tariff_change.md)
+  * [Capped plans and Top-Ups](configuring_tariff_plans/capped_plans/capped_plans.md)
+  * [Fair Usage Policy](configuring_tariff_plans/fair_usage_policy/fair_usage_policy.md)
+  * [Burst speed concept](configuring_tariff_plans/burst_speed_concept/burst_speed_concept.md)
+  * [Huawei Groups](configuring_tariff_plans/huawei_groups/huawei_groups.md)
 
 
 ##### [Leads Management](crm/crm.md)

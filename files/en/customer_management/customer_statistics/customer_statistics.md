@@ -1,10 +1,11 @@
 Customer statistics
 ==========
 
-Customer statistics displays the data usage for Internet and Voice services within a specified period of a customer.
+Customer statistics displays the customer's data usage for Internet and Voice services within a specified period of time.
 
 ![Statistics](statistics.png)
-![Usage,FUP,Sessions](usage_fup_sessions.png)
+![Statistics](statistics_1.png)
+![Statistics](statistics_2.png)
 
 Customer's internet statistics are divided into 5 main sections:
 
@@ -13,7 +14,7 @@ Customer's internet statistics are divided into 5 main sections:
 * **Graph** - displays statistics for a selected period of time.
 You can set up an hourly, daily, weekly, monthly or yearly graph to be displayed, which will represent the maximum, minimum and average data transfer speeds.
 
-* **Usage by days** - will show the usage statistics for a specified day.
+* **Usage by day** - will show the usage statistics for a specified day.
 
 * **FUP statistics** - displays used traffic and bonus traffic (if tariff plan configured with bonus traffic) relating to FUP.
 
@@ -30,8 +31,8 @@ Customer voice statistics consists of 4 main sections:
 
 * **Calls total** the total duration and cost of calls for each type listed.
 
-* **Message total** the amount of sent messages and costs thereof.
+* **Total messages** the amount of sent messages and costs thereof.
 
 * **Data total** the total data usage in MB.
 
-* **Voice records** displays all calls and messages(it is also possible to set a filter for a type or category).
+* **Voice data** displays all calls and messages (it is also possible to set a filter for a type or category).

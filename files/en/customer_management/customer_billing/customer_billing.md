@@ -75,13 +75,13 @@ In this section can be found all financial documents related to the particular c
 
 **Invoice** is a financial document which indicates the supply of goods or services between a vendor and a customer.
 
-**One-time invoice** is designed for a customer who pays an one-time cost to obtain the product or service. If they need it again, when they choose, they’ll pay again.
+**One-time invoice** is designed for a customer who pays a one-time cost to obtain the product or service. If they need it again, when they choose, they’ll pay again.
 
 **Recurring invoice** is when the items or services are supplied to a customer on a regular basis and the automatic charge is applied. If there’s no change in services your customers regularly need, the usage of the recurring invoicing is more preferable.
 
 <icon class="image-icon">![image](bulb.png)</icon> See documentation [about the invoices charging](finance/invoices/invoices.md)  for more information.
 
-**Proforma invoice** is a non-official estimated invoice in advance that is given to a customer before products or services are supplied. It looks almost identical to one-time/recurring invoice, however it doesn't care the same weight because it's provisional. In other words it's a 'good faith' agreement between the vendor and the customer, used to avoid unexpected charges down the line.
+**Proforma invoice** is a non-official estimated invoice in advance that is given to a customer before products or services are supplied. It looks almost identical to the one-time/recurring invoice, however it does not have such a great importance because it's provisional. In other words it's a 'good faith' agreement between the vendor and the customer, used to avoid unexpected charges down the line.
 
 <icon class="image-icon">![image](bulb.png)</icon> Related Read: [Proforma invoices](finance/proforma_invoices/proforma_invoices.md) documentation.
 
@@ -93,12 +93,12 @@ Let's consider the **invoice statuses** in details:
 
 | Status  | Description |
 | ------------ | ------------ |
-| <icon class="image-icon">![](unpaid.png)</icon> | the invoice has been created, but the customer has not made any payments towards the balance. The customer is expected to pay the invoice's amount due|
-| <icon class="image-icon">![](pending.png)</icon> | the invoice has not been paid and is not yet past the due date but payment is sent for processing. Once the invoice payment is processed successfully, the invoice will be updated to either the `Paid` or `Unpaid` status. If the due period has been exceeded and the due amount hasn't been paid, a status will be changed to `Pending Overdue` or `Overdue`|
+| <icon class="image-icon">![](unpaid.png)</icon> | the invoice has been created, but the customer has not made any payments towards the balance. The customer is expected to pay the invoice's amount due.|
+| <icon class="image-icon">![](pending.png)</icon> | the invoice has not been paid and is not yet past the due date but payment is sent for processing. Once the invoice payment is processed successfully, the invoice will be updated to either the `Paid` or `Unpaid` status. If the due period has been exceeded and the due amount hasn't been paid, a status will be changed to `Pending Overdue` or `Overdue`.|
 | <icon class="image-icon">![](paid.png)</icon> | the invoice was paid in full from customer's balance, the status is applied only if customer has enough funds.|
-|<icon class="image-icon">![](partially_paid.png)</icon> | the payment was received, but it does not cover the full invoice amount (invoice total due amount). The statistics of `Partially paid` invoices will be included in the `Paid` category of the **Total invoiced** table |
-| <icon class="image-icon">![](overdue.png)</icon> | no payment was received for this invoice and the `Payment due` date has already passed |
-| <icon class="image-icon">![](deleted.png)</icon> | the invoice was marked as deleted. If we apply the `Mark as deleted` option for unpaid invoice, the invoice will be marked as deleted and its auto (`+Debit`) transaction (-s) will be removed. The manual transaction (-s), that was added to the invoice, will remain (even when `Delete completely` option was used) in any case. It's required to remove it manually |
+|<icon class="image-icon">![](partially_paid.png)</icon> | the payment was received, but it does not cover the full invoice amount (invoice total due amount). The statistics of `Partially paid` invoices will be included in the `Paid` category of the **Total invoiced** table. |
+| <icon class="image-icon">![](overdue.png)</icon> | no payment was received for this invoice and the `Payment due` date has already passed. |
+| <icon class="image-icon">![](deleted.png)</icon> | the invoice was marked as deleted. If we apply the `Mark as deleted` option for unpaid invoice, the invoice will be marked as deleted and its auto (`+Debit`) transaction (-s) will be removed. The manual transaction (-s), that was added to the invoice, will remain (even when `Delete completely` option was used) in any case. It's required to remove it manually. |
 
 <a id="invoices_operations"></a>
 <br>
@@ -457,7 +457,7 @@ Usually a payment is related to specific invoice however it can be added manuall
 
 **Example:**
 
-A future item with R100 price will be shown as `+Debit` transaction and a future item with negative price (-R200) will be represented as `-Credit` transaction.
+A future item with 100$ price will be shown as `+Debit` transaction and a future item with negative price (-200$) will be represented as `-Credit` transaction.
 
 In other words, with the option `Include transaction in next recurring invoice`, the created `-Credit` transaction will appear in finance documents as future item with negative total price and vice versa.
 
@@ -623,11 +623,11 @@ The status `Already blocked` means that customer has been blocked, the status `I
 
 **Minimum balance** is a minimum amount of money that customer has to keep on their balance, maintaining a minimum balance will allow customer to avoid being blocked on the next day after *Billing due*. It means a customer balance cannot drop below the specified amount at any time during billing cycle.
 
-For instance, a customer uses some Internet service (e.g. its price is R100) and has the next settings on the *Billing overview* tab:
+For instance, a customer uses some Internet service (e.g. its price is 100$) and has the next settings on the *Billing overview* tab:
 - Billing day = 1;
 - Billing due = 15;
 
-The recurring invoice will be auto generated on the 1st day of next month. Let's say that a customer will pay R100 for the invoice on the same day when the invoice is created.
+The recurring invoice will be auto generated on the 1st day of next month. Let's say that a customer will pay 100$ for the invoice on the same day when the invoice is created.
 
 - If we have `0` (zero) value as a minimum balance requirement, a customer won't be blocked, because their balance will be equal to the set value.
 
@@ -635,15 +635,7 @@ The recurring invoice will be auto generated on the 1st day of next month. Let's
 
 ![image](min_balance_4.png)
 
-<!--
-
-- If we have `50` value as a minimum balance requirement, a customer need to pay R150 for the invoice to keep R50 on the balance to avoid blocking. If a customer has less than 50 on the balance, they will be blocked.
-
-![image](min_balance_3.png)
-
--->
-
-- If we have `-50` value as a minimum balance requirement, a customer can pay only R50 for the invoice, because it's allowed to have a negative balance, but no less (`-60`, `-70` etc.) than`-50`. Pay attention, if a customer pays R60, the account balance will be `-40` that is acceptable value. Even if a customer pays the full price for the invoice, the account balance will be equal to `0` and, as a result, a zero value will be greater than allowed minimum balance.
+- If we have `-50` value as a minimum balance requirement, a customer can pay only 50$ for the invoice, because it's allowed to have a negative balance, but no less (`-60`, `-70` etc.) than`-50`. Pay attention, if a customer pays 60$, the account balance will be `-40` that is acceptable value. Even if a customer pays the full price for the invoice, the account balance will be equal to `0` and, as a result, a zero value will be greater than allowed minimum balance.
 
 ![image](min_balance_1.png)
 
@@ -660,7 +652,6 @@ The recurring invoice will be auto generated on the 1st day of next month. Let's
 When the toggle **Auto create invoices** is not enabled under the customer's `Billing → Billing config` tab, you can create invoice manually using the **Add document → One-Time invoice** or **Add document → Recurring invoice** buttons under `Billing → Finance documents` tab;
 
 * **Send billing notifications** - toggle allows individually to enable/disable finance notifications for customer, the global configuration is located in `Config → Finance → Notifications`.
-
 
 ---
 

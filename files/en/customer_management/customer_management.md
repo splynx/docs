@@ -33,7 +33,7 @@ Our management system consists of 8 main pages for each customer: **information*
 * [Maps](customer_management/maps/maps.md)
 
 
-Also, it is important to know that the tables in this module, like all the others within Splynx, are customizable to display information of your preference, moreover, you are not limited to the fields available in the system by default. Tables in Splynx can always be adjusted for any purpose to display any available data and *additional fields* can be created to collect data that you may find necessary and not included in the default fields. Refer to the information provided in the following articles:
+Also, it is important to know that tables in this module, like all the others within Splynx, are customizable to display information of your preference. Moreover, you are not limited to the fields available in the system by default. Tables in Splynx can always be adjusted for any purpose to display any available data and *additional fields* can be created to collect data that you may find necessary and not included in the default fields. Refer to the information provided in the following articles:
 
 - [Configuration of table, configuring list view](customer_management/configuration_of_the_table/configuration_of_the_table.md)
 

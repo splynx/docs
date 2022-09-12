@@ -86,7 +86,7 @@ Below are examples of default accounting of tariff & online time rules:
 * Traffic consumption of your customers will be accounted from 08:00 to 02:00
 * Online time consumption of your customers will be accounted from 10:00 to 02:00
 
-![selection_544.png](selection_544.png)
+![Selection_544.png](Selection_544.png)
 
 _Overriding accounting configuration per rule:_
 

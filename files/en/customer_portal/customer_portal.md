@@ -38,7 +38,7 @@ The **Hardware** section shows an information about the customer router configur
 It displays financial information such as **Transactions**, **(Proforma) Invoices**, **Payments** and **Statements**. Also, the section includes the **form to add/remove the credentials (credit card or bank account)** to the integrated payment services that are provided by installed add-ons in Splynx.
 A customer can pay the unpaid invoice by some payment add-on, e.g. [Payment express](payment_systems/payment_express/payment_express.md) or download as PDF the necessary paid invoice or payment receipt by clicking on <icon class="image-icon">![DownloadIcon](download_icon.png)</icon> icon in *Actions* column of the relevant table.
 
-![Finance](finance_transactions.png)
+![Finance](transactions.png)
 
 A customer can click on <icon class="image-icon">![image](export_to.png)</icon> (Export to) icon to print/copy any table date, e.g. the transactions list or export it to Excel, CSV, PDF file.
 

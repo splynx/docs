@@ -25,7 +25,7 @@ Here you will be able to use different parameters for searching, such as:
 * **Phone Number** - phone number of the customer;
 * **Category** - the options are: Individual,  Business, Select all (to select all options);
 * **Location** - [location](administration/main/locations/locations.md) of the customer;
-* **Billing type** - it can be Recurring, Prepaid (Custom), Prepaid (Daily), Select all (to select all options);
+* **Billing type** - it can be Recurring, Prepaid (Custom), Select all (to select all options);
 * **Partner** - one of the [partners](administration/main/partners/partners.md) created or all of them;
 * **Tariff plans** - one of the tariff created or all of them;
   * **Search by all statuses, including 'disabled' and 'stopped'** - the toggle allows to search services with all statuses (active, disabled, stopped, pending, archived), **the toggle will be available only when tariff plan is selected**;
@@ -36,6 +36,8 @@ For a more customizable search, you can click on `Profile → Customer search fi
 ![Customer search fields](customer_search_fields0.png)
 
 ![Customer search fields](customer_search_fields.png)
+![Customer search fields](customer_search_fields1.png)
+![Customer search fields](customer_search_fields2.png)
 
 
 ## Voucher card search
@@ -80,14 +82,14 @@ Please follow these **tips** for a more efficient search:
 
 ![Whole system search](whole_system_search1.png)
 
-- to **search in the necessary entity**, choose it from the list or type the name manually, e.g. `@tickets_messages: text`
+- to **search in the necessary entity**, choose it from the list or type the name manually, e.g. `@tickets_messages: router`
 
 ![Whole system search](whole_system_search2.png)
 
-- to search according to **ID**, start the search request from `#` sign, then add ID num, e.g. `#609`
+- to search according to **ID**, start the search request from `#` sign, then add ID num, e.g. `#1`
 
 ![Whole system search](whole_system_search3.png)
 
-- the **combination of the methods** can be used, e.g. `@customers: #18`
+- the **combination of the methods** can be used, e.g. `@customers: #6`
 
 ![Whole system search](whole_system_search4.png)

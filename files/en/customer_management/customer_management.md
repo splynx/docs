@@ -24,7 +24,7 @@ Our management system consists of 8 main pages for each customer: **information*
 
   7. [CRM quotes](crm/quotes/quotes.md)
 
-  8. [Communication](my_profile/imap/imap.md)
+  8. [Communication (IMAP)](my_profile/imap/imap.md)
 
 * [Search](customer_management/search/search.md)
 

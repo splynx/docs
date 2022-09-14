@@ -25,7 +25,7 @@ Here we can edit the following fields:
 - **Note** - note directed to the lead;
 - **Memo** - personal note for the administrator.
 
-Clicking on the icon ![Quote Tariff Select](quote_tariff_select.png) we can select a service to add to the quote. It is possible to add multiple services by pressing the `+` icon. Services can conveniently be re-ordered on the quote by dragging and dropping the services to the selected position of priority. You can also select the appropriate VAT percentage from the drop-down list in the VAT field.
+Clicking on the icon ![More](more.png) we can select a service to add to the quote. It is possible to add multiple services by pressing the `+` icon. Services can conveniently be re-ordered on the quote by dragging and dropping the services to the selected position of priority. You can also select the appropriate VAT percentage from the drop-down list in the VAT field.
 
 Once we have created a quote, we can navigate to the **Actions** column on the table of quotes. Where multiple actions can be performed - *View*, *View PDF*, *Download PDF*, *Send*, *Edit* or *Delete*.
 

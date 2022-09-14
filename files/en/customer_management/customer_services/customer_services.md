@@ -53,7 +53,7 @@ After clicking ``Add service`` or ``+`` button, a window will pop up for you to 
 
 ------------
 
-**Plan settings**
+## Plan settings
 
 * **Router** - The router that API will use to connect to (for all API functions - Shaping, contention, address lists).
 
@@ -86,7 +86,7 @@ You can **edit** a service, **schedule a future change**, **change** the plan, v
 
 ------------
 
-**Change Plan from Administrator Portal**
+## Change Plan from Administrator Portal
 
 The following steps will show how an administrator in Splynx can change customer service in a correct way.
 
@@ -104,7 +104,7 @@ For example, a customer uses `Ethernet_500Mbps` as his current Internet service 
 
 3. In the new window, choose `New plan start date` (2022-10-20) and `New plan` (`Ethernet_100Mbps`) for customer and press **Apply** button:
 
-**NOTE:** If the option `Refund unused money` is not used for recurring billing in `Config → Finance → Change plan`, you can change the tariff only after 2022-10-31.
+**NOTE:** If the option `Refund unused money` is not used for recurring billing in _`Config → Finance → Change plan`_, you can change the tariff only after 2022-10-31.
 
 More info about available settings you can find in [Change plan](configuration/finance/change_plan/change_plan.md) guide.
 

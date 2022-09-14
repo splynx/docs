@@ -282,6 +282,124 @@ In `IP → Hotspot → Walled Garden`, configure the following addresses to **Ds
 
 - ```netcash.co.za``` - URL of Netcash service.
 
+<br/>
+Full list of walled garden entries to add (required for Netcash integration only):
+<br/>
+<br/>
+
+
+```bash
+/ip hotspot walled-garden
+add comment=Netcash dst-host=cde.netcash.co.za dst-port=443 path=\
+    /Site/CardPayment.aspx
+add comment=Netcash dst-host=js-agent.newrelic.com dst-port=443 path=\
+    /nr-spa-1216.min.js
+add comment=Netcash dst-host=seal.digicert.com
+add comment=Netcash dst-host=*.netcash.co.za
+add comment=Netcash dst-host=*.digicert.com
+add comment=Netcash dst-host=*.newrelic.com
+add comment=Netcash dst-host=js-agent.newrelic.com
+add comment=Netcash dst-host=netdna.bootstrapcdn.com
+add comment=Netcash dst-host=netcashcde.azurewebsites.net
+add comment=Netcash dst-host=*.ozow.com
+add comment=Netcash dst-host=*.azurefd.net
+add comment=Netcash dst-host=*.trafficmanager.net
+add comment=Netcash dst-host=*.msedge.net
+add comment=Netcash dst-host=*.hostserv.co.za
+add comment=Netcash dst-host=*.paynow.co.za
+add dst-host=*.microsoft.com
+add dst-host=*.awsglobalaccelerator.com
+add dst-host=*.cloudflare.net
+add dst-host=*.cardinalcommerce.com
+add dst-host=*.paygate.co.za
+add dst-host=*.cloudfront.net
+add dst-host=*.dpopayments.io
+add dst-host=*.dpopayments.io
+add dst-host=*.fnb*
+add dst-host=*.standardbank.*
+add dst-host=*.capitec.*
+add dst-host=*.absa.*
+add dst-host=*.nedbank.*
+add dst-host=authentication.cardinalcommerce.com/ThreeDSecure/
+add dst-host=3ds.capitecbank.co.za/acs/
+add dst-host=acsabsa.bankserv.co.za
+add dst-host=acsnedcor.bankserv.co.za
+add dst-host=acssb.bankserv.co.za
+/ip hotspot walled-garden ip
+add action=accept disabled=no dst-address=151.101.2.137 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=151.101.66.137 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=151.101.130.137 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=151.101.194.137 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=185.221.86.0/23 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=99.81.96.137 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=52.0.0.0/8 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=102.133.154.32 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=40.127.3.0/24 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=40.127.0.0/24 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=41.21.175.145 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=13.107.246.0/24 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=75.2.62.89 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=99.83.232.8 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=13.73.248.8/29 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=13.107.192.0/18 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=104.18.40.135 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=172.64.147.121 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=198.217.251.0/24 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=18.0.0.0/8 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=99.80.231.39 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept comment=api.dpopayments.io disabled=no dst-address=\
+    46.137.27.229 !dst-address-list !dst-port !protocol !src-address \
+    !src-address-list
+add action=accept disabled=no dst-address=3.248.100.28 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=63.34.141.3 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=34.0.0.0/8 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+add action=accept disabled=no dst-address=54.0.0.0/8 !dst-address-list \
+    !dst-port !protocol !src-address !src-address-list
+```
+This text can be copied and pasted into the terminal on your Mikrotik device.
+<br/>
+
+<icon class="image-icon">![Important](warning.png)</icon>
+**Pay special attention to the following lines and also copy and paste them into the Mikrotik terminal once edited**
+<br/>
+
+You should replace YOURSPLYNXPUBLICIP with your server’s public IP and YOURSPLYNXURL with your server’s URL. You should also replace YOURSPLYNXINTERNALIP with your internal IP if your server is behind NAT.
+<br/>
+```bash
+/ip hotspot walled-garden ip
+add action=accept comment=Splynx disabled=no dst-address=YOURSPLYNXPUBLICIP \
+    !dst-address-list !dst-port !protocol !src-address !src-address-list
+add action=accept comment=Splynx disabled=no dst-address=YOURSPLYNXINTERNALIP \
+    !dst-address-list !dst-port !protocol !src-address !src-address-list
+/ip hotspot walled-garden
+add dst-host=*.YOURSPLYNXURL
+```
+<br/>
+
 **Step 13**
 
 Under `Administration -> Partners` click on the "Edit" button on a partner and set the "Hotspot WLAN name" (SSID) to which customers of this partner will connect:

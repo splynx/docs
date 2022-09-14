@@ -5,7 +5,7 @@ The customer information tab is divided into 4 sections, namely, _Main informati
 
 To edit the customer's information, navigate to `Customers → List`, select the customer (click on *Full name*, *ID* or *Portal login* value of the required customer).
 
-![Customer_View.png](customer_view.png)
+![Customer_View.png](Customer_View.png)
 
 **Main information**
 
@@ -57,6 +57,7 @@ And after customer decided to pay the `overdue` invoice, the status of duplicate
 
 </div>
 </details>
+<br/>
 
 * **Billing type** - the options are Recurring payments and Prepaid (custom);
 
@@ -84,6 +85,7 @@ And after customer decided to pay the `overdue` invoice, the status of duplicate
 
 * **Date Added** - when the customer was added to Splynx.
 
+<br/>
 
 **Additional information**
 
@@ -93,13 +95,17 @@ Additional fields created will be displayed in the *Additional information* sect
 
 ![Additional information](additional_info.png)
 
+<br/>
+
 **Maps**
 
 This is a physical representation of the customer's address. If the customers address is set and maps is configured within the system, you will be able to view the customer`s physical location on the map:
 
 ![Maps](customermap.png)
 
-Maps can be configured in `Config → Main → Maps`
+Maps can be configured in _`Config → Main → Maps`_.
+
+<br/>
 
 **Comments/To-Dos**
 

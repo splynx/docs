@@ -40,7 +40,7 @@ Table of contents
   * [Customer documents](customer_management/customer_documents/customer_documents.md)
   * [CPE management](customer_management/cpe_management/cpe_management.md)
   * [CRM quotes](crm/quotes/quotes.md)
-  * [Communication](my_profile/imap/imap.md)
+  * [Communication (IMAP)](my_profile/imap/imap.md)
   * [Search](customer_management/search/search.md)
   * [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md)
   * [Maps](customer_management/maps/maps.md)

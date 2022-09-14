@@ -3,13 +3,13 @@ Personal IMAP / SMTP configuration
 
 Using this feature an administrator can send emails to the customer/lead as a personal message. The conversation between an administrator and the customer/lead will be visible only for a sender and for a receiver. None of other administrators won't be able to see this conversation in Splynx.
 
-You can find this feature configuration window under section **My profile** on **IMAP** tab:
+You can find this feature configuration in **My Profile** on **IMAP** tab:
 
 ![settings location](location.png)
 
 Below you can find a description of all available options to configure.
 
-#### Email tracking
+### Email tracking
 
 ![email tracking](email_tracking.png)
 
@@ -17,33 +17,33 @@ Below you can find a description of all available options to configure.
 
 * **Which messages to process** - select _All_ or _Unread_ messages for processing;
 
-* **Process old(historical) messages** - this option allows select of date from which Splynx will try to process emails. If disabled - Splynx will process emails from the moment when processing is enabled;
+* **Process old (historic) messages** - this option allows select of date from which Splynx will try to process emails. If disabled - Splynx will process emails from the moment when processing is enabled;
 
-* **Mark as read** - mark email as read(into email account) if processed by Splynx successfully;
+* **Mark as read** - mark email as read (into email account) if processed by Splynx successfully;
 
-* **Deny list** - a list of emails and domains what will be ignored(won't be synced) by Splynx. Each email/domain should be on a new line;
+* **Deny list** - a list of emails and domains that will be ignored (won't be synced) by Splynx. Each email/domain should be on a new line;
 
 
-#### Access settings
+### Access settings
 
 ![access settings](access_settings.png)
 
 Here you can select admins who will have an access to your incoming emails. Be very attentive with this option as all enabled administrators can read your incoming emails.
 
-#### Credentials
+### Credentials
 
 ![credentials](credentials.png)
 
 Here you need to set a username and a password to your email account. In this case it's a Gmail account login/password.
 
 
-#### IMAP settings
+### IMAP settings
 
 ![imap settings](test_connection.png)
 
 * **IMAP server** - an address of your IMAP server;
 
-* **IMAP port** - specify IMAP port(usually 143 or 993);
+* **IMAP port** - specify IMAP port (usually 143 or 993);
 
 * **Folder name of sent emails** - here you need to click on "Load" button first and after this a folder should be selected automatically. It should be a folder of sent emails and not any other folder.
 
@@ -56,9 +56,9 @@ Here you need to set a username and a password to your email account. In this ca
 When all these settings are set, click on "Test connection" to ensure that connection between Splynx and mail server is active, if no - check your settings.
 
 
-#### SMTP settings
+### SMTP settings
 
-Here we have ad administrator's personal SMTP settings(for email sending).
+Here we have an administrator's personal SMTP settings (for email sending).
 
 ![smtp settings](smtp.png)
 
@@ -71,9 +71,9 @@ Here we have ad administrator's personal SMTP settings(for email sending).
 
 * **SMTP server** - mail server address;
 
-* **SMTP port** - mail server port(usually 25, 465 or 587);
+* **SMTP port** - mail server port (usually 25, 465 or 587);
 
-* **SMTP security mode** - mail server security type(none, TLS or SSL);
+* **SMTP security mode** - mail server security type (none, TLS or SSL);
 
 * **SMTP authentication type** - type of authentication on mail server.
 
@@ -82,17 +82,17 @@ Don't forget to test connection and send a test email.
 
 ### How it works. Example.
 
-Once we have configured IMAP and SMTP under _My profile_ let's test with some customer.
+Once we have configured IMAP and SMTP in _My Profile_, let's test with some customer.
 
-First I'll send some message directly to splynx.engineer@gmail.com from some not-registered in Splynx email:
+First we'll send some message directly to Main Admin's email address from some not-registered in Splynx email:
 
 ![messages-inbox](inbox_splynx.png)
 
-it's exactly the same message what we have on our Gmail account:
+It's exactly the same message that Main Admin has on his Gmail account:
 
 ![gmail account](inbox_gmail.png)
 
-As you can see under _Messages / Inbox_ we received an not-registered message with mark "Author not found" but near each message we have the "Action" section where we can:
+As you can see under _Messages / Inbox_ we received a non-registered message with the mark "Author not found". But near each message we have the "Action" section where we can:
 1. View message;
 2. Pair to a customer;
 3. Add a customer with this email address;
@@ -111,11 +111,11 @@ Customer received this message and reply to it:
 
 ![reply](reply1.png)
 
-Once customer replied - admin will see this message under Communication tab:
+Once customer replied, admin will see this message under Communication tab:
 
 ![reply in Splynx](reply_splynx.png)
 
-**Note!** In a previous steps I enabled access to my inbox for _splynx_ admin:
+**Note!** In a previous steps we enabled access to our inbox for _splynx_ admin:
 
 ![enabled access](access_settings.png)
 

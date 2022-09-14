@@ -26,6 +26,9 @@ This field has the next logic:
 * `ZIP code` - ZIP code of the customer's area.
 * `City` - the city of customer's residence.
 * `Geo Data` - physical coordinates of the customer.
+<br/>
+<br/>
+<br/>
 
 **Customer status**
 
@@ -54,4 +57,4 @@ It is possible to personalize a customer's parameters with _Additional field_ fu
 
 To create the additional field in the form of adding of the new customer or on the information tab of the existed customer, click on ``Add`` and specify the necessary parameters:
 
-![Create additional field](create_additional_field.png)
+![Create additional field](Create_additional_field.png)

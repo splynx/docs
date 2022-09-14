@@ -7,15 +7,16 @@ With the use of our radius server, Splynx can provide access to frequent/regular
 
 Take a look at the following example of generating a prepaid voucher:
 
-Simply navigate to **Customers** -> **Vouchers** and then **Generate**. This will bring up a window for you to complete the parameters for the new voucher(s) you wish to generate.
+Simply navigate to _**Customers** → **Vouchers**_ and then `Generate`. This will bring up a window for you to complete the parameters for the new voucher(s) you wish to generate.
 
 ![Generate](generate.png)
+![Generate](generate2.png)
 
-Generating vouchers consists of three sections for configuring, *Main Information*, *Limits* and *Expiration*. Each section specifying contributing factors of the vouchers function.
+Generating vouchers consists of three sections for configuring, *Main Information*, *Limits* and *Expiration*. Each section specifies contributing factors of the vouchers function.
 
 ## Main Information
 
-**Qauntity** - the number of vouchers you wish to generate<br>
+**Quantity** - the number of vouchers you wish to generate<br>
 **Prefix** - prefix of characters to use when generating multiple vouchers<br>
 **Price** - the price of the voucher <br>
 **Pool** - the ip pool of which the voucher will obtain an ip address <br>
@@ -25,11 +26,11 @@ Generating vouchers consists of three sections for configuring, *Main Informatio
 ## Limits
 
 **Speed (upload)** - maximum upload speed allowed for the voucher<br>
-**Speed(download)** - maximum download speed allowed for the voucher<br>
-**Download** - maximum amount of data allowed for downloadingin Mb<br>
+**Speed (download)** - maximum download speed allowed for the voucher<br>
+**Download** - maximum amount of data allowed for downloading in Mb<br>
 **Upload** - maximum amount of data allowed for uploading in Mb<br>
 **Traffic** - the total amount of data traffic up/down allowed in Mb<br>
-**Online time(total)** - the total amount of access time allowed in either minutes/hours/days.
+**Online time (total)** - the total amount of access time allowed in either minutes/hours/days.
 
 ## Expiration
 
@@ -40,6 +41,7 @@ Generating vouchers consists of three sections for configuring, *Main Informatio
  Once vouchers are generated, you can edit each voucher individually to add the contact details of customers using the voucher cards and a remark for reference.
 
 ![Voucher details](vouchereditcontact.png)
+![Voucher details](vouchereditcontact2.png)
 
 
 <icon class="image-icon">![Information](information.png)</icon> After the vouchers are generated, you do not need to activate them in Splynx (change **Status** to *Active*). These vouchers are ready to use for as soon as it has been generated.

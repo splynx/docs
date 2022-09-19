@@ -10,14 +10,15 @@ To help understand both perspectives, let's separate our ticketing system into t
 **Dashboard**
 
 ![Dashboard](tickets_dashboard.png)
+![Dashboard](tickets_dashboard2.png)
 
 The ticketing dashboard shows the following sections:
 
 * Number of all tickets in the system with the statuses *New*/*Work in progress*/*Resolved* and *Waiting on agent*;
 * General and per-agent (top 10) statistics of tickets with date range selection;
-* Live log of the recent activities in tickets;
-* Quick reference to the tickets that were assigned to the administrator currently logged into the system;
-* Statistics of assigned tickets between administrators in the system.
+* Live log of **recent activities** in tickets;
+* Quick reference to the tickets that were **assigned** to the administrator currently logged into the system;
+* Statistics of assigned tickets **between administrators** in the system.
 
 Administrators can create the tickets in 3 ways:
 
@@ -29,13 +30,15 @@ Administrators can create the tickets in 3 ways:
 
 ![Create_ticket](admin_create_2.png)
 
-3. Within the list of **new & open** tickets `Ticket → List new & open`, there is the **Create ticket** button located at the top right of the page.
+3. Within the list of **new & open** tickets _Tickets → List_, there is ``Create ticket`` button located at the top right of the page.
 
-![Create ticket](tickets_new&opened.png)
+![Create ticket](tickets_list.png)
 
 After pressing the button in any of the above ways, you will be redirected to a new window, where you need to fill out the following fields along with the message area:
 
 ![New ticket](createnew_ticket.png)
+
+`Hidden` toggle allows you to hide the ticket from the customer.
 
 * **Customer** / **Lead** - for which client/lead to create a ticket;
 * **Assign to** - the administrator to whom the ticket will be assigned;
@@ -49,7 +52,6 @@ After pressing the button in any of the above ways, you will be redirected to a 
 * **Message** - the main text content of the ticket can be typed here;
 * **Attachments** - used to attach files to the ticket.
 
-The `Hidden` allows you to hide the ticket from the customer.
 
 ------------
 
@@ -69,13 +71,13 @@ In the *Tickets* module you can create new additional fields according to your n
 
 For more information, see [Additional fields](configuration/system/additional_fields/additional_fields.md) tutorial.
 
-To show / hide the build-in columns or change its order in the ticket list, click on <icon class="image-icon">![image](show_hide_columns_icon.png)</icon> icon at the top-right corner of the table
+To show / hide the build-in columns or change its order in the ticket list, click on <icon class="image-icon">![image](show_hide_columns_icon.png)</icon> icon at the top-right corner of the table:
 
+![image](show_hide_button.png)
 ![image](show_hide_columns.png)
 
 ------------
-
-Once the ticket has been created, it will be visible in the `List new & open` table. Click on **Filter** button to sort tickets by *Condition*, *Period*, *Customer/Lead*, *Group*, *Partner*, *Type*, *Priority*. Also, it's possible to search for specific text with the help of **Text search** field in the filter sidebar. On the top bar, click on the **Quick access** menu to filter tickets by assigned administrator or click on **Status** to show tickets only in a certain status.
+Once the ticket has been created, it will be visible in _List_ table. Click on ``Filter`` button to sort tickets by *Condition*, *Period*, *Customer/Lead*, *Group*, *Partner*, *Type*, *Priority*. Also, it's possible to search for specific text with the help of **Text search** field in the filter sidebar. On the top bar, click on the **Quick access** menu to filter tickets by assigned administrator or click on **Status** to show tickets only in a certain status.
 
 ![New & Open](tickets_filter.png)
 
@@ -103,14 +105,14 @@ In addition, we can manage each ticket in the table with the available actions i
 
 The **ticket working area is divided into 3 parts**:
 
-1. **ticket properties**;
+1. **ticket parameters**;
 2. **action buttons**;
 3. **message area**.
 
 ![Working area](ticket_workarea.png)
 
 
-**Ticket properties section parameters:**
+**Ticket parameters section:**
 
 * **Note** - area for entering a note that is not visible to the customer. This note is only visible in the sidebar;
 * **Hide from customer** - toggle to hide/show the ticket from the customer;
@@ -121,31 +123,30 @@ The **ticket working area is divided into 3 parts**:
 * **Subject** - change the subject of the ticket;
 * **Priority** - change the urgency of the ticket;
 * **Status** - change the current state of the ticket;
-* **Type** - change the reason for the ticket;
-* **Add file** - attach file to the ticket.
+* **Type** - change the reason for the ticket.
 
-The **Update** button is used to save changes made in the sidebar of the ticket properties. Note that the button has an additional function that allows you to save changes and change the status of the ticket at the same time.
+``Update`` button is used to save changes made in the sidebar of the ticket properties. Note that the button has an additional function that allows you to save changes and change the status of the ticket at the same time.
 
 **Ticket action buttons:**
 
 ![image](action_buttons.png)
 
-* **Reply** - used to respond to a message or add a message to a conversation, this button opens the message area for entering or inserting content from canned responses;
+* **Reply** - used to respond to a message or add a message to a conversation. This button opens the message area for entering or inserting content from canned responses;
 * **Add note** - add a note to the ticket thread conversation, such note won't be visible for a customer, only to ticket's watchers or other administrators with a permission to view a ticket;
 * **Jump to last message** - scroll down to the last message in the ticket thread conversation;
-**Actions** drop-down menu:
+* **Actions** drop-down menu:
   * **Show activities** - show all activities related to the current ticket, including automatic change of ticket status by the system;
   * **Show all files** - show all attached files in the ticket;
   * **Create task** - create a new task for support team, all pre-written messages, including notes, will be quoted in the description of the new task;
   * **Merge ticket** - merge one ticket into another ticket, e.g. you received two support requests about the same issue from the same customer;
-  * **Close ticket** - close the ticket, in new pop-up window the option `Close without notification` can be enabled;
-  * **Move to archive** - change the status of the ticket to resolved and move it to the Archive.  
+  * **Close ticket** - close the ticket;
+  * **Move to archive** - change the status of the ticket to resolved and move it to _Archive_.  
 
 To **share a ticket** thread conversation with an agent who doesn't have a Splynx account, e.g. from another department in you company, you can enable **Public URl** for the ticket. Open the necessary ticket, next to its title click on a small arrow sign, a small pop-up window should appear, click on the **Public URl** toggle to enable the option, the direct link to the current ticket will be copied to the clipboard.
 
 ![image](public_url.png)
 
-In addition, for each text block (message) of the ticket there are additional actions:
+For each text block (message) of the ticket there are additional actions:
 
 ![image](additional_actions.png)
 
@@ -158,11 +159,10 @@ In addition, for each text block (message) of the ticket there are additional ac
 **Ticket message area**
 
 * **Forward** - this button opens the `Cc` and `Bcc` fields for forwarding the response as well as ticket content to another email address(s);
-* **Send** - send a response to the customer, an additional feature allows you to respond and change the status of the ticket at the same time;
+* **Send** - send a response to the customer. An additional feature allows you to respond and change the status of the ticket at the same time;
 * **Upload** - used to attach file (-s) to the ticket.
 
 ------------
-
 Once the issue reported in the ticket is resolved, click on the small arrow next to the **Update** button to open more options, click on **Update and close** item to close the current ticket, its status will be set to `Resolved` and the ticket will be moved to `Tickets → List of closed` section.
 
 ![image](update_button.png)
@@ -183,11 +183,11 @@ Your **customers can also create tickets in three ways**:
 
 * **Subject** -  a relevant subject of the ticket, usually pertaining to the reason for opening the ticket;
 * **Priority** - the urgency of the ticket which can be set to low, medium, high or urgent;
-* **Type** - the reason for creating the ticket which can be set to `Question`, `Incident`, `Problem`, `Feature request` or `Lead`.;
+* **Type** - the reason for creating the ticket which can be set to `Question`, `Incident`, `Problem`, `Feature request` or `Lead`;
 * **Message** - the main text body of the ticket;
-* **Attachments** - used to attach files to the ticket.
+* **Attach files** - used to attach files to the ticket.
 
-Once the ticket is created it is possible to **view** or **close** it by using the following icons <icon class="image-icon"→![Add](icons.png)</icon within the table/list of opened tickets:
+Once the ticket is created it is possible to **view** or **close** it by using the following icons <icon class="image-icon">![Add](icons.png)</icon> within the table/list of opened tickets:
 
 ![Tickets portal](portal_list_of_tickets.png)
 
@@ -201,20 +201,22 @@ Once a ticket is created by a customer or administrator, notifications are sent 
 Depending on the template you use for tickets, tickets can include a ticket main message, which can ultimately create a convenience because customers/administrators can respond to the ticket directly from the email.
 If the template does not include a ticket main message, customers/administrators can log in to their respective portals using the link included in the ticket notifications.
 
+</br>
 For more information, see
 
-- [Templates](configuration/system/templates/templates.md) (select the *Tickets* type from select menu);
+- [Templates](configuration/system/templates/templates.md) (select the *Tickets* type from select menu)
 - [Ticket notifications](configuration/support/ticket_notifications/ticket_notifications.md)
 
+</br>
 More information how to automate your work with tickets and configure its additional settings, you can find in the the next tutorials:
 
-- [Ticket automation](configuration/support/ticket_automation/ticket_automation.md);
-- [Helpdesk](configuration/support/support.md).
+- [Ticket automation](configuration/support/ticket_automation/ticket_automation.md)
+- [Helpdesk](configuration/support/support.md)
 
 
-## List of new & opened
+## List
 
-In this section you will find a list/table of **all new and opened tickets** in Splynx. For administrators who are part of the support team and respond to customer requests, this is their workspace in the ticketing module.
+In this section you will find a list/table of **all new, opened and closed tickets** in Splynx. For administrators who are part of the support team and respond to customer requests, this is their workspace in the ticketing module.
 
 ![image](new_open.png)
 
@@ -250,9 +252,12 @@ The layout of each table related to the *Tickets* section in Splynx can be chang
 
 - Only when using the table view layout, the **Show/hide columns** <icon class="image-icon">![image](show_hide_columns_icon.png)</icon> and **Export to** <icon class="image-icon">![image](export_to_icon.png)</icon> options are available.
 
-| <icon class="image-icon">![image](table_layout_table.png)</icon> (Table view) | <icon class="image-icon">![image](table_layout_card.png)</icon> (Card view)  |
-| ------------ | ------------ |
-| ![image](table_view.png) | ![image](card_view.png) |
+<icon class="image-icon">![image](table_layout_table.png)</icon> **Table view**
+![image](table_view.png) 
+<br>
+<br>
+<icon class="image-icon">![image](table_layout_card.png)</icon> **Card view**
+![image](card_view.png)
 
 
 ## List of closed

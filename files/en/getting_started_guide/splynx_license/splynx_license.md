@@ -29,4 +29,4 @@ The mobile applications are included in Splynx license fee.
 
 * **Integration/deployment fee and POC fee are not included and are always based on the complexity of the project.  Please follow the link below for more information about the paid integration option:**
 
-[Paid Integration](https://splynx.com/paid-integration-poc/)
+[Paid Integration](https://splynx.com/wp-content/uploads/2022/06/Splynx-Pricing-Policy-22.06.22.pdf)

@@ -73,7 +73,7 @@ And you should be redirected to the *Genie ACS page*, if you prompted for login/
 
 After successful login you will see a window as in the screenshot below, you should click on "ABRACADABRA" button.
 
-**IMPORTANT:** **All check-boxes should be selected**.
+**IMPORTANT:** **All check-boxes should be selected except _Presets and Provisions_**.
 
 ![abracadabra](abracadabra.png)
 

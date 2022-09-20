@@ -5,7 +5,9 @@ The **payment statement processing** feature allows you to reconcile payments re
 
 Payment transactions are automatically processed by Splynx **handlers** – *small modules created for each bank file format*.
 
-![image](main.png)
+![image](main_1.png)
+![image](main_2.png)
+![image](main_3.png)
 
 ---
 

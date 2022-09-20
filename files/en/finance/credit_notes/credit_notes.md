@@ -20,7 +20,7 @@ Let's consider in details the *Credit notes* statuses and the actions that can b
 
 <icon class="image-icon">![Note](note.png)</icon> **NOTE:**
 
-- A created credit note can only be edited if it's in the `Refund due` status and at the same time is not linked to an invoice;
+- A created credit note can only be edited if it is in the `Refund due` status and at the same time is not linked to an invoice;
 
 - If a credit note is in the `closed` or `refunded` status, only the *Note* field can be edited;
 
@@ -45,7 +45,7 @@ Let's consider in details the *Credit notes* statuses and the actions that can b
 
 **Example #1:**
 
-Let's say we have the customer who uses the Internet service for $100. And a SIP should give the money back to the customer.
+Let's say we have the customer who uses the Internet service for $100. And an ISP should give the money back to the customer.
 
 1. The customer has been invoiced for 100$ for the service (the account balance = `-100`). The invoice was paid successfully by the customer (the balance = `0`);
 
@@ -98,7 +98,7 @@ In such case, the related invoice (and its transaction) will be automatically li
 
 ![](cred_note_from_action1.png)
 
-If it's necessary you can change the price, description etc. of an included item or add a new one.
+If necessary, you can change the price, description etc. of an included item or add a new one.
 
 ---
 
@@ -123,7 +123,7 @@ If it's necessary you can change the price, description etc. of an included item
 
 
 
-  For example, the initial Internet service price = R200 and the new Internet service price = R100, in such case we will have the next result:
+  For example, the initial Internet service price = 200$ and the new Internet service price = 100$, in such case we will have the next result:
 
 ![image](refund_money_as_credit_note.png)
 
@@ -136,7 +136,7 @@ If it's necessary you can change the price, description etc. of an included item
 ```     
 April 2022 = 30 days.
 
-R200/30 days = R6.6666.
+200$/30 days = 6.6666$.
 
 The service was changed on April 16 (New plan start date = April 16).
 
@@ -144,15 +144,15 @@ As a result, the initial Internet service start date - 2021-04-01 and End date -
 
 30 days - 15 days = 15 days of initial paid Internet service left.
 
-15 days * R6.66 = R99.99 ~ R100 (for the Credit note, this amount will be added to the customer's account balance).
+15 days * 6.66$ = 99.99$ ~ 100$ (for the Credit note, this amount will be added to the customer's account balance).
 
 But we have other 15 days for the new Internet service.
 
-The new Internet service price = R100 / 30 days = R3.3333.
+The new Internet service price = 100$ / 30 days = 3.3333$.
 
-R3.33 * 15 days = R49.99 ~ R50 (price of the new Internet service).
+3.33$ * 15 days = 49.99$ ~ 50$ (price of the new Internet service).
 
-The new recurring invoice will be paid from the account balance and R50 will remain on the balance.
+The new recurring invoice will be paid from the account balance and 50$ will remain on the balance.
 
 ```
 </div>
@@ -164,7 +164,7 @@ The new recurring invoice will be paid from the account balance and R50 will rem
 
 #### Credit notes in Finance
 
-All issued *Credit notes* can be found in `Finance → Credit Notes`. In case the module is not visible on the left sidebar of Splynx, you can enable it in `Config → Integration → Main modules`.
+All issued *Credit notes* can be found in `Finance → Credit Notes`. In case the module is not visible on the left sidebar of Splynx, you can enable it in *Config → Integration → Main modules*.
 
 ![](cred_note_location.png)
 
@@ -186,13 +186,13 @@ Alternatively, once you have selected the required *Credit note (-s)* in the tab
 
 #### Template of Credit note
 
-Credit notes in PDF format are fully customizable with [templates](configuration/system/templates/templates.md). You can create a new template using the different [variables](configuration/system/templates/templates_variables/templates_variables.md) or edit the build-in templates in `Config → Templates` (Type: **Credit Note PDF**). Then, open `Config → Company Information`, find the field `Credit Note PDF Template` and in drop down list choose the template that will be used by default in Splynx.
+Credit notes in PDF format are fully customizable with [templates](configuration/system/templates/templates.md). You can create a new template using the different [variables](configuration/system/templates/templates_variables/templates_variables.md) or edit the build-in templates in *Config → Templates* (Type: **Credit Note PDF**). Then, open *Config → System → Company Information*, find the field `Credit Note PDF Template` and in drop down list choose the template that will be used by default in Splynx.
 
 ------------
 
 #### Notifications
 
-To **configure the notifications after credit note is created**, navigate to `Config → Finance → Notifications → Global (tab) → Credit notes` and set the required settings.
+To **configure the notifications after credit note is created**, navigate to *Config → Finance → Notifications → Global (tab) → Credit notes* and set the required settings.
 
 ![](credit_note_notifications.png)
 
@@ -200,7 +200,7 @@ To **configure the notifications after credit note is created**, navigate to `Co
 
 #### Logs
 
-The log with all *Credit notes* operations can be found in `Administration → Logs → Operations`. Click on <icon class="image-icon">![](view.png)</icon> icon to view more details.
+The log with all *Credit notes* operations can be found in *Administration → Logs → Operations*. Click on <icon class="image-icon">![](view.png)</icon> icon to view more details.
 
 
 ![](logs.png)

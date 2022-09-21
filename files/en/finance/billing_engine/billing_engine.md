@@ -6,15 +6,15 @@ Let's start with the financial dashboard, which shows us a quick overview regard
 
 Quick totals for the following data and buttons to direct to a list for each:
 
-* Debit transactions
 * Payments
 * Paid invoices
 * Unpaid invoices
+* Credit notes
 * Paid proforma invoices
 * Unpaid proforma invoices
 
 
-Totals data for the above mentioned for each of the following periods:
+Total data for the above mentioned for each of the following periods:
 
 * Last Month
 * Current Month
@@ -25,14 +25,14 @@ The dashboard also includes the following mini-reports in form of graphs:
 
 * Invoicing for period (VAT Included)
 * Payments for period (VAT Included)
-* Top 10 payers
-* Top 10 debtors
 * Monthly recurring revenue
 * Average revenue per user
+* Top 10 payers
+* Top 10 debtors
 
 Each of the graphs can be customized to view provided time frames for specific partners and locations.
 
-A separate table is also included with information on all overdue invoices
+A separate table is also included with information on all overdue invoices.
 
 
 ![Finance dashboard](finance_dashboard_3.png)

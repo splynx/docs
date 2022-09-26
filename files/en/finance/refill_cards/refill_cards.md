@@ -27,7 +27,7 @@ To enable Refill cards, navigate to *Config → Integrations → Main modules �
 ******************************************************************************
 After generating refill cards, a new window appears displaying a table of all generated refill cards for the new series:
 
-  ![Series](view_serie.png)
+  ![Series](view_s.png)
 
   In the Actions column, you can redeem <icon class="image-icon">![redeem_icon](redeem_icon.png)</icon>, edit <icon class="image-icon">![edit_icon](edit_icon.png)</icon> and delete <icon class="image-icon">![Delete_icon](delete_icon.png)</icon> refill cards.
 

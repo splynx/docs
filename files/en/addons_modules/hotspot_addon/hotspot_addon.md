@@ -72,6 +72,10 @@ After the installation process has completed, you have to configure the HotSpot 
 
 ![email](email_format.png)
 
+* **Terms and conditions on login** - enable/disable showing terms and conditions when signing in to HotSpot;
+
+* **Terms and conditions text** - enter the text of terms and conditions in this field;
+
 * **Country calling codes** - select a country phone code.
 
 
@@ -264,7 +268,7 @@ Set the correct parameters on the **Login** tab for the HotSpot Server Profile:
 
 **Step 11**
 
-In `IP → Hotspot → Server Profiles`, the default profile should be with the next settings:
+In `IP → Hotspot → User Profiles`, the default profile should be with the next settings:
 
 ![img](28.png)
 
@@ -402,15 +406,23 @@ add dst-host=*.YOURSPLYNXURL
 
 **Step 13**
 
-Under `Administration -> Partners` click on the "Edit" button on a partner and set the "Hotspot WLAN name" (SSID) to which customers of this partner will connect:
+Under `Administration -> Partners` click on the "Edit" button on a partner and set **Hotspot server name** or **SSID** (depends on device vendor) to which customers of this partner will connect.
 
-![set_ssid](set_ssid.png)
+When editing a partner, in Hotspot SSID list field, enter the following:
 
-Make sure each partner who uses the Hotspot add-on has a correct WLAN name here:
+* for Mikrotik devices: enter Hotspot server name;
+
+* for Cambium devices: enter SSID name.
+
+![set_ssid](edit_partner.png)
+
+![name](hotspot_name.png)
+
+Make sure each partner who uses the Hotspot add-on has a correct hotspot name here:
 
 ![partners_list](partners_list.png)
 
-It is crucial when each partner has its own branding (logo under `Company information`). In case when real SSID does not match WLAN name in this field, the system will load a logo of default partner.
+It is crucial when each partner has its own branding (logo under `Company information`). In case when real SSID does not match hotspot name in this field, the system will load a logo of default partner.
 
 You can check a real SSID name of connected customers under `Customers -> Vouchers -> List` on a tab `Online vouchers` under the field "Port":
 
@@ -426,9 +438,13 @@ Imitating the client's steps, try to connect to the newly created Wi-Fi HotSpot:
 
 ![img](31.png)
 
-To sign in to your HotSpot, enter your phone number and press **Next**:
+To sign in to your HotSpot, enter your phone number and press **Next**.
 
 ![img](34.png)
+
+If there are terms and conditions on login, accept them to proceed. You can click on *terms and conditions* phrase under the phone number field and see the text like this:
+
+![text](terms_text.png)
 
 <icon class="image-icon">![Note](note.png)</icon> **NOTE:** To receive an SMS with a code, you need to set up an [SMS gataway](configuration/main_configuration/sms_config/sms_config.md) in Splynx.
 

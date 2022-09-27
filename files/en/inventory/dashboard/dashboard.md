@@ -2,7 +2,7 @@ Inventory Dashboard
 ==========
 
 
-The Inventory dashboard gives us an overview of all our products. We can see the product's statuses, type of using these products and recent activities.
+The Inventory dashboard gives you an overview of all the products. You can see the product's statuses, type of using these products and recent activities.
 
 Here we can see the directory boards - **Items**, **Products**, **Suppliers**, **Invoices** which will direct you to the appropriate sections. The numbers on these blocks show the number of elements in the corresponding sections.
 

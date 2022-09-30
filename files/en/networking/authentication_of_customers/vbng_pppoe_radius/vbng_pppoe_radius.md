@@ -173,26 +173,24 @@ This pretty much completes the setup on the vBNG side and now it’s time
 to perform some additional configuration on the Splynx side.
 
 First off, let’s add our vBNG to Splynx, so they can communicate
-properly. Go to `Config → Networking → NAS types` and add a new one.
+properly. Go to *Config → Networking → NAS types* and add a new one.
 
-![lab2](./image15.png)
+![lab2](image15.png)
 
 Go to `Networking → Routers → Add` and add our vBNG with the
-configuration according to diagram.
+configuration according to the diagram.
 
-![lab2](./image16.png)
+![lab2](image16.png)
 
-For our test case we created a demo user with assigned Internet tariff
+For our test case we created a demo user with an assigned Internet tariff
 plan.
 
-![lab2](./image17.png)
-
-![lab2](./image18.png)
+![lab2](image18.png)
 
 We want him to obtain an IP address from Radius, so assigned a static
 one for testing purposes.
 
-![lab2](./image19.png)
+![lab2](image19.png)
 
 So, let’s say we also want him to have a certain rate limit on the
 internet service, for instance 20mbit/10mbit. This is how to
@@ -201,22 +199,27 @@ configure it properly on both sides, vBNG and Splynx accordingly.
 In Splynx we have to edit the internet plan by adding an additional
 field, which will be sent by Radius to vBNG QoS engine in order to
 define the policy applied to customers.
+To add a new field, navigate to *Config System Additional fields* and select a proper module. In our case, this is **"Internet plans"**:
 
-![lab2](./image1a.png)
+![add_field](add_field.png)
 
-![lab2](./image1b.png)
+![lab2](image1b.png)
 
 In order for this functionality to work, let’s make additional tweaks to
-the Radius configuration. Go to `Config → Networking → Radius`,
+the Radius configuration. Go to *Config → Networking → Radius*,
 under NAS Config section choose netElastic for NAS type from the
-drop-down menu and click on Load button.
+drop-down menu and click on `Load` button.
 
-![lab2](./image1c.png)
+![lab2](image1c.png)
 
 Under netElastic Configuration scroll down to Rate-Limit attributes and
 enter as follows:
 
-![lab2](./image1d.png)
+``
+NetElastic-Qos-Profile-Name = {{tariff_attributes.plan_name}}
+``
+
+![lab2](image1d.png)
 
 Here, NetElastic-Qos-Profile-Name is the parameter which tells the
 vBNG’s internal QoS engine which policy to apply, so essentially, we are
@@ -259,8 +262,6 @@ The QoS profile is attached to the authorization template as follows:
 
 ![lab2](./image21.png)
 
-That's about it. If everything is configured properly you should be able
+If everything is configured properly, you should be able
 to see the various accounting information related to our test user in
 Splynx dashboard.
-
-![lab2](./image22.png)

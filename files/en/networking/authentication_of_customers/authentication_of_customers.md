@@ -5,19 +5,17 @@ Splynx supports different ways of customers' central authentication within the n
 
 * **PPPoE** - easy to maintain and implement. Customer sets up username and password on the CPE device, and all networking settings received by the CPE comes from the PPPoE NAS (Network Access Server). It also provides encryption if needed and accounting for getting usage statistics. It had issues with MTU in past, but in the last few years these issues were fixed by main vendors.
 
-* **IPoE (or DHCP)** - DHCP is based on the MAC address of the client. It can also be linked to a port of the switch where the customer is connected ([DHCP option 82](networking/authentication_of_customers/dhcp_option_82/dhcp_option_82.md)). Several vendors do not provide accounting capabilities (Mikrotik routers)
+* **IPoE (or DHCP)** - DHCP is based on the MAC address of the client. It can also be linked to a port of the switch where the customer is connected ([DHCP option 82](networking/authentication_of_customers/dhcp_option_82/dhcp_option_82.md)). Several vendors do not provide accounting capabilities (Mikrotik routers).
 
-* **Wireless Authentication** - when ISP's has a wireless network, they need to maintain access of CPE devices to their Access Points. For this purpose several wireless authentication methods are used, such as a password inside TDMA protocols or wireless access-lists
+* **Wireless Authentication** - when ISPs have a wireless network, they need to maintain access of CPE devices to their Access Points. For this purpose several wireless authentication methods are used, such as a password inside TDMA protocols or wireless access-lists.
 
-* **Hotspot** - customers' has to enter their username's and password's on a webpage before using the Internet. Many hotspot networks allow free limited access and then charge customers for additional usage or advanced plans.
+* **Hotspot** - customers have to enter their usernames and passwords on a webpage before using the Internet. Many hotspot networks allow free limited access and then charge customers for additional usage or advanced plans.
 
-* **Static IP addressing** - some ISP's don't have central management of authentication and setup static IP addresses to CPE devices. With the Mikrotik RouterOS platform, Splynx can manage even customers who has static IP's in Vlan per customer scenario or plain IPv4 connection. Also, Splynx can grab statistics from Mikrotik routers for such customers.
+* **Static IP addressing** - some ISPs do not have central management of authentication and setup static IP addresses to CPE devices. With the Mikrotik RouterOS platform, Splynx can manage even customers who has static IP's in Vlan per customer scenario or plain IPv4 connection. Also, Splynx can grab statistics from Mikrotik routers for such customers.
 
 
 Below are manuals for different types of user authentication in Splynx ISP Framework:
 
-
-* [Accel-ppp: Server for Linux](networking/authentication_of_customers/linux_accel/linux_accel.md)
 
 * [Cambium: Wireless Authentication via Radius](networking/authentication_of_customers/cambium_wireless_auth_radius/cambium_wireless_auth_radius.md)
 
@@ -27,9 +25,16 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 * [Cisco ASR 9010: PPPoE with Radius](networking/authentication_of_customers/cisco_asr9010_pppoe_radius/cisco_asr9010_pppoe_radius.md)
 
+* [DHCP Option 82](networking/authentication_of_customers/dhcp_option_82/dhcp_option_82.md)
+
 * [DSL Telkom (Openserve) authentication](networking/authentication_of_customers/dsl_telkom_openserve/dsl_telkom_openserve.md)
 
+
 * [Juniper: PPPoE with Radius server](networking/authentication_of_customers/juniper_pppoe_radius/juniper_pppoe_radius.md)
+
+* [Linux: Accel-ppp server](networking/authentication_of_customers/linux_accel/linux_accel.md)
+
+* [Linux: Accel-ppp server with IPoE](networking/authentication_of_customers/linux_accel_ipoe/linux_accel_ipoe.md)
 
 * [Mikrotik: DHCP using Radius](networking/authentication_of_customers/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
 

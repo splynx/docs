@@ -75,13 +75,13 @@ The IP address can be assigned on permanent/static basis by the Splynx Radius or
 
 ![Credentials](edit_service.png)
 
-All communications between the Splynx Radius server and Mikrotik routers are available in logs under `Splynx → Administration  → Files → Radius` short (radius/short):
+All communications between the Splynx Radius server and Mikrotik routers are available in logs under `Splynx → Administration  → Logs → Files` short (radius/short):
 
 ![Log](short_log.png)
 
 ![Log2](short_log_2.png)
 
-also you can check a COA(change of authorization) logs:
+also you can check a COA (change of authorization) logs:
 
 ![coa](coa_log.png)
 
@@ -92,7 +92,7 @@ For further troubleshooting please visit the  [Troubleshooting Radius server](ne
 
 ### Disconnecting/blocking users from Radius server
 
-When customer's' status is changed from Active to Blocked, the Splynx Radius server pushes the Change of authorization (COA) message to the Mikrotik Router. The COA message contains the name of the address list where the customer's IP should be added to. It does not matter if the customer has permanent or dynamic IP - their current IP address will be put to the address list Reject_1. When we change the status back to Active, the address list Reject_1 is rewritten via the COA message to "Active". The other option to block the customer's session is to use the disconnection of the session. The session is disconnected and when the customer attempts to reconnect, they are added to the address-list (when using permanent IP assignment) or they will receive an IP from a special blocked IP pool (dynamic IP assignment). For both of the types of blocking customer sessions, it is necessary to enable Incoming communication on the Mikrotik Router side:
+When customer's' status is changed from Active to Blocked, the Splynx Radius server pushes the Change of authorization (COA) message to the Mikrotik Router. The COA message contains the name of the address list where the customer's IP should be added to. It does not matter if the customer has permanent or dynamic IP - their current IP address will be put to the address list Reject_1. When we change the status back to Active, the address list Reject_1 is rewritten via the COA message to "Active". The other option to block the customer's session is to disconnect the session. Once done, and when the customer attempts to reconnect, they are added to the address-list (when using permanent IP assignment) or they will receive an IP from a special blocked IP pool (dynamic IP assignment). For both of the types of blocking customer sessions, it is necessary to enable Incoming communication on the Mikrotik Router side:
 
 ![PPP blocking](incoming.png)
 
@@ -108,9 +108,9 @@ By default, Splynx does not close the sessions of customers if it is not request
 
 Be very attentive with this option.
 
-There is also a method in Splynx to close the session of a customer, forcing the customer to reconnect. It is available through the use of the "X" button in the service of the customer or in the table of Online customers but only if the "X" option is added to the list of columns in the table.
+There is also a method in Splynx to close the session of a customer, forcing the customer to reconnect. It is available through the use of the close button in the service of the customer or in the table of Online customers but only if this option is added to the list of columns in the table.
 
-Service close session:
+Close online session:
 
 ![Kill session button](kill_session.png)
 

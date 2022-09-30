@@ -1,11 +1,11 @@
 Admin login to Juniper (JUNOS)
 ==========
 
-First of all we need to add router to Splynx and define NAS Type = Juniper.
+First of all, we need to add router to Splynx and define NAS Type = Juniper.
 
 ![NAS type](junos_add_router.png)
 
-If you choose the wrong NAS Type, authentication of administrators will not work. The difference between JunOS's Radius admin login and other vendors is that Juniper doesn't send Session-Type in the Radius packet when administrator's tries to login to the system. Because we set the NAS type to Juniper, Splynx expects this behaviour and knows that it's the administrator, checks the DB and if the admin is there, the admin will be allowed to login to router.
+If you choose the wrong NAS Type, authentication of administrators will not work. The difference between JunOS's Radius admin login and other vendors is that Juniper does not send Session-Type in the Radius packet when administrator tries to login to the system. Because we set the NAS type to Juniper, Splynx expects this behavior and knows that it is the administrator, checks the DB and if the admin is there, the admin will be allowed to login to the router.
 
  Below is an example of the packet format sent to the Radius server in Access-request when an administrator logs in to a Juniper router :
 

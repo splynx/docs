@@ -25,13 +25,13 @@ Then the policy name in cisco will be `Wifi_1_Mb-down, Wifi_1_Mb-up`. Now we are
 
 
 ## Step 2.
-Ok, we got the field policy name for each tariff plan. Check the settings of attribute in Splynx:
+So, we got the field policy name for each tariff plan. Check the settings of attribute in Splynx (*Config → Networking → Radius → NAS Type(Cisco IOS XE)*, then click on `Load` and scroll down Cisco IOS XE Configuration):
 
 ![Cisco XE configuration](cisco_xe_config.png)
 
 
 ## Step 3.
-If we will use Fair Usage Policies, it is necessary to configure the FUP plan names. It must be without spaces, for example `Wifi_1_slow`, this will slowdown the user's internet speeds if the user transfers over 100 MB per day :
+If we use Fair Usage Policy, it is necessary to configure the FUP plan names. It has to be without spaces, for example `Wifi_1_slow`, this will slowdown the user's internet speeds if the user transfers over 100 MB per day :
 
 ![FUP](fup.png)
 
@@ -96,7 +96,7 @@ Cisco_IOS_XE#show policy-map interface Virtual-access 1.1
 
   Service-policy output: Wifi_1_Mb-down
 ```
-with the details of traffic that was forwarded or limited by the policy
+with the details of traffic that was forwarded or limited by the policy.
 
 
 ---
@@ -250,7 +250,8 @@ Run the debug command in Cisco CLI:
 ```
 #debug aaa pod
 ```
-and disconnect the client session from the Splynx server
+and disconnect the client session from the Splynx server:
+
 ![Disconnect customer](disconnect.png)
 
 The output in the Cisco debug window should be :

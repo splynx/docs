@@ -140,7 +140,7 @@ Table of contents
 
 * [Radius server customization](networking/radius_customization/radius_customization.md)
 
-* [Radius Proxy Accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
+* [Radius proxy accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 
 * [Routers settings](networking/routers_settings/routers_settings.md)
   * [Mikrotik routers](networking/routers_settings/mikrotik/mikrotik.md)

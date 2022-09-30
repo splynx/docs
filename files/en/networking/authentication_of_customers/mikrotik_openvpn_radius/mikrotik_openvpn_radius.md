@@ -1,7 +1,7 @@
 Mikrotik: OpenVPN, Radius
 ==========
 
-When using this feature, please make that your radius server settings are configured according to the configurations specified on the [PPPoE Radius](networking/authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md) page.
+When using this feature, please make sure that your radius server settings are configured according to the configurations specified on the [PPPoE Radius](networking/authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md) page.
 
 The following is a guide you can follow to configure your OpenVPN server.
 
@@ -64,6 +64,6 @@ Enable the OpenVPN server setting features you need and the server certificate. 
 
 
 ---
-Finally, we will be able to connect customers with their login's and password's, that have been set in Splynx in the customer's services. We will receive an IP from the pool we have selected, or if set, the static/permenant IP. The other option is to get an IP directly from the MikroTik, this is if the "IPv4 assignment method" setting is set to "None (Router will assign IP).
+Finally, we will be able to connect customers with their login's and password's, that have been set in Splynx in the customer's services. We will receive an IP from the pool we have selected, or if set, the static/permenant IP. The other option is to get an IP directly from the MikroTik, if the "IPv4 assignment method" setting is set to "None (Router will assign IP).
 
 ![Edit service](edit_service.png)

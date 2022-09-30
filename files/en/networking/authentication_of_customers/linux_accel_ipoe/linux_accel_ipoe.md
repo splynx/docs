@@ -243,4 +243,4 @@ cd ..
 dpkg -i accel-ppp-vlan-mon-dkms-dkms_1.0_all.deb
 ```
 
-Now, each time Linux kernel is updated, these modules will be built automatically
+Now, each time Linux kernel is updated, these modules will be built automatically.

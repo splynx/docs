@@ -5,23 +5,29 @@ This Splynx feature allows you to set up fully automatic customers registration 
 
 ### Splynx settings
 
-This is a built-in feature in Splynx starting from version 2.3 and can be configured under `Config / Main / Portal_:`
+This is a built-in feature in Splynx starting from version 2.3 and can be configured under *Config → Main → Portal → Per partner settings*:
+
 ![picture1.png](picture1.png)
 
-Please note: Protocol (http, or https) should be same on Splynx and on Mikrotik (in case of HTTPS valid SSL Certificate (not self-signed) should be installed to Mikrotik.
+Please note: Protocol (http, or https) should be the same on Splynx and on Mikrotik (in case of HTTPS valid SSL Certificate (not self-signed) should be installed to Mikrotik.
 
 * **Enable hotspot** - Enable or disable this feature.
 * **Hotspot hostname** - Should be the same as in your Mikrotik settings. In the Hotspot Server Profile (*DNS Name*):
+
     ![picture2](picture2.png)
 * **Login**:
   * **Automatic, after login to portal** - customer will be logged into the Hotspot automatically right after entering the Splynx portal.
   * **Click to login button** - a Hotspot login button will appear on the Splynx portal page. Customer's will be logged into the Hotspot after they press this button.
+
   ![picture3](picture3.png)
-  * **Disabled** - Hotspot login button will appear on the Splynx portal page. Customer won't be logged into Hotspot after he press this button.
+  * **Disabled** - Hotspot login button will appear on the Splynx portal page. Customer won't be logged into Hotspot after he presses this button.
 * **Hotspot status page**
   * **Enabled** - the status page will show the Mikrotik Hotspot status after successfully logging in , with details of the connection and a log off button:
+
   ![picture4](picture4.png)
+
   * **Disabled** - the status page will simply show "Hotspot connected..." after successfully logging in:
+
   ![picture5](picture5.png)
 
 ### Mikrotik settings
@@ -36,13 +42,20 @@ We use custom Hotspot HTML pages. You can download them here - [splynx-hotspot.z
     \* replace **yoursplynxurl** with the actual domain name or IP.
 3. Copy the modified files into your Mikrotik router. To perform the copy, you can use FTP, SSH or Drag and Drop, etc.
 4. In the Hotspot Server Profile set the *HTML Directory override* to the directory you've just copied:
+
    ![picture6](picture6.png)
+
 5. In the Hotspot Server Profile set the *Login By* method to **HTTP CHAP**:
+
    ![picture8](picture8.png)
+
 6. If you would like to use RADIUS authorization, be sure to enable **Use RADIUS**, and add the RADIUS entry:
+
    ![picture9](picture9.png)
    ![picture10](picture10.png)
+
 7. Add the IP address of the Splynx server to the *Walled Garden IP List* to allow access to the Splynx portal for unauthorized customers:
+
    ![picture7](picture7.png)
 
 <icon class="image-icon">![Warning. ](warning.png)</icon> Please note:
@@ -58,22 +71,35 @@ In this scenario we use the simplest configuration, without using IP pools from 
 Assuming we have a clean instance of Splynx, the following steps can be taken:
 
 1. [Create customer](customer_management/add_new_customer/add_new_customer.md), then change the customer's status to active (status=active):
-    ![picture11](picture11.png)
+
     ![picture12](picture12.png)
+
 2. Create an [internet plan](configuring_tariff_plans/internet_plans/internet_plans.md):
+
     ![picture13](picture13.png)
     ![picture14](picture14.png)
+    ![picture14](picture14_1.png)
+
 3. Create the [internet service](customer_management/customer_services/customer_services.md) for the customer:
+
     ![picture15](picture15.png)
     ![picture16](picture16.png)
+
 4. Add your router (NAS) into [Splynx routers](networking/routers_settings/routers_settings.md). **Authorization/Accounting** - **Hotspot (Radius) / Radius accounting**:
+
     ![picture17](picture17.png)
+
 5. After you add the router in Splynx, a RADIUS secret will be generated. Create the RADIUS record in your Mikrotik router settings with the same RADIUS secret:
+
     ![picture18](picture18.png)
     ![picture19](picture19.png)
-6. Disable **Use reject IP 0..4** under _Config / Networking / Radius_:
+
+6. Disable **Use reject IP 0..4** under *Config → Networking → Radius*:
+
     ![picture46](picture46.png)
+
 7. Create Mikrotik Hotspot server:
+
     ![picture20](picture20.png)
     ![picture21](picture21.png)
     ![picture22](picture22.png)
@@ -82,19 +108,30 @@ Assuming we have a clean instance of Splynx, the following steps can be taken:
     ![picture25](picture25.png)
     ![picture26](picture26.png)
     ![picture27](picture27.png)
+
 8. In the Hotspot Server Profile set the *Login By* method to **HTTP Chap** and enable **Use RADIUS**:
+
     ![picture8](picture8.png)
     ![picture9](picture9.png)
+
 9.  Download [this archive](splynx-hotspot.zip), and extract it.
+
 10. Replace "example.com" to your Splynx URL (domain name or IP) in all the HTML files:
+
     ![picture28](picture28.png)
+
 11. Copy these files into your Mikrotik router and set the *HTML Directory override* in your Hotspot Server Profile to the "splynx-hotspot" directory:
+
     ![picture29](picture29.png)
     ![picture6](picture6.png)
+
 12. Add your Splynx server IP into the Walled Garden IP list:
+
     ![picture30](picture30.png)
-13. Enable Hotspot login via Splynx Portal under **Config / Main / Portal**:
-    ![picture31](picture31.png)
+
+13. Enable Hotspot login via Splynx Portal under *Config → Main → Portal*:
+
+    ![picture1](picture1.png)
 
 
 ### Example #2. API authorization
@@ -105,7 +142,6 @@ Assuming we have fresh Splynx instance, the following steps should be taken:
 
 1. [Create a customer](customer_management/add_new_customer/add_new_customer.md), and change their status to active (status=active):
 
-    ![picture11](picture11.png)
     ![picture12](picture12.png)
 
 2. Create the [internet plan](configuring_tariff_plans/internet_plans/internet_plans.md):
@@ -181,9 +217,9 @@ Assuming we have fresh Splynx instance, the following steps should be taken:
 
     ![picture30](picture30.png)
 
-17. Enable Hotspot login via Splynx Portal under **Config / Main / Portal**:
+17. Enable Hotspot login via Splynx Portal under *Config → Main → Portal*:
 
-    ![picture31](picture31.png)
+    ![picture1](picture1.png)
 
 
 ### How it works (scheme)

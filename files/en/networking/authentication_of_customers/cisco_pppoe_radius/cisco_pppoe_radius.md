@@ -1,16 +1,17 @@
 Cisco IOS: PPPoE with Radius
 ==========
 
-Cisco IOS and Cisco IOS XE has slightly different commands, but the main difference is that Cisco IOS allows pushing the rate-limit attributes and the use of rate-limiting on Virtual interfaces, while Cisco IOS XE does not have the option to use rate-limiting. That's why in Cisco IOS XE we should use the policing for speed limitations.
+Cisco IOS and Cisco IOS XE has slightly different commands, but the main difference is that Cisco IOS allows pushing the rate-limit attributes and the use of rate-limiting on Virtual interfaces, while Cisco IOS XE does not have the option to use rate-limiting. That is why in Cisco IOS XE we should use the policing for speed limitations.
 
 This tutorial shows Cisco IOS Radius configuration :
 
-First of all we need to have configured a NAS type in Splynx correctly with all attributes.
+First of all, we need to configure correctly a NAS type in Splynx with all attributes.
 
-`Config → Radius → Choose NAS type cisco`
+`Config → Networking → Radius → Choose NAS type Cisco`, then click on `Load`:
 
 ![Cisco IOS](cisco_ios.png)
 ![Cisco IOS](cisco_ios1.png)
+![Cisco IOS](cisco_ios1_2.png)
 
 The Radius Incoming port is the port that Splynx will use to send Change of Authorization (COA) or Packet of Disconnect (POD) messages to the router.
 
@@ -53,6 +54,8 @@ Cisco-Avpair+=lcp:interface-config#1=rate-limit output {{ tx_rate_limit }} {{ tx
 In the testing scenario, we have a 1 Mbps Download / 512 Kbps Upload plan :
 
 ![Tariff plan info](cisco_ios2.png)
+![Tariff plan info](cisco_ios2_1.png)
+![Tariff plan info](cisco_ios2_2.png)
 
 
 The following is the configuration of Cisco routers for the IOS version 15 and above :

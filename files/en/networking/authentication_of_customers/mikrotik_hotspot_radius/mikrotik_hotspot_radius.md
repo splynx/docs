@@ -28,9 +28,10 @@ The last step is to enable hotspot Radius authentication in the Hotspot Profile,
 
 
 #### Hotspot authentication login and password
-Now when customer's connects to the router, they will be presented with the login screen where they should enter the username and password specified in the Splynx internet service.
+Now when customer connects to the router, they will be presented with the login screen where they should enter the username and password specified in the Splynx internet service.
 
 In this example the username is alex-pppoe and 12345 is the password, the customer will receive a permanent IP address after successful authentication:
+
 ![Edit sservice](ppp_service_credentials.png)
 
 Authentication Mikrotik screen:
@@ -50,20 +51,17 @@ We can also see that the customer is online in Splynx, where we can check his se
 ---
 If you would like to close/end the session of the customer, there is an option available in Splynx to do so, forcing the customer to reconnect.
 
-The option to close/end sessions is can be used by clicking the "X" button in the service of the customer or in the Online view if the "X" option is added to the list of column in the table.
-
-Service close session:
-![PPP kill](ppp_kill_session_1.png)
-
+The option to close/end sessions is can be used in *Services* of the customer or in *Online* view if the close session option is added to the list of column in the table.
 
 Online customers close session action:
+
 ![PPP kill](ppp_kill_session.png)
 
 
 ### Hotspot authentication using cookies
 When a customer is already authenticated, Mikrotik routers can store their information in the cache for certain periods of time to avoid the customer having to enter their usernames and passwords again. Authenticated customers are added to cookies with the lifetime specified in the router settings.
 
-For example, if we don't want customers to re-enter their passwords for 24 hours, meaning if they reconnect their PC/device several times during a day to the Wifi or router, the login and password page should not appear. The example below illustrates how to enable the cookies and set the lifetime to 24 hours or 1 day.
+For example, if we do not want customers to re-enter their passwords for 24 hours, meaning if they reconnect their PC/device several times during a day to the Wi-Fi or router, the login and password page should not appear. The example below illustrates how to enable the cookies and set the lifetime to 24 hours or 1 day.
 
 ![Hotspot radius cookies](hs_radius_cookies.png)
 
@@ -84,11 +82,11 @@ In the image below is an example of setting/applying the MAC address of a custom
 
 #### Blocking of hostpot users
 
-If a customer has a static/permanent IP address assigned to their service, then the blocking of such a customer is done by adding the IP address to the address list and further redirecting. In a case of using a dynamic IP address, the hotspot IP of the customer is mapped to one of the IP's from the blocking range within Splynx. For more information on blocking customers, please read through the following tutorial page - [blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
+If a customer has a static/permanent IP address assigned to their service, then the blocking of such a customer is done by adding the IP address to the address list and further redirecting. In a case of using a dynamic IP address, the hotspot IP of the customer is mapped to one of the IP's from the blocking range within Splynx. For more information on blocking customers, please read through the following tutorial page: [blocking customers in Splynx](networking/blocking_customers/blocking_customers.md).
 
 
 #### Setting different values to Radius attributes
 
-In `Config → Networking → Radius` there is a field available for setting additional attributes.
+In *Config → Networking → Radius* there is a field available for setting additional attributes.
 
-To understand the usage of Radius attributes customization, please follow this guide - [Radius server customization](networking/radius_customization/radius_customization.md)
+To understand the usage of Radius attributes customization, please follow this guide: [Radius server customization](networking/radius_customization/radius_customization.md).

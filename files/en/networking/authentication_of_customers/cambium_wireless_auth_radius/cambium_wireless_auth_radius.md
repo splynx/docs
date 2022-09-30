@@ -1,7 +1,7 @@
 Cambium: Wireless Authentication via Radius
 ==========
 
-Cambium access points have the ability to authenticate CPE's via a Radius server. This means that, admin's doesn’t have to maintain local passwords for wireless authentication, each CPE/radio can have its own account in the Splynx ISP Framework, and our Radius server will authenticate the Cambium CPE's.
+Cambium access points have the ability to authenticate CPE's via a Radius server. This means that, admin's does not have to maintain local passwords for wireless authentication: each CPE/radio can have its own account in the Splynx ISP Framework, and our Radius server will authenticate the Cambium CPE's.
 
 All files required for this setup can be downloaded here: [Cambium-Files](networking/authentication_users/cambium_wireless_auth_radius/cambium-certs.zip)
 

@@ -68,7 +68,7 @@ The first step is to select Hotspot users as the type of authentication method i
 
 In the internet service of customer: a permanent IP address should be selected and the router should be specified. The login and password are authenticating values for hotspot entry. When using MAC authentication, you should specify the MAC address of the customer here:
 
-![Edit service](edit_service2.png)
+![Edit service](edit_service.png)
 
 
 When these settings are saved, Splynx creates IP hotspot entries on the Mikrotik router under `IP → Hotspot → Users`:

@@ -29,7 +29,7 @@ On **Splynx** side, make the next configuration steps:
 
 ![image](img_3.png)
 
-4. Add your wireless access point as a separate router in Splynx
+4. Add your wireless access point as a separate router in Splynx:
 
 ![image](img_4.png)
 
@@ -52,6 +52,7 @@ One possible workaround is to add an IP network address space that will not conf
 **MAC(s)** = MAC address of station’s (CPE) wireless interface.
 
 ![image](img_8.png)
+![image](img_8_1.png)
 
 ------------
 

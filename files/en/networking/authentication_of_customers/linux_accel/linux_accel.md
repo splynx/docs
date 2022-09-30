@@ -29,24 +29,26 @@ sudo make install
 ## Configuring Splynx
 
 #### Add new NAS type “Accel”
-`Config -> Networking -> NAS types -> Add`
+*Config → Networking → NAS types → Add*:
+
 ![NAS type](nas_type.png)
 
 ![Add NAS type](add_nas_type.png)
 
 ---
 #### Configure Accel NAS type  
-`Config - Networking - Radius - NAS config - NAS Type`
+*Config → Networking → Radius → NAS config → NAS Type*:
 
-Choose “Accel”, “click Load”
+1. Choose “Accel”, click `Load`:
+
 ![Load NAS type](load_nas_type.png)
 
-Paste in the “Rate-Limit attributes” field:
+2. Paste in the “Rate-Limit attributes” field:
 ```
 PPPD-Upstream-Speed-Limit={{ rx_rate_limit /1000 }}
 PPPD-Downstream-Speed-Limit={{ tx_rate_limit/1000 }}
 ```
-Click “Save”
+3. Click `Save`
 
 ![Rate limit attributes](rate_limit_attr.png)
 
@@ -81,13 +83,15 @@ ATTRIBUTE Acct-Output-Gigawords   53      integer
 ---
 #### Add new router:
 
-`Networking -> Routes -> Add`
+*Networking → Routers → Add*
 
-* **Title** – provide a desired name
+* **Title** (required) – provide a desired name
 
 * **NAS type** – Accel (which we've created in the previous steps)
 
-* **IP/Host** – IP address of accel-ppp server
+* **IP/Host** (required) – IP address of accel-ppp server
+
+After clicking on `Add`, additional fields appear:
 
 * **Radius secret** – should be the same as in the file `/etc/accel-ppp.conf` on the accel-ppp server (section [radius], parameter “server”)
 
@@ -99,7 +103,8 @@ ATTRIBUTE Acct-Output-Gigawords   53      integer
 ---
 #### Add IP-pool for users
 
-`Networking - IPv4 Networks – Add`
+*Networking → IPv4 Networks → Add*
+
 ![Add subnet](subnet.png)
 
 
@@ -540,7 +545,7 @@ sudo service accel-ppp start
 
 
 ## Connection
-You must configure your accel-ppp server as a router (NAS)
+You need to configure your accel-ppp server as a router (NAS)
 Example:
 ```
 sudo sysctl net.ipv4.ip_forward=1
@@ -549,8 +554,7 @@ sudo iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
 enp0s3 is the name of accel’s WAN interface
 
 #### Restart Splynx RADIUS
-`Config – Networking – Radius – Restart Radius`
-
+*Config → Networking → Radius → Radius tools → Restart Radius*
 
 #### Restart accel service
 ```
@@ -558,4 +562,4 @@ sudo service accel-ppp restart
 ```
 
 Now you can connect to the accel-ppp server.
-Create PPPoE, PPTP or L2TP connections and connect
+Create PPPoE, PPTP or L2TP connections and connect.

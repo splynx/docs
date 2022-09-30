@@ -19,7 +19,7 @@
 
  * [Blocking customers in Splynx](networking/blocking_customers/blocking_customers.md)
 
- * [Huawei gpon](networking/huawei_gpon/huawei_gpon.md)
+ * [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)
 
  * [IP address management](networking/ip_address_management/ip_address_management.md)
 
@@ -37,7 +37,7 @@
 
  * [OpenVPN Connection between Splynx and router](../configuration/tools/openvpn/openvpn.md)
 
- * [Radius customization](networking/radius_customization/radius_customization.md)
+ * [Radius server customization](networking/radius_customization/radius_customization.md)
 
  * [Radius proxy accounting](networking/radius_proxy_accounting/radius_proxy_accounting.md)
 

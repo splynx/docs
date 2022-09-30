@@ -80,20 +80,21 @@ Below is an example of the output when a disconnect packet was received by EdgeO
 
 ### 3. Add EdgeRouter to Splynx and set up settings in Splynx
 
-Simply add a router to Splynx as usual in `Networking -> Routers -> Add` and choose the NAS Type as Ubiquiti:
+Add a router to Splynx in `Networking → Routers → Add` and choose the NAS Type as Ubiquiti:
 
 
 ![Information](information.png)
 
 
-You can add additional attributes to the configuration of the NAS Type under `Config -> Networking -> Radius`.
+You can add additional attributes to the configuration of the NAS Type under *Config → Networking → Radius*.
 By default, we support radius-rate-limit attributes to setup speeds of PPPoE tunnels.
 
 ![NAS config](nas_config.png)
+![NAS config](nas_config2.png)
 
 
 
-### 4. Connect PPPoE customer and check that everything is working fine
+### 4. Connect PPPoE customer and check that everything works fine
 
 Now we can connect the PPPoE customer to the EdgeRouter and check that everything works as expected.
 With the `show pppoe-server` command we can see how many users are connected to the PPPoE server:

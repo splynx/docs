@@ -27,12 +27,12 @@ Now we can connect a UBNT radio CPE to a UBNT Access Point. This is CPE configur
 ![CPE](U_CPE.png)  
 
 
-Another mandatory configuration you must do, is to setup the Message-Authenticator attribute to the Radius configuration.
+Another mandatory configuration you need to do, is to setup the Message-Authenticator attribute to the Radius configuration.
 
 
-Under `Config → Radius → NAS Ubiquiti → Add Message-Authenticator=0` in the rate limit attributes field:
+Under `Config → Radius → NAS Type (Ubiquiti) → Ubiquiti Configuration` add **Message-Authenticator=0** in the rate limit attributes field:
 
-![Message authenticator](message_authenticator.jpg)
+![Message authenticator](message_authenticator.png)
 
 
 #### Notice

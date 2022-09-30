@@ -1,21 +1,21 @@
 Radius admin login to Mikrotik routers
 ==========
 
-Using this feature Splynx administrators can login to a Mikrotik router with their Splynx account credentials.
+Using this feature, Splynx administrators can login to a Mikrotik router with their Splynx account credentials.
 
-First of all this option should be enabled under `Config → Networking → Radius`:
+First of all, this option should be enabled under `Config → Networking → Radius`:
 
 ![Config_Networking_Radius](config_radius.png)
 
-select *Mikrotik* NAS type(1) and click on the Load button(2) and scroll down:
+Select *Mikrotik* NAS type (1) and click on `Load` button (2), then scroll down:
 
 ![Load_Mikrotik_RADIUS_parameters](load_mikrotik_radius_config.png)
 
-Enable this option(1) and save the configuration(2):
+Enable this option (1) and save configuration (2):
 
 ![Use_admin_login](use_admin_login.png)
 
-Once this is done open the router under `Networking/Routers/List` and save the RADIUS secret to use it on a RADIUS server configuration(on a Mikrotik router):
+Once done, open the router under *Networking → Routers → List* and save the RADIUS secret to use it on a RADIUS server configuration (on a Mikrotik router):
 
 ![Router_in_Splynx](router_in_splynx.png)
 
@@ -38,25 +38,23 @@ In Splynx, under `Administration → Administrators` select the administrator an
 
 We will setup full access to the router for the administrator with login *splynx* and save the changes.
 
-Once this done we can open a Winbox(or any other method of login) and using credentials of the administrator *splynx*, login to the router. After successful login a current user will be displayed under `Active Users` under router's `System - Users` tab:
+Once this done we can open a Winbox (or any other method of login) and using credentials of the administrator *splynx*, login to the router. After successful login a current user will be displayed under `Active Users` under router's `System - Users` tab:
 
 ![active_users](active_users.png)
 
 A sign **R** near Active User record means that this user was authenticated by RADIUS server.
 
-You can track each router login/logout to a router using this method. To see logs navigate to `Administration → Logs → Operation` and search by action "Login to router" or "Logout from router":
+You can track each router login/logout to a router using this method. To see logs navigate to *Administration → Logs → Operations* and search by action "Login to router" or "Logout from router":
 
 ![Administration_Logs_Operations](logs_operations.png)
 
-to see more details click on this button:
-
-![Logs_details](logs_operations_details.png)
+to see more details click on <icon class="image-icon">![icon](details_button.png)</icon> button:
 
 Also this action will be logged in the `short.log` under `Administration/Logs/Files`:
 
 ![short_log](radius_short.png)
 
-Click on the actions button (2) to see more details:
+Click on <icon class="image-icon">![icon](details_button.png)</icon> to see more details:
 
 ![short_log_details](radius_short_details.png)
 
@@ -87,6 +85,6 @@ Where:
 * `Radius_server_IP` - Splynx IP address;
 * `Radius_secret` - Radius secret defined on the router in Splynx;
 
-and lastly, enable this option under `Config/Networking/Radius extended`:
+and finally, enable this option under *Config → Networking → Radius advanced*:
 
 ![administrative_access](administrative_access.png)

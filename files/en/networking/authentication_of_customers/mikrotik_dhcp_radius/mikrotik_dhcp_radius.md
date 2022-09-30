@@ -23,7 +23,7 @@ The main options here are: `Address pool=static-only` (it means that Splynx (Rad
 
 ### Step 3 - add new router in Splynx
 
-Now we need to add a new router in Splynx under _Networking -> Routers -> Add_ :
+Now we need to add a new router in Splynx under *Networking → Routers → Add* :
 
 ![router](router_in_splynx.png)
 
@@ -41,7 +41,7 @@ The main parameters here are:
 
 #### IP assignment - static IPs (recommended)
 
-In case you will use static IPs in Splynx you need to navigate to _Networking / IPv4 Networks / Add_ and add a network with `Type of usage = static`:
+In case you will use static IPs in Splynx you need to navigate to *Networking → IPv4 Networks → Add* and add a network with `Type of usage = static`:
 
 ![ip_network](ip_network_static.png)
 
@@ -55,7 +55,7 @@ In this case we need to create IPv4 network with `Type of usage = Pool`:
 
 #### Static IP (recommended)
 
-Under _Customers -> List_ select the customer, open the _Services_ tab and add a new internet service with following networking parameters:
+Under *Customers → List* select the customer, open _Services_ tab and add a new internet service with following networking parameters:
 
 ![client_service_mac_static](client_service_1mac_static.png)
 
@@ -67,7 +67,7 @@ Once this done the client should be connected:
 
 On the router under the _Leases_ tab we can see the DHCP lease with the IP that we specified in Splynx.
 
-In Splynx we can see that customer is online.
+In Splynx we can see the customer's online session:
 
 ![online](online_in_splynx.png)
 
@@ -83,7 +83,7 @@ Blocking of static IP customers will be performed using their own static IP in t
 
 #### IP from pool
 
-Under _Customers -> List_ select the customer, open the _Services_ tab and add a new internet service with following networking parameters:
+Under *Customers → List* select the customer, open _Services_ tab and add a new internet service with the following networking parameters:
 
 ![ip_from_pool_](service_assign_pool.png)
 
@@ -91,11 +91,11 @@ and this connection will receive an IP from the specified pool:
 
 ![](lease_pool.png)
 
-Some advanced parameters for RADIUS can be configured under [Config/Networking/Radius](../../../configuration/network/radius/radius.md) and [Config/Networking/Radius Extended](../../../configuration/network/radius_extended/radius_extended.md).
+Some advanced parameters for RADIUS can be configured under <u>[*Config-Networking-Radius*](configuration/network/radius/radius.md)</u> and <u>[*Config-Networking-Radius Advanced*](configuration/network/radius_extended/radius_extended.md)</u>.
 
-Blocking of customers will be performed with using of reject IP pools in the address list. More information about customer blocking here - [Blocking of customers in Splynx](networking/blocking_customers/blocking_customers.md)
+Blocking of customers will be performed with reject IP pools in the address list. You can find more information about customer blocking here: [Blocking of customers in Splynx](networking/blocking_customers/blocking_customers.md).
 
-### Please note!
+### <icon class="image-icon">![note](information.png)</icon> NOTE
 
 For DHCP to report accounting correctly queues have to be applied dynamically via radius. API queues will not report the accounting stats to Splynx.
 
@@ -109,17 +109,17 @@ If you set additional network(s) in Splynx internet services, network routes wil
 
 #### Incoming RADIUS
 
-Afther the plan change a queue wasn't updated and customer still has the same speed as on a previous plan? The reason is because CoA (change of authorization) and (Packet  of Disconnect) is not supported by Mikrotik. The alternative is to use a short lease time which caters for any CoA related changes and "Disabled customers to address list" from API to block the customer's internet access.
+What if the plan change queue was not updated and customer still has the same speed as on a previous plan? The reason is because CoA (change of authorization) and (Packet  of Disconnect) is not supported by Mikrotik. The alternative is to use a short lease time which caters for any CoA related changes and "Disabled customers to address list" from API to block the customer's internet access.
 
 #### Session timeout for disabled services
 
-To change the timeout, navigate to `Config → Networking → Radius`, find **NAS config** section, in **NAS Type** choose `MikroTik` and press **Load** button. In the appeared **MikroTik Configuration** section, the following line should be added in the rate-limit-attributes (Access-accept) section:
+To change the timeout, navigate to *Config → Networking → Radius*, find **NAS config** section, in **NAS Type** choose `MikroTik` and press **Load** button. In the appeared **MikroTik Configuration** section, the following line should be added in the rate-limit-attributes (Access-accept) section:
 
 ```
 Session-Timeout = "Lease time in seconds"
 ```
 This config is critical and if not added the router will control the lease time internally, not release the IP and not renew the lease with the Radius server.
-This is especially important when dealing with disabled services (disconnected without active service)
+This is especially important when dealing with disabled services (disconnected without active service).
 
 ![image](session_timeout.png)
 

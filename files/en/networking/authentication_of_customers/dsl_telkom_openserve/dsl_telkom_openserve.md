@@ -1,10 +1,10 @@
-Openserve authentication (PTA Method)
+DSL Telkom (Openserve) authentication
 ==========
 
 South African provider Telkom allows ISPs to resell their services. The services are sold under the Openserve trademark (https://openserve.co.za/). Splynx can communicate with Openserve proxy servers and authenticate PPPoE customers. A few configuration steps are needed to allow Splynx to be able to communicate with Openserve proxies.
 
 
-1. First of all, create a NAS type as Openserve or a similar name that will help you to recognise it as the Openserve server. To do this, navigate to `Config -> Networking -> NAS types` and click on the "Add" button:
+1. First of all, create a NAS type as Openserve or a similar name that will help you to recognise it as the Openserve server. To do this, navigate to `Config → Networking → NAS types` and click on `Add` button:
 
 ![add_nas](add_nas_type.png)
 
@@ -12,7 +12,8 @@ South African provider Telkom allows ISPs to resell their services. The services
 
 ![configure_radius](radius_settings.png)
 
- Please add Radius attributes provided to you by Telkom. Please setup accounting intervals to the default SAIX intervals :
+ Please add Radius attributes provided to you by Telkom. Setup accounting intervals to the default SAIX intervals:
+
 ![settings_1](radius_settings_1.png)
 ![settings_2](radius_settings_2.png)
 ![settings_3](radius_settings_3.png)
@@ -33,16 +34,16 @@ Don't forget to save the changes.
 ![router](router.png)
 
 
-4. Next step is to edit Radius extended settings under `Config -> Networking -> Radius extended`
+4. Next step is to edit Radius extended settings under `Config → Networking → Radius advanced`:
 
 ![go_to_advanced](radius_advanced.png)
 
 ![advanced](default_nas.png)
 
-An important field is **Default NAS Id**. This is the ID of the Router in Splynx routers, that will "link" customers - to show that they are connected through it online.
+An important field is **Default NAS ID**. This is the ID of the Router in Splynx routers, that will "link" customers: to show that they are connected via it online.
 
 
-5. The Last step is to add the missing attribute to the Freeradius dictionary, open the file `/etc/freeradius/dictionary` and add the line :
+5. The last step is to add the missing attribute to the Freeradius dictionary, open the file `/etc/freeradius/dictionary` and add the line :
 ```
 ATTRIBUTE Alcatel-Lucent-Service- 3002 integer
 ```
@@ -67,4 +68,4 @@ set allow-fast-path=yes authentication=chap default-profile=<profile-name> enabl
 ```
 Once the L2TP is established the PPPoE Realm in the CPE config and in Splynx' services should match that of what's configured in the Openserve portal.
 
-You should now be able to establish the PPPoE across the L2TP connection by using normal Radius config as seen here [here](https://docs.splynx.com/networking/authentication_of_customers/mikrotik_pppoe_radius)
+You should now be able to establish the PPPoE across the L2TP connection by using normal Radius config as seen [here](https://docs.splynx.com/networking/authentication_of_customers/mikrotik_pppoe_radius).

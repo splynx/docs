@@ -8,6 +8,7 @@ In Splynx you can setup authentication for statically configured IP addresses. I
 This setup only works for Mikrotik RouterOS devices, because authentication rules are pushed to router via API.
 
 The first step is to configure the Router, IP address and MAC (if needed) of the customer's internet service:
+
 ![Edit service](edit_service.png)
 
 
@@ -16,7 +17,7 @@ In the router settings within Splynx (NAS-SPLYNX) it is necessary to select the 
 ![Firewall IP-MAC filter / API accounting](ipmac_api.png)
 
 
-The API should be enabled on the Mikrotik router and as well as in the router settings within Splynx:
+The API should be enabled on the Mikrotik router and in the router settings within Splynx:
 
 ![API settings](api_settings.png)
 

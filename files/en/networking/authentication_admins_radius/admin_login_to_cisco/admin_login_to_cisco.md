@@ -1,21 +1,21 @@
 Admin login to Cisco IOS and IOS XE devices
 ==========
+First of all, we need to grant permissions to access routers for the `administrator` account in Splynx.
 
-First of all, we need to grant permissions to access routers for the `administrator` account in Splynx. We created a test administrator, which we will use to log in to the devices:
+Splynx has 3 permission levels - `Full`, `Write` and `Read`. These levels can be mapped to Cisco privilege levels. In this example, we create an admin with `Full` rights:
 
-![Administrators](administrators.png)
-
-
-Splynx has 3 permission levels - `Full`, `Write` and `Read`. These levels can be mapped to Cisco privilege levels:
 ![Edit administrator](cisco_admin_2.png)
+**************************************************
 
-In this example, we create an admin with `Full` rights and then in `Config → Radius → Cisco Configuration` we will choose the attribute that is used for `Full` access and has the **privilege level 15**:
+In *Config → Networking → Radius* choose *Cisco* under **NAS config**:
 
 ![NAS config](cisco_admin_3.png)
 
+Then, after clicking on `Load`, additional fields appear where we will choose the attribute that is used for `Full` access and has the **privilege level 15**. 
 `Cisco-AVPair = shel:priv-lvl=15` defines that Splynx will grant the privilege level **15** to the test admin when he connects to the Cisco router/switch:
 
 ![](cisco_admin_4.png)
+****************************************************
 
 Also, we need to add the router to Splynx, choose the **NAS type =** `Cisco`, and setup the same **Radius secret** we intend to use when setting up the Cisco router:
 
@@ -44,7 +44,7 @@ aaa new-model
 aaa authentication login SPLYNX group radius local
 aaa authorization exec SPLYNX group radius local
 ```
-where `SPLYNX` - the client list with all users which use RADIUS to connect will be included to this list.
+Where `SPLYNX` - the client list with all users which use RADIUS to connect will be included to this list.
 
 To **define a RADIUS server**:
 
@@ -67,7 +67,7 @@ radius-server attribute 6 on-for-login-auth
 radius-server key 7 011751010A58005B711817081A
 ```
 
-And finally, when radius configuration is finished, it's required to **add the next rules to your router**:
+And finally, when radius configuration is finished, it is required to **add the next rules to your router**:
 
 ```
 line vty 0 4

@@ -34,7 +34,7 @@ This is the string "My Mikrotik eth 0/2" converted from ASCII to HEX. Where:
 
 ### Splynx configuration
 
-By default, Splynx supports only Agent Circuit ID. However you can also add Agent Remote ID support.
+By default, Splynx supports only Agent Circuit ID. However, you can also add Agent Remote ID support.
 
 To use Agent Circuit ID, enter its value in the internet service field **Port ID**:
 
@@ -50,12 +50,12 @@ To add support of Agent Remote ID, add an additional field for internet services
 
 ![image](pic4.png)
 
-**Field name** - exactly `agent_remote_id`.
-**Field title** - any. This title will be used on internet services configuration page.
-**Type** - String.
-**Default value** - you can enter `*` here. If you do so, this value (`*`) will be used for all current and new services. `*` means that DCHP requests can contain any Agent Remote ID. This is useful for example when you add support of Agent Remote ID (additional field for services), but don't want to use Agent Remote ID for some services.
+* **Field name** - exactly `agent_remote_id`.
+* **Field title** - any. This title will be used on internet services configuration page.
+* **Type** - String.
+* **Default value** - you can enter `*` here. If you do so, this value (`*`) will be used for all current and new services. `*` means that DCHP requests can contain any Agent Remote ID. This is useful for example when you add support of Agent Remote ID (additional field for services), but don't want to use Agent Remote ID for some services.
 
-After the additional field is added it will appear in internet service configuration:
+After the additional field is added, it will appear in internet service configuration:
 
 ![image](pic5.png)
 
@@ -93,7 +93,7 @@ raddebug | grep Agent
 
 ### Splynx Radius debug
 
-You also have the option to enable Splynx Radius debug messages. It can be done under *Config / Networking / Radius extended*:
+You also have the option to enable Splynx Radius debug messages. It can be done under *Config → Networking → Radius advanced*:
 
 ![image](pic6.png)
 

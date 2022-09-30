@@ -11,7 +11,7 @@ Navigate to `Networking → Routers → Add` in order to add a new router. In ne
 
 **NOTE:**
 
-- In **NAS type** field choose `Cisco IOS XE` value, if such type doesn't exist, it can be created in `Config → Networking  → NAS types`;
+- In **NAS type** field choose `Cisco IOS XE` value. If such type does not exist, it can be created in `Config → Networking  → NAS types`;
 - The IP address of your Cisco ASR router in **IP/Host** and **NAS IP** should be the same;
 - The value in **Radius secret** filed will be used in your Cisco ASR device to connect it with *radd* server in Splynx;
 - In **Authorization/Accounting** field choose `PPP/DHCP(Radius) / Radius accounting ` value.
@@ -21,7 +21,7 @@ Navigate to `Networking → Routers → Add` in order to add a new router. In ne
 
 To determine the radius server use the following commands:
 
-**NOTE:** It's necessary to create a RADIUS server group to attach AAA functions to Splynx radius server
+**NOTE:** It is necessary to create a RADIUS server group to attach AAA functions to Splynx radius server.
 
 ```
 aaa group server radius SPLYNX
@@ -49,7 +49,7 @@ aaa authorization subscriber default group SPLYNX
 aaa authentication subscriber default group SPLYNX
 ```
 
-Also, it's required to configure COA/COD session disconnect:
+Also, it is required to configure COA/COD session disconnect:
 
 **To allow incoming requests from RADIUS server:**
 
@@ -116,7 +116,7 @@ class type control subscriber PPP do-until-failure
 end-policy-map
 ```
 
-After that it's required to configure interface:
+After that, it is required to configure interface:
 
 ```
 interface Bundle-Ether1.920
@@ -127,7 +127,7 @@ pppoe enable bba-group SPLYNX_PPPOE
 encapsulation dot1q 920
 ```
 
-4. If the different VLANs are used it's required to configure more interfaces but service policy will be the same, On this step you configure Splynx and Cisco ASR to define speed limits according tariff plan.
+4. If the different VLANs are used, it is required to configure more interfaces but service policy will be the same, On this step you configure Splynx and Cisco ASR to define speed limits according tariff plan.
 
 **Splynx server**
 
@@ -138,8 +138,10 @@ In this fields you should put the names of policy which are defined in Cisco ASR
 ![](1.png)
 
 ![](2.png)
+![](2_1.png)
+![](2_2.png)
 
-And in `Config → Networking → Radius → NAS config → Cisco IOS XE Configuration → Rate-Limit attributes` the next rules need to be set:
+In `Config → Networking → Radius → NAS config → Cisco IOS XE Configuration → Rate-Limit attributes` the next rules need to be set:
 
 ```
 Cisco-AVPair = ip:sub-qos-policy-out={{ tariff_attributes.policy_ingress }}

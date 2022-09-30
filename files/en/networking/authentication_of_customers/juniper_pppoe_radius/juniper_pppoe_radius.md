@@ -157,11 +157,11 @@ then discard;
 The attributes that are used to set the Filter name in Radius Access-accept are :
 
 ```
-ERX-Ingress-Policy-Name = "{{ tariff_name }}"
-ERX-Egress-Policy-Name = "{{ tariff_name }}"
+ERX-Ingress-Policy-Name = {{ tariff_name }}
+ERX-Egress-Policy-Name = {{ tariff_name }}
 ```
 
-These attributes are configured in Splynx under: Config -> Radius -> Selection of NAS type -> Juniper -> Rate-limit attributes
+These attributes are configured in Splynx under: *Config → Networking → Radius → NAS type → Juniper → Rate-limit attributes*:
 
 ![ ](Juniper_Radius-768x405.png)
 

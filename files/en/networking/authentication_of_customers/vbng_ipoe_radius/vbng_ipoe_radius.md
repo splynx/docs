@@ -1,6 +1,6 @@
 netElastic vBNG: IPoE, Radius configuration
 ==========
-In this article will be shown the configure of virtual **Broadband Network Gateway (vBNG)** solution from [netElastic](http://www.netelastic.com/) along with its integration with Splynx ISP Framework. This solution can be used to complete AAA (Authentication, Authorization & Accounting) coverage of your customers via Splynx Radius server. Successful IPoE connections rely on the DHCP server running with vBNG to assign IP address.
+In this article will be shown the configuration of virtual **Broadband Network Gateway (vBNG)** solution from [netElastic](http://www.netelastic.com/) along with its integration with Splynx ISP Framework. This solution can be used to complete AAA (Authentication, Authorization & Accounting) coverage of your customers via Splynx Radius server. Successful IPoE connections rely on the DHCP server running with vBNG to assign IP address.
 
 Let's say that we have already installed the instances of vBNG Router, vBNG Manager and Splynx. In our demo we will create a test user with certain parameters using our Splynx and then, connect him over IPoE session to Internet through vBNG device.
 
@@ -29,7 +29,7 @@ In Splynx, open `Config → Networking → NAS-types` and add a new NAS-type - *
 
  ![](img_2.png)
 
-After that add your vBNG to Splynx routers and get radius secret to connect it with Splynx.
+After that, add your vBNG to Splynx routers and get radius secret to connect it with Splynx.
 
  ![](img_4.png)
 
@@ -48,7 +48,7 @@ In our case, we should use the `method 2` to connect customers to Splynx. On the
 
 ##### STEP 2 - Creating a domain, Authentication template, Radius Authentication group
 
- On this screen you an see full domain configuration and authentication template what bind to domain:
+ On this screen you can see full domain configuration and authentication template what bind to domain:
 
  ![](img_7.png)
 
@@ -85,10 +85,8 @@ After you created the previous templates and bind them to your domain you should
 ![](img_12.png)
 
 
-Finally, double check all your configurations, from *interfaces* to *domain* one. The IP address should be assigned to your test user:
-
-![](img_13.png)
+Finally, double check all your configurations, from *interfaces* to *domain* one. The IP address should be assigned to your test user.
 
 ------------
 
-**The test example of all configuration** you can find [here](currentConfig.zip)
+**The test example of all configuration** you can find [here](currentConfig.zip).

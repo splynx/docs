@@ -27,12 +27,12 @@ When this option is **enabled** <icon class="image-icon">![](enabled.png)</icon>
 Radius also provides the ability to block users in several ways.
 
 ![](mkrad_settings.png)
->Settings from the screenshots above screenshot can be found in `Config / Networking / Radius` -> NAS config / NAS Type = Mikrotik -> click on the load button.
+>Settings from the above screenshot can be found in *Config → Networking → Radius* → NAS config → NAS Type = Mikrotik → click on `Load` button.
 
 
 ## Change of Authorization (CoA) packet
 ###### (customer's session does not break)
-To use CoA select **COA Block attribute** for the **Customer Block** field.
+To use CoA select **COA Block attribute** for the **Customer Block** field (in **NAS Type Configuration**).
 
 ![](coa_block.png)
 
@@ -47,19 +47,20 @@ The same attributes for [FUP](networking/bandwidth_management/fup/fup.md):
 ![](fup_coa.png)
 
 
-By default, The field **CoA Block attributes** contains the attribute **Mikrotik-Address-List = Reject_1**. Having received such an attribute, the router adds the customer's IP to the **Reject_1** list.
+By default, the field **CoA Block attributes** contains the attribute **Mikrotik-Address-List = Reject_1**. Having received such an attribute, the router adds the customer's IP to the **Reject_1** list.
 The session is not interrupted, which allows, if necessary, open access to local resources without changing the customer's IP address.
 
 > <icon class="image-icon">![](warning.png)</icon> If you put an IP address to the Address-List via **CoA Block attributes**, you should also put the IP address into another Address-List via **CoA Restore attributes**. Otherwise, the IP address will remain in the previous Address-List and the session will be still blocked.
 
-> <icon class="image-icon">![](warning.png)</icon> Turn on the **Radius incoming** on the mikrotik to process the CoA packets.
+> <icon class="image-icon">![](warning.png)</icon> Turn on the **Radius incoming** on the Mikrotik to process the CoA packets.
+
 ![](radius_incoming.png)
 
 
 ## Reject IP pools
 ###### customers get an ip from a reject ip pool
 
-By default, Radius allows connection (sends Radius-Accept) even if there is an authorization error. In the case of authorization errors, Radius will assign an IP address from reject address pools (lists). By default, these pools are 10.250.x.0/20. Pools can be configured in `Config -> Networking -> Radius`, as shown on the screenshot below:
+By default, Radius allows connection (sends Radius-Accept) even if there is an authorization error. In the case of authorization errors, Radius will assign an IP address from reject address pools (lists). By default, these pools are 10.250.x.0/20. Pools can be configured in `Config → Networking → Radius`, as shown on the screenshot below:
 
 ![](reject_pool.png)
 
@@ -74,23 +75,25 @@ By default, Radius allows connection (sends Radius-Accept) even if there is an a
 For using Reject pools:
 
 * Set the value **Block** for the **Customer Block** field.
+
   ![](block.png)
 
 * Enable the **Use reject IP**, as shown in the screenshot below.
 
   ![](rejectpool_names.png)
 
- ><icon class="image-icon">![](lightbulb_on.png)</icon> In addition, you can change the attributes for each reject pool.
+ ><icon class="image-icon">![](bulb.png)</icon> In addition, you can change the attributes for each reject pool.
 
 
 ## Drop customer's session
 ###### interrupts customer session and prohibits further connection
 * Set the value **Block** for the **Customer Block** field.
+
   ![](block.png)
 
 * Disable the **Use reject IP** as shown in the screenshot below.
 
-![](rejectpool_disable.png)
+  ![](rejectpool_disable.png)
 
 
 ----
@@ -105,9 +108,11 @@ Splynx has 4 default blocking pages under:
 These are simple HTML files, which you can change via command line within your Splynx installation (via SSH). In the folder ``/var/www/splynx/web/errors/`` there are folders labelled 1,2,3,4 that are corresponding to ports 8101, 8102, 8103 and 8104.
 
 An example of the default blocking page is shown below:
+
 ![102](102.png)
 
 An example of how this page can be customized:
+
 ![102 new version](102_new.png)
 
 
@@ -124,22 +129,22 @@ In addition to the fact that it is difficult for the customer to understand, the
 This fact can also serve as an additional tool for quick network diagnostics. In the future, this may reduce the number of calls to technical support.
 * A person who found out that he is blocked for non-payment after payment will be able to independently track the flow of money to the account.
 
-#### All HTTP traffic of blocked customers should be redirected to the customer's portal or stub page
-* When a blocked customer tries to open any web page using the HTTP protocol, they will see a portal or a stub page that shows what could be the problem (no money, wrong password, etc.).
-* Most modern OS's has a mechanism for detecting the state of the internet.
+#### All HTTP traffic of blocked customers should be redirected to the customer's portal or stub page.
+* When a blocked customer tries to open any web page using the HTTP protocol, they will see a portal or a stub page that shows what could be the problem (insufficient balance, wrong password, etc.).
+* Most modern OSs have a mechanism for detecting the state of the internet.
 The OS checks the network access when connected, if the system detects a stub page, it notifies the user about it by opening the stub page in a separate window/frame, displaying a notification in the notification panel, etc.
 
-For example, Ubuntu
+For example, Ubuntu:
 
   ![](ubuntu_hotspot.png) ![](ubuntu_hotspot_8102.png)
 
 ### Can we redirect the blocked customers from HTTPS to HTTP website?
 
-It's not possible to do over SSL-encrypted connection, the redirection only works over HTTP. HTTPS traffic cannot be redirected to HTTP one, there will be the SSL encryption error and the connection rejection as a necessary measure. In such case end-user should try to access different site.
+It's not possible to do over SSL-encrypted connection, the redirection only works over HTTP. HTTPS traffic cannot be redirected to HTTP one, there will be the SSL encryption error and the connection rejection as a necessary measure. In such case, end-user should try to access different site.
 **HTTP Strict Transport Security (HSTS)** is a web security policy mechanism that helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie hijacking.
 
 The best solution is to send many notification messages via SMS/Email, so then customer will not be surprised when one day the Internet will not work.
-*SMS* can be configured in `Config → Main → SMS` and *Email* config is in `Config → Main → Email`. Also, it's necessary to enable *Blocking wave* notification in `Config → Finance → Notification` and select a template.
+*SMS* can be configured in `Config → Main → SMS` and *Email* config is in `Config → Main → Email`. Also, it's necessary to enable *Blocking wave* notification in `Config → Finance → Notifications` and select a template.
 
 
 #### DNS
@@ -225,7 +230,7 @@ If you want, in some cases, to redirect the customer to the customer's portal, u
 
 
 #### Filter rules
-If there are any resources that you want to keep available for blocked customers, add them to the address list labelled "white-resource"
+If there are any resources that you want to keep available for blocked customers, add them to the address list labelled "white-resource":
 ```
 /ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=SpLBL_blocked
 /ip firewall filter add chain=forward action=jump jump-target=Blocked dst-address-list=!white-resource src-address-list=SpLBL_new

@@ -47,13 +47,13 @@ If we apply per router contentions, the first step is to define the router max. 
 ![Contention](simple_contention.png)
 
 
-Then choose the sector on the Internet service:
+Then choose the router contention on the Internet service:
 
 ![Sector](sector.png)
 
 After saving these settings, Splynx will push the rules to router:
 
-\* Please **don't combine** sectors contentions with Plan contetions, this will overcomplicate the queue setup and the Mikrotik will not handle this well.
+\* Please **don't combine** router contentions with Plan contetions, this will overcomplicate the queue setup and the Mikrotik will not handle this well.
 
 
 
@@ -74,9 +74,8 @@ Please note, in PCQ shaping, contentions and FUP policies do not work.
 
 If you have Radius and API queues enabled, Splynx will create two queues - one via API and the other by the Radius server via attributes. This is not correct and one of the queues should be removed.
 
-You can disable the API queue and leave automatic Radius queues enabled, or if you want to use API queues, then under `Config → Networking → Radius settings` you can simply remove rate-limit attributes and the Radius server will not create automatic queues when the customer connects their device. Simply delete the lines `Mikrotik-Rate-Limit = {{ }}` in Rate-limit attributes, COA attributes and FUP attributes:
+You can disable the API queue and leave automatic Radius queues enabled, or if you want to use API queues, then under `Config → Networking → Radius` (NAS Config (MikroTik), then click on `Load` → MikroTik Configuration) you can simply remove rate-limit attributes and the Radius server will not create automatic queues when the customer connects their device. Simply delete the lines `Mikrotik-Rate-Limit = {{ }}` in Rate-limit attributes, COA attributes and FUP attributes:
 
 ![Rate limit](remove_ratelimit.png)
 
-
-For more information on the different bandwidth management options, please read the following tutorials - [FUP bandwidth management](networking/bandwidth_management/fup/fup.md) and [contentions in Splynx](networking/bandwidth_management/contentions/contentions.md).
+For more information on the different bandwidth management options, please read the following tutorials: [FUP bandwidth management](networking/bandwidth_management/fup/fup.md) and [contentions in Splynx](networking/bandwidth_management/contentions/contentions.md).

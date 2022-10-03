@@ -109,9 +109,9 @@ Table of contents
 
 
 * [Bandwidth management](networking/bandwidth_management/bandwidth_management.md)
-  * [Capped plans and top up](networking/bandwidth_management/capped_plans/capped_plans.md)
+  * [Capped plans and top-ups](networking/bandwidth_management/capped_plans/capped_plans.md)
   * [Contentions](networking/bandwidth_management/contentions/contentions.md)
-  * [Fair user policy - FUP](networking/bandwidth_management/fup/fup.md)
+  * [Fair usage policy (FUP)](networking/bandwidth_management/fup/fup.md)
   * [Mikrotik queue speed limits](networking/bandwidth_management/queue_speed_limits/queue_speed_limits.md)
   * [Radius based speed limits](networking/bandwidth_management/radius_speed_limits/radius_speed_limits.md)
 

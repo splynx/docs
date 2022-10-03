@@ -7,7 +7,7 @@ The configuration of Radius based speed limitations is simple in Splynx, as it i
     The Router sends Access-requests to the Splynx Radius server
     The Splynx Radius server sends a Access-accept message back to router, if the customer is in the Database and receives an internet service. In the response, the Radius server also adds attributes called "rate-limit". The rate-limit attribute sets the download and upload speeds for the customer.
 
-Each vendor has it's own rate limit attribute formats. For example, "Mikrotik-Rate-Limit" for Mikrotik routers, "WISPr-Bandwidth-Max-Down" for setting download speeds on Ubiquiti routers, "Cisco-Avpair rate-limit" for Cisco routers, etc.
+Each vendor has its own rate limit attribute formats. For example, "Mikrotik-Rate-Limit" for Mikrotik routers, "WISPr-Bandwidth-Max-Down" for setting download speeds on Ubiquiti routers, "Cisco-Avpair rate-limit" for Cisco routers, etc.
 
 Rate limit attributes are preconfigured in Splynx and can be found in the `Config → Networking → Radius` section. Please choose the vendor from the list relevant to you and load Radius attributes settings:
 
@@ -30,7 +30,7 @@ For more information on how to customize Radius for advanced configurations, ple
 
 If you have Radius and API queues enabled, Splynx will create two queues - one via API and the other by the Radius server via attributes. This is not correct and one of the queues should be removed.
 
-You can disable the API queue and leave automatic Radius queues enabled, or if you want to use API queues, then under `Config → Networking → Radius settings` you can simply remove rate-limit attributes and the Radius server will not create automatic queues when the customer connects their device. Simply delete the lines `Mikrotik-Rate-Limit = {{ }}` in Rate-limit attributes, COA attributes and FUP attributes:
+You can disable the API queue and leave automatic Radius queues enabled, or if you want to use API queues, then under `Config → Networking → Radius → Configuration` you can simply remove rate-limit attributes and the Radius server will not create automatic queues when the customer connects their device. Simply delete the lines `Mikrotik-Rate-Limit = {{ }}` in Rate-limit attributes, COA attributes and FUP attributes:
 
 ![Rate limit](remove_ratelimit.png)
 

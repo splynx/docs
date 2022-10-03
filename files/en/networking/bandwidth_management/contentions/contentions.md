@@ -1,17 +1,17 @@
-Contention ratio/Aggregation
+Contentions
 ==========
 
 
-Within Splynx we've provided the feature of contention or aggregation. This feature is used when ISP's sells services to end users with a contention ratio for example 1:5, 1:10 etc. Contention means that end users will share the bandwidth with other end users in the same group.
+Within Splynx we've provided the feature of contention or aggregation. This feature is used when ISP sells services to end users with a contention ratio for example 1:5, 1:10 etc. Contention means that end users will share the bandwidth with other end users in the same group.
 
 Splynx operates with two types of contentions: Per Plan based and Per Router contention.
 
 <icon class="image-icon">![Warning](warning.png)</icon> To use this feature, Mikrotik API should be enabled in router settings.
+*************************************************************
+### Plan based contention
+Example to explain this type of contention:
 
-### Plan based contention.
-Let's make use of the following example to explain this type of contention:
-
-We are selling a 5 Mbps plan to customers with a contention ratio of 1:5. This means that Splynx will setup the parent speed-limit of 5 Mbps and under this parent it will place 5 users with a speed-limit of 5 Mbps each. What happens in this situation is that, if the line is free and one user starts to download/upload, this user will get the full 5 Mbps throughput. In the case that a second user starts actively downloading, they will receive 2,5 Mbps each. When all 5 users are simultaneously downloading they will share the parent queue's bandwidth - each receiving their required 1Mbps minimum speed.
+We are selling a 5 Mbps plan to customers with a contention ratio of 1:5. This means that Splynx will setup the parent speed-limit of 5 Mbps and under this parent it will place 5 users with a speed-limit of 5 Mbps each. What happens in this situation is that, if the line is free and one user starts to download/upload, this user will get the full 5 Mbps throughput. In the case that a second user starts actively downloading, they will receive 2,5 Mbps each. When all 5 users are simultaneously downloading they will share the parent queue's bandwidth: each receiving their required 1Mbps minimum speed.
 
 The image below illustrates this contention ratio:
 

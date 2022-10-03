@@ -85,7 +85,7 @@ To create a new plan you need to specify the data amount, price, validity, and e
 
 * This option *Compensate for over-usage with a top-up* can ignore max amount of auto top-ups per month if the overusage is more than *Auto top-up trigger value*;
 
-* This option will cover overusage. The overused data won't be free for this customer. For example if the customer has a CAP limit 1GB, but due to some reasons this customer has used 1.2GB - the service will be blocked. Once it's blocked system will compensate with 10MB ( 200MB of overusage = 20 x 10MB top-ups ). Each top-up will be added to the invoice so the customer will pay for 200MB of the overused data;
+* This option will cover overusage. The overused data won't be free for this customer. For example if the customer has a CAP limit 1GB, but due to some reasons this customer has used 1.2GB - the service will be blocked. Once it's blocked system will compensate with 10MB ( 200MB of overusage = 20 x 10MB top-ups ). Each top-up will be added to the invoice so the customer will pay for 200MB of the overused data.
 
 ## Notifications
 

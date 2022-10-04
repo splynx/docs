@@ -25,19 +25,19 @@ In picture above, the router has established a pppoe connection and received a /
 As you remember, while IPv4 is a 32 bit IP address, that is split into 4 octets, IPv6 address is 128 bits and is split into 8 parts, each contains 16 bits of information. 16 bit parts that contain only zeros can be merged with :: symbols. It means that the network, 2a0f:f041:1000:1::/64 that is allocated to router is equal to 2a0f:f041:1000:1:0:0:0:0:/64, but we cut the last 4 zero parts out and make the view of the IPv6 network shorter.
 
 2. LAN connection.
-In our example, the home router uses the first IP received from the /64 pool. This means that it automatically assigns the IP ::1 to it’s LAN interface. This setup is available on Mikrotik routers, other routers will generate an IP automatically on their LAN interfaces. So, in a case of the Mikrotik receiving the IP 2a0f:f041:1000:1::1, it is used on the LAN interface and this IP will become the default gateway for all home devices.
+In our example, the home router uses the first IP received from the /64 pool. This means that it automatically assigns the IP ::1 to it’s LAN interface. This setup is available on Mikrotik routers. Other routers will generate an IP automatically on their LAN interfaces. So, in a case of the Mikrotik receiving the IP 2a0f:f041:1000:1::1, it is used on the LAN interface and this IP will become the default gateway for all home devices.
 Home devices with IPv6 support have SLAAC enable on their Internet interfaces, get the IPv6 ND information and create own IPv6 address. The following example shows configuration on Mikrotik RouterOS. Window on left side shows PPPoE client interface configuration – we say that it’s needed to get a prefix from PPPoE server. The received prefix is called LAN and is stored in IPv6 pools. Second window shows that IPv6 address is configured on LAN Interface from the prefix LAN, and EUI64 will be used to create IPv6 LAN address. Important is flag “Advertise”, that enables SLAAC and ND on interface, so end devices will be able to get IPv6.
 
 ![IPv6 CPE](ipv6_cpe3.png)
 
-If we want to use IP 2a0f:f041:1000:1::1 on LAN interface instead of ugly generated IP, then just disable EUI64, and setup IP as on example below:
+If we want to use IP 2a0f:f041:1000:1::1 on LAN interface instead of a generated IP, then just disable EUI64, and setup IP as on example below:
 
 ![IPv6 CPE](ipv6_cpe4.png)
 
 
 Now the Mikrotik CPE/Home router is configured and devices will get access to IPv6 internet.
 
-Let’s check configuration of TP Link. Configuration is much simpler, comparing to Mikrotik. We must be sure that Firmware supports Ipv6, many older TP link devices don’t have ability to work with IPv6. But the devices that support IPv6 are confiured similar way as Mikrotik – enable IPv6 on PPPoE interface, and it will create IPv6 address on LAN with SLAAC enabled.
+Let’s check configuration of TP Link. Configuration is much simpler, comparing to Mikrotik. We must be sure that Firmware supports Ipv6, many older TP link devices don’t have ability to work with IPv6. But the devices that support IPv6 are configured similar way as Mikrotik – enable IPv6 on PPPoE interface, and it will create IPv6 address on LAN with SLAAC enabled.
 
 ![IPv6 CPE](ipv6_cpe5.jpeg)
 

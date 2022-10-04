@@ -27,7 +27,7 @@ We decided to dedicate one /48 network to the infrastructure needs – 2a0f:f041
 PPPoE servers will assign IP's within the range of : 2a0f:f041:1000::/48 and 2a0f:f041:2000::/48.
 In a case where we have more PPPoE servers, we can use IP networks like 2a0f:f041:1100::/48 or 2a0f:f041:1011::/48 or 2a0f:f041:3050::/48. We actually  used 4-5 /48 IPv6 networks to cover all our NAS routers and infrastructure and there are still over 65k IPv6 /48 networks left.
 
-As mentioned above – customers receive /64 prefixes. From these prefixes CPE's/home router devices creates a pool (similar to IP lan pools in IPv4 world) and IP's from this pool will be assigned to end devices.
+As mentioned above, customers receive /64 prefixes. From these prefixes CPE's/home router devices creates a pool (similar to IP lan pools in IPv4 world) and IP's from this pool will be assigned to end devices.
 
 Below is an example of how IPv6 appears in Splynx IPv6 networks when a CPE received a /64 prefix delegated:
 

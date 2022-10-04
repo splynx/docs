@@ -31,7 +31,7 @@ Radius also provides the ability to block users in several ways.
 
 
 ## Change of Authorization (CoA) packet
-###### (customer's session does not break)
+#### (customer's session does not break)
 To use CoA select **COA Block attribute** for the **Customer Block** field (in **NAS Type Configuration**).
 
 ![](coa_block.png)
@@ -58,7 +58,7 @@ The session is not interrupted, which allows, if necessary, open access to local
 
 
 ## Reject IP pools
-###### customers get an ip from a reject ip pool
+#### customers get an ip from a reject ip pool
 
 By default, Radius allows connection (sends Radius-Accept) even if there is an authorization error. In the case of authorization errors, Radius will assign an IP address from reject address pools (lists). By default, these pools are 10.250.x.0/20. Pools can be configured in `Config → Networking → Radius`, as shown on the screenshot below:
 
@@ -86,7 +86,7 @@ For using Reject pools:
 
 
 ## Drop customer's session
-###### interrupts customer session and prohibits further connection
+#### interrupts customer session and prohibits further connection
 * Set the value **Block** for the **Customer Block** field.
 
   ![](block.png)
@@ -164,7 +164,7 @@ Having added a burst at the beginning is useful during system boot.
 
 
 #### For all other traffic, we will respond that the network is blocked
-###### by sending ICMP packet type 3 code 9. *"3/9 Communication with Destination Network is Administratively Prohibited".*
+#### by sending ICMP packet type 3 code 9. *"3/9 Communication with Destination Network is Administratively Prohibited".*
 
 This solution will remove all other delays, since the program sending the request will immediately be refused, instead of waiting for an answer for a while, and then trying again.
 
@@ -172,22 +172,22 @@ The screenshots below displays an attempt to open the website, they display the 
 
 ***7ms*** *(icmp3/9)* **vs** ***91645ms*** *(drop rule)*
 
-###### DROP
+#### DROP
 ![](stat_drop_rule.png)
 
-###### ICMP 3/9
+#### ICMP 3/9
 ![](stat_reject_rule.png)
 
 
 
 ## Practice
-###### An example of setting up all of the above on MikroTik.
+#### An example of setting up all of the above on MikroTik.
 
 This is a universal example that covers all types of locks, if you are sure that you do not need any of them, you can skip the relevant rules.
 
 
 ### WebProxy settings
-###### proxy is used to correctly redirect the user to the portal or page stub
+#### proxy is used to correctly redirect the user to the portal or page stub
 **192.168.208.239** is the IP of an example splynx server. Don't forget to change it to your IP.
 
 ```

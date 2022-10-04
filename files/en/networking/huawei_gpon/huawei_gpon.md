@@ -12,9 +12,9 @@ apt update
 apt install splynx-huawei-olt
 ```
 
-Alternatively, you can install it from the Web UI:
+Alternatively, you can install it from Splynx:
 
- Navigate to *Config -> Integrations -> Add-ons:*
+ Navigate to *Config → Integrations → Add-ons:*
 
 ![Info](20.png)
 
@@ -22,7 +22,7 @@ Locate the "splynx-huawei-olt" addon and click on the install button:
 
 ![Info](21.png)
 
-Click on "OK, Confirm" to begin the installation process:
+Click on `OK, confirm` to begin the installation process:
 
 ![Info](22.png)
 
@@ -55,11 +55,11 @@ After the OLT is added, we will be presented with a menu containing four differe
 ![](2.png)
 
 
-**Boards** - Here it is possible to run a auto find of boards, and enable auto find on the ports from splynx.
+**Boards** - Here it is possible to run an auto find of boards, and enable auto find on the ports from splynx.
 
 ![](3.png)
 
-
+********************************************************************
 Once this configuration is completed, we can assign the ONT to the customer from the customer's information page.
 
 ![](4.png)

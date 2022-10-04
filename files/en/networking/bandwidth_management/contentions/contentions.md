@@ -32,7 +32,7 @@ If we place 100 users on a contention ratio of 1:5, then parent maximum speed wi
 ![Plan](4.png)
 
 
-### Router based contention.
+### Router based contention
 
 The following is an example of Router based contentions:
 

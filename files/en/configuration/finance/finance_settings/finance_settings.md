@@ -28,6 +28,8 @@ In the right top corner of the page, you can select the [partner](administration
 
 * **Billing day** - day of the month when the customer will be charged and invoice will be generated. If the `Use the customer creation date` option is enabled - the billing day will be set to the day the customer was created (default value is `1`st day of the month. The available values are from `1` to `28`);
 
+<icon class="image-icon">![Note](note.png)</icon> Billing day value is limited to 28 because of the shortest month of the year - February, so that the customer could receive invoices for February as well.
+
 * **Payment due (days after billing day)** - the last day customers have to make payments before getting blocked. For example, if we choose the 1st day of the month as the billing day and the 15th day of the month as the payment due day, invoices will be generated on the 1st day of the month and if customer don't make payments by the 15th day of the month, the customer will be blocked on the 16th day of the month. **Even though the customer will have a blocked status, their services will still be accounted** (default value is `15` days after `billing day`. The available values are from `1` to `28`). From Splynx v4.0, the current option cannot be disabled in select menu, that solved the problem when the invoices with `overdue` status could be created from scratch <!-- SPL-8581 -->;
 
 * **Blocking period (days after payment due)** - allows to extend the period when customer will be blocked (by default the value is `0` days. The available values are `Do not block` and from `0` to `99` days). The option `Do not block` allows to disable customer blocking after `Payment due` date, if the option is enabled, the customer deactivation won't work as well;

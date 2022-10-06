@@ -603,6 +603,8 @@ In this section you can set up the billing parameters of the **selected customer
 
 * **Billing day (automatic document date)** - when the customer will be charged and invoices will be generated (default value is `1`st day of the month. The available values are from `1` to `28`);
 
+<icon class="image-icon">![Note](information.png)</icon> Billing day value is limited to 28 because of the shortest month of the year - February, so that the customer could receive invoices for February as well.
+
 * **Payment due (days after billing day)** - when the customer needs to make payments before being blocked. **Even though the customer will have a blocked status, their services will still be accounted** (default value is `15` days after `billing day`. The available values are from `1` to `28`). From Splynx v4.0, the current option cannot be disabled in select menu, that solved the problem when the invoices with `overdue` status could be created from scratch <!-- SPL-8581 -->;
 
 * **Blocking period (days after payment due)** - allows to extend the period when customer will be blocked (by default the value is `Same as payment due date` (0 days). The available values are `Do not block` and from `0` to `99` days). The option `Do not block` allows to disable customer blocking after `Payment due` date, if the option is enabled, the customer deactivation won't work as well. In addition, if the value is set to `Do not block`, the status of the *Next block* field will be shown as `Disabled` for current customer <!-- SPL-8937 --> ;

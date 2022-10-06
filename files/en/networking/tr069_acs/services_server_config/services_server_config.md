@@ -3,15 +3,15 @@ ACS services and server configuration
 
 ## Enable ACS services
 
-To enable ACS in Splynx, navigate to `Config → Integrations` and find **Main modules** button:
+To enable ACS in Splynx, navigate to *Config → Integrations → Main modules*:
 
 ![main modules](how_to_enable.png)
 
-and enable a toggle for **TR-069 (ACS)**:
+Enable a toggle for **TR-069 (ACS)** under *Networking* :
 
 ![enable](how_to_enable1.png)
 
-Once **TR-069 (ACS)** is enabled you will see a new sector under left side menu under `Networking`section:
+Once **TR-069 (ACS)** is enabled, you will see a new item under `Networking`section at your left:
 
 ![menu](menu.png)
 
@@ -21,47 +21,56 @@ Let's start configuring the ACS server:
 
 ### Step 1
 
-Navigate to `Config → Networking → TR-069 (ACS)` and click on install the ACS server:
+Navigate to *Config → Networking → TR-069 (ACS)*, and click on **install ACS server**:
 
 ![install](install.png)
 
-Once it was installed specify its **global** parameters:
+Once the server was installed, specify its **global** parameters:
 
 ![global config](config.png)
 
 Here we have the next options:
 
-* **Enable ACS services** - enable/disable ACS servicesn such as *genieacs-cwmp*, *genieacs-nbi*, *genieacs-fs*. Can be used to reboot the ACS server;
+* **Enable ACS services** - enable/disable ACS services such as *genieacs-cwmp*, *genieacs-nbi*, *genieacs-fs*. Can be used to reboot the ACS server;
 
-* **SSL enabled by default** - enable/disable using of domain name except of IP for access. Can be enabled only if *HTTPS/SSL* is configured under `Config → Main → HTTPS/SSL`;
+* **CWMP port** - port for CWMP service;
 
-* **Allowed networks** - list of allowed networks for connecting to cwmp service. To allow all host use `all` value;
+* **CWMP SSL port** - port for CWMP service with SSL connection;
 
-* **Username** - using for authorization to connect to cwmp service. ATTENTION!: authorization is possible only if username and password fields are not empty;
+* **Allow list (networks)** - list of allowed networks for connecting to CWMP service. To allow all host, use `all` value;
 
-* **Password** - using for authorization to connect to cwmp service. ATTENTION!: authorization is possible only if username and password fields are not empty;
+* **Username** - using for authorization to connect to CWMP service.
+ 
+ <icon class="image-icon">![Important](warning.png)</icon> ATTENTION!: authorization is possible only if username and password fields are not empty.
+
+* **Password** - using for authorization to connect to CWMP service.
+
+<icon class="image-icon">![Important](warning.png)</icon> ATTENTION!: authorization is possible only if username and password fields are not empty.
 
 * **Hostname** - hostname without protocol and port (*192.168.105.80* or *mysplynx.com* depending on your configuration);
 
-* **Periodic inform inverval (seconds)** - interval on how often Splynx will sync with an ACS.
+* **Periodic inform inverval (seconds)** - interval on how often Splynx will sync with the ACS.
 
-Don't forget to click on **Save** button when configuration is completed.
+Click on **Save** button when configuration is completed.
 
 ### Step 2
 
-On the same menu `Config → Networking → TR-069 (ACS)` let's configure ACS User Interface parameters:
+On the same menu, *Config → Networking → TR-069 (ACS)*, let's configure ACS User Interface (**UI**) parameters:
 
 ![config_ui](config_ui.png)
 
 * **Enable ACS UI** - enable/disable an access via web interface;
 
-* **Allowed networks** - specify allowed networks from which you can access to the ACS UI. To allow all hosts, please add the `all` value;
+* **Allow list (networks)** - specify allowed networks from which you can access to the ACS UI. To allow all hosts, please add the `all` value;
 
-* **UI username** - username for UI access. ATTENTION!: authorization is possible only if username and password fields are not empty;
+* **UI username** - username for UI access. 
 
-* **UI password** - password for UI access. ATTENTION!: authorization is possible only if username and password fields are not empty.
+<icon class="image-icon">![Important](warning.png)</icon> ATTENTION!: authorization is possible only if username and password fields are not empty.
+* **UI password** - password for UI access.
 
-Don't forget to click on **Save** button when configuration is completed.
+<icon class="image-icon">![Important](warning.png)</icon> ATTENTION!: authorization is possible only if username and password fields are not empty.
+
+Click on **Save** button when configuration is completed.
 
 ### Step 3
 
@@ -69,11 +78,11 @@ Click on a link for **UI** here:
 
 ![UI link](config_acs.png)
 
-And you should be redirected to the *Genie ACS page*, if you prompted for login/password use the credentials from a **step 2**.
+You should be redirected to the *Genie ACS page*. If you prompted for login/password, use the credentials from a **step 2**.
 
-After successful login you will see a window as in the screenshot below, you should click on "ABRACADABRA" button.
+After successful login, you will see a window as in the screenshot below, you should click on `ABRACADABRA` button.
 
-**IMPORTANT:** **All check-boxes should be selected except _Presets and Provisions_**.
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** **All check-boxes should be selected except _Presets and Provisions_**.
 
 ![abracadabra](abracadabra.png)
 

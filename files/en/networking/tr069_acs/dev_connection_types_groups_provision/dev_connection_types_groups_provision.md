@@ -25,11 +25,11 @@ Click on **TR069** item and configure **connection to the ACS server**:
 
 1. Put the check-mark to **Enable** client;
 
-2. Put your **ACS URL** - it's a *URL* from menu on [step 3](networking/tr069_acs/services_server_config/services_server_config.md) for a *CWMP* (ends with port `:7547/`);
+2. Put your **ACS URL** - it's a *URL* from menu on [step 3](networking/tr069_acs/services_server_config/services_server_config.md) for a *CWMP*;
 
 ![URL](urls.png)
 
-In our example, we are using the *domain name* instead of IP address - *192.168.105.80*.
+In our example, we are using the *domain name* instead of IP address.
 
 3. Specify username and password with values from **global** parameters ([step 1](networking/tr069_acs/services_server_config/services_server_config.md));
 
@@ -41,7 +41,7 @@ After these steps you should have the next result:
 
 The credentials in **Connection Request Username** and **Connection Request Password** fields should appear automatically. **Do not change these credentials unless absolutely necessary** (e.g. when you need to reconnect your device with an ACS server, these values can be removed and re-enable client - with new connection you will see a new credentials).
 
-**IMPORTANT (for Mikrotik devices only)**: if you are using **HTTPS/SSL** on your Splynx server you can get **an error about SSL, asking for the local certificate**. In this case you need to run 2 commands in Mikrotik terminal:
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT (for Mikrotik devices only)**: if you are using **HTTPS/SSL** on your Splynx server you can get **an error about SSL, asking for the local certificate**. In this case you need to run 2 commands in Mikrotik terminal:
 
 ```
 /tool fetch https://letsencrypt.org/certs/isrgrootx1.pem
@@ -67,7 +67,7 @@ Example:
 
 and **do not change any other config in TR-069 client** (`Client certificate` **option must be `none`**), just **re-enable TR-069 client**.
 
-After that device will be registered under GenieACS:
+After that, the device will be registered under GenieACS:
 
 ![device under genie](device_under_genie.png)
 
@@ -77,9 +77,11 @@ as well as under Splynx:
 
 Devices can be in the following statuses: `Online`, `Online today`, `Offline`.
 
-Main parameters for ACS are configured and device is connected so you can manage the device remotely now. Also we have a few more options to configure: **Attributes**, **Types** and **Groups** in `Config → Networking → TR-069 (ACS)`.
+Main parameters for ACS are configured and device is connected so you can manage the device remotely now. Also we have a few more options to configure: **Attributes**, **Types** and **Groups** in *Config → Networking → TR-069 (ACS)*.
 
 ![additional config](more_config.png)
+![additional config](more_config2.png)
+![additional config](more_config3.png)
 
 ## Types:
 
@@ -89,17 +91,14 @@ Simply add different types of devices:
 
 ## Groups:
 
-**NOTE!** Before configuring ACS groups you need to connect some device to ACS server (navigate to `Networking → Routers → Add` and follow the steps of wizard, TR-069 should be configured on the router).
+<icon class="image-icon">![note](note.png)</icon> **NOTE**: Before configuring ACS groups you need to connect some device to ACS server (navigate to `Networking → Routers → Add` and follow the steps of wizard, TR-069 should be configured on the router).
 
-Under **Groups** you can create new entries to group devices. Press **Add** button and in a new window select the required parameters, the inventory [product](inventory/products/products.md) name (if existed), selected photo of device etc.
+Under **Groups** you can create new entries to group devices. Press `Add` button and in a new window select the required parameters, the inventory [product](inventory/products/products.md) name (if existed), selected photo of the device etc.
 
-<icon class="image-icon">![image](warning.png)</icon> **IMPORTANT**
-
-It is recommended that you leave the option **Auto provisioning** `disabled` **to prevent an automatic upload of an incomplete configuration to your device.
+<icon class="image-icon">![image](warning.png)</icon> **IMPORTANT**: It is recommended that you leave the option **Auto provisioning** `disabled` **to prevent an automatic upload of an incomplete configuration to your device.
 Otherwise, the current device configuration can be erased and it can be unavailable remotely**.
 
 ![groups](groups.png)
-
 
 ## Provisioning flow
 

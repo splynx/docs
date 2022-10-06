@@ -27,7 +27,9 @@ Select a *Payment Method* for recurring billing, options available are Cash, Ban
 ---------
 The next step of setting up "Recurring billing" will be to choose *Billing day*, *Payment due* and a *Deactivation period*.
 
-* **Billing day** - the day invoices will be generated automatically.
+* **Billing day** - the day invoices will be generated automatically (default value is `1`st day of the month. The available values are from `1` to `28`).
+
+<icon class="image-icon">![Note](note.png)</icon> Billing day value is limited to 28 because of the shortest month of the year - February, so that the customer could receive invoices for February as well.
 
 * **Payment due** - the amount of days after the billing day the customer has to make payments before getting blocked.
 

@@ -1,7 +1,7 @@
 Radius server customization
 ==========
 
-In `Config → Networking → Radius` we will find a field available for setting additional attributes.
+In *Config → Networking → Radius*, we will find a field available for setting additional attributes.
 
 Some attributes are configured by default, such as Framed-IP, Framed-Route and Auth-Type.
 
@@ -46,7 +46,7 @@ Variable | Value | Comment |
 
 ### Service
 
-Most of these values can be changed in `Customers/ List/customer/Services`
+Most of these values can be changed in `Customers → List → Customer → Services`
 
 [Customer services description](customer_management/customer_services/customer_services.md)
 
@@ -174,65 +174,73 @@ Mikrotik-Address-List = {{ service_attributes.adrlist }}
 
 #### Example 1
 
-We can assign IPv6 prefixes to PPP customers using the RADIUS attribute Framed-IPv6-Prefix:
+We can assign IP from a specific pool to DHCP customers using the RADIUS attribute Framed-Pool:
 
-![Framed-IPv6-Prefix](IPv6_prefix_1.png)
+![Load](load_config.png)
 
-The route will be created for the IPv6 prefix, to the customer's CPE:
+![Framed-Pool](dhcp_pool.png)
 
-![Route list](IPV6_prefix.png)
+The route will assign IP from dhcp pool:
 
+![Pools](pools.png)
 
-Surely, this example is quite simple and not of much use, because then Splynx will setup the same IPv6 prefix to all customers.
+![Addresses](used_addresses.png)
 
-
+This example is quite simple because then Splynx will setup the same pool IPs to all customers.
 
 #### Example 2
 
-We can reconfigure the previous example a bit to get the IPv6 prefix from the additional field
+We can reconfigure the previous example a bit to get the IP pool name from the additional field.
 
-Firstly, we have to add the additional field to the Internet services within Splynx, called 'IPv6 prefix':
+Firstly, we need to add the additional field to the Internet services within Splynx, called 'Router address pool':
 
-![IPv6](IPv6_1.png)
+![pool](pool_1.png)
 
-Then we can define the IPv6 prefix in the customer's services:
+Then we can define the IP pool in the customer's services:
 
-![IPv6](IPv6_2.png)
+![pool](pool_2.png)
 
 Thereafter, we can assign the value of the additional field to the RADIUS attributes:
 
-![IPv6](IPv6_3.png)
+```bash
+Framed-Pool = {{ service_attributes.router_pool }}
+```
+
+![pool](pool_3.png)
 
 
-<icon class="image-icon">![](lightbulb_on.png)</icon> It's possible even to check if the parameter exists - send it in Radius reply. If field in Splynx is empty, don't send it in Radius reply:
+<icon class="image-icon">![](lightbulb_on.png)</icon> It is possible to check that the parameter exists by sending it in the radius reply. If the field is empty within Splynx, it will not be sent in the radius reply:
 
-It is possible to check that the parameter exists by sending it in the radius reply. If the field is empty within Splynx, it will not be send in the radius reply
-
-![IPv6](IPv6_4.png)
-
-
+```bash
+{% if service_attributes.router_pool is not empty %}
+Framed-Pool = {{ service_attributes.router_pool }}
+{% endif %}
+```
+![pool](pool_4.png)
 
 #### Example 3
 
-Address-List depends on Tariff plan settings
+**Address-List depending on Tariff plan settings**
 
-Let's add an additional field to the internet plan named **wan**:
+Let's add an additional field to Internet plans named **"WAN"**:
+
+![Create additional field](field_add.png)
 
 ![Create additional field](create_add_field.png)
 
-Navigate to `Config/Networking/Radius`
+1. Navigate to *Config → Networking → Radius*.
 
-Load the Nas Type: **Mikrotik**
+2. Load the Nas Type: **Mikrotik**
 
-Add the following in the text box for **Rate-Limit attributes**:
+3. Add the following in the text box for **Rate-Limit attributes**:
 ```
 Mikrotik-Address-List = {{ tariff_attributes.wan }}
 ```
 
-It is good practice to add the same value to the **FUP CoA Rate-Limit attributes, FUP CoA Restore attributes, CoA Restore attributes** fields.
+It is a good practice to add the same value to the **FUP CoA Rate-Limit attributes, FUP CoA Restore attributes, CoA Restore attributes** fields.
 
 
-Result should be:
+The result should be:
 
 ![Radius attributes](radius_attr1.png)
 
@@ -247,38 +255,47 @@ After reconnecting, the customer should be added to address-list wan1, or wan2 d
 
 #### Example 4
 
-Custom IP address.
+**Custom IP address**
 
 This example illustrates how to assign any IP address to a customer's device. You do not have to add **IPv4 networks** to Splynx in this scenario.
 
-1. Create the **additional field** for internet services. In this example we've named it **ip**.
+1. Create an **additional field** for internet services. In this example we've named it **"Custom IP Address"**.
 
-  ![Additional fields](additional_fields.png)
+  ![Create additional field](field_add2.png)
   ![Create additional field](create_additional_field.png)
 
-2. Open Radius configuration (`Config/Networking/Radius/Load`) and add this line to Rate-Limit attributes:
-```
+2.  1. Navigate to *Config → Networking → Radius*.
+
+    2. Load the Nas Type: **Mikrotik**
+
+    3. Add the following in the text box for **Rate-Limit attributes**:
+
+```bash
 Framed-IP-Address = {{ service_attributes.ip }}
 ```
 ![Attributes](attrs.png)
-<icon class="image-icon">![](info.png)</icon> Where "**ip**" is the name of additional field, that we have added in the first step.
+
+<icon class="image-icon">![](info.png)</icon> Where "**ip**" is the name of the additional field that we have added in the first step.
 
 
-3. Save the changes and Restart Radius to apply changes.
+3. Save the changes and Restart Radius to apply the changes.
 
   ![Save attributes](save_attrs.png)
 
 
-4. Set the IP address for the internet service of the ccustomer.
+4. Set the IP address for the internet service of the customer.
 
 ![Set IP](set_ip.png)
 
 
 5. Connect a device.
-Server:
+
+*Server*:
+
 ![PPP server](ppp_server.png)
 
-Client:
+*Client*:
+
 ![PPP client](ppp_client.png)
 
 

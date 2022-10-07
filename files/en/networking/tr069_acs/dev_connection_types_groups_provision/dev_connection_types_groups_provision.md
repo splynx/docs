@@ -104,15 +104,13 @@ Otherwise, the current device configuration can be erased and it can be unavaila
 
 **Groups** are used for **auto-provision** devices and load device's parameters and properties with the correct TR069 attributes.
 
-Once some device is added you can create a group base on that device, grab the configuration parameters from that device, edit such parameters and save (in this case, use `I have one device and ready to play with manual insert of parameters` provision configuration flow).
+Once some device is added, you can create a group base on that device, grab the configuration parameters from that device, edit such parameters and save (in this case, use `I have one device and ready to play with manual insert of parameters` provision configuration flow).
 
-**IMPORTANT**
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT**: When the correct configuration is grabbed from the device, **it's recommended to remove unnecessary attributes and leave only those attributes that you plan add/update etc. on other devices**.
 
-When the correct configuration is grabbed from the device, **it's recommended to remove unnecessary attributes and leave only those attributes that you plan add/update etc. on other devices**.
+After that, these attributes can be used for configuration of other devices based on this group, using previously exported parameters.
 
-After that these attributes can be used for configuration of other devices based on this group, using previously exported parameters.
-
-Click on <icon class="image-icon">![image](provision_flow_icon.png)</icon> (Provision flow) icon and choose the necessary option
+Click on <icon class="image-icon">![image](provision_flow_icon.png)</icon> (Provision flow) icon and choose the necessary option:
 
 ![wizzard](wizzard.png)
 
@@ -122,18 +120,18 @@ We have a few options here:
 
 |   |   |
 | ------------ | ------------ |
-| **I have one fully configured device (and ready to reset configuration, (I have backup of full config)**  | this option can be used when you have configured one device (Device 1) of this type and you need to configure another clear device (Device 2) with existed parameters. Splynx will grab parameters from Device 1, check what parameters can be used for Device 2 configuration and pull these changes. Or you have a backup what can be used for configuration  |
+| **I have one fully configured device (and ready to reset configuration, (I have backup of full config)**  | this option can be used when you have configured one device (Device 1) of this type and you need to configure another clear device (Device 2) with the existed parameters. Splynx will grab parameters from Device 1, check what parameters can be used for Device 2 configuration and pull these changes. Or you have a backup what can be used for configuration  |
 | **I have one non configured device and ready to configure this device (or I have backup of config and ready to apply it on next steps)**  |  vice versa to a previous method  |
 | **I have two similar devices (One is fully configured, and one is not configured)**  | need 2 devices, one is fully configured and another one is not-configured. The configuration from both routers will be downloaded, only after that this config can be updated  |
 | **I have one device and ready to play with manual insert of parameters**  | download configuration from a device and edit this config manually  |
-| **I have a configuration file for import and want to import this file**  | in this step you need to import a .csv file with a configuration what can be imported  |
+| **I have a configuration file for import and want to import this file**  | in this step you need to import a .csv file with a configuration that can be imported  |
 | **I want to insert config manually**  | manual way to configure a device |
 
-If you choose **I want to insert config manually** step, the configuration for the device can be created from scratch in Splynx. You will see a window with the editor of device objects with its attributes. In this configuration menu you can **create** new object and attribute related to the object, **update**, **delete**
+If you choose **I want to insert config manually** step, the configuration for the device can be created from scratch in Splynx. You will see a window with the editor of device objects with its attributes. In this configuration menu you can **create** new object and attribute related to the object, **update**, **delete**:
 
 ![provisioning attributes](provisioning_attributes.png)
 
-or apply the **mass actions** (*enable*, *disable*, *delete*) the existing object and its attribute (-s).
+Or apply the **mass actions** (*enable*, *disable*, *delete*) the existing object and its attribute (-s).
 
 ![](mass_actions.png)
 
@@ -141,18 +139,17 @@ We can apply **4 actions to the object**:
 
 ![object actions](object_actions.png)
 
-- **create** - create an object with the attributes specified in the configuration, but if we already have an object with these attributes, a new object will not be created;
-- **update** - update the object's attribute value (-s);
-- **delete** - remove all objects according to the path, **for example** object `Device.Firewall.X_MIKROTIK_Filter.Chain.3.Rule` will remove all firewall rules from output chain on Mikrotik;
+- **Create** - create an object with the attributes specified in the configuration, but if we already have an object with these attributes, a new object will not be created;
+- **Update** - update the object's attribute value (-s);
+- **Delete** - remove all objects according to the path, **for example** object `Device.Firewall.X_MIKROTIK_Filter.Chain.3.Rule` will remove all firewall rules from output chain on Mikrotik;
 
 ![object actions](delete_firewall_rules.png)
 
-- **delete with equal condition** - remove the object if the attribute's `value` was specified in the configuration, **for example** remove all the disabled rules in firewall output chain.
+- **Delete with equal condition** - remove the object if the attribute's `value` was specified in the configuration, **for example** remove all the disabled rules in firewall output chain.
 
 ![object actions](del_equal_condition.png)
 
 ------------
-
 **Attribute options:**
 
 - **Ignore statement** as an attribute option allows to use `---ignore---` value in the field to skip sending the attribute to the device.
@@ -189,27 +186,26 @@ We can apply **4 actions to the object**:
 
 Click on drop down menu to find out the correct variable of the value you need, e.g. **customer** (`{{ device.customer_id }}`), **model name** (`{{ device.model_name }}`), **IPv4 address** (`{{ internet_service.ipv4 }}`).
 
-Click **Save** button to save the changes in current configuration.
+Click `Save` button to save the changes in the current configuration.
 
-By clicking on drop down arrow button near **Save**
+By clicking on drop down arrow button near **Save**, you can **preview**, **export settings to .csv file** (exported config file can be used for configuration of other devices).
 
 ![object actions](import_export.png)
 
-you can **preview**, **export settings to .csv file** (exported config file can be used for configuration of other devices)
-
 ![object actions](provision_preview.png)
 
-**import settings from .csv file** (**Important:** If the `Auto provisioning` option is enabled and you import configuration from .csv file, the existing settings on the device will be erased)
+You can also **import settings from .csv file** or **clean up** the existing/loaded device config.
+
+ <icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** If the `Auto provisioning` option is enabled and you import configuration from .csv file, the existing settings on the device will be erased.
 
 
 ![object actions](provision_import.png)
 
-or **clean up** the existing/loaded device config.
-
-When configuration is ready to upload to the device, navigate to `Config → Networking → TR-069 (ACS)`, find your device related group and in its **Edit** menu enable `Auto provisioning` option.
+When configuration is ready to upload to the device, navigate to *Config → Networking → TR-069 (ACS)*, find your device related group and in its **Edit** menu enable `Auto provisioning` option.
 
 Then, open `Networking → TR-069 (ACS) → Devices`, click on its serial number or **View** icon and at the top-right corner of the new page click on drop-down **Actions** menu and choose `Run provisioning` action to perform it for your device.
+ 
+After that, check if the settings on the device have changed.
 
 ![image](run_provisioning.png)
 
-After that, check if the settings on the device have changed.

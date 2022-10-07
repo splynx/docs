@@ -7,7 +7,7 @@ Follow these instructions to troubleshoot problems with **TR-069 (ACS)**:
 <summary><b>Can't connect device to ACS</b></summary>
 <div markdown="1">
 
-  0. Make sure that device is accessible from Splynx server. Use tools like *ping* or *traceroute* to doublecheck;
+  0. Make sure that the device is accessible from Splynx server. Use tools like *ping* or *traceroute* to doublecheck;
 
   1. Pay attention to the IP restrictions. The requests can be sent only from IPs/networks allowed in this list:
 
@@ -15,11 +15,11 @@ Follow these instructions to troubleshoot problems with **TR-069 (ACS)**:
 
   2. Make sure that `CWMP URL`, `username` and `password` that were configured under TR-069 client on a device are correct and ports `7547`, `7567` are opened;
 
-  3. Try to disable firewall on a device to ensure that it's not a firewall issue;
+  3. Try to disable firewall on the device to ensure that it's not a firewall issue;
 
-  4. In case of using `HTTPS` - try to disable option `SSL enabled by default`, and use `CWMP URL` like http://splynxserver.com:7547/ instead of **https** at the beginning.
+  4. In case of using `HTTPS`,  try to disable option `SSL enabled by default`, and use `CWMP URL` like http://splynxserver.com:7547/ instead of **https** at the beginning.
 
-  5. Restart **GenieACS services** using this command - `sudo service genieacs* restart`
+  5. Restart **GenieACS services** using this command: `sudo service genieacs* restart`
 
 </div>
 </details>

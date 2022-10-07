@@ -1,6 +1,5 @@
 Attributes
 ==========
-
 Here we can add the custom attributes to be displayed under ACS devices in Splynx. For example, we need to display a DNS attribute on the main info of device:
 
 ![attributes](attributes.png)

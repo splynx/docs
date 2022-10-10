@@ -4,19 +4,19 @@ Radius Proxy Accounting
 Splynx has the abillity to proxy<sup>[[1]](#one)</sup> RADIUS accounting packets to another RADIUS server. In this case, customers' traffic will be accounted on more than one RADIUS server.
 
 ## Radius Accounting process
-During RADIUS authorization, if the customer is allowed to connect, the RADIUS server<sup>[[2]](#two)</sup> sends a **RADIUS-Accept** packet to the NAS<sup>[[3]](#three)</sup> with a **Acct-Interim-Interval** Attribute (among other attributes). This attribute contains the number of seconds, of how frequently the NAS should send traffic usage updates<sup>[[4]](#four)</sup> to the RADIUS server.
-You can change this time in Splynx under **Config / Networking / Radius / (choose NAS type) / Load / Accounting interval (in sec)**.
+During RADIUS authorization, if the customer is allowed to connect, the RADIUS server<sup>[[2]](#two)</sup> sends a **RADIUS-Accept** packet to the NAS<sup>[[3]](#three)</sup> with an **Acct-Interim-Interval** Attribute (among other attributes). This attribute contains the number of seconds, of how frequently the NAS should send traffic usage updates<sup>[[4]](#four)</sup> to the RADIUS server.
+You can change this time in Splynx under *Config → Networking → Radius → (choose NAS type) → Load → Accounting interval (in sec)*.
 
 ![(image)](1.png)
 
 ## Radius Proxy Accounting
 
-After a session starts, the NAS sends traffic statistics every **Accounting interval (in sec)** seconds, as  mentioned. If you enable **Proxy accounting** under **Config / Networking / Radius extended**, Splynx will copy these RADIUS Accounting packets to the _IP:port_ specified in the **Radius host** field.
+After a session starts, the NAS sends traffic statistics every **Accounting interval (in sec)** seconds, as  mentioned. If you enable **Proxy accounting** under *Config → Networking → Radius advanced*, Splynx will copy these RADIUS Accounting packets to the _IP:Port_ specified in the **Radius host** field.
 
 ![(image)](2.png)
 
 ## Splynx as Remote RADIUS Accounting server
-To use Splynx as a Remote RADIUS Accounting server, create a Router under **Networking / Routers**.
+To use Splynx as a Remote RADIUS Accounting server, create a Router under **Networking → Routers**.
 
 ![(image)](3.png)
 

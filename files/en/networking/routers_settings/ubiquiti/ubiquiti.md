@@ -8,12 +8,12 @@ The configuration can be divided into the following steps:
 1. Configure the EdgeRouter's PPPoE server with Radius
 2. Configure the EdgeRouter's PPPoE server for incoming radius packets
 3. Add the EdgeRouter to Splynx
-4. Connect PPPoE customers and check that everything is working fine
+4. Connect PPPoE customers and check that everything works fine
 5. Install other usefull tools to your Edgerouter
 
 ### 1. Configure EdgeRouter PPPoE Server with Radius support
 
-The first step is to upgrade the system to at least version 1.5 or higher, because the support of Radius attributes was only added to EdgeOS starting from this version. The version we will be operating with here is EdgeOS v1.8.5.
+The first step is to upgrade the system to at least version 1.5 or higher, because the support of Radius attributes was only added to EdgeOS starting from this version. The version we will be operating here is EdgeOS v1.8.5.
 The upgrade can be performed in CLI with the following commands:
 ```
 add system image http://dl.ubnt.com/...
@@ -75,11 +75,11 @@ Below is an example of the output when a disconnect packet was received by EdgeO
 
 ### 3. Add EdgeRouter to Splynx and set up settings in Splynx
 
-Simply add a router to Splynx as usual in `Networking -> Routers -> Add` and choose the NAS Type as Ubiquiti:
+Simply add a router to Splynx in `Networking → Routers → Add` and choose the NAS Type as Ubiquiti:
 
 ![Information](uinfo.png)
 
-You can add additional attributes to the configuration of the NAS Type under `Config -> Networking -> Radius`.
+You can apply additional attributes to the configuration of the NAS Type under *Config → Networking → Radius*.
 By default, we support radius-rate-limit attributes to setup speeds of PPPoE tunnels.
 
 ![NAS config](nas_config.png)

@@ -1,17 +1,17 @@
 Routers settings
 ==========
 
-`Networking / Routers` - In this section, you can add and configure your routers which will manage Authentication, Accounting and Bandwidth management (Network Access Servers).
+`Networking → Routers` - In this section, you can add and configure your routers which will manage Authentication, Accounting and Bandwidth management (Network Access Servers).
 
-To add a new router navigate to **Networking -> Routers -> Add**:
+To add a new router navigate to **Networking → Routers → Add**:
 
 ![Add router](add_router.png)
 
 Here you need to specify:
 
-* **Title** - name of the router;
+* **Title** (required) - name of the router;
 
-* **NAS type** - select a NAS type for the new router. If you can't find the required NAS type here, it can be added under *Config -> Networking -> NAS types*;
+* **NAS type** - select a NAS type for the new router. If you can't find the required NAS type here, it can be added under *Config → Networking → NAS types*;
 
 * **Vendor/Model** - specify the vendor and model of the router;
 
@@ -21,7 +21,7 @@ Here you need to specify:
 
 * **Physical address** - specify the physical address of the router;
 
-* **IP/Host** - Router's IP address, this is the physical IP address from where packets are sent to Radius server (to Splynx). **In the case where a router is behind NAT, this is the public IP address of NAT device.** Can also be set as a domain name or dynamic DNS entry;
+* **IP/Host** (required) - Router's IP address. This is the physical IP address from where packets are sent to Radius server (to Splynx). **In the case where a router is behind NAT, this is the public IP address of NAT device.** Can also be set as a domain name or dynamic DNS entry;
 
 * **NAS IP** - RADIUS server attribute **NAS-IP-Address** (RADIUS server "Src. address" field on a Mikrotik router). If field "Src. Address" is specified on a Mikrotik RADIUS server - NAS IP (in Splynx) should be the same;
 
@@ -50,6 +50,8 @@ Here you need to specify:
 
 **RADIUS ACCOUNTING** - Router sends accounting statistics every **n** seconds to the Radius (Splynx) server using RADIUS accounting packets. **n** is a configurable value. It can be configured per NAS type under *Config / Networking / Radius / NAS Type / Load / Accounting interval (in sec)*.
 
+**NetFlow ACCOUNTING** - you can find more information in the following articles: [NetFlow accounting](/configuration/network/netflow_accounting/netflow_accounting.md), [How to configure NetFlow accounting in Splynx](https://splynx.com/blog/network-management/how-to-configure-netflow-accounting-in-splynx/).
+
 * * *
 Once the router is added, you can change the following parameters:
 
@@ -58,9 +60,9 @@ Once the router is added, you can change the following parameters:
 
 * **Radius secret** - Radius secret (field "Secret" under RADIUS server on a Mikrotik);
 
-* **NAS IP** - RADIUS server attribute **NAS-IP-Address** (RADIUS server "Src. address" field on a Mikrotik router). If field "Src. Address" is specified on the Mikrotik RADIUS server - NAS IP(in Splynx) should be the same;
+* **NAS IP** - RADIUS server attribute **NAS-IP-Address** (RADIUS server "Src. address" field on a Mikrotik router). If field "Src. Address" is specified on the Mikrotik RADIUS server - NAS IP (in Splynx) should be the same;
 
-* **Pools** - if selected, only use the selected pools for this router. If you want to use all available pools - do not select any. Pools have to be created under *Networking / IPv4 Networks*.
+* **Pools** - if selected, only use the selected pools for this router. If you want to use all available pools - do not select any. Pools have to be created under *Networking → IPv4 Networks*.
 
 **IP/HOST** Next to this field you'll see a ping tool which indicates whether a router is pingable or not.
 
@@ -79,8 +81,9 @@ In this section the API connection between the Mikrotik router and Splynx is man
 We'll use *splynx_user* to link the router with Splynx:
 
 ![mikrotik](router_mikrotik.png)
+![mikrotik](router_mikrotik_2.png)
 
-We configured all parameters in step 1(in the screenshot), saved the configuration in step 2 and test the connection in step 3 where we got the result.
+We configured all parameters in step 1 (on the screenshot), saved the configuration in step 2 and test the connection in step 3 where we got the result *Successful*.
 
 Additional parameters to configure:
 
@@ -92,9 +95,9 @@ Additional parameters to configure:
 
 * **Wireless access list** - if enabled, and the service of a customer has a MAC address specified, the MAC address of the service will be added under *Wireless - Access list* on the Mikrotik;
 
-* **Disabled customers to Address-List** - used for API authorization. This option changes the blocking behavior. If disabled - credentials of blocked customers will not be added to the router(hotspot users, PPP secrets firewall rules and DHCP leases), if enabled - blocked customers IP addresses will be placed in the respective address list;
+* **Disabled customers to Address-List** - used for API authorization. This option changes the blocking behavior. If disabled, credentials of blocked customers will not be added to the router(hotspot users, PPP secrets firewall rules and DHCP leases), if enabled, blocked customers IP addresses will be placed in the respective address list;
 
-* **Blocking rules** - enable/disable blocking rules. If enabled - Splynx will push a series of firewall filter rules to the router to enforce the suspension of blocked customers' services.
+* **Blocking rules** - enable/disable blocking rules. If enabled, Splynx will push a series of firewall filter rules to the router to enforce the suspension of blocked customers' services.
 
 In the **Mikrotik status** window you can see the latest status of the API connection, router model, ROS version, CPU usage, status of IPv6 and date & time of the last received status.
 
@@ -112,7 +115,7 @@ Here you can find Mikrotik logs:
 
 ![logs](log.png)
 
-Files can be viewed of downloaded.
+Files can be viewed or downloaded.
 
 ### MAP
 

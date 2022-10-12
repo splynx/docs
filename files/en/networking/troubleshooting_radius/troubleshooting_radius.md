@@ -3,7 +3,7 @@ Troubleshooting Radius server
 
 This is a guide illustrating how to troubleshoot communication between your router (Mikrotik example) and the Radius server (Splynx).
 
-Video tutorials for Radius configuration can be found on this [page](https://splynx.com/384/ispframework-and-radius-mikrotik-example)
+Video tutorials for Radius configuration can be found on this [page](https://splynx.com/384/ispframework-and-radius-mikrotik-example):
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Click here to expand</b></summary>
@@ -25,9 +25,9 @@ This troubleshooting step is only suitable when the "ping" (ICMP traffic) is not
 
 Also read these manuals and compare the settings to ensure that setup is correct:
 
-* in case of using PPPOE with Radius follow this - [PPPoE with RADIUS](networking/authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
+* in case of using PPPOE with Radius follow this: [PPPoE with RADIUS](networking/authentication_of_customers/mikrotik_pppoe_radius/mikrotik_pppoe_radius.md)
 
-* in case of using DHCP with RADIUS (IPoE) follow this - [DHCP with RADIUS](networking/authentication_of_customers/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
+* in case of using DHCP with RADIUS (IPoE) follow this: [DHCP with RADIUS](networking/authentication_of_customers/mikrotik_dhcp_radius/mikrotik_dhcp_radius.md)
 
 ### Step 2
 
@@ -59,7 +59,7 @@ Check the firewall and ports. RADIUS is transported over UDP on ports 1812 (auth
 
 Inspecting of logs.
 
-By default Splynx writes logs into 2 files: `coa.log` and `short.log` that you can find in the folder `/var/www/splynx/logs/radius` on CLI or via the web interface, navigate to ` Administration -> Logs -> Files` and search these 2 files.
+By default Splynx writes logs into 2 files: `coa.log` and `short.log` that you can find in the folder `/var/www/splynx/logs/radius` on CLI or via the web interface, navigate to ` Administration → Logs → Files` and search these 2 files.
 
 The `short.log` file will display all records of login attempts, the reason of disconnection. For example:
 
@@ -84,19 +84,19 @@ Descriptions of records:
 * **Log in** - The Splynx server received the Radius Accounting-Start packet from Router;
 * **Log off** - The Splynx server received the Radius Accounting-Stop packet from Router;
 * **Reject** - The Splynx server received the Radius Access-Request packet from Router and Radius Access-Reject was sent back. Customer was not authenticated;
-* **Reject (Attribute accept)** - The Splynx server sent the Radius Access-Accept packet to Router with the IP address from the Splynx service. Customer was authenticated on the router with a session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into the Address list `Reject_x` on the router;
-* **Reject (ATTR + IP accept)** - The Splynx server sent the Radius Access-Accept packet to the Router with an IP address from the Splynx Reject pool (*Config / Networking / Radius / Reject IP x*). Customer was authenticated on the router with session time limit = *Config / Networking / Radius / Error session time limit*. IP address was added into the Address list `Reject_x` on the router;
+* **Reject (Attribute accept)** - The Splynx server sent the Radius Access-Accept packet to Router with the IP address from the Splynx service. Customer was authenticated on the router with a session time limit = *Config → Networking → Radius → Error session time limit*. IP address was added into the Address list `Reject_x` on the router;
+* **Reject (ATTR + IP accept)** - The Splynx server sent the Radius Access-Accept packet to the Router with an IP address from the Splynx Reject pool (*Config → Networking → Radius → Reject IP x*). Customer was authenticated on the router with session time limit = *Config → Networking → Radius → Error session time limit*. IP address was added into the Address list `Reject_x` on the router;
 * **\[card\] Accept** - The same as **Accept** but for Prepaid vouchers.
 * **\[card\] Log in** - The same as **Log in** but for Prepaid vouchers.
 * **\[card\] Log off** - The same as **Log out** but for Prepaid vouchers.
 * **Reject card** - The same as **Reject** but for Prepaid vouchers.
 
-In the case of authentication errors or logging off, the reasons are shown in the radius logs under ` Administration -> Logs -> Files -> radius/short` as well as in the customer statistics under sessions (enable the "Termination cause" column)
+In the case of authentication errors or logging off, the reasons are shown in the radius logs under ` Administration → Logs → Files → radius/short` as well as in the customer statistics under sessions (enable the "Termination cause" column).
 
-**!Note** Disconnection reasons in the `short.log` like **Admin-reset** or **Lost-carrier** are not related to Splynx and should be investigated on the network.
+<icon class="image-icon">![Note](note.png)</icon> **NOTE**: Disconnection reasons in the `short.log` like **Admin-reset** or **Lost-carrier** are not related to Splynx and should be investigated on the network.
 
 ---
-In the `coa.log` you can find records that can help you with troubleshooting of issues with disconnection, plan change etc. If Splynx sends a CoA packet - it will be logged here:
+In the `coa.log` you can find records that can help you with troubleshooting of issues with disconnection, plan change etc. If Splynx sends a CoA packet, it will be logged here:
 
 ```
 2021-10-07 07:15:02 - echo "User-Name = mike, Framed-IP-Address = 192.168.200.218, NAS-IP-Address = 10.250.32.3" | /usr/bin/sudo /usr/bin/radclient 10.250.32.3:3799 disconnect "9734c51bb208" > /dev/null &
@@ -112,25 +112,25 @@ In this part of the `coa.log` you can see that Splynx has sent some CoA packets 
 
 ---
 
-The Splynx Radius server consist of 2 services – splynx_radd and freeradius. Both of them have different debugging procedures and show different information. Let’s start with the splynx_radd debug:
+The Splynx Radius server consist of 2 services: splynx_radd and freeradius. Both of them have different debugging procedures and show different information. Let’s start with the splynx_radd debug:
 
-To enable debug mode for splynx_radd, navigate to *Config / Networking / Radius extended* and enable debug (change the level of debug to get more or less detail in the log):
+To enable debug mode for splynx_radd, navigate to *Config → Networking → Radius advanced* and enable debug (change the level of debug to get more or less detail in the log):
 
 ![(image)](debug.png)
 
 Apply new settings immediately by saving and restarting the Radius server.
-To restart Radius server use the button at the bottom of the same page (*Config / Networking / Radius extended*), or enter command in SSH:
+To restart Radius server use the button at the bottom of the same page (*Config → Networking → Radius advanced*), or enter command in SSH:
 ```
 service splynx_radd restart
 ```
 
-Now we can check the debug file, again, it’s also accessible from the CLI of Linux Splynx server:
+Now we can check the debug file. It is also accessible from the CLI of Linux Splynx server:
 `/var/www/splynx/logs/radius/debug.log`
 The best way to check the file is by using the tail command:
 ```
 tail -f /var/www/splynx/logs/radius/debug.log
 ```
-Once the debug is completed - remember to switch the debug off the same way it was switched on, save and restart the radius server again. (To avoid massive radius rebug files forming)
+Once the debug is completed, remember to switch the debug off the same way it was switched on, save and restart the radius server again. (To avoid massive radius rebug files forming)
 
 If splynx_radd debug doesn’t show us the desired results, we can also run freeradius daemon in debug mode and see if any packets are received by Radius server.
 
@@ -140,19 +140,19 @@ Run CLI commands to get output into the file:
 service freeradius stop && freeradius -Xxxx | tee Debugxxx.log
 ```
 
-wait for 2-5 minutes to collect some data and stop execution of this command by using **Ctrl+C** and start freeradius in a regular mode:
+Wait for 2-5 minutes to collect some data and stop execution of this command by using **Ctrl+C** and start freeradius in a regular mode:
 
 ```
 service freeradius start
 ```
 
-if the freeradius daemon returns an error after the last command run this:
+If the freeradius daemon returns an error after the last command run this:
 
 ```
 killall freeradius; service freeradius restart
 ```
 
-If you don’t see any debug messages when a customer tries to connect to the Mikrotik Router, it means that your router's radius packets are not reaching the Splynx Radius server at all. It means that you have to verify networking, routing and NAT settings of the network.
+If you don’t see any debug messages when a customer tries to connect to the Mikrotik Router, it means that your router's radius packets are not reaching the Splynx Radius server at all. You need to verify networking, routing and NAT settings of the network.
 
 The use of a VPN in any case where connectivity or NATting is an issue is highly recommended and can be setup natively in Splynx via the GUI:
 

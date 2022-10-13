@@ -29,7 +29,25 @@ The next step of setting up "Recurring billing" will be to choose *Billing day*,
 
 * **Billing day** - the day invoices will be generated automatically (default value is `1`st day of the month. The available values are from `1` to `28`).
 
-<icon class="image-icon">![Note](note.png)</icon> Billing day value is limited to 28 because of the shortest month of the year - February, so that the customer could receive invoices for February as well.
+<details style="margin-bottom: 20px;">
+<summary><b style="color: #FD841F;">Explanation on the Billing day value</b></summary>
+<div markdown="1" style="margin-top: 15px;">
+
+Billing day is the automatic date of invoice creation and also the start of the billing period (for one month).
+Example: Setting to 1 means billing from 1st to end of month and 10 means billing from 10th to the 9th of the next month. 
+
+The billing day value is limited to 28 to allow us to create invoices on the same day of every month consistently. Thus limited to 28 because of February.
+Should you wish to create invoices on any day between the 29th and 31st you can choose between the 28th or the 1st to create your invoices on these days instead.
+
+The start of the actual billing cycle, however, (from which date the customer will be billed from) is determined by the service start date, this will always pro-rate from the service start date to the end of the first billing cycle and then continue to bill as per the normal billing period.
+Example A: If a customer service start date is 15 March and the billing day is set to 1, an invoice generated in March will show the customer being billed from 15 March - 31 March, the next invoice will show 1 April - 30 April etc.
+Example B: If a customer service start date is 15 March and the billing day is set to 1, an invoice generated in April will show the customer being billed from 15 March - 30 April.
+
+If you would like to create an invoice on a different date to that of the billing day then the History and Preview tool should be used to create the invoice preview batch on a desired day.
+Example: If you would like to create the invoice batch for April, on the 25th of March, then you would navigate to the history and preview tool on the 25th of March, select 1 April as the Date and click preview. This will create the batch which can be previewed and ultimately confirmed once you are satisfied with the data. All invoices and transactions will then be created and invoices will be sent according to the configured notification settings.
+
+</div>
+</details>
 
 * **Payment due** - the amount of days after the billing day the customer has to make payments before getting blocked.
 

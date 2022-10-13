@@ -164,13 +164,13 @@ Table of contents
 
 
 ##### [Scheduling](scheduling/scheduling.md)
-  * [Archive](scheduling/archive/archive.md)
-  * [Calendars](scheduling/calendars/calendars.md)
   * [Dashboard](scheduling/dashboard/dashboard.md)
-  * [Maps](scheduling/maps/maps.md)
   * [Projects](scheduling/projects/projects.md)
   * [Tasks](scheduling/tasks/taks.md)
-  * [Workflows](scheduling/workflows/workflows.md)
+  * [Workflow](scheduling/workflow/workflow.md)
+  * [Calendars](scheduling/calendars/calendars.md)
+  * [Maps](scheduling/maps/maps.md)
+  * [Archive](scheduling/archive/archive.md)
 
 
 ##### [Voice](voice/voice.md)
@@ -302,7 +302,7 @@ Table of contents
     * [Project types](configuration/scheduling/project_types/project_types.md)
     * [Task templates](configuration/scheduling/task_templates/task_templates.md)
     * [Teams](configuration/scheduling/teams/teams.md)
-    * [Workflows](configuration/scheduling/workflows/workflows.md)
+    * [Workflows](configuration/scheduling/workflow/workflow.md)
 
 * [Leads](configuration/crm/crm.md)
     * [Finance](configuration/crm/finance/finance.md)

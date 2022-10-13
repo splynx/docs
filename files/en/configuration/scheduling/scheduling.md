@@ -18,4 +18,4 @@ Please follow the links for more information on each section:
 
 * [Teams](configuration/scheduling/teams/teams.md)
 
-* [Workflows](configuration/scheduling/workflows/workflows.md)
+* [Workflows](configuration/scheduling/workflow/workflow.md)

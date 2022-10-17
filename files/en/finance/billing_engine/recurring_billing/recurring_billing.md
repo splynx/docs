@@ -29,7 +29,7 @@ The next step of setting up "Recurring billing" will be to choose *Billing day*,
 
 * **Billing day** - the day invoices will be generated automatically (default value is `1`st day of the month. The available values are from `1` to `28`).
 
-<details style="font-size: 18px; margin-bottom: 5px;">
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b style="color: #FD841F;">Explanation on the Billing day values</b></summary>
 <div markdown="1" style="margin-top: 15px; font-size: 16px;">
 

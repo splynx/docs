@@ -165,5 +165,13 @@ In case a customer decides to change their previous service (`Ethernet_500Mbps`,
 </div>
 </details>
 
+*********************************************
+### Cancellations 
+
+To cancel a service you can simply set an end date on the service. This will:
+
+1. Alert the system not to bill this service beyond the end date.
+
+2. Set the service to a Disabled status at the end of the specified day, thereby pushing a Packet of disconnect to the NAS for the existing service when using Radius (once the customer tries to reconnect they will receive a Reject_0 address list entry or be blocked from reconnecting entirely depending on the radius config) or in the case of Mikrotik API, removing the lease/secret from the NAS.
 
 Suggested read: [Change Plan from Customer Portal](customer_portal/change_plan_from_customer_portal/change_plan_from_customer_portal.md)

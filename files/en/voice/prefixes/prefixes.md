@@ -17,7 +17,7 @@ The following parameters need to be specified:
   The pattern is created using special symbols.
 
   Examples can be found on the following page:
-  [Examples.](voice/prefixes/examples/example.md)
+  [Examples.](voice/prefixes/example.md)
 
 * **Destination** - Field to identify which type of destination this prefix will use, for example: international, fixed, mobile, etc;
 

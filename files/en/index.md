@@ -176,7 +176,7 @@ Table of contents
 ##### [Voice](voice/voice.md)
   * [Auto CDR Processing](voice/auto_cdr_processing/auto_cdr_processing.md)
   * [Prefixes](voice/prefixes/prefixes.md)
-  * [Processing](voice/processing/processing.md)
+  * [CDR Processing](voice/processing/processing.md)
   * [Rates](voice/rates/rates.md)
   * [Tariff Settings](voice/tariff_settings/tariff_settings.md)
   * [Voice Categories](voice/voice_categories/voice_categories.md)

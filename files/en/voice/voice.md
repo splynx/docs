@@ -1,7 +1,7 @@
 Voice
 =====
 
-The Voice Module is designed for customized CDR processing according to your own prices and tariffication. It is composed by 3 configuration pages and processing. Also, in the Voice Tariffs module a setting is available for customizing included and group pricing, as well as a rate table and increased price feature.
+The Voice Module is designed for customized CDR processing according to your own prices and tariffication. It is composed of 3 configuration pages and processing. Also, in Voice Tariffs module a setting is available for customizing included and group pricing, as well as a rate table and increased price feature.
 
 * [Auto CDR Processing](voice/auto_cdr_processing/auto_cdr_processing.md)
 
@@ -11,7 +11,7 @@ The Voice Module is designed for customized CDR processing according to your own
 
   * [→ Prefixes Examples](voice/prefixes/examples/simplified_prefixes_example.md)
 
-* [Processing](voice/processing/processing.md)  
+* [CDR Processing](voice/processing/processing.md)  
 
 * [Rates](voice/rates/rates.md)
 

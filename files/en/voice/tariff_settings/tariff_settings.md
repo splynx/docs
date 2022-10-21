@@ -1,21 +1,22 @@
 Voice tariff settings
 ===============
 
-We have introduced settings in the tariffs configurations, which allows you to add included pricing and group pricing to the tariff, and also a preview tool for testing purposes. You also have the option to choose which rate table the tariff will be based on and to conveniently manage buy prices(prices from providers), we've added the ability to add an increase percentage to define the final sell prices.
+We have introduced settings in the tariff configuration which allows you to add included pricing and group pricing to the tariff, and also a preview tool for testing purposes. You can choose which rate table the tariff will be based on and to conveniently manage prices from providers. We've added the ability to add an increase percentage to define the final sell prices.
 
-Navigate to `Tariffs Plans → Voice`, and click on the "Pricing" icon to configure the tariff settings:
+Navigate to `Tariff Plans → Voice`, and click on the "Pricing" icon to configure the tariff settings:
 
 ![Configure tariff](voice_settings.png)
 
 Here you will be presented with 2 tabs: Groups and Preview. Under groups tab you can configure rates settings, add some included pricing also configure some pricing groups.
 
 ![Groups and Preview](settings_view.png)
+![Groups and Preview](settings_view2.png)
 
 ### Rates
 
 ![Rate](rates.png)
 
-Under rates settings you can select rate table, set % which will be added to buy price(provider rates) and define if connection price will be ignored or no. If you are using rates each voice plan should be configured with a rate table to understand how to calculate the price of a call/message/data. You should use "Buy price increase" field in case of using provider rates. In this field you can set static % of markup. Let's say you have a provider rate with buy price 0.1$ (you pay it for voice provider) and you want to add 50% markup to this rate to have some profit. In this case Splynx will calculate rate for customer in this way: 0.1$ + 50% what equal to 0.15$ - this is a price of a customers rate.
+Under rates settings you can select rate table, set % which will be added to buy price (provider rates) and define if the connection price will be ignored or no. If you are using rates, each voice plan should be configured with a rate table to understand how to calculate the price of a call/message/data. You should use "Buy price increase" field in case of using provider rates. In this field, you can set static % of markup. Let's say you have a provider rate with a buy price 0.1$ (you pay it for voice provider) and you want to add 50% markup to this rate to have some profit. In this case, Splynx will calculate rate for customer in this way: 0.1$ + 50% what equal to 0.15$ - this is a price of a customers rate.
 
 ### Included pricing
 
@@ -29,7 +30,7 @@ Let's say I want my customers to have 600 minutes for free per month. In this ca
 
 Here we can define next options:
 
-* **Type** - Type of the pricing, could be Call, SMS or Data;
+* **Type** - Type of the pricing, could be Call, Message or Data;
 
 * **Categories** -  We have to choose to which categories to include in this price. We should always create categories and prefixes first;
 
@@ -37,9 +38,9 @@ Here we can define next options:
 
 * **Unlimited** - Enable this option if it is not limited by minutes;
 
-* **Included amount** - Select amount of time for calls(in seconds, minutes or hours), amount of messages or amount of data(in B, KB, MB or GB);
+* **Included amount** - Select amount of time for calls (in seconds, minutes or hours), amount of messages or amount of data (in B, KB, MB or GB);
 
-* **Time** - Period when this pricing included is applied.
+* **Time** - Period when this included pricing is applied.
 
 ### Pricing groups
 
@@ -59,16 +60,17 @@ In the last section, we can configure pricing groups. For example, if we want to
 
 * **Time** - Period when this included pricing is applied;
 
-* **Operation** - + % to buy, + % to sell, Establish, Tarification Step, First tariffication;
+* **Operation** - + % to buy, + % to sell, Establish, Billing block, Minimum duration;
 
-* **Value** -  + % to buy, + % to sell → increase percentage of price. Establish, Tariffication Step, First tariffication → Price.
+* **Value** -  values for the Operation options.
 
 
 ## Preview Tool
 
-It's a very useful tool where you can test and preview recently configured pricing.
+A useful tool where you can test and preview a recently configured pricing.
 
 ![Preview Tool](preview.png)
+![Preview Tool](preview_next.png)
 
 Here you need to define a destination phone number and call duration and click on preview. This will return a price of this call in according to rates. We have created rates previously:
 

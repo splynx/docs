@@ -11,13 +11,28 @@ To add prefix(-es) manually, navigate to *Voice → Prefixes* and click on `Add`
 
 The following parameters need to be specified:
 
-* **Prefix** - Add the prefix using the pattern from *Examples*;
+* **Prefix** - Add the prefix using the pattern below:
 
-  You can use the phone pattern to match phone number groups.
-  The pattern is created using special symbols.
+#### Special symbols supported:
 
-  Examples can be found on the following page:
-  [Examples.](voice/prefixes/example.md)
+| Symbol      | Description                                                                       |
+|-------------|-----------------------------------------------------------------------------------|
+| `{!}`       | Zero or more any characters.                                                      |
+
+---
+
+#### Examples:
+
+| Phone pattern        | Description                                                                             |
+|----------------------|-----------------------------------------------------------------------------------------|
+| `{!}`                | Any phone number                                                                        |
+| `260{!}`            | Any phone number started from 260                                                       |
+
+
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** The previous complex patters, like `{x}` (one digit from 0 to 9), `{.}` (one or more any characters), `{n}` (one digit from 2 to 9) etc. are no longer supported in Splynx.
+
+In case complex patters have already been used, it is necessary to change them.
+*****************************************************************
 
 * **Destination** - Field to identify which type of destination this prefix will use, for example: international, fixed, mobile, etc;
 

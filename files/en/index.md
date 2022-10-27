@@ -345,7 +345,7 @@ Table of contents
 ##### [My Profile](my_profile/my_profile.md)
   * [Profile](my_profile/profile/profile.md)
   * [Customer search fields](my_profile/customer_search_fields/custom_search_fields.md)
-  * [Last Login](my_profile/last_login/last_login.md)
+  * [Last login](my_profile/last_login/last_login.md)
   * [Scheduling](my_profile/scheduling/scheduling.md)
   * [IMAP](my_profile/imap/imap.md)
 

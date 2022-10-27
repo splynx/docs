@@ -1,12 +1,12 @@
 Profile
 =============
 
-Administrators can customize their profile details here. Details like photo, password and signatures can be personalized, saved column preferences can be reset, tickets canned responses, its groups, logout time and two-factor authentication can be configured here for the admin as well.
+Administrators can customize their profile details here. Details like photo, password and signatures can be personalized, saved column preferences can be reset, canned responses for tickets, its groups, logout time and two-factor authentication can be configured here for the admin as well.
 
 ![image](1.png)
 
 **Profile** - displays the full name of the current administrator and a photo can be added here. In order to change your photo/avatar just click on the default profile image, in the new window you can choose one of the built-in avatars or your own photo.
-The custom image requirements are: file with *jpg/jpeg/png/bmp* extension, size is not more than 5 megabytes. Zoom and visible image region selection functions are supported.
+The custom image requirements are: file with *jpg/jpeg/png/bmp* extension, size is not more than 5MB. Zoom and visible image region selection functions are supported.
 
 ![image](2.png)
 
@@ -28,7 +28,7 @@ The custom image requirements are: file with *jpg/jpeg/png/bmp* extension, size 
 
 ![image](8.png)
 
-**Reset Columns** - all [columns](configuration/system/additional_fields/additional_fields.md) that were added to the default view of any table within Splynx can be reset with this function.
+**Reset Columns** - all [columns](configuration/system/additional_fields/additional_fields.md) that were added to the default view of any table or dashboard shortcuts within Splynx can be reset with this function.
 
 ![image](9.png)
 
@@ -40,15 +40,15 @@ The custom image requirements are: file with *jpg/jpeg/png/bmp* extension, size 
 
 ![image](11.png)
 
- You can create the additional group (-s), just click on **Add** button at the top-right corner of the table and specify the group name e.g. *Support*, *Network* etc.
+ You can create an additional group (-s), just click on `+` button at the top-right corner of the table and specify the group name e.g. *Support*, *Network* etc.
 
-**NOTE:** Canned group names in `My profile` and `Config → Helpdesk → Canned responses` cannot be the same.
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:** Canned group names in `My profile` and `Config → Helpdesk → Canned responses` cannot be the same.
 
 ![image](12.png)
 
-`Personal` group is not visible in the table but it's used by default for new responses. The responses created in `My profile` are unique to each user and cannot be used by other administrators in Splynx (except super administrator).
+`Personal` group is not visible in the table but it is used by default for new responses. The responses created in `My profile` are unique to each user and cannot be used by other administrators in Splynx (except super administrator).
 
-**Canned responses** - pre-configured responses for tickets can be created and saved here to optimize response time and improve efficiency. Simply click on the `+` add button to add a new response. By default
+**Canned responses** - pre-configured responses for tickets can be created and saved here to optimize response time and improve efficiency. Simply click on the `+` button to add a new response.
 
 ![image](13.png)
 
@@ -62,8 +62,8 @@ The custom image requirements are: file with *jpg/jpeg/png/bmp* extension, size 
 
 * **Text** - the canned response text body. The pre-formatted replies can be customized by customer name, agent signature, links etc. using the dynamic [placeholders](configuration/system/templates/templates_variables/templates_variables.md).
 
-Use *canned responses* withing its groups when you create or reply to a ticket/message, just click on <icon class="image-icon">![can_resp](can_resp.png)</icon> icon, then find the required group and click on the canned response title to insert the text into message field.
+Use *canned responses* withing its groups when you create or reply to a ticket/message, just click on <icon class="image-icon">![can_resp](can_resp.png)</icon> icon, then find the required group and click on the canned response title to insert the text into the message field.
 
 ![image](15.png)
 
-The information how to created the canned responses for all administrators in Splynx you can find in [Canned responses](configuration/support/ticket_canned_responses/ticket_canned_responses.md) article.
+The information how to create canned responses for all administrators in Splynx, can be found in [Canned responses](configuration/support/ticket_canned_responses/ticket_canned_responses.md) article.

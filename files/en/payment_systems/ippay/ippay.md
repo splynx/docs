@@ -3,6 +3,14 @@ IPpay by Convergence
 
 IPpay is a Splynx add-on which allows refilling of customer balance and paying invoices via the IPpay payment gateway - https://www.ippay.com/.
 
+**IPpay contact details**: 
+
+Marcus Clark - Senior Account Manager
+
+mclark@ippay.com 
+
+Tel: 404-808-7250
+*********************************************
 The add-on can work with different credit cards and bank accounts, if cards or bank accounts are saved in customer profiles, the add-on allows you to charge all customers using *Direct debit orders*.
 
 ### Add-on installation

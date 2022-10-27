@@ -1,4 +1,4 @@
-Google calendar synchronization
+Scheduling (Google calendar synchronization)
 =============
 
 Administrators can connect Splynx to their Google account to sync tasks assigned to them and link to their Google calendars.
@@ -7,7 +7,7 @@ Administrators can connect Splynx to their Google account to sync tasks assigned
 
 To connect a Google account, click on the **Connect Google account** button and follow the steps to connect the account.
 
-Upon clicking on the **Connect Google account** button, the following window will appear:
+Upon clicking on ```Connect Google account``` button, the following window will appear:
 
 ![Authorization](authorize.png)
 
@@ -17,7 +17,7 @@ Click on the `Google authorize` link (1) to sign in. You will be redirected to t
 
 After the code is generated, you should copy and paste it into the field provided to connect the Google calendar in Splynx (2).
 
-After that click on *Connect Google account* (3) to complete the process.
+After that, click on *Connect Google account* (3) to complete the process.
 
 ![Google authorized](linked_google_acccount.png)
 
@@ -37,9 +37,7 @@ Let's imagine a scenario when you add a [scheduling team](configuration/scheduli
 
 ![task_assigned_to_team](task_assigned_to_team.png)
 
-and even if the admin is a member of the team, the task was not synced to Google calendar:
-
-![empty Google calendar](empty_google_calendar.png)
+Even if the admin is a member of the team, the task is not synced to Google calendar.
 
 The reason for this is that you did not pair the calendar of this team. Let's apply this:
 
@@ -47,9 +45,9 @@ The reason for this is that you did not pair the calendar of this team. Let's ap
 
 once this done, you can check your Google calendar:
 
-![google_assigned_to_team](google_assigned_to_team.png)
+![google_assigned_to_team](googlee_assigned_to_admin.png)
 
-**Conclusion**: if an admin wants to sync tasks that are assigned directly to him and tasks that are assigned to a team (where this admin is a member), it's necessary to pair the personal calendar and the team calendar:
+**Conclusion**: if an admin wants to sync tasks that are assigned directly to him and tasks that are assigned to a team (where this admin is a member), it is necessary to pair the personal calendar and the team calendar:
 
 ![final setup](final_setup.png)
 

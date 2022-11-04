@@ -52,7 +52,7 @@ Alternatively, this data can be presented in a table format and filtered by a sp
 ![Table](table.png)
 
 **************************************************************************
-The Change plan <icon class="image-icon">![icon](change_plan.png)</icon> icon can be used to change the plan in a mass action for all customers subscribed to this plan. Please follow the link below for more information: [Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md).
+The Change plan <icon class="image-icon">![icon](change_plan.png)</icon> icon can be used to change the plan in a mass action for all customers subscribed to this plan. Please follow the link below for more information: [Change plan](configuring_tariff_plans/tariff_change/tariff_change.md).
 
 Like all tables in Splynx, you can modify the appearance of content to be displayed and export the table into Excel, CSV or PDF formats. You can also choose to copy or print the table:
 

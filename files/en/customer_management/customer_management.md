@@ -22,7 +22,7 @@ Our management system consists of 8 main pages for each customer: **information*
 
   6. [CPE management](customer_management/cpe_management/cpe_management.md)
 
-  7. [CRM quotes](crm/quotes/quotes.md)
+  7. [Quotes](crm/quotes/quotes.md)
 
   8. [Communication (IMAP)](my_profile/imap/imap.md)
 

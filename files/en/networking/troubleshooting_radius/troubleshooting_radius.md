@@ -3,18 +3,9 @@ Troubleshooting Radius server
 
 This is a guide illustrating how to troubleshoot communication between your router (Mikrotik example) and the Radius server (Splynx).
 
-Video tutorials for Radius configuration can be found on this [page](https://splynx.com/384/ispframework-and-radius-mikrotik-example):
-
-<details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>Click here to expand</b></summary>
-<div markdown="1">
+Video tutorial for Radius configuration:
 
 <iframe width="350" height="270" src="https://www.youtube.com/embed/5iA85JCJRyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</div>
-</details>
-
-
 
 ### Step 1
 Firstly make sure that the router is accessible from Splynx and vice versa that the router can "reach" Splynx. In Splynx you can check the reachability with a ping status from Splynx to the router:

@@ -30,7 +30,7 @@ This is the string "My Mikrotik eth 0/2" converted from ASCII to HEX. Where:
   * **My Mikrotik** - current system identity (Winbox->System->Identity).
   * **eth 0/2** - interface where DHCP request comes from.
 
-![(note)](info.png) Mikrotik bridge supports DHCP Snooping and DHCP Option 82 starting from RouterOS version 6.43.
+<icon class="image-icon">![Note](info.png)</icon> Mikrotik bridge supports DHCP Snooping and DHCP Option 82 starting from RouterOS version 6.43.
 
 ### Splynx configuration
 
@@ -40,7 +40,7 @@ To use Agent Circuit ID, enter its value in the internet service field **Port ID
 
 ![image](pic2.png)
 
-![(warn)](warning.png) You should use HEX value in this field. Example: `0x001122334455`.
+<icon class="image-icon">![Warning](warning.png)</icon> You should use HEX value in this field. Example: `0x001122334455`.
 
 ### How to add Agent Remote ID support
 
@@ -61,7 +61,7 @@ After the additional field is added, it will appear in internet service configur
 
 You should use HEX value in this field. Example: `0xaabbccddeeff`. Also you can use `*` (asterisk) here. `*` means that DCHP requests can contain any Agent Remote ID.
 
-![(note)](info.png) Please note, if you leave this field blank/empty, this means that the Agent Remote ID option in the DHCP request should also be exactly blank/empty.
+<icon class="image-icon">![Note](info.png)</icon> Please note, if you leave this field blank/empty, this means that the Agent Remote ID option in the DHCP request should also be exactly blank/empty.
 
 ### Debug (freeradius)
 

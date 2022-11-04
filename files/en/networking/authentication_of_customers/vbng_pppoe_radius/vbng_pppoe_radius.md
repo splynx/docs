@@ -2,23 +2,12 @@ netElastic vBNG: PPPoE, Radius
 ==========
 
 
-In this guide we’ll show you how to properly configure virtual Broadband
-Network Gateway (vBNG) solution from netElastic
-([www.netelastic.com](http://www.netelastic.com)) along with its
-integration with Splynx ISP Framework
-([www.splynx.com](http://www.splynx.com)). We’ll demonstrate how Splynx
-Radius server can be used for complete AAA (Authentication,
-Authorization & Accounting) coverage of your customers.
+In this guide we’ll show you how to properly configure virtual Broadband Network Gateway (vBNG) solution from netElastic ([www.netelastic.com](http://www.netelastic.com)) along with its
+integration with Splynx ISP Framework ([www.splynx.com](http://www.splynx.com)). We’ll demonstrate how Splynx Radius server can be used for complete AAA (Authentication, Authorization & Accounting) coverage of your customers.
 
-So, let’s get started. We’d assume that you already have freshly
-installed instances of vBNG Router, vBNG Manager and Splynx up and
-running. In our demo we’ll be creating a test user with certain
-parameters using our Splynx solution and then connect him over PPPoE
-session to Internet through vBNG device.
+So, let’s get started. We’d assume that you already have freshly installed instances of vBNG Router, vBNG Manager and Splynx up and running. In our demo we’ll be creating a test user with certain parameters using our Splynx solution and then connect him over PPPoE session to Internet through vBNG device.
 
-The lab setup is shown below. This test case shows how to configure vBNG
-to work with PPPoE access with Radius authentication, authorization, and
-accounting.
+The lab setup is shown below. This test case shows how to configure vBNG to work with PPPoE access with Radius authentication, authorization, and accounting.
 
 ![lab](./image.png)
 

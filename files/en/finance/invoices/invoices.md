@@ -192,4 +192,4 @@ Then, press **Save** button. To edit the created filter click on <icon class="im
 
 ---
 
-Suggested read: [Customer billing](customer_management/customer_billing/customer_billing.md).
+Suggested to read: [Customer billing](customer_management/customer_billing/customer_billing.md).

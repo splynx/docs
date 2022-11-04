@@ -201,7 +201,7 @@ If the option **Create payments for prepayments** is not used (a toggle is **dis
 
 ![image](bnk1.png)
 
-Suggested read: [Bank statement processing](finance/bank_statement_processing/bank_statement_processing.md).
+Suggested read: [Payment statement processing](finance/payment_statement_processing/payment_statement_processing.md).
 
 </div>
 </details>

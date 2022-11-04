@@ -1,4 +1,4 @@
-**ssh-term**
+Splynx **ssh-term** add-on
 ========
 **ssh-term** - is a Splynx add-on developed to use a terminal within the Splynx web-interface.
 

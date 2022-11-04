@@ -1,4 +1,4 @@
-Miscellaneous ticket configuration
+General ticket configuration
 =============
 In this section ticket statuses, ticket types, and ticket groups can be added/removed or edited.
 

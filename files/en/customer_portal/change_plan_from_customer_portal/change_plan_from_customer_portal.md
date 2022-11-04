@@ -119,4 +119,4 @@ After you press `Apply` button, the new service with will be added in `Pending` 
 
 - Provided that two values (`Request tariff plan change` and `Self-change tariff plan`) are simultaneously selected  in `Config → Main → Portal` and no tariffs are chosen in the `Tariff plans available in customer portal` field of the plan, the customer can still make a plan change request from the *Portal*;
 
-- In order to change tariff for multiple customers, please use the following guide - [Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md).
+- In order to change tariff for multiple customers, please use the following guide - [Change plan](configuring_tariff_plans/tariff_change/tariff_change.md).

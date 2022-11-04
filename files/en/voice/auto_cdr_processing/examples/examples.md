@@ -15,7 +15,7 @@
 |516891[F2]      | Will match the first and the third files with matches 516891F, 5168912|
 |516891[F2]-\d{6}|  Will match only the first one                                        |
 
-**Some of special characters:**
+**Special characters:**
 
 Quantifiers:* + ? and {}
 

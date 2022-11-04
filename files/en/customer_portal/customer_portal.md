@@ -1,9 +1,9 @@
 Customer Portal
 ==========
 
-The customer portal provides each customer private access to their accounts containing information on their services, it's statistic and other financial aspects of provided services. The customers can also check their profile information, latest news and updates, important documents including financial documents and contracts, all messages received or tickets submitted for support team on the portal.
+Customer portal provides for each customer a private access to their accounts containing information on their services, statistics and other financial aspects of provided services. The customers can also check their profile information, latest news and updates, important documents including financial documents and contracts, all messages received or tickets submitted for support team on the portal.
 
-The navigation pane on the customer portal can display the following modules:
+The navigation panel on the customer portal can display the following modules:
 
 
 #### Dashboard

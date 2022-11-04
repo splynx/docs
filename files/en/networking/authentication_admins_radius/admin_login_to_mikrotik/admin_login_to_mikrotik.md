@@ -1,4 +1,4 @@
-Radius admin login to Mikrotik routers
+Admin login to Mikrotik routers
 ==========
 
 Using this feature, Splynx administrators can login to a Mikrotik router with their Splynx account credentials.

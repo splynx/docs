@@ -50,7 +50,7 @@ The graph can be presented by hour, day, week, month or year.
 **************************************************************************
 
 The Change plan icon <icon class="image-icon">![icon](change_plan.png)</icon> can be used to change the plan in a mass action for all the customers subscribed to this plan. Please follow the link below for more information:
-[Tariff Change](configuring_tariff_plans/tariff_change/tariff_change.md).
+[Change plan](configuring_tariff_plans/tariff_change/tariff_change.md).
 
 After creating a recurring plan, you can assign it as a service to a customer. To assign a service to a customer, navigate to _Customers → List_, select the specific customer, open their _Services_ tab and click on ``Add service`` button located at the top right of the page:
 

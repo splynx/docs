@@ -11,7 +11,7 @@ In this section we can modify the configuration for tickets, ticket notification
 
 * [Canned responses](configuration/support/ticket_canned_responses/ticket_canned_responses.md)
 
-* [Miscellaneous ticket configuration](configuration/support/general_ticket_configuration/general_ticket_configuration.md)
+* [General ticket configuration](configuration/support/general_ticket_configuration/general_ticket_configuration.md)
 
 * [Ticket widget](configuration/support/feedback_widget/feedback_widget.md)
 

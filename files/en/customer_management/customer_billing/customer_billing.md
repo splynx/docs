@@ -716,7 +716,7 @@ Specific **billing address** can be set here if the customer uses a different ad
 
 You can generate a payment calendar for a customer using templates.
 
-By default payment calendar generating is disabled. To enable it you need to activate the `Payment Calendar` option in `Config -> Finance -> Settings`.
+By default payment calendar generating is disabled. To enable it you need to activate the `Payment Calendar` option in `Config → Finance → Settings`.
 
 ![Generate payment calendar](generate_payment_calendar.png)
 

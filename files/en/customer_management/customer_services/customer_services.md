@@ -3,7 +3,7 @@ Customer services
 The customer service tab is where all products/services supplied to that specific customer can be found, edited or new services can be added to the customers account. This is where you control all services for a client which will influence the bill they receive.
 
 It is possible to associate different services for each customer: `Internet services`, `Voice services` and `Custom services`.
-In order **to add a new service** for the customer, select the *Customer view*, go to the services tab and click on `Add service` or on the `+` sign above the service table on the left. Please note that customers have to be active on the system to make use of their services, as well as to be able to add services to their profile.
+In order **to add a new service** for the customer, select a customer from the list, go to the services tab and click on `Add service` or on the `+` sign above the service table on the right. Please note that customers have to be active on the system to make use of their services, as well as to be able to add services to their profile.
 
 ![Service table](service_table.png)
 
@@ -57,7 +57,7 @@ After clicking ``Add service`` or ``+`` button, a window will pop up for you to 
 
 * **Router** - The router that API will use to connect to (for all API functions - Shaping, contention, address lists).
 
-  <icon class="image-icon">![Warning](warning.png)</icon> This is only required when using API authentication methods in [Networking settings](networking\routers_settings\routers_settings.md).
+  <icon class="image-icon">![Warning](warning.png)</icon> This is only required when using API authentication methods in [Routers settings](networking/routers_settings/routers_settings.md).
 
 
 * **Service login** - the username used in services such as PPPoE or Hotspot. Login must be unique in active services.

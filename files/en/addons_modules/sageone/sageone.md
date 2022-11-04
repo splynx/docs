@@ -1,4 +1,4 @@
-Splynx and SageOne accounting integration
+SageOne module
 =========================================
 
 The SageOne add-on in Splynx was designed to improve efficiency and the ability to perform all activities on one platform. We have integrated all SageOne features into Splynx for your convenience. Syncing customer data, invoices, and payments can now be done effortlessly by your powerful Splynx server.

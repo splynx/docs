@@ -1,6 +1,6 @@
 Getting Started with Splynx
 ===========================
-The Splynx family welcomes you!
+**Splynx team welcomes you!**
 
 We would like to introduce you to a world of efficiency and convenience, specially designed for you. All your business activities are about to get much easier, quicker and proficient with the help of Splynx.
 

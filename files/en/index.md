@@ -352,7 +352,6 @@ Table of contents
 
 ##### [Add-ons, Modules](addons_modules/addons_modules.md)
   * [AADE MyData integration (for Greece)](addons_modules/aade/aade.md)
-  * [Adamo add-on (Spanish)](addons_modules/adamo/adamo.md)
   * [Agents and Resellers](addons_modules/agents_resellers/agents_resellers.md)
   * [Baicells LTE](addons_modules/baicells/baicells.md)
   * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)

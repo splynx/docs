@@ -3,6 +3,10 @@ Proforma invoices
 
 **Proforma invoice** is a brief or estimated invoice sent by a seller to a buyer in advance for the delivery of services/goods. It notes the kind and quantity of services/goods, their value, and other important information. Proforma invoices are commonly used as preliminary invoices with a quotation, or for customs purposes in importation. Unlike ordinary invoices, proforma invoices do not request for payment.
 
+<icon class="image-icon">![Warning](warning.png)</icon> **Please make sure proforma invoices are enabled in *Config → Integrations → Main modules***:
+
+![Proforma invoice enable](proforma_enable.png)
+
 In our billing system, **Proforma invoice** can be used as a request for payment in advance. For example, it can be created 1 month before the occurring payment, so you will see if the customer is able to pay the proforma invoice. When a proforma invoice is created, the customer’s balance will not be changed. The main reason for this billing approach is to prevent the payment of VAT tax for non-paying customers. If the customer pays the amount specified in the Proforma invoice PDF, the company can issue a tax invoice.
 
 An example of this document is shown in the picture below:

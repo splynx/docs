@@ -3,6 +3,8 @@ Stripe online payments
 
 Stripe is a Splynx add-on  used to synchronize customers, invoices and payments with the *Stripe payment gateway* - [https://stripe.com](https://stripe.com).
 
+<icon class="image-icon">![Warning](warning.png)</icon> **WARNING!** Stripe works only via HTTPS connection; domain + SSL need to be set and configured.
+
 The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server.
 
 To install the Stripe add-on via CLI the following commands can be used:

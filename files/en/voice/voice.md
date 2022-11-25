@@ -9,6 +9,8 @@ The Voice Module is designed for customized CDR processing according to your own
 
 * [Prefixes](voice/prefixes/prefixes.md)
 
+  * [Examples](voice/prefixes/examples/examples.md)
+
 * [CDR Processing](voice/processing/processing.md)  
 
 * [Rates](voice/rates/rates.md)

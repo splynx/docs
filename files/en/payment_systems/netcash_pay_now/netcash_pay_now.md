@@ -5,7 +5,7 @@ Using the **Netcash Pay Now** add-on, customers can pay for their invoices with 
 
 The add-on can be install in two methods, via the CLI or Web UI of your Splynx server.
 
-To install the add-on **via the Web UI**, navigate to `Config → Integrations → Add-ons`
+To install the add-on **via the Web UI**, navigate to `Config → Integrations → Add-ons`:
 
 ![icon](icon.png)
 
@@ -24,7 +24,7 @@ After completing the installation process, you need to configure the add-on, to 
 
 ![modules list](icon_modules.png)
 
-Locate or search for the `splynx-netcash` add-on and click **Edit** in the *Actions* column:
+Locate or search for the `splynx-netcash_add-on` and click **Edit** in the *Actions* column:
 
 ![netcash](edit_module.png)
 
@@ -54,7 +54,7 @@ After the configuration of the add-on, entry points (widgets for portal) should 
 
 ![enable entry](enable_entry.png)
 
-Navigate to `Config → Integrations → Module list`, locate or search for the `splynx-netcash` module and click on the entry points icon in the *Actions* column:
+Navigate to `Config → Integrations → Module list`, locate or search for the `splynx-netcash_add-on` and click on the *Edit entry points* icon in the *Actions* column:
 
 ![entry points](edit_entry_points.png)
 

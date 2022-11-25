@@ -1,11 +1,11 @@
 Additional fields
 ================
 
-To add additional fields navigate to `Config menu →System→ Additional fields` . Select the module where you'd like to add an additional field and click on  ***Add*** at the top-right corner of the page.
+To create additional fields, navigate to `Config menu → System → Additional fields`.
 
 ![Additional Fields](menu1.png)
 
-You can add additional custom fields to all of the following modules in Splynx:
+You can append additional custom fields to all of the following modules in Splynx:
 
 * Administrators
 * Partners
@@ -14,27 +14,28 @@ You can add additional custom fields to all of the following modules in Splynx:
 * API keys
 * Internet plans
 * Voice plans
-* Custom plans
+* Recurring plans
 * Routers
 * Voice devices
 * Monitoring
 * IPv4 and IPv6 Networks
-* Services (Internet, Voice, Custom)
-* Invoices
+* Services (Internet, Voice, Recurring, One-time, Bundles)
+* Invoices, Payments, Credit notes, etc.
 * Tickets
 * Messages
 * News
-* Customer documents  etc.
+* Customer documents
+
+etc.
 
 
 ## Adding a new additional/custom field:
 
 The first step is to choose which module you would like to add an additional field to, you can select the module in the field provided at the top-right corner of the page.
 
-Thereafter, simply click on the *Add* button to add a new field to the module selected:
+Then simply click on the `Add` button to add a new field to the module selected:
 
 ![Select module](select_module.png)
-
 
 A window will appear where you can create the additional field. In this example, a "Contract ID" field is created as an additional field for the Customers module.
 

@@ -109,6 +109,24 @@ There are 3 more buttons:
 
 * **Check status now** - forces Splynx to check the status.
 
+***************************************************************
+
+Please make sure that correct permissions are set for Splynx API user group (for Splynx MikroTik API & Backup processing):
+
+![permissions](correct_permissions.png)
+
+When MikroTik router is connected with Splynx via API for the first time, Splynx will login to the router and create backup of router’s config via MikroTik API and FTP services.
+
+Afterwards, every 5 hours Splynx will login to the MikroTik to check its "Status" (to gather info about the router):
+
+![status](check_status.png)
+
+Upon making API connection to check “Status”, only if there are differences found in present router config with previously made backup - new backup of router config will be made.
+
+You can also manually force to update router “Status” by pressing `Check Status now` button.
+
+![status](check_status_now.png)
+
 ### Mikrotik log
 
 Here you can find Mikrotik logs:

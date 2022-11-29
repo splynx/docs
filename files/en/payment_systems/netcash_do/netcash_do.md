@@ -182,7 +182,10 @@ To perform the charge of `Unpaid` invoices, navigate to `Finance → Invoices` o
 
 ![charge1.png](invoices_charge.png)
 
-Invoices can be charged by **full invoice amount** or by **customer balance**:
+**Debit Order Charge Scenarios**
+1. Submit outstanding (due) invoice amounts - use the “netcash-invoices” handler
+2. Submit outstanding balance amounts - use the “netcash-oustanding-balances” handler - Balance charge preview is not working currently and will be fixed in v4.2 of Splynx
+3. Submit outstanding balance or outstanding invoice amounts (but be able to edit them in preview window) - This will be available in v4.2 of Splynx
 
 ![charge1.png](charge.png)
 

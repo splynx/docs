@@ -193,13 +193,13 @@ To perform the charge of `Unpaid` invoices, navigate to `Finance → Invoices` o
 
 <icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT**
 
-If you charge the invoices using the `netcash_balances` charge handler, the **customer will be charged not according to the invoice amount, but with the amount outstanding on the customer’s account**.
+If you charge the invoices using the `netcash-oustanding-balances` charge handler, the **customer will be charged not according to the invoice amount, but with the amount outstanding on the customer’s account**.
 
 **Example:**
 
 *A customer has the invoice with the amount of 10, in the current month, but the balance of the account is -100 (it means that the customer didn't pay for 10 months) in this case, the customer will be charged with the amount of 100 and not 10.*
 
-That's why, **please be very attentive when using the `netcash_balances` charge handler**.
+That's why, **please be very attentive when using the `netcash-oustanding-balances` charge handler**.
 
 <br>
 

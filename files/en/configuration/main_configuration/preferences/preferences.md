@@ -1,13 +1,13 @@
 Preferences
 ==========
 
-The main settings of the administrator and customer portal can be configured in `Config → Main → Preferences`.
+The main settings of the Administrator and Customer portal can be configured in `Config → Main → Preferences`.
 
 ![Config menu](main_menu.png)
 
 
 ### Default landing page
-Here you can select which page (customer or admin portal) will be opened when your Splynx URL is accessed:
+Here you can select which page (Customer or Admin portal) will be opened when your Splynx URL is accessed:
 
 ![default page](default_page.png)
 
@@ -15,11 +15,12 @@ Here you can select which page (customer or admin portal) will be opened when yo
 ### Administration portal
 
 ![admin portal](admin_portal.png)
+![admin portal](admin_portal2.png)
 
 The following settings apply to the Administration portal only:
 
 * **Title for admin pages** - header for the tab name in the browser (`Splynx: Preferences`, `Splynx: Dashboard`);
-* **Reset password** - enables/disables the option to reset the password for the admin portal;
+* **Reset password** - enables/disables the option to reset the password for the Admin portal;
 * **Code validity** - how many hours (from 1 up to 72) the code for the password reset is valid;
 * **Attempts limit** - how many attempts can be made to change the password during the code validity period;
 * **Type of resetting password** - select a method to reset password (Email or SMS);
@@ -53,7 +54,7 @@ The following settings apply to the Administration portal only:
 Settings for auto backup.
 
 * **Enabled** - enables/disables auto backup;
-* **Period** - period for auto backup(Month, Week, Day);
+* **Period** - period for auto backup (Month, Week, Day);
 * **Password** - password for auto backup (`auto_backup_` by default);
 * **Prefix** - prefix for auto backup files;
 * **Categories for backup** - select what to backup (Full database, RRD files, Template, Addons and handlers, Public uploads);
@@ -84,6 +85,10 @@ Here you can upload a custom image to create the favicons for your Splynx. A fav
 
 ![favicons](generate_favicons.png)
 
+![favicons](generate_favicons2.png)
+
 ![favicons](favicon_example.png)
 
-Click on **Download icons set** to download the archive with different size files (**.png** (from *16x16* to *310x310*) / **.ico** (*16x16* and *64x64*)).
+Click on `Download icons set` to download the archive with different size files (**.png** (from *16x16* to *310x310*) / **.ico** (*16x16* and *64x64*)).
+
+Click on `Use as the system icons` to use the set of icons in the system.

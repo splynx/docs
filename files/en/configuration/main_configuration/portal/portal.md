@@ -48,7 +48,7 @@ Parameter descriptions:
 
 In this section we can specify the permission to each field in Additional information section of customer's profile.
 
-The following permissions can be set: `View`, `Edit` or `both` of them. After the necessary permission is set, the field will be visible in the **My profile** section of the Portal.
+The following permissions can be set: `View`, `Edit` or `both` of them. After the necessary permission is set, the field will be visible in the **My profile** section of the Customer portal.
 
 Items that you have chosen to view only on a customer account will have dimmed background field, and items for which you have granted edit rights to customer will be displayed with white background field.
 
@@ -70,10 +70,10 @@ For example, you want to add the **Home phone number** field to the Portal and g
 
 ![Main](main2.png)
 
-* **Portal title** - specify a title for the Portal;
-* **GDPR enabled** - enables/disables GDPR practices on the portal.
+* **Portal title** - specify a title for the Customer portal;
+* **GDPR enabled** - enables/disables GDPR practices on the Customer portal.
 
-In case in Splynx system is used the multiple [partners](administration/main/partners/partners.md) scheme, you can divide configurations between partners. Create a new partner in Splynx, on this tab select the necessary partner and set the required settings.
+In case the multiple [partners](administration/main/partners/partners.md) scheme is used in Splynx system, you can divide configurations between partners. Create a new partner in Splynx, on this tab select the necessary partner and set the required settings.
 
 <icon class="image-icon">![img](note.png)</icon> **NOTE:**
 
@@ -142,16 +142,16 @@ In this sub-menu you can customize the subject and the main text of the notifica
 
 * **Text for contract notification** - set the main text of notification.
 
-As a result, when the contract is signed, the customer will receive a notification with the contract attached to the letter as a PDF file
+As a result, when the contract is signed, the customer will receive a notification with the contract attached to the letter as a PDF file:
 
 ![img](documents1.png)
 
-<icon class="image-icon">![img](information.png)</icon> For more information about variables, see [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
+<icon class="image-icon">![img](information.png)</icon> For more information about variables, see [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md).
 
 
 ### Profile
 
-This is the configuration of the customer profile which will give customers option to view their contact information or to edit it. To be able to edit and save changes customer can be asked for their current password, for this to work, you should enable the option to **Request Password**.
+This is the configuration of the customer profile which will give customers option to view their contact information or edit it. To be able to edit and save changes customer can be asked for their current password; for this to work, you should enable the option **Request Password**.
 
 ![Request password](profile3.png)
 
@@ -199,26 +199,26 @@ You can enable the next options here:
 
 ![Statistics](voice_statistics.png)
 
-A customer can check this statistical information in `Statistics → Voice` section according to the selected period on the Portal
+A customer can check this statistical information in `Statistics → Voice` section according to the selected period on the Customer portal:
 
 ![Statistics](voice_statistics1.png)
 
 
 ### Services
 
-In this section, you can customize the display of services, service fields and hardware on the Portal.
+In this section, you can customize the display of services, service fields and hardware on the Customer portal.
 
 ![Services](services1.png)
 
 For each type of service, you can select fields to display:
 
-* **Bundle service** - `ID`, `Description`, `Price`, `Contract start date`, `Charged up`, `Contract end date`, `Status`;
+* **Bundle service** - `ID`, `Description`, `Price`, `Contract start date`, `Invoiced until`,`Status`;
 
-* **Internet service** - `ID`, `Description`, `Plan`, `Price`, `Start date`, `Charged up`, `Service login`, `IPv4 address`, `End of contract`, `Type of connection`, `Stop/Active service`, `Self-change tariff plan`, `Request tariff plan change`, `Password change`, `Status`;
+* **Internet service** - `ID`, `Description`, `Plan`, `Price`, `Start date`, `Invoiced until`, `Service login`, `IPv4 address`, `Custom IP address`, `Status`, `Stopped/Active service`, `Self-change tariff plan`, `Request tariff plan change`, `Password change`;
 
-* **Voice service** - `ID`, `Description`, `Plan`, `Price`, `Start date`, `Charged up`, `Phone`, `Direction`, `Stop/Active service`, `Request tariff plan change`, `Status`;
+* **Voice service** - `ID`, `Description`, `Plan`, `Price`, `Start date`, `Invoiced until`, `Phone`, `Direction`, `Status`, `Stopped/Active service`, `Self-change tariff plan`, `Request tariff plan change`;
 
-* **Recurring service** - `ID`, `Description`, `Plan`, `Price`, `Start date`, `Charged up`, `Stop/Active service`, `Self-change tariff plan`, `Request tariff plan change`, `Status`;
+* **Recurring service** - `ID`, `Description`, `Plan`, `Price`, `Start date`, `Invoiced until`, `Status`, `Stopped/Active service`, `Self-change tariff plan`, `Request tariff plan change`;
 
 * **Show days** (**only for prepaid customers**) - enable/disable displaying the number of days remaining to the end of the service;
 
@@ -229,7 +229,7 @@ For each type of service, you can select fields to display:
 * **Show all services** - enable/disable displaying of all services (including all stopped and disabled) related to the customer.
 
 
-##### Some fields need more explanation::
+<icon class="image-icon">![](information.png)</icon> **Some fields need more explanation**:
 
 * **Password change** - when this field is enabled, it allows a customer to change password for their service. A customer should click on the <icon class="image-icon">![](key_icon.png)</icon> icon in the *Actions* column of the **Services** table.
 
@@ -244,8 +244,7 @@ If the customer sends a request, in a new window the customer can select a prior
 
 ![](create_ticket.png)
 
-<icon class="image-icon">![img](information.png)</icon> For more information, see [Change Plan from Customer Portal](configuration/main_configuration/portal/portal.md).
-
+<icon class="image-icon">![img](information.png)</icon> For more information, see [Change Plan from Customer Portal](customer_portal/change_plan_from_customer_portal/change_plan_from_customer_portal.md).
 
 ### Tickets
 
@@ -256,7 +255,7 @@ In this section, you can configure the ticket fields that will be displayed on t
 For the fields that will be displayed in the module, just check the box or leave the item unchecked if you do not want to display it
 
 The following fields are available in the ticket modules:
-`ID`, `Subject`, `Priority`, `Status`, `Group`, `Type`, `Assigned to`, `Watching`, `Created Date & Time`, `Updated date & time`, `Star`, `Add file`.
+`ID`, `Subject`, `Priority`, `Status`, `Group`, `Type`, `Assigned to`, `Watching`, `Created Date & Time`, `Updated date & time`, `Star`.
 
 
 ### Top-Up settings
@@ -267,7 +266,7 @@ In this section, you can configure the permissions of top-up plans on the Portal
 
 **Parameter descriptions**:
 
-* **Enable** - enable/disable the top-ups on the Portal
+* **Enable** - enable/disable the top-ups on the Customer portal
 
 Define the customers permissions to `View`, `Edit` or `both` for the following fields:
 
@@ -279,20 +278,20 @@ Define the customers permissions to `View`, `Edit` or `both` for the following f
 
 ### Manual top-up
 
-In this section, you can configure the Manual Top-ups on the Portal.
+In this section, you can configure the Manual Top-ups on the Customer portal.
 
 ![Manual top up](mtopup.png)
 
 **Parameter descriptions**:
 
-* **Enable** - enable/disable the manual top-up plans on the Portal;
+* **Enable** - enable/disable the manual top-up plans on the Customer portal;
 * **Create finance document** - select which document the system should create after a customer performs a manual top-up. The following options are available: `Invoice` or `Proforma`;
 * **Pay before top-up** - enable/disable whether the customer will receive their top-up data only after they pay for the top-up.
 
 
 ### Finance
 
-In this section, you can configure the financial elements, available payment methods, transaction fields and customize the account balance view that will be displayed on the Portal.
+In this section, you can configure the financial elements, available payment methods, transaction fields and customize the account balance view that will be displayed on the Customer portal.
 
 ![Finance](finance2.png)
 
@@ -305,17 +304,17 @@ In this section, you can configure the financial elements, available payment met
 
 <icon class="image-icon">![img](information.png)</icon> Suggested read:
 
-- [Invoices](finance/invoices/invoices.md);
-- [Payments](finance/payments/payments.md);
-- [Credit Notes](finance/credit_notes/credit_notes.md);
-- [Statements](finance/payment_statement_processing/payment_statement_processing.md);
-- [Transactions](finance/transactions/transactions.md);
-- [Proforma invoices](finance/proforma_invoices/proforma_invoices.md).
+- [Invoices](finance/invoices/invoices.md)
+- [Payments](finance/payments/payments.md)
+- [Credit Notes](finance/credit_notes/credit_notes.md)
+- [Statements](finance/payment_statement_processing/payment_statement_processing.md)
+- [Transactions](finance/transactions/transactions.md)
+- [Proforma invoices](finance/proforma_invoices/proforma_invoices.md)
 
 
 ### Hotspot
 
-In this section, you can configure the Hotspot logins
+In this section, you can configure the Hotspot logins:
 
 ![Hotspot](hotspot.png)
 

@@ -1,6 +1,6 @@
 Maps
 ==================
-Splynx supports using three different map engines withing the system: **Open Street**, **Google** and **Bing** maps. To configure *Maps* in Splynx navigate to `Config → Main → Maps`. The maps are used to help you to find out where your customers, leads, routers and other objects are located.
+Splynx supports using three different map engines withing the system: **Open Street**, **Google** and **Bing** maps. To configure *Maps* in Splynx, navigate to `Config → Main → Maps`. The maps are used to help you to find out where your customers, leads, routers and other objects are located.
 
 ![Icon](icon.png)
 
@@ -10,13 +10,13 @@ Choosing **Open Street** type we can set up the following settings:
 
 ![OpenStreet](openstreet.png)
 
-* **Main bounds** - the options are *By markers bounds* (*e.g. the map that starts in starts in Auckland, New Zealand and is restricted to New Zealand. The user can pan away from Auckland and explore other New Zealand cities, but the user cannot pan or zoom to beyond the constraints set on the map.*), *By country* (restricted to specific country only) and *By custom area* (it's possible to choose the necessary area on the map manually).
+* **Main bounds** - the options are *By markers bounds* (*e.g. the map that starts in Auckland, New Zealand and is restricted to New Zealand. The user can pan away from Auckland and explore other New Zealand cities, but the user cannot pan or zoom to beyond the constraints set on the map.*), *By country* (restricted to specific country only) and *By custom area* (it's possible to choose the necessary area on the map manually).
 
 * **OpenStreet geocoding** - the format that is used when geocoding is processed from the address, e.g. `{street}{city}{zip}{location}{partner}|` - after `|` you need to set a delimiter - by default it's a comma.
 
 ------------
 
-For **Google Map** type, it's required to obtain the **Google Maps API keys**.
+As for **Google Map** type, it's required to obtain the **Google Maps API keys**.
 
 ![Google Maps](googlemaps.png)
 
@@ -194,7 +194,7 @@ To edit customer GPS coordinates, navigate to customer profile, **Information** 
 
 ![gm_customer.png](gm_customer.png)
 
-If the customer has the saved address (Street, ZIP code, City), the GPS coordinates will be found automatically. Also, you can click on the map to add a pointer manually or drag and drop the pointer to move it as well. After editing the pointer location press **Save** button.
+If the customer has the saved address (Street, ZIP code, City), the GPS coordinates will be found automatically. Also, you can click on the map to add a pointer manually or drag and drop the pointer to move it as well. After editing the pointer location press `Save` button.
 
 ![gm_customer_edit.png](gm_customer_edit.png)
 

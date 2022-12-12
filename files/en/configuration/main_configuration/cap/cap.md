@@ -5,8 +5,10 @@ In this section, the **CAP** settings for different types of billing can be conf
 ![icon](icon.png)
 
 ![cap](cap.png)
+![cap](cap2.png)
+![cap](cap3.png)
 
-At the right top corner of the page you can select the **Billing type** and **Partner** of which you want to apply the changes to.
+At the right top corner of the page you can select the **Billing type** and **Partner** to apply the changes to.
 
 ## Admin top-up:
 

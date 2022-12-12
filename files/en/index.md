@@ -251,7 +251,7 @@ Table of contents
     * [Preferences](configuration/main_configuration/preferences/preferences.md)
     * [Site customization](configuration/main_configuration/site_customization/site_customization.md)
     * [SMS config](configuration/main_configuration/sms_config/sms_config.md)
-    * [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
+    * [HTTPS/SSL](configuration/main_configuration/SSL_activation/SSL_activation.md)
     * [Stealth Mode](configuration/main_configuration/stealth_mode/stealth_mode.md)
     * [Voice](configuration/main_configuration/voice/voice.md)
     * [Vouchers](configuration/main_configuration/vouchers/vouchers.md)

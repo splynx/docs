@@ -2,6 +2,7 @@ Vouchers
 =====
 
 Elements of Vouchers can be configured here.
+
 ![icon](icon.png)
 
 ![vouchers](vouchers.png)

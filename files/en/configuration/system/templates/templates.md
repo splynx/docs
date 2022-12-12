@@ -90,6 +90,6 @@ You can edit or change existing templates in Splynx by clicking on the <icon cla
 
 ### Delete
 
-All templates in Splynx can be removed from the system by clicking on the delete icon ![](del_icon.png) :
+All templates in Splynx can be removed from the system by clicking on the delete icon <icon class="image-icon">![](del_icon.png)</icon> :
 
 ![Delete template](del.png)

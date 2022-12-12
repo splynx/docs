@@ -1,7 +1,9 @@
 Main configuration
 ==================
 
-In main part of Splynx configuration is possible to select default site (Customer or Administrator portal), logo of Customer and Administration portal, System Language. You can configure here  Localization and Finance format settings, Login and Graph parameters for customers, Email and SMS settings, Support Tickets and Customer Portal parameters. Cards parameters and Logrotate can also be configured here.  
+In the *Main* part of Splynx configuration, it is possible to select default site (Customer or Administrator portal), logo of Customer and Administration portal, System Language. You can configure here  Localization and Finance format settings, Login and Graph parameters for customers, Email and SMS settings, Support Tickets and Customer Portal parameters. Cards parameters and Logrotate can also be configured here.
+
+![main menu](main-config.png)
 
 Please, follow the links below to find tutorial page about every single part of Main configuration:
 
@@ -27,7 +29,7 @@ Please, follow the links below to find tutorial page about every single part of 
 
 * [SMS config](configuration/main_configuration/sms_config/sms_config.md)
 
-* [SSL_activation](configuration/main_configuration/SSL_activation/SSL_activation.md)
+* [HTTPS/SSL](configuration/main_configuration/SSL_activation/SSL_activation.md)
 
 * [Stealth Mode](configuration/main_configuration/stealth_mode/stealth_mode.md)
 

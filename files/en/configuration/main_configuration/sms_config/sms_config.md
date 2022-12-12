@@ -3,7 +3,7 @@ SMS sending configuration
 
 Splynx supports sending of SMS's using the different SMS gateways. To configure SMS sending you need to find a suitable SMS gateway and set up Splynx to work with it.
 
-To configure SMS sending in Splynx navigate to `Config → Main → SMS`.
+To configure SMS sending in Splynx, navigate to `Config → Main → SMS`.
 
 ![Config menu](icon.png)
 
@@ -11,28 +11,29 @@ To configure SMS sending in Splynx navigate to `Config → Main → SMS`.
 
 The **SMS logs** can be found in [`Administration → Logs → SMS`](administration/logs/sms/sms.md) or in [`Messages → Mass sending → History`](support_messages/sms_messages/sms_messages.md).
 
-
 ### Main
+
+![Main sms](main_sms.png)
 * **Gateway URL** - specify the URL of the SMS gateway (should be specified in gateway documentation);
 * **Payload** - request payload for sending SMS. Depends on content type (*JSON* or *x-www-form-urlencoded*) and syntax provided by SMS gateway;
 * **Method** - select the method to call the gateway (*POST* or *GET*);
 * **Content type** - how to handle the payload (*JSON* or *x-www-form-urlencoded*). **JSON can be used only with POST method**;
-* **Verify SSL certificate** - If the toggle is enabled the system will verify the SSL certificate of the SMS gateway host with a secure (HTTPS) connection;
+* **Verify SSL certificate** - if the toggle is enabled, the system will verify the SSL certificate of the SMS gateway host with a secure (HTTPS) connection;
 * **Enable SMS sending** - enables/disables SMS sending from Splynx;
 * **Debug** - enable/disable the writing of debugging information to the log file `/var/www/splynx/logs/cron/sms.log`;
 * **Successful response** - if the SMS gateway returns a certain successful response, the text to check response from gateway must be configured here so that Splynx can identify which SMS was sent;
-* **Days to expire** - how many days the server will try to send the SMS. After that the message status will be changed to "Error".
+* **Days until expiration** - how many days the server will try to send the SMS. After that the message status will be changed to "Error".
 
 
 ### Check SMS balance
 
-
+![check balance](check_balance.png)
 * **Enalbe** - enable/disable the SMS balance checking;
-* **Check URL** - specify the URL which is used for checking SMS balance, it should be specified in gateway documentation (the first number in response will be parsed as the account balance value. You can change this behavior by defining the account balance field name in the field below;
+* **Check URL** - specify the URL which is used for checking SMS balance. It should be specified in gateway documentation (the first number in response will be parsed as the account balance value. You can change this behavior by defining the account balance field name in the field below;
 * **Field name** - name of the field with the account balance;
 * **Requested method** - select the method to call the gateway (*GET* or *POST*);
 * **Once per** - check balance every selected period of time (*5 min*, *hour*, *day*);
-* **Email** - result will be send to this email;
+* **Email** - result will be sent to this email;
 * **Dashboard notification** - enables/disables notifications with SMS account balance on the dashboard;
 * **Minimum balance** - balance value at which the notification is triggered.
 
@@ -43,13 +44,7 @@ The header is used for authentication. It can be either the *username* you suppl
 
 To know how to use these values correctly, always double-check the SMS gateway documentation.
 
-The **examples** of custom headers:
-
 ![header1](custom_header1.png)
-
-or
-
-![header2](urlencoded_header.png)
 
 
 ### Test
@@ -71,7 +66,7 @@ or
 1. First of all, you need to have a valid account on https://www.bulksms.com/ and configure API Token to connect it with Splynx - [Register your BulkSMS account](https://www.bulksms.com/account/#!/registration);
 
 
-2. On BulkSMS account page, navigate to `Settings → Advanced` and press **Create Token** button, type the name to your token. In a new window will be shown once only the credentials to your token, copy and save them.
+2. On BulkSMS account page, navigate to `Settings → Advanced` and press **Create Token** button, type the name to your token. In a new window will be shown only once the credentials to your token, copy and save them.
 
 ![image](bulk_sms_1.png)
 
@@ -83,7 +78,7 @@ or
 
 3. To **request sender id** which will be shown in SMS for your customers, navigate to `Settings → Message` and click on *Sender IDs* tab.
 
-**NOTE:** You must have purchased credits at least once before you can use this facility.
+**NOTE:** You need to purchase credits at least once before you can use this facility.
 
 ![image](bulk_sms_4.png)
 
@@ -123,11 +118,11 @@ In **Check SMS balance** section configure the next settings:
 
 ![image](bulk_sms_7.png)
 
-Press **Run test** button to check the balance, the result will be shown in **Test result** area at the bottom of the page.
+Click on `Run test` to check the balance, the result will be shown in **Test result** area at the bottom of the page.
 
 ![image](bulk_sms_8.png)
 
-In **Custom header** section use the generated `Basic Auth` value from **step 2**:
+In **Custom header** section use the generated `Basic Auth` value:
 
 ![image](bulk_sms_6.png)
 
@@ -173,7 +168,7 @@ More information you can find in these articles:
 
 * **Check URL** - ```https://platform.clickatell.com/public-client/balance?Authorization:your_API_key```
 
-![main](custom_header.png)
+![image](bulk_sms_6.png)
 
 * **Custom Header Name** - header parameter name, e.g `Authorization`;
 * **Custom Header Value** - API Key.
@@ -205,7 +200,7 @@ For more information, see:
 
 ![main](urlencoded_main.png)
 
-![main](urlencoded_header.png)
+![image](bulk_sms_6.png)
 
 For more information, see:
 

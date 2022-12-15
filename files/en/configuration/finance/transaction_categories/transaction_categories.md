@@ -12,13 +12,13 @@ The transaction categories such as **Service**, **Discount**, **Payment**, **Ref
 
 ![List](list.png)
 
-You can add a new transaction category manually by clicking on the **Add** button at the top-right corner of the page. You can **export** or **select columns to display** by clicking on the matching icons.
+You can add a new transaction category manually by clicking on the `Add` button at the top right corner of the page.
 
-We manually added categories 8, 9 and they can be removed only if these categories are not used withing Splynx, e.g. in transactions or CAP plans.
+We manually added a category 6, and it can be removed only if this category is not used within Splynx, e.g. in transactions or CAP plans.
 
 ![image](remove_category.png)
 
-The default categories cannot be deleted, you can only change its names.
+The default categories cannot be deleted, you can only change their names.
 
 
 #### Transaction categories configuration
@@ -49,6 +49,6 @@ But if you choose any other transaction category in tariff configuration window,
 
 #### Report
 
-To track the amount of money for each transaction category, navigate to `Administration → Reports → Transaction categories report`.
+To track the amount of money for each transaction category, navigate to `Administration → Reports → Transaction categories`.
 
 For more information, see [Transaction Categories Report](administration/reports/transactions_categories/transactions_categories.md).

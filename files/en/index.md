@@ -261,7 +261,7 @@ Table of contents
     * [Change plan](configuration/finance/change_plan/change_plan.md)
     * [Cost categories](configuration/finance/cost_categories/cost_categories.md)
     * [Finance settings](configuration/finance/finance_settings/finance_settings.md)
-    * [Fixed costs](configuration/finance/fixed_costs/fixed_costs.md)
+    * [Fixed cost](configuration/finance/fixed_costs/fixed_costs.md)
     * [Notifications](configuration/finance/notifications/notifications.md)
     * [Pairing](configuration/finance/pairing/pairing.md)
     * [Payment accounts](configuration/finance/payment_accounts/payment_accounts.md)

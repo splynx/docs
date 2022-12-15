@@ -3,7 +3,7 @@ Automation
 
 To eliminate financial errors and delays caused by manual processes, in Splynx, you can configure finance automation in `Config → Finance → Automation`.
 
-**NOTE:** **these settings are global and affect all customers in your Splynx**.
+<icon class="image-icon">![image](warning.png)</icon> **These settings are global and affect all customers in your Splynx**.
 
 ![Menu](icon.png)
 
@@ -12,6 +12,7 @@ The following parameters can be configured on this page:
 ### Finance automation
 
 ![image](finance_automation.png)
+![image](finance_automation2.png)
 
 * **Enable automatic issuing** - enables/disables automatic issuing of Invoices, Transactions and Proforma Invoices;
 
@@ -25,34 +26,38 @@ If the billing day is the first day of the month and you use the default 3 days 
 
 **Example**
 
-The billing day is 6th, confirmation period is 3 days and preview should be generated in 5 days before billing day. So, using `5` days value, preview will be generated on the 1th day and the invoices which are not confirmed will be auto-generated on the 4th day of the following month.
+The billing day is the 6th, confirmation period is 3 days and preview should be generated in 5 days before billing day. So, using `5` days value, preview will be generated on the 1st day and the invoices which are not confirmed will be auto-generated on the 4th day of the following month.
 
 * **Date to use on finance elements** - choose which date will be used as actual one on the invoice and transactions. The available values: `billing day` or `real date of issuing`.
 
 **Example**
 
-The billing day is on 1st day of the month and you have set 3 days as a confirmation period. In this case, the invoice can be dated on the billing day regardless of confirmation days or the real date of issuing - maximum on the 4th day of the month (if you don't confirm issuing and invoices will be auto generated the next day);
+The billing day is on the 1st day of the month and you have set 3 days as a confirmation period. In this case, the invoice can be dated on the billing day regardless of confirmation days or the real date of issuing - maximum on the 4th day of the month (if you don't confirm issuing and invoices will be auto generated the next day);
 
 * **Dashboard notification** - enable/disable the notification on Dashboard about confirmation of invoices on the day of billing;
 
-* **Allow confirming a preview in the future** - enables/disables the ability to confirm a preview of invoices for upcoming months/future dated months (`Finance → History`);
+* **Allow confirming a preview in the future** - enables/disables the ability to confirm a preview of invoices for upcoming months/future dated months (`Finance → History & Preview`);
 
 * **Block customers on weekends** - enables/disables the processing of `Billing Due` and `Deactivation period` on weekends;
 
-* **Block customers on holidays** - enables/disables the processing of `Billing Due` and `Deactivation period` on holidays. Navigate to `Config → Main → Localization` to set up the holiday list.
+* **Block customers on holidays** - enables/disables the processing of `Billing Due` and `Deactivation period` on holidays. Navigate to `Config → Main → Localization` to set up the holiday list;
+
+* **Generate separate preview per partner** - preview will be generated separately for each partner;
+
+* **Show previously generated preview version** - if the toggle is enabled, an existing preview will be shown; if the toggle is disabled, a new preview will start to be created while the recurring invoice is being generated.
 
 
 ### Automatic blocking
 
 ![image](automatic_blocking.png)
 
-* **Enable processing of Billing Due** - enable/disable the customers blocking on the the `Payment due` date if their balance is less than the minimum balance;
+* **Enable processing of Billing Due** - enable/disable the customers blocking on the `Payment due` date if their balance is less than the minimum balance;
 
 * **Blocking time** - the time when clients will be blocked and their services will be disabled;
 
-* **Enable processing of Deactivation (grace) period** - set the recurring customers to **inactive** status on the the `Deactivation period` date if their balance is less than the minimum balance;
+* **Enable processing of Deactivation period** - set the recurring customers to **inactive** status on the `Deactivation period` date if their balance is less than the minimum balance;
 
-* **Enable processing of Deactivation (grace) period for prepaid customers** - set the prepaid customers' services as **stopped** status when the `Deactivation period` date is reached.
+* **Enable processing of Deactivation period for prepaid customers** - set the prepaid customers' services as **stopped** when the `Deactivation period` date is reached.
 
 ### Automatically remove IP's for inactive prepaid customers
 

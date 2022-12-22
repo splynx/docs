@@ -7,81 +7,94 @@ To configure MikroTik API navigate to `Config → Networking → MikroTik API`.
 
 Configurations for the Mikrotik API can be found here.
 
-![Config 1](settings_1.png)
-
 ### Size
+
+![Config 1](settings_1.png)
 
 Here we have to specify how many bytes is in 1KB in Splynx, available options are 1000 or 1024 bytes.
 
 ### API
 
-* **Debug** - enables/disables API debug log(under /var/www/splynx/logs/cron/mikrotik.log). Recommended only for testing/debug purposes;
+![Config 2](settings_1_2.png)
 
-* **Attempts** - select connection attempts(1-10);
+* **Debug** - enables/disables API debug log (under /var/www/splynx/logs/cron/mikrotik.log). Recommended only for testing/debug purposes;
+
+* **Attempts** - select connection attempts (1-10);
 
 * **Timeout** - select timeout in seconds.
 
-#### Accounting
+### Accounting
 
-* **Write log file for accounting** - enables/disables accounting log(under /var/www/splynx/logs/cron/accounting.log). Recommended only for testing/debug purposes;
+![Config 3](settings_1_3.png)
 
-* **Min bytes for accounting** - Gather stats if "in + out" traffic is larger than (bytes);
+* **Write log file for accounting** - enables/disables accounting log (under /var/www/splynx/logs/cron/accounting.log). Recommended only for testing/debug purposes;
 
-* **Max timeout** - stops the accounting session after this time if no traffic is recorded during the specified period of time(in seconds);
+* **Min bytes for accounting** - gather stats if "in + out" traffic is larger than (bytes);
 
-* **Max session time** - Divides large sessions into smaller sessions every (hours);
+* **Max timeout** - stops the accounting session after this time if no traffic is recorded during the specified period of time (in seconds);
 
-* **RRD enable** - enables/disables writing to RRD files(for graphs);
+* **Max session time** - divides large sessions into smaller sessions every (hours);
 
-* **RRD cached enable** - enables/disables rrd cache (speeds up rrd writing).
+* **RRD enable** - enables/disables writing to RRD files (for graphs);
 
-![config 2](settings_2.png)
+* **RRD cached enable** - enables/disables RRD cache (speeds up RRD writing).
+
 
 ### Router accounting options
 
+![config 2](settings_2.png)
+
 * **Account local traffic** - enables/disables accounting of the traffic to/from the router itself;
 
-* **Threshold** - maximum number of IP pairs in the accounting table(allowed value is 1024-256000).
+* **Threshold** - maximum number of IP pairs in the accounting table (allowed value is 1024-256000).
 
 ### Simple shaping
 
-* **Reverse In/Out** - Enable this if you want to change upload by download and vice versa;
-* **Queue type for download** - Set the queue download type;
-* **Queue type for upload** - Set the queue upload type.
+![config 2](settings_2_1.png)
 
-### PCQ shaping:
+* **Reverse in/out** - enable this if you want to change upload by download and vice versa;
+* **Queue type for download** - set the queue download type;
+* **Queue type for upload** - set the queue upload type.
 
-* **Shaping in** - Chain where the rules are created;
-* **Shaping out** - Chain where the rules are created;
-* **Routing in** - Set the type of routing in;
-* **Routing out** - Set the type of routing out;
-* **For radius** - If yes, rules will be created for all plans (but without address-list, and without aggregation in plans);
-* **Connection mark** - Enables a connection mark.
+### PCQ shaping
+
+![config 2](settings_2_2.png)
+
+* **Shaping in** - chain where the rules are created;
+* **Shaping out** - chain where the rules are created;
+* **Routing in** - set the type of routing in;
+* **Routing out** - set the type of routing out;
+* **For radius** - if yes, rules will be created for all plans (but without address-list, and without aggregation in plans);
+* **Connection mark** - enables a connection mark.
 
 ### PPP secrets
 
+![config 2](settings_2_3.png)
+
 * **Add caller ID** - enables/disables adding the MAC address to the restriction (PPP) via API;
-
-* **Include inactive customers** - enables/disables including inactive customers when adding "Disabled customers to address list" under the router in Splynx on the "Mikrotik" tab.
-
-![Config 3](settings_3.png)
 
 ### IP firewall filter/DHCP
 
+![Config 3](settings_3.png)
+
 * **Add framed route** - enables/disables adding routes to the service's additional network field if IP-MAC filter or DHCP is enabled;
 
-* **Filter rules** - list of rules that will be uploaded to the router. Use {{SPLYNX_WHITE_RESOURCES_ADDRESS_LIST}} for white resources Address list name and {{SPLYNX_IP_ADDRESS}} for Splynx IP address.
+* **Include inactive customers** - enable this toggle to include inactive customers when adding 'Disabled customers to address list'; 
 
-<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** Only **IP/IPv6 firewall filter rules without comments** are allowed, firewall address list entries are not supported in this field;
+* **Filter rules** - list of rules that will be uploaded to the router. Use {{SPLYNX_ALLOWED_RESOURCES_ADDRESS_LIST}} for allowed resources' address list name and {{SPLYNX_IP_ADDRESS}} for Splynx IP address.
 
-* **Filter rules position** - select the position for firewall filter rules. Available options are: default, top, bottom;
+<icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:** Only **IP/IPv6 firewall filter rules without comments** are allowed, firewall address list entries are not supported in this field.
 
-* **Splynx IP address** - set the Splynx server IP address if you want customers to be able to redirect to blocking pages;
+* **Filter rules position** - select the position for firewall filter rules. Available options are: keeps current, top, bottom;
 
-* **White resources Address list name** - name for the address list for white resources;
+* **Splynx IP address** - set the Splynx server IP address if you want customers to be redirected to blocking pages;
 
-* **White resources addresses** - white resources addresses(IP or URL).
+* **Allowed resources address list name** - name for the address list for allowed resources;
+
+* **Allowed resources addresses** - allowed resources addresses (IP or URL).
 
 ### Force API configuration
 
-Click on "Push config to all routers" if you want to apply new Mikrotik API configurations.
+![Config 3](settings_3_1.png)
+
+Click on `Mass update all routers` if you want to apply new Mikrotik API configurations.

@@ -50,24 +50,36 @@ The values above have to be added to the **Partners settings** section of **add-
 ![modules_list.png](modules_list.png)
 
 Locate or search for the `splynx_netcash_do_addon` item and click on the
-<icon class="image-icon">![edit](edit_icon.png)</icon> (**Edit**) icon in the *Actions* column:
+<icon class="image-icon">![edit](edit.png)</icon> (**Edit**) icon in the *Actions* column:
 
 ![](addon_item.png)
 
 <br>
 
-**Main information & API settings**
+### Main information
 
 
-![](edit.png)
+![](edit_main.png)
 
-* **API domain** - api domain should be the same as Splynx URL. The forward slash `/` is required at the end;
+* **Module name** - the module name in the system (for view only);
+* **Title** - the module title;
+* **Path to module** - path to the module file;
+* **Entry points status for portal** - if enabled, the add-on will be available for the Customer portal.
+
+
+### Addon settings
+
+#### API settings
+
+![](api_settings.png)
+
+* **API domain** - api domain should be the same as the Splynx URL. The forward slash `/` is required at the end;
 
 * **API key, API secret** - auto generated default values. Don't change it unless it is absolutely necessary.
 
 <br>
 
-**Netcash Debit Order settings**
+#### Netcash Debit Order settings
 
 ![](net_deb_settings.png)
 
@@ -75,9 +87,9 @@ Locate or search for the `splynx_netcash_do_addon` item and click on the
 <icon class="image-icon">![Note](note.png)</icon> **NOTE:**
 
 
-- In the **Admin roles** option field set which build-in roles have access via the admin panel to `Finance → Netcash Debit Order check payments`. The following roles can be specified in the field **admins roles**: `super-administrator`, `administrator`, `manager`, `financial-manager`, `customer-creator`, `engineer` and `technician`.
+- In the **Admin roles** field, you can choose which build-in roles will have access via the admin panel to `Finance → Netcash Debit Order check payments`. The following roles can be specified in the field **admins roles**: `super-administrator`, `administrator`, `manager`, `financial manager`, `customer creator`, `engineer` and `technician`.
 
- <icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT**: The roles of `super-administrator`, `administrator` and `manager` are selected by default in the drop down list after add-on installation, it means that admin account with any of these roles always has access to `Finance → Netcash Debit Order check payments` menu (account's [permissions](administration/main/admins_and_permissions/admins_and_permissions.md) to **Finance** module and **Netcash Debit Order add-on** are required as well).
+ <icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT**: The roles of `super-administrator`, `administrator` and `manager` are selected by default in the drop down list after add-on installation. It means that the admin account with any of these roles always has access to `Finance → Netcash Debit Order check payments` menu (account's [permissions](administration/main/admins_and_permissions/admins_and_permissions.md) to **Finance** module and **Netcash Debit Order add-on** are required as well).
 
 ![settings2.1.png](settings_2.1.png)
 
@@ -90,18 +102,17 @@ administrator,super-administrator,manager,engineer
 
 ```
 
-But if the admin account has only `technician` role and this role was not set in add-on config, the access to `Netcash Debit Order check payments` menu for such admin will be **forbidden**;
+<icon class="image-icon">![Important](warning.png)</icon>  But if the admin account has only `technician` role and this role was not set in the add-on config, the access to `Netcash Debit Order check payments` menu for such admin will be **forbidden**.
 
-![](forbidden.png)
+*********************************************************
 
-
-- In order to disable the payments sync from `Netcash → Splynx` (e.g. you configured the payments sync from [SageOne](addons_modules/sageone/sageone.md) to Splynx), you can use the **Disable payment processing by system** option. If the toggle is `enabled` - *cron* will not sync payments to Splynx from Netcash side, if it's `disabled` - payments will be synced into Splynx;
+- In order to disable the payments sync from `Netcash → Splynx` (e.g. you configured the payments sync from [SageOne](addons_modules/sageone/sageone.md) to Splynx), you can use the **Disable payment processing by system** option. If the toggle is `enabled` - *cron* will not sync payments to Splynx from Netcash side; if it's `disabled` - payments will be synced into Splynx;
 
 ![disable_payment_processing](disable_payment_processing.png).
 
 <br>
 
-**Notifications settings**
+#### Notifications settings
 
 ![](notifications_settings.png)
 
@@ -112,14 +123,11 @@ Administrators can receive notifications when a customer has created a Netcash p
 **Partners settings**
 
 ![](partners_settings.png)
+![](partners_settings2.png)
 
 <icon class="image-icon">![Note](note.png)</icon> **NOTE:**
 
 - **PCI vault key** - this key is only needed when customers use their own credit cards to pay;
-
-
-- **Service Fee** - service fee in percent. This option is not recommended to use in conjunction with accounting add-ons;
-
 
 - In case in Splynx system is used the multiple [Partners](administration/main/partners/partners.md) scheme, you can divide Netcash configuration between them. Create a new partner in Splynx, in Netcash config select the necessary partner and set the required settings. Pay attention, the fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner);
 
@@ -131,15 +139,15 @@ Administrators can receive notifications when a customer has created a Netcash p
 
 The **Batch Auto Authorize** function is available on request and access is only granted by *Netcash* management approval. Use this [link](https://api.netcash.co.za/autoauth/#access) to send a request.
 
-<details style="font-size: 15px; margin-bottom: 5px;">
+<details style="font-size: 16px; margin-bottom: 5px;">
 <summary><b>'Auto-authorise batches' explanation</b></summary>
 <div markdown="1">
 
-In case you do **not** use the **Batch Auto Authorize** function, we have the following concept: the customers pay invoices, these payments are sent to Netcash side as batch files. After that, the administrator, at some intervals, logs into the Netcash account and manually authorises all customers' payments. The Netcash, for its part, does a final check of such payments and a provides the results; Splynx checks the Netcash output results by cron and we get the final status of the payments.
+In case you do **not** use the **Batch Auto Authorize** function, we have the following concept: the customers pay invoices, these payments are sent to Netcash side as batch files. After that, the administrator, at some intervals, logs into the Netcash account and manually authorises all customers' payments. The Netcash, for its part, does a final check of such payments and provides the results; Splynx checks the Netcash output results by [cron](https://opensource.com/article/17/11/how-use-cron-linux) and we get the final status of the payments.
 
 If the access is granted and **Batch Auto Authorize** function in enabled in Splynx, the concept will be as follows: the administrator no longer needs to log in and authorise the batches in the Netcash account manually. Splynx will send the request to Netcash **once per hour** in order to receive a list of all currently unauthorised payments and re-send request to Netcash again to authorise them.
 
-The log records about the batch file (-s) authorisation can be found in `Administration → Logs → Netcash Debit Order General Logs`
+The log records about the batch file(-s) authorisation can be found in `Administration → Logs → Netcash Debit Order General Logs`:
 
 ![](batch_log.png)
 
@@ -155,12 +163,13 @@ The log records about the batch file (-s) authorisation can be found in `Adminis
 To add the *Netcash* payment account, navigate to the customer's **Billing** tab, and click on the card icon in the **Payment accounts** window.
 
 ![add account.png](add_account_from_admin.png)
+![add account.png](add_account_from_admin2.png)
 
 It's **recommended to use the card icon <icon class="image-icon">![card_icon](card_icon.png)</icon>  in order to add an account with validation**.
 
 In this section, the admin can add the *Netcash* payment account credentials to the customer profile with the provided bank account or credit card details.
 
-Also, the payment account can be added by clicking on the <icon class="image-icon">![plus_icon](plus_icon.png)</icon> button, however, this method of adding the account will **bypass the Netcash validation procedure**.
+Also, the payment account can be added by clicking on the <icon class="image-icon">![plus_icon](plus_icon.png)</icon> button. However, this method of adding the account will **bypass the Netcash validation procedure**.
 
 Moreover, the Netcash payment account can be added from customer's *Portal* as well:
 
@@ -232,7 +241,7 @@ The **charge history** can be viewed under the **Charge history** tab:
 File records with charged invoices can be downloaded or deleted in this section.
 
 
-The process of invoice **charging can be automated**. To achieve this, the admin should add thr **Auto charge filter**:
+The process of invoice **charging can be automated**. To achieve this, the admin should add the **Auto charge filter**:
 
 ![auto charge](add_auto_charge.png)
 
@@ -244,7 +253,7 @@ The process of invoice **charging can be automated**. To achieve this, the admin
 <summary><b>How to re-charge the invoices</b></summary>
 <div markdown="1">
 
-The debit order batch should be deleted in Netcash as well as the relevant [payment statement](finance/payment_statement_processing/payment_statement_processing.md) in Splynx (be very vigilant when deleting payment statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged
+The debit order batch should be deleted in Netcash as well as the relevant [payment statement](finance/payment_statement_processing/payment_statement_processing.md) in Splynx (be very vigilant when deleting payment statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged.
 
 </div>
 </details>
@@ -257,7 +266,7 @@ The debit order batch should be deleted in Netcash as well as the relevant [paym
 <br>
 #### How do I check if my customers have been successfully charged?
 
-1. After the charge was made, go to `Finance → Invoices`, press the **Charge** button and click on the **Charge history** tab. Use the **Search** field or click on the column name (e.g `Id`) to sort items and find the latest `netcash_do` item you need.
+1. After the charge was made, go to `Finance → Invoices`, press the **Charge** button and click on the **Charge history** tab. Use the **Search** field or click on the column name (e.g `Id`) to sort items and find the latest `netcash_invoices`/`netcash-outstanding-balances` item you need.
 Check its charge status, in case of `Error` status, please download the charge history log by clicking on <icon class="image-icon">![image](download_icon.png)</icon> (Download) icon.
 
 ![image](check_charge1.png)
@@ -298,20 +307,20 @@ Customer payment account is empty! - Customer id : 7322
 
 <br>
 
-2. If the latest `netcash_do` item has the charge status as `Ready` on the tab **Charge history** in Splynx, but you still cannot validate the payments in Netcash account, please double check your email box registered with Netcash service.
+2. If the latest `netcash_invoices`/`netcash-outstanding-balances` item has the charge status as `Ready` on the tab **Charge history** in Splynx, but you still cannot validate the payments in Netcash account, please double check your email box registered with the Netcash service.
 
 ![image](check_charge2.png)
 
-If there are errors in the Batch file - *Netcash* sends the email with the errors details to this email box.
+If there are errors in the Batch file, *Netcash* sends the email with the errors details to this email box.
 
 ------------
 
 
-### Entry Points Configuration and Invoice Payment on Portal
+### Entry Points Configuration and Invoice Payment on the Customer portal
 
 After installing the Netcash Debit order add-on, customers can pay their (proforma) invoices directly from their *Portal* page using widgets (entry points).
 
-Make sure that **Entry points** option is **enabled** in **Main information** section of add-on configuration. Note that changes are not saved until you click **Save**.
+Make sure that **Entry points** option is **enabled** in **Main information** section of the add-on configuration. Note that changes are not saved until you click on `Save`.
 
 ![enable widget](enable_entry_point.png)
 
@@ -326,7 +335,7 @@ The widgets can be enabled/disabled and updated by partner or location values to
 More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
 
 
-After the points are enabled, let's navigate to the customer *Portal*:
+After the points are enabled, let's navigate to the *Customer Portal*:
 
 ![widget1](widget1.png)
 
@@ -341,7 +350,7 @@ The customer can also **view, update, or remove *Netcash* account details** here
 ![add account.png](add_account_from_portal.png)
 
 
-<icon class="image-icon">![Note](note.png)</icon> **NOTE:** If the customer pays their invoices using the Netcash Debit Order add-on on the *Portal*, the new payment statements will be created on the admin portal in `Finance → Payment statements → History`. We use payment statements in Splynx to track and allocate payments to the correct invoices once retrieved.
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:** If the customer pays their invoices using the Netcash Debit Order add-on on the *Customer portal*, the new payment statements will be created on the admin portal in `Finance → Payment statements → History`. We use payment statements in Splynx to track and allocate payments to the correct invoices once retrieved.
 
 
 ------------
@@ -351,10 +360,10 @@ The customer can also **view, update, or remove *Netcash* account details** here
 
 Using the direct payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the *Netcash Debit Order* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customer, so the amount of on-time payments will increase.
 
-For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto this link instead of logging in to their *Portal* page.
+For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto this link instead of logging in to their *Customer portal* page.
 
-In case the customer has saved the payment credentials on the *Portal*, later they do not need to add any further details when using the direct payment link.
-Otherwise (the customer payment accounts are not saved), the option `Save and allow future charge` can be used on the direct payment form page to save the customer credit card or bank account credentials on their *Portal*.
+In case the customer has saved the payment credentials on the *Customer portal*, later they do not need to add any further details when using the direct payment link.
+Otherwise, (the customer payment accounts are not saved), the option `Save and allow future charge` can be used on the direct payment form page to save the customer credit card or bank account credentials on their *Customer portal*.
 
 To create a direct payment link, please **use the patterns** below:
 
@@ -429,7 +438,7 @@ The Netcash logs can be found in `Administration → Logs`:
 
 ![logs](administration_logs.png)
 
-In **General Logs**, the different records can be viewed, like when the statements were created or when payments were processed, etc:
+In **General Logs**, the different records can be viewed (when the statements were created or when payments were processed, etc):
 
 ![general logs](general_logs.png)
 
@@ -443,7 +452,7 @@ Under **Charge Logs** only logs regarding charges can be found:
 
 We have created a tool that we use to import account details from the Netcash Master file or any other CSV with the relevant details. We simply require an identifier to match the payment record in the document to the customer on Splynx e.g. an account/reference number or customer name.
 
-This tool can be found under `Config -> Tools`:
+This tool can be found under `Config → Tools`:
 
 ![import tool](import_tool.png)
 
@@ -465,7 +474,7 @@ When the data has been uploaded, select the corresponding headers:
 
 ![payment_method_import](payment_method_import1.png)
 
-In case **Payment method id** value is set in CSV file and [payment method](configuration/finance/payment_methods/payment_methods.md) exists in Splynx, the customer's `Payment method` (*Customers → List → View Customer → Billing → Billing Overview → Billing Settings section → Payment method field*) will be changed after import.
+In case **Payment method id** value is set in CSV file and [payment method](configuration/finance/payment_methods/payment_methods.md) exists in Splynx, the customer's `Payment method` (*Customers → List → Customer → Billing → Billing Config→ Billing Settings section → Payment method field*) will be changed after import.
 
 If **Payment method id** value is empty in CSV file - the customer's payment method will not be changed.
 

@@ -10,5 +10,5 @@ There are two options available here:
 
 ![IPv4 settigns](config.png)
 
-* **Performance** - If you need to work with big networks, this option divides it into smaller networks (for a list).
-* **Assign static IP** -  enable this option to allow assigning IP's from pools as static Ip's.
+* **Performance** - if you need to work with big networks, this option divides it into smaller networks (for a list).
+* **Assign static IP** -  enable this option to allow assigning IPs from pools as static IPs.

@@ -3,15 +3,15 @@ NetFlow accounting
 
 NetFlow provides valuable information about network users and applications, peak usage times, and traffic routing.
 
-Splynx supports *NetFlow* protocol and calculates statistic information about packets which pass through the Mikrotik router. In this article will be show how to configure your router and Splynx as a collector to receive a traffic statistics for calculation.
+Splynx supports *NetFlow* protocol and calculates statistic information about packets which pass through the Mikrotik router. In this article, it will be shown how to configure your router and Splynx as a collector to receive a traffic statistics for calculation.
 
 Since Traffic Flow is fully compatible with *Cisco Netflow*,  it can be monitored with various utilities that are designed for Netflow e.g. *ntop*, *flow-tools*, *ManageEngine NetFlow Analyzer* etc.
 
 ### Mikrotik Traffic Flow Configuration Overview
 
-The first thing to do is to enable *Traffic Flow* on the MikroTik and choose what router interface (-s) to monitor, all of these actions can done from the command line or from the GUI.
+The first thing to do is to enable *Traffic Flow* on the MikroTik and choose what router interface(-s) to monitor. All of these actions can be done from the command line or from the GUI.
 
-To configure **through the GUI** - open [Winbox](https://mt.lv/winbox64) and connect to the router (use [Wine](https://wiki.winehq.org/Ubuntu) to run Winbox on Ubuntu), the settings can be found in the menu `IP → Traffic Flow` on MikroTik:
+To configure **via the GUI** - open [Winbox](https://mt.lv/winbox64) and connect to the router (use [Wine](https://wiki.winehq.org/Ubuntu) to run Winbox on Ubuntu). The settings can be found in the menu `IP → Traffic Flow` on MikroTik:
 
 ![](img_1.png)
 
@@ -28,7 +28,7 @@ But it's **recommended to choose a value equal to or greater than 128k:**
 ![](cache_entries.png)
 
 
-You might also be interested in the [Traffic class](configuration/network/traffic_class/traffic_class.md) tutorial that shows how to **exclude the inbound and outbound traffic for specific network (-s) from counting**.
+You might also be interested in the [Traffic class](configuration/network/traffic_class/traffic_class.md) tutorial that shows how to **exclude the inbound and outbound traffic for specific network(-s) from counting**.
 
 The other options that are configurable here:
 
@@ -36,7 +36,7 @@ The other options that are configurable here:
 | ------------ | ------------ |
 | **Interfaces:**   | All interfaces from which you want to collect NetFlow data. By default it is set to all.​  |
 | **Cache-entries:**  | Number of flows that the router can store in memory at once. Default is 4k.  |
-|  **Active-Flow-Timeout:** |  Maximum timeout of a flow. Default is 30minutes. |
+|  **Active-Flow-Timeout:** |  Maximum timeout of a flow. Default is 30 min. |
 |  **Inactive-Flow-Timeout:**  | Period in seconds in which the flow is active. If the connection doesn't receive a packet in that time period, traffic-flow will send packet as a new flow. Default is 15 seconds​.  |
 
 Apply those changes and click on **Targets** button.
@@ -53,11 +53,11 @@ The other options that are configurable in the window:
 | **V9-template-refresh:**  | Number of packets after which template is sent. Only for NetFlow v9 default is 20. |
 | **V9-template-timeout:**  | If template has not been sent, send it after this value. Default is 1800.  |
 
-Traffic-Flow supports the following NetFlow **versions:**:
+Traffic-Flow supports the following NetFlow **versions:**
 
 - `version 1` - the first version of NetFlow data format, do not use it, unless you have to;
 - `version 5` - in addition to version 1, version 5 has possibility to include BGP AS and flow sequence number information. Currently RouterOS does not include BGP AS numbers;
-- `version 9` - a new format which can be extended with new fields and record types thank's to its template-style design.
+- `version 9` - a new format which can be extended with new fields and record types due to its template-style design.
 
 Under `IP → Traffic Flow`, click on **Status** tab, it should show the *Finished* and *Active* flows as seen below:
 
@@ -103,7 +103,7 @@ ip traffic-flow target print
 
 ### Splynx Configuration Overview
 
-To add your router to Splynx, open `Networking → Routers → Add`, in new window, specify your router options, select **NetFlow accounting** as seen below:
+To add your router to Splynx, open `Networking → Routers → Add`. In the new window, specify your router options, select **NetFlow accounting** as seen below:
 
 ![](img_4.png)
 
@@ -114,11 +114,13 @@ In `Config → Networking → NetFlow accounting` we can change its *Daemon* and
 ![](img_5.png)
 
 ![](img_6.png)
+![](img_6_1.png)
+![](img_6_2.png)
 
 |   |    |
 | ------------ | ------------ |
 |   | **Accounting options:**  |
-| **Max timeout**  | Time in seconds when the accounting of the session will be stopped if there is no traffic. The default value is 450 seconds  |
+| **Max timeout**  | Time in seconds when the accounting of the session will be stopped if there is no traffic. The default value is 450 seconds.  |
 | **Max session time**  | Time in hours when large sessions will be spitted into smaller ones in the statistics. The default value is 24 hours.   |
 |   | **Daemon options:** |
 |  **Interval** |  Specifies the time interval in seconds to rotate files. The default value is 300 seconds. |
@@ -137,7 +139,7 @@ With these configurations set, you should see traffic flowing on Splynx, e.g. op
 
 **Step 1:**
 
-In Splynx, navigate to `Networking → Routers`, press **Add**, specify the router **IP** and **Accounting** type:
+In Splynx, navigate to `Networking → Routers`, press `Add`, specify the router **IP** and **Accounting** type:
 
 ![img](exp1.jpg)
 
@@ -148,7 +150,7 @@ In Splynx, navigate to `Networking → Routers`, press **Add**, specify the rout
 
 **Step 2:**
 
-Go to `Customers → List`, open the necessary customer's profile, click on the **Services** tab and open the window to edit their Internet service. Specify the router that this service in connected to, the IP assignment method (pool or static) and the IP address:
+Go to `Customers → List`, open the necessary customer's profile, click on the **Services** tab and open the window to edit their Internet service. Specify the router that this service is connected to, the IP assignment method (pool or static) and the IP address:
 
 ![img](exp2.jpg)
 

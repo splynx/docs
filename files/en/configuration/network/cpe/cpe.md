@@ -1,7 +1,7 @@
 CPE (Customer Premises Equipment) configuration
 ===
 
-To configure features of CPE navigate to `Config → Networking → CPE`:
+To configure features of CPE, navigate to `Config → Networking → CPE`:
 
 ![icon](icon.png)
 
@@ -11,14 +11,14 @@ The following parameters can be configured here:
 
 ![size](size.png)
 
-* **1KB is** - specify the amount of bytes for 1KB for CPE traffic accounting(1000 or 1024 bytes).
+* **1KB is** - specify the amount of bytes for 1KB for CPE traffic accounting (1000 or 1024 bytes).
 
 ### API
 ![api](api.png)
 
-* **Debug** - enables mikrotik debug log(for debug/test purposes);
+* **Debug** - enables MikroTik debug log (for debug/test purposes);
 
-* **Attempts** - select the connection attempts(1-10);
+* **Attempts** - select the connection attempts (1-10);
 
 * **Timeout** - select timeout in seconds.
 
@@ -27,9 +27,9 @@ The following parameters can be configured here:
 
 * **Reverse in/out** -  enable this if you want to change upload by download and vice versa;
 
-* **Queue type for download** - Set the queue download type;
+* **Queue type for download** - set the queue download type;
 
-* **Queue type for upload** - Set the queue upload type.
+* **Queue type for upload** - set the queue upload type.
 
 * **Default QoS rules** - QoS rules can be specified here in format 1 rule = 1 line;
 
@@ -43,7 +43,7 @@ The following parameters can be configured here:
 ### Customer blocking
 ![customer blocking](customer_blocking.png)
 
-* **Enable blocking on CPE** - enables/disablse blocking on CPE with NAT rules;
+* **Enable blocking on CPE** - enables/disables blocking on CPE with NAT rules;
 
 * **IP** - specify the IP to send all traffic to;
 
@@ -54,7 +54,7 @@ The following parameters can be configured here:
 
 ![dhcp](dhcp.png)
 
-* **Enable** - enables/disables using of the default config on the CPE;
+* **Enabled** - enables/disables using of the default config on the CPE;
 
 * **Name** - specify a name of the DHCP server;
 
@@ -75,4 +75,4 @@ The following parameters can be configured here:
 * **WINS servers** - specify WINS servers separated by comma.
 
 
-**And don't forget to save settings after change.**
+<icon class="image-icon">![image](warning.png)</icon> **Please make sure you have saved the settings after the changes.**

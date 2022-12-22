@@ -9,8 +9,8 @@ NAS types can be edited/added or removed here.
 
 ![Nas types](list.png)
 
-Click on the "Add" button to add a new NAS type:
+Click on the `Add` button at the top right corner of the page to add a new NAS type:
 
 ![Create NAS](add.png)
 
-If this NAS type can use Mikrotik API - enable this option.
+If this NAS type can use Mikrotik API, enable this option.

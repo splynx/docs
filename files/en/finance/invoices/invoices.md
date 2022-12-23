@@ -125,7 +125,7 @@ Open `Finance → Invoices`, click on the **Charge** button and navigate to the 
 
 <icon class="image-icon">![image](warning.png)</icon> **Important:**
 
-- **To make Auto Charge work properly you should navigate to `Config → Finance → Automation` and ensure that the value in `Date to use on finance elements` field is set to `Real date of issuing`.**
+- **To make Auto Charge work properly you should navigate to `Config → Finance → Automation` and ensure that the value in the `Date to use on finance elements` field is set to `Real date of issuing`.**
 
 ![](real_date_issue.png)
 

@@ -180,7 +180,7 @@ When task is finished - uncomment the info below. Copy changes in 'v3.2_release'
 
 ### Direct payments
 
-Using the payments links is the simplest way to accept payments. This feature is available in the *Safaricom M-PESA* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase. For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page.
+Using the payments links is the simplest way to accept payments. This feature is available in the *Safaricom M-PESA* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase. For example, you can add a payment link to the email with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page.
 
 To create a direct payment link, please use the patterns below:
 

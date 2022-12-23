@@ -102,7 +102,7 @@ In case of problems during the payment, navigate to `Administration → Logs →
 
 Using the payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the *VulaCoin* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase.
 
-For example, you can add a payment link to the e-mail with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page.
+For example, you can add a payment link to the email with the (proforma) invoice, as a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page.
 
 
 To create a direct payment link, please use the patterns below:

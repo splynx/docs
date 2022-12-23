@@ -179,7 +179,7 @@ In *Payrix Logs* the different records can be viewed and its response details et
 
 ### Direct payments
 
-Using the payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the *Payrix* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase. For example, you can add a payment link to the e-mail with the (proforma) invoice. As a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page. In case the customer has saved the payment credentials on the *Portal*, they do not need to add further details when using the direct payment link in the future. If the credit card in not linked on the *Portal*, the payment details need to be entered each time the payment link is used.
+Using the payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the *Payrix* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase. For example, you can add a payment link to the email with the (proforma) invoice. As a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page. In case the customer has saved the payment credentials on the *Portal*, they do not need to add further details when using the direct payment link in the future. If the credit card in not linked on the *Portal*, the payment details need to be entered each time the payment link is used.
 
 To create a direct payment link, please use the patterns below:
 

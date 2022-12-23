@@ -3,7 +3,7 @@ Netcash Pay Now
 
 Using the **Netcash Pay Now** add-on, customers can pay for their invoices with a few clicks from the [Customer portal](customer_portal/customer_portal.md).
 
-The add-on can be install in two methods, via the CLI or Web UI of your Splynx server.
+The add-on can be installed in two methods, via the CLI or Web UI of your Splynx server.
 
 To install the add-on **via the Web UI**, navigate to `Config → Integrations → Add-ons`:
 
@@ -84,7 +84,7 @@ Netcash Pay Now **logs** can be found under `Administration → Logs → Netcash
 
 ![Logs](logs.png)
 
-We highly recommend to check *Netcash Pay Now* logs in case of payment failure to understand the reason of it.
+We highly recommend to check *Netcash Pay Now* logs in case of payment failure to understand the reason for it.
 
 Also all *Netcash Pay Now* payment statements can be found under `Finance → Payment statements → History`:
 
@@ -93,7 +93,7 @@ Also all *Netcash Pay Now* payment statements can be found under `Finance → Pa
 Here you can find all payment attempts. A description of **statement statuses**:
 
 
-- **New** - this status means a new payment what wasn't processed yet. In some cases it should be processed manually with this button: <icon class="image-icon">![image](manual_pair.png)</icon>.
+- **New** - this status means a new payment that hasn't been processed yet. In some cases it should be processed manually with this button: <icon class="image-icon">![image](manual_pair.png)</icon>.
 
 - **Processed** - a successfully processed payment;
 
@@ -103,6 +103,6 @@ Here you can find all payment attempts. A description of **statement statuses**:
 
 ### Troubleshooting
 
-- In most cases, when some *Netcash Pay Now* payments **weren't processed** in Splynx (for example under *Payment Statements* you have multiply payment with `New` status even if payment was completed and it exists in Netcash Pay Now account) it's related to **payment notification URLs** under *Pay Now* configuration. Make sure that all *URLs* are correct;
+- In most cases, when some *Netcash Pay Now* payments **weren't processed** in Splynx (for example under *Payment Statements* you have multiple payments with `New` status even if the payment was completed and it exists in Netcash Pay Now account) it's related to **payment notification URLs** under *Pay Now* configuration. Make sure that all *URLs* are correct;
 
 - Also you can check *Netcash Pay Now* logs under `Administration → Logs → Netcash Logs` for the possible reason of failed payment.

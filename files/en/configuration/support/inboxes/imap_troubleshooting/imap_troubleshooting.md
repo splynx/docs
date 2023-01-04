@@ -1,7 +1,7 @@
 IMAP - Troubleshooting SSL/TLS Errors
 =============
 
-If your mail server work on old outdated TLS V1 you can allow Splynx server to work with this server by following config:
+If your mail server work on old outdated TLS V1 you can allow the Splynx server to work with this server by the following config:
 
 For Ubuntu 20.04 (from Splynx 3.1) you should add to file `/etc/ssl/openssl.cnf`:
 after line: `oid_section		= new_oids`
@@ -19,7 +19,7 @@ MinProtocol = TLSv1
 CipherString=DEFAULT:@SECLEVEL=1
 ```
 
-After that php7.4-fpm should be restarted by:
+After that, php7.4-fpm should be restarted by:
 ```
 service php7.4-fpm restart
 ```

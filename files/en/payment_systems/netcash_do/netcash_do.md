@@ -131,21 +131,21 @@ Administrators can receive notifications when a customer has created a Netcash p
 
 - In case of the multiple [Partners](administration/main/partners/partners.md) scheme, you can divide Netcash configuration between them. Create a new partner in Splynx, in Netcash config select the necessary partner and set the required settings. Pay attention, the fields marked with `*` sign have the different values from original ones (original values are related to **Default** partner);
 
-- The *Netcash Debit Order* add-on supports the **Batch Auto Authorize** function which allows the Splynx system to **authorize batches automatically (once per hour) without manual/human intervention during the invoice payment**. To turn on this functionality, please enable the `Auto-authorize batches` toggle in the add-on configuration page and press `Save` button:
+- The *Netcash Debit Order* add-on supports the **Batch Auto Authorise** function which allows the Splynx system to **authorise batches automatically (once per hour) without manual/human intervention during the invoice payment**. To turn on this functionality, please enable the `Auto-authorise batches` toggle in the add-on configuration page and press `Save` button:
 
 ![](auto_authorise_batch.png)
 
 <icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT**:
 
-The **Batch Auto Authorize** function is available on request and access is only granted by *Netcash* management approval. Use this [link](https://api.netcash.co.za/autoauth/#access) to send a request.
+The **Batch Auto Authorise** function is available on request and access is only granted by *Netcash* management approval. Use this [link](https://api.netcash.co.za/autoauth/#access) to send a request.
 
 <details style="font-size: 16px; margin-bottom: 5px;">
-<summary><b>'Auto-authorize batches' explanation</b></summary>
+<summary><b>'Auto-authorise batches' explanation</b></summary>
 <div markdown="1">
 
-In case you do **not** use the **Batch Auto Authorize** function, we have the following concept: the customers pay invoices, these payments are sent to Netcash side as batch files. After that, the administrator, at some intervals, logs into the Netcash account and manually authorizes all customers' payments. The Netcash, for its part, does a final check of such payments and provides the results; Splynx checks the Netcash output results by [cron](https://opensource.com/article/17/11/how-use-cron-linux) and we get the final status of the payments.
+In case you do **not** use the **Batch Auto Authorise** function, we have the following concept: the customers pay invoices, these payments are sent to Netcash side as batch files. After that, the administrator, at some intervals, logs into the Netcash account and manually authorizes all customers' payments. The Netcash, for its part, does a final check of such payments and provides the results; Splynx checks the Netcash output results by [cron](https://opensource.com/article/17/11/how-use-cron-linux) and we get the final status of the payments.
 
-If the access is granted and **Batch Auto Authorize** function in enabled in Splynx, the concept will be as follows: the administrator no longer needs to log in and authorize the batches in the Netcash account manually. Splynx will send the request to Netcash **once per hour** in order to receive a list of all currently unauthorized payments and re-send requests to Netcash again to authorize them.
+If the access is granted and **Batch Auto Authorise** function in enabled in Splynx, the concept will be as follows: the administrator no longer needs to log in and authorise the batches in the Netcash account manually. Splynx will send the request to Netcash **once per hour** in order to receive a list of all currently unauthorized payments and re-send requests to Netcash again to authorise them.
 
 The log records about the batch file(-s) authorization can be found in `Administration → Logs → Netcash Debit Order General Logs`:
 
@@ -250,7 +250,7 @@ The process of invoice **charging can be automated**. To achieve this, the admin
 **To make Auto Charge work properly you should navigate to `Config → Finance → Automation` and ensure that the value in the `Date to use on finance elements` field is set to `Real date of issuing`.**
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>How to recharge the invoices</b></summary>
+<summary><b>How to re-invoice</b></summary>
 <div markdown="1">
 
 The debit order batch should be deleted in Netcash as well as the relevant [payment statement](finance/payment_statement_processing/payment_statement_processing.md) in Splynx (be very vigilant when deleting payment statements as deleting the wrong statement can cause payments not to be auto allocated back to the correct invoices), once completed, invoices can be re-charged.

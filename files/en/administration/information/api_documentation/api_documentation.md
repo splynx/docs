@@ -162,6 +162,16 @@ $apiUrl = 'admin/customers/customer' . '?' . http_build_query($params);
 
 ![image](api_search2.png)
 
+Another example - how to use the search with the operator IN:
+
+```bash
+'main_attributes' => [
+ 'tariff_id' => ['IN', ['2', '1']],  
+  ],
+```
+
+![image](another_example_in.png)
+
 ---
 
 #### Splynx PHP API template with examples

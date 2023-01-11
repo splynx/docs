@@ -303,13 +303,18 @@ Table of contents
   * [Ticket automation](configuration/support/ticket_automation/ticket_automation.md)
 
 * [Scheduling](configuration/scheduling/scheduling.md)
-    * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
-    * [Notifications](configuration/scheduling/notifications/notifications.md)
-    * [Project categories](configuration/scheduling/project_categories/project_categories.md)
-    * [Project types](configuration/scheduling/project_types/project_types.md)
-    * [Task templates](configuration/scheduling/task_templates/task_templates.md)
-    * [Teams](configuration/scheduling/teams/teams.md)
-    * [Workflows](configuration/scheduling/workflow/workflow.md)
+   * [Workflows](configuration/scheduling/workflow/workflow.md)
+
+   * [Teams](configuration/scheduling/teams/teams.md)
+
+   * [Task templates](configuration/scheduling/task_templates/task_templates.md)
+   * [Checklist templates](configuration/scheduling/checklist_templates/checklist_templates.md)
+
+   * [Project types](configuration/scheduling/project_types/project_types.md)
+
+   * [Project categories](configuration/scheduling/project_categories/project_categories.md)
+
+* [Notifications](configuration/scheduling/notifications/notifications.md)
 
 * [Leads](configuration/crm/crm.md)
     * [Finance](configuration/crm/finance/finance.md)
@@ -376,6 +381,7 @@ Table of contents
   * [Splynx Mailjet](addons_modules/splynx_mailjet/splynx_mailjet.md)
   * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
   * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
+  * [Ticket feedback](addons_modules/ticket-feedback/ticket-feedback.md)
   * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
   * [Whalebone](addons_modules/whalebone/whalebone.md)
   * [Xero accounting](addons_modules/xero/xero.md)

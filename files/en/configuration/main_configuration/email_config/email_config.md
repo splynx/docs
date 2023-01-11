@@ -42,7 +42,7 @@ Separate email accounts can be configured for each partner:
 * **Encrypted** - select the SMTP encryption method;
 * **Use authentication** - enables/disables SMTP authentication;
 * **Username** - your email address for sending mails;
-* **Password** - your password to the email account;
+* **Password** - your [APP password](https://support.google.com/accounts/answer/185833?hl=en);
 * **Header key** - custom header key (can be used when additional authentication needed);
 * **Header value** - custom header value (can be used when additional authentication needed);
 * **Additional header(s)** - additional header (can be used when additional authentication needed).  
@@ -81,7 +81,7 @@ Parameter|Value
 **Encrypted** | SSL
 **Use authentication** | enabled
 **Username** | your username. Full email (email@gmail.com)
-**Password** | your password. Google account password
+**Password** | your password. [APP password](https://support.google.com/accounts/answer/185833?hl=en)
 
 <icon class="image-icon">![](note.png)</icon> The following changes need to be made in your Google account to use your Google email to send emails via the Splynx server:  
 1. You should allow [less secure apps](https://support.google.com/accounts/answer/6010255) to use your Google account;

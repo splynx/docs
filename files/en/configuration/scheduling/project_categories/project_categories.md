@@ -2,11 +2,9 @@ Project categories
 =============
 In this section we can add, edit or remove project categories.
 
-Navigate to **_Config -> Scheduling -> Project categories_**
+Navigate to *Config → Scheduling → Project categories*:
 
 ![icon](categories.png)
-
-![list](list.png)
 
 Let's add a new category:
 

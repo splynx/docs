@@ -1,13 +1,13 @@
 Ticket feedback add-on
 ================================
 
-<icon class="image-icon">![Important](warning.png)</icon> To start using the Ticket feedback add-on, you need first to configure [the sending of emails](configuration/main_configuration/email_config/email_config.md) from Splynx.
+<icon class="image-icon">![Important](warning.png)</icon> To start using the Ticket feedback add-on, you should first configure [the sending of emails](configuration/main_configuration/email_config/email_config.md) from Splynx.
 
-Navigate to *Config → Integrations → Add-ons*, search for **splynx-ticket-feedback** and click the install button:
+Navigate to *Config → Integrations → Add-ons*, search for **splynx-ticket-feedback** and click on the install button:
 
 ![install](install.png)
 
-After the add-on installation, create a new template in *Config → System → Templates* under the type ***Ticket Automation***:
+Once the installation is completed, a new template will automatically be created in *Config → System → Templates* under the template type ***Ticket Automation***:
 
 ![install](create_template.png)
 
@@ -45,37 +45,37 @@ Insert the following code in the *Code* field:
 </table>
 ```
 
-Then you can edit this template according to your needs.
+You can edit this template according to your needs.
 _______________________________________________________
 
-Once this done, navigate to *Config → Helpdesk → Ticket Automation* and create a new rule with the following parameters:
+Once this is done, navigate to *Config → Helpdesk → Ticket Automation* and create a new rule with the following parameters:
 
 ![Ticket rule](ticket_rule.png)
 
 
-After this step, all tickets with the *Resolved* status will be closed in 1 hour (being in the resolved status for 1 hour), and the customer will receive a message to their email with the survey buttons:
+In this example - All tickets with the *Resolved* status will be closed in 1 hour (being in the resolved status for 1 hour), and the customer will receive an email with the survey buttons:
 
 ![Survey buttons](survey_buttons.png)
 
-The customer can leave an extended comment about this ticket after clicking on some button.
+The customer can then leave an optional comment about this ticket after selecting either survey button.
 
 ![Submit feedback](submit_feedback.png)
 
-Then, you will receive a new ticket message with the reaction and a comment in the closed ticket:
+The admin will then receive a new ticket message with the reaction and comment in the closed ticket:
 
 ![Submit feedback](ticket_feedback.png)
 
-Finally, you can check the customer's feedback under *Administration → Reports → Ticket reports*:
+Lastly, you can view the customer's feedback under *Administration → Reports → Ticket reports*:
 
 ![Reports](reports.png)
 
-Where under the **Customer feedback** column:
+In the **Customer feedback** column:
 
 1 - satisfied;
 
 0 - not satisfied.
-
-You can create a new canned response under *Config → Helpdesk → Canned responses* with the feedback buttons.
+__________________________________________________________________
+You can also create a new canned response under *Config → Helpdesk → Canned responses* with the feedback buttons.
 
 ![Add canned response](add_canned.png)
 

@@ -314,7 +314,7 @@ Table of contents
 
    * [Project categories](configuration/scheduling/project_categories/project_categories.md)
 
-* [Notifications](configuration/scheduling/notifications/notifications.md)
+   * [Notifications](configuration/scheduling/notifications/notifications.md)
 
 * [Leads](configuration/crm/crm.md)
     * [Finance](configuration/crm/finance/finance.md)

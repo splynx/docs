@@ -2,8 +2,6 @@ Checklist templates
 =============
 In this section we can add, edit or remove checklists that will be used in tasks.
 
-**_Config -> Scheduling -> Checklist templates_**
-
 ![icon](checklists_templates.png)
 
 ![list](list.png)

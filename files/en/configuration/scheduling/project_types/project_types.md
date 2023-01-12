@@ -2,11 +2,9 @@ Project types
 =============
 In this section we can add, edit or remove project types.
 
-Navigate to **_Config -> Scheduling -> Project types_**
+Navigate to *Config → Scheduling → Project types*:
 
 ![icon](project_types.png)
-
-![list](list.png)
 
 Let's add a new project type:
 

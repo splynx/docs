@@ -2,9 +2,7 @@ Workflows
 =============
 In this section a new workflow can be added, changed or deleted.
 
-**_Config -> Scheduling -> Workflows_**
-
-![icon](workflow.png)
+![icon](menu.png)
 
 ![list](list.png)
 
@@ -12,14 +10,22 @@ Let's add a new workflow:
 
 ![edit](create_workflow.png)
 
-Different statuses can be added to each section "NEW", "IN PROGRESS" or "DONE". In this example we have a few statuses for each section. To add a new status, simply click on the "Add status" **+** button. **Please note that status names must be unique in the entire workflow.**
+Different statuses can be added to each section ***New***, ***In progress*** or ***Done***.
 
-Once new workflow have been added, it can be used in new projects, under [Scheduling - Projects](scheduling/projects/projects.md) we have a project called "New project" and we are going to use this new workflow here.
+In this example we have two statuses for the "New" section.
+
+To add a new status, simply click on the `Add status` button. 
+
+<icon class="image-icon">![image](warning.png)</icon> **Please note that status names have to be unique in the entire workflow.**
+_____________________________________________________________________________
+Once the new workflow has been added, it can be used in new projects.
+
+Under [Scheduling - Projects](scheduling/projects/projects.md) we've created a project called "New project" and we are going to use this new workflow here.
 
 ![edit project](edit_project.png)
 
-Once the workflow is selected for a project, navigate to [Scheduling - Workflow](scheduling/workflow/workflow.md)
+Once the workflow is selected for a project, navigate to [Scheduling → Tasks → Workflow](scheduling/workflow/workflow.md). Now you can add tasks for this project in the *New project* workflow:
 
 ![workflow result](workflow.png)
 
-We have one [task](scheduling/tasks/tasks.md) in our project and it is on a stage 1 of my workflow.
+For more information, see also [Tasks](scheduling/tasks/tasks.md).

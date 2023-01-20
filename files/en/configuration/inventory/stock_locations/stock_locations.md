@@ -1,24 +1,24 @@
 Stock locations
 =============
-We've developed stock locations to add your warehouses where equipment(inventory items) is stored.
+We've developed stock locations to add your warehouses where equipment (inventory items) is stored.
 
-**_Config -> Inventory -> Stock locations_**
+*Config → Inventory → Stock locations:*
 
 ![icon](icon.png)
 
-This section is a easy-to-use list of available warehouses.
+This section is an easy-to-use list of available warehouses.
 
 ![view](view.png)
 
 "Main" is a default location and it cannot be removed, however it can be renamed.
 
-To add a new stock location, simply click on the "+" button and enter location name:
+To add a new stock location, simply click on the "+" button and enter the location name:
 
 ![Create new](add_new.png)
 
-Stock locations are used to identify inventory item are stored.
+Stock locations are used to identify where inventory items are stored.
 
-Navigate to [Inventory -> items](inventory/items/items.md):
+Navigate to [Inventory → Items](inventory/items/items.md):
 
 ![Inventory-Items](inventory_items.png)
 

@@ -3,9 +3,9 @@ Lead convert settings
 
 ![img](icon.png)
 
-![img](1.png)
+### Lead status conversion type
 
-**Lead status conversion type**
+![img](1.png)
 
 * **Active (without invoice)** - enable/disable the lead conversion type in the *Conversion settings* section to choose;
 
@@ -13,21 +13,23 @@ Lead convert settings
 
 * **New (with proforma invoice)** - enable/disable the lead conversion type.
 
-**NOTE:**
+<icon class="image-icon">![image](note.png)</icon> **NOTE:**
 
-- If the required lead conversion type is enabled and selected in the **Default customer type for lead conversion** drop menu, its toggle cannot be disabled;
+- If the required lead conversion type is enabled and selected in the **Default customer type for lead conversion** drop-down menu, its toggle cannot be disabled;
 
-- If the toggle for the required lead conversion type is disabled, such type cannot be selected in the **Default customer type for lead conversion** drop menu.
+- If the toggle for the required lead conversion type is disabled, such type cannot be selected in the **Default customer type for lead conversion** drop-down menu.
 
 
-**Conversion settings**
+### Conversion settings
 
-**Default customer type for lead conversion:**
+![img](2.png)
 
-- **Create active customer and invoice** - after converting a lead to a customer, the status of the new customer will become `Active` and an invoice will be created. This option is used by default;
+* **Default customer type for the lead conversion:**
 
-- **Create active customer** - after converting a lead to a customer, only the status of the new customer will be changed to `Active`;
+  - **Create active customer and invoice** - after converting a lead to a customer, the status of the new customer will become `Active` and an invoice will be created. This option is used by default;
 
-- **Create active customer and proforma invoice** - after converting a lead to a customer, the status of the new customer will become `Active` and an proforma invoice will be created;
+  - **Create active customer** - after converting a lead to a customer, only the status of the new customer will be changed to `Active`;
 
-* **Default won status** - the default status that will be set for lead after conversion.
+  - **Create active customer and proforma invoice** - after converting a lead to a customer, the status of the new customer will become `Active` and a proforma invoice will be created;
+
+* **Default won status** - the default status that will be set for the lead after conversion.

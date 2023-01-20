@@ -9,7 +9,7 @@ IMAP
 
 **Main settings:**
 
-* **Enable IMAP processing** - enable/disable the option to correspond with the lead. All email threads will be available in the **Communication** tab of lead's profile;
+* **Enable IMAP processing** - enable/disable the option to correspond with the lead. All email threads will be available in the **Communication** tab of the lead's profile;
 
 **Email tracking:**
 

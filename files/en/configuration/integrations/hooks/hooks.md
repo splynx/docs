@@ -1,7 +1,7 @@
 Hooks
 =============
 
-### Cli
+### CLI
 
 Hook is a method of augmenting or altering the behavior of a page or application with custom callbacks. These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating application (Splynx). For example, we illustrate how to use hooks and send emails.
 
@@ -13,7 +13,7 @@ First of all, you have to know how hooks work. "Hooks" are listening to an event
 
 ![Edit hook](edit.png)
 
-Before creating a hook you have to put a php-script into the home-folder, and give it permissions 755:
+Before creating a hook you have to put a php-script into the *home* folder, and give it permissions 755:
 ```
 chmod 755 script-file.php
 ```
@@ -51,11 +51,11 @@ mail($to, $subject, $message, $headers);
 ```
 
 So, when a new customer is created, we will receive an email:
+
 ![](email1.png)
 ![](email2.png)
 
-Attention!!!
-To send emails, we used the mail-server : Sendmail, and by default, it sends emails in the local-network only. Therefor, if you want to send an email to external addresses, you have to reconfigure sendmail.
+<icon class="image-icon">![image](warning.png)</icon> To send emails, we used the mail-server : Sendmail, and by default, it sends emails in the local-network only. Therefor, if you want to send an email to external addresses, you have to reconfigure the sendmail.
 Run the command to achieve this
 ```
 sudo dpkg-reconfigure exim4-config
@@ -64,10 +64,9 @@ The following manual can be used as a guide - https://www.digitalocean.com/commu
 
 ---
 ### Custom named queues
-Attention!!! beginning from Splynx v 2.0
-Starting from version 2.0, you can use custom named queues. To achieve this select the hook type "Queue" and enter your queue name.
+<icon class="image-icon">![image](warning.png)</icon> Starting from Splynx v2.0, you can use custom named queues. To achieve this, select the hook type "Queue" and enter your queue name.
 
-![](edit.jpg)
+![](hook_create.png)
 
 The following PHP script (based on [BunnyPHP](https://github.com/jakubkulhan/bunny)) can be used as an example to work with messages from custom named queues:
 ```
@@ -106,7 +105,7 @@ $loop = Factory::create();
 });
 $loop->run();
 ```
-**Attention**: you must use the same parameters when declaring a queue as in the example because this parameters uses Splynx when adding a message to RabbitMQ!
+<icon class="image-icon">![image](warning.png)</icon> **You need to use the same parameters when declaring a queue as in the example because this parameters uses Splynx when adding a message to RabbitMQ.**
 
 You will get a string like this: `{"type":"","call":"","data":{"source":"admin","model":"models\\admin\\administration\\Locations","action":"get_list","date":"2017-09-20","time":"14:38:12","administrator_id":"1","customer_id":null,"result":"success","attributes":{"id":null,"name":null},"attributes_additional":[],"changed_attributes":null,"extra":null,"errors":null,"ip":"192.168.77.233"}}`
 

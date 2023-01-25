@@ -17,7 +17,7 @@ All data on your server can be accessed and operated with *Adminer*. This is our
 
 **Step 1**
 
-**Adminer** is integrated into Splynx as the add-on, to install it open `Config → Integrations → Add-ons`, find `splynx-adminer` item and click on <icon class="image-icon">![](install.png)</icon> (Install) icon.
+**Adminer** is integrated into Splynx as an add-on. To install it, open `Config → Integrations → Add-ons`, find `splynx-adminer` item and click on the *Install* icon:
 
 ![](adminer0.png)
 
@@ -31,21 +31,17 @@ Navigate to `Config → Tools` and click on **Adminer** button, the tool GUI wil
 
 **Step 3**
 
-Type your password and press **Confirm** button. After that you can start work with the tool:
+Type your password and press **Confirm** button. After that you can start working with the tool:
 
 ![Adminer](adminer.png)
 
-**NOTE:**
+<icon class="image-icon">![image](information.png)</icon> **NOTE:**
 
 - **Do not try to drop the database** which contains the word `splynx`, the attempt will be blocked. **In most cases, it's your production database and you can lose all your data**;
 
 ![Adminer](adminer2.png)
 
-- The actions that have been performed in **Adminer** are logged in `Administration → Logs → Operations`
-
-![Adminer](adminer3.png)
-
-
+- The actions that have been performed in **Adminer** are logged in [`Administration → Logs → Operations`](administration/logs/operations/operations.md).
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary>Related links:</summary>

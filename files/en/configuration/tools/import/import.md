@@ -7,7 +7,7 @@ Using the import tool you can import your data (customers, tariff plans, routers
 
 ### Customers import
 
-To open this tool navigate to `Config -> Tools -> Import`:
+To open this tool navigate to `Config → Tools → Import`:
 
 ![config_tools_import](config_tools_import.png)
 
@@ -49,7 +49,7 @@ If there are no rows with errors you can click on the **Confirm import** button 
 
 ![confirm](confirm.png)
 
-Here is the result of successful import:
+Here is the result of a successful import:
 
 ![imported](imported.png)
 
@@ -86,6 +86,6 @@ We have 1 error in services, because the customer is inactive:
 
 ![services_error](services_error.png)
 
-you won't be able to confirm the import without the **Ignore rows with error** option enabled. To continue importing, but without the error in the record, enable the specified option and confirm.
+You won't be able to confirm the import without the **Ignore rows with error** option enabled. To continue importing, but without the error in the record, enable the specified option and confirm.
 
 ![services_imported](imported_services.png)

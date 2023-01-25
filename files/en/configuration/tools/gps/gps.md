@@ -7,13 +7,13 @@ This feature can be helpful when a lot of customers have street addresses and ci
 
 Geo data can be specified manually for one customer, but what if you have 1000+ customers with no updated GPS coordinates?
 
-Firstly, navigate to `Config -> Tools -> Update GPS coordinates`:
+Firstly, navigate to `Config → Tools → Update GPS`:
 
 ![icon](icon.png)
 
 If some customers already have GPS coordinates and they shouldn't be overwritten, select "No" in the "Rewrite existing coordinates" parameter.
 
-Next, click on the "update GPS coordinates" button:
+Next, click on the `Update GPS Coordinates` button:
 
 ![update](update.png)
 
@@ -21,7 +21,7 @@ Once completed, you will see a list of customers with updated coordinates:
 
 ![update_result](update_result.png)
 
- let's take a look at the customer account "Andrew":
+ Let's take a look at the customer's account now:
 
 ![after](customer_after.png)
 

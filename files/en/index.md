@@ -348,17 +348,28 @@ Table of contents
     * [Import Data Source](configuration/voice/import_data_source/import_data_source.md)
 
 * [Tools](configuration/tools/tools.md)
-    * [Activate services](configuration/tools/activate_services/activate_services.md)
-    * [Adminer](configuration/tools/adminer/adminer.md)
-    * [Backup and restore](configuration/tools/backup_restore/backup_restore.md)
-    * [Export](configuration/tools/export/export.md)
-    * [Import](configuration/tools/import/import.md)
-    * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
-    * [Migrate services](configuration/tools/migrate_services/migrate_services.md)
-    * [OpenVPN](configuration/tools/openvpn/openvpn.md)
+
+  * [Import](configuration/tools/import/import.md)
+
+  * [Export](configuration/tools/export/export.md)
+
+  * [Activate services](configuration/tools/activate_services/activate_services.md)
+
+  * [OpenVPN](configuration/tools/openvpn/openvpn.md)
+
     * [Cloud](configuration/tools/openvpn/cloud/routes/routes.md)
-    * [Restore deleted customers](configuration/tools/restore_deleted_customers/restore_deleted_customers.md)
-    * [Update GPS coordinates](configuration/tools/gps/gps.md)
+
+  * [Invoices cache](configuration/tools/invoices_cache/invoices_cache.md)
+
+  * [Backup and restore](configuration/tools/backup_restore/backup_restore.md)
+
+  * [Update GPS](configuration/tools/gps/gps.md)
+
+  * [Restore deleted customers](configuration/tools/restore_deleted_customers/restore_deleted_customers.md)
+
+  * [Migrate services](configuration/tools/migrate_services/migrate_services.md)
+
+  * [Adminer](configuration/tools/adminer/adminer.md)
 
 
 ##### [My Profile](my_profile/my_profile.md)

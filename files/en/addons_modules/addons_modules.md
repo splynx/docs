@@ -14,6 +14,7 @@ In this section, we can view, install or delete useful add-ons for integration w
 * [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
 * [FCC 477 export](addons_modules/fcc_export/fcc_export.md)
 * [Ofipro contabilidad (Spanish)](addons_modules/ofipro/ofipro.md)
+* [PortaOne](addons_modules/portaone/portaone.md)
 * [Preseem](addons_modules/preseem_addon/preseem_addon.md)
 * [Quickbooks accounting](addons_modules/quickbooks/quickbooks.md)
 * [Realms add-on](addons_modules/realms/realms.md)

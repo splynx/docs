@@ -397,6 +397,7 @@ Table of contents
   * [SageOne module](addons_modules/sageone/sageone.md)
   * [Self Registration](addons_modules/self_registration/self_registration.md)
   * [Speedtest](addons_modules/speedtest/speedtest.md)
+  * [Splynx AI](addons_modules/splynx_ai/splynx_ai.md)
   * [Splynx Mailjet](addons_modules/splynx_mailjet/splynx_mailjet.md)
   * [splynx-ssh-term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)
   * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)

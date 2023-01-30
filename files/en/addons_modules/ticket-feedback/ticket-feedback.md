@@ -74,6 +74,8 @@ In the **Customer feedback** column:
 1 - satisfied;
 
 0 - not satisfied.
+
+<icon class="image-icon">![image](note.png)</icon> To learn more about how to automate the evaluation of *Content*, *Timing* and *Feedback* columns, please read [Splynx AI](addons_modules/splynx_ai/splynx_ai.md).
 __________________________________________________________________
 You can also create a new canned response under *Config → Helpdesk → Canned responses* with the feedback buttons.
 

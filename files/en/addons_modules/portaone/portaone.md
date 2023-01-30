@@ -1,38 +1,38 @@
 PortaOne
 ================================================
 
-PortaOne add-on is used to import customers' calls from the PortaOne software into Splynx. 
+The PortaOne add-on is used to import customers' calls from the PortaOne software system into Splynx.
 
-It will be then possible to show calls and their prices in Splynx PDF invoices and invoice customers for those calls.
+Individual calls and their prices (CDRs) can be shown in Splynx as Statistics within the customer profile and their Customer Portal. These calls can also be included in a customer’s PDF invoices.
 
 ## Installation
 
-The add-on can be installed in two methods: via CLI or the Web UI.
+The add-on can be installed via one of two methods: via CLI or the Web GUI.
 
-To install PortaOne add-on **via CLI**, the following commands should be used:
+To install the PortaOne add-on **via CLI**, the following commands should be used:
 
 ```bash
 apt-get update
 apt-get install splynx-portaone
 ```
 
-To install the addon **via the Web UI**:
+To install the addon **via the Web GUI**:
 
-1. Navigate to *Config → Integrations → Add-ons*.
+1. Navigate to Config → Integrations → Add-ons.
 
-2. Locate or search for the **"splynx-portaone"** add-on and click on the install icon in the *Actions* column:
+2. Locate or search for the "splynx-portaone" add-on and click on the install icon in the Actions column:
 
 ![Install](install.png)
 
-3. Click on the `OK, confirm` button to begin the installation process:
+3. Click on the OK, confirm button to begin the installation process:
 
 ![Confirm](confirm.png)
 
 ## Basic configuration
 
-Navigate to *Config → Integrations → Modules list* and search for *splynx_addon_portaone*.
+Navigate to Config → Integrations → Modules list and search for splynx_addon_portaone.
 
-Then click the *Edit* (Config) button to perform the basic configuration:
+Then click the Edit (Config) button to perform the basic configuration:
 
 ![image](modules_list.png)
 
@@ -40,7 +40,7 @@ Then click the *Edit* (Config) button to perform the basic configuration:
 
 ![ap_settings](ap_settings.png)
 
-<icon class="image-icon">![image](warning.png)</icon> API domain, API key and API secret are already provided by default after the add-on installation. It is not recommended to change them.
+<icon class="image-icon">![image](warning.png)</icon> The API domain, API key and API secret are already pre-populated by default after the add-on installation and don’t require any configuration.
 
 ### PortaOne API settings
 
@@ -50,28 +50,32 @@ Then click the *Edit* (Config) button to perform the basic configuration:
 * **Login** - your login to access the PortaOne API;
 * **Password** - your password to access the PortaOne API; 
 
-<icon class="image-icon">![image](warning.png)</icon> PortaOne requires to change the password regularly.
+<icon class="image-icon">![image](warning.png)</icon> PortaOne requires you to change the password regularly.
 
 * **Token** - your token to access the PortaOne API.
 
 <icon class="image-icon">![image](note.png)</icon> The password is not required if the token is provided.
 
+The PortaOne software system:
+
+![PortaOne](porta1.png)
+![PortaOne](porta2.png)
+
 ### Synchronization settings
 
 ![synchronization](synchronization.png)
 
-* **Import CDR from date** - the date (in 'Y-m-d' format) used as the start date for the CDR import for new paired PortaOne customers. If left empty, the start date will be minus one day from the first import date;
-* **Import CDR by cron** - import PortaOne CDR by [cron](https://opensource.com/article/17/11/how-use-cron-linux).
+* **Import CDR from date** - the date (in 'yyyy-mm-dd' format) used as the start date for the CDR import for newly paired PortaOne customers. If left empty, the start date will be one day before the first import date;
+* **Import CDR by cron** - import PortaOne CDR by cron. All the data will be imported from the PortaOne server to the Splynx server according to the set cron interval.
 
 ## Customer account settings
-
 The *PortaOne customers ids* field will automatically appear after the add-on installation under the customer's *Additional information*.
 
-When the basic configuration is done, add a PortaOne ID for each customer you want to import calls of: 
+When the basic configuration is done, add the PortaOne ID for each customer that should import calls:
 
 ![portaone id](porta_id.png)
 
-Besides that, set the customer's phone number for their voice service:
+The customer’s phone number should also be set in the relevant voice service:
 
 ![add phone](add_phone.png)
 
@@ -79,14 +83,19 @@ Besides that, set the customer's phone number for their voice service:
 
 The next step is to configure the Auto CDR processing.
 
-You need first to import data source in [*Config → Voice → Import data source*](configuration/voice/import_data_source/import_data_source.md):
+An import data source should be created in [*Config → Voice → Import data source*](configuration/voice/import_data_source/import_data_source.md).
+
+- Set a relevant name.
+- Select “Local” as the Data source type.
+- Use the following default path:
+/var/www/splynx/addons/splynx-portaone/data/files
 
 ![import data source](data_source.png)
 
-Then navigate to [*Config → Voice → Auto CDR processing*](configuration/voice/auto_cdr_processing/auto_cdr_processing.md) and create a new data source to import from:
+Then navigate to [*Config → Voice → Auto CDR processing*](configuration/voice/auto_cdr_processing/auto_cdr_processing.md) and create an Auto CDR processing entity where we should define the data source to import from as well as the PortaOne handler (auto-created by the addon):
 
 ![cdr processing](cdr_processing.png)
 
 ![cdr created](cdr_created.png)
 
-Now the system will auto process voice calls from the addon local folder.
+The system will now auto-process voice calls from the addon local folder using the defined interval.

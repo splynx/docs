@@ -5,13 +5,11 @@ In this section we can configure custom roles with modified permissions to assig
 
 We can use roles to limit administrative access to particular modules on the system.
 
+![Roles](icon.png)
+
 ### Adding a new role
 
-To add a new role, navigate to `Administration → Roles`:
-
-![Roles](roles.png)
-
-Click on the *Add* button at the top right of the table:
+To add a new role, click the *Add* button at the top right corner:
 
 ![Roles](roles1.png)
 
@@ -19,19 +17,17 @@ The following window will appear for you to enter a name and a title for the new
 
 ![Roles](roles2.png)
 
-Thereafter, you can customize the permissions granted in the role by clicking on the permissions icon <icon class="image-icon">![Permissions icon](perm_icon.png)</icon>:
-
-You will then be able to customize permissions under each of the module by enabling/disable each of the permissions/categories with the toggles provided:
+You can customize the permissions granted in the role by clicking on the permissions icon <icon class="image-icon">![Permissions icon](perm_icon.png)</icon>:
 
 ![Roles](permissions.png)
 
 When you have customized the permissions to you like, please do not forget to save your changes.
 
-All custom roles can be edited or delete with the icons provided in the actions column:
+All custom roles can be edited or deleted with the icons provided in the actions column:
 
 ![Roles](roles3.png)
 
 ***Please be advised that default roles cannot be deleted or customized, however, default roles can be renamed.***
 
 For more information on the default roles in Splynx, please follow the link below:
-[Default roles and its permissions in detail](administration/main/roles/default_roles/default_roles.md)
+[Default roles and its permissions in detail](administration/main/roles/default_roles/default_roles.md).

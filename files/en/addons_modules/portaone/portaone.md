@@ -66,7 +66,7 @@ The PortaOne software system:
 ![synchronization](synchronization.png)
 
 * **Import CDR from date** - the date (in 'yyyy-mm-dd' format) used as the start date for the CDR import for newly paired PortaOne customers. If left empty, the start date will be one day before the first import date;
-* **Import CDR by cron** - import PortaOne CDR by cron. All the data will be imported from the PortaOne server to the Splynx server according to the set cron interval.
+* **Import CDR by cron** -  import PortaOne CDRs using cron. CDRs will be imported from PortaOne to Splynx daily at 01h00. If disabled, no CDRs will be imported from PortaOne.
 
 ## Customer account settings
 The *PortaOne customers ids* field will automatically appear after the add-on installation under the customer's *Additional information*.

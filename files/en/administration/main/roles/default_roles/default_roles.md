@@ -45,7 +45,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>DASHBOARD</b></td>
-            <td><icon class="image-icon"><p style="text-align:center"><img src="green_tick.png" style="width:50px"></p></icon> <p>Full access for the `administrator` by default</p> </td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fgreen_tick.png" style="width:50px"></p></icon> <p>Full access for the `administrator` by default</p> </td>
         </tr>
     </tbody>
 </table>
@@ -74,7 +74,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>FINANCE</b></td>
-            <td rowspan=2><icon class="image-icon"><p style="text-align:center"><img src="green_tick.png" style="width:50px"></p></icon> <p>Full access for the `administrator` by default</p> </td>
+            <td rowspan=2><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fgreen_tick.png" style="width:50px"></p></icon> <p>Full access for the `administrator` by default</p> </td>
         </tr>
         <tr>
             <td><b>MESSAGES</b></td>
@@ -94,7 +94,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>SCHEDULING</b></td>
-            <td rowspan=2><icon class="image-icon"><p style="text-align:center"><img src="green_tick.png" style="width:50px"></p></icon> <p>Full access for the `administrator` by default</p> </td>
+            <td rowspan=2><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fgreen_tick.png" style="width:50px"></p></icon> <p>Full access for the `administrator` by default</p> </td>
         </tr>
         <tr>
             <td><b>INVENTORY</b></td>
@@ -132,7 +132,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>ADD-ONS</b></td>
-            <td rowspan=5><icon class="image-icon"><p style="text-align:center"><img src="green_tick.png" style="width:50px"></p></icon> <p>Full access to ALL installed add-ons in Splynx for the `administrator` by default</p> </td>
+            <td rowspan=5><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fgreen_tick.png" style="width:50px"></p></icon> <p>Full access to ALL installed add-ons in Splynx for the `administrator` by default</p> </td>
         </tr>
     </tbody>
 </table>
@@ -162,7 +162,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>LEADS</b></td>
-            <td rowspan=5><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `manager` by default</p> </td>
+            <td rowspan=5><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `manager` by default</p> </td>
         </tr>
         <tr>
             <td><b>TICKETS</b></td>
@@ -191,7 +191,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>INVENTORY</b></td>
-            <td rowspan=6><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `manager` by default</p> </td>
+            <td rowspan=6><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `manager` by default</p> </td>
         </tr>
         <tr>
             <td><b>VOICE</b></td>
@@ -242,7 +242,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>TICKETS</b></td>
-            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
         </tr>
     </tbody>
 </table>
@@ -259,7 +259,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>MESSAGES</b></td>
-            <td rowspan=6><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
+            <td rowspan=6><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
         </tr>
         <tr>
             <td><b>NETWORKING</b></td>
@@ -282,7 +282,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>VOICE</b></td>
-            <td rowspan=6><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
+            <td rowspan=6><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
         </tr>
         <tr>
             <td><b>TARIFF PLANS</b></td>
@@ -305,7 +305,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>ADD-ONS</b></td>
-            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
         </tr>
     </tbody>
 </table>
@@ -324,7 +324,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>DASHBOARD</b></td>
-            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `customer-creator` by default</p> </td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `customer-creator` by default</p> </td>
         </tr>
     </tbody>
 </table>
@@ -348,7 +348,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>TICKETS</b></td>
-            <td rowspan=11><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `customer-creator` by default</p> </td>
+            <td rowspan=11><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `customer-creator` by default</p> </td>
         </tr>
         <tr>
             <td><b>FINANCE</b></td>
@@ -396,7 +396,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>DASHBOARD</b></td>
-            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
         </tr>
     </tbody>
 </table>
@@ -425,7 +425,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
              <td><b>FINANCE</b></td>
-            <td rowspan=11><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
+            <td rowspan=11><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
         </tr>
         <tr>
             <td><b>MESSAGES</b></td>
@@ -455,7 +455,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>VOICE</b></td>
-            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
         </tr>
     </tbody>
 </table>
@@ -476,7 +476,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>CONFIG</b></td>
-            <td rowspan=2><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
+            <td rowspan=2><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
         </tr>
         <tr>
             <td><b>ADD-ONS</b></td>
@@ -497,7 +497,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>DASHBOARD</b></td>
-            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
         </tr>
     </tbody>
 </table>
@@ -524,7 +524,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>FINANCE</b></td>
-            <td rowspan=3><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
+            <td rowspan=3><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
         </tr>
         <tr>
             <td><b>MESSAGES</b></td>
@@ -545,7 +545,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>INVENTORY</b></td>
-            <td rowspan=3><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
+            <td rowspan=3><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
         </tr>
         <tr>
             <td><b>VOICE</b></td>
@@ -566,7 +566,7 @@ Administrator account with the `super-administrator`role has access to ALL categ
     <tbody>
         <tr>
             <td><b>CONFIG</b></td>
-            <td rowspan=3><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
+            <td rowspan=3><icon class="image-icon"><p style="text-align:center"><img src="//docs.splynx.com/images/get?path=en%2Fadministration%2Fmain%2Froles%2Fdefault_roles%2Fno_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
         </tr>
         <tr>
             <td><b>ADD-ONS</b></td>

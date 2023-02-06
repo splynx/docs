@@ -1,7 +1,7 @@
 Default roles and its permissions in detail
 =======================
 
-On this page we can view the default roles in Splynx with a detailed information about access levels to each of the different modules and features of system.
+On this page we can view the default roles in Splynx with a detailed information about access levels to each of the different modules and features of the system.
 
 By default, there are 7 roles in Splynx:
 
@@ -19,7 +19,7 @@ We can create the own role and set the required permissions to it. For the defau
 
 ![img_000002](img_000002.png)
 
-Also, you can follow the permissions scheme of existing role when creating a new one
+Also, you can follow the permissions scheme of existing role when creating a new one:
 
 ![img_000003](img_000003.png)
 
@@ -30,7 +30,7 @@ Also, you can follow the permissions scheme of existing role when creating a new
 <summary><b>super-administrator</b></summary>
 <div markdown="1">
 
-Administrator account with `super-administrator`role has the access to ALL categories and its sub-categories in Splynx by default.
+Administrator account with the `super-administrator`role has access to ALL categories and its sub-categories in Splynx by default.
 
 </div>
 </details>
@@ -41,21 +41,14 @@ Administrator account with `super-administrator`role has the access to ALL categ
 <summary><b>administrator</b></summary>
 <div markdown="1">
 
-| DASHBOARD  |
-| ------------ |
-| ![](1_administrator.png) |
-
-------------
-
-|  TARIFF PLANS  |
-| ------------ |
-| ![](2_administrator.png) |
-
-------------
-
-|  CRM  |
-| ------------ |
-| ![](3_administrator.png) |
+<table>
+    <tbody>
+        <tr>
+            <td><b>DASHBOARD</b></td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="green_tick.png" style="width:50px"></p></icon> <p>Full access for the `administrator` by default</p> </td>
+        </tr>
+    </tbody>
+</table>
 
 ------------
 
@@ -65,21 +58,29 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
+|  LEADS  |
+| ------------ |
+| ![](3_administrator.png) |
+
+------------
+
 |  TICKETS  |
 | ------------ |
 | ![](5_administrator.png) |
 
 ------------
 
-|  FINANCE  |
-| ------------ |
-| ![](6_administrator.png)  |
-
-------------
-
-|  INVENTORY  |
-| ------------ |
-| ![](7_administrator.png)  |
+<table>
+    <tbody>
+        <tr>
+            <td><b>FINANCE</b></td>
+            <td rowspan=2><icon class="image-icon"><p style="text-align:center"><img src="green_tick.png" style="width:50px"></p></icon> <p>Full access for the `administrator` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>MESSAGES</b></td>
+        </tr>
+    </tbody>
+</table>
 
 ------------
 
@@ -89,21 +90,29 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  MESSAGES  |
-| ------------ |
-| ![](9_administrator.png) |
-
-------------
-
-|  SCHEDULING  |
-| ------------ |
-| ![](10_administrator.png) |
+<table>
+    <tbody>
+        <tr>
+            <td><b>SCHEDULING</b></td>
+            <td rowspan=2><icon class="image-icon"><p style="text-align:center"><img src="green_tick.png" style="width:50px"></p></icon> <p>Full access for the `administrator` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>INVENTORY</b></td>
+        </tr>
+    </tbody>
+</table>
 
 ------------
 
 |  VOICE  |
 | ------------ |
 | ![](11_administrator.png) |
+
+------------
+
+|  TARIFF PLANS  |
+| ------------ |
+| ![](2_administrator.png) |
 
 ------------
 
@@ -119,9 +128,14 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  ADD-ONS  |
-| ------------ |
-| Administrator account with `administrator` role has the access to ALL installed add-ons in Splynx by default.  |
+<table>
+    <tbody>
+        <tr>
+            <td><b>ADD-ONS</b></td>
+            <td rowspan=5><icon class="image-icon"><p style="text-align:center"><img src="green_tick.png" style="width:50px"></p></icon> <p>Full access to ALL installed add-ons in Splynx for the `administrator` by default</p> </td>
+        </tr>
+    </tbody>
+</table>
 
 </div>
 </details>
@@ -138,51 +152,32 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  TARIFF PLANS  |
-| ------------ |
-| ![](2_manager.png) |
-
-------------
-
-|  CRM  |
-| ------------ |
-| ![](3_manager.png) |
-
-------------
-
 |  CUSTOMERS  |
 | ------------ |
 | ![](4_manager.png) |
 
 ------------
 
-|  TICKETS  |
-| ------------ |
-| ![](5_manager.png) |
-
-------------
-
-|  FINANCE  |
-| ------------ |
-| ![](6_manager.png) |
-
-------------
-
-|  INVENTORY  |
-| ------------ |
-| ![](7_manager.png) |
-
-------------
-
-|  NETWORKING  |
-| ------------ |
-| ![](8_manager.png) |
-
-------------
-
-|  MESSAGES  |
-| ------------ |
-| ![](9_manager.png) |
+<table>
+    <tbody>
+        <tr>
+            <td><b>LEADS</b></td>
+            <td rowspan=5><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `manager` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>TICKETS</b></td>
+        </tr>
+        <tr>
+            <td><b>FINANCE</b></td>
+        </tr>
+        <tr>
+            <td><b>MESSAGES</b></td>
+        </tr>
+        <tr>
+            <td><b>NETWORKING</b></td>
+        </tr>
+    </tbody>
+</table>
 
 ------------
 
@@ -192,27 +187,29 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  VOICE  |
-| ------------ |
-| ![](11_manager.png) |
-
-------------
-
-|  ADMINISTRATION  |
-| ------------ |
-| ![](12_manager.png) |
-
-------------
-
-|  CONFIG  |
-| ------------ |
-| ![](13_manager.png) |
-
-------------
-
-|  ADD-ONS  |
-| ------------ |
-| Administrator account with `manager` role has NO access to installed add-ons in Splynx by default.  |
+<table>
+    <tbody>
+        <tr>
+            <td><b>INVENTORY</b></td>
+            <td rowspan=6><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `manager` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>VOICE</b></td>
+        </tr>
+        <tr>
+            <td><b>TARIFF PLANS</b></td>
+        </tr>
+        <tr>
+            <td><b>ADMINISTRATION</b></td>
+        </tr>
+        <tr>
+            <td><b>CONFIG</b></td>
+        </tr>
+        <tr>
+            <td><b>ADD-ONS</b></td>
+        </tr>
+    </tbody>
+</table>
 
 </div>
 </details>
@@ -229,27 +226,26 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  TARIFF PLANS  |
-| ------------ |
-| ![](2_financial-manager.png) |
-
-------------
-
-|  CRM  |
-| ------------ |
-| ![](3_financial-manager.png) |
-
-------------
-
 |  CUSTOMERS  |
 | ------------ |
 | ![](4_financial-manager.png)  |
 
 ------------
 
-|  TICKETS  |
+|  LEADS  |
 | ------------ |
-| ![](5_financial-manager.png) |
+| ![](3_financial-manager.png) |
+
+------------
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>TICKETS</b></td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
+        </tr>
+    </tbody>
+</table>
 
 ------------
 
@@ -259,39 +255,43 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
+<table>
+    <tbody>
+        <tr>
+            <td><b>MESSAGES</b></td>
+            <td rowspan=6><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>NETWORKING</b></td>
+        </tr>
+        <tr>
+            <td><b>SCHEDULING</b></td>
+        </tr>
+    </tbody>
+</table>
+
+------------
+
 |  INVENTORY  |
 | ------------ |
 | ![](7_financial-manager.png) |
 
 ------------
 
-|  NETWORKING  |
-| ------------ |
-| ![](8_financial-manager.png) |
-
-------------
-
-|  MESSAGES  |
-| ------------ |
-| ![](9_financial-manager.png) |
-
-------------
-
-|  SCHEDULING  |
-| ------------ |
-| ![](10_financial-manager.png) |
-
-------------
-
-|  VOICE  |
-| ------------ |
-| ![](11_financial-manager.png) |
-
-------------
-
-|  ADMINISTRATION  |
-| ------------ |
-| ![](12_financial-manager.png) |
+<table>
+    <tbody>
+        <tr>
+            <td><b>VOICE</b></td>
+            <td rowspan=6><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>TARIFF PLANS</b></td>
+        </tr>
+        <tr>
+            <td><b>ADMINISTRATION</b></td>
+        </tr>
+    </tbody>
+</table>
 
 ------------
 
@@ -301,9 +301,14 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  ADD-ONS  |
-| ------------ |
-| Administrator account with `financial-manager` role has NO access to installed add-ons in Splynx by default.  |
+ <table>
+    <tbody>
+        <tr>
+            <td><b>ADD-ONS</b></td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `financial-manager` by default</p> </td>
+        </tr>
+    </tbody>
+</table>
 
 </div>
 </details>
@@ -314,87 +319,69 @@ Administrator account with `super-administrator`role has the access to ALL categ
 <summary><b>customer-creator</b></summary>
 <div markdown="1">
 
-| DASHBOARD  |
-| ------------ |
-| ![](1_customer-creator.png) |
 
-------------
-
-|  TARIFF PLANS  |
-| ------------ |
-| ![](2_customer-creator.png) |
-
-------------
-
-|  CRM  |
-| ------------ |
-| ![](3_customer-creator.png) |
+ <table>
+    <tbody>
+        <tr>
+            <td><b>DASHBOARD</b></td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `customer-creator` by default</p> </td>
+        </tr>
+    </tbody>
+</table>
 
 ------------
 
 |  CUSTOMERS  |
 | ------------ |
-| ![](4_customer-creator.png) |
+| <icon class="image-icon">![image](note.png)</icon> In the customers list, the *customer-creator* can see only 10 customers created by him. 
+![](4_customer-creator.png) |
 
 ------------
 
-|  TICKETS  |
+|  LEADS  |
 | ------------ |
-| ![](5_customer-creator.png) |
+| ![](3_customer-creator.png) |
 
 ------------
 
-|  FINANCE  |
-| ------------ |
-| ![](6_customer-creator.png) |
-
-------------
-
-|  INVENTORY  |
-| ------------ |
-| ![](7_customer-creator.png) |
-
-------------
-
-|  NETWORKING  |
-| ------------ |
-| ![](8_customer-creator.png) |
-
-------------
-
-|  MESSAGES  |
-| ------------ |
-| ![](9_customer-creator.png) |
-
-------------
-
-|  SCHEDULING  |
-| ------------ |
-| ![](10_customer-creator.png) |
-
-------------
-
-|  VOICE  |
-| ------------ |
-| ![](11_customer-creator.png) |
-
-------------
-
-|  ADMINISTRATION  |
-| ------------ |
-| ![](12_customer-creator.png) |
-
-------------
-
-|  CONFIG  |
-| ------------ |
-| ![](13_customer-creator.png) |
-
-------------
-
-|  ADD-ONS  |
-| ------------ |
-| Administrator account with `customer-creator` role has NO access to installed add-ons in Splynx by default.  |
+<table>
+    <tbody>
+        <tr>
+            <td><b>TICKETS</b></td>
+            <td rowspan=11><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `customer-creator` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>FINANCE</b></td>
+        </tr>
+        <tr>
+            <td><b>MESSAGES</b></td>
+        </tr>
+        <tr>
+            <td><b>NETWORKING</b></td>
+        </tr>
+        <tr>
+            <td><b>SCHEDULING</b></td>
+        </tr>
+        <tr>
+            <td><b>INVENTORY</b></td>
+        </tr>
+        <tr>
+            <td><b>VOICE</b></td>
+        </tr>
+        <tr>
+            <td><b>TARIFF PLANS</b></td>
+        </tr>
+        <tr>
+            <td><b>ADMINISTRATION</b></td>
+        </tr>
+        <tr>
+            <td><b>CONFIG</b></td>
+        </tr>
+        <tr>
+            <td><b>ADD-ONS</b></td>
+        </tr>
+    </tbody>
+</table>
 
 </div>
 </details>
@@ -405,21 +392,14 @@ Administrator account with `super-administrator`role has the access to ALL categ
 <summary><b>engineer</b></summary>
 <div markdown="1">
 
-| DASHBOARD  |
-| ------------ |
-| ![](1_engineer.png) |
-
-------------
-
-|  TARIFF PLANS  |
-| ------------ |
-| ![](2_engineer.png) |
-
-------------
-
-|  CRM  |
-| ------------ |
-| ![](3_engineer.png) |
+<table>
+    <tbody>
+        <tr>
+            <td><b>DASHBOARD</b></td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
+        </tr>
+    </tbody>
+</table>
 
 ------------
 
@@ -429,33 +409,33 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
+|  LEADS  |
+| ------------ |
+| ![](3_engineer.png) |
+
+------------
+
 |  TICKETS  |
 | ------------ |
 | ![](5_engineer.png) |
 
 ------------
 
-|  FINANCE  |
-| ------------ |
-| ![](6_engineer.png) |
-
-------------
-
-|  INVENTORY  |
-| ------------ |
-| ![](7_engineer.png) |
-
-------------
+<table>
+    <tbody>
+        <tr>
+             <td><b>FINANCE</b></td>
+            <td rowspan=11><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>MESSAGES</b></td>
+        </tr>
+    </tbody>
+</table>
 
 |  NETWORKING  |
 | ------------ |
 | ![](8_engineer.png) |
-
-------------
-
-|  MESSAGES  |
-| ------------ |
-| ![](9_engineer.png) |
 
 ------------
 
@@ -465,9 +445,24 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  VOICE  |
+|  INVENTORY  |
 | ------------ |
-| ![](11_engineer.png) |
+| ![](7_engineer.png) |
+
+------------
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>VOICE</b></td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
+        </tr>
+    </tbody>
+</table>
+
+|  TARIFF PLANS  |
+| ------------ |
+| ![](2_engineer.png) |
 
 ------------
 
@@ -477,15 +472,17 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  CONFIG  |
-| ------------ |
-| ![](13_engineer.png) |
-
-------------
-
-|  ADD-ONS  |
-| ------------ |
-| Administrator account with `engineer` role has NO access to installed add-ons in Splynx by default.   |
+<table>
+    <tbody>
+        <tr>
+            <td><b>CONFIG</b></td>
+            <td rowspan=2><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `engineer` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>ADD-ONS</b></td>
+        </tr>
+    </tbody>
+</table>
 
 </div>
 </details>
@@ -496,27 +493,24 @@ Administrator account with `super-administrator`role has the access to ALL categ
 <summary><b>technician</b></summary>
 <div markdown="1">
 
-| DASHBOARD  |
-| ------------ |
-| ![](1_technician.png) |
-
-------------
-
-|  TARIFF PLANS  |
-| ------------ |
-| ![](2_technician.png) |
-
-------------
-
-|  CRM  |
-| ------------ |
-| ![](3_technician.png) |
-
-------------
+<table>
+    <tbody>
+        <tr>
+            <td><b>DASHBOARD</b></td>
+            <td><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
+        </tr>
+    </tbody>
+</table>
 
 |  CUSTOMERS  |
 | ------------ |
 | ![](4_technician.png) |
+
+------------
+
+|  LEADS  |
+| ------------ |
+| ![](3_technician.png) |
 
 ------------
 
@@ -526,29 +520,20 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  FINANCE  |
-| ------------ |
-| ![](6_technician.png) |
-
-------------
-
-|  INVENTORY  |
-| ------------ |
-| ![](7_technician.png) |
-
-------------
-
-|  NETWORKING  |
-| ------------ |
-| ![](8_technician.png) |
-
-------------
-
-|  MESSAGES  |
-| ------------ |
-| ![](9_technician.png) |
-
-------------
+<table>
+    <tbody>
+        <tr>
+            <td><b>FINANCE</b></td>
+            <td rowspan=3><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>MESSAGES</b></td>
+        </tr>
+        <tr>
+            <td><b>NETWORKING</b></td>
+        </tr>
+    </tbody>
+</table>
 
 |  SCHEDULING  |
 | ------------ |
@@ -556,11 +541,20 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  VOICE  |
-| ------------ |
-| ![](11_technician.png) |
-
-------------
+<table>
+    <tbody>
+        <tr>
+            <td><b>INVENTORY</b></td>
+            <td rowspan=3><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>VOICE</b></td>
+        </tr>
+        <tr>
+            <td><b>TARIFF PLANS</b></td>
+        </tr>
+    </tbody>
+</table>
 
 |  ADMINISTRATION  |
 | ------------ |
@@ -568,21 +562,21 @@ Administrator account with `super-administrator`role has the access to ALL categ
 
 ------------
 
-|  CONFIG  |
-| ------------ |
-| ![](13_technician.png) |
-
-------------
-
-|  ADD-ONS  |
-| ------------ |
-| Administrator account with `technician` role has NO access to installed add-ons in Splynx by default.  |
+<table>
+    <tbody>
+        <tr>
+            <td><b>CONFIG</b></td>
+            <td rowspan=3><icon class="image-icon"><p style="text-align:center"><img src="no_access.png" style="width:50px"></p></icon> <p>No access for the `technician` by default</p> </td>
+        </tr>
+        <tr>
+            <td><b>ADD-ONS</b></td>
+        </tr>
+    </tbody>
+</table>
 
 </div>
 </details>
 
 ------------
 
-**Note:**
-
-If it's necessary to change the default roles' permissions (except `super-administrator` one), you can do it on [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md) menu for specific administrator account.
+<icon class="image-icon">![image](note.png)</icon> If it's necessary to change the default roles permissions (except the `super-administrator` one), you can do it in the [Admins and permissions](administration/main/admins_and_permissions/admins_and_permissions.md) menu for the specific administrator's account.

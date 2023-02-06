@@ -1,8 +1,8 @@
 Splynx AI
 ================================
-The Splynx AI add-on, based on artificial intelligence, is intended to evaluate the support quality. Before this, you had to give [grades](administration/reports/ticket_reports/ticket_reports.md) for closed tickets manually. Our developers have automated this procedure by teaching neural networks to evaluate the support work considering various parameters in closed tickets.
+The Splynx AI add-on, based on artificial intelligence, is intended to evaluate the quality of feedback on support tickets. Previously, the option to [grade tickets](administration/reports/ticket_reports/ticket_reports.md) was manual. This feature has been automated by teaching neural networks to evaluate the support work considering various parameters in closed tickets.
 
-Together with the [Ticket feedback add-on](addons_modules/ticket-feedback/ticket-feedback.md), this will give you a powerful tool to analyze and improve the quality of your customer support service.
+Together with the [Ticket feedback add-on](addons_modules/ticket-feedback/ticket-feedback.md), this will give you a powerful tool to analyze and improve the quality of your customer support service on a single report.
 
 ## Installation
 
@@ -16,9 +16,9 @@ Confirm the installation by clicking the `Ok, confirm` button.
 
 ## Ticket grades
 
-After the successful installation, the Splynx AI add-on will evaluate the support work every time you close a ticket with the *Resolved* status.
+After installation, the Splynx AI add-on will start evaluating tickets each time a ticket is closed with a *Resolved* status.
 
-The grades can be found in *Administration → Reports → Ticket reports* under *Content*, *Timing* and *Feedback* columns:
+The graded tickets can be found in *Administration → Reports → Ticket reports* under *Content*, *Timing* and *Feedback* columns:
 
 1 - satisfied;
 
@@ -30,12 +30,12 @@ Under the *Grade* column, there is the total grade for each ticket. The average 
 
 ## How Splynx AI evaluates tickets
 
-A ticket, to be evaluated, needs to have the *Resolved* status and be closed by a support engineer.
+In order for a ticket to be evaluated -  it should be in the *Resolved* status and be closed by an administrator.
 
 The following parameters are considered when evaluating the ticket by the Splynx AI neural networks:
 
 1. **Content**
-* all of the admin's messages in text format.
+* admin's messages in text format.
 
 2. **Timing**
 * ticket type;
@@ -44,11 +44,11 @@ The following parameters are considered when evaluating the ticket by the Splynx
 * the number of admin's messages in the ticket;
 * the number of attached files in the ticket;
 * how much time has passed since the admin's first response;
-* the admin's longest response time to the customer
+* the admin's longest response time to the customer;
 * the admin's average response time to the customer;
-* how much time has passed since the ticket creation until its closing.
+* the duration (lifecycle) of the ticket from being opened until resolved.
 
 3. **Feedback**
-* the last admin's message in the ticket;
-* the last customer's message in the ticket.
+* the last message from the admin in the ticket;
+* the last message from the customer in the ticket.
 

@@ -56,37 +56,21 @@ Another example is an update of the **Enable reminders** option for all Splynx c
 Since Splynx 3.1 version we updated logic for reminders and that's why some old reminder templates might work wrong. We recommend to use next reminder template:
 
 ```
-{% set all_reminder_days = customer_billing.reminder_day_1 + customer_billing.reminder_day_2 + customer_billing.reminder_day_3 %}
-Dear {{ customer.name }},
-{# Text for reminder 1#}
-{% if "now"|date("j") == (date_charge|date("j")+customer_billing.reminder_day_1) %}
-  {% for invoice in loader.invoices %}
-    {% if invoice.status == 'not_paid' and not break  %}
-      {% if invoice.date_created|date_modify("+"~customer_billing.reminder_day_1~" days")|date("Y-m-d") == "now"|date("Y-m-d") %}
-        {% set invoiceNumber = invoice.number %}
-        {% set break = true %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-you received a new invoice lately. Outstanding balance is: {{ App.formatMoney(customer_billing.deposit * -1 ) }} Please make sure to pay your invoice soon.
-{% endif %}
-
-{# Text for reminder 2 #}
-{% if "now"|date("j") == (date_charge|date("j")+customer_billing.reminder_day_1+customer_billing.reminder_day_2) %}
-  {% for invoice in loader.invoices %}
-    {% if invoice.status == 'not_paid' and not break  %}
-      {% if invoice.date_created|date_modify("+"~(customer_billing.reminder_day_1+customer_billing.reminder_day_2)~" days")|date("Y-m-d") == "now"|date("Y-m-d") %}
-        {% set invoiceNumber = invoice.number %}
-        {% set break = true %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-your account is overdue with {{ App.formatMoney(customer_billing.deposit * -1 ) }}. Please make a immediate payment to avoid automatic suspension of your account.
-{% endif %}
-
-{# Text for reminder 3 #}
-{% if "now"|date_modify("-"~all_reminder_days~" days")|date("j") == customer_billing.billing_date %}
-{{ App.formatMoney(customer_billing.deposit * -1 ) }} overdue for longer than we allow. Please make a immediate payment to avoid automatic blacklisting.
+{% set rm1date = date_charge|date_modify("+" ~ customer_billing.reminder_day_1 ~ "day")|date("d-m-Y") %}
+{% set rm2date = date_charge|date_modify("+" ~ (customer_billing.reminder_day_1 + customer_billing.reminder_day_2) ~ "day")|date("d-m-Y") %} 
+{% set rm3date = date_charge|date_modify("+" ~ (customer_billing.reminder_day_1 + customer_billing.reminder_day_2 + customer_billing.reminder_day_3) ~ 
+"day")|date("d-m-Y") %} 
+{% if "now"|date("d-m-Y") == rm1date %} 
+{# REMINDER 1 TEXT #} 
+REMINDER 1 TEXT 
+{% elseif "now"|date("d-m-Y") == rm2date %} 
+{# REMINDER 2 TEXT #} 
+REMINDER 2 TEXT 
+{% elseif "now"|date("d-m-Y") == rm3date %} 
+{# REMINDER 3 TEXT #} 
+REMINDER 3 TEXT 
+{% else %} 
+=== IGNORE NOTIFICATION === 
 {% endif %}
 
 ```

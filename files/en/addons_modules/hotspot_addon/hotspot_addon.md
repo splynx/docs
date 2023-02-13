@@ -282,7 +282,7 @@ In `IP → Hotspot → Walled Garden`, configure the following addresses to **Ds
 
 - ``` <splynx_domain> ``` URL of your Splynx, the field should contain only the main domain address (without ```https//:``` | ```www.```, etc.), for example if we have the address ```https://www.portal.mysplynx.com/```, only ```portal.mysplynx.com```  should be used;
 
-- ``` vulacoin.com ``` - URL of VulaCoin service;
+- ``` *vulacoin.com ``` - URL of VulaCoin service;
 
 - ```netcash.co.za``` - URL of Netcash service.
 

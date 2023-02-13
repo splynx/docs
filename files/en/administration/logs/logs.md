@@ -18,11 +18,12 @@ Please follow the links to each section below for tutorials and information page
 * [API](administration/logs/api/api.md)
 * [Change statuses & plans](administration/logs/changes_statuses_plans/changes_statuses_plans.md)
 * [Pending statuses & services](administration/logs/pending_statuses_and_services/pending_statuses_and_services.md)
-* [Accounting integrations](administration/logs/accounting_integrations/accounting_integrations.md)
 
 ------------
 
 #### Additional logs:
 ###### extra logs sections will appear after new add-ons will be installed, or new functionality will be introduced in Splynx
 
+* [Accounting integrations](administration/logs/accounting_integrations/accounting_integrations.md)
 * [Huawei Operation Logs](administration/logs/huawei_operation_logs/huawei_operation_logs.md)
+

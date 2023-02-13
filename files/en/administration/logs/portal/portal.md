@@ -3,9 +3,9 @@ Portal
 
 ![Icon](icon.png)
 
-This sections displays all activities of the customer portal.
+This sections displays all activities of the Customer portal.
 
-The data is presented in a table displaying the date & time of the operation, the customer id, the operation description, the result of the operation and a actions column with an option to view detailed information of the operation.
+The data is presented in a table displaying the date & time of the operation, the customer id, the operation description, the result of the operation and an actions column with an option to view detailed information of the operation.
 
 ![Portal](portal1.png)
 

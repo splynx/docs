@@ -1,5 +1,7 @@
-API logs
+API
 ===
+
+![Icon](icon.png)
 
 The API logs table displays a list of all important API requests of installed Splynx add-ons. The requests such as a creating, editing, listing values are logged here.
 

@@ -12,20 +12,20 @@ The pending statuses & services logs tables show the list of statuses or plans w
 **Pending services** - this section displays the *date* of change, *customer's id*, *description* of the service, its *price*, *type* and *plan*. To view the *service plan* information you can simply click on the name of the plan in the column of the table.
 
 
-**How to set up pending change of status**
+### How to set up pending change of status
 
-To set up a pending change of status for a customer click on the *Calendar* icon next to the *Status* <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> in the *customer's Information* tab. You can then set the date when the status will be changed and choose the desired status to change to and save the result.
+To set up a pending change of status for a customer, click on the *Calendar* icon next to the *Status* <icon class="image-icon">![ViewIcon1](view_icon1.png)</icon> in the *customer's Information* tab. You can then set the date when the status will be changed and choose the desired status to change to and save the result.
 
 ![Planned change status](planned_change_status.png)
 
-After the result was saved,  the *Calendar* icon will change its colour <icon class="image-icon"> ![ViewIcon2](view_icon2.png)</icon>. And you will be able to check the pending status in `Administration → Logs → Pending statuses & services`.
+After the result was saved, you will be able to check the pending status in `Administration → Logs → Pending statuses & services`.
 
 ![Pending customers](pending_customers.png)
 
 
-**How to set up pending change of service**
+### How to set up pending change of service
 
-To set up a pending change of customer's service go to `Customers → View → Services`, click on *Add service* button in order to select type of service you would like to add.
+To set up a pending change of customer's service go to the *Customer's Services* tab, click on the `Add service` button in order to select type of service you would like to add.
 
 ![Create service](create_service.png)
 

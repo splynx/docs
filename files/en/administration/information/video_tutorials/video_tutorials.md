@@ -1,7 +1,9 @@
-Video Tutorials
+YouTube channel
 =========
 
-Navigating to this section will simply redirect you to the Splynx Youtube channel, where you can find tutorial videos, discussions and seminars, and a lot of useful information in video form:
+![menu](icon.png)
+
+This section redirects you to the Splynx YouTube channel where you can find video tutorials, discussions and seminars and other useful video information:
 
 https://www.youtube.com/c/Splynx
 

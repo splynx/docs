@@ -1,5 +1,12 @@
 API Documentation
 =============
+
+![menu](icon.png)
+
+This section redirects you to the Splynx API documentation website:
+
+[Splynx API documentation website](https://splynx.docs.apiary.io/#)
+
 Splynx system has its own Application Programming Interface (API) which allows software applications to communicate with each other via API calls. In order to simplify the workflow with Splynx API in testing and development you can use [Postman](https://www.postman.com/). *Postman* - is an open source tool and can be easily downloaded [here](https://www.postman.com/downloads/) according to your desired platform. After install the app and sign up for account you can start work on Postman startup screen.
 
 To get started with the **Postman** app, please check this [documentation](https://learning.getpostman.com/).

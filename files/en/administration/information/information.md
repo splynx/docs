@@ -1,7 +1,7 @@
 Information
 =============
 
-This sections provides information of your Splynx server and other useful pages to information relevant to operating and using the Splynx software.
+This sections provides information of your Splynx server and other useful pages relevant to operating and using the Splynx software.
 
 ![Information](information1.png)
 

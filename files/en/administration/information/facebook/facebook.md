@@ -1,7 +1,9 @@
 Facebook
 ==========
 
-Navigating to this section will redirect you to the Splynx Facebook page:
+![menu](icon.png)
+
+This section redirects you to the Splynx Facebook page:
 
 https://www.facebook.com/IspFramework
 

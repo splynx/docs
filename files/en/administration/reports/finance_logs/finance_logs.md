@@ -3,7 +3,7 @@ Finance log
 
 ![Finance log](1.png)
 
-This section includes the three separate reports: *future charges*, *daily receipt*, *charge history*. Such combination provides a fuller context for the finance situation in your Splynx system.
+This section includes three separate reports: *Future charges*, *Daily receipt*, *Charge history*. Such combination provides a fuller context for the finance situation in your Splynx system.
 
 ![Finance log](2.png)
 

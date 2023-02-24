@@ -9,6 +9,6 @@ This section displays a report of all refill cards/vouchers that have been gener
 
 The report can be filtered to display refill cards/vouchers pertaining to a specific period and partner with the use of the filter provided at the top right of the table.
 
-The table/report can then be exported in a format of your preference from the methods available by mean of the export <icon class="image-icon">![Export](export.png)</icon> icon located at the bottom left of the table:
+The table/report can then be exported in a format of your preference from the methods available by means of the export <icon class="image-icon">![Export](export.png)</icon> icon located at the top right of the table:
 
 ![Export](export1.png)

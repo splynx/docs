@@ -5,11 +5,11 @@ In this section, we can view a report of all tariffs with any custom prices or d
 
 ![Customer prices & Discounts](custom.png)
 
-The report is presented in a table format displaying the type of tariff, customer details and tariff details with the custom unit price and a period if specified:
+The report is presented in a table format displaying the type of the tariff, customer details and tariff details with the custom unit price and a period if specified:
 
 ![Custom](custom2.png)
 
-To view any discounts applied to the tariff simply click on the `+` button on the tariff type. All the details of the discount on the tariff will be displayed as depicted below:
+To view any discounts applied to the tariff simply click on the arrow next to the tariff type. All the details of the discount on the tariff will be displayed as depicted below:
 
 ![Custom](custom3.png)
 
@@ -27,4 +27,4 @@ When using the modify button, you will be presented with the following window:
 
 ![modify](modify1.png)
 
-In this window, you can simply enable or disable each field according to your preference with the toggles provided, and you can drag and drop the field to order it in a layout of your choice.
+In this window, you can simply enable or disable each field according to your preference with the toggles provided. You can drag and drop the field to order it in a layout of your choice.

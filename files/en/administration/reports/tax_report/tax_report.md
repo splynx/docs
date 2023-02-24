@@ -3,22 +3,29 @@ Tax report
 
 ![Tax report](1.png)
 
-In *Tax Report* tab, we can display a detailed report of customers pertaining to a particular tax. The report is represented in a table format which groups customers by the relevant tax rates recorded in the system. The report displays customer details, financial records like invoice and transaction ID's relevant to the VAT or tax rate and financial total details like, the rate amount, the net amount per invoice, the rate/VAT amount and a gross total of each entry.
+## Tax report tab
+
+To view a detailed report of customers associated with a specific tax, simply navigate to the *Tax Report* tab. The report will be presented in a table format, which groups customers by the relevant tax rates that are recorded in the system.
+
+In the report, you'll be able to see customer details, such as their name and contact information, as well as financial records like invoice and transaction IDs that are relevant to the VAT or tax rate. Additionally, the report will display financial total details, such as the rate amount, the net amount per invoice, the rate/VAT amount, and the gross total of each entry.
+
 
 ![Tax report](2.png)
 
-In *Tax Grouped report* tab, we can display a grouped report of all customer. The table includes the total invoices count according to the rate, its sum and tax amount.
+## Tax grouped report tab
+
+In the *Tax Grouped report* tab, we can display a grouped report of all customers. The table includes the total invoices count according to the rate, sum, and tax amount.
 
 ![Tax report](2.1.png)
-
-The table can be filtered by a specific period, partner and/or location with the use of the filtered located at the top left of the table. Once you have specified you desired criteria, you can then click on show to display the results according to your criteria, you can then use the "generate" button to download an HTML copy of the report or choose to print it:
+______________________________________
+You can filter the table by a specific period, partner, or location using the filter located at the top right of the table. After specifying your criteria, click on the `Show` button to display the results. You can then download an HTML copy of the report by clicking the `Generate` button or choosing to print it.
 
 ![generate](3.png)
 
-Upon clicking on this button, you will be presented with the following window, where you can choose the action you wish to execute:
+Upon clicking on the `Generate` button, you will be presented with the following window, where you can choose the action you wish to execute:
 
 ![generate](4.png)
 
-Additionally, this table can also be exported in a format of your choice of the methods available with the use of the export <icon class="image-icon">![Export](export.png)</icon> icon located at the bottom left of the table:
+Additionally, this table can also be exported in a format of your choice of the methods available with the use of the export <icon class="image-icon">![Export](export.png)</icon> icon located at the top right of the table:
 
 ![export](export1.png)

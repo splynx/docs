@@ -3,11 +3,11 @@ Transaction Categories
 
 ![Transaction Categories](1.png)
 
-In this section, we can view a report of all transaction categories in the system, the report is presented in a table format displaying services that generate revebue streams, financial details like transaction and invoice amounts, income and tax, income including tax, data top-up amounts with and without tax, as well as an average income price and an average income price for top-ups
+In this section, we can view a report of all transaction categories in the system, the report is presented in a table format displaying services that generate revenue streams, financial details like transaction and invoice amounts, income and tax, income including tax, data top-up amounts with and without tax, as well as an average income price and an average income price for top-ups:
 
 ![Transaction](2.png)
 
-To display any data, it is necessary for you to specify a criteria of results in the filter located at the top right of the table. You can filter data to display results for a specific period and partner, once done, simply click on show to view the results of your criteria.
+To display any data, it is necessary for you to specify a criteria of results in the filter located at the top right of the table. You can filter data to display results for a specific period and partner. Once done, click on `Show` to view the results of your criteria:
 
 ![filter](3.png)
 
@@ -23,4 +23,4 @@ When using the modify button, you will be presented with the following window:
 
 ![modify](modify1.png)
 
-In this window, you can simple enable or disable each field according to you preference with the toggles provided, and you can drag and drop the field to order it in a layout of you choice.
+In this window, you can simple enable or disable each field according to you preference with the toggles provided. You can drag and drop the field to order it in a layout of you choice.

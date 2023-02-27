@@ -1,7 +1,22 @@
 Customer Portal
 ==========
 
-Customer portal provides for each customer a private access to their accounts containing information on their services, statistics and other financial aspects of provided services. The customers can also check their profile information, latest news and updates, important documents including financial documents and contracts, all messages received or tickets submitted for support team on the portal.
+Customer portal provides for each customer a private access to their accounts containing information on their services, statistics and other financial aspects of provided services. The customers can also check their profile information, latest news and updates, important documents including financial documents and contracts, all messages received or tickets submitted for support team on the Portal.
+
+<icon>![Note](note.png)</icon> You will be able to open the Portal with your Splynx URL + 'portal'
+
+**Example:**
+
+- in case of HTTP: http://10.10.10.10/portal
+- in case of HTTPS: https://your.splynx.domain/portal 
+
+Another way to open the Portal - open the *Customer’s Information* tab and click on the `Login as customer` button in the *Actions* menu:
+
+![open_portal](open_portal.png)
+
+The system will open the customer's Portal in a new window.
+
+------------------------------------------------------------
 
 The navigation panel on the customer portal can display the following modules:
 

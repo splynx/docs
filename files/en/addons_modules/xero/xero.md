@@ -98,9 +98,9 @@ It would be much easier if all R500 could simply be allocated to the client's ac
 In disabled status, when there is a partially paid invoice on Xero side, a Splynx payment won't be exported to Xero and you will see the error message - `A validation exception occurred - Payment amount exceeds the amount outstanding on this document` in `Administration → Logs → Accounting integrations`.
 
 
-<!-- <details style="font-size: 15px; margin-bottom: 5px;">
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example</b></summary>
-<div markdown="1"> -->
+<div markdown="1">
 
 Let's say in Xero add-on config, we use the `Overpayment` value in the **Xero non invoice/credit notes payment type** select menu. The **Create exceeding invoices/credit notes payments in Xero** toggle is **disabled**. The option **Create payments for prepayments** is **disabled**.
 

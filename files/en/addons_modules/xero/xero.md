@@ -1,7 +1,7 @@
 Xero accounting
 =============================================
 
-Splynx is able to sync customers, invoices and payments with Xero accounting software - https://www.xero.com
+Splynx is able to sync customers, invoices/credit notes and payments with Xero accounting software - https://www.xero.com
 
 
 <icon class="image-icon">![Important](warning.png)</icon> **IMPORTANT:**
@@ -464,15 +464,15 @@ The same for invoices/credit notes and payments: if `Accounting ID` is present -
 
 In this menu, there are a few more settings and tools related to the Xero add-on:
 
-- **Connect to Xero** - if the Splynx-Xero addon was disconnected from the Xero account, you have to reconnect here;
+* **Connect to Xero** - if the Splynx-Xero addon was disconnected from the Xero account, you have to reconnect here;
 
-- **Refresh OAuth Token** - setting to refresh the OAuth token;
+* **Refresh OAuth Token** - setting to refresh the OAuth token;
 
-- **Edit connection** - used for editing the connection with Xero, when the credentials were changed in Xero;
+* **Edit connection** - used for editing the connection with Xero, when the credentials were changed in Xero;
 
-- **Manual Synchronization** - used to open `Finance → Xero Accounting` when you are located in other menu window;
+* **Manual Synchronization** - used to open `Finance → Xero Accounting` when you are located in other menu window;
 
-- **Customers manual pairing** - this function is used where there are existing customers in Splynx as well as Xero. There is a `Load Xero customers for manual pairing` button. This feature pulls the customer list from Xero into Splynx and allows the admin to manually pair the customers without having to create them in either platform again;
+* **Customers manual pairing** - this function is used where there are existing customers in Splynx as well as Xero. There is a `Load Xero customers for manual pairing` button. This feature pulls the customer list from Xero into Splynx and allows the admin to manually pair the customers without having to create them in either platform again;
 
 ![load for pair](load_for_manual_pairing.png)
 
@@ -480,8 +480,8 @@ In this menu, there are a few more settings and tools related to the Xero add-on
 
 We have 3 customers and they are paired, if the status is `Not paired` in the "status" field, you can find the required customer from Xero to pair with this customer.
 
-- **Tools** - this menu is used for resetting the accounting database, all items that were selected previously in `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` will be erased. It is mainly used when the organization changes. Before changing the organization, the accounting database must be reset:
+* **Tools** - this menu is used for resetting the accounting database, all items that were selected previously in `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` will be erased. It is mainly used when the organization changes. Before changing the organization, the accounting database must be reset:
 
 ![xero tools](xero_tools.png)
 
-- **Module Config** - the link is used to open the Xero add-on configuration page (`Config → Integrations → Modules list → Xero Accounting`).
+* **Module Config** - the link is used to open the Xero add-on configuration page (`Config → Integrations → Modules list → Xero Accounting`).

@@ -13,11 +13,11 @@ To install the Xero add-on, navigate to `Config → Integrations → Add-ons`:
 
 ![addons](addons.png)
 
-In the list of available add-ons, click on the *Update (apt)* button, then locate or search for `splynx-xero`. Once located, click install button in the *Actions* column to begin the installation process:
+In the list of available add-ons, click on the `Update (apt)` button, then locate or search for `splynx-xero`. Once located, click on the *Install* button in the *Actions* column to begin the installation process:
 
 ![install](install.png)
 
-To install the add-on via CLI, the following commands can be used:
+To install the add-on via CLI, use the following commands:
 
 ```bash
 apt-get update  
@@ -32,9 +32,10 @@ Once the installation has completed, navigate to `Config → Integrations → Mo
 
 The general configuration of the Xero integration module can be viewed and edited here. First of all we need to enable **Entry points status for portal** and specify the **Splynx domain** in the `Accounting API settings` section.
 
-The **Splynx domain** must be the same as the **API domain URL** but without last slash `/`. **HTTPS is required!**
+The **Splynx domain** must be the same as the **API domain URL** but without the last slash `/`. **HTTPS is required!**
 
 ![settings1](settings1.png)
+![settings1](settings1_2.png)
 
 
 ### Synchronization settings:
@@ -43,11 +44,11 @@ The **Splynx domain** must be the same as the **API domain URL** but without las
 
 - **Payment method ID** - select the payment method for imported payments. Payments with selected method id will not be pushed to Xero;
 
-- **Bank statements group** - group bank statements by "month" or "day";
+- **Payment statement grouping** - group payment statements by "month" or "day";
 
-- **Partners ignore list** - select the [partners](administration/main/partners/partners.md) of which will be ignored in sync process. Customers, invoices and payments of the partners selected here, **WILL NOT** be synced with Xero;
+- **Partners ignore list** - select the [partners](administration/main/partners/partners.md) of which will be ignored in the sync process. Customers, invoices and payments of the partners selected here, **WILL NOT** be synced with Xero;
 
-<icon class="image-icon">![Note](note.png)</icon>  **NOTE:** Only one partner should be synced - multiple partner sync is not supported in accounting integrations.
+<icon class="image-icon">![Note](note.png)</icon>  **NOTE:** Only one partner should be synced - the multiple partner sync is not supported in accounting integrations.
 
 - **Payments synchronization direction** - define the direction of syncing payments: `Xero → Splynx`, `Splynx → Xero` or `Bidirectional`. If **Xero to Splynx** direction is selected - all payments which were created in Splynx will not be synced to Xero;
 
@@ -65,7 +66,9 @@ The **Splynx domain** must be the same as the **API domain URL** but without las
 </details>
 <br>
 
-- **Payments push to Xero** - select the [payment methods](configuration/finance/payment_methods/payment_methods.md) to sync to Xero, this selection only applies if the selected method to sync payments is set to `Splynx → Xero`;
+- **Payments push to Xero** - select the [payment methods](configuration/finance/payment_methods/payment_methods.md) to sync to Xero. This selection only applies if the selected method to sync payments is set to `Splynx → Xero`;
+
+![settings1](settings2_1.png)
 
 - **Import payments from date** - specify the date in 'Y-m-d'(2021-03-31) format, which will be used as the start date for importing all payments;
 
@@ -73,7 +76,7 @@ The **Splynx domain** must be the same as the **API domain URL** but without las
 
 - **Import overpayments from date** - specify the date in 'Y-m-d'(2021-03-31) format, which will be used as the start date for importing all overpayments (if customer accidentally pays too much);
 
-- **Xero non invoice payment type** - used to choose the type (`Prepayment` or `Overpayment`) of Splynx payment to export without invoice;
+- **Xero non invoices/credit notes payment type** - used to choose the type (`Prepayment` or `Overpayment`) of Splynx payment to export without invoice;
 
 
 
@@ -82,8 +85,8 @@ The **Splynx domain** must be the same as the **API domain URL** but without las
 <div markdown="1">
 
 
-The separate account has a rolling balance as a contra account for all payments that come from Splynx. Some customers paid R500 instead of R499 and the prepayments were allocated to your separate account.
-On allocation, you’ll take R499 of the payment to the invoice, and the R1 will just remain in the account as a running total. At the end of the year the R1 amount will be significant and unallocated on the account.
+A separate account has a rolling balance as a contra account for all payments that come from Splynx. Some customers paid R500 instead of R499 and the prepayments were allocated to your separate account.
+On allocation, you’ll take R499 of the payment to the invoice, and the R1 will just remain in the account as a running total. At the end of the year, the R1 amount will be significant and unallocated on the account.
 It would be much easier if all R500 could simply be allocated to the client's account. Then, we can allocate R499 from the overpayment to the invoice and the R1 'overpayment' will end up in the customer's balance.
 
 
@@ -91,15 +94,15 @@ It would be much easier if all R500 could simply be allocated to the client's ac
 </details>
 <br>
 
-- **Create exceeding invoice payments in Xero** - toggle in the enabled state allows to create a payment in Xero when the Splynx payment amount exceeds the Xero `Due` invoice amount. On Xero side will be created a payment with the type chosen in the **Xero non invoice payment type** select menu (`Prepayment` or `Overpayment`), such payment won't be link to the invoice.
+- **Create exceeding invoices/credit notes payments in Xero** - toggle in the enabled state allows to create a payment in Xero when the Splynx payment amount exceeds the Xero `Due` document amount. On Xero side will be created a payment with the type chosen in the **Xero non invoice payment type** select menu (`Prepayment` or `Overpayment`). Such payment won't be linked to the invoice.
 In disabled status, when there is a partially paid invoice on Xero side, a Splynx payment won't be exported to Xero and you will see the error message - `A validation exception occurred - Payment amount exceeds the amount outstanding on this document` in `Administration → Logs → Accounting integrations`.
 
 
-<details style="font-size: 15px; margin-bottom: 5px;">
+<!-- <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example</b></summary>
-<div markdown="1">
+<div markdown="1"> -->
 
-Let's say in Xero add-on config, we use the `Overpayment` value in the **Xero non invoice payment type** select menu. The **Create exceeding invoice payments in Xero** toggle is **disabled**. The option **Create payments for prepayments** is **disabled**.
+Let's say in Xero add-on config, we use the `Overpayment` value in the **Xero non invoice/credit notes payment type** select menu. The **Create exceeding invoices/credit notes payments in Xero** toggle is **disabled**. The option **Create payments for prepayments** is **disabled**.
 
 ![image](exc_addon_config.png)
 
@@ -157,7 +160,7 @@ Also, you can check the log in `Administration → Logs → Accounting integrati
 
 ![image](exc5.png)
 
-To fix this problem, it's necessary to enable **Create exceeding invoice payments in Xero** toggle and press **Save**, after that, export a new payment from Splynx to Xero one more time.
+To fix this problem, it's necessary to enable **Create exceeding invoices/credit notes payments in Xero** toggle and press **Save**, after that, export a new payment from Splynx to Xero one more time.
 
 ![image](exc6.png)
 
@@ -183,7 +186,7 @@ Export payment: 2022-01-00051 Exceeds amount of document. Export as Overpayment
 
 ![image](exc9.png)
 
-Finally, you can make payments correction and if it's necessary, remove overpayment on Xero side
+Finally, you can make corrections for payments and if it's necessary, remove overpayment on Xero side
 
 ![image](exc10.png)
 
@@ -195,9 +198,9 @@ Related Read:
 
 - [Delete an account transaction](https://central.xero.com/s/article/Delete-an-account-transaction?userregion=true).
 
-<icon class="image-icon">![Note](note.png)</icon> **NOTE:**
+<icon class="image-icon">![Note](warning.png)</icon> **NOTE:**
 
-If the option **Create payments for prepayments** is not used (a toggle is **disabled**) and you decide to import the (overpayments) payments from Xero to Splynx, such payments will be imported to Splynx as bank statements and should be paired with the necessary customer (-s) manually.
+If the option **Create payments for prepayments** is not used (a toggle is **disabled**) and you decide to import the (overpayments) payments from Xero to Splynx, such payments will be imported to Splynx as payment statements and should be paired with the necessary customer (-s) manually.
 
 ![image](bnk1.png)
 
@@ -205,7 +208,8 @@ Suggested read: [Payment statement processing](finance/payment_statement_process
 
 </div>
 </details>
-<br>
+
+![settings1](settings2_2.png)
 
 - **Prepayments Account code** - a unique code (limited to 10 characters) of prepayments items (the expenditures that have been paid for in advance) in Xero account (`Accounting menu → Advanced → Chart of Accounts`);
 
@@ -215,7 +219,7 @@ Suggested read: [Payment statement processing](finance/payment_statement_process
 
 - **Create payments for overpayments** - a toggle allows to enable creating payment for overpayment in Splynx or, in disabled status - add such payment to the payment (bank) statements only. Used on payments import;
 
-- **Create payment without invoice** - a toggle allows to enable/disable creating payment in Splynx when customer doesn't have invoice. Used on payments import. **Attention:** in some cases can lead to duplicate payments;
+- **Create payments without invoices/credit notes** - a toggle allows to enable/disable creating payment in Splynx when customer doesn't have invoice. Used on payments import. **Attention:** in some cases can lead to duplicate payments;
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Example</b></summary>
@@ -242,6 +246,11 @@ As a result,
 <br>
 
 - **Ignore expense payments on import** - a toggle allows to enable/disable ignoring 'Spend money' (a payment that doesn't relate to a bill, expense claim, or refund) in Xero payments during payments import. If option is enabled, 'Spend money' payments will not be added to bank statements;
+
+![settings1](settings2_3.png)
+
+
+<br>
 
 - **Customer name pattern** - used to set the format of the customer name during the sync to Xero. The value will be visible in **Contact Name** field of customer contact information on Xero side. The following variables can be used in the field: `{id}`, `{login}`, `{name}`, `{email}`;
 
@@ -271,7 +280,7 @@ As a result,
 </details>
 
 
-- **Decimal Places** - by default Xero is rounding prices to `2` decimal places. `4` decimal places can be used instead.
+- **Decimal Places** - by default, Xero is rounding prices to `2` decimal places. `4` decimal places can be used instead.
 
 
 ### Cron settings
@@ -284,6 +293,7 @@ These are the global settings to automatically sync items between the two platfo
 
 - **Customers** - enables/disables automatic syncing of customers;
 - **Invoices** - enables/disables automatic syncing of invoices;
+- **Credit notes** - enables/disables automatic syncing of credit notes;
 - **Payments** - enables/disables automatic syncing of payments.
 
 
@@ -293,52 +303,55 @@ Click on `Finance` item on the sidebar of Splynx and in the drop-down menu click
 
 ![xero icon](xero_icon.png)
 
-In the next step, we have to connect the Xero account with Splynx, to achieve this, click on the **Connect with Xero** button:
+In the next step, we have to connect the Xero account with Splynx. To achieve this, click on the `Connect to Xero` button:
 
 ![connect with Xero](connect.png)
 
-or click on the small gear <icon class="image-icon">![gear_icon](gear_icon.png)</icon> icon on the right side of the window and choose the same option:
+Or click on the small gear <icon class="image-icon">![gear_icon](gear_icon.png)</icon> icon on the right side of the window and choose the same option:
 
 ![connect with Xero](connect1.png)
 
 ![connect with Xero](connect2.png)
 
-After linking your Xero account with Splynx you will see a list of Xero organizations. Select the organization of which you will use with Splynx:
+After linking your Xero account with Splynx you will see a list of Xero organizations. Select the organization which you will use with Splynx:
 
 ![organizations](select_organization.png)
 
-<icon class="image-icon">![Note](note.png)</icon> **NOTE:** **All customers, invoices and payments will only be synced with the selected organization. If the organization must be changed in the Splynx Xero add-on, you will have to reset all synced invoices, customers, and payments, and start from scratch.**
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:** **All customers, invoices/credit notes and payments will only be synced with the selected organization. If the organization must be changed in the Splynx Xero add-on, you will have to reset all synced invoices/credit notes, customers, and payments, and start from scratch.**
 **The information how to reset the accounting database you can find below of this tutorial.**
 
 When the Xero account linking process is completed, the next step is to import mapping settings (chart accounts, tax rates, and bank accounts from Xero) into Splynx. Click on the `Import mapping settings into Splynx` button to achieve this.
 
 ![mapping](mapping_settings.png)
 
-When this process completed, navigate to `Config → Finance` and find the next sections: **Accounting categories**, **Accounting bank accounts** and **Accounting taxes** - each of which will have to be configured.
+When this process is completed, navigate to `Config → Finance` and find the following sections: **Accounting categories**, **Accounting bank accounts** and **Accounting taxes** - each of which will have to be configured.
 
 ![config-finance](config_finance.png)
 
 Let's start with **Accounting categories**:
 
 ![accounting_categories](accounting_categories.png)
+![accounting_categories](accounting_categories2.png)
 
-In `Categories map` section, ALL categories must be selected with the related item from `Accounting categories` table. Pay attention to the `Additional 2` field in `Accounting categories` table, each category should have an account code. To enable displaying of additional fields, click on the breadcrumbs (column selector) button at the bottom of the page and simply enable the necessary fields to display:
+In `Categories map` section, ALL categories must be selected with the related item from `Accounting categories` table. Pay attention to the `Additional 2` field in `Accounting categories` table, each category should have an account code. To enable displaying of additional fields, click on the breadcrumbs (column selector) button at the top right of the table and simply enable the necessary fields to display:
 
 ![show fields](show_fields.png)
 
-<icon class="image-icon">![Note](note.png)</icon> **NOTE:** **If the synced category has no account code - Xero will not be able to sync invoices for this category.**
+<icon class="image-icon">![Note](note.png)</icon> **NOTE:** **If the synced category has no account code - Xero will not be able to sync invoices/credit notes for this category.**
 
 As soon as the relevant categories are configured, we can proceed with **bank accounts**:
 
 ![bank accounts](bank_accounts.png)
+![bank accounts](bank_accounts2.png)
 
 We will follow the same procedure with bank accounts, each bank account should have an account code (`Additional 3` field here) and the default bank account should be selected.
 
 The last step in the accounting config is **tax rates** configuration. The tax values in Splynx must match the same values in Xero:
 
 ![taxes](taxes.png)
+![taxes](taxes2.png)
 
-Once `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` are configured, the Splynx Xero addon is ready to start syncing.
+Once `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` are configured, the Splynx Xero add-on is ready to start syncing.
 
 In our test environment, we have 2 customers and a few invoices for each customer, let's export them to Xero:
 
@@ -376,7 +389,7 @@ On the Xero side, we can see our synced customers and invoices:
 
 ![xero customer](xero_inv.png)
 
-Let's image that customers have paid 2 invoices in Splynx. Now we can export payments from `Splynx → Xero`:
+For example, customers have paid 2 invoices in Splynx. Now we can export payments from `Splynx → Xero`:
 
 ![image](exp_payments.png)
 
@@ -406,25 +419,19 @@ Here you can check the status of synchronization in relation to each payment ite
 ![statements list](statements_list.png)
 
 
-Sometimes it's required to manually pair a statement record (create a payment in Splynx) to a customer, for example a prepayment (overpayment) was received on Xero side.
+Sometimes it's required to manually pair a statement record (create a payment in Splynx) to a customer, for example a prepayment (overpayment) was received on the Xero side.
 
 ![image](prepayment.png)
 
-To do the manual pair, open `Finance → Payment statements → History`, choose Xero statements then click on the <icon class="image-icon">![manual_pair_icon](manual_pair_icon.png)</icon> icon related to the item that is need to be paired
+To do the manual pair, open `Finance → Payment statements → History`, choose Xero statements then click on the <icon class="image-icon">![manual_pair_icon](manual_pair_icon.png)</icon> icon related to the item that is need to be paired:
 
 ![image](prepayment1.png)
 
-and find the necessary customer, invoice or proforma invoice to pair with:
+Then find the necessary customer, invoice or proforma invoice to pair with:
 
 ![manual_pair2](manual_pair1.png)
 
 ![manual_pair2](manual_pair2.png)
-
-![manual_pair2](manual_pair3.png)
-
-![manual_pair2](manual_pair4.png)
-
-![manual_pair2](manual_pair5.png)
 
 We recommend to check payment (bank) statements on a regular basis.
 
@@ -439,11 +446,11 @@ Sync logs can be found under `Administration → Logs → Accounting integration
 
 ![logs](logs.png)
 
-If a customer/invoice/payment has an `Accounting ID`, this indicates that it was synced, if not - it was not synced.
+If a customer/invoice/credit note/payment has an `Accounting ID`, this indicates that it was synced, if not - it was not synced.
 
 ![logs customers](logs_customer.png)
 
-The same for invoices and payments, if `Accounting ID` is present - it was synced:
+The same for invoices/credit notes and payments: if `Accounting ID` is present - it was synced:
 
 `Invoice ID` corresponds with Splynx invoice ID's.
 
@@ -451,17 +458,15 @@ The same for invoices and payments, if `Accounting ID` is present - it was synce
 
 `Payment ID` corresponds with payment ID's in Splynx.
 
-![logs payments](logs_payments.png)
-
 ### Xero tweaks
 
 ![xero tweaks](xero_tweaks.png)
 
 In this menu, there are a few more settings and tools related to the Xero add-on:
 
-- **Connect with Xero** - if the Splynx-Xero addon was disconnected from the Xero account, you have to reconnect here;
+- **Connect to Xero** - if the Splynx-Xero addon was disconnected from the Xero account, you have to reconnect here;
 
-- **Refresh OAuth token** - setting to refresh the OAuth token;
+- **Refresh OAuth Token** - setting to refresh the OAuth token;
 
 - **Edit connection** - used for editing the connection with Xero, when the credentials were changed in Xero;
 
@@ -473,10 +478,10 @@ In this menu, there are a few more settings and tools related to the Xero add-on
 
 ![pair customer](pair_customer.png)
 
-We only have 2 customers and they are paired, if the status is `Not paired` in the "status" field, you can find the required customer from Xero to pair with this customer.
+We have 3 customers and they are paired, if the status is `Not paired` in the "status" field, you can find the required customer from Xero to pair with this customer.
 
 - **Tools** - this menu is used for resetting the accounting database, all items that were selected previously in `Accounting categories`, `Accounting bank accounts` and `Accounting tax rates` will be erased. It is mainly used when the organization changes. Before changing the organization, the accounting database must be reset:
 
 ![xero tools](xero_tools.png)
 
-- **Module Config** - the link is used to open the Xero add-on configuration page (`Config → Integration → Modules list → Xero Accounting`).
+- **Module Config** - the link is used to open the Xero add-on configuration page (`Config → Integrations → Modules list → Xero Accounting`).

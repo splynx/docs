@@ -3,7 +3,7 @@ Speedtest
 
 The Splynx Speedtest add-on is used to show administrators and customers, Customer's Download and Upload internet speeds, their Ping, Jitter, Ip address and Latency.
 
-The add-on can be installed in two methods, via CLI or the Web UI
+The add-on can be installed in two methods, via CLI or the Web UI.
 
 To install the splynx-speedtest add-on via CLI, the following commands can be used:
 ```bash
@@ -17,11 +17,11 @@ Navigate to *Config → Integrations → Add-ons*:
 
 ![Add-ons](0.png)
 
-Locate or search for the "splynx-speedtest" add-on and click on the install icon in the *Actions* column
+Locate or search for the "splynx-speedtest" add-on and click on the install icon in the *Actions* column:
 
 ![Integrations addons](config_integrations.png)
 
-Click on the "OK, confirm button" to begin the installation process.
+Click on the `OK, confirm` button to begin the installation process.
 
 ![Install](2.png)
 
@@ -45,7 +45,7 @@ Thereafter, customers will see the SpeedTest window on their Dashboard:
 
 ![Speedtest dashboard](speedtest_dashboard.png)
 
-as well as new SpeedTests in his Services:
+As well as new SpeedTests in his Services:
 
 ![Speedtest services](speedtest_services.png)
 

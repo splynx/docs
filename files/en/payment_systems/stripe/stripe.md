@@ -1,4 +1,4 @@
-Stripe online payments
+Stripe
 ======================
 
 Stripe is a Splynx add-on  used to synchronize customers, invoices and payments with the *Stripe payment gateway* - [https://stripe.com](https://stripe.com).
@@ -7,7 +7,7 @@ Stripe is a Splynx add-on  used to synchronize customers, invoices and payments 
 
 The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server.
 
-To install the Stripe add-on via CLI the following commands can be used:
+To install the Stripe add-on via CLI, the following commands can be used:
 
 
 ```bash
@@ -28,15 +28,16 @@ After the installation process has completed, you have to configure the paramete
 
 ![Module list](4.png)
 
-Locate or search for the "splynx-stripe" add-on and click on the edit icon in the *Actions* column
+Locate or search for the "splynx_stripe_add-on" and click on the *Edit* icon in the *Actions* column:
 
 ![Stripe configuration](configuration.png)
 
-You have to Set your Splynx URL, Company Name, Public Key and Secret Key:
+You have to Set your Splynx URL, Public Key and Secret Key:
 
 ![Stripe main settings](main_settings.png)
+![Stripe main settings](main_settings2.png)
 
-Customers the have to add a credit card in the customer portal:
+Customers have to add a credit card in the customer portal:
 
 ![Stripe add card 1](add_card_1.png)
 
@@ -60,7 +61,7 @@ If everything went well, you will see the status of the invoice marked as *"Paid
 
 ![Stripe paid invoice 2](paid_invoice_2.png)
 
-Additionally, you can charge all customers using one button! Navigate to *Finance → Invoices*, set the period and click on "Charge" as depicted below:
+Additionally, you can charge all customers using one button. Navigate to *Finance → Invoices*, set the period and click on `Charge` as depicted below:
 
 ![Stripe charge invoices 1](charge_invoices_1.png)
 

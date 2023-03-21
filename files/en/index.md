@@ -152,8 +152,6 @@ Table of contents
 
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
-* [Weathermaps](networking/weathermaps/weathermaps.md)
-
 
 
 ##### [Messages](support_messages/support_messages.md)

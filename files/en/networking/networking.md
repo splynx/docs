@@ -7,8 +7,6 @@
 
  * **Mikrotik API** – advanced bandwidth management on RouterOS. CPE configuration and provisioning.
 
- * **SNMP** - monitoring and building weather-maps directly in Splynx.
-
  Please click on each of the network management topics for descriptions and guides to each:
 
  * [Authentication of admins, Radius](networking/authentication_admins_radius/authentication_admins_radius.md)
@@ -45,4 +43,3 @@
 
  * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
- * [Weathermaps](networking/weathermaps/weathermaps.md)

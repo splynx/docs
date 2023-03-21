@@ -281,7 +281,6 @@ Table of contents
     * [Monitoring](configuration/network/monitoring_config/monitoring_config.md)
     * [TR-069 (ACS)](networking/tr069_acs/tr069_acs.md)
     * [NAS types](configuration/network/nas_types/nas_types.md)
-    * [Network Weathermap Editor](configuration/network/network_weathermap_editor/network_weathermap_editor.md)
     * [Radius](configuration/network/radius/radius.md)
     * [Radius advanced](configuration/network/radius_extended/radius_extended.md)
     * [Traffic class](configuration/network/traffic_class/traffic_class.md)

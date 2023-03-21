@@ -27,8 +27,6 @@ In the network configuration section, the following categories are available for
 
 * [NAS types](configuration/network/nas_types/nas_types.md)
 
-* [Network Weathermap Editor](configuration/network/network_weathermap_editor/network_weathermap_editor.md)
-
 * [Radius](configuration/network/radius/radius.md)
 
 * [Radius advanced](configuration/network/radius_extended/radius_extended.md)

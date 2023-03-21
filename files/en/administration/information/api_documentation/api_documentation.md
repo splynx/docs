@@ -181,6 +181,11 @@ Another example - how to use the search with the operator IN:
 
 ---
 
+Another example - how to attach two files into a ticket:
+![image](postman11.png)
+
+---
+
 #### Splynx PHP API template with examples
 
 For the developers, it's recommended to check this [template](https://bitbucket.org/splynx/splynx-php-api/src/master/) (`splynx-php-api/src → SplynxApi.php` and the files in `splynx-php-api/examples`), it provides useful methods on **how to make queries to the Splynx API**.

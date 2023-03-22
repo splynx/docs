@@ -64,7 +64,7 @@ The add-on credentials can be obtained from your [VulaCoin](https://stage.vulaco
 
 ## Purchase of HotSpot vouchers
 
-Before the purchase, you might find it useful to read the following articles on the related topics: [HotSpot](addons_modules/hotspot/hotspot.md), [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md) and [Vouchers (configuration)](configuration/main_configuration/vouchers/vouchers.md).
+Before the purchase, you might find it useful to read the following articles on the related topics: [HotSpot](addons_modules/hotspot_addon/hotspot_addon.md), [Prepaid vouchers](customer_management/prepaid_vouchers/prepaid_vouchers.md) and [Vouchers (configuration)](configuration/main_configuration/vouchers/vouchers.md).
 
 Log in to HotSpot on your mobile, select a bundle and click on `Buy with VulaCoin`:
 

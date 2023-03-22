@@ -74,7 +74,7 @@ Variable | Value | Comment |
 {{ service.router_id }}	| ID number or Router | |
 {{ service.sector_id }}	| ID number of Router's sector | |
 {{ service.taking_ipv4 }}	| 0 - if [Taking IPv4](customer_management/customer_services/customer_services.md) is 'None', 1 - if Taking IPv4 is 'Permanent IP', 2 - if Taking IPv4 is 'Dynamic IP' | |
-{{ service.ipv4_pool_id }} | ID number of [IPv4 Network](https://splynx.com/wiki/?wikipage=Networking/IPv4_networks). Can be used when Taking IPv4 = 'Dynamic IP': 0 - if Taking IPv4 is 'None' or 'Permanent IP' | |
+{{ service.ipv4_pool_id }} | ID number of [IPv4 Network](networking/ip_address_management/ipv4/ipv4.md). Can be used when Taking IPv4 = 'Dynamic IP': 0 - if Taking IPv4 is 'None' or 'Permanent IP' | |
 {{ service.ipv4 }} | IP address. Can be used when Taking IPv4 = 'Permanent IP'. Empty string - if Taking IPv4 is 'None' or 'Dynamic IP' | |
 {{ service.ipv4_route }} | Additional network | |
 

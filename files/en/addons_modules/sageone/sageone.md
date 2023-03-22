@@ -311,11 +311,11 @@ If the customer receipt has been created and processed on *SageOne* side without
 
 ![](manual_pair2.png)
 
-Now we can check the list of transactions to verify all is correct: navigate to the customer transactions tab and check if the transaction have been added accordingly.
+To verify that everything is correct, check the list of transactions. Go to the customer transactions tab and ensure that the transactions have been added correctly.
 
 ---------------------
 
-You might also be interested in the **video tutorials about SageOne integration**
+You might also be interested in the **video tutorials about the SageOne integration**
 
 <details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Click here to expand</b></summary>
@@ -336,7 +336,7 @@ You might also be interested in the **video tutorials about SageOne integration*
 
 ## SageOne accounting integration logs
 
-All actions of the SageOne add-on can be monitored regularly to ensure that the add-on is working as expected. To check the list of add-on activities, navigate to `Administration / Logs / Accounting Integrations`:
+All actions of the SageOne add-on can be monitored regularly to ensure that the add-on is working as expected. To check the list of add-on activities, navigate to `Administration → Logs → Accounting Integrations`:
 
 ![SageOne customers](sageone_track.png)
 
@@ -351,11 +351,11 @@ There are a few more settings and tools related to the SageOne add-on:
 
 - **Import mapping settings into Splynx** - when SageOne login and password are set on the add-on configuration page, press this button to import mapping settings such as *accounting categories* and *bank accounts* into Splynx. Configure the mapping settings according to the steps described above;
 
+- **Pair SageOne same number invoices** - allows to make the request for all unpaired invoices in order to receive their accounting IDs from SageOne and put those IDs into Splynx database. For example, the invoices have been exported but their IDs have not been received and an error *Document Number already exists* occurs when re-exporting;
+
 - **Customers manual pairing** - this function is used where there are existing customers in Splynx as well as SageOne. Press `Load SageOne customers for manual pairing` button, then click on the small gear icon at the top right corner, choose *Customers manual pairing* option. These features pull the customer list from SageOne into Splynx and allow the admin to manually pair the customers without having to create them in either platform again;
 
 - **Module Config** - the link is used to open the SageOne add-on configuration page (`Config → Integration → Modules list → SageOne Accounting`).
-
-- **Pair SageOne same number invoices** - allows to make the request for all unpaired invoices in order to receive their accounting IDs from SageOne and put those IDs into Splynx database. For example, the invoices have been exported but their IDs have not been received and an error *Document Number already exists* occurs when re-exporting.
 
 ---------------------
 

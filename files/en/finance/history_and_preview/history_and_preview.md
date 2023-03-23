@@ -6,6 +6,11 @@ History and preview is the place of mass invoice generation. Here we generate an
   All transactions, invoices and proforma invoices generated for a particular period of time are displayed in previews and can be filtered by a period of time according to your needs, for example, a custom range for a few months or half of the year.
 
 ![History](history.png)
+
+* **Date** -  specify the date that corresponds to the customers' Billing day. For instance, if you indicate a specific date, the system will generate a preview of all the customer invoices that are scheduled to be billed on that day (Date = Customers' Billing date).
+* **Partners** - choose which partner or partners you'd like to show a preview for.
+* **Generate separate preview per partner** - enable this option to generate a separate preview per partner.
+
 ![Period](period.png)
 
 When you click on the <icon class="image-icon">![Download icon](download_icon.png)</icon> download icon in the actions column, a window will appear with all transactions, invoices and proforma invoices generated for that period. You can download the list of transactions and invoices in HTML or CSV format to review the list before confirming it to be issued.

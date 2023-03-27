@@ -5,7 +5,7 @@ Safaricom M-PESA
 
 ### Add-on installation
 
-The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server.
+The add-on can be installed in two methods: via the CLI or the Web UI of your Splynx server.
 
 To install the **Safaricom M-PESA** add-on via CLI, the following commands can be used:
 
@@ -15,7 +15,7 @@ sudo apt-get install splynx-safaricom-mpesa
 ```
 To install it via the Web UI:
 
-Navigate to `Config -> Integrations -> Add-ons`:
+Navigate to `Config → Integrations → Add-ons`:
 
 ![(image)](1.png)
 

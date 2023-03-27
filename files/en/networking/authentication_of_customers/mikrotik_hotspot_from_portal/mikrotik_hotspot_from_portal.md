@@ -179,8 +179,7 @@ Assuming we have fresh Splynx instance, the following steps should be taken:
 9. Enable API for the router in Winbox, create the API group and API user:
 
     ![picture45](picture45.png)
-    ![picture37](picture37.png)
-    ![picture38](picture38.png)
+    ![picture45](group_full.png)
 
 10. Create the [internet service](customer_management/customer_services/customer_services.md) for the customer. Select the Router (required !) and permanent IP:
 

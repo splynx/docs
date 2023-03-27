@@ -16,11 +16,9 @@ In all types of API authentication it is important to have API enabled on the Mi
 ![API port](api_port.png)
 
 
-After the settings are enabled on both platforms, it is necessary to create a special admin account on the router for Splynx. The admin account will be used by the Splynx API to login to the router and to make any changes thereon. You can create a special access group with the following permissions and then include the admin to this group:
+After the settings are enabled on both platforms, it is necessary to create a special admin account on the router for Splynx. The admin account will be used by the Splynx API to login to the router and to make any changes thereon. You can create a full group and then include the admin to this group:
 
-![Group](group.png)
-
-![User](user.png)
+![Group](group_full.png)
 
 Below are descriptions of all types of API authentications and how Splynx covers it with Mikrotik RouterOS:
 

@@ -7,9 +7,9 @@ In our case, Splynx can connect each of the APs as a router over the network and
 
 On **MikroTik Wireless Access Point** device, make the following configuration steps:
 
-1. Create a new user account and a special access group with the following permissions. After that, include the user account to the created group:
+1. Create a new user account and a full group. After that, include the user account to the created group:
 
-![image](img_1.png)
+![image](group_full.png)
 
 2. Disable **Default Authenticate** option in your wireless interface configuration:
 

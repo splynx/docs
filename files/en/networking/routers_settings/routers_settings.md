@@ -111,9 +111,9 @@ There are 3 more buttons:
 
 ***************************************************************
 
-Please make sure that correct permissions are set for Splynx API user group (for Splynx MikroTik API & Backup processing):
+Please make sure to set correctly the Splynx API user group (for Splynx MikroTik API & Backup processing):
 
-![permissions](correct_permissions.png)
+![permissions](group_full.png)
 
 When MikroTik router is connected with Splynx via API for the first time, Splynx will login to the router and create backup of router’s config via MikroTik API and FTP services.
 

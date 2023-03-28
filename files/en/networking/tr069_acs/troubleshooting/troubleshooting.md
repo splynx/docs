@@ -27,6 +27,33 @@ Follow these instructions to troubleshoot problems with **TR-069 (ACS)**:
 ------------
 
 <details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Encrypt on Splynx server and connect with SSL from Mikrotik</b></summary>
+<div markdown="1">
+
+If you are using **HTTPS/SSL** on your Splynx server you can get **an error about SSL, asking for the local certificate**. In this case you need to run 2 commands in Mikrotik terminal:
+
+```
+/tool fetch https://letsencrypt.org/certs/isrgrootx1.pem
+```
+```
+/certificate import file-name=isrgrootx1.pem passphrase="
+```
+
+**To remove the expired certificate use the next command:**
+
+Example:
+
+```
+/certificate remove trustid-x3-root.pem.txt_0
+
+```
+
+</div>
+</details>
+
+------------
+
+<details style="font-size: 15px; margin-bottom: 5px;">
 <summary><b>Device is registered in Splynx but no connection established</b></summary>
 <div markdown="1">
 

@@ -27,7 +27,7 @@ Follow these instructions to troubleshoot problems with **TR-069 (ACS)**:
 ------------
 
 <details style="font-size: 15px; margin-bottom: 5px;">
-<summary><b>Encrypt on Splynx server and connect with SSL from Mikrotik</b></summary>
+<summary><b>Let's encrypt on Splynx server and connect with SSL from Mikrotik</b></summary>
 <div markdown="1">
 
 If you are using **HTTPS/SSL** on your Splynx server you can get **an error about SSL, asking for the local certificate**. In this case you need to run 2 commands in Mikrotik terminal:

@@ -19,7 +19,7 @@ Navigate to `Config → Integrations → Add-ons`:
 
 ![(image)](1.png)
 
-Locate or search for the `splynx-safaricom-mpesa` add-on and click on the *Install* icon in the *Actions* column, you be presented with a window to confirm or cancel the installation, click on the **OK, confirm** button to begin the installation process:
+Locate or search for the `splynx-safaricom-mpesa` add-on and click on the *Install* icon in the *Actions* column, you be presented with a window to confirm or cancel the installation. Click on the **OK, confirm** button to begin the installation process:
 
 ![(image)](2.png)
 
@@ -29,7 +29,7 @@ Locate or search for the `splynx-safaricom-mpesa` add-on and click on the *Insta
 
 After the installation process has completed, you should configure the add-on.
 
-Navigate to `Config / Integrations / Modules list`
+Navigate to `Config → Integrations → Modules list`:
 
 ![(image)](Selection_150.png)
 
@@ -38,30 +38,41 @@ Locate or search for the `splynx_addon_safaricom_mpesa` item and click on the
 
 ![(image)](Selection_151.png)
 
-![(image)](image2018-9-19_14-58-28.png)
+The general configuration of the *Safaricom M-PESA* integration module can be viewed and edited here. Double check if **Entry points status for portal** option is enabled and **API domain** (with the last slash) value is set correctly. **API key**, **API secret** - the default auto-generated values. Do not change this unless entirely necessary.
 
-The general configuration of the *Safaricom M-PESA* integration module can be viewed and edited here. Double check if **Entry points status for portal** option is enabled and **API domain** (with last slash) value is set correctly. **API key**, **API secret** - the default auto-generated values. Do not change this unless entirely necessary.
+![(image)](mpesa_config1.png)
+
+![(image)](mpesa_config2.png)
+
+![(image)](mpesa_config3.png)
 
 - **Mpesa credentials:** **Consumer Key/Secret**, **Short code**, **Lipa Na Mpesa Online Passkey** and **(Initiator) Security Credential** - please register your [M-PESA account](https://www.safaricom.co.ke/personal/m-pesa/getting-started/register-for-m-pesa). After registration, you can obtain these values from MPESA.
 
+![(image)](mpesa_config4.png)
+
+
+
+
+
 **Common settings:**
 
-- **Splynx url** - the URL of your Splynx server (without last slash);
+- **Splynx url** - the URL of your Splynx server (without the last slash);
 - **Payment method ID** - select the [payment method](configuration/finance/payment_methods/payment_methods.md) for payments that will be made. By default the new method will be created - *M-PESA Paybill*;
-- **Search customer by** - what field (*Invoice number*, *M-PESA Phone*, *Login*) will be used to search for the customer in Splynx (during payment);
+- **Search customer by** - what field (*Invoice number*, *Login*) will be used to search for the customer in Splynx (during payment);
 - **Check Debt amount** - the toggle allows to enable/disable to check whether the payment amount is sufficient for paying the debt. If enabled and the customer's account balance is less than 0, the payment amount must be equal to or larger than the customer's debt;
 - **Minimum payment amount** - Minimum payment's amount (no less than 0). The payment amount must be larger than this value;
-- **Bank statements group** - Group of bank statements by (`Finance → Payment Statements → History`) `month` or `day`';
+- **Payment statement grouping** - Group of payment statements by (`Finance → Payment Statements → History`) `Month` or `Day`';
 - **Convert received funds to USD** - convert received payment from MPESA (Kenyan shilling) to USD. Enable if you use USD currency in Splynx;
 - **USD to KES exchange rate** - the current Splynx internal dollar exchange rate of the KES;
-- **Ignore validation** - toggle is used to ignore/allow payment validation automatically when confirmation is received. If the toggle is enabled and the confirmation is received but there is no validation, the payment will be created. Otherwise, the payments will be rejected.
+- **Create payment on** - you can create a payment on *Validation*, *Confirmation*, *Validation*/*Confirmation* or both. Some options should be used with care as they can process payments without confirmation from MPESA.
 
 
-The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, near the `splynx-safaricom-mpesa` module item in *Actions* column, click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon. More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
+The configuration of add-on **Entry points** can be found in `Config → Integrations → Modules list`, next to the `splynx_addon_safaricom_mpesa` module item in the *Actions* column. 
+Click on the <icon class="image-icon">![entry_point](entry_point.png)</icon> (*Edit entry points*) icon. More information about the *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
 
-By using **Entry points**, you can enable add-on features which can allow customers to pay for (proforma) invoices, add money to the balance from *Dashboard* etc.
+By using **Entry points**, you can enable add-on features which can allow customers to pay for (proforma) invoices, add money to the balance from the *Dashboard* etc.
 
-After the successful configuration of the add-on, you should register your URLs under `Config → Integrations → Safaricom M-PESA`:
+Register your URLs under `Config → Integrations → Safaricom M-PESA` after successfully configuring the add-on:
 
 ![(image)](Selection_160.png)
 
@@ -71,17 +82,25 @@ After the successful configuration of the add-on, you should register your URLs 
 
 In this example, the customer pays via **SIM menu**.
 
-![(image)](1-Select-MPESA-Paybill.png) ![(image)](image2018-9-3_15-30-23.png) <br>
+![(image)](1-Select-MPESA-Paybill.png)
 
-![(image)](image2018-9-3_15-31-1.png) ![(image)](image2018-9-3_15-34-2.png)
+![(image)](image2018-9-3_15-30-23.png)
+
+![(image)](image2018-9-3_15-31-1.png)
+
+![(image)](image2018-9-3_15-34-2.png)
 
 - **Business no.** – MPESA short code (Paybill Number). This is the same value as `Config → Integrations → Safaricom M-PESA → Short code`.
 
-![(image)](image2018-9-3_15-37-33.png) ![(image)](image2018-9-3_15-40-0.png)
+![(image)](image2018-9-3_15-37-33.png) 
 
-- **Account no.** – the value that will be sent to Splynx, it depends on the item (*Invoice number*, *M-PESA Phone*, *Login*) which is selected in `Config → Integrations → Safaricom M-PESA → Search customer by`, according to it the customer will be found.
+![(image)](image2018-9-3_15-40-0.png)
 
-![(image)](image2018-9-3_15-40-23.png) ![(image)](image2018-9-3_15-41-50.png)
+- **Account no.** – the value that will be sent to Splynx, it depends on the item (*Invoice number*, *M-PESA Phone*, *Login*) which can be selected in `Config → Integrations → Safaricom M-PESA → Search customer by`. According to this value, the customer will be found.
+
+![(image)](image2018-9-3_15-40-23.png) 
+
+![(image)](image2018-9-3_15-41-50.png)
 
 After making a payment, the customer receives an SMS:
 
@@ -90,7 +109,7 @@ After making a payment, the customer receives an SMS:
 Their payments will appear in Splynx:
 ![(image)](image2018-9-3_15-45-43.png)
 
-The customer can pay from Portal with confirmation on cell phone.
+The customer can pay from the Customer Portal with confirmation on cell phone.
 
 ![(image)](pay_from_portal.png)
 
@@ -104,7 +123,7 @@ Here are the requirements to use Paybill - https://www.safaricom.co.ke/personal/
 
 <icon class="image-icon">![warning](warning.png)</icon> **NOTE:** Splynx supports only the **Paybill** option as the payment option and does not support a **Till Number**.
 
-After the Paybill application and approval, you need a developers account from the official *M-Pesa Daraja Portal* in order to integrate the customers to the business [API](https://www.safaricom.co.ke/business/corporate/m-pesa-payment-services/m-pesa-api) (Customer to Business - C2B).
+After the Paybill application and approval, you need a developers' account from the official *M-Pesa Daraja Portal* in order to integrate the customers to the business [API](https://www.safaricom.co.ke/business/corporate/m-pesa-payment-services/m-pesa-api) (Customer to Business - C2B).
 
 **Daraja Portal**
 
@@ -161,9 +180,9 @@ This step involves moving your application into production.
 This is another M-PESA portal, where your app is hosted. It can be found on the website - https://org.ke.m-pesa.com.
 
 **Note:** From **30th September 2021**, *Safaricom* discontinues the need for installation of an M-PESA [digital certificate](how_to_apply_and_install_the_mpesa_digital_certificate.pdf) on the computers as a requirement to access the M-PESA organization portal. This would be replaced with a 6-digit One Time Password (OTP), for each user login that has been in use and confirmed to provide additional security over the user’s password by ensuring that only authorized users can log in. This decision was made to retire the *Internet Explorer* which is coming to the end of its life and is the only browser that supports certificates.
-From now henceforth, no new certificates will be issued. The expired ones will as well not been renewed.
+From now henceforth, no new certificates will be issued. The expired ones will not be renewed either.
 
-### Add-on log files
+### Logs
 
 *M-PESA* add-on logs can be found in `Administration → Logs`:
 

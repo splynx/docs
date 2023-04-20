@@ -39,7 +39,28 @@ Here is a description of all available fields:
 
 * **Prefix** - define a pattern to match phone numbers. Use these 2 marked tips to define a prefix correctly. In this case prefix `9876{!}` will match all phone numbers starts with 9876:
 
-![examples](examples.png)
+#### Special symbols supported:
+
+| Symbol      | Description                                                                       |
+|-------------|-----------------------------------------------------------------------------------|
+| `{!}`       | Zero or more any characters.                                                      |
+
+---
+
+#### Examples:
+
+| Phone pattern        | Description                                                                             |
+|----------------------|--------------------------------------------------------------                                                                      |
+| `260{!}`            | Any phone number started from 260                                                       |
+
+-----------
+#### Important
+
+The previous complex patterns, like `{x}` (one digit from 0 to 9), `{.}` (one or more any characters), `{n}` (one digit from 2 to 9), etc. are no longer supported in Splynx.
+
+In case complex patterns have already been used, it is necessary to change them.
+
+<!-- ![examples](examples.png) -->
 
 ![test_mask](test_mask.png)
 

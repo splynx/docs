@@ -7,11 +7,11 @@ To install this module navigate to `Config → Integrations → Add-ons` and fin
 
 ![install](install.png)
 
-Once this done navigate to `Config → Integrations → Modules list` for initial setup:
+Once this done, navigate to `Config → Integrations → Modules list` for initial setup:
 
 ![modules_list](icons.png)
 
-and click on edit button under the module:
+Then click on the *Edit* button under the module:
 
 ![edit_module](edit_module.png)
 
@@ -19,13 +19,15 @@ Here you should specify **AADE myData API settings**:
 
 ![settings](settings.png)
 
+![settings](settings2.png)
+
 * **Username** - registered aade-user-id;
 
 * **Subscription key** - Ocp-Apim-Subscription-Key.
 
 After that, you should configure **synchronization settings**:
 
-![settings2](settings_2.png)
+![settings](settings3.png)
 
 * **Partners ignore list** - select partners which will be ignored through synchronization process;
 
@@ -59,17 +61,19 @@ Then, please configure **invoices categories**:
 
 ![categories](categories.png)
 
+![categories](categories_b.png)
+
 In this form the categories and types of invoices should be mapped with the loaded categories and types from AADE:
 
 ![categories2](categories1.png)
 
 ![categories3](categories2.png)
 
-Once this done you should configure mapping of **payment methods**:
+Once this done, you should configure mapping of **payment methods**:
 
 ![payment_methods](pay_methods.png)
 
-After that, there is one more place to update settings, it's under `Config → Integrations → Splynx AADE myDATA` module:
+After that, there is one more place to update settings, it's under `Finance → Splynx AADE myDATA`:
 
 ![aade](module_config.png)
 
@@ -83,10 +87,10 @@ To find out how these categories and types should be configured, you can downloa
 
  <icon class="image-icon">![image](warning.png)</icon> **IMPORTANT** - the invoice which contains positive (100) and negative (-100) items can't be synced to AADE. These items should be separated into different invoices.
 
-To find the list of invoices that have been synchronized with AADE, navigate to `Administration → Logs → einvocing`:
+To find the list of invoices that have been synchronized with AADE, navigate to `Administration → Logs → eInvocing`:
 
 ![logs](logs.png)
 
 ![logs2](logs2.png)
 
-`einvoicing ID` field contains the ID of the synced invoice. If this field is empty, it means that the invoice has not been synced.
+`eInvoicing ID` field contains the ID of the synced invoice/credit note. If this field is empty, it means that the invoice/credit note has not been synced.

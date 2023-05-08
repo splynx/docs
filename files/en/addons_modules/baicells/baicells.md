@@ -19,17 +19,17 @@ apt-get install splynx-baicells-lte
 ```
 Alternatively, you can install it from the Web UI:
 
-Navigate to `Config -> Integrations -> Add-ons`:
+Navigate to `Config → Integrations → Add-ons`:
 
-Locate or search for the "Splynx-baicells-LTE" addon:
+Locate or search for the "splynx-baicells-lte" addon:
 
 ![1.png](1.png)
 
-Click on the install icon in the "Actions" column:
+Click on the install icon in the *Actions* column:
 
 ![2.png](2.png)
 
-Click on "OK, confirm" to start the installation process:
+Click on `OK, confirm` to start the installation process:
 
 ![3.png](3.png)
 
@@ -37,11 +37,13 @@ After the installation process has completed, in the *Networking* module, you wi
 
 First of all, you should create a new LTE system:
 
-![Selection_035.jpg](Selection_035.jpg)
+![create_lte](create_lte.png)
 
-![Selection_036.jpg](Selection_036.jpg)
+![Selection_035.jpg](lte_035.jpg)
 
-![Selection_037.jpg](Selection_037.jpg)
+![Selection_036.jpg](lte_036.jpg)
+
+![Selection_037.jpg](lte_037.jpg)
 
 After you've created a LTE system, you can create SIM-cards for that system. In order to achieve this you should navigate to _Networking → LTE Config_ and create cards (manually or using the import function):
 

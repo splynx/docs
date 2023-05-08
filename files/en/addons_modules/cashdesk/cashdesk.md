@@ -13,7 +13,7 @@ apt-get install splynx-cashdesk
 ```
 To install the add-on from the Web UI:
 
-Navigate to *Config -> Integrations -> Add-ons:*
+Navigate to *Config → Integrations → Add-ons:*
 
 
 ![01.png](01.png)
@@ -24,18 +24,20 @@ Navigate to *Config -> Integrations -> Add-ons:*
 
 ![02.png](02.png)
 
-3. Click on the "OK, confirm" button to begin the installation process:
+3. Click on the `OK, confirm` button to begin the installation process:
 
 ![03.png](03.png)
 
 
-Once the installation process has completed, all configurations for the add-on can be found in `Config / Modules / List`:
+Once the installation process has completed, all configurations for the add-on can be found in `Config → Integrations → Modules list`:
 
 ![Selection_892.png](Selection_892.png)
 
-Simply click on the edit icon of the Cashdesk module and you will be able to change settings of the add-on like the Payment method ID, etc:
+Simply click on the *Edit* icon of the Cashdesk module and you will be able to change settings of the add-on like the Available payment methods, etc:
 
-![Selection_893.png](Selection_893.png)
+![main info](main_info.png)
+
+![settings](settings_payments.png)
 
 To create a Cashdesk user, it is necessary to create a new administrator with CashDesk access enabled. Other permissions to Splynx access can be defined or left to no permissions to grant access to Cashdesk only. More information on define permissions can be found on the following page: [Administrators and permissions](administration/main/admins_and_permissions/admins_and_permissions.md)
 
@@ -45,7 +47,7 @@ Adding access privileges for the cashdesk-module to a super administrator can be
 
 ![Super_admin](super_admin.png)
 
-Once the Cashdesk add-on is installed, you can access it by typing the following url in your browser: "http://yoursplynxurl/cashdesk", replacing "yoursplynxurl" with the actual URL of you Splynx server
+<icon class="image-icon">![image](note.png)</icon> Once the Cashdesk add-on is installed, you can access it by typing the following url in your browser: "http://yoursplynxurl/cashdesk", replacing "yoursplynxurl" with the actual URL of you Splynx server
 
 
 ## Using the Cashdesk module
@@ -54,25 +56,26 @@ Once the Cashdesk add-on is installed, you can access it by typing the following
 First, a super administrator must add a deposit for the cash-administrators for operations. To achieve this, you should login as a super administrator (with full access) and Create a deposit:
 
 ![2.jpg](2.png)
+
 ![3.jpg](3.png)
+
 ![4.jpg](4.png)
+
 ![5.jpg)](5.png)
 
 You can always increase or decrease the amount of the deposit at a later stage:
 
 ![6.jpg](6.png)
 
-You can view the history of the deposit changes by clicking on the "Deposit history" button:
+You can view the history of the deposit changes by clicking on the `History` button:
 
 ![7.jpg](7.png)
 
-Deposit Histories can be exported to csv-file, PDF or another method choice with the export button at the bottom of the table:
+Deposit Histories can be exported to a CSV file, PDF or another method with the export button at the top of the table:
 
 ![8.jpg](8.png)
 
-The following image is an example of the login screen of a Cashdesk-administrator:
-
-![9.jpg](9.png)
+__________________________
 
 Once a Cashdesk user has logged in, they can search for customers by the customer’s name, login or the number of a required invoice.
 
@@ -94,12 +97,12 @@ When the payment has been added in CashDesk, it will appear in Splynx as a new t
 
 ![13.jpg](13.png)
 
-All payments of the user currently logged in can be found in the History section of Cashdesk. In this case the user is "Casher"
+![13_1.jpg](13_1.png)
 
-![14.jpg](14.png)
+All payments of the user currently logged in can be found in the History section of Cashdesk.
 
 For super administrators, the History table and information is extended.
 
-![15.jpg](15.png)
+![14.jpg](14.png)
 
-*Remember! Only Super administrators can delete payments.*
+<icon class="image-icon">![image](warning.png)</icon> *Remember! Only Super administrators can delete payments.*

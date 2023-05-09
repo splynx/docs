@@ -8,10 +8,10 @@
 
 <icon class="image-icon">![Note](note.png)</icon> **NOTE:** **3CX server is required to be installed on separate/cloud server.**
 
-<icon class="image-icon">![Suggested](bulb.png)</icon> For more information about 3CX installation on the server, see [link](https://www.3cx.com/3cxacademy/videos/basic/installing/).
+<icon class="image-icon">![Suggested](note.png)</icon> For more information about 3CX installation on the server, see [link](https://www.3cx.com/3cxacademy/videos/basic/installing/).
 
 
-## Add-on installation
+## Installation
 
 To install the add-on use one of the two methods: via **CLI** on the Splynx server or via the Splynx **Web UI**.
 
@@ -28,15 +28,15 @@ Navigate to `Config → Integrations → Add-ons`:
 
 ![](img_000001.png)
 
-Find there the `splynx-3cx` add-on and click on the install icon in the *Actions* column of the table
+Find there the `splynx-3cx` add-on and click on the install icon in the *Actions* column of the table:
 
 ![](img_000002.png)
 
-Then, click on the **OK, confirm** button to begin the installation process
+Then, click on the **OK, confirm** button to begin the installation process:
 
 ![](img_000003.png)
 
-Once the installation process has completed, all configurations for the add-on can be found in `Config → Modules → List`, simply click on the necessary icon of the `splynx_3cx_addon` module and you will be able to change settings of the add-on
+Once the installation process has completed, all configurations for the add-on can be found in `Config → Integrations → Modules list`, simply click on the necessary icon of the `splynx_3cx_addon` module and you will be able to change settings of the add-on:
 
 ![](img_000004.png)
 
@@ -64,7 +64,7 @@ After installing the add-on, the [API key and its secret](administration/main/ap
 
 In `Config → Integrations`, you can find the **3CX** section with the link to download the **generated XML configuration file** - `splynx.xml`.
 
-<icon class="image-icon">![Suggested](bulb.png)</icon> Suggested read: [CRM Template XML Description](https://www.3cx.com/docs/server-side-crm-template-xml-description/#h.ydml7w97b24x).
+<icon class="image-icon">![Suggested](note.png)</icon> Suggested read: [CRM Template XML Description](https://www.3cx.com/docs/server-side-crm-template-xml-description/#h.ydml7w97b24x).
 
 ![](img_000007.png)
 
@@ -173,7 +173,7 @@ To **check the creation of contacts**, try dialing a number and click on the **C
 
 ![](test2.png)
 
-<icon class="image-icon">![Suggested](bulb.png)</icon> More information about the integration process can be found at the following [link](https://www.3cx.com/docs/crm-integration/).
+<icon class="image-icon">![Suggested](note.png)</icon> More information about the integration process can be found at the following [link](https://www.3cx.com/docs/crm-integration/).
 
 6. Install [iOS](https://apps.apple.com/us/app/3cx-communications-system/id992045982), [Android](https://play.google.com/store/apps/details?id=com.tcx.sipphone14) or [Windows](https://www.3cx.com/user-manual/installation-windows/) app, navigate to your [3CX Web Client](https://www.3cx.com/user-manual/web-client/) via *https://your_domain/IP_address/webclient*, log in using the extension number and password from your email letter and click on *Activate your 3CX Browser Extension*, in the top left-hand corner of the Web Client click *Allow Notifications* to enable desktop notifications, you will see the blue phone icon in the extensions bar in your browser. Click on the icon to open the Browser Extension pop out window.
 Now you can quickly and easily make and receive calls from your desktop without needing to open the full Web Client. Moreover, you can call to customers directly from Splynx.
@@ -182,7 +182,7 @@ Now you can quickly and easily make and receive calls from your desktop without 
 
 ![](img_000017.png)
 
-The calls history with its directions can be found in customer's profile, the **Communications** tab
+The calls history with its directions can be found in customer's profile, the **Communications** tab:
 
 ![](call_history.png)
 

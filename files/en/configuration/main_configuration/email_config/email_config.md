@@ -66,7 +66,7 @@ When sending emails has been configured, we can double check if it works. Specif
 
 * **Email**  - email for receiving a test message.
 
-We strongly recommend to use an Email Delivery Service such as https://www.sparkpost.com/  
+We strongly recommend to use an Email Delivery Service such as [MessageBird](https://www.messagebird.com/email/cloud-sending?sp=true).  
 
 ## Google mail Example
 To use your Google mail account for email sending, please fill in the following fields:

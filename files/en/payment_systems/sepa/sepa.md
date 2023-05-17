@@ -5,7 +5,7 @@ SEPA is a European standard for bank payments. You can install the SEPA add-on a
 
 The add-on can be installed in two methods, via the CLI or the Web UI of your Splynx server.
 
-**1\. SEPA Installation**
+## Installation
 
 To install the SEPA add-on via CLI, the following commands can be used:
 
@@ -16,34 +16,39 @@ apt-get install splynx-sepa
 
 To install it via the Web UI:
 
-Navigate to `Config → Integrations → Addons`:
+Navigate to `Config → Integrations → Add-ons`:
 
 ![Addons](0.png)
 
-Locate or search for the "splynx-sepa" add-on and click on the install icon in the *Actions* column, you will be presented with a window to confirm or cancel the installation, click on confirm to begin the installation process:
+Locate or search for the "splynx-sepa" add-on and click on the *Install* icon in the *Actions* column. You will be presented with a window to confirm or cancel the installation. Click on the `Ok, confirm` button to begin the installation process:
 
 ![111.png](111.png)
 
 After the installation process has completed, you have to configure the add-on.
 
-**2\. Configuration**
+## Configuration
 
-Navigate to `Config → Integrations → Modules list`
+Navigate to `Config → Integrations → Modules list`:
 
 ![Module list](4.png)
 
-Locate or search for the "splynx-sepa" add-on and click on the edit icon in the *Actions* column and fill in provided fields
+Locate or search for the "splynx_sepa_addon" and click on the *Edit* <icon class="image-icon">![image](edit.png)</icon> icon in the *Actions* column. Then fill in the provided fields:
 
 ![113.png](113.png)
 
-![113-1.png](113-1.png)
+![image](113_2.png)
+
+![image](113_3.png)
+
+![image](113_4.png)
 
 **Customer’s IBAN** and **Mandate ID** can be set in the customer profile (see below)
 
 ![add_iban.png](add_iban.png)
+TODO
 ![add_iban1.png](add_iban1.png)
 
-**3\. Generate the XML file for the bank.**
+## Generate the XML file for the bank
 
 Navigate to _Finance/Invoces/_ and click on the _Charge_ button
 ![charge.png](charge.png)

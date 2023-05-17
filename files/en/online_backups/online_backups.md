@@ -7,6 +7,14 @@ This is especially useful when hard disks break, and local copies become inacces
 
 Backups are created automatically every 6 hours and sent to the cloud for storage. Please note that only **changes** are sent(incremental backup) and only in **encrypted** form.
 
+```bash
+Encryption method - Blowfish encryption
+
+Backup software - Burp
+
+Physical backup location -  Cloud server in the EU (provided by Hetzner)
+```
+
 
 To configure this feature the best way is to install the **splynx-remote-support** plugin.
 ([how to install it?](addons_modules/splynx_remote_support/splynx_remote_support.md))

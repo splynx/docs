@@ -28,5 +28,6 @@ In this section, we can view, install or delete useful add-ons for integration w
 * [splynx_remote_support](addons_modules/splynx_remote_support/splynx_remote_support.md)
 * [Ticket feedback](addons_modules/ticket-feedback/ticket-feedback.md)
 * [TowerCoverage Integration](addons_modules/towercoverage/towercoverage.md)
+* [Weathermap](addons_modules/weathermap/weathermap.md)
 * [Whalebone](addons_modules/whalebone/whalebone.md)
 * [Xero accounting](addons_modules/xero/xero.md)

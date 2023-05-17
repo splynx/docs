@@ -43,3 +43,5 @@
 
  * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
+ * [Weathermap add-on](addons_modules/weathermap/weathermap.md)
+

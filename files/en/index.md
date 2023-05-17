@@ -152,6 +152,9 @@ Table of contents
 
 * [Troubleshooting Radius server](networking/troubleshooting_radius/troubleshooting_radius.md)
 
+* [Weathermap add-on](addons_modules/weathermap/weathermap.md)
+
+
 
 
 ##### [Messages](support_messages/support_messages.md)

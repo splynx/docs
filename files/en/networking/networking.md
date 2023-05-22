@@ -19,6 +19,9 @@
 
  * [Huawei GPON](networking/huawei_gpon/huawei_gpon.md)
 
+   * [Huawei NE (NetEngine) Radius configuration](networking/huawei_gpon/huawei_ne.md)
+   * [Huawei GPON configuration (commands)](networking/huawei_gpon/huawei_config.md)
+
  * [IP address management](networking/ip_address_management/ip_address_management.md)
 
  * [Maps](networking/maps/maps.md)

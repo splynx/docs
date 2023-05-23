@@ -1,4 +1,4 @@
-DSL Telkom (Openserve) authentication
+Openserve authentication (PPPoE via L2tP Method)
 ==========
 
 South African provider Telkom allows ISPs to resell their services. The services are sold under the Openserve trademark (https://openserve.co.za/). Splynx can communicate with Openserve proxy servers and authenticate PPPoE customers. A few configuration steps are needed to allow Splynx to be able to communicate with Openserve proxies.

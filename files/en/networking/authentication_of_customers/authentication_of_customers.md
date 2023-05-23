@@ -27,7 +27,7 @@ Below are manuals for different types of user authentication in Splynx ISP Frame
 
 * [DHCP Option 82](networking/authentication_of_customers/dhcp_option_82/dhcp_option_82.md)
 
-* [DSL Telkom (Openserve) authentication](networking/authentication_of_customers/dsl_telkom_openserve/dsl_telkom_openserve.md)
+* [Openserve authentication (PPPoE via L2tP Method)](networking/authentication_of_customers/dsl_telkom_openserve/dsl_telkom_openserve.md)
 
 
 * [Juniper: PPPoE with Radius server](networking/authentication_of_customers/juniper_pppoe_radius/juniper_pppoe_radius.md)

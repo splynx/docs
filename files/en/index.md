@@ -90,7 +90,7 @@ Table of contents
   * [Cisco IOS XE: PPPoE Radius](networking/authentication_of_customers/cisco_xe_pppoe_radius/cisco_xe_pppoe_radius.md)
   * [Cisco ASR 9010: PPPoE with Radius](networking/authentication_of_customers/cisco_asr9010_pppoe_radius/cisco_asr9010_pppoe_radius.md)
   * [DHCP Option 82](networking/authentication_of_customers/dhcp_option_82/dhcp_option_82.md)
-  * [DSL Telkom (Openserve) authentication](networking/authentication_of_customers/dsl_telkom_openserve/dsl_telkom_openserve.md)
+  * [Openserve authentication (PPPoE via L2tP Method)](networking/authentication_of_customers/dsl_telkom_openserve/dsl_telkom_openserve.md)
   * [Juniper: PPPoE with Radius](networking/authentication_of_customers/juniper_pppoe_radius/juniper_pppoe_radius.md)
   * [Linux: Accel-PPP server](networking/authentication_of_customers/linux_accel/linux_accel.md)
   * [Linux: Accel-PPP server with IPoE](networking/authentication_of_customers/linux_accel_ipoe/linux_accel_ipoe.md)

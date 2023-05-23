@@ -99,3 +99,35 @@ Then navigate to [*Config → Voice → Auto CDR processing*](configuration/voic
 ![cdr created](cdr_created.png)
 
 The system will now auto-process voice calls from the addon local folder using the defined interval.
+
+## Splynx PortaOne Integration
+
+Under *Config → Integrations → Splynx PortaOne Integration*, you can import CDRs and logs, as well as manually pair customers.
+
+![integration_menu.png](integration_menu.png)
+
+### CDRs import
+
+To import CDRs, click on the gear button at the top right corner of the page and choose `Import CDR`:
+
+![import_cdr2.png](import_cdr2.png)
+
+![import_cdr.png](import_cdr.png)
+
+### Log import
+
+To import the log, click on the gear button at the top right corner of the page and choose `Import log`:
+
+![import_log.png](import_log.png)
+
+![log2.png](log2.png)
+
+### Customers manual pairing
+
+To perform the customers manual pairing, click on the gear button at the top right corner of the page and choose `Customers manual pairing`:
+
+![manual_pairing.png](manual_pairing.png)
+
+Then, select *Pair* next to the customer name. The status will change from *Not paired* to *Paired*, indicating a successful pairing:
+
+![manual_pairing2.png](manual_pairing2.png)

@@ -42,42 +42,36 @@ Locate or search for the "splynx_sepa_addon" and click on the *Edit* <icon class
 
 ![image](113_4.png)
 
-**Customer’s IBAN** and **Mandate ID** can be set in the customer profile (see below)
+**Customer’s IBAN**, **Mandate ID**, and **BIC number** can be set in the customer profile (see below):
 
 ![add_iban.png](add_iban.png)
-TODO
+
 ![add_iban1.png](add_iban1.png)
 
 ## Generate the XML file for the bank
 
-Navigate to _Finance/Invoces/_ and click on the _Charge_ button
+Navigate to *Finance → Invoces* and click on the `Charge` button:
+
 ![charge.png](charge.png)
+
+<icon class="image-icon">![image](note.png)</icon> Use `splynx-sepa-invoices` to invoice customers and `splynx-sepa-outstanding-balances` to charge customers' balances.
 
 ![116.png](charge1.png)
 
-After clicking "Charge" you will see a download xml document link.
+After clicking `Charge` you will see a download xml document link.
 
-**4\. Mark invoices as paid**
 
 ![charge2.png](charge2.png)
 
-Check invoices
+## Check invoices
 
 ![121.png](paid-invoice.png)
 
-**5\. SEPA - process the return file from the bank with non-payers**
+## SEPA - process the return file from the bank with non-payers
 
 Sometimes customers does not have funds on their bank accounts. In that case, the Bank sends you an XML file back with returns. It will contain data about customers which the Bank was not able to charge. You can import this file to Splynx as well, and then paid invoices of non-payers will become unpaid again, so you can charge them next month and include the fee for a failed charge.
 
-The handler to choose is SEPA XML returns:
+The handler to choose is SEPA XML (Returns):
 
 ![SEPA_last.png](SEPA_process.png)
 
-**6\. SEPA - process of the refund from the bank in case of overpaid**
-
-If customers have the overpayments, we can provide the money-back. In order to do this, create for particular customers the invoices with negative price value. The status for such invoices will be set to _Paid (from account balance)_ automatically. After that in `Finance → Invoices` apply the charge with the following options:
-
-![charge3.png](charge3.png)
-
-and download the archive with generated XML file:
-![charge4.png](charge4.png)

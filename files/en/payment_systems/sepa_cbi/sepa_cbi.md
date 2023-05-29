@@ -42,3 +42,24 @@ Locate or search for the "splynx_sepa_cbi_addon" and click on the *Edit* <icon c
 ![](settings2.png)
 ![](settings3.png)
 
+**Customer’s IBAN**, **Mandate date**, **Mandate ID**, and **Sequence state (only FRST or RCUR)** can be set in the customer profile (see below):
+
+![add_iban.png](add_iban.png)
+
+![add_iban1.png](add_iban1.png)
+
+## Generate the XML file for the bank
+
+Navigate to *Finance → Invoces* and click on the `Charge` button:
+
+![charge.png](charge_btn.png)
+
+![116.png](charge1.png)
+
+After clicking `Charge` you will see a download xml document link.
+
+![charge2.png](charge2.png)
+
+## Check invoices
+
+![121.png](paid-invoice.png)

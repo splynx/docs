@@ -16,7 +16,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 * [IPpay](payment_systems/ippay/ippay.md)
 
 * [Moneris (recurring billing) payments](payment_systems/moneris/moneris.md)
-[comment]: # (→ Mercadopago)
 
 * [Netcash Pay Now](payment_systems/netcash_pay_now/netcash_pay_now.md)
 
@@ -33,7 +32,8 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
 
 * [SEPA debit orders](payment_systems/sepa/sepa.md)
-[comment]: # (→ SEPA debit order in Spanish)
+
+* [SEPA CBI](payment_systems/sepa_cbi/sepa_cbi.md)
 
 * [Stripe](payment_systems/stripe/stripe.md)
 

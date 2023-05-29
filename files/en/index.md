@@ -429,6 +429,7 @@ Table of contents
   * [Netcash Pay Now](payment_systems/netcash_pay_now/netcash_pay_now.md)
   * [Netcash Debit orders](payment_systems/netcash_do/netcash_do.md)
   * [SEPA debit orders](payment_systems/sepa/sepa.md)
+  * [SEPA CBI](payment_systems/sepa_cbi/sepa_cbi.md)
   * [Stripe online payments](payment_systems/stripe/stripe.md)
   * [VulaCoin](payment_systems/vulacoin/vulacoin.md)
 

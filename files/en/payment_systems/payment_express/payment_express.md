@@ -113,7 +113,9 @@ More information about *Modules list* can be found [here](configuration/integrat
 ### Invoice payment
 
 
-Once the configuration has been completed, customer can add a credit card on the [Portal](customer_portal/customer_portal.md) in `Finance → Credit card via Payment Express`:
+Once the configuration has been completed, customer can add a credit card on the [Portal](customer_portal/customer_portal.md) in `Finance → Credit card via Payment Express`.
+
+<icon class="image-icon">![image](note.png)</icon> An amount of $1 will be debited to authorize the card, which will then be refunded.
 
 ![(image)](10.png)
 

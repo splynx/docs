@@ -23,8 +23,6 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Payfast.co.za payments](payment_systems/payfast/payfast.md)
 
-* [Payment-express](payment_systems/payment_express/payment_express.md)
-
 * [Paypal payments](payment_systems/paypal/paypal.md)
 
 * [Paystack](payment_systems/paystack/paystack.md)
@@ -38,3 +36,5 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 * [Stripe](payment_systems/stripe/stripe.md)
 
 * [VulaCoin](payment_systems/vulacoin/vulacoin.md)
+
+* [Windcave (formerly Payment Express)](payment_systems/payment_express/payment_express.md)

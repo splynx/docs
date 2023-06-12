@@ -390,6 +390,7 @@ Table of contents
   * [Baicells LTE](addons_modules/baicells/baicells.md)
   * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)
   * [3CX](addons_modules/3cx_addon/3cx_addon.md)
+  * [Holded](addons_modules/holded/holded.md)
   * [HotSpot add-on configuration](addons_modules/hotspot_addon/hotspot_addon.md)
   * [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
   * [FCC 477 export](addons_modules/fcc_export/fcc_export.md)
@@ -422,7 +423,6 @@ Table of contents
   * [IPpay by Convergence](payment_systems/ippay/ippay.md)
   * [Moneris](payment_systems/moneris/moneris.md)
   * [Payfast.co.za payments](payment_systems/payfast/payfast.md)
-  * [Payment-express](payment_systems/payment_express/payment_express.md)
   * [Paypal payments](payment_systems/paypal/paypal.md)
   * [Paystack](payment_systems/paystack/paystack.md)
   * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)
@@ -432,6 +432,7 @@ Table of contents
   * [SEPA CBI](payment_systems/sepa_cbi/sepa_cbi.md)
   * [Stripe online payments](payment_systems/stripe/stripe.md)
   * [VulaCoin](payment_systems/vulacoin/vulacoin.md)
+  * [Windcave (formerly Payment Express)](payment_systems/payment_express/payment_express.md)
 
 
 

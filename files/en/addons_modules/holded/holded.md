@@ -54,7 +54,7 @@ Enter the Holded auth API key in the *API key* field:
 </div>
 </details>
 
-You can export each type by cron:
+You can run automatic (daily) export of each type enabling Cron:
 
 ![settings](settings3.png)
 

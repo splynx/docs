@@ -23,7 +23,7 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Payfast.co.za payments](payment_systems/payfast/payfast.md)
 
-* [Paypal payments](payment_systems/paypal/paypal.md)
+* [PayPal](payment_systems/paypal/paypal.md)
 
 * [Paystack](payment_systems/paystack/paystack.md)
 

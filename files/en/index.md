@@ -422,7 +422,7 @@ Table of contents
   * [Payrix](payment_systems/payrix/payrix.md)
   * [IPpay by Convergence](payment_systems/ippay/ippay.md)
   * [Moneris](payment_systems/moneris/moneris.md)
-  * [Payfast.co.za payments](payment_systems/payfast/payfast.md)
+  * [Payfast](payment_systems/payfast/payfast.md)
   * [PayPal](payment_systems/paypal/paypal.md)
   * [Paystack](payment_systems/paystack/paystack.md)
   * [Safaricom M-PESA](payment_systems/mpesa/mpesa.md)

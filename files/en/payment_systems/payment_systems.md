@@ -21,7 +21,7 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Netcash Debit Orders](payment_systems/netcash_do/netcash_do.md)
 
-* [Payfast.co.za payments](payment_systems/payfast/payfast.md)
+* [Payfast](payment_systems/payfast/payfast.md)
 
 * [PayPal](payment_systems/paypal/paypal.md)
 

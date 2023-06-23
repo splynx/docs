@@ -63,7 +63,7 @@ Once customers are imported and internet plans are created we can import interne
 
 In this file, the values in the **id** column will be ignored and in the **name** column we have customers' login values. To match records from the file with existing customers in Splynx you can use the email address, customer login or customer ID (the columns names are: **Customer email**, **Customer login** and **Customer** respectively).
 
-<icon class="image-icon">![Important](warning.png)</icon> The required fields for services import are: **login**, **plan (tariff ID or name)** and **start date**.
+<icon class="image-icon">![Important](warning.png)</icon> The required fields for services import are: **login**, **plan (tariff ID)** and **start date**.
 
 ![import_services](import_services.png)
 

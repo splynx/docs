@@ -9,7 +9,7 @@ Below is a list of supported and integrated Payment Gateways. By clicking on a P
 
 * [Braintree payments](payment_systems/braintree/braintree.md)
 
-* [Gocardless.com](payment_systems/gocardless/gocardless.md)
+* [Gocardless](payment_systems/gocardless/gocardless.md)
 
 * [Payrix](payment_systems/payrix/payrix.md)
 

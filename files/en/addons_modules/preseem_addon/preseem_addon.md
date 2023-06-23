@@ -1,9 +1,14 @@
-Preseem add-on
+Preseem
 ========
-Preseem is the add-on module designed for the integration your Splynx customers, services and network infrastructure with [Preseem service](https://www.preseem.com). Preseem service offers a QoE (Quality of Experience) monitoring ([instead of network monitoring](https://preseem.com/2017/07/network-monitoring-vs-subscriber-qoe/)) and optimization platform for wireless internet service providers (WISPs). It enables WISPs to understand the QoE the network delivers down to a tower, sector, and subscriber level and eliminates typical "my Internet is slow" requests and fixes other network problems.
+
+Preseem is an add-on module designed for integrating your Splynx customers, services, and network infrastructure with the [Preseem service](https://www.preseem.com). 
+
+The Preseem service offers a QoE (Quality of Experience) monitoring ([instead of network monitoring](https://preseem.com/2017/07/network-monitoring-vs-subscriber-qoe/)) and optimization platform for wireless internet service providers (WISPs). It enables WISPs to understand the QoE that the network delivers down to a tower, sector, and subscriber level, eliminating typical complaints such as "my Internet is slow" and resolving other network problems.
+
+## Installation
 
 
-To install the add-on use one of the two methods: via CLI on the Splynx server or via the Splynx Web UI.
+To install the add-on, use one of the two methods: via CLI on the Splynx server or via the Splynx Web UI.
 
 To install the add-on via CLI, the following commands can be used:
 
@@ -12,27 +17,25 @@ apt-get update
 apt-get install splynx-preseem
 ```
 
-To install the add-on from the Web UI:
-
-Navigate to `Config → Integrations → Add-ons`:
+To install the add-on from the Web UI, navigate to `Config → Integrations → Add-ons`:
 
 ![](img_000001.png)
 
-Find there the "splynx-preseem" add-on and click on the install icon in the *Actions* column of the table
+Find there the "splynx-preseem" add-on and click the *Install* icon in the *Actions* column of the table:
 
 ![](img_000002.png)
 
-Then, click on the "OK, confirm" button to begin the installation process
+Then, click the `OK, confirm` button to begin the installation process:
 
 ![](img_000003.png)
 
-Once the installation process has completed, all configurations for the add-on can be found in `Config → Modules → List`, simply click on the necessary icon of the module and you will be able to change settings of the add-on
+Once the installation process is complete, all configurations for the add-on can be found in `Config → Integrations → Modules List`. Simply click the necessary module icon, and you will be able to change the add-on settings.
 
 ![](img_000004.png)
 
 ## How the Preseem module works
 
-After add-on installation in your Splynx system will be created [API key/secret](administration/main/api_keys/api_keys.md) with such permissions:
+After the add-on is installed in your Splynx system, an [API key/secret](administration/main/api_keys/api_keys.md) will be created with the following permissions:
 
 |  |   |   |
 | :------------: | :------------: | :------------: |
@@ -57,7 +60,7 @@ After add-on installation in your Splynx system will be created [API key/secret]
 |  Networking |  IPv6 Networks IP (Addresses) |  View |
 |  Administration | Locations  |  View |
 
-The IP addresses that can connect to the Splynx API are: **35.193.209.32**, **35.192.219.237**.
+The following IP addresses are able to connect to the Splynx API: **35.193.209.32** and **35.192.219.237**.
 
 ![](img_000005.png)
 
@@ -92,24 +95,25 @@ Preseem polls Splynx on information about sites, device, accounts and services v
 | Any **MAC addresses** set on the **Service** in Splynx are used to help map the customer to its **account** and **AP** in Preseem  |
 | **Inventory** assigned to an account as a CPE will be used to help map the customer to its **account** and **AP** in Preseem  |
 
-Changes in Splynx are synced to Preseem within 5 minutes.
+<icon class="image-icon">![image](note.png)</icon> Changes in Splynx are synced to Preseem within 5 minutes.
 
 ## Using the Preseem module
 
-After the add-on has been installed, provide the Preseem support team with
+After installing the add-on, to finish the integration, please provide the Preseem support team with the following data:
+
 - the [Splynx URL](configuration/system/company_information/company_information.md);
 - the Key and Secret from the API key configuration
 
-to finish configuring an integration.
 
-Moreover, Preseem can read your APs and routers from Splynx. To do this, it needs to know which Device Types map to which type of equipment.
-This can be found in `Config → Networking → Monitoring`. Simply send a screenshot of these settings or let Preseem support engineer know which Device Type IDs should be used for APs and routers because such info is not available via the Splynx API.
+Moreover, Preseem can read your APs and routers from Splynx. To do this, it needs to know which Device Types map to which type of equipment. You can find this information in `Config → Networking → Monitoring`. Simply send a screenshot of these settings or let the Preseem support engineer know which Device Type IDs should be used for APs and routers, as this information is not available via the Splynx API.
 
 ![](img_000007.png)
 
 ![](img_000008.png)
 
-In order to open some customer's preseem page, open the customer list in Splynx, select a preferred account, choose *SERVICES* tab and on available internet service click on *preseem* button in *Action* column:
+In order to open some customer's preseem page, open the customer list in Splynx, select a preferred account, choose *SERVICES* tab and on available internet service click the *Preseem* button in *Action* column:
+
+To access a customer's Preseem page, follow these steps: open the customer list in Splynx, select the desired account, go to the *SERVICES* tab, and click the `Preseem` button in the *Actions* column next to the corresponding internet service.
 
 ![](img_000009.png)
 

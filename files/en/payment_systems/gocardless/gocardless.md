@@ -1,5 +1,6 @@
 GoCardless
 ==========
+
 Gocardless is a Splynx add-on which allows customers to pay for invoices via the payment gateway - https://gocardless.com/.
 
 Customers using the *Gogardless* platform  can pay for invoices through banks, or you can charge your customers' bank accounts via debit orders.

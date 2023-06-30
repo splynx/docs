@@ -420,7 +420,7 @@ Table of contents
   * [Braintree payments](payment_systems/braintree/braintree.md)
   * [Gocardless](payment_systems/gocardless/gocardless.md)
   * [Payrix](payment_systems/payrix/payrix.md)
-  * [IPpay by Convergence](payment_systems/ippay/ippay.md)
+  * [IPpay](payment_systems/ippay/ippay.md)
   * [Moneris](payment_systems/moneris/moneris.md)
   * [Payfast](payment_systems/payfast/payfast.md)
   * [PayPal](payment_systems/paypal/paypal.md)

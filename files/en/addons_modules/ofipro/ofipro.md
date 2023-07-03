@@ -1,12 +1,6 @@
 Ofipro contabilidad (Spanish)
 =============================
 
-\##
-
-Instalación del módulo
-
-\##
-
 Para poder trabajar con Ofipro deberemos añadir un nuevo campo "id_ofipro". Para ello, vamos a _Configuración → Campos adicionales_ y lo añadimos. Dado que es un campo necesario para poder hacer las exportaciones, podemos establecerlo como requerido. También es necesario que los clientes tengan un DNI real.
 
 ![Screenshot_1.png](Screenshot_1.png)

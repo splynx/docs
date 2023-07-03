@@ -1,44 +1,57 @@
-Splynx Mailjet
+Mailjet
 ===========
 
 
-Splynx is a multidimensional platform where you can send email and SMS messages directly from the system. For more information on emailing and SMS's please use the following guides:
-Email messages: https://docs.splynx.com/support_messages/email_messages
-SMS messages: https://docs.splynx.com/support_messages/sms_messages
+Splynx is a multidimensional platform where you can send email and SMS messages directly from the system. For more information on emailing and SMS, please refer to the following guides: [Email messages](support_messages/email_messages/email_messages.md) and 
+[SMS messages](support_messages/sms_messages/sms_messages.md).
 
-However, our main goal is to help ISPs to grow their client base and up-scale their business. To help you provide better marketing we have integrated Splynx with the mail platform - MailJet.
+However, our main goal is to help ISPs to grow their client base and upscale their businesses. To assist you in providing better marketing, we have integrated Splynx with the mail platform - [Mailjet](https://app.mailjet.com/).
 
-In this short tutorial, we will show you how to configure Splynx synchronization with MailJet. All further automation, email templates, campaigns etc. should be configured in MailJet directly. We would suggest going through their documentation to get acquainted with the product: https://app.mailjet.com/docs
+In this short tutorial, we will show you how to configure Splynx synchronization with Mailjet. All further automation, email templates, campaigns etc., should be configured directly in Mailjet. We would suggest going through their documentation to get acquainted with the product: https://app.mailjet.com/docs
 
-To install the MailJet add-on, navigate to  `Config → Integrations → Add-ons`, locate or search for the MailJet add-on and click on the install button in the *Actions* column as depicted below:
+## Installation
 
+To install the Mailjet add-on, navigate to  `Config → Integrations → Add-ons`. Locate or search for *splynx-mailjet* and click the *Install* button in the *Actions* column, as depicted below:
 
 ![Install](install_mailjet.png)
 
-In order to open the add-on configuration settings, navigate to `Config > Integrations > Modules list` > and click on the edit icon in the *Actions* column of the module name 'Splynx Add-on Mailjet'.
+## Configuration
 
-Here we only need to configure Customer settings and MailJet API settings sections.
+To open the add-on configuration settings, navigate to `Config → Integrations → Modules list`. Then, click the *Edit* icon in the *Actions* column next to the module named **splynx_addon_mailjet**.
 
-In Customer settings section we are able to choose the data that will be automatically pushed from Splynx to MailJet:
+Here, we only need to configure the Customer settings and the Mailjet API settings sections.
+
+In the Customer Settings section, we have the ability to choose the data that will be automatically pushed from Splynx to Mailjet:
+
 ![Sync](customer_sync_fields.png)
 
 ![Lead](lead_sync_fields.png)
 
-All this information will be stored in MailJet contact properties. They will automatically be defined by Splynx according to the fields that you selected to synchronize. For more information about contact properties please refer to this page: https://app.mailjet.com/support/how-to-create-manage-contact-properties,468.htm
+All this information will be stored in Mailjet contact properties, which will be automatically defined by Splynx based on the fields you selected to synchronize.
+
+To learn more about contact properties, please refer to this page on Mailjet's website: [How to create & manage contact properties?](https://documentation.mailjet.com/hc/en-us/articles/360043176353-How-to-create-manage-contact-properties-)
+
+### API settings
 
 In the next step of our configuration, we need to define the MailJet API settings.
 
-Before proceeding with this, we need to do a few steps in MailJet. Splynx allows you to synchronize your clients or leads into 3 contact lists that will be used in MailJet for email targeting and further segmentation. One list should be for your existing customers, another for leads, and the third one for the newsletter.
+Before proceeding, we need to complete a few steps in Mailjet. Splynx allows you to synchronize your clients or leads into three contact lists, which will be used in Mailjet for email targeting and segmentation. One list should be for your existing customers, another for leads, and the third one for the newsletter.
 
+To create a contact list in Mailjet please go to https://app.mailjet.com/ → Contacts → Contact lists. Click the `Create a contact list` button.
 
-To create a contact list in MailJet please go to app.mailjet.com > Contact lists > press the button 'Create contact list'. You can name your lists according to your requirements, we only require a list ID.
+![contact](create_contact_list2.png)
+
+You can name your lists according to your requirements, we only require a list ID.
+
 ![contact](create_contact_list.png)
 ![contact](mailjet_contact_lists.png)
 
-Once contact lists are complete, please navigate to Account > API Keys (https://app.mailjet.com/account/api_keys) to get you API and Secret keys.
+Once the contact lists are complete, please navigate to [Account → API Keys](https://app.mailjet.com/account/apikeys) to get you API and Secret keys.
 
-The last step is to enter all this information into the Splynx MailJet API settings section.
+![keys](mailjet_keys.png)
 
-![Settings](mailjet_api_settings.png)
+The last step is to enter all this information into the *Splynx Mailjet API settings* section.
 
-Once all has been, Splynx will automatically synchronize your customers and leads with MailJet. All further configurations of your campaigns, email templates and mail automation should be configured in MailJet.
+![Settings](mailjet_settings_ap.png)
+
+Once everything has been set up, Splynx will automatically synchronize your customers and leads with Mailjet. Any additional configurations for your campaigns, email templates, and mail automation should be done in Mailjet.

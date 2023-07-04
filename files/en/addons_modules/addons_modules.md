@@ -7,7 +7,6 @@ In this section, we can view, install or delete useful add-ons for integration w
 
 * [AADE MyData integration (for Greece)](addons_modules/aade/aade.md)
 * [Agents and Resellers](addons_modules/agents_resellers/agents_resellers.md)
-* [Baicells LTE](addons_modules/baicells/baicells.md)
 * [Cashdesk module](addons_modules/cashdesk/cashdesk.md)
 * [3CX](addons_modules/3cx_addon/3cx_addon.md)
 * [Holded](addons_modules/holded/holded.md)
@@ -16,6 +15,7 @@ In this section, we can view, install or delete useful add-ons for integration w
 * [FatturaPA](addons_modules/FatturaPA/FatturaPA.md)
 * [FCC 477 export](addons_modules/fcc_export/fcc_export.md)
 * [Mailjet](addons_modules/splynx_mailjet/splynx_mailjet.md)
+* [Manticore](addons_modules/manticore/manticore.md)
 * [Ofipro contabilidad (Spanish)](addons_modules/ofipro/ofipro.md)
 * [PortaOne](addons_modules/portaone/portaone.md)
 * [Preseem](addons_modules/preseem_addon/preseem_addon.md)

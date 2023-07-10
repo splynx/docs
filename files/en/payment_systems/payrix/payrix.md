@@ -5,7 +5,7 @@ Payrix (formerly Integrapay)
 
 The add-on can work with various credit cards and bank accounts, if cards or bank account are saved in customer profiles, the add-on allows you to charge all customers using Direct debit orders.
 
-### Add-on installation
+## Installation
 
 The add-on can be installed in two methods: via the CLI or Web UI of you server.
 
@@ -27,7 +27,7 @@ Locate or search for the `splynx-payrix` add-on and click on the *Install* icon 
 
 ![(image)](1.1.png)
 
-### Add-on settings
+## Configuration
 
 The first step is to register an account on https://www.payrix.com/au/. After registering, *Payrix* will send you an email with your credentials, where  _**Bussines ID** is your **Username** and  **Api User Key** is your **Password**_ :
 
@@ -117,7 +117,11 @@ The configuration of add-on **Entry points** can be found in `Config → Integra
 
 More information about *Modules list* can be found [here](configuration/integrations/modules_list/modules_list.md).
 
-### Invoice payment
+## Direct debit request agreement
+
+After accepting the **DDR agreement** and saving the payment credentials, the customer will receive an email notification containing two attachments: *the Payrix service agreement* and *the Debit Order Request form* with additional details.
+
+## Invoice payment
 
 Before making any payment **it's required to add the bank account or the credit card**, depends on what option customers would like to use to pay.
 
@@ -136,8 +140,6 @@ Once the configuration has been completed, customers can pay their invoices on [
 using the *Payrix* icon (the related entry point should be enabled) in `Finance → Invoices`:
 
 ![(image)](6.png)
-
-<!-- ![(image)](6.2.png) -->
 
 **IMPORTANT:** the `Service Fee` value cannot be set on add-on config page, as a result, will be shown only `Total to pay` amount.
 
@@ -167,7 +169,7 @@ Additionally, an administrator can charge all customers using one button: naviga
 
 The [Charge history](finance/invoices/invoices.md) tab contains the charge history of all charges you have made, sometimes it is very helpful when there are finance issues.
 
-### Add-on log files
+## Log files
 
 *Payrix* add-on logs can be found in `Administration → Logs`:
 
@@ -177,7 +179,7 @@ In *Payrix Logs* the different records can be viewed and its response details et
 
 ![(image)](logs1.png)
 
-### Direct payments
+## Direct payments
 
 Using the payments links is the simplest way to accept payments made with credit card or bank account. This feature is available in the *Payrix* add-on to pay *Invoices* and *Proforma Invoices*. This provides convenience and simplicity for your customers, so the amount of on-time payments will increase. For example, you can add a payment link to the email with the (proforma) invoice. As a result, the customer can make payment quickly by clicking onto such link instead of logging in to their *Portal* page. In case the customer has saved the payment credentials on the *Portal*, they do not need to add further details when using the direct payment link in the future. If the credit card in not linked on the *Portal*, the payment details need to be entered each time the payment link is used.
 

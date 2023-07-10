@@ -3,6 +3,9 @@ IPpay
 
 IPpay is a Splynx add-on which allows refilling of customer balance and paying invoices via the IPpay payment gateway - https://www.ippay.com/.
 
+
+<icon class="image-icon">![image](warning.png)</icon> To ensure uninterrupted access to IPPay's gateway, please contact their support team or Account Manager to provide your Splynx instance's IP address for whitelisting in their firewall. Failure to do so may result in blocked requests. Contact details are available below.
+
 **IPpay contact details**:
  
 ```
@@ -11,6 +14,8 @@ Aaron Cooper - Account Manager
 acooper@ippay.com
 
 Tel: 417-483-4651
+
+Support: support@ippay.com
 ```
 *********************************************
 The add-on can work with different credit cards and bank accounts (if cards or bank accounts are saved in customer profiles). It allows you to charge all customers using *Direct debit orders*.

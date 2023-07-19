@@ -3,21 +3,9 @@ Engineers permissions for scheduling mobile application
 
 Navigate to `Administration → Administrators` and check the permission for the required account.
 
-A **minimum set of permissions** within each section required for the engineer/technician role (intended for technical workers engaged in direct installation and dismantling of equipment, using the mobile app).
+A **minimum set of permissions** is required within each section for the engineer/technician role. This role is intended for technical workers engaged in the direct installation and dismantling of equipment, using the mobile app.
 
-### CRM
-
-* **Leads**
-* **List** (Leads)
-* **List** (Leads) / Show same partners leads
-* **View**
-* **View** / Edit
-* **View** / View leads password
-* **Maps**
-
-![CRM permission](crm_permission.png)
-
-### Customers
+## Customers
 
 * **Search**
 * **List**
@@ -37,26 +25,40 @@ A **minimum set of permissions** within each section required for the engineer/t
 
 ![Customers permission](customers_permission.png)
 
-### Tickets
+## Leads
 
-* **List new & open**
+* **Leads**
+* **List** (Leads)
+* **List** (Leads) / Show same partners leads
+* **View**
+* **View** / Edit
+* **View** / View leads password
+* **Maps**
+
+![CRM permission](crm_permission.png)
+
+
+
+## Tickets
+
+* **List**
 
 ![Tickets permission](ticket_permission.png)
 
-### Scheduling
+## Scheduling
 
 * All permission except permission **Tasks** / Delete
 
 ![Scheduling permission](scheduling_permission.png)
 
-### Administration
+## Administration
 
 * **Administrators**
 * **Partners**
 
 ![Administration permission](admin_permission.png)
 
-### Config
+## Config
 
 * **Scheduling** all permissions
 

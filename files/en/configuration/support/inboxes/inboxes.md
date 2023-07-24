@@ -77,4 +77,39 @@ Here you can filter email addresses you wish to ignore. Tickets from such emails
 
 The filter can be configured by **Location** (Email, Subject or Message) and by **Filter type** (Exact entry, Contain, Starting with, Ending with, Regex). In the **Filter** field, you should enter the email (or a word from the subject or message) or its part (depending on the specified Filter type) you want to block. Then click the `Add` button.
 
+## MS Office 365 OAuth
 
+You can configure your incoming mailbox (tickets) to use OAuth login with MS Office 365.
+
+<icon class="image-icon">![image](warning.png)</icon> This option is available for Splynx versions **v4.1** or **v4.0 + OAuth**
+
+Navigate to *Config → Helpdesk → Inboxes* to begin reconfiguring your incoming mailbox for OAuth login.
+
+![ms office](ms_office1.png)
+
+<icon class="image-icon">![image](warning.png)</icon> Only the Office365 Administrator can configure the mailbox with MS Office 365.
+
+1. First, log on to the office profile with the  Office365 administrator login using the following link: https://outlook.office.com/mail/
+
+When you click the `Office365` button, a pop-up window will appear. Click on `Domain is correct` in the pop-up window. You will be redirected to a Microsoft URL and asked to authorize Splynx; select `Yes`.
+
+![ms office](ms_office2.png)
+
+2. Now that Microsoft is authorized, please open the following URL and log out of the admin account: https://outlook.office.com/mail/. **It's essential to log out; this step is very important.**
+
+![ms office](ms_office3.png)
+
+3. On the same Inbox on Splynx, the one that is currently showing as connected, will need to be disconnected, as it's linked to the incorrect mailbox used in the previous step.
+
+This time, it will ask for the username and password for the correct mailbox, if step 2 was not performed to log out of the Microsoft profile. If that's the case, then step 2 needs to be repeated.
+
+![ms office](ms_office4.png)
+
+![ms office](ms_office5.png)
+
+-----------------
+
+
+If additional mailboxes need to be set up, repeat steps 1 - 3.
+
+Each time after linking a mailbox, you have to log out of the mailbox on the Office365 instance; otherwise, it will use the incorrect profile for the mailbox and not work.

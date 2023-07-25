@@ -76,6 +76,7 @@ Table of contents
   * [Suppliers](inventory/suppliers/suppliers.md)
   * [Supplier invoices](inventory/supplier_invoices/supplier_invoices.md)
   * [Vendors](inventory/vendors/vendors.md)
+  * [Reports](inventory/reports/reports.md)
 
 
 ##### [Networking](networking/networking.md)

@@ -15,7 +15,7 @@ Choose **Type**, **Period**, **Vendor** and **Product** at the top of the page. 
 
 ### Items
 
-Under *Inventory → Reports → Items*, you will find general reports on all the items, regardless of their status - whether they are in stock, sold, assigned, rented, etc.
+Under *Inventory → Reports → Items*, you will find a history report on all items, including it’s status at the time a change was made - whether it’s in stock, sold, assigned, rented, etc.
 
 At the top of the page, you can filter the presented information by *Suppliers*, *Vendor*, *Product*.
 
@@ -23,6 +23,6 @@ At the top of the page, you can filter the presented information by *Suppliers*,
 
 ### Export
 
-You can export the tables in the *Reports* section in multiple formats and ways by clicking the *Export* button at the top right of the page:
+You can export the tables in the *Reports* section in multiple formats by clicking the *Export* button at the top right of the page:
 
 ![image](reports4.png)

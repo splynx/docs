@@ -50,7 +50,15 @@ The **Hardware** section shows an information about the customer router configur
 
 #### Finance
 
-It displays financial information such as **Transactions**, **(Proforma) Invoices**, **Payments** and **Statements**. Also, the section includes the **form to add/remove the credentials (credit card or bank account)** to the integrated payment services that are provided by installed add-ons in Splynx.
+It displays financial information such as **Transactions**, **(Proforma) Invoices**, **Payments**, **Statements**, **Credit notes**. 
+
+You can enable/disable the respective section on the Admin portal under *Config → Main → Portal → Per partner settings*:
+
+![enable](credit_notes.png)
+
+![enable](credit_notes2.png)
+
+Also, the section includes the **form to add/remove the credentials (credit card or bank account)** to the integrated payment services that are provided by installed add-ons in Splynx.
 A customer can pay the unpaid invoice by some payment add-on, e.g. [Payment express](payment_systems/payment_express/payment_express.md) or download as PDF the necessary paid invoice or payment receipt by clicking on <icon class="image-icon">![DownloadIcon](download_icon.png)</icon> icon in *Actions* column of the relevant table.
 
 ![Finance](transactions.png)

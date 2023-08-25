@@ -14,7 +14,7 @@ Once some devices are added and you have groups available, click on **Attributes
 
 ![attributes config](load_attributes.png)
 
-Select a device and click on **Load** button to load attributes. After the load, the attributes are ready to use:
+Select a device and click the `Load` button to load attributes. After the load, the attributes are ready for use:
 
 ![available attributes](available_attributes.png)
 
@@ -40,7 +40,7 @@ On **Faults** tab you will see tasks what were executed with an errors.
 
 ![faults-tasks](tasks-faults.png)
 
-When click on **Actions** button you can find next options:
+After clicking the `Actions` button, you can find the following options:
 
 ![actions](actions.png)
 
@@ -55,7 +55,7 @@ At the bottom of the page there are additional tabs related to the router: **WAN
 
 ![device setup](device_setup.png)
 
-Switch between available tabs to configure needed parameters. As an example we can **change a DHCP server parameters**:
+Switch between available tabs to configure the necessary parameters. As an example we can **change a DHCP server parameters**:
 
 ![LAN tab](lan_tab.png)
 
@@ -65,16 +65,16 @@ or **add some firewall rules** right here:
 
 ![firewall rules](firewall_rules.png)
 
-On **Diagnostic** tab you can find such diagnostic tools as:  **ping**, **traceroute**, **upload/download statistic** and **wifi-analyzer**:
+On the **Diagnostic** tab you can find such diagnostic tools as:  **ping**, **traceroute**, **upload/download statistic** and **wifi-analyzer**:
 
 ![diagnostic](diagnostic.png)
 
 To run some diagnostic tool click on **Run** button near each tool.
 
-**NOTE!:** This menu can differ depending on a device, e.g. Mikrotik router can be without а Wi-Fi module.
+<icon class="image-icon">![image](note.png)</icon> This menu can differ depending on a device, e.g. Mikrotik router can be without а Wi-Fi module.
 
 **Wi-fi analyzer** shows all the **available wi-fi networks** and its **signal strength**.
 
-Debug logs can be found under `Administration → Logs → [Files](administration/logs/files/files.md)` and find files by word `genie`:
+Debug logs can be found under `Administration → Logs → Files (administration/logs/files/files.md)` and find files by word `genie`:
 
 ![logs](logs.png)

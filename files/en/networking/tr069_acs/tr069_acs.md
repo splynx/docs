@@ -10,6 +10,8 @@ You can configure devices directly from Splynx web page. Please use the followin
 
 * [Device connection, types, groups and auto-provision flow](networking/tr069_acs/dev_connection_types_groups_provision/dev_connection_types_groups_provision.md)
 
+* [Device view](networking/tr069_acs/device_view/device_view.md)
+
 * [Attributes](networking/tr069_acs/attributes/attributes.md)
 
 * [Files and upgrade](networking/tr069_acs/files_upgrade/files_upgrade.md)

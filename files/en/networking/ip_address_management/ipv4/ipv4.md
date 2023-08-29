@@ -1,7 +1,7 @@
 Ipv4 address management
 ====================
 
-#### How to configure IPAM in Splynx:
+#### How to configure IP Address Manager (IPAM) in Splynx
 
 1. Create a root network and subnetworks.
 

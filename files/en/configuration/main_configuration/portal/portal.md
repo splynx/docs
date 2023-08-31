@@ -300,7 +300,8 @@ In this section, you can configure the financial elements, available payment met
 * **Items** - enable/disable categories in the **Finance** section on the Portal. Available items to display: `Invoices`, `Payments`, `Credit Notes`, `Statements`, `Transactions`, `Proforma invoices`;
 * **Payment methods** - enable/disable payment methods in the **Payments** section. Available item to display: `Refill card`;
 * **Transactions fields** - enable/disable fields in the **Transactions** table on the Portal. Available item to display: `Debit/Credit`, `Movement`, `Invoice number`;
-* **Invert account balance** - enable/disable displaying the inverted account balance on the Portal.
+* **Invert account balance** - enable/disable displaying the inverted account balance on the Customer portal. If this option is enabled, the customer balance will be displayed with a `-` sign.
+
 
 <icon class="image-icon">![img](information.png)</icon> Suggested read:
 

@@ -51,7 +51,7 @@ A window will appear where you can create the additional field. In this example,
 * **Unique** -  enabling this option requires a unique value to be filled in for this field for all customers.
 * **Show in list** - enables the field to be displayed automatically in the list/table of the selected module as a column.
 * **Add** - this option enables/disables the field as a field to fill in within the selected module when adding a new item to the module (in this example, this option enables/disables the "Contract ID" field, when adding a new customer).
-* **Searchable** - enabling/disabling this option states whether items in the selected module can be search for by the values of this field (in this example, this option enables or disables the ability to search for customers by their "Contract id").
+* **Searchable** - enabling/disabling this option states whether items in the selected module can be searched for by the values of this field (in the example above, enabling this option allows users to search for customers using their `Contract id`).
 * **Readonly** - field will have a read-only value.
 * **Disabled** - field will be disabled.
 * **Hidden** - field will be hidden.

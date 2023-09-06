@@ -1,16 +1,25 @@
 Customer documents
 ==========
 
-As a company with many customers, you've probably found that keeping physical copies of all the contracts and agreements for each customer in files and folders, in boxes and closets is inefficient and impractical which often leads to confusion in business. You don't have to worry about it anymore, we've digitized this much-needed form of record keeping.
+In Splynx, it is possible to keep all contracts and agreements for each customer in a digitalized form.
 
-Our **Documents** section allows you to upload documents in any format, providing a secure, neat and easy to manage way to store customer documents. What's more, in *Documents* section it is possible to generate a document according to the templates created for it.
+
+In the **Documents** section, you can upload documents in any format, offering a secure, organized, and easily manageable way to store customer documents. Additionally, you can generate documents based on predefined templates.
 
 ![Documents](documents.png)
 
 
-### How to upload a document to Splynx
+## How to upload a document
 
-**To upload a document to Splynx** click on ``Upload`` button at the top right corner of the table and a pop-up window **Upload file** will appear. In this window you can specify a **Title** of the document, a short **Description** (optional) and choose whether this document will be **Visible to customer** on their [Portal](customer_portal/customer_portal.md) or only available for the administrator. Then, click on ``Browse`` and choose the document to upload.
+To upload a document to Splynx, follow these steps:
+
+1. Click the `Upload` button located at the top right corner of the table. A pop-up window titled **Upload file** will appear.
+
+2. In this window, you can specify a **Title** for the document and provide a short **Description** (optional).
+
+3. Choose whether this document will be **Visible to customer** on their [Portal](customer_portal/customer_portal.md) or if it should be available only for the administrator.
+
+4. Click on ``Browse`` to select the document you wish to upload.
 
 ![Upload file](upload_file.png)
 
@@ -18,78 +27,76 @@ As soon as the file is uploaded, it will immediately appear in the *Documents* l
 
 ![Document title](document_title.png)
 
-In the **Operations** column of the table you'll find possible actions related to the file, such as `Edit` , `View` , `Download` , `Send` (to a customer) and `Delete` <icon class="image-icon">![Icons](icons.png)</icon>.
+## File management
 
-If you upload the file with the `Visible to customer` option enabled, the file will be available to download for the customer on their Portal under the *Documents* section.
+In the **Actions** column of the table, you will find various actions related to the file, including `Edit` , `View` , `Download` , `Send` (to a customer), and `Delete` <icon class="image-icon">![Icons](icons.png)</icon>.
+
+If you upload the file with the `Visible to customer` option enabled, it will be available for the customer to download on their Portal under the *Documents* section.
 
 ![Document list](documents_list.png)
 
 The customer can download the file from *Portal* by clicking on the `Download` icon <icon class="image-icon">![Download](download_button1.png)</icon> on the right side of the table.
 
+<icon class="image-icon">![image](note.png)</icon> When you use the ``Send`` button to send a message via the Customer Portal, the message will appear in the **Messages** section, which should be enabled under *Config → Main → Portal → (Menu)*:
 
-### Generating a document in Splynx
+![Messages](messages_on.png)
 
-Let's take a look at the process of generating a document for customer in Splynx .
 
-To generate a document in the customer's profile click on ``Generate/Contract`` button at the top right corner of the table:
+## How to generate a document
+
+To generate a document in the customer's profile, click on the ``Generate/Contract`` button at the top right corner of the table:
 
 ![Generate](generate_button.png)
 
- In a new **Generate document** pop-up window, specify the **Title** of document, a short **Description** (optional) and choose whether this document will be **Visible to customer** on *Portal*.
+In a new **Generate Document** pop-up window, please specify the document's **Title**, provide a brief **Description** (optional), and select whether this document should be made **Visible to customer** on the *Portal*.
 
-The **Sign contract** option will be described in next section of the current article.
+The **Sign contract** option will be described in the next section of this article.
 
 ![Generate documents](gen_document.png)
 
 There are two options to generate the **Document code** (the message body) of the document:
 
-* **Option 1** - simply type the desired content in the text window manually, use `Save as new` button to save the typed text as a new document template in Splynx, and then click on `Generate`:
+* **Option 1**: Simply type the desired content in the text window manually, then use the ``Save as new`` button to save the typed text as a new document template in Splynx, and finally, click on ``Generate``:
 
 ![Generate documents](option1.png)
 
-* **Option 2** - you can use one of the saved [Templates](configuration/system/templates/templates.md) to create/generate a document. Click on the **Template** drop-down list, select a necessary template and press `Load` button.
-This will fill the text area with pre-configured content from the template.
-Then, you should specify a **Title** of the document, a short **Description** (optional) and choose whether this document will be **Visible to customer** on *Portal*.
+* **Option 2** - you can use one of the saved [Templates](configuration/system/templates/templates.md) to create/generate a document. Click on the **Template** drop-down list, select the necessary template, and then press the ``Load`` button. 
+This action will populate the text area with pre-configured content from the selected template. Next, you should provide a **Title** for the document, a brief **Description** (optional), and decide whether to make this document **Visible to customer** on the *Portal*.
+
 
 ![Generate documents](option2.png)
 
 ![Generate documents](generate_documents.png)
 
-Press `Preview` to check the overall view of the document.
+Click on ``Preview`` to view the document overall.
 
 ![Generate documents](generate_documents1.png)
 
-To create the document click on `Generate` button.
 
-![Downloaded document](downloaded_doc.png)
+## Templates
 
-------------
-
-**IMPORTANT**
-
-Before using the own **templates** it is necessary to **configure** them first in `Config → System → Templates`. In Splynx, the templates are grouped according to the document type. You can add your own templates, edit/customize the existing ones, make a preview or remove the templates.
+<icon class="image-icon">![image](warning.png)</icon> Before utilizing your own **templates**, it is essential to **configure** them first in *Config → System → Templates*. In Splynx, templates are organized by document type. You can add your own templates, customize existing ones, preview them, or remove templates.
 
 ![Template icon](template_menu_icon.png)
 
-------------
 
-When `Config → Templates` page is opened, take a look at the top right corner and select `Documents`type in drop-down list.
+When the *Config → Templates* page is opened, select the `Documents` type from the drop-down list at the top right corner of the page.
 
 ![Template's types](template_types.png)
 
-**To create a new template** click on the ``Add`` button. In new window, specify the `Title`, `Description` (optional) and insert or type the HTML code for your template.
+To **create a new template**, click the`Add` button. In the new window, specify the ``Title`` and, optionally, the ``Description``, then insert or type the HTML code for your template.
 
-Use `Check Code` and `Preview` buttons to check or to preview the validity of the code / output result. The `Placeholders` button can be used to quickly insert the necessary variable into the code.
+Use the ``Check Code`` and ``Preview`` buttons to verify the code's validity and preview the output result. The ``Placeholders`` button can be used to quickly insert the necessary variables into the code.
 
 ![Creating template](create_template.png)
 
-More information about templates, *placehorders* and *variables* you can find in these articles:
+More information about *templates*, *placeholders*, and *variables* can be found in these articles:
 
 - [Templates](configuration/system/templates/templates.md)
 - [Variables for templates](configuration/system/templates/templates_variables/templates_variables.md)
 
 
-### Contract and its signing by customer
+## Contract and its signing by the customer
 
 A customer contract is a legally binding agreement between you and the customer concerning the sale of goods or digital content or the supply of services (with or without goods).
 You use the traditional post service or email (attachment) to send a contract to the customer and wait for it to return signed.

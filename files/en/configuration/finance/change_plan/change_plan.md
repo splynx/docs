@@ -25,6 +25,17 @@ The options description:
 
 * **Create invoice after service change** - the available options: `During next billing cycle`, `Immediately till end of active month` and `Immediately till end of next month`;
 
+<details style="font-size: 15px; margin-bottom: 5px;">
+<summary><b>Examples</b></summary>
+<div markdown="1">
+
+* **During next billing cycle** - This means that the invoice will be generated on the billing day as usual.
+* **Immediately till end of active month** - The invoice will be generated at the end of the current (active) month. For example, if we change the service on 07-09-2023, the system will automatically generate an invoice for the period from 07-09-2023 to 30-09-2023.
+* **Immediately till end of next month** - The invoice for the new service will be generated for the upcoming month.
+
+</div>
+</details>
+
 * **Minimum invoice amount** - if the total of the new invoice is less than this value, the invoice will not be created.
 
 ******************************************************************

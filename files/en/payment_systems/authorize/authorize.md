@@ -1,8 +1,11 @@
-
 Authorize.net
 =============
 
 Authorize.net is a Splynx add-on used to synchronize customers, invoices and payments with the Authorize.net payment gateway - [https://www.authorize.net](https://www.authorize.net/).
+
+<icon class="image-icon">![image](warning.png)</icon> Some filters within the Authorize.net gateway can either delay the updating of payments or prevent charges from being confirmed:
+
+![filters](filters.png)
 
 The add-on can be installed in two methods, via the CLI or via the Web UI of your Splynx server.
 

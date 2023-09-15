@@ -123,7 +123,7 @@ Here are the requirements to use Paybill - https://www.safaricom.co.ke/personal/
 
 <icon class="image-icon">![warning](warning.png)</icon> **NOTE:** Splynx supports only the **Paybill** option as the payment option and does not support a **Till Number**.
 
-After the Paybill application and approval, you need a developers' account from the official *M-Pesa Daraja Portal* in order to integrate the customers to the business [API](https://www.safaricom.co.ke/business/corporate/m-pesa-payment-services/m-pesa-api) (Customer to Business - C2B).
+After the Paybill application and approval, you need a developers' account from the official *M-Pesa Daraja Portal* in order to integrate the customers to the business [API](https://www.safaricom.co.ke/personal/m-pesa/do-more-with-m-pesa/m-pesa-api) (Customer to Business - C2B).
 
 **Daraja Portal**
 

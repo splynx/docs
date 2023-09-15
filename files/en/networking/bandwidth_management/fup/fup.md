@@ -1,4 +1,4 @@
-Fair usage policy (FUP)
+Fair Usage Policy (FUP)
 ==========
 
 Many ISPs use Fair Usage Policy (FUP): this means that if a customer downloads or uploads more than a certain amount of data, their speeds are reduced according to configurations. We've moved this idea to a different level and made it as configurable as possible.

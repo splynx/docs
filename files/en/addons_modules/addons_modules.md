@@ -22,7 +22,7 @@ In this section, we can view, install or delete useful add-ons for integration w
 * [Quickbooks accounting](addons_modules/quickbooks/quickbooks.md)
 * [Realms](addons_modules/realms/realms.md)
 * [SageOne module](addons_modules/sageone/sageone.md)
-* [Self Registration](addons_modules/self_registration/self_registration.md)
+* [Social Registration](addons_modules/social_registration/social_registration.md)
 * [Speedtest](addons_modules/speedtest/speedtest.md)
 * [Splynx AI](addons_modules/splynx_ai/splynx_ai.md)
 * [SSH Term](addons_modules/splynx-ssh-term/splynx-ssh-term.md)

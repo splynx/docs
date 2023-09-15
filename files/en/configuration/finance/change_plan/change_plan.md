@@ -31,7 +31,7 @@ The options description:
 
 * **During next billing cycle** - This means that the invoice will be generated on the billing day as usual.
 * **Immediately till end of active month** - The invoice will be generated at the end of the current (active) month. For example, if we change the service on 07-09-2023, the system will automatically generate an invoice for the period from 07-09-2023 to 30-09-2023.
-* **Immediately till end of next month** - The invoice for the new service will be generated for the upcoming month.
+* **Immediately till end of next month** - The invoice for the new service will be generated immediately from today +30 days.
 
 </div>
 </details>

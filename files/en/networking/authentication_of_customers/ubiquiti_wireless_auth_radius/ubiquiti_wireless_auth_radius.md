@@ -60,5 +60,4 @@ eap {
 ```
 
 #### EAP-PEAP
-If you do not have EAP-Type selector on CPE, Freeradius should be configured for EAP-PEAP instead of EAP-TTLS.
-Here is an example from Ubiquiti - [https://help.ui.com/hc/en-us/articles/221961127](https://help.ui.com/hc/en-us/articles/221961127) 
+If you do not have EAP-Type selector on CPE, Freeradius should be configured for EAP-PEAP instead of EAP-TTLS. 

@@ -1,7 +1,7 @@
-Self Registration
+Socia; Registration
 =================
 
-**Self Registration** (formerly **Social registration**) is a Splynx add-on that allows customers to register themselves in the Splynx portal using their e-mail address or cell phone number. Customers can also register and log in using their Google, Facebook or Twitter accounts.
+**Social registration** is a Splynx add-on that allows customers to register themselves in the Splynx portal using their e-mail address or cell phone number. Customers can also register and log in using their Google, Facebook or Twitter accounts.
 
 If you want to use this add-on with social network platforms, it is necessary to have the API applications. If you don't have such apps, below you can find how to create them.
 
@@ -155,7 +155,7 @@ After that click on **App settings** button.
 
 The add-on can be installed in two methods: via CLI or the Web UI.
 
-To install the "Self Registration" add-on via CLI, the following commands can be used:
+To install the "Social Registration" add-on via CLI, the following commands can be used:
 
 ```bash
 sudo apt update

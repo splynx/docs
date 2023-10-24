@@ -63,33 +63,6 @@ You should use HEX value in this field. Example: `0xaabbccddeeff`. Also you can 
 
 <icon class="image-icon">![Note](info.png)</icon> Please note, if you leave this field blank/empty, this means that the Agent Remote ID option in the DHCP request should also be exactly blank/empty.
 
-### Debug (freeradius)
-
-Sometimes you don't know the actual Agent Remote ID or Agent Circuit ID or don't even know if it is being received by Splynx Radius server. In this case you can enable the Freeradius debug to see the contents of the Radius packets.
-
-To enable debug, follow these steps:
-
-1. Enable freeradius control socket:
-```bash
-ln -s /etc/freeradius/sites-available/control-socket /etc/freeradius/sites-enabled/
-```
-2. Uncomment or add the line `mode = rw` in */etc/freeradius/sites-enabled/control-socket*. You can use nano or any other editor:
-```bash
-nano /etc/freeradius/sites-enabled/control-socket
-```
-3. Reload the freeradius service to apply changes:
-```bash
-systemctl restart freeradius
-```
-
-Then you can run `raddebug` in the terminal to see the freeradius debug messages:
-```bash
-raddebug -t0
-```
-You can filter the output to show only option 82 related information:
-```bash
-raddebug | grep Agent
-```
 
 ### Splynx Radius debug
 
